@@ -7,10 +7,10 @@
 # Description:
 
 
-from typing import Dict
+from typing import Dict, Optional
 
 
-def jsonHook(jsonInput: str) -> Dict:
+def jsonHook(jsonInput: Optional[Dict]) -> Dict:
     """ Decode properly formatted json in a robust way. Meant to be used as an object_hook for the Python json lib.
         Usage:  json.loads(json_string, object_hook=jsonHook)
 

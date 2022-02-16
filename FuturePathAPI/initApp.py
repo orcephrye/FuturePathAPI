@@ -9,15 +9,15 @@
 
 from flask import Flask, jsonify, abort, make_response, request
 from flask_login import LoginManager, login_required, current_user
-from flask_socketio import SocketIO
 from FuturePathAPI.libs import MongoDataBase
 from FuturePathAPI.libs.MongoDataBase import User, UserManager
+# from flask_socketio import SocketIO
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 login_manager = LoginManager()
 login_manager.init_app(app)
-socketio = SocketIO(app)
+# socketio = SocketIO(app)
 um = UserManager()
 
 
@@ -73,18 +73,3 @@ def authentication():
         return jsonify({'Token': "%s" % token}), 200
     else:
         return jsonify({'Username': "The username %s and/or password are not correct" % username}), 401
-
-
-# @app.route("/callback", methods=["GET"])
-# def callback():
-#     """
-#         Callback
-#     :return:
-#     """
-#     auth_code = request.args.get('code', default="", type=str)
-#     if not auth_code:
-#         abort(501)
-#     pike13CallBack = pike13URL + pike13OauthArgs % (auth_code, redirect_uri, clientID, clientSecret)
-#     resp = requests.post(pike13CallBack)
-#     print "Response Code: %s" % resp.status_code
-#     print "Response: %s" % resp.content

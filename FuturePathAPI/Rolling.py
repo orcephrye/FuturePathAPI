@@ -11,11 +11,11 @@ import traceback
 import json
 import functools
 import re
-from flask import jsonify, abort, request, render_template
-from initApp import app
+from flask import jsonify, abort, request, render_template, Response
 from numpy.random import choice
 from itertools import product
 from collections import Iterable
+from FuturePathAPI.initApp import app
 from FuturePathAPI.libs import ReadWriteLock
 from FuturePathAPI.libs.jsonTools import jsonHook
 from FuturePathAPI.libs.FrozenDict import FrozenDict
@@ -37,6 +37,16 @@ reverseSplitString = re.compile('(\d){0,3}d\d{1,2}')
 """
 
 
+def randomPicker(choices, p):
+    """
+        A wrapper for the numpy choice
+    :param choices: a list or iterable to choose from
+    :param p: probabilities
+    :return: (int)
+    """
+    return int(choice(list(choices), p=p))
+
+
 @app.route('/tasks/roll/character/<level>', methods=['GET'])
 def rollCharacter(level):
     """
@@ -47,6 +57,9 @@ def rollCharacter(level):
     :param level:
     :return:
     """
+
+    accept = request.headers.get('Accept', 'application/json').lower().strip()
+    print(f'accept = {accept}')
     level = level.lower().strip()
     if level == "normal":
         return jsonify(Rolling.NormalCharacterStats())
@@ -55,44 +68,73 @@ def rollCharacter(level):
     elif level == "low":
         return jsonify(Rolling.LowFantasyCharacterStats())
     else:
-        return render_template('WrongCharacterLevel.html', level=level)
+        if accept == 'application/json':
+            response = jsonify({'Error code': 404, 'message': f"You entered  [{level}] as a Fantasy level to generate "
+                                                              f"a character's stats. Valid options are 'normal', 'high'"
+                                                              f", or 'low'."})
+        else:
+            response = Response(render_template('WrongCharacterLevel.html', level=level))
+        response.status_code = 404
+        return response
+
+
+def covertToDigit(tmpStr):
+    if tmpStr:
+        if type(tmpStr) is bool:
+            return 1
+        tmpStr = str(tmpStr)
+        if tmpStr.isdigit():
+            return int(tmpStr)
+    return 0
+
+
+def parse_die_options(options):
+    dieOptions = {}
+
+    if 'dropLowest' in options:
+        dropLowest = options.get('dropLowest', 0)
+        if dropLowest:
+            dropLowest = str(dropLowest)
+            if dropLowest.lower() == "false":
+                dropLowest = 0
+            else:
+                dropLowest = int(dropLowest)
+        dieOptions['dropLowest'] = dropLowest
+
+    if 'rerollTotal' in request.args:
+        dieOptions['rerollTotal'] = covertToDigit(options.get('rerollTotal', 0))
+    if 'rerollDie' in request.args:
+        dieOptions['rerollDie'] = covertToDigit(options.get('rerollDie', 0))
+    if 'subAll' in request.args:
+        dieOptions['subAll'] = covertToDigit(options.get('subAll', 0))
+    if 'addAll' in request.args:
+        dieOptions['addAll'] = covertToDigit(options.get('addAll', 0))
+
+    return dieOptions
+
+
+def parse_dice_options(options):
+
+    options.pop('rerollTotal', None)
+    options.pop('rerollDie', None)
+
+    diceOptions = parse_die_options(options)
+
+    if 'repeatRoll' in options:
+        diceOptions['repeatRoll'] = covertToDigit(options.get('repeatRoll', 0))
+
+    return diceOptions
 
 
 @app.route('/tasks/roll/<dString>', methods=['GET'])
 def roll_from_get(dString):
 
-    def covertToDigit(tmpStr):
-        if tmpStr:
-            tmpStr = str(tmpStr)
-            if tmpStr.isdigit():
-                return int(tmpStr)
-        return 0
-
     if len(dString) > 36:
         abort(500)
 
     dieOptions = {}
-
     try:
-        if 'dropLowest' in request.args:
-            dropLowest = request.args.get('dropLowest', 0)
-            if dropLowest:
-                dropLowest = str(dropLowest)
-                if dropLowest.lower() == "false":
-                    dropLowest = 0
-                else:
-                    dropLowest = int(dropLowest)
-            dieOptions['dropLowest'] = dropLowest
-
-        if 'rerollTotal' in request.args:
-            dieOptions['rerollTotal'] = covertToDigit(request.args.get('rerollTotal', 0))
-        if 'rerollDie' in request.args:
-            dieOptions['rerollDie'] = covertToDigit(request.args.get('rerollDie', 0))
-        if 'subAll' in request.args:
-            dieOptions['subAll'] = covertToDigit(request.args.get('subAll', 0))
-        if 'addAll' in request.args:
-            dieOptions['addAll'] = covertToDigit(request.args.get('addAll', 0))
-
+        dieOptions = parse_die_options(request.args)
     except Exception as e:
         print(f"ERROR: {e}")
         abort(501)
@@ -193,12 +235,13 @@ class RollProbabilityGenerator(object):
 
 
 @ProbabilityMemorizer
-def _getProbability(die, repeat=0):
+def _getProbability(die, repeat=1):
     return RollProbabilityGenerator(die, repeat=repeat)
 
 
 @DieAnylizerMemorizer
-def _determineNumbers(dString, rerollDie=None, subAll=0, addAll=0):
+def _determineNumbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
+    print(f'_determineNumbers:\n\tdString: {dString}\n\trerollDie: {rerollDie}\n\tsubAll: {subAll}\n\taddAll: {addAll}')
     die = determineDie.search(dString)
     if not die:
         raise Exception('Cannot determine die!')
@@ -270,9 +313,9 @@ class DiePicker(object):
             return dieNumbers
 
         if subAll:
-            dieNumbers = [x-subAll for x in dieNumbers]
+            dieNumbers = tuple([x-subAll for x in dieNumbers])
         if addAll:
-            dieNumbers = [x+addAll for x in dieNumbers]
+            dieNumbers = tuple([x+addAll for x in dieNumbers])
 
         return dieNumbers
 
@@ -312,11 +355,12 @@ class Roller(object):
 
     @staticmethod
     def _roller(die, multipler):
+        print(f'_roller:\n\tdie: {die}\n\tmultipler: {multipler}')
         if type(multipler) is list:
-            return sum([choice(list(rpg.numberDict.keys()), p=rpg.probabilityMap)
+            return sum([randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
                         for rpg in [_getProbability(die, repeat=m) for m in multipler]])
         rpg = _getProbability(die, repeat=multipler)
-        return choice(list(rpg.numberDict.keys()), p=rpg.probabilityMap)
+        return randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
 
     @staticmethod
     def _dropLowest(die, multipler, dropLowest):
@@ -328,7 +372,7 @@ class Roller(object):
                             'dice to roll')
 
         multipler = [1] * multipler
-        choices = [choice(list(rpg.numberDict.keys()), p=rpg.probabilityMap)
+        choices = [randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
                    for rpg in [_getProbability(die, repeat=m) for m in multipler]]
         if type(dropLowest) is not int:
             choices.pop(choices.index(min(choices)))
@@ -427,7 +471,6 @@ class DieRoller(Roller):
     def rollDice(dice, connectors, diceOptions):
         # print "rollDice:\n\tdice; %s\n\tconnectors: %s\n\tdiceOptions: %s" % (dice, connectors, diceOptions)
         connectors = DieRoller._checkConnectors(connectors)
-        # print "\nconnectors: %s\n" % connectors
         diceOptions = dict(diceOptions)
         repeatRoll = diceOptions.get('repeatRoll', 0)
         dropLowest = diceOptions.get('dropLowest', 0)
@@ -482,8 +525,14 @@ class DieRoller(Roller):
 class DieAnylizer(object):
     """
         This is designed to take input from API calls. There are 3 routes to rolling that all come here.
-        1. GET Call. This using the route '/tasks/roll/<dice>/<int:multiplier>' via a GET call. The multiplier is
-            optional.
+        1. GET Call. This using the route '/tasks/roll/<dice>' via a GET call.
+        Examples: '/tasks/roll/d20' or '/tasks/roll/2d4'. To add a modifier simply append a + or - after the dice:
+        '/tasks/roll/1d20+5'. You can also combine die into a group of dice: '/tasks/roll/1d20+1d4+2'. Lastly die
+        options are passed via URL parameters. IE: '/tasks/roll/4d6?dropLowest=1' Get a full list of die options below.
+        NOTE: GET call has major limitations.
+            a) The die options provided are passed to all applicable dice.
+            b) It cannot pass dice options only die options.
+
         2. A POST call that simply sends a single Die String which can have some basic options tag too it. Below is an
             example of this option.
         {
@@ -491,8 +540,7 @@ class DieAnylizer(object):
             "modifier": "+2",
             "dieOptions": {"dropLowest": "1"}
         }
-
-            The 'dieOptions' is optional. This is an easy way to dip your toe into API calls to construct die rolls.
+        The 'dieOptions' is optional. This is an easy way to dip your toe into API calls to construct die rolls.
 
         3. A POST call that can send multi dice with custom options per each die as well as global options for the
             whole role. This allows for complicated massive roles and is good for doing multiple but completely
@@ -508,7 +556,7 @@ class DieAnylizer(object):
                 }
             ]
         }
-        Example of a rank 4 skill check.
+        Example of a FuturePath rank 4 skill check
         {
             "dice": [
                 {
@@ -518,7 +566,7 @@ class DieAnylizer(object):
                 },
                 {
                     "id": 2,
-                    "dString": "d8",
+                    "dString": "d4",
                     "modifier": "+2"
                 }
             ]
@@ -535,7 +583,7 @@ class DieAnylizer(object):
             "diceOptions": {"repeatRoll": 6}
         }
         JSON Requirements:
-            1) Each die in the dice has to have a id. That id will be used to sort the correct order.
+            1) Each die in the dice has to have an id. That id will be used to sort the correct order.
             2) dString should only have 1 die roll in it.
             3) Modifiers in the dString will be ignored. A modifier should be passed with the 'modifier' key.
             4) 'connectorString' can only be a '+' or '-' and HAS to exist in order for the next die to be added.
@@ -569,41 +617,6 @@ class DieAnylizer(object):
         pass
 
     @staticmethod
-    def dieGETAnylizer(dSTring, **kwargs):
-        pass
-
-    @staticmethod
-    def _OlddieStrAnylizer(dString, dieOptions=None):
-        if dieOptions is None:
-            dieOptions = {}
-
-        dString = dString.strip().strip('+').strip('-').lower()
-        if 'd' not in dString:
-            raise Exception("Cannot analyze string for dice. Missing 'd'. String given: %s" % dString)
-        diesAndMods = splitString.split(dString)
-        connectors = splitString.findall(dString)
-        index = 0
-        maxLen = len(diesAndMods)-1
-        dies = []
-        dieConnectors = []
-
-        while index <= maxLen:
-            item = diesAndMods[index]
-            if index == maxLen:
-                dies.append((_determineNumbers(item), '', tuple(dieOptions.items())))
-            elif not confirmSyntax.match(diesAndMods[index+1]):
-                dies.append((_determineNumbers(item), str(connectors[index]) + str(diesAndMods[index+1]),
-                             tuple(dieOptions.items())))
-                index += 1
-                if index < maxLen:
-                    dieConnectors.append(connectors[index])
-            else:
-                dies.append((_determineNumbers(item), '', tuple(dieOptions.items())))
-                dieConnectors.append(connectors[index])
-            index += 1
-        return dies, dieConnectors
-
-    @staticmethod
     def dieStrAnylizer(dString, dieOptions=None):
 
         def _convertSingleDie(die):
@@ -631,13 +644,14 @@ class DieAnylizer(object):
                 if 'd' in item and tmpDieStr == "":
                     tmpDieStr = item
                 elif 'd' in item:
-                    dies.append((_determineNumbers(tmpDieStr[:-1]), _determineModifier(tmpDieStr[:-1]), ()))
+                    dies.append((_determineNumbers(tmpDieStr[:-1], **dieOptions),
+                                 _determineModifier(tmpDieStr[:-1]), ()))
                     dieConnectors.append(tmpDieStr[-1])
                     tmpDieStr = item
                 else:
                     tmpDieStr += item
             index += 1
-        dies.append((_determineNumbers(tmpDieStr), _determineModifier(tmpDieStr), ()))
+        dies.append((_determineNumbers(tmpDieStr, **dieOptions), _determineModifier(tmpDieStr), ()))
 
         if len(dies) > 1:
             return dies, dieConnectors, tuple(dieOptions.items())
@@ -657,14 +671,14 @@ class DieAnylizer(object):
                 dJSON = json.loads(dJSON.strip(), object_hook=jsonHook)
             dJSON = jsonHook(dJSON)
             dice = sorted(dJSON.get('dice', list()), key=_sortHelper)
-            diceOptions = tuple(dJSON.get('diceOptions', {}).items())
+            diceOptions = tuple(parse_dice_options(dJSON.get('diceOptions', {})).items())
 
             if not dice and dJSON.get('dString'):
                 dice.append(dJSON)
 
             for item in dice:
                 dies.append(((str(item.get('dString')), str(item.get('modifier', '')),
-                              tuple(item.get('dieOptions', {}).items()))))
+                              tuple(parse_die_options(item.get('dieOptions', {})).items()))))
                 if dice.index(item) < (len(dice)-1):
                     dieConnectors.append(item.get('connectorString'))
 
@@ -672,7 +686,8 @@ class DieAnylizer(object):
             index = 0
 
             while index <= loopN:
-                dies[index] = (_determineNumbers(dies[index][0]), dies[index][1], dies[index][2])
+                dies[index] = (_determineNumbers(dies[index][0], **dict(dies[index][2])),
+                               dies[index][1], dies[index][2])
                 index += 1
 
             return dies, list(filter(None, dieConnectors)), diceOptions
