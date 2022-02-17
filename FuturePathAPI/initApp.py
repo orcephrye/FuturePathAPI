@@ -7,69 +7,19 @@
 # Description:
 
 
-from flask import Flask, jsonify, abort, make_response, request
-from flask_login import LoginManager, login_required, current_user
-from FuturePathAPI.libs import MongoDataBase
-from FuturePathAPI.libs.MongoDataBase import User, UserManager
-# from flask_socketio import SocketIO
+from flask import Flask, jsonify, make_response
+import os
+
+
+BASE_URL = "http://api.d20futurepath.com"
+PREFIX_VER = "/v1"
+END_POINT = f"{BASE_URL}{PREFIX_VER}"
+
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secret!'
-login_manager = LoginManager()
-login_manager.init_app(app)
-# socketio = SocketIO(app)
-um = UserManager()
-
-
-def user_required(func):
-    cu = current_user
-
-    @login_required
-    def func_wrapper(*args, **kwargs):
-        username = str(kwargs.get('username'))
-        if cu.username == username:
-            return func(*args, **kwargs)
-        return jsonify({'Username': "The username %s is Unauthorized" % username}), 401
-    func_wrapper.__name__ = func.__name__
-    return func_wrapper
+app.secret_key = os.urandom(16)
 
 
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
-
-
-@login_manager.request_loader
-def load_user(data, *args, **kwargs):
-    token = data.headers.get('Token')
-    if token is None:
-        token = data.args.get('Token')
-
-    if token is not None:
-        username = um.checkToken(token)
-        if username:
-            return User(username)
-    return None
-
-
-@app.route('/login', methods=['POST'])
-def authentication():
-    """
-        Login request
-    :return:
-    """
-    if not request.json:
-        abort(400)
-    username = request.json.get('username')
-    password = request.json.get('password')
-    if not username or not password:
-        return jsonify({'Malformed': "This request was malformed!"}), 400
-    try:
-        token = um.login(username, password)
-    except Exception as e:
-        # print "There was a failure of some kind the exception is: %s" % e
-        return jsonify({'Exception': "There was a failure of some kind the exception is: %s" % e}), 500
-    if token:
-        return jsonify({'Token': "%s" % token}), 200
-    else:
-        return jsonify({'Username': "The username %s and/or password are not correct" % username}), 401

@@ -8,81 +8,45 @@
 
 
 from flask import jsonify
-from flask_login import login_required
-from FuturePathAPI import initApp
-from FuturePathAPI.initApp import app, not_found
+from FuturePathAPI.initApp import app, END_POINT
+from FuturePathAPI import authentication
+from FuturePathAPI import user
+from FuturePathAPI import tasks
 from FuturePathAPI import Rolling
 
-"""
-    {
-        'id': 2,
-        'name': u'character_creation',
-        'description': u'Creating a new character',
-        'steps': {1: {'name': 'rollDice', 'uri': "", 'type': 'GET'},
-                  2: {'name': 'setAbilities', 'type': 'POST', 'uri': ""},
-                  3: {'name': 'getSpecies', 'type': 'GET', 'uri': ""},
-                  4: {'name': 'setSpecie', 'type': 'POST', 'uri': ""},
-                  5: {'name': 'getBaseClasses', 'type': 'GET', 'uri': ""},
-                  6: {'name': 'setBaseClasses', 'type': 'POST', 'uri': ""},
-                  7: {'name': 'getTalents', 'type': 'GET', 'uri': ""},
-                  8: {'name': 'setTalents', 'type': 'POST', 'uri': ""},
-                  9: {'name': 'getFeats', 'type': 'GET', 'uri': ""},
-                  10: {'name': 'setFeats', 'type': 'POST', 'uri': ""}},
-        'uri': ""
-    },
-"""
 
-tasks = [
+options = [
     {
         'id': 1,
-        'name': u'rolling',
-        'description': u'Produces a random number between 1 and the rolling number. Optional is to add the number'
-                       u'of dice rolls',
-        'uri': "http://ip.ad.dr.ess/tasks/roll/d<dice number>/<optional:numer of rolls>"
+        'name': u'tasks',
+        'description': u'Most actions including all non-authenticated actions are listed under the tasks directory. '
+                       u'For more information run GET on the provided URI.',
+        'uri': f"{END_POINT}/tasks"
     },
     {
         'id': 2,
-        'name': u'weapon_crafting',
-        'description': u'Creating a new custom weapon',
-        'uri': ""
+        'name': u'authentication',
+        'description': u'Authenticate using your username and password to get a temporary Token. For more information '
+                       u'run GET on the provided URI.',
+        'uri': f"{END_POINT}/login"
+    },
+    {
+        'id': 3,
+        'name': u'u',
+        'description': u'\'u\' is short for \'user\'. Access under this directory requires a TOKEN provided by '
+                       u'authentication.',
+        'uri': f"{END_POINT}/u"
     }
 ]
 
 
-@app.route('/tasks', methods=['GET'])
-def get_tasks():
+@app.route('/', methods=['GET'])
+def index():
     """
-        This returns a list of possible tasks
-    :return:
+        This returns a list of possible end points available from the root directory.
+    :return: JSON
     """
-    return jsonify({'tasks': tasks})
-
-
-@app.route('/tasks/<int:id>', methods=['GET'])
-def get_tasks_id(taskid):
-    """
-        This returns information regarding a particular task
-    :param taskid: a integervalue
-    :return:
-    """
-    for item in tasks:
-        if item['id'] == taskid:
-            return jsonify(item)
-    return not_found(404)
-
-
-@app.route('/tasks/<name>', methods=['GET'])
-def get_tasks_name(name):
-    for item in tasks:
-        if item['name'] == name:
-            return jsonify(item)
-    return not_found(404)
-
-
-@app.route('/protected', methods=['GET'])
-@login_required
-def testAuth():
-    return jsonify({'Auth': "Auth Test"}), 200
+    return jsonify({'FuturePath API Options': options})
 
 
 def main():

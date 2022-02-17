@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>FuturePathAPI package &#8212; d20FuturePath APIs v1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="futurepathapi-package">
+<h1>FuturePathAPI package<a class="headerlink" href="#futurepathapi-package" title="Permalink to this headline">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-FuturePathAPI.FuturePathMain">
+<span id="futurepathapi-futurepathmain-module"></span><h2>FuturePathAPI.FuturePathMain module<a class="headerlink" href="#module-FuturePathAPI.FuturePathMain" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.FuturePathMain.index">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.FuturePathMain.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.FuturePathMain.index" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This returns a list of possible end points available from the root directory.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>JSON</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.FuturePathMain.main">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.FuturePathMain.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.FuturePathMain.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.Rolling">
+<span id="futurepathapi-rolling-module"></span><h2>FuturePathAPI.Rolling module<a class="headerlink" href="#module-FuturePathAPI.Rolling" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieAnylizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">DieAnylizer</span></span><a class="headerlink" href="#FuturePathAPI.Rolling.DieAnylizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is designed to take input from API calls. There are 3 routes to rolling that all come here.
+1. GET Call. This using the route ‘/tasks/roll/&lt;dice&gt;’ via a GET call.
+Examples: ‘/tasks/roll/d20’ or ‘/tasks/roll/2d4’. To add a modifier simply append a + or - after the dice:
+‘/tasks/roll/1d20+5’. You can also combine die into a group of dice: ‘/tasks/roll/1d20+1d4+2’. Lastly die
+options are passed via URL parameters. IE: ‘/tasks/roll/4d6?dropLowest=1’ Get a full list of die options below.
+NOTE: GET call has major limitations.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>The die options provided are passed to all applicable dice.</p></li>
+<li><p>It cannot pass dice options only die options.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><dl class="simple">
+<dt>A POST call that simply sends a single Die String which can have some basic options tag too it. Below is an</dt><dd><p>example of this option.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<dl class="simple">
+<dt>{</dt><dd><p>“dString”: “2d4”,
+“modifier”: “+2”,
+“dieOptions”: {“dropLowest”: “1”}</p>
+</dd>
+</dl>
+<p>}
+The ‘dieOptions’ is optional. This is an easy way to dip your toe into API calls to construct die rolls.</p>
+<ol class="arabic simple" start="3">
+<li><dl class="simple">
+<dt>A POST call that can send multi dice with custom options per each die as well as global options for the</dt><dd><p>whole role. This allows for complicated massive roles and is good for doing multiple but completely
+different roles that involve different rules.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>Example of a single die roll like the one from above:
+{</p>
+<blockquote>
+<div><dl>
+<dt>“dice”: [</dt><dd><dl class="simple">
+<dt>{</dt><dd><p>“id”: 1,
+“dString”: “2d4”,
+“modifier”: “+2”,
+“dieOptions”: {“dropLowest”: 1}</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>]</p>
+</div></blockquote>
+<p>}
+Example of a FuturePath rank 4 skill check
+{</p>
+<blockquote>
+<div><dl>
+<dt>“dice”: [</dt><dd><dl class="simple">
+<dt>{</dt><dd><p>“id”: 1,
+“dString”: “d20”,
+“connectorString”: “+”</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><p>“id”: 2,
+“dString”: “d4”,
+“modifier”: “+2”</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+<p>]</p>
+</div></blockquote>
+<p>}
+Example of rolling a new Character’s ability score.
+{</p>
+<blockquote>
+<div><dl>
+<dt>“dice”: [</dt><dd><dl class="simple">
+<dt>{</dt><dd><p>“id”: 1,
+“dString”: “4d6”,
+“dieOptions”: {“dropLowest”: 1, “rerollTotal”: 10}</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<p>],
+“diceOptions”: {“repeatRoll”: 6}</p>
+</div></blockquote>
+<p>}
+JSON Requirements:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Each die in the dice has to have an id. That id will be used to sort the correct order.</p></li>
+<li><p>dString should only have 1 die roll in it.</p></li>
+<li><p>Modifiers in the dString will be ignored. A modifier should be passed with the ‘modifier’ key.</p></li>
+<li><p>‘connectorString’ can only be a ‘+’ or ‘-’ and HAS to exist in order for the next die to be added.</p></li>
+<li><p>dieOptions key is used to identify options to a specific dString and will be passed to only that roll.</p></li>
+<li><p>diceOptions key is used outside of the ‘dice’ list and will be applied globally.</p></li>
+<li><p>The top keys are ‘dice’, ‘diceOptions’ and ‘modifier’.</p></li>
+<li><dl class="simple">
+<dt>An item in the ‘dice’ list should have ‘id, ‘dString’, and can have ‘modifier’, ‘connectorString’,</dt><dd><p>and ‘dieOptions’.</p>
+</dd>
+</dl>
+</li>
+<li><p>dieOptions are: ‘dropLowest’, ‘rerollTotal’, ‘rerollDie’. ‘subAll’, ‘addAll’.</p></li>
+<li><p>diceOptions are: ‘dropLowest’, ‘subAll’, ‘addAll’, ‘repeatRoll’</p></li>
+</ol>
+</div></blockquote>
+<dl class="simple">
+<dt>dropLowest: (default value: False) This can be either False, True, or Int. True == 1. If True or 1 then this</dt><dd><p>causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+it will drop the lowest die X number of times.</p>
+</dd>
+<dt>rerollTotal: (default value: False) This needs to be an integer. This will cause the roller to reroll the</dt><dd><p>dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+logic to control the number of reroll attempts.</p>
+</dd>
+<dt>rerollDie: (default value: False) This has to be an Int or a list of Ints. This will actually remove that Int</dt><dd><p>or list of Ints from the possible roll of the die. So that when the die is rolled it can never choose that
+number.</p>
+</dd>
+<dt>subAll: (default value: 0) This has to be an Int. This adjusts the probability range of ALL die to be rolled</dt><dd><p>by subtracting the Int value off ALL possible numbers before rolling.</p>
+</dd>
+<dt>addAll: (default value: 0) This has to be an Int. This acts like subAll. It  adjusts the probability range of</dt><dd><p>ALL die to be rolled by adding the Int value off ALL possible numbers before rolling.</p>
+</dd>
+<dt>repeatRoll: (default value: False) This has to be an Int. This will take each die give in the ‘dices’ list</dt><dd><p>and preform the same action Int number of times. Max 10. The return json will look as if the request was
+originally submitted asking for each roll. (Helpful for when testing)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieAnylizer.dieJSONAnylizer">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dieJSONAnylizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dJSON</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DieAnylizer.dieJSONAnylizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieAnylizer.dieStrAnylizer">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dieStrAnylizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dString</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dieOptions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DieAnylizer.dieStrAnylizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieAnylizerMemorizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">DieAnylizerMemorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DieAnylizerMemorizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#FuturePathAPI.Rolling.Memorizer" title="FuturePathAPI.Rolling.Memorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">FuturePathAPI.Rolling.Memorizer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DiePicker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">DiePicker</span></span><a class="headerlink" href="#FuturePathAPI.Rolling.DiePicker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DiePicker.diceDict">
+<span class="sig-name descname"><span class="pre">diceDict</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{2:</span> <span class="pre">(1,</span> <span class="pre">2),</span> <span class="pre">4:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4),</span> <span class="pre">6:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6),</span> <span class="pre">8:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8),</span> <span class="pre">10:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10),</span> <span class="pre">12:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">11,</span> <span class="pre">12),</span> <span class="pre">20:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">11,</span> <span class="pre">12,</span> <span class="pre">13,</span> <span class="pre">14,</span> <span class="pre">15,</span> <span class="pre">16,</span> <span class="pre">17,</span> <span class="pre">18,</span> <span class="pre">19,</span> <span class="pre">20),</span> <span class="pre">24:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">11,</span> <span class="pre">12,</span> <span class="pre">13,</span> <span class="pre">14,</span> <span class="pre">15,</span> <span class="pre">16,</span> <span class="pre">17,</span> <span class="pre">18,</span> <span class="pre">19,</span> <span class="pre">20,</span> <span class="pre">21,</span> <span class="pre">22,</span> <span class="pre">23,</span> <span class="pre">24),</span> <span class="pre">30:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">11,</span> <span class="pre">12,</span> <span class="pre">13,</span> <span class="pre">14,</span> <span class="pre">15,</span> <span class="pre">16,</span> <span class="pre">17,</span> <span class="pre">18,</span> <span class="pre">19,</span> <span class="pre">20,</span> <span class="pre">21,</span> <span class="pre">22,</span> <span class="pre">23,</span> <span class="pre">24,</span> <span class="pre">25,</span> <span class="pre">26,</span> <span class="pre">27,</span> <span class="pre">28,</span> <span class="pre">29,</span> <span class="pre">30),</span> <span class="pre">100:</span> <span class="pre">(1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">8,</span> <span class="pre">9,</span> <span class="pre">10,</span> <span class="pre">11,</span> <span class="pre">12,</span> <span class="pre">13,</span> <span class="pre">14,</span> <span class="pre">15,</span> <span class="pre">16,</span> <span class="pre">17,</span> <span class="pre">18,</span> <span class="pre">19,</span> <span class="pre">20,</span> <span class="pre">21,</span> <span class="pre">22,</span> <span class="pre">23,</span> <span class="pre">24,</span> <span class="pre">25,</span> <span class="pre">26,</span> <span class="pre">27,</span> <span class="pre">28,</span> <span class="pre">29,</span> <span class="pre">30,</span> <span class="pre">31,</span> <span class="pre">32,</span> <span class="pre">33,</span> <span class="pre">34,</span> <span class="pre">35,</span> <span class="pre">36,</span> <span class="pre">37,</span> <span class="pre">38,</span> <span class="pre">39,</span> <span class="pre">40,</span> <span class="pre">41,</span> <span class="pre">42,</span> <span class="pre">43,</span> <span class="pre">44,</span> <span class="pre">45,</span> <span class="pre">46,</span> <span class="pre">47,</span> <span class="pre">48,</span> <span class="pre">49,</span> <span class="pre">50,</span> <span class="pre">51,</span> <span class="pre">52,</span> <span class="pre">53,</span> <span class="pre">54,</span> <span class="pre">55,</span> <span class="pre">56,</span> <span class="pre">57,</span> <span class="pre">58,</span> <span class="pre">59,</span> <span class="pre">60,</span> <span class="pre">61,</span> <span class="pre">62,</span> <span class="pre">63,</span> <span class="pre">64,</span> <span class="pre">65,</span> <span class="pre">66,</span> <span class="pre">67,</span> <span class="pre">68,</span> <span class="pre">69,</span> <span class="pre">70,</span> <span class="pre">71,</span> <span class="pre">72,</span> <span class="pre">73,</span> <span class="pre">74,</span> <span class="pre">75,</span> <span class="pre">76,</span> <span class="pre">77,</span> <span class="pre">78,</span> <span class="pre">79,</span> <span class="pre">80,</span> <span class="pre">81,</span> <span class="pre">82,</span> <span class="pre">83,</span> <span class="pre">84,</span> <span class="pre">85,</span> <span class="pre">86,</span> <span class="pre">87,</span> <span class="pre">88,</span> <span class="pre">89,</span> <span class="pre">90,</span> <span class="pre">91,</span> <span class="pre">92,</span> <span class="pre">93,</span> <span class="pre">94,</span> <span class="pre">95,</span> <span class="pre">96,</span> <span class="pre">97,</span> <span class="pre">98,</span> <span class="pre">99,</span> <span class="pre">100)}</span></em><a class="headerlink" href="#FuturePathAPI.Rolling.DiePicker.diceDict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DiePicker.getDie">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getDie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">die</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rerollDie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subAll</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addAll</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DiePicker.getDie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DiePicker.rerollNumber">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rerollNumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">die</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DiePicker.rerollNumber" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DiePicker.rerollOnes">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rerollOnes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">die</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DiePicker.rerollOnes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieRoller">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">DieRoller</span></span><a class="headerlink" href="#FuturePathAPI.Rolling.DieRoller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#FuturePathAPI.Rolling.Roller" title="FuturePathAPI.Rolling.Roller"><code class="xref py py-class docutils literal notranslate"><span class="pre">FuturePathAPI.Rolling.Roller</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieRoller.rollDice">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rollDice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dice</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connectors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diceOptions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DieRoller.rollDice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieRoller.rollDie">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rollDie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DieRoller.rollDie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.DieRoller.rollTotal">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rollTotal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">die</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dieOptions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.DieRoller.rollTotal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Memorizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">Memorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Memorizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Decorator. Caches a function’s return value each time it is called.
+If called later with the same arguments, the cached value is returned
+(not reevaluated).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.ProbabilityMemorizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">ProbabilityMemorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.ProbabilityMemorizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#FuturePathAPI.Rolling.Memorizer" title="FuturePathAPI.Rolling.Memorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">FuturePathAPI.Rolling.Memorizer</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.RollProbabilityGenerator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">RollProbabilityGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.RollProbabilityGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Roller">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">Roller</span></span><a class="headerlink" href="#FuturePathAPI.Rolling.Roller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Roller.getProbabilities">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getProbabilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">die</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repeat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Roller.getProbabilities" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Roller.reducer">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reducer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">multipler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Roller.reducer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">Rolling</span></span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.HighFantasyCharacterStats">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HighFantasyCharacterStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.HighFantasyCharacterStats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.LowFantasyCharacterStats">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LowFantasyCharacterStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.LowFantasyCharacterStats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.NormalCharacterStats">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NormalCharacterStats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.NormalCharacterStats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d10">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d10</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d10" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d12">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d12</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d12" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d2">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d20">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d20</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d20" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d4">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d6">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d6</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d6" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.d8">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">d8</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.d8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.jsonRoller">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jsonRoller</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dJson</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.jsonRoller" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.Rolling.roller">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">roller</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">die</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dieOptions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.Rolling.roller" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.choice">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">choice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.choice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a random sample from a given 1-D array</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.7.0.</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>New code should use the <code class="docutils literal notranslate"><span class="pre">choice</span></code> method of a <code class="docutils literal notranslate"><span class="pre">default_rng()</span></code>
+instance instead; please see the <span class="xref std std-ref">random-quick-start</span>.</p>
+</div>
+<dl class="simple">
+<dt>a<span class="classifier">1-D array-like or int</span></dt><dd><p>If an ndarray, a random sample is generated from its elements.
+If an int, the random sample is generated as if it were <code class="docutils literal notranslate"><span class="pre">np.arange(a)</span></code></p>
+</dd>
+<dt>size<span class="classifier">int or tuple of ints, optional</span></dt><dd><p>Output shape.  If the given shape is, e.g., <code class="docutils literal notranslate"><span class="pre">(m,</span> <span class="pre">n,</span> <span class="pre">k)</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">*</span> <span class="pre">n</span> <span class="pre">*</span> <span class="pre">k</span></code> samples are drawn.  Default is None, in which case a
+single value is returned.</p>
+</dd>
+<dt>replace<span class="classifier">boolean, optional</span></dt><dd><p>Whether the sample is with or without replacement. Default is True,
+meaning that a value of <code class="docutils literal notranslate"><span class="pre">a</span></code> can be selected multiple times.</p>
+</dd>
+<dt>p<span class="classifier">1-D array-like, optional</span></dt><dd><p>The probabilities associated with each entry in a.
+If not given, the sample assumes a uniform distribution over all
+entries in <code class="docutils literal notranslate"><span class="pre">a</span></code>.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>samples<span class="classifier">single item or ndarray</span></dt><dd><p>The generated random samples</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>ValueError</dt><dd><p>If a is an int and less than zero, if a or p are not 1-dimensional,
+if a is an array-like of size 0, if p is not a vector of
+probabilities, if a and p have different lengths, or if
+replace=False and the sample size is greater than the population
+size</p>
+</dd>
+</dl>
+<p>randint, shuffle, permutation
+Generator.choice: which should be used in new code</p>
+<p>Setting user-specified probabilities through <code class="docutils literal notranslate"><span class="pre">p</span></code> uses a more general but less
+efficient sampler than the default. The general sampler produces a different sample
+than the optimized sampler even if each element of <code class="docutils literal notranslate"><span class="pre">p</span></code> is 1 / len(a).</p>
+<p>Sampling random rows from a 2-D array is not possible with this function,
+but is possible with <cite>Generator.choice</cite> through its <code class="docutils literal notranslate"><span class="pre">axis</span></code> keyword.</p>
+<p>Generate a uniform random sample from np.arange(5) of size 3:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">array([0, 3, 4]) # random</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#This is equivalent to np.random.randint(0,5,3)</span>
+</pre></div>
+</div>
+<p>Generate a non-uniform random sample from np.arange(5) of size 3:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="go">array([3, 3, 0]) # random</span>
+</pre></div>
+</div>
+<p>Generate a uniform random sample from np.arange(5) of size 3 without
+replacement:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">array([3,1,0]) # random</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#This is equivalent to np.random.permutation(np.arange(5))[:3]</span>
+</pre></div>
+</div>
+<p>Generate a non-uniform random sample from np.arange(5) of size
+3 without replacement:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="go">array([2, 3, 0]) # random</span>
+</pre></div>
+</div>
+<p>Any of the above can be repeated with an arbitrary array-like
+instead of just integers. For instance:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">aa_milne_arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pooh&#39;</span><span class="p">,</span> <span class="s1">&#39;rabbit&#39;</span><span class="p">,</span> <span class="s1">&#39;piglet&#39;</span><span class="p">,</span> <span class="s1">&#39;Christopher&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">aa_milne_arr</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
+<span class="go">array([&#39;pooh&#39;, &#39;pooh&#39;, &#39;pooh&#39;, &#39;Christopher&#39;, &#39;piglet&#39;], # random</span>
+<span class="go">      dtype=&#39;&lt;U11&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.covertToDigit">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">covertToDigit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmpStr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.covertToDigit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.getStackTrace">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">getStackTrace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.getStackTrace" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This is a useful troubleshooting tool</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.parse_dice_options">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">parse_dice_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.parse_dice_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.parse_die_options">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">parse_die_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.parse_die_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.randomPicker">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">randomPicker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.randomPicker" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>A wrapper for the numpy choice</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>choices</strong> – a list or iterable to choose from</p></li>
+<li><p><strong>p</strong> – probabilities</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.reverseSplitString">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">reverseSplitString</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">re.compile('(\\d){0,3}d\\d{1,2}')</span></em><a class="headerlink" href="#FuturePathAPI.Rolling.reverseSplitString" title="Permalink to this definition">¶</a></dt>
+<dd><span class="target" id="module-Rolling"></span></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.rollCharacter">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">rollCharacter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.rollCharacter" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Auto roll the 6 ability stats for a new character.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Args:</dt><dd><p>level</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>level</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.roll_from_get">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">roll_from_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dString</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.roll_from_get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.roll_from_json">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">roll_from_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.roll_from_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.authentication">
+<span id="futurepathapi-authentication-module"></span><h2>FuturePathAPI.authentication module<a class="headerlink" href="#module-FuturePathAPI.authentication" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.authentication.authentication">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.authentication.</span></span><span class="sig-name descname"><span class="pre">authentication</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.authentication.authentication" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Login request</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.authentication.load_user">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.authentication.</span></span><span class="sig-name descname"><span class="pre">load_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.authentication.load_user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.authentication.testAuth">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.authentication.</span></span><span class="sig-name descname"><span class="pre">testAuth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.authentication.testAuth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.authentication.user_required">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.authentication.</span></span><span class="sig-name descname"><span class="pre">user_required</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.authentication.user_required" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.initApp">
+<span id="futurepathapi-initapp-module"></span><h2>FuturePathAPI.initApp module<a class="headerlink" href="#module-FuturePathAPI.initApp" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.initApp.not_found">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.initApp.</span></span><span class="sig-name descname"><span class="pre">not_found</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.initApp.not_found" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.tasks">
+<span id="futurepathapi-tasks-module"></span><h2>FuturePathAPI.tasks module<a class="headerlink" href="#module-FuturePathAPI.tasks" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.tasks.get_tasks">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.tasks.</span></span><span class="sig-name descname"><span class="pre">get_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.tasks.get_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This returns a list of possible tasks</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.tasks.get_tasks_id">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.tasks.</span></span><span class="sig-name descname"><span class="pre">get_tasks_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">taskid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.tasks.get_tasks_id" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This returns information regarding a particular task</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>taskid</strong> – a integervalue</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.tasks.get_tasks_name">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.tasks.</span></span><span class="sig-name descname"><span class="pre">get_tasks_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.tasks.get_tasks_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.user">
+<span id="futurepathapi-user-module"></span><h2>FuturePathAPI.user module<a class="headerlink" href="#module-FuturePathAPI.user" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.user.user_info">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.user.</span></span><span class="sig-name descname"><span class="pre">user_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.user.user_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.user.user_tasks">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.user.</span></span><span class="sig-name descname"><span class="pre">user_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.user.user_tasks" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This returns a list of possible username tasks</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>JSON</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-FuturePathAPI">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-FuturePathAPI" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">d20FuturePath APIs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Ryan Henrichson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/FuturePathAPI.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
