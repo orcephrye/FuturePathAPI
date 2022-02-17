@@ -58,7 +58,7 @@ def rollCharacter(level):
     """
 
     accept = request.headers.get('Accept', 'application/json').lower().strip()
-    print(f'accept = {accept}')
+    # print(f'accept = {accept}')
     level = level.lower().strip()
     if level == "normal":
         return jsonify(Rolling.NormalCharacterStats())
@@ -381,7 +381,7 @@ def _getProbability(die, repeat=1):
 
 @DieAnylizerMemorizer
 def _determineNumbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
-    print(f'_determineNumbers:\n\tdString: {dString}\n\trerollDie: {rerollDie}\n\tsubAll: {subAll}\n\taddAll: {addAll}')
+    # print(f'_determineNumbers:\n\tdString: {dString}\n\trerollDie: {rerollDie}\n\tsubAll: {subAll}\n\taddAll: {addAll}')
     die = determineDie.search(dString)
     if not die:
         raise Exception('Cannot determine die!')
@@ -495,7 +495,7 @@ class Roller(object):
 
     @staticmethod
     def _roller(die, multipler):
-        print(f'_roller:\n\tdie: {die}\n\tmultipler: {multipler}')
+        # print(f'_roller:\n\tdie: {die}\n\tmultipler: {multipler}')
         if type(multipler) is list:
             return sum([randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
                         for rpg in [_getProbability(die, repeat=m) for m in multipler]])
@@ -576,7 +576,7 @@ class DieRoller(Roller):
 
     @staticmethod
     def rollDie(*args, **kwargs):
-        print("rollDie:\n\targs; %s\n\tkwargs: %s" % (args, kwargs))
+        # print("rollDie:\n\targs; %s\n\tkwargs: %s" % (args, kwargs))
         die, multipler = None, None
         if not args:
             return None
@@ -593,7 +593,7 @@ class DieRoller(Roller):
 
     @staticmethod
     def rollTotal(die, modifier, dieOptions):
-        print("rollTotal:\n\tdie; %s\n\tmodifier: %s\n\tdieOptions: %s" % (die, modifier, dieOptions))
+        # print("rollTotal:\n\tdie; %s\n\tmodifier: %s\n\tdieOptions: %s" % (die, modifier, dieOptions))
         roll = DieRoller.rollDie(*die, **dict(dieOptions))
         if not isinstance(modifier, str):
             return roll
