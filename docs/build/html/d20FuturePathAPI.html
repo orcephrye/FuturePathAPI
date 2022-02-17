@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>d20 Future Path API Documentation &mdash; d20FuturePath APIs v1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> d20FuturePath APIs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">d20 Future Path API Documentation</a><ul>
+<li><a class="reference internal" href="#module-FuturePathAPI.FuturePathMain">FuturePath API Index</a></li>
+<li><a class="reference internal" href="#module-FuturePathAPI.authentication">Authentication</a></li>
+<li><a class="reference internal" href="#module-FuturePathAPI.tasks">Tasks</a></li>
+<li><a class="reference internal" href="#module-FuturePathAPI.Rolling">Tasks:Rolling</a></li>
+<li><a class="reference internal" href="#module-FuturePathAPI.user">Users</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">d20FuturePath APIs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>d20 Future Path API Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/d20FuturePathAPI.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="d20-future-path-api-documentation">
+<h1>d20 Future Path API Documentation<a class="headerlink" href="#d20-future-path-api-documentation" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Ryan Henrichson</p>
+</dd>
+<dt class="field-even">Version</dt>
+<dd class="field-even"><p>1.0 of 2/17/2022</p>
+</dd>
+<dt class="field-odd">BASE URL</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://api.d20futurepath.com">http://api.d20futurepath.com</a></p>
+</dd>
+<dt class="field-even">VERSION</dt>
+<dd class="field-even"><p>/v1</p>
+</dd>
+<dt class="field-odd">INDEX END POINT</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://api.d20futurepath.com/v1/">http://api.d20futurepath.com/v1/</a></p>
+</dd>
+</dl>
+<section id="module-FuturePathAPI.FuturePathMain">
+<span id="futurepath-api-index"></span><h2>FuturePath API Index<a class="headerlink" href="#module-FuturePathAPI.FuturePathMain" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.FuturePathMain.index">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.FuturePathMain.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.FuturePathMain.index" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>This returns a JSON blob showing the different actions/paths from the root/index of the API.</p>
+</dd>
+<dt class="field-even">Content-Type</dt>
+<dd class="field-even"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.authentication">
+<span id="authentication"></span><h2>Authentication<a class="headerlink" href="#module-FuturePathAPI.authentication" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.authentication.authentication">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.authentication.</span></span><span class="sig-name descname"><span class="pre">authentication</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.authentication.authentication" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET, POST</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/login</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>If used with GET this will return a JSON blob showing the different end points for /login. If used with POST
+this expects a username and password passed as JSON IE: “{“username”: &lt;username&gt;, “password”: &lt;password&gt;}” and
+will return a 24 hour temporary token. “{“Token”: &lt;api_token&gt;}”.</p>
+</dd>
+<dt class="field-even">Accept</dt>
+<dd class="field-even"><p>application/json</p>
+</dd>
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.authentication.testAuth">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.authentication.</span></span><span class="sig-name descname"><span class="pre">testAuth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.authentication.testAuth" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/login/protected</p>
+</dd>
+<dt class="field-odd">HEADERS</dt>
+<dd class="field-odd"><p>Token</p>
+</dd>
+<dt class="field-even">DESC</dt>
+<dd class="field-even"><p>This is a way to confirm that the provided token is valid and working. The user identification excepts
+the API Token to be passed via a HEADER ‘Token’.</p>
+</dd>
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.tasks">
+<span id="tasks"></span><h2>Tasks<a class="headerlink" href="#module-FuturePathAPI.tasks" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.tasks.get_tasks">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.tasks.</span></span><span class="sig-name descname"><span class="pre">get_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.tasks.get_tasks" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/tasks</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>This returns a JSON blob showing the different end points from the ‘/tasks’ directory.</p>
+</dd>
+<dt class="field-even">Content-Type</dt>
+<dd class="field-even"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.tasks.get_tasks_id">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.tasks.</span></span><span class="sig-name descname"><span class="pre">get_tasks_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">taskid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.tasks.get_tasks_id" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/tasks/&lt;int:id&gt;</p>
+</dd>
+<dt class="field-odd">VARIABLES</dt>
+<dd class="field-odd"><p>id (integer)</p>
+</dd>
+<dt class="field-even">DESC</dt>
+<dd class="field-even"><p>This returns a JSON blod with information regarding a particular task</p>
+</dd>
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.tasks.get_tasks_name">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.tasks.</span></span><span class="sig-name descname"><span class="pre">get_tasks_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.tasks.get_tasks_name" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/tasks/&lt;name&gt;</p>
+</dd>
+<dt class="field-odd">VARIABLES</dt>
+<dd class="field-odd"><p>name (string)</p>
+</dd>
+<dt class="field-even">DESC</dt>
+<dd class="field-even"><p>This returns a JSON blod with information regarding a particular task.</p>
+</dd>
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.Rolling">
+<span id="tasks-rolling"></span><h2>Tasks:Rolling<a class="headerlink" href="#module-FuturePathAPI.Rolling" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.rollCharacter">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">rollCharacter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.rollCharacter" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/tasks/roll/character/&lt;level&gt;</p>
+</dd>
+<dt class="field-odd">VARIABLES</dt>
+<dd class="field-odd"><p>level (string= low/normal/high)</p>
+</dd>
+<dt class="field-even">DESC</dt>
+<dd class="field-even"><p>This returns a JSON blob with 6 numbers representing character stats.</p>
+</dd>
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json or application/html (if error)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.roll_from_get">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">roll_from_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dString</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.roll_from_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/tasks/roll/&lt;dString&gt;</p>
+</dd>
+<dt class="field-odd">VARIABLES</dt>
+<dd class="field-odd"><p>dString (string) This stands for Die or Dice String.</p>
+</dd>
+<dt class="field-even">PARAM</dt>
+<dd class="field-even"><p>dropLowest, rerollTotal, rerollDie, subAll, addAll</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>The Die or Dice described in dString is analyzed for rolling. HTTP Parameters are passed to adjust the
+rolling.</p>
+</dd>
+</dl>
+<dl>
+<dt>Examples:</dt><dd><ul>
+<li><p>/d20 (Roll a single twenty sided dice. Notice the lack of a 1 IE: 1d20 both are acceptable options)</p></li>
+<li><p>/2d4+2 (Roll two four sided dice and add two to the total.</p></li>
+<li><p>/1d20+1d4+2 (Roll one twenty sided die and then roll one four sided die total them together and add two.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>NOTE: It is not recommended to roll more than one die or set of dice IE: 1d20 or 2d4 using this
+method. There are limitations. The die options provided are passed to all applicable dice. It cannot pass
+dice options only die options.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>/4d6?dropLowest=1 (Roll 4 size sided dice and then drop the lowest die. Provide the total of the remaining 3)</p></li>
+</ul>
+</dd>
+<dt>dropLowest: (default value: False)</dt><dd><p>This can be either False, True, or Int. True == 1. If True or 1 then this
+causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+it will drop the lowest die X number of times.</p>
+</dd>
+<dt>rerollTotal: (default value: False)</dt><dd><p>This needs to be an integer. This will cause the roller to reroll the
+dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+logic to control the number of reroll attempts.</p>
+</dd>
+<dt>rerollDie: (default value: False)</dt><dd><p>This has to be an Int or a list of Ints. This will actually remove that Int
+or list of Ints from the possible roll of the die. So that when the die is rolled it can never choose that
+number.</p>
+</dd>
+<dt>subAll: (default value: 0)</dt><dd><p>This has to be an Int. This adjusts the probability range of ALL die to be rolled
+by subtracting the Int value off ALL possible numbers before rolling.</p>
+</dd>
+<dt>addAll: (default value: 0)</dt><dd><p>This has to be an Int. This acts like subAll. It  adjusts the probability range of
+ALL die to be rolled by adding the Int value off ALL possible numbers before rolling.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.Rolling.roll_from_json">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.Rolling.</span></span><span class="sig-name descname"><span class="pre">roll_from_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.Rolling.roll_from_json" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>POST</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/tasks/roll</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>This requires a JSON blob to be sent. It is a more advanced and comprehensive version of the roll_from_get
+function.</p>
+<p>Example One: (Equal too 2d4+2?dropLowest=1)</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dString&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2d4&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;modifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;+2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dieOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;dropLowest&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Example Two: (Same as above)</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dice&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;dString&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2d4&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;modifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;+2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;dieOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;dropLowest&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Example Three: (Takes advantage of the ‘dice’ list to combine dice together using the ‘connectorString’)</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dice&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;dString&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;d20&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;connectorString&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;+&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;dString&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;d4&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;modifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;+2&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Example Four: (rolling a new Character’s ability score)</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;dice&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;dString&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4d6&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;dieOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;dropLowest&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rerollTotal&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;diceOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;repeatRoll&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>JSON Requirements:</dt><dd><ul class="simple">
+<li><p>Each die in the dice has to have an id. That id will be used to sort the correct order.</p></li>
+<li><p>dString should only have 1 die roll in it. IE: 1d20 or 2d4 but NOT 1d20+2d4</p></li>
+<li><p>Modifiers in the dString will be ignored. A modifier should be passed with the ‘modifier’ key.</p></li>
+<li><p>‘connectorString’ can only be a ‘+’ or ‘-’ and HAS to exist in order for the next die to be added.</p></li>
+<li><p>dieOptions key is used to identify options to a specific dString and will be passed to only that roll.</p></li>
+<li><p>diceOptions key is used outside of the ‘dice’ list and will be applied globally.</p></li>
+<li><p>The top keys are ‘dice’, ‘diceOptions’ and ‘modifier’.</p></li>
+<li><p>An item in the ‘dice’ list should have ‘id, ‘dString’, and can have ‘modifier’, ‘connectorString’,
+and ‘dieOptions’.</p></li>
+<li><p>dieOptions are: ‘dropLowest’, ‘rerollTotal’, ‘rerollDie’. ‘subAll’, ‘addAll’.</p></li>
+<li><p>diceOptions are: ‘dropLowest’, ‘subAll’, ‘addAll’, ‘repeatRoll’</p></li>
+</ul>
+</dd>
+<dt>dropLowest: (default value: False)</dt><dd><p>This can be either False, True, or Int. True == 1. If True or 1 then this
+causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+it will drop the lowest die X number of times.</p>
+</dd>
+<dt>rerollTotal: (default value: False)</dt><dd><p>Is for ‘dieOptions’ only. This needs to be an integer. This will cause the roller to reroll the
+dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+logic to control the number of reroll attempts.</p>
+</dd>
+<dt>rerollDie: (default value: False)</dt><dd><p>Is for ‘dieOptions’ only. This has to be an Int or a list of Ints. This will actually remove that Int
+or list of Ints from the possible roll of the die. So that when the die is rolled it can never choose that
+number.</p>
+</dd>
+<dt>subAll: (default value: 0)</dt><dd><p>This has to be an Int. This adjusts the probability range of ALL die to be rolled
+by subtracting the Int value off ALL possible numbers before rolling.</p>
+</dd>
+<dt>addAll: (default value: 0)</dt><dd><p>This has to be an Int. This acts like subAll. It  adjusts the probability range of
+ALL die to be rolled by adding the Int value off ALL possible numbers before rolling.</p>
+</dd>
+<dt>repeatRoll: (default value: False)</dt><dd><p>Is for ‘diceOptions’ only. This has to be an Int. This will take each die give in the ‘dices’ list
+and preform the same action Int number of times. Max 10. The return json will look as if the request was
+originally submitted asking for each roll. (Helpful for when testing)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Accept</dt>
+<dd class="field-even"><p>application/json</p>
+</dd>
+<dt class="field-odd">Content-Type</dt>
+<dd class="field-odd"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-FuturePathAPI.user">
+<span id="users"></span><h2>Users<a class="headerlink" href="#module-FuturePathAPI.user" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.user.user_info">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.user.</span></span><span class="sig-name descname"><span class="pre">user_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.user.user_info" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/u/&lt;username&gt;/info</p>
+</dd>
+<dt class="field-odd">VARIABLES</dt>
+<dd class="field-odd"><p>username (string)</p>
+</dd>
+<dt class="field-even">HEADERS</dt>
+<dd class="field-even"><p>Token</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>This returns a JSON blob with information regarding the specified user. Must have a valid API Token for that
+user.</p>
+</dd>
+<dt class="field-even">Content-Type</dt>
+<dd class="field-even"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="FuturePathAPI.user.user_tasks">
+<span class="sig-prename descclassname"><span class="pre">FuturePathAPI.user.</span></span><span class="sig-name descname"><span class="pre">user_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FuturePathAPI.user.user_tasks" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">OPTIONS</dt>
+<dd class="field-odd"><p>GET</p>
+</dd>
+<dt class="field-even">PATH</dt>
+<dd class="field-even"><p>/u</p>
+</dd>
+<dt class="field-odd">DESC</dt>
+<dd class="field-odd"><p>This returns a JSON blob showing the different end points from the ‘/u’ directory.</p>
+</dd>
+<dt class="field-even">Content-Type</dt>
+<dd class="field-even"><p>application/json</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryan Henrichson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -50,12 +50,11 @@ def randomPicker(choices, p):
 @app.route('/tasks/roll/character/<level>', methods=['GET'])
 def rollCharacter(level):
     """
-        Auto roll the 6 ability stats for a new character.
-
-    Args:
-        level
-    :param level:
-    :return:
+        :OPTIONS: GET
+        :PATH: /tasks/roll/character/<level>
+        :VARIABLES: level (string= low/normal/high)
+        :DESC: This returns a JSON blob with 6 numbers representing character stats.
+        :Content-Type: application/json or application/html (if error)
     """
 
     accept = request.headers.get('Accept', 'application/json').lower().strip()
@@ -128,6 +127,44 @@ def parse_dice_options(options):
 
 @app.route('/tasks/roll/<dString>', methods=['GET'])
 def roll_from_get(dString):
+    """
+        :OPTIONS: GET
+        :PATH: /tasks/roll/<dString>
+        :VARIABLES: dString (string) This stands for Die or Dice String.
+        :PARAM: dropLowest, rerollTotal, rerollDie, subAll, addAll
+        :DESC: The Die or Dice described in dString is analyzed for rolling. HTTP Parameters are passed to adjust the
+            rolling.
+        Examples:
+            * /d20 (Roll a single twenty sided dice. Notice the lack of a 1 IE: 1d20 both are acceptable options)
+            * /2d4+2 (Roll two four sided dice and add two to the total.
+            * /1d20+1d4+2 (Roll one twenty sided die and then roll one four sided die total them together and add two.
+
+                * NOTE: It is not recommended to roll more than one die or set of dice IE: 1d20 or 2d4 using this
+                  method. There are limitations. The die options provided are passed to all applicable dice. It cannot pass
+                  dice options only die options.
+
+            * /4d6?dropLowest=1 (Roll 4 size sided dice and then drop the lowest die. Provide the total of the remaining 3)
+
+        dropLowest: (default value: False)
+            This can be either False, True, or Int. True == 1. If True or 1 then this
+            causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+            it will drop the lowest die X number of times.
+        rerollTotal: (default value: False)
+            This needs to be an integer. This will cause the roller to reroll the
+            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+            logic to control the number of reroll attempts.
+        rerollDie: (default value: False)
+            This has to be an Int or a list of Ints. This will actually remove that Int
+            or list of Ints from the possible roll of the die. So that when the die is rolled it can never choose that
+            number.
+        subAll: (default value: 0)
+            This has to be an Int. This adjusts the probability range of ALL die to be rolled
+            by subtracting the Int value off ALL possible numbers before rolling.
+        addAll: (default value: 0)
+            This has to be an Int. This acts like subAll. It  adjusts the probability range of
+            ALL die to be rolled by adding the Int value off ALL possible numbers before rolling.
+        :Content-Type: application/json
+     """
 
     if len(dString) > 36:
         abort(500)
@@ -146,6 +183,109 @@ def roll_from_get(dString):
 
 @app.route('/tasks/roll', methods=['POST'])
 def roll_from_json():
+    """
+    :OPTIONS: POST
+    :PATH: /tasks/roll
+    :DESC: This requires a JSON blob to be sent. It is a more advanced and comprehensive version of the roll_from_get
+        function.
+
+        Example One: (Equal too 2d4+2?dropLowest=1)
+
+        .. code-block:: json
+
+            {
+                "dString": "2d4",
+                "modifier": "+2",
+                "dieOptions": {"dropLowest": "1"}
+            }
+
+        Example Two: (Same as above)
+
+        .. code-block:: json
+
+            {
+                "dice": [
+                    {
+                        "id": 1,
+                        "dString": "2d4",
+                        "modifier": "+2",
+                        "dieOptions": {"dropLowest": 1}
+                        }
+                    ]
+            }
+
+        Example Three: (Takes advantage of the 'dice' list to combine dice together using the 'connectorString')
+
+        .. code-block:: json
+
+            {
+                "dice": [
+                    {
+                        "id": 1,
+                        "dString": "d20",
+                        "connectorString": "+"
+                    },
+                    {
+                        "id": 2,
+                        "dString": "d4",
+                        "modifier": "+2"
+                    }
+                ]
+            }
+
+        Example Four: (rolling a new Character's ability score)
+
+        .. code-block:: json
+
+            {
+                "dice": [
+                    {
+                        "id": 1,
+                        "dString": "4d6",
+                        "dieOptions": {"dropLowest": 1, "rerollTotal": 10}
+                    }
+                ],
+                "diceOptions": {"repeatRoll": 6}
+            }
+
+        JSON Requirements:
+            * Each die in the dice has to have an id. That id will be used to sort the correct order.
+            * dString should only have 1 die roll in it. IE: 1d20 or 2d4 but NOT 1d20+2d4
+            * Modifiers in the dString will be ignored. A modifier should be passed with the 'modifier' key.
+            * 'connectorString' can only be a '+' or '-' and HAS to exist in order for the next die to be added.
+            * dieOptions key is used to identify options to a specific dString and will be passed to only that roll.
+            * diceOptions key is used outside of the 'dice' list and will be applied globally.
+            * The top keys are 'dice', 'diceOptions' and 'modifier'.
+            * An item in the 'dice' list should have 'id, 'dString', and can have 'modifier', 'connectorString',
+              and 'dieOptions'.
+            * dieOptions are: 'dropLowest', 'rerollTotal', 'rerollDie'. 'subAll', 'addAll'.
+            * diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll'
+
+        dropLowest: (default value: False)
+            This can be either False, True, or Int. True == 1. If True or 1 then this
+            causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+            it will drop the lowest die X number of times.
+        rerollTotal: (default value: False)
+            Is for 'dieOptions' only. This needs to be an integer. This will cause the roller to reroll the
+            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+            logic to control the number of reroll attempts.
+        rerollDie: (default value: False)
+            Is for 'dieOptions' only. This has to be an Int or a list of Ints. This will actually remove that Int
+            or list of Ints from the possible roll of the die. So that when the die is rolled it can never choose that
+            number.
+        subAll: (default value: 0)
+            This has to be an Int. This adjusts the probability range of ALL die to be rolled
+            by subtracting the Int value off ALL possible numbers before rolling.
+        addAll: (default value: 0)
+            This has to be an Int. This acts like subAll. It  adjusts the probability range of
+            ALL die to be rolled by adding the Int value off ALL possible numbers before rolling.
+        repeatRoll: (default value: False)
+            Is for 'diceOptions' only. This has to be an Int. This will take each die give in the 'dices' list
+            and preform the same action Int number of times. Max 10. The return json will look as if the request was
+            originally submitted asking for each roll. (Helpful for when testing)
+    :Accept: application/json
+    :Content-Type: application/json
+    """
     if not request.json:
         abort(400)
 

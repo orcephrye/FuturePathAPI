@@ -25,8 +25,10 @@ utasks = [
 @app.route('/u', methods=['GET'])
 def user_tasks():
     """
-        This returns a list of possible username tasks
-    :return: JSON
+    :OPTIONS: GET
+    :PATH: /u
+    :DESC: This returns a JSON blob showing the different end points from the '/u' directory.
+    :Content-Type: application/json
     """
     return jsonify({'Username Tasks': utasks})
 
@@ -34,4 +36,13 @@ def user_tasks():
 @app.route('/u/<username>/info', methods=['GET'])
 @login_required
 def user_info():
+    """
+     :OPTIONS: GET
+     :PATH: /u/<username>/info
+     :VARIABLES: username (string)
+     :HEADERS: Token
+     :DESC: This returns a JSON blob with information regarding the specified user. Must have a valid API Token for that
+        user.
+     :Content-Type: application/json
+     """
     return jsonify({'WorkInProgress': "This end point has yet to be implemented"})

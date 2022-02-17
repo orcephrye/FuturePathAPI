@@ -43,8 +43,10 @@ options = [
 @app.route('/', methods=['GET'])
 def index():
     """
-        This returns a list of possible end points available from the root directory.
-    :return: JSON
+    :OPTIONS: GET
+    :PATH: /
+    :DESC: This returns a JSON blob showing the different actions/paths from the root/index of the API.
+    :Content-Type: application/json
     """
     return jsonify({'FuturePath API Options': options})
 

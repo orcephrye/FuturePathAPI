@@ -11,9 +11,15 @@ Welcome to d20FuturePath APIs's documentation!
    :caption: Contents:
 
 
+API Documentation
+=================
+The Documentation for the API:
+
+* :doc:`d20FuturePathAPI`
 
 Indices and tables
 ==================
+The Documentation for the whole code base:
 
 * :ref:`genindex`
 * :ref:`modindex`

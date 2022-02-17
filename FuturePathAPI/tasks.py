@@ -44,8 +44,10 @@ tasks = [
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     """
-        This returns a list of possible tasks
-    :return:
+    :OPTIONS: GET
+    :PATH: /tasks
+    :DESC: This returns a JSON blob showing the different end points from the '/tasks' directory.
+    :Content-Type: application/json
     """
     return jsonify({'tasks': tasks})
 
@@ -53,9 +55,11 @@ def get_tasks():
 @app.route('/tasks/<int:id>', methods=['GET'])
 def get_tasks_id(taskid):
     """
-        This returns information regarding a particular task
-    :param taskid: a integervalue
-    :return:
+    :OPTIONS: GET
+    :PATH: /tasks/<int:id>
+    :VARIABLES: id (integer)
+    :DESC: This returns a JSON blod with information regarding a particular task
+    :Content-Type: application/json
     """
     for item in tasks:
         if item['id'] == taskid:
@@ -65,6 +69,13 @@ def get_tasks_id(taskid):
 
 @app.route('/tasks/<name>', methods=['GET'])
 def get_tasks_name(name):
+    """
+    :OPTIONS: GET
+    :PATH: /tasks/<name>
+    :VARIABLES: name (string)
+    :DESC: This returns a JSON blod with information regarding a particular task.
+    :Content-Type: application/json
+    """
     for item in tasks:
         if item['name'] == name:
             return jsonify(item)

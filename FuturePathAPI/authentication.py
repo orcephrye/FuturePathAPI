@@ -51,6 +51,14 @@ def user_required(func):
 @app.route('/login/protected', methods=['GET'])
 @login_required
 def testAuth():
+    """
+    :OPTIONS: GET
+    :PATH: /login/protected
+    :HEADERS: Token
+    :DESC: This is a way to confirm that the provided token is valid and working. The user identification excepts
+        the API Token to be passed via a HEADER 'Token'.
+    :Content-Type: application/json
+    """
     return jsonify({'Auth': "Auth Test"}), 200
 
 
@@ -70,8 +78,13 @@ def load_user(data, *args, **kwargs):
 @app.route('/login', methods=['GET', 'POST'])
 def authentication():
     """
-        Login request
-    :return:
+    :OPTIONS: GET, POST
+    :PATH: /login
+    :DESC: If used with GET this will return a JSON blob showing the different end points for /login. If used with POST
+        this expects a username and password passed as JSON IE: "{"username": <username>, "password": <password>}" and
+        will return a 24 hour temporary token. "{"Token": <api_token>}".
+    :Accept: application/json
+    :Content-Type: application/json
     """
     if request.method == 'GET' or request.method == 'OPTION':
         return jsonify({'Authentication Tasks': authentication_tasks})
