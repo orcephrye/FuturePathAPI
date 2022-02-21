@@ -36,6 +36,13 @@ options = [
         'description': u'\'u\' is short for \'user\'. Access under this directory requires a TOKEN provided by '
                        u'authentication.',
         'uri': f"{END_POINT}/u"
+    },
+    {
+        'id': 4,
+        'name': u'Read_the_Docs',
+        'description': u'Visit the documentation via a web browser: '
+                       u'http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html',
+        'uri': 'http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html'
     }
 ]
 
