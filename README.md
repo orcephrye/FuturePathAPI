@@ -19,7 +19,6 @@ The tool will be used to make customized weapons/ships and characters easier.
 
 ## Install
 
-----
 This is not meant to be installed as a program but deployed as a web app. Use the provided requirements.txt to install
 dependencies. 
 
@@ -31,7 +30,6 @@ pip install -r requirements.txt
 
 ## Run
 
-----
 This tool uses gunicorn and by default binds to port 8000. Edit the guincorn_config.py file to make changes.
 
 ```sh
@@ -41,7 +39,6 @@ SCRIPT_NAME=/v1 gunicorn-3.8  --config gunicorn_config.py run:app
 
 ## Setup as a systemd service.
 
-----
 Example systemd configuration file below. Insert that file into: '/etc/systemd/system/d20FuturePathAPI.service'
 
 ```yaml
@@ -70,5 +67,4 @@ systemctl status d20FuturePathAPI
 
 ## Documentation:
 
-----
 Documentation [d20 Future Path API Docs](http://api.d20futurepath.com/docs/build/html/index.html)
