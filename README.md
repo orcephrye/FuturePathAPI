@@ -9,7 +9,7 @@ d20 Future Path API
 
 ### Currently Under Development!!!
 
-At the moment this tool really only used to emulate rolling dice. It is being used with the [Mobile Dice Roller App](https://github.com/orcephrye/mobileDiceRoller).
+At the moment this tool is really only used to emulate rolling dice. It is being used with the [Mobile Dice Roller App](https://github.com/orcephrye/mobileDiceRoller).
 However, sense it is a RESTful API it technically could be used for any purpose that requires random dice rolls between
 d2 and d100. It is arguably the most well-rounded and feature rich free dice rolling app available. It features adding
 modifiers, multiple dice simultaneously, and options like "dropLowest" or 'reRollTotal' and so on. 
