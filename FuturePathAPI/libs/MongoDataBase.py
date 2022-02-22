@@ -51,6 +51,7 @@ def loadYamlREDISConfig():
 
 def getRedis(checkConn=False):
     global redisServer
+    global  tokenExpire
     if redisServer is not None:
         if checkConn is False:
             return redisServer
@@ -62,6 +63,7 @@ def getRedis(checkConn=False):
         finally:
             return redisServer
     config = loadYamlREDISConfig()
+    tokenExpire = config.get('expire', 43200)
     redisServer = redis.StrictRedis(host=config.get('host', 'localhost'), port=config.get('port', 6379),
                                     db=config.get('db', 0))
     return redisServer
@@ -75,7 +77,7 @@ class MongoConnection(object):
     db = None
     dbName = None
 
-    def __init__(self, dbName, **kwargs):
+    def __init__(self, databaseName, **kwargs):
         try:
             config = loadYamlDBConfig()
             self.connection = MongoClient(host=kwargs.get('host', config.get('host', '127.0.0.1')),
@@ -83,9 +85,9 @@ class MongoConnection(object):
                                           username=kwargs.get('username', config.get('username', 'server')),
                                           password=kwargs.get('password', config.get('password', '')),
                                           authSource=kwargs.get('authSource', config.get('authSource', 'admin')))
-            self.db = self.connection[dbName]
+            self.db = self.connection[databaseName]
             self.defaultCollect = kwargs.get('collection', self.collections[0])
-            self.dbName = dbName
+            self.dbName = databaseName
         except Exception as e:
             log.error(f'Error while creating MongoConnection: {e}')
             log.debug(f'[DEBUG] for MongoConnection: {traceback.format_exc()}')
@@ -172,87 +174,62 @@ class MongoCollection(object):
         return self.collection
 
 
-class MongoConnectionOld(object):
+class UserManager(MongoConnection):
 
-    connection = None
-    db = None
-
-    def __init__(self):
-        try:
-            self.connection = MongoClient(host=host, port=port)
-            self.db = self.connection[dbName]
-        except Exception as e:
-            print(e)
-        super(MongoConnectionOld, self).__init__()
-
-    def insert(self, collection, data):
-        if self.db is None:
-            return None
-        return self.db[collection].insert_one(data)
-
-    def find(self, collection, data=None):
-        if self.db is None:
-            return None
-        return self.db[collection].find_one(data)
-
-    def update(self, collection, updateCriteria, data):
-        if self.db is None:
-            return None
-        setData = {'$set': data}
-        return self.db[collection].update_one(updateCriteria, setData)
-
-    def remove(self, collection, data):
-        if self.db is None:
-            return None
-        return self.db[collection].remove(data)
-
-
-class UserManager(MongoConnectionOld):
-
-    collection = 'usernames'
+    coll = None
+    config = None
 
     def __init__(self):
-        super(UserManager, self).__init__()
+        self.config = loadYamlDBConfig()
+        super(UserManager, self).__init__(databaseName=self.config.get('dbName', 'futurepathapi'))
         if self.db is None:
             raise Exception("ERROR: Unable to connect to DB!")
+        self.coll = MongoCollection(self, 'usernames')
         self.r = getRedis()
 
     def check_user(self, username):
-        return self.find(self.collection, {'username': username})
+        return self.coll.findOne(data={'username': username})
 
     def create_user(self, username, password):
         if self.check_user(username):
             return None
         password = UserManager.hash_password(password)
-        return self.insert(self.collection, {'username': username, 'password': password, 'token': ''})
+        return self.coll.insertOne({'username': username, 'password': password, 'token': ''})
 
     def remove_user(self, username):
         if self.check_user(username):
-            return self.remove(self.collection, {'username': username})
+            return self.coll.remove({'username': username})
         return None
 
     def applyToken(self, username, token):
         if not (username and token):
             return False
-        username = {'username': username}
-        token = {'token': token}
-        return self.update(self.collection, username, token)
+        return self.coll.update({'username': username}, {'token': token})
 
     def login(self, username, password):
         userData = self.check_user(username)
         if not userData:
             return None
-        hashed = str(userData['password'])
-        if self.check_password(str(password), str(hashed)):
-            token = str(userData.get('token'))
-            tmpUserName = self.r.get(token)
+        hashed = userData['password']
+        if self.check_password(password, hashed):
+            token = userData.get('token', '')
+            tmpUserName = self.get_from_cache(token)
             if tmpUserName == username:
                 return token
-            token = Serializer(password).dumps(username)
+            token = Serializer(password).dumps(username).decode('utf-8')
             self.applyToken(username, token)
             self.r.setex(token, tokenExpire, username)
             return token
         return False
+
+    def get_from_cache(self, key):
+        output = self.r.get(key)
+        if type(output) is bytes:
+            return output.decode('utf-8')
+        return output
+
+    def set_too_cache(self, key, value):
+        return self.r.setex(key, tokenExpire, value)
 
     @staticmethod
     def checkToken(token):
@@ -263,11 +240,11 @@ class UserManager(MongoConnectionOld):
 
     @staticmethod
     def hash_password(password):
-        return bcrypt.hashpw(password, bcrypt.gensalt())
+        return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
 
     @staticmethod
     def check_password(password, hashed):
-        return bcrypt.hashpw(password, hashed) == hashed
+        return bcrypt.hashpw(password.encode('utf-8'), hashed.encode('utf-8')).decode('utf-8') == hashed
 
 
 class User(UserMixin):
