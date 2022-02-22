@@ -381,7 +381,8 @@ def _getProbability(die, repeat=1):
 
 @DieAnylizerMemorizer
 def _determineNumbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
-    # print(f'_determineNumbers:\n\tdString: {dString}\n\trerollDie: {rerollDie}\n\tsubAll: {subAll}\n\taddAll: {addAll}')
+    # print(f'_determineNumbers:\n\tdString: {dString}\n\trerollDie:'
+    #       f' {rerollDie}\n\tsubAll: {subAll}\n\taddAll: {addAll}')
     die = determineDie.search(dString)
     if not die:
         raise Exception('Cannot determine die!')
@@ -837,6 +838,9 @@ class DieAnylizer(object):
 
 
 class Rolling(object):
+    """
+        This class is best used imported into another python project as a library.
+    """
 
     def __init__(self):
         pass
@@ -886,7 +890,7 @@ class Rolling(object):
                 {
                     "id": 1,
                     "dString": "5d6",
-                    "dieOptions": {"dropLowest": 2, "rerollTotal": 10}
+                    "dieOptions": {"dropLowest": 2, "rerollTotal": 9}
                 }
             ],
             "diceOptions": {"repeatRoll": 6}
@@ -900,7 +904,7 @@ class Rolling(object):
                 {
                     "id": 1,
                     "dString": "4d6",
-                    "dieOptions": {"dropLowest": 1, "rerollTotal": 9}
+                    "dieOptions": {"dropLowest": 1, "rerollTotal": 8}
                 }
             ],
             "diceOptions": {"repeatRoll": 6}

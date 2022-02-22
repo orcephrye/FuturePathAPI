@@ -9,6 +9,9 @@
 
 from flask import jsonify
 from FuturePathAPI.initApp import app, END_POINT
+
+
+# These imports are unused by serve to activate other Flask App routes
 from FuturePathAPI import authentication
 from FuturePathAPI import user
 from FuturePathAPI import tasks
@@ -59,9 +62,14 @@ def index():
 
 
 def main():
+    """
+        This should NOT be called even when debuging. Use run.py instead.
+    :return:
+    """
     app.run(port=8000, debug=True)
     # socketio.run(app)
 
 
 if __name__ == '__main__':
+    #This should NOT be called even when debuging. Use run.py instead.
     main()

@@ -22,10 +22,6 @@ log = logging.getLogger('MongoDB')
 DB_CONFIG = "/libs/db.yaml"
 REDIS_CONFIG = "/libs/redis.yaml"
 redisServer = None
-# Old Vars:
-host = "127.0.0.1"
-port = 27017
-dbName = "FuturePathAPI"
 tokenExpire = 43200
 
 
