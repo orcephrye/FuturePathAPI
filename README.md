@@ -7,7 +7,7 @@ d20 Future Path API
 [![Docs](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html)
 
 
-###Currently Under Development!!!
+### Currently Under Development!!!
 
 At the moment this tool really only used to emulate rolling dice. It is being used with the [Mobile Dice Roller App](https://github.com/orcephrye/mobileDiceRoller).
 However, sense it is a RESTful API it technically could be used for any purpose that requires random dice rolls between
@@ -17,7 +17,7 @@ modifiers, multiple dice simultaneously, and options like "dropLowest" or 'reRol
 The future goal is that this API will serve as a tool for the [d20FuturePath Roll Playing Game](https://d20futurepath.com).
 The tool will be used to make customized weapons/ships and characters easier.
 
-##Install
+## Install
 
 ----
 This is not meant to be installed as a program but deployed as a web app. Use the provided requirements.txt to install
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 
-##Run
+## Run
 
 ----
 This tool uses gunicorn and by default binds to port 8000. Edit the guincorn_config.py file to make changes.
