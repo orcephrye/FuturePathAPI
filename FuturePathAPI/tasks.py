@@ -35,8 +35,8 @@ tasks = [
         'id': 1,
         'name': u'rolling',
         'description': u'Produces a random number between 1 and the rolling number. Optional is to add the number'
-                       u'of dice rolls',
-        'uri': f"{END_POINT}/<dice>"
+                       u'of dice rolls. You can also pass dice via JSON with the "/tasks/roll" endpoint',
+        'uri': f"{END_POINT}/tasks/roll"
     }
 ]
 
@@ -52,17 +52,17 @@ def get_tasks():
     return jsonify({'tasks': tasks})
 
 
-@app.route('/tasks/<int:id>', methods=['GET'])
+@app.route('/tasks/<int:taskid>', methods=['GET'])
 def get_tasks_id(taskid):
     """
     :OPTIONS: GET
-    :PATH: /tasks/<int:id>
+    :PATH: /tasks/<int:taskid>
     :VARIABLES: id (integer)
     :DESC: This returns a JSON blod with information regarding a particular task
     :Content-Type: application/json
     """
     for item in tasks:
-        if item['id'] == taskid:
+        if item['id'] == int(taskid):
             return jsonify(item)
     return not_found(404)
 
