@@ -7,9 +7,9 @@ d20 Future Path API
 [![Docs](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html)
 
 
-###Currently Under Development!!!
+### Currently Under Development!!!
 
-At the moment this tool really only used to emulate rolling dice. It is being used with the [Mobile Dice Roller App](https://github.com/orcephrye/mobileDiceRoller).
+At the moment this tool is really only used to emulate rolling dice. It is being used with the [Mobile Dice Roller App](https://github.com/orcephrye/mobileDiceRoller).
 However, sense it is a RESTful API it technically could be used for any purpose that requires random dice rolls between
 d2 and d100. It is arguably the most well-rounded and feature rich free dice rolling app available. It features adding
 modifiers, multiple dice simultaneously, and options like "dropLowest" or 'reRollTotal' and so on. 
@@ -17,9 +17,8 @@ modifiers, multiple dice simultaneously, and options like "dropLowest" or 'reRol
 The future goal is that this API will serve as a tool for the [d20FuturePath Roll Playing Game](https://d20futurepath.com).
 The tool will be used to make customized weapons/ships and characters easier.
 
-##Install
+## Install
 
-----
 This is not meant to be installed as a program but deployed as a web app. Use the provided requirements.txt to install
 dependencies. 
 
@@ -29,9 +28,8 @@ pip install -r requirements.txt
 ```
 
 
-##Run
+## Run
 
-----
 This tool uses gunicorn and by default binds to port 8000. Edit the guincorn_config.py file to make changes.
 
 ```sh
@@ -41,7 +39,6 @@ SCRIPT_NAME=/v1 gunicorn-3.8  --config gunicorn_config.py run:app
 
 ## Setup as a systemd service.
 
-----
 Example systemd configuration file below. Insert that file into: '/etc/systemd/system/d20FuturePathAPI.service'
 
 ```yaml
@@ -70,5 +67,4 @@ systemctl status d20FuturePathAPI
 
 ## Documentation:
 
-----
 Documentation [d20 Future Path API Docs](http://api.d20futurepath.com/docs/build/html/index.html)
