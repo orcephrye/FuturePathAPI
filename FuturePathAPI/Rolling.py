@@ -58,7 +58,6 @@ def rollCharacter(level):
     """
 
     accept = request.headers.get('Accept', 'application/json').lower().strip()
-    # print(f'accept = {accept}')
     level = level.lower().strip()
     if level == "normal":
         return jsonify(Rolling.NormalCharacterStats())
@@ -100,13 +99,13 @@ def parse_die_options(options):
                 dropLowest = int(dropLowest)
         dieOptions['dropLowest'] = dropLowest
 
-    if 'rerollTotal' in request.args:
+    if 'rerollTotal' in options:
         dieOptions['rerollTotal'] = covertToDigit(options.get('rerollTotal', 0))
-    if 'rerollDie' in request.args:
+    if 'rerollDie' in options:
         dieOptions['rerollDie'] = covertToDigit(options.get('rerollDie', 0))
-    if 'subAll' in request.args:
+    if 'subAll' in options:
         dieOptions['subAll'] = covertToDigit(options.get('subAll', 0))
-    if 'addAll' in request.args:
+    if 'addAll' in options:
         dieOptions['addAll'] = covertToDigit(options.get('addAll', 0))
 
     return dieOptions
