@@ -14,7 +14,7 @@ import logging
 import traceback
 from pymongo import MongoClient
 from flask_login import UserMixin
-from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from itsdangerous import URLSafeTimedSerializer as Serializer
 from FuturePathAPI import MAINDIR
 
 
@@ -47,7 +47,7 @@ def loadYamlREDISConfig():
 
 def getRedis(checkConn=False):
     global redisServer
-    global  tokenExpire
+    global tokenExpire
     if redisServer is not None:
         if checkConn is False:
             return redisServer

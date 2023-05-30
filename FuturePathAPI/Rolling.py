@@ -14,19 +14,19 @@ import re
 from flask import jsonify, abort, request, render_template, Response
 from numpy.random import choice
 from itertools import product
-from collections import Iterable
+from collections.abc import Iterable
 from FuturePathAPI.initApp import app
 from FuturePathAPI.libs import ReadWriteLock
 from FuturePathAPI.libs.jsonTools import jsonHook
 from FuturePathAPI.libs.FrozenDict import FrozenDict
 
 
-confirmSyntax = re.compile('^(\d){0,3}d\d{1,2}(((\+|-)\d{1,2})*)$', re.IGNORECASE)
-determineDie = re.compile('d\d{1,3}', re.IGNORECASE)
-determineMultiplier = re.compile('^(\d){1,3}', re.IGNORECASE)
-determineModifier = re.compile('(\+|-)\d{0,2}$', re.IGNORECASE)
-splitString = re.compile('([\+|-])')
-reverseSplitString = re.compile('(\d){0,3}d\d{1,2}')
+confirmSyntax = re.compile(r'^(\d){0,3}d\d{1,2}(((\+|-)\d{1,2})*)$', re.IGNORECASE)
+determineDie = re.compile(r'd\d{1,3}', re.IGNORECASE)
+determineMultiplier = re.compile(r'^(\d){1,3}', re.IGNORECASE)
+determineModifier = re.compile(r'(\+|-)\d{1,2}$', re.IGNORECASE)
+splitString = re.compile(r'([\+|-])')
+reverseSplitString = re.compile(r'(\d){0,3}d\d{1,2}')
 
 
 """
@@ -95,6 +95,8 @@ def parse_die_options(options):
             dropLowest = str(dropLowest)
             if dropLowest.lower() == "false":
                 dropLowest = 0
+            elif dropLowest.lower() == "true":
+                dropLowest = 1
             else:
                 dropLowest = int(dropLowest)
         dieOptions['dropLowest'] = dropLowest
@@ -137,20 +139,20 @@ def roll_from_get(dString):
             * /d20 (Roll a single twenty sided dice. Notice the lack of a 1 IE: 1d20 both are acceptable options)
             * /2d4+2 (Roll two four sided dice and add two to the total.
             * /1d20+1d4+2 (Roll one twenty sided die and then roll one four sided die total them together and add two.
+            * /4d6?dropLowest=1 (Roll 4 six sided dice and then drop the lowest die. Provide the total of the
+                remaining 3)
 
-                * NOTE: It is not recommended to roll more than one die or set of dice IE: 1d20 or 2d4 using this
-                  method. There are limitations. The die options provided are passed to all applicable dice. It cannot pass
-                  dice options only die options.
-
-            * /4d6?dropLowest=1 (Roll 4 size sided dice and then drop the lowest die. Provide the total of the remaining 3)
+            * NOTE: Do not use Die options when rolling more than 1 one set of dice. IE: 1d20 or 2d4 but NOT
+                1d20+2d4. Once more than 1 set of die is rolling the Die/Dice options are ignored. For more advanced
+                rolling use JSON.
 
         dropLowest: (default value: False)
             This can be either False, True, or Int. True == 1. If True or 1 then this
-            causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+            causes the roller to drop the lowest die before totalling the value. If the number is higher than 1 then
             it will drop the lowest die X number of times.
         rerollTotal: (default value: False)
             This needs to be an integer. This will cause the roller to reroll the
-            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently, there is no
             logic to control the number of reroll attempts.
         rerollDie: (default value: False)
             This has to be an Int or a list of Ints. This will actually remove that Int
@@ -175,9 +177,9 @@ def roll_from_get(dString):
         print(f"ERROR: {e}")
         abort(501)
 
-    die = DieAnylizer.dieStrAnylizer(dString, dieOptions)
+    die = DieAnalyzer.die_str_analyzer(dString, dieOptions)
 
-    return jsonify(DieRoller.rollDice(dice=die[0], connectors=die[1], diceOptions={}))
+    return jsonify(DieRoller.roll_dice(dice=die[0], connectors=die[1], diceOptions={}))
 
 
 @app.route('/tasks/roll', methods=['POST'])
@@ -253,20 +255,20 @@ def roll_from_json():
             * Modifiers in the dString will be ignored. A modifier should be passed with the 'modifier' key.
             * 'connectorString' can only be a '+' or '-' and HAS to exist in order for the next die to be added.
             * dieOptions key is used to identify options to a specific dString and will be passed to only that roll.
-            * diceOptions key is used outside of the 'dice' list and will be applied globally.
+            * diceOptions key is used outside the 'dice' list and will be applied globally.
             * The top keys are 'dice', 'diceOptions' and 'modifier'.
-            * An item in the 'dice' list should have 'id, 'dString', and can have 'modifier', 'connectorString',
+            * An item in the 'dice' list should have 'id, 'dString', and optionally 'modifier', 'connectorString',
               and 'dieOptions'.
             * dieOptions are: 'dropLowest', 'rerollTotal', 'rerollDie'. 'subAll', 'addAll'.
             * diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll'
 
         dropLowest: (default value: False)
             This can be either False, True, or Int. True == 1. If True or 1 then this
-            causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+            causes the roller to drop the lowest die before totalling the value. If the number is higher than 1 then
             it will drop the lowest die X number of times.
         rerollTotal: (default value: False)
             Is for 'dieOptions' only. This needs to be an integer. This will cause the roller to reroll the
-            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently, there is no
             logic to control the number of reroll attempts.
         rerollDie: (default value: False)
             Is for 'dieOptions' only. This has to be an Int or a list of Ints. This will actually remove that Int
@@ -288,12 +290,15 @@ def roll_from_json():
     if not request.json:
         abort(400)
 
-    dice = DieAnylizer.dieJSONAnylizer(request.json)
+    dice = DieAnalyzer.die_json_analyzer(request.json)
+
+    for die in dice:
+        print(f"{die}")
 
     if dice is None:
         abort(400)
 
-    return jsonify(DieRoller.rollDice(dice=dice[0], connectors=dice[1], diceOptions=dice[2]))
+    return jsonify(DieRoller.roll_dice(dice=dice[0], connectors=dice[1], diceOptions=dice[2]))
 
 
 class Memorizer(object):
@@ -379,13 +384,13 @@ def _getProbability(die, repeat=1):
 
 
 @DieAnylizerMemorizer
-def _determineNumbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
+def _determine_numbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
     # print(f'_determineNumbers:\n\tdString: {dString}\n\trerollDie:'
     #       f' {rerollDie}\n\tsubAll: {subAll}\n\taddAll: {addAll}')
     die = determineDie.search(dString)
     if not die:
         raise Exception('Cannot determine die!')
-    die = DiePicker.getDie(int(die.group().strip('d')), rerollDie=rerollDie, subAll=subAll, addAll=addAll)
+    die = DiePicker.get_die(int(die.group().strip('d')), rerollDie=rerollDie, subAll=subAll, addAll=addAll)
     if die is None:
         raise Exception('Die is not recognized member of the dice dictionary!')
     multipler = determineMultiplier.match(dString)
@@ -394,31 +399,33 @@ def _determineNumbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
     return die, int(multipler.group())
 
 
-def _determineModifier(dStringMod):
-    m = determineModifier.search(dStringMod)
-    if not m:
-        return ''
-    currentMod = m.group()
-    dStrLen = len(dStringMod)
-    while currentMod:
-        if dStrLen <= len(currentMod):
-            break
-        tmpStr = dStringMod[0:dStrLen - len(currentMod)]
-        m = determineModifier.search(tmpStr)
-        if not m:
-            break
-        currentMod += m.group()
-    newMod = str(eval(currentMod))
-    if newMod == '0':
-        return ''
-    elif not newMod.startswith('-'):
-        newMod = "+" + newMod
-    return newMod
+def _determine_modifier(dStringMod):
+    m = determineModifier.search(dStringMod.strip())
+    return m.group() if m else ''
+
+
+def _add_modifier(dStringMod, roll):
+    modifier = _determine_modifier(dStringMod)
+    if not modifier:
+        return roll
+    try:
+        mod = modifier[0:1]
+        num = modifier[1:]
+        if mod == '+':
+            return roll + int(num)
+        elif mod == '-':
+            return roll - int(num)
+        else:
+            return roll
+    except Exception as e:
+        print(f"_add_modifier Error: {e}:{getStackTrace()}")
+        return roll
 
 
 class DiePicker(object):
 
     diceDict = {2: (1, 2),
+                3: (1, 2, 3),
                 4: (1, 2, 3, 4),
                 6: (1, 2, 3, 4, 5, 6),
                 8: (1, 2, 3, 4, 5, 6, 7, 8),
@@ -438,16 +445,16 @@ class DiePicker(object):
         pass
 
     @staticmethod
-    def getDie(die, rerollDie=None, subAll=0, addAll=0, **kwargs):
+    def get_die(die, rerollDie=None, subAll=0, addAll=0, **kwargs):
 
         dieNumbers = None
 
         if rerollDie is None:
             dieNumbers = DiePicker.diceDict.get(die)
         elif rerollDie == 1:
-            dieNumbers = DiePicker.rerollOnes(die)
+            dieNumbers = DiePicker.reroll_ones(die)
         elif rerollDie is not None:
-            dieNumbers = DiePicker.rerollNumber(die, number=rerollDie)
+            dieNumbers = DiePicker.reroll_number(die, number=rerollDie)
 
         if dieNumbers is None:
             return dieNumbers
@@ -460,12 +467,12 @@ class DiePicker(object):
         return dieNumbers
 
     @staticmethod
-    def rerollOnes(die):
-        return DiePicker.getDie(die)[1:]
+    def reroll_ones(die):
+        return DiePicker.get_die(die)[1:]
 
     @staticmethod
-    def rerollNumber(die, number):
-        die = DiePicker.getDie(die)
+    def reroll_number(die, number):
+        die = DiePicker.get_die(die)
         if die is None:
             return None
 
@@ -488,7 +495,7 @@ class Roller(object):
         super(Roller, self).__init__()
 
     @staticmethod
-    def _getMaxRoll(die, multipler):
+    def _get_max_roll(die, multipler):
         if isinstance(multipler, Iterable):
             multipler = sum(multipler)
         return die[-1] * multipler
@@ -503,7 +510,7 @@ class Roller(object):
         return randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
 
     @staticmethod
-    def _dropLowest(die, multipler, dropLowest):
+    def _drop_lowest(die, multipler, dropLowest):
         if isinstance(multipler, Iterable):
             multipler = sum(multipler)
 
@@ -522,12 +529,12 @@ class Roller(object):
         return sum(choices)
 
     @staticmethod
-    def _rerollTotal(die, multipler, rerollTotal, dropLowest=False, **kwargs):
-        if rerollTotal >= DieRoller._getMaxRoll(die, multipler):
+    def _reroll_total(die, multipler, rerollTotal, dropLowest=False, **kwargs):
+        if rerollTotal >= DieRoller._get_max_roll(die, multipler):
             raise Exception('Total is equal to or exceeds dice\'s max possible roll')
 
         if dropLowest:
-            rollFunc = functools.partial(DieRoller._dropLowest, dropLowest=dropLowest)
+            rollFunc = functools.partial(DieRoller._drop_lowest, dropLowest=dropLowest)
         else:
             rollFunc = DieRoller._roller
 
@@ -541,7 +548,7 @@ class Roller(object):
                 raise Exception('Total Reroll attempts exceeded!')
 
     @staticmethod
-    def getProbabilities(die, repeat=0):
+    def get_probabilities(die, repeat=0):
         return _getProbability(die, repeat=repeat)
 
     @staticmethod
@@ -572,83 +579,84 @@ class DieRoller(Roller):
         super(DieRoller, self).__init__()
 
     def __call__(self, *args, **kwargs):
-        return DieRoller.rollDie(*args, **kwargs)
+        return DieRoller.roll_die(*args, **kwargs)
 
     @staticmethod
-    def rollDie(*args, **kwargs):
+    def roll_die(*args, **kwargs):
         # print("rollDie:\n\targs; %s\n\tkwargs: %s" % (args, kwargs))
         die, multipler = None, None
         if not args:
             return None
         elif isinstance(args[0], str):
-            die, multipler = _determineNumbers(args[0], **kwargs)
+            die, multipler = _determine_numbers(args[0], **kwargs)
         elif isinstance(args[0], tuple):
             die, multipler = args[0], args[1]
         multipler = DieRoller.reducer(multipler)
         if kwargs.get('rerollTotal') is not None:
-            return DieRoller._rerollTotal(die, multipler, **kwargs)
+            return DieRoller._reroll_total(die, multipler, **kwargs)
         if kwargs.get('dropLowest', False):
-            return DieRoller._dropLowest(die, multipler, kwargs.get('dropLowest'))
+            return DieRoller._drop_lowest(die, multipler, kwargs.get('dropLowest'))
         return DieRoller._roller(die, multipler)
 
     @staticmethod
-    def rollTotal(die, modifier, dieOptions):
+    def roll_total(die, modifier, dieOptions):
         # print("rollTotal:\n\tdie; %s\n\tmodifier: %s\n\tdieOptions: %s" % (die, modifier, dieOptions))
-        roll = DieRoller.rollDie(*die, **dict(dieOptions))
-        if not isinstance(modifier, str):
-            return roll
-        m = _determineModifier(modifier)
-        # m = determineModifier.search(modifier)
-        if not m:
-            return roll
-        try:
-            return eval(str(roll)+m)
-        except Exception as e:
-            print(f"Error: {e}")
-            return roll
+        roll = DieRoller.roll_die(*die, **dict(dieOptions))
+        return _add_modifier(modifier, roll)
 
     @staticmethod
-    def rollDice(dice, connectors, diceOptions):
+    def get_total_from_roll(diceRolls, connectors):
+        total = diceRolls[0]
+
+        for i, connector in enumerate(connectors, start=1):
+            if connector.strip() == '+':
+                total += diceRolls[i]
+            elif connector.strip() == '-':
+                total -= diceRolls[i]
+            else:
+                raise Exception(f'Connector: {connector} is not + or -!')
+
+        return {"Total": total, "Dice": diceRolls}
+
+    @staticmethod
+    def roll_dice(dice, connectors, diceOptions):
         # print "rollDice:\n\tdice; %s\n\tconnectors: %s\n\tdiceOptions: %s" % (dice, connectors, diceOptions)
         connectors = DieRoller._checkConnectors(connectors)
         diceOptions = dict(diceOptions)
-        repeatRoll = diceOptions.get('repeatRoll', 0)
-        dropLowest = diceOptions.get('dropLowest', 0)
-        subAll = diceOptions.get('subAll', 0)
-        addAll = diceOptions.get('addAll', 0)
+        try:
+            repeatRoll = int(diceOptions.get('repeatRoll', 0))
+            dropLowest = int(diceOptions.get('dropLowest', 0))
+            subAll = int(diceOptions.get('subAll', 0))
+            addAll = int(diceOptions.get('addAll', 0))
+        except Exception as e:
+            raise Exception("Failed to get/parse the dice options")
 
-        if type(repeatRoll) is int and repeatRoll > 0:
-            dice = dice * repeatRoll
+        if 0 < repeatRoll <= dropLowest:
+            raise Exception('The number of dice to drop is greater then or equal to the number of requested '
+                            'dice to roll')
 
-        diceRolls = [DieRoller.rollTotal(die[0], die[1], die[2]) for die in dice]
+        diceRolls = [[DieRoller.roll_total(die[0], die[1], die[2]) for die in dice]]
+        for _ in range(repeatRoll-1):
+            diceRolls.append([DieRoller.roll_total(die[0], die[1], die[2]) for die in dice])
 
-        if dropLowest is True:
-            diceRolls.pop(diceRolls.index(min(diceRolls)))
-        elif type(dropLowest) is int and dropLowest > 0:
-            for x in range(int(dropLowest)):
-                diceRolls.pop(diceRolls.index(min(diceRolls)))
+        diceTotals = [sum(roll) for roll in diceRolls]
+
+        for _ in range(int(dropLowest)):
+            diceRolls.pop(diceTotals.index(min(diceTotals)))
+            diceTotals.pop(diceTotals.index(min(diceTotals)))
 
         if type(subAll) is int and subAll > 0:
-            diceRolls = [roll - subAll for roll in diceRolls]
+            for roll in diceRolls:
+                for i, die in enumerate(roll):
+                    roll[i] = die - subAll
 
         if type(addAll) is int and addAll > 0:
-            diceRolls = [roll + addAll for roll in diceRolls]
+            for roll in diceRolls:
+                for i, die in enumerate(roll):
+                    roll[i] = die + addAll
 
-        # print "\nDice Rolls: %s\n" % diceRolls
-
-        if len(connectors) + 1 != len(diceRolls):
-            return {"Dice": diceRolls}
-
-        evalString = ""
-        index = 0
-        maxIndex = len(diceRolls) - 1
-        connLength = len(connectors)
-        while index <= maxIndex:
-            evalString += str(diceRolls[index])
-            if index < connLength:
-                evalString += str(connectors[index])
-            index += 1
-        return {"DiceTotal": eval(evalString), "Dice": diceRolls}
+        rollsAndTotals = [DieRoller.get_total_from_roll(rolls, connectors) for rolls in diceRolls]
+        return {"Rolls": rollsAndTotals}
 
     @staticmethod
     def _checkConnectors(connectors):
@@ -662,7 +670,7 @@ class DieRoller(Roller):
         return connectors
 
 
-class DieAnylizer(object):
+class DieAnalyzer(object):
     """
         This is designed to take input from API calls. There are 3 routes to rolling that all come here.
         1. GET Call. This using the route '/tasks/roll/<dice>' via a GET call.
@@ -736,10 +744,10 @@ class DieAnylizer(object):
             10) diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll'
 
         dropLowest: (default value: False) This can be either False, True, or Int. True == 1. If True or 1 then this
-            causes the roller to drop the lowest die before totalling the value. If the number is higher then 1 then
+            causes the roller to drop the lowest die before totalling the value. If the number is higher than 1 then
             it will drop the lowest die X number of times.
         rerollTotal: (default value: False) This needs to be an integer. This will cause the roller to reroll the
-            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently there is no
+            dice if the die is below a certain value. This will attempt to reroll 101 times. Currently, there is no
             logic to control the number of reroll attempts.
         rerollDie: (default value: False) This has to be an Int or a list of Ints. This will actually remove that Int
             or list of Ints from the possible roll of the die. So that when the die is rolled it can never choose that
@@ -757,7 +765,7 @@ class DieAnylizer(object):
         pass
 
     @staticmethod
-    def dieStrAnylizer(dString, dieOptions=None):
+    def die_str_analyzer(dString, dieOptions=None):
 
         def _convertSingleDie(die):
             return die[0], die[1], tuple(dieOptions.items())
@@ -784,14 +792,14 @@ class DieAnylizer(object):
                 if 'd' in item and tmpDieStr == "":
                     tmpDieStr = item
                 elif 'd' in item:
-                    dies.append((_determineNumbers(tmpDieStr[:-1], **dieOptions),
-                                 _determineModifier(tmpDieStr[:-1]), ()))
+                    dies.append((_determine_numbers(tmpDieStr[:-1], **dieOptions),
+                                 _determine_modifier(tmpDieStr[:-1]), ()))
                     dieConnectors.append(tmpDieStr[-1])
                     tmpDieStr = item
                 else:
                     tmpDieStr += item
             index += 1
-        dies.append((_determineNumbers(tmpDieStr, **dieOptions), _determineModifier(tmpDieStr), ()))
+        dies.append((_determine_numbers(tmpDieStr, **dieOptions), _determine_modifier(tmpDieStr), ()))
 
         if len(dies) > 1:
             return dies, dieConnectors, tuple(dieOptions.items())
@@ -799,10 +807,10 @@ class DieAnylizer(object):
         return dies, dieConnectors, ()
 
     @staticmethod
-    def dieJSONAnylizer(dJSON):
+    def die_json_analyzer(dJSON):
 
-        def _sortHelper(item):
-            return item.get('id')
+        def _sortHelper(i):
+            return i.get('id')
 
         try:
             dies = []
@@ -826,7 +834,7 @@ class DieAnylizer(object):
             index = 0
 
             while index <= loopN:
-                dies[index] = (_determineNumbers(dies[index][0], **dict(dies[index][2])),
+                dies[index] = (_determine_numbers(dies[index][0], **dict(dies[index][2])),
                                dies[index][1], dies[index][2])
                 index += 1
 
@@ -846,24 +854,28 @@ class Rolling(object):
 
     @staticmethod
     def roller(die, dieOptions):
-        die = DieAnylizer.dieStrAnylizer(die, dieOptions)
-        return DieRoller.rollDice(dice=die[0], connectors=die[1], diceOptions={})
+        die = DieAnalyzer.die_str_analyzer(die, dieOptions)
+        return DieRoller.roll_dice(dice=die[0], connectors=die[1], diceOptions={})
 
     @staticmethod
-    def jsonRoller(dJson):
-        dice = DieAnylizer.dieJSONAnylizer(dJson)
-        return DieRoller.rollDice(dice=dice[0], connectors=dice[1], diceOptions=dice[2])
+    def json_roller(dJson):
+        dice = DieAnalyzer.die_json_analyzer(dJson)
+        return DieRoller.roll_dice(dice=dice[0], connectors=dice[1], diceOptions=dice[2])
 
     @staticmethod
-    def d2(*args, **kwargs):
+    def d2(**kwargs):
         return Rolling.roller('d2', dieOptions=kwargs)
 
     @staticmethod
-    def d4(*args, **kwargs):
+    def d3(**kwargs):
+        return Rolling.roller('d3', dieOptions=kwargs)
+
+    @staticmethod
+    def d4(**kwargs):
         return Rolling.roller('d4', dieOptions=kwargs)
 
     @staticmethod
-    def d6(*args, **kwargs):
+    def d6(**kwargs):
         return Rolling.roller('d6', dieOptions=kwargs)
 
     @staticmethod
@@ -871,16 +883,33 @@ class Rolling(object):
         return Rolling.roller('d8', dieOptions=kwargs)
 
     @staticmethod
-    def d10(*args, **kwargs):
+    def d10(**kwargs):
         return Rolling.roller('d10', dieOptions=kwargs)
 
     @staticmethod
-    def d12(*args, **kwargs):
+    def d12(**kwargs):
         return Rolling.roller('d12', dieOptions=kwargs)
 
     @staticmethod
-    def d20(*args, **kwargs):
+    def d20(**kwargs):
         return Rolling.roller('d20', dieOptions=kwargs)
+
+    @staticmethod
+    def d24(**kwargs):
+        return Rolling.roller('d24', dieOptions=kwargs)
+
+    @staticmethod
+    def d30(**kwargs):
+        return Rolling.roller('d30', dieOptions=kwargs)
+
+    @staticmethod
+    def d100(**kwargs):
+        return Rolling.roller('d100', dieOptions=kwargs)
+
+    @staticmethod
+    def percentile(**kwargs):
+        # TODO: Change this to better reflect a Pen&Paper percentile roll using 2d10s.
+        return Rolling.roller('d100', dieOptions=kwargs)
 
     @staticmethod
     def HighFantasyCharacterStats():
@@ -888,13 +917,13 @@ class Rolling(object):
             "dice": [
                 {
                     "id": 1,
-                    "dString": "5d6",
-                    "dieOptions": {"dropLowest": 2, "rerollTotal": 9}
+                    "dString": "4d6",
+                    "dieOptions": {"dropLowest": 1, "rerollTotal": 9}
                 }
             ],
-            "diceOptions": {"repeatRoll": 6}
+            "diceOptions": {"repeatRoll": 7, "dropLowest": 1}
         }
-        return Rolling.jsonRoller(roll)
+        return Rolling.json_roller(roll)
 
     @staticmethod
     def NormalCharacterStats():
@@ -908,7 +937,7 @@ class Rolling(object):
             ],
             "diceOptions": {"repeatRoll": 6}
         }
-        return Rolling.jsonRoller(roll)
+        return Rolling.json_roller(roll)
 
     @staticmethod
     def LowFantasyCharacterStats():
@@ -922,7 +951,7 @@ class Rolling(object):
             ],
             "diceOptions": {"repeatRoll": 6}
         }
-        return Rolling.jsonRoller(roll)
+        return Rolling.json_roller(roll)
 
 
 def getStackTrace():
