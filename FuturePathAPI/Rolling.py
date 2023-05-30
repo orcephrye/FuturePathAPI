@@ -292,9 +292,6 @@ def roll_from_json():
 
     dice = DieAnalyzer.die_json_analyzer(request.json)
 
-    for die in dice:
-        print(f"{die}")
-
     if dice is None:
         abort(400)
 
