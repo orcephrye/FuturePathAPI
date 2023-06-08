@@ -24,7 +24,7 @@ from FuturePathAPI.libs.FrozenDict import FrozenDict
 confirmSyntax = re.compile(r'^(\d){0,3}d\d{1,2}(((\+|-)\d{1,2})*)$', re.IGNORECASE)
 determineDie = re.compile(r'd\d{1,3}', re.IGNORECASE)
 determineMultiplier = re.compile(r'^(\d){1,3}', re.IGNORECASE)
-determineModifier = re.compile(r'(\+|-)\d{1,2}$', re.IGNORECASE)
+determineModifier = re.compile(r'[\+|-]\d{1,2}', re.IGNORECASE)
 splitString = re.compile(r'([\+|-])')
 reverseSplitString = re.compile(r'(\d){0,3}d\d{1,2}')
 
@@ -56,6 +56,7 @@ def rollCharacter(level):
         :DESC: This returns a JSON blob with 6 numbers representing character stats.
         :Content-Type: application/json or application/html (if error)
     """
+
 
     accept = request.headers.get('Accept', 'application/json').lower().strip()
     level = level.lower().strip()
@@ -290,10 +291,17 @@ def roll_from_json():
     if not request.json:
         abort(400)
 
-    dice = DieAnalyzer.die_json_analyzer(request.json)
+    dJSON = jsonHook(request.json)
+
+    dice = DieAnalyzer.die_json_analyzer(dJSON)
 
     if dice is None:
         abort(400)
+
+    if 'rollID' in dJSON:
+        return jsonify({'rollID': dJSON.get('rollID'), **DieRoller.roll_dice(dice=dice[0],
+                                                                             connectors=dice[1],
+                                                                             diceOptions=dice[2])})
 
     return jsonify(DieRoller.roll_dice(dice=dice[0], connectors=dice[1], diceOptions=dice[2]))
 
@@ -397,8 +405,11 @@ def _determine_numbers(dString, rerollDie=None, subAll=0, addAll=0, **kwargs):
 
 
 def _determine_modifier(dStringMod):
-    m = determineModifier.search(dStringMod.strip())
-    return m.group() if m else ''
+    modVal = sum([int(i) for i in determineModifier.findall(dStringMod.strip()) if i])
+    modVal = str(modVal) if modVal else ''
+    if modVal and '-' not in modVal:
+        return "+"+modVal
+    return modVal
 
 
 def _add_modifier(dStringMod, roll):
@@ -733,7 +744,7 @@ class DieAnalyzer(object):
             3) Modifiers in the dString will be ignored. A modifier should be passed with the 'modifier' key.
             4) 'connectorString' can only be a '+' or '-' and HAS to exist in order for the next die to be added.
             5) dieOptions key is used to identify options to a specific dString and will be passed to only that roll.
-            6) diceOptions key is used outside of the 'dice' list and will be applied globally.
+            6) diceOptions key is used outside the 'dice' list and will be applied globally.
             7) The top keys are 'dice', 'diceOptions' and 'modifier'.
             8) An item in the 'dice' list should have 'id, 'dString', and can have 'modifier', 'connectorString',
                 and 'dieOptions'.
@@ -814,7 +825,6 @@ class DieAnalyzer(object):
             dieConnectors = []
             if isinstance(dJSON, str):
                 dJSON = json.loads(dJSON.strip(), object_hook=jsonHook)
-            dJSON = jsonHook(dJSON)
             dice = sorted(dJSON.get('dice', list()), key=_sortHelper)
             diceOptions = tuple(parse_dice_options(dJSON.get('diceOptions', {})).items())
 
@@ -822,7 +832,8 @@ class DieAnalyzer(object):
                 dice.append(dJSON)
 
             for item in dice:
-                dies.append(((str(item.get('dString')), str(item.get('modifier', '')),
+                dies.append(((str(item.get('dString')),
+                              str(item.get('modifier', '')),
                               tuple(parse_die_options(item.get('dieOptions', {})).items()))))
                 if dice.index(item) < (len(dice)-1):
                     dieConnectors.append(item.get('connectorString'))
