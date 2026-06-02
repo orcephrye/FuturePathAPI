@@ -8,49 +8,50 @@
 
 
 from flask import jsonify
-from FuturePathAPI.initApp import app, END_POINT
 
+from FuturePathAPI import (
+    Rolling,  # noqa: F401
+    authentication,  # noqa: F401
+    tasks,  # noqa: F401
+    user,  # noqa: F401
+)
 
 # These imports are unused by serve to activate other Flask App routes
-from FuturePathAPI import authentication
-from FuturePathAPI import user
-from FuturePathAPI import tasks
-from FuturePathAPI import Rolling
-
+from FuturePathAPI.initApp import END_POINT, app
 
 options = [
     {
-        'id': 1,
-        'name': u'tasks',
-        'description': u'Most actions including all non-authenticated actions are listed under the tasks directory. '
-                       u'For more information run GET on the provided URI.',
-        'uri': f"{END_POINT}/tasks"
+        "id": 1,
+        "name": "tasks",
+        "description": "Most actions including all non-authenticated actions are listed under the tasks directory. "
+        "For more information run GET on the provided URI.",
+        "uri": f"{END_POINT}/tasks",
     },
     {
-        'id': 2,
-        'name': u'authentication',
-        'description': u'Authenticate using your username and password to get a temporary Token. For more information '
-                       u'run GET on the provided URI.',
-        'uri': f"{END_POINT}/login"
+        "id": 2,
+        "name": "authentication",
+        "description": "Authenticate using your username and password to get a temporary Token. For more information "
+        "run GET on the provided URI.",
+        "uri": f"{END_POINT}/login",
     },
     {
-        'id': 3,
-        'name': u'u',
-        'description': u'\'u\' is short for \'user\'. Access under this directory requires a TOKEN provided by '
-                       u'authentication.',
-        'uri': f"{END_POINT}/u"
+        "id": 3,
+        "name": "u",
+        "description": "'u' is short for 'user'. Access under this directory requires a TOKEN provided by "
+        "authentication.",
+        "uri": f"{END_POINT}/u",
     },
     {
-        'id': 4,
-        'name': u'Read_the_Docs',
-        'description': u'Visit the documentation via a web browser: '
-                       u'http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html',
-        'uri': 'http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html'
-    }
+        "id": 4,
+        "name": "Read_the_Docs",
+        "description": "Visit the documentation via a web browser: "
+        "http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html",
+        "uri": "http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html",
+    },
 ]
 
 
-@app.route('/', methods=['GET'])
+@app.route("/", methods=["GET"])
 def index():
     """
     :OPTIONS: GET
@@ -58,7 +59,7 @@ def index():
     :DESC: This returns a JSON blob showing the different actions/paths from the root/index of the API.
     :Content-Type: application/json
     """
-    return jsonify({'FuturePath API Options': options})
+    return jsonify({"FuturePath API Options": options})
 
 
 def main():
@@ -70,6 +71,6 @@ def main():
     # socketio.run(app)
 
 
-if __name__ == '__main__':
-    #This should NOT be called even when debuging. Use run.py instead.
+if __name__ == "__main__":
+    # This should NOT be called even when debuging. Use run.py instead.
     main()

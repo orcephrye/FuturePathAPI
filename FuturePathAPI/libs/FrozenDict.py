@@ -8,7 +8,6 @@
 
 
 class FrozenDict(dict):
-
     def __new__(cls, *args, **kwargs):
         return super(FrozenDict, cls).__new__(cls, args)
 
@@ -31,4 +30,6 @@ class FrozenDict(dict):
         """
         raise TypeError("Cannot modify Immutable Instance")
 
-    __delattr__ = __setattr__ = __setitem__ = pop = update = setdefault = clear = popitem = _readonly
+    __delattr__ = __setattr__ = __setitem__ = pop = update = setdefault = clear = (
+        popitem
+    ) = _readonly

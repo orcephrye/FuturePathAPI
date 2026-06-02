@@ -7,8 +7,9 @@
 # Description:
 
 
-from flask import Flask, jsonify, make_response
 import os
+
+from flask import Flask, jsonify, make_response
 
 # For Testing only
 # from flask_cors import CORS
@@ -27,4 +28,4 @@ app.secret_key = os.urandom(16)
 
 @app.errorhandler(404)
 def not_found(error):
-    return make_response(jsonify({'error': 'Not found'}), 404)
+    return make_response(jsonify({"error": "Not found"}), 404)

@@ -8,21 +8,21 @@
 
 
 from flask import jsonify
-from FuturePathAPI.initApp import app, END_POINT
 from flask_login import login_required
 
+from FuturePathAPI.initApp import END_POINT, app
 
 utasks = [
     {
-        'id': 1,
-        'name': u'username_info',
-        'description': u'Get information related too your account.',
-        'uri': f"{END_POINT}/u/<username>/info"
+        "id": 1,
+        "name": "username_info",
+        "description": "Get information related too your account.",
+        "uri": f"{END_POINT}/u/<username>/info",
     },
 ]
 
 
-@app.route('/u', methods=['GET'])
+@app.route("/u", methods=["GET"])
 def user_tasks():
     """
     :OPTIONS: GET
@@ -30,19 +30,19 @@ def user_tasks():
     :DESC: This returns a JSON blob showing the different end points from the '/u' directory.
     :Content-Type: application/json
     """
-    return jsonify({'Username Tasks': utasks})
+    return jsonify({"Username Tasks": utasks})
 
 
-@app.route('/u/<username>/info', methods=['GET'])
+@app.route("/u/<username>/info", methods=["GET"])
 @login_required
 def user_info():
     """
-     :OPTIONS: GET
-     :PATH: /u/<username>/info
-     :VARIABLES: username (string)
-     :HEADERS: Token
-     :DESC: This returns a JSON blob with information regarding the specified user. Must have a valid API Token for that
-        user.
-     :Content-Type: application/json
-     """
-    return jsonify({'WorkInProgress': "This end point has yet to be implemented"})
+    :OPTIONS: GET
+    :PATH: /u/<username>/info
+    :VARIABLES: username (string)
+    :HEADERS: Token
+    :DESC: This returns a JSON blob with information regarding the specified user. Must have a valid API Token for that
+       user.
+    :Content-Type: application/json
+    """
+    return jsonify({"WorkInProgress": "This end point has yet to be implemented"})

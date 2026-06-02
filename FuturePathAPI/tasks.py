@@ -8,8 +8,8 @@
 
 
 from flask import jsonify
-from FuturePathAPI.initApp import app, not_found, END_POINT
 
+from FuturePathAPI.initApp import END_POINT, app, not_found
 
 """
     {
@@ -32,16 +32,16 @@ from FuturePathAPI.initApp import app, not_found, END_POINT
 
 tasks = [
     {
-        'id': 1,
-        'name': u'rolling',
-        'description': u'Produces a random number between 1 and the rolling number. Optional is to add the number'
-                       u'of dice rolls. You can also pass dice via JSON with the "/tasks/roll" endpoint',
-        'uri': f"{END_POINT}/tasks/roll"
+        "id": 1,
+        "name": "rolling",
+        "description": "Produces a random number between 1 and the rolling number. Optional is to add the number"
+        'of dice rolls. You can also pass dice via JSON with the "/tasks/roll" endpoint',
+        "uri": f"{END_POINT}/tasks/roll",
     }
 ]
 
 
-@app.route('/tasks', methods=['GET'])
+@app.route("/tasks", methods=["GET"])
 def get_tasks():
     """
     :OPTIONS: GET
@@ -49,10 +49,10 @@ def get_tasks():
     :DESC: This returns a JSON blob showing the different end points from the '/tasks' directory.
     :Content-Type: application/json
     """
-    return jsonify({'tasks': tasks})
+    return jsonify({"tasks": tasks})
 
 
-@app.route('/tasks/<int:taskid>', methods=['GET'])
+@app.route("/tasks/<int:taskid>", methods=["GET"])
 def get_tasks_id(taskid):
     """
     :OPTIONS: GET
@@ -62,12 +62,12 @@ def get_tasks_id(taskid):
     :Content-Type: application/json
     """
     for item in tasks:
-        if item['id'] == int(taskid):
+        if item["id"] == int(taskid):
             return jsonify(item)
     return not_found(404)
 
 
-@app.route('/tasks/<name>', methods=['GET'])
+@app.route("/tasks/<name>", methods=["GET"])
 def get_tasks_name(name):
     """
     :OPTIONS: GET
@@ -77,6 +77,6 @@ def get_tasks_name(name):
     :Content-Type: application/json
     """
     for item in tasks:
-        if item['name'] == name:
+        if item["name"] == name:
             return jsonify(item)
     return not_found(404)

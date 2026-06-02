@@ -1,0 +1,82 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "futurepathapi"
+version = "0.1.0"
+description = "A RESTful API for interacting with the game rules of d20 Future Path"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Ryan Henrichson" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "Flask>=3.0.3",
+    "Flask-Login>=0.6.3",
+    "itsdangerous>=2.2.0",
+    "numpy>=2.0.0",
+    "pymongo>=4.8.0",
+    "bcrypt>=4.1.3",
+    "PyYAML>=6.0.1",
+    "redis>=5.0.4",
+    "gunicorn>=22.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0",
+]
+doc = [
+    "Sphinx>=6.2.1",
+    "sphinx-rtd-theme>=2.0.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["FuturePathAPI"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "B",    # flake8-bugbear
+    "A",    # flake8-builtins
+    "RUF",  # Ruff-specific rules
+]
+ignore = [
+    "N802",  # Function name should be lowercase
+    "N803",  # Argument name should be lowercase
+    "N806",  # Variable in function should be lowercase
+    "N999",  # Invalid module name
+    "E501",  # Line too long
+    "N815",  # Variable in class scope should not be mixedCase
+    "N816",  # Variable in global scope should not be mixedCase
+    "E722",  # Do not use bare except
+    "RUF012", # Mutable default value for class attribute
+]
+
+[tool.ruff.lint.per-file-ignores]
+"docs/source/conf.py" = ["A001"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

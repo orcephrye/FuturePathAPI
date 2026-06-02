@@ -1,10 +1,18 @@
-Flask==2.3.2
-Flask_Login==0.6.2
-itsdangerous==2.1.2
-numpy>=1.24.3
-pymongo==4.3.3
-python_bcrypt==0.3.2
-PyYAML==6.0
-redis==4.5.5
-sphinx_rtd_theme==1.2.1
-gunicorn>=20.1.0
+# FuturePathAPI Dependencies
+#
+# NOTE: The project dependencies are now officially managed by Hatch in `pyproject.toml`.
+# You can install the package and all its dependencies in editable mode using:
+#   pip install -e .
+#
+# Below is the list of modern, working dependency versions for reference or legacy tools:
+
+Flask>=3.0.3
+Flask-Login>=0.6.3
+itsdangerous>=2.2.0
+numpy>=2.0.0
+pymongo>=4.8.0
+bcrypt>=4.1.3
+PyYAML>=6.0.1
+redis>=5.0.4
+sphinx-rtd-theme>=2.0.0
+gunicorn>=22.0.0

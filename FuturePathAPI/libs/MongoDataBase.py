@@ -7,27 +7,28 @@
 # Description:
 
 
-import yaml
-import redis
-import bcrypt
 import logging
 import traceback
-from pymongo import MongoClient
+
+import bcrypt
+import redis
+import yaml
 from flask_login import UserMixin
 from itsdangerous import URLSafeTimedSerializer as Serializer
+from pymongo import MongoClient
+
 from FuturePathAPI import MAINDIR
 
-
-log = logging.getLogger('MongoDB')
+log = logging.getLogger("MongoDB")
 DB_CONFIG = "/libs/db.yaml"
 REDIS_CONFIG = "/libs/redis.yaml"
 redisServer = None
 tokenExpire = 43200
 
 
-def loadYaml(filename=''):
+def loadYaml(filename=""):
     yamlFile = MAINDIR + filename
-    with open(yamlFile, 'r') as f:
+    with open(yamlFile, "r") as f:
         return yaml.load(f, Loader=yaml.SafeLoader)
 
 
@@ -56,18 +57,19 @@ def getRedis(checkConn=False):
         except redis.ConnectionError as e:
             print(e.message)
             redisServer = None
-        finally:
-            return redisServer
+        return redisServer
     config = loadYamlREDISConfig()
-    tokenExpire = config.get('expire', 43200)
-    redisServer = redis.StrictRedis(host=config.get('host', 'localhost'), port=config.get('port', 6379),
-                                    db=config.get('db', 0))
+    tokenExpire = config.get("expire", 43200)
+    redisServer = redis.StrictRedis(
+        host=config.get("host", "localhost"),
+        port=config.get("port", 6379),
+        db=config.get("db", 0),
+    )
     return redisServer
 
 
 class MongoConnection(object):
-
-    collections = ['usernames']
+    collections = ["usernames"]
     defaultCollect = None
     connection = None
     db = None
@@ -76,47 +78,64 @@ class MongoConnection(object):
     def __init__(self, databaseName, **kwargs):
         try:
             config = loadYamlDBConfig()
-            self.connection = MongoClient(host=kwargs.get('host', config.get('host', '127.0.0.1')),
-                                          port=kwargs.get('port', config.get('port', 27017)),
-                                          username=kwargs.get('username', config.get('username', 'server')),
-                                          password=kwargs.get('password', config.get('password', '')),
-                                          authSource=kwargs.get('authSource', config.get('authSource', 'admin')))
+            self.connection = MongoClient(
+                host=kwargs.get("host", config.get("host", "127.0.0.1")),
+                port=kwargs.get("port", config.get("port", 27017)),
+                username=kwargs.get("username", config.get("username", "server")),
+                password=kwargs.get("password", config.get("password", "")),
+                authSource=kwargs.get("authSource", config.get("authSource", "admin")),
+            )
             self.db = self.connection[databaseName]
-            self.defaultCollect = kwargs.get('collection', self.collections[0])
+            self.defaultCollect = kwargs.get("collection", self.collections[0])
             self.dbName = databaseName
         except Exception as e:
-            log.error(f'Error while creating MongoConnection: {e}')
-            log.debug(f'[DEBUG] for MongoConnection: {traceback.format_exc()}')
+            log.error(f"Error while creating MongoConnection: {e}")
+            log.debug(f"[DEBUG] for MongoConnection: {traceback.format_exc()}")
             raise e
         super(MongoConnection, self).__init__()
 
     def insertMany(self, data, **kwargs):
-        results = self.db[kwargs.get('collection', self.defaultCollect)].insert_many(data)
+        results = self.db[kwargs.get("collection", self.defaultCollect)].insert_many(
+            data
+        )
         return results.acknowledged and len(results.inserted_ids) == len(data)
 
     def insertOne(self, data, **kwargs):
-        return self.db[kwargs.get('collection', self.defaultCollect)].insert_one(data).acknowledged
+        return (
+            self.db[kwargs.get("collection", self.defaultCollect)]
+            .insert_one(data)
+            .acknowledged
+        )
 
     def find(self, data=None, **kwargs):
-        return self.db[kwargs.get('collection', self.defaultCollect)].find(data)
+        return self.db[kwargs.get("collection", self.defaultCollect)].find(data)
 
     def findOne(self, data=None, **kwargs):
-        return self.db[kwargs.get('collection', self.defaultCollect)].find_one(data)
+        return self.db[kwargs.get("collection", self.defaultCollect)].find_one(data)
 
     def update(self, updateCriteria, data, **kwargs):
-        updateType = {kwargs.get('updateType', '$set'): data}
-        results = self.db[kwargs.get('collection', self.defaultCollect)].update_one(updateCriteria, updateType)
+        updateType = {kwargs.get("updateType", "$set"): data}
+        results = self.db[kwargs.get("collection", self.defaultCollect)].update_one(
+            updateCriteria, updateType
+        )
         return results.acknowledged and results.modified_count > 0
 
     def remove(self, data, **kwargs):
-        return self.db[kwargs.get('collection', self.defaultCollect)].remove(data).get('n', False)
+        return (
+            self.db[kwargs.get("collection", self.defaultCollect)]
+            .remove(data)
+            .get("n", False)
+        )
 
     def drop(self, **kwargs):
-        return self.db[kwargs.get('collection', self.defaultCollect)].drop()
+        return self.db[kwargs.get("collection", self.defaultCollect)].drop()
 
     def clearDB(self, dbName=None):
         if dbName:
-            return [self.connection[dbName][collection].drop() for collection in self.collections]
+            return [
+                self.connection[dbName][collection].drop()
+                for collection in self.collections
+            ]
         return [self.db[collection].drop() for collection in self.collections]
 
     def genCollection(self, collection):
@@ -137,7 +156,6 @@ class MongoConnection(object):
 
 
 class MongoCollection(object):
-
     collection = None
 
     def __init__(self, mongoConn, collection):
@@ -156,8 +174,10 @@ class MongoCollection(object):
     def findOne(self, data=None):
         return self.mongoConn.findOne(data, collection=self.collection)
 
-    def update(self, updateCriteria, data, updateType='$set'):
-        return self.mongoConn.update(updateCriteria, data, collection=self.collection, updateType=updateType)
+    def update(self, updateCriteria, data, updateType="$set"):
+        return self.mongoConn.update(
+            updateCriteria, data, collection=self.collection, updateType=updateType
+        )
 
     def remove(self, data):
         return self.mongoConn.remove(data, collection=self.collection)
@@ -171,48 +191,51 @@ class MongoCollection(object):
 
 
 class UserManager(MongoConnection):
-
     coll = None
     config = None
 
     def __init__(self):
         self.config = loadYamlDBConfig()
-        super(UserManager, self).__init__(databaseName=self.config.get('dbName', 'futurepathapi'))
+        super(UserManager, self).__init__(
+            databaseName=self.config.get("dbName", "futurepathapi")
+        )
         if self.db is None:
             raise Exception("ERROR: Unable to connect to DB!")
-        self.coll = MongoCollection(self, 'usernames')
+        self.coll = MongoCollection(self, "usernames")
         self.r = getRedis()
 
     def check_user(self, username):
-        return self.coll.findOne(data={'username': username})
+        return self.coll.findOne(data={"username": username})
 
     def create_user(self, username, password):
         if self.check_user(username):
             return None
         password = UserManager.hash_password(password)
-        return self.coll.insertOne({'username': username, 'password': password, 'token': ''})
+        return self.coll.insertOne(
+            {"username": username, "password": password, "token": ""}
+        )
 
     def remove_user(self, username):
         if self.check_user(username):
-            return self.coll.remove({'username': username})
+            return self.coll.remove({"username": username})
         return None
 
     def applyToken(self, username, token):
         if not (username and token):
             return False
-        return self.coll.update({'username': username}, {'token': token})
+        return self.coll.update({"username": username}, {"token": token})
 
     def login(self, username, password):
         userData = self.check_user(username)
         if not userData:
             return None
-        hashed = userData['password']
+        hashed = userData["password"]
         if self.check_password(password, hashed):
-            token = userData.get('token', '')
+            token = userData.get("token", "")
             tmpUserName = self.get_from_cache(token)
             if tmpUserName == username:
                 return token
-            token = Serializer(password).dumps(username).decode('utf-8')
+            token = Serializer(password).dumps(username).decode("utf-8")
             self.applyToken(username, token)
             self.r.setex(token, tokenExpire, username)
             return token
@@ -221,7 +244,7 @@ class UserManager(MongoConnection):
     def get_from_cache(self, key):
         output = self.r.get(key)
         if type(output) is bytes:
-            return output.decode('utf-8')
+            return output.decode("utf-8")
         return output
 
     def set_too_cache(self, key, value):
@@ -236,18 +259,22 @@ class UserManager(MongoConnection):
 
     @staticmethod
     def hash_password(password):
-        return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+        return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
     @staticmethod
     def check_password(password, hashed):
-        return bcrypt.hashpw(password.encode('utf-8'), hashed.encode('utf-8')).decode('utf-8') == hashed
+        return (
+            bcrypt.hashpw(password.encode("utf-8"), hashed.encode("utf-8")).decode(
+                "utf-8"
+            )
+            == hashed
+        )
 
 
 class User(UserMixin):
-
     def __init__(self, username):
         self._id = username
         self.username = username
 
     def __repr__(self):
-        return '<User %s>' % self.username
+        return "<User %s>" % self.username
