@@ -11,7 +11,7 @@ from flask import abort, jsonify, request
 from flask_login import LoginManager, current_user, login_required
 
 from FuturePathAPI.initApp import END_POINT, app
-from FuturePathAPI.libs.MongoDataBase import User, UserManager
+from FuturePathAPI.libs import User, UserManager
 
 login_manager = LoginManager()
 login_manager.init_app(app)

@@ -4,68 +4,18 @@
 # Author: Ryan Henrichson
 # Version: 0.1
 # Date: 02/15/2022
-# Description:
-
+# Description: MongoDB support
 
 import logging
 import traceback
-
 import bcrypt
-import redis
-import yaml
-from flask_login import UserMixin
 from itsdangerous import URLSafeTimedSerializer as Serializer
 from pymongo import MongoClient
 
-from FuturePathAPI import MAINDIR
+from FuturePathAPI.libs import loadYamlDBConfig, getRedis, tokenExpire
 
 log = logging.getLogger("MongoDB")
-DB_CONFIG = "/libs/db.yaml"
-REDIS_CONFIG = "/libs/redis.yaml"
-redisServer = None
-tokenExpire = 43200
-
-
-def loadYaml(filename=""):
-    yamlFile = MAINDIR + filename
-    with open(yamlFile, "r") as f:
-        return yaml.load(f, Loader=yaml.SafeLoader)
-
-
-def loadYamlDBConfig():
-    try:
-        return loadYaml(DB_CONFIG)
-    except:
-        return dict()
-
-
-def loadYamlREDISConfig():
-    try:
-        return loadYaml(REDIS_CONFIG)
-    except:
-        return dict()
-
-
-def getRedis(checkConn=False):
-    global redisServer
-    global tokenExpire
-    if redisServer is not None:
-        if checkConn is False:
-            return redisServer
-        try:
-            redisServer.ping()
-        except redis.ConnectionError as e:
-            print(e.message)
-            redisServer = None
-        return redisServer
-    config = loadYamlREDISConfig()
-    tokenExpire = config.get("expire", 43200)
-    redisServer = redis.StrictRedis(
-        host=config.get("host", "localhost"),
-        port=config.get("port", 6379),
-        db=config.get("db", 0),
-    )
-    return redisServer
+_fallback_cache = {}
 
 
 class MongoConnection(object):
@@ -86,7 +36,7 @@ class MongoConnection(object):
                 authSource=kwargs.get("authSource", config.get("authSource", "admin")),
             )
             self.db = self.connection[databaseName]
-            self.defaultCollect = kwargs.get("collection", self.collections[0])
+            self.defaultCollect: str = kwargs.get("collection", self.collections[0])
             self.dbName = databaseName
         except Exception as e:
             log.error(f"Error while creating MongoConnection: {e}")
@@ -235,27 +185,57 @@ class UserManager(MongoConnection):
             tmpUserName = self.get_from_cache(token)
             if tmpUserName == username:
                 return token
-            token = Serializer(password).dumps(username).decode("utf-8")
+            token = Serializer(password).dumps(username)
+            if isinstance(token, bytes):
+                token = token.decode("utf-8")
             self.applyToken(username, token)
-            self.r.setex(token, tokenExpire, username)
+            self.set_too_cache(token, username)
             return token
         return False
 
     def get_from_cache(self, key):
-        output = self.r.get(key)
-        if type(output) is bytes:
-            return output.decode("utf-8")
-        return output
+        try:
+            output = self.r.get(key) if self.r else None
+            if type(output) is bytes:
+                return output.decode("utf-8")
+            if output is not None:
+                return output
+        except Exception:
+            pass
+        return _fallback_cache.get(key)
 
     def set_too_cache(self, key, value):
-        return self.r.setex(key, tokenExpire, value)
+        _fallback_cache[key] = value
+        try:
+            if self.r:
+                return self.r.setex(key, tokenExpire, value)
+        except Exception:
+            pass
+        return True
 
     @staticmethod
     def checkToken(token):
         try:
-            return getRedis().get(token)
-        except:
-            return None
+            r = getRedis()
+            output = r.get(token) if r else None
+            if type(output) is bytes:
+                return output.decode("utf-8")
+            if output is not None:
+                return output
+        except Exception:
+            pass
+        # Fallback to local dict cache
+        if token in _fallback_cache:
+            return _fallback_cache[token]
+        # Fallback to database query
+        try:
+            um = UserManager()
+            user_data = um.coll.findOne({"token": token})
+            if user_data:
+                return user_data.get("username")
+        except Exception:
+            pass
+        return None
 
     @staticmethod
     def hash_password(password):
@@ -269,12 +249,3 @@ class UserManager(MongoConnection):
             )
             == hashed
         )
-
-
-class User(UserMixin):
-    def __init__(self, username):
-        self._id = username
-        self.username = username
-
-    def __repr__(self):
-        return "<User %s>" % self.username
