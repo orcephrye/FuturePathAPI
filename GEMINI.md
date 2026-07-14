@@ -24,8 +24,10 @@ The 'docs' dir has all the docs built by Sphinx.
 Also there is the README.md file:
 @./README.md
 
+## A Summary of the FuturePath TTRPG 
+@./FUTUREPATH_SUMMARY.md
+
 # Active Tasks
-This app is OLD and was last updated on Python 3.8. I would like to update it to run on Python 3.11 to 3.13 at least. 
-It also needs a proper project manager like PDM or Hatch and we need to add styling and linting. Currently it doesn't even 
-work likely because of old libs.
+Lets update the DB support to add TinyDB as an option besides MongoDB. This is gonna be used for easier
+development and testing work but not meant for production.
 
