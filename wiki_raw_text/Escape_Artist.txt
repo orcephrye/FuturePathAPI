@@ -1,0 +1,58 @@
+Your training allows you to slip bonds and escape from grapples, among other useful things.
+;NOTE: This Skill is earned through a Feat. Once acquired, all ranks from Acrobatics and Athletics go into Escape Artist. This total is not limited to the normal restrictions put on Skill Rank levels. This skill can either be associated with Dexterity '''OR''' Strength and the Player must choose at the moment they acquire this skill. The Player cannot spend skill points on this skill. To improve its Rank, the Player must spend points on Acrobatics or Athletics.
+
+==Check==
+{| class="wikitable" style="float:right; margin-left: 10px;"
+! style="text-algin:left;" | Restraint 
+! DC 
+! Action/Time 
+! Try Again?
+|-
+| Rope/bindings ||Binder’s CMB +20 ||1 minute ||Yes, unless DC is > 20 + <br /> your Escape Artist bonus
+|-
+| Net, animate rope spell, <br /> command plants, control <br /> plants, or entangle ||20 ||1 full-round action ||Not stated (yes by default)
+|-
+| Snare spell ||23 ||1 full-round action  ||Not stated (yes by default)
+|-
+| Manacles (normal) ||30 ||1 minute ||Yes
+|-
+| Tight space ||30 ||at least 1 minute ||Yes
+|-
+| Manacles (masterwork) ||35 ||1 minute ||Yes
+|-
+| Grapple or pin ||Grappler’s CMD ||standard action ||Yes
+|}
+
+The table at right gives the DCs to escape various forms of restraints.
+
+===Ropes/Bindings===
+
+The DC of your Escape Artist check is equal to the binder's combined Strength and Wisdom modifiers + 10. 
+
+=== Cuffs and Masterwork Cuffs ===
+
+The DC to escape normal cuffs is 20. The DC to escape masterwork cuffs is 30 + Masterworked Level.
+
+===Tight Space===
+
+The DC noted on the table is for getting through a space where your head fits, but your shoulders don’t. If the space is long, you may need to make multiple checks. You can’t get through a space that your head does not fit through.
+
+===Grappler===
+
+You can make an Escape Artist check in place of a Strength check to escape a grapple or to change from a pinned condition to merely grappled.
+
+You can make an Escape Artist check in place of a Strength check to escape a grapple or a pin.
+
+==Action==
+
+Varies. Making an Escape Artist check to escape from rope bindings, manacles, or other restraints (except a grappler) requires 1 minute of work. Escaping from a net or an animate rope, command plants, control plants, or an entangle spell is a full-round action. Escaping from a grapple or pin is a standard action. Squeezing through a tight space takes at least 1 minute, maybe longer, depending on how narrow it is.
+
+==Try Again==
+
+Varies. You can make another check after a failed check if you’re squeezing through a tight space and making multiple checks. If the situation permits, you can make additional checks or even take 20, as long as you’re not being actively opposed. If the DC to escape from rope or bindings is higher than 20 + your Escape Artist skill bonus, you cannot escape from the bonds using Escape Artist.
+
+==Special==
+* '''IMPORTANT''': The Rank of this skill is the Rank of Athletics and Acrobatics combined and doesn't follow the normal Skill Rank level restrictions.
+* '''IMPORTANT''': This skill can be either associated with Strength '''OR''' Dexterity. When the Skill is acquired, the Player must choose.
+* '''IMPORTANT''': The Player cannot spend skill points on this skill. To improve its Rank, the Player must spend points on Athletics or Acrobatics.
+* '''Feat''' If you have the Stealthy feat, you get a +2 bonus on Escape Artist skill checks. If you have 10 or more ranks in Escape Artist, the bonus increases to +4.

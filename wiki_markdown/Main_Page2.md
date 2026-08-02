@@ -1,0 +1,1 @@
+[FuturePath](FuturePath "FuturePath"){.wikilink}

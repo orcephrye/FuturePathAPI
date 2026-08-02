@@ -1,0 +1,12 @@
+**Benefit**: The maximum number of attacks of opportunity the character
+may make each round is equal to the character's Dexterity modifier + 1.
+The character can still only make one attack of opportunity on a single
+opponent. With this feat, the character may also make attacks of
+opportunity when flat-footed.
+
+**Normal**: A character without the Combat Reflexes feat can make only
+one attack of opportunity per round and can't make attacks of
+opportunity when flat-footed.
+
+**Special**: The Combat Reflexes feat doesn't allow a Fast hero with the
+opportunist talent to use that talent more than once per round.

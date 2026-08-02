@@ -1,0 +1,39 @@
+Crypto is a function of a Spaceship. Space Ships and other functions can
+be found [here](Space_Ships#Ship_Functions "here"){.wikilink}.
+
+### Description
+
+This allows the transmission of encrypted information. Communications
+can become \'secure\' between vessels. Without this communication
+between teammates, ships can be overheard by the enemy. Communications
+can also be intercepted; this can be done without this module and is a
+feature of all ships using the Sensors attribute. If the intercepted
+communications are encrypted, this function can attempt to decipher
+them. A Character with the [Computer
+Use](Computer_Use#Encrypt/Decrypt_Message "Computer Use"){.wikilink}
+skill can also assist by adding their Skill Competency level to the
+roll. A Science Bay can allow for multiple people to work on
+Encryption/Decryption at the same time, with a +2 to their result.
+
+With a Crypto Machine installed on a ship, all internal communications
+are hidden from a Hacker. And the Hacker DC for Gather Information
+increases by 1, and +1 for every Classification level of the Crypto Bay.
+
+This is a set of powerful quantum computers that require both physical
+space and significant power to maintain at super-cold temperatures. When
+operated correctly, these machines can create nearly impossible-to-crack
+ciphers that only other powerful quantum computers could hope to crack.
+Because this is equivalent to having a small server farm built into a
+ship, not every Spaceship can easily have one.
+
+Once a ship has a Crypto bay, it becomes impossible to decrypt or jam
+comms between ships, crew members, and drones unless the enemy ship also
+has a Crypto bay at a higher masterwork level.
+
+A Crypto machine is installed in a Bay or Customization Slot.
+
+: **Associated Ship Attribute**: Electronics
+: **Price**: A Crypto machine base price is: \$175,000 + \$100,000 per
+  masterwork level.
+: **Procure Diff**: A Crypto machine has a starting Procure Difficulty
+  of 1.

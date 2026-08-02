@@ -1,0 +1,101 @@
+Professional is a \'Skill-like\' ability. It includes being able to
+\'act professional\' when in the appropriate setting, even if it is
+against the character\'s normal behavior, as well as being exceptional
+or standing out among others in the workplace.
+
+A full list of Occupations can be seen
+[here](Occupations "here"){.wikilink}. Choosing an Occupation helps
+determine a Character\'s starting wealth and credit score. It also
+determines things like bonus wealth when leaving up.
+
+As a Skill-like ability, Professional Ranks up with the Character level.
+So the Professional Rank is equal to Character Level divided by 2,
+rounded up. (Character Level / 2, rounded up). At Character level 19, a
+Character\'s Professional Rank would be 10.
+
+## Check
+
+There are three checks you can take for the Professional skill.
+
+<div class="toccolours mw-collapsible mw-collapsed">
+
+**Getting a Bonus**
+
+: 
+
+<div class="mw-collapsible-content">
+
+Noted on the [Wealth](Wealth_and_Money "Wealth"){.wikilink} page, a
+check can be done to see if you are good enough at your job that you
+gain a bonus. The check is d20 + Profession skill against a DC of 20. If
+you succeed, you can gain a bonus that goes directly to your Bonus
+Wealth. The bonus amount can be whatever the GM finds appropriate;
+however, a good suggestion is to take the character\'s credit score,
+subtract 3, and take that Credit score\'s value as the Bonus. If you
+cannot subtract 3 without going below 0, then simply add \$250. Another
+suggestion would be for every 5 you beat the DC, you get another Bonus.
+
+You cannot roll for a bonus if you do not have a skill rank in
+Profession.
+
+</div>
+</div>
+<div class="toccolours mw-collapsible mw-collapsed">
+
+**Acting Professional**
+
+: 
+
+<div class="mw-collapsible-content">
+
+You can add your Profession to a bluff check when your character must
+act professionally. This is a loose rule that will likely not come up
+often, and it\'s up to the GM to decide if the conditions are right. But
+having ranks in Profession should give any character an edge in
+situations where they must act professionally while role-playing. The DC
+would be determined by the Bluff check.
+
+</div>
+</div>
+<div class="toccolours mw-collapsible mw-collapsed">
+
+**Performance**
+
+: 
+
+<div class="mw-collapsible-content">
+
+Your Profession has to be a form of entertainment, from singing to
+acting to playing an instrument. If so, then you can do a Performance as
+an action. The higher the rank, the more money earned from a
+performance, and the more likely your character is to become popular for
+their performance skills. The Character can add their Charisma Mod as a
+static bonus to these checks. The amount earned should be determined by
+the GM. But it should increase based on DC and skill rank. Each of the
+nine categories of the Perform skill includes a variety of methods,
+instruments, or techniques; a small sample is provided for each category
+below.
+
+- Act (comedy, drama, pantomime)
+- Comedy (buffoonery, limericks, joke-telling)
+- Dance (ballet, waltz, jig)
+- Keyboard instruments (harpsichord, piano, pipe organ)
+- Oratory (epic, ode, storytelling)
+- Percussion instruments (bells, chimes, drums, gong)
+- String instruments (fiddle, harp, lute, mandolin)
+- Wind instruments (flute, pan pipes, recorder, trumpet)
+- Sing (ballad, chant, melody)
+
+</div>
+</div>
+
+## Try Again {#try_again}
+
+You cannot try to get a Bonus more than once a week. As for Acting
+Professional, you should review the [Bluff](Bluff "Bluff"){.wikilink}
+skill rules.
+
+You can try a Performance again, but they don\'t negate previous
+failures, and an audience that has been unimpressed in the past is
+likely to be prejudiced against future performances. (Increase the DC by
+5 for each previous failure.)

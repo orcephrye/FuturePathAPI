@@ -1,0 +1,19 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+The Psion can supercharge their Psionic tech as if it were done with a
+Psion 1 Level higher.
+
+**Prerequisites**: Character must already be a
+[Psion](Psionics "Psion"){.wikilink}.
+
+**Benefit**: Psion techniques often have something like damage,
+duration, or other attribute that is directly linked to the Psion\'s
+Level. This is treated as if it were one level higher, possibly dealing
+more damage, lasting longer, or providing more protection, etc. The
+Psion can empower a Technique a number of times per day equal to their
+Psion Level.
+
+**Normal**: -
+
+**Special**: -

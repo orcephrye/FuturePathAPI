@@ -1,0 +1,224 @@
+{|
+|+ '''Throwing Knife/Star'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Simple Throwing Knife or Star
+
+'''Power / Speed''' (Total Level/Dice): Small/ Single-Fire = Level 0 / d2
+
+'''Proficiency Requirement''': 0 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''':  Throwing Weapon
+
+'''Range''': 30ft*
+
+'''Default Attributes''': Throw-able, Archaic
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $35  / 1 (pack of 5)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Less than a pound
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A small simple metallic throwing weapon. So simple in today terms that most armor can easily protect from such a weapon and thus only a critical hit could deal any serious damage.
+;Explanations: This is a very small and simple throwing weapon. Using a customization point earned by the Archaic Default attribute and the Throwing Weapon Arch-Type this weapon gains a bonus to Critical Damage. It's Critical Damage is now x3.
+
+* Throwing range is based on character. Please review rules on the [[Complete Combat Actions]] page.
+|}
+
+
+=== Large Throwing Star ===
+----
+{|
+|+ '''Large Throwing Star'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Large Throwing Star
+
+'''Power / Speed''' (Total Level/Dice): Medium / Single-Fire = Level 1 / d4
+
+'''Proficiency Requirement''': 1 Level in Melee Branch
+
+'''Weapon Style & Arch Type''':  Throwing Weapon
+
+'''Range''': 30ft*
+
+'''Default Attributes''': Throw-able
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $100  / 1 (pack of 5)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': ~1 Pound
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A large 7 pointed throwing start.
+;Explanations: 
+
+* Throwing range is based on character. Please review rules on the [[Complete Combat Actions]] page.
+|}
+
+
+=== Assassins Star ===
+----
+{|
+|+ '''Assassins Star'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Assassins Star
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / d8**
+
+'''Proficiency Requirement''': 2 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''': Throwing Weapon
+
+'''Range''': 30ft *
+
+'''Default Attributes''': Throw-able
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $600  / 1 (pack of 5) Diff: 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': ~1 Pound
+
+'''Bonus Abilities''':  Expendable
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A special disappearing 6 pointed Star. Usually decorated in symbols repersenting death.
+;Explanations: 
+
+* Throwing range is based on character. Please review rules on the [[Complete Combat Actions]] page.
+* A Customization Point was spent to improve the Hit Die with the special Throwing Weapon attribute of Expendable
+|}
+
+=== Phasing Star ===
+----
+{|
+|+ '''Throwing Knife/Star'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Phasing Star
+
+'''Power / Speed''' (Total Level/Dice): Large / Single-Fire = Level 2 / d6
+
+'''Proficiency Requirement''': 2 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''':  Throwing Weapon 
+
+'''Range''': 30ft *
+
+'''Default Attributes''': Throw-able
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $700  / 1 (pack of 5)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 1
+
+'''AP Damage''': 2
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': ~1 Pound
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This special Ninja throwing star is used to pierce protective armor and deal extra damage.
+;Explanations: 
+
+* Throwing range is based on character. Please review rules on the [[Complete Combat Actions]] page.
+|}

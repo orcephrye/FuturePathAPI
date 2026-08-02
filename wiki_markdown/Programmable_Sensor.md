@@ -1,0 +1,17 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the
+Explosive section click
+[here](Weapons#Explosives_.28Grenades.2FTraps.29 "here"){.wikilink}.
+
+Programmable Sensor
+
+- This means that the Person setting this explosive can use there
+  [Demolitions](Demolitions "Demolitions"){.wikilink} skill to program
+  to only go off under certain conditions. The Sensor can sense motion,
+  noise, heat and light. It can identify how many targets are within a
+  45ft range of the weapon. It can also sense certain communications
+  technologies. It can be programmed to ignore certain targets while to
+  explode on others. It can be told to only trigger if a certain number
+  of targets are in a room or so on. But only using the above
+  information about what it can sense or identify.
+
+NOTE: Discuss with your GM about how complicated you can take this.

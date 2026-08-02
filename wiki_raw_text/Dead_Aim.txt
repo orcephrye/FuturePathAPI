@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': Precise Shot, Advantage Die d10
+
+'''Benefit''': Before making a ranged attack, the character takes a Standard Action studying the target. Once the character begins aiming, he or she can’t move, even to take a 5-foot step, until after the character makes his or her next attack, or the benefit of the feat is lost. Likewise, if the character’s concentration is disrupted or the character is attacked before his or her next action, the character loses the benefit of aiming. In the next round, the character's attack is the only action they can take, including taking a 5ft step. 
+
+The Character gains triple advantage, and can re-roll 1's on Advantage Dice. If the target is successful, it is an automatic critical hit with a +1 to the critical level. IE: x2 to x3. If the Player roles within the ranged weapon's critical range, the critical damage is increased by a level. If the level is capped at x5.
+
+This can only be done once per target.
+
+'''Normal''': -
+
+'''Special''': -

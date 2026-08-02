@@ -1,0 +1,11 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: -
+
+**Benefit**: You gain a Misc +1 to both Diplomacy and Intimidate skills.
+This increases to +2 at the 12th Character level.
+
+**Normal**: -
+
+**Special**: -

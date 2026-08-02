@@ -1,0 +1,4 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the Explosive section click [[Weapons#Explosives_.28Grenades.2FTraps.29|here]].
+
+;Containerized
+* This means that the casing can contain multiple different types of [[Weapons#The_Charge|Charges]]. This means one of two things. If the weapon only has one [[Weapons#The_Detonator|Detonator]] then the effect of the weapon can be from multiple types of [[Weapons#The_Charge|Charges]]. Or if the [[Weapons#The_Casing|Casing]] has multiple [[Weapons#The_Detonator|Detonators]] then it can go off multiple types before being spent.

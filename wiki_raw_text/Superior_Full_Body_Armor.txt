@@ -1,0 +1,46 @@
+{|
+|+ '''Superior Full Body Armor'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Superior Full Body Armor
+
+'''Level''': 7
+
+'''Protection +AC / X DR''': +6 / 2 DR (K)
+
+'''Maximum Dexterity''': +3
+
+'''Proficiency Requirement''': 7
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $63,000 / 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': -5ft
+
+'''Weight''': 25 lbs
+
+'''Bonus Abilities''': N/A
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 3
+
+'''Customization Slots Used''': 2
+
+'''Remaining Slots''': 3
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

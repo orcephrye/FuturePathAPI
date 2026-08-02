@@ -1,0 +1,982 @@
+**`<u>`{=html} `<span style="color:#ff0000">`{=html} UNDER
+CONSTRUCTION!!! NOT ALPHA 3 READY!!! `</span>`{=html} `</u>`{=html}**
+
+**`<u>`{=html} `<span style="color:#ff0000">`{=html} This is not ready
+for use and may be removed!!! `</span>`{=html} `</u>`{=html}**
+
+# THE GADGET SYSTEM {#the_gadget_system}
+
+The gadget system is a way to customize weapons, armor, and equipment
+even more to appropriately fit a given campaign or character play style.
+Since each campaign will likely use very different items based on its
+unique setting, the gadget system allows total freedom in designing
+specific models of equipment.
+
+Using the gadget system is a simple matter of mixing and matching
+various elements of a piece of gear until it fits what is needed.
+
+First, pick a base weapon, armor, or piece of equipment to be modified.
+Select a gadget for the appropriate type (armor gadgets for armor, and
+so on) that is either a universal gadget or a gadget from the same (or
+lower) Progress Level. Modify the Cost and [Procure
+Difficulty](Wealth_and_Money#Procure_Difficulty "Procure Difficulty"){.wikilink}
+of the base item according to the gadget's instructions, and then
+purchase the gadget-modified item as normal. Some gadgets have
+additional restrictions placed on them that must be considered before
+making the gadget modification.
+
+## UNIVERSAL WEAPON GADGETS {#universal_weapon_gadgets}
+
+The following gadgets are universal across all Tech Levels +1 and above
+and can apply to weapons found in any era, provided all gadget-specific
+restrictions are observed.
+
+### Alternate Weapon {#alternate_weapon}
+
+Some weapons are capable of serving multiple purposes by integrating two
+types of weapon into one. This can encompass everything from having a
+bayonet installed on a rifle to allowing a weapon to switch between two
+different energy types at any given time. When dealing with firearms and
+other ranged weapons, this usually involves only mixing like types; for
+example, energy weapons are only combined with energy weapons, and
+ballistic weapons are only combined with ballistic weapons. This is not
+a hard-and-fast limitation but rather a suggestion based on the
+logistics of designing such a weapon. When selecting the alternate
+weapon gadget, choose a second weapon. That weapon is integrated into
+the base weapon and can be used at any time. Additionally, you must
+choose whether or not the alternate weapon may be physically separated
+from the base weapon or not at the time of purchase. This gadget may be
+selected multiple times, each time adding a single additional weapon to
+the base model.
+
+Restrictions
+: The character must also purchase the weapon to be integrated
+  separately from the primary weapon, before the gadget modification is
+  made.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+### Autoloader Module {#autoloader_module}
+
+Many weapons rely on box magazines or power packs to function. The
+autoloader gadget facilitates quick reloading. This may come in the form
+of an integrated power pack alternator, or in spring-mounted magazine
+loaders worn on the wrist of the user. Regardless of their location on
+the owner's body or the form that the autoloader takes, a weapon with
+the autoloader module gadget is always automatically reloaded as a free
+action as soon as the previous magazine or power pack is expended. This
+module cannot be transferred from one weapon to another, even those of
+similar types, due to the fact that each autoloader module is keyed to
+the individual weapon for which it was designed.
+
+Restrictions
+: Ranged weapons using box magazines or power packs only.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Booby Trapped {#booby_trapped}
+
+Those characters with a more paranoid outlook on life may consider the
+booby trapped gadget for protecting their personal belongings. Any
+weapon with this gadget is designed to function properly only for the
+owner or owners of the weapon, or for a particular group of characters.
+If an unauthorized character picks up or attempts to use the weapon, a
+special trap is immediately triggered. After a trap is triggered, only
+an authorized user can reset the weapon to its normal state. When
+selecting the booby trap gadget, the character must designate a single
+person or a particular group that can use the weapon safely without
+triggering the trap. Additionally, the character must select a single
+trap from the list below.
+
+Barbs
+: The weapon rapidly projects spikes or blades from its grip, dealing
+  1d6 points of damage to the user each round the weapon is held.
+
+<!-- -->
+
+Electric Shock
+: Power cells in the weapon's grip discharge and deal 1d6 points of
+  electricity damage to the user.
+
+<!-- -->
+
+Stun Bolt
+: A stun shock (Fortitude save DC 15) is discharged from a special
+  nozzle built into the weapon. See the stun module gadget for more
+  information on the effects of stun shocks.
+
+<!-- -->
+
+Trigger Integrated Weapon
+: An integrated weapon is triggered and targets the unauthorized user.
+  This trap requires that the weapon make use of the alternate weapon
+  gadget (see above) and is typically used to trigger an explosive
+  device.
+
+<!-- -->
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Collapsible
+
+In situations that call for stealth and deception, it is of great value
+to be able to separate an item into its parts and transport them in
+their broken down state. A weapon that makes use of the collapsible
+gadget is easily disassembled and reassembled at a moment's notice.
+Breaking down a weapon into its individual parts requires a full-round
+action, while reassembling them in the correct order requires another
+full-round action. Obviously, the weapons must be fully assembled to be
+used. In its disassembled state, a weapon is not easily identified; a
+Knowledge (technology) check (DC 17) is required to identify a collapsed
+weapon for what it really is.
+
+Restrictions
+: None.
+
+**Cost Increase**: %2-
+
+**Procure Difficulty Modifier**: +2
+
+### Compact
+
+By eliminating wasted space and using smaller components, some engineers
+are capable of producing weapons far smaller than their standard
+counterparts. Any weapon that makes use of the compact gadget is one
+size smaller than normal, to a minimum size of Diminutive.
+
+This gadget can only be added to ranged weapons, as most melee weapons
+rely on size and mass to deliver damage.
+
+Restrictions
+: Ranged weapons only.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Expanded Magazine {#expanded_magazine}
+
+Some weapon engineers recognize that stopping to reload a weapon in
+combat is a dangerous and potentially life-threatening maneuver. Taking
+steps to reduce the amount of time required to keep the weapon full,
+these engineers have increased the ammunition capacity of the weapon to
+reduce the frequency with which it must be reloaded. Any weapon with the
+expanded magazine gadget increases its normal magazine capacity by 50%.
+This means it increases its uses before reloading by %50
+
+This gadget may only be taken once per weapon.
+
+Restrictions
+: Ranged weapons only. Cannot use with Weapons that are Single-Fire
+  Speed.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +0
+
+### Genetic Tags {#genetic_tags}
+
+Some law enforcement agencies and military units go out of their way to
+track the exact actions of their members by placing an identifying
+marker on any ammunition expended. This marker may come in the form of a
+serial number stamped on a weapon's casing, or may be as subtle as a
+chemical compound sprayed on the outside of the ammunition it leaves the
+weapon's chamber. Regardless of form, each round of ammunition that is
+fired from the weapon bears a unique tag that corresponds to the genetic
+code of the person to whom the weapon is assigned, immediately
+identifying the attacker to any forensic analysis.
+
+Restrictions
+: Ranged ballistic weapons only.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Integrated Equipment {#integrated_equipment}
+
+A particular piece of nonweapon equipment has been integrated into the
+weapon and can be used by the weapon's bearer at any time. This gadget
+is often used to give ranged weapons features like glow-lamps or flares,
+though it is not limited to those applications. Some weapons may use the
+integrated equipment gadget to incorporate a small computer or sensor
+module, reducing the amount of equipment the character has to carry.
+
+When selecting the integrated equipment gadget, choose a piece of
+equipment. That equipment is integrated into the base weapon and can be
+used at any time. Additionally, you must choose whether or not the
+equipment may be physically separated from the base weapon or not at the
+time of purchase. This gadget may be selected multiple times, each time
+adding a single additional piece of equipment to the base model.
+
+Restrictions
+: The character must also purchase the piece of equipment to be
+  integrated separately from the weapon, before the gadget modification
+  is made.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Miniaturized
+
+By eliminating wasted space and using microscopic components, some
+engineers are capable of producing weapons vastly smaller than normal.
+Any weapon that makes use of the miniaturized gadget is two size
+categories smaller than normal, to a minimum size of Diminutive.
+
+A weapon to which the miniaturized gadget has been added cannot fire
+standard ammunition. It must fire appropriate ammunition modified by the
+miniaturized universal equipment gadget. The weapon gets a Major +4
+advantage when trying to conceal it. Or using it when a Slight of Hands
+Dex check. This also reduces the weight of the weapon by one level.
+
+This gadget can only be added to ranged weapons, as most melee weapons
+rely on size and mass to deliver damage.
+
+Restrictions
+: Ranged weapons only.
+
+**Cost Increase**: %20
+
+**Procure Difficulty Modifier**: +2
+
+### Scope, Rangefinding Laser {#scope_rangefinding_laser}
+
+One of the most valuable additions to any weapon is a scope, allowing
+the bearer to target opponents farther away than normal. What makes the
+rangefinding laser scope gadget so valuable is that it serves two
+purposes. First, a weapon with this gadget increases its range increment
+by one-half (multiply by 1.5). Additionally, the scope also sends out an
+invisible laser that can determine the exact range to a target, and then
+relay that information via a computer link. If that information is
+relayed to another weapon with the rangefinding laser scope gadget
+targeting the same character or object, the second attacker gains a +1
+equipment bonus on his first attack roll against the target. This allows
+multiple characters with rangefinding laser scope gadgets to triangulate
+the exact position of a target and ensures greater accuracy.
+
+Restrictions
+: Ranged weapons only.
+
+**Cost Increase**: %20
+
+**Procure Difficulty Modifier**: +1
+
+### Sensor Baffling {#sensor_baffling}
+
+From simple metal detectors to advanced x-ray scanners, there's a way to
+detect every weapon. As the technology level increases, so does the
+accuracy of weapons sensing devices. The ability to confuse these
+sensors can be invaluable, especially when smuggling weapons past
+security. Any weapon with the sensor baffling gadget grants a Major +4
+Advantage bonus on any checks made to conceal the weapon from sensors or
+other detection devices.
+
+Restrictions
+: None.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+### Spring-Loaded {#spring_loaded}
+
+Some weapons are designed to be concealed from sight and then quickly
+drawn into the hand at a moment's notice. The spring-loaded gadget
+ensures that small weapons can remain hidden under layers of clothes or
+armor and still be called to action at any time. The bearer of a weapon
+with this gadget automatically gains the benefits of the Quick Draw feat
+with this weapon only, even if the weapon is hidden from sight on that
+character's person.
+
+Restrictions
+: Weapons Power level of Small.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +0
+
+### Stun Module {#stun_module}
+
+One advantage of energy weapons over their ballistic and physical
+counterparts is that they are capable of altering their own output on
+the fly. With the stun module gadget, this means that an energy weapon
+can be used to apply nonlethal force. The stun module is an alternate
+firing mode; switching to or from stun mode is a free action (just like
+changing a weapon's rate of fire). Whenever a character fires a weapon
+set to stun and successfully hits the target, the target must make a
+Fortitude save (DC determined by cost of the gadget) or be stunned for
+1d4 rounds.
+
+Restrictions
+: Energy weapons only.
+
+**Cost Increase**: %5 (Con DC 12); %10 (Con DC 15); %15 (Con DC 18).
+
+**Procure Difficulty Modifier**: +0
+
+### Techno-Organic Makeup {#techno_organic_makeup}
+
+Though the technology of Earth is based on electronics and mechanics,
+some alien cultures may have developed technology based on living
+organisms working in harmony for an intended purpose. Additionally,
+advanced civilizations may make use of certain biological forms of
+technology integrated with their own mechanical devices to form a
+techno-organic hybrid capable of performing certain tasks with increased
+efficiency.
+
+A weapon with the techno-organic makeup gadget is composed of living
+tissue or a biological/mechanical hybrid material. Unlike normal
+weapons, the weapon with this gadget heals itself at a rate of one hit
+point per hour when damaged. Additionally, weapons with this gadget are
+susceptible to diseases and poisons specifically designed to target
+techno-organic material.
+
+Restrictions
+: None.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+### Variable Ammunition {#variable_ammunition}
+
+Firearms typically draw their ammunition from a single source and do so
+until they are reloaded with a fresh magazine. The variable ammunition
+gadget changes this; it allows the user to load an additional type of
+ammunition. This decreases the ammunition capacity to %50. Or 1/2 for
+one Ammunition type and 1/2 for another type. It allows the user to
+switch between the two different types of ammunition as a free action.
+
+Restrictions
+: Ranged ballistic weapons only.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+### Variable Charge {#variable_charge}
+
+As with the stun module gadget, the variable charge gadget takes
+advantage of an energy weapon's ability to modify the damage caused by
+its own shots. This gadget gives the user the ability to "power up" his
+or her shots by focusing more energy into a single blast. A weapon with
+the variable charge gadget may be primed as an attack action, increasing
+the damage of its next shot by +1 die. For example, a weapon that
+normally deals 2d6 points of damage deals 3d6 points of damage after
+being primed for one round. A weapon may be primed for up to three
+rounds. If primed for more than three rounds, it becomes unstable; on
+the fourth round the weapon must be fired or else it explodes and deals
+the fully charged damage (normal weapon damage, +4 dice) to the user.
+When this occurs, the weapon is completely destroyed.
+
+Restrictions
+: Ranged energy weapons only.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +1
+
+### Voice Recognition System {#voice_recognition_system}
+
+A countermeasure commonly built into weapons is the voice recognition
+system gadget. It requires any user to speak a command word to unlock
+the weapon before it can be used. Some weapons couple the voice
+recognition system with the booby trap gadget to require a voice command
+to reset the weapon to its previous state. Any weapon with the voice
+recognition system gadget will not fire or activate unless the owner (or
+designated group) gives the command word to the weapon.
+
+Restrictions
+: None.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +0
+
+## UNIVERSAL ARMOR GADGETS {#universal_armor_gadgets}
+
+The following gadgets are universal and can apply to armors found in any
+Tech Level +1 and above, provided all gadget-specific restrictions are
+observed.
+
+### Environment Seal {#environment_seal}
+
+Since many armors are designed with a particular environment in mind,
+this gadget provides the wearer protection from harsh conditions. The
+environment seal gadget transforms any armor into a stable and insulated
+artificial environment. This provides the wearer with the right amount
+of breathable air and external pressure to assure comfort and survival
+for up to eight hours, ensuring that the armor can function in the
+extremes of the deep sea or deep space, along with any environment in
+between. Only certain types of armor can handle this modification and
+those that do usually integrate a sealed helmet, body glove, and
+emergency air tanks to generate internal atmosphere.
+
+This allows the Character to temporarily negate negative effects of
+harsh environments. This does not count for movement over terrain. The
+armor has to be full body and extra parts specially made for the armor
+and the wearer or necessary for dealing with Hyper-Extreme environments
+like Deep Sea/Deep Space/Extreme Crushing Atmosphere. Also this doesn\'t
+help counter extreme gravity.
+
+Restrictions
+: Medium, heavy, or powered armor only.
+
+**Cost Increase**: %100 (x2)
+
+**Procure Difficulty Modifier**: +1
+
+### Integrated Equipment {#integrated_equipment_1}
+
+A particular piece of non-weapon equipment has been integrated into the
+armor and can be used by the armor's wearer at any time. This gadget is
+often used to add features such as glow-lamps or duracable to armor,
+though it is not limited to those applications. Indeed, some armors are
+intended to make their wearers into independent one-person armies, and
+sport a dozen or more such equipment integrations.
+
+When selecting the integrated equipment gadget, choose a piece of
+equipment. That equipment is integrated into the base armor and can be
+used at any time. Additionally, you must choose whether or not the
+equipment may be physically separated from the base armor or not at the
+time of purchase. This gadget may be selected multiple times, each time
+adding a single additional piece of equipment to the base model.
+
+Restrictions
+: The character must also purchase the piece of equipment to be
+  integrated separately from the armor, before the
+
+gadget modification is made.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +0
+
+### Integrated Weapon {#integrated_weapon}
+
+Some armors are designed with specific combat purposes in mind and build
+in certain weapons as standard equipment. Examples run from a pair of
+pop-out wrist blades to shoulder-mounted plasma cannons. Additionally,
+many armors link their weapons to integrated heads-up displays, turning
+the user into a walking combat machine.
+
+When selecting the integrated weapon gadget, choose a single weapon.
+That weapon is integrated into the base armor and can be used at any
+time. Additionally, you must choose whether or not the weapon may be
+physically separated from the base armor or not at the time of purchase.
+This gadget may be selected multiple times, each time adding a single
+additional weapon to the base armor.
+
+Restrictions
+: The character must also purchase the weapon to be integrated
+  separately from the base armor, before the gadget modification is
+  made.
+
+**Cost Increase**: %100 (x2) + Weapon Cost(%20)
+
+**Procure Difficulty Modifier**: +2
+
+### Storage Compartment {#storage_compartment}
+
+A simple but often overlooked modification that can be of great benefit
+in almost any situation is the ability to store and carry small items in
+a safe place. The storage compartment gadget accomplishes just that,
+incorporating an empty space where other objects can be carried by the
+wearer with relative ease. Each storage compartment gadget allows the
+wearer to carry two items of size Small or smaller in a container built
+into the armor. This gadget may be taken multiple times, each time
+providing another compartment where small items may be carried.
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Techno-Organic Makeup {#techno_organic_makeup_1}
+
+Though the technology of Earth is based on electronics and mechanics,
+some alien cultures may have developed technology based on living
+organisms working in harmony for an intended purpose. Additionally,
+advanced civilizations may make use of certain biological forms of
+technology integrated with their own mechanical devices to form a
+techno-organic hybrid capable of performing certain tasks with increased
+efficiency.
+
+An armor with the techno-organic makeup gadget is composed of living
+tissue or a biological/mechanical hybrid material. Unlike normal armors,
+armor with this gadget heals itself at a rate of one hit point per hour
+when damaged. Additionally, armor with this gadget is susceptible to
+diseases and poisons specifically designed to target techno-organic
+material.
+
+Restrictions
+: None.
+
+**Cost Increase**: %25
+
+**Procure Difficulty Modifier**: +1
+
+### Ultralight Composition {#ultralight_composition}
+
+The development of new and experimental alloys constantly allows armor
+technology to advance to the point where once bulky and heavy armors
+become as easy to carry as lighter models. Any armor with the ultralight
+composition gadget weighs significantly less than similar pieces of
+armor and is more easily used and worn. The armor reduces its Armor
+Check Penalty (if any) by 1. Furthermore, the armor's speed limitation
+is increased by 5 feet (to a maximum of the user's normal speed). So,
+for example, an armor with an Armor Check Penalty of --2 and a speed
+limitation of 20 feet now has an Armor Check Penalty of --1 and a speed
+limitation of 25 feet.
+
+Restrictions
+: None.
+
+**Cost Increase**: \$20
+
+**Procure Difficulty Modifier**: +1
+
+## UNIVERSAL EQUIPMENT GADGETS {#universal_equipment_gadgets}
+
+The following gadgets are universal and can apply to equipment found in
+any Tech Level +1 and above, provided all gadget-specific restrictions
+are observed.
+
+### Compact {#compact_1}
+
+By eliminating wasted space and using smaller components, some engineers
+are capable of producing equipment far smaller than its standard
+counterparts. Any piece of equipment that makes use of the compact
+gadget is one size smaller than normal, to a minimum size of Diminutive.
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Miniaturized {#miniaturized_1}
+
+By eliminating wasted space and using microscopic components, some
+engineers are capable of producing equipment vastly smaller than normal.
+Any weapon that makes use of the miniaturized gadget is two size
+categories smaller than normal, to a minimum size of Diminutive.
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Multiple Use Item {#multiple_use_item}
+
+Similar in function to the alternate weapon gadget, the multiple use
+item gadget allows the character to integrate the function of two
+separate items into a single device.
+
+When selecting the multiple use item gadget, choose a second object.
+That object is integrated into the base object and can be used at any
+time. Additionally, you must choose whether or not the alternate object
+may be physically separated from the base weapon or not at the time of
+purchase. This gadget may be selected multiple times, each time adding a
+single additional piece of equipment to the base object.
+
+Restrictions
+: The character must also purchase the piece of equipment to be
+  integrated separately from the armor, before the gadget modification
+  is made.
+
+**Cost Increase**: Both Items Total Cost + %20
+
+**Procure Difficulty Modifier**: +0
+
+### Paint-On LCD {#paint_on_lcd}
+
+One of the most revolutionary advances in computer technology during the
+Information Age and beyond is the paint-on LCD gadget. This allows
+almost any surface to be used as a computer display, as it grafts the
+color-changing pixels common to all display devices onto another
+surface.
+
+Any piece of equipment with the paint-on LCD gadget can be used as a
+display for any piece of computer or communications equipment.
+Additionally, weapons and armor may make use of the paint-on LCD gadget
+at the normal cost, but gain no special benefit from the modification
+other than being able to display data.
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Wireless Datalink {#wireless_datalink}
+
+At the dawn of the Information Age, the value of knowledge and accurate
+intelligence became a crucial aspect of warfare. The ability to connect
+to a global communications network was critical to the success of any
+army, as intelligence traveled at the speed of light across the globe to
+command centers safe behind defended battle lines. The wireless datalink
+gadget enables any piece of equipment, from computer to communication
+device to heads-up display, to connect to a global (or, if in place,
+galactic) satellite network and communicate with computer systems in far
+remote areas.
+
+Restrictions
+: This gadget may only be used with gear containing computerized
+  communications equipment.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Storage Compartment {#storage_compartment_1}
+
+Like the gadget used for armor, the ability to store and carry small
+items in a safe place can sometimes be of critical importance. The
+storage compartment gadget accomplishes just that, incorporating an
+empty space where other objects can be carried with relative ease. Each
+storage compartment gadget allows the wearer to carry two items of size
+Small or smaller in a container built into the piece of equipment. This
+gadget may be taken multiple times, each time providing another
+compartment where small items may be carried.
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+## TECH LEVEL SPECIFIC GADGETS {#tech_level_specific_gadgets}
+
+Below are special gadgets that can be found only in there tech level.
+You can modify armor with the gadgets below if they belong in the
+respected Tech level or above.
+
+### Tech Level 2 {#tech_level_2}
+
+**Weapons Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Scope, Video {#scope_video}
+
+The video scope is a special modification to ranged weapons that
+provides an easier way to survey remote portions of the battlefield from
+the comfort of a safe haven. The video scope is a three-inch-
+by-three-inch viewscreen attached to the rear of a standard scope. It
+allows the weapon's user to sit back and examine the details in the
+image rather than having to press his eye against the scope.
+
+Additionally, the viewscreen can be used to freeze-frame and take still
+images and boasts zoom and image enhancement software, allowing
+on-the-fly computer analysis and dissection of battlefield images. Some
+video scopes are capable of receiving broadcast images from remote
+locations, allowing the screen to be used for video communication (by
+jacking in an optional earpiece and microphone) or to transmit maps and
+movement orders with visual aides.
+
+Restrictions
+: Ranged weapons only.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+**Armor Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Prehensile Appendage {#prehensile_appendage}
+
+Useful for scientists, explorers, and others that have need for an extra
+hand, the prehensile appendage gadget is both utilitarian and expensive.
+Essentially, this gadget consists of a long flexible cylinder capped at
+the end with a grasping claw that attaches to the armor's side or back.
+The prehensile appendage gadget essentially gives the wearer of the
+armor an additional hand with which to hold and manipulate objects. The
+gadget cannot be used to make normal melee attacks or fire ranged
+weapons, but it can make grapple attempts (with a Strength bonus of +2
+and using the wearer's base attack bonus).
+
+The appendage is controlled through a pair of gloves worn by the user;
+by issuing commands via a specific set of hand signs, the wearer can
+order the gadget to pick up, drop, or manipulate an object once per
+round as a free action.
+
+Restrictions
+: None.
+
+**Cost Increase**: %50
+
+**Procure Difficulty Modifier**: +1
+
+**Equipment Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Hud Software, Senor Link {#hud_software_senor_link}
+
+A piece of software for the heads-up display device, the sensor link
+allows the user to directly link any computer sensor to the HUD. As a
+result, any sensor can be used hands-free as a free action, provided
+they are present on the character's person.
+
+Restrictions
+: Heads-up display only.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+#### Hud Software, Targeting {#hud_software_targeting}
+
+A piece of software for the heads-up display device, targeting software
+links directly to a ranged weapon's video scope. This allows the
+character to see exactly what the video scope displays without having to
+look at the weapon. The character may fire around corners without
+exposing himself as normal. The software also grants a +1 equipment
+bonus on ranged attacks using the weapon to which it is connected.
+
+Restrictions
+: Heads-up display only, requires weapon with video scope gadget.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+#### Hud Software, Vehicle Link {#hud_software_vehicle_link}
+
+A piece of software for the heads-up display device, the vehicle link
+allows the onboard computer system of any vehicle to be displayed on the
+HUD. This grants a +1 equipment bonus on all Drive or Pilot checks made
+on a vehicle linked to the device.
+
+Restrictions
+: Heads-up display only, requires vehicle with onboard computer system.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+#### Self-Repairing {#self_repairing}
+
+The self-repairing gadget implements nanotechnology in its infancy to
+repair minor problems with any piece of equipment. Whenever the
+equipment is damaged, the self-repairing gadget immediately issues
+commands to a set of nanites that move to the problem spot and begin
+making repairs. The gadget repairs one point of damage per minute to the
+equipment.
+
+Restrictions
+: None.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +0
+
+### Tech Level 3 {#tech_level_3}
+
+**Weapons Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Sound Suppressor {#sound_suppressor}
+
+Similar to the technology that produced the silent suit, the sound
+suppressor gadget is the Gravity Age replacement for the silencers of
+the modern era. Since energy weapons cannot make use of the traditional
+silencers found on most ballistic weapons, the sound suppressor takes
+over this function with almost all Gravity Age weapons.
+
+The sound suppressor generates a field of sonic energy that cancels
+sound produced within field, reducing weapon firing noise to a mere
+whine of sonic energy discharge. The sound suppressor adds +10 to the DC
+of Listen checks made to hear the weapon firing.
+
+Restrictions
+: Ranged weapons only.
+
+**Cost Increase**: %5
+
+**Procure Difficulty Modifier**: +1
+
+**Armor Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Chameleonic Surace {#chameleonic_surace}
+
+Chameleonic materials are the end result of the marriage of sensor
+technology and nanotechnology. Similar in many ways to the painton LCD
+of the Information Age, the chameleonic surface armor gadget allows any
+armor to remake its own image to better blend in with the background.
+Microsensors on the surface of the armor detect surrounding imagery and
+project it from the opposite side, in effect coloring the wearer to look
+just like whatever is behind him. The armor blends in with any
+background.
+
+This gadget provides the armor's wearer a bonus on Steal checks. For
+light armor, this bonus is Major +4; for medium, Major(x2 stacking) +6,
+for heavy, powered, and environmentally sealed armor, Major(x4 stacking)
++10.
+
+Restrictions
+: None.
+
+**Cost Increase**: %100 (x2)
+
+**Procure Difficulty Modifier**: +2
+
+**Equipment Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Hud Software, Ammunition Tracker {#hud_software_ammunition_tracker}
+
+A piece of software for the heads-up display device, the Ammunition
+Tracker is able to keep track of exactly how many shots have been
+expended from a particular weapon. Additionally, when a character starts
+to get low on ammunition, a warning flashes on the HUD indicating that a
+reload must occur soon.
+
+Restrictions
+: Heads-up display only, requires a weapon with an integrated computer.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+#### Sound Suppressor {#sound_suppressor_1}
+
+Similar to the technology that produced the silent suit, the sound
+suppressor gadget silences almost any noise. It generates a field of
+sonic energy that cancels sound produced within field, reducing all
+noise to a mere whine of sonic energy discharge. The sound suppressor
+adds +10 to the DC of Listen checks made to hear the weapon firing.
+
+Restrictions
+: None.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +1
+
+### Tech Level 4 {#tech_level_4}
+
+**Weapons Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Teleporting Magazine {#teleporting_magazine}
+
+One disadvantage to the use of ranged weapons has always been limited
+ammunition. Unless the weapon's bearer is willing to cart around a bulky
+power backpack or ribbons of ammunition, reloading is always a problem.
+The teleporting magazine gadget allows a character to reload without
+ever having to actually reload; when the weapon detects that it has run
+out of ammunition, the current box magazine is teleported out of the
+weapon and another one is teleported in instantaneously. Though the
+character never has to reload, he must possess enough magazines or power
+packs to be teleported in or else the gadget does not function.
+
+Restrictions
+: Ranged weapons only.
+
+**Cost Increase**: %30
+
+**Procure Difficulty Modifier**: +2
+
+**Armor Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Gravity Anchor {#gravity_anchor}
+
+With space combat almost as common as ground combat in the Energy Age,
+armor manufacturers seek to make their armor more useful in both space
+and atmospheric combat. One such enhancement is the gravity anchor
+gadget, which generates a field of artificial gravity around the armor's
+wearer. In low gravity and zero gravity conditions, the gravity anchor
+can be activated to give the wearer the benefits of full gravity in any
+situation. Characters with this gadget are unaffected by low gravity and
+zero-g conditions.
+
+Restrictions
+: None.
+
+**Cost Increase**: %50
+
+**Procure Difficulty Modifier**: +1
+
+#### Morphic Metal Alloy {#morphic_metal_alloy}
+
+A combination of nanotechnology and armor engineering, morphic metal
+alloy is a special material used in the construction of armor to enhance
+the user's ability to move freely. When activated, morphic metal bends
+and shapes itself to the contours of the wearer's body, giving it both a
+snug fit and increased mobility. An armor with the morphic metal alloy
+gadget reduces its armor check penalty by 1 and increases the maximum
+Dexterity bonus by 1 as well.
+
+Restrictions
+: None.
+
+**Cost Increase**: %30
+
+**Procure Difficulty Modifier**: +2
+
+#### Neg-Grav Boosters {#neg_grav_boosters}
+
+Similar in design to the gravity anchor, but with an opposite purpose,
+neg-grav boosters can be installed into any armor to give the wearer the
+benefits of low gravity conditions. Neg-grav boosters create a
+low-gravity field around the user and counteract the effects of gravity,
+allowing the character to jump to incredible heights. Any armor with
+this gadget grants a +10 bonus on all Jump checks in any situation where
+gravity is a factor. This gadget has no function in zero-g environments.
+
+Restrictions
+: None.
+
+**Cost Increase**: %20
+
+**Procure Difficulty Modifier**: +1
+
+**Equipment Gadgets**:
+
+------------------------------------------------------------------------
+
+#### Hud Software, Biosensor {#hud_software_biosensor}
+
+A piece of software for the heads-up display device, biosensor software
+allows the wearer of the HUD to identify potential weaknesses in
+enemies. When worn, the biosensor software integrates elements of the
+medicomp sensor (though the sensor itself is not required) and can
+identify exactly how many hit points a target has left. Initiating this
+scan requires a full-round action, however, as the target must be kept
+precisely within the sensor's range for the duration of the scan.
+
+Restrictions
+: Heads-up displays only.
+
+**Cost Increase**: %10
+
+**Procure Difficulty Modifier**: +0

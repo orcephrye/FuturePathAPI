@@ -1,0 +1,5 @@
+This is a Weapon Accessory. To learn more about Weapons go [[Weapons|here]].
+
+This can provide a +1 Accuracy bonus only for weapons with large or bigger ranges, same as a [[Standard Scope]]. However, this can overlook the disadvantages of poor lighting.
+
+;Benefit: +1 Accuracy bonus to Ranged Weapons only. This only works on targets that exceed the initial range increment. Ignores penalties for poor lighting.

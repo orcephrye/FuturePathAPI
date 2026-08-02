@@ -1,0 +1,53 @@
+{|
+|+ '''Metal Gloves'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Metal Gloves
+
+'''Tech Level''': 1
+
+'''Power / Speed''' (Total Level/Dice): Unarmed (Considered Level 2 Melee for Cost/Crafting)
+
+'''Proficiency Requirement''': 1 Level in Melee Branch
+
+'''Weapon Style & Arch Type''':  Melee Weapon
+
+'''Range''': 0ft
+
+'''Default Attributes''': -
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $400 / 0 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Lethal (Kinetic)
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': 1 pound
+
+'''Bonus Abilities''': N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: Re-enforced metal gloves designed to protect the hands while providing a more lethal impact than bare fists.
+;Explanations: Converts unarmed strikes to Lethal damage (reducing Hit Die by one level). Provides a +1 Accuracy bonus.
+|}

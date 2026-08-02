@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisites**: Intelligence 13, Defensive Martial Arts
+
+**Benefit**: The character can make a Bluff check in combat as a Simple
+Action. The character receives Advantage on Bluff checks made to feint
+in melee combat.
+
+**Normal**: Feinting in combat is a Combat Technique that requires a
+Standard Technique Action.
+
+**Special**: -

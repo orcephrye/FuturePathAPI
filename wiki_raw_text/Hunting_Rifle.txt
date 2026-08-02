@@ -1,0 +1,105 @@
+{|
+|+ '''Hunting Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Hunting Rifle
+
+'''Power / Speed''' (Total Level/Dice): Large / Manual = Level 3 / d8
+
+'''Proficiency Requirement''': 3 Levels in Range Branch
+
+'''Weapon Style & Arch Type''':  Hunting Rifle
+
+'''Range''': 900ft*
+
+'''Default Attributes''': Two-Handed
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,290 / 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 9
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: Because this is a Hunting Rifle Weapon-Arch Type this weapon has the range of a Large weapon even though it isn't a Large Power Level. 
+|}
+
+
+==Bedded Hunting Rifle==
+{|
+|+ '''Bedded Hunting Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Bedded Hunting Rifle
+
+'''Power / Speed''' (Total Level/Dice): Large / Manual = Level 3 / d8
+
+'''Proficiency Requirement''': 3 Levels in Range Branch
+
+'''Weapon Style & Arch Type''':  Hunting Rifle
+
+'''Range''': 900ft*
+
+'''Default Attributes''': Two-Handed
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,650 / 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 9
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a Hunting rifle that has had its action 'bedded' which results in less moving parts. A common an inexpensive process.
+;Explanations: Because this is a Hunting Rifle Weapon-Arch Type this weapon has the range of a Large weapon even though it isn't a Large Power Level. A customization point was spent to improve the accuracy of the weapon.
+|}

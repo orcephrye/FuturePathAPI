@@ -29,6 +29,7 @@ dependencies = [
     "redis>=5.0.4",
     "gunicorn>=22.0.0",
     "tinydb>=4.8.0",
+    "pydantic>=2.7.0",
 ]
 
 [project.optional-dependencies]

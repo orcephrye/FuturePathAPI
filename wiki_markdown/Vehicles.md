@@ -1,0 +1,568 @@
+**`<u>`{=html} `<span style="color:#ff0000">`{=html} UNDER
+CONSTRUCTION!!! `</span>`{=html} `</u>`{=html}**
+
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+## Driving and/or Riding in a Vehicle {#driving_andor_riding_in_a_vehicle}
+
+This is a wide range of vehicles for most Tech Levels. This is organized
+by planetside vehicles by their passenger capacity, weight capacity, and
+lastly capabilities.
+
+The **Type** column is meant to be specific enough to find it relatable,
+without being specific enough to make it necessary to list out all
+possibilities. Because of this treat the lists more as a guideline. This
+also goes for all other columns. For example, any \'Vehicle\' or \'Beast
+of Burden\' that is built/trained for combat costs double. The **Avg.
+Additional Unit Cap.** uses the **Unit** explained in [**Hull Sizes of
+Space
+Ships**](Space_Ships#Hull_Sizes "Hull Sizes of Space Ships"){.wikilink}.
+This can be adjusted within reason to fit the situation/narrative. The
+**Avg. Cost** column is a rough average price for the item within the
+society selling it. All items in a lower Tech level are considered
+**Archaic** in higher Tech level civilizations. If you attempt to
+purchase a Cart in a Tech Level 1 or higher society it will also cost
+double.
+
+### Tech 4+ {#tech_4}
+
+These vehicles can have all sorts of interesting features. They can
+manipulate gravity and run of exotic particles. They include personal
+transportation devices, pocket sizes hoover cars, and Buses with a whole
+mansion on the inside.
+
+#### Exotic Vehicles {#exotic_vehicles}
+
+------------------------------------------------------------------------
+
+Any of these vehicles can be \'pocket\' size for double its cost. This
+means it can shrink/fold into something you can fit into your pocket
+with an equal reduction in weight as well as size. They can almost
+instantly switch between its small and large size. This cannot happen if
+the object isn\'t empty
+
+  Type                            Avg. Speed    Avg. Cost    Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  ------------------------------- ------------- ------------ --------------------- --------------------------- ----------------------------------------------------------------------------------
+  Personal Exotic Vehicle         45-200 MPH    \$35k        4-5                   +10                         Exotic Fuel (doesn\'t need to be refueled for a the life-time of the craft)
+  Large Personal Exotic Vehicle   45-180 MPH    \$50-75k     6-8                   +20                         Exotic Fuel
+  Sports Exotic Vehicle           100-300 MPH   \$90-140k    2-4                   +8                          Fast Acceleration, more control, Exotic Fuel, good for long distance land travel
+  Luxury Exotic Vehicle           45-220 MPH    \$100-180k   2-5                   +20                         Provides Cha bonus, Exotic Fuel, Fly, Space-Shuttle
+  Hover Small Vehicle             50-180 MPH    \$20-40k     1                     +2                          Fast Acceleration, Hover, Exotic Fuel
+  Cargo Exotic Vehicle            45-180 MPH    \$45-80k     2-4                   +100-150                    Exotic Fuel, Auto Transport Cargo to nearby location, Hover, Fly or Drive
+  Mass Transit Exotic Vehicle     35-180MPH     \$45-90k     30-50                 +25-50                      Exotic Fuel, Fly, Hover
+                                                                                                               
+
+  : Table: Exotic Vehicle
+
+#### Exotic Space-Shuttles {#exotic_space_shuttles}
+
+------------------------------------------------------------------------
+
+These are not considered Space-ships. Instead, these are craft that
+allows access too \'Low Planetary Orbit\' and back again. They can
+shuttle a person planet-side to a space station or an awaiting
+spaceship. They are not designed to be lived in or for long term travel.
+They do not follow normal Spaceship rules and thus can have a higher
+passenger limit. The exotic version of the Space-Shuttles have full
+flight control both in \'amto\' or planet side as well as in space. This
+means that these craft are \'multi-domain\' implying that they work both
+as Flying craft/airplane or as a short range low orbit. They can also
+move at extreme speeds making there travel time easily half the time and
+gains an AC+2 bonus due to being hard to it. These craft can also be
+\'pocket size\' just like other Tech 4 craft.
+
+  Type                        Avg. Speed   Avg. Cost   Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  --------------------------- ------------ ----------- --------------------- --------------------------- ---------------------------------------------
+  Exotic Space shuttle        \-           \$10,000k   5-10                  +30                         Spaceship size: Between Fine and Diminutive
+  Large Exotic Space Fairy    \-           \$50,000k   30-100                +200                        Spaceship size: Between Diminutive and Tiny
+  Cargo Only Exotic Shuttle   \-           \$35,000k   \-                    +1000-2000                  Cannot have passengers
+                                                                                                         
+
+  : Table: Exotic Space-Shuttles
+
+#### Exotic Modes of Transportation {#exotic_modes_of_transportation}
+
+------------------------------------------------------------------------
+
+  Type                                               Avg. Speed   Avg. Cost   Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  -------------------------------------------------- ------------ ----------- --------------------- --------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Personal Site-To-Site Transporter                  \-           \$10k       1                     +1                          Connects to a Planet size Transporation Network if available. Transports person at the speed of light to almost anywhere on the surface.
+  Personal Gravitrametic Eltro-dynamic Transporter   \-           \$100k      1-4                   +4                          This uses the special organic compatible pocket dimension to instantly shrink the person/cargo and the electromagnetic field of a planet to teleport the persons at a small fraction of the speed of light.
+  Space Hooper                                       \-           \$100k      0-6                   +100-1000                   This is a small shuttlecraft like ship that uses gravity manipulation to \'hoop\' into a stable orbit in seconds. However once in orbit is has only simple maneuverability and usually has to be retrieved unless a station if very nearby.
+                                                                                                                                
+
+  : Table: Exotic Transportation
+
+### Tech 2/3 {#tech_23}
+
+These vehicles can hoover and even fly. They can also be hybrid
+solutions that can travel into space. Some are designed for the city
+only while others can be rugged crafts that are not hindered by terrain.
+
+#### High Tech Vehicles {#high_tech_vehicles}
+
+------------------------------------------------------------------------
+
+  Type                               Avg. Speed    Avg. Cost    Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  ---------------------------------- ------------- ------------ --------------------- --------------------------- ----------------------------------------------------------------------------------
+  Personal High-Tech Vehicle         45-200 MPH    \$25k        4-5                   +5                          Atomic Fuel (doesn\'t need to be refueled for a decade)
+  Large Personal High-Tech Vehicle   45-180 MPH    \$45-70k     6-8                   +12                         Atomic Fuel
+  Sports High-Tech Vehicle           100-300 MPH   \$90-140k    2-4                   +4                          Fast Acceleration, more control, Atomic Fuel, good for long distance land travel
+  Luxary High-Tech Vehicle           45-220 MPH    \$100-180k   2-5                   +5                          Provides Cha bonus, Atomic Fuel, Fly, Space-Shuttle
+  Bi-wheel High-Tech Vehicle         50-180 MPH    \$20-40k     1                     +1                          Fast Acceleration, Fly, Atomic Fuel
+  Cargo High-Tech Vehicle            45-180 MPH    \$40-75k     2-4                   +30-60                      Atomic Fuel, Auto Transport Cargo to nearby location, Fly
+  Mass Transit High-Tech Vehicle     35-180MPH     \$45-90k     30-50                 +25-50                      Atomic Fuel, Fly
+                                                                                                                  
+
+  : Table: Personal High Tech Vehicle
+
+#### High-Tech Space-Shuttles {#high_tech_space_shuttles}
+
+------------------------------------------------------------------------
+
+These are not considered Space-ships. Instead, these are craft that
+allows access too \'Low Planetary Orbit\' and back again. They can
+shuttle a person planet-side to a space station or an awaiting
+spaceship. They are not designed to be lived in or for long term travel.
+They do not follow normal Spaceship rules and thus can have a higher
+passenger limit. As High-Tech version of the Tech 1 Personal
+Space-Shuttles these shuttles have full flight control both in \'amto\'
+or planet side as well as in space. This means that these craft are
+\'multi-domain\' implying that they work both as Flying craft/airplane
+or as a short range low orbit
+
+  Type                     Avg. Speed   Avg. Cost   Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  ------------------------ ------------ ----------- --------------------- --------------------------- ---------------------------------------------
+  Personal Space shuttle   \-           \$7,500k    5-10                  +15                         Spaceship size: Between Fine and Diminutive
+  Large Space Fairy        \-           \$40,000k   30-100                +100                        Spaceship size: Between Diminutive and Tiny
+  Cargo Only Shuttle       \-           \$30,000k   \-                    +500-1000                   Cannot have passengers
+                                                                                                      
+
+  : Table: Personal Space-Shuttles
+
+### Tech 1 {#tech_1}
+
+Most of these vehicles look and feel similar to 20th century Earth. They
+use electric motors or carbon fuels to generate kinetic energy. Tech 1
+toward 2 shows a journey from advanced chemical propulsion into hybrid
+solutions. This includes multi-domain vehicles ie: a car that can also
+fly and/or float. The closer to Tech 2 a civilization gets the more
+likely personal space shuttles to become available as well. The concern
+from Tech 0 was more about getting the technology to be reliable and
+available while Tech 1 is more about getting transportation to be cheap
+and focusing on features like comfort or multi-purpose.
+
+#### Advanced Chemical Propulsion {#advanced_chemical_propulsion}
+
+------------------------------------------------------------------------
+
+  Type                              Avg. Speed    Avg. Cost   Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  --------------------------------- ------------- ----------- --------------------- --------------------------- -------------------------------------------------------------------
+  Personal Basic Vehicle            45-120 MPH    \$20k       4-5                   +5                          \-
+  Large Personal Vehicle            45-100 MPH    \$40-55k    6-8                   +10                         \-
+  Sports Vehicle                    100-180 MPH   \$80k       2-4                   +4                          Fast Acceleration, more control
+  Luxary Vehicle                    45-120 MPH    \$50-80k    2-5                   +5                          Provides Cha bonus
+  Bi-wheel Vehicle                  50-120 MPH    \$15-30k    1                     +1                          Fast Acceleration
+  Tracked Agerculture Vehicle       15-35 MPH     \$30-100k   1                     +0-75                       Able to do labor such as cargo, agerculture, armored war machine.
+  Cargo Vehicle                     45-120 MPH    \$35-60k    2-3                   +20-50                      \-
+  Mass Transit Large Vehicle        35-75MPH      \$40-80k    +20-40                \-                          
+  Hybrid Chemical/Eletric Vehicle   30-100 MPH    \$50-100k   2-6                   +4                          Rechargeable without fuel source
+                                                                                                                
+
+  : Table: Advanced Chemical Propulsion
+
+#### Multi-Domain Vehicles {#multi_domain_vehicles}
+
+------------------------------------------------------------------------
+
++-----------+-------------+------------+----------+------------+----------+
+| Type      | Avg. Speed  | Avg. Cost  | Avg.     | Avg.       | Special  |
+|           |             |            | Personal | Additional | Features |
+|           |             |            | Carry    | Unit Cap.  |          |
++===========+=============+============+==========+============+==========+
+| Land and  | 45-120 MPH  | \$40k      | 4-5      | +5         | \-       |
+| Water     |             |            |          |            |          |
+| Vehicle   |             |            |          |            |          |
++-----------+-------------+------------+----------+------------+----------+
+| Land and  | 45-120 MPH  | \$100-200k | 4-8      | +3         | \-       |
+| Air       | / Flying:   |            |          |            |          |
+| (Flying)  | 80-600 MPH  |            |          |            |          |
+| Vehicle   |             |            |          |            |          |
++-----------+-------------+------------+----------+------------+----------+
+| Air and   | 80-600 MPH  | \$200-400k | 4-8      | +3         | \-       |
+| Water     | /           |            |          |            |          |
+| (Diving)  | Underwater: |            |          |            |          |
+| Vehicle   | 5-20 MPH    |            |          |            |          |
++-----------+-------------+------------+----------+------------+----------+
+| All       | 45-600 MPH  | \$500-800k | 4-8      | +4         | \-       |
+| Domains   |             |            |          |            |          |
+| Vehicle\* |             |            |          |            |          |
++-----------+-------------+------------+----------+------------+----------+
+| \***Near Tech 2** This a tech found commonly on already very advanced   |
+| Tech 1 civilizations.                                                   |
++-----------+-------------+------------+----------+------------+----------+
+|           |             |            |          |            |          |
++-----------+-------------+------------+----------+------------+----------+
+
+: Table: Multi-Domain Vehicles
+
+#### Personal Space-Shuttles {#personal_space_shuttles}
+
+------------------------------------------------------------------------
+
+These are not considered Space-ships. Instead, these are craft that
+allows access too \'Low Planetary Orbit\' and back again. They can
+shuttle a person planetside to a space station or an awaiting spaceship.
+They are not designed to be lived in or for long term travel. They do
+not follow normal Spaceship rules and thus can have a higher passenger
+limit.
+
+  Type                     Avg. Speed   Avg. Cost   Avg. Personal Carry   Avg. Additional Unit Cap.   Special Features
+  ------------------------ ------------ ----------- --------------------- --------------------------- ---------------------------------------------
+  Personal Space shuttle   \-           \$5,000k    4-8                   +10                         Spaceship size: Between Fine and Diminutive
+  Large Space Fairy        \-           \$25,000k   10-16                 +20                         Spaceship size: Between Diminutive and Tiny
+  Cargo Only Shuttle       \-           \$15,000k   \-                    +100-200                    Cannot have passangers
+                                                                                                      
+
+  : Table: Personal Space-Shuttles
+
+### Tech 0 {#tech_0}
+
+Tech 0 represents the journey from sentient peoples who question the
+meaning of their existence to the point at which they achieve access to
+space. For the act of moving around this represents a wide margin
+between using \'beats of burden\' to the early chemical powered
+vehicles. Below are tables with examples of different ways of travel in
+a Tech 0 civilization.
+
+#### Beats of Burden {#beats_of_burden}
+
+------------------------------------------------------------------------
+
++----------------+----------+----------+-----------+------------+-----------+
+| Type           | Avg.     | Avg.     | Avg.      | Avg.       | Special   |
+|                | Speed    | Cost     | Personal  | Additional | Features  |
+|                |          |          | Carry     | Unit Cap.  |           |
++================+==========+==========+===========+============+===========+
+| Medium Biped   | 3 MPH    | 3,000    | 1 Small\* | +1\*       | \-        |
++----------------+----------+----------+-----------+------------+-----------+
+| Large Biped    | 4 MPH    | 7,000    | 1         | +2\*       | \-        |
+|                |          |          | Medium\*  |            |           |
++----------------+----------+----------+-----------+------------+-----------+
+| Small          | 4 MPH    | 4,000    | 1 Small   | 1/2        | \-        |
+| Quadruped      |          |          |           |            |           |
++----------------+----------+----------+-----------+------------+-----------+
+| Medium         | 5 MPH    | \$5,000  | 1 S/M     | +1         | \-        |
+| Quadruped      |          |          |           |            |           |
++----------------+----------+----------+-----------+------------+-----------+
+| Heavy          | 5 MPH    | \$7,500  | 1 S/M     | +2         | Bonus     |
+| Quadruped      |          |          |           |            | health    |
+|                |          |          |           |            | for a     |
+|                |          |          |           |            | Medium    |
+|                |          |          |           |            | sized     |
+|                |          |          |           |            | creature  |
++----------------+----------+----------+-----------+------------+-----------+
+| Large          | 7 MPH    | \$12,000 | 1 Large   | +3         | \-        |
+| Quadruped      |          |          | or 2 S/M  |            |           |
++----------------+----------+----------+-----------+------------+-----------+
+| Small          | 2-4 MPH  | 1,000    | 2 S/M     | +4         | Requires  |
+| Cart/Wagon     |          |          |           |            | a \'Beast |
+|                |          |          |           |            | of        |
+|                |          |          |           |            | Burden\'. |
++----------------+----------+----------+-----------+------------+-----------+
+| Medium         | 3-5 MPH  | 2,000    | 2 S/M     | +4-10      | Requires  |
+| Cart/Wagon     |          |          |           |            | 2 too 4   |
+|                |          |          |           |            | \'Beats   |
+|                |          |          |           |            | of        |
+|                |          |          |           |            | Burden\'. |
++----------------+----------+----------+-----------+------------+-----------+
+| Large          | 3-6 MPH  | 3,000    | 2+        | +4-20      | Requires  |
+| Cart/Wagon     |          |          | S/M/Large |            | 2 too 6   |
+|                |          |          |           |            | \'Beats   |
+|                |          |          |           |            | of        |
+|                |          |          |           |            | Burden\'. |
++----------------+----------+----------+-----------+------------+-----------+
+| Medium         | 3-5 MPH  | 4,000    | 2 S/M + 6 | +2         | Requires  |
+| Carriage/Buggy |          |          |           |            | 2 too 4   |
+|                |          |          |           |            | \'Beats   |
+|                |          |          |           |            | of        |
+|                |          |          |           |            | Burden\'. |
+|                |          |          |           |            | The +6    |
+|                |          |          |           |            | seats are |
+|                |          |          |           |            | covered.  |
++----------------+----------+----------+-----------+------------+-----------+
+| Large          | 3-6 MPH  | 7,000    | 2 S/M/L + | +4         | Requires  |
+| Carriage/Buggy |          |          | 6         |            | 2 too 6   |
+|                |          |          |           |            | \'Beats   |
+|                |          |          |           |            | of        |
+|                |          |          |           |            | Burden\'. |
+|                |          |          |           |            | The +6    |
+|                |          |          |           |            | seats are |
+|                |          |          |           |            | covered.  |
++----------------+----------+----------+-----------+------------+-----------+
+| \***Optional** This is option and adding may effect price or another      |
+| stat.                                                                     |
++---------------------------------------------------------------------------+
+
+: Table: Beasts of Burden for Travel
+
+An example of a Quadruped \'Beast of Burden\' for ridding is a Horse. A
+Biped maybe something like a teamed Ostrich. There could also be
+underwater creatures that are not mentioned here but the same
+pricing/capacity suggestions should apply. Carts/Wagons/Carries/Buggys
+can be **Master-worked** which doubles the cost but allows additional
+features such as more comfortable seats, hidden compartments and so on.
+
+#### Steam Powered Locomotion {#steam_powered_locomotion}
+
+------------------------------------------------------------------------
+
++----------+----------+-------------+-----------+------------+--------------+
+| Type     | Avg.     | Avg. Cost   | Avg.      | Avg.       | Special      |
+|          | Speed    |             | Personal  | Additional | Features     |
+|          |          |             | Carry     | Weight     |              |
++==========+==========+=============+===========+============+==============+
+| Personal | 3 MPH    | \$25,000    | 1-4 S/M   | +1         | \-           |
+| Wheeled  |          |             |           |            |              |
+| Vehicle  |          |             |           |            |              |
++----------+----------+-------------+-----------+------------+--------------+
+| Large    | 2 MPH    | \$55,000    | 1         | 1-20\*     | Can be       |
+| Tracked  |          |             |           |            | modified to  |
+| Vehicle  |          |             |           |            | do labor     |
+|          |          |             |           |            | such as      |
+|          |          |             |           |            | cargo,       |
+|          |          |             |           |            | agerculture, |
+|          |          |             |           |            | armored war  |
+|          |          |             |           |            | machine\*    |
++----------+----------+-------------+-----------+------------+--------------+
+| Personal | 2-3 MPH  | \$50,000    | 2-6 S/M/  | 2-6        | \-           |
+| Steam    |          |             | (L\*)     |            |              |
+| Boat     |          |             |           |            |              |
++----------+----------+-------------+-----------+------------+--------------+
+| Medium   | 2 MPH    | \$150,000   | 10-30 S/M | 10-30      | \-           |
+| Steam    |          |             | (L\*)     |            |              |
+| Boat     |          |             |           |            |              |
++----------+----------+-------------+-----------+------------+--------------+
+| Large    | 2 MPH    | \$400,000   | 30-200    | 100-200    | \-           |
+| Steam    |          |             | S/M (L\*) |            |              |
+| Boat     |          |             |           |            |              |
++----------+----------+-------------+-----------+------------+--------------+
+| Huge     | 2 MPH    | \$2,000,000 | 200-2,000 | 200-4,000  | Extra Long   |
+| Steam    |          |             | S/M/L     |            | range.       |
+| Boat     |          |             |           |            | Usually can  |
+|          |          |             |           |            | travel       |
+|          |          |             |           |            | around the   |
+|          |          |             |           |            | waters of a  |
+|          |          |             |           |            | planet.      |
++----------+----------+-------------+-----------+------------+--------------+
+| \***Optional** This is option and adding may effect price or another      |
+| stat.                                                                     |
++---------------------------------------------------------------------------+
+
+: Table: Steam Powered Locomotion
+
+Trains are purposefully left out of this as they are mentioned on the
+[Transportation](Transportation "Transportation"){.wikilink} page.
+**Steam Punk** items should all be considered **Masterworked** with a
+double price increase.
+
+#### Early Chemical Popellant Vehicles {#early_chemical_popellant_vehicles}
+
+------------------------------------------------------------------------
+
++----------------+----------+--------------+----------+------------+----------------+
+| Type           | Avg.     | Avg. Cost    | Avg.     | Avg.       | Special        |
+|                | Speed    |              | Personal | Additional | Features       |
+|                |          |              | Carry    | Weight     |                |
++================+==========+==============+==========+============+================+
+| Personal       | 5 too 45 | \$10-100k    | 1-4      | +1\*       | \-             |
+| Transportation | MPH      |              | S/M/L    |            |                |
++----------------+----------+--------------+----------+------------+----------------+
+| Mass Transit   | 10 too   | \$45-100k    | 6-24     | +10        | \-             |
+| Vehicle        | 40 MPH   |              | S/M/L    |            |                |
++----------------+----------+--------------+----------+------------+----------------+
+| Armored        | 2 too 35 | \$200-500k   | 4-6      | 10         | Bonus damage   |
+| Vehicle        | MPH      |              | S/M/L    |            | reduction/HP\* |
++----------------+----------+--------------+----------+------------+----------------+
+| Early Flying   | 50-200   | \$200-1,000k | 2-16     | 10-20\*    | Air Flight     |
+| Machine        | MPH      |              |          |            |                |
++----------------+----------+--------------+----------+------------+----------------+
+| Tracked        | 2 - 10   | \$100k       | 1        | \-         | Able to do     |
+| Agerculture    | MPH      |              |          |            | labor such as  |
+| Vehicle        |          |              |          |            | cargo,         |
+|                |          |              |          |            | agerculture,   |
+|                |          |              |          |            | armored war    |
+|                |          |              |          |            | machine.       |
++----------------+----------+--------------+----------+------------+----------------+
+| Cargo          | 10 - 45  | \$35-100k    | 2        | +20-30     | \-             |
+| Transportation | MPH      |              |          |            |                |
++----------------+----------+--------------+----------+------------+----------------+
+| \***Optional** This is option and adding may effect price or another stat.        |
++-----------------------------------------------------------------------------------+
+
+: Table: Early Chemical Popellant Vechicals
+
+Here the speeds and prices range heavily. This is due to the idea of
+rapidly increasing progress and attempting to sum up first-generation
+vehicles with later generations that may exist before a species achieves
+access too space. Do not assume that a higher price means better
+product. Merely that the product is harder for that society to make in
+mass. **Personal Transporation** is meant to represent the idea of a
+\'Car\'.
+
+## Add-Ons/Modifications {#add_onsmodifications}
+
+These are attachments and modifications to a vehicle that can improve
+the abilities or add functionality of the craft. These are organized by
+Tech.
+
++----------------------+----------------------+---------------------------------------+
+| Name                 | Avg. Cost / Proc     | Description                           |
+|                      | Diff                 |                                       |
++======================+======================+=======================================+
+| Tech Level 4                                                                        |
++----------------------+----------------------+---------------------------------------+
+| Space-Time Warp      | +250% / 2            | Requirement: The vehicle must have    |
+| Shield               |                      | the flying, shuttle or hover feature. |
+|                      |                      | This creates a small \'warp\' field   |
+|                      |                      | around the vehicle. That redirects    |
+|                      |                      | most objects around it. This acts     |
+|                      |                      | like DR10+(2 for every masterworked   |
+|                      |                      | level). And makes the vehicle appear  |
+|                      |                      | fuzzy to the eye and hard to track    |
+|                      |                      | with sensors.                         |
++----------------------+----------------------+---------------------------------------+
+| Built-in Transporter | +100% / 2            | Requirement: The vehicle must be      |
+|                      |                      | large and normally able to handle 8   |
+|                      |                      | or more people or 100+ cargo. This    |
+|                      |                      | reduces the cargo capacity and        |
+|                      |                      | personal capacity by 50% each. It     |
+|                      |                      | allows for                            |
++----------------------+----------------------+---------------------------------------+
+| Tech Level 3                                                                        |
++----------------------+----------------------+---------------------------------------+
+| Pocket Dimension Mod | +100% / 2            | (Tech 4 +50% / 1) This allows the     |
+|                      |                      | device to be shrunk down to \'pocket  |
+|                      |                      | size\'. Its weight is also reduced    |
+|                      |                      | relative to its size. This happens in |
+|                      |                      | seconds. People cannot be inside this |
+|                      |                      | object when it shrinks. An organic    |
+|                      |                      | compatible Pocket Dimension costs 5x  |
+|                      |                      | a much.                               |
++----------------------+----------------------+---------------------------------------+
+| Tech Level 2                                                                        |
++----------------------+----------------------+---------------------------------------+
+| Gravity Hoover Craft | +100% / 3            | (Tech 3: +50% / 2 and Tech 4: +25%    |
+|                      |                      | / 1) This allows the vehicle to hover |
+|                      |                      | slightly above the ground. Usually by |
+|                      |                      | about 1 to 3 feet. The stability of   |
+|                      |                      | the hoover is in part a sign of its   |
+|                      |                      | quality. This allows for greater      |
+|                      |                      | speeds to be achieved and allows      |
+|                      |                      | travel across terrain without         |
+|                      |                      | infrastructure like roads.            |
++----------------------+----------------------+---------------------------------------+
+| Tech Level 1                                                                        |
++----------------------+----------------------+---------------------------------------+
+| Armor Plating        | +100% / 2            | (Available in Tech 2/3/4. Each one    |
+|                      |                      | improves the DR bonus by 2 while      |
+|                      |                      | reducing the weight penalty by 10%)   |
+|                      |                      | This addon comes with a weight        |
+|                      |                      | penalty of -50% speed and cargo       |
+|                      |                      | capacity. This provides a DR bonus of |
+|                      |                      | 4 + (1 for each masterworked level).  |
+|                      |                      | This also requires that the vehicle   |
+|                      |                      | be considered a military vehicle and  |
+|                      |                      | thus costs twice as much.             |
++----------------------+----------------------+---------------------------------------+
+| Personal Weapon      | +100% / 3            | (Available in Tech 2/3/4 with no      |
+| Mount                |                      | change.) This allows for a            |
+|                      |                      | [weapon](Weapons "weapon"){.wikilink} |
+|                      |                      | to be mounted usually on the top of   |
+|                      |                      | the Vehicle. This by default provides |
+|                      |                      | no additional benefit. However, each  |
+|                      |                      | Masterworked level can provide other  |
+|                      |                      | benefits. Two levels of masterworked  |
+|                      |                      | can provide partial cover to the      |
+|                      |                      | person using the weapon mount. One    |
+|                      |                      | level of masterwork can provide a     |
+|                      |                      | \'weapon stabilization feature\'      |
+|                      |                      | which negates using the weapon while  |
+|                      |                      | in motion. Each level of masterwork   |
+|                      |                      | can provide +1 accuracy bonus. If     |
+|                      |                      | Tech 2 or higher each level of        |
+|                      |                      | masterwork can provide a DR1 to the   |
+|                      |                      | person using the mount point. Each    |
+|                      |                      | level of masterwork can be spent on   |
+|                      |                      | different things.                     |
++----------------------+----------------------+---------------------------------------+
+| Tech Level 0                                                                        |
++----------------------+----------------------+---------------------------------------+
+| Armor Saddle         | 50% / 2              | This can be bought separately too the |
+|                      |                      | beast of burden but has to be made to |
+|                      |                      | fit the animal and costs roughly 50%  |
+|                      |                      | the cost of the animal in question.   |
+|                      |                      | It provides DR of 2 + (1 for each     |
+|                      |                      | masterworked level)                   |
++----------------------+----------------------+---------------------------------------+
+| Pack Saddle          | 20% / 0              | This can be bought separately too the |
+|                      |                      | beast of burden but has to be made to |
+|                      |                      | fit the animal and costs roughly 20%  |
+|                      |                      | the cost of the animal in question.   |
+|                      |                      | It provides 1 + (1 for each           |
+|                      |                      | masterworked level) Unit of extra     |
+|                      |                      | carrying capacity.                    |
++----------------------+----------------------+---------------------------------------+
+| Murder Whole         | 5% / 0               | This is a simple addon to covered     |
+|                      |                      | wagons and basic vehicles such as     |
+|                      |                      | train cars and such. It allows a spot |
+|                      |                      | for character to use a ranged weapon  |
+|                      |                      | in defense of the vehicle while       |
+|                      |                      | provided heavy cover too the          |
+|                      |                      | Character.                            |
++----------------------+----------------------+---------------------------------------+
+| \***Optional**                                                                      |
++----------------------+----------------------+---------------------------------------+
+|                      |                      |                                       |
++----------------------+----------------------+---------------------------------------+
+
+: Table: Mods/Add-Ons/Improvements
+
+## Transportation as a Service / Mass Transit {#transportation_as_a_service_mass_transit}
+
+  Airfare                      Cost
+  ---------------------------- ----------------
+  Domestic, coach              \$140
+  Domestic, first class        \$300
+  International, coach         \$500
+  International, first class   \$1000
+  Car rental                   Cost
+  Economy car                  \$20
+  Mid-size or truck            \$25
+  Luxury                       \$1,000
+  Lodging                      Cost Per Night
+  Budget motel                 \$50
+  Average hotel                \$100
+  Upscale hotel                \$250
+  First Class                  \$500
+
+  : Transportation / Mass Transit
+
+A civilization advanced enough may have the infrastructure to support
+Mass Transportation. Characters can pay for transportation in some way.
+They may also need to show papers or proof of citizenship as some mass
+transportation systems are designed to not only move a population but
+also track them. Depending on the civilization and its tech level, Mass
+Transportation can vary widely. Everything from a large system of horses
+and buggies to a web of Quantum teleporters zipping mass in the form of
+information instantly across great distances.
+
+**NOTE:** Characters, if not local citizens, may be confused and
+overwhelmed by mass transit or possibly not even able to access it.
+
+**NOTE:** The price for a ticket, if there is one, should be based on
+the distance traveled relative to that civilization\'s capabilities or
+simply up to the GM. Use the table below as guidance.

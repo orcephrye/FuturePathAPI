@@ -1,0 +1,748 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+Here are the rules for Animal Companions. Animal Companions are 1 of 3
+types of [Hero
+Companions](Hero_Companions "Hero Companions"){.wikilink}. The other\'s
+are [Robot Companions](Robot_Companions "Robot Companions"){.wikilink}
+and [NPCs](Hero_Companions#NPCs "NPCs"){.wikilink} or Non-Playable
+Characters.
+
+The character sheet for Animal Companions is located
+[here!](https://drive.google.com/uc?export=download&id=1Ti-L8kJQr06XojhFZiHdy2YrgrBXu0eq)
+
+## Animal Attributes {#animal_attributes}
+
+To create a new customized Animal creature, you should pick stats in the
+following order for a level 1 creature. Then, if the creature is a
+higher level, then level up the creature 1 level at a time. It is best
+to follow the order presented below, then go to the [Animal
+Skills](#Animal_Skills "Animal Skills"){.wikilink} and [Animal
+Feats](#Animal_Feats "Animal Feats"){.wikilink} section.
+
+### Creature Mature Size {#creature_mature_size}
+
+Mature size refers to the size the animal will reach once it has
+matured. Lifecycles will determine the starting size, which has to be
+smaller. No companion can be larger than large without special rules.
+For more about maturity, review the
+[Lifecycles](#Lifecycles "Lifecycles"){.wikilink} section. Size
+determines many of the creature\'s base stats. Their **Size AC Bonus**,
+**Hit Die**, **Ability Theme Scores** via a modified point buy system.
+Please review the size table to the right.
+
++------------------+----------------+----------------+----------------+
+| Size             | AC Bonus       | Hit Die        | Ability Points |
++==================+================+================+================+
+| **Tiny**\*       | +2             | d4             | 9              |
++------------------+----------------+----------------+----------------+
+| **Small**        | +1             | d6             | 10             |
++------------------+----------------+----------------+----------------+
+| **Medium**       | +0             | d8             | 10             |
++------------------+----------------+----------------+----------------+
+| **Large**        | -1             | d10            | 10             |
++------------------+----------------+----------------+----------------+
+| **Gigantic**\*\* | -2             | d12            | 11             |
++------------------+----------------+----------------+----------------+
+| **\*** Not possible to be the adult Mammal size                     |
++---------------------------------------------------------------------+
+| **\*\*** Procure Difficulty +1, requires Xenophile                  |
++------------------+----------------+----------------+----------------+
+|                  |                |                |                |
++------------------+----------------+----------------+----------------+
+
+: Creature Size Table
+
+#### Animal Point Buy System {#animal_point_buy_system}
+
+All animals start with Str 10, Dex 10, Con 10, Wisdom 5, Int 2, Cha 8.
+This changes the cost of buying a point. Example: Going from 5 to 6
+would cost 1 point, as going from 10 to 11 would. Going from 6 to 7
+would cost 2 points, from 7 to 8 would cost 3 points, and so on.
+
+### Creature Types {#creature_types}
+
+Type implies the classification or grouping of the animal companion,
+e.g., Mammal or Reptile. Each type provides a **Natural AC
+Modification**, **Ability Modifications**, and **Special Features**.
+
+- **Mammal**
+  - Description: Warm-blooded higher vertebrates that nourish their
+    young with milk and have the skin usually more or less covered with
+    hair.
+  - Natural AC Mod: No bonus
+  - Ability Theme Mod: +2 to either Str/Dex, while -2 to either
+    Wis/Int/Cha, OR +1 to either Wis/Int/Cha without the +2 to Str/Dex.
+  - Special Features: Cannot gain flight as Primary Locomotion has to
+    learn it. Gains +1 skill point.
+- **Reptile**
+  - Description: They are distinguished by having dry scaly skin and
+    typically laying soft-shelled eggs on land.
+  - Natural AC Mod: +1 for Tiny/Small, +2 for Medium/Large, +3 for
+    Gigantic
+  - Ability Theme Mod: +1 to either Str/Con
+  - Special Features: Cannot gain flight as Primary Locomotion at level
+    1; it must be learned later. If the companion possesses an attack
+    that inflicts Bleed or Poison, increase the damage or DC of that
+    effect by +1.
+- **Amphibian**
+  - Description: Ectothermic vertebrates that typically transition from
+    an aquatic larval stage to a terrestrial adult stage.
+  - Natural AC Mod: -1
+  - Ability Theme Mod: +1 to Con. +2 to either Dex/Con/Wis
+  - Special Features: Gains Swimming locomotion for free at level 1;
+    this does not count toward its starting locomotion limit.
+- **Avian**
+  - Description: A feathered vertebrate adapted for flight.
+  - Natural AC Mod: +1 when flying.
+  - Ability Theme Mod: +1 to either Str/Dex/Con OR +1 to either
+    Wis/Int/Cha
+  - Special Features: Either Active Flight by default and then a sec
+    Locomotion just at 1/2 speed or Gliding with a second Locomotion at
+    full speed.
+- **Arthropod**
+  - Description: Invertebrate animal having an exoskeleton, a segmented
+    body, and paired jointed appendages, including insects, arachnids,
+    myriapods, and crustaceans.
+  - Natural AC Mod: +1
+  - Ability Theme Mod: +2 to either Dex/Con with -1 to Str AND -1 to
+    either Wis/Int/Cha. -1 to Cha.
+  - Special Features: Gains the Hard Shell, Hyper Awareness, or Natural
+    Reflexes Natural Feature at level 1 for free.
+- **Aquatic**
+  - Description: An animal that spends all or most of its life in water,
+    and is capable of breathing underwater.
+  - Natural AC Mod: +1 while in a liquid
+  - Ability Theme Mod: +1 to Con with -1 to Str. +2 to either
+    Wis/Int/Cha with a -1 to either Str/Dex/Con.
+  - Special Features: Swimming only locomotion by default. Can choose to
+    gain a Land-based Locomotion (1/2 speed) at creation for the cost of
+    either -1 Skill Point OR -2 Attribute points of choice.
+- **Plant**
+  - Description: Carbon-based vegetative organisms utilizing
+    photosynthesis or organic decomposition for energy.
+  - Natural AC Mod: +1
+  - Ability Theme Mod: +2 to Con with -2 to Dex.
+  - Special Features: Does not need standard food (requires light/water
+    or organic waste). Thermal Weakness 2. Can learn Spit attacks as a
+    natural weapon representing spore launching or acid-spraying.
+- **Ooze**
+  - Description: Simple, single-celled, or colonial organisms lacking
+    rigid internal structures or distinct organs, such as jellies or
+    slimes.
+  - Natural AC Mod: -2
+  - Ability Theme Mod: +2 to Con with -2 to Dex AND -2 to either
+    Wis/Int/Cha.
+  - Special Features: Amorphous Frame (Immune to critical hits,
+    precision damage, and flanking). Corrosive attacks (Can choose to
+    inflict Chemical damage with their natural attacks). Cannot take
+    flight or jumping locomotion.
+- **Annelid**
+  - Description: Soft-bodied, segmented invertebrates that typically
+    travel by burrowing or slithering, such as worms or leeches.
+  - Natural AC Mod: No bonus
+  - Ability Theme Mod: +1 to Str and +1 to Con with -2 to Cha.
+  - Special Features: Vibration Sense (Gains Blindsight vibration
+    detection up to 30ft, but is blind to light). Burrowing locomotion
+    speed is 10ft (instead of 5ft) and does not count against its
+    starting locomotion limit.
+- **Silicon-Based**
+  - Description: Exotic organisms whose biology is based on
+    silicon-oxygen chains, often resembling living minerals or crystals.
+  - Natural AC Mod: +2
+  - Ability Theme Mod: +2 to Con with -2 to Dex AND -1 to Cha.
+  - Special Features: Environmental Immunity (Immune to the effects of
+    vacuum, toxic atmospheres, and standard organic poisons or
+    diseases). Kinetic DR +1. Sonic Weakness 2.
+
+### Lifecycles
+
++---------+------------+-----------------------------------------------+
+| Animal\ | Advantage\ | Bonuses                                       |
+| Level   | Die        |                                               |
++=========+============+===============================================+
+| 1st     | 1d2        | Animal Feat, Natural Characteristic, Natural  |
+|         |            | Feature                                       |
++---------+------------+-----------------------------------------------+
+| 2nd     | 1d2 +1     | Animal Trick                                  |
++---------+------------+-----------------------------------------------+
+| 3rd     | 1d4 +1     | Natural Attack Improvement                    |
++---------+------------+-----------------------------------------------+
+| 4th     | 1d4 +2     | Ability Score +2                              |
++---------+------------+-----------------------------------------------+
+| 5th     | 1d4 +2     | Animal Trick, Natural Simple Improvement      |
++---------+------------+-----------------------------------------------+
+| 6th     | 1d6 +2     | Extra Damage, Animal Feat                     |
++---------+------------+-----------------------------------------------+
+| 7th     | 1d6 +3     | Advanced Natural Feature                      |
++---------+------------+-----------------------------------------------+
+| 8th     | 1d8 +3     | Natural Attack Improvement                    |
++---------+------------+-----------------------------------------------+
+| 9th     | 1d8 +3     | Ability Score +2                              |
++---------+------------+-----------------------------------------------+
+| 10th    | 1d8 +4     | Animal Trick, Natural Simple Improvement      |
++---------+------------+-----------------------------------------------+
+| 11th    | 1d8 +4     | Animal Feat                                   |
++---------+------------+-----------------------------------------------+
+| 12th    | 1d10 +4    | Extra Damage                                  |
++---------+------------+-----------------------------------------------+
+| 13th    | 1d10 +5    | Natural Attack Improvement, Natural Advanced  |
+|         |            | Improvement                                   |
++---------+------------+-----------------------------------------------+
+| 14th    | 1d10 +5    | Ability Score +2                              |
++---------+------------+-----------------------------------------------+
+| 15th    | 1d12 +5    | Animal Trick, Natural Simple Improvement      |
++---------+------------+-----------------------------------------------+
+| 16th    | 1d12 +6    | Animal Feat                                   |
++---------+------------+-----------------------------------------------+
+| 17th    | 1d12 +6    | Natural Attack Improvement                    |
++---------+------------+-----------------------------------------------+
+| 18th    | 2d6 +6     | Extra Damage                                  |
++---------+------------+-----------------------------------------------+
+| 19th    | 2d6 +7     | Ability Score +2, Animal Trick, Natural       |
+|         |            | Advanced Improvement                          |
++---------+------------+-----------------------------------------------+
+| 20th    | 2d6 +7     | Natural Attack Improvement, Natural Simple    |
+|         |            | Improvement                                   |
++---------+------------+-----------------------------------------------+
+
+: Table: Maturing Levels
+
+This refers to how a creature ages through their life. Starting at level
+0, which can include either an egg or a newborn.
+
+- **Maturing**
+  - Description: The creature goes through 2 main phases of life:
+    Childhood (levels 1--7) and Adulthood (level 8+). A creature may
+    have an infancy stage (pre-level 1) and a senior stage of life
+    (level 20+).
+  - Rules: The creature size through level 7 is one size smaller than
+    its mature size. Its Hit Die is 1 level lower as well during
+    childhood (minimum d4). Childhood companions use their childhood
+    size for size-based AC and Attack modifiers, but use their normal
+    point-buy attributes. Once a Maturing creature reaches level 8 and
+    becomes an adult, it grows to its mature size, its Hit Dice are
+    retroactively re-rolled using its adult Hit Die size, and it gains a
+    +1 to Con and another 2 attribute points to spend on either
+    Str/Dex/Wis/Int/Cha. It also unlocks either a new Natural Attack or
+    a new Natural Feature.
+- **Amphibian**
+  - Description: These creatures spend a portion of their early life
+    either on land or at sea. Then, at a mature stage, their bodies
+    undergo metamorphosis into a creature capable of inhabiting a
+    different environment.
+  - Rules: This Metamorphosis can occur in early life (level 4), midlife
+    (level 10), or late life (level 16). This transition allows the
+    creature to gain a new locomotion, and the player chooses whether to
+    lose the previous locomotion entirely or retain it at 1/2 speed. The
+    creature gains a new Natural Feature to live in a completely new and
+    otherwise deadly environment, such as breathing underwater,
+    breathing in extreme altitudes, or resisting extreme pressures and
+    temperatures. This includes a DR 1 to any one damage type and +1
+    attribute point to spend on either Str/Dex/Wis/Int/Cha.
+- **Metamorphosis**
+  - Description: This is when a creature completely changes into
+    something totally new. The creature can change up to 2 different
+    sizes.
+  - Rules: For every size difference, there is 1 level when the creature
+    is in a helpless state, such as a cocoon or some sort of
+    hibernation. During these levels, the creature levels up as if it
+    were still its original self, but cannot interact with the world
+    unless specified otherwise. While in this helpless state, the
+    companion is considered helpless in combat (AC becomes 5 + Dex
+    modifier, and adjacent attackers can execute coup de grace attacks)
+    but gains \*\*Hardness 5\*\* due to its protective shell. It can be
+    carried by a Medium or larger ally. The resulting creature that
+    comes out of the Metamorphosis is a whole new creature. It follows
+    the creation rules outlined on this page, except that it is built at
+    a higher level. This implies that its Hit Die is retroactively
+    updated to the higher die value, and its attribute points are
+    completely re-spent based on its new, larger size. Metamorphosis can
+    happen in early or mid-life (level 4 or 10, respectively). The new
+    creature must retain the Metamorphosis Lifecycle attribute, and it
+    gains a bonus Natural Attack and Natural Feature.
+- **Fission**
+  - Description: This creature matures by dividing its cellular
+    structure, allowing it to temporarily split into multiple smaller,
+    coordinated entities, such as slimes or amoebas.
+  - Rules: As a full-round action once per encounter, the companion can
+    split its body into two identical clones. Each clone is one size
+    smaller than the original (minimum Tiny) and possesses exactly half
+    of the companion\'s current HP and Advantage Die tier. They act on
+    the same initiative, share the same command checks, and must remain
+    within 60 feet of each other. If a clone is reduced to 0 HP, it
+    dissolves, and the companion permanently loses that maximum HP until
+    they rest. The clones can merge back into a single creature as a
+    full-round action if they are adjacent.
+
+### Locomotion
+
+  Locomotion           Speed
+  -------------------- -------
+  **Bi-pedal**         30ft
+  **Tripedalism**      30ft
+  **Quadrupedalism**   40ft
+  **Active Flight**    60ft
+  **Gliding**          40ft
+  **Undulation**       30ft
+  **Jumping**          20ft
+  **Swimming**         30ft
+  **Burrowing**        5ft
+                       
+
+  : Locomotion Table
+
+This is a description of how the animal moves around in its space,
+establishing its base combat speed. A companion\'s creature type
+dictates its starting locomotion. Secondary locomotions can be gained
+during character creation (via specific creature type options), through
+metamorphic lifecycle changes, or by selecting specific feats during
+leveling. A companion can possess multiple modes of locomotion, but only
+its designated Primary Locomotion determines its default combat speed.
+
+Below are some notes on the different modes of locomotion:
+
+- **Bi-pedal / Tripedalism**: The companion\'s freed forelimbs can be
+  used as basic manipulators capable of carrying objects, opening doors,
+  or holding items, though they cannot operate weapons or perform
+  complex tasks unless trained.
+- **Quadrupedalism**: x2 carrying capacity for its Strength and size.
+- **Active Flight / Gliding**: Requires a DC 15 Handle Animal or
+  Athletics check to maintain control when flying in high winds, storms,
+  or other turbulent aerial terrain.
+- **Undulation**: This is sidewinding, concertina, or rectilinear forms
+  of movement used by snakes, worms, and similar species.
+- **Jumping**: Instantly gains the [Jumper](Jumper "Jumper"){.wikilink}
+  feat.
+- **Swimming**: This covers a very broad range of movement through
+  liquids. By default, land motion is possible at 5ft speed.
+- **Burrowing**: Burrowing is limited to loose soil, dirt, sand, mud, or
+  clay. Burrowing through solid rock or reinforced steel is impossible
+  without special features.
+
+### Natural Attack {#natural_attack}
+
+These are natural attack abilities that animals either have at birth or
+can learn over time. The size of the creature also helps to determine
+the damage die. All attacks can also have special effects that the
+creature can learn as tricks as they level up.
+
+```{=mediawiki}
+{{Template:Natural Attacks}}
+```
+Below are some notes for Natural Attacks.
+
+- **Trample**: This cannot be used by a Tiny creature. The target of
+  this attack has to be the same size or smaller.
+- **Slam**: The target of this attack has to be the same size or
+  smaller.
+- **Whip**: This is a melee attack with a Reach effect. By default, the
+  Reach effect is 5ft. This can be extended.
+- **Spit**: This is considered a Ranged attack and not a Melee attack.
+
+For more on the Natural Attacks and their effects the [Natural
+Attacks](Natural_Attacks "Natural Attacks"){.wikilink} page.
+
+### Natural Characteristics {#natural_characteristics}
+
+A Natural Characteristic is an attribute of an Animal that they have at
+birth and that sticks with them through their life. Unlike Natural
+Features, which a Creature can have multiple of them and improve over
+time.
+
+Carrier
+: Or Beast of Burden. These animals can carry heavy loads on their backs
+  and/or pull heavy loads. Often, they were ridden in ancient
+  civilizations.
+
+- This Animal can be ridden by any creature its size or smaller. It has
+  twice the carrying capacity of a creature of its Strength and size,
+  and 3 times the pull capacity. Gains a free Slam or Trample attack (or
+  its improvement if already possessed).
+
+Tracker
+: Keen senses allow them to find prey even after the target has long
+  since left the area. Sometimes these animals will hunt a single animal
+  for days.
+
+- This Animal gains a +1 Misc Perception bonus that only applies in the
+  wild. +1 Survival Bonus that increases to +2 at 10th level when
+  tracking prey. Gains the Trick Hunt/Track for free.
+
+Ambusher
+: These animals like to take their prey by surprise, and either use
+  their surroundings to mask their approach or even change themselves to
+  hide in plain sight.
+
+- This Animal gains Sneak attack. Sneak attack acts like a Bonus Natural
+  Attack that automatically succeeds if its main attack is successful
+  against an unaware or flanked enemy. The Bonus damage is the
+  Creature\'s Advantage Die.
+
+Aggressor
+: These animals are often very wild and more difficult to tame. They are
+  aggressive and predatory and can be extremely intimidating.
+
+- Double the price of the animal, and the Procure Diff is +1. Gains an
+  [Improved_Natural_Attack](Improved_Natural_Attack "Improved_Natural_Attack"){.wikilink}
+  Feat for free at levels 1 and 10.
+
+Defender
+: Loyal to their master, trainer, or friend. These creatures stay awake
+  while their friend sleeps, look left when the friend looks right, and
+  try to make sure nothing surprises them. These creatures make
+  excellent pets for those most paranoid.
+
+- Hero always has Luck when rolling Perception checks against enemy
+  combatants. Pick one of the following as a free Trick: Guard, Watch,
+  Detect, Menace.
+
+Supporter
+: Attentive and loving to their master. These creatures seem to have a
+  talent for empathy and a sixth sense about emotions in other species
+  that most creatures lack. They often bond with people at birth and
+  create lifelong relationships. They provide Emotional, Mental, and
+  even physical support.
+
+- Hero gains a Morale Bonus in the form of Advantage when dealing with
+  Feints, Distractions, Psionic attacks, saving throws, and any Wisdom
+  saving throws against Frightened, Cowering, or Panicked (which they
+  receive whenever that condition is placed upon the Hero, even if the
+  rules say the Character cannot normally save). The Animal also learns
+  the trick Aid for free.
+
+Scouter
+: Excellent sense of direction, these animals often have a territory
+  they hunt on that goes for 100s of miles, and maybe gone from their
+  nest for days or even weeks. These creatures love to roam and are
+  often curious by nature.
+
+- +1 Perception and Survival Bonus when attempting not to get lost in
+  the wild. +2 at level 10. Passive Perception +1. Gains the trick Get
+  Help for free.
+
+Enforcer
+: These creatures are often highly trainable yet predatory and
+  carnivorous. They can be trained to strictly obey and only go so far
+  in an attack, making them great at taking control of an opponent
+  without having to commit to deadly force.
+
+- Gains the Trick Guard for free. Gains another Trick of choice for
+  free. Gains 1 more Favored Skill. Gains +1 starting Skill Point. Gains
+  the [Advanced Combat
+  Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}
+  Feat for free.
+
+Pack Hunter
+: Pack-oriented animals that thrive on cooperation, coordination, and
+  flanking tactics alongside their handler or pack-mates, such as
+  wolves, hyenas, or velociraptors.
+
+- Gains Pack Tactics (gains a +1 bonus to attack rolls for every ally
+  adjacent to the target). Additionally, when the companion is flanking
+  an enemy, it grants the flanking bonus to all allies attacking that
+  target, regardless of their position. Gain the trick Aid for free.
+
+Survivor
+: Incredibly hardy animals adapted to toxic wastes, radiation zones, or
+  post-apocalyptic ruins, capable of digesting anything and resisting
+  deadly poisons, such as vultures, alien rats, or swamp beasts.
+
+- The companion is completely immune to natural diseases, biological
+  poisons, and radiation. It gains Advantage on saving throws against
+  extreme environmental hazards (high heat, extreme cold, or toxic
+  gases). It can digest inorganic materials or decayed waste without
+  harm. Gains the trick Fetch for free.
+
+### Natural Features {#natural_features}
+
+Natural Features are passive bonuses to an animal that improve over
+time. Animals gain a Feature at level 1 and possibly more as they level
+up. For Animals, there are two types of Natural Feature, **Simple** and
+**Advanced**. The difference has to do with which levels they gain
+improvements on and when those improvements become available. Advanced
+Features are not available until level 7, while simple improvements are
+available starting at level 1.
+
++----------------------+-----------------------------------------------+
+| Natural Feature      | Description                                   |
++======================+===============================================+
+| Simple Improvements (1, 5, 10, 15, 20)                               |
++----------------------+-----------------------------------------------+
+| **Hyper Awareness**  | +1 Perception Misc Mod and +1 Passive         |
+|                      | Perception per improvement.                   |
++----------------------+-----------------------------------------------+
+| **Graceful Motion**  | +1 to Dex score per improvement.              |
++----------------------+-----------------------------------------------+
+| **Raw Speed**        | +10ft speed per improvement. Also gains +1    |
+|                      | Dex at level 10.                              |
++----------------------+-----------------------------------------------+
+| **Night Eyes**       | Night vision. Gains Sneak Attack advantage in |
+|                      | darkness (remains vulnerable to standard      |
+|                      | sight-based blindness).                       |
++----------------------+-----------------------------------------------+
+| **Echo Location**    | +1 Perception Mod. Can see objects in total   |
+|                      | darkness using auditory sonar. Ignores        |
+|                      | sight-based blindness and gaze attacks, but   |
+|                      | is completely nullified if the creature is    |
+|                      | Deafened or in a zone of magical silence.     |
++----------------------+-----------------------------------------------+
+| **Local Adaptation** | DR +1 to one damage type per improvement.     |
+|                      | Players must provide a description of the     |
+|                      | physical adaptation.                          |
++----------------------+-----------------------------------------------+
+| **Climber**          | Climb speed is the same as base speed. Gains  |
+|                      | +1 AC while climbing (this feature does not   |
+|                      | scale at higher improvement levels). Ignores  |
+|                      | the climbing disadvantage while attacking.    |
++----------------------+-----------------------------------------------+
+| **Teachable**        | +1 Trick at each improvement level.           |
++----------------------+-----------------------------------------------+
+| **Camouflage**       | +1 Misc Mod to Stealth. Stealth becomes a     |
+|                      | favored skill. +1 to Stealth Misc Mod for     |
+|                      | every improvement.                            |
++----------------------+-----------------------------------------------+
+| **Bioluminescence**  | Can emit light (bright light 15ft, dim light  |
+|                      | 30ft) at will as a Simple action. Once per    |
+|                      | encounter, can overload organs to release a   |
+|                      | blinding flash: adjacent enemies must make a  |
+|                      | Dex save (DC 10 + Con Mod) or be Dazed for 1  |
+|                      | round. Each improvement increases light       |
+|                      | radius by +10ft and flash DC by +1.           |
++----------------------+-----------------------------------------------+
+| Advanced Improvements (7, 13, 19)                                    |
++----------------------+-----------------------------------------------+
+| **Hard Shell**       | +1 Natural AC per improvement; reduces        |
+|                      | movement speed by 5ft for every 2 AC gained.  |
++----------------------+-----------------------------------------------+
+| **Tough Skin**       | Gains DR +1 for Kinetic/Electrical (no        |
+|                      | Thermal/Chemical protection) per improvement. |
++----------------------+-----------------------------------------------+
+| **Natural Reflexes** | Gains Advantage on all Dex saves. Gains +1    |
+|                      | Dex every other improvement, starting with    |
+|                      | the first one.                                |
++----------------------+-----------------------------------------------+
+| **Large Girth**      | Gains Advantage on all Con saves. Gains +1    |
+|                      | Con every other improvement, starting with    |
+|                      | the first one.                                |
++----------------------+-----------------------------------------------+
+| **Wild Rage**        | Gains the Rage ability for 1d4 + (1 per       |
+|                      | improvement) rounds. During rage, the         |
+|                      | creature gains Strength, Dexterity, and DR    |
+|                      | boosts based on its current improvement level |
+|                      | (Lvl 7: +4 Str, +2 Dex, DR 1; Lvl 13: +5 Str, |
+|                      | +3 Dex, DR 1; Lvl 19: +6 Str, +4 Dex, DR 2).  |
+|                      | While raging, attacks use 1 higher die tier,  |
+|                      | and the creature gains Advantage on Strength, |
+|                      | Dexterity, and Constitution saving throws.    |
++----------------------+-----------------------------------------------+
+| **Brute Strength**   | Gains +1 Str per improvement.                 |
++----------------------+-----------------------------------------------+
+| **Influencer**       | Gains the Animal Tricks: Get Help, Menace,    |
+|                      | Distract, and Disway. Gains Advantage on all  |
+|                      | these tricks. Can provide a +1 Morale bonus   |
+|                      | to all saving throws of the companion owner.  |
++----------------------+-----------------------------------------------+
+| **Rapid Healing**    | Regrows wounds rapidly. Outside combat, heals |
+|                      | at twice normal rate. In combat,              |
+|                      | automatically recovers HP at the start of its |
+|                      | turn as long as it has at least 1 HP          |
+|                      | remaining (Lvl 7: +1 HP/round; Lvl 13: +2     |
+|                      | HP/round; Lvl 19: +3 HP/round).               |
++----------------------+-----------------------------------------------+
+
+: Natural Features Table
+
+### Animal Tricks {#animal_tricks}
+
+Animals have a sense of self and a primal intelligence that can act as
+both an advantage and a disadvantage. Animals do not instantly obey the
+commands of their owners unless you have the Companion feats or are
+otherwise specified. This is in part because they simply may not want
+to, and in part because they may not understand. Getting them to
+understand what you want and instilling the knowledge that you, the
+owner, know best is all part of training an animal companion to learn
+new tricks.
+
+Aid
+: The Companion can use the \'Aid Another\' action. They can only aid in
+  Skill checks, and only in those they themselves can perform. They can
+  also now be aided by their owner.
+
+Attack On Sight
+: Unlike the normal attack command, this is similar to the Guard trick
+  except that it is simpler. If the creature encounters a person or
+  thing they do not know they instantly attack. If the owner is with the
+  animal, they roll initiative alongside it. If the owner acts before
+  the animal, they can attempt a DC 15 [Handle
+  Animal](Handle_Animal "Handle Animal"){.wikilink} (or Charisma) check
+  as a reaction to stop the animal from attacking. Otherwise, the animal
+  may get a surprise round if it sees the target before the target sees
+  it.
+
+Entertain
+: The creature gains the Perform skill as a favored skill and gains a +1
+  misc bonus on Perform checks. They can aid their owner in Perform
+  checks, Profession checks (if the profession is in entertainment), and
+  also in checks attempting to distract.
+
+Guard
+: Similar to Attack On Sight, except the animal will simply attempt to
+  look menacingly and block people or things from passing by. They will
+  only attack if they are attacked.
+
+Combat Technique
+: Allows the animal to use a Combat Technique from the
+  [Techniques](Techniques#Combat_Techniques "Techniques"){.wikilink}
+  page.
+
+Watch
+: Similar to Guard, but the animal attempts to remain stealthy (using
+  its Stealth skill) and raises an alarm (such as barking, growling, or
+  screeching) when an unknown person or thing comes within view or
+  hearing range using its Perception skill.
+
+Bombard
+: (Requires Flying or Glide) This is an advanced version of the
+  [Charge](Techniques#Combat_Techniques "Charge"){.wikilink} combat
+  technique. It allows the creature to keep moving after a charge
+  attack. It also allows the creature to attack by dropping an object on
+  top of the enemy target if it was handed to them by their owner.
+  Dropping an object requires a standard ranged attack using the
+  animal\'s Dexterity modifier.
+
+Bury/Hide Object
+: (Requires Intelligence or Wisdom at 8 or higher) The animal will
+  attempt to hide a given object either by burying it or placing it
+  under debris. The animal rolls a Dexterity or Survival check (or
+  Stealth check) to determine how well hidden the object is, which sets
+  the DC for others to find it. The animal must succeed on a DC 10
+  Survival or Wisdom check once per day to locate and retrieve the
+  object again.
+
+Deliver
+: The animal can take a given object and travel across great distances
+  and time to deliver it to a person, place, or thing, requiring a DC 10
+  Survival check per day of travel.
+
+Detect
+: The animal is trained to seek out the smells of explosives and
+  poisons, unusual noises or echoes, air currents, and other common
+  elements signifying potential dangers or secret passages. When
+  commanded, the animal uses its Perception skill to try to pinpoint the
+  source of anything that strikes it as unusual about a room or
+  location. Note that because the animal is not intelligent, any number
+  of strange mechanisms, doors, scents, or unfamiliar objects may catch
+  the animal\'s attention, and it cannot attempt the same Perception
+  check more than once in this way. They gain an advantage with
+  Perception and Study checks when attempting to detect something about
+  a place or object.
+
+Distract
+: The animal can attempt to grab the attention of a target opponent
+  using the Feint combat technique.
+
+Dissuade
+: The animal can attempt to discourage a target from attacking itself or
+  its owner. The animal makes an Intimidate check opposed by the
+  target\'s Wisdom saving throw. If successful, the target is
+  discouraged from attacking the animal or its owner for 1 round
+  (choosing other targets if available). If the only possible targets
+  are the animal or its owner, this trick has no effect.
+
+Fetch
+: The animal goes and gets something. If you do not point out a specific
+  item, the animal fetches some random object.
+
+Feign Death
+: The animal can fall prone and go completely limp on command,
+  pretending to be dead or disabled. Enemies must succeed on a Sense
+  Motive check (opposed by the animal\'s Bluff check, made with a +4
+  bonus) or believe the creature is deceased and ignore it in favor of
+  active threats. The animal can spring up from this state as a free
+  action, gaining Advantage on its first attack roll in that round.
+
+Flee
+: The animal attempts to run away or hide as best it can, returning only
+  when its handler commands it to do so or if it thinks it\'s safe.
+  Until such a command is received, the animal does its best to track
+  its handler and any creatures with him or her, remaining hidden but
+  within range of its sight or hearing. This trick is particularly
+  useful for thieves and adventurers, as it allows the animal to evade
+  capture and later return to help free its friends.
+
+Get Help
+: With this trick, a trainer can designate a number of creatures up to
+  the animal\'s Intelligence score as "help." When the command is given,
+  the animal attempts to find one of those people and bring them back to
+  the handler, even if that means journeying a long distance to the last
+  place it encountered the target creature.
+
+Hunt/Track
+: This trick allows an animal to use its natural stalking or foraging
+  instincts to find food and return it to the animal\'s handler. An
+  animal with this trick may attempt Survival checks (or Wisdom checks
+  if the animal has no ranks in Survival) to provide food for others or
+  lead them to water and shelter (as the "get along in the wild" use of
+  the Survival skill). An animal with this trick may use the aid of
+  another action to assist Survival checks made by its handler for these
+  purposes.
+
+Menace
+: A menacing animal attempts to keep a creature you indicate from
+  moving. The animal makes an Intimidate check opposed by the target\'s
+  Wisdom saving throw. If successful, the target is menaced. If the
+  target attempts to move from its current space or take a hostile
+  action, the animal immediately gains an opportunity attack. If the
+  target complies and remains still, the animal ceases attacking but
+  continues to menace.
+
+Rescue
+: The animal is trained to drag or carry incapacitated or helpless
+  allies away from danger. When commanded, it moves to an adjacent ally
+  who is down, helpless, or unconscious, grabs them (using a free-action
+  grapple that does not harm the ally), and uses its move action to drag
+  them up to half its speed away from hostile targets.
+
+Stay
+: The animal stays in place, waiting for you to return. It does not
+  challenge other creatures that come by, though it still defends itself
+  if it needs to.
+
+Throw Rider
+: The animal can attempt to fling a creature riding it to the ground.
+  Treat this as a Trip combat technique. An animal that knows both the
+  Throw Rider and Guard tricks can be trained to automatically attempt
+  to throw anyone other than its trainer who attempts to ride it.
+
+## Animal Skills {#animal_skills}
+
+Animal companions have a limited skill list to choose from. Some skills
+not on these lists can be learned/trained, or otherwise gained as the
+companion levels up. By default, the companions do not have access to
+the same skills as normal Characters.
+
+Below are the Skills available for an Animal companion. More skills can
+be obtained while leveling. At level 1 an Animal gains 3 of these skills
+as favored. Then at each level, an animal gains 1 + Int mod (minimal 1)
+worth of Skill points to spend.
+
+- [Acrobatics](Acrobatics "Acrobatics"){.wikilink}
+- [Athletics](Athletics "Athletics"){.wikilink}
+- [Bluff](Bluff "Bluff"){.wikilink}
+- [Diplomacy](Diplomacy "Diplomacy"){.wikilink}
+- [Intimidate](Intimidate "Intimidate"){.wikilink}
+- [Perception](Perception "Perception"){.wikilink}
+- [Sense Motive](Sense_Motive "Sense Motive"){.wikilink}
+- [Stealth](Stealth "Stealth"){.wikilink}
+- [Survival](Survival "Survival"){.wikilink}
+
+## Animal Feats {#animal_feats}
+
+At level 1 Animal companions gain 1 Feat. Additional feats can be earned
+as the companion levels up.
+
+- Go to the **[Animal Feats](AnimalFeats "Animal Feats"){.wikilink}**
+  page for a complete list of Animal Feats.

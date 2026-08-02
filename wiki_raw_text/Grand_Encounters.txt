@@ -1,0 +1,7 @@
+This is a Placeholder for the page explaining the Grand Encounter system. A Grand Encounter: FuturePath's version of a Dungeon. Just like in other Fantasy games, a Dungeon doesn't necessarily mean an underground complex; it could mean a haunted mansion, for example. In FuturePath, a grand encounter could be the Character having to navigate through a Derelict Spaceship, an abandoned Space Station, an old Astoriod mining facility, an Ancient Accultist temple, or even an actual dungeon. 
+
+This is an '''optional''' rule set that helps the GM but also the Player's with rules that provide structure and extra mechanics when exploring a Grand Encounter. This is meant to make the Grand Encounter itself feel almost alive and moving with the Player's actions. 
+
+The primary rule is a Ticker, tracked by the GM, that activates every so often and triggers a random or pre-planned event ranging from highly dangerous to silly and thematic. This is also meant to expand upon Character Skills and 'Grand Encounter' Actions. The goal is to minimize rolling, keep the action going, and ensure that actions have meaning, expressed by how each action brings the party closer to the next 'Tick'. 
+
+Grand Encounters are meant to be dispersed throughout play sessions, and the characters normally will have 1 or more normal [[Encounters|Encounters]] leading up to or directly after a Grand Encounter.

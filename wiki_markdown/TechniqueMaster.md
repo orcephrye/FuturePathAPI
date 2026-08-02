@@ -1,0 +1,24 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisites**: Technique, Advance
+
+**Benefits**: Pick a Class that the Character has taken levels in that
+also can use Techniques. Techniques from that Class now modify stats
+using Character level. This means that any state that normally says
+\'Class Level\' now means Character level instead. For example, the
+level 1 Eletro-Mancer technique \'Grounded Body\' lasts for \'1 hour per
+level\'. That level implied Eletro-Mancer level. With this Feat is now
+implies Character level. This can only count for 1 Advanced Class and
+can only be taken once. Some Techniques simply state that the technique
+improves as the levels increase. These continue along with the same
+pattern, with the max potential dice roll being 2d12.
+
+**Normal**: Some techniques are affected by level. Normally, the
+\'level\' refers to the specific Class level, not the total Character
+level, unless it specifically says Character level. With this Feat, all
+attributes affected by level are now affected by Character level.
+
+**Special**: In some cases, the Technique may have an exception that
+says that this Feat doesn\'t apply to it or that there are special rules
+explaining how it progresses above level 10.

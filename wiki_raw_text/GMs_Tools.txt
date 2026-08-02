@@ -1,0 +1,11 @@
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! </span>  '''
+
+The GM's role is to help guide the game for the Players. 
+
+* Dice Rolling App: [http://api.d20futurepath.com/files/mRoller.html Mobile Dice Roller]
+* Players' Character Sheet:  [https://drive.google.com/uc?export=download&id=1cZ3PPchkXAgTSWTHKsONEIWNrg8PhN2P d20FuturePath Character Sheet]
+* Space Ship Character Sheet: [https://drive.google.com/file/d/1946b8G1GyLHkqxxtlHCQjD3H0RdOR54a/view?usp=sharing d20FuturePath SpaceShip Sheet]
+* Animal Companion Sheet: [https://drive.google.com/uc?export=download&id=1Ti-L8kJQr06XojhFZiHdy2YrgrBXu0eq d20FuturePath Animal Companion Sheet]
+* Robot Companion Sheet: [https://drive.google.com/uc?export=download&id=1VPDY84bUtpuraah8ZJbO074L4QBLUksf d20FuturePath Robot Companion Sheeet]
+* Custom GM Screen Print outs: [[GM Screen]]
+* First time Player's Guide Sheet: [[Players_Guide_Sheet|Player's Guide Sheet]]

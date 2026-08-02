@@ -1,0 +1,477 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+Below is a list of Occupations/Professions that Players can pick for
+their characters. This is for both role-playing purposes and determining
+Character wealth. Some professions have prerequisites that must be met
+before a character can choose them.
+
+In order to fully understand Bonus Income and Credit Rating, please
+review the [Wealth](Wealth_and_Money "Wealth"){.wikilink} page.
+
+## Starting Professions {#starting_professions}
+
+Professions can tell the Player what their Character\'s **Starting Bonus
+Income**, **Average Monthly Income** and **Credit Score Range**. They
+also provide suggestions on which [Starter
+Packs](General_Equipment#Starter_Packs "Starter Packs"){.wikilink} to
+pick and any additional equipment a person at the starting level may
+have. The starting credit score is the lowest number in the Range. This
+can go up based on how many ranks the Character has in Profession.
+
+Below are instructions for editing the Character sheet manually.
+Instructions on manually editing a character sheet are boxed. For
+example:
+
+    Use the Skill Profession located on the first page of the Character Sheet to the left to record the Character's Profession.
+
+All new characters start out at the lowest credit score for the
+Profession in question. Adding ranks to the
+[Profession](Profession "Profession"){.wikilink} skill can improve the
+Credit Rating to learn more. Review the
+[Profession](Profession "Profession"){.wikilink} skill. These
+Professions are broad descriptions of what the Character may do or be
+trying to do and may not exactly fit the character\'s actual career. If
+a Character has a Profession/Career that is so far removed from anything
+in the list below, feel free to discuss with the GM about what their
+wealth/income/credit score should be. Keep in mind it will need to be
+relative to what is described below.
+
+The Professions are also rated based on how wealthy they make the
+Character.
+
+1.  **Very Poor**: [Jobless](Professions#Jobless "Jobless"){.wikilink},
+    [Student](Professions#Student "Student"){.wikilink},
+    [Criminal](Professions#Criminal "Criminal"){.wikilink}
+2.  **Poor**: [Rural](Professions#Rural "Rural"){.wikilink},
+    [Adventurer](Professions#Adventurer "Adventurer"){.wikilink},
+    [Religious](Professions#Religious "Religious"){.wikilink},
+    [Creative](Professions#Creative "Creative"){.wikilink},
+    [Athlete](Professions#Athlete "Athlete"){.wikilink},
+    [Spacer](Professions#Spacer "Spacer"){.wikilink},
+    [Pioneer](Professions#Pioneer "Pioneer"){.wikilink}
+3.  **Independent**:
+    [Military](Professions#Military "Military"){.wikilink}, [Law
+    Enforcement](Professions#Law_Enforcement "Law Enforcement"){.wikilink},
+    [Investigative](Professions#Investigative "Investigative"){.wikilink},
+    [Emergency
+    Services](Professions#Emergency_Services "Emergency Services"){.wikilink},
+    [Blue Collar](Professions#Blue_Collar "Blue Collar"){.wikilink},
+    [Technician](Professions#Technician "Technician"){.wikilink},
+    [Cyber-Specialist](Professions#Cyber-Specialist "Cyber-Specialist"){.wikilink}
+4.  **Rich**: [Academic](Professions#Academic "Academic"){.wikilink},
+    [White Collar](Professions#White_Collar "White Collar"){.wikilink},
+    [Mercenary](Professions#Mercenary "Mercenary"){.wikilink},
+    [Entrepreneur](Professions#Entrepreneur "Entrepreneur"){.wikilink},
+    [Diplomat](Professions#Diplomat "Diplomat"){.wikilink}
+5.  **Very Rich**: [Doctor](Professions#Doctor "Doctor"){.wikilink},
+    [Dilettante](Professions#Dilettante "Dilettante"){.wikilink},
+    [Celebrity](Professions#Celebrity "Celebrity"){.wikilink}
+
+Most starting Professions have a prerequisite that the character must
+meet to qualify for the Profession. If they do not qualify, they can
+choose a different profession and change professions once they do
+qualify; however, they do not get the Starting Bonus Income.
+
+### Academic
+
+Academics include librarians, archaeologists, scholars, professors,
+teachers, and other education professionals.
+
+- Prerequisite: Young Adult Age for the Species, Int Score 14+
+- Starting Bonus Income: \$10,000
+- Average Monthly Income: \$4,000
+- Credit Rating Range: 7 - 14
+- Suggested Start Pack(s): Official\'s Pack (without the Shepherd Chip)
+  or Explorer\'s Pack
+  - Additional common items: Book(s) (digital or physical) on the topic
+    of interest
+
+### Adventurer
+
+Adventurers include professional daredevils, big-game hunters, relic
+hunters, explorers, extreme sports enthusiasts, field scientists,
+thrill-seekers, and others called to face danger for a variety of
+reasons.
+
+- Prerequisite: Wisdom Score 14+ or Survival Skill Rank 1+
+- Starting Bonus Income: \$5,000
+- Average Monthly Income: \$1,500
+- Credit Rating Range: 4 - 15
+- Suggested Start Pack(s): Explorer\'s Pack or Outlaw\'s Pack.
+  - Additional common items: Extra Rope/Duracable with Grappler Tag.
+    Extra Rations(Tech 2) (5-day pack)
+
+### Athlete
+
+Athletes include amateur athletes of Olympic quality and professional
+athletes of all types, including gymnasts, weightlifters, wrestlers,
+boxers, martial artists, swimmers, skaters, and those who compete in any
+competitive sport.
+
+- Prerequisite: Strength 13 or Dexterity 13.
+- Starting Bonus Income: \$4,000
+- Average Monthly Income: \$1,500
+- Credit Rating Range: 4 - 15
+- Suggested Start Pack(s): Official\'s Pack
+  - Additional common items: Rations(Tech 2) (5 day pack), Purifier,
+    Rocket-X
+
+### Blue Collar {#blue_collar}
+
+Blue-collar occupations include factory work, food service jobs,
+construction, service industry jobs, taxi drivers, postal workers, and
+other jobs that are usually not considered to be desk jobs.
+
+- Prerequisite: Wisdom 14+ or Intelligence 14+
+- Starting Bonus Income: \$6,000
+- Average Monthly Income: \$2,750
+- Credit Rating Range: 6 - 14
+- Suggested Start Pack(s): Technician\'s Pack or Settler\'s Pack
+  - Additional common items: Contractor\'s Field Bag, Clothing Outfit
+    Uniform (worn) (For an old or current job)
+
+### Celebrity
+
+A celebrity is anyone who, for whatever reason, has been thrust into the
+spotlight of the public eye. Actors, entertainers of all types,
+newscasters, radio and television personalities, and more fall under
+this starting occupation.
+
+- Prerequisite: Age 15+. Charisma Score 16+
+- Starting Bonus Income: \$20,000
+- Average Monthly Income: \$8,000
+- Credit Rating Range: 10 - 22
+- Suggested Start Pack(s): Official\'s Pack (with shepherd chip)
+  - Additional common items: Booster(pick an ability to boost),
+    Expensive Pen for signing autographs, Clothing Outfit Casual x2
+    (expensive), Outfit that includes a face covering to protect against
+    paparazzi.
+
+### Creative
+
+The creative starting occupation covers artists of all types who fan
+their creative spark into a career. Illustrators, copywriters,
+cartoonists, graphic artists, novelists, magazine columnists, actors,
+sculptors, game designers, musicians, screenwriters, photographers, and
+web designers all fall under this occupation.
+
+- Prerequisite: Wisdom Score 16+ or Intelligence Score 16+
+- Starting Bonus Income: \$7,000
+- Average Monthly Income: \$2,000
+- Credit Rating Range: 4 - 14
+- Suggested Start Pack(s): Businessman's Pack or Explorer\'s Pack
+  - Additional common items: Computation Device, Camera, pen/paper,
+    Book(s) (digital or physical) on creative topics
+
+### Criminal
+
+This illegal starting occupation reveals a background from the wrong
+side of the law. This occupation includes con artists, burglars,
+thieves, crime family soldiers, gang members, bank robbers, and other
+types of career criminals.
+
+- Prerequisite: N/A
+- Starting Bonus Income: \$4,000
+- Average Monthly Income: \$1,000
+- Credit Rating Range: 2 - 20\*
+  - **NOTE**: Credit Rating for a criminal only counts among other
+    criminals and banks that do secret dealings with them. At the
+    starting level, most players are not considered good criminals and
+    must work their way up. The room for improvement is high, but there
+    are added risks, such as dealing with Law Enforcement or, worse,
+    [Tracers](Character_Professions#Tracer "Tracers"){.wikilink}.
+- Suggested Start Pack(s): Outlaw\'s Pack
+  - Additional common items: Lock Release Gun, Fake ID, Hackcard
+
+### Cyber-Specialist {#cyber_specialist}
+
+Cyber-Specialists include hackers, console cowboys, netrunners, and
+digital security experts who navigate the galactic net.
+
+- Prerequisite: Intelligence Score 14+ and Computer Use Skill Rank 1+
+- Starting Bonus Income: \$9,000
+- Average Monthly Income: \$3,800
+- Credit Rating Range: 8 - 16
+- Suggested Start Pack(s): Businessman's Pack or Technician\'s Pack
+  - Additional common items: Computation Device, Hackcard, A.I Assistant
+    Software
+
+### Dilettante
+
+Dilettantes usually get their wealth from family holdings and trust
+funds. The typical dilettante has no job, few re­sponsibilities, and at
+least one driving passion that ­occupies his or her day. That passion
+might be a charity or philanthropic foundation, an idea or cause worth
+fighting for, or a lust for living a fun and carefree existence.
+
+- Prerequisite: Adult for the Species, Knowledge Culture Skill Rank 1+,
+  and either Current Events or Philosophy Skill Rank 1+
+- Reputation Bonus Increase: +1.
+- Starting Bonus Income: \$24,000
+- Average Monthly Income: \$8,000
+- Credit Rating Range: 20 - 30
+  - **NOTE**: A Dilettante **cannot** use ranks in their
+    [Profession](Profession "Profession"){.wikilink} skill to improve or
+    recover their Credit Rating. They will eventually have to pick a
+    different profession if they want their ranks to improve the Credit
+    Rating.
+- Suggested Start Pack(s): Official\'s Pack
+  - Additional common items: A.I Assistant Software, Booster, Polyvox
+
+### Diplomat
+
+Diplomats include mega-corporate negotiators, planetary ambassadors, and
+interstellar envoys trained in galactic law and political relations.
+
+- Prerequisite: Young Adult Age for the Species, Charisma Score 14+
+- Starting Bonus Income: \$15,000
+- Average Monthly Income: \$5,500
+- Credit Rating Range: 12 - 24
+- Suggested Start Pack(s): Official\'s Pack (with Shepherd Chip)
+  - Additional common items: Polyvox, Hologram Player/Recorder, Clothing
+    Outfit Formal x1
+
+### Doctor
+
+A doctor can be a physician (general ­practitioner or specialist), a
+surgeon, or a psychiatrist.
+
+- Prerequisite: Adult Age for the Species, Intelligence Score 14+ and
+  Medical Skill Rank 1+
+- Starting Bonus Income: \$14,000
+- Average Monthly Income: \$6,500
+- Credit Rating Range: 15 - 22
+- Suggested Start Pack(s): Doctor\'s Pack
+  - Additional common items: Book(s) (digital or physical) on medicine,
+    Clothing Outfit Uniform (worn) x2, Sporekill, Biocort x3.
+
+### Emergency Services {#emergency_services}
+
+Rescue workers, firefighters, paramedics, hazardous material handlers,
+and emergency medical technicians fall under this category.
+
+- Prerequisite: N/A
+- Starting Bonus Income: \$5,000
+- Average Monthly Income: \$2,500
+- Credit Rating Range: 6 - 12
+- Suggested Start Pack(s): Doctor\'s Pack or Settler\'s Pack
+  - Additional common items: Clothing Outfit Uniform (worn) x2, First
+    Aid Kit, Search-and-Rescue Kit, Purifier.
+
+### Entrepreneur
+
+Entrepreneurs have an obsession with being their own boss. They believe
+in themselves, have an abundance of confidence, and the ability to
+acquire the funds necessary to bankroll their newest moneymaking
+venture. These business owners, from small to large, have a knack for
+developing business plans, securing resources, and getting new ventures
+off the ground. They rarely want to stick around after the launch,
+however, as they prefer to put their energies into the next big thing.
+
+- Prerequisite: Wisdom Score 12+
+
+:\* **NOTE**: The Player should come up with a business idea that the
+Character is currently trying to do work. This can change over time, but
+for the Credit rating to increase, the Character must make successful
+strides toward this or another idea.
+
+- Starting Bonus Income: \$10,000
+- Average Monthly Income: \$4,000
+- Credit Rating Range: 4 - 20
+
+:\* **NOTE**: The Entrepreneur has to work their way up to become truly
+wealthy. They may have more money at the start, but that is because they
+have taken out loans to start their own business. This means they have a
+much lower Credit rating at the start despite the higher income.
+
+- Suggested Start Pack(s): Businessman's Pack or Settler\'s Pack
+  - Additional common items: Book(s) (digital) on business or
+    inspirational topics, Hologram Player/Recorder, Polyvox
+
+### Jobless
+
+Some people are just down on their luck. Or they are unable to perform a
+job due to a disability. Or they are just lazy. In either case, most
+species will have civilizations now or in their history where people
+were poor and jobless. Some people may like the freedom, but few enjoy
+the lack of comfort, security, and stability that wealth can provide.
+
+- Prerequisite: N/A
+- Starting Bonus Income: \$250
+- Average Monthly Income: \$0
+- Credit Rating Range: 0
+
+:\* **NOTE**: The Character must pick a profession to lose this
+Profession and start getting Credit.
+
+- Suggested Start Pack(s): N/A
+  - Additional common items: A cup to beg for money with, Clothing
+    Outfit Casual (heavily worn) x2
+
+### Investigative
+
+There are several jobs that fit within this occupation, including
+investigative reporters, photojournalists, private investigators, police
+detectives, criminologists, criminal profilers, espionage agents, and
+others who use their skills to gather evidence and analyze clues.
+
+- Prerequisite: Study Skill Rank 1+
+- Starting Bonus Income: \$6,500
+- Average Monthly Income: \$3,000
+- Credit Rating Range: 8 - 14
+- Suggested Start Pack(s): Explorer\'s Pack or Settler\'s Pack
+  - Additional common items: Evidence Kits, Handcuffs, Truthtell,
+    Environment Scanner
+
+### Law Enforcement {#law_enforcement}
+
+Law enforcement personnel include uniformed police, state troopers,
+federal police, federal agents, SWAT team members, military police, and
+bounty hunters.
+
+- Prerequisite: N/A
+- Starting Bonus Income: \$7,000
+- Average Monthly Income: \$2,500
+- Credit Rating Range: 9 - 14
+- Suggested Start Pack(s): Explorer\'s Pack or Settler\'s Pack
+  - Additional common items: Evidence Kits, Handcuffs, Truthtell,
+    Environment Scanner
+
+### Mercenary
+
+Mercenary covers both organized private contractors and independent guns
+for hire.
+
+- Prerequisite: Strength 13+, Dexterity 13+, or Constitution 13+
+- Starting Bonus Income: \$11,000
+- Average Monthly Income: \$4,000
+- Credit Rating Range: 10 - 20
+- Suggested Start Pack(s): Explorer\'s Pack, Settler\'s Pack, or
+  Outlaw\'s Pack
+  - Additional common items: Clothing Outfit, Fatigues (1 worn, 1 good
+    condition), Demolitions Kit, Ghillie Suit, Compass, Biocort
+
+### Military
+
+Military refers to any of the branches of the armed forces, including
+the army, navy, air force, and marines, as well as elite training units
+such as SEALs, Rangers, and Special Forces.
+
+- Prerequisite: Strength 12+, Dexterity 12+, or Constitution 12+
+- Starting Bonus Income: \$8,500
+- Average Monthly Income: \$2,250
+- Credit Rating Range: 9 - 14
+- Suggested Start Pack(s): Explorer\'s Pack, Settler\'s Pack, or
+  Outlaw\'s Pack
+  - Additional common items: Clothing Outfit, Fatigues (1 worn, 1 good
+    condition), Demolitions Kit, Ghillie Suit, Compass, Biocort
+
+### Pioneer
+
+Pioneers are part of the brave first waves sent to terraform, survey,
+and tame newly discovered worlds on the galactic frontier.
+
+- Prerequisite: Constitution Score 12+ or Survival Skill Rank 1+
+- Starting Bonus Income: \$5,000
+- Average Monthly Income: \$1,500
+- Credit Rating Range: 5 - 12
+- Suggested Start Pack(s): Settler\'s Pack or Explorer\'s Pack
+  - Additional common items: Rural Map (of home), First Aid Kit,
+    environment scanner
+
+### Religious
+
+The ordained clergy of all persuasions, as well as theological scholars
+and experts on religious studies, fall within the scope of this starting
+occupation.
+
+- Prerequisite: Knowledge Philosophy Skill Rank 1+
+- Starting Bonus Income: \$4,000
+- Average Monthly Income: \$1,500
+- Credit Rating Range: 4 - 10
+- Suggested Start Pack(s): Official\'s Pack, Settler\'s Pack
+  - Additional common items: Book(s) (digital or physical) on religion,
+    Religious object(s), Clothing Outfit Uniform x1 (for specific
+    religion or group)
+
+### Rural
+
+Farmworkers, hunters, and others who make a living in rural communities
+fall under this category.
+
+- Prerequisite:
+- Starting Bonus Income: \$5,000
+- Average Monthly Income: \$1,500
+- Credit Rating Range: 6 - 12
+- Suggested Start Pack(s): Settler\'s Pack or Technician\'s Pack
+  - Additional common items: Clothing Outfit Casual x2 (worn),
+    Outerwear, Tool Belt, First Aid Kit, Rural Map (of home)
+
+### Student
+
+A student can be in high school, college, or graduate school. He or she
+could be in a seminary, a military school, or a private institution. A
+college-age student should also choose a major.
+
+- Prerequisite:
+- Starting Bonus Income: \$3,000
+- Average Monthly Income: \$500
+- Credit Rating Range: 1 - 6
+
+:\* **NOTE**: A Student can pick another Profession to study. Once they
+reach 4 credit rating through Rank improvements to the
+[Profession](Profession "Profession"){.wikilink} skill, they can
+automatically change their Profession to the one they have studied for,
+regardless of prerequisites. They also change their Monthly Income and
+Credit Rating to whatever the new Profession is, and transfer +3 Credit
+Rating. (They cannot pick the Dilettante)
+
+- Suggested Start Pack(s): Student\'s Pack
+  - Additional common items: Book(s) (digital or physical) on studied
+    subject
+
+### Spacer
+
+Spacer/Scavengers make a living salvaging derelict starships, mining
+asteroids, or working crew shifts on long-haul cargo transports.
+
+- Prerequisite: Dexterity Score 12+ or Survival Skill Rank 1+
+- Starting Bonus Income: \$5,500
+- Average Monthly Income: \$1,800
+- Credit Rating Range: 4 - 12
+- Suggested Start Pack(s): Settler\'s Pack or Explorer\'s Pack
+  - Additional common items: Multipurpose Tool, Duracable, directed
+    light source
+
+### Technician
+
+Scientists and engineers of all types fit within the scope of this
+starting occupation.
+
+- Prerequisite: At least 1 Crafting Skill Rank in either Mechanical,
+  Electrical, or Structural
+- Starting Bonus Income: \$8,000
+- Average Monthly Income: \$3,500
+- Credit Rating Range: 8 - 15
+- Suggested Start Pack(s): Technician\'s Pack
+  - Additional common items: Profession Kit of choice, Clothing Outfit
+    Uniform (worn) x2, Duct Tape
+
+### White Collar {#white_collar}
+
+Office workers and desk jockeys, lawyers, accountants, insurance agents,
+bank personnel, financial advisers, tax preparers, clerks, sales
+personnel, real estate agents, and a variety of mid-level managers fall
+within the scope of this starting occupation.
+
+- Prerequisite: Wisdom Score 12+ and Intelligence Score 14+ or Wisdom
+  Score 14+ and Intelligence Score 12+
+- Starting Bonus Income: \$14,000
+- Average Monthly Income: \$3,500
+- Credit Rating Range: 14 - 20
+- Suggested Start Pack(s): Businessman's Pack or Official\'s Pack
+  - Additional common items: Clothing Outfit Business x2, Aluminum
+    Travel Case (Small) (DC15 Lock), Urban Map (In starting city)

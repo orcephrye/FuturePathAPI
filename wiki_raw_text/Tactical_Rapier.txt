@@ -1,0 +1,51 @@
+{|
+|+ '''Tactical Rapier'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Tactical Rapier
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / 1d4 (Reduced from 1d6 due to Finesse)
+
+'''Proficiency Requirement''': 2 Levels in Melee
+
+'''Weapon Style & Arch Type''': Finesse Melee
+
+'''Range''': 0ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $400 / 0 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~2 pounds
+
+'''Bonus Abilities''':  
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A high-carbon steel blade balanced for precision thrusts and lightning-fast parries.
+;Explanations: This weapon uses the Finesse Melee style. The wielder can use their Dexterity modifier instead of Strength for accuracy checks and gains a +1 bonus to Initiative while the weapon is drawn. The 1 customization point from Tech Level 1 is spent on Accuracy +1.
+|}

@@ -1,0 +1,46 @@
+{|
+|+ '''Nano Mesh Shirt'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Nano Mesh Shirt
+
+'''Level''': 0
+
+'''Protection +AC / X DR''': +0 / 1 DR (A)
+
+'''Maximum Dexterity''': +9
+
+'''Proficiency Requirement''': 0
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $3,030 / 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': Normal
+
+'''Weight''': 1 lbs
+
+'''Bonus Abilities''': Shirt
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 2
+
+'''Customization Slots Used''': 2
+
+'''Remaining Slots''': 2
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

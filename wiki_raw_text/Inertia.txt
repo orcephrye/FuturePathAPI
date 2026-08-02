@@ -1,0 +1,42 @@
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! </span>  ''' 
+
+''' (Not ready for ANY version of testing) '''
+
+When Characters greatly surpass the requirements to succeed at a task, this can result in earning Inertia points for your team. Players can earn Inertia Points by preforming a tasks overly well as well as using Talents or Techniques from some of the Character Classes. When Inertia points are earned, they immediately become available for all other teammates. They can spend them to increase the success of future tasks and to defend against the enemy from performing devastating actions. All Inertia points left at the end of combat are removed. At the start of each [[Combat|Combat]] the team as 0 Inertia. 
+
+== Inertia vs. Regression ==
+
+Inertia is earned by Player actions. Regression is earned by opponents of the Players. Regression simply takes away from a team's Inertia. Inertia can also be negative so if the Team's Inertia is 0 and an action done by the enemy causes a Regression point then the Team's Inertia is now -1. 
+
+
+Player's Inertia points can bring the Inertia Pool out of the negatives. The GM can spend Regression points to stop the Players from performing actions similar to the Players spending Inertia points.
+
+== Earning Inertia ==
+
+* A Player succeeds at a skill check more than 5 times against the DC.
+* A Player uses a Technique or Talent that can also provide an Inertia point.
+* A Player succeeds at a Critical attack that kills or otherwise disables an opponent.
+* Whenever the Players succeed at a surprise attack. 
+
+== Spending Inertia Points ==
+
+Below are ways to spend a single point. Only a single point can be spent by a Player at a time. So each Player can spend a single Inertia point a turn. When spending an Inertia Point a Player cannot earn an Inertia point in that same turn.
+
+* Allows the Player to roll 2 d20's instead of 1 in order to determine success. 
+* Reduces the DC of a task by 5.
+* Be able to use certain Talents/Techniques from some classes.
+
+== Getting Regression ==
+
+These are caused by actions by opponents controlled by the GM.
+
+* Whenever a Character dies or gets disabled, do an attack.
+* Whenever a Character critically fails at a task.
+* Whenever an opponent's pull off a surprise attack. 
+
+== Spending Regression Points ==
+
+Points are spent by the GM. When spending a point, the opponent's action cannot earn Regression.
+
+* Stops a Critical attack from happening.
+* Increases the DC of a task by 5.

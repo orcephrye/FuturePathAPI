@@ -1,0 +1,18 @@
+'''<u> <span style="color:#ff0000"> UNDER CONSTRUCTION!!! </span> </u>  '''
+
+'''This site is still being worked on! This version is Alpha Three. Please join the Discord Server: '''[https://discord.gg/VC6bRFU Discord Server]''' or email:''' [mailto:administrator@d20futurepath.com administrator@d20futurepath.com]
+
+<strong>What is The Future Path?</strong>
+
+Future Path is a science fiction-themed pen-and-paper role-playing game. It uses a modified version of the d20 system called d20+. It is inspired by d20 Modern, d20 Future, and [http://www.d20pfsrd.com/ Pathfinder/PFSRD]. The creators of Future Path want a game that embraces the Sci-Fi genre, incorporates cool technology, and features an entire galaxy as a [[Campaign Setting]]. They hope Future Path becomes the best one-stop shop for any Sci-Fi pen and paper action! Get introduced to the lore through an [[Introduction Story]] or skip onward to the [[Basics|ruleset]] and spin up a [[Character Creation and Advancement|character]].
+
+Already an experienced Pen and Paper gamer? For a short overview of what's different in this system, click [[Whats Different|here]].
+
+Never played a Pen and Paper game or a d20 system before? Then visit the [[New_too_P%26P|New To P&P]] page! From there, you may want to check out the [[Basics|Getting Started]] page. 
+
+To start exploring the [[Table of Contents]] below can help guide you, or simply use the sidebar to the left.
+{{Template: Table of Contents}}
+
+----
+
+This product is licensed under the ORC License located at the Library of Congress at TX 9-307-067 and available online at various locations. All warranties are disclaimed as set forth therein. Reserved Material elements in this product include, but may not be limited to the FuturePath logo and any other images or pictures. For more information review of the "Open RPG Creative License." visit: ([https://paizo.com/orclicense ORC]). We are not in any way associated with [http://www.d20pfsrd.com/ Pathfinder/PFSRD], [http://paizo.com/ Paizo] or [http://wizards.com/ Wizards of the Coast]. However, we do encourage you to visit these sites and check them out.

@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''': Misc +1 bonus to both the Bluff and Disguise skills. If you have 5 or more ranks in Disguise or Bluff, the bonus increases to +2, respectively.
+
+'''Normal''': -
+
+'''Special''': -

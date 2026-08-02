@@ -1,0 +1,407 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS STILL UNDER
+CONSTRUCTION! `</span>`{=html}**
+
+## Summary
+
+All heroes have their issues. **Difficulties** are designed as a
+guideline for adding more \'flavor\' or detail to a Character and their
+personal story. This can be in the form of a simple **Quirk** that
+changes the way a Hero may behave and primarily impacts role-playing. Or
+it can include **Advanced Difficulties** as in
+[Cybernetics](Cybernetics "Cybernetics"){.wikilink},
+[Mutations](Mutations "Mutations"){.wikilink},
+[Psionics](Psionics "Psionics"){.wikilink} which can add new rules to
+combat and conflict resolutions.
+
+Quirks
+: Are role-playing and story-driven Difficulties that can also be called
+  **Flaws**. Those are mostly centered around Character development, as
+  in something for a Character to overcome about themselves. The effect
+  is usually (but not limited to) a role-playing feature that does not
+  directly affect the Character attributes. Although Quirks do come with
+  penalties that are designed to mostly affect rolling playing
+  situations and not combat. Quirk\'s penalties are specific and defined
+  in their description. A reward is provided by the GM to the Character
+  that successfully overtime overcomes these Character flaws which can
+  include a small bonus that was opposite of the penalty.
+
+<!-- -->
+
+Advanced Difficulties
+: There are 3 advanced types of difficulties. Each deserves its own
+  special categories and rules. These are considered controversial in
+  the universe of Future Path and most societies shun or even eliminate
+  peoples with these traits.
+
+1.  **[Cybernetics](Difficulties#Cybernetics "Cybernetics"){.wikilink}**:
+    This is when electronic and mechanical components are used to
+    enhance or even replace biological components. IE: Super strength,
+    speed, senses
+2.  **[Mutations](Difficulties#Mutations "Mutations"){.wikilink}**: This
+    is when extremely complicated and rare genetic changes cause
+    overwhelming positive and unique results in a specimen. IE: Enhanced
+    senses, Shapechanging, Regeneration
+3.  **[Psionics](Difficulties#Psionics "Psionics"){.wikilink}**: This is
+    the rarest and most controversial type of Mutation that results in
+    difficult-to-explain abilities in the specimen. IE: Telekinise,
+    Telepathy, Elemental Control
+
+Detractors
+: These are more general penalties that have no positive side effects
+  and are considered permanent. They are used by Advanced Difficulties
+  as a balancing force between the enhanced abilities provided by the
+  Advanced Difficulties.
+
+## Quirks/Flaws
+
+**Quirks** or **Flaws** are character attributes that are largely used
+for role-playing. They can help build a story for your Character and
+have some personal aspect of there personality or body that they can
+**optionally** choose to overcome. They can have effects on rolling but
+should only be limited to non-combat situations and should be minor in
+nature unless used in place of a
+[**Detractor**](#Detractors "Detractor"){.wikilink}. A Player should
+notify a GM if there Character has a Quirk and if they intend to,
+overtime, overcome it.
+
+To learn more about the rules for
+[Quirks/Flaws](Quirks "Quirks/Flaws"){.wikilink} and all the possible
+options visit its page [here](Quirks "here"){.wikilink}.
+
+## Advanced Difficulties {#advanced_difficulties}
+
+There are 3 different types of advanced difficulties within Future Path.
+These are [Cybernetics](Cybernetics "Cybernetics"){.wikilink},
+[Mutations](Mutations "Mutations"){.wikilink}, and
+[Psionics](Psionics "Psionics"){.wikilink}. They each come with their
+own rules explaining advantages and disadvantages. What makes these
+stand out the most is how the majority of citizens of the Ring see those
+who walk this Path. Most cultures frown upon those who are Cyborgs,
+mutants, or mutants with Psionic powers. Many cultures even restrict or
+even outlaw these people. And some go out of their way to \'purify\' the
+galaxy of them. To be an enhanced adventure with one of these abilities
+is to each judgment from their peers and even death.
+
+A Character can only pick one of these difficulties. Psionics is a
+special form of Mutation and being a mutant of any kind makes the
+cybernetic implant not compatible with the Character\'s body.
+
+### Cybernetics
+
+[Cybernetics](Cybernetics "Cybernetics"){.wikilink} is the most common
+difficulty in the Future Path Universe and so doesn\'t get as much flak.
+However, prejudice is still real. The most common and least extreme
+example of this is people who get implants for medical reasons such as
+to replace body parts like a missing leg or arm. Most cultures forbid
+these people from participating in sports. Most people who get body
+parts replaced are willing to pay more for Cybernetic implants that look
+and feel \'normal\' creating a very profitable market for companies
+willing to give implants to anyone even people not needing them. This
+has led to more and more advancements in Cybernetics that provide more
+enhancements in functionality, not just replacement. This is where the
+line starts to get really fuzzy and many Civilizations outlaw this
+practice or at the very least look down on those who choose artificial
+means of self-improvement.
+
+Cybernetics that only replace features of a Character do not count as a
+Special Difficulty. Characters that declare they are taking the
+Cybernetic Special Difficulties imply that their Cybernetic implants
+provide enhancements not merely for medical use.
+
+When getting a cybernetic implant that provides an enhancement for the
+first time the Character has to take the Cybernetic Prejudice difficulty
+and one Detractor.
+
+Learn more about these replacements and enhancements at the
+[Cybernetics](Cybernetics "Cybernetics"){.wikilink} page.
+
+### Mutations
+
+[Mutations](Mutations "Mutations"){.wikilink} are very rare in most
+species. Usually, less than .1% have major or noticeable mutations. Even
+fewer have mutations that can provide some kind of benefit amongst all
+the negatives. Most people see mutants as evolutionary mistakes and/or a
+cautionary tale to those who wish to play \'God\' with the building
+blocks of life. However, not all see it this way. Mutations can be seen
+as a gift and as a source of learning for future generations. Mutations
+are either natural or caused by accidental or forced exposure to a
+catalyst such as different forms of radiation or some special
+nano-machine that rewrites DNA etc\...
+
+Some species mutations are more common. Humans once nuked their
+homeworld Earth almost to oblivion and thus Humans have a higher
+population of mutants, particularly on Earth. Most cultures shy away
+from the weird and macabre and mutates are cast away from society.
+
+In order too declare a Character is a mutant the Character must have one
+difficulty that provides negatives associated with Charisma and one
+Detractor.
+
+Learn more about mutations and their side effects at the
+[Mutations](Mutations "Mutations"){.wikilink} page.
+
+### Psionics
+
+[Psionics](Psionics "Psionics"){.wikilink} is a very uncommon form of
+mutation. Less than 0.01% of mutants so signs of Psionics. Although some
+species have adopted low-level Psionics through millions of years of
+evolution most species do not have such powers. Telekinesis, Telepathy,
+and other phenomena have been supposedly recorded by different
+civilizations across time. However, so rare are these abilities that
+little is known about them except for some minor Telepathy abilities
+certain species seem to possess between each other.
+
+Most people choose to believe they do not exist or at the very least
+over exaggerated. Some cultures due to tradition, spiritual or other
+reasons have governments that actively try to dismiss or even remove
+mutations and Psionics in particular. However, the
+[Graylings](Species#Graelycxazshngs_.28aka_Graylings.29 "Graylings"){.wikilink}
+embrace Psionics and have an unusual amount of people with abilities the
+most common of which is Telepathy. They continue to fight for the rights
+of mutants, particularly Telepaths around the Ring. They often downplay
+their own abilities to better fit with their fellow Galatic colleges by
+explaining that their Psionic powers come more from technology than from
+some unknown biological process.
+
+A Psionics must take one Quirk/Flaw and one Detractor before they can
+start to benefit from their Psionic powers.
+
+Learn more about these rare but powerful abilities at the
+[Psionics](Psionics "Psionics"){.wikilink} page.
+
+## Detractors
+
+Detractors are more extreme penalties that directly affect a
+Character\'s attributes in a more general way than a Flaw does. Its
+effects are permanent and cannot be removed. It always is meant as a
+general affliction that applies during both combat and normal gameplay.
+Detractors also provide no positive benefits. Detractors are often used
+in the rules for **Advanced Difficulties** such as
+[Cybernetics](Cybernetics "Cybernetics"){.wikilink},
+[Mutations](Mutations "Mutations"){.wikilink},
+[Psionics](Psionics "Psionics"){.wikilink}. However, they can also be
+applied to the Character if the Player wishes to add extra spice and
+difficulty to their Character\'s journey. These can also be used if the
+Player/GM wishes to invite their own Quirk/Flaw and are looking for a
+penalty although it is recommended that the penalty for a Flaw that
+comes from here should be reduced or made more specific to the nature of
+the Flaw.
+
+GM Note
+: The GM can ban the use of Detractors or the use of certain Detractors
+  when applied to improving Advanced Difficulties. It can become very
+  easy to enhance a Character and have Detractors that do not impact a
+  Character significantly. That is \*NOT\* the point of a Detractor.
+  These are general disadvantages that are meant to directly hinder a
+  Hero\'s Path/Journey. For example a Character that takes a Detractors
+  for a Skill that they never intend to improve should be frowned upon
+  and the GM should have finial say on if they except the Detractor a
+  Player picks to enhance there Character.
+
+### Detractors List {#detractors_list}
+
+#### Ability Reduction {#ability_reduction}
+
+: Gain a reduction to a specific
+  [Ability](Ability_Themes "Ability"){.wikilink}. An example of Ability
+  Reduction would be \'Ability Reduction (Strength) x2\'. This implies
+  that the Strength Score is reduced by 2. This cannot be used to reduce
+  something below a total score of 7.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: In order to count towards an Advanced Difficulty
+    the Score needs to be reduced by 2.
+
+#### Ability Cap {#ability_cap}
+
+: This is a cap on the max score of an
+  [Ability](Ability_Themes "Ability"){.wikilink}. An example would be
+  \'Ability Cap (Dexterity) 12\'. This implies that the Character can
+  only have a max of 12 for their Dexterity score. When given if the
+  Character has more than 12 they lose the extra points. If given as
+  part of Character creation the Character can move the points around.
+  If taken more than once for the same Ability then whatever the lower
+  score counts and the other Ability Cap is removed. The Cap cannot be
+  lower than 10.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Must be taken before level 12. Cannot use this
+    towards an Advanced Difficulty if the Score is already 18 or above.
+
+#### Skill Deficiency {#skill_deficiency}
+
+: This causes a negative modifier to be applied to the Skill in
+  question. An example would be \'Skill Deficiency (Disguise) -4\'. This
+  would imply that the Character has a minus 4 whenever they attempt to
+  use the skill Disguise.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: This needs to be a minimum of -3 to count towards
+    an Advanced Difficulty. Needs to be a Skill that the Character has
+    Ranks in. Cannot use this on Crafting, Language, any Knowledge
+    Skills.
+
+#### Skill Rank Cap {#skill_rank_cap}
+
+: This causes a cap on the max Skill Rank of a particular skill. An
+  example would be \'Skill Rank Cap (Knowledge - Culture) 3\'. This
+  would imply that the Knowledge - Culture skill can never exceed the
+  Rank of 3.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Must be taken by level 10. Needs to be a Skill
+    that the Character has Ranks in. Cannot use this on Crafting,
+    Language, any Knowledge Skills.
+
+#### Skill Growth {#skill_growth}
+
+: Here the number of provided skill points is reduced by 1 for every
+  time the Character gets this Detractor. IE: \'Skill Growth x3\' would
+  mean the Character gets -3 skill points per level. This cannot be
+  given if the Character is already down to zero. Even if the Character
+  is at Zero skill points can be awarded by other means. Zero also means
+  that the Character only gets Skill Points at every Odd level. Skill
+  Points that are awarded at Character level 1 as part of Character
+  creation are not affected by Skill Growth.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Can only be taken once. From level 1-5 this is an
+    x1. From level 6-10 this must be x2 or it won\'t count towards an
+    Advanced Difficulty. From 11-15 must be x3 or won\'t count towards
+    an Advanced Difficulty. Cannot be taken after level 15.
+
+#### Proficiency Trees {#proficiency_trees}
+
+: **Technologically Illiterate**: The Character cannot improve there
+  existing
+  [Technology](Proficiency_Tree#Technology_Branch "Technology"){.wikilink}
+  score in the Proficiency Tree.
+
+<!-- -->
+
+: **Melee/Ranged/Armor Branch**: The Character has to spend 2 points
+  instead of 1 for every level beyond level 2 in the [Melee/Ranged
+  Branchs](Proficiency_Tree#Melee_.26_Ranged_Combat_Branches "Melee/Ranged Branchs"){.wikilink}
+  or [Armor
+  Branch](Proficiency_Tree#Armor_Branch "Armor Branch"){.wikilink}.
+
+<!-- -->
+
+: **Power Armor**: The Character finds wearing Power Armor difficult.
+  Each Rank costs 2 points instead of 1.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: This can only be picked once. Has to be taken by
+    level 10.
+
+#### Languages
+
+: The Character finds it harder than normal to learn new languages.
+  Language skill is not considered Natural to them. All learned Language
+  skill slots require two points to advance instead of one. (Not
+  counting the initial skill rank)
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Can only be taken once. Has to be taken by level
+    10.
+
+#### XP Sink {#xp_sink}
+
+: The Character gains less XP than other Characters do. This goes by
+  increments of 5%. IE: (XP Sink 10%) would imply that each time XP is
+  rewarded out to this Character they take 10% less. This doesn\'t mean
+  that XP is divided up unevenly between Characters. If there is a
+  reward of 400 XP and there are 4 players each gets 25% of the XP and
+  the Character with the \'XP Sink 10%\' simply earns 90XP while all
+  others earn 100.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: This behaves similar to Skill Growth. Every 5
+    levels the minimum requirement for this to count towards an Advanced
+    Difficulty this increases by 5%. So from level 1-5 this is 5% to
+    count. If a Character is level 6-10 and they take this difficulty
+    they have to start at 10% and goes by increments of 10% and so on.
+
+#### Techniques
+
+: This only applies to Characters that can use Class specific
+  [Techniques](Techniques "Techniques"){.wikilink}. The Character can
+  only know and use Techniques as if they are 1 level lower. This can
+  only be applied once.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Can only be taken once.
+
+#### Hit-Points Reduction {#hit_points_reduction}
+
+: This reduces the amount a Character gets per level. Each time this is
+  applied the Character gets 1 less HP per level. An example would be
+  \'HP Reduction x2\' This would imply each level the Character gets 2
+  less HP. This cannot be applied more than 5 times. This cannot cause a
+  Character to gain at less than 2 HP per level. This is applied
+  retroactive starting at level 2.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: None
+
+#### Damage Sensitivity {#damage_sensitivity}
+
+: The Character has become weakened to a particular damage type. Learn
+  about damage types and attributes
+  [here](Damage_Types_and_Attributes "here"){.wikilink}. This acts like
+  Weakness rules for [Danage
+  Types](Damage_Types_and_Attributes "Danage Types"){.wikilink}.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Can only be taken twice.
+
+#### Feat Blocking {#feat_blocking}
+
+: The Character is restricted from being able to apply a particular
+  Feat.
+
+<!-- -->
+
+: 
+
+  : **Requirements**: Has to be a Feat that the Character can be
+    eligible for. This can not be applied to the following Categories:
+    Specialty Skills, Difficulties, Skill Enhancements, Misc Feats.

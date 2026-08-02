@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''': Gain Misc +1 bonus to the Stealth skill. At the 10th Character level, this becomes +2.
+
+'''Normal''': -
+
+'''Special''': =

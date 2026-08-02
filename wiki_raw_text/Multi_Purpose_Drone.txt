@@ -1,0 +1,125 @@
+{|
+| valign="top" |
+'''Ship Name''': Multi Purpose Drone
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Diminutive
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': Drone
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 15
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 14 (Modifier: +2)
+
+'''Weapons''': 14 (Modifier: +2)
+
+'''Structure''': 12 (Modifier: +1)
+
+'''Shields''': 12 (Modifier: +1)
+
+'''Electronics''': 11 (Modifier: +0)
+
+'''Sensors''': 10 (Modifier: +0)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 14 (Base 14 = 10 + 2 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 2 (Size Mod))
+
+'''Detection DC''': 11
+
+'''Stealth DC''': 11 (Detection 11 + 0 Electronics)
+
+'''Battle Damage''': 1
+
+'''Initiative''': 1 (Engines 2 + Sensors 0 - Structure 1)
+
+'''Movement Speed''': 9 Squares (Tactical Speed: 9 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 5 successes (Base 4 + 1 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
+
+'''Repair DC Bonus''': +2 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +2 (equal to Engines Mod)
+
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+
+'''Cargo Capacity''': 16 Units
+
+'''Passenger Capacity''': 2 (Drone AI baseline capacity)
+
+'''FTL Engine/Speed''': N/A (No FTL Drive)
+
+'''Cost and Procure Diff''': $974,562 / 1 (Procure Diff: 1)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 0
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 0
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 3 / 3 / 0 (Drone configuration increases HP by 1)
+
+'''Bays (Total/Used/Free)''': 0 / 0 / 0
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Drone_AI_Module|Drone AI Module]] (Pre-installed frame)
+;Description: A small, high-tech, multi-purpose military drone deployed in wings from larger carrier vessels to execute target strikes or reconnaissance.
+;Explanations: Configured for swarm combat operations. Spends points in pairs to lock in high Engines and Weapons modifiers, making it exceptionally agile and lethal relative to its tiny frame.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
+Hard Point 2: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
+Hard Point 3: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 2 mags of [[Ship_Equipment#Missiles|Small Missile Ammo]])
+
+: '''Cost of Hard Point items''': $494,562 ($80,000 Projectile + $3,200 Ammo + $156,250 Laser + $52,000 Crystal + $195,300 Missile + $7,812 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+None
+
+: '''Cost of Bay items''': $0
+|}

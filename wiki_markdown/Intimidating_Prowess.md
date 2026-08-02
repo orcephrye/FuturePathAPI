@@ -1,0 +1,16 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+Your physical might is intimidating to others.
+
+**Prerequisite**: -
+
+**Benefit**: Add both your Strength and Chrisma modifiers to Intimidate
+skill checks.
+
+**Normal**: By default, when doing an Intimidate skill check, the Player
+must choose between one of these Abilities to utilize as part of the
+Skill.
+
+**Special**: Cannot also take [Athletic
+Prowess](Athletic_Prowess "Athletic Prowess"){.wikilink}.

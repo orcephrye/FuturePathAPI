@@ -1,0 +1,3 @@
+This is a Power Armor Mod. Please review the [[Armor#Power_Armor|Power Armor]] rules for more information. 
+
+This provides +1 Total DR for every Reflective, Ablative, or Absorptive Armor Mod that is one this Suit.

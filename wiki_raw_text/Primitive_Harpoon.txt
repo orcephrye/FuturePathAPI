@@ -1,0 +1,51 @@
+{|
+|+ '''Primitive Harpoon'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Primitive Harpoon
+
+'''Power / Speed''' (Total Level/Dice): Small / Single Fire = Level 0 / 1d2
+
+'''Proficiency Requirement**: 1 Level in Ranged (Archaic)
+
+'''Weapon Style & Arch Type''': Specialized Projectile Weapon
+
+'''Range''': 50ft
+
+'''Default Attributes''': Archaic, Throw-able
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,090 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 1
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~3 pounds
+
+'''Bonus Abilities''':  Special Ammunition
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A simple spear attached to a line, used for hunting or capturing targets.
+;Explanations: This weapon uses the Specialized Projectile Weapon style. It can apply the Pinned condition on a successful hit and Strength contest. Price includes +$500 style mod and x2 Archaic multiplier.
+|}

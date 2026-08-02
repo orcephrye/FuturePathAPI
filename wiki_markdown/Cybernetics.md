@@ -1,0 +1,659 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS Alpha Three Ready!
+`</span>`{=html}**
+
+Cybernetics is a method that mixes machine technology with organic
+beings to artificially enhance or otherwise improve the life of the
+organic. A cyborg is a person who has had one or more surgeries to
+implant technology directly into their body.
+
+To learn about the evolution and lore of Cybernetics and their Tech
+levels, you can read the lore page [Evolutions of
+Cybernetics](Evolutions_of_Cybernetics "Evolutions of Cybernetics"){.wikilink}.
+To jump straight to a list of Cybernetic Implants, go to: [Cyborg
+Enhancements](Cybernetics#Enhancements "Cyborg Enhancements"){.wikilink},
+[Cyborg Utilities](Cybernetics#Utility "Cyborg Utilities"){.wikilink},
+or [Artificial
+Replacements](Cybernetics#Replacements "Artificial Replacements"){.wikilink}.
+
+If the Character simply wants to install or embed an item from [General
+Equipment](General_Equipment "General Equipment"){.wikilink}, then they
+can take the [Cybertaker](Cybertaker "Cybertaker"){.wikilink} feat. This
+allows for the Surgery and installation of a single **Utility Implant**.
+
+`<u>`{=html}Summary`</u>`{=html}
+
+: 
+
+: Cybernetics can be put under three main categories. **Replacement
+  Implants**, **Utility Implants** and **Enhancing Implants**.
+  Replacement Implants are not considered a \'special\' difficulty.
+
+<!-- -->
+
+: To become a Cyborg, a character must undergo surgery to install the
+  **Framework**. The Framework supplies **Power** and mounting **Slots**
+  to **Implants** that can be installed at that time or another time
+  with a surgery. A Framework has a Tech Level and can be masterworked.
+  Depending on the Tech Level and Masterwork level, the Framework has a
+  base amount of Power and Slots it can provide.
+
+<!-- -->
+
+: Once a Character is a cyborg they gain the [Cybernetic
+  Prejudice](Difficulties#Cybernetic_Prejudice "Cybernetic Prejudice"){.wikilink}
+  flaw. And they also gain a
+  [Detractor](Difficulties#Detractors_List "Detractor"){.wikilink}.
+  There are also some [Innate
+  Drawbacks](Cybernetics#Innate_Drawbacks "Innate Drawbacks"){.wikilink}
+  that are earned automatically but can be avoided with masterworking.
+
+<!-- -->
+
+: A Cyborg can level up and thus gain access to more Implants by either
+  taking [Feats](Feats "Feats"){.wikilink} under the **Sub-Category:
+  Difficulties** section for Cybernetics, or they can take a new
+  Detractor or enhance one they already have.
+
+## Cybernetic Types {#cybernetic_types}
+
+The three kinds of cybernetic attachments are: **Replacements**,
+**Utility**, and **Enhancements**.
+
+[Replacements](Cybernetics#Replacements "Replacements"){.wikilink}
+: Mostly for role-play, Replacements are prosthetic or artificial units
+  intended to replace lost limbs and damaged organs. They do not require
+  a Framework and do not require a person to take drawbacks for flaws.
+  These do not provide benefits other than duplicating the essential
+  functions of their biological counterparts, and they present little
+  strain on the beneficiary's overall well-being. In appearance, a
+  cybernetic replacement can be recognizably artificial or virtually
+  indistinguishable from the real thing. These differences depend on
+  Tech Level.
+
+<!-- -->
+
+: **Rules**: From a combat and role-playing perspective, there is no
+  difference in a medical replacement implant if it is Tech2 or higher.
+  Tech 1, there would be a noticeable visual difference. If the Player
+  wishes to role-play it as a disability they wish to overcome, they can
+  discuss this with the GM and treat it as a Quirk with a Detractor.
+  Sensors or scanners may be able to detect the difference, but beyond
+  being aware that there is something non-organic in the Character\'s
+  body that otherwise functions identically to the biological
+  replacement, the GM can ignore these implants. The purpose of this is
+  mostly for Role-Playing. The idea is that if a Character loses a leg,
+  an eye, etc., the group may have to go to a hospital for surgery, and
+  the Character is out of action for a time. It is a way to deal with
+  massive damage or near-death experiences. There is no need to take
+  [Cybernetic
+  Prejudice](Difficulties#Cybernetic_Prejudice "Cybernetic Prejudice"){.wikilink}
+  or the [Cybertaker](Cybertaker "Cybertaker"){.wikilink} feat.
+
+<!-- -->
+
+[Utility](Cybernetics#Utility "Utility"){.wikilink}
+: Utility Implants can range from a wireless comms device, a tracker, or
+  a scanning device. All of these are attached to the body in a way that
+  would require surgery to remove, or else they are not considered an
+  implant. They must also be connected to the person in a way that
+  doesn\'t require a physical interface. IE: A neural interface, or some
+  connection to the nervous system. The most common example of this is a
+  wireless communications and tracking implant installed in soldiers or
+  workers to enable easy communication and tracking.
+
+<!-- -->
+
+: **Rules**: These implants relate to a device in [General
+  Equipment](General_Equipment "General Equipment"){.wikilink} or of the
+  same theme. Using the implant would then be the same as using the
+  associated item from a \'what to roll\' perspective. This would not
+  provide a \'sixth sense to the Character. IE, if the implant is a
+  [Medical
+  Scanner](General_Equipment#Scanners "Medical Scanner"){.wikilink}, the
+  use of it would be the same as using a Medical Scanner device in the
+  Character\'s hand. The only difference is that the device is embedded
+  and thus frees the Character\'s hands. The data returned from the scan
+  would have to be provided through another interface, as it wouldn\'t
+  go directly to the mind. The mind could perhaps control the device,
+  but the device cannot upload data directly into the mind. If that was
+  the case, it would count instead as an Enhancement and a \'sixth
+  sense\' device. The main purpose here is to allow an avenue for
+  General Purpose items to be used as implants. If the Character wishes
+  to use a Utility Implant but doesn\'t want to deal with all the other
+  aspects of being a Cyborg, they can use the
+  [Cybertaker](Cybertaker "Cybertaker"){.wikilink} feat. With this feat,
+  they do not need a Framework or to take the [Cybernetic
+  Prejudice](Difficulties#Cybernetic_Prejudice "Cybernetic Prejudice"){.wikilink}
+  or any other negative effects. Otherwise, all Utility Implants take up
+  1 Slot and, if an electronic 1 Power. Masterworking can remove the
+  Slot or Power requirement.
+
+<!-- -->
+
+[Enhancements](Cybernetics#Enhancements "Enhancements"){.wikilink}
+: Enhancements bestow new abilities or improve the recipient in some
+  fashion. Enhancements include skeletal reinforcement and subcutaneous
+  weapon mounts. Some enhancements have visible external components,
+  while others are hidden beneath the skin. Enhancements put more of a
+  drain on the body's resources, and recipients frequently suffer
+  debilitating physical or mental side effects.
+
+<!-- -->
+
+: **Rules**: These implants are the most advanced and take up both Slots
+  and Power. There are some exceptions to this rule, usually centered
+  around upteching and masterworking. The Character must become a
+  full-fledged Cyborg and all the things associated with it, such as a
+  surgery to install the Framework, the [Cybernetic
+  Prejudice](Difficulties#Cybernetic_Prejudice "Cybernetic Prejudice"){.wikilink}
+  flaw, and pick a
+  [Detractor](Difficulties#Detractors_List "Detractor"){.wikilink}.
+
+## Cybernetic Levels {#cybernetic_levels}
+
+There are different levels of cybernetic use. The higher the level of
+use the more the biological body is adjusted artificially.
+
+Level 0
+: This is mostly for the **Replacements** type. This has no
+  requirements. This doesn\'t even require the use of a [Cybernetic
+  Framework](Cybernetics#The_Framework "Cybernetic Framework"){.wikilink}
+  (more on that below). There is also no serious prejudice regarding the
+  use of cybernetics for medical needs. While some may look down on
+  those who do it, especially if it isn\'t necessary, this isn\'t the
+  same disdain that many species and cultures have for Cyberborgs and
+  the like. A Character can at Level 0 take a single \'Utility\' type
+  implant; however, this comes with some conditions. Only one Utility
+  implant can be installed, and the Character must take the
+  [Cybertaker](Cybertaker "Cybertaker"){.wikilink} feat to do so.
+
+<!-- -->
+
+Level 1
+: This is the First Level of Enhancement-type implants. The Character
+  must go into surgery to install the [Cybernetic
+  Framework](Cybernetics#The_Framework "Cybernetic Framework"){.wikilink}
+  before starting their new life as a Cyborg. They gain the [Cybernetic
+  Prejudice](Difficulties#Cybernetic_Prejudice "Cybernetic Prejudice"){.wikilink}
+  flaw and pick a
+  [Detractor](Difficulties#Detractors_List "Detractor"){.wikilink}. At
+  least one implant must have some small visible spot on a prominent
+  part of the Character\'s body. A
+  [Disguise](Disguise "Disguise"){.wikilink} check is required to hide
+  the fact that the Character is artificially enhanced. This follows the
+  [Disguise
+  Checks](Cybernetics#Innate_Drawbacks "Disguise Checks"){.wikilink}
+  Innate Drawback rules.
+
+<!-- -->
+
+: **Requirements**: The [Cybernetic
+  Prejudice](Difficulties#Cybernetic_Prejudice "Cybernetic Prejudice"){.wikilink}
+  flaw. This then also requires taking a
+  [Detractor](Difficulties#Detractors_List "Detractor"){.wikilink} from
+  the list.
+
+<!-- -->
+
+Level 2
+: This has all the same requirements as Level 1, as well as the [Cyborg
+  Enthusiast](Cyborg_Enthusiast "Cyborg Enthusiast"){.wikilink} feat.
+  The size and number of implants visible protruding from the body have
+  increased by at least 1. The Character can now get the surgery done to
+  upgrade to a Level 2 Framework. Until this is done, the Character is
+  \*not\* actually a Level 2 Cyborg.
+
+<!-- -->
+
+: **Requirements**: The [Cyborg
+  Enthusiast](Cyborg_Enthusiast "Cyborg Enthusiast"){.wikilink} feat, or
+  they can either take a new Detractor from the
+  [list](Difficulties#Detractors_List "list"){.wikilink} or enhance an
+  existing Detractor. If they choose to take a Detractor, then they
+  automatically, for free, gain the correct feat.
+
+<!-- -->
+
+Level 3
+: Just as level 2 with the [Cyborg
+  Competent](Cyborg_Competent "Cyborg Competent"){.wikilink} Feat this
+  time. The size and number of implants visible protruding from the body
+  have increased by at least 1. Just as with the previous level, the
+  Character must get the surgery done to upgrade to a level 3 Framework
+  before they can take advantage of being a Level 3 Cyborg.
+
+<!-- -->
+
+: **Requirements**: The [Cyborg
+  Competent](Cyborg_Competent "Cyborg Competent"){.wikilink} feat, or
+  they can either take a new Detractor from the
+  [list](Difficulties#Detractors_List "list"){.wikilink} or enhance an
+  existing Detractor. If they choose to take a Detractor, then they
+  automatically, for free, gain the correct feat.
+
+<!-- -->
+
+Level 4
+: Just as with levels 2 and 3, except with the [Cyborg
+  Expert](Cyborg_Expert "Cyborg Expert"){.wikilink} Feat this time. The
+  size and number of implants visible protruding from the body have
+  increased by at least 1. Just as with the previous level, the
+  Character must get the surgery done to upgrade to a level 4 Framework
+  before they can take advantage of being a Level 4 Cyborg.
+
+<!-- -->
+
+: **Requirements**: The [Cyborg
+  Expert](Cyborg_Expert "Cyborg Expert"){.wikilink} feat, or they can
+  either take a new Detractor from the
+  [list](Difficulties#Detractors_List "list"){.wikilink} or enhance an
+  existing Detractor. If they choose to take a Detractor, then they
+  automatically, for free, gain the correct feat.
+
+<!-- -->
+
+Level 5
+: Just as with the previous levels, this is achieved with a Feat; this
+  time, the [Cyborg Master](Cyborg_Master "Cyborg Master"){.wikilink}
+  Feat. The size and number of implants visible protruding from the body
+  have increased by at least 1. This is the highest level obtainable as
+  a Cyborg. Any higher, the being would be more of a robot with minor
+  biological components than a biological being with augmented
+  artificial features. This level is extremely difficult to achieve.
+  Again, surgery is done to upgrade to a level 5 Framework before they
+  can take advantage of being a Level 5 Cyborg.
+
+<!-- -->
+
+: **Requirements**: The [Cyborg
+  Master](Cyborg_Master "Cyborg Master"){.wikilink} feat, or they can
+  either take a new Detractor from the
+  [list](Difficulties#Detractors_List "list"){.wikilink} or enhance an
+  existing Detractor. If they choose to take a Detractor, then they
+  automatically, for free, gain the correct feat.
+
+## The Drawbacks {#the_drawbacks}
+
+Cybernetic attachments provide countless benefits to their recipients.
+The possibilities of cybernetic technology may seem endless, but there
+are also some drawbacks that cannot be ignored. There are some default
+drawbacks other than the standard Detractors that will be explained
+below. Improving the level of a Framework requires either the correct
+[Feat](Feats "Feat"){.wikilink}, or getting or enhancing a Detractor.
+
+By becoming a level 1 Cyborg, you also gain certain **Innate
+Drawbacks**. Those are detailed below.
+
+### Innate Drawbacks {#innate_drawbacks}
+
+: **Disguise Checks**
+: By default, always gain Disadvantage when attempting to
+  [Disguise](Disguise "Disguise"){.wikilink} a Cyborg. Also, for every
+  Level of Cyborg, the Character gains a Misc -1 to
+  [Disguise](Disguise "Disguise"){.wikilink} checks. This can be removed
+  by spending a Masterworking level on the Frame. However, for every
+  Slot used on the Cyborg, gain another -1 to Disguise checks. This is
+  only removed using a masterwork level on each Implant that consumes a
+  Slot.
+
+<!-- -->
+
+: **Electrical Weakness**
+: The Cyborg, by default, gains the Weakness of Electrical damage. If
+  the Framework is upgraded with a Masterwork point to improve
+  Electrical Hardening as well as 1/2 (round up) of Implants that
+  require Power, then this Weakness is removed. Or 100% of all Implants
+  that require Power are hardened.
+
+<!-- -->
+
+: **Massive Damage Effects**
+: Massive damage wreaks havoc with cybernetic attachments. Massive
+  damage is when a Character receives more than 50% of their total HP
+  worth of damage from one person. Whenever a creature with cybernetic
+  attachments fails a Constitution save against massive damage, the GM
+  will roll percentile dice and consult Table: Cybernetic Massive Damage
+  Side Effects to determine what happens. This effect lasts until the
+  end of the encounter.
+
+<!-- -->
+
+: **Susceptibility to Attack**
+: External cybernetic Implants are subject to attacks as if they are not
+  stealthed. The Attacker can attempt the \'Attack an Object\' action
+  (view the [Combat](Combat "Combat"){.wikilink} page for more details)
+  to deal damage directly to the Cybernetic implant. Read
+  [Above](Cybernetics#Getting_Damaged "Above"){.wikilink} for
+  information on how damage is handled.
+
+  d%        Roll Side Effect
+  --------- ------------------------------------------------------------------------------------------------------------------
+  01--08    Blurred Vision: Character suffers a 20% miss chance on all attacks.
+  09--17    Constant Trembling: Character takes a --2 penalty on Dexterity-based skill checks.
+  18--25    Cybernetic Rejection: Character suffers 1d4 points of Constitution damage per day.
+  26--34    Dizziness: Character takes a --1 penalty on attack rolls, saving throws, ability checks, and skill checks.
+  35--42    Impaired Hearing: Static distortion imposes a --2 penalty on all Listen checks.
+  43--50    Impaired Vision: Distorted images impose a --2 penalty on Spot checks.
+  51--59    Insomnia: Character can only sleep for minutes at a time and gains insufficient rest to heal naturally.
+  60--67    Muscle Cramps: Character moves at half speed.
+  68--76    Muscle Fatigue: Character takes a --2 penalty on Strength-based skill checks.
+  77--84    Power Surge: Character is shaken for 1 round if wounded; a successful Fortitude save (DC 12) negates.
+  85--93    Psychosis: Character suffers 1d4 points of Charisma damage per day, lapsing into a coma if the score drops to 0.
+  94--100   Sensory Overload: Character is stunned for 1 round if wounded; a successful Fortitude save (DC 15) negates.
+
+  : Table: Cybernetic Massive Damage Side Effects
+
+## Framework
+
+<div id="Cybernetic Framework">
+</div>
+
+Implants need a way to interact with the Biological body, get power, and
+be controlled. This requires tight integration with the biological
+lifeform they are attached to and the unique properties of that body.
+Over time, the popular solution of building a sort of foundation to work
+off was adopted by all cyberneticists. This is called a **Framework**.
+It acts as an interface between the mechanical to the biological and
+helps the different implants work with each other as well as the
+different body types found within the cosmos.
+
+For lore and role-playing purposes, a Player can read up on [Framework
+Power Pack
+Types](Framework_Power_Pack_Types "Framework Power Pack Types"){.wikilink}.
+
+A Cybernetic **Framework** provides **Power** and **Slots** to install
+**Implants**. Each level in Cybernetics increases the Power and Slots.
+Masterworked levels and Tech Levels enhance Frameworks with additional
+Power/Slots, as shown in the graph below.
+
+No matter the Cybernetic Level, Masterworked Level, or Tech Level, the
+maximum amount of achievable points is 10, and the maximum number of
+Slots is 6. This is a hard-set limit.
+
++----------+----------+----------+----------+----------+----------+
+| Cyborg   | Level 1  | Level 2  | Level 3  | Level 4  | Level 5  |
+| Levels   |          |          |          |          |          |
+| =\>\     |          |          |          |          |          |
+| v=Tech   |          |          |          |          |          |
+| Levels=v |          |          |          |          |          |
++==========+==========+==========+==========+==========+==========+
+| Tech     | 2 Power  | 3 Power  | 4 Power  | 5 Power  | 6 Power  |
+| Level 2  | / 1 Slot | / 2      | / 3      | / 4      | / 5      |
+|          |          | Slots    | Slots    | Slots    | Slots    |
++----------+----------+----------+----------+----------+----------+
+| Tech     | 3 Power  | 4 Power  | 5 Power  | 6 Power  | 7 Power  |
+| Level 3  | / 2      | / 3      | / 4      | / 5      | / 6      |
+|          | Slots    | Slots    | Slots    | Slots    | Slots    |
++----------+----------+----------+----------+----------+----------+
+| Tech     | 4 Power  | 5 Power  | 6 Power  | 7 Power  | 8 Power  |
+| Level 4  | / 3      | / 4      | / 5      | / 6      | / 7      |
+|          | Slots    | Slots    | Slots    | Slots    | Slots    |
++----------+----------+----------+----------+----------+----------+
+| \*Max Power/Slots no matter the Cybernetic/Masterworked/Tech    |
+| Level is: 10/9                                                  |
++----------+----------+----------+----------+----------+----------+
+|          |          |          |          |          |          |
++----------+----------+----------+----------+----------+----------+
+
+: Table: Default Power and Slots for Level 1 Cyborg by Tech/Masterworked
+Level
+
+Each Implant requires a surgery to install or remove and will cost some
+amount of Power and Slots. Once an Implant has been used, it has been
+modified specifically for the target species and cannot be used in other
+species. So a Character should plan carefully what goes in their body as
+this can be expensive and dangerous. Once removed, it cannot be sold.
+
+Both the [Cybertaker](Cybertaker "Cybertaker"){.wikilink} and the [Cyber
+Tweaks](Cyber_Tweaks "Cyber Tweaks"){.wikilink} feats can grant the
+Character more Power or Slots, but again not above the hard limit.
+
+### Masterworking the Framework {#masterworking_the_framework}
+
+Each Level of Masterworking can grant the Framework either +1 Power or
++1 Slot. Although not above 10/9 limit. A Masterworking level can also
+be spent on removing an [#Innate
+Drawback](#Innate_Drawback "#Innate Drawback"){.wikilink}. More on that
+below:
+
+- `<u>`{=html}Electrical Hardening`</u>`{=html}: Removes the Electrical
+  Weakness **Innate Drawback** from being a Cyborg.
+
+<!-- -->
+
+- `<u>`{=html}Hidden Frame`</u>`{=html}: Removes negatives associated
+  with Cyborg level from Disguise checks. If this is taken and all
+  Implants that consume a slot are stealthed, then the person has no
+  negatives to Disguise, and a person looking at them may not know they
+  are a cyborg. Effects of Cybernetic Prejudice only apply when people
+  are aware of the cyborg.
+
+<!-- -->
+
+- `<u>`{=html}Frame Reenforcement`</u>`{=html}: Remove the bonus
+  negative effects that are applied to a Cyborg when hit by massive
+  damage.
+
+## Implant Masterworking {#implant_masterworking}
+
+Implants can be master worked as well. Masterworking can improve the
+bonus the enhancement or utility provides, or it can be given a
+**Trait**. What Implanet Traits are available is based on the tech level
+of the Implanet.
+
+Like all items, the highest Masterwork level is 5. Masterwork Implants
+come at an increased cost of **x2** base cost per level and a **+1** per
+level to the DC of the Surgery skill check to install it.
+
+### Implant Traits {#implant_traits}
+
+: **Tech 2**: The Crafter can imbue Tech 2 cybernetic enhancements with
+  1 of the following traits
+
+1.  Stealth: This is beyond stealth medical or utility implants. These
+    are meant to trick even security scanners. Only a critical eye can
+    try to spot the implant. Perception Check DC15 + Tech Level +
+    Masterworking Level.
+2.  Improved Resiliency: This adds +1 to the
+    [Resiliency](Item_Damage#Battle_Scaring "Resiliency"){.wikilink}
+    rating of the Implant and +5 too Hardness.
+
+: **Tech 3**: The Crafter can imbue Tech 3 cybernetic enhancements with
+  1 of the following traits.
+
+1.  Improved Stealth: Only a critical eye can try to spot the implant.
+    DC20+ Crafting Bonus + Surgery Bonus. The bonuses here are +1 for
+    every 3 the Craft or Surgery exceeds the DC.
+2.  Advanced Energy Efficiency: Spending 2 Masterwork levels on the
+    Implant reduces the Power requirement by 1, minimum 1.
+3.  Nano-Scale Spatial Engineering: Spending 3 Masterwork points can
+    reduce the Slot requirement for the device by 1, minimum 1.
+
+: **Tech 4**: The Crafter can imbue Tech 4 cybernetic enhancements with
+  1 of the following traits or 2 of the Tech 3 traits.
+
+1.  Expert Stealth: Only a critical eye can try to spot the implant.
+    DC25 + Tech Level + Masterworking Level.
+2.  Atomic Spatial Engineering: Spending 2 Masterwork points can reduce
+    the Slot requirement for the device by 1, minimum 0. This replaces
+    \'Nano-Scale Spatial Engineering\'.
+
+## Replacements
+
+The most basic replacement for things like limbs and organs don't bestow
+any special benefits, but they suffer some basic drawbacks. These
+drawbacks are not the ones listed above. Those are for Utilities and
+Enhancements. Replacements are more for Role-playing as well as having a
+lower tech adventure where a character suffers a grave wound. Some
+replacements of higher Tech Levels are built to counter certain
+drawbacks, as noted. They don't add measurably to the recipient's
+weight. Also by default all Replacements are not weak to Electrical
+attacks.
+
+There are two different categories of Replacements. **Internal** and
+**External**. Internal are things like **Organs** while External are
+**Prosthetic** replacements.
+
+To learn more about the different options, how Tech Levels effect these
+and what Masterwork levels can do for Replacements visit the [**Organ
+Replacement**](Organ_Replacement "Organ Replacement"){.wikilink} page.
+
+## Utility
+
+All Utilities are based on existing items found in the [General
+Equipment](General_Equipment "General Equipment"){.wikilink} page. These
+**cannot** include Weapons or Armor. Any item that requires Electrical
+and/or Mechanical parts to construct and is powered, such as a sensor,
+communications device, by default requires a Power slot, it it doesn\'t
+require a Power Slot then it also doesn\'t have the Weakness to
+Electrical attacks. Otherwise they do not require power. By default any
+device converted into an Implant must be crafted as Masterworked
+Level 1. At Masterworked Level 2 or higher the item can be crafted with
+a personal power device removing the requirement for a Power slot unless
+specified otherwise. This micro power supply acts like the Framework\'s
+Power Pack noted [above](Cybernetics#The_Power_Pack "above"){.wikilink}.
+
+All other masterwork levels are spent improving the implant but the
+first level must be spent only on making the item usable as an implant.
+Another level can be spent on providing a micro power supply but again
+this wont count as improving the item only adding a feature too it. So
+if the first 2 masterwork levels are for the implant and the micro power
+supply then at masterwork level 3 the item can be improved as if it was
+a normal Masterwork level 1 item.
+
+To learn more about Utility Implants visit the [**Utility
+Implants**](Utility_Implants "Utility Implants"){.wikilink} page.
+
+## Enhancements
+
+Cybernetic Enhancements are available starting at Tech Level 2 and
+require a Level 1 Cyborg. Unlike standard replacements, they bestow new
+abilities upon their recipients. Unless otherwise noted, enhancements
+don't add measurably to a recipient's weight.
+
+To view the different options, go to the [Cybernetic
+Enhancements](Cybernetic_Enhancements "Cybernetic Enhancements"){.wikilink}
+page.
+
+## How to get/craft/repair/install/remove Implants {#how_to_getcraftrepairinstallremove_implants}
+
+### Buying/Selling
+
+Cybernetics are usually frowned upon if they are not used for medical
+purposes. In some societies, biological understanding yields advanced
+technology that removes the need for a mechanical solution to a missing
+limb or organs and many people prefer to simply regrow a lost appendage.
+So, depending on where the Character is, they may find even Medical or
+Utility Cybernetics rare, if not illegal. However, in most societies,
+Enhancement Cybernetics is illegal or rare. Medical and Utility
+Cybernetics have a **Procure Difficulty** of either **1** or **2** and
+start with **Technology Level 1**. While Enhancement Cybernetics has a
+**Procure Difficulty** of **2** or **3** and starts at **Tech Level 2**.
+A [Species](Species "Species"){.wikilink} description will inform the GM
+where each of the major Species stand on Difficulties but if the
+adventuring group runs into a different culture it is up to the GM to
+decide. The default assumption is that it is always difficult to find a
+place that sells good quality Cybernetics and even harder to find a
+competent [Cybernetic
+Surgen](Cybernetic_Surgery "Cybernetic Surgen"){.wikilink}.
+
+Selling your Cybernetic wears or even performing surgery for a client
+can be equally difficult, as it is often associated with the
+\'underground\' or \'black market\' of a society. Depending on where the
+Character\'s are they may even be committing a crime in providing these
+services.
+
+More detailed **Pricing** and **Procure Difficulty** information is
+provided per Implant bases below.
+
+### Installation and Removal {#installation_and_removal}
+
+Installing or removing a cybernetic attachment, regardless of the type,
+requires a successful
+[Surgery](Medical#Surgery_.28DC_20.29 "Surgery"){.wikilink} check. If
+the Character doesn\'t have [Cybernetic
+Surgery](Cybernetic_Surgery "Cybernetic Surgery"){.wikilink}, then they
+take a disadvantage and cannot install Enhancement or Utility-type
+Cybernetics. A Character with the Cybernetic Surgery feat suffers no
+penalty on the check and can install all types of Cybernetics. A failed
+Surgery requires at least 1 week of recovery with temp Conn damage of
+xd4 per 5 points missed by the DC. The Conn damage cannot go below 1.
+Once full recovery is complete, the Surgeon can try again. The Character
+cannot perform Surgery on themselves.
+
+Removing a cybernetic attachment without proper surgery causes lasting
+physical trauma to the patient's body, dealing 1d4 points of permanent
+Constitution damage + 1d4 reduction in whatever attribute/ability/skill
+the implant is associated with. These can be removed or reduced with
+follow-up surgeries. A failed roll to remove an implant will force the
+Character to choose whether to continue removing it or leave it in a
+broken state. Continuing the removal will result in the aforementioned
+effects.
+
+Finding a professional to do surgery for a nonmedical implant requires a
+**Procure Difficulty** of **1** if it is a Utility and a **3** if it is
+for Enhancements.
+
+### Construction and Repair {#construction_and_repair}
+
+Cybernetic attachments are complex instruments with both electrical and
+mechanical components. Consequently, a character must have the [Craft
+Cybernetics](Craft_Cybernetics "Craft Cybernetics"){.wikilink} feat to
+build a cybernetic attachment. Standard
+[crafting](Craft "crafting"){.wikilink} rules apply; it will require the
+use of both an Electrical and Mechanical crafting kit, a \'bill of
+materials\', and time, usually 5 days.
+
+[Craft Cybernetics](Craft_Cybernetics "Craft Cybernetics"){.wikilink} is
+also required for repairing. Repairing a damaged or nonfunctional
+cybernetic attachment requires 8 hours of work and a successful
+[Repair](Craft#Repairing_Checks "Repair"){.wikilink} check **DC 15 + 1
+per Tech level + 1 per Masterwork level** The base is DC10 for Medical
+and Utility implants. A character needs both an electrical tool kit and
+a mechanical tool kit to facilitate repairs. Without one or the other, a
+character takes a disadvantage on the check; without both kits, it is
+impossible to try. A failure to repair means the Character must wait at
+least 8 hours before trying again. However, repairing and simply
+disabling the device and stopping it from doing self-harm are two
+different things. The device can simply be disabled and repaired later
+to avoid immediate adverse effects, if any.
+
+Any cybernetic part that is \'hidden\' or is considered inside of the
+body in any way also requires
+[Surgery](Medical#Surgery_.28DC_20.29 "Surgery"){.wikilink} to access
+the Implant. The Character leading the surgery must also have
+[Cyberentic
+Surgery](Cybernetic_Surgery "Cyberentic Surgery"){.wikilink}. This will
+require a Surgery Kit and the [Medical](Medical "Medical"){.wikilink}
+skill. Failure to perform the Skill check for Surgery by more than 5
+means that the Character cannot attempt to repair the implant. If it
+fails but by less than 5 the repair can still move forward but the
+patient becomes infected and has the condition of
+[Sickened](Conditions#Sickened "Sickened"){.wikilink} for 1d4 days.
+
+### Getting Damaged {#getting_damaged}
+
+By default, only Implants that have the **External** category can be a
+target for damage. Implants follow the [Item
+Damage](Item_Damage "Item Damage"){.wikilink} rules. If a Battled Scared
+Implant fails, it fails for a certain amount of time as per the [
+Multi-Turn Non-Functioning
+Items](Item_Damage#Multi-Turn_Non-functioning_Items " Multi-Turn Non-Functioning Items"){.wikilink}
+rules specify. By default, all Implants have a Resiliency of 3.
+
+When an implant is completely damaged, it can no longer function, and
+the Character rolls a Constitution save as if they took Massive Damage.
+If they fail, the GM will roll percentile dice and consult Table: Side
+Effects to determine what happens. This effect lasts until surgery can
+be done. Consult [Installation and
+Removal](Cybernetics#Installation_and_Removal "Installation and Removal"){.wikilink}.
+
+All Implants can be improved using Masterwork levels to gain a higher
+Resiliency or to remove their Weakness of Electric Damage type. Learn
+more about different Masterwork improvements for Implants
+[below](Cybernetics#Implants "below"){.wikilink}.

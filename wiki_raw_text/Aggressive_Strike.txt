@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': Melee Weapon Focus, Affinity Die 1d6.
+
+'''Benefit''': Increase the damage die level by 1, double the damage that comes from the Str or Dex modifier the Character uses for damage. Gain a bonus [[Complete_Combat_Actions#Attack_Rules|Extra Damage]], and lower the requirement for Extra Damage success by 1. However, your AC is reduced by 4 against your target for the next round. However, to all other enemies, your AC is unaffected. This does not count as a Standard Attack Action but a Standard Technique/Talent/Feat Action. Thus, by default, it doesn't grant the Character a Bonus Attack. If the attack fails, the target also gains a Tactical Opportunity against the Character.
+
+'''Normal''': Normally, an attack has no effect on AC, only heals or conditions.
+
+'''Special''': -

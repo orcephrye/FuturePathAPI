@@ -1,0 +1,17 @@
+The Chief Engineer is a [[Space_Ships#Ship_Positions|Ship Position]]. There are other ship positions that can be reviewed and can affect this position.
+
+This is considered a secondary ship position. 
+
+== Description ==
+
+The Chief Engineer is responsible for keeping the ship intact and operational. While in combat, the massive damage dealt by epic-sized guns can ripple through the structure of a ship and mess with all of its internal systems. There is always a chance that damage to a specific system will cause the ship to lose performance. Engines could be damaged, causing a loss of power and tactical speed, for example. An Engineer fixes these things to make sure the ship doesn't go out without a fight. 
+
+: '''Associated Ship Attribute''': Structure
+: '''Officer Functions''': 
+:# <u>[[Repair]]</u>: Review the [[Giving_and_Receiving_Damage_in_Space_Ships#Repairing_Damage|Repairing Damage]] rules on the [[Giving_and_Receiving_Damage_in_Space_Ships|Giving and Recieving Damage in Space Ships]] page.
+:# <u>[[Boost]]</u>: (''Engines Only'', affects next round’s action phase): This acts just like Boosting except the Engineer can only do it for Engines. This effect lasts until the next Response phase. This also means that Science Officers cannot boost if the Boost the Engineer takes away all available points.
+:# <u>[[Hack#Counter_Hacking|Counter Hacking]]</u>: An engineer cannot start a Hack onto an enemy console as they do not have the full computer capacity on hand. They would need to Change Position to do so. But if a Hack has been detected, they can attempt to use the local system computer to flush out the hacker. For example, if they know what system the hacker is exploiting, they can force a reboot or full diagnostics on that system, kicking the hacker out.
+: '''Advanced Officer Functions''':
+:# <u>[[Cloak]]</u>: Explained in the Science Officer section.
+:# <u>[[Overclock Core]]</u>: (Structure/Core) The Chief Engineer overclocks the ship's reactor to temporarily grant +2 to Engines and Weapons for 1 round (DC 15 + Core Tech Level). Failure strains the reactor, causing a -1 penalty to both next round. A fail by 5 or more (or a natural 1) triggers a roll on the Battle Damage Chart (Blown Capacitor or minor system damage) and disables overclocking for the rest of combat.
+:# <u>[[Grapple]]</u>: In order to attempt a Grapple, the Pilot must have done a successful Fly Aggressively or Intercept check against the target. DC is the target ship's Tracking DC. If successful, the enemy vessel cannot apply its engines to its Tracking DC. The only Pilot check that can be done is to escape the Grapple. Once Grappled, the DC is 10 + Grappler Device Mod + Engines Mod. The ship doing the Grapple cannot RAM the grappled ship, but a RAM action is automatically successful against a Grappled enemy ship. Also, a Grappled ship of 4 sizes or smaller can now be targeted by the ship's bulkier weapons.

@@ -1,0 +1,17 @@
+This page is in assoication with [[Cybernetics]]. 
+
+
+The '''Power Pack''' is the Framework's power source. It is also one of the parts that have changed the most between civilizations and Technologies. The big difference between '''Replacement''', '''Regenerative''',  and '''Permanent''' power solutions is mostly how they are recharged and for role-playing purposes. The table below explains further. Note that this is largely for role-playing purposes and doesn't affect the types or amount of Implants that can be installed.
+
+{| class="mw-collapsible wikitable" style="clear:right;width:90%"
+! style="width:33%" | Replacement (Tech 2):
+! style="width:33%" | Regenerative (Tech 3):
+! style="width:33%" | Permanent (Tech 4):
+|-
+| A '''replacement''' design is a high-capacity battery that has to be replaced/re-charged every so many hours/days. At tech 2 the battery would need to be replaced every 24 hours. Tech 3 every 72 hours and Tech 4 every week. Also by default the battery is susceptible to electromagnetic attacks like a power drain. 
+|| A '''regenerative''' example would be the Battery/Nuclear hybrid solution. The small Nuclear module doesn't provide enough power for full usage, and thus a battery picks up the slack. When the body is sleeping the Nuclear pack recharges the battery. This should be calibrated to follow the select species' natural sleep cycle. A bio-reactor that uses the species' natural eating habits to convert calories into electricity is another example. The Character would have to eat more but that is all. 
+|| A '''permanent''' power solution would be an advanced Tech 4 solution that involves things like an Anti-matter battery that could be far longer than the expected life type of the target person or some sub-space vacuum energy source that runs into infinity. 
+|-
+|}
+
+If a Power Pack runs out of power or is otherwise disabled, the cybernetic implants go into an emergency power mode. Biological functions do not stop but any advantages provided by having these implants stop until power is restored. The main difference in power solutions is in role-playing and the fact that power will need to be replaced. For example, if a Character has a Regenerative Power Pack and they do not rest after 24 hours then they lose their Cybernetic abilities until they perform a long rest.

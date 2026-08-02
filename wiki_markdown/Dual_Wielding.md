@@ -1,0 +1,11 @@
+**Prerequisite**:
+[Two-Weapon_Combat](Two-Weapon_Combat "Two-Weapon_Combat"){.wikilink}
+
+**Benefit**: Removes all the penalties for using two melee weapons. The
+Character can now use there off hand as effectively as they can with
+regular hand with the exception that the off hand still can only use
+melee weapons that are not considered \'heavy\' which by default means
+Level 7 or higher weapons.
+
+**Normal**: Normally a character that uses a off handed melee weapon has
+to reduce the damage die by one die level. IE: 1d8 to 1d6.

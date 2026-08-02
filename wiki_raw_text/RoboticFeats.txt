@@ -1,0 +1,134 @@
+This page is dedicated to Robotic [[Hero_Companions|Hero Companions]] Feats. In order to get a complete list of all Feats available for a normal Hero Character please go [[Feats|here]]. 
+
+On this page, these Feats are like special abilities or traits a Robotic Companion can learn. Feats are themed and organized into '''categories''' like Combat Martial Arts or Skill Enhancements. 
+
+==Feats==
+{| class="wikitable sortable" style="10px;"
+|+ Table: Feats
+! style="text-align:left;" | Feat
+! Prerequisites
+! Summary
+|-
+! colspan="3" | Category: Robotic Companion
+|-
+| [[Jumper|Jumper]] || 2 Rank in Acrobatics || Gain Advantage on all Acrobatic checks.
+|-
+| [[Narrow Frame|Narrow Frame]] || - || You do not take penalties while moving through narrow spaces.
+|-
+| [[Sure Footed|Sure Footed]] || Quadruped chassis || You do not take penalties for moving across difficult terrain. Gain an advantage on certain checks.
+|-
+| [[Improved Natural Attack|Improved Natural Attack]] || Natural Attack || 1 Natural attack is increased by one Hit Die Level and gains a +1 to Accuracy and +1 to damage. 
+|-
+| [[Advanced Combat Techniques]] || - || Unlocks the use of 1 Advanced Combat Technique that they can now use at will.
+|-
+! colspan="3" | Category: Combat Martial Arts
+|-
+|[[Blind Fight|Blind Fight]]|| - ||re-roll melee attacks that miss because of concealment. 
+|-
+|[[Martial Art Focus|Martial Arts Focus]]|| Strength or Dexterity score of 15 or higher|| The Damage die for unarmed strikes goes up a level.
+|-
+|[[Martial Arts Master| - Martial Arts Master]]|| Martial Arts Focus, Advantage Die 1d8.|| The character’s threat range on an unarmed strike improves to 19–20.
+|-
+|[[Dan Martial Artist| - Dan Martial Artist]]|| Martial Arts Master, Advantage Die 1d12.|| When the character scores a critical hit with an unarmed strike, it deals triple damage.
+|-
+|[[Nerve Pinch| - Nerve Pinch]]|| Martial Arts Focus, Advantage Die 1d8.|| Perform a melee attack that can paralyze the target.
+|-
+|[[Defensive Martial Arts|Defensive Martial Arts]]|| - ||+1 AC bonus against only melee attacks.
+|-
+|[[Elusive Target| - Elusive Target]]|| Dexterity 14, Defensive Martial Arts.|| Opponents that target you with a melee attack take disadvantage.
+|-
+|[[Muscle Memory| - Muscle Memory]]|| Defensive Martial Arts, Advantage Die 1d10.|| In the melee, if enemy attacks and misses, the character may immediately make a trip against the opponent.
+|-
+|[[Improved Feint| - Improved Feint]]|| Intelligence 13, Combat Martial Arts.|| Advantage bonus on Bluff checks made to feint in melee combat.
+|-
+! colspan="3" | Category: Melee Weapon Combat
+|-
+|[[Weapon Finesse|Weapon Finesse]]|| - || Use Dexterity modifier instead of Strength modifier on attack rolls.
+|-
+| [[Melee Weapon Focus|Melee Weapon Focus]]|| - || Character gains advantage while using specific melee weapons
+|-
+| [[Improved Melee Weapon Focus| - Improved Melee Weapon Focus]]|| Melee Weapon Focus || The chosen weapon's damage die increases by one level and gains +1 bonus damage.
+|-
+| [[Sweeping Blow| - Sweeping Blow]]|| Melee Weapon Focus, Advantage Die 1d8 || Causes the target to perform a saving throw or be tripped
+|-
+| [[Throw Off Guard| - Throw Off Guard]]|| Melee Weapon Focus || Causes the target to have a temporarily lower AC when defending against other enemy attacks.
+|-
+| [[Defensive Strike| - Defensive Strike]]|| Melee Weapon Focus || Deal less damage but increase your own AC against the target's attacks.
+|-
+| [[Aggressive Strike| - Aggressive Strike]]|| Melee Weapon Focus || Deal more damage but decrease your own AC against the target's attacks.
+|-
+! colspan="3" | Category: Ranged Combat
+|-
+|[[Point Blank Shot|Point Blank Shot]]|| - ||Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft.
+|-
+|[[Double Tap| - Double Tap]]|| Dexterity 13, Point Blank Shot.|| Disadvantage on this attack, but deals +1 die of damage with a successful hit.
+|-
+|[[Precise Shot|Precise Shot]]|| - || Take a full-round action to line up a shot for a bonus.
+|-
+|[[Dead Aim| - Dead Aim]]|| Wisdom 13, Precise Shot.|| Take a round to study target on the following round shoot for a major bonus.
+|-
+|[[Trick Shot| - Trick Shot]]|| Precise Shot.|| A character may ignore the cover of a target.
+|-
+|[[Burst Fire|Burst Fire]]|| Proficiency level 5+ || Can use Burst Fire weapon attribute even if not on the weapon. Deal +1 dice of damage.
+|-
+|[[Quick Draw|Quick Draw]]|| - ||The character can draw a weapon as a free action.
+|-
+|[[Quick Reload|Quick Reload]]|| - ||Reloading a firearm with an already filled box magazine or speed loader is a Simple Action. 
+|-
+! colspan="3" | Category: Two-Weapon Fighting
+|-
+| [[Akimbo Specialist|Akimbo Specialist]] || - ||The character can now gain an advantage when using off-hand weapons.
+|-
+| [[Niten Ichi| - Niten Ichi]] || Akimbo Specialist || The character takes no penalties for using two melee weapons.
+|-
+| [[Gun-Fu| - Gun-Fu]] || Akimbo Specialist || The character takes no penalties for using two ranged weapons.
+|-
+! colspan="3" | Category: Skill Enhancements
+|-
+|[[Acrobatic|Acrobatic]]|| - ||Misc +2 bonus to the Acrobatic skill.
+|-
+|[[Attentive|Attentive]]|| - ||The character gets an minor +1 bonus on Study and Sense Motive skills
+|-
+|[[Builder|Builder]]|| - ||Pick one new skill under craft to become class skills.
+|-
+|[[Cautious|Cautious]]|| - ||Misc +2 bonus to the Disable Device skill. 
+|-
+|[[Computer Wiz|Computer Wiz]]|| - ||Misc +2 bonus to the Computer Use skill. 
+|-
+|[[Educated|Educated]]|| - ||Pick two Knowledge skills. The character gets a permanent +2 Misc bonus on all checks with those skills.
+|-
+|[[Hawk Eye|Hawk Eye]]|| - ||Misc +1 bonus to Perception Skill
+|-
+|[[Guide|Guide]] || - ||Misc +1 bonus to both the Pilot and Survival skills. 
+|-
+|[[Linguist|Linguist]] || - || Gain 1 rank in the main Language skill and 1 rank in a specific language of your choice.
+|-
+|[[Medical Expert|Medical Expert]]|| - ||Misc +1 bonus to both the Craft (pharmaceutical) and Medical skills.  
+|-
+|[[Meticulous|Meticulous]]|| - || Misc +1 bonus to both the Decipher Script and the Study skill.
+|-
+|[[Stealthy|Stealthy]]|| - ||Misc +2 bonus on the Stealth skill.  
+|-
+|[[Surgeon|Surgeon]]|| Medical 2 ranks ||The character can use the Medical skill to perform surgery without penalty.
+|-
+! colspan="3" | Category: Misc Feats
+|-
+|[[Bazooka_Arm|Bazooka Arm]]|| - || The Character is extremely effective at throwing grenades.
+|-
+|[[Drive-By Attack|Drive-By Attack]]|| - ||Takes no vehicle movement penalty when making an attack
+|-
+|[[Jerry Rigging|Jerry Rigging]] || - || You can repair items without material costs just once. You can repair structures in 1/10th the time.
+|-
+|[[Lightning Reflexes|Lightning Reflexes]]|| Advantage Die 1d8||Advantage bonus on all Dexterity saving throws.
+|-
+|[[Mastercrafter|Mastercrafter]]|| - || Reduces the DC check for crafting masterworked items by 2.
+|-
+| [[Multitasker|Multitasker]] || - || Allows a Character to do multiple skills or actions at a time.
+|-
+|[[Salvage|Salvage]]|| - ||Salvaging a destroyed vehicle, starship, robot, or cybernetic attachment takes less time and is more likely to yield valuables
+|-
+|[[Track|Track]]|| - ||A character can add their Advantage Die to survival checks when tracking
+|-
+|[[Xenomedic|Xenomedic]]|| Knowledge (Sciences) 4 ranks, Medical 5 ranks, Surgery||Use the Medical skill on a living creature regardless of its type, without penalty.
+|-
+|}

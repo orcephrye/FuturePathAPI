@@ -1,0 +1,51 @@
+{|
+|+ '''Neural Foil'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Neural Foil
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / 1d4 (Reduced from 1d6 due to Finesse)
+
+'''Proficiency Requirement''': 3 Levels in Melee
+
+'''Weapon Style & Arch Type''': Finesse Melee, Laser
+
+'''Range''': 0ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,320 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +2
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 1 (AP 1)
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~1.5 pounds
+
+'''Bonus Abilities''':  
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A lightweight laser-edged blade designed for high-frequency dueling and bypassing neural defenses.
+;Explanations: This weapon uses the Finesse Melee style and Laser Arch-Type. The wielder uses Dexterity for accuracy and gains a +1 Initiative bonus. The 3 customization points from Tech Level 3 are spent on Accuracy +1, AP 1, and Critical Range 19-20. Price includes 2x Laser multiplier.
+|}

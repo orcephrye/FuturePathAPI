@@ -1,0 +1,18 @@
+Change Position is a special Function of crew members. To learn about
+other functions go the [Space Ship
+Functions](Space_Ships#Officer.2FShip_Functions "Space Ship Functions"){.wikilink}
+section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
+
+## Description
+
+This allows a crew member to take the roll of an officer. If the crew
+member is already an officer, then it takes one round to switch
+roles/positions. This action may require a roll, depending on the
+ship\'s condition. In an emergency, the crew member can 'Rush' the
+Change Position action. They take an acrobatic skill check, DC 10 + GM
+mods for the condition. If successful, the crew member gets to the
+position in time to act. The Captain has the special ability to take
+over any ship position instantly, even if he has already acted in the
+Support Phase. However, doing this means the Character is now in that
+new position and is no longer the Captain; to resume the Captain role
+would require a standard Change Position action.

@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': Martial Arts Focus, Advantage Die 1d6.
+
+'''Benefit''': The character’s critical range on an unarmed strike im­proves to 19–20.
+
+'''Normal''': A character without this feat threatens a critical hit with an unarmed strike only on a 20.
+
+'''Special''': -

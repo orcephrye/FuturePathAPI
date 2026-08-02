@@ -1,0 +1,899 @@
+''' <span style="color:#ff0000"> THIS PAGE IS Alpha Three Ready </span>  '''
+
+Psionics is a rare and often misunderstood form of Mutation. Although some species have simple Psionic powers, most people with psionics are indeed mutants of some kind. Due to their rarity and association with mutations, most Civilizations either deny their existence or misunderstand them. However, most people, both those with psionic powers and those without, are completely okay with ignorance. People are usually happy to leave that mysterious and dark part of life alone. However, some are born with such strange gifts and struggle to hide or even get answers about their abilities. 
+
+== Psionics and Mutants ==
+
+Psionics are a rarer type of Mutation, and thus, they follow the Mutation rules. Also, they count as a Mutant for the purposes of acquiring certain Feats. Earning MP is the same using [[Mutation Drawbacks]], and a Psion can earn any amount of MP but only spend up to Character Level + 2. (This differs from Mutations by 1). The remaining MP can be saved until needed. Psions do not suffer the same Innate Drawbacks as Mutants do. Their abilities are more subtle and thus do not take negatives to Disguise unless specified otherwise.
+
+== Psionics Types ==
+
+If your Character has the misfortune or wonderful chance (depending on how you look at it) to be forced to explore their hidden talents, they must first understand them. Like all intelligent species do when discovering something new, the different Psionic 'gifts' have all been categorized into 6 different known abilities, as shown below. 
+
+* 'Common' Psionics:
+: 1. '''Telepath'''
+: 2. '''Psychokinesis'''
+* 'Energy' Psionics:
+: 3. '''Aerokinesis'''
+: 4. '''Geokinesis'''
+: 5. '''Hydrokinesis'''
+: 6. '''Pryokinesis'''
+
+As the list shows, there are 2 main categories, each with its own subcategories. 'Common' Psionics are more common among communities of psionics, and even some species have subtle manifestations of these powers. The word "common" is a relative term. It is only common compared to the total known psionics in the Ring of Life of the Milky Way Galaxy. Psionics of all kinds are still fairly rare. Common is also a way to distinguish between Telepathic, Psychokinesis, and powers that manipulate Nature/Energy, which is a rarer type of Psionics.
+
+=== Energy Psionics ===
+
+Energy Psionics is just a way to group 4 types of Psionic abilities that involve manipulating nature and energy. A Character that is an Energy Psionic just has a knack for energy manipulation and can learn how to manipulate different types of 'energies' that they are familiar with. A Character may learn how to manipulate Fire/Heat (Or the lack of energy/heat, ie, Cold), Air/Gases to great effect, Ground/Earth/Dirt, and Water/Flowing Liquid. A Player must choose an Energy type that they are weak with and one that they are strong with. The weak one they cannot use, and Feat or other special abilities can remove this side effect. The two Energies that are neither strong nor weak cost more MP to learn, and again, a Feat can improve this.
+
+== Becoming a Psion ==
+
+When creating a Character that has Psionic's the Player must choose either one of the Common Psionics: Telepath, Psychokinesis, or choose the Energy Psionic. 
+
+When a Player declares a Character has manifested Psionic powers, they must first take [[ Mutation Drawbacks]] that provides at least 3MP. 1MP is spent on becoming a Level 1 Psionic. There are 4 levels of Psion, and the levels are restricted by Character level and have an MP cost.
+
+== Psionic Levels ==
+
+Psionic's are categorized in levels. The higher the level, the more powerful the psionic powers and the more often they can be used. This progression of Psionic levels and their use is very similar to the use of Techniques in this game. However, in order to obtain levels, the Character must take [[Mutations#Drawbacks|Mutation Drawbacks]] and spend the MP earned for each level. Each level also has its own Character level restrictions. 
+
+The table below shows progression and the number of Techniques per Level that can be used per day. Note that a Psion is not affected by any Ability modifiers for Technique uses like other Technique users. To use more Techniques per day, a Psion must spend MP or learn Feats. The table shows usage per day, not the number of Techniques learned. Any Level 0 Technique can be used as many times as needed. A Psion can learn new Techniques equal to the Psion Level cost when leveling up their Psion. They can also learn more by spending MP. 
+
+When leveling up, a Psionic power, a Psion character can ignore the MP spending limit. So, at level 6, if the Character has already spent 8 MP, they can still spend the MP necessary to gain the Psion level. But now the Psion has 10MP spent, and at level 7, their limit is still reached. The Psion will have to wait until their Character level is higher before spending more MP to upgrade their Psionic powers. Once a Character has reached the level necessary to unlock the next Psion level, they can (just at that level if necessary) ignore the rescriptions on earning more MP through Drawbacks if the earned MP goes directly to increasing Psionic Level. 
+
+{| class="wikitable" style="margin-left: 10px;"
+|+ Table: Psionic Levels 
+! style="text-algin:left;" | Level
+! Cost
+! Level<br />Restriction
+! 0
+! 1st
+! 2nd
+! 3rd
+! 4th
+
+|-
+| Level 1 || 1 || Level 1+ || ~ || 2 || - || - || -
+|-
+| Level 2 || 2 || Level 6+ || ~ || 3 || 2 || - || -
+|-
+| Level 3 || 3 || Level 12+ || ~ || 4 || 3 || 2 || -
+|-
+| Level 4 || 4 || Level 18+ || ~ || 5 || 4 || 3 || 2
+|-
+|}
+
+The Feat [[Cognitive Resonance]] improves the rate at which the Psion can level up.
+
+== Spending MP to enhance Psionics ==
+
+The Character can earn MP the same way a normal Mutant can, using [[Mutation Drawbacks]]. They can spend these MP points to improve their Psion abilities. 
+
+; Psion Character Improvements
+* '''Level Up''': Psions have 4 levels of power. Each level is restricted by the character level. But once a Character is high enough level, they have to spend MP to gain a level. 
+* '''Stamina Boost''': 3MP. This grants +1 use of Techniques per day for each available Level. This can only be done once every 4 Character levels.
+* '''Schism''': 2MP. This grants the Psion the ability to cast any two techniques simultaneously once per day (if they have uses remaining). This can be upgraded with 1MP at Psion Level 3 to increase the total to 2 times per day. Schism cannot be used on Stashed or Quicken Techniques.
+; Psionic Techniques 
+* ''' Learning Techniques''': 1MP. Psions learn 1 Technique from their list of available Techniques based on Level. To learn more Techniques MP is needed.
+* '''Enhance Techinque''': 1MP. Some Techniques have an 'Enhanced version' option. This is unlocked when spending 1MP more on the technique.
+* '''Stashing Technique''': 1MP. Pick a Technique that can be used once without counting toward the total uses per day. This can only be done once per Psion level, unless a Feat specifies otherwise.
+* '''Quicken Technique''': 1MP. This allows a Technique to be optionally used as a Bonus/Simple Action instead of a Standard action. A Psion can only enhance a number of techniques equal to their Psion level in this way.
+* '''Ease of Use''': 2MP One already learned Technique can be used by taking up a use from a lower level. For Level 1, this would be 0. A Psion can only enhance a number of techniques equal to their Psion level in this way.
+
+'''Note''': For Enhance/Stashing/Quicken Technique, treat these like learning a new Technique that is a copy of the previous technique, but with the qualifier as part of the name. Then the Character chooses to use the Technique with or without the qualifier.
+
+== Innate Drawbacks ==
+
+This is similar to the [[Mutations#Innate Drawbacks|Innate Drawbacks]] for Mutations. While the Player can choose from a list of [[Mutation Drawbacks|Drawbacks]] to make the Mutant Character unique, there are also some aspects of being a Mutant that are shared. 
+
+* For every '''5 MP''' spent, the Character gets -1 to one of the following Ability Scores: '''Strength''', '''Dexterity''', or '''Constitution'''. The Player decides which Ability gets the negative.
+
+== Psionic Techniques ==
+
+The benefit of Psionics is access to extraordinary powers that seem to arise from difficult-to-explain mental and physical processes. These translate to [[Techniques]]. This behaves similarly to the Techniques provided by Character Professions like the [[Character_Professions#Electro-Mancer|Electro-Mancer]] or [[Character_Professions#Field Officer|Field Officer]]. However, Psionic does not benefit from Feats under the Technique Category. They can still take those in order to improve other Character traits, but those feats do not impact the Psion.
+
+The Psion's Level determines the number of Techniques per level that can be done before rest. A Level 1 Psion is able to learn 1 Technique from their available Pool. This pool of Techniques is based on their Type and Level. At level 2 and every preceding level, the Psion learns 1 new Technique. If the Psion wishes to learn more, then they must spend Mutation Points (MP). 
+
+The Psion can spend MP to use Techniques more regularly. And to enhance certain Techniques. Some Techniques can benefit from Enhancements or other customizations earned by spending MP.
+
+Techniques are shown in the tables below for each Psion Type. They link to a more descriptive page for each Technique. This includes more rules for certain Techniques and additional benefits from spending MP.
+
+Each Technique is associated with an Ability. Any DC opposing a Technique is calculated using this Ability as a modifier. The Energy Type Psion powers have two Abilities associated with them. The Player can choose whichever one counts when using the Technique. When doing this, they must stick to that decision throughout the Technique's use.
+
+== Telepath ==
+
+A Telepath has a concept called '''Familarity'''. Some abilities or effects are based on whether the Telepath is '''familiar''' with the object/place/person. Familiar simply implies that the Telepath has spent hours with the object/place/person across multiple instances. Or that the Telepathic Psion has succeeded at a Study Check DC20 to study the target object/place/person.
+
+<div class="noresize">
+{| class="wikitable" style="width: 95%;"
+|+Table: Telepath Psionics
+! style="text-align:left;"|Name
+! Ability Affinity
+! style="width: 80%;"| Summary
+|-
+! colspan="3" | Level 0
+|-
+| Detect Psionics || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Detect the presence of psionic auras or active techniques in an area. </div>
+<div class="mw-collapsible-content">
+The auras appear as both color and smell. The range is 45ft + 5ft per Wisdom Mod. This lasts for 2minutes. The Psion can instantly tell if Psionic powers are present. But cannot determine other details without performing a Perception check. DC10 to determine the type of Psion powers, DC20 to determine the power of the Psion used (i.e., what Psion level), or DC30 to determine the specific Psionic technique being used. DC30 to determine, or DC40 to identify the Psion themselves if they have ever encountered that particular Psion before.
+</div></div>
+|-
+| Missive || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Send a short one-way telepathic message to a single subject. </div>
+<div class="mw-collapsible-content">
+Range 60ft + 10ft per Int Mod. If the target is a willing friend the Psion knows well, they simply need to be within range. Otherwise, the target has to be visible to the Psion. The message has to be short, as in 1 sentence. In order to quickly become familiar with a target to avoid the line of sight restriction, the Psion can make a 'Study' check DC20 (or take 20).
+</div></div>
+|-
+! colspan="3" | Level 1
+|-
+| Clairvoyance || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> See or hear from a distance at a familiar location. </div>
+<div class="mw-collapsible-content">
+The Psion has to concentrate and pause other tasks to focus. They can bring up a familiar location in their mind. This location has to be a place they have visited multiple times and have spent many hours in. They can also perform a Study check DC20 in order to sync with the room. Once they are familiar with the room, they can use this ability to peer' into the room with their mind's eye and see and hear what is going on. Their vision will be blurry, and the words will sound off.  In order to make out who and what is going on, an additional Perception check, DC 15, will be necessary. 
+
+'''Special:''' 1MP removes the penalty on perception checks. The room can seen eaily.
+</div></div>
+|-
+| Charm Person || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Makes one person believe you are a trusted friend. </div>
+<div class="mw-collapsible-content">
+Target must roll an opposing Wisdom Save DC10 + Psion Technique Level + Wisdom Mod. If they fail, they become temporarily convinced you are a trusted friend. This effect lasts for 5 + Wis Mod minutes. Afterward, the target will be confused about why they felt that way but will find it hard to ponder it. If they succeed against the check, the Psion or allies of the Psion still gain advantage on Diplomacy checks for 5 minutes.
+</div></div>
+|-
+| Daze || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;">Humanoid creature gains [[Conditions#- Dazed|Dazed]]</div>
+<div class="mw-collapsible-content">
+Target must roll an opposing Constitution Save DC10 + Psion Technique Level + Intelligence Mod. If they fail, they gain [[Conditions#Shaken]] (or Dazed if already Shaken and so on). This condition lasts for 1d4 + Int Mod number of turns.
+</div></div>
+|-
+| Distract || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target takes a penalty on Perception, Initiative, and accuracy checks. </div>
+<div class="mw-collapsible-content">
+Target must roll an opposing Wisdom Save DC10 + Psion Technique Level + Wisdom Mod. If they fail, they gain Disadvantage on Perception, Initiative, and Accuracy Checks. Passive Perception has a -4 penalty. The effect lasts 1d4 + Wisdom Mod number of rounds.
+
+'''Enhanced version''': Starting Save DC is 12 instead of 10, and gain double disadvantage and -6 to Passive Perception. If the target succeeds on the save, then they take normal 
+</div></div>
+|-
+| Object Reading || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Learn details about an object's previous owner through touch.  </div>
+<div class="mw-collapsible-content">
+By concentrating on an object that the Psion is touching, the Psion can take a Study check. The DC should be determined by what the GM can reveal to the Characters. But this allows the Psion to see into the target objects' past to learn of their use and different owners. In order to glean more details, additional Perception checks will be necessary.
+</div></div>
+|-
+| Telempathic Project || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Influence the general mood of a room </div>
+<div class="mw-collapsible-content">
+The Psion can emit an aura of positive or negative emotions. This can fill a room, making it more agreeable or more argumentative. If not in a room, the range is 30ft radius. This effect lasts 5 + Wisdom Mod minutes. This gives all characters an advantage on Diplomacy, Bluff, and Intimidate checks. 
+
+'''Enhanced version:''' A DC15 is added; however, if they fail, then the effect is double advantage. If successful, the effect is still the same. This also increases the range by 5 + Wisdom Mod ft and allows the Psion to target a room that they are 'familiar' with instead of having to be physically there.
+</div></div>
+|-
+| Mental Shield || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> A nearly invisible simmaring field emits from the Psion, helping to protect them. </div>
+<div class="mw-collapsible-content">
+The Psion gains temporary DR1 [ALL] for 1d4 + Wis Mod turns. 
+
+'''Special''': 1MP gain +1 to the DR for every additional MP spent. This cannot exceed twice the Psion level.
+
+'''Enhanced version''': This increases the length of time to 1d6 + Psion Level + Wis Mod turns.
+</div></div>
+|-
+| Suggestion || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Compel a subject to follow a specific course of action. </div>
+<div class="mw-collapsible-content">
+The target must be able to, with reasonable effort, do the requested thing within the time the technique lasts. This cannot cause self-harm. The target must roll an opposing Wisdom Save DC12 (DC8 if in combat) + Psion Technique Level + Wisdom Mod. If they fail the attempt to follow the instructions. Suggestion wears off after 5 + Wis Mod minutes.
+
+'''Enhanced version''': The base DC is increased by +1. The Suggestion lasts for 10 + Wis Mod minutes.  
+</div></div>
+|-
+| Read Arura || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Detect the target's alignment, emotional state, and whether they are under the influence of other psionics. </div>
+<div class="mw-collapsible-content">
+'''Special''': 1MP this can become like a Level Zero Techinque thus not counting toward the total number of uses per day. 
+</div></div>
+|-
+! colspan="3" | Level 2
+|-
+| Brain Lock || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target is [[Conditions#- Paralyzed|Paralyzed]] and cannot take any physical actions. </div>
+<div class="mw-collapsible-content">
+Target must roll an opposing Wisdom Save DC10 (DC12 if out of combat) + Psion Technique Level + Wisdom Mod. If they fail, they are [[Conditions#- Paralyzed|Paralyzed]]. The effect lasts for 1 round.
+
+'''Enhanced version''': The base DC is 12. (14 if out of combat). If the target fails, then they are [[Conditions#Shaken|Shakened]] for 1 round. 
+</div></div>
+|-
+| Detect Thoughts || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Surface thoughts of individuals in range are revealed. </div>
+<div class="mw-collapsible-content">
+The thoughts of different people within 30ft + 5ft per Int mod can be heard by the Psion's mind. The Psion can instantly pick out people they are already familiar with. However, other thoughts require a Perception check DC15 to pick out of the crowd. 
+</div></div>
+|-
+| Inflict Pain || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Mental agony deals internal damage to the target. </div>
+<div class="mw-collapsible-content">
+The target must roll an opposing Intelligence Save DC10 + Psion Technique Level + Intelligence Mod. If they succeed, they take 1/2 damage. The damage is 3d6 + Int Mod (NONE). This ignores all DR or Strengths. 
+
+'''Special''': 1MP increases the number of damage dice by +1. This can only be done once per Psion level after level 1.
+
+'''Enhanced version''': Base DC +2. Damage 3d8 + Psion Level + Int Mod (NONE). 
+</div></div>
+|-
+| Psychic Impressions || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> View the residual "ghosts" of past events in a specific room. </div>
+<div class="mw-collapsible-content">
+This is like 'Object Reading' but for a room. The room must first be studied with a Study check DC20 (or take 20).  Past events will start to appear in the room. However, this is visual only. If the Psion wishes to hear what is being said, they must concentrate and do a Perception check, DC 20, to get echoes of the sounds made in the past. 
+</div></div>
+|-
+| Combat Precognition || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target gains advantages on saving throws and accuracy checks while in combat. </div>
+<div class="mw-collapsible-content">
+The Psion can target themselves at a willing person they are familiar with. The person gains an advantage on all saving throws and accuracy checks. Advantage rules state that advantages stack up to 3. This lasts for 1 + Wis Mod (min 1) number of rounds. 
+
+'''Enhanced version''': This increases the duration to 1d4 + Wis Mod (min 1). This also adds 2x advantage.
+</div></div>
+|-
+| Lesser Mindlink || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Establish a temporary mental bond for 2-way communication. </div>
+<div class="mw-collapsible-content">
+The Psion needs to be familiar with the target, or else they must maintain eye contact. This lasts for 1 hour + 15min per Wis mod or until the Psion chooses to stop. The target can become unwilling and break the connection.
+</div></div>
+|-
+| Id Insinuation || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Disrupt a target's concentation.
+</div>
+<div class="mw-collapsible-content">
+The target must roll an opposing Intelligence Save DC10 + Psion Technique Level + Intelligence Mod. They take double disadvantage on all Saving and Accuracy throws. They can no longer benefit from Passive Perception. They cannot perform any Skill (including study) that requires time (more than 3 seconds) or concentration. This lasts for 1d4 rounds.
+
+'''Enhanced version''': DC increased to 12. Take triple disadvantage on all Saving and Accuracy throws. If the target succeeds, their opposing check only gains 1 disadvantage. 
+</div></div>
+|-
+| Psychic Surgery || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Heals Ability Score damage to Int, Wis, or Cha, or removes some conditions </div>
+<div class="mw-collapsible-content">
+The target must be willing and familiar. Gain 1d4 + Int Mod amount of points to restore. If the total amount of restorable points is greater than the Ability damage on the target ability, then the Psion can use the remaining points to either restore other ability points or HP. The target must have some amount of ability damage.
+
+'''Enhanced version''': Gain 1d6 + Psion Level + Int Mod amount of points to restore. For every remaining point spent on HP, count it as 2 restored HP.
+</div></div>
+|-
+| Negate Psionics || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Cancel ongoing psionic effects or suppress a target's powers. </div>
+<div class="mw-collapsible-content">
+Instantly stops all Psionic effects that are not your own. If the user of the Psionic technique is present and can see you attempt to negate their powers, this becomes an opposing Wisdom check. 
+</div></div>
+|-
+! colspan="3" | Level 3
+|-
+| Crisis of Breath || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target's autonomic system is compelled to stop.  </div>
+<div class="mw-collapsible-content">
+Target must roll an opposing Wisdom Save DC10 + Psion Technique Level + Wisdom Mod. If successful, the damage is halved, and there are no other side effects. This deals 2d8 + Wis Mod damage. The target gains [[Conditions#Winded|Winded]] as a side effect.
+</div></div>
+|-
+| Group MindLink || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Connect up to 6 willing allies, allowing them to share mental thoughts and knowledge.  </div>
+<div class="mw-collapsible-content">
+This is like the 'Mindlink', but allows up to 6 familiar, willing allies to share their thoughts with you, and can even hear each other as if they were an echo. The Psion can choose to mute a person. Otherwise ,follow the MindLink rules.
+</div></div>
+|-
+| Lesser Domination || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Force a subject to perform minor tasks for a short duration. </div>
+<div class="mw-collapsible-content">
+This is like 'Suggestion' and follows the same rules for opposing checks. However, this lasts for 1 hour + 15min per Wis Mod. 
+</div></div>
+|-
+| Mental Blast || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Cone of energy deals damage and possibly [[Conditions#Frightened|Frightened]]  targets. </div>
+<div class="mw-collapsible-content">
+This creates a 20ft cone starting from the Psion. All enemy targets within the cone's path must roll an opposing Intelligence Save DC10 + Psion Technique Level + Intelligence Mod. If successful, they take half damage and ignore side effects. The damage is 4d8 + Psion Level + Int Mod (NONE). The side effect is [[Conditions#Frightened|Frightened]] for 1 round.
+
+'''Enhanced version:''' The DC is increased by +2. The base damage is 5d8. The side effect now lasts for 1d4 rounds. 
+</div></div>
+|-
+| Share Pain || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Links two subjects; they split all incoming damage. </div>
+<div class="mw-collapsible-content">
+The target must be willing and familiar. The target must stay within visual range. The original target takes the odd damage and also any side effects of the attack, i.e., tripping, poison, etc. This effect lasts for 1d4 + Wis Mod number of rounds.
+
+'''Special''': 1MP Add DR1 (ALL) per Psion Level. 
+
+'''Enhanced version''': Allow this to be shared between 3 Characters instead of 2. 
+</div></div>
+|-
+| Tower of Iron Will || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Grants allies an advantage on abilities associated with Intelligence or Wisdom, among other things.  </div>
+<div class="mw-collapsible-content">
+Is targeted through touching with a hand. Can grant this to up to 2 targets per techinque use. The self is counted as one of those two. Gain advantage on Intelligence or Wisdom Saving Throws, Checks, or related Skills. This lasts for 1hour + 15min per Wis Mod.
+
+'''Enhanced version''': Grants double advantage.
+</div></div>
+|-
+! colspan="3" | Level 4
+|-
+| Aura of Terror || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Enemies within the area flee or are paralyzed by fear. </div>
+<div class="mw-collapsible-content">
+The range of this aura is 30ft + 5ft per Wis mod radius. Any enemy that enters this circle must roll an opposing Wisdom Save DC10 + Psion Technique Level + Wisdom Mod. If they succeed, they are simply [[Conditions#Frightened|Frightened]]. Otherwise, they are [[Conditions#- Cowering|Cowering]] for 1 round. 
+
+'''Enhanced version:''' DC increased by +2. They are now [[Conditions#- Panicked|Panicked]] for 1 round.
+</div></div>
+|-
+| Domination || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Control the actions of any humanoid creature via a mental link. </div>
+<div class="mw-collapsible-content">
+This is similar to 'Lesser Domination'. Except for one captured in the technique, the Psion doesn't need to let go of the Domination as long as they are within eyesight of the target. Once out of sight every hour, the dominated target can attempt to break free with a new opposing check. This technique can be done in combat and is similar to grapple rules but with Wisdom instead of Strength checks. Once the mind is dominated, the target can attempt to break free each round. However, if they fail, the Psion can force the target to attack or flee or simply stay still. 
+
+'''Special''': 1MP Gain the ability to deal mental damage in the form of shared Intelligence and Wisdom ability damage each round. This can only be done if the Psion chooses this over making the target perform another action. The damage is 1d6 + Wis Mod. There is no DR or Strength for Ability damage. The Psion cannot damage them more then 0. Death only occurs at -1. Once either Int or Wis reaches 0, the target is considered [[Conditions#Helpless/Incapacitated/Unconscious|Helpless]] and cannot interact with the world around them. 
+</div></div>
+|-
+| Forced Mindlink || Wisdom ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Forcibly enter a target's mind to share information or drain power. </div>
+<div class="mw-collapsible-content">
+The target must roll an opposing Wisdom Save DC12 (8 if in combat) + Psion Technique Level + Wisdom Mod. If they fail, then their mind is an open book to the Psion. If out of combat then the Psion must do a Perception check DC20 to learn something about the target. If in combat, the Psion can use this to drain the target of vitality. This deals 1d4 + Wis Mod (Max 6) Conn damage. The Psion can choose to limit the total amount of damage in order to avoid hitting or going below 0. Once a target hits 0 Constitution, they are completely dead. If the target hits 1 Connsituation, they instantly become [[Conditions#Helpless/Incapacitated/Unconscious|unconscious]]. 
+</div></div>
+|-
+| Tailor Memory || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Modify, erase, or fabricate up to 5 minutes of a target's memory. </div>
+<div class="mw-collapsible-content">
+The target must roll an opposing Intelligence Save DC12 + Psion Technique Level + Intelligence Mod. This cannot be done during combat. The target loses, gains, or has otherwise modified 5 + 1 min per Int mod worth of memory. 
+</div></div>
+|-
+| Mindprobe || Intelligence ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Answer one question per round by digging into the target's subconscious. </div>
+<div class="mw-collapsible-content">
+Similar to 'Forced Mindlink', however, the base DC is higher at 14 and uses Intelligence. This cannot be done during combat. Each question requires an opposing check. If the target succeeds 3 times (doesn't have to be in a row) then the effect is broken. Or it is broken after 10 questions. Each question asks the target to answer truthfully and to the best of their abilities unless they pass the check. If so they can ignore the question. The Character can choose to ask the question again, but if they do so, this lowers the DC by -2 permanently for that question and all remaining ones for each time a Character repeats a question.
+</div></div>
+|}
+</div>
+
+== Psychokinesis ==
+
+A Psychokinesis Psion also follows the '''familiar''' rules that Telepaths have. 
+
+{| class="wikitable" style="width: 95%;"
+|+Table: Psychokinesis Psionics
+! style="text-align:left;"|Name
+! Ability Affinity
+! style="width: 80%;"| Summary
+|-
+! colspan="3" | Level 0
+|-
+| Telekinesis || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Move objects or creatures slowly through the air. </div>
+<div class="mw-collapsible-content">
+The ability to remotely move objects or creatures with your mind. The target has to be within visual range. It can not exceed roughly 25 lbs per Psion level. If the Psion wishes to lift/push an object heavier than their limit, they must make a Constitution check, DC 5 + 5 per every 25 extra lbs round up. This can also be used to bust open doors or do other strength checks, except the Psion uses their mind with a Constitution check, which represents the strain and mental fatigue this could cause.
+</div></div>
+|-
+! colspan="3" | Level 1
+|-
+| Burst || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Psychokinetic energy bursts from the Psion, pushing and damaging things around them. </div>
+<div class="mw-collapsible-content">
+This causes any object within 15ft to be [[Techniques#Combat Techniques|pushed]] back from the Psion. The Psion does a Push technique but uses Constitution instead of Strength. Enemy targets also take 1d4 + Conn Mod (ALL) damage. The Psion can choose to only push back enemy targets, but this requires a DC15 Wisdom check.
+
+E'''nhanced version''': This gives advantage to the Constitution roll for the Push technique. It reduces the Wisdom check's DC to 13. It also increases the damage to 1d6 + Conn Mod + Psion level.
+</div></div>
+|-
+| Control Object || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Psychically "animate" an unattended object to attack or move. </div>
+<div class="mw-collapsible-content">
+The target object cannot be living or able to move on its own, such as a functioning robot. The object has to be within visual range. The object cannot move more than 30ft per round. If the object is something simple, like a rock, it is used as an improvised weapon. If it is an actual weapon, the Psion treats it as if they do not have high enough Prociency to use it and thus do not gain any advantage.
+</div></div>
+|-
+| Deflect Projectile || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> A shimmering field of Psionic energy can react to the target being attacked. </div>
+<div class="mw-collapsible-content">
+The Psion gains +1 AC (+1 per Psion level) against ranged attacks. The effect lasts 1 + Conn Mod + Psion Level number of rounds. The target can be a friendly the Psion is familiar with (using the Telepath familiar rules); however, that ally must stay within visual range of the Psion or lose the effect. 
+
+'''Enhanced version''': The Psion grants +2 AC (+1 per Psion level). The effect lasts for 1 + Conn Mod + Psion Level number of hours. And as long as the target is a familiar to the Psion they do not need to stay within visual range .
+</div></div>
+|-
+| Far Punch || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> A telekinetic strike dealing force damage at range </div>
+<div class="mw-collapsible-content">
+The Psion can perform a Ranged (60ft) Natural Touch Attack that deals Xd4 + Conn Mod (Kenitic) damage to the target. (X = Psion Level) The Psion gets Advantage as if they are proficient with this attack.
+
+'''Special''': 2MP Change the critical to x3, and the attack now has the 'Exploding' attribute. 
+
+'''Enhanced version''': This changed the damage die to Xd6. The range is now 120ft. And the Psion gains a double advantage on the accuracy check. 
+</div></div>
+|-
+| Kinetic Leap || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Propel yourself with Psionic force </div>
+<div class="mw-collapsible-content">
+The Psion can leap great distances, 30ft + 5ft per Conn mod. They do not need to roll an Accrobatics check; they automatically succeed. The Psion can target a friendly to tempoarly give them this ability.
+</div></div>
+|-
+| Vigor || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Gain temporary hit points for a short duration. </div>
+<div class="mw-collapsible-content">
+Increase Psion's maximum HP by 1 + 1 per Con mod. This also gives that amount in HP. The effect lasts for 1 hour + 15 min per Con mod. The Psion can also target a willing ally that they are familiar with.
+
+'''Special:''' 1MP Increases maximum HP by an additional +2 ie: 3 + 1 per Con mod. This special can be taken as many times as the Psion has levels.
+
+Enhanced version: This also now grants an additional +2 to the target's Constitution mod, which instantly grants all the health that would normally provide if they started with that at level 1. This effect lasts for as long as the other HP bonuses last. Also, this can now be used to stabilize a downed friendly. 
+</div></div>
+|-
+| Telekinetic Wall || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Create a shimmering field of force that is nearly impossible to move past </div>
+<div class="mw-collapsible-content">
+A 10 square foot wall that can be shaped by the Psion is placed within visual range of the Psion. Once placed, its shape and location cannot change. The shape has to be 2d or in other words, it cannot be used to act like a box or container. This is like an invisible brick wall. It requires a Strength DC45 to move through it. A vehicle could smash through it, but it would be damaged. The wall can be attacked as if it were an item taking [[Item_Damage|damage]] with a Resiliency of 5. Whenever the wall takes damage or something succeeds in getting through it, the Psion is made aware, even if they have left the area. If the Psion is within 60ft of the wall each turn, they can reinforce the wall, removing any battle damage as a free action. The wall size increases with Psion level. At each level, the wall can increase in size by another 10ft. The wall will stay present for 1 + Con Mod + Psion Level number of rounds. Or if not in combat, the Psion can keep the wall active for as many as 1 + Con Mod + Psion level worth of minutes.
+</div></div>
+|-
+! colspan="3" | Level 2
+|-
+| Advanced Telekinesis || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Hurling objects with deadly power. </div>
+<div class="mw-collapsible-content">
+A Psion can now hurl loose, non-living objects that weigh 50 lbs or less, at tremendous speed toward a target. This is considered a Ranged (120ft) Attack dealing Xd6 (Kinetic) damage, crit x3. (X = Psion Level). The object needs to be within visual range (60ft). 
+
+'''Enhanced version''': The Psion can attempt to fling more objects at a time. The total number of objects thrown is equal to the Psion's level. 
+</div></div>
+|-
+| Claws of the Bear || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target's hands have a shimmery force that extends from them, shaped like claws.  </div>
+<div class="mw-collapsible-content">
+The Psion or a target the Psion is familiar with. Gains a Natural Melee Attack dealing 1d6 + Str Mod + Psion Mod (ALL) worth of damage. The effect lasts for 1d4 + Con Mod number of rounds.
+
+'''Special''': 1MP Upgrades the weapon by improving the damage die. IE: 1d6 to 1d8 etc... This special can be taken as many times as the Psion has levels. Each upgrade increases the cost by 1MP.
+
+'''Enhanced version''': The Shimmery force seems to know how to hit the enemy. Gain double advantage while attacking. Crit range increases to 19-20. 
+</div></div>
+|-
+| Darkvision || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Psionic senses act like a 6th sense, granting extraordinary vision. </div>
+<div class="mw-collapsible-content">
+This can be given to the Psion or a friendly target that the Psion is familiar with. The effect lasts for 1d4 + Conn Mod rounds. 
+</div></div>
+|-
+| Kinetic Wave || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> A 15ft cone of force energy blasts forth.  </div>
+<div class="mw-collapsible-content">
+
+Psion can target an empty 5ft square up to 60ft in front of them. An invisible force of energy blasts in a 15ft cone from that spot in the direction the Psion chooses. Creatures friendly or enemy within this cone take Xd6 + Con mod (Kinetic) damage (X = Psion level) and must roll a Dexterity saving throw, DC10 + Psion Con Mod + Psion Level to avoid being tripped. 
+
+'''Enhanced version''': The damage dice is d8, and the total damage is Xd8 + Con Mod + Psion Level. The cone can optionally be increased to 20ft. </div></div>
+|-
+| Force Push || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Perform a [[Techniques#Combat Techniques|Push]] maneuver at range. </div>
+<div class="mw-collapsible-content">
+This allows the Pion to do a targeted ranged 120ft [[Techniques#Combat Techniques|Push]] technique with an added bonus damage of Xd4 (X = Psion Level) (Kinetic). The Push uses Conn instead of Strength for the maneuver.  Even if the Psion fails at pushing the target back, the target still takes damage.
+</div></div>
+|-
+| Levitate || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Move yourself or another subject up and down mentally. </div>
+<div class="mw-collapsible-content">
+This grants the Psion a type of hover flight. Any actions such as attack, saving throws, or other checks gain double disadvantage while in flight. Levitation lasts for 5 minutes + 1 minute per Con mod. While active, if the Psion isn't actively flying, they do not take the disadvantages. Only when actively attempting to levitate do the disadvantages apply. The Psion must 'tether' themselves to a larger and much heavier object, such as a spaceship, the ground, etc, and their levitation is in relative motion to the tethered object. The range is visual only. The Psion can also target a friend they are familiar with. However, the Psion must not be moving while trying to Levitate the target. Levitate ignores the weight restrictions of the  Level 0 technique.
+</div></div>
+|-
+| Psionic Armor || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Harden targets skin like composite plating. </div>
+<div class="mw-collapsible-content">
+The Psion can target themselves or a familiar friend. This grants DR1 (ALL) + Psion Level for 1 + Con Mod + Psion Level number of turns. The target must stay within visual range to keep the effect.
+
+'''Enhanced version''': Grants DR2 (ALL) + Psion Level for 1 hour + 15 minutes per Con mod. And targets do not need to stay in visual range.
+</div></div>
+|-
+! colspan="3" | Level 3
+|-
+| Negate Psionics || Constitution ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Violently disrupt psionic structures to dispel or suppress active effects. </div>
+<div class="mw-collapsible-content">
+Removes any Psion effects within 60ft of the Psion. If the Psionic effect is present due to another Psion that is nearby, that Psion rolls a Conn saving throw, DC13 + Con Mod, or takes 1d4 Con + 1d4 Int damage. 
+</div></div>
+|-
+| Metaphysical Weapon || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Grant a melee weapon bonus Psionic damage. </div>
+<div class="mw-collapsible-content">
+Grants a Weapon, either actively being held by the Psion or by a person familiar with the Psion, bonus damage of 1d6 + Con Mod (ALL) damage type. The melee weapon is also given a +2 to Accuracy. If the Psion or the person familiar to the Psion lets go of the weapon, the effect instantly disappears. The effect lasts for 1d4 + Conn mod number of turns.
+
+'''Special''': 1MP Grants the effect Exploding to the bonus damage.
+
+'''Enhanced version''': Increase this to 1d8 damage and +3 Accuracy.
+</div></div>
+|-
+| Force Slam || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target is hit hard with an invisible wall of Pison power, possibly knocking them down in the process. </div>
+<div class="mw-collapsible-content">
+This allows the Pion to do a targeted ranged 120ft [[Techniques#Combat Techniques|Trip]] technique with an added bonus damage of Xd6 (X = Psion Level) (Kinetic). The Trip uses Conn instead of Strength for the maneuver. Even if the Psion fails at tripping the target back, the target still takes damage.
+</div></div>
+|-
+| Shrapnel Burst || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Psion causes a nearby non-living object to explode into a cloud of glass/metal. </div>
+<div class="mw-collapsible-content">
+Targets a non-living object within visual range of 120ft. The object explodes into shards that deal damage within a 20ft sphere. The damage is (1 + Psion Level)d10 (Exploding, Kinetic). The targets caught within the blast can roll a Dexterity Saving throw DC13 + Con Mod to halve.
+</div></div>
+|-
+! colspan="3" | Level 4
+|-
+| Inertial Barrier || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> A dome big enough for multiple allies can reduce the energies of incoming ranged attacks. </div>
+<div class="mw-collapsible-content">
+The dome is 20ft in diameter. This grants DR4 + Con Mod for all ranged attacks that come from outside of the sphere to anyone targeted within the sphere. Max DR is 10. All DR above 10 becomes AC. 
+
+'''Special''': 1MP Gain a version of this Technique called '''Nullifing Dome'''. Switch this from DR to simply nullifying all Psionic powers except the Psion's own. This becomes immune to the 'Negate Psionics' technique. 
+</div></div>
+|-
+| Psionic Diffusion || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Psion picks a Damage type to have the target gain DR for. </div>
+<div class="mw-collapsible-content">
+The Psion cannot target itself. The target has to be a willing, friendly, and familiar person to the Psion. They have to be within visual range 60ft. And must stay within visual range. The target gains DR4 + Con mod of the type chosen by the Psion. The choices are Chemical, Electric, Kinetic, and Thermal.  The effect lasts for 1d4 + Conn Mod number of rounds. The target must stay within range of the Psion.
+</div></div>
+|-
+| Psychofeedback || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Burn hit points to temporarily boost the target's Strength / Dexterity scores. </div>
+<div class="mw-collapsible-content">
+The Psion can burn their own vitality to enhance their Strength and Dexterity. For every 1/2 a Hit Die worth of HP gain + 1 in either Strength or Dexterity. This effect lasts for 1 + Con Mod + Psion level number of rounds. When the effect stops 1/2 of the HP lost is restored unless the target takes any Strength or Dexterity damage.
+</div></div>
+|-
+| Force Constrict || Constitution || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Maintain a telekinetic "Grapple". </div>
+<div class="mw-collapsible-content">
+This allows the Pion to do a targeted ranged 60ft [[Techniques#Combat Techniques|Grapple]] technique with an added optional bonus damage of Xd6 (X = Psion Level) (Kinetic) per round that the Target stays grappled. The Grapple uses Conn instead of Strength for the maneuver.
+</div></div>
+|}
+
+== Energy Psionics ==
+
+{| class="wikitable" style="width: 95%;"
+|+Table: Energy Psionics
+! style="text-align:left;"|Name
+! Energy<br /> Type
+! Ability Affinity
+! style="width: 75%;"| Summary
+|-
+! colspan="4" | Level 0
+|-
+| Air Manipulation || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Alter minor air currents, blow away fog or deadly gases, or manipulate up to 5 lbs of gas/air. </div>
+<div class="mw-collapsible-content">
+Simply be able to manipulate air. Be able to cause a slight breeze. Or a wind that can generate about 5 lbs of force per square meter. This increases by 5 lbs every Psion level. By level 4, the Psion can create a strong wind. The Psion can clean gases from the air. 
+</div></div>
+|-
+| Fire Manipulation || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Alter the shape/color of flames, extinguish candles, or spontaneously ignite highly flammable material. </div>
+<div class="mw-collapsible-content">
+Control a small flame like a candle. Cause it to burn brighter and hotter, or cool it down and extinguish it. They can cause a flame to start on a flammable object. Change an object's temperature by lowering it or raising it. However, at level 1, the Psion cannot lower the temperature below 32F or raise it above 120F. At each level, the Psion can control a larger flame. And increase the temperature range by -30 to +100F. At level 2, a Psion can simply make fire around their person, such as on their hand or hanging above their head, without flammable material. By Level 4, the Psion can control massive fires, such as a small house fire. 
+</div></div>
+|-
+| Water Manipulation || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Shift currents, purify a small cup of water, or levitate up to 5 lbs of liquid. </div>
+<div class="mw-collapsible-content">
+This allows a Psion to levitate or change the shape of up to 5 lbs of liquid. They can purify up to 5 lbs of water. At each level, this increases by 5 lbs. At level 2, a Psion can detect water not part of a living creature up to 120ft and grants a +2 Misc bonus to the Survivor skill.
+</div></div>
+|-
+| Ground Manipulation || Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Shift loose dirt, change earth to clay, or move up to 5 lbs of stone/soil. </div>
+<div class="mw-collapsible-content">
+This allows a Psion to levitate or change the shape of up to 120 lbs of stone or soil. At each level, this increases by 20 lbs. 
+</div></div>
+|-
+! colspan="4" | Level 1
+|-
+| Finger of Fire || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Whatever your finger touches is dealt Psionic Thermal damage. </div>
+<div class="mw-collapsible-content">
+The Psion can do a Melee Touch Attack with damage of Xd6 + Dex/Con mod (Thermal [Hot]). (X = Psion level)
+'''
+Enhanced version''': Change the damage die to Xd8. And the Damage type to (Thermal - Thermal)
+</div></div>
+|-
+| Fire Bolt || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Psion launches a bolt of thermal energy at a target. </div>
+<div class="mw-collapsible-content">
+The Psion can do a Ranged (120ft) Touch Attack with damage of Xd4 + Dex/Con mod (Thermal [Hot]). (X = Psion level)
+'''
+Enhanced version''': Change the damage die to Xd6. Gain an advantage when doing the ranged attack. 
+</div></div>
+|-
+| Splash || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Target is drenched, making them vulnerable to Thermal/Electricity damage or to minor fires. </div>
+<div class="mw-collapsible-content">
+The target must be within visual range (120ft). The target becomes wet and gains [[Damage_Types_and_Attributes#Weakness|Weakness]] 2 + Psion level for both Thermal and Electricity damage types. The effect lasts for 1d4 + Dex/Wis mod.
+</div></div>
+|-
+| Slipper Ground || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Coat the ground in slick water or ice, creating difficult terrain that can trip up people moving through. </div>
+<div class="mw-collapsible-content">
+An area of 20ft + 5ft per Psion level, because slick with water or ice (Psion's choice). Any creature attempting to move across this spot must make a Dexterity or Acrobatics check, DC10 + Dex/Wis mod, or fall prone. This is considered difficult terrain, and movement is cut in half. This effect lasts for 1d4 + Dex/Wis mod number of rounds.
+</div></div>
+|-
+| Ground Defence|| Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> A slab of earth moves or stone moves on its own, granting cover as a reaction. </div>
+<div class="mw-collapsible-content">
+The Psion can control a piece of stone or dirt that provides partial concealment (20%) and a miss chance. The effect lasts for 1 + Str/Con modifier rounds. The Psion can have the rock follow themselves or a friendly person the Psion is familiar with, as long as that person stays within visual range.
+
+'''Enhanced version''': The effect lasts for 1d4 + Str/Con number of rounds and provides 50% concealment bonus instead.
+</div></div>
+|-
+| Rock Slam || Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Hurl a heavy chunk of stone at a target with powerful psionic force. </div>
+<div class="mw-collapsible-content">
+This grants the Psion a Ranged (60ft) attack. The rock/stone/dirt needs to be within 30ft of the Psion. The attack deals Xd6 (Kinetic) damage. (X = Psion level)
+
+'''Enhanced version''': Change the damage dice to Xd8 and give it the Exploding attribute.
+</div></div>
+|-
+| Air Bawl || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Shoot a condensed sphere of air, dealing damage and possibly pushing the target back. </div>
+<div class="mw-collapsible-content">
+This grants a Ranged (60ft) attack. This deals Xd4 + Wis/Cha mod (Kinetic) damage. If hit, the target must roll a Strength Check DC11 + Wis/Cha Mod saving throw or else be pushed back by 5ft.
+
+'''Special''': 1MP. Pick another Element Type that the Psion is able to wield. Add this as bonus damage 1d4 (Thermal) for fire, 1d4 (Kinetic - Kinetic) for Earth, or 1d4 + '''Splash''' side effect for 1 round. This Special can be picked for as many times as there are extra elements the Psion can wield. However, the effects do not stack; they simply add different options for the Psion. At Psion Level 4, the bonus damage changes to 1d6.
+
+'''Enhanced version''': Change the damage die to Xd6. The DC for being pushed back is now DC10 + Psion Level + Wis/Cha mod. 
+</div></div>
+|-
+| Air Bubble || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Create a pocket of purified, breathable air to survive in vacuums or toxic gas. </div>
+<div class="mw-collapsible-content">
+This can be targeted at the Psion or at a friendly familiar within visual range. The effect lasts out of combat 5 minutes + 5min per Psion level. The target doesn't have to stay in visual range once the technique has been used. 
+
+'''Special''': 1MP Gain Mass Air Bubble. Cast this as a Psion Level higher technique, and it can target up to 4 people at a time. 
+</div></div>
+|-
+| Thermal Weld || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Use precision heat to weld/melt metal objects, or cauterize biological wounds to stabilize dying allies. </div>
+<div class="mw-collapsible-content">
+The Psion can produce a torch-like effect that they can point at an object with their digits. This can be used like a welding torch to help break into things. The Psion can control heat and even turn it into an ice torch if necessary. This can also be used to gain triple advantage on [[Medical#Stabilize_Dying_Character_(DC_20)|Stabilizing]] a dying Character if used with a Medical Kit or a single Advantage without.
+</div></div>
+|-
+| Mist Shroud || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Generate a 20ft radius of thick fog that blocks line of sight and grants minor concealment. </div>
+<div class="mw-collapsible-content">
+The Psion creates a 20ft radius of thick fog that allows for all ranged attacks from outside of the fog to treat the targets within or through with minor concealment. However, this also counts for any ranged attacks that target something outside of the fog. The fog can last up to 1 + Dex/Wis modifier turns.
+
+'''Enhanced version''': The Fog's size and shape are controllable, with a maximum size of 20ft + 5ft per Psion level. The length of time is 1d4 + Dex/Wis modifier, in turns. The Psion can now target a space within 30ft of them to be the center of the fog.
+</div></div>
+|-
+| Tremorsense || Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Touch the ground to detect the vibrations of moving creatures or hidden structures within range. </div>
+<div class="mw-collapsible-content">
+Use the vibrations of the ground as a way to perceive the world around you. The range depends on the creature's size. Medium size is 45ft; for each larger size, increase the range by 15ft, for every size smaller, decrease the range by 10ft. Gain advantage on Perception checks. Take no disadvantages for seeing through walls, in the dark, or invisible creatures.
+
+'''Special''': 1MP Gain the Passive Tremorsense Techinque. This lasts for 24 hours and grants advantage to all Perceptin checks as long as the Psion's bare skin is touching the ground or hull of the ship. This includes a bonus to Passive Perception of both Strength and Constitution Modifiers. 
+</div></div>
+|-
+! colspan="4" | Level 2
+|-
+| Burning Hands || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Generates a cone of searing flame/cold that can hit multiple targets in the area. </div>
+<div class="mw-collapsible-content">
+Extending from the Psion's hand/s is a wave of extreme heat or cold. This deals damage in a 15ft cone. The damage is Xd8 (Thermal). (X = Psion level). Targets within the cone can do a Constitution save DC12 + Dex/Con mod for half damage. 
+
+'''Enhanced version''': The damage die is increased to Xd10. The cone size is increased to 20ft. The DC is DC13 + Dex/Con.
+</div></div>
+|-
+| Water Whip || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Create a lash of water dealing that slashes at enemies and has a chance to Trip the target. </div>
+<div class="mw-collapsible-content">
+The Psion can do a Melee Attack with a Reach of 15ft. Dealing 2d6 (x3) damage. If hit, the Target must save against a Trip Technique with a DC12 + Dex/Wis mod or be tripped.
+
+'''Special''': 2MP Gain Water Whip Elemental technique. This is the same as Water Whip. But the Whip stays on the Psion for 1d4 + Dex/Wis number of rounds. Each round, the Whip can attack as if a Bonus/Simple action.
+
+'''Enhanced version:''' Reach increased to 20ft. Damage die increased to 2d8 (x4). 
+</div></div>
+|-
+| Bolder || Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Tear a massive rock/stone from the earth and roll it with great force, dealing damage to all who are in the way. </div>
+<div class="mw-collapsible-content">
+The Rock/stone most come from a location within 30ft of the Psion. The object rolls with speed towards the target in a straight line and will damage anything in its path. This deals 3d10 damage +1d10 for every Psion level after 2. A Dexterity save DC12 + Str/Con mod negates damage.
+
+'''Enhanced version''': Add Str/Conn mod per damage die to the total damage. Saving throw increased to DC14 + Str/Con mod + Psion Level.
+</div></div>
+|-
+| Decompression || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Draw the breathable air out of a 10ft area, forcing people to struggle for air. </div>
+<div class="mw-collapsible-content">
+This causes targets to grasp for air. The targets within the 10ft area take a Constitution saving DC12 + Wis/Cha mod or become [[Conditions#Winded|Winded]]. The target location must be within visual range 60ft.
+
+'''Enhanced version''': DC increased to 14 + Wis/Cha mod. 
+</div></div>
+|-
+| Whirl Wind || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Summon a 5ft wide swirling vortex that can lift objects and deal damage to caught creatures. </div>
+<div class="mw-collapsible-content">
+The Psion summons a Whirlwind that has to be within 60ft + 10ft per Psion Level. It lasts for 1d4 + Wis/Cha modifier rounds. If a creature is occupying the same space as the Whirlwind, they take Xd6 damage. (X = Psion level). If the creature is a Medium-sized or smaller creature, they must also roll a Strength check DC12 + Wis/Cha mod or be caught in the Whirlwind as if grappled. Each turn, as a Free action, the Psion can move the Whirlwind up to 30ft. The Whirlwind will carry any creatures caught in it. A Whirlwind must be touching the ground at all times. If the Whirlwind captures another creature, it must drop the previous one if it is Medium. A Whirlwind can hold 1 Medium creature. Or 2 Small, or 4 Tiny, or 8 Diminutive creatures. Each round, a caught creature can do a Strength check to attempt to break free of the Whirlwind's grip. If they fail for every round that they stay caught, they take damage again.
+
+'''Special''': 1MP This is the same as '''Air Bawl's''' special.
+</div></div>
+|-
+| Wind Glide || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Manipulate air currents to grant the target a temporary flight speed, ignore fall damage and difficult terrain effects. </div>
+<div class="mw-collapsible-content">
+The Psion can target themselves or a familiar, friendly person. This effect lasts for 5minutes + 5min for every Psion level. The target ignores all fall damage. If they have flight as an ability, they gain double speed and, during the Technique effect, ignore fatigue. The person can also jump incredibly high. Gain advantage on all Dexterity and Acrobatics checks, and ignore difficult terrain. 
+</div></div>
+|-
+| Healing Springs || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Use purified water to bind cellular structures, healing the target of some damage. </div>
+<div class="mw-collapsible-content">
+The Psion must be able to touch the target. They cannot target themselves. The HP restored is 1d8 + 1d8 per Psion level. 
+
+'''Enhanced version''': The Psion can now target themselves. The HP restored adds Dex/Wis per die used. 
+</div></div>
+|-
+| Earth Glide || Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Phase through unworked earth or stone without leaving a tunnel or trace. </div>
+<div class="mw-collapsible-content">
+The Psion can simply walk (not run or faster) through solid rock, stone, earth, concrete, or dirt. The distance they can travel is 15ft + 5ft per Psion level.
+
+'''Enhanced version''': The Psion can take one person of the same or smaller size with them. The person has to be holding onto the Psion during the walk-through. 
+</div></div>
+|-
+| Smoke Screen || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Generate a cloud of thick, choking smoke that obscures vision and disrupts laser targeting. </div>
+<div class="mw-collapsible-content">
+The smoke screen is 20ft big and can be placed anywhere within visual range (120ft) of the Psion. This causes full concealment for any ranged target firing into or through the screen. Anyone caught within the screen must roll a Constitution saving throw, DC12 + Dex/Con mod, or take 1d6 (Chemical) damage from inhaling toxic smoke.
+
+'''Enhanced version''': The Psion can now control the shape and size of the smoke screen, with the maximum size being 20ft + 5ft per Psion level. The damage for being within the smoke screen is 1d8 (Chemical, Thermal) damage. Saving throw DC13 + Dex/Con mod.
+</div></div>
+|-
+! colspan="4" | Level 3
+|-
+| Whitefire || Fire || Dex / Conn ||
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Unleash intensely hot flames or waves of coldness that are considered [[Damage Types and Attributes#Double Types|Thermal-Thermal]]. </div>
+<div class="mw-collapsible-content">
+This wave starts at the Psion and shoots out up to 60ft + 10ft per Dex/Con mod. Anything within the line gets dealt 2d8 + 1d8 per Psion Level. Each target can roll a Dexterity save DC13 + Dex/Con mod to take only half damage. 
+
+'''Enhanced version''': The damage die is increased to 2d10 + 1d10 per Psion Level. The Dex save is DC14 + Dex/Con. 
+</div></div>
+|-
+| Wave Control || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Command a sweeping wave that deals damage and forcibly pushes targets back some amount. </div>
+<div class="mw-collapsible-content">
+The Psion can pick a 10ft line within 120ft of them to start a massive sweeping wave that moves for 15ft. All targets within the wave take Xd8 (X = Psion Level) of damage and gain the '''Splash''' side effect for 1 round. Each target also rolls a Strength check DC13 + Dex/Wis mod. If they fail, they are pushed back to the end of the wave. If the wave ends at a wall, they take an additional 1d6 (Kinetic) damage.
+</div></div>
+|-
+| Warping Grasp || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Manipulate the liquids inside a target's body, dealing damage and imposing a penalty to physical attack rolls. </div>
+<div class="mw-collapsible-content">
+The Psion can feel and manipulate the liquads within a target's physical form. This can even be the oils or cooling liquids of a robot or other such machine. The target must be within 60ft + 10ft per Dex/Wis mod. The damage is Xd10 + Dex/Wis mod (Ignore DR) (X = Psion level). The target must roll a Constitution save DC13 + Dex/Wis mod or be [[Conditions#-_Stunned|Stunned]] for one round.
+
+'''Special''': 1MP Gain the Water Grip technique. This acts like a ranged (120ft) grapple. The Psion uses Dex/Wis instead of Strength. If successful, the Psion can choose to deal damage or force the target to perform a Move action. This can happen as a free action for every round the target stays grappled. However, the target gains an additional advantage for every round after the first round of a Strength check to remove themselves from the grapple. At the fourth round, the Psion must release the target. 
+</div></div>
+|-
+| Ground collapse || Earth || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Turn a 20ft area of solid earth into a pit or quicksand, trapping enemies. </div>
+<div class="mw-collapsible-content">
+The targeted ground turns into a dangerous trap. It will not appear any different, but when an enemy/non-friendly walks over it, the Psion can become aware with a range of 1ly. The Psion can sense if it is an enemy and let the trap activate. The Trap causes the ground beneath to give way, forming quicksand or a deep pit with jagged, sharp rocks. The Psion's choice. The trap affects a 20ft area. Can last for 1 day + 1day per Psion level. The Quicksand acts like a Grapple with a DC14 + Str/Con mod. Each turn the DC gets +1 higher. The Quicksand will not kill a target, but it can render them helpless after 5 rounds. A deep pit will cause Xd10 (X = Psion level) of damage. The target will be stuck in the pit unless they succeed at a Climb check DC20 + Str/Con mod. The distance is 20 ft. If they fail, they will suffer the damage again.
+</div></div>
+|-
+| Toronado || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Create a 30+ft tall cyclone damage and violently tosses targets into the air. </div>
+<div class="mw-collapsible-content">
+Like Whirlwind, but much, much larger, besides the following exceptions, it follows the same rules as " Whirlwind ". This takes up a 10ft square space and is 30+ft tall. This can be summoned up to 120 + 20ft per Wis/Cha mod away from the Psion. The damage dealt is Xd10 (X = Psion level). The DC is 13 + Wis/Cha for the Toronado, which will sweep up the Character. A Toronado can hold 1 Large creature, or 2 Medium creatures, or 4 Small, or 8 Tiny, or 16 Diminutive creatures. It can move up to 45ft per turn. Within 20ft of the Tornado, the terrain is considered difficult for movement, and flying creatures must take Strength saves DC13 + Wis/Cha or be sucked in.
+
+'''Special''': 1MP Same as '''Air Brawl'''. 
+</div></div>
+|-
+| Deflecting Gale || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Summon a localized wind wall that imposes a severe penalty to incoming ranged attacks. </div>
+<div class="mw-collapsible-content">
+The wind becomes a wall or screen 10ft + 5ft per Psion level. This creates an AC +2 bonus against ranged attacks that must go through the wind that target the Psion or allies. This lasts for 1 + Wis/Cha modifier rounds.
+
+'''Enhanced version''': The AC bonus is equal to the Psion level instead. The effect lasts for 1d4 + Wis/Cha mod rounds instead.
+</div></div>
+|-
+! colspan="4" | Level 4
+|-
+| Fire Storm || Fire || Dex / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Ignite a massive 30ft radius area in roaring flames, dealing thermal damage and setting targets alight. </div>
+<div class="mw-collapsible-content">
+The Psion can target a space up to 120ft + 20ft per Dex/Con mod. The effect lasts for 1 + Dex/Con mod rounds. Creatures within take 2+Xd6 (Thermal) damage (X = Psion level). Any target within the Fire Storm must do a Constitution save DC15 + Dex/Con mod or catch on fire for 1d4 rounds, dealing an additional 1d6 (Thermal). The Psion is immune to this Fire Storm and can walk into this area with ease.
+
+'''Enhanced version''': Change the Damage die to 2+Xd8 (Thermal-Thermal). The DC is increased to 16 + Dex/Con mod. The duration is 1d4 + Dex/Con modifier rounds.
+</div></div>
+|-
+| Rock Crush || Earth  || Str / Conn || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Encase a target in solid stone, crushing and restraining them. </div>
+<div class="mw-collapsible-content">
+This grants a ranged (120ft + 20ft per Str/Con mod) Grapple. If successful, the target also takes Xd8 (X = Psion level) amount of damage. The Psion gets advantage on this Grapple check using either Str or Con. As a free action each round, the Psion can keep the grapple. If they choose to deal damage, it takes a Standard Action but doesn't count as another Technique use. The Psion only gets advantage bonus on the first round of the grapple.
+</div></div>
+|-
+| Water Slam || Water || Dex / Wis || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Crush a target with a high-pressure deluge, damaging and Stunning them. </div>
+<div class="mw-collapsible-content">
+The Psion gains a Ranged (120ft + 20ft per Dex/Wis mod) Touch attack. If they hit, the target gets Xd10 (x3) damage, and the target must perform a Constitution check DC15 + Dex/Wis mod or be [[Conditions#-_Stunned|Stunned]] for one round. The target also gets the '''Splash''' side effect for 1d4 rounds.
+</div></div>
+|-
+| Gas Bullets || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Compress air into multiple hyper-dense, devastating projectiles. </div>
+<div class="mw-collapsible-content">
+The Psion creates 1 highly compressed gase bullet per Psion Level for a total of 4. They are then able to do a Ranged (120ft + 20ft per Wis/Cha mod) attack on 1 or more targets. The Psion can target up to as many different enemies as they have bullets or some combination of bullets to targets. Each target needs to roll for an Accuracy check, but each bullet does not. Each bullet deals 2d8 (x3) damage.
+</div></div>
+|-
+| Hurricane || Air || Wis / Cha || 
+<div class="toccolours mw-collapsible mw-collapsed" style="width: 100%; overflow:auto;">
+<div style="font-weight;line-height:1.6;"> Summon gale-force winds in a massive area. </div>
+<div class="mw-collapsible-content">
+The Psion can cause extremely strong winds to blow in from any direction, covering a massive 30ft by 60ft rectangle of land to a height of 25ft. Any unfriendly combatants in the area have to fight the wind to move. If they do so, they move as if on difficult terrain. Any flying creature must make a Strength check, DC15 + Wis/Cha mod, or else be blown back 30ft. All ranged attacks from enemies take disadvantage. The effect lasts for 1d4 + Wis/Cha mod rounds. During the first and preceding rounds as a Free action, the Psion focuses on one enemy in the area to perform a lower-level Air Technique for free. Any friendly combatants can move around freely as if they only feel a slight breeze.
+
+'''Special''': 1MP Same as '''Air Brawl''', this effectively adds a small amount of damage to all enemies within the space. 
+</div></div>
+|}

@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''': Misc +2 bonus to the Athletic skill. Even if they do not have the skill trained. At Character Lvl 10, this becomes +3, and at Level 20, this becomes +4.
+
+'''Normal''': -
+
+'''Speical''': -

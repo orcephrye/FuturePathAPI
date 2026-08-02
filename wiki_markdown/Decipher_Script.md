@@ -1,0 +1,48 @@
+Your ability to decipher encrypted messages or in fact make a encoded
+message.
+
+## Check
+
+  Complexity                DC   (In Combat) Time
+  ------------------------- ---- ------------------
+  Simple                    12   2 Rounds
+  Standard                  15   3 Rounds
+  Advanced                  20   5 Rounds
+  Top Secret/Experimental   30   7 Rounds
+  Overly Complex/Exotic     40   10 Rounds
+
+  : Table: DC Examples
+
+A character can decipher writing in an code, or encrypted message.
+Helpful texts or computer programs can provide a bonus (usually a single
+advantage bonus) on the check, provided they are applicable to the
+script in question.
+
+If the check succeeds, the character understands the general content of
+a piece of writing, reading about one page of text or its equivalent in
+1 minute. If the check fails, the GM makes a Wisdom check (DC 10) for
+the character to see if he or she avoids drawing a false conclusion
+about the text. (Success means that the character does not draw a false
+conclusion; failure means that the character does.)
+
+The GM secretly makes both the skill check and the Wisdom check so the
+character can't tell whether the conclusion drawn is accurate or not.
+
+## Try Again {#try_again}
+
+Yes, unless conditions change or there is a time limit. A character can
+take 10 or 20 when making a Decipher Script check.
+
+Decipher Script multiple rounds or more, depending on the complexity of
+the code. It cannot be done during combat unless the player is not
+activity engages in combat. For example they can be attempting to
+decipher the encrypted message while other Characters attempt to protect
+the player. The Player must do Wisdom checks to ensure that they stay
+focused while combat is happening around them. DC should very depending
+on the circumstances but usually DC10.
+
+## Special
+
+- Feats: A character with the
+  [Meticulous](Meticulous "Meticulous"){.wikilink} feat gets a static
+  Misc +1 bonus too Decipher Script.

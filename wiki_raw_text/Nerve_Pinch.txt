@@ -1,0 +1,9 @@
+You can incapacitate foes with a vice-like pinch. For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': Combat Martial Arts, Advantage Die 1d8
+
+'''Benefit''': You make an unarmed attack against a living creature. If the attack succeeds, the target takes no damage but must succeed on a Constitution save (DC 10 + one-half your character level + your Strength modifier) or be paralyzed for 1d4+1 rounds. 
+
+'''Note''': This Attack is considered a Standard Technique Action, not a Standard Attack Action. This means it doesn't grant a Bonus action and doesn't benefit from Extra Damage.
+
+'''Special''': This ability does not work on creatures without nervous systems or discernible anatomies, such as oozes and plants.

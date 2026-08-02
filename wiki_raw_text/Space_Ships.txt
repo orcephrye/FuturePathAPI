@@ -1,0 +1,913 @@
+<div class="toclimit-1"><div style="float:right; margin-left: 20px">__TOC__</div></div>
+This page is for rules on buying, building, repairing, upgrading, and selling of Space Ships within the Future Path universe. For rules on combat in a space ship go [[Combat#Space_Combat|here]]. For rules on traveling and exploration with space ships go [[Transportation|here]]. For space ship weapons and other equipment, go [[Ship_Equipment|here]]
+
+For the Character Sheet PDF file, go [https://drive.google.com/file/d/1946b8G1GyLHkqxxtlHCQjD3H0RdOR54a/view?usp=sharing here!]
+
+== Summary == 
+
+SpaceShips are like a Character on their own. Ships have their own [https://drive.google.com/file/d/1IYHAdMoRqraZYeJ8FPzs4SxzBuUJuCaZ/view?usp=drive_link Character Sheet]. Just as Heroes/Characters have [[Ability_Themes|Ability Scores/Themes]] SpaceShips have 
+[[Space_Ships#The_6_Core_System_Attributes_of_Space_Ships|6 Core System Attributes]], which affect all the different aspects of the ship. The foundation of a spaceship is the "[[Space_Ships#The_Ship_Core|Core]]" which determines the Tech Level of the ship and which type of [[Space_Ships#Space_Ship_FTL_Drive|FTL Drive]] it can use. The Core level determines how many points can be spent on the [[Space_Ships#The_6_Core_System_Attributes_of_Space_Ships|6 Core System Attributes]]. The 6 C.S.A has an impact on [[Space_Ships#Secondary_Ship_Attributes|Secondary Ship Attributes]]. A SpaceShip also has a [[Space_Ships#Space_Craft_Categories|Size]] which impacts [[Space_Ships#Secondary_Ship_Attributes|Secondary Ship Attributes]] and also determines the number of [[Space_Ships#Hard_Points|Hard Points]] and [[Space_Ships#Bays|Bays]]. A ship can be generic or have a style/theme referred to as a [[Space_Ships#Hull_Configurations|Hull Configuration]], which can modify attributes. Lastly, a ship may also have [[Space_Ships#Ship_Quirks|Quirks]], which can add flavor and uniqueness to a ship. 
+
+Although not a direct aspect of the ship, the crew is an important component and helps determine what the ship can do. Crew can take on [[Space_Ships#Ship_Positions|positions]] aboard the ship to improve its performance.
+
+== Ship Conflict Resolution ==
+
+When using and interacting with Spaceships, Players will roll different dice to confirm the success of an action. This uses 2d10 and replaces rolling the d20. This system also replaces the Advantage Die for the Spaceship. Rolling should be the same as normal Character rolling, with the following rule changes.
+ 
+# Replace the d20 with 2d10s
+# The d10s can '''Explode'''. If a d10 lands on 10, keep that value, then roll again and add the next result. d10s only explode once.
+# Critical failure happens when only 1s are rolled. 
+# Critical success happens when at least 1 die explodes, and the final result is greater than 20. Example: The player rolls 2d10 and gets a 10 and 5. The d10 with a 10 gets rerolled. It lands on a 6. Then it is 10 + 5 + 6 = 21, and thus is a critical success.
+# Advantages still work the same way; disadvantages cancel out advantages, and vice versa; and the max total is 3. However, instead of an Advantage die, each Advantage gained counts as 1d10+2. 
+# When calculating advantage, only the top two d10s are taken from the d10s pool. So a roll with one advantage would be 3d10 + 2, and take the top 2d10s, and once the final result is calculated, add 2. Determine critical success before adding the +2.
+# All modifiers are based on the Spaceship's static systems or attributes, and no additional dice are rolled. 
+# When using a Skill, check if the Skill is at all trained, gain +1 to the total, and another +1 for each Compatency level above novice the Skill has.
+
+A Player rolls using the 2d10 system whenever the target DC or opposing check is modified by the Spaceship's Core System Attributes or Secondary Attributes. This usually means that everything a Character uses a Ship function, or when targeting or affecting a Spaceship.
+
+;A Note about Damage: When dealing damage, the Weapon's Officer uses the '''Battle Damage''' system, which uses d10s as well, but uses a '''Battle Damage Difficult Check (BD-DC)'''. To learn more about it, visit the [[Giving_and_Receiving_Damage_in_Space_Ships|Giving and Receiving Damage in Space Ships]] page.
+
+== Obtaining a Ship ==
+
+You can see a full list of Space Ships on the [[Space_Ship_Examples|Space Ship Examples]] page. If you wish to learn more about customization and crafting of Spaceship as well as its many functions and abilities, review the rules below.
+
+== The Ship Core ==
+
+The Core is the Reactor, Power Distribution, and Sub-System of a SpaceShip. The Core powers the 6 Core System Attributes (CSAs). Many civilizations have built various kinds of Cores. For example: Nuclear reactors, Fusion Reactors, Anti-matter reactors, Black-hole reactors. They also need materials and components designed to distribute large amounts of power successfully across the ship. From simply using copper wiring to superconducting materials and even sub-space wireless power transmission.
+
+The Tech Level of a Core is the basic way to categorize them and understand how well they can affect 6 C.S.As, ie; how powerful the Engines, Sensors, and so on can be. Core Tech Level also determines how advanced the [[Space_Ships#Space_Ship_FTL_Drive|FTL drive]] can be.
+
+The Tech Level of the Ship Core also determines the maximum size a ship can be. Tech Level 1 ships maximum size is Large, Tech Level 2 is Gargantuan, and Tech Level 3 and 4 are both Colossal, or they can build all sizes.
+
+== The 6 Core System Attributes of Space Ships ==
+The 6 CSAs affect most other ship attributes and statistics. These sub-systems and their stats will be reviewed below in the [[Space_Ships#Secondary_Ship_Attributes|Secondary Attributes]] section. 
+{| class="wikitable" style="float:right; margin-right: 10px;"
+|+Table: Tech Level Bonuses
+! style="text-algin:left;" | Tech Level
+! Points
+! Max Size
+! Cust. /<br >Points
+|-
+| 0 || N/A || N/A || N/A
+|-
+| 1 || 10 || Large || 1
+|-
+| 2 || 15 || Gargantuan || 1
+|-
+| 3 || 20 || Colossal || 2
+|- 
+| 4 || 25 || Colossal || 3
+|}
+
+These 6 Core.System.Attributes are the galactic modern standard for shipbuilding. They represent the foundation of a ship and its main functions. All other subsystems and functions are affected by the performance of the 6 Core System Attributes. A ship's Core can only handle so much power flowing through it. So the 6 C.S.A. have to be balanced to avoid overloading the Ship Core. This is represented by the point-buy system, and the number of points available to spend is shown in the table to the right.
+
+; Engines:
+: Engines are the heart of a ship. These do not affect a ship's FTL speed. However, it does help a ship's mobility in combat and its ability to outrun other ships with weaker engines.
+:* '''Bonus''': Provides a bonus to Ship's Tracking DC equal to the Engine's Modifier.
+:* '''Notes''': This helps the ship's Pilot perform piloting functions of the ship. 
+; Weapons:
+: Ship's need to protect themselves in the wild depths of space. A ship's weapon system uses equipment mounted in hardpoints. An upgraded Weapon system provides the means of hitting the enemy harder.
+:* '''Bonus''': Allows for a Weapon's Officer to re-roll successful d10s up to the modifier value. This also increases the repair DC for battle damage.
+{| class="wikitable" style="float:right; margin-right: 10px;"
+|+Table: Core System Attribute Score Costs 
+! style="text-algin:left;" | Score
+! Points
+|-
+| 7||–4
+|-
+| 8||–2
+|-
+| 9||–1
+|-
+| 10||0
+|-
+| 11||1
+|-
+| 12||2
+|-
+| 13||3
+|-
+| 14||5
+|-
+| 15||7
+|-
+| 16||10
+|-
+| 17||13
+|-
+| 18||17
+|-
+| 19||21
+|-
+| 20||25
+|}
+; Structure:
+: How solid the ship's internals are. Shield's are not everything! Armor is necessary to keep you safe from the vacuum of space. Armor will not fail you when the power goes out. 
+:* '''Bonus''': This adds to the total number of required successful d10s to do battle damage. However, it also lowers the ship's Tracking DC by the modifier value.
+; Shields:
+: How strong a ship's shields are. Shields are a staple of spaceships. It is the ability to reflect some of the incoming damage. Many upgrades can be made to shields to help them defend themselves more effectively. The stronger the shields, the easier it is to detect a ship.
+:* '''Bonus''': This adds to the number that needs to be meet or beat on a d10 for it to be considered successful and count toward battle damage. For every +2 for this modifier, it lowers the Detection DC of the ship by 1 unless the shields are turned off.
+; Electronics:
+: Ships may be built by the finest steels and alloys a civilization can fabricate, but they are run by Electronics. Advanced computer technology that provides the ship with improved functionality, as well as defensive and offensive cyberwarfare capabilities.
+:* '''Bonus''': This can provide a bonus directly to certain Ship Functions like Hacking. This also adds a bonus to the DC a hacker will need to be to enter and stay undetected.
+; Sensors:
+: Sensors are a ship's way of perceiving the universe. Sensors are used to scan for objects and to find out information about them, or to scan for shield weakness. This is also part of the system that performs communications.
+:* '''Bonus''': This has multiple functions. A Sensor/Comms Officer can roll for a Weakness Scan against an enemy ship's Tracking DC. If successful, the Sensor Modifier is added to all d10's rolled by the Weapon's Officer. If a ship is stealth-ed, it may be required to perform a Scan against the ship's Detection DC to determine if the Weapons can even lock onto the enemy ship. The Sensors can also be used to determine specific information about an enemy ship or Jam signals.
+
+== Secondary Ship Attributes ==
+Besides the 6 Core Ship Attributes, there are Secondary Attributes. 
+
+* Below are stats that can be affected by the 6 Core Ship Attributes.
+
+{| class="mw-collapsible mw-collapsed wikitable" style="clear:right;width:90%"
+! style="width:33%" | Reflectors (Shields):
+! style="width:33%" | Damage Resistance (Resistance):
+! style="width:33%" | Battle Damage Defense:
+|-
+| A ship's Shield or Damage Reflector score by default is 4. It can be affected by improving the ship Shield's attribute. The Shield Mod is added to the Damage Reflector total. The higher the Reflector total, the higher the d10 roll result has to be in order for that roll to count as a success.  || The Damage Resistance comes from the ship's Structure Mod. The better the ship's structure, the higher the d10 rolls needed to inflict Battle Damage. By default, the Damage Resistance is 4, and a Weapon's officer needs 4 successful d10s to do Battle Damage. || This is the combination of Resistance (Structure) and Reflectors (Shields). The default is 4, 4, or 4 Resistance and 4 Reflectors. Which means that an attacker would have to roll 4 d10s that meet or beat a 4 to deal Battle Damage.
+|-
+|}
+{| class="mw-collapsible mw-collapsed wikitable" style="clear:right;width:90%"
+! style="width:33%" | Repair DC Bonus (Battle Damage Bonus):
+! style="width:33%" | Tactical Mobility:
+! style="width:33%" | Initiative:
+|-
+| The Repair DC Bonus is equal to the Weapon's Mod. It is added to the Battle Damage Repair DC that is determined by the Battle Damage Die. Whenever enough successful d10s are rolled against a ship in combat, that ship receives Battle Damage. The Battle Damage Die is rolled to determine the effect, if any, that happens, as well as the DC to repair that damage. The Weapon's Mod of a ship is added to the Repair DC.|| This represents a bonus to how well the ship can move in combat. It comes from the Ship's Engine's Mod. However, a ship is only as good as the person piloting it, and thus, the maximum possible Tactical Mobility score is the Pilot's Pilot Skill Die level. (Skill Die level is equal to the Skill Rank + Ability Modifier). The Tactical Mobility score comes from the ship's Engines. It is what is added to most Pilot functions. A ship's Tracking DC is 10 + (Tactical Mobility + Shield Mod) - Structure Mod +/- Size Mod. It is important not only to have good Engines but also a good Pilot behind those Engines. || Initiative determines who goes first in a stand-off. It can also determine the order in which damage is dealt out in different combat phases. The total is: (Engines + Sensors) - Structure. 
+|}
+{| class="mw-collapsible mw-collapsed wikitable" style="clear:right;width:90%"
+! style="width:33%" | Passive Sensors:
+! style="width:33%" | Stealth DC:
+! style="width:33%" |
+|-
+| This is based on the Sensor Mod. It is 10 + Sensor Mod. A Ship's Detection DC is used against this, or a Sensor Scan to see if it is detected. Anything with a Detection DC at or below a Ship's passive sensors is automatically detected, and the ship's crew should be made aware of it. || This by default is the Detection DC + Electronic's Mod (if positive) and is used whenever a ship runs in Stealth or Silent operation. This means a Ship's Shields are disabled. (It takes 1 round to turn them back on). It also means a ship cannot send out any signals or perform any scans of its own, just receive signals or messages. It also means a ship cannot use any Ship function that requires Engines. A Ship can still move, but only slowly.  ||
+|-
+|}
+
+* Below are Attributes that are provided by default from the Hull [[Space_Ships#Hull_Sizes|Size]]/[[Space_Ships#Hull_Configurations|Configuration]]. However, some modifications can be made by characters, such as installing upgrades.
+
+{| class="mw-collapsible mw-collapsed wikitable" style="clear:right;width:90%"
+! style="width:33%" | Movement Speed:
+! style="width:33%" | FTL Engine/Speed:
+! style="width:33%" | Dimensions/Weight:
+|-
+| This is the default sub-light speed of the ship. Speed is measured in how far a ship can go from a stopped position to a fixed point in space within 3 seconds. Normally, this is 4 squares in size. Plus 1 square for each Engine Mod. || FTL stands for Faster Than Light. An FTL Engine allows the ship to travel faster than the speed of light. There are multiple different engines noted [[Space_Ships#Space_Ship_FTL_Drive|here]]. A ship can only have a drive that corresponds with its CORE Tech level. || Normally, a ship's Size and weight are determined by its hull size. But more information about ship Dimensions and specific weight can be recorded here.
+|-
+|}
+{| class="mw-collapsible mw-collapsed wikitable" style="clear:right;width:90%"
+! style="width:33%" | Crew:
+! style="width:33%" | Passenger Capacity:
+! style="width:33%" | Cargo Capacity:
+|-
+| A ship will need a crew, and members of that crew will need to fill in Ship Positions in order to perform Ship Functions. This is a place to record the different members of a ship and their duties. || This is the number of living average-sized creatures that can be onboard without taxing life support. The default value is specified by the Hull Size, but can be increased with improvements. || This is how many Cargo Units can be held by a ship before the Movement Speed and Tactical Mobility are hindered. The default is specified by the Hull Size of a ship. However, a Cargo Bay can add more space. By default, it is 1/2 the default Cargo space. A Unit is a generic measurement that implies 100lbs and/or 1 square foot of volume.
+|-
+|}
+{| class="mw-collapsible mw-collapsed wikitable" style="clear:right;width:90%"
+! style="width:33%" | Hull/Configuration (Design Specs):
+! style="width:33%" | Hard Points/Bays/Customization Slots:
+! style="width:33%" | Name:
+|-
+| A place to record Ship Hull Size, Hull Configuration, whether or not this is Military or Civilian design, and any Quarks regarding the ship. This can also include custom designs, for example, a Lepidoian Battle Cruiser instead of just 'Battle Cruiser'. || This is a place to record how many Hard Points, Bays, and Customization Slots the ship has. || Every ship has to have a Name. 
+|-
+|}
+
+== Hull Sizes ==
+
+The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. These secondary attributes may be modified by either the 6 Core Ship Attributes, [[Space_Ships#Hull_Configurations|Hull Configuration]], or [[Ship_Equipment|Ship Equipment]], but their foundation starts with the Hull Size. Hull Size also determines the '''Average Base Price''' of the craft.
+
+{| class="wikitable" style="text-align:center;width:99%"
+|+ Space Craft Sizes
+! rowspan="2" | Size
+! rowspan="2" | Tracking DC<br />(Size Mod)
+! rowspan="2" | Detection <br />DC
+! rowspan="2" | Battle <br /> Damage
+! rowspan="2" | Sq ft /<br />Num of Squares
+! rowspan="2" | Pass.<br />Cap.
+! rowspan="2" | Avg.<br /> Weight
+! rowspan="2" | Cargo <br />Capacity
+! rowspan="2" | Cust. /<br />Bonus
+! colspan="3" | Military Ship
+! colspan="3" | Civilian Ship
+|-
+! Cost /<br > Procure Diff
+! Hard<br /> Points
+! Number<br />of Bays
+! Cost /<br > Procure Diff
+! Hard<br /> Points
+! Number<br />of Bays
+|-
+|Colossal|| 8 (-2) || 6 || 5 || ~512,000+ ft / ~1,024 sq || 2000 || ~65,536 Tons || 65,000 Units || +3 ||  2.9 Billion / 4 || 10 || 8 || 972 Million / 4 || 8 || 10 
+|-
+|Gargantuan|| 8 (-2) || 7 || 4|| ~128,000+ ft / ~256 sq || 500 || ~16,384 Tons || 16,000 Units || +2 || 972 Million / 3 || 9 || 7 || 324 Million / 3 || 7 || 9 
+|-
+|Huge|| 9 (-1) || 8 || 4 || ~32,000+ ft / ~64 sq || 120 || ~4096 Tons || 4,000 Units || +2 || 324 Million / 3 || 8 || 5 || 108 Million / 2 || 6 || 8  
+|-
+|Large|| 9 (-1) || 9 || 3 || ~8,000+ ft / ~16 sq || 32 || ~1,024 Tons || 1,000 Units || +2 || 108 Million / 2 || 7 || 4 || 36 Million / 1 || 5 || 7 
+|-
+|Medium|| 10 (0) || 9 ||3 || ~4,000+ ft / ~8 sq || 16 || ~512 Tons || 510 Units || +1 || 36 Million / 2 || 6 || 3 || 12 Million / 0  || 4 || 6 
+|-
+|Small|| 11 (+1) || 9 || 2 || ~2,000+ ft / ~4 sq || 8 || ~256 Tons || 250 Units || +1 ||  12 Million / 1 || 6 || 2 || 4 Million / 0 || 4 || 5 
+|-
+|Tiny|| 11 (+1) || 10 || 2 || ~500+ ft / ~1 sq || 4 || ~64 Tons || 64 Units || +1 || 1.9 Million / 1 || 5 || 1 || 640,000 / 0 || 3 || 4 
+|-
+|Diminutive|| 12 (+2) || 11 || 1 || ~125 ft / 16 per sq || 2  || ~16 Tons || 16 Unit || +0 || 480,000 / 1 || 3 || 0 || 160,000 / 0 || 2 || 2 
+|-
+|Fine|| 12 (+2) || 12 || 0 || <75 ft / 256 per sq  || 1  || ~4 Tons || 4 Units || +0 || 240,000 / 0 || 2 || 0 || 80,000 / 0  || 1 || 1 
+|-
+|}
+
+{| class="mw-collapsible mw-collapsed wikitable" style="width:99%"
+! Table: Column key for Space Craft Size table.
+|-
+|
+;Size: The '''Size Modifier's''' act like they do for creatures of the same size. They either add or take away from the total Tracking DC. This effects combat as well. A larger ship may have a harder time hitting a smaller ship. Learn more about ship combat [[Combat#Space_Combat|here]]. Size is also what predetermines the majority of the base stats of the ship.
+|-
+|
+;Tracking DC:  A ship's Tracking DC is 10 + (Tactical Mobility + Shield Mod) - Structure Mod +/- Size Mod.
+|-
+|
+;Detection DC: This determines how hard it is for other ships to '''see''' the ship. If the Detection DC is at or below another ship's Passive Sensor Score, then the ship is visible to their sensors and its location and basic information are known.
+|-
+|
+;Battle Damage: This is how much damage a ship can take before it becomes disabled. A ship can only receive one Battle Damage a round unless a critical happens. Also, with two rounds of successful Repair checks done by an Engineer, the Battle Damage can be repaired. The Repair DC is determined by the Battle Damage Die. More on that in the combat rules.
+|-
+|
+;Sq ft: Anything more than ~1,024,000 Square Feet in size is considered Super Colossal and can only be a ship with exceptions from the GM. It would be considered a station. Even if the station has the ability to move around in the universe, no craft of that magnitude could perform Faster Than Light travel without help from external sources. Also, attacking a ship or structure of that size would be considered as attacking a station, and thus different modifiers apply.
+|-
+|
+;Passenger Capacity: (Pass. Cap.) This is not a hard limit. But the default number of people the ship's life support can handle is permanent. This number can be raised with passenger bays. 
+|-
+|
+;Cargo Capacity: The '''Cargo Capacity''' is measured in Cargo Units. This is a generic way to loop both volume and weight into a single unit. This represents the maximum extra volume and weight a ship can carry. Each Unit is 100 Lbs and has an average volume of 1x1x1ft. Exceeding this unit amount will overburden the ship. This will cut Combat Speed in half. The maximum a ship can actually carry is twice the Unit amount. However, that is if there are no passengers other than the necessary crew. As every spare room and every hallway would be filled with cargo containers. This can be increased with cargo bays.
+|-
+|
+;Cust. Bonus: '''Customization Bonus'''. This is a bonus added to the total '''Customization Points''' for a ship. Customization points are determined by Tech Level and Crafter level. Although Hull Configuration can also change the number of Customization Points, usually by removing some. They allow for [[Ship_Equipment#Ship_Upgrades_.26_Modifications|Upgrades and Modifications]] to be installed. Upgrades and Modifications usually require Bays or Hard Points. However, a Customization Point can satisfy this requirement. Items that expressly require a Hard Point or Bay cannot use a customization point. Examples of these items are [[Ship_Equipment#Ship_Weapons|Weapons]] and [[Ship_Equipment#Ship_Bays|Ship Bays]].
+|-
+|
+;Military vs Civilian Ships: Military Ship are more expensive and have more Hard Points in comparison to a Civilian ship of the same size. However, Civilian ships have considerably more Bays. 
+|-
+|}
+
+== Hull Configurations ==
+
+'''Hull Configurations''' are an attempt at giving a spacecraft a more specialized purpose. However, it is not a requirement for shipbuilding. A ship can have no specific Configuration and thus be a generic build. Below is a table with different Hull Configurations and their descriptions.
+
+{| class="wikitable" style=" margin-left: 10px; width: 95%;"
+|+ Table: Hull Configurations
+|- 
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Barges:
+<div class="mw-collapsible-content">
+: The 'pack mule' of the galaxy. The barge is the most common cargo transport vessel. Many different corporations create different configurations for hauling everyday goods, people, or extremely volatile substances. Many young adventurers found themselves starting out aboard a barge. Not the most heroic place to start out with, but there is sort of a romantic underdog appeal to the barge. This is probably helped by the fact that they can be found in every corner of the galaxy, making them a dime a dozen, and the Hull is pretty customizable. This attracts all sorts of different types of people. Many a raider or pirate uses a heavily modified Barge Hull as a weapon against other ships of its kind in lawless space.
+:*Average Size: Medium (Small - Large)
+:*Average Cost / Procure Diff: 12 Million / 0 
+:*Dis-Advantages: -2 to Engines, -1 To Weapons, -2 Hard Points, -1 Bay (Taken up by an extra Cargo Space)
+:*Advantages: Cargo Space is one ship size modifier higher. Super common Bonus -1 to Procure Diff and 50% less time/cost to repair. 
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Battle Cruisers:
+<div class="mw-collapsible-content">
+: A standard in most military fleets, these larger, heavier counterparts to the Cruiser are powerful, heavy-hitting machines of war. While BattleShips dominate the heavens with an impressive presence of power. The Battle Cruiser is what gives a military its flexibility. Smaller and generally faster, these ships are used by most militaries as a counter to smaller ships and as a less expensive way to deal with small-scale pirates and bandits.  
+:*Average Size: Large
+:*Average Cost / Procure Diff: 120 Million / 3 
+:*Dis-Advantages: Cargo Capacity is one size lower, Passenger Cap is 8, -5 Attribute Points, -1 Customization point (Minimum 1)
+:*Advantages: +2 Electronics, +2 Engines, +1 Non-Weapon Hard Point, Can pick one Ship Function to have by default without taking up Customization Points.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Battle Ships:
+<div class="mw-collapsible-content">
+: These terrifying ships are massive war machines and are usually the backbone of militaries. These machines can be used to fight other Battle Ships and to group up to take on larger objects. Considered necessary for any large-scale conflict in space, these expensive, massive machines are a must-have.
+:*Average Size: Huge (or in some cases Gargantuan)
+:*Average Cost / Procure Diff: 384 Million / 4 
+:*Dis-Advantages: Cargo Capacity and Passenger Cap is one size smaller, -5 Attribute Points, -1 Customization Point (Minimal 1)
+:*Advantages: +2 Weapons, +1 Structure, +1 Engines, Gains one more Ship Function of your choice for free. +1 Hard Point (Weapon Only)
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Capital:
+<div class="mw-collapsible-content">
+: So massive they are sometimes mistaken for stations, these epic craft seem to defy logic as they effortlessly float in the heavens. Any military or civilization attempting to prove itself to others may build these behemoths. Usually Capital ships are not used to fight directly in combat but as a base of operations and control. Thus, some consider them nothing more than propaganda and expensive fear machines. Most Capital ships are used as Command ships or Super Carries, not for ships but for soldiers. They are an excellent solution to the mass logistic problems of larger militaries. 
+:*Average Size: Colossal
+:*Average Cost / Procure Diff: 3.2 Billion / 5 
+:*Dis-Advantages: -5 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimal 1)
+:*Advantage: +1 Bays, +2 Sensors, +2 Electronics. Passenger capacity is: 864. These ships have a special Position called '''Supreme Commander'''. A command can utilize its leadership bonus for all ships under its control in that solar system. This cannot double as the ship captain. Choose any one Ship Function to be installed at no cost.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Carriers:
+<div class="mw-collapsible-content">
+: Carriers are the ships that make a large fleet mobile. It can also provide flexibility in combat by deploying an array of ship and drone types. Most Carriers are designed to hold and maintain smaller ships. But some are designed for troop deployment to stations and planets. There are also Super Carriers, which are Capital-class Carriers that can hold larger numbers of ships or people and also double as Command Ships.
+:*Average Size: Gargantuan (Huge - Colossal)
+:*Average Cost / Procure Diff: 1.2 Billion / 4
+:*Dis-Advantages: -5 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimal 1)
+:*Advantages: +2 Sensors, +2 Electronics, Built-in Repair Facility for ships of two sizes and smaller. 
+:*Misc: Can carry, deploy, and repair ships two sizes or smaller. If avg. The size of Gargantuan is such that it can hold up to two 6 large ships by default without any additional hangar bays. (12 Medium, 24 Small, 96 Tiny, 384 Diminutive, 1,536 Fine). Additional Hanger Bays or Drone Bays grant a +1 ship count. If more bays are added, the ship can start to hold a single ship of only 1 size smaller. This ship has a special '''Field Commander'''. A Field Commander can provide his or her leadership bonus to all ships under his or her care. (Command bonuses do not stack; take which one is larger)
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Cruisers:
+<div class="mw-collapsible-content">
+: A smaller, lightweight version of the Battle Cruiser. However, the purpose is the same. They are flexible combat vessels. Common in both Military and police forces, and is usually seen as the first response to aggressive outlaws. Considered by police forces as their solution to deal with the more deadly pirates, gangs, and other criminal organizations. The military, however, sees these as inexpensive portal/recon/scientific/experimental craft. 
+:*Average Size: Medium
+:*Average Cost / Procure Diff:  40 Million / 2 
+:*Dis-Advantages: -3 Attribute Points
+:*Advantages: +1 Hard Point or +1 Bay (Pick one), +2 Engines or +2 Electronics (Pick one). Pick a Ship Function for this ship to have by default for free.
+
+: There are also non-military applications for hulls similar to cruisers. Everything from a VIP's personal transportation to a luxury liner. The rich would much rather distance themselves from a fancy customized barge for their travels. After all, anybody can afford one of those. Demilitarized older-model cruisers are often sold by militaries to other governments or individuals for a variety of reasons. And sometimes you may find that they are not so de-fanged as they are meant to be. 
+:*Average Size: Medium
+:*Average Cost / Procure Diff: 10 Million / 0 
+:*Dis-Advantages: -1 Structure, -1 Hard Point, -2 Attribute Points
+:*Advantages: +2 Engines, +2 Sensors. Passenger Bay is in a luxurious style and can accommodate up to 16 passengers. 
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Drones:
+<div class="mw-collapsible-content">
+: Drones come in all shapes, sizes, and uses. From military to personal hobbyists, these machines all have one thing in common. Some sort of A.I. and a connection to a central controller or computer system. The military has a wide range of uses, from complementing a ship's systems to serving as part of a Carrier fleet that can deploy swarms of drones to strike an enemy in coordinated attacks. However, many people have drones for personal use. It also helps that drones with self-defense A.I. are usually not illegal in most of the Ring, and thus many people use them to help deter outlaws.
+:*Average Size: Fine (Fine - Small)
+:*Average Cost / Procure Diff: 100,000 / 0*
+:*Advantage: Can be used without a pilot. Can be programmed to defend or attack a selected target.
+:*Dis-Advantages: -1 across all Attributes.
+:*Misc: Drone AI Module installed. Can be easily controlled by an AI system and can be deployed in masses to attack or defend. Swarm bonuses apply when 4 or more are part of a team. Swarm adds Tracking DC advantages against projectile attacks. Drones require a Drone Bay for deployment and control. Drones can also be designed to repair, mine, salvage, and retrieve.  
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Destroyers:
+<div class="mw-collapsible-content">
+These ships were meant to ask the question: "How much firepower can one medium ship truly have?" They are geared for a single task. A way to help counter smaller swarms of ships. While similar in size and speed to a cruiser, these ships are rarely seen in use by anyone except the military. They are designed to back a massive bunch for their size. Made on the cheap, considering their firepower, and have a minimalist crew. Squads of these craft are usually used to complement attack fleets that target smaller craft. The idea being that the Destroyer will be specifically fitted for smaller craft while still having the armor of a medium-sized craft.
+:*Average Size: Medium
+:*Average Cost / Procure Diff: 38 Million / 3 
+:*Dis-Advantages: Illegal to own even though it is a Medium-sized craft. Procure Diff +1, -3 Attribute Points, -1 Bay, Weapon Hard Points are geared for 'Small' weapon size. 
+:*Advantages: +2 Hard Points, All weapons are considered 'Gimbaled' +1 to Targeting for free. These ships do not take penalties for targeting smaller craft. 
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Dreadnoughts:
+<div class="mw-collapsible-content">
+: Dreadnoughts have an interesting history. It is believed that the precursors to the Dreadnought were super-heavy battleships designed as "Station buster". Stations had all the space for enhanced defenses and could take a long time to bring down by a fleet of Battle Ships. So to minimize the amount of forces committed to a single attack, a powerful energy cannon was developed. So powerful that the ships of the time had to be gutted to make room to house just a single one of these cannons. However, it was quickly discovered that these weapons also solved another problem. It allowed for a flexible planetary bombardment system. Before ships had to be fitted with weapons and charges specific to the planet and its unique environment (Air pressure, density, chemical structure, and weather patterns), the energy cannon could, on the fly, tweak these attributes, a feature originally designed to keep shields from changing to better deflect its powerful blast. The terror of seeing massive-scale death raining down from Gargantuan floating hulks of metal in the sky put fear into people who named the ships Dreadnoughts. 
+: Dreadnoughts have evolved over time to include taking out of other Dreadnoughts as well as Carriers and Capital ships. The more powerful weaponry at the time for taking out these ships was explosive force from Nuclear or antimatter, which produced radial explosions that were indiscriminate in who they affected. Dreadnoughts were the first mobile form of focus weaponry, which had the counterintuitive effect of bringing these larger-scale ships into everyday combat. 
+:*Average Size: Gargantuan (Huge - Colossal)
+:*Average Cost / Procure Diff: 3 Billion / 5
+:*Dis-Advantages: -2 Engines, -5 Ability Points, -4 Hard Points, -3 Bays.
+:*Advantages: Has a special super gigantic hyper focused energy cannon. This special weapon can target from 100x the distance of a Huge Weapon. And does 24d10 * 10 damage. However, it takes (1d4 + 2) - Electric Mod Rounds to re-fire. (Minimal 2) Firing this weapon also generates enormous heat and local radiation. Ships deal with this in different ways, but there is no way to cloak or otherwise stealth this ship. Also, warping cannot happen until the weapon has cooled down.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Fighters:
+<div class="mw-collapsible-content">
+: Similar to combat aircraft of the modern world, these machines fly through space instead of the atmosphere. Some can do both, however. Although they are usually only effective in one or the other. These ships usually have only a single pilot, supported by advanced A.I. These craft can deliver a massive punch when grouped. The general tactic is to swarm ships and use precision targeting or advanced electronics to disable and, in some cases, destroy the bigger target. Using numbers as a defense.
+:*Average Size: Fine - Diminutive
+:*Average Cost / Procure Diff: 480,000 / 1
+:*Dis-Advantages: -2 Structure, Passenger Cap is 1
+:*Advantages: +2 Engines. Gains the Feint Ship Function for free.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Frigates:
+<div class="mw-collapsible-content">
+: A common craft in the Ring. This spaceship is commonly used as a police craft and as VIP transportation if they are not rich enough to afford a Cruiser. Just like the Cruisers, you will find them being sold everywhere. 
+:*Average Size: Small (Small - Medium)
+:*Average Cost / Procure Diff: 4-36 Million / 0-2 
+:*Dis-Advantages: -1 to Weapons
+:*Advantages: +1 to Sensors. This super common craft is used for just about everything and thus 50% less cost/time spent on repairs. +1 Attribute Point
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Freighters:
+<div class="mw-collapsible-content">
+: When a Barge cannot do the trick Freighters take over. These are the industrial-scale cargo transportation ships. Although some have been converted into other things, such as massive traveling carnivals. Like barges, these can be converted to transport just about anything. 
+:*Average Size: Huge
+:*Average Cost / Procure Diff: 100 Million / 1
+:*Dis-Advantages: -3 Engines, -2 Attribute Points
+:*Advantages: All converted Cargo Bays provide double the space. +2 Bays. 16,000 Units or one size higher. If the ship is a Tech 3 ship, then it comes with the Beam Ship Function by default. This ship is a common work vessel found throughout the universe. It has a 50% reduction in cost and repair costs because it is mass-produced.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Industrial:
+<div class="mw-collapsible-content">
+: Factory in a can. These ships of various sizes are the backbone of the non-planetary or moon-based industry. This usually means mining and refining of asteroids but it is not always limited to that. These are must-haves for new settlers in a solar system who hope to use their home's resources to start a colony or terraform a planet. 
+:*Average Size: Large (Medium - Huge)
+:*Average Cost / Procure Diff: 12 - 108 Million / 0 - 1
+:*Dis-Advantages: -2 Engines, -2 Attribute Points, -3 Bays
+:*Advantages: The Ship has a free Industrial Facility and Refinery Facility. If this ship has a Tech 3 Core, then it also comes with Beam Ship Function for free. The ship also comes with the Grapple Function for free. 
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+;Shuttles:
+<div class="mw-collapsible-content">
+: Personal transport vehicles. The more versatile, the more expensive. The basic kinds can only fly from station to station. It can only accommodate two passengers. But the more advanced you get, the farther it can carry people to more and more different places. Such as planets, move around as a planet-side craft, or even go under oceans.
+:*Average Size: Tiny (Diminutive - Small)
+:*Average Cost / Procure Diff: 2 Million / 0
+:*Dis-Advantages: -2 Structure, -2 Electronics, -1 Hard Points
+:*Advantages: +4 Engines, +2 Sensors, Basic Auto Pilot installed, so no need for a Pilot (Auto Pilot A.I +1), +1 Passengers for Diminutive, +2 for Tiny, +3 for Small.
+</div>
+</div>
+|-
+|}
+
+== Ship Quirks ==
+
+Ship's can have Quirks about them. Similar in nature to a Character [[Quirks|Quirks/Flaws]], ships can have Quirks/Defects that can add more personality and uniqueness. Any adventurer is going to get some scars and bumps along the way, and his ship is no different. Over time, a ship may start to gain a personality in the eyes of the crew. 
+
+These can be 'earned' or given by the GM. Players with the right skills and equipment can, over time, remove most defects and quirks if they want.
+
+{| class="wikitable" style=" margin-left: 10px; width: 95%;"
+|+ Table: Quirks
+|- 
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Out Dated''':
+<div class="mw-collapsible-content">
+* Description: This ship is old and antiquated. Most people will find that it's only worthy of a scrap yard. Or perhaps a museum. The ship is more likely to gain other quirks. A ship with this quirk gets to pick another quirk and ignore its negative. This quirk is permanent.
+* Negative: It costs 25% less to buy, and you get 50% less if you attempt to sell it.
+* Positive: Choose another quirk and ignore its negative effect.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+
+''' Cranky ''':
+<div class="mw-collapsible-content">
+* Description: This ship's engines and internal components require some encouragement from time to time. A good bang here or smack there to get it to start functioning correctly. 
+* Negative: If the ship receives 2 Battle Damage in one round, roll for the second Damage and add the effect. The base DC is still 7, as the normal Critical rules apply, just add a second effect.
+* Positive: None
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+
+''' Falling Apart ''':
+<div class="mw-collapsible-content">
+* Description: Weathered by age or by neglect, this ship is falling apart. Sure, it runs, but for how long? It also looks like a pile of junk. Characters will be constantly on the lookout for the next broken component. 
+* Negative: 25% reduction of resale value. Every day at sea, the ship has a small chance of something breaking. There is a 20% chance something will go wrong. A percentile dice roll is used to confirm what it was.
+**1-10%: Superficial problem. The ship is just a little more bumpy/noisy than normal.
+**11-20%: A minor problem with the Engines. -1 to the engines until they are repaired.
+**21-30%: A minor problem with the Weapons. -1 to Weapons until repaired.
+**31-40%: A minor problem with the Structure. Some noticeable cracks form. Temporary -1 Hit die until repaired
+**41-50%: A minor problem with the Shields. -1 to Ship Shields.
+**51-60%: A minor problem with the Electronics. -1 to Electronics. On top of it, the lights flicker, and sometimes waste management doesn't work! Eks!
+**61-70%: A minor problem with Sensors. -1 to Sensors. Or sensor blimps often show up with things that aren't actually there. GM choice.
+**71-80%: A random minor problem with one of the bays of the ship. (Get a die equal to the number of bays and roll for which bay, or GM Choice). The Bay is disabled until repaired.
+**91-100%: Re-roll, except it's a major problem instead of minor. (If 90-100 simply re-roll until you land on a % that is not.)
+
+If the problem is minor, it requires no materials and 1 day of work with no FTL to repair. If the problem is major, it will require materials for repair. If there is no Engineering Bay, the ship will require a facility to assist with the repair. It still only takes 1 day of not FTL.
+* Positive: Because of the experience the crew must gain through repairing the darn ship all the time, the crew gains the Advanced Jerry Rigging Feat when making repairs to only this ship. 
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Infested ''':
+<div class="mw-collapsible-content">
+* Description: You do not know how or when, and frankly, you don't care. You just want these dam pests gone! They are smelly, annoying, and fur gets everywhere. And that's if you are lucky enough not to get the slimy kind of space pests. No matter the type of pests you have, they all have one thing in common. They know how to stay alive and, most notably, THRIVE on board a spaceship. They do this by living off the ship's systems. Some people swear they live solely off the frustrations and agony of the crew. 
+* Negative: You will have a hard time taking on passengers on your ship. All crew and passengers must make Constitution saving throws once a day with a DC 12. If they fail, they become [[Conditions#Nauseated|Nauseated]], and if they are already Nauseated, then they become [[Conditions#-_Sickened|Sickened]]. The condition has no specifications except that it lasts 1d4 days and can be cured by 1 day of full rest off the ship, or, if on board the ship, by 1 day of rest and a successful [[Medical#Treat_Disease_.28DC_15.29|Treat Disease]] check. Engineers have a -1 to repair checks on the ship.
+* Positive: The likelihood of a stowaway on your ship is nearly nil. And if one does decide to come on board, they have a -10 to stealth. Pests don't like sharing! Advantage to Communications(Sensors/Comms Officer Function) when dealing with pirates/smugglers. Not only must they sympathize with your problem, but they also don't want to even think about docking with your ship. Making stealing your stuff all that much harder.
+
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Bad Past ''':
+<div class="mw-collapsible-content">
+* Description: Whoever owned this ship deserves to be shot right next to the person who sold the ship to you. For some reason, this ship seems to bring out all the ugly when trekking around space. It seems like whoever owned this before you is wanted in all the systems, and not in a good way. If it's not pirates, then it's [[Character_Professions#Tracer|Tracers]], local police, or the military. Or some princess who just wants to know when she will see your ship docking in her port again. Take advantage of the situation or try to correct it; it's up to you. Almost assuredly, this ship's past is gonna get in your way, and likely when you least expect it.
+* Negative: Disadvantage to communications(Sensors/Comms Officer Function) in GM specific situations. The ship is commonly known along with its systems. People may attack you without provocation. 
+* Positive: It's likely that this ship can open as many doors as it closes. It's a 50/50% chance the person who knows your ship wants to kill you or pretend to be your friend, and then maybe kill you later.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Artificial Intelligence ''': 
+<div class="mw-collapsible-content">
+* Description: Wait, what? I thought that was illegal for space ships to have a fully aware AI computer linked to all ship systems. (Especially Weapons) Well, that may be one reason why the ship didn't tell you right away it was smarter than you. But now you know. Hopefully, it is nice and won't kill you. (Open the bay doors damit!) Nightmares aside, you are in a deep pile of crock! If authorities find out, they may as well put you in jail. Helping AI is breaking serious rules. On the other note, this ship is pretty awesome! I mean wow! You sure hope it doesn't turn on you! *gulp*.
+* Negative: Illegal! You cannot sell this through official markets. If you are caught, most civilizations completely outlaw AI with such freedom and power, with extremely harsh penalties. (This Negative cannot be ignored using the 'Out Dated' quirk) 
+* Positives: +1 to Sensors, Engines, Electronics. The ship can drive itself and pretend to be someone onboard. Oh, the possibilities! 
+* Misc: The ship has to have a personality. Below are some options. You can roll for these, or the GM can choose one. Or a blend
+** Optimist
+** Bully
+** Physio
+** Shy/Unsure
+** Overachiever
+** Whimsical
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Noisy ''':
+<div class="mw-collapsible-content">
+* Description: Something somewhere is loose. Maybe as simple as a loose screw or as complicated as an electromagnetic field is off alignment. Either way, this ship doesn't stop humming, whizzing, and ever now and then, for excitement, it jitters. You consistently think that's the last jitter it will make before the whole thing falls apart like a house of cards. But she is still flying straight. So whatever it is, it must not be important. Annoying as hell but not important.
+* Negative: -2 for Boost Function Rolls.
+* Positives: None
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Battle Scars ''':
+<div class="mw-collapsible-content">
+* Description: Like a painting, the hull of your ship speaks a thousand words. It seems like each panel tells a story of great adventures and glorious conquests. Or at the very least, oh my gosh, look how close we got to being vaporized! The first option definitely sounds better in a bar! 
+* Negative: -1 to Detection DC and +1 to Repair DC for Battle Damage.
+* Positive: Advantage to Communications when using the [[Intimidate|Intimidate]] skill. And possible at the Spacebar while drinking up with locals.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Lucky ''':
+<div class="mw-collapsible-content">
+* Description: You don't quite know how, and thinking about it is likely a waste of time. But you guys always seem to get through some of the craziest scraps! Maybe this ship is just good luck!
+* Negative: None
+* Positive: One per day, a player can re-roll a check that uses one of the ship's Attribute modifiers.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Cursed ''':
+<div class="mw-collapsible-content">
+* Description: You don't know why... and that's why you wish you did, but ever since you've been on this ship, things just suck!
+* Negative: Once per day, negate the first Crit that is rolled when rolling for something that uses the ship's Attribute modifiers.
+* Positive: None
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' Expirmental ''':
+<div class="mw-collapsible-content">
+* Description: The ship is brand new. Almost too new! The manufacturer apparently hasn't worked out all the kinks yet! Luckily, they don't care! And they see you as the sacrificial... rrr I customer they are looking for. This could be a government's attempt at a new technologically advanced ship or simply a corporation's latest product. Either case it you are the beta tester.
+* Negative: Once per day, roll a d6. 1: Engines, 2: Weapons, 3: Structure, 4: Shields, 5: Electronics, 6: Sensors. Whatever it lands on for that day, the Attribute Value is a 10. An Engineer must repair it in order for this to go away. The Engineer can take 20 to automatically succeed. Otherwise, the DC is 12 + Tech Level + Hull Size. 
+* Positive: If the Engineer chooses to repair the issue, if they critically succeed, they provide a bonus to the broken Attribute Score equal to their Intelligence Modifier.
+</div>
+</div>
+|-
+|}
+
+== Space Ship FTL Drive ==
+
+'''FTL''' is short for '''Faster Then Light'''. The FTL drive is one of the most important aspects of a ship. Without them conquering or exploring the galaxy would be impossible. However, this aspect of the ship doesn't help much in the terms of combat. The better an FTL drive the faster a ship can get to its destination. They can also make it harder for enemy ships to track or pull your ship out of FTL. 
+
+FTLs have a Range rating and a Speed rating. Ranged its based on the distance to the destination and is categorized in four ranges. Small, Medium, Large, Extreme (Because the galaxy is extremely big). Speed is incremented by a Warp factor. Warp 1 through Warp 10. For more information about Range, Warp Factors and the hazards of space travel please review the [[Transportation|Transportation]] rules.
+
+FTLs are rated by Tech Level. You cannot put an FTL of a higher tech level in a ship with a lower tech level Core. Each ship comes standard with a basic FTL for that Tech Level. This should always be the Jump drive.
+
+{| class="wikitable" style=" margin-left: 10px; width: 95%;"
+|+ Table: Faster Then Light Drives
+! colspan="15" | Tech Level 1
+|- 
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Assisted Jump Drive'''
+<div class="mw-collapsible-content">
+:* Description: This system allows the ship to work with an external jump gate station to jump the ship to its destination. The Jump sends the ship at Warp 10 speeds up to Medium distances. However this can only work with the assistance of a jump gate.
+:* Distance Rating: Medium 
+:* Warp Factor: 10+
+:* Price: $50,000 / 0
+:* Durability: 0
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Warp Drive (The Hopper)'''
+<div class="mw-collapsible-content">
+:* Description: This system is the most common form of FTL travel. Most every space fairing civilization has made a variation of the warp drive. The Warp Drive creates a protective energy bubble and then shots a massive amount of positive energy in front of the ship and negative energy out the rear of the ship. These energy blasts stretch space-time by shrinking it in front of the ship and expanding it behind the ship. The ship has to first accelerate to roughly 5% the speed of light as the ship need to move slightly itself while space itself also moves the ship within its bubble. The lower tech level version of the Warp Drive, only capable of speeds of Warp 1 through 4, is called 'The Hopper'. This is because a steady stream of energy is impossible too achieve as the energy would have to be traveling faster then the speed of light to always be at the right position. In order to get around this issue the ship 'hops' from one burst of energy too the next.
+:* Distance Rating: Medium 
+:* Warp Factor: 1-4
+:* Price: $150,000 / 0
+:* Durability: +2
+</div>
+</div>
+|-
+! colspan="15" | Tech Level 2
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Assisted Advanced Jump Drive'''
+<div class="mw-collapsible-content">
+:* Description: This is Jump Drive system is similar too its Tech 1 counter part. But now can travel Long and Extreme distances. However it still can only do so with the assistance of a jump gate. 
+:* Distance Rating: Large 
+:* Warp Factor: 10+
+:* Price: $100,000 /0
+:* Durability: 0
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Warp Drive (The Skimmer)'''
+<div class="mw-collapsible-content">
+:* Description: This Warp Drive is the next technological evolution of Warp Drive technology. Similar to its Tech 1 counter part but now with advances in its sub-light propulsion systems and advanced energy distribution systems new speeds can be achieved. This Drive can now go up to Warp 7. This system is called the skimmer because it achieves these speeds by going at near 50% light speed using sub-light engines. This allows it to skim over the nearly shrunken space in front of it eventually leading to that space being considered behind the ship. This space sense it very recently shrunk can be expanded with less energy faster. Thus helping the ship go at faster speeds. Also the warp engine is capable of bursting at a faster frequency. 
+:* Distance Rating: Large 
+:* Warp Factor: 1-7
+:* Price: $300,000 / 0
+:* Durability: +1
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Slip Stream Drive'''
+<div class="mw-collapsible-content">
+:* Description: This uses a new concept of FTL. It makes a small tear in space that a ship can 'slip' into. The ship is protected by a similar 'bubble' of space that is made for a Warp Drive while the pressures felt within this sub-space pushes unevenly on the ship. The pressure is much greater where the tear is. Now the ship rapidly moves away from the tear. In Sub-Space objects are not limited by the Speed of Causality (The Maximum Speed of Light) meaning the ship zooms across a fast amount of space relative too its position in subspace. The ship then produces another tear and bursts its way out into normal space. Both the entering and existing of this tear causes a lot of excess radiation that can be seen for millions of AUs. The top speed of this is Warp 6. The act of making a Tear requires 30 seconds at which time a ship cannot cloak and it's easier to target. Opponents get a moderate +2 bonus. The same goes for after leaving a tear. Tracking where a ship went after entering a Tear is fairly easy. +4 to Scanning when traking a ship after it has entered a Tear.
+:* Distance Rating: Large
+:* Warp Factor: 1-7
+:* Price: $450,000 / 1
+:* Durability: +3
+</div>
+</div>
+|-
+! colspan="15" | Tech Level 3
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Personal Jump Drive'''
+<div class="mw-collapsible-content">
+:* Description: Much like its lower level counter parts. Except now this system can make Warp 10 jumps on its own. As long as its a Small or Medium distance. It only preform a single jump before having to re-fuel.
+:* Distance Rating: Medium (With assistance Large)
+:* Warp Factor: 10+
+:* Price: $1,000,000 / 0
+:* Durability: 0
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Warp Drive (The High Pulse Drive)'''
+<div class="mw-collapsible-content">
+:* Description: Capable of speeds up to Warp 8 this is too many the most advanced version of Warp Drive achievable. The High Pulse Drive gets its name because advances in near loss less energy teleportation allow for the constant stream of energy to be placed in the correct positions as the ship travels. Reducing the burst effect to a frequency in the billions. Adjusting Warp speed is extremely smooth and allows for the Drive to 'jump' into high Warp almost instantly and just as quickly 'jump' out.
+:* Distance Rating: Large 
+:* Warp Factor: 1-8
+:* Price: $3,500,000 / 1
+:* Durability: +2
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Phase Shift Drive'''
+<div class="mw-collapsible-content">
+:* Description: Shifting the ship out of phase with the rest of the Universe this ship can easily accelerate as if it didn't have mass. This would appear to only make a ship goes at the speed of light if it wasn't also for utilizing Slip Stream Drive technology. This allows the ship to enter and exit sub-space with ease and allows for a faster total speed of Warp 7. Just like a Slip Stream drive except it now only takes 6 seconds or two combat turns to make a tear and enter it. The same modifiers still apply and a ship can still not cloak for the 2 turns before entering and after exiting. 
+:* Distance Rating: Large 
+:* Warp Factor: 1-7
+:* Price: $5,000,000 / 2
+:* Durability: +6
+</div>
+</div>
+|-
+! colspan="15" | Tech Level 4
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Personal Advanced Jump Drive'''
+<div class="mw-collapsible-content">
+:* Description: Much like the Jump drives before it except this can be used to itself at Warp 10 to distances up to Large. 
+:* Distance Rating: Large (With assistance Extreme)
+:* Warp Factor: 10+
+:* Price: $10,000,000 / 1
+:* Durability: 0
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Expert Warp Drive'''
+<div class="mw-collapsible-content">
+:* Description: The most advanced and complicated Warp device ever designed. The fastest way to travel except through a Worm Hole or Advanced Jump Drive this personal Warp Drive can send a ship up to speeds of Warp 9.
+:* Distance Rating: Extreme
+:* Warp Factor: 1-9
+:* Price: $15,000,000 / 2
+:* Durability: +3
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Advanced Slip Stream Drive'''
+<div class="mw-collapsible-content">
+:* Description: This system uses the Jump Drive mechanics combined with Phase Shift technology and Slip Stream Tear technology to make the most stealthy form of Space Travel. Tears in space are made within the ship itself much like a Personal Jump Drive works. The Phase Shift system allows a ship to be one second at a stand still and the next accelerating to near the speed of light only to Jump itself into a tear which is projected within the front part of the ship. Sensors will find it extremely difficult to detect the Jump Into subspace sense the ship is mostly out of phase when its done. The tear is almost completely concealed by the ship. The tear when existing still gives away the ships destination however the ship itself comes back into normal space out of phase and thus stealth by default. A ship can now enter a Tear in just 1 turn. Although the cloak has to be deactivated. It can be reactivated only 1 turn after exiting the tear. 
+:* Distance Rating: Extreme
+:* Warp Factor: 1-8
+:* Price: $25,000,000 / 3
+:* Durability: +8
+</div>
+</div>
+|-
+|}
+
+A ship can have more then 1 FTL. However a secondary FTL always takes up 1 Bay and 1 Hard Point and cannot be installed using a Customization Point.
+
+== Ship Positions ==
+
+There are roles that crew members take on that are required for the ship to function to its fullest. Automated systems can only do so much. These different roles are called '''Ship Positions''' and they can unlock [[Space_Ships#Officer.2FShip_Functions|Ship Functions]] that would otherwise be unavailable. 
+
+There are 2 main positions. Tiny Hull size or smaller ships can combine these positions without taking penalties. However, larger ships require additional positions to be filled by a dedicated person. To learn more about how ship positions effect combat read the [[Combat#Space_Combat|Ship Combat]] section of the [[Combat]] page.
+
+The 2 main positions are:
+* [[Helm Officer|'''Helm''']]: (Engines) Pilots the ship. Helps to determine the ship's Tactical Mobility.
+* [[Weapons Officer|'''Weapons''']]: (Weapons) Operates the ships Hard Points. Can make a ship's weapons more effective. 
+
+There are also 5 other positions that are noteworthy.
+* The [[Captain Position|'''Captain''']] is the leader of a ship can use there Leadership skills to help the crew accomplish their tasks.
+* The [[Comms Officer|'''Communications''']] (Sensors) monitors the sensors of a ship and controls all incoming and outgoing transmissions.
+* The [[Chief Engineer|'''Engineer''']] (Structure) is in charge of ship systems and maintenance. They help make sure a ship holds it together during the chaos and strain of combat.
+* The [[Science Officer|'''Science''']] (Electronics) leads  a ship's Science and Technology division. They can assist in different roles including hacking any ships and finding weaknesses.
+* The [[Medical Officer|'''Medical''']] is in charge of the health of the crew. They can ensure the bridge crew is not impeded during combat.
+
+More positions can be made up by the GM for the purpose of storytelling and gameplay. As long as those roles are clear and the Players are aware of them before gaming.
+
+== Officer/Ship Functions ==
+
+Ship Functions are special abilities much like Skills for a Character. Some are meant for combat while others for day to day use. Some functions are standard on all ships. While others require a Ship Upgrade and/or a Feat from a Character. Functions are listed by the primary position they are associated with. Some Functions can be used by different Crew members although not always to its fullest. 
+
+{|
+|+ '''Ship and Officer Functions'''
+| valign="top" |
+; Standard Functions
+----
+* Standard Functions All Crew Can Do:
+** [[Change Position]]: (N/A) This allows a crew member to change there current Officer role or ship position.
+* [[Captain Position|'''Captain''']]:
+** [[Give Command]]: (Officer's Charisma) The Captain gives a directive and attempts to assist a crew member in following that directive.
+** [[Encourage Crew]]: (Officer's Charisma) The Captain gives a rousing but quick speech to encourage and focus the crew.
+* [[Science Officer|'''Science Officer''']]:
+** [[Boost|Boost]]: (All except Structure) An action that increases the output of that certain Attribute for the rest of the round or the following one.
+** [[Hack|Hack]] / Counter Hack: (Electronics) Used to attack and disable one of the 6 Core Systems of a target ship.
+* [[Comms Officer|'''Communications/Sensor Officer''']]:
+** [[Scan|Scan]]: (Sensors) The ability to search for or study an object or objects in space.
+** [[Hack|Hack]] / Counter Hack: (Electronics) Used to attack and disable one of the 6 Core Systems of a target ship.
+* [[Helm Officer|'''Helm''']]:
+** [[Fly Offensively/Defensively]]: (Tactical Mobility/Officer's Pilot Rank) Perform a ship maneuver designed to help the ship's defense or offense.
+** [[Close/Widen Distance]]: (Engines/Officer's Pilot Rank) Perform a ship maneuver that attempts to gain distance between a ship or close the gap.
+** [[Pursue/Intercept]]: (Engines/Officer's Pilot Rank) A ship maneuver that attempts to cut off a ship or race it to a particular point in space.
+** [[Ram|Ram]]: (Engines) The ability to drive a ship directly into another in such a way as to cause the most damage to the opponent ship and the least to itself.
+* [[Weapons Officer|'''Weapons Officer''']]:
+** [[Fire]]: (Weapons) The basic attack action. This uses the offense hard points of a ship to do battle damage to 1 or more targets.
+** [[Bombard|Bombard]]: (Weapons) A tactical maneuver where the weapons are concentrated on a target.
+* [[Chief Engineer|'''Chief Engineer''']]:
+** [[Repair]]: (Officer's Craft Rank, Ship Bays) This is a repair check against Battle Damage dealt to the ship in an attempt to remove the damage.
+** [[Boast|Boast]] (Engines Only): An action that increases the output of Engines for the rest of the round or the following one.
+** Counter [[Hack|Hack]]: (Electronics) An Engineer can attempt to stop a hacker from gaining access to the ship systems, but in there, the current position cannot do hacking.
+* [[Medical Officer|'''Medical Officer''']]:
+** Medical: (Officer's Medical Rank, Medical Bay) This is the use of Medical skill.
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+; Advanced Functions
+----
+* Advanced Functions All Crew Can Do:
+** [[Beam|Beam]]: (Electronics) A semi-instant form of transportation where matter is transformed into energy and sent to a new location where it is converted back to matter.
+* [[Captain Position|'''Captain''']]:
+** [[Commanding Presence]]: (Officer's Charisma) This is granted by a Feat and allows the Commander to provide a passive bonus equal to ½ their Charisma score, rounded up to the player's rolls.
+** [[Direct Assistance]]: (Officer's Charisma) The Captain takes a more direct administrative approach to leadership.
+* [[Science Officer|'''Science Officer''']]:
+** [[Cloak]]: (Electronics)  Cloaking implies some form of stealth technology designed to fool Sensor Scans.
+** [[Crypto|Crypto]]: (Electronics) : A way to send or receive protected communications. Similar to Decipher Script.
+* [[Comms Officer|'''Communications/Sensor Officer''']]:
+** [[Sensor Spoofing / Decoy Projection]]: (Electronics/Sensors) The Comms Officer projects false signatures or chaff decoys.
+** [[Crypto|Crypto]]: (Electronics) A way to send or receive protected communications. Similar to Decipher Script.
+** [[Jam|Jam]]: (Electronics) Designed to target a specific component of an opponent's Sensor Array. Either targeting scanners or other devices and keeping them from functioning.
+* [[Helm Officer|'''Helm''']]:
+** [[Emergency Evasive Thrusters]]: (Engines) Executing sudden, violent evasive maneuvers to avoid threats.
+** [[Feint|Feint]] (Engines, Advanced Flying Defensively) A maneuver meant to fool enemy sensors and pilots.
+** [[Grapple|Grapple]] (Engines) Different kinds of ways to 'grab' a ship and hold or even move its position.
+* [[Weapons Officer|'''Weapons Officer''']]:
+** [[Concentrated Fire]]: (Weapons) This is a bonus to Targeting Specific ship systems.
+** [[Defensive Fire]]: (Weapons)  This allows the Weapon’s Officer to turn an active weapon system into a point defense system against Missiles and ships 4 sizes smaller or smaller.
+* [[Chief Engineer|'''Chief Engineer''']]:
+** [[Overclock Core]]: (Structure/Core) The Chief Engineer intentionally overclocks the reactor to temporarily boost ship systems.
+** [[Cloak|Cloak]]: (Electronics)  Cloaking implies some form of stealth technology designed to fool Sensor Scans.
+** [[Grapple|Grapple]]: (Engines) Different kinds of ways to 'grab' a ship and hold or even move its position.
+* [[Medical Officer|'''Medical Officer''']]:
+** [[Resuscitation/Life Support]]: (Special Bay) Bring someone back from recent death. (Less than 10 minutes)
+** [[Long/Short Automated Care]]: (Officer's Medical Rank, Medical Facility) Similar to long-term care from Medical Skill, but done automatically.
+|}
+
+The modules that are installed that provide the Advanced Functions take up either a Bay or a Hard Point, and in some cases both.
+
+== Space Ship Accessories Slots ==
+
+Space Ship Accessories are all the extra components that go into the ship after the 6 Core System Attributes and the default Hull/Configuration components have been installed. These are all the item's that require Customization Points and/or Hard Points, Bays. These are Weapons, Bays, Ship Function Modules, and other Upgrades. All of these items can be found on the [[Ship_Equipment|Ship Equipment]] page.
+
+The number of Customization Points is determined by Ship Tech Level and Hull Size, and the number of Hard Points and Bays is determined by the Hull Size. However, Hull Configuration may also affect these stats.
+
+{| class="wikitable" style="float:right; margin-left: 10px;"
+|+ Space Craft Hard Points and Bays
+! rowspan="2" | Size
+! rowspan="2" | Weapon/Bay Size
+! rowspan="2" | Customization<br />Slot Bonus
+! colspan="2" | Military Ship
+! colspan="2" | Civilian Ship
+|-
+! Hard<br />Points
+! Number<br />of Bays
+! Hard<br />Points
+! Number<br />of Bays
+|-
+|Colossal|| Huge || +3 || 10 || 8 || 8 || 10
+|-
+|Gargantuan|| Huge || +2 || 9 || 7 || 7 || 9
+|-
+|Huge|| Large || +2 || 8 || 5 || 6 || 8
+|-
+|Large|| Large || +2 || 7 || 4 || 5 || 7
+|-
+|Medium|| Medium || +1 || 6 || 3 || 4 || 6
+|-
+|Small|| Medium || +1 || 6 || 2 || 4 || 5
+|-
+|Tiny|| Small || +1 || 5 || 1 || 3 || 4
+|-
+|Diminutive || Small || +0 || 3 || 0 || 2 || 2
+|-
+|Fine || Small || +0 || 2 || 0 || 1 || 1
+|-
+|}
+
+=== <u>Customization Points</u> ===
+
+[[Ship_Equipment#Ship_Upgrades_.26_Modifications|Ship Upgrades and Modifications]] may use Customization slots along with Bays or Hard Points. However items that exclusively require a Hard Point or Bay such as [[Ship_Equipment#Ship_Weapons|Weapons]] or [[Ship_Equipment#Ship_Bays|Ship Bays]] cannot use Customization Points.
+
+=== <u>Hard Points</u> ===
+
+Hard Points are communally referred to as the locations that weapons are deployed. However they can also mount a number of other external devices. Such as a Jamming Array, Grappler, Extended Sensor Array, Target Enhancers, Target Jammers etc... More information on Ship Weapons can be found in the [[Ship_Equipment#Ship_Weapons|Ship Weapons]] page. The number of hard points as well as the size of the weapon the hard point can support is shown on the chart too the right.
+
+=== <u>Bays</u> ===
+
+Bays are empty spaces within the hull of the ship that can be customized for certain uses. A Bay can be converted into facilities for example: Science Bay or Medical Bay. The facilities add additional services that the ship can provide to its crew.. given that someone has the necessary skills to operate them. Bays are sometimes required for certain upgrades. More information on Ship Bays in the [[Ship_Equipment#Ship_Bays|Ship Bays]] page.
+
+=== <u>Upgrades & Modifications</u> ===
+
+Ships can have modifications installed in the form of System Upgrades. Ever statistic of a ship from the 6 Core.System.Attributes to all Secondary Stats can have System Upgrade installed. These can be installed by a Character with the correct Craft skill or simply paid for. A list of System Upgrades can be found on the [[Ship_Equipment#Ship_Upgrades_.26_Modifications|here]].
+
+== Space Stations ==
+
+Space Station's are defined as any artificial construct in space that has no Faster Then Light drive and whose priority is not movement and thus its sub-light engines are designed more for keeping the object in orbit, stationary or emergency movement. It doesn't have to support life to be a station as it can have other purposes. Anything above 1,024,000 Square Feet cannot have an FTL without special exceptions and thus are by default considered Space Stations. Any Station that is ~1,024,000 Sq FT or larger are broken up into parts. Each part having the minimum Hit Points of a Colossal Hull Size craft.
+
+To determine other stats such as number of people the Station could support, or Hard Points and Bays follow the pattern laid out by the Hull Size for Ships. The number of Hard Points is the same but the number of Bays is +1. Also Stations do not have to all have Huge Weapons mounts. Instead it can mount different sized weapons in order to defend against different size ships. A Huge Hard Point can hold 2 Large Weapons, 3 Medium Weapons, 4 Small Weapons. If the Station is ~1,024,000 Sq FT or larger not all of its Weapons can target a craft at a time only 1/2.
+
+To determine how many lives can be supported on a Station. Take its size and compare it to the amount of people on a similar Hull Size and add a zero. This is because the FTL, sub light Engines and all the supporting systems take up a large amount of space. Also this assumes that at least halve the spare Bays are for personnel. If the Station is larger then any examples in the follow the pattern to estimate the possible number of people.
+
+== Ship Crafting ==
+
+=== Designing and Building A Custom SpaceShip ===
+
+Here are some guidelines for building and designing SpaceShips. This is useful when designing a new SpaceShip Character Sheet. 
+
+# Determine the Ship Tech Level. If your Character is crafting the ship themselves, this is a hard requirement to determine first. Tech Level determines the ship's C.S.A. starting point amount, the maximum hull size, the number of customization slots it has, FTL Drive type, and can indirectly increase the ship's cost.
+# Determine its purpose and thus if it fits with any of the [[Space_Ships#Hull_Configurations|Hull Configurations]]. Hull Configurations may have certain requirements, such as size, so it is best to determine whether the Ship will follow a specific Hull Config.
+# Determine its [[Space_Ships#Hull_Sizes|Hull Size]].
+# Determine ship [[Space_Ships#The_6_Core_System_Attributes_of_Space_Ships|6 Core System Attributes]] and apply any Hull Configuration adjustments.
+# Determine if any of its Primary parts will be Masterworked or have a Classification Level. This affects the price, crafting time, and final 6 Core System Attribute scores.
+# Pick an [[Space_Ships#Space_Ship_FTL_Drive|FTL Drive]].
+# Review [[Ship_Equipment|Ship Equipment]] page.
+## Purchase Ship Hard Points and Bays.
+## Don't forget to purchase Hard Point Ammo!
+## Review [[Ship_Equipment#Ship_Function_Upgrades|Ship Function Upgrades]] keep in mind if your crew has access to Advanced Ship Functions or plans to in the future.
+## Review spending Customization Points where possible like for [[Ship_Equipment#Ship_Attribute_Upgrades|Ship Attribute Upgrades]] or [[Ship_Equipment#Ship_Accessories|Ship Accessories]]
+# With this information, the Player can record the [[Space_Ships#Secondary_Ship_Attributes|Secondary Ship Attributes]].
+# Optionally, review the [[Space_Ships#Ship_Quirks|Ship Quirks]] if you want extra flavor and theme to your Ship.
+
+=== Crafting Rules ===
+
+Ships are considered Structures. They require the following crafting skills: Craft Electronics, Craft Mechanics, and Craft Structure.
+
+Building a ship requires a Ship Yard. Making repairs to a ship can be done without being in a shipyard but the ship cannot be in FTL and it takes twice as long as it would normally take in a ship yard. A Docking Bay can also be used to repair a ship if the ship/station that has the Docking Bay also has a Industrial or Engineering bay.
+
+The materials costs are based on the finishing price of the ship not including any customizations or accessories unless you are also building those. 
+
+The time is based on the size of the ship.
+*Colossal: 36450 Days - Requires Super Heavy Ship Yard
+*Gargantuan: 12150 Days - Requires Super Heavy Ship Yard
+*Huge: 4050 Days - Requires Heavy Ship Yard
+*Large: 1350 Days - Requires Heavy Ship Yard
+*Medium: 450 Days
+*Small: 150 Days
+*Tiny: 50 Days
+*Diminutive: 20 Days
+*Fine: 10 Days
+
+Skilled laborers can be contracted to divide up the work. A shipyard can have as many as 50 people working on the same ship. Heavy, 500 people. And Super Heavy 5,000 people. Cost may vary based on the GM. The default suggestion is a flat group rate of $10,000 per day for a full crew of 50 (equating to $200 per worker per day), plus a completion bonus equal to 1/1000th of the ship's cost.
+
+Other players can also help in building a ship. The same rules that apply to building a structure apply. To review the rules go [[Craft|here]]. Repair work can also be divided up. 
+
+Building a Weapon or other hard point accessory is also considered like building a structure. With the exception of Diminutive and Fine as they are normal sized weapon rules and thus follow standard weapon crafting rules. Making a hard point requires either a ship yard or an Engineering facility. The default time for crafting a non-weapon hard point accessory is 20 days. Weapon crafting times are based on their weapon sizes just like ships. 
+*Huge: 80 Days - Requires a Heavy Ship Yard or Large Engineering facility.
+*Large: 40 Days - Requires a Heavy Ship Yard or Large Engineering facility.
+*Medium: 20 Days
+*Small: 10 Days
+
+Building a Bay requires 20 days for normal-sized bays and 40 days for Large-sized bays. They can be built in any facility capable of constructing a structure. They can be built directly into the ship or be built in pieces and then shipped and assembled inside of the ship. It takes two days to assemble a normal bay or 4 days to assemble a large bay. You cannot speed up the assemble process by dividing up work. Only the crafting of the item can other characters assist. You do not need to account for assembling a bay if it is directly built into the ship.
+
+Building an upgrade or other accessory is completely dependent on the item itself. However, installing it from a time perspective is like repairing the ship of a major problem. Which is a full day while not being in FTL. Some upgrades may require that the ship be in a ship yard or a facility that supports repairs.
+
+=== <u>Crafting Ship Functions</u> ===
+
+It requires a crafting skill of 3 in the correct craft skill. The craft skill is determined by which of the 6 Core System Attributes the Function is associated with. Engines and Weapons are associated with Craft Mechanics. Structure is associated with Craft Structure. Shields, Electronics, Sensors is associated with Craft Electronics. In order to craft a Function with Class 1 the crafter must have 4 ranks in the appropriate skill. For Class 2 the crafter must have 5 ranks and so on. 
+
+Only Upgrades for the 6 C.S.A have both Class and Grade. To learn more about upgrades, visit the [[Ship_Equipment#Ship_Upgrades_.26_Modifications|Ship Upgrades]] section of the [[Ship Equipment]] page.
+
+=== <u>Crafting FTL Drives</u> ===
+
+FTL drives are considered among the most complex pieces of equipment ever invented. It requires at least 3 ranks in the following 3 crafting skills: Craft Mechanics, Craft Electronics, and Craft Structure. Making an FTL follows the Craft Structure rules and thus requires a facility. To learn more about crafting go [[Craft|here]]. There are no mastercrafted FTLs.
+
+=== <u>Master Work Spaceships</u> ===
+
+A ship can be Masterworked. This is represented by an additional point toward the 6 Core System Attributes for each Crafting skill a character has the required rank in. To make Master Work structures a Character must have a rank of 5 or higher in the appropriate skill. There are 3 crafting skills that affect ship building and those again are Craft Electronics, Craft Mechanics, and Craft Structure. That means there is a total of +3 points that can go toward a ship. 
+
+A ship cannot be upgraded with Masterworked parts. A ship can only be constructed as such. Each extra point awarded to the ship ups the price by an additional 1/4th the base price.

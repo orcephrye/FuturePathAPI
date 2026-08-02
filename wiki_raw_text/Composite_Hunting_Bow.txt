@@ -1,0 +1,49 @@
+{|
+|+ '''Composite Hunting Bow'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Composite Hunting Bow
+
+'''Power / Speed''' (Total Level/Dice): Large / Single-Fire = Level 2/d6
+
+'''Weapon Arch Type''':  
+
+'''Range''': 900ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $500 / 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

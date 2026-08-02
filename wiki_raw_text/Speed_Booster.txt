@@ -1,0 +1,4 @@
+This is a Power Armor Mod. Please review the [[Armor#Power_Armor|Power Armor]] rules for more information. 
+
+
+The Wearer's Base speed is now tripled.

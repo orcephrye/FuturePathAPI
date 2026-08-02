@@ -1,0 +1,11 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+With years of experience and special training, you are able to lead a bridge crew and assist other players through your experience and leadership skills.
+
+'''Prerequisites''': [[Leadership]]
+
+'''Benefits''':  Allows the Captain to use [[Space_Ships#Officer.2FShip_Functions|Advanced Officer Functions]] for that position.
+
+'''Normal''': Normally the Captain would only be able to use [[Space_Ships#Officer.2FShip_Functions|Standard Officer Functions]]
+
+'''Special''': -

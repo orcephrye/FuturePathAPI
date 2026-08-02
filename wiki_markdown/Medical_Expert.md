@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: -
+
+**Benefit**: Misc +1 bonus to both the Craft (pharmaceutical) and
+[Medical](Medical "Medical"){.wikilink} skills. This increases to +2 at
+the 12th Character level.
+
+**Normal**: -
+
+**Special**: Remember that the Craft (pharmaceutical) skill can't be
+used untrained.

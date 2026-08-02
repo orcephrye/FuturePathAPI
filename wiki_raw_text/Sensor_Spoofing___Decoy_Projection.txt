@@ -1,0 +1,6 @@
+Sensor Spoofing / Decoy Projection is an Advanced Function for Communications and Sensor Officers. To learn about other functions go the [[Space_Ships#Officer.2FShip_Functions|Space Ship Functions]] section of the [[Space Ships]] page.
+
+== Description ==
+The Communications and Sensor Officer uses the ship's sensor and transmission arrays to project false signatures or deploy physical chaff decoys, making the ship harder to track and target. 
+
+The Officer makes an Electronics check (DC 10 + Target Sensors Mod). On a success, the ship projects phantom signatures or deploys decoys. This forces all scanning and targeting checks against your ship to take a disadvantage for 1 round. Alternatively, if targeted by guided missiles, the decoys can be active, providing a 50% chance (a 1-5 on a d10) that any incoming guided missile attacks are drawn away and miss the hull entirely.

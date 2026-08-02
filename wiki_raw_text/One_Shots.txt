@@ -1,0 +1,27 @@
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! </span>  '''
+
+The purpose of One Shots is to provide a quick game for new players or just to have fun when someone cannot show up for a 'main campaign'. They can help introduce game mechanics and rules to players and are meant to be only one session long. Usually 4 to 6 hours long of gameplay.
+
+Below are a series of One Shot Ideas in different stages of development or completion. They are categorized by Game Mechanics Focus and Recommended Starting Level. IE: 'Ground Combat, Level 1', or 'Space Ship Combat/Negoations, Level 5', etc...
+
+=== Ground Combat, Dungeon Crawling [Level 1-2] ===
+
+You're a group of contract scavengers. You take 'Station Stripping' jobs. While some snicker at the job title, your crew's work is to strip abandoned stations so they can be repurposed or safely decommed. A weird but highly priced contract lands in your captain's lap. At first glance, it seems like a simple tear down of an old comms and monitoring station at the edge of a solar system. But something seems off about this job. Why is the price so high? And the client has special instructions to recover certain things before decomming the station for scrap. Why didn't they get this stuff themselves? 
+
+[[Scavenger One Shot|GM's Guide: Scavenger One Shot]]
+
+=== Special Encounters, Ground Combat [Level 2-3] ===
+<span style="color:#ff0000"> * Incomplete </span> 
+
+Your station is under threat! The [[Species#Aconians|Aconians]] have raised a small navy to come to your small sector of space and enforce martial law. Why? They claim that a person of the old dynasty's royal bloodline has gone missing while visiting your station. They blame your people for this! You are just a small independent mining colony. A station can barely hold 10,000 citizens, and its main source of income comes from gas mining comets or 'hard' mining asteroids. Most of the system's population, over 30k if you exclude the station, live in the inner or outer belt and come to the station to refine and sell. As well as a little R&R, of course! You have no idea what an imperial royal from a great and ancient empire would even be doing here! Your government's response is to just keel over. But you know this isn't gonna end well for you and yours unless, by the time that fleet arrives, a missing royal can be produced. Time to take matters into your own hands!
+
+[[A Royal Pain|GM's Guide: A Royal Pain]]
+
+=== Space Ship Combat [Level 1-4] ===
+<span style="color:#ff0000"> * Incomplete </span> 
+
+The galaxy is a big place. And often the little systems on the edge are forgotten about. Over 100 years ago, colonists came to a system rich with resources, especially on one lifeless planet. They built homes for themselves in orbit around the planet and mined it for its wealth, with the simple goal of striking it rich and living the dream out on the frontier. But eventually all good things must come to an end. Pirates showed up to take their 'share' of the bounty provided by the hard-working denizens of the system. Their requests became demands, and failure to comply was followed by violence. 
+
+Will heroes of the citizenry rise up? Or will a plea be heard by some willing mercenary group brave enough to deal with these bandits? It is up to you!
+
+[[Trouble in the Dark|GM's Guide: Trouble in the Dark One Shot]]

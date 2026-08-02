@@ -1,0 +1,131 @@
+{|
+| valign="top" |
+'''Ship Name''': Enhanced Military Class Cruiser
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 4
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Medium
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': Cruiser
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 22 (due to -3 Cruiser configuration penalty)
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 10 + 2 = 12 (Modifier: +1)
+
+'''Weapons''': 14 (Modifier: +2)
+
+'''Structure''': 14 (Modifier: +2)
+
+'''Shields''': 14 (Modifier: +2)
+
+'''Electronics''': 14 (Modifier: +2)
+
+'''Sensors''': 10 (Modifier: +0)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 11 (Base 11 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
+
+'''Stealth DC''': 10 (Detection 8 + 2 Electronics)
+
+'''Battle Damage''': 3
+
+'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
+
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 6 (Base 4 + 2 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 6 / 6 (6 successes / 6 Reflector)
+
+'''Repair DC Bonus''': +2 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +1 (equal to Engines Mod)
+
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+
+'''Cargo Capacity''': 765 Units (510 Base + 255 from Cargo Bay)
+
+'''Passenger Capacity''': 32 (16 Base + 16 from Passenger Bay)
+
+'''FTL Engine/Speed''': [[Ship_Equipment#FTL_Drives|Advanced Slip Stream Drive]]
+
+'''Cost and Procure Diff''': $64,940,800 / 3 (Procure Diff: 3)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 0
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 1 (Cruiser configuration free function: Feint)
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 7 / 7 / 0 (Cruiser configuration grants +1 HP)
+
+'''Bays (Total/Used/Free)''': 3 / 3 / 0
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
+;Description: A state-of-the-art military-grade tactical cruiser utilizing a Tech Level 4 core and a stealthy Advanced Slip Stream Drive for rapid and undetected operations.
+;Explanations: Focuses point pairings on structures, weapons, and shielding to achieve robust active combat ratings.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Ship_Equipment#FTL_Drives|Advanced Slip Stream Drive]] (Takes up 1 HP & 1 Bay)
+Hard Point 2: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
+Hard Point 3: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
+Hard Point 4: [[Ship_Equipment#Medium_Weapons|Medium Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Medium Laser Crystal]])
+Hard Point 5: [[Ship_Equipment#Medium_Weapons|Medium Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Medium Laser Crystal]])
+Hard Point 6: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
+Hard Point 7: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
+
+: '''Cost of Hard Point items''': $28,560,800 ($25,000,000 FTL Drive + $640,000 Projectiles + $25,600 Ammo + $1,250,000 Lasers + $416,700 Crystals + $1,181,250 Missiles + $47,250 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+Bay 1: [[Ship_Equipment#FTL_Drives|Advanced Slip Stream Drive (FTL)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
+Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Medium)]]
+
+: '''Cost of Bay items''': $80,000 ($40,000 Cargo Bay + $40,000 Passenger Bay)
+|}

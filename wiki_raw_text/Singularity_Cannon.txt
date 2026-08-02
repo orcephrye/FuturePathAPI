@@ -1,0 +1,51 @@
+{|
+|+ '''Singularity Cannon'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Singularity Cannon
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Super-Fast = Level 7 / 2d10
+
+'''Proficiency Requirement''': 8 Levels in Ranged
+
+'''Weapon Style & Arch Type''':  Gravity 
+
+'''Range''': 2700ft (Instant drop off)
+
+'''Default Attributes''':  Clunky
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $46,800 / 3 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': +1
+
+'''AP Damage''': 2
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Nill
+
+'''Ammunition''': 1
+
+'''Reload Speed''': Full-Round
+
+'''Weight''': Roughly ~30 pounds
+
+'''Bonus Abilities''':  
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a rare and especially dangerous and illegal weapon. It uses a micro singularity that lasts for just fraction of a second to swallow up any target within 30ft. 
+;Explanations: All 4 points are spent on 1 DR, 1 bonus damage, 1 to damage and 19-20 critical range.   
+|}

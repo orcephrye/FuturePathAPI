@@ -1,0 +1,11 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': A Class that supports the use of Techniques
+
+'''Benefits''':  The Player picks a Technique that the Character can already use, and now that Technique can be performed once per day without counting against the total number of times the Character can use that level of Technique per day. In short, the Character gets a single free use out of the picked Technique. This is called '''Stashing'''.
+
+'''Normal''': Characters can only use Techniques up to a certain number of times per day. 
+
+'''Special''': 
+# If the Character has the [[TechniqueAdvance|Technique, Advance]] feat, then if the Character sacrifices a higher-level Technique for the Technique picked for Technique Focus, then that Technique is performed at +4 Character Levels.
+# This Feat can be taken multiple times for different Techniques.

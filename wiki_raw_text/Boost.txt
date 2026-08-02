@@ -1,0 +1,13 @@
+"Boost Sensors!" Yells the Captain. "The ship is in that dam gas cloud, we just need to find it!"
+
+Boast is a function of a Spaceship. Space Ships and other functions can be found [[Space_Ships#Officer.2FShip_Functions|here]]. This provides a bonus to the Ship Attribute that it is associated with.
+
+== Description ==
+
+This requires the Science Officer position; however, it can also be used by the Chief Engineer, with the restriction that the Chief Engineer can only boost ship Engines.
+
+This provides a modifier bonus to one of the ship's Attributes, excluding Structure. It uses ship Electronics. It converts the Ship's Electronic Modifier over to either Engines/Weapons/Shields/Sensors.  If the Electronics Mod is 0, then it cannot provide any more boost. This also takes away the Electronics Mod for that round. The DC is 10. If successful, Electronics loses 1 modifier, and it is instead given to a different ship system. For every 3, the Science Office beats the 10, another pint is taken from Electronics and given to the Attribute being boosted. Only one attribute can be boosted per turn. Afterward, a cool-down of 1 turn where that Attribute cannot be boosted.
+
+== Special Boost Options ==
+
+'''Boosting Electronics''': If the Science Officer wants to boost Electronics, it is instead an assist check with the other ship officer who is attempting to use the ship's Electronics. The Science Officer helps the other officer use the electronics more effectively. The DC for the boost is the DC of the other Officer's action. If the Science Officer succeeds, it provides +1 to electronics. Another +1 for every 3 they beat it by. Boosting Electronics has not cooled down.

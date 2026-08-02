@@ -1,0 +1,16 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisites**: Advantage Die 1d6
+
+**Benefit**: When using a semiautomatic firearm, the character may fire
+twice as a single attack against a single target. Using this feat fires
+the weapon twice and can only be done if the weapon has two rounds in
+it.
+
+This requires at least two rounds of ammunition to remain in the gun and
+spends two rounds.
+
+**Normal**: -
+
+**Special**: -

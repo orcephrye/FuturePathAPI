@@ -1,0 +1,46 @@
+{|
+|+ '''High Tech Personal Vest'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': High Tech Personal Vest
+
+'''Level''': 1
+
+'''Protection +AC / X DR''': +1 / 1 DR (K)
+
+'''Maximum Dexterity''': +8
+
+'''Proficiency Requirement''': 1
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $9,450 / 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': Normal
+
+'''Weight''': 1 lbs
+
+'''Bonus Abilities''': Shirt
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 3
+
+'''Customization Slots Used''': 2
+
+'''Remaining Slots''': 3
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

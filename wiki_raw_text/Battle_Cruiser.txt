@@ -1,0 +1,133 @@
+{|
+| valign="top" |
+'''Ship Name''': Battle Cruiser
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Large
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': Battle Cruiser
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 12 (due to -3 Cruiser config penalty)
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 10 + 2 = 12 (Modifier: +1)
+
+'''Weapons''': 12 (Modifier: +1)
+
+'''Structure''': 14 (Modifier: +2)
+
+'''Shields''': 14 (Modifier: +2)
+
+'''Electronics''': 10 (Modifier: +0)
+
+'''Sensors''': 10 (Modifier: +0)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+
+'''Detection DC''': 9
+
+'''Stealth DC''': 9 (Detection 9 + 0 Electronics)
+
+'''Battle Damage''': 3
+
+'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
+
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 6 (Base 4 + 2 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 6 / 6 (6 successes / 6 Reflector)
+
+'''Repair DC Bonus''': +1 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +1 (equal to Engines Mod)
+
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+
+'''Cargo Capacity''': 1,500 Units (1,000 Base + 500 from Cargo Bay)
+
+'''Passenger Capacity''': 48 (32 Base + 16 from Passenger Bay)
+
+'''FTL Engine/Speed''': [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Warp 1-7)
+
+'''Cost and Procure Diff''': $122,719,100 / 2 (Procure Diff: 2)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 0
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 0
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 8 / 8 / 0 (Battle Cruiser configuration grants +1 HP)
+
+'''Bays (Total/Used/Free)''': 4 / 4 / 0
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
+;Description: A heavily armored and armed Large capital combatant, optimized for sector dominance, orbital bombardment escort, and fleet spearhead attacks.
+;Explanations: Highly effective heavy combatant that features 6/6 BD-DC defenses and mounts multiple Large projectile, laser, plasma, and missile systems. Utilizes its Customization Slot for a Fire-Control Matrix.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Takes up 1 HP & 1 Bay)
+Hard Point 2: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
+Hard Point 3: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
+Hard Point 4: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
+Hard Point 5: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
+Hard Point 6: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Plasma|Large Plasma Ammo]])
+Hard Point 7: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Plasma|Large Plasma Ammo]])
+Hard Point 8: [[Ship_Equipment#Large_Weapons|Large Missile Launcher]] (Ammo: 2 mags of [[Ship_Equipment#Missiles|Large Missile Ammo]])
+
+: '''Cost of Hard Point items''': $14,229,100 ($300,000 FTL Drive + $2,560,000 Projectiles + $102,400 Ammo + $2,500,000 Lasers + $1,666,700 Crystals + $3,750,000 Plasmas + $300,000 Ammo + $3,125,000 Missile + $125,000 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+Bay 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Large)]]
+Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Large)]]
+Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay (Level 1)]]
+
+: '''Cost of Bay items''': $190,000 ($80,000 Cargo Bay + $80,000 Passenger Bay + $30,000 Engineering Bay)
+|}

@@ -1,0 +1,14 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisites**: -
+
+**Benefits**: Allows a Character to roll with advantage when assisting
+others in actions. It allows them to assist even if they themselves do
+not know how to perform the action.
+
+**Normal**: Normally, a Character can only assist with whatever
+advantages or disadvantages that are by default provided, and can only
+assist if they themselves know how.
+
+**Special**: -

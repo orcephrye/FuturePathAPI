@@ -1,0 +1,103 @@
+{|
+|+ '''Plasma Sword'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Plasma Sword
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Manual = Level 4 / d12*
+
+'''Proficiency Requirement''': 5 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''':  Melee Weapon, Plasma
+
+'''Range''': 0
+
+'''Default Attributes''': Clunky
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,920 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':  Versatile
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a sword sheathed in plasma when activated. The Plasma does Thermal damage and helps destroy armor. 
+|}
+
+==Expert Hilt Plasma Sword==
+{|
+|+ '''Plasma Sword'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Plasma Sword
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Manual = Level 4 / d12*
+
+'''Proficiency Requirement''': 5 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''':  Melee Weapon, Plasma
+
+'''Range''': 0
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $2,880 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 2
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':  Versatile
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a sword sheathed in plasma when activated. The Plasma does Thermal damage and helps destroy armor. This has an enhanced hilt that helps wield the otherwise clunky weapon.
+;Explanations: Customization points are spent on removing the clunky attribute and give the Sword DR damage.
+|}

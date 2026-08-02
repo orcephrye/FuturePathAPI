@@ -1,0 +1,105 @@
+{|
+|+ '''Sniper Laser Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Sniper Laser Rifle
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Semi-Auto = Level 5 / 1d12
+
+'''Proficiency Requirement''': 6 Levels in Ranged
+
+'''Weapon Style & Arch Type''': Sniper Rifle, Laser
+
+'''Range''': 8100ft (Range penalty reduced by half)
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $7,920 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: An advanced long range laser sniper rifle. Designed for enhanced accuracy.
+;Explanations: 
+|}
+
+
+==Halo Scope Sniper Laser Rifle==
+{|
+|+ '''Halo Scope Sniper Laser Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Halo Scope Sniper Laser Rifle
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Semi-Auto = Level 5 / 1d12
+
+'''Proficiency Requirement''': 6 Levels in Ranged
+
+'''Weapon Style & Arch Type''':  Sniper Rifle, Laser
+
+'''Range''': 8100ft (Range penalty reduced by half)
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $10,560 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +3
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: An advanced long range laser sniper rifle. Designed for enhanced accuracy. This uses a digital holo scope to improve accuracy of the weapon.
+;Explanations: Two customization points where spent on accuracy.
+|}

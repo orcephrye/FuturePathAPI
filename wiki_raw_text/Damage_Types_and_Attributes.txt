@@ -1,0 +1,56 @@
+This is a page dedicated to explaining the different '''Damage Types''' in the game. To learn about [[Weapons]] and customizing their Damage Type, go [[Weapons#Advance_Weapon_Creation|here]]. To learn about giving and receiving damage for Characters in combat, go to [[Complete_Combat_Actions|Complete Combat Actions]] and [[Health_and_Injury|Health and Injury]].
+
+To learn about Giving and Receiving damage for Spaceships, go [[Giving_and_Receiving_Damage_in_Space_Ships|here]]. 
+
+To learn about damaging Items/Objects/Structures and other non-character or spaceship targets, go to [[Item_Damage|Item Damage]]. 
+
+== Damage Type Format ==
+
+Items like Weapons or Armor, as well as Character, Monsters, NPCs, and the like, can have Damage Type strengths and/or weaknesses. When reviewing Weapon Damage Type or Character DR or other examples, Damage Types are shown in parentheses, i.e., Laser 1d6(T) or for Armor 0/1(C). This is shorthand; the T is for Thermal, and the C is for Chemical. These can also be spelled out. If there are multiple types, they are comma-delimited. If there are sub-types, the type is preceded by a semi-colon i.e, FlameThrower 1d8(T; Heat, C) or Shock Baton 1d6(E,K). Seeing this (A) implies ALL DTs. All Sub-Types are spelled out.
+
+When reading about Damage Types in rules or other text, the Damage Type should be fully spelled out. Short-hand should be used in Tables and on Character sheets for ease of reading in limited space. The Damage Type can be followed by a sub-type in parentheses i.e, Thermal (Cold). 
+
+== Damage Types ==
+
+=== Kinetic ===
+: This is the most common as well as primitive form of damage. Normally associated with a blunt object like a sword, a bullet hits the target with energy from momentum. The hardest to defend against and the easiest to use. The rules for Kinetic DR are different in that it takes more to make Kinetic-specific Damage Reduction than the other types. 
+
+===Thermal===
+: This is likely the second most common type of damage. Thermal refers to the rapid exchange of atomic energy across an interface or medium. It can refer to extreme heat being applied to an object, which is the default form of Thermal damage. IE: Thermal (Hot). There is also rapid heat loss from the object. IE: Thermal (Cold). There are also radiative energy exchanges. IE: Thermal (Radiation). Technically, radiation can be from anything, like excessive sunlight exposure to gamma rays, which is usually felt as heat if felt at all. However, we distinguish between Thermal (Cold), Thermal (Hot), and Thermal (Radiation) as 3 distinct Damage Types.
+
+===Electrical===
+: This is raw electric power being focused in a way as to harm. It is attempting to utilize the 3rd strongest fundamental force of physics to destroy a target, enough said.
+
+===Chemical===
+: This is any damage that comes from chemical reactions on the target. Although fire is considered a chemical reaction by default, it is Thermal (Hot). Chemicals are often used in grenades and have the 'Linger' status, or are used in Chemical Throwers to create walls of deadly, often burning, chemicals to persuade an enemy not to go that way. 
+
+===Double Types===
+: IE: '''Kinetic-Kinetic''', '''Thermal-Thermal''', '''Electrical-Electrical''', '''Chemical-Chemical'''. These types are effectively 'doubling down' on their damage type. If a target has a weakness, the damage is 2x the Weakness. If the target is Vulnerable, then it is an x3 critical. A Target's Strength and DR towards that damage type is ignored.
+
+===Combination Types===
+: IE: '''Kinetic & Thermal''' or '''Electrical & Chemical'''. In this situation, the weapon effectively does both types of damage. You do not change the way you roll for damage. Instead, if an enemy has DR against one type, that DR takes effect. If the target has a weakness or strength to either one, it counts. Weaknesses trump Strengths, so if a Character has a Weakness for Thermal but a Strength against Electric, and that Character is hit with a 'Thermal & Electric' Damage Type, it counts as a weakness. You cannot combine more than two types. 
+
+===Nill===
+: This is damage that cannot be defined by any known explanation or category. It ignores all DR. (This can also be referred too as None type)
+
+===ALL===
+: This damage type is a Combination of all damage types. IE: '''Kinetic & Thermal & Electrical & Chemical'''. The only Damage Reduction that counts against it is Total DR. Damage-specific DR has no effect against all damage types.
+
+===Nill & ALL===
+: This is a specially cruel type. It ignores '''ALL''' DR like [[#Nill|Nill]] does; however, it doubles down on '''ALL''' damage types as if it were an ALL/Double Type. This means targets cannot rely on their DR at all, and any weakness counts as triple damage.
+
+===MASS===
+: Mass is a special type that can be applied to any of the above types. It is added to all [[Ship_Equipment#Ship_Weapons|Space Ship Weapons]] by default. It implies that weapons of large enough caliber produce far more damage than normal on a logarithmic scale. The weapon size determines the MASS magnitude. Small is MASS 1, Medium is MASS 2, Large is MASS 3, Huge is MASS 4. Each number is actually how many extra '0's are added to the damage total. In Ship-to-ship combat, this is not necessary as ship shields account for these numbers. This also means that if a Character attempts to use their normal weapons, which are MASS 0, against a shield, they have to divide by 10 as the damage is considered non-lethal.
+
+== Damage Modifiers Associated with Type ==
+===Weakness===
+: Damage Type Weakness is when a Species or object has a weakness to a particular type of damage. Weakness acts like the opposite of DR. It grants a bonus to damage dealt. For example, a planet may have a Weakness against Thermal (Hot) or 1W(T; Hot). When calculating damage dealt against a target with a Weapon that either does Thermal or specifically Thermal (Hot), then add +1 damage to the total. Just like with DR, the maximum weakness can be 10. 
+
+===Vulnerable===
+: This causes all Damage dealt with the Vulnerable type to be considered a x2 critical.
+
+===Strength===
+: This is the opposite of Vulnerable. A Species or object may have a Strength against a particular Damage Type. In this case, the damage is halved.
+
+===Non-Lethal===
+: The rules for Non-Lethal damage is noted [[Health_and_Injury#Nonlethal_Damage|here]].

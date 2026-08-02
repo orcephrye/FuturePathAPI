@@ -1,0 +1,15 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisites**: Companionship feat
+
+**Benefits**: This allows the companion level to be 1/2 the character
+level instead of 1/4th the companion level.
+
+**Normal**: Normally, a Character can have a Pet or Robot, but the
+companion only levels up at 1/5th the rate of their owner. Also, the
+owner has to make a Handle Animal or Charisma check to get the creature
+to do things, though at a lower DC than with a random animal. As for the
+robot, a Computer Use check is required.
+
+**Special**: -

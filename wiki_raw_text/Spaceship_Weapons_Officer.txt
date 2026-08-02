@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': -
+
+'''Benefits''':  You can use [[Space_Ships#Officer.2FShip_Functions|Advanced Officer Functions]] for that position.
+
+'''Normal''':  Normally a Character can only use [[Space_Ships#Officer.2FShip_Functions|Standard Officer Functions]] for that position.
+
+'''Special''': -

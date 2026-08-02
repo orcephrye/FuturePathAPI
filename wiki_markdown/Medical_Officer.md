@@ -1,0 +1,40 @@
+The Medical Officer is a [Ship
+Position](Space_Ships#Ship_Positions "Ship Position"){.wikilink}. There
+are other ship positions that can be reviewed and can affect this
+position.
+
+## Description
+
+The Medical Officer is responsible for the health and safety of the
+ship\'s crew. Their whole focus is on healing the officers and even
+stabilizing fallen comrades. They can also temporarily take the place of
+a Crew member, switching ship positions without penalty.
+
+: **Requirements**: Must have at least 1 rank in the Medical Skill.
+: **Associated Ship Attribute**: N/A
+: **Officer Functions**:
+  1.  `<u>`{=html}[Medical](Medical "Medical"){.wikilink}`</u>`{=html}:
+      This is just the Medical skill. Since its target is a fellow crew
+      member, the normal rolling rules apply, not the 2d10 Spaceship
+      alternate rules.
+: **Advanced Officer Functions**:
+  1.  `<u>`{=html}[Resuscitation/Life
+      Support](Resuscitation/Life_Support "Resuscitation/Life Support"){.wikilink}`</u>`{=html}:
+      If the correct Medical Bay or Facility is provided, then a Medic
+      can attempt to move the recently decided character to the Medical
+      Bay and resuscitate them. As long as the vast majority (90% or
+      more) of the person\'s body is intact and they are not missing
+      their brain. The resuscitation takes a standard action, and the
+      move does as well. If successful, the Character is unconscious,
+      has 1 HP, and has a Constitution Score of 1. Follow the [Health
+      and Injury](Health_and_Injury "Health and Injury"){.wikilink}
+      rules for more information. They cannot be dead for more than 12
+      hours unless the Bay/Facility specifies otherwise.
+  2.  `<u>`{=html}[Long/Short Automated
+      Care](Long/Short_Automated_Care "Long/Short Automated Care"){.wikilink}`</u>`{=html}:
+      If a Medical Bay or Facility is provided, then the Medic will move
+      the Character into the Bay or Facility, where they receive
+      automatically constant attention from the Medic. This qualifies as
+      receiving constant Long/Short Term Care automatically
+      successfully. For more rules regarding Care, review the
+      [Medical](Medical "Medical"){.wikilink} skill.

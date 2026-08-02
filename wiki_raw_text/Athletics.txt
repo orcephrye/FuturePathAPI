@@ -1,0 +1,36 @@
+There are multiple subcategories under Athletics. It can be summarized as physical actions that rely on strength and/or stamina to be successful. Examples are '''Swim''' and '''Climb''' checks.
+
+This skill can also improve a Character's movement [[Athletics#Speed|'''speed''']] and there [[Athletics#Weight_Capacity|'''weight capacity''']] based on the Rank the skill is in. Thus, this skill is considered '''Rank Dependent''' as its rank can affect the Character's stats.
+
+== Checks ==
+
+The '''Swim''' and '''Climb''' checks are the same. 
+
+A check is only necessary to swim or climb in unusual conditions, such as stormy weather or volatile terrain, or if the Character wants to move faster. The base DC for a Swim or Climb check in normal, simple conditions is just 5 and is, again, normally not necessary. The DC should go up depending on the situation. If the Character wishes to move faster, they must roll a check, and for every 5 they beat the DC by, they move 5ft faster.
+
+*'''NOTE''': Climbing and Swimming base speed is 1/2 the speed of the Character's normal movement speed, rounded down in increments of 5. You also need to consider any movement penalties, such as Armor, that they are wearing.
+
+== Actions ==
+
+Climbing is part of movement, so it’s generally part of a move action (and may be combined with other types of movement in a move action). Each move action that includes any climbing requires a separate Climb check. Climbing or swimming is always 1/2 the Characters movement speed.
+
+Other Actions include:
+
+;Catch Yourself When Falling: It’s practically impossible to catch yourself on a wall while falling. Make a Climb check with a DC for the Climb + 10
+;Catch a Falling Character While Climbing: If someone climbing above you or adjacent to you falls, you can attempt to catch the falling character if he or she is within your reach. Doing so requires a successful initiative check of Climb DC + (DC 5 * (every 10ft above you, the person is falling)). If successful, you must immediately attempt another Climb check for yourself, or else you both start to fall. But if his total weight, including equipment, cannot exceed your heavy load limit, you can no longer move, and you can only hold onto the person for the number of turns equal to your Strength Mod.
+
+== Speed ==
+
+For every four ranks in this skill, your Character gains +5ft of base movement speed.
+
+== Weight Capacity ==
+
+For every rank in this skill, your Character gains +5lbs of weight they can carry without being encumbered.
+
+==Special==
+ 
+* '''Feats''':
+# If you have the [[Athletic]] feat, you get misc +2 bonus to the Athletic skill. Even if they do not have the skill trained. At Character Lvl 10, this becomes +3, and at Level 20, this becomes +4.
+# If you have the [[Athletic_Prowess|Athletic Prowess]] then you can apply 1/2 round up of your Athletic skill as a Misc bonus to your Intimidate skill.
+
+* '''Size''' Any creature of Tiny or smaller size should use its Dex modifier instead of its Str modifier for Climb and Swim checks.

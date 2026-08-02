@@ -1,0 +1,141 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS STILL UNDER
+CONSTRUCTION! `</span>`{=html}**
+
+Items from [General
+Equipment](General_Equipment "General Equipment"){.wikilink} as well as
+[Weapons](Weapons "Weapons"){.wikilink},
+[Armor](Armor "Armor"){.wikilink},
+[Vehicles](Vehicles "Vehicles"){.wikilink}. The Character may want to
+disable the object in combat to weaken an enemy or may encounter an
+obstacle that they wish to use force to get through.
+
+To learn about Combat and attacking visit the
+[Combat](Combat#Attacking "Combat"){.wikilink} page.
+
+## Battle Scaring {#battle_scaring}
+
+Items do not have health or Hit Points like Characters do. In their
+place, items have the **Battle Scaring** system.
+
+`<u>`{=html}Summary`</u>`{=html}
+: Items still have \'AC\' but instead of HP, an Item takes **Battle
+  Scars**. The total number of scars an Item can take before failing is
+  referred to as that Item\'s **Resiliency**. The amount of damage in
+  one Phase of Combat an item can handle before receiving a scar is its
+  **Hardness**. The default Resiliency and Hardness for an Item is
+  R2,H5. This means that it takes 5 damage to deal one Scar (only 1 scar
+  per phase of combat), and if the Item has more than 2 Scars, it can no
+  longer function. The default AC is different. AC is determined by
+  whether it is in combat. And if in combat, then if it is being held or
+  controlled. For out-of-combat, the AC is just the item\'s hardness. If
+  it is in combat but is motionless, not controlled by a combatant nor
+  on a combatant\'s person, then it is 5 + Item Hardness. If it is on or
+  otherwise being held by a combatant, then the AC is that Combatant\'s
+  AC + Hardness. Lastly, if in combat but the Item is being controlled
+  or otherwise moving on its own, then the AC can be determined by the
+  situation; the campaign setting may note the AC, or the GM may provide
+  one, but it is usually 8 or 10 + Hardness.
+
+<!-- -->
+
+: Repair usually takes a Craft check and is normally done outside of
+  combat.
+
+### Gaining a Battle Scar {#gaining_a_battle_scar}
+
+The Character wishing to deal Scaring Damage to an item must target that
+item specifically. Learn more
+[here](Ground_Combat_Guide#Attack_Actions "here"){.wikilink}. The Attack
+on the item cannot be affected by special effects or Bonus Damage of any
+kind. No +1 or + 1d4 (E) damage that a weapon may have may be used to
+calculate the Damage the Item receives. Criticals still count, but they
+are simple multipliers only. The total damage is compared against the
+Item\'s Hardness, and if it exceeds the Hardness, the Item receives a
+Battle Scar. This can only happen to an Item once per round. Damage from
+multiple opponents in the same Group in Combat can stack.
+
+#### Weakness
+
+Items can have a Weakness/Vulnerability to certain [Damage
+Types](Damage_Types_and_Attributes "Damage Types"){.wikilink}. Some
+electronics will process a Weakness for the Electrical damage type, for
+example. Items do not normally state whether they have a weakness; the
+GM should use their discretion, but by default, most Objects do not have
+a Weakness and must specify that they do. If an Item has a Weakness and
+that Damage Type is used, it automatically takes a Battle Scar instead
+of rolling for it.
+
+#### Item Hardness {#item_hardness}
+
+An Item can have a **Hardness** rating which resembles its resistance to
+damage. The hardness rating can be any value starting at 0 and can
+increase without limit. Although it normally is something like 5, 10, or
+15. This value is achieved with the weapon used to damage the item: the
+maximum possible damage from a single normal attack of the weapon.
+(Excluding things like extra damage or bonus provided by buffs). If the
+weapon deals 1d6+1 and is ranged, its maximum damage is 6, and it can
+inflict Battle Scars on any target with Hardness 6 or less. A melee
+weapon also adds Strength by default.
+
+In-game example: An electronic military-grade lock with a hardness of 15
+is on the sealed shipping container. The party can try to perform a
+[Disable Device](Disable_Device "Disable Device"){.wikilink} skill check
+or simply bash it in. But only one player in the group has a weapon
+whose max damage is 15 or more, and so only that Character can bash the
+device in. The device has a Resiliency of 4, and so it takes 5 hits to
+break the object. Since the object is stationary and considered
+helpless, accuracy checks are unnecessary. Still, each hit takes 3
+seconds and makes noise.
+
+### Repairing a Battle Scared Item {#repairing_a_battle_scared_item}
+
+Repairing rules are part of [Crafting](Craft "Crafting"){.wikilink}.
+When repairs are done, they can remove Scars from an item. The Item
+cannot auto-heal unless specified, as it is an inanimate object.
+
+#### Multi-Turn Non-functioning Items {#multi_turn_non_functioning_items}
+
+Some items have an additional rule that stops the Item from functioning
+for an extended period of time. This is not the default, but in most
+cases, with a default 3 Scar Item, this would require rolling 1d6 if the
+item fails. And the item refuses to work for ( 1 round (3 seconds) \*
+1d6 ) or for non-combative situations (1 min \* 1d6). In these
+circumstances, after the failure, the check is not required again for 24
+hours, so the item can be used afterward.
+
+### Crumbling and Destroying an Item {#crumbling_and_destroying_an_item}
+
+Some Items may need to be completely removed from the situation in order
+for the party to progress. A most simple example would be a door. What
+if a door has no lock or handle? It is activated by a pad of some kind
+or motion sensors, and it won\'t open for the party. They have to break
+down the door to progress. To manipulate an Object\'s shape and position
+in ways it was not intended, the Item needs to suffer 1 more Battle Scar
+than its Resiliency limit. In order to completely destroy and break the
+Item into pieces making it unrepairable (But parts can still be
+salvaged) the Item has to suffer twice the number of Scars.
+
+The Battle Scar system doesn\'t cover complete disintegration. A Player
+must get creative and discuss options with the GM about things like
+that.
+
+### Tech Levels and Masterworking {#tech_levels_and_masterworking}
+
+These rules apply only to [General
+Equipment](General_Equipment "General Equipment"){.wikilink}. Weapons
+and Armor have their own rules for improvements.
+
+Tech Levels
+: Can optionally affect an item of a lower Tech Level by increasing its
+  **Resiliency**. This is an optional feature.
+
+Masterworking
+: The Masterwork level of an Item directly increases the Item\'s
+  Hardness. Also, any item can spend a masterwork level to increase its
+  **Resiliency** by +1 AND its **Hardness** by +5. However, this spends
+  the masterwork point earned by masterworking it.

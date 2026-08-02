@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+  <!-- Background -->
+  <rect width="850" height="1100" fill="#fff" />
+  
+  <!-- Header Title -->
+  <text x="50" y="60" font-family="Arial, sans-serif" font-weight="bold" font-size="42" letter-spacing="2">Future Path</text>
+  <text x="50" y="85" font-family="Arial, sans-serif" font-weight="bold" font-size="14" letter-spacing="1">- ROBOT COMPANION SHEET -</text>
+
+  <!-- Top Info Fields -->
+  <g transform="translate(350, 45)">
+    <!-- Row 1 -->
+    <line x1="0" y1="20" x2="200" y2="20" stroke="#000" stroke-width="1"/>
+    <text x="0" y="32" font-size="9" font-family="Arial">Robot Name</text>
+    
+    <line x1="220" y1="20" x2="350" y2="20" stroke="#000" stroke-width="1"/>
+    <text x="220" y="32" font-size="9" font-family="Arial">Tech (Mechanical, etc.)</text>
+
+    <line x1="370" y1="20" x2="450" y2="20" stroke="#000" stroke-width="1"/>
+    <text x="370" y="32" font-size="9" font-family="Arial">Owner / Handler</text>
+
+    <!-- Row 2 -->
+    <line x1="0" y1="60" x2="100" y2="60" stroke="#000" stroke-width="1"/>
+    <text x="0" y="72" font-size="9" font-family="Arial">Locomotion (Primary)</text>
+
+    <line x1="120" y1="60" x2="180" y2="60" stroke="#000" stroke-width="1"/>
+    <text x="120" y="72" font-size="9" font-family="Arial">Level</text>
+
+    <line x1="200" y1="60" x2="280" y2="60" stroke="#000" stroke-width="1"/>
+    <text x="200" y="72" font-size="9" font-family="Arial">Chassis Size</text>
+
+    <line x1="300" y1="60" x2="450" y2="60" stroke="#000" stroke-width="1"/>
+    <text x="300" y="72" font-size="9" font-family="Arial">Locomotion (Secondary)</text>
+  </g>
+
+  <!-- Ability Scores -->
+  <g transform="translate(50, 140)">
+    <text x="0" y="-10" font-weight="bold" font-size="10">Ability Name</text>
+    <text x="85" y="-10" font-weight="bold" font-size="8">Score</text>
+    <text x="120" y="-10" font-weight="bold" font-size="8">Mod</text>
+
+    <!-- STR -->
+    <rect x="0" y="0" width="80" height="40" fill="#000" />
+    <text x="10" y="25" fill="#fff" font-weight="bold" font-size="20">STR</text>
+    <text x="10" y="35" fill="#fff" font-size="7">Strength</text>
+    <rect x="85" y="0" width="30" height="40" fill="none" stroke="#000" />
+    <rect x="120" y="0" width="30" height="40" fill="none" stroke="#000" />
+
+    <!-- DEX -->
+    <rect x="0" y="45" width="80" height="40" fill="#000" />
+    <text x="10" y="70" fill="#fff" font-weight="bold" font-size="20">DEX</text>
+    <text x="10" y="80" fill="#fff" font-size="7">Dexterity</text>
+    <rect x="85" y="45" width="30" height="40" fill="none" stroke="#000" />
+    <rect x="120" y="45" width="30" height="40" fill="none" stroke="#000" />
+
+    <!-- CON -->
+    <rect x="0" y="90" width="80" height="40" fill="#000" />
+    <text x="10" y="115" fill="#fff" font-weight="bold" font-size="20">CON</text>
+    <text x="10" y="125" fill="#fff" font-size="7">Constitution</text>
+    <rect x="85" y="90" width="30" height="40" fill="none" stroke="#000" />
+    <rect x="120" y="90" width="30" height="40" fill="none" stroke="#000" />
+
+    <!-- INT (Mental Stats start at 3) -->
+    <rect x="0" y="135" width="80" height="40" fill="#333" />
+    <text x="10" y="160" fill="#fff" font-weight="bold" font-size="20">INT</text>
+    <text x="10" y="170" fill="#fff" font-size="7">Intelligence</text>
+    <rect x="85" y="135" width="30" height="40" fill="none" stroke="#000" />
+    <rect x="120" y="135" width="30" height="40" fill="none" stroke="#000" />
+
+    <!-- WIS -->
+    <rect x="0" y="180" width="80" height="40" fill="#333" />
+    <text x="10" y="205" fill="#fff" font-weight="bold" font-size="20">WIS</text>
+    <text x="10" y="215" fill="#fff" font-size="7">Wisdom</text>
+    <rect x="85" y="180" width="30" height="40" fill="none" stroke="#000" />
+    <rect x="120" y="180" width="30" height="40" fill="none" stroke="#000" />
+
+    <!-- CHA -->
+    <rect x="0" y="225" width="80" height="40" fill="#333" />
+    <text x="10" y="250" fill="#fff" font-weight="bold" font-size="20">CHA</text>
+    <text x="10" y="260" fill="#fff" font-size="7">Charisma</text>
+    <rect x="85" y="225" width="30" height="40" fill="none" stroke="#000" />
+    <rect x="120" y="225" width="30" height="40" fill="none" stroke="#000" />
+  </g>
+
+  <!-- HP, Advantage, Speed, Defense Blocks -->
+  <g transform="translate(260, 140)">
+    <!-- HP Box -->
+    <rect x="0" y="0" width="60" height="45" fill="#000" />
+    <text x="10" y="30" fill="#fff" font-weight="bold" font-size="24">HP</text>
+    <text x="10" y="40" fill="#fff" font-size="7">Hit Points</text>
+    <rect x="65" y="0" width="50" height="45" fill="none" stroke="#000" />
+    <text x="68" y="10" font-size="7">Hit Die</text>
+    <rect x="120" y="0" width="90" height="45" fill="none" stroke="#000" />
+    <text x="123" y="10" font-size="7">Total HP</text>
+
+    <!-- Initiative and Advantage Die -->
+    <g transform="translate(0, 55)">
+        <rect x="0" y="0" width="100" height="40" fill="none" stroke="#000" stroke-width="2"/>
+        <text x="5" y="15" font-weight="bold" font-size="10">INITIATIVE</text>
+        
+        <rect x="110" y="-10" width="100" height="60" fill="none" stroke="#000" stroke-width="2"/>
+        <text x="115" y="10" font-weight="bold" font-size="10">ADVANTAGE DIE</text>
+        <text x="135" y="40" font-weight="bold" font-size="24">d____</text>
+    </g>
+
+    <!-- Speed and Defense -->
+    <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="210" height="40" fill="none" stroke="#000" />
+        <text x="5" y="15" font-weight="bold" font-size="10">SPEED</text>
+        <text x="10" y="30" font-size="8">Land: _____ Hoover: _____ Roll: _____ Flight: _____</text>
+
+        <!-- Defense Block -->
+        <rect x="0" y="50" width="210" height="150" fill="none" stroke="#000" />
+        <text x="5" y="65" font-weight="bold" font-size="12">DEFENSE</text>
+        <rect x="10" y="75" width="40" height="40" fill="none" stroke="#000" stroke-width="2"/>
+        <text x="55" y="100" font-size="14">= 10 + [   ] + [   ] + [   ] + [   ]</text>
+        <text x="75" y="115" font-size="7">Dex  Size  Nat  Misc</text>
+        
+        <!-- DR Table (Inside Defense) -->
+        <g transform="translate(0, 140)">
+             <text x="5" y="-10" font-weight="bold" font-size="9">DAMAGE REDUCTION (DR)</text>
+             <rect x="5" y="-5" width="38" height="20" fill="none" stroke="#000" />
+             <text x="8" y="8" font-size="6">Kinetic</text>
+             <rect x="45" y="-5" width="38" height="20" fill="none" stroke="#000" />
+             <text x="48" y="8" font-size="6">Electric</text>
+             <rect x="85" y="-5" width="38" height="20" fill="none" stroke="#000" />
+             <text x="88" y="8" font-size="6">Thermal</text>
+             <rect x="125" y="-5" width="38" height="20" fill="none" stroke="#000" />
+             <text x="128" y="8" font-size="6">Chem</text>
+             <rect x="165" y="-5" width="40" height="20" fill="none" stroke="#000" />
+             <text x="168" y="8" font-size="6">All</text>
+        </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Hard Points -->
+  <g transform="translate(500, 140)">
+    <rect x="0" y="0" width="300" height="20" fill="#000" />
+    <text x="10" y="15" fill="#fff" font-weight="bold" font-size="12" letter-spacing="2">HARD POINTS</text>
+    
+    <!-- Hard Point 1 -->
+    <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="100" height="50" fill="none" stroke="#000" />
+        <text x="5" y="10" font-size="7">Module/Weapon</text>
+        <rect x="105" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <text x="110" y="10" font-size="7">Size / Level</text>
+        <rect x="170" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <text x="175" y="10" font-size="7">Acc / Bonus</text>
+        <rect x="235" y="0" width="65" height="50" fill="none" stroke="#000" />
+        <text x="240" y="10" font-size="7">Effect/Notes</text>
+    </g>
+    <!-- Hard Point 2 -->
+    <g transform="translate(0, 85)">
+        <rect x="0" y="0" width="100" height="50" fill="none" stroke="#000" />
+        <rect x="105" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <rect x="170" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <rect x="235" y="0" width="65" height="50" fill="none" stroke="#000" />
+    </g>
+    <!-- Hard Point 3 -->
+    <g transform="translate(0, 140)">
+        <rect x="0" y="0" width="100" height="50" fill="none" stroke="#000" />
+        <rect x="105" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <rect x="170" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <rect x="235" y="0" width="65" height="50" fill="none" stroke="#000" />
+    </g>
+    <!-- Hard Point 4 -->
+    <g transform="translate(0, 195)">
+        <rect x="0" y="0" width="100" height="50" fill="none" stroke="#000" />
+        <rect x="105" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <rect x="170" y="0" width="60" height="50" fill="none" stroke="#000" />
+        <rect x="235" y="0" width="65" height="50" fill="none" stroke="#000" />
+    </g>
+  </g>
+
+  <!-- Skills Section -->
+  <g transform="translate(50, 450)">
+    <rect x="0" y="0" width="200" height="25" fill="#000" />
+    <text x="50" y="18" fill="#fff" font-weight="bold" font-size="14" letter-spacing="4">SKILLS</text>
+    
+    <g font-size="11" font-family="Arial">
+        <!-- Row 1 -->
+        <text x="0" y="45">[ ] Perception (Wis)</text>
+        <text x="120" y="45">[   ]</text>
+        <text x="150" y="45">[   ]</text>
+
+        <!-- Row 2 -->
+        <text x="0" y="65">[ ] Study (Int)</text>
+        <text x="120" y="65">[   ]</text>
+        <text x="150" y="65">[   ]</text>
+
+        <!-- Row 3 -->
+        <text x="0" y="85">[ ] Language (Int)</text>
+        <text x="120" y="85">[   ]</text>
+        <text x="150" y="85">[   ]</text>
+
+        <!-- Row 4 -->
+        <text x="0" y="105">[ ] Computer Use (Int)</text>
+        <text x="120" y="105">[   ]</text>
+        <text x="150" y="105">[   ]</text>
+
+        <!-- Row 5 -->
+        <text x="0" y="125">[ ] Craft: _______ (Int)</text>
+        <text x="120" y="125">[   ]</text>
+        <text x="150" y="125">[   ]</text>
+
+        <!-- Row 6 -->
+        <text x="0" y="145">[ ] Disable Dev. (Int)</text>
+        <text x="120" y="145">[   ]</text>
+        <text x="150" y="145">[   ]</text>
+
+        <!-- Row 7 -->
+        <text x="0" y="165">[ ] Knowledge: ____ (Int)</text>
+        <text x="120" y="165">[   ]</text>
+        <text x="150" y="165">[   ]</text>
+    </g>
+  </g>
+
+  <!-- Features / Software / Subroutines / Feats Section -->
+  <g transform="translate(300, 450)">
+    <rect x="0" y="0" width="500" height="25" fill="#000" />
+    <text x="50" y="18" fill="#fff" font-weight="bold" font-size="12" letter-spacing="1">ROBOTIC FEATURES / SOFTWARE / SUBROUTINES / FEATS</text>
+    
+    <text x="0" y="45" font-weight="bold" font-size="10">Robotic Features (Improvements at 1, 5, 10, 15, 20):</text>
+    <line x1="0" y1="65" x2="480" y2="65" stroke="#ccc" />
+    <line x1="0" y1="85" x2="480" y2="85" stroke="#ccc" />
+    <line x1="0" y1="105" x2="480" y2="105" stroke="#ccc" />
+
+    <text x="0" y="130" font-weight="bold" font-size="10">Software Programs / Upgrades:</text>
+    <line x1="0" y1="150" x2="480" y2="150" stroke="#ccc" />
+    <line x1="0" y1="170" x2="480" y2="170" stroke="#ccc" />
+    <line x1="0" y1="190" x2="480" y2="190" stroke="#ccc" />
+
+    <text x="0" y="215" font-weight="bold" font-size="10">Subroutines:</text>
+    <line x1="0" y1="235" x2="480" y2="235" stroke="#ccc" />
+    <line x1="0" y1="255" x2="480" y2="255" stroke="#ccc" />
+    <line x1="0" y1="275" x2="480" y2="275" stroke="#ccc" />
+
+    <text x="0" y="300" font-weight="bold" font-size="10">Robotic Feats:</text>
+    <line x1="0" y1="320" x2="480" y2="320" stroke="#ccc" />
+    <line x1="0" y1="340" x2="480" y2="340" stroke="#ccc" />
+    <line x1="0" y1="360" x2="480" y2="360" stroke="#ccc" />
+  </g>
+
+  <!-- Footer Section -->
+  <g transform="translate(50, 950)">
+    <line x1="0" y1="0" x2="750" y2="0" stroke="#000" stroke-width="2" />
+    <text x="0" y="20" font-size="8" font-style="italic">
+        * Skill Rank Die: 1(d2), 2(d4), 3(d6), 4(d8), 5(d10), 6(d12), 7(d12+d2)...
+    </text>
+    <text x="0" y="35" font-size="8">
+        Robot Specific Rules: Mental stats start at 3. Intelligence has no effect on Skill Points (always 1/lvl).
+    </text>
+  </g>
+</svg>

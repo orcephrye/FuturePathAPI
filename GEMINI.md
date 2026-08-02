@@ -5,12 +5,10 @@ rules of d20 Future Path a Sci-Fi TTRPG. Eventually it will support Character Cr
 and much more. For now it is limited to dice rolling. And is utilized by an HTML mobile dice rolling web app.
 
 
-
 ## Tech Stack
 * Python with Flask
 * gunicorn is used for hosting the API entrypoint.
-Python requirements located:
-@./requirements.txt
+* This project has a pyproject.toml fille and a requirements.txt files.
 
 ## Project Structure
 * The API/Flask code is located in the directory 'FuturePathAPI'
@@ -24,8 +22,8 @@ The 'docs' dir has all the docs built by Sphinx.
 Also there is the README.md file:
 @./README.md
 
-## A Summary of the FuturePath TTRPG 
-@./FUTUREPATH_SUMMARY.md
+## Knowledge of the FuturePath TTRPG 
+@./GEMINI_FUTUREPATH_TTRPG.md
 
 # Active Tasks
 Lets update the DB support to add TinyDB as an option besides MongoDB. This is gonna be used for easier

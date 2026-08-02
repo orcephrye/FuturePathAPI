@@ -1,0 +1,33 @@
+
+Chronodes are a weird case. These creatures are not that influential in the galaxy, but everyone knows them. An interaction with a Chronode is an unforgettable experience. The birds fly in groups called a 'Murder' and talk in weird ways. Some birds will speak a whole sentence, or each bird will speak a different word, and sometimes, especially if the Chronode wishes to shout or emphasize something, multiple birds will speak at the same time. These birds have a hard time understanding how most species do not live in a hive mind or tightly together in groups. These birds' intelligence is expanded by combining different minds, which focus on different skills, knowledge, and thought processes. A single bird, while clearly intelligent, would be seen as having a low level of intelligence. Together as a group, they have an insanely high level of problem-solving skills. They are insanely curious creatures and love to poke and probe just about anything, which can cause them to get into trouble with the rest of the galaxy.
+
+<u>'''Visiual Description'''</u>
+: Dark feathered, 1 to 1 1/2 feet tall each. Their beaks are often dark shades of blue. 3 beady eyes are one of the main things a Human would notice close up that would show these are not Ravens of Earth. 1 eye is in the middle, while the other two are on the sides. This gives them nearly 300degres of vision. Their claws also have something like a thumb that helps them move and manipulate objects, along with their beaks. The beaks have a smooth part and a rigid part and are made out of a biological substance that slowly grows but hardens when the bird reaches adulthood. It becomes harder than most steel alloys and also becomes reflective, like a dark metal beak. Each bird has been augmented, and it is noticeable through things on their skull, covering 1 or more eyes, or on their claws. 
+
+<u>'''Species Traits'''</u>
+
+* Class: Avian
+* Locomotion: Flight (20ft base) / bipedal (5ft base)
+* Reproduction: Sexual
+* Average Height: 1' 6'' (~31 - 44 cm)
+* Average Life Span: 40 - 60 years
+* Size: Tiny (Swarm Medium)
+* Main Home Worlds: 
+* [[Tech_Level_and_Civ_Progress|Tech Level]]: starts out as 3
+
+<u>''' Special Specie Traits '''</u>
+
+# -3 Str, -1 Con, +4 Dex
+# Their Hit Die must be d6 regardless of Path taken.
+# Take any one Craft skill as a Favored Skill. Must always spend a skill point on a Craft Skill.
+# '''Swarm''': This is a swarm of birds who are linked together by their augments. They cannot wear or benefit from armor, even shirts. However, they gain +8 Natural AC. This AC bonus is ignored with Area of Effect attacks. 
+# '''Natural Swarm Attack''': This is a Finesse (Dex) Melee attack of birds that dive bomb and peck the target with their beaks that often have metal augments to enhance damage. Treat this Natural attack as if it has Reach 10 ft, as the birds can dive bomb and then return to their position. Default damage is: 1d4 + Dex Mod as a Level 1 Weapon. This attack naturally increases based on the Character's Melee Proficiency level. Each level increases the weapon die level and adds a +1. So if the Chronode has a Melee Profiency of 3, then this attack is a 1d8+2 + Dex Mod.
+# '''Hive Mind''': The Chronodes are immune to mind affects. They are also immune to [[Conditions#Confused|Confused]] condition.
+# '''No Armor/Weapons:''' As noted in 'Swarm' Chronodes cannot benefit from Armor. But they also cannot carry and utilize Weapons. Instead, they depend on Cyborg enhancements to hold and utilize a weapon besides their natural attack.
+# '''Natural Cyborgs:''' Automatically become a Cyborg. Cannot be a Mutant or Psion. The Chronode already has a Cyborg Tech 3 Frame, and the cost of which is free for a Chronode on their home world. 
+
+<u>''' Relations '''</u>
+: Chronodes do not interact with the galaxy at large. It is not that they are shy; it is just that they find it difficult to socialize with other creatures. However, they are insanely curious and often a 'Murder' will leave the home world to go learn from other species. Other species of the galaxy are wary of Chronodes due to their whole society embracing cybernetics. Because of this, sometimes the Chronodes take more aggressive and unfortunate actions to learn. They often capture and force cybernetics onto a target species specimen for research purposes. They have abducted almost every species at least once. Chronodes find it hard to see an individual of a species as a truly sovereign, independent being. The Chronodes are not evil, nor do they wish to harm others. They just do not see a singleton specimen of a species as... a whole individual. To them, that person has left their 'flock' and is as good as dead or abandoned. Some people try to speak and explain to the Chronodes with much success; the Aconians have a good working relationship with Chronodes, but most species do not put in the effort and treat the Chronodes with hostility.
+
+<u>'''Opinions on Difficulties'''</u>
+: Chronodes do not understand Psionics or believe that they exist. They also do not treat mutant members of their species the same. Instead, they cast any that cannot be integrated into an isolated island and are forgotten about. So forgotten about that these abandoned birds have formed their own civilization and seem to just be completely ignored by the Chronodes collective. To the point that it seems that they cannot even see them.

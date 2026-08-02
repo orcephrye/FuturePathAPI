@@ -1,0 +1,5162 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+Below is a list of Character Professions that provide more specific
+features to a Character. They can also help focus a Character\'s role in
+both combat and roleplay. Think of it as answering the questions \"What
+do I do?\" or \"What am I capable of?\"
+
+Each Profession starts with a description of the Profession, which may
+include some \'flavor text\'. Then there are **Requirements**,
+**Restrictions**, **Profession Information** (which includes a table),
+and lastly **Profession Talents**. All Character Professions require
+your character to be at least level 2. **Requirements** are centered
+around the Path picked or Ability scores. **Restrictions** can stop a
+player from taking the Profession or risk the punishment of no longer
+having that feature.
+
+    Near the top right of the Character sheet are a couple of different sections for writing down things such as Character and Player Name. There is also a section titled: "Character Professions and Levels". This is the same place you put your Path. You can also specify what Character Profession you are and what level you have in it.
+
+NOTE
+: All the mentions of levels noted in the sections below refer to the
+  specific Profession of that section unless specified otherwise. IE: If
+  in Combat Medic it says \"At level 2\" that means when the Character
+  reaches Level 2 Combat Medic regardless of actual Character level.
+
+## Combat Medic {#combat_medic}
+
+  Profession \<br \\\>Level   Special
+  --------------------------- ---------------------------------------------------------------
+  1st                         Medic!, Quick Chemistry
+  2nd                         Extra Curricular Brewing, \<br \\\>Medical Specialty (Choice)
+  3rd                         Advanced Pharmaceuticals
+  4th                         Field Procedure (Choice)
+  5th                         Bonus Feat
+  6th                         Advanced Mobility (Choice)
+  7th                         I\'m there for you! \<br \\\>In-Field Chemistry
+  8th                         Resolve
+  9th                         Never gonna let you go
+  10th                        Medical Triage (Choice)
+
+  : Table: Combat Medic
+
+\"No one gets left behind.\" That is the motto of a Combat Medic. To
+fight death is to fight the true enemy of war. Combat Medics rush into
+danger zones to treat or transport the wounded to safe zones. After many
+years of service, they take their skill to the frontiers of space where
+the services of a Combat Medic are never refused.
+
+Choose the Combat Medic if you want to be a versatile support specialist
+who can heal, buff allies, or even use chemistry as an offensive weapon.
+
+The fastest path to the Combat Medic is through the [Path of Wisdom
+(Dedicated
+Hero)](Future_Hero_Base_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdom (Dedicated Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Wisdom **OR** Ability: Wisdom Score 15+ **OR**
+    Ability: Dexterity Score 15+ and Wisdom score of 12+
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Wisdom and Dexterity
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex), Craft \[
+[Chemical](-_Chemical "Chemical"){.wikilink},
+[Pharmaceutical](-_Pharmaceutical "Pharmaceutical"){.wikilink} \], Pick
+Any One [Knowledge](Knowledge "Knowledge"){.wikilink}(Int),
+[Profession](Profession "Profession"){.wikilink} (Wis),
+[Survival](Survival "Survival"){.wikilink} (Wis),
+[Medical](Medical "Medical"){.wikilink} (Wis)
+
+### Combat Medic\'s Profession Talents {#combat_medics_profession_talents}
+
+------------------------------------------------------------------------
+
+Medic!
+: At Combat Medic **1st** level, the Combat Medic can more quickly help
+  people in need of aid. [Medical](Medical "Medical"){.wikilink} skill
+  checks can now be done as a Bonus Action that is granted after
+  performing a Standard Action (Move). The Medic does not need to move
+  any distance to gain this Bonus Action (e.g., preparing tools while
+  standing next to an ally). This only counts for restoring HP, not for
+  stabilizing a dying character.
+
+<!-- -->
+
+: **Note**: While using skills or items in combat normally requires a
+  Standard Action, this feature allows the Medical skill to be performed
+  specifically as a Bonus Action following a move.
+
+<!-- -->
+
+: When a natural 20 is rolled for a
+  [Medical](Medical "Medical"){.wikilink} skill check, an Inertia point
+  is earned, and the Health restored is the maximum possible.
+
+<!-- -->
+
+Quick Chemistry
+: At **1st** level, the Combat Medic can craft general chemicals and
+  pharmaceuticals more quickly. When using the Craft
+  ([Chemical](-_Chemical "Chemical"){.wikilink}) or Craft
+  ([Pharmaceutical](-_Pharmaceutical "Pharmaceutical"){.wikilink}) skill
+  to cook General Equipment items, the Combat Medic reduces the
+  cooking/brewing time by 1/2.
+
+<!-- -->
+
+: At **5th** level, the Combat Medic reduces the cooking/brewing time of
+  masterworked chemical concoctions by half.
+
+<!-- -->
+
+Extra Curricular Brewing
+: You were a class favorite in the academy. Your teachers thought you
+  worked extra hard, even outside of class. Little did they know your
+  hard work was making and experimenting with advanced biochemistry. In
+  other words, you made drugs that could get you high or beer that could
+  get you drunk. People were unsure whether your motivation was
+  rebellion or simply an effort to expand your knowledge beyond the
+  textbook. Regardless of the reasons, you learned the best way to make
+  all sorts of chemicals that can \'enhance\' your experience. However,
+  nowadays, you take your extracurricular activities into the real world
+  and use them to help enhance yourself and your allies in the heat of
+  battle.
+
+<!-- -->
+
+: Starting at 2nd level, the Combat Medic can craft **Resistance
+  Concoction** and **Boosters** from the [Medical
+  Items](General_Equipment#Medical_Items "Medical Items"){.wikilink}
+  list in combat as a Standard Action with a DC15 for non-Masterworked.
+  +3 to DC for each Tech Level above their own or Masterworked level
+  added. The Combat Medic will need a Chemistry or Pharmaceutical kit
+  and a \'delivery method\' such as a syringe to attempt the check. If
+  successful, they will have a one-use-only drug. If the check fails,
+  the \'delivery method\' device is not used up, but the Chemistry or
+  Pharmaceutical kit is still consumed.
+
+<!-- -->
+
+: Because it was made in a fast, dirty way, it quickly becomes useless
+  within 4 hours. **Resistance Concoctions** only last 1d3 rounds.
+  **Boosters** only last 12 seconds or 4 rounds.
+
+<!-- -->
+
+: The Drug will be located in there off-handd. They can administer the
+  concoction to themselves as a Simple action.
+
+<!-- -->
+
+: At **6th** level, this Craft Standard Action grants a Bonus Action
+  that allows the Character to administer the concoction to others in
+  range.
+
+<!-- -->
+
+: At the **10th** level, the negative side effects of the Booster
+  crafted this way are removed when administering it to oneself or to an
+  ally they are familiar with. The term Familiar implies the Combat
+  Medic has had time to study them to learn about their physiology.
+
+<!-- -->
+
+Medical Specialty (Level 2 Choice)
+: At **2nd** level, the Combat Medic chooses a specialty that defines
+  their role in the squad.
+
+  A\) Trauma Surgeon
+
+  : 
+
+  : Your focus is pure healing. When using the
+    [Medical](Medical "Medical"){.wikilink} skill, you heal an
+    additional +X HP per die rolled. X = 1/2 Combat Medic level, rounded
+    down. You gain an Advantage on saving throws to resist being
+    [Dazed](Conditions#-_Dazed "Dazed"){.wikilink} or
+    [Stunned](Conditions#-_Stunned "Stunned"){.wikilink} if you have
+    healed an ally in your last turn.
+
+  B\) Toxicologist
+
+  : 
+
+  : You use your knowledge to hinder enemies. As a standard action, you
+    can craft harmful \"Injections\". You need a Syringe and a Chemical
+    or Pharmaceutical kit to attempt to craft the item. These deal Xd6
+    poison damage and apply the
+    [Shaken](Conditions#Shaken "Shaken"){.wikilink} condition for 1d4
+    rounds on a successful melee touch attack. The Craft DC is 12, it is
+    considered an opposing Constitution check to see if the Shaken
+    condition is applied. X = per 2 Combat Medic levels, the Craft DC is
+    beaten.
+
+  C\) Pharmacist
+
+  : 
+
+  : You excel at supporting your teammates. Your crafted concoctions
+    from **Extra Curricular Brewing** last 8 hours instead of 4. And
+    **Resistance Concoction** and **Boosters** effects last the normal
+    length of time in combat. Extra Curricular Brewing improvements come
+    at levels 5 and 8 instead of 6 and 10. Allies using your drugs gain
+    a +1 bonus to Advantage Dice that are rolled while the drug is
+    affecting them.
+
+<!-- -->
+
+Advanced Pharmaceuticals
+: At **3rd** level, the Combat Medic gets better at applying their
+  training. The limits for max skill ranks for Craft
+  [Pharmaceutical](-_Pharmaceutical "Pharmaceutical"){.wikilink} can be
+  ignored, and you automatically gain 1 additional Rank in
+  Pharmaceutical. Also, gains an Advantage when attempting to craft
+  Pharmaceutical items outside of combat.
+
+<!-- -->
+
+Field Procedure (Level 4 Choice)
+: At **4th** level, the Combat Medic refines their battlefield
+  techniques.
+
+  A\) Helpful Hand
+
+  : 
+
+  : You gain another Advantage (max number of advantage dice for any
+    action is always 3) on [Medical](Medical "Medical"){.wikilink}
+    checks both in and out of combat. Add your Advantage Die roll to the
+    HP restored. You can never critically fail a Medical check. At 7th
+    level, a failure still restores +1HP per number of Dice that would
+    have been rolled; at 10th level, it is +2HP.
+
+  B\) Combat Cauterization
+
+  : 
+
+  : You can spend your Standard Action to instantly stabilize a dying
+    ally within 5ft without having to roll for it. This action takes up
+    the whole round and blocks any Simple or Bonus actions. If you
+    perform any healing, including stabilizing, you gain a +1 AC bonus
+    until your next turn as you focus on your defense. At 10th level,
+    this becomes +2 AC.
+
+  C\) Field Synthesis
+
+  : 
+
+  : You can now \"Up-Tech\" any Chemical or Pharmaceutical item to your
+    current Tech Level in the field without a professional lab, provided
+    you have the correct Professional Kit. Additionally, when you craft
+    these items, you use 25% fewer materials and for 1/2 the time,
+    demonstrating your ability to minimize waste. The barrier to
+    crafting masterwork Chemical or Pharmaceutical items is reduced by
+    1.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, the Combat Medic gains a Bonus Feat from:
+  **Leadership & Companions**, **Space Ship Operations**, or **Misc
+  Feats**.
+
+<!-- -->
+
+Advanced Mobility (Level 6 Choice)
+: At **6th** level, the Combat Medic improves their ability to navigate
+  and overall mobility.
+
+  A\) Rapid Intervention
+
+  : 
+
+  : You gain +10ft movement of base speed while in combat. If moving to
+    perform a Medic! ability, you are no longer affected by rough
+    terrain or zero-gravity environments.
+
+  B\) Evasive Triage
+
+  : 
+
+  : When moving toward an ally with less than 50% HP, you do not trigger
+    **Tactical Opportunities** from enemies, and any enemy attempting to
+    hit you with a Ranged weapon takes disadvantage until your next
+    turn.
+
+  C\) Covering Fire Medic
+
+  : 
+
+  : While holding a one-handed ranged weapon, and moving toward a
+    wounded ally, gain a Bonus Action of **Suppressing Fire**. Do not
+    gain any disadvantages for attacking using a Bonus Action, treat
+    this attack as if it were a Standard Attack Action using Suppression
+    Fire.
+
+<!-- -->
+
+I\'m there for you!
+: At **7th** level, if not already
+  [Exhausted](Conditions#-_Exhausted "Exhausted"){.wikilink}, the Combat
+  Medic can choose to act in both groups. If they are in the Vanguard,
+  then they may act in the Rearguard\'s phase as well. The extra action
+  must be an attempt to heal, restore, or stabilize a fallen ally, and
+  they cannot, in this extra action, do anything that would directly
+  bring harm to an ally or enemy. The same goes for if they are already
+  in the Rearguard: they may act in the next rounds of Vanguard before
+  their normal turn in the Rearguard. Doing this gives the Character
+  [Fatigued](Conditions#-_Fatigued "Fatigued"){.wikilink} condition; if
+  already Fatigued, then they become Exhausted. A Combat Medic cannot do
+  this twice in a row.
+
+<!-- -->
+
+In-Field Chemistry
+: At **7th** level, the Combat Medic gains an Advantage when attempting
+  to [Identify](Knowledge#Identify "Identify"){.wikilink},
+  [Study](Study "Study"){.wikilink}, or Craft an antidote for poisons,
+  acids, or diseases. This advantage stacks with others. A Combat Medic
+  doesn\'t need Knowledge (Science) to perform Identify; they can use
+  Study or Craft (Pharmaceuticals), whichever of the three skills is
+  highest. The Combat Medic cannot critically fail crafting an antidote.
+
+<!-- -->
+
+Resolve
+: At **8th** level, a Combat Medic gains a morale bonus equal to 1/2
+  their Profession level (round down) on saving throws to resist fear
+  effects and [Intimidate](Intimidate "Intimidate"){.wikilink} checks,
+  or any Wisdom saving throw against Techniques.
+
+<!-- -->
+
+Never gonna let you go
+: At **9th** level, a Combat Medic can stabilize a character as a Simple
+  Action even while in combat. No roll is needed if using a Medical Kit.
+  If the Combat Medic has picked **Combat Cauterization** then this
+  becomes a Free Action.
+
+<!-- -->
+
+Medical Triage (Level 10 Choice)
+: At **10th** level, the Combat Medic reaches the peak of their
+  profession.
+
+  A\) Biological Weakness
+
+  : 
+
+  : As a Simple Action, make a Knowledge (Science) check (DC 15) to
+    identify a target\'s weakness. If successful, gain an additional
+    Advantage on attacks against that target for the rest of the combat.
+    This can only be attempted once per target.
+
+  B\) Miracle Resuscitation
+
+  : 
+
+  : Once per day, as a Standard Action, you can bring a character who
+    died within the last 9 seconds or 3 rounds back to 1 HP. They are
+    [Unconscious](Conditions#Helpless/Incapacitated/Unconscious "Unconscious"){.wikilink}
+    for 1d4 rounds and upon waking up, they are
+    [Exhausted](Conditions#-_Exhausted "Exhausted"){.wikilink}, but
+    alive.
+
+  C\) Stimulant Overdrive
+
+  : 
+
+  : You can inject an ally (or yourself) with a volatile stimulant. For
+    1d4 rounds, the target gains an Extra Damage stat, and the threshold
+    for all Extra Damage is shifted down by 1 die. Their base movement
+    is increased by +10ft. The target becomes
+    [Fatigued](Conditions#-_Fatigued "Fatigued"){.wikilink} immediately
+    after the effect ends.
+
+## Dimension Knight {#dimension_knight}
+
+  Profession Level   Standard Features                       Dimensional Tricks
+  ------------------ --------------------------------------- --------------------
+  1st                Detect Rift, Order Choice & Talent      \-
+  2nd                \-                                      1 Trick
+  3rd                Weapon Training                         1 Trick
+  4th                \-                                      1 Trick
+  5th                Gate Traveler (Utility), Order Talent   \-
+  6th                Combat Gate                             1 Trick
+  7th                No Place Like Home                      1 Trick
+  8th                Expert Weapon Training                  1 Trick
+  9th                Always Suited                           1 Trick
+  10th               Mirror Universe, Order Talent           1 Trick
+
+  : Table: The Dimension Knight
+
+Scarlet looked up at the unfamiliar night sky. The sky was an unexpected
+reminder of the odd day she had. Just yesterday her world was much
+smaller. Today it is larger than the Universe itself. She had fought
+weird monsters and traveled to a new dimension and now looked tried from
+her experiences. She laded down in an alien field staring up at unknown
+stars. The galaxy this planet was in wasn\'t shaped like the Milky Way.
+In the Milky Way the \'Ring of Life\' is visible on all worlds. Instead,
+this galaxy was a blob of stars only mostly round in shape. Notable by
+the brighter brownish hue that dominated the southern hemisphere.
+
+She wondered what other things were different about this galaxy. About
+this dimension. And the strange man that brought her here. He explained
+mostly by showing. A direct and somewhat terrifying approach. He
+mentioned how she had recently \'awoken\' her powers and that it sent
+some \'ripple\' through inter-dimensional static that he and his order
+listened closely to. She could tell he had done this sort of thing
+before. He left to get food a while ago. Leaving her alone with her
+thoughts and more questions than answers and, the sudden realization
+that her life will never be the same.
+
+What is this order? And why are they so interested in finding me before
+anybody else? Why do I have these powers? And just how far can I take
+them?
+
+It wasn\'t until much later that Scarlet got her answers. She now
+patrols the cosmos, protecting it from itself, making sure rifts in
+space-time do not cause irreparable harm. And stopping other Orders of
+Knights who also possess such powers from generating them.
+
+Player\'s pick Dimensional Knight if they want Character\'s that travel
+far and wide under the clock of a secret Order which has its goals
+rooted within the fabric of the cosmos itself.
+
+The fastest path into this Profession is through the [Path of Strength
+(Strong
+Hero)](Future_Hero_Base_Class#Path_of_Strength_.28Strong_Hero.29 "Path of Strength (Strong Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become a
+Dimension Knight, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Strength **OR** Ability: Strength Score 15+ **OR**
+    Ability: Wisdom Score 15+ and Strength score of 12+
+3.  Order: At level 1, the character must pick an Order to follow
+    (Unity, Divergent, or Nature).
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Dimension Knights swear off guns. They use special melee weapons. A
+    Knight gets his saber or other melee weapon of choice once he or she
+    is knighted. Practice and patience reveals what type of melee weapon
+    a Dimension Knight favors.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Strength and Wisdom
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Athletics](Athletics "Athletics"){.wikilink} (Str),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), Choose Any
+One [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
+[Study](Study "Study"){.wikilink} (Int), [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis), and
+[Survival](Survival "Survival"){.wikilink} (Wis).
+
+`<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
+Affinity`</u>`{=html}: The Dimension Knight gains Technique like
+abilities called
+[Tricks](Techniques#Dimensional_Tricks "Tricks"){.wikilink}.
+
+### Dimension Knight\'s Core Profession Talents {#dimension_knights_core_profession_talents}
+
+------------------------------------------------------------------------
+
+Order Choice
+: At Dimension Knight **1st** level, the character must pledge
+  themselves to an Order. This choice determines your specialized Order
+  Talents at levels 1, 5, and 10.
+  - **Order of Unity**: Dedicated to protecting the multiverse from
+    collision and chaos. Focuses on stabilization and defense.
+  - **Order of the Divergent**: Believes in using dimensional power to
+    reshape reality. Focuses on offensive rifts and gravity
+    manipulation.
+  - **Order of Nature**: Views rifts as natural phenomena that should
+    run their course. Focuses on chaotic probability and temporal
+    shifts.
+
+<!-- -->
+
+Detect Rift
+: Starting at **1st** level, you are sensitive to the fabric of reality.
+  You gain a +5 bonus to your **Passive Perception** for noticing
+  spacetime anomalies (rifts, active FTL drives, or phased objects)
+  within 100ft + 10ft per (STR Mod + WIS Mod). In Space this extends to
+  1000km + 100km per (STR Mod + WIS Mod).
+: **Active Use**: As a **Simple Action** (Utility), you can perform a
+  [Perception](Perception "Perception"){.wikilink} check to pinpoint the
+  exact origin or destination of a disturbance. This provides no combat
+  bonuses.
+
+<!-- -->
+
+Weapon Training (Spatial Call)
+: At **3rd** level, you gain the [Melee Weapon
+  Focus](Melee_Weapon_Focus "Melee Weapon Focus"){.wikilink} feat. You
+  also form a spatial bond with a single melee weapon you are proficient
+  with. As a **Simple Action**, you can open a micro-rift to \"call\"
+  this weapon to your hand from anywhere within 100ft, provided it is
+  not secured in a way that prevents its movement. If the weapon is
+  being held by another, it requires an opposing Strength check to
+  retrieve it.
+
+<!-- -->
+
+Gate Traveler (Utility)
+: At **5th** level, you can manipulate travel gates. As a **Standard
+  Action** (out of combat), you can attempt to Open, Close, or Stabilize
+  an existing rift using a [Survival](Survival "Survival"){.wikilink}
+  check (DC 15-40). Two-way gates are more difficult (+5 DC). You can
+  assist allies through a gate to prevent side effects like the
+  [Nauseated](Conditions#Nauseated "Nauseated"){.wikilink} condition.
+
+<!-- -->
+
+: A Dimension Knight cannot know where the gate leads or if the gate is
+  two way or not A Gate may open up into a water world and send water
+  and alien fish creatures into your own spacetime. A Knight cannot
+  create new gates at this level.
+
+<!-- -->
+
+Combat Gate
+: At **6th** level, you can fold space in the heat of battle. As a
+  **Standard Action**, you can teleport to an empty square adjacent to a
+  friendly ally within Line of Sight, or teleport back to the exact
+  square you occupied at the start of your previous turn. This movement
+  is instantaneous and does not trigger Tactical Opportunities. This
+  **Standard Action** provides the option between a Bonus Attack Action
+  or a Bonus Move Action (the movement base speed is considered the
+  Character\'s walk speed in this case).
+
+<!-- -->
+
+: At **10th** level, this can be done once per encounter as a **Simple
+  Action** instead of a **Standard Action**. In this case a Bonus Action
+  is not earned when using Combat Gate as a Simple Action.
+
+<!-- -->
+
+No Place Like Home
+: At **7th** level, you can mark a location in Spacetime by meditating
+  there for 24 hours (Study DC 20). You can maintain a number of marked
+  locations equal to your Wisdom Modifier. Once per day, (out of
+  combat), you can open a stable two-way gate to a marked location that
+  stays open for 1 minute. The Dimension Knight doesn\'t need to make
+  Survival checks to transverse this gate. Any friendly can do so with a
+  DC8 while any unknown or unwanted person\'s DC is 20.
+
+<!-- -->
+
+: This can only be done once per day until **level 10** when a Dimension
+  Knight can do this twice per day. Also, one location can be chosen as
+  the Knight\'s Favored location and can make a 1 way gate using this
+  process as many times as they want.
+
+<!-- -->
+
+: Once the gate is closed it will leave a \'mark\' that is detectable
+  with a Perception check or passively. The DC is 5 + 1 per hour after
+  the gate was closed. Once the DC reaches 45 it is no longer considered
+  detectable. Another Knight can use their Gate Traveler abilities on it
+  to re-open the gate.
+
+<!-- -->
+
+Expert Weapon Training (Spatial Edge)
+: At **8th** level, you gain a bonus feat from the **Melee Weapon
+  Combat** category. Additionally, your strikes bypass standard material
+  density; your melee attacks ignore an amount of Damage Reduction (DR)
+  equal to your Wisdom Modifier.
+
+<!-- -->
+
+Always Suited (Dimensional Armory)
+: At **9th** level, you gain a +1 bonus to your Armor Proficiency tree.
+  You can also store your favored armor and weapons in a personal
+  sub-dimension. You can summon your gear to appear instantly equipped
+  on your body, or dismiss it back to the rift. Out of combat this takes
+  \~2 seconds. In combat it is a **Standard Action** that grants a Bonus
+  Move Action.
+
+<!-- -->
+
+Mirror Universe
+: At **10th** level, once per encounter as a **Free Action**, the
+  Dimension Knight can pull a mirror copy of themselves to act in combat
+  in the other team group (Vanguard/Rearguard). The Mirror copy must act
+  differently (i.e., attack a different target, or use a different
+  action).
+
+<!-- -->
+
+: Whatever the mirror Knight has the same limits and conditions you
+  have. The same stats, hp, damage, number of techniques used etc\... If
+  they choose to preform a Dimension Trick/Technique then that Technique
+  is also considered used by you. Any damage taken is also taken by you
+  and vice-versa. This mirror universe version disappears at the end of
+  the turn.
+
+### The Orders of Dimension Knights {#the_orders_of_dimension_knights}
+
+Since the dawn of sentience, Dimension Knights have wandered the fabric
+of time. The source of their power remains a mystery, but as these lone
+heroes eventually coalesced, they formed the **Order of Unity**---an
+organization dedicated to preventing a catastrophic collision of the
+multiverse.
+
+Internal doubt eventually fractured the Order, giving rise to **The
+Divergent**. Citing ancient texts from the first dimensional heroes,
+this breakaway faction claimed a deeper understanding of their powers
+that fundamentally contradicted Unity's mission. The resulting schism
+sparked the Dimensional War, a secret conflict that bent the very fabric
+of spacetime and nearly rendered both orders extinct.
+
+For millions of years, the survivors remained in shadow. As the cosmos
+healed, a new generation of knights emerged, rekindling old grudges.
+Amidst this tension, the **Order of Nature** (or **Chaos Knights**)
+appeared. A loose collection of outcasts and ex-members, they believe
+spacetime rifts are natural phenomena that should be left to run their
+course, regardless of the cost. For many, this order is a sanctuary, as
+deserting the older orders is still punishable by death.
+
+#### Order of Unity Talents {#order_of_unity_talents}
+
+Level 1
+: Rift Warden
+: You gain an Advantage Die when using \`Gate Traveler\` to **Close** or
+  **Stabilize** a rift. Additionally, as a **Simple Action**, you can
+  \"anchor\" an ally within 10ft; they gain a +2 bonus on their next
+  saving throw against being moved, tripped, or teleported against their
+  will.
+
+<!-- -->
+
+Level 5
+: Sanctuary Path
+: You gain the \`No Place Like Home\` ability (normally level 7) early,
+  but it is restricted to a single location: the Order's hidden Temple.
+  This access is a stable two-way gate and does not count against the
+  total number of marked locations you can maintain at level 7.
+
+<!-- -->
+
+Level 6
+: Guardian Swap (Combat Gate Enhancement)
+: Your **Combat Gate** feature is improved. When you use Combat Gate,
+  you may choose to swap positions with a willing ally within 30ft
+  instead of teleporting to an empty square. If you swap, that ally
+  gains a +2 Dodge bonus to AC until the start of your next turn.
+
+<!-- -->
+
+Level 10
+: Singularity Aegis
+: You can collapse a point in space to both hinder enemies and protect
+  your squad. As a **Standard Action**, you generate a microsingularity
+  at a point within 60ft (Wisdom Check vs DC 18).
+  - **Persistence**: The singularity persists for 1 round per Wisdom or
+    Strength mod, Players choice. Each round as a **Free Action** the
+    Dimension knight can move it up to 30ft. However, the damage only
+    happens first round.
+  - **Offense**: Creatures within 20ft are pulled 10ft toward the
+    center. Enemies within 5ft take \`Xd6 + Wisdom Modifier\` Gravity
+    damage (X = amount the check beat the DC, max 10).
+  - **Defense**: Ranged attacks cannot fire through the Singularity. Any
+    shoots that pass within 20ft of the singularity suffer a
+    Disadvantage Die for accuracy and Damage as the void pulls at the
+    projectiles.
+  - **Frequency**: Once per day (twice at Character Level 20).
+
+#### Order of the Divergent Talents {#order_of_the_divergent_talents}
+
+Level 1
+: Weight of the Void
+: You gain an Advantage Die when using \`Gate Traveler\` to **Open** or
+  **Make Unstable** a rift. Additionally, as a **Simple Action**, you
+  can manipulate gravity around a target within 30ft. The target must
+  roll a Strength saving throw (DC 10 + 1/2 DK level + WIS Mod) or have
+  its AC Bonus from Dexterity reduced by half (round up) as well as
+  movement speed reduced by half (round down) until the start of your
+  next turn.
+
+<!-- -->
+
+Level 5
+: Extra Training
+: You gain a bonus feat from the **Melee Weapon Combat** or **Two-Weapon
+  Fighting** category. Using your own personal skills and kinship with
+  the specific Weapon from **Weapon Training (Spatial Call)** you are
+  able to re-craft this weapon and either uptech it or Masterwork level
+  up by 1. This craft check is an auto success.
+
+<!-- -->
+
+Level 6
+: Dimensional Tear (Combat Gate Enhancement)
+: Your **Combat Gate** feature is improved. When you use Combat Gate,
+  you may choose to leave a \"Dimensional Tear\" in the square you just
+  left. This tear lasts for 1 round. Any enemy entering or starting
+  their turn in or adjacent to that square takes \`1d6 + WIS Mod\`
+  Gravity damage and is considered **Unlucky** on their next accuracy
+  check.
+
+<!-- -->
+
+Level 10
+: The White Hole
+: You summon a point of pure entropy that reverses local physics. As a
+  **Standard Action**, you generate a burst of energy within 60ft + 5ft
+  per (STR Mod + WIS Mod) (Wisdom Check vs DC 18).
+  - **Entropy Burst**: All enemies within 25ft take \`Xd6\` damage (X =
+    amount the check beat the DC, max 10). This damage counts as
+    Kinetic, Energy, Thermal, and Chemical simultaneously; targets with
+    a weakness to any of these types take double damage.
+  - **Temporal Push**: Targets damaged this way are violently pushed
+    15ft away from the center. If they strike a solid object, they must
+    succeed on a Constitution save (DC 15) or be **Stunned** for 1
+    round.
+  - **Frequency**: Once per day (twice at Character Level 20).
+
+#### Order of Nature Talents {#order_of_nature_talents}
+
+Level 1
+: Chaos Intuition
+: You gain an Advantage Die when using \`Gate Traveler\` to **traverse**
+  a rift. Additionally, you are uniquely attuned to the presence of
+  other knights; you gain an Advantage Die on all Passive or active
+  Perception checks made to detect another Dimension Knight or a hidden
+  \"mark\" left by the \`No Place Like Home\` ability.
+
+<!-- -->
+
+Level 5
+: Master of Tricks
+: You gain an additional Dimensional Trick. You may ignore one
+  order-based prerequisite for this specific trick, representing your
+  order\'s disregard for traditional boundaries.
+
+<!-- -->
+
+Level 6
+: Entropic Flicker (Combat Gate Enhancement)
+: Your **Combat Gate** feature is improved. When you use Combat Gate,
+  you briefly flicker through multiple timelines. You gain **Luck**
+  (roll 2d20, take the highest) on the next accuracy check or saving
+  throw you make before the start of your next turn.
+
+<!-- -->
+
+Level 10
+: Into the Maelstrom
+: You unleash a localized storm of chaotic probability. As a **Standard
+  Action**, you roll a percentile die (d100) to determine the result
+  (Wisdom Check vs DC 18):
+  - **1-30 (Implosion)**: Deals 6d8 gravity damage in a 20ft radius at a
+    point you specify. This pulls all targets 10ft toward the center.
+  - **31-60 (Temporal Flash)**: All enemies in a 30ft radius must
+    succeed on a Wisdom save (DC 14 + STR Mod + WIS Mod) or be **Dazed**
+    for 1d4 rounds as they are overwhelmed by visions of alternate
+    futures.
+  - **61-90 (Dimensional Surge)**: You and all allies within 30ft gain
+    an additional Standard Action that can be utilized in the other
+    combat group (Vanguard/Rearguard) this round.
+  - **91-100 (Grand Rift)**: A temporary two-way gate opens to a random
+    alternate universe for 1 + 1d4 rounds. All combatants and objects
+    within 50ft are sucked in unless they succeed on a Dexterity or
+    Acrobatics saving throw (DC 20).
+  - **Frequency**: Once per day (twice at Character Level 20).
+
+## Dreadnought
+
+  Profession Level   Special
+  ------------------ --------------------------------------------------
+  1st                Ability Surge, Ideology Bonus
+  2nd                Dreadnought's Discipline (Choice), Well Grounded
+  3rd                Unhindered, Steamroller
+  4th                Ideology Talent, Resolve
+  5th                Bonus Feat
+  6th                Dreadnought's Discipline (Choice)
+  7th                Heavy Artillery
+  8th                Greater Surge
+  9th                Tirelessly, Ideology Mastery
+  10th               Dreadnought's Discipline (Choice)
+
+  : Table: The Dreadnought
+
+Science continues to expand the knowledge of the human form. As well as
+all other species biology. Advanced Civilizations have not wasted such
+information. Wishing to bring the best out of its people, different
+governments, religious groups, and various factions have followed the
+lessons learned to know what specific exercise, diet, vitamin
+supplements, and even advanced surgical operations are necessary to help
+shape the best of whatever species is in question. Most governments have
+programs for helping make enhanced super soldiers, while religious
+groups may use this knowledge to help define a strict discipline routine
+for devout followers. Other factions may have different, potentially
+sinister plans.
+
+The term Dreadnought was coined at some point in history, and it has
+stuck for thousands of years. Likely because the people who underwent
+these regimes became like the Dreadnought Spaceships used in war.
+Dreadnoughts are fearsome ships with both a massive amount of armor and
+weapons. Sometimes referred to as the \"Walking Tank\" a Dreadnought
+excels at breaking down foes while simultaneously being able to take a
+beating. Making a Dreadnought the perfect elite unit for military or
+other militant groups. Most people who consider themselves to be such
+are so of their own free will and follow a strict code, discipline, or
+some form of ideology. Usually swearing allegiance to a government or
+other type of faction.
+
+Choose the Dreadnought to be able to plow through foes and obstacles
+while withstanding massive amounts of punishment.
+
+The fastest path into this Profession is through the [Path of
+Constitution(Tough
+Hero)](Future_Hero_Base_Class#Path_of_Constitution_.28Tough_Hero.29 "Path of Constitution(Tough Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become a
+Dreadnought, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Constitution **OR** Path: Path of Dexterity **OR**
+    Ability: Constitution Score 15+ **OR** Ability: Strength Score 15+
+3.  Ideology: At level one, the Dreadnought must pick an Ideology to
+    follow. (More on this in \"Extra Info\" and \"Profession Talents\"
+    sections)
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Class: A Character that is already a Helix Warrior cannot be a
+    Dreadnought and vice versa.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Dexterity and Constitution
+
+`<u>`{=html}Favored Skills`</u>`{=html}: The Dreadnought's Profession
+skills are as follows. [Acrobatics](Acrobatics "Acrobatics"){.wikilink}
+(Dex), [Athletics](Athletics "Athletics"){.wikilink} (Str),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str),
+[Profession](Profession "Profession"){.wikilink} (Wis)
+
+`<u>`{=html}Extra Info`</u>`{=html}: At the first level, the Dreadnought
+has to choose what ideology to follow.
+
+### Dreadnought\'s Profession Talents {#dreadnoughts_profession_talents}
+
+------------------------------------------------------------------------
+
+Ability Surge
+: Starting at Dreadnought 1st level, the Dreadnought\'s uses her
+  training and advanced physiology to push her self to the limits. When
+  doing this they focus on a particular goal above all else and with raw
+  force of git they attempt to achieve that goal at all cost. Doing this
+  takes a Simple action and provides a +4 to Strength Score and +2
+  Dexterity Score. They also gain advantage on Constitution saving
+  throws but disadvantage on Wisdom saves. The also gain temporary hit
+  points explained below. This lasts for 1 + Constitution Mod number of
+  rounds. Once no longer surging a Dreadnought is
+  [Fatigued](Conditions#Fatigued "Fatigued"){.wikilink}. If already
+  Fatigued then they are
+  [Exhausted](Conditions#-_Exhausted "Exhausted"){.wikilink}. If already
+  Exhausted then they become
+  [Unconscious](Conditions#Helpless.2FIncapacitated.2FUnconscious "Unconscious"){.wikilink}.
+
+<!-- -->
+
+: When this happens the Dreadnought gains temporary health equal to 2 \*
+  Dreadnought level. So A level 4 Dreadnought that surges would gain 8
+  additional temporary health. This health goes away once they calm
+  down. If that would bring them down to zero or below it instead bring
+  them down too 1.
+
+<!-- -->
+
+Dreadnought's Discipline (Level 2 Choice)
+: At **2nd** level, choose a Dreadnought Discipline which focuses your
+  role in combat:
+
+  A\) The Juggernaut
+
+  : 
+
+  : You are the immovable wall of your squad. While your **Ability
+    Surge** is active, you gain Damage Reduction (DR) equal to your
+    Constitution Modifier. Gain Tactical Opportunity on all enemies
+    within 30ft that attack your allies instead of you.
+
+  B\) The Ravager
+
+  : 
+
+  : You channel your raw power into devastating strikes. While your
+    **Ability Surge** is active, you can choose to attack recklessly:
+    your melee accuracy **and** damage gain an Advantage Die, but all
+    attacks against you also gain an Advantage Die until your next turn.
+    The threshold to trigger Extra Damage is reduced by 1.
+
+<!-- -->
+
+Well Grounded
+: The Dreadnought is incredibly sure-footed. Starting at 2nd level, the
+  Dreadnought gains a +2 bonus to save against being tripped, overrun,
+  knocked prone. The Dreadnought gains an additional +1 for every Extra
+  Damage the Character has.
+
+<!-- -->
+
+Unhindered
+: At 3rd level, the Dreadnought can ignore the movement penalties of
+  armor.
+
+<!-- -->
+
+Steamroller
+: Starting at 3rd level, the Dreadnought does not need to move before
+  making an overrun Technique against an opponent and takes advantage
+  when doing so. If successful earn a Bonus Attack Action or a Bonus
+  Overrun Action if there is another enemy within run distance.
+
+<!-- -->
+
+Ideology Talent
+: At **4th** level, the Dreadnought gains a talent based on their chosen
+  Ideology. These talents often provide a combat benefit that synergizes
+  with their chosen Discipline. (If you do not wish to pick one, you can
+  choose whatever talent you want. However, you do not also get the
+  other associated bonuses, just the talent.)
+
+<!-- -->
+
+Resolve
+: Beginning at 4th level, the Dreadnought gains a morale bonus equal to
+  one-half her Dreadnought level (rounded down) on saving throws to
+  resist Mind effects and both to resist Intimidation as well as perform
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks.
+
+<!-- -->
+
+Bonus Feat
+: The Dreadnought gains a Bonus Feat from one of the following
+  categories: **Utility Feats**, **Combat Martial Arts**, **Melee Weapon
+  Combat**
+
+<!-- -->
+
+Dreadnought's Discipline (Level 6 Choice)
+: At **6th** level, the Dreadnought refines their battlefield presence.
+
+  A\) Living Shield
+
+  : 
+
+  : As a Simple Action, you can place yourself in harm\'s way to protect
+    a teammate. Until the start of your next turn, you can absorb half
+    the damage of an attack meant for an adjacent ally. Whenever a
+    Dreadnought character earns a Bonus Action they always have the
+    option of Living Shield as a Bonus. This Bonus can be stashed and
+    used as a reaction (an action out of the group/turn for the
+    character) to any friendly combatant within the Dreadnought\'s Walk
+    speed distance. If the Dreadnought does this they must move next to
+    the ally they wish to defend.
+
+  B\) Knockdown
+
+  : 
+
+  : As a Standard Action, you can perform the Tackle Advance Combat
+    Technique with advantage, and if successful, can also perform a
+    Standard (not Bonus) Melee attack on the same turn. Also a
+    Dreadnought can perform a Tackle from a stand still against an
+    adjacent enemy.
+
+<!-- -->
+
+Heavy Artillery
+: Beginning at 7th level, a Dreadnought treats all weapons as one size
+  category smaller for purposes of determining whether she can wield
+  them at all or if they are considered light weapons for the purpose of
+  yielding it in an off hand.
+
+<!-- -->
+
+Greater Surge
+: At 8th level, the Dreadnought can perform an Ability Surge to a
+  greater effect. Like Surge, but now the Dreadnought gains a +6 to
+  Strength and +3 to Dexterity. And 3 \* Dreadnought level worth of
+  temporary health. Now when surging a Dreadnought can as a Free action
+  choose to move from one Combat group to another, ie: from Vanguard to
+  Rearguard or vice-versa.
+
+<!-- -->
+
+Tirelessly
+: At 9th level, the Dreadnought calls upon their intense training and
+  mental grit to temporarily overcome how tired they may be. Removing
+  any effect of Fatigue or if Exhausted they are not just Fatigued. They
+  can only do this once per day. If in combat, this is considered a
+  Simple Action.
+
+<!-- -->
+
+Dreadnought's Discipline (Level 10 Choice)
+: At **10th** level, the Dreadnought reaches the pinnacle of their
+  discipline.
+
+  A\) Immovable Object
+
+  : 
+
+  : Once per day, if an attack would reduce you to 0 or below HP, you
+    drop to 1 HP instead and instantly trigger a free **Surge**,
+    doubling the Temporary HP gained from it. Also gain a **Bonus
+    Attack** or **Bonus Move** Action that can done before the
+    Dreadnought\'s normal turn.
+
+  B\) Final Strike
+
+  : 
+
+  : If you kill or knockout an enemy with either a critical hit, a
+    \'Coup de Grace\', or deal Massive Damage (damage equal to 50% or
+    more of target health in a single round) to a target, you can freely
+    **Surge** at the end of the turn and gain a Standard Action that can
+    be utilized in the other combat group. If in Rearguard, then they
+    can use this action in the Vanguard group next turn before doing
+    their normal turn in Rearguard. This action is **only** a Standard
+    Action no Simple or Bonus actions. If already Surging, the surge
+    round counter is reset. This can only happen 1 + Dreadnought\'s
+    Constitution Mod times per day.
+
+### Dreadnought Ideologies {#dreadnought_ideologies}
+
+------------------------------------------------------------------------
+
+`<u>`{=html}Law and Order`</u>`{=html}
+
+: Associated with Lawful characters. You work for and follow the
+  authority of the land.
+
+  Level 1 Bonus (Intuition)
+
+  : 
+
+  : You gain [Sense Motive](Sense_Motive "Sense Motive"){.wikilink} as a
+    Favored Skill (or +1 Rank). You gain an Advantage on
+    [Diplomacy](Diplomacy "Diplomacy"){.wikilink} checks when dealing
+    with law enforcement or government officials.
+
+  Level 4 Talent (Master Defender)
+
+  : 
+
+  : You gain a +1 AC bonus whenever you fight defensively or take the
+    total defense action. **Synergy:** If you are a **Juggernaut**, this
+    bonus increases to +2.
+
+  Level 9 Mastery (I Am The Law!)
+
+  : 
+
+  : You gain the Plenipotentiary Privileges Profession Feature from the
+    Envoy when dealing with \*known\* criminals, allowing you to bypass
+    typical bureaucratic hurdles.
+
+`<u>`{=html}Life Above All`</u>`{=html}
+
+: Associated with Good characters. You value the life of others greatly;
+  killing is a last resort.
+
+  Level 1 Bonus (Big Heart)
+
+  : 
+
+  : You gain [Medical](Medical "Medical"){.wikilink} as a Favored Skill
+    (+1 Rank). You gain an Advantage on
+    [Diplomacy](Diplomacy "Diplomacy"){.wikilink} checks when attempting
+    to de-escalate or avoid violence.
+
+  Level 4 Talent (Helping Hands)
+
+  : 
+
+  : You gain a +1 Misc bonus to [Medical](Medical "Medical"){.wikilink}.
+    You can stabilize a dying character as a Simple Action. **Synergy:**
+    If you are a **Juggernaut**, your \*Living Shield\* feature also
+    grants the defended ally temporary HP equal to your Constitution
+    modifier.
+
+  Level 9 Mastery (Pacifist\'s Resolve)
+
+  : 
+
+  : You take no penalties for dealing non-lethal damage with lethal
+    weapons. If you successfully knock an enemy out non-lethally or use
+    diplomacy to end a fight, you gain another Standard Action that can
+    be done outside the Character\'s group.
+
+`<u>`{=html}Duty and Doctrine`</u>`{=html}
+
+: Associated with Lawful characters. You follow commands no matter how
+  brutal, often as a zealot for a cause.
+
+  Level 1 Bonus (Indoctrination)
+
+  : 
+
+  : You gain [Knowledge](Knowledge "Knowledge"){.wikilink} Culture as a
+    Favored Skill (+1 Rank). You gain an Advantage on saving throws
+    against [Bluff](Bluff "Bluff"){.wikilink},
+    [Diplomacy](Diplomacy "Diplomacy"){.wikilink}, and
+    [Intimidate](Intimidate "Intimidate"){.wikilink} checks.
+
+  Level 4 Talent (Unshakable Faith)
+
+  : 
+
+  : You gain an Advantage on saving throws against mind-affecting
+    Techniques or psionics. **Synergy:** If you are a **Ravager**, your
+    reckless attacks gain Advantage Die on damage rolls against enemies
+    that have damaged an ally this combat.
+
+  Level 9 Mastery (Zealot\'s Surge)
+
+  : 
+
+  : Your trance is unbreakable. While **Ability Surge** is active, you
+    are immune to the [Shaken](Conditions#Shaken "Shaken"){.wikilink},
+    [Confused](Conditions#Confused "Confused"){.wikilink}, and
+    [Frightened](Conditions#Frightened "Frightened"){.wikilink}
+    conditions.
+
+`<u>`{=html}Survival of the Fittest`</u>`{=html}
+
+: Associated with Chaotic or Neutral characters. You believe only the
+  strong are meant to survive.
+
+  Level 1 Bonus (Self-Sufficient)
+
+  : 
+
+  : You gain [Survival](Survival "Survival"){.wikilink} as a Favored
+    Skill (+1 Rank). You require half the normal amount of food and
+    sleep to prevent the
+    [Fatigued](Conditions#Fatigued "Fatigued"){.wikilink} condition.
+
+  Level 4 Talent (Thick Skinned)
+
+  : 
+
+  : You gain +1 Damage Reduction (DR) permanently. **Synergy:** If you
+    are a **Juggernaut**, this stacks with your surge DR. If you are a
+    **Ravager**, your melee attacks ignore 1 point of enemy DR.
+
+  Level 9 Mastery (Primal Recovery)
+
+  : 
+
+  : While your **Ability Surge** is active, you regain 1d4 temporary HP
+    at the start of each of your turns as your body forcefully knits
+    itself back together.
+
+`<u>`{=html}Vigilante`</u>`{=html}
+
+: Associated with Chaotic characters. You take extreme measures to
+  change the system for the better.
+
+  Level 1 Bonus (Justifying Reasoning)
+
+  : 
+
+  : You gain [Knowledge](Knowledge "Knowledge"){.wikilink} Current
+    Events as a Favored Skill (+1 Rank). You gain an Advantage on
+    [Intimidate](Intimidate "Intimidate"){.wikilink} and
+    [Stealth](Stealth "Stealth"){.wikilink} checks when dealing with
+    corrupt officials or known criminals.
+
+  Level 4 Talent (Reckless Behavior)
+
+  : 
+
+  : You gain the Reckless Behavior Talent from the Starfighter
+    Profession.
+
+  Level 9 Mastery (Crowd Control)
+
+  : 
+
+  : When you are adjacent to two or more active enemies, your melee
+    accuracy checks gain an Advantage Die. **Synergy:** If you are a
+    **Ravager**, this stacks with your reckless attack advantage (max 3
+    Advantage Dice).
+
+## Engineer
+
++------------------+-------------------------------------------+
+| Profession Level | Special                                   |
++==================+===========================================+
+| 1st              | Quick Construction, Professional Repair,\ |
+|                  | Extra-Curricular Training I               |
++------------------+-------------------------------------------+
+| 2nd              | Beyond the Specifications                 |
++------------------+-------------------------------------------+
+| 3rd              | Reconfigure Weapon                        |
++------------------+-------------------------------------------+
+| 4th              | Overload                                  |
++------------------+-------------------------------------------+
+| 5th              | Bonus Feat, Improved Quick Construction,\ |
+|                  | Extra-Curricular Training II              |
++------------------+-------------------------------------------+
+| 6th              | Beyond the Specifications Improved,\      |
+|                  | Engineer\'s Eye                           |
++------------------+-------------------------------------------+
+| 7th              | Combat Mechanics Training                 |
++------------------+-------------------------------------------+
+| 8th              | Reconfigure Weapon Improved               |
++------------------+-------------------------------------------+
+| 9th              | Trained Professional,\                    |
+|                  | Extra-Curricular Training III             |
++------------------+-------------------------------------------+
+| 10th             | Engineering Miracle                       |
++------------------+-------------------------------------------+
+
+: Table: The Engineer
+
+A scientist may make grand discoveries about the universe and our place
+in it. But Engineers are the ones who exploit those findings and make
+them useful and practical in everyday life. Engineers are the
+cornerstone of modern civilizations. They make sure society keeps moving
+day to day. They silently work in the background, repairing industrial
+machinery. However, some do not like the mundane, quiet life that is
+hidden in the shadows of civilization. Some venture forth and try their
+luck out in the galactic frontier. Or in some other exciting position
+that brings an escape from monotony.
+
+Software has been known to be extremely flexible, especially for
+artificial intelligence. However, the hardware is not. And hardware is
+the engineer\'s forte. Out in the galaxy, there is an unknown number of
+unimaginable obstacles to face. Engineers are known for their knowledge
+of how things work, how to fix things, and how to make them more
+efficient. They can often bypass security measures or whip up special
+weapons or equipment in the field. It would be ridiculous for a team of
+colonizers to not bring an engineer to a new, unknown planet. An
+engineer\'s job can mean life or death for all involved. Those willing
+to leave their comfortable life, their sheltered workshops, garages, and
+shipyards may find riches and adventure.
+
+Choose Engineer if you want your character to excel at crafting,
+modifying, repairing, and disabling electrical and mechanical equipment,
+including weapons.
+
+The fastest path into this Profession is through the [Path of
+Intelligence(Smart
+Hero)](Future_Hero_Base_Class#Path_of_Intelligence_.28Smart_Hero.29 "Path of Intelligence(Smart Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become an
+Engineer, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Intelligence **OR** Ability: Intelligence Score 15+
+    **OR** Ability: Constitution Score 15+ and Intelligence of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Cannot use Heavy Weapons
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence and Constitution
+
+`<u>`{=html}Favored Skills`</u>`{=html}: The Engineer's Favored skills
+are as follows. [Computer Use](Computer_Use "Computer Use"){.wikilink}
+(Int), Craft \[ [Electronic](-_Electronic "Electronic"){.wikilink},
+[Mechanical](-_Mechanical "Mechanical"){.wikilink},
+[Structural](-_Structural "Structural"){.wikilink} \](Int), [Disable
+Device](Disable_Device "Disable Device"){.wikilink} (Int), Choose Any
+Three [Knowledge](Knowledge "Knowledge"){.wikilink}(Int),
+[Study](Study "Study"){.wikilink}(Int)
+
+### Engineer\'s Profession Talents {#engineers_profession_talents}
+
+------------------------------------------------------------------------
+
+Extra-Curricular Training
+: At **1st**, **5th**, and **9th** level, the Engineer selects a
+  specialized track of study that defines their practical role in the
+  field. Picking the same track multiple times unlocks higher-tier
+  benefits (Novice -\> Intermediate -\> Master).
+
+#### Course: The Field Tuner (Combat Support) {#course_the_field_tuner_combat_support}
+
+- Focus: Keeping the squad\'s gear and bodies at peak efficiency.\*
+
+:; Novice (Level 1): Patch Job
+
+: 
+
+  : Your \`Professional Repair\` in combat grants the target a +1 AC
+    bonus for 3 rounds in addition to healing damage. You gain
+    [Medical](Medical "Medical"){.wikilink} as a Favored Skill (+1
+    Rank).
+
+#### Course: The Tactical Saboteur (Combat Control) {#course_the_tactical_saboteur_combat_control}
+
+- Focus: Disrupting enemy technology and controlling the battlefield.\*
+
+:; Novice (Level 1): Combat Demolitions
+
+: 
+
+  : You gain \`Demolitions\` as a Favored Skill (+1 Rank). You gain an
+    Advantage on accuracy checks when throwing grenades or using
+    specialized explosives. Additionally, you can prime a grenade or
+    explosive device as a **Free Action** rather than a **Simple
+    Action**.
+
+#### Course: The Master Architect (Industrial Utility) {#course_the_master_architect_industrial_utility}
+
+- Focus: Long-term upgrades, crafting, and spaceship management.\*
+
+:; Novice (Level 1): Industrial Efficiency
+
+: 
+
+  : You gain the [Jerry
+    Rigging](Jerry_Rigging "Jerry Rigging"){.wikilink} feat for free.
+    You reduce the material cost of crafting General Equipment by an
+    additional 25%.
+
+------------------------------------------------------------------------
+
+  Craft (Repair)\<br \\\>DC (+5 in combat)   Damage Repaired
+  ------------------------------------------ ----------------------
+  0-9                                        No Damage repaired
+  10-15                                      1d6 + Engineer Level
+  16-20                                      2d6 + Engineer Level
+  21-25                                      3d6 + Engineer Level
+  26-30                                      4d6 + Engineer Level
+  31-35                                      5d6 + Engineer Level
+  36+                                        6d6 + Engineer Level
+
+  : Table: Professional Repair
+
+Quick Construction
+: At Engineer **1st** level, an engineer learns how to craft general
+  equipment such as scratch-built electronic, mechanical, and structural
+  objects more quickly than normal. When using the Craft (electronic),
+  Craft (mechanical), or Craft (structural) skill to build a General
+  Equipment item, the Engineer reduces the building time by 1/2.
+
+<!-- -->
+
+: At **5th** level, the Engineer reduces the building time of ordinary
+  objects to 1/4 and masterworked objects by half.
+
+<!-- -->
+
+Professional Repair
+: At **1st** level, an Engineer has improved ways of repairing robots,
+  vehicles, power armor, etc\... An Engineer with the correct
+  [Professional
+  Kit](General_Equipment#Profession_Kits "Professional Kit"){.wikilink}
+  or appropriate facility (ie: workshop, or hanger) can gain bonuses to
+  repair damage to a robot, vehicles, power armor, spaceships and so on.
+  The DC and Time are no longer based on the
+  [Repair](Craft#Repairing_Checks "Repair"){.wikilink} rules. This takes
+  1 hour of work. This can also be done in combat but requires an
+  additional +5 to the DC check and a Standard Action. Review the table
+  to the right for more info.
+
+<!-- -->
+
+: For Space Ships, this provides an Advantage to Repair checks to remove
+  Battle Damage.
+
+<!-- -->
+
+Beyond the Specifications
+: At **2nd** level, an Engineer can upgrade weapons and equipment to
+  provide temporary performance improvements that exceed the object\'s
+  normal specifications. It requires a Standard Action and full access
+  to the target object. The effect lasts for 10 minutes, and the object
+  cannot be boosted again for 1 hour.
+
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Melee Weapons                                   | DC    | **-** | Ranged     | DC    | **-** | General   | DC    |
+|                                                 |       |       | Weapons    |       |       | Equipment |       |
++=================================================+=======+=======+============+=======+=======+===========+=======+
+| At Engineer **2nd** Level and above                                                                              |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon does extra +1d4 (+1d for every +10 DC,   | 12    | **-** | Weapon     | 12    | **-** | Misc      | 12    |
+| Max +2)                                         |       |       | does extra |       |       | Bonus by  |       |
+|                                                 |       |       | +1d4 (+1d  |       |       | +1 for    |       |
+|                                                 |       |       | for every  |       |       | 1d4       |       |
+|                                                 |       |       | +10 DC,    |       |       | rounds    |       |
+|                                                 |       |       | Max +2)    |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon +1 AP (ignores 1 DR (+1 for every +5 DC) | 15    | **-** | Weapon +1  | 15    | **-** | Increases | 15    |
+|                                                 |       |       | AP         |       |       | range of  |       |
+|                                                 |       |       | (ignores 1 |       |       | item by   |       |
+|                                                 |       |       | DR (+1 for |       |       | %25       |       |
+|                                                 |       |       | every +5   |       |       |           |       |
+|                                                 |       |       | DC)        |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon's Crit Multipler +1 (Max x3)             | 17    | **-** | Weapon's   | 17    | **-** | \-        | \-    |
+|                                                 |       |       | Crit       |       |       |           |       |
+|                                                 |       |       | Multipler  |       |       |           |       |
+|                                                 |       |       | +1 (Max    |       |       |           |       |
+|                                                 |       |       | x3)        |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon damage type is changed for 1d4 rounds    | 20    | **-** | Add\'s     | 20    | **-** | \-        | \-    |
+|                                                 |       |       | extra      |       |       |           |       |
+|                                                 |       |       | damage     |       |       |           |       |
+|                                                 |       |       | type for   |       |       |           |       |
+|                                                 |       |       | 1d4 rounds |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| At Engineer **6th** Level and above                                                                              |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon does extra +1d6 (+1d for every +10 DC)   | 20    | **-** | Weapon     | 20    | **-** | Combined  | 20    |
+|                                                 |       |       | does extra |       |       | Uses of   |       |
+|                                                 |       |       | +1d6 (+1d  |       |       | two of    |       |
+|                                                 |       |       | for every  |       |       | the same  |       |
+|                                                 |       |       | +10 DC)    |       |       | item      |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon +2 AP (Ignores 2DR) (+2 for every +5 DC) | 25    | **-** | Weapon +2  | 25    | **-** | Up Techs  | 30    |
+|                                                 |       |       | AP         |       |       | Shield    |       |
+|                                                 |       |       | (Ignores   |       |       | effect by |       |
+|                                                 |       |       | 2DR) (+2   |       |       | +1        |       |
+|                                                 |       |       | for every  |       |       | increment |       |
+|                                                 |       |       | +5 DC)     |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon also                                     | 25    | **-** | Weapon\'s  | 27    | **-** | Increases | 30    |
+| [shaken](Conditions#Shaken "shaken"){.wikilink} |       |       | Accuracy   |       |       | Misc      |       |
+| target for 1 round                              |       |       | +1 (+1 for |       |       | Bonus by  |       |
+|                                                 |       |       | every +5   |       |       | +1        |       |
+|                                                 |       |       | DC)        |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon's Crit multiplier +1 (+1 for every +10   | 30    | **-** | Weapon's   | 30    | **-** | Increases | 27    |
+| DC)                                             |       |       | Crit       |       |       | range of  |       |
+|                                                 |       |       | multiplier |       |       | item by   |       |
+|                                                 |       |       | +1 (+1 for |       |       | %50       |       |
+|                                                 |       |       | every +10  |       |       |           |       |
+|                                                 |       |       | DC)        |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon damage type is changed                   | 30    | **-** | Add\'s     | 30    | **-** | \-        | \-    |
+|                                                 |       |       | extra      |       |       |           |       |
+|                                                 |       |       | damage     |       |       |           |       |
+|                                                 |       |       | type 1d4   |       |       |           |       |
+|                                                 |       |       | (+1d for   |       |       |           |       |
+|                                                 |       |       | every +5   |       |       |           |       |
+|                                                 |       |       | DC)        |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon leaves target                            | 32    | **-** | \-         | \-    | **-** | \-        | \-    |
+| [dazed](Conditions#-_Dazed "dazed"){.wikilink}  |       |       |            |       |       |           |       |
+| for 1d4 rounds                                  |       |       |            |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+| Weapon also stuns target for 1d4 rounds         | 35    | **-** | \-         | \-    | **-** | \-        | \-    |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+|                                                 |       |       |            |       |       |           |       |
++-------------------------------------------------+-------+-------+------------+-------+-------+-----------+-------+
+
+: Table: Weapon Upgrade :
+
+Reconfigure Weapon
+: At **3rd** level, an Engineer can reconfigure a melee or ranged
+  weapon, improving one aspect of it. Reconfigure a weapon requires 1
+  hour of work and a successful Repair check (DC 20); reconfigure a
+  masterworked weapon is slightly harder (DC 20 + the weapon's
+  masterworked bonus feature). An Engineer may take 10 or take 20 on
+  this check. The reconfiguration is based on the [Advanced Weapon
+  Creation](Weapons#Advance_Weapon_Creation "Advanced Weapon Creation"){.wikilink}
+  rules and allows for an already constructed weapon to be modified
+  according to the Engineer\'s crafting skill effectively the Engineer
+  can re-craft the weapon. However, the weapon cannot change its Style
+  or Arch-Type nor can its Weapon Level change. Its Speed/Power levels
+  can be adjusted and any of its attributes can also be changed
+  according to the Weapon Creation rules. The Engineer can re-craft the
+  weapon to be **Masterworked** according to crafting rules or
+  **Up-Tech** to whatever the Engineer\'s Tech Level is.
+
+<!-- -->
+
+Overload
+: At **4th** level and beyond, the Engineer as a standard action, can
+  cause a short in an electronic device they are adjacent to. This
+  includes any ranged or melee weapon that does not possess the Kinetic
+  Arch-Type. This makes the target of the overload nonfunctional. If the
+  device is designed to be tamper-proof, such as a lock, then it cannot
+  be a target. Like-wise anything that is sentient can also not be a
+  target. If the target is being held by an enemy the item must first be
+  taken from them, please review the
+  [Disarm](Techniques#Combat_Techniques "Disarm"){.wikilink} technique.
+  The Engineer doesn\'t need to roll if all they want to do is
+  temporarily disable the device. The device is disabled for Int Mod for
+  several rounds. However, the Engineer can attempt to create an
+  improved explosive with a DC 15 (Craft (Electronic). The overload can
+  become an electronic explosive Device. It must be used by the next
+  round of combat or within roughly 3 seconds, and causes 1d6+Int Mod of
+  Electronic Damage. The range is 5ft circle from the square it lands
+  on. At **6th**, **8th** and **10th** level the damage increases by
+  +1d6.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, the Engineer can gain a Bonus Feat for free and can
+  pick from the following categories: **Utility Feats**, **Proficiency
+  Tree**, **Ranged Combat**
+
+<!-- -->
+
+Engineer\'s Eye
+: At **6th** level, the Engineer gets a +2 to
+  [Perception](Perception "Perception"){.wikilink} and Passive
+  [Perception](Perception "Perception"){.wikilink} when within 20ft of a
+  trap, malfunctioning computer, or on board a spaceship with
+  malfunctioning systems.
+
+<!-- -->
+
+Combat Mechanics Training
+: At **7th** level, the Engineer can choose to take an upgrade to either
+  the Melee, Ranged or Armor Proficiency Tree regardless of whether it
+  takes 1 or 2 points. Or the Engineer can choose to take the [Power
+  Armor Expert](Power_Armor_Expert "Power Armor Expert"){.wikilink}
+  Feat.
+
+<!-- -->
+
+: Effects on Space Ships. An engineer can perform the Boost effect on
+  any system of their choosing so long as they are near a working
+  console on board the ship. They also gain a bonus to all Boost checks
+  of 1/2 there current Engineering level roundup.
+
+<!-- -->
+
+Reconfigure Weapon Improved
+: At **8th** level, the Engineer can now Reconfigure a weapon in 1
+  minute instead of 1 hour. Additionally, when reconfiguring a weapon,
+  they can choose to grant it one temporary \"Combat Attribute\" from
+  the [Weapon
+  Attributes](Weapons#Combat_Attributes "Weapon Attributes"){.wikilink}
+  list for 1 hour.
+
+<!-- -->
+
+Trained Professional
+: A **9th** level Engineer can perform complicated tasks as free actions
+  after completing an Intelligence check.
+
+<!-- -->
+
+: During any round in which the Engineer uses the [Computer
+  Use](Computer_Use "Computer Use"){.wikilink}, Craft, [Disable
+  Device](Disable_Device "Disable Device"){.wikilink}, or Repair skill,
+  he can first make an Intelligence check (DC 15) to use the desired
+  skill as a free action. Making the Intelligence check doesn't cost the
+  Engineer an action.
+
+<!-- -->
+
+Engineering Miracle
+: At level 10 the Engineer can pull off feats of engineering wonder.
+  They can use their mastery of the trade to provide bonuses or repairs
+  that could only be described as borderline miraculous. They can use
+  this ability once per day, starting as a Standard Action. At Character
+  Level 15 it becomes twice per day and at Character Level 20 it becomes
+  3 times per day. The effect depends on the object you are modifying.
+  - Armor: Adds a +1 AC bonus and +2 DR to armor for 1 minute.
+  - Weapon: Adds advantage to both Accuracy and dealing damage (which
+    includes each Extra Damage) for 1 minute.
+  - Spaceship Structure: Instantly repairs one Battle Damage.
+  - Spaceship Shields: The Ship\'s Shields now have +1 and no longer
+    count against Detection DC, thus making the ship appear in stealth
+    even if shields are on. Lasts for 1 minute.
+
+## Envoy
+
++------------+-----------------+-----------------------------------------------+
+| Profession | Special         | Technique Usage by Level                      |
+| Level      |                 |                                               |
++============+=================+===========+===========+===========+===========+
+| 0\*        | 1st             | 2nd       | 3rd       |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 1st        | Plenipotentiary | 2         | \-        | \-        | \-        |
+|            | Privileges,     |           |           |           |           |
+|            | Stipend         |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 2nd        | Open Arms,      | 2         | 1         | \-        | \-        |
+|            | Intuitive       |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 3rd        | Diplomatic      | 3         | 1         | 1         | \-        |
+|            | Style Combat    |           |           |           |           |
+|            | Feature         |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 4th        | Cultural Expert | 3         | 2         | 1         | \-        |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 5th        | Bonus Feat      | 4         | 2         | 2         | 1         |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 6th        | Slave too       | 4         | 3         | 2         | 1         |
+|            | Bureaucracy     |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 7th        | Restricted      | 5         | 3         | 3         | 2         |
+|            | Access,\        |           |           |           |           |
+|            | Diplomatic      |           |           |           |           |
+|            | Style Combat    |           |           |           |           |
+|            | Feature         |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 8th        | Upper           | 5         | 4         | 3         | 2         |
+|            | Management      |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 9th        | Select Consuls  | 6         | 4         | 4         | 3         |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| 10th       | Diplomatic      | 6         | 5         | 4         | 3         |
+|            | Style Combat    |           |           |           |           |
+|            | Feature         |           |           |           |           |
++------------+-----------------+-----------+-----------+-----------+-----------+
+| \*Level 0 Techniques can be performed at will with the [Technique            |
+| Novice](TechniqueNovice "Technique Novice"){.wikilink}                       |
+| [Feat](Feats "Feat"){.wikilink}.                                             |
++------------------------------------------------------------------------------+
+
+: Table: The Envoy
+
+Ambassadors, Diplomats, Dignitaries, Consultants, Legats, Emissaries,
+etc. can all fall under the title of an Envoy. With a natural talent for
+dealing with disputes as small as those between individuals and as large
+as those between whole nations or civilizations. Envoys are desired
+across the galaxy. Armed with a heightened awareness of local politics
+and a wide range of ideologies and philosophies, the Envoy strives to
+find a compromise to avoid an otherwise ugly confrontation both for
+herself and for others. The Envoy will attempt all this without
+compromising their integrity or betraying the trust placed in them as
+representatives of factions, nations, worlds, or whole civilizations.
+
+An Envoy chooses a faction, nation, or some other type of recognized
+group to swear allegiance to. As long as that Envoy does not fail to
+represent her faction, then she is entitled to privileges beyond the
+rights of ordinary citizens. Choose the Envoy if you want a character
+who excels at negotiation, political leverage, and self-preservation,
+with a focus on targeted utility and group protection.
+
+The fastest path into this Profession is through the [Path of Charisma
+(Charismatic
+Hero)](Future_Hero_Base_Class#Path_of_Charisma_.28Charismatic_Hero.29 "Path of Charisma (Charismatic Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Charisma **OR** Ability: Charisma Score 15+ **OR**
+    Ability: Wisdom Score 15+ with Charisma score of 12+
+3.  Allegiance: You must pledge primary allegiance to a faction or
+    group. (See Envoy\'s Allegiances below).
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Feats: The Envoy cannot use Power Armor.
+2.  Weapons: The Envoy cannot gain advantage when using Melee/Martial
+    weapons.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Charisma and Wisdom
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Bluff](Bluff "Bluff"){.wikilink} (Cha/Int),
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis),
+[Profession](Profession "Profession"){.wikilink} (Wis), [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis). Choose Any Two
+[Knowledge](Knowledge "Knowledge"){.wikilink} Skills(Int),
+[Study](Study "Study"){.wikilink} (Int).
+
+`<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
+Affinity`</u>`{=html}: The Envoy uses Charisma or Wisdom for their
+[Techniques](Techniques#Field_Officer_&_Envoy_Techniques "Techniques"){.wikilink}.
+(shared with the Field Officer).
+
+### Envoy Profession Talents {#envoy_profession_talents}
+
+------------------------------------------------------------------------
+
+NOTE
+: Upon becoming an Envoy, the Player must choose their **Diplomatic
+  Path**: The **Emissary** or The **Broker**. This choice provides minor
+  differences in utility features and more distinct differences in
+  combat abilities.
+
+<!-- -->
+
+Plenipotentiary Privileges
+: At **1st** level, if you are arrested for a crime, you can make a
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check to invoke your
+  diplomatic credentials and bypass standard punishment. The standard DC
+  for simple infractions is DC10. A crime like murder may be a DC25
+  check unless it is of an important person, then perhaps 35 or higher.
+  If one of the Envoy\'s consuls (see the select consul Profession
+  feature, below) is arrested for a crime and unable to secure her own
+  release, the Envoy may intercede on the consul's behalf.
+  - **The Emissary**: Gain an **Advantage Die** on the check if the
+    crime is bureaucratic, political, or a public misunderstanding.
+  - **The Broker**: Gain an **Advantage Die** on the check if the crime
+    involves smuggling, illegal technology, or black-market dealings.
+: An Envoy who routinely invokes the privilege of diplomatic
+  immunity---either on her own behalf or to protect her selected
+  consuls---is likely to be recalled or terminated by those she has
+  sworn to represent.
+
+<!-- -->
+
+Stipend
+: At **1st, 4th, 7th, and 10th** level, you gain a
+  [Profession](Profession "Profession"){.wikilink} rank increase of +1
+  and a bonus of \$2,000 ISC per Envoy level.
+
+<!-- -->
+
+Open Arms
+: Beginning at **2nd** level, the Envoy is skilled at initiating
+  peaceful negotiations. The Diplomat may add **both** their Wisdom
+  Modifier and Charisma Modifier to
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} checks instead of
+  choosing. She can also add a competence bonus equal to one-half her
+  Envoy class level, rounded down, on all
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} checks.
+
+<!-- -->
+
+Intuitive
+: At **2nd** level, you gain an **Advantage Die** on all [Sense
+  Motive](Sense_Motive "Sense Motive"){.wikilink} checks.
+
+<!-- -->
+
+Diplomatic Style Combat Feature
+: At **3rd** level, you gain your first Combat Specific Profession
+  Feature based on your Diplomatic Style.
+
+<!-- -->
+
+Cultural Expert
+: At **4th** level, the Envoy\'s abilities and profession lead them to a
+  better understanding of common cultures. If
+  [Knowledge](Knowledge "Knowledge"){.wikilink} Culture is not a chosen
+  Favored skill, make it one now with an additional +1 rank. If it is
+  already a Favored skill, provide +2 to its Rank. Player\'s may
+  disregard the Skill level limit rules in this case.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, the Envoy gets a free Bonus Feat. All rules still
+  apply; the Character has to be eligible to acquire the feat. They are
+  in the **Utility** category and **Techniques** sub-category.
+
+<!-- -->
+
+Slave to Bureaucracy
+: At **6th** level, you become a master of navigating (or bypassing)
+  paperwork. You gain an **Advantage Die** when identifying the origin
+  and authenticity of official documents.
+  - **The Emissary**: You reduce the time and cost required to procure
+    official permits, meetings, or documents by half.
+  - **The Broker**: You gain an additional **Advantage Die** when
+    attempting to forge or falsify official documents.
+
+<!-- -->
+
+Restricted Access
+: At **7th** level, you gain clearance to access classified information
+  from sources that recognize your allegiance. You gain a **+2 Misc
+  bonus** on [Study](Study "Study"){.wikilink} checks.
+  - **The Emissary**: Your access extends to high-tier government and
+    corporate archives.
+  - **The Broker**: Your access extends to criminal underworld networks
+    and black-market ledgers.
+
+<!-- -->
+
+Upper Management
+: At **8th** level, the Envoy gains the
+  [Leadership](Leadership "Leadership"){.wikilink} feat for free. If the
+  Envoy already has Leadership, then gain the
+  [Manager](Manager "Manager"){.wikilink} feat for free. If both are
+  already acquired, gain Misc Bonus equal to 1/2 Envoy level to all
+  assistance checks.
+
+<!-- -->
+
+Select Consuls
+: At **9th** level, you may appoint individuals (equal to your Charisma
+  bonus) as \"Consuls.\" They gain the benefits of your Diplomatic
+  Immunity and Restricted Access features while under your protection.
+
+### Diplomatic Style Combat Features {#diplomatic_style_combat_features}
+
+At **1st** level, you must choose your Diplomatic style, along with an
+Alliance. Here are combat-related Profession Talents for the Diplomatic
+Style of your choice, either Emissary or Broker.
+
+#### The Emissary {#the_emissary}
+
+Focus: De-escalation, Sanctuary, and Group Protection.
+
+Level 3
+: Diplomatic Immunity
+: You can force a temporary pause in hostilities.
+: **Action**: Standard Action.
+: **Effect**: You declare sanctuary for your combat group (Vanguard or
+  Rearguard). For 1 round, any enemy attempting to attack you or an ally
+  in your group must succeed on a Wisdom save (Dimensional DC). If they
+  fail, they must choose a target in the other group or lose their
+  attack entirely.
+
+<!-- -->
+
+Level 7
+: Ceasefire
+: You can use your authority to halt an enemy\'s momentum.
+: **Action**: Reaction.
+: **Effect**: When an enemy targets you or an adjacent ally, you may
+  \"Pull Rank.\" The enemy must succeed on a Wisdom save
+  (Dimensional DC) or their Standard Action is canceled for that turn.
+
+<!-- -->
+
+Level 10
+: Aura of Authority
+: Your presence is so overwhelming that enemies find it difficult to act
+  against you.
+: **Action**: Passive.
+: **Effect**: Enemies within 30ft take a **Disadvantage Die** on all
+  accuracy checks and Technique checks targeting you or any ally within
+  your combat group.
+
+#### The Broker {#the_broker}
+
+Focus: Leverage, Exploitation, and Targeted Debuffs.
+
+Level 3
+: Find the Flaw
+: You read the weaknesses in an enemy\'s posture and gear.
+: **Action**: Simple Action.
+: **Effect**: Perform a Sense Motive check against an enemy\'s AC. If
+  successful, you or one designated ally (such as a Select Consul) gain
+  an **Advantage Die** and ignore the target\'s Damage Reduction (DR) on
+  the next attack against them.
+
+<!-- -->
+
+Level 7
+: Psychological Pressure
+: You use leverage or threats to break an opponent\'s resolve.
+: **Action**: Standard Action.
+: **Effect**: You verbally target an opponent within 30ft. They must
+  succeed on a Wisdom save (Dimensional DC) or become **Shaken** for 1d4
+  rounds and take double damage from the next attack that successfully
+  hits them.
+
+<!-- -->
+
+Level 10
+: Puppet Master
+: You have gained enough leverage to dictate an enemy\'s actions.
+: **Action**: Reaction.
+: **Effect**: You designate one enemy as your \"Asset.\" When the Asset
+  targets an ally with an attack, you may force them to re-roll the
+  accuracy check and take the lower result, or force them to move up to
+  15ft in a direction of your choice before the attack resolves.
+: **Frequency**: 1 + Charisma Mod per day.
+
+### Envoy\'s Allegiances {#envoys_allegiances}
+
+------------------------------------------------------------------------
+
+`<u>`{=html}Corporation\[s\] Entity`</u>`{=html}
+
+: Corporation or group/federation of corporations can be big enough to
+  have the galactic influence they may have Envoys on their side. Not to
+  be mistaken with a lobbyist who focuses their attention solely on
+  influencing local governments. Envoys that work for Corporations
+  travel the galaxy, making sure Corporate interests are understood and,
+  as peacefully as possible, upheld. A Corporation may use an Envoy to
+  smooth over ties with an indigenous population on a planet that has to
+  deal with the Corporation. For example, it may be mining it and
+  causing a lot of disturbance. The Envoy could be sent to peacefully
+  resolve the situation. Envoys ensure that conflicts of any kind do not
+  impede the Corporation\'s goals.
+
+<!-- -->
+
+: Bonus: **Insider Knowledge**: A bonus to
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} and
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks equal to the
+  Envoy level when dealing with any Corporation personnel. An advantage
+  bonus to [Computer Use](Computer_Use "Computer Use"){.wikilink} checks
+  when attempting to get information from a computer owned by a
+  corporation. The Profession also receives the
+  [Knowledge](Knowledge "Knowledge"){.wikilink} Cluster as a Favored
+  skill and gets a Misc +2 bonus to it.
+
+`<u>`{=html}Small to Medium Sized Government`</u>`{=html}
+
+: A small or medium government in the Milky Way galaxy means any
+  space-faring government that has not expanded influence beyond a few
+  systems. They would not be considered an empire or be well-known.
+  However, locally they would be regarded as very powerful. Envoy\'s
+  that work for these governments would like to be used to expand their
+  influence beyond the systems they control. Because of their smaller
+  size, most Envoys would likely swear allegiance, hoping to move
+  quickly up the ranks. With less competition than in other sectors,
+  smaller governments provide more opportunities.
+
+<!-- -->
+
+: Bonus: **Ambitious**: The Envoy is more likely to get promoted.
+  Advantage bonus too [Profession](Profession "Profession"){.wikilink}
+  checks. The Envoy also gains an advantage bonus to the
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks when dealing
+  with government agencies. The Envoy even gets
+  [Knowledge](Knowledge "Knowledge"){.wikilink} Culture as a Favored
+  skill with a Misc +2 to the skill.
+
+`<u>`{=html}Large or Empire Government`</u>`{=html}
+
+: There are many empires that have existed or still exist in the galaxy.
+  The Ring of Life is massive and spacious and has afforded much room
+  and resources for many great civilizations to co-exist if not for just
+  a while. Envoys are prized members in these great nations. Their uses
+  vary from internal affairs of state to problems abroad. Envoys will be
+  seen dealing with subjugated planets to help suppress any rebellions.
+  Lead talks on trade disputes between nations. Secretly incite ill will
+  in other countries\' weaker planets. All for the sake of maintaining
+  and strengthening the Empire.
+
+<!-- -->
+
+: Bonus: **Powerful connections**: The Envoy has connections all over
+  the galaxy that can provide information or get her out of trouble. -5
+  to all the DCs associated with the \"Diplomatic Immunity\" table. The
+  Profession also receives the
+  [Knowledge](Knowledge "Knowledge"){.wikilink} Civics as a Favored
+  skill and gets a Misc +2 bonus to it. The Envoy also gets an advantage
+  +2 to [Intimidate](Intimidate "Intimidate"){.wikilink} checks when
+  dealing with government agencies.
+
+`<u>`{=html}Religious Institution`</u>`{=html}
+
+: Most religions are only popular locally to the planet of origin.
+  However, Empires and trade spread ideas across the Ring, and some
+  religions have fared well. These mega religions have power and
+  influence, and Envoys are their peaceful arm. A religious group may be
+  concerned that its followers are not receiving the attention they need
+  from the government, or afraid that a powerful megacorporation will
+  act without considering the people it will affect. When this is the
+  case, religions often use Envoys to make their will known to the
+  people, governments, and corporations. Sometimes, Envoys are sent to
+  work in secret, while others walk openly and proudly about their
+  faith. Envoys would likely swear an alliance solely because their
+  convictions are true.
+
+<!-- -->
+
+: Bonus: **Strong Convictions**: The Envoy who swears allegiance to a
+  religious institution has an advantage bonus to Wisdom saves. Also,
+  the Envoy gets a +1 bonus to Int and Wis Modifiers when someone is
+  attempting to
+  [Bluff](Bluff "Bluff"){.wikilink},[Intimidate](Intimidate "Intimidate"){.wikilink},
+  or use [Diplomacy](Diplomacy "Diplomacy"){.wikilink} against them.
+
+`<u>`{=html}Crime Syndicate`</u>`{=html}
+
+: You represent the will of a powerful syndicate. Many powerful
+  individuals in organized crime use others to represent their wishes
+  within the governments they operate in. Sometimes these people are
+  lawyers, politicians, or business consultants, but one thing is
+  common. These people are respected and very wealthy. In part because
+  of the crime syndicate and in part because of their own ambitions.
+  When working for a Crime Syndicate, an Envoy is expected to get people
+  out of jail when they most certainly deserve to be there; they are
+  also expected to provide inside information to the \'Boss\' or whoever
+  they report to. The Envoy may smuggle money from less official
+  channels into more official ones and wine and dine with the elite of
+  society to make sure \'Family\' or \'Business\' is always seen as
+  important, respected, and official. No funny business to see here.
+
+<!-- -->
+
+: Bonus: **Corruption**: Instantly start off with \$20,000 credits. Gain
+  an advantage when using the Plenipotentiary Privileges talent. Replace
+  the **Upper Management** talent with Well Informed. This provides an
+  advantage bonus when using the
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} Gather Information skill
+  check.
+
+`<u>`{=html}Rebel Cause`</u>`{=html}
+
+: At some point, we all have to choose. Some simply see the horror in
+  the Ring and must do something about it. Sometimes, the person who
+  makes that choice is a charismatic individual with leadership written
+  on their face. However, they were late to the movement. There already
+  is a leader. But what about a spokesperson? What about the person who
+  once enjoyed and understood the other side? Someone willing to meet in
+  the middle and possibly even respected by both. All good lasting
+  rebellions, or at least any rebellion that had a ghost of a chance,
+  had someone like that. Someone not at the top nor the bottom, but
+  still powerful and respected, who could reach out to the \'enemy\' and
+  find common ground. Either to discuss hostage release or to build a
+  foundation for peace. An Envoy who dedicates herself to a Rebel cause
+  will become its leader\'s right hand, and you will become a powerful
+  force for change.
+
+<!-- -->
+
+: Bonus: **Rebel**: Loose 1/2 your credit score. Take advantage of the
+  Plenipotentiary Privileges talent. Replace \'Stipend\' with
+  Negotiator. This provides +1 Misc score to either
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink},
+  [Bluff](Bluff "Bluff"){.wikilink},
+  [Intimidate](Intimidate "Intimidate"){.wikilink}, [Sense
+  Motive](Sense_Motive "Sense Motive"){.wikilink} at 1st, 4th, 7th, and
+  10th level.
+
+## Electro-Mancer {#electro_mancer}
+
++--------------+--------------------+-----------------------------------------------------------------------------------------+
+| Profession   | Special            | Technique Usage by Level                                                                |
+| Level        |                    |                                                                                         |
++==============+====================+==============+==============+==============+==============+==============+==============+
+| 0\*          | 1st                | 2nd          | 3rd          | 4th          | 5th          |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 1st          | **Electromancy     | 2            | 1            | \-           | \-           | \-           | \-           |
+|              | Path Choice**,     |              |              |              |              |              |              |
+|              | Electric Attack    |              |              |              |              |              |              |
+|              | (1d4), Sixth Sense |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 2nd          | Transmutant/Savant | 2            | 1            | 1            | \-           | \-           | \-           |
+|              | Talent             |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 3rd          | Electric Attack    | 3            | 2            | 1            | \-           | \-           | \-           |
+|              | (1d6+1), Clever    |              |              |              |              |              |              |
+|              | Crafting           |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 4th          | Transmutant/Savant | 3            | 2            | 2            | 1            | \-           | \-           |
+|              | Talent             |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 5th          | Electric Attack    | 4            | 3            | 2            | 1            | \-           | \-           |
+|              | (1d8+2)\           |              |              |              |              |              |              |
+|              | Bonus Feat         |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 6th          | Transmutant/Savant | 4            | 3            | 3            | 2            | 1            | \-           |
+|              | Talent             |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 7th          | Electric Attack    | 5            | 4            | 3            | 2            | 1            | \-           |
+|              | (1d10+3),          |              |              |              |              |              |              |
+|              | Electrified        |              |              |              |              |              |              |
+|              | Presence           |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 8th          | Transmutant/Savant | 5            | 4            | 4            | 3            | 2            | 1            |
+|              | Talent             |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 9th          | Electric Attack    | 6            | 5            | 4            | 3            | 2            | 1            |
+|              | (1d12+4)           |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 10th         | Transmutant/Savant | 6            | 5            | 5            | 4            | 3            | 2            |
+|              | Talent             |              |              |              |              |              |              |
++--------------+--------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| \*Level 0 Techniques can be performed at will, with the [Technique Novice](TechniqueNovice "Technique Novice"){.wikilink}   |
+| [Feat](Feats "Feat"){.wikilink}.                                                                                            |
++-----------------------------------------------------------------------------------------------------------------------------+
+
+: Table: The Electro-Mancer
+
+Some species are more accepting of in-plants and cybernetics than
+others. One such species, the Cryous, was at war and losing fast.
+Desperate for a new form of super-soldier, they took advantage of the
+electromagnetism inherent in their species to create a unique kind of
+Cybernetics. The Electro-Mancer was born. Referring to anyone who
+chooses to have a specific set of cybernetic and biological implants
+inserted into their bodies. This set is specifically designed to make
+the user aware of electromagnetism as if it were an additional sense,
+and can also gather energy in the form of electricity and manipulate it
+at a local scale.
+
+With these super soldiers, the Cryous were able to overcome the massive
+numbers of ground troops deployed against them. Eventually, the war
+ended in a stalemate and shaky truce. For years, the Electro-Mancer
+Cybernetic Implant Set (EMCIS) was held as a tightly guarded secret, but
+eventually, it was let out. Now, all of the citizens of the Milky Way\'s
+Great Ring of Life can enjoy this powerfully themed set of implants.
+
+Choose the Electro-Mancer if you want to wield the power of lightning,
+producing shields, shocking enemies in close quarters, or overloading
+technology with your mind.
+
+The fastest path into this Profession is through the [Path of
+Intelligence (Smart
+Hero)](Future_Hero_Base_Class#Path_of_Intelligence_.28Smart_Hero.29 "Path of Intelligence (Smart Hero)"){.wikilink}
+or the [Path of Dexterity (Fast
+Hero)](Future_Hero_Base_Class#Path_of_Dexterity_.28Fast_Hero.29 "Path of Dexterity (Fast Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Intelligence **OR** Path: Path of Dexterity **OR**
+    Ability: Intelligence Score 15+ with Dex Score of 12+ **OR**
+    Ability: Dexterity Score 15+ with Int Score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Profession: Cannot also be a Shield Splicer.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence and Dexterity
+
+`<u>`{=html}Favored Skills`</u>`{=html}: [Computer
+Use](Computer_Use "Computer Use"){.wikilink} (Int), Craft \[
+[Electronic](-_Electronic "Electronic"){.wikilink},
+[Mechanical](-_Mechanical "Mechanical"){.wikilink} \] (Int), [Disable
+Device](Disable_Device "Disable Device"){.wikilink} (Int),
+[Perception](Perception "Perception"){.wikilink} (Wis),
+[Study](Study "Study"){.wikilink} (Int). Choose any two
+[Knowledge](Knowledge "Knowledge"){.wikilink} (Int).
+
+`<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
+Affinity`</u>`{=html}: The Electro-Mancer uses their **Intelligence**
+ability to perform
+[Techniques](Techniques#Electro-Mancer_Techniques "Techniques"){.wikilink}.
+
+### Electro-Mancer\'s Profession Talents {#electro_mancers_profession_talents}
+
+------------------------------------------------------------------------
+
+NOTE
+: At level 1, the Electro-Mancer must choose between the **Electro
+  Transmutant** (Melee/Fast/Dexterous) or **Electric Savant**
+  (Ranged/Smart/Intelligent) paths.
+
+<!-- -->
+
+Electric Attack
+: Starting at **1st** level, you gain a natural attack manifested from
+  your implants. This attack deals **Electric damage** and scales as you
+  level up (see table). The type of attack (Ranged vs Melee) is
+  dependent on the Player\'s choice between which Path they wish the
+  Electro-Mancer to take.
+
+The base Damage Die is 1d4. This attack benefits from Extra Damage and
+can be considered a Light Weapon for purposes of Off-Hand and Bonus
+Attacks rules. This weapon can be summoned or removed as a Free Action
+at any time.
+
+:\* **Electric Savant**: This is a **Standard Attack Action** (Ranged,
+100ft + 10ft per Int Mod). You use your **Intelligence Modifier** for
+accuracy and damage.
+
+:\* **Electro Transmutant**: This is a **Standard Attack Action**
+(Melee). You use your **Dexterity Modifier** for accuracy and damage.
+
+: At level 3, damage increases to 1d6+1. At level 5 to 1d8+2. At level 7
+  to 1d10+3. At level 9 to 1d12+4.
+: **NOTE**: The Savant/Transmutant has other bonuses for this Electric
+  Attack.
+: **NOTE**: This can be affected by the **Talented** feat if chosen. If
+  so, then follow these weapon die levelings: Character level **12**:
+  2d8+6, **15**: 2d10+8, **18**: 2d12+10.
+
+<!-- -->
+
+Sixth Sense
+: At **1st** level, you are uniquely attuned to electromagnetic fields.
+  You gain an **Advantage Die** on detection checks for electronic
+  traps, hidden sensors, or data ports. Additionally, you can instantly
+  tell if an electronic device within 30ft + 5ft per Int Mod is \"On\"
+  or \"Off\" without a check.
+
+<!-- -->
+
+Clever Crafting
+: Starting at **3rd** level the Electro-Mancer can perform Craft
+  Electronic Checks with Luck. The Electro-Mancer can sacrifice a Level
+  One Technique used for that day to re-roll any failed crafting attempt
+  or Disable Device check.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, gain a free Bonus Feat.
+  - **Electric Savants**: Choose from the **Utility** or **Techniques**
+    categories.
+  - **Electro Transmutants**: Choose from the **Tactical** or **Misc
+    Feats** categories.
+
+<!-- -->
+
+Electrified Presence
+: Starting at **7th** level the Electro-Mancer can unleash their
+  electric powers to wow, stun and impress those around him by
+  performing a show of electrical prowess. The Electro-Mancer can use
+  either Intelligence or Dexterity in place of Strength when using the
+  Intimidate skill. They can sacrifice a Level One Technique use for
+  that day to gain Advantage, Level Two for 2 Advantages (+2AD), or a
+  Level 3 use for (+3AD). A Character can only benefit up to 3
+  advantages at a time.
+
+### Electromancy Path Choice {#electromancy_path_choice}
+
+#### Path of the Electro Transmutant {#path_of_the_electro_transmutant}
+
+**Focus**: Speed, Reflexes, and Close-Quarters Combat.
+
+Level 2
+: Electrified Movement
+: Electricity flows through your muscles, granting preternatural speed.
+  Your base speed increases by +10ft. Additionally, you may perform a
+  **Charge** or **Tackle** technique even through difficult terrain or
+  around corners.
+: **Cost**: You permanently sacrifice use of one Level 0 Technique. (You
+  still know as many Techniques as the chart states, you just use fewer
+  of them)
+
+<!-- -->
+
+Level 4
+: Improved Electric Attack
+: Your melee electric strike becomes more versatile. You gain a
+  [Feat](Feats "Feat"){.wikilink} in the Two-Weapon Fighting track. You
+  can choose to either increase the Critical Range by +1 or increase the
+  base Critical Damage to 3x.
+: **Cost**: You permanently sacrifice use of one Level 1 and one Level 2
+  Technique slot.
+
+<!-- -->
+
+Level 6
+: Magnetic Aim
+: You use your electromagnetic sense to guide your strikes. This counts
+  as a **Free Action** that consumes a use of a Level 2 or Level 3
+  Technique slot.
+: **Effect**: You gain an **Advantage Die** on all melee attacks made
+  this round to both Accuracy **and** damage die. At level 10, you can
+  spend a Level 4 or 5 slot to gain **double Advantage**. If the target
+  you are hitting has any metal, then gain an additional Advantage Die;
+  the maximum advantage someone can benefit from is x3.
+
+<!-- -->
+
+Level 8
+: Electrified Focus
+: Your reflexes allow you to capitalize on every opening. If you perform
+  a **Standard Attack Action** and miss, you may consume the use of a
+  level 3 or level 4 Technique slot to try again, this time with
+  advantage.
+: If you perform a check of any kind as a reaction, such as a saving
+  throw, both in or out of combat, if you fail, you can choose to
+  consume a Technique level 3 or 4 slot to try again with advantage.
+: **Cost**: You permanently sacrifice one level 2 and one level 3
+  Technique slot use.
+
+<!-- -->
+
+Level 10
+: Amp\'ed Rage
+: You surge with overwhelming electrical power. As a **Standard Action**
+  you spend time charging up all your electrically infused power. For a
+  number of rounds equal to 1/2 your Electro-Mancer level, you gain **+4
+  Dexterity**, **+2 Strength**, and **Temporary HP** equal to your
+  Electro-Mancer level + 2x (Dexterity + Intelligence Modifier). Bonus
+  Advantage on all Dexterity Saving throws. Your Electric Attack Damage
+  Die is increased by 1 level and it gains AP equal to your Character\'s
+  Dex Mod. After the effect ends, you must roll a Constitution Save
+  DC20 + Int Mod or become **Fatigued**. Your Character cannot do this
+  while Fatigued or worse.
+: **Cost**: You permanently sacrifice one Level 4 and 5 Technique slot
+  use.
+
+#### Path of the Electric Savant {#path_of_the_electric_savant}
+
+**Focus**: Ranged Techniques and Technological Integration.
+
+Level 2
+: Savant in Training
+: You gain the **Technique Novice** feat for free. If you already
+  possess it, you gain **Technique Advance** instead and so on.
+
+<!-- -->
+
+Level 4
+: Circuit Integration
+: You can interface with technology wirelessly. You gain a **+2 Misc
+  bonus** to [Computer Use](Computer_Use "Computer Use"){.wikilink} and
+  [Decipher Script](Decipher_Script "Decipher Script"){.wikilink}. Also,
+  as a Simple Action even while in combat, you can access simple,
+  non-secure electronic devices (cameras, door locks) wirelessly within
+  30ft +5 per Int Mod.
+
+<!-- -->
+
+Level 6
+: Advanced Electromancy
+: Automatically gain an additional slot for Level 1,2,3 Techniques. You
+  can now \"Expand\" your techniques by using a higher-level slot. This
+  grants one of the following:
+
+1.  Double the Damage/Effect
+2.  Treated as a Simple Action
+3.  Double range. (When increasing the range of a Technique with Range
+    zero, this makes it a Technique with a Range equal to Character\'s
+    Walk Speed.)
+4.  Double the Duration.
+5.  Change Damage type to Electric-Electric.
+
+This can be stacked if slots are available. Also, this does not stack or
+work with Feats like Quicken or Split-Brain Coordination. The Player
+just has to declare they are \'Expanding\' their Technique Action. All
+of those must be Standard Action unless the \'Expand\' first is used to
+make the Technique a Simple Action.
+
+Level 8
+: Sheer Force
+: Your ranged **Electric Attack** becomes more piercing. Gain AP equal
+  to your Intelligence Modifier (Max 5) and choose between Critical
+  Range increase or Critical Damage base improved to x3.
+
+<!-- -->
+
+Level 10
+: Expert Electromancy
+: Your mastery of techniques allows you to manifest multiple effects at
+  once. You may perform two Techniques in a single **Standard Action**.
+  Both techniques consume their respective slots. These Techniques can
+  be affected by your \'Expand\' ability. The Quicken or Split-Brain
+  Coordination feat can still be activated.
+: **Frequency**: Twice per day (3x at Character Level 15, 4x at
+  Character Level 20).
+
+## Field Officer {#field_officer}
+
++------------+-------------+-----------------------------------------------+
+| Profession | Special     | Technique Usage by Level                      |
+| Level      |             |                                               |
++============+=============+===========+===========+===========+===========+
+| 0\*        | 1st         | 2nd       | 3rd       |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 1st        | Tactical    | 1         | \-        | \-        | \-        |
+|            | Shift,      |           |           |           |           |
+|            | Leader of   |           |           |           |           |
+|            | the Troops  |           |           |           |           |
+|            | (Dynamic)   |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 2nd        | Protege     | 2         | \-        | \-        | \-        |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 3rd        | Command     | 2         | 1         | \-        | \-        |
+|            | Style       |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 4th        | Battlefield | 2         | 1         | \-        | \-        |
+|            | Presence    |           |           |           |           |
+|            | (Dynamic)   |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 5th        | Bonus Feat  | 3         | 1         | \-        | \-        |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 6th        | Uncanny     | 3         | 2         | 1         | \-        |
+|            | Survival    |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 7th        | Command     | 3         | 2         | 1         | \-        |
+|            | Style+      |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 8th        | Follow My   | 4         | 3         | 1         | 1         |
+|            | Lead        |           |           |           |           |
+|            | (Dynamic)   |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 9th        | Command     | 4         | 3         | 2         | 1         |
+|            | Style+      |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| 10th       | Tactical    | 4         | 3         | 2         | 1         |
+|            | Master      |           |           |           |           |
++------------+-------------+-----------+-----------+-----------+-----------+
+| \*Level 0 Techniques can be performed at will, with the [Technique       |
+| Novice](TechniqueNovice "Technique Novice"){.wikilink}                   |
+| [Feat](Feats "Feat"){.wikilink}.                                         |
++--------------------------------------------------------------------------+
+
+: Table: The Field Officer
+
+An Erie quite settles onto the cabin. The only sound left is the hum of
+motors below, crawling up the soldier\'s legs as if being forced out of
+the air from the opposing silence. Faces were shocked and full of
+despair. Not looking up, afraid to see the empty seats where their
+comrades should be. Jacob, standing, holding onto a tether hanging from
+the ceiling to keep his balance as the vehicle hurriedly sends what\'s
+left of his team across the bumpy landscape, looks at the faces of his
+men and realizes he is losing them. The defeat was too much for them.
+Without the right words, the moral would be lost, and he knows what
+would happen next. \"First,\" he thought to himself, \"I must not let
+them see me down.\"
+
+The Field Officer is a natural leader with the heart of a warrior. He
+understands how to direct allies and lead by example. The Field Officer
+has the tactical expertise and uses such knowledge to coordinate armed
+forces in the battlefield. He is not afraid to get into the thick of
+things himself, especially if it means completing the mission at hand.
+Field Officers are seen commanding counter-terrorism teams, a group of
+trained soldiers, or even undisciplined mercs. Even pirates may find
+themselves taking advantage of a natural leader and assigning someone of
+such skill as a first mate to help keep the people in line.
+
+A Player will choose Field Officer if they want a Character to take
+charge in a crisis or lead others into battle, and to provide knowledge
+and expertise that can help the group as a whole.
+
+The fastest path into this Profession is through the [Path of Charisma
+(Charismatic
+Hero)](Future_Hero_Base_Class#Path_of_Charisma_.28Charismatic_Hero.29 "Path of Charisma (Charismatic Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Charisma **OR** Ability: Charisma Score 15+ **OR**
+    Ability: Wisdom Score 15+ and Charisma score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Feats: Cannot use power armor (negates the ability to use Profession
+    Techniques).
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Charisma and Wisdom
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), Choose Any
+One [Knowledge](Knowledge "Knowledge"){.wikilink} (Int), [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis),
+[Medical](Medical "Medical"){.wikilink}(Wis)
+
+`<u>`{=html}Feat Bonuses`</u>`{=html}:
+[Leadership](Leadership "Leadership"){.wikilink}
+
+`<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
+Affinity`</u>`{=html}: The Field Officer uses **Charisma** or **Wisdom**
+for their
+[Techniques](Techniques#Field_Officer_&_Envoy_Techniques "Techniques"){.wikilink}.
+
+### Field Officer\'s Profession Talents {#field_officers_profession_talents}
+
+------------------------------------------------------------------------
+
+NOTE
+: Upon becoming the Field Officer, the Player must choose what their
+  **Command Style** is. Either Inspire or Tactician.
+
+<!-- -->
+
+Tactical Shift
+: At **1st** level, you become a master of positioning. At the start of
+  the turn as a **Simple Action**, you may change the Group you are in.
+  This happens at the start of the turn, not the start of the group, and
+  the Simple Action is considered spent when you start your turn in your
+  Group.
+
+<!-- -->
+
+Leader of the Troops
+: At **1st** level,
+  - **Vanguard**: When you successfully land an attack or complete a
+    skill check, all allies currently in the Rearguard gain a **+1
+    Morale bonus** to Accuracy and Damage until the end of the round.
+  - **Rearguard**: When you successfully perform a supportive action or
+    technique that benefits your allies (things like Medical), all
+    allies in the next round\'s Vanguard gain a **+1 Morale bonus** to
+    AC and Saving Throws.
+: This bonus increases to **+2** at **5th** level and **+3** at **9th**
+  level.
+
+<!-- -->
+
+Protege
+: At **2nd** level, the Field Officer can pick a person out of the team
+  to be their protege. The person must be familiar to the Field Officer
+  and must be willing to be subject to the Field Officers\' whims and
+  commands to help guide the Protege. As long as the Protege is within
+  5ft + 5ft per Field Officer\'s Wisdom Mod during combat, the Protege
+  gains a Competence/Moral bonus equal to the Field Officer\'s Charisma
+  Modifier on all rolls. The Field Officer also gains Advantage on all
+  Medical checks made to their Protege.
+
+<!-- -->
+
+: However if something was to happen to the Field Officer such as Dying,
+  or any of the following conditions:
+  [Cowering](Conditions#-_Cowering "Cowering"){.wikilink},
+  [Panicked](Conditions#-_Panicked "Panicked"){.wikilink},
+  [Exhausted](Conditions#-_Exhausted "Exhausted"){.wikilink},
+  [Sickened](Conditions#-_Sickened "Sickened"){.wikilink},
+  [Stunned](Conditions#-_Stunned "Stunned"){.wikilink},
+  [Paralyzed](Conditions#-_Paralyzed "Paralyzed"){.wikilink},
+  [Incapacitated](Conditions#Helpless.2FIncapacitated.2FUnconscious "Incapacitated"){.wikilink}.
+  The Protege is seriously taken aback by this and gains double
+  disadvantage on all Actions during combat until the situation is
+  resolved. If the Field Officer dies, then the Protege gains a
+  disadvantage on all actions/checks both in and out of combat for 1
+  week.
+
+<!-- -->
+
+: The Field Officer cannot quickly change Proteges. Once one is picked,
+  at least one month must pass before another can be selected. However,
+  if the Field Officer feels they made the wrong choice, they can switch
+  to another Character early. (It is up to the GM how early is early.
+  The previous Protege is taken aback by this and gains disadvantage on
+  all actions for 1d4 days, including in combat encounters.
+
+<!-- -->
+
+Command Style
+: At **3rd** level you must choose your **Command Style** and gain its
+  first Profession Feature.
+: Gain another at **7th** level based on your chosen Command Style.
+
+<!-- -->
+
+Battlefield Presence
+: At **4th** level,
+  - **Vanguard**: As a **Standard Action**, the Field Officer can now
+    distract a target and make it focus on the Field Officer. The Field
+    Officer rolls a [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+    [Intimidate](Intimidate "Intimidate"){.wikilink} check (which the
+    player prefers) to attempt to force a target to pay attention to
+    them. The target rolls an opposing Wisdom save. If successful, they
+    ignore the Field Officer. If they fail, the target redirects their
+    attention to the Field Officer.
+  - **Rearguard**: As a **Simple Action**, you may grant a single ally
+    within 30ft a free 5-foot step or a +2 Dodge bonus to AC against the
+    next attack targeting them.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, the Field Officer gains a Bonus Feat from one of the
+  following categories: **Utility Feats** or **Ranged Combat**.
+
+<!-- -->
+
+Uncanny Survival
+: At **6th** level, your combat instincts keep you alive under fire.
+  Once per day, as a **Simple Action**, you may add half your Profession
+  level to your AC for 1 round. This bonus applies to touch and
+  flat-footed AC. At 10th level, this can be used twice per day.
+
+<!-- -->
+
+Follow My Lead
+: At **8th** level, The Field Officer can inspire others to do what he
+  does.
+  - **Vanguard**: Must be declared before an attack (which must then be
+    successful) or immediately after a Critical attack, the Field
+    Officer can roll a Charisma save of DC14 + 3 for every affected
+    member (The Field Officer can choose to ignore some allies to reduce
+    the DC). If successful, each member gains an advantage when
+    attacking the target the Field Officer just attacked for the next
+    1 + WIS Mod turns. Also, regardless of the target, any affected
+    member gains max damage on their next attack.
+  - **Rearguard**: Must be declared before performing a defensive
+    action. An Attack Defensively action, or a Technique, Talent, or
+    Item use that doesn\'t deal damage or cause negative effects on
+    enemies. If successful, all other friendly combatants gain advantage
+    on all actions for 1 round, and +2 DR \[ALL\] for 1 + WIS Mod turns.
+: Either option can only be done once per encounter.
+
+<!-- -->
+
+Tactical Master
+: At **10th**, the Field Officer can perform two Techniques in one turn.
+  When finished performing one Technique, regardless of success, the
+  Field Officer gains multiple actions to choose from as a Bonus Action.
+
+1.  **Bonus Attack Action**
+2.  **Bonus Technique Action**
+3.  **Bonus Move Action**
+4.  **Bonus Use Item Action**
+
+: The Field Officer can only perform this once a day. At Character level
+  **18** this goes up to 2 times per day.
+
+#### The Inspirer (Charisma) {#the_inspirer_charisma}
+
+- Focus: Morale, resilience, and broad squad buffs.\*
+
+: **Level 3:** Encouraging Speech
+: As a **Standard Action**, you may provide a stirring shout of valor.
+  This can affect any teammate who can see or hear the Field Officer,
+  even over a communication device. The roll is a Charisma check DC12 +
+  2 for every affected person. The speech can remove effects such as
+  [Frightened](Conditions#Frightened "Frightened"){.wikilink},
+  [Cowering](Conditions#-_Cowering "Cowering"){.wikilink},
+  [Panicked](Conditions#-_Panicked "Panicked"){.wikilink}, and
+  [Fatigued](Conditions#Fatigued "Fatigued"){.wikilink}. This can be
+  done once per combat Encounter.
+
+<!-- -->
+
+: **Level 7:** Inspiring Speech
+: Your words grant preternatural focus. As a **Standard Action**, gain
+  provide a stirring speech or perform some otherwise inspiring action
+  that encourages his teammates. This is a
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check DC14 + 3 for every
+  number of affected allies (The Field Officer can choose to ignore some
+  allies to reduce the DC). If successful, the allies get an advantage
+  bonus on Accuracy Checks for the next 1d4 rounds. This is a **Standard
+  Action** and can only be done once per combat Encounter.
+
+<!-- -->
+
+: This can be done outside of combat to provide an Advantage to whatever
+  task or tasks are being performed by the Field Officers\' teammates.
+  The Field Officer can only take 10/20 if the teammates are also taking
+  10/20.
+
+<!-- -->
+
+: **Level 9:** Undying Valor
+: Your mere presence makes your allies nearly impossible to break. All
+  allies within visual range gain an **Advantage Die** on all saving
+  throws against mind-affecting effects and Fear related conditions.
+  Additionally, your **Encouraging Speech** can now be performed as a
+  **Simple Action** instead of a Standard Action.
+
+#### The Tactician (Wisdom) {#the_tactician_wisdom}
+
+- Focus: Precision, coordination, and action economy.\*
+
+: **Level 3:** Coordinate Attack
+: As a **Free Action**, Field Officer points out the target they are
+  aiming at. If you are successful, then for every other teammate, up to
+  the Field Officer\'s Wisdom Mod, who is also successful at a Melee or
+  Ranged accuracy check on the target that round, they gain **1d4** of
+  extra damage. At **8th** Character Level, the damage dice is **1d6**.
+  At **12th** it is **1d10** and at **16th** Character level this is
+  **1d12**. This can only be done when there are more than 1 target
+  left.
+
+<!-- -->
+
+: Can only be done 1 + 1 every 5 Field Officer levels per day.
+
+<!-- -->
+
+: **Level 7:** Tactical Insight
+: As a **Standard Action** the Field Officer can roll a Charisma save of
+  DC14 + 3 for every affected member (The Field Officer can choose to
+  ignore some allies to reduce the DC). All allies who can see or hear
+  the Field Officer gain the benefits of their tactical insights. Each
+  affected ally gains a one-time **Bonus Action** that they can perform
+  in their \"off-group\" phase as a separate action. They may choose
+  from:
+
+1.  **Bonus Attack Action**
+2.  **Bonus Technique Action**
+3.  **Bonus Move Action**
+4.  **Bonus Use Item Action**
+
+: Frequency: Once per day.
+
+<!-- -->
+
+: **Level 9:** Strategic Proxy
+: At the start of the round, before anyone\'s turn the Field Officer can
+  declare they are sacrificing their turn to support another allie that
+  is within 30ft + 5ft per WIS Mod. If that ally is in the Vanguard,
+  they may also act in the Rearguard this round (or vice-versa). They
+  gain a full second turn in the other group\'s phase, including their
+  Simple and Standard actions. This can only be done once per encounter
+  and 1 + every 5 levels of Field Officer per day.
+
+## Helix Warrior {#helix_warrior}
+
+  Profession Level   Special
+  ------------------ --------------------------------------------------------------
+  1st                Martial Artist, Darkvision (60 ft.), **Genetic Enhancement**
+  2nd                Haul, Genetic Path Choice, Light Sleeper
+  3rd                Combat Expertise, **Genetic Enhancement**
+  4th                Flurry of Blows
+  5th                Bonus Feat, Darkvision (90 ft.), **Genetic Enhancement**
+  6th                Genetic Path Upgrade, Survivor
+  7th                Improved Reaction, **Genetic Enhancement**
+  8th                Superior Conditioning
+  9th                Strong As An Ox, **Genetic Enhancement**
+  10th               Genetic Path Upgrade, Darkvision (120 ft.)
+
+  : Table: The Helix Warrior
+
+Most choose not to mess with Nature too much. Science has always
+tittered on the fringes of what society deems acceptable. Pushing
+against the wall of morality is, to some scientists, their duty. Helix
+Warrior\'s are examples of those experiments scientist do that sometimes
+pushes too hard against that wall. Genetic Modification is one of the
+big Great Filters of any Civilization. People, sometimes willing,
+however usually not, are subjected to rigorous \"scientific\"
+experimentation. Their DNA is manipulated to purge anything deemed
+undesirable or a \"flaw.\" Some call this \"forced evolution.\" Most
+call it eugenics. Some Civilizations allow such practices, while most
+others do not. All capable Civilizations do it at some point.
+
+Some Helix Warriors come out with no adverse side effects and use their
+abilities to help others or, at the very least, help themselves. Others
+are not as lucky. In either case, Helix Warriors manifest new abilities
+that make them more resilient super-soldiers, security guards, law
+enforcement officers, and more.
+
+Choose the Helix Warrior if you want to be a master of physical combat,
+either as an unstoppable engine of destruction or a hyper-perceptive
+protector who guides their squad through the chaos of battle.
+
+The fastest path into this Profession is through the [Path of Strength
+(Strong
+Hero)](Core_Class#Path_of_Strength_.28Strong_Hero.29 "Path of Strength (Strong Hero)"){.wikilink}
+or the [Path of Wisdom (Dedicated
+Hero)](Core_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdom (Dedicated Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Strength **OR** Path of Wisdom **OR** Ability:
+    Strength Score 15+ **OR** Ability: Wisdom Score 15+ and Strength
+    score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Feats: Cannot take feats within the **Ranged Combat** sub-category
+    (except for [Bazooka Arm](Bazooka_Arm "Bazooka Arm"){.wikilink}).
+2.  Profession: Cannot also be a Dreadnought.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Strength and Wisdom
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
+[Athletics](Athletics "Athletics"){.wikilink} (Str),
+[Stealth](Stealth "Stealth"){.wikilink} (Dex),
+[Survival](Survival "Survival"){.wikilink} (Wis),
+[Perception](Perception "Perception"){.wikilink} (Wis)
+
+### Helix Warrior\'s Profession Talents {#helix_warriors_profession_talents}
+
+------------------------------------------------------------------------
+
+NOTE
+: The Helix Warrior must choose either the Titan and the Path of
+  Strength or Oracle and the Path of Wisdom.
+
+<!-- -->
+
+Genetic Enhancement
+: At levels **1st, 3rd, 5th, 7th, and 9th**, your specialized training
+  or mutagenic triggers unlock a new evolutionary advantage. Each time
+  you gain this bonus, choose one of the following:
+  - **Helix Strain**: Learn one \"Trick\" from the [Helix
+    Strains](Techniques#Helix_Strains "Helix Strains"){.wikilink} list.
+    You must still meet any prerequisites for the Strain.
+  - **Mutation Points**: You gain **2 Mutation Points (MP)**. These
+    points can be spent immediately or saved to acquire mutations from
+    the [Mutations](Mutations "Mutations"){.wikilink} list, following
+    standard mutation rules.
+
+<!-- -->
+
+Martial Artist
+: At **1st** level, your unarmed strikes are considered lethal. You deal
+  unarmed damage as per the [Martial Arts
+  Combat](Weapons#Melee.2FMartial_Arts_Combat "Martial Arts Combat"){.wikilink}
+  rules, but you can, if desirable, replace the Dexterity Modifier with
+  Wisdom when calculating Weapon Damage Die. You can add your Wisdom or
+  Strength modifier (based on your Path) to the damage total.
+
+<!-- -->
+
+Darkvision
+: You can see in near total darkness out to 60 feet (black-and-white
+  only). The range improves to 90ft at **5th** level and 120ft at
+  **10th** level. If your species already possesses Darkvision, increase
+  the range by 30ft at each interval.
+
+<!-- -->
+
+Haul
+: At **2nd** level, your Strength is considered 4 points higher for the
+  purpose of determining carrying capacity.
+
+<!-- -->
+
+Light Sleeper
+: At **2nd** level, you remain alert even while resting. Your Passive
+  Perception is unaffected by sleep, and you may make active
+  [Perception](Perception "Perception"){.wikilink} checks while asleep
+  without penalty.
+
+<!-- -->
+
+Combat Expertise
+: At **3rd** level, you gain one [Advanced Combat
+  Technique](Techniques#Advanced_Combat_Techniques "Advanced Combat Technique"){.wikilink}
+  of your choice. You gain another at **6th** and **9th** level.
+
+<!-- -->
+
+Flurry of Blows
+: At **4th** level, you can unleash a rapid succession of strikes. If
+  you use a **Standard Attack Action** with unarmed strikes or while
+  dual wielding light melee weapons without having used a **Simple
+  Action** this turn, you gain a second Standard Attack. If this second
+  attack is successful, you may take an additional standard **Bonus
+  Attack Action** for an off-hand attack (if applicable).
+
+<!-- -->
+
+Survivor
+: At **6th** level, your body can push through the impossible. Once per
+  day, when rolling a saving throw, you may roll with Luck. This
+  increases to twice per day at Character level 12 and three times at
+  level 18.
+
+<!-- -->
+
+Improved Reaction
+: At **7th** level, you gain a **+2 Misc bonus** to Initiative.
+  Additionally, you gain an Advantage Die on Dexterity saving throws if
+  you are not currently in combat. You may add your Strength or Wisdom
+  mod (based on your Path) to the Dexterity Saving throws both in and
+  out of combat.
+
+<!-- -->
+
+Superior Conditioning
+: At **8th** level, you can as a **Simple Action** shake off adverse
+  conditions. When affected by a duration-based condition (e.g.,
+  Stunned, Shaken, Nauseated), the duration is halved. If the duration
+  is only 1 round, you ignore the effect entirely. This can be done 1 +
+  1 every 5 Helix Warrior levels per day.
+
+<!-- -->
+
+Strong As An Ox
+: At **9th** level, you ignore the **Clunky** attribute of any weapon
+  provided it was given based on the weapon\'s weight. Your unarmed
+  strikes damage die is calculated as if your Strength score was +2.
+
+### Genetic Path Choice {#genetic_path_choice}
+
+At **2nd** level, you must choose the direction of your genetic
+enhancement.
+
+#### Titan (Path of Strength) {#titan_path_of_strength}
+
+Upon becoming a Helix Warrior Titan gain the
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Str/Cha) as a Favored
+Skill.
+
+Level 2
+: Overwhelming Might
+: Your muscles are engineered for maximum output. When you use a
+  **Standard Attack Action** with a melee weapon or unarmed strike, you
+  deal additional damage equal to 1/2 your Helix Warrior level.
+
+<!-- -->
+
+Level 6
+: Brute Force (Standard Move Enhancement)
+: When you perform a **Standard Combat Technique Action** (Charge,
+  Tackle, or Overrun), you gain an Advantage Die on the Technique check
+  as well as damage. If successful earn a **Bonus Attack Action**.
+
+<!-- -->
+
+Level 10
+: Colossal Impact
+: Once per encounter, you can focus your entire physical strength into a
+  single blow.
+: **Action**: Standard Action.
+: **Effect**: Your next melee attack this turn deals damage equal to if
+  all die rolled for damage were maxed (this ignores exploding effects)
+  and is considered
+  [Kinetic-Kinetic](Damage_Types_and_Attributes#Double_Types "Kinetic-Kinetic"){.wikilink}.
+  If the attack is a Critical Hit, the target must succeed on a
+  Constitution DC12 + Amount the AC was beaten by or be **Stunned** for
+  1d4 rounds.
+
+#### Oracle (Path of Wisdom) {#oracle_path_of_wisdom}
+
+Upon becoming a Helix Warrior, an Oracle gains the [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis) as a Favored
+Skill.
+
+Level 2
+: Tactical Foresight
+: Your genetically enhanced mind processes combat data at an accelerated
+  rate. Allies, including yourself, within 30ft + 5ft per WIS Mod gain a
+  **+1 Morale bonus** to saving throws as you provide real-time tactical
+  callouts. If the Helix Warrior chooses to Fight Defensively as a
+  **Standard Action** this also provides a +1 to AC for themselves and
+  their allies.
+
+<!-- -->
+
+Level 6
+: Guiding Hand
+: As a **Simple Action** you can optimize the movements of your squad.
+  One ally within 30ft +5ft per WIS Mod may immediately perform a
+  **Simple Action** (e.g., Draw Weapon, 5ft step) out of turn. This does
+  not count against their actions on their own turn. This can be done
+  1 + Wisdom Mod per day, but only once per encounter.
+
+<!-- -->
+
+Level 10
+: Flawless Anticipation
+: Your genetically perfected reflexes allow you to read muscle twitches
+  and eye movements, anticipating enemy strikes before they land.
+: **Action**: Free Action (Once per encounter).
+: **Effect**: For the duration of the encounter, you gain a special
+  reaction called **\"Intervene\"**. Whenever an ally within 30ft + 5ft
+  per WIS Mod is targeted by an attack, you may use your reaction to
+  either:
+: a\) Move up to your speed to intercept the attack. You become the
+  target, but you gain Damage Reduction (DR) equal to your Wisdom
+  Modifier against this attack.
+: b\) Move up to the enemy (if in range) and perform a Bonus Attack
+  Action.
+: This response can happen even outside your Combat group.
+
+## Shield Splicer {#shield_splicer}
+
++--------------+------------------+-----------------------------------------------------------------------------------------+
+| Profession   | Special          | Technique Usage by Level                                                                |
+| Level        |                  |                                                                                         |
++==============+==================+==============+==============+==============+==============+==============+==============+
+| 0\*          | 1st              | 2nd          | 3rd          | 4th          | 5th          |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 1st          | Self Shielded,   | 1            | \-           | \-           | \-           | \-           | \-           |
+|              | Sense Shield     |              |              |              |              |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 2nd          | Shielded         | 2            | 1            | \-           | \-           | \-           | \-           |
+|              | Defender/Wielder |              |              |              |              |              |              |
+|              | Talent(s)        |              |              |              |              |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 3rd          | Combat Training  | 2            | 1            | 1            | \-           | \-           | \-           |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 4th          | Shielded         | 3            | 2            | 1            | \-           | \-           | \-           |
+|              | Defender/Wielder |              |              |              |              |              |              |
+|              | Talent(s)        |              |              |              |              |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 5th          | Bonus Feat       | 3            | 2            | 2            | 1            | \-           | \-           |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 6th          | Shielded         | 4            | 3            | 2            | 1            | \-           | \-           |
+|              | Defender/Wielder |              |              |              |              |              |              |
+|              | Talent(s)        |              |              |              |              |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 7th          | Disrupt Shield   | 4            | 3            | 3            | 2            | 1            | \-           |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 8th          | Shielded         | 5            | 4            | 3            | 3            | 1            | \-           |
+|              | Defender/Wielder |              |              |              |              |              |              |
+|              | Talent(s)        |              |              |              |              |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 9th          | Expert Splicer   | 5            | 4            | 4            | 3            | 2            | 1            |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| 10th         | Shielded         | 6            | 5            | 4            | 3            | 2            | 2            |
+|              | Defender/Wielder |              |              |              |              |              |              |
+|              | Talent(s)        |              |              |              |              |              |              |
++--------------+------------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| \*Level 0 Techniques can be performed at will with the [Technique Novice](TechniqueNovice "Technique Novice"){.wikilink}  |
+| [Feat](Feats "Feat"){.wikilink}.                                                                                          |
++---------------------------------------------------------------------------------------------------------------------------+
+
+: Table: The Shield Splicer
+
+The [Lepidonains](Species#Lepidonains "Lepidonains"){.wikilink} had a
+vast empire. They were second to none. Except for the Cryous. Their
+rivalry came to a head in The Great Warring Years. The Cryous had
+created a new masterful set of implants to empower their soldiers. This
+helped take away the Lepidona\'s ground troop superiority. In response,
+the Lepidonians developed a suit/cybernetic implant combo in hopes of
+outdoing their competitors. The set was the Shield Integration Suit and
+Cybernetic Combat Set. It was nicknamed the Shield Splicer Combat Suit,
+and nowadays, people who use them are called Shield Splicers.
+
+The technology was inevitably leaked, and the rest of the Galaxy has
+been tweaking and improving upon the design for centuries. Mainly for
+war, the suits are sometimes outlawed. Many mercenary groups, pirates,
+thugs, and other more criminal groups employ wearers of such suits.
+Since work is hard to buy if you dedicate a portion of your life to
+wearing a suit half, the galaxy has outlawed most Shield Splicers, who
+don\'t have a choice. And thus a stereotype was born.
+
+To curb the lousy rapport, newer, more defensive versions of the suit
+were made. With the suit becoming more prevalent on the outskirts of
+space, many isolated locations began using them to defend themselves.
+Monasteries had their monks devote time to learning the art as a means
+of defense.
+
+Choose the Shield Splicer if you want a character who can manipulate
+invisible fields of force to either protect allies defensively or crush
+enemies in a nearly invisible clutch of high-intensity force.
+
+The fastest path into this Profession is through the [Path of
+Constitution (Tough
+Hero)](Future_Hero_Base_Class#Path_of_Constitution_.28Tough_Hero.29 "Path of Constitution (Tough Hero)"){.wikilink}
+or the [Path of Wisdom (Dedicated
+Hero)](Future_Hero_Base_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdom (Dedicated Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Constitution **OR** Path: Path of Wisdom **OR**
+    Ability: Constitution Score 15+ with Wis score of 12+ **OR**
+    Ability: Wisdom Score 15+ with Con score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Profession: Cannot also be an Electro-Mancer.
+2.  Gear: Cannot wear Power Armor.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Constitution and Wisdom
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
+[Athletics](Athletics "Athletics"){.wikilink} (Str), Craft \[
+[Mechanical](-_Mechanical "Mechanical"){.wikilink},
+[Structural](-_Structural "Structural"){.wikilink} \] (Int), Choose Any
+One [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
+[Survival](Survival "Survival"){.wikilink} (Wis),
+[Medical](Medical "Medical"){.wikilink} (Wis).
+
+`<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
+Affinity`</u>`{=html}: The Shield Splicer uses their **Constitution**
+ability to perform
+[Techniques](Techniques#Shield_Splicer_Techniques "Techniques"){.wikilink}.
+
+### Shield Splicer\'s Profession Talents {#shield_splicers_profession_talents}
+
+------------------------------------------------------------------------
+
+Self Shielded
+: At **1st** level, you can imbue yourself with a barrier that provides
+  temporary health. You gain **Temporary HP** equal to your Shield
+  Splicer level + (2 \* Wisdom Modifier). This lasts for 1 hour + 30
+  Minutes per Wisdom Modifier.
+: Requires a **Standard Action** to activate. Can be used once per
+  combat encounter.
+
+<!-- -->
+
+Sense Shield
+: At **1st** level, you are uniquely attuned to the resonance of energy
+  fields. You gain an **Advantage Die** on **Passive Perception** and
+  active Perception checks for detecting any shielded object, cloaked
+  unit, or force field within 60ft. When applying Advantage to Passive
+  Perception, take 1/2 of the total possible roll value, rounding down.
+
+<!-- -->
+
+Shield Splicer Path Talent
+: At **2nd** level, the Shield Splicer must choose between the **Shield
+  Wielder** (Constitution) or **Shield Defender** (Wisdom) paths. Once
+  chosen, they earn their first Path Talent. They earn more at all even
+  levels, **4th**, **6th**, **8th**, and lastly **10th**.
+
+<!-- -->
+
+Combat Training
+: At **3rd** level, you gain a bonus feat from anything with the
+  Tactical Feat category, representing your focus before mastering
+  shield manipulation.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, gain a free Bonus Feat from the **Utility** or
+  **Techniques** categories.
+
+<!-- -->
+
+Disrupt Shield
+: At **7th** level, you can target an external force field with a mental
+  spike of energy.
+: **Action**: Standard Action.
+: **Range**: 60ft + 5ft per Constitution Modifier.
+: **Effect**: Roll a Constitution check DC 15. You deal damage directly
+  to an enemy\'s Power Armor, Force Field, or shield system. Following
+  the [Item Damage](Item_Damage "Item Damage"){.wikilink} rules. The
+  Item/Object gains a Battle Scare for every 2 points the DC is beaten.
+: **Fatigue**: If you use this ability, you must succeed an opposing
+  Constitution save DC15 + Battle Scare Damage dealt become
+  **Fatigued**. You cannot perform this action while already Fatigued or
+  Exhausted.
+
+<!-- -->
+
+Expert Splicer
+: At **9th** level, your constant exposure to force fields has made you
+  more resilient. You gain a permanent **+1 bonus to AC**.
+
+### Shield Splicer Path Choices {#shield_splicer_path_choices}
+
+#### Path of the Shield Wielder (Constitution) {#path_of_the_shield_wielder_constitution}
+
+**Focus**: Kinetic Force, Ranged Damage, and Physical Disruption.
+
+Level 2
+: Shield Attack
+: You mold a force field into a small concentrated sphere to cause
+  damage at range. This is a **Standard Attack Action** (Ranged, 100ft).
+: **Damage**: 1d6 + Constitution Modifier (Kinetic-Kinetic).
+: You use Dexterity to aim, but Constitution Modifier for the damage
+  bonus. This attack counts as using a \"Natural Ranged Weapon\" for
+  proficiency bonuses, extra damage, off-handed weapon, and Bonus
+  Actions.
+
+<!-- -->
+
+Level 4
+: Kinetic Shunt
+: You learn to add a powerful shove to your kinetic strikes. When you
+  land a successful melee or ranged attack, you gain the choice of a
+  **Bonus Action** to shunt the target. The target must succeed on a
+  Strength save DC15 + Con Mod or be pushed 10ft away from you. If the
+  target is unable to move, ie a wall behind them, then take 1d4 damage
+  instead.
+
+<!-- -->
+
+Level 6
+: Focused Shield Attack
+: Your kinetic spheres become more stable. Range increases to 150ft +
+  10ft per Constitution Modifier. and damage increases to **1d8 +
+  Constitution Modifier (AP 2)**. Additionally, you do not take
+  Disadvantage when making a Shield Attack against an enemy within your
+  melee threat range.
+
+<!-- -->
+
+Level 8
+: Energy Redirection
+: Your shields can \"catch\" and return hostile energy.
+: **Trigger**: While a shield controlled by you, through Talents or
+  Techniques, is hit with damage that deals Kinetic, Electric, or
+  Thermal damage. You can sacrifice a Simple/Bonus Action on your next
+  turn to attempt to absorb some of the damage.
+: **Effect**: Roll a Constitution check against the attacker\'s
+  accuracy. If you win, you take half damage and gain bonus damage that
+  can be applied to any Shield based damage dealing Technique, or to the
+  Character\'s Shield Attack, or on a Melee Weapon that the Character is
+  actively holding. This bonus damage adds +1d6 + (1 per every 4 points
+  of damage you take) damage of the type you just absorbed.
+
+<!-- -->
+
+Level 10
+: Master Shield Wielder
+: Your kinetic strike reaches its ultimate form. Range increases to
+  200ft + 20ft per Constitution Modifier, damage increases to **1d10 +
+  Constitution Modifier (AP 4)**, and the Player can choose between
+  **Critical Range increase +1** or **x3 Critical Multiplier**.
+: Additionally, once per day, you may choose too \"Expand\" a Technique
+  (doubling its range or duration).
+
+#### Path of the Shield Defender (Wisdom) {#path_of_the_shield_defender_wisdom}
+
+**Focus**: Ally Protection, Damage Absorption, and Battlefield Control.
+
+Level 2
+: Selfless Shield
+: You can manifest your barriers around others. You can use your **Self
+  Shielded** feature on an ally within 30ft + 5ft per Wisdom Mod as a
+  **Standard Action**. This however only lasts during combat. It can be
+  used once per combat and doens\'t count against the Self Shield use.
+
+<!-- -->
+
+Level 4
+: Substitution
+: You can weave your own vitality into an ally\'s defense. When an
+  adjacent ally or an ally under your **Selfless Shield** is hit, you
+  may choose to absorb half of the damage result onto yourself. When
+  this is done you loose your next turns **Simple Action**. Your
+  Constitution Mod acts as DR for this specific instance of damage, but
+  no other DR (from armor or items) applies.
+
+<!-- -->
+
+Level 6
+: Improved Force Wall
+: You have mastered the construction of static barriers. You haven\'t
+  chosen to learn **Force Wall**; you automatically learn it, even if at
+  the max allowed. You can perform the **Force Wall** technique as a
+  **Simple Action**. If you perform it as a **Standard Action**, the
+  wall\'s height and length are doubled, and it gains +2 DR. At Shield
+  Splicer level 8 DR goes to +4 and duration is 1d6 + 2 turns.
+
+<!-- -->
+
+Level 8
+: Tactical Phasing
+: You can briefly \"phase\" an ally\'s shield to help them reposition.
+: **Action**: Simple Action.
+: **Effect**: One ally within range gains partial concealment (enemies
+  take a Disadvantage Die to hit them) for 1 round. While phased, the
+  ally\'s movement does not trigger **Tactical Opportunities**.
+
+<!-- -->
+
+Level 10
+: Healing Chamber
+: You warp a protective, airtight shield around a target (Range: Touch)
+  that is flooded with concentrated healing gas. You can target yourself
+  or choose to envelop both yourself and the adjacent target to split
+  the healing bonus.
+: **Action**: Standard Action.
+: **Effect**: For 1d4 rounds, the target is immune to toxins and gains
+  **Regeneration** (recovering HP equal to their Hit Die + your Wisdom
+  Modifier at the Counter Phase of combat). This consumes a Medical Kit
+  or a concentrated Healing Concoction. If you choose to share this
+  bubble with the target, then each rolls for the total healing but
+  halves the total, rounding up.
+
+d up.
+
+## Space Marine {#space_marine}
+
+  Profession \<br \\\>Level   Special
+  --------------------------- ---------------------------------------------------------------
+  1st                         Military School (Boot Camp), Iron Gut
+  2nd                         Military Training Course, Joint Operations
+  3rd                         Combat Expert
+  4th                         Military School (Advanced Training), Military Training Course
+  5th                         Advanced Tactics
+  6th                         Military Training Course
+  7th                         Special Focus Training
+  8th                         Military Training Course, Military School (Elite Training)
+  9th                         Veteran's Grit
+  10th                        Military Training Course, Void Legionnaire
+
+  : Table: The Space Marine
+
+These rough, tough, and unsavory lot of people are the military\'s
+finest. They serve as the backbone to any Empire, Corporation, or
+Religious institution\'s firm outstretched hand. They are not just
+required when waging war in space but also for keeping the peace and
+ensuring stability. Many Space Marine groups are mercenary organizations
+that take advantage of the vastness of space by providing their services
+where an otherwise outstretched army cannot effectively hold. Others are
+loyal only to one faction and serve them relentlessly.
+
+No matter who they serve, Space Marines are talented at all things
+combat in space. Whether in spaceship battles, close-quarters combat,
+Zero-G, or extra G, Space Marines have the talent and guts to get it
+done. It may not be clean\... in fact, it\'s certainly gonna get messy,
+but Marines wouldn\'t have it any other way.
+
+Play a Space Marine if you want a Character that all-around excels at
+and focuses solely on combat.
+
+The fastest path to the Space Marine is through the [Path of Dexterity
+(Fast
+Hero)](Core_Class#Path_of_Dexterity_.28Fast_Hero.29 "Path of Dexterity (Fast Hero)"){.wikilink}
+or [Path of Strength (Strong
+Hero)](Core_Class#Path_of_Strength_.28Strong_Hero.29 "Path of Strength (Strong Hero)"){.wikilink}.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become a Space
+Marine, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Dexterity **OR** Path of Strength **OR** Ability:
+    Dexterity Score 15+ **OR** Ability: Strength Score 15+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  None.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
+Affinity`</u>`{=html}: Dexterity and Strength `<u>`{=html}Favored
+Skills`</u>`{=html}: [Acrobatics](Acrobatics "Acrobatics"){.wikilink}
+(Dex), [Athletics](Athletics "Athletics"){.wikilink} (Str),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str),
+[Pilot](Pilot "Pilot"){.wikilink} (Dex),
+[Perception](Perception "Perception"){.wikilink} (Wis),
+[Stealth](Stealth "Stealth"){.wikilink} (Dex),
+[Survival](Survival "Survival"){.wikilink} (Wis).
+
+### Space Marine\'s Profession Talents {#space_marines_profession_talents}
+
+------------------------------------------------------------------------
+
+Military School
+: At **1st**, **4th**, and **8th** level, the Space Marine can pick a
+  Bonus Feat from the whole Tactical category.
+
+<!-- -->
+
+Iron Gut
+: At **1st** level, the Space Marine gets the [Zero-G
+  Training](Zero-G_Training "Zero-G Training"){.wikilink} feat for free.
+
+<!-- -->
+
+Joint Operations
+: At **2nd** level, the Space Marine excels at squad-based fire. If the
+  Space Marine attacks a target that at least one other teammate in the
+  same Combat Group (i.e., Vanguard or Rearguard) is also attacking, the
+  Space Marine gains an Advantage Die on their accuracy check.
+
+<!-- -->
+
+Military Training Courses
+: Starting at **2nd** level and every even level thereafter (4th, 6th,
+  8th, 10th), the Space Marine can select a specialized course of study
+  from their time in the academy or the field. You cannot select the
+  same course more than once unless specified.
+
+:; - Suppressing Fire:
+
+: 
+
+  : Regardless of whether the ranged weapon supports the feature, the
+    Space Marine can use it to perform the Suppressing Fire mode.
+    Enemies suppressed this way take an additional -2 penalty to
+    accuracy.
+
+<!-- -->
+
+Combat Expert
+: At **3rd** level, the Space Marine can either learn two Advanced
+  Combat Techniques as if they took the [Advanced Combat
+  Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}
+  Feat twice. or they can choose to take the [Power Armor
+  Expert](Power_Armor_Expert "Power Armor Expert"){.wikilink} Feat
+  without the required Armor Proficiency requirement.
+
+<!-- -->
+
+Advanced Tactics
+: At **5th** level, the Space Marine's understanding of the battlefield
+  deepens. They can choose to perform a Simple or Bonus action in a
+  different Combat Group. If they are already in the Rearguard, then
+  they can choose to take their Simple/Bonus Action in the next round\'s
+  Vanguard.
+
+<!-- -->
+
+Special Focus Training
+: At **7th** level, the Space Marine picks one category to master:
+  [Heavy Melee Weapon
+  Training](Heavy_Melee_Weapon_Training "Heavy Melee Weapon Training"){.wikilink},
+  [Heavy Ranged Weapon
+  Training](Heavy_Ranged_Weapon_Training "Heavy Ranged Weapon Training"){.wikilink},
+  or [Heavy Armor
+  Training](Heavy_Armor_Training "Heavy Armor Training"){.wikilink}. If
+  one of these Feats is already trained and the Player doesn\'t wish for
+  other types of training, then they can take the [Training
+  Expert](Training_Expert "Training Expert"){.wikilink} feat.
+
+<!-- -->
+
+Veteran's Grit
+: At **9th** level, the Space Marine can \"shake off\" a condition (such
+  as Shaken, Fatigued, or Frightened) as a **Simple Action** once per
+  encounter.
+
+<!-- -->
+
+Void Legionnaire
+: At **10th** level, choose your legacy:
+
+  \- Legion Bulwark
+
+  : 
+
+  : Gain +3 DR (Kinetic) damage and you can no longer be knocked prone
+    or moved against your will by any creature your size or smaller.
+
+  \- Legion Sharpshooter
+
+  : 
+
+  : Your ranged attacks ignore the first 5 points of DR and your
+    critical range increases by 1 (e.g., 20 becomes 19-20). Max 17-20.
+
+  \- Legion Commander
+
+  : 
+
+  : All allies within 30ft of you gain a +2 morale bonus to accuracy and
+    saving throws as long as you are conscious and not incapacitated.
+    They also gain an additional +1 to accuracy if targeting an Enemy
+    that has been \"Marked\" with the Prey ability.
+
+## Starfighter
+
+  Profession Level   Special
+  ------------------ ---------------------------------------------------------------
+  1st                [Pilot](Pilot "Pilot"){.wikilink} Training, Reckless Behavior
+  2nd                Starfighter's Discipline (Choice), Sharp Reflexes
+  3rd                Evasive Footwork, Do a barrel roll!, Target Lock
+  4th                Scramble, Bonus Feat
+  5th                To the max!, Hangar Talk
+  6th                Wingman (Choice), Pilot's Awareness
+  7th                Intimidating Reputation, In-Flight Improvisation
+  8th                Bonus Feat, Keep it together, Shake, Rattle, And Roll
+  9th                Cool Under Pressure, Vector Thrust
+  10th               Master of the Skies (Choice)
+
+  : Table: The Starfighter
+
+The job of a fighter pilot is a tough and dangerous one. Years of
+intense training never genuinely prepare a Starfighter for their first
+combat experience. Spewed from a mothership in a blur, they see in an
+instant a massive onslaught of thousands of other little ships so small
+they are barely visible against the canvas of stars. Most do not survive
+this first chaotic experience. But for those who do, they become the
+elite---the few who can dance between debris and weapon fire with a
+smirk.
+
+Whether they are flying for a military, a corporation, or their own
+survival, Starfighters are defined by their reflexes and their ability
+to stay calm when everything around them is moving at thousands of
+kilometers per hour. These skills translate naturally to the ground,
+where the Starfighter treats the battlefield like a low-altitude
+dogfight, using momentum, positioning, and pure nerve to outmaneuver any
+opponent.
+
+Choose the Starfighter if you want your character to be a high-mobility
+\"Interceptor\" who excels in the cockpit, dominates ground movement,
+and has the grit to navigate the roughest spaceports in the galaxy.
+
+The fastest path into this Profession is through the [Path of Dexterity
+(Fast
+Hero)](Future_Hero_Base_Class#Path_of_Dexterity_.28Fast_Hero.29 "Path of Dexterity (Fast Hero)"){.wikilink},
+though other paths are certainly possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become a
+Starfighter, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Dexterity **OR** Ability: Dexterity Score 15+ **OR**
+    Ability: Charisma Score 15+ and Dexterity score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  None.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
+Affinity`</u>`{=html}: Dexterity and Charisma
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
+[Bluff](Bluff "Bluff"){.wikilink} (Cha/Int),
+[Pilot](Pilot "Pilot"){.wikilink} (Dex),
+[Perception](Perception "Perception"){.wikilink} (Wis),
+[Survival](Survival "Survival"){.wikilink} (Wis).
+
+### Starfighter\'s Profession Talents {#starfighters_profession_talents}
+
+------------------------------------------------------------------------
+
+Pilot Training
+: Starting at Starfighter **1st** level, a Starfighter automatically
+  gains the [Spaceship Helm
+  Officer](Spaceship_Helm_Officer "Spaceship Helm Officer"){.wikilink}
+  and [Guide](Guide "Guide"){.wikilink} feats. The Starfighter has an
+  advantage when piloting any ship.
+
+<!-- -->
+
+Reckless Behavior
+: At **1st** level, the Starfighter\'s \"jump the gun\" mentality allows
+  them to act when others are still assessing the threat. At the start
+  of combat, the Starfighter can roll an Initiative check against a
+  DC15 + Enemies\' Initiative Score. If successful, they may perform a
+  single Standard Action as a Surprise round just for the Starfighter.
+  Doing so gives them a -2 AC penalty for the first round of combat as
+  they overextend.
+
+<!-- -->
+
+Starfighter's Discipline (Level 2 Choice)
+: At **2nd** level, choose your primary operational focus:
+
+  A\) The Ace
+
+  : 
+
+  : You are a master in the cockpit. You gain an Advantage on accuracy
+    checks with ship-mounted weapons and on saving throws to avoid
+    Battle Damage. You can perform the \"Shake, Rattle, and Roll\"
+    feature (Level 4) twice as often.
+
+  B\) The Interceptor
+
+  : 
+
+  : You treat ground combat like a dogfight. You gain a +5ft bonus to
+    base speed and an Advantage on opposing Initiative checks. When
+    moving through an enemy\'s square using Acrobatics, the DC is
+    reduced by 5. Gain Advantage on the Combat Technique Overrun.
+
+  C\) The Scoundrel
+
+  : 
+
+  : You know the ins and outs of every spaceport. You gain an Advantage
+    on [Bluff](Bluff "Bluff"){.wikilink} and
+    [Stealth](Stealth "Stealth"){.wikilink} checks, when in a Spaceport,
+    or on a Spaceship. You can use your
+    [Pilot](Pilot "Pilot"){.wikilink} skill in place of
+    [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+    [Intimidate](Intimidate "Intimidate"){.wikilink} when dealing with
+    spacers, mechanics, or ship merchants.
+
+<!-- -->
+
+Sharp Reflexes
+: At **2nd** level, a Starfighter applies his elite reflexes to any
+  vehicle he pilots, gaining an Advantage on all checks and saves made
+  aboard. On the ground, you take no damage when successfully making a
+  Dexterity saving throw to reduce damage from an area effect.
+
+<!-- -->
+
+Evasive Footwork
+: At **3rd** level, your momentum is your armor. As long as you have
+  moved at least 15ft on your turn, enemies take a Disadvantage on all
+  accuracy checks against you until the start of your next turn. Do not
+  gain Tactical Opportunity from moving out of an enemies melee threat
+  range.
+
+<!-- -->
+
+Do a barrel roll!
+: At **3rd** level, as a Standard Action while piloting, the ship gains
+  a +4 bonus to AC until your next turn. On the ground, you can use this
+  as a Simple Action after a move to gain a +2 Dodge bonus to AC for 1
+  round.
+
+<!-- -->
+
+Target Lock
+: At **3rd** level, you can \"lock on\" to a target as a Simple Action.
+  You gain an Advantage on all accuracy checks against that target. This
+  lock lasts as long as you maintain line of sight. You can only have
+  one target locked at a time.
+
+<!-- -->
+
+Scramble
+: At **4th** level, the Starfighter can choose to act in the Vanguard
+  phase even if they are in the Rearguard, or vice versa, by spending a
+  Simple Action to \"Scramble.\" This can be done a number of times per
+  day equal to the Starfighter\'s Dexterity Mod.
+
+<!-- -->
+
+Bonus Feat
+: At **4th** and **8th** levels, the Starfighter can gain a Bonus Feat
+  from the following categories: **Utility**, **Space Ship Operations**,
+  **Ranged Combat**, **Two-Weapon Fighting**
+
+<!-- -->
+
+To the max!
+: At **5th** level, you can push engines or your own body beyond safe
+  limits.
+
+  Ship
+  : Increase tactical speed by +500ft per Engine Mod for 1 minute.
+
+  Ground
+  : Increase base speed by +10ft per Dex Mod for 2 rounds.
+: Both uses require a 1-hour \"cool down\" period afterward.
+
+<!-- -->
+
+Hangar Talk
+: Also at **5th** level, your reputation precedes you. You gain an
+  Advantage on [Sense Motive](Sense_Motive "Sense Motive"){.wikilink},
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} and
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks within
+  spaceports, military installations or on other pilots or spacers. You
+  can procure \"restricted\" ship parts or fuel as if it had one less
+  Procure Difficulty.
+
+<!-- -->
+
+Wingman (Level 6 Choice)
+: At **6th** level, you learn to support your flight lead (or squad
+  mates):
+
+  A\) Covering Fire
+
+  : 
+
+  : When a Starfighter gains a Bonus Action from a Standard Move/Attack
+    Action they can choose a Bonus Covering Fire Action. This Action can
+    be stashed until the Starfighter\'s next turn. The Starfighter can
+    use this Bonus Action out of turn if another ally is attacked; then
+    the Starfighter can choose to use their Bonus Covering Fire Action
+    on the attacker. As long as the Attack Accuracy Check isn\'t a
+    Critical Failure, the target gains Disadvantage on their accuracy
+    check against the ally. If it is a hit treat all hits as a Minor
+    Hit.
+
+  B\) Tactical Lead
+
+  : 
+
+  : You can spend a **Bonus Action** to grant an ally in your group
+    (Vanguard/Rearguard) an Advantage Die on their next accuracy check
+    or skill roll. When a Starfighter\'s ally goes at the same time for
+    their Standard Action in the same turn phase, IE
+    (Vanguard/Rearguard) and they fail, instead of automatically taking
+    that failure if the Starfighter gains a Bonus Action that turn they
+    can sacrifice it to give an Advantage to the ally. Out of combat
+    this acts like an automatic successful aid of another player\'s
+    Skill check or Ability check/saving throw.
+
+<!-- -->
+
+Pilot\'s Awareness
+: At **6th** level, you gain a +2 Misc bonus to
+  [Perception](Perception "Perception"){.wikilink} and Passive
+  Perception as well as to [Sense
+  Motive](Sense_Motive "Sense Motive"){.wikilink} and
+  [Bluff](Bluff "Bluff"){.wikilink} checks.
+
+<!-- -->
+
+: When a Starfighter is in the Helm\'s Ship Position, that ship gets to
+  add +2 to its Passive Sensors.
+
+<!-- -->
+
+Intimidating Reputation
+: At **7th** level, your name carries weight. You get a +2 Misc bonus to
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks. When piloting
+  a crewed ship, you can add your Dexterity modifier to the ship\'s
+  Intimidate checks.
+
+<!-- -->
+
+In-Flight Improvisation
+: Also at **7th** level, you can use your
+  [Pilot](Pilot "Pilot"){.wikilink} skill in place of [Computer
+  Use](Computer_Use "Computer Use"){.wikilink} or [Disable
+  Device](Disable_Device "Disable Device"){.wikilink} when attempting to
+  hotwire vehicles, bypass security on hangar doors, or repair flight
+  systems in the field.
+
+<!-- -->
+
+Keep It Together
+: At **8th** level, you can keep a dying ship or your own body
+  functional through pure willpower. You can operate a spaceship at
+  maximum Battle Damage for Dexterity/Charisma (Whichever is higher) Mod
+  rounds before it explodes. On the ground, you can delay the effects of
+  the [Stunned](Conditions#-_Stunned "Stunned"){.wikilink} or
+  [Dazed](Conditions#-_Dazed "Dazed"){.wikilink} conditions for 1 round.
+
+<!-- -->
+
+Shake, Rattle, And Roll
+: At **8th** level, a Starfighter learns how to rock an enemy spaceship
+  with weapons fire. The Starfighter must declare that he is using this
+  ability before making the attack roll (thus, a failed attack roll
+  ruins the attempt). If the Starfighter is not also in control of the
+  Weapons, the Weapons officer will need to make a successful hit for
+  this to work. A spaceship damaged by the Starfighter's attack is
+  shaken for 1 round; all passengers and crewmembers (pilots and weapons
+  officers included) aboard the shaken ship take a disadvantage penalty
+  on attack rolls, saving throws, and skill checks for 1 round. A
+  Starfighter may use this ability once per combat.
+
+<!-- -->
+
+Vector Thrust
+: At **9th** level, you master the art of tactical repositioning. You
+  can switch between the Vanguard and Rearguard phases as a \*\*Free
+  Action\*\* at the start of any round. Additionally, your movement no
+  longer triggers Tactical Opportunities from enemies you have attacked
+  this turn.
+
+<!-- -->
+
+Master of the Skies (Level 10)
+: At **10th** level, your training is complete:
+
+  A\) Ghost in the Machine (The Ace)
+
+  : 
+
+  : Once per day, you and your ship become \"untargetable\" by
+    electronic sensors for 1 minute. All attacks against you have a 50%
+    miss chance, and you gain an Advantage on all attacks.
+
+  B\) Momentum Strike (The Interceptor)
+
+  : 
+
+  : Once per encounter, after moving at least 30ft, your next attack
+    deals maximum damage and adds your total distance moved to the
+    damage result.
+
+  C\) Slipstream (The Scoundrel)
+
+  : 
+
+  : You can move through solid objects and enemy spaces as if they
+    weren\'t there for 1 round. This movement does not trigger Tactical
+    Opportunities, and you end the move with a \"Phantom Strike\" that
+    automatically threatens a Critical Hit.
+
+## Swindler
+
+  Profession Level   Special
+  ------------------ ---------------------------------
+  1st                Cheat Fate, Sneak Attack +1d4
+  2nd                Swindler's Calling (Choice)
+  3rd                Fortune\'s Favor, Escape Artist
+  4th                Luck Perk (Choice)
+  5th                Bonus Feats
+  6th                Warp Probability
+  7th                Infiltration Style (Choice)
+  8th                Twist Fate (Choice), Luck Perk+
+  9th                One Last Trick
+  10th               The Big Score (Choice)
+                     
+
+  : Table: The Swindler
+
+Ever meet someone where life always seems to go their way? The Swindler
+doesn\'t just rely on skill---they rely on Luck. Whether it is through
+an ancient technological artifact, a unique psionic resonance, or simply
+being at the right place at the right time, Swindlers have learned to
+throw themselves into \"The Gamble,\" cheating fate to win big.
+
+Choose the Swindler if you want a character who manipulates probability,
+excels at stealth and deception, and thrives on high-risk, high-reward
+scenarios.
+
+The fastest path into this Profession is through the [Path of Charisma
+(Charismatic
+Hero)](Future_Hero_Base_Class#Path_of_Charisma_.28Charismatic_Hero.29 "Path of Charisma (Charismatic Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Charisma **OR** Ability: Charisma Score 15+ **OR**
+    Ability: Dexterity Score 15+ and Charisma score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Profession: A Swindler Character cannot **first** be a Dimension
+    Knight.
+2.  Profession: A Swindler cannot also be a Tracer.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
+Affinity`</u>`{=html}: Charisma and Dexterity
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Bluff](Bluff "Bluff"){.wikilink} (Cha/Int),
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis),
+[Disguise](Disguise "Disguise"){.wikilink} (Cha), Choose One
+[Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
+[Perception](Perception "Perception"){.wikilink} (Wis),
+[Stealth](Stealth "Stealth"){.wikilink} (Dex), [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex).
+`<u>`{=html}Feat Bonuses`</u>`{=html}:
+[Deceptive](Deceptive "Deceptive"){.wikilink}
+
+### Swindler\'s Profession Talents {#swindlers_profession_talents}
+
+------------------------------------------------------------------------
+
+Cheat Fate
+: At Swindler **1st** level, fortune favors the bold. Once per day, you
+  may re-roll one roll you have just made before the result is
+  announced. You must take the result of the re-roll. At **8th** level,
+  this can be used twice per day.
+
+<!-- -->
+
+Sneak Attack
+: At **1st** level, you deal extra **1d4** points of damage on
+  successful melee or light ranged weapon attacks against an unaware or
+  flanked opponent. This can only be done once per round. This extra
+  damage increases to **+2d4** at 4th level, **+3d4** at 7th level, and
+  **+4d4** at 10th level.
+
+<!-- -->
+
+Swindler's Calling (Level 2 Choice)
+: At **2nd** level, choose your primary method of operation:
+
+  A\) The Gambler
+
+  : 
+
+  : You live for the rush. You can spend a Simple Action to \"Raise the
+    Stakes\" on your next attack. Gain another Advantage Die and add it
+    to your accuracy. However, if the attack misses, you are
+    [Flat-Footed](Conditions#Flat_Footed "Flat-Footed"){.wikilink} until
+    the start of your next turn.
+
+  B\) The Phantom
+
+  : 
+
+  : You are a master of infiltration. You gain an Advantage on
+    [Acrobatics](Acrobatics "Acrobatics"){.wikilink} and
+    [Stealth](Stealth "Stealth"){.wikilink} checks. You no longer suffer
+    penalties for moving at full speed while in stealth.
+
+  C\) A Thousand Faces
+
+  : 
+
+  : You gain the **Thousand Faces** ability, allowing you to don a
+    convincing disguise in 1d4 minutes, or a quick and dirty disguise in
+    9 seconds or 3 rounds even while in combat taking up Simple Actions
+    for 3 rounds. The Swindler also gets advantage bonus on **7th**
+    level. In combat, you gain Advantage when performing
+    [Feint](Techniques#Combat_Techniques "Feint"){.wikilink}.
+
+<!-- -->
+
+Fortune\'s Favor
+: At **3rd** level, your luck extends to your pockets. You gain an
+  Advantage on [Profession](Profession "Profession"){.wikilink} checks,
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} checks for selling
+  items, and any checks made to [Gamble or make
+  Investments](Wealth_and_Money#Additional_Sources_of_Income "Gamble or make Investments"){.wikilink}.
+  When scavenging for parts or crafting materials, you also gain an
+  Advantage.
+
+<!-- -->
+
+Escape Artist
+: Also at **3rd** level, you gain the Feat Base Skill called [Escape
+  Artist](Escape_Artist "Escape Artist"){.wikilink}. Gain advantage
+  whenever attempting to escape confinement, such as ropes, chains, a
+  force field, or a jail, provided you are not in combat. This talent is
+  born from a long history of \"hearing\" about others\' narrow
+  escapes---though surely you have never been caught yourself.
+
+<!-- -->
+
+Luck Perk (Level 4 Choice)
+: At **4th** level, choose how your luck manifests:
+
+  A\) Lucky Strike
+
+  : 
+
+  : Choose either +1 to the critical range of your weapons (max 17-20)
+    or +1 to your weapon\'s critical multiplier (max x5).
+    :; Critical Chance Increase:
+
+    : 
+
+      : Once per combat, they can benefit from a +1 to the critical
+        range of their weapons. A weapon\'s critical range cannot go
+        above 17-20 with this ability. The Swindler benefits from +1
+        critical range on every attack in a round of combat until he or
+        she does a Critical.
+
+  B\) Loaded Dice
+
+  : 
+
+  : Once per day, you can declare a roll to be \"Rigged.\" Treat any
+    natural roll of 1--5 on the d20 as a 10. At **10th** level, the
+    Swindler can do this twice a day. If the Swindler chooses, they can
+    do this more than their level allows, but each time they do, they
+    become [Fatigued](Conditions#-_Fatigued "Fatigued"){.wikilink}. If
+    they are already Winded, Fatigued, or
+    [Exhausted](Conditions#-_Exhausted "Exhausted"){.wikilink}, then
+    they cannot do this.
+
+  C\) Second Chance
+
+  : 
+
+  : When you use \`Cheat Fate\`, any Advantage Die that is re-rolled is
+    treated as [Lucky](Advantage#Luck "Lucky"){.wikilink}. If it was a
+    disadvantage, take the lower of the two numbers to subtract. The
+    Swindler can now Cheat Fate twice per day, and at **8th** level,
+    this can be used 3 times per day.
+
+<!-- -->
+
+Bonus Feats
+: At **5th** level, gain a free Bonus Feat from: **Utility Feats**,
+  **Two-Weapon Fighting**, or **Melee Weapon Combat**.
+
+<!-- -->
+
+Warp Probability
+: At **6th** level, you can affect another target\'s roll within 45ft
+  (+5ft per Cha Mod). This requires a Standard Action, and this can be
+  done both on the Swindler\'s turn or out. They forfeit their next
+  turn\'s Standard Action if done out of Phase. IE: If the Swindler is
+  in the Vanguard, they can perform this action in the Rearguard even if
+  they already acted, but next turn they lose the Standard Action. If
+  targeting an enemy combatant, the Swindler must first declare their
+  intent before the GM declares the result of the target\'s action. Roll
+  your Advantage Die twice and either add or subtract the result from
+  the target\'s d20 roll. This can be used a number of times equal to
+  your Charisma Mod per day.
+
+<!-- -->
+
+: If out of combat, the Swindler can use this to adjust the check or
+  saving throw of a target.
+
+<!-- -->
+
+Infiltration Style (Level 7 Choice)
+: At **7th** level, you refine your movement:
+
+  A\) Timely Stride
+
+  : 
+
+  : You gain +10ft of base speed and can no longer be caught
+    [Flat-Footed](Conditions#Flat_Footed "Flat-Footed"){.wikilink}
+    during a surprise round.
+
+  B\) Slip the Cuffs
+
+  : 
+
+  : You can move through an enemy\'s square without triggering a
+    **Tactical Opportunity**. If you end your move adjacent to an ally,
+    you can swap places with them as a **Free Action**.
+
+  C\) Hidden in Plain Sight
+
+  : 
+
+  : (Requires A Thousand Faces) You can use the
+    [Stealth](Stealth "Stealth"){.wikilink} skill even while being
+    observed, provided you are within 10ft of a crowd or cover. Your
+    \"Quick and Dirty\" disguise now takes only 1 round (3 seconds).
+
+<!-- -->
+
+Twist Fate (Level 8 Choice)
+: At **8th** level, you learn to manipulate the luck of everyone around
+  you. Choose one of the following:
+
+  A\) Stolen Luck
+
+  : 
+
+  : Once per day, when an enemy within 60ft rolls a natural 20 on an
+    accuracy check or saving throw, you can \"steal\" it. Their roll
+    becomes a natural 1 instead. You store that natural 20 and can use
+    it to replace any d20 roll you or an ally makes within the next
+    hour.
+
+  B\) Probability Ripple
+
+  : 
+
+  : As a Standard Action, you emit a 20ft field of chaotic probability
+    for 1 minute. All allies within the field gain
+    [Luck](Advantage#Luck "Luck"){.wikilink}, and all enemies are
+    [Unlucky](Advantage#Luck "Unlucky"){.wikilink}. This can be used
+    once per day.
+
+<!-- -->
+
+Luck Perk+
+: Also at **8th** level, you can either pick a second choice from the
+  **Luck Perk** list or upgrade your existing choice:
+
+  Lucky Strike+
+
+  : 
+
+  : Gain the other benefit (Critical Range or Critical Multiplier) that
+    you did not pick at level 4.
+
+  Loaded Dice+
+
+  : 
+
+  : You can now use **Loaded Dice** to treat any natural d20 roll of
+    1-10 as a 12.
+
+  Second Chance+
+
+  : 
+
+  : When you use \`Cheat Fate\`, you may now treat the d20 as a Lucky
+    roll ie: roll twice and take the better result.
+
+<!-- -->
+
+One Last Trick
+: At **9th** level, if you are at or below 10% health (round down) , you
+  can teleport up to 120ft (+10ft per Cha Mod) as a **Standard Action**
+  (or as a response out of turn, forfeiting your next round). As a free
+  action the Player can roll [Stealth](Stealth "Stealth"){.wikilink}.
+  This concludes your turn.
+
+<!-- -->
+
+The Big Score (Level 10 Choice)
+: At **10th** level, you achieve ultimate mastery:
+
+  A\) Double or Nothing (The Gambler)
+
+  : 
+
+  : You are the master of the high-stakes play. When you succeed on an
+    accuracy check or skill check, you can choose to \"Double the Bet\"
+    by rolling again. If you succeed a second time, the effect is
+    tripled (triple damage, or automatic success on the next related
+    task). However, if the second roll is a failure, the original action
+    fails, you take damage equal to half what you would have dealt (or
+    fail the task spectacularly), and you are
+    [Stunned](Conditions#-_Stunned "Stunned"){.wikilink} for 1 round.
+
+  B\) Ghost Walk (The Phantom)
+
+  : 
+
+  : You can step between the folds of reality. As a Standard Action, you
+    become partially ethereal for 1 minute. During this time, you can
+    move through solid matter (up to 10ft thick) and gain a +4 bonus to
+    AC as attacks pass through your shifting form. You can end this
+    effect early as a Free Action to make a \"Phantom Strike,\" which
+    deals maximum damage and counts as a Sneak Attack even if the target
+    is not flanked or unaware. This ability can be used once per day.
+
+  C\) Grand Delusion (A Thousand Faces)
+
+  : 
+
+  : You can weave lies so potent they warp reality for those who hear
+    them.
+
+    : **In Combat:** Spend a Standard Action to perform a \"Massive
+      Con.\" All enemies within 30ft must make a Wisdom Save (DC 15 +
+      Cha Mod) or become
+      [Confused](Conditions#Confused "Confused"){.wikilink} for 1d4
+      rounds.
+    : **Out of Combat:** You can perfectly impersonate any individual
+      you have observed for at least 1 minute, including their voice,
+      mannerisms, and biometric patterns. Additionally, you can
+      \"Gaslight\" an NPC by talking to them for 5 minutes (DC 20
+      Diplomacy/Bluff). If successful, they will believe a single
+      logical falsehood you present as absolute truth for 24 hours,
+      regardless of prior knowledge.
+
+## Technosavant
+
+  Profession Level   Core Features           Path Feature (Cybernaut or Robotic Savant)
+  ------------------ ----------------------- --------------------------------------------
+  1st                Technocant              Path Choice, Initial Path Feature
+  2nd                Tech Hoarder            \-
+  3rd                \-                      Path Feature
+  4th                Technophile             \-
+  5th                Bonus Feat              Path Feature
+  6th                Robotic Vulnerability   \-
+  7th                Virtual Houdini         Path Feature
+  8th                Build Prototype         \-
+  9th                Machine Intuition       \-
+  10th               Greater Vulnerability   Path Feature
+
+  : Table: The Technosavant
+
+The teacher walked up to April\'s desk with a worried expression on his
+face. He looked at the tablet in his hands. It was April\'s homework and
+last test scores. A large red square at the top right corner blinking
+with a white F centered within it. \"Uhrm\... Miss April a moment of
+your time.\" The teacher said with a pause hoping to get April\'s
+attention. He failed. April\'s eyes were fixed on the workbench before
+her. A small spattering of electronics mixed with wires, duck tape, and
+a smoking soldering iron lay on the workbench before her. Her unkempt
+brown hair flowing down her back has caught the attention of several of
+her peers. However, she has ignored there laughter and sneers just as
+she is ignoring the teacher. \"UH HRM! Miss April a moment PLEASE!\" The
+teacher said this time with resolve in his voice.
+
+\"Huh?\" shocked out of a trance she looks up at the teacher eying the
+tablet in his hand.
+
+The teach satisfied that the response was enough. \"Your grades have
+been falling more and more recently. You seem ever engaged at school.
+Dare I say too engaged. But if you don\'t do your homework you will
+fail. And failing will not get you success. You have a chance here, and
+this is one of the most prestigious schools in this sector of space for
+Engineering.\" He finished the sentence with his nose a little higher in
+the air.
+
+\"Ok\... whatever. I don\'t care much to be an Engineer anyway. My
+interest is in robotics.\" April replied instantly.
+
+\"Bu\... wh\... Robotics is a part of Engineer! My dear, you must have
+other interests besides electronics?\" The teacher stammered
+
+\"No\... just robotics. The software that runs them, the interfaces, the
+automated systems, the servos, the levers, if it isn\'t a robot, I
+don\'t care much to learn about it.\" And with that, she went back to
+her work.
+
+Little did that teacher know, but years later April would be out in the
+field repairing and keeping robots working on a harsh new colonization
+project. Making sure the robots could defend themselves from the hostile
+bugs that lived on the planet. Lives depended on those robots. And she
+was paid more in one month than that teacher was in 10 years.
+
+Technosavants find more kinship with electronics, computers, robots, and
+the like than other biological counterparts. It often starts with
+collecting robotic, cybernetic, and computer hardware at a young age. It
+grows into not just a career but for a Technosavant a life choice. Loved
+for their aptitude to solve everyday problems Technosavants are found
+mainly in the frontier of space. Fixing electronic equipment and even
+improving on them. Noted for being tinkerers, they communicate in a
+language of techno jargon often made up on the fly.
+
+Player\'s who want a Character that can master robotics, cybernetics,
+and alien technology as well as put it to good use in the field.
+
+The fastest path into this Profession is through the [Path of
+Intelligence(Smart
+Hero)](Future_Hero_Base_Class#Path_of_Intelligence_.28Smart_Hero.29 "Path of Intelligence(Smart Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become a
+Technosavant, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Intelligence **OR** Ability: Intelligence Score 15+
+    **OR** Ability: Wisdom Score 15+ and Intelligence score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Profession: The Technosavant cannot also be a Xenophile Character
+    Profession.
+2.  Affinity: The Technosavant cannot apply their affinity die to
+    Charisma-based checks/saves even if another Profession allows it.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence and Wisdom
+
+`<u>`{=html}Favored Skills`</u>`{=html}: The Technosavant's favored
+skills are as follows: [Computer
+Use](Computer_Use "Computer Use"){.wikilink} (Int), Craft both \[
+[Electronic](-_Electronic "Electronic"){.wikilink},
+[Mechanical](-_Mechanical "Mechanical"){.wikilink} \](Int), [Disable
+Device](Disable_Device "Disable Device"){.wikilink} (Int), Choose Any
+Two [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
+[Study](Study "Study"){.wikilink} (Int).
+
+`<u>`{=html}Feat Bonuses`</u>`{=html}: [Computer
+Wiz](Computer_Wiz "Computer Wiz"){.wikilink} or [Jerry
+Rigging](Jerry_Rigging "Jerry Rigging"){.wikilink}. (Player chooses at
+level 1 Technosavant)
+
+### Technosavant\'s Profession Talents {#technosavants_profession_talents}
+
+------------------------------------------------------------------------
+
+Cybernaut or Robotic Savant
+: At Technosavant\'s first level, the Player must choose between being a
+  Technosavant Cybernaut or a Technosavant Robotic Savant. This choice
+  determines your specialized Path Features.
+  - **Cybernaut**: Focuses on improving themselves by becoming more
+    digital and robotic, mastering the art of the Cyborg.
+  - **Robotic Savant**: Focuses on making and controlling robots,
+    adventuring alongside their own MARS creations.
+
+<!-- -->
+
+Technocant
+: Starting at Technosavant **1st** level, a Technosavant learns to read,
+  write, and speak a jargon-riddled dialect called Technocant. You gain
+  the Language Technocant for free at Rank 1. Additionally, you can
+  speak and decipher machine logs. As a **Simple Action**, you can
+  \"ping\" any electronic system within 30ft +5ft per Wisdom Mod to
+  identify hidden cameras, sensors, or data ports. This grants an
+  Advantage Die on your next [Computer
+  Use](Computer_Use "Computer Use"){.wikilink} or [Disable
+  Device](Disable_Device "Disable Device"){.wikilink} check against that
+  system.
+
+<!-- -->
+
+Tech Hoarder
+: At **2nd** level, you gain the [Salvage](Salvage "Salvage"){.wikilink}
+  feat. Furthermore, you can scavenge spare parts from a disabled
+  machine or robot in 1 round (Standard Action). This grants you \"Scrap
+  Units.\" You can spend a Scrap Unit as a **Free Action** to grant
+  yourself an Advantage Die on any Craft or Repair check made in the
+  field.
+
+<!-- -->
+
+Technophile
+: At **4th** level, identifying unfamiliar technology or alien artifacts
+  is a **Simple Action** for you. If you successfully identify an
+  enemy\'s active gear (Power Armor, Shields, or Robots) during combat,
+  you can relay its \"Critical Fault\" to your allies. All allies in
+  your combat group (Vanguard or Rearguard) gain an Advantage Die on
+  their next attack against that target.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, the Technosavant can choose from the following feat
+  categories: **Utility Feats** or **Proficiency Tree**.
+
+<!-- -->
+
+Robotic Vulnerability
+: At **6th** level, you know exactly where to strike a machine\'s
+  servos. When attacking a robot or cyborg, your **Extra Damage
+  threshold is reduced by 1**. Additionally, you deal +1d6 points of
+  damage against robots by targeting slight weaknesses in their design
+  or armor. You also gain an advantage bonus on grapple checks against
+  robots, enabling you to deactivate them more efficiently using the
+  [Disable Device](Disable_Device "Disable Device"){.wikilink} skill.
+
+<!-- -->
+
+Virtual Houdini
+: At **7th** level, you can perform small wonders with a computer. You
+  can \"Hack\" an enemy electronic device (weapon, armor, or robot)
+  within 30ft + 5ft per Int Mod as a **Standard Action**. Roll an
+  Intelligence check (DC 15 + Tech Level). On a success, you force a
+  \"Glitch\": a weapon jams, power armor locks (reducing speed to 0), or
+  a robot loses its next Standard Action. You also gain a +1 misc bonus
+  to [Computer Use](Computer_Use "Computer Use"){.wikilink}.
+
+<!-- -->
+
+Build Prototype
+: At **8th** level, you can \"Field-Rig\" a one-use gadget from the
+  General Equipment list (Tech Level 2 or lower) in 1 minute using scrap
+  parts. This gadget functions perfectly for one encounter before
+  falling apart. Additionally, you can repair and craft Mechanic or
+  Electrical items of any Tech Level, though the Craft check DCs for any
+  item above your current Tech Level is increased by +5 per tech level.
+
+<!-- -->
+
+Machine Intuition
+: At **9th** level, your technical mastery reaches its peak. Your
+  Advantage Die level for all [Computer
+  Use](Computer_Use "Computer Use"){.wikilink}, [Disable
+  Device](Disable_Device "Disable Device"){.wikilink}, and
+  [Craft](Craft "Craft"){.wikilink} checks increases by 2 (max Level
+  20).
+: In combat, when attacking a machine target (robot, cyborg, or
+  mechanical structure), your Advantage Die level for the accuracy check
+  increases by 1 and you deal additional damage equal to your
+  Intelligence or Wisdom modifier which is higher.
+: **Synergy**: This bonus applies to attacks made by your integrated
+  cybernetic weapons or your MARS companions.
+
+<!-- -->
+
+Greater Vulnerability
+: At **10th** level, your strikes bypass machine resilience. You ignore
+  the first 1 + (Wis or Int mod, whichever is higher) points of Damage
+  Reduction (DR) on any robot or cyborg. Additionally, you now gain +2d6
+  whenever attacking a Robotic system and double advantage to grapple
+  checks. If you successfully grapple a robot, you can choose to
+  \"Hard-Shutdown\" the unit as a **Simple Action**, disabling it
+  instantly.
+
+#### Cybernaut Path Features {#cybernaut_path_features}
+
+:; Level 1: Framework Integration
+
+: 
+
+  : You gain the [Cyborg
+    Novice](Cyborg_Novice "Cyborg Novice"){.wikilink} feat and must pick
+    a flaw as per the
+    [Cybernetics](Cybernetics "Cybernetics"){.wikilink} rules. You
+    receive a Tech 2 Framework with default power and slots. You can
+    perform surgery on yourself to install or repair your own implants
+    with a successful Intelligence check (DC 15). This doesn\'t include
+    the initial installation of the Framework, that still requires
+    someone qualified to perform Surgery on the Technosavant.
+
+:; Level 3: Cybermancer
+
+: 
+
+  : Your mastery of cybernetic construction allows you to work with
+    extreme efficiency. Build and repair time for cybernetic attachments
+    is halved. You gain +1 Power to your Framework. And choose one
+    implant to take up 1 less Slot (minimum 1)
+
+:; Level 5: Bio-Digital Sync
+
+: 
+
+  : You gain the [Cyborg
+    Enthusiast](Cyborg_Enthusiast "Cyborg Enthusiast"){.wikilink} feat.
+    (Detractors still apply) If already acquired gain the next feat
+    [Cyborg Competent](Cyborg_Competent "Cyborg Competent"){.wikilink}.
+    Cost and Time of Crafting work for Cybernetic is reduced by 25%.
+
+:; Level 7: Neuro-Interface
+
+: 
+
+  : Your neural pathways are optimized for high-speed combat data. You
+    can use your Intelligence or Wisdom (Player must make a choice at
+    level 7) modifier in place of Dexterity for Armor Class and
+    Dexterity-based saving throws while in combat.
+
+:; Level 9: Bio-Digital Sync Plus
+
+: 
+
+  : You gain the [Cyborg
+    Competent](Cyborg_Competent "Cyborg Competent"){.wikilink} feat.
+    (Detractors still apply) If already acquired gain the next feat
+    [Cyborg Expert](Cyborg_Expert "Cyborg Expert"){.wikilink}. Can now
+    uptech Cybernetic implants (not Framework) by 1 Tech Level (max 4)
+    regardless of requirements.
+
+:; Level 10: Machine Perfection
+
+: 
+
+  : You have achieved a perfect union of flesh and steel. You no longer
+    suffer the Electrical Weakness common to cyborgs. Once per
+    encounter, you can ignore the penalty of one of your Detractors for
+    a number of rounds equal to 1 + your Intelligence or Wisdom modifier
+    (whichever is higher).
+
+#### Robotic Savant Path Features {#robotic_savant_path_features}
+
+:; Level 1: Robotic Friend
+
+: 
+
+  : Gain the Feat
+    [Companionship](Companionship "Companionship"){.wikilink}. However,
+    this feat applies to the Character level and only for other
+    companions. At level 1 Robotic Savant, you gain access to a
+    **Multi-purpose Adventuring Robot System** or MARS as a companion.
+    This robotic companion advances directly with the level of the
+    Character. Rules for customization are on the [Hero
+    Companions](Hero_Companions "Hero Companions"){.wikilink} page. A
+    Technosavant can only link with one MARS companion at a time.
+
+:; Level 3: Robomancer
+
+: 
+
+  : Build and repair time for robots and robotic components is halved.
+    The material costs are reduced by 25%. You can repair your Robot in
+    combat as a Standard Action. Follow the Medical skill check rules
+    for repairing/restoring HP to the robotic companion, but use Craft
+    Mechanics or Craft Electrical skill instead of Medical.
+
+:; Level 5: Technique Integration
+
+: 
+
+  : You can integrate one \"Utility\" gadget at your current Tech Level
+    or lower into your MARS companion. The MARS can activate this device
+    as a **Simple Action**.
+
+:; Level 7: Advanced MARS Surgeon
+
+: 
+
+  : Your specialized knowledge allows you to perform combat repairs on
+    any robot or vehicle with Advantage. Additionally, your MARS gains a
+    +2 AC bonus while within 30ft + 5ft per Int or Wis Mod of you as you
+    remotely optimize its defensive subroutines.
+
+:; Level 10: Robotic Synergy
+
+: 
+
+  : You and your MARS work well as a team. Either the Technosavant or
+    the MARS companion can act in a different combat group, thus
+    splitting the actions of the two. IE: The MARS companion can act in
+    the Vanguard while the Technosavant acts in the Rearguard.
+
+## Tracer
+
++------------------+----------------------------------+
+| Profession Level | Special                          |
++==================+==================================+
+| 1st              | Master Tracker,\                 |
+|                  | Tracers Mark +1d4                |
++------------------+----------------------------------+
+| 2nd              | Hunting Style (Choice)           |
++------------------+----------------------------------+
+| 3rd              | Study Target, Uncanny Stealth    |
++------------------+----------------------------------+
+| 4th              | Debilitating Blow (Choice),\     |
+|                  | Tracers Mark +2d4                |
++------------------+----------------------------------+
+| 5th              | Swift Tracking, Bonus Feat       |
++------------------+----------------------------------+
+| 6th              | Probe for Weakness,\             |
+|                  | Professional Reputation (Choice) |
++------------------+----------------------------------+
+| 7th              | Advanced Tracking (Choice),\     |
+|                  | Tracers Mark +3d4                |
++------------------+----------------------------------+
+| 8th              | Focus on Target\                 |
+|                  | Tactical Maneuver (Choice)       |
++------------------+----------------------------------+
+| 9th              | Crippling Strike                 |
++------------------+----------------------------------+
+| 10th             | The Final Catch (Choice),\       |
+|                  | Tracers Mark +4d4                |
++------------------+----------------------------------+
+
+: Table: The Tracer
+
+\"The Hunt\" is all there is for most Tracers. You could say that they
+do not work to live but rather live to work. And \"The Hunt\" is the
+work. Whether it\'s looking for a missing child or finding a killer on
+the loose, the Tracer is dedicated to it. Tracers are more than just
+Bounty Hunters. The universe is a big and dangerous place, and only some
+are willing to traverse it on a \"hunch\" or \"wild goose chase\" as
+some may call it. Tracers also do not just hunt for bounty. They are
+skilled at finding anyone or anything across the vastness of space. They
+revel in the daunting challenge.
+
+Pick to be the Tracer if you want a character who excels at hunting
+fugitives, locating missing persons, or uncovering hidden threats across
+the vastness of space.
+
+The fastest path into this Profession is through the [Path of Wisdom
+(Dedicated
+Hero)](Future_Hero_Base_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdom (Dedicated Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**:
+
+1.  Level: At least Level 2
+2.  Path: Path of Wisdom **OR** Ability: Wisdom Score 15+ **OR**
+    Ability: Intelligence Score 15+ and Wisdom score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Profession: This person cannot also be a Swindler.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
+Affinity`</u>`{=html}: Wisdom and Intelligence
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), [Computer
+Use](Computer_Use "Computer Use"){.wikilink} (Int), Choose Any Two
+[Knowledges](Knowledge "Knowledge"){.wikilink} (Int),
+[Pilot](Pilot "Pilot"){.wikilink} (Dex),
+[Stealth](Stealth "Stealth"){.wikilink} (Dex), [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis),
+[Study](Study "Study"){.wikilink} (Int),
+[Survival](Survival "Survival"){.wikilink} (Wis),
+[Perception](Perception "Perception"){.wikilink} (Wis). `<u>`{=html}Feat
+Bonuses`</u>`{=html}: [Track](Track "Track"){.wikilink}
+
+### Tracer\'s Profession Talents {#tracers_profession_talents}
+
+------------------------------------------------------------------------
+
+Tracers Mark
+: At Tracer **1st** level, you can \'mark\' a target with a successful
+  Standard Attack Action. This can be done with any ranged weapon you
+  are proficient with, or with a melee touch attack. This mark lasts a
+  number of rounds equal to 1d4 + 1/2 Tracer\'s Level. This provides a
+  **+1d4** damage to the total damage done to a \'marked\' target. Once
+  marked, a target stays marked until you attack a new target. Only one
+  target can be marked at any one time. This bonus damage is not
+  affected by criticals but is affected by DR.
+: The extra damage increases to **+2d4** at 4th level, **+3d4** at 7th
+  level, and **+4d4** at 10th level.
+: A Tracer can also choose to use a \*\*Tracking Mark\*\* instead of a
+  damage bonus marker. This is useful for out-of-combat situations. The
+  Marker emits a difficult-to-detect signal that a Tracer can easily
+  follow with a Scanner device they have tuned specifically to their
+  mark. Range is 1km per Tracer level. The tracking lasts for 24 hours +
+  4 hours per Tracer level.
+
+<!-- -->
+
+Master Tracker
+: At **1st** level, you gain an Advantage on
+  [Knowledge](Knowledge "Knowledge"){.wikilink} Checks,
+  [Perception](Perception "Perception"){.wikilink} checks,
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} checks, and
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks when used to
+  Gather Information on the whereabouts of a target.
+
+<!-- -->
+
+Hunting Style (Level 2 Choice)
+: At **2nd** level, define your approach to the hunt:
+
+  A\) The Manhunter (Enforcer)
+
+  : 
+
+  : You specialize in bringing them back alive. Gain Advantage on
+    [Grapple](Grapple "Grapple"){.wikilink} checks and once
+    out-of-combat [Medical](Medical "Medical"){.wikilink} checks to
+    \*\*Stabilize\*\* characters. You can choose to deal non-lethal
+    damage with any weapon without the usual penalty.
+
+  B\) The Predator (Ghost)
+
+  : 
+
+  : You are the unseen hunter. Gain Advantage on
+    [Stealth](Stealth "Stealth"){.wikilink} checks. If you attack while
+    in stealth or against an unaware target, you can choose to have the
+    **Tracers Mark** deal half damage in exchange for being a \"Subtle
+    Mark.\" The target must roll an opposing Perception check with
+    Disadvantage; if they fail, they do not realize they have been
+    marked.
+
+  C\) The Bloodhound (Analyst)
+
+  : 
+
+  : You hunt through data and deduction. Gain Advantage on [Computer
+    Use](Computer_Use "Computer Use"){.wikilink} and [Sense
+    Motive](Sense_Motive "Sense Motive"){.wikilink}. You can share the
+    benefits of your **Study Target** with one ally within 30ft.
+
+<!-- -->
+
+Study Target
+: At **3rd** level, you can study an enemy as a **Standard Action**.
+  Roll an Intelligence check (DC 15). If successful, gain an Advantage
+  on accuracy checks against that target for a number of rounds equal to
+  your Intelligence Modifier. You can only do this once per target.
+: At **7th** level, this action becomes a **Simple Action**.
+
+<!-- -->
+
+Uncanny Stealth
+: At **3rd** level, you gain a +1 Misc bonus to
+  [Stealth](Stealth "Stealth"){.wikilink} checks. You no longer suffer
+  the penalty on
+  [Stealth](Stealth#Moving_While_Stealthed "Stealth"){.wikilink} checks
+  while moving at full speed.
+
+<!-- -->
+
+Debilitating Blow (Level 4 Choice)
+: At **4th** level, your strikes hinder your prey:
+
+  A\) Paralyzing Toxin
+
+  : 
+
+  : (Requires Manhunter) Once per target, you can have your Standard
+    Attack Action force a Constitution Save (DC 15 + Int Mod). On
+    failure, the target is
+    [Stunned](Conditions#-_Stunned "Stunned"){.wikilink} for 1 round.
+
+  B\) Vitals Strike
+
+  : 
+
+  : (Requires Predator) Once per target, you can have your Standard
+    Attack Action force a Constitution Save (DC 15 + Int Mod). On
+    failure, the target is
+    [Sickened](Conditions#-_Sickened "Sickened"){.wikilink} for 1d4
+    rounds.
+
+  C\) Systems Spike
+
+  : 
+
+  : (Requires Bloodhound) Your attack disrupts electronic systems. If
+    the target is a robot, vehicle, or has cybernetics, they must roll a
+    Constitution Save (DC 15 + Int Mod) or be
+    [Dazed](Conditions#-_Dazed "Dazed"){.wikilink} for 1d4 rounds. You
+    can use the [Computer Use](Computer_Use "Computer Use"){.wikilink}
+    skill (DC 15 out of combat, DC 20 in combat) to cause system
+    overloads that deal non-lethal electrical damage to a person
+    operating the target electronics.
+
+<!-- -->
+
+Swift Tracking
+: At **5th** level, gain Advantage on
+  [Survival](Survival "Survival"){.wikilink} skill checks to track. You
+  can perform [Survival](Survival "Survival"){.wikilink} skill checks
+  even while in combat as a Free Action. You can provide your
+  [Survival](Survival "Survival"){.wikilink} bonuses to the \'Scan\'
+  feature of a spaceship you operate.
+
+<!-- -->
+
+Bonus Feat
+: At **5th** level, gain a free Bonus Feat from: **Misc Feats**,
+  **Ranged Combat**, or **Space Ship Operations**.
+
+<!-- -->
+
+Probe for Weakness
+: At **6th** level, if \`Study Target\` is active, you can roll an
+  Intelligence check (DC 25) when landing a successful hit. If
+  successful, gain an additional **Xd4** bonus damage (X = 1 + 1 for
+  every 5 you beat the DC) until the end of combat. This can only be
+  done once per combat.
+
+<!-- -->
+
+Professional Reputation (Level 6 Choice)
+: At **6th** level, choose how your fame grows:
+
+  A\) Intimidating Presence
+
+  : 
+
+  : You are known and feared. Gain a +1 Misc bonus to
+    [Intimidate](Intimidate "Intimidate"){.wikilink} and +1 Rank to the
+    [Profession](Profession "Profession"){.wikilink} skill.
+
+  B\) Technical Savant
+
+  : 
+
+  : You are known for your gear. Gain a +1 Misc bonus to [Computer
+    Use](Computer_Use "Computer Use"){.wikilink} and [Disable
+    Device](Disable_Device "Disable Device"){.wikilink}. Earn a Skill
+    point that must be spent on a **Craft** skill.
+
+<!-- -->
+
+Advanced Tracking (Level 7 Choice)
+: At **7th** level, your marking becomes more advanced:
+
+  A\) Homing Mark
+
+  : 
+
+  : Your \`Tracers Mark\` now provides an Advantage to all allies within
+    30ft + 5ft per Wisdom/Intelligence mod (whichever is higher) on
+    accuracy checks against the target.
+
+  B\) Persistent Mark
+
+  : 
+
+  : You can maintain two \`Tracers Marks\` simultaneously. Marks now
+    last twice as long in or out of combat.
+
+  C\) Distracting Mark
+
+  : 
+
+  : The mark emits a high-frequency pulse or visual interference that
+    disrupts the target\'s focus. The target takes a Disadvantage on all
+    accuracy checks and saving throws while the mark is active.
+
+<!-- -->
+
+Focus on Target
+: At **8th** level, the Tracer gains a Bonus Attack Action against the
+  target of the **Study Target** ability and/or the **Tracer\'s Mark**
+  regardless of the Standard Action taken, as long as the Action
+  doesn\'t specify it doesn\'t allow Bonus Actions or Simple actions.
+
+<!-- -->
+
+Tactical Maneuver (Level 8 Choice)
+: At **8th** level, you can fire specialized ammunition designed to be
+  distracting. The damage of the weapon is reduced by one die level. You
+  must craft the ammo beforehand with a Craft (Chemical, Electronic, or
+  Structural) skill check; the crafting succeeds automatically, but the
+  material cost increases by 50%. This can only be used once per target:
+
+  A\) Distracting Strike
+
+  : 
+
+  : Target must roll a Wisdom Save (DC 15 + Dex Mod + Ammo Masterwork
+    level) or shift their attention to you for 1 round.
+
+  B\) Look Away
+
+  : 
+
+  : Target must roll a Wisdom Save (DC 15 + Dex Mod + Ammo Masterwork
+    level) or be considered
+    [Flat-Footed](Conditions#Flat_Footed "Flat-Footed"){.wikilink} until
+    their next turn.
+
+  C\) Pressure Point
+
+  : 
+
+  : (Melee only) Target must roll a Constitution Save (DC 15 + Int Mod +
+    Ammo Masterwork level) or become
+    [Paralyzed](Conditions#-_Paralyzed "Paralyzed"){.wikilink} for 1
+    round.
+
+<!-- -->
+
+Crippling Strike
+: At **9th** level, your critical hits (once per target, the Tracer can
+  choose to ignore) automatically **Trips** the target and cause a bleed
+  effect for **1d4 + Wis/Int (whichever is higher) Mod** damage
+  (ignoring DR) for 1d6 turns.
+
+<!-- -->
+
+The Final Catch (Level 10 Choice)
+: At **10th** level, choose between one of these 3 powerful options.
+
+  A\) No Escape (Manhunter)
+
+  : 
+
+  : Your base movement speed is increased by 10ft. You gain the ability
+    to perform the [Advanced Combat Technique:
+    Tackle](Techniques#Advanced_Combat_Techniques "Advanced Combat Technique: Tackle"){.wikilink},
+    and gain Advantage on Tackle attempts and an additional Advantage in
+    all Grapples. You can perform Charge and Tackle techniques even in
+    rough terrain or when the enemy has moved around a corner, provided
+    they were in line-of-sight within the last round. When performing a
+    Tackle or Grapple, you gain a Bonus Action to knock the target
+    unconscious. If the target is below 50% health, you can roll a
+    Strength check against an opposing Constitution saving throw; if the
+    target fails by more than 7, they lose consciousness for 1d4 rounds
+    (or until they take damage).
+
+  B\) The Final Shot (Predator)
+
+  : 
+
+  : Once a **Study Target** is in effect, once per day you can declare a
+    \"Final Shot.\" This consumes both a Simple and Standard Action. It
+    grants an additional Advantage Die (max 3); if the attack surpasses
+    the AC threshold by 5 or more, it is an automatic critical success.
+    The critical damage multiplier is increased by 1 (max x5). You can
+    choose to have this damage bring the target to 1 HP and
+    [Unconscious](Conditions#Helpless/Incapacitated/Unconscious "Unconscious"){.wikilink}
+    instead of killing them. If the target remains alive and conscious,
+    they must roll a Constitution Save (DC 20 + Int Mod) or be
+    [Stunned](Conditions#-_Stunned "Stunned"){.wikilink} for 1 round.
+
+  C\) Total Surveillance (Bloodhound)
+
+  : 
+
+  : As a **Standard Action**, you reveal the location and current
+    [Conditions](Conditions "Conditions"){.wikilink} of all enemies
+    within 250ft + 25ft per Wis/Int (higher) mod. Stealthy enemies must
+    beat a DC (15 + your highest mental mod) to remain hidden. For the
+    rest of the encounter, all allies gain an Advantage on accuracy and
+    damage against any enemy revealed this way. (Advantage on damage
+    means an Advantage Die is rolled and added to the damage total).
+
+## Xenophile
+
+  Profession Level   Core Features          Path Feature (Xenologist or Xeno-Philotherian)
+  ------------------ ---------------------- -------------------------------------------------
+  1st                Xenolore               Path Choice, Initial Path Feature
+  2nd                Quick Chemistry        Path Feature (Xeno Hunter / Treat Animal)
+  3rd                Xeno Biology           \-
+  4th                \-                     Path Feature (Slicer / Xeno Training)
+  5th                Bonus Feat             Path Feature (Xeno Resistance+)
+  6th                Quick Chemistry+       Path Feature (Xeno Hunter+)
+  7th                \-                     Path Feature (Xeno Defender / Bestial Synergy)
+  8th                Renowned               Path Feature (Philotherian: Xeno Training+)
+  9th                Biological Intuition   Path Feature (Anatomy Expert / Telepathic Bond)
+  10th               \-                     Path Feature (Alien Insights / Two of a Kind)
+
+  : Table: The Xenophile
+
+It can be hard learning a new culture. Even harder if it\'s from an
+Alien species and civilization. Some, however, love the challenge and
+get excited when those such barriers are torn down. Even rarer group of
+people love to do that with alien creatures. A Xenophile is usually seen
+as just a career choice for those who study the physiology, psychology,
+culture, and technology of other species. But for most Xenophiles, it\'s
+a life choice. To them, there is no greater joy than furthering science
+by the discovery of new alien species.
+
+Usually, this interest, and even love, for other species doesn\'t bestow
+any special kinship with them. However, in rare cases, it can. Some
+alien creatures can be domesticated and even trained. Some Xenophiles
+take advantage of this to learn more about that species and how it
+interacts in different environments.
+
+On the other end of the spectrum, some Xenophiles attempt to be more
+detached from their subjects to remain as objective and scientific as
+possible.
+
+In either case, Xenophiles are usually found on newly discovered planets
+that harbor life. If not, they are in civilization showcasing their
+newest discoveries. Sometimes they can be called upon by Nations or
+mega-corporations to help colonization efforts that have gone south
+because of the local alien \"monsters.\"
+
+Choose the Xenophile Profession if you want a Character to know the
+abilities, strengths, and weaknesses of various xenomorphs and even have
+a pet alien!
+
+The fastest path into this Profession is through the [Path of Wisdom
+(Wise
+Hero)](Future_Hero_Base_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdom (Wise Hero)"){.wikilink},
+though other paths are possible.
+
+**`<u>`{=html}Requirements`</u>`{=html}**: To qualify to become a
+Xenophile, a character must fulfill the following criteria.
+
+1.  Level: At least Level 2
+2.  Path: Path of Wisdom **OR** Ability: Wisdom Score 15+ **OR**
+    Ability: Wisdom score 15+ and Charisma score of 12+
+
+**`<u>`{=html}Restrictions`</u>`{=html}**:
+
+1.  Profession: Cannot also be a Technosavant.
+
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Wisdom and Charisma
+
+`<u>`{=html}Favored Skills`</u>`{=html}: The Xenophile's Profession
+skills are as follows: Craft \[
+[Chemical](-_Chemical "Chemical"){.wikilink},
+[Pharmaceutical](-_Pharmaceutical "Pharmaceutical"){.wikilink} \] (Int),
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis), Choose Any Two
+[Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
+[Study](Study "Study"){.wikilink} (Int),
+[Survival](Survival "Survival"){.wikilink} (Wis),
+[Medical](Medical "Medical"){.wikilink} (Wis).
+
+`<u>`{=html}Feat Bonuses`</u>`{=html}:
+[Xenomedic](Xenomedic "Xenomedic"){.wikilink}
+
+### Xenophile\'s Profession Talents {#xenophiles_profession_talents}
+
+------------------------------------------------------------------------
+
+Xenologist or Xeno-Philotherian
+: At Xenophile first level, the Xenophile must choose between the
+  Xenologist path or the Xeno-Philotherian path.
+  - **Xenologist**: You choose to be more detached from your studies.
+    You learn from observing alien creatures in their natural habitats
+    and studying their biology to hunt them or defend against them.
+  - **Xeno-Philotherian**: You form a special bond with an alien
+    creature, training and studying it to learn more about its species
+    through a deep, personal connection.
+
+<!-- -->
+
+Xenolore
+: At Xenophile **1st** level, identifying the characteristics, special
+  attacks, or vulnerabilities of a xenomorph is a **Simple Action**.
+  Roll a Knowledge or Study check (DC 8 + xenomorph's Hit Dice). Success
+  allows you to unlock a fact. For every 4 points you exceed the DC, you
+  learn another piece of information. Successfully identifying a
+  creature\'s weakness grants you an Advantage Die on accuracy checks or
+  saving throws against the target for a number of rounds equal to 1 +
+  your Wisdom or Charisma modifier (whichever is higher).
+
+<!-- -->
+
+Quick Chemistry
+: At **2nd** level, you reduce the brewing time of general chemicals and
+  pharmaceuticals by half and the cost of materials by 25%.
+: At **6th** level, you reduce the brewing time of masterworked chemical
+  concoctions by half and gain a reduction for the DC check equal to
+  your Wisdom or Charisma Modifier.
+
+<!-- -->
+
+Xeno Biology
+: At **3rd** level, you can craft experimental, unstable concoctions
+  using local materials (DC 12 Survival check to gather supplies in the
+  wild; this takes 20 min). These concoctions last for 24 hours. You can
+  prepare 1 + 1/2 Xenophile level (round up) per day. Administering a
+  concoction to yourself is a **Simple Action**; administering to an
+  ally or animal is a **Standard Action**.
+
++-----------------------------------------------------------------------------+---------+-----------------------------------------------------------------------------------------------------+
+| Helpful ([Pharmaceuticals](-_Pharmaceutical "Pharmaceutical"){.wikilink})   | **-**   | Harmful ([Chemicals](-_Chemical "Chemical"){.wikilink})                                             |
++=========================+=========================+=========================+=========+=============================================================+===================+===================+
+| Effects                 | DC                      | Cost                    | **-**   | Effects                                                     | DC                | Cost              |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Xeno Morph Gills:       | 20                      | 250                     | **-**   | Poison - Calming Pill: Makes target                         | 20                | 250               |
+| Provides gills to       |                         |                         |         | [Fatigued](Conditions#Fatigued "Fatigued"){.wikilink}. Con  |                   |                   |
+| breath under water for  |                         |                         |         | saving DC12 + X.\*                                          |                   |                   |
+| X hours.\*              |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Toxin Flush: Removes    | 20                      | 250                     | **-**   | Acid - Banshee: Extremely slow painful chemical damage.     | 20                | 250               |
+| unwanted/foreign toxins |                         |                         |         | Lasts X turns, does 1d4 Chem damage.\*                      |                   |                   |
+| form the animal body.   |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Imbue Strength: Gets a  | 20                      | 250                     | **-**   | Poison - Weakness: Temporarily removes 2 Str and Dex. Lasts | 20                | 300               |
+| Xd4 for X amount of     |                         |                         |         | X turns. Con saving DC12 +X.\*                              |                   |                   |
+| turns bonus too Str.\*  |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Imbue Dexterity: Gets a | 20                      | 250                     | **-**   | Grenade - Xeno Bile: A disgusting scent spreads 30ft, lasts | 25                | 300               |
+| Xd4 for X amount of     |                         |                         |         | X turns, makes target                                       |                   |                   |
+| turns bonus too Dex.\*  |                         |                         |         | [Nausteated](Conditions#Nauseated "Nausteated"){.wikilink}, |                   |                   |
+|                         |                         |                         |         | Wis saving DC12 + X.\*                                      |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Resistance: Grants X DR | 25                      | 300                     | **-**   | Poison - Sleeping Pill: If Target                           | 25                | 300               |
+| to just a damage type   |                         |                         |         | [Fatigued](Conditions#Fatigued "Fatigued"){.wikilink} makes |                   |                   |
+| for X amount of         |                         |                         |         | them:                                                       |                   |                   |
+| turns.\*                |                         |                         |         | [Exhuasted](Conditions#-_Exhausted "Exhuasted"){.wikilink}. |                   |                   |
+|                         |                         |                         |         | Con saving DC12 + X.\*                                      |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Adrenaline Shocker:     | 25                      | 300                     | **-**   | Poison - Shock Fluid: Makes target                          | 30                | 300               |
+| Takes a dying and       |                         |                         |         | [Shaken](Conditions#Shaken "Shaken"){.wikilink} or          |                   |                   |
+| revives with 2HD.       |                         |                         |         | worse\*\* for X turns.\*                                    |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Hyper Focus: Provides   | 25                      | 350                     | **-**   | Poison - Hysteria: Makes target                             | 35                | 400               |
+| advantage to all        |                         |                         |         | [Panicked](Conditions#-_Panicked "Panicked"){.wikilink} for |                   |                   |
+| accuracy and saving     |                         |                         |         | 1d4 turns. Wis saving DC12 + X.\*                           |                   |                   |
+| checks for X turns.\*   |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Xeno Morph Night        | 25                      | 300                     | **-**   |                                                             |                   |                   |
+| Vision: Provides dark   |                         |                         |         |                                                             |                   |                   |
+| vision 60ft for X       |                         |                         |         |                                                             |                   |                   |
+| hours.\*                |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| Xeno Morph Claws:       | 30                      | 350                     | **-**   |                                                             |                   |                   |
+| Morphs subject with     |                         |                         |         |                                                             |                   |                   |
+| claws. 2x 1d6+X natural |                         |                         |         |                                                             |                   |                   |
+| attacks for X turns.\*  |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+| \*X = 1/2 Xenophile level round up.                                                                                                                                                         |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \*\*If already Shaken then go up Dazed, if already Dazed then Stunned but no higher.                                                                                                        |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+|                         |                         |                         |         |                                                             |                   |                   |
++-------------------------+-------------------------+-------------------------+---------+-------------------------------------------------------------+-------------------+-------------------+
+
+: Table: Xeno Biology Boosters
+
+Bonus Feat
+: At **5th** level, the Xenophile gets a free Bonus Feat from: **Utility
+  Feats** or **Leadership & Companions**.
+
+<!-- -->
+
+Renowned
+: At **8th** level, your published work on alien species garners
+  attention from Xeno Biologists around the galaxy. You gain +2 to your
+  [Profession](Profession "Profession"){.wikilink} rank. You gain an
+  Advantage on [Diplomacy](Diplomacy "Diplomacy"){.wikilink},
+  [Bluff](Bluff "Bluff"){.wikilink}, or
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks when
+  interacting with fellow Scientists or Xeno-hobbyists. You can also
+  procure \"Live Samples\" or rare biochemicals at -1 Procure
+  Difficulty.
+
+<!-- -->
+
+Biological Intuition
+: At **9th** level, your understanding of organic life is unparalleled.
+  Your Advantage Die level for all
+  [Medical](Medical "Medical"){.wikilink},
+  [Survival](Survival "Survival"){.wikilink}, and
+  [Knowledge](Knowledge "Knowledge"){.wikilink} checks increases by 2
+  (max Level 20).
+: In combat, when attacking an organic target, your Advantage Die Level
+  for the accuracy check increases by 1 and you deal additional damage
+  equal to your Intelligence or Wisdom modifier (whichever is higher).
+
+### Xenologist Path Features {#xenologist_path_features}
+
+:; Level 1: Xeno Resistance
+
+: 
+
+  : You gain a +1 bonus on saving throws to resist the Techniques,
+    Talents, or special attacks from alien monsters. This increases to
+    +2 at 5th level and +3 at 10th level.
+
+:; Level 2: Xeno Hunter
+
+: 
+
+  : You gain a +1 Misc bonus to
+    [Survival](Survival "Survival"){.wikilink}. You also deal +1 damage
+    per attack to any alien monster or non-sentient alien creature. This
+    increases to +2 Misc / +3 damage at 6th level.
+
+:; Level 4: Xeno Biology Study
+
+: 
+
+  : Gain the [Slicer](Slicer "Slicer"){.wikilink} Feat regardless of
+    requirements. Gain Advantage on [Study](Study "Study"){.wikilink}
+    checks when learning to craft a Gen Slicing concoction. (If
+    Character already has [Slicer](Slicer "Slicer"){.wikilink}, earn a
+    Rank in either Craft Pharmaceuticals or Craft Chemicals, Player
+    choice).
+
+:; Level 7: Xeno Defender
+
+: 
+
+  : As a **Standard Action**, you share tactical insights with your
+    team. Allies within 30ft + 5ft per Wis or Cha Modifier of you who
+    can hear you gain +2 AC / +1 DR against attacks from an alien target
+    the Xenophile has studied with the **Xenolore** feature. You can do
+    this a number of times per day equal to your Charisma Mod.
+
+:; Level 9: Alien Anatomy Expert
+
+: 
+
+  : You deal +1 + Wis/Cha Modifier additional damage on every successful
+    hit against organic creatures you have studied with **Xenolore**.
+    Furthermore, your critical hits against them apply the Bleeding
+    condition (1d6 damage for 3 rounds).
+
+:; Level 10: Alien Insights
+
+: 
+
+  : Once per combat, you can confuse a target as a **Standard Action**.
+    The target takes Disadvantage on all attacks and saving throws for
+    1d6 turns (Wis save DC 15 + 1/2 Xenophile level negates). At level
+    10, your Xeno Defender bonus also increases to +3 AC / +2 DR.
+
+### Xeno-Philotherian Path Features {#xeno_philotherian_path_features}
+
+:; Level 1: Xeno Imprinting & Handle Animal
+
+: 
+
+  : You gain both the
+    [Companionship](Companionship "Companionship"){.wikilink} and
+    [Improved
+    Companionship](Improved_Companionship "Improved Companionship"){.wikilink}
+    feat and your first level 1 alien companion. This alien animal
+    companion can level up with the Xenophile instead of 1/2 Character
+    level. However, the Xenophile does this by imprinting themselves
+    with their new youngling animal. This can only be done with one
+    companion at a time. You gain the [Handle
+    Animal](Handle_Animal "Handle Animal"){.wikilink} Feat/Skill. You
+    can domesticate an animal or teach tricks (DC 10 + CR + size mod).
+
+:; Level 2: Treat Animal
+
+: 
+
+  : You can perform [Medical](Medical "Medical"){.wikilink} on your
+    imprinted creature with Advantage. At **level 6**, this becomes a
+    **Simple Action**.
+
+:; Level 4: Xeno Training
+
+: 
+
+  : You can teach your animal a new Trick or Animal Feat (Player
+    choice). This can be done again at \*\*level 8\*\*.
+
+:; Level 7: Bestial Synergy
+
+: 
+
+  : You and your companion work in perfect harmony. Either you or your
+    companion can choose to act in the Vanguard while the other acts in
+    the Rearguard, splitting your actions across the turn groups.
+
+:; Level 9: Telepathic Bond
+
+: 
+
+  : You can perceive through your companion\'s senses as a **Simple
+    Action**. Your bond is so deep that your **Treat Animal** feature
+    now allows you to heal your companion as a **Free Action** once per
+    combat. You also gain an Advantage Die on accuracy checks against
+    targets your companion is currently adjacent to.
+
+:; Level 10: Two of a Kind
+
+: 
+
+  : The Animal companion now benefits from the effects of the Xenolore
+    Profession ability. Also, any concoctions made with Xeno Biology can
+    be specially crafted for just your animal companion. If so, reduce
+    the DC by 5 and the cost by 50%. Your Animal Companion can always
+    know how to find you and can track you down with a DC5 check and
+    vice-versa.
+
+## Multi-Class Character Professions {#multi_class_character_professions}
+
+Multi-Classing is different in Future Path. Firstly, a Character\'s Path
+is that Character\'s Level, and there is no Multi-Pathing. A Path is
+similar to but **not** a Profession.
+
+If you level up your Character from level 4 to 5 and happen to also be a
+level 3 Starfighter, then you can add another level in your Starfighter
+class, or if you want to MultiClass and add 1 level off Tracer or any
+other Character Class that your Character meets the requirements for.
+This means you will have to sacrifice taking a new level in Starfighter.
+So in the end, you will be a level 5 Hero with 3 levels in Dogfighter
+and 1 level in Tracer.
+
+As the Player advances their Character, they will want to take more than
+one class type. Character Professions are only lvl 1 - lvl 10. While the
+Character\'s max level is 20. Some people may want to take all 10 levels
+in their first Character Class and then use their remaining Character
+levels to take levels in another Character Class. Some may want to level
+up two Professions back and forth to have an even number of levels in
+both Professions. There are also Prestige classes that are designed to
+continue along a more specific path, usually combining two Character
+Professions together with a more specific theme.
+
+Here are some extra rules for Multi-Classing a Character Profession:
+
+1.  Players may only pick talents from whatever Professions they have
+    gained a new level.
+2.  The character gains no bonus for having Professions with the same
+    Profession skill.
+3.  Restrictions always apply. If one Profession restricts a feature
+    provided by another Profession, then the Player can still take that
+    Profession, just without that feature.
+    1.  (NOTE: Some restrictions are specifically for not taking a
+        Profession. In this case, you cannot take the restricted
+        Profession)
+4.  You can MultiClass as long as your Character meets the requirements.
+
+There are no other penalties for MultiClassing. You can have as many
+Advanced/Prestige Classes as possible by the requirements and
+restrictions.

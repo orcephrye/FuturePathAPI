@@ -1,0 +1,10 @@
+
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': -
+
+'''Benefits''':  The Character doesn't take disadvantage when using archaic weapons (both melee and ranged). Some Weapons can have the attribute 'Archaic', which is meant to indicate that they are either very old or based on fundamentally different old technology, and thus their use is uncommon and unknown. Taking this Feat shows that the Character is trained and/or aware of such weapons.
+
+'''Normal''': Normally, a Character is not aware of how to use older, more 'awkward' weapons, and it shows by taking a disadvantage on the use of such a weapon. With this Feat that disadvantage is removed.
+
+'''Special''': -

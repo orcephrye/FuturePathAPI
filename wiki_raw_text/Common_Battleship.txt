@@ -1,0 +1,135 @@
+{|
+| valign="top" |
+'''Ship Name''': Common Battleship
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Huge
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': Battleship
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 10 (due to -5 Battleship config penalty)
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 12 + 1 = 13 (Modifier: +1)
+
+'''Weapons''': 12 + 2 = 14 (Modifier: +2)
+
+'''Structure''': 12 + 1 = 13 (Modifier: +1)
+
+'''Shields''': 12 (Modifier: +1)
+
+'''Electronics''': 10 (Modifier: +0)
+
+'''Sensors''': 12 (Modifier: +1)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 1 (Size Mod))
+
+'''Detection DC''': 8
+
+'''Stealth DC''': 8 (Detection 8 + 0 Electronics)
+
+'''Battle Damage''': 4
+
+'''Initiative''': 1 (Engines 1 + Sensors 1 - Structure 1)
+
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 5 successes (Base 4 + 1 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
+
+'''Repair DC Bonus''': +2 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +1 (equal to Engines Mod)
+
+'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
+
+'''Cargo Capacity''': 3,000 Units (1,000 Base Battleship size-down + 2,000 from Cargo Bay)
+
+'''Passenger Capacity''': 152 (32 Base Battleship size-down + 120 from Passenger Bay)
+
+'''FTL Engine/Speed''': [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Warp 1-7)
+
+'''Cost and Procure Diff''': $375,049,850 / 3 (Procure Diff: 3)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 1 (Battleship configuration bonus)
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 0
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 1 (Battleship choice bonus)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 9 / 9 / 0 (Huge Hard Points carrying Huge scale weapons)
+
+'''Bays (Total/Used/Free)''': 5 / 5 / 0
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
+;Description: A massive military war machine and command battleship, serving as the heavy combat backbone of interstellar defense fleets.
+;Explanations: Built for extreme combat. Spends points in pairs to secure +1 modifiers across Engines, Structure, Shields, and Sensors, and a +2 modifier on Weapons. Has a free pre-installed Bombard and Target function and fits a Fire-Control Matrix.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Takes up 1 HP & 1 Bay; restricted to Medium size slot for Huge Hull frame)
+Hard Point 2: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+Hard Point 3: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+Hard Point 4: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
+Hard Point 5: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
+Hard Point 6: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
+Hard Point 7: [[Ship_Equipment#Huge_Weapons|Huge Plasma Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Plasma|Huge Plasma Ammo]])
+Hard Point 8: [[Ship_Equipment#Huge_Weapons|Huge Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Huge Missile Ammo]])
+Hard Point 9: [[Ship_Equipment#Huge_Weapons|Huge Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Huge Missile Ammo]])
+
+: '''Cost of Hard Point items''': $50,384,850 ($300,000 FTL Drive + $5,120,000 Projectiles + $204,800 Ammo + $15,000,000 Lasers + $10,000,050 Crystals + $6,500,000 Plasma + $260,000 Ammo + $12,500,000 Missiles + $500,000 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+Bay 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Huge)]]
+Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Huge)]]
+Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay (Level 1)]]
+Bay 5: [[Ship_Equipment#Industrial_Bay|Industrial Bay (Level 1)]]
+
+: '''Cost of Bay items''': $365,000 ($160,000 Cargo Bay + $160,000 Passenger Bay + $30,000 Engineering Bay + $15,000 Industrial Bay)
+|}

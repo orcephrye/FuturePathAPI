@@ -1,0 +1,134 @@
+{|
+| valign="top" |
+'''Ship Name''': Advanced Mil. Huge Hulls
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 3
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Huge
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': N/A
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 20
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 12 (Modifier: +1)
+
+'''Weapons''': 14 (Modifier: +2)
+
+'''Structure''': 14 (Modifier: +2)
+
+'''Shields''': 14 (Modifier: +2)
+
+'''Electronics''': 13 (Modifier: +1)
+
+'''Sensors''': 10 (Modifier: +0)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 12 (Base 12 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
+
+'''Stealth DC''': 9 (Detection 8 + 1 Electronics)
+
+'''Battle Damage''': 4
+
+'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
+
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 6 (Base 4 + 2 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 6 / 6 (6 successes / 6 Reflector)
+
+'''Repair DC Bonus''': +2 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +1 (equal to Engines Mod)
+
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+
+'''Cargo Capacity''': 6,000 Units (4,000 Base + 2,000 from Cargo Bay)
+
+'''Passenger Capacity''': 240 (120 Base + 120 from Passenger Bay)
+
+'''FTL Engine/Speed''': [[Ship_Equipment#FTL_Drives|Phase Shift Drive]]
+
+'''Cost and Procure Diff''': $371,716,500 / 3 (Procure Diff: 3)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 0
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 0
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 8 / 8 / 0 (Huge Hard Points carrying Huge scale weapons)
+
+'''Bays (Total/Used/Free)''': 5 / 5 / 0
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
+;Description: A massive military-grade dreadnought hull built with a Tech Level 3 core to power ultimate shielding, armor, and high-energy firing modifiers.
+;Explanations: Designed for fleet-level engagements. Concentrates all attributes in pairs to establish heavy active modifiers.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Ship_Equipment#FTL_Drives|Phase Shift Drive]] (Takes up 1 HP & 1 Bay)
+Hard Point 2: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+Hard Point 3: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+Hard Point 4: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
+Hard Point 5: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
+Hard Point 6: [[Ship_Equipment#Huge_Weapons|Huge Plasma Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Plasma|Huge Plasma Ammo]])
+Hard Point 7: [[Ship_Equipment#Huge_Weapons|Huge Plasma Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Plasma|Huge Plasma Ammo]])
+Hard Point 8: [[Ship_Equipment#Huge_Weapons|Huge Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Huge Missile Ammo]])
+
+: '''Cost of Hard Point items''': $46,961,500 ($5,000,000 FTL Drive + $5,120,000 Projectiles + $204,800 Ammo + $10,000,000 Lasers + $6,666,700 Crystals + $13,000,000 Plasmas + $520,000 Ammo + $6,250,000 Missile + $250,000 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+Bay 1: [[Ship_Equipment#FTL_Drives|Phase Shift Drive (FTL)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Huge)]]
+Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Huge)]]
+Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
+Bay 5: [[Ship_Equipment#Medical_Bay|Medical Bay]]
+
+: '''Cost of Bay items''': $375,000 ($160,000 Cargo Bay + $160,000 Passenger Bay + $30,000 Engineering Bay + $25,000 Medical Bay)
+|}

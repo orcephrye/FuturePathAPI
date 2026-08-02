@@ -1,0 +1,9 @@
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! ... i mean.. duh </span>  '''
+
+This is a place to write down any ArchType ideas. This acts like a placeholder. 
+
+The ArchType concept is meant to be a sort of 'Patch' to an existing Class or group of Classes. 
+
+This differs from Prestige Classes in that it doesn't extend the levels of the Class. Merrily adjusts the abilities of the existing class.
+
+It is like a new Theme for an existing class instead of an extension.

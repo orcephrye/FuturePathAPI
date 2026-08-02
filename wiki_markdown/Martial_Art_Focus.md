@@ -1,0 +1,12 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: Strength or Dexterity Score of 15 or higher
+
+**Benefit**: The Damage die for unarmed strikes goes up a level. E.I:
+From 1d8 to 1d10.
+
+**Normal**: The rules for damage from unarmed strikes is located
+[Here](Weapons#Melee.2FMartial_Arts_Combat "Here"){.wikilink}.
+
+**Special**: -

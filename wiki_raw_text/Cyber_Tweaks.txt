@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+You can now swap a Point for a Slot or a Slot for a Point. This can help gain access to an Implant that otherwise could not be installed on a given Framework.
+
+'''Prerequisites''': [[Cyborg Enthusiast]]
+
+'''Benefit''': Swap a Point for a Slot or a Slot for a Point in your Framework. 
+
+'''NOTE''': The maximum amount of Points any Cyborg can have is 10, and the Maximum number of Slots is 6. This cannot change that. 
+
+'''Normal''': Without this feat, a Character's slots or points are not swapable and are provided by their Framework, which is determined [[Cybernetics#Framework|here]].
+
+'''Special''': -

@@ -1,0 +1,105 @@
+{|
+|+ '''Laser Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Laser Rifle
+
+'''Power / Speed''' (Total Level/Dice): Large / Full Auto = Level 5/d12
+
+'''Proficiency Requirement''': 5 Levels in Ranged
+
+'''Weapon Style & Arch Type''':  DMR Specialized Weapon, Laser
+
+'''Range''': 900ft (Range penalty reduced by 1/2)
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $5,280 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': 5
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':  Switch Firing Modes
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a specialized Designated Marksmen Laser Rifle. 
+;Explanations: 
+|}
+
+
+==Tactical Laser Rifle==
+{|
+|+ '''Tactical Laser Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Laser Rifle
+
+'''Power / Speed''' (Total Level/Dice): Large / Full Auto = Level 5/d12
+
+'''Proficiency Requirement''': 5 Levels in Ranged
+
+'''Weapon Style & Arch Type''':  DMR Specialized Weapon, Laser
+
+'''Range''': 900ft (Range penalty reduced by 1/2)
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $7,920 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 1
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': 5
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':  Switch Firing Modes, Fully Unload
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a specialized Designated Marksmen Laser Rifle. 
+;Explanations: 
+|}

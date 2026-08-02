@@ -1,0 +1,19 @@
+Feint is a function of a spaceship. Space Ships and other functions can
+be found [here](Space_Ships#Officer.2FShip_Functions "here"){.wikilink}.
+This is very similar to the Combat Maneuver noted in the
+[Combat](Combat "Combat"){.wikilink} rules. This allows a ship to
+attempt to fly in a particular way to help throw off the tracking
+systems of other weapons.
+
+### Description
+
+This is granted by a Talent and it allows the Pilot to make a highly
+complicated and special maneuver that completely throws off the enemy
+ship. This provides a +4 to Tracking DC and requires 2 more successful
+d10s to do Battle Damage. Each time a successful Feint is done against a
+ship the Pilot gains a disadvantage to the Pilot check to attempt
+another Feint making it harder and harder until it is impossible to
+trick the enemy again. In this combat.
+
+The Pilot simply declared they were going to take the action and then
+rolled normally for a Pilot check.

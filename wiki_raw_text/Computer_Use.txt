@@ -1,0 +1,272 @@
+Your skill in using Computer equipment. This is probably the most useful and necessary skill of a Future Hero. Technology is everywhere, and normally, interfacing with it requires familiarity with computers. Whether you are conducting cyber warfare, hacking into systems to obtain secret information, or using sensor-scanning equipment, this skill will be helpful. 
+
+==Check== 
+Most normal computer operations don’t require a Computer Use check (though a character might have to make a Study check; see the [[Study]] skill description). However, searching an unfamiliar network for a particular file, writing virus, altering existing programs to perform differently (better or worse), and breaking through computer security are all relatively difficult and require skill checks.
+
+== Computer Hacking ==
+
+Computer hacking is when a person attempts to break into a computer system that they are not normally allowed into and, once in, performs some actions such as 'Finding File' or 'Disable System', 'Overload Junction', 'Infect with Virus', and so on. 
+
+Computer Hacking is similar in nature to the [[Techniques#Combat_Techniques|Grapple]] technique. In that first, you must succeed at hacking past a system's security, and once the Hacker is "in," they must keep rolling each turn to stay 'in' the system, or else they trigger a security alarm and can be kicked out. The DC is 1/2 of the initial DC to enter the system. If the character beats the DC by 10 or more, they automatically succeed at all subsequent security checks.
+
+{| class="wikitable" style="margin-left: 10px; width: 85%;"
+|+ Hacking Actions
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' - Defeat Computer Security'''' (Has to be first action)
+<div class="mw-collapsible-content">
+{| class="wikitable" style="float:right; margin-left: 10px;" 
+! style="text-algin:left;"|Level of Security
+!DC
+!Time
+|-
+| 0) Basic||15|| 1 Round
+|-
+| 1) Minimum||20|| 2 Round
+|-
+| 2) Average||25|| 3 Rounds
+|-
+| 3) Exceptional||35|| 4 Rounds
+|-
+| 4) Maximum||40|| 5 Rounds
+|}
+
+The DC is determined by the quality of the security program installed to defend the system. If the check fails by 10 or more, the security system immediately alerts its administrator to an attempted unauthorized entry. An alerted administrator may attempt to identify the character or cut off the character’s access to the system. See [[Computer_Use#Counter_Hacking|Counter Hacking]]
+
+Sometimes, when accessing a difficult site, the character has to defeat security at more than one stage of the operation. The system may have different security levels that yield different actions. This can be determined at the GM's discretion.
+
+While a Hacker is 'in' the hacked system, they can perform new actions that affect the system. Some actions immediately alert security to a breach, while others are stealthy. 
+
+
+
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' - Find File/Sensitive Info'''
+<div class="mw-collapsible-content">
+:DC: Size of Site + Security Level + Mics Mod
+{| class="wikitable" style="float:right; margin-left: 10px;" 
+! style="text-algin:left;"|Size of Site
+!DC
+!Time
+|-
+| Personal computer||+1||2 round
+|-
+| Small office network||+4||3 rounds
+|-
+| Large office network||+8||6 rounds
+|-
+| Massive corporate network||+16||12 rounds
+|}
+:Can Trip Alarm: No
+:Retry: Yes
+:Time: 2+ Rounds
+
+This skill can be used for finding files or data on an unfamiliar or protected system. The DC for the check and the time required are determined by the size of the site on which the character is searching. This is only necessary if the Hacker must first get past the system's security and/or if the information is hidden.
+
+Finding public information on the Internet does not fall under this category; usually, such a task requires a [[Study#Researching_a_Topic.2FItem.2FEvent|Study]] check. 
+
+This application of the Computer Use skill only pertains to finding files on private systems or on a difficult system with which the character is not familiar.
+
+
+
+
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' - Disable/Enable System'''
+<div class="mw-collapsible-content">
+
+:DC: 5 + Security Level + Mics Mod
+:Can Trip Alarm: Yes
+:Retry: Yes
+:Time: 1 Round
+
+The Misc Mod may come from the GM deciding that the particular device has its own level of security. Some systems may be remotely controlled or disabled/enabled remotely. If a system is then it may be accessible by the system the Hacker has hacked. If so the Hacker can spend one round controlling the device. Each round, they control the device; they have to roll again, and there is the possibility of tripping a security alarm.
+
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' - Overload Junction'''
+<div class="mw-collapsible-content">
+:DC: 10 + Security Level + Mics Mod
+:Can Trip Alarm: Yes
+:Retry: Yes
+:Time: 1 Round
+
+If a system's power or another utility control is remotely managed by the system hacked by the Hacker, they can spend a turn attempting to damage it. This damage can be enough to outright destroy some things. It is up to the GM to determine how many rounds it will take to completely destroy a system. The destruction can cause area-of-effect damage. If an enemy target is within range, they will have to roll reflex saves and take damage according to grenade rules.
+
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' - Infect with Virus'''
+<div class="mw-collapsible-content">
+:DC: 0 + Security Level + Mics Mod
+:Can Trip Alarm: Yes
+:Retry: No*
+:Time: 1 Round
+
+The Hacker can attempt to infect a system with a virus. The virus has to be programmed or otherwise acquired before the hacking starts. To learn more about what Viruses can do, read the section below regarding Crafting Viruses.
+
+If a Hacker fails to infect a machine, an Alarm is triggered, and it is impossible to attempt again with the same virus.
+
+</div>
+</div>
+|-
+|<div class="toccolours mw-collapsible mw-collapsed">
+''' - Crash Computer'''
+<div class="mw-collapsible-content">
+:DC: 5 + Security Level + Mics Mod
+:Can Trip Alarm: No
+:Retry: Yes
+:Time: 1 Round
+
+The Hacker can attempt to cause the system they hacked into to Crash. This usually just means the machine needs to reboot in order to get back to normal operations, but this can buy the team precious time needed to do some sort of action. The system comes back up in 1d4 rounds.
+
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+''' - Manipulate Data'''
+<div class="mw-collapsible-content">
+:DC: 10 + Security Level + Mics Mod
+:Can Trip Alarm: No
+:Retry: No*
+:Time: 2 Rounds
+
+This allows a Hacker to gain access to databases and manipulate data. The size of the data can make it require more then 2 rounds. Things such as transferring money between accounts or sabotaging company secrets. This, by default, doesn't raise an alarm. However, if the Hacker rolls a natural 1 during this action, it still can.
+
+</div>
+</div>
+|-
+|}
+
+== Counter Hacking ==
+
+Counter Hacking is what someone may do when they realize their system is being hacked. Simply because a security alarm has been triggered doesn't mean the hacker has been caught and can't go further. It just means they can now be expelled from the machine. A System Admin or other user who is defending a system can attempt to remove and even identify the hacker who is attempting to access.
+
+{| class="wikitable" style="margin-left: 10px; width: 85%;"
+|+ Hacking Actions
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Deny Access'''
+<div class="mw-collapsible-content">
+The user defending a system has to roll an opposed Computer Use check against the latest Computer Use score of the Hacker. If successful, the Hacker is kicked from the system and is unable to try again for 24 hours and has to take disadvantage for at least a week, depending on the GM. The Hacker can relocate and attempt again sooner but they still take disadvantage as long as the system is being defended by the same user.
+</div>
+</div>
+|-
+| <div class="toccolours mw-collapsible mw-collapsed">
+'''Identify'''
+<div class="mw-collapsible-content">
+The user defending a system can roll an opposed Computer Use check against the latest Computer Use score of the Hacker. If successful, they can gain a single piece of information. Such as location, make/model of Hacker PC, and length of time they have been in the system. With the location, the user can attempt to Counterhack the Hacker. With the 'model of hacker PC,' they gain an advantage while doing so. With 'length of time,' they can gain an advantage when trying additional Identify or Deny Access attempts.
+</div>
+</div>
+|-
+|}
+
+== Crafting Virus ==
+
+A Character can use their Computer Use skill once it is at Rank 2 to craft viruses. Just like crafting rules for the Craft skills, the higher the Computer Use Skill Rank, the more customization points can be applied to the Virus that is programmed/crafted. A higher Computer Use Rank also allows the Character to make higher-ranked Viruses.
+
+Below is a chart of different viruses. Additional customization can be added to make the virus harder to detect or easier to infect. Viruses are categorized under 3 main threat levels. The threat level represents the seriousness of what the virus can do. Or what harm it could bring.
+
+# Threat Level '''1''' Viruses (Rank 2 Computer Use)
+## Fill the disk with unusable or pointless data
+## Distract users with ads and pop-ups.
+## Find and send already existing data.
+## Allows 'Find File/Sensitive Info' and 'Crash Computer' hacking actions.
+# Threat Level '''2''' Viruses (Rank 4 Computer Use)
+## Reboot or otherwise temporarily disable a device.
+## Record and send active-user data, such as keystrokes.
+## Find and delete or otherwise edit data.
+## Allows 'Manipulate Data' and 'Disable/Enable System' hacking actions
+# Threat Level '''3''' Viruses (Rank 6 Computer Use)
+## Damage software or otherwise disable the system until it is repaired.
+## Manipulate core operating systems and functions of the network.
+## Allows 'Overload Junction', 'Infect with Virus' (self-replicate), 
+
+{| class="mw-collapsible mw-collapsed wikitable" style="margin-left: 10px; width: 85%;"
+!colspan="3"| '''--- Crafting Viruses Table ---'''
+|-
+! Virus Name
+! Ability 
+! Detection and<br />Removal DC
+|-
+! colspan="3" | Threat Level 1 Viruses (Requires 2 Ranks in Computer Use)
+|-
+| Backdoor || Lowers the DC for a Hacker to get back into the infected system to 5 || DC 10
+|-
+| File Mine || This creates a file or directory that links to a virus that can do a TL1 effect || DC 10
+|-
+| Spam-o-tron || This creates distractions for users on a network || DC 15
+|-
+! colspan="3" | Threat Level 2 Viruses (Requires 3 Ranks in Computer Use)
+|-
+| Backdoor Worm || Lowers the DC for a Hacker to get back into the infected system to 5. It self-replicates, making it harder to remove. || DC 15
+|-
+| File Worm || This replicates itself and replaces existing files and directories on a system. When accessed, it causes a predetermined TL2 effect. || DC 15
+|-
+| Trojan || This listens in on user actions to try to determine user info such as passwords/usernames, bank info etc... || DC 20
+|-
+| Try.Delete || This virus can be programmed to hunt down any occurrence of some data and edit or delete it every time it finds it. || DC 20
+|-
+! colspan="3" | Threat Level 3 Viruses (Requires 4 Ranks in Computer Use)
+|-
+| Backdoor Boot Sector || Lowers the DC for a Hacker to get back into the infected system to 5. || DC 25
+|-
+| OverLoader 9000 || Causes havoc to a system's CPU, Memory, and IO to disk. The system is useless until repaired. || DC 20
+|-
+| d3f3C7\/3 (The Defective Virus) || This can only work on systems that control sensitive machinery. It causes overloads in power, pressure, etc.. to disable the physical hardware. || DC 20
+|- 
+| Mind Funk || This virus randomly picks an effect and attempts to do it. Roll a d8 and pick an effect from the list of Virus Threat Levels or design your own. || DC 25
+|- 
+|}
+
+A customization point is rewarded for every rank above the rank required to make the virus. They can be spent to increase the DC by 5 for every point. Or increase the effect. Or added a new effect or bonus effect. 
+
+Crafting a virus takes time to do. You not only have to write it but test it out to ensure it works correctly. The above list is only an example; you can make a custom Threat Level X virus as long as the GM agrees and the Character has the correct skill rank for it. It takes one week of full-day work to perfect the virus. Once made you no longer need to craft it again. It is now in your 'repertoire' of viruses. You can even sell or buy viruses on the dark market. Threat Level 1's are almost worthless and are only a few credits. Threat Level 2 is worth $100, and Threat Level 3 is worth $10,000. Each bonus point spent increases the price by 50%.
+
+== Encrypt/Decrypt Message ==
+Your ability to Decrypt messages or Encrypt messages of your own.
+
+{| class="wikitable" style="float:right; margin-left: 10px;" 
+|+ Table: DC Examples
+! style="text-algin:left;"|Complexity
+!DC
+! (In Combat) Time
+|-
+| Simple || 12 || 2 Rounds
+|-
+| Standard || 15 || 3 Rounds
+|-
+| Advanced || 20 || 5 Rounds
+|-
+| Top Secret/Experimental || 30 || 7 Rounds
+|-
+| Overly Complex/Exotic || 40 || 10 Rounds
+|}
+
+A character can decrypt writing in a code, or an encrypted message. Helpful texts or computer programs can provide a bonus (usually a single advantage bonus) on the check, provided they are applicable to the script in question.
+
+If the check succeeds, the character understands the general content of message, reading about one page of text or its equivalent in 30 seconds. If the check fails, the GM makes a Wisdom check (DC 10) for the character to see if he or she avoids drawing a false conclusion about the text. (Success means that the character does not draw a false conclusion; failure means that the character does.)
+
+The GM secretly makes both the skill check and the Wisdom check so the character can’t tell whether the conclusion drawn is accurate or not.
+
+===Try Again===
+Yes, unless conditions change or there is a time limit. A character can take 10 or 20 when making a Encrypt/Decrypt Message check.
+
+It can take multiple rounds or more, depending on the complexity of the encryption. It cannot be done during combat unless the player is not activity engages in combat. For example, they can be attempting to decipher the encrypted message while other Characters attempt to protect the player. 
+
+== Ship Bases Functions ==
+
+The Computer Use Skill can assist in operating certain ship functions. [[Crypto]], [[Hack]], [[Jam]], [[Scan]]. To learn more about these ship functions or about ship functions in general, visit the [[Space_Ships#Ship_Functions|Ship Functions]] section of [[Space_Ships|Space Ships]].
+
+==Try Again==
+Computer Use requires at least a full-round action. The GM may determine that some tasks require several rounds, a few minutes, or longer, as described above. A character can take 10 when using the Computer Use skill. A character can take 20 in some cases, but not in those that involve a penalty for failure. (A character cannot take 20 to defeat computer security or defend security.)
+
+==Special==
+* Feats: A character with the Gearhead feat gets a +2 bonus on all Computer Use checks.

@@ -1,0 +1,18 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: -
+
+**Benefit**: This feat is very useful when needing to repair items on
+the go. This allows the Item or object to remove one of its [Battle
+Scars](Item_Damage#Battle_Scaring "Battle Scars"){.wikilink} instantly
+and without crafting materials. This can only be done once per item.
+Although this resets for each item after it has been fully repaired. The
+DC for the repair check is +4, though. This represents a \'quick fix\'
+approach to keep something working.
+
+**Normal**: In order to repair and item it is a Craft check that
+requires a \'Bill of Materials\' and a professional kit in order to
+perform.
+
+**Special**: -

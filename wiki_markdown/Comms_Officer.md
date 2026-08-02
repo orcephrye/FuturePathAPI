@@ -1,0 +1,63 @@
+The Comms Officer is a [Ship
+Position](Space_Ships#Ship_Positions "Ship Position"){.wikilink}. There
+are other ship positions that can be reviewed and can affect this
+position.
+
+This is considered a secondary position, and a single player can take
+multiple secondary positions or one Primary and one Secondary position
+if the ship is Small or smaller.
+
+## Description
+
+The Communication Officer is responsible for Ship-to-Ship and internal
+Communications as well as the Ship Sensors and Scanners. The
+Communications officer can also engage in hacking or jamming enemy
+targets.
+
+: **Associated Ship Attributes**: Primary Sensors and Secondary
+  Electronics
+: **Officer Functions**:
+  1.  `<u>`{=html}[Scan](Scan "Scan"){.wikilink}`</u>`{=html}: This is
+      used for multiple things. In combat, it is used for scanning for a
+      Target Ship's shield weakness. This is against the target ship's
+      Tracking DC. If successful, this allows the Weapon's officer to
+      apply the Ship's Sensors to their d10 rolls. A Scan can also be
+      used to find stealthed ships whose detection is too high to be
+      passively targeted. It is a single roll that targets both the
+      ship's Detection and Tracking DCs. If the ship is detected but the
+      roll isn't high enough to break the Tracking DC, then the ship can
+      be fired upon, but with no Sensor bonus. If the roll is high
+      enough for Tracking DC but not enough for Detection, the Sensor
+      officer only detects a flicker, and the Weapon's officer cannot
+      fire. A scan can also be used outside of combat to gather
+      information about a ship. Passive Ship detection only provides the
+      following info: Ship Location/Direction/Motion/Size and whether
+      Ship shields/engines/FTL/Power Core are active. I cannot inform
+      any other stats, such as its armaments, attribute scores, life
+      support, who is on board, and so on. Only detailed scans or
+      Hacking can gather that info. Gather that information inside of
+      combat only takes 1 turn but a single scan cannot provide all
+      information. A GM can determine what info gets provided. A 'Deep'
+      scan can, but it takes 3 turns to complete, the enemy ship knows
+      you are doing it, and stealth is normally impossible.
+  2.  `<u>`{=html}[Hack](Hack "Hack"){.wikilink}/Counter
+      Hack`</u>`{=html}: The Sensor Officer can attempt to break into
+      the enemy ship systems. They can also assist a Science Officer in
+      hacking. Or can help detect and expel enemy hackers.
+: **Advanced Officer Functions**:
+  1.  `<u>`{=html}[Sensor Spoofing / Decoy
+      Projection](Sensor_Spoofing_/_Decoy_Projection "Sensor Spoofing / Decoy Projection"){.wikilink}`</u>`{=html}:
+      (Electronics/Sensors) The Comms Officer projects false signatures
+      or chaff decoys (DC 10 + Target Sensors Mod). On a success, all
+      scanning and targeting checks against your ship take a
+      disadvantage for 1 round, or incoming guided missiles have a 50%
+      chance to miss.
+  2.  `<u>`{=html}[Crypto](Crypto "Crypto"){.wikilink}`</u>`{=html}:
+      This is explained under the Science Officer. But the
+      Communications/Sensor Officer can also do this action if
+      necessary.
+  3.  `<u>`{=html}[Jam](Jam "Jam"){.wikilink}`</u>`{=html}: This can be
+      used to Jam communications. Useful for disabling drones, stopping
+      ships from talking to one another, and disrupting Guided Missiles.
+      This can also be used to temporarily disrupt a hack. This doesn't
+      stop the hacker, though; it only forces them to sacrifice a turn.

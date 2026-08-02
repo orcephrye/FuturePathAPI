@@ -1,0 +1,26 @@
+Resuscitation/Life Support is an Advanced Function for crew members. To
+learn about other functions, go to the [Space Ship
+Functions](Space_Ships#Officer.2FShip_Functions "Space Ship Functions"){.wikilink}
+section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
+
+## Description
+
+If the correct Medical Bay or Facility is provided, then a Medic can
+attempt to move the recently decided character to the Medical Bay and
+resuscitate them. As long as the mass majority (90% or more) of the
+person\'s body is intact and they are not missing their brain. The
+resuscitation takes a standard action, and the move does as well. If
+successful, the Character is unconscious, has 1 HP, and has a
+Constitution Score of 1. Follow the [Health and
+Injury](Health_and_Injury "Health and Injury"){.wikilink} rules for more
+information. They cannot be dead for more than 12 hours unless the
+Bay/Facility specifies otherwise.
+
+A Classification Level 1 Medical Bay or Facility can keep a dead body in
+statis. Or can keep a dying Character that cannot be healed at that time
+on Life Support, keeping them alive until they can futher be further
+helped.
+
+Note
+: To qualify for Resesutation, the Medical Bay or Facility must be
+  masterworked and at least Classification Level 3.

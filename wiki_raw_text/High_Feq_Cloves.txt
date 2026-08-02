@@ -1,0 +1,24 @@
+'''Main Attributes''':
+----
+;Name: Simple Short Sword
+;Power / Speed = Total Level/Dice: Medium / Manual = Level 2/d6
+;Weapon Arch Type:
+;Range:
+;Default Attributes:
+;Masterwork?:
+'''Secondary Attributes''':
+----
+;Accuracy Bonus:
+;Bonus Damage:
+;DR Damage:
+;Critical Damage:
+;Critical Range:
+;Damage Type:
+;Ammunition:
+;Reload Speed:
+;Weight:
+;Bonus Abilities:
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description:

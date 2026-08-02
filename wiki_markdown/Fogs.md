@@ -1,0 +1,9 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the
+Explosive section click
+[here](Weapons#Explosives_.28Grenades.2FTraps.29 "here"){.wikilink}.
+
+Fogs
+
+- This means that some form of vision impairing smoke or other such
+  obstruction spans the distance of the range specified by the
+  [Charge](Weapons#The_Charge "Charge"){.wikilink} for at least 1 round.

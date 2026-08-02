@@ -1,0 +1,14 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the
+Explosive section click
+[here](Weapons#Explosives_.28Grenades.2FTraps.29 "here"){.wikilink}.
+
+EMP Effect
+
+- This means that damage will also possibly Stun or disable electronic
+  devices. If the device is associated with combat such as a robot it is
+  assumed that they have fail safes that keep the machine from being
+  completely disable thus only stunned. However if the device is a
+  simple electronic device it is assumed that it will have to be
+  repaired before being enabled again. The stunning effect latest for
+  1d4 rounds and can be avoided with a successful save against a DC of
+  15.

@@ -1,0 +1,4 @@
+Commanding Presence is an Advanced Function for crew members. To learn about other functions go the [[Space_Ships#Officer.2FShip_Functions|Space Ship Functions]] section of the [[Space Ships]] page.
+
+== Description ==
+This is granted by a Feat and allows the Commander to provide a passive bonus equal to ½ their Charisma score, rounded up to the player's rolls. This doesn’t work on the Captain himself or on any other members of the command staff. This can only last 1 + Charisma Mod rounds per day. If the Captain critically fails an action, they must roll a Charisma Check DC15 + (the amount they failed by) to see if they lose Commanding Presence.

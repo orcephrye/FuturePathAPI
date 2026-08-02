@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': Melee Weapon Focus
+
+'''Benefit''': This is a melee attack that, if successful, causes the target to drop their guard when dealing with other targets and focus on you. The AC for the target is reduced by 2 for all other players, but not for yourself. At Character level 10, this reduces target AC by 3, and at level 20, it reduces the Target's AC by 4. The damage of the melee attack is reduced by 1/2 round up. However, this attack still counts as a Standard Attack Action and grants the Character a Bonus Attack.
+
+'''Normal''': Normally, an attack has no effect on AC, only heals or conditions.
+
+'''Special''': -

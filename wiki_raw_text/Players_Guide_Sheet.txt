@@ -1,0 +1,26 @@
+==== This is a helpful guide for new players of FuturePath and TTRPGs. ====
+
+Below is a list of actions organized by Abilities and Skills that a Character can take in different situations.
+
+What is an Ability? Abilities are divided up into 6 themes, and each represents the aptitude the Character has for each specific theme. This level of aptitude is based on its score. The themes are:
+* Strength (Str) = Power, Muscle, Capacity
+* Dexterity (Dex) = Quickness, Finesse, Subtlety
+* Constitution (Con) = Vitality, Durability, Toughness
+* Intelligence (Int) = Comprehension, Brilliance, Industrious
+* Wisdom (Wis) = Intuition, Focus, Awareness
+* Charisma (Cha) = Glamour, Dominating, Presence
+If the GM asks to perform an Ability check, then roll a d20 and add the Ability Score found at the top left of your Character sheet. If the Ability is a favored ability, then also add the Character's advantage die to the total.
+
+Most actions fit under 'Skills' however. What are Skills? Skills are actions that Characters can do in the game that require confirmation, as well as having defined outcomes. While a generic action can be loosely associated with an Ability, a Skill is a more specific action. IE: Talking nicely to an NPC (Charisma check) vs attempting to convince the NPC of something (Diplomacy check). Below are the Skills and a quick explanation of their theme.
+: '''[[Ability Themes#Strength .28Str.29|Strength]]''':
+:* [[Athletics]], [[Intimidate]], [[Escape Artist]]
+: '''[[Ability Themes#Dexterity .28Dex.29|Dexterity]]''':
+:* [[Acrobatics]], [[Escape Artist]], [[Pilot]], [[Ride]], [[Sleight of Hand]], [[Stealth]]
+: '''[[Ability Themes#Constitution .28Con.29|Constitution]]''':
+:* None
+: '''[[Ability Themes#Intelligence .28Int.29|Intelligence]]''':
+:* [[Computer Use]], [[Craft]], [[Decipher Script]], [[Demolitions]], [[Disable Device]], [[Knowledge]], [[Study]], [[Bluff]], [[Demolitions]]
+: '''[[Ability Themes#Wisdom .28Wis.29|Wisdom]]''':
+:* [[Perception]], [[Sense Motive]], [[Survival]], [[Medical]], [[Diplomacy]], [[Demolitions]], [[Handle Animal]]
+: '''[[Ability Themes#Charisma .28Cha.29|Charisma]]''':
+:* [[Bluff]], [[Diplomacy]], [[Disguise]], [[Handle Animal]], [[Intimidate]], [[Perform]]

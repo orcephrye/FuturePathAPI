@@ -1,0 +1,10 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+You are progressing and improving your Cyborg self. You can add/upgrade Cybernetic implants. You are now a Level 3 Cyborg. 
+
+'''Prerequisites''': [[Cyborg Enthusiast]]
+
+'''Benefit''':  Learn more about Cybernetics [[Cybernetics|here]]. This will allow the Character to gain nonbiological enhancements. The total number of Power and Slots available to the Character is now increased as a Level 3 Cyborg. 
+
+'''Normal''': Without this feat, a Character must either take a new Detractor from the [[Difficulties#Detractors List|list]] or enhance an existing Detractor in order to level up their Cyborg frame.
+'''Special''': -

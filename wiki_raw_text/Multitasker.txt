@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''':  Allows a Character to do multiple skills or actions at a time. 
+
+;Effect on Skills: This allows a Character to be doing one skill while still being able to assist another Character with their skills. When it comes to time-based skills like Crafting, this allows a Character to craft an item AND perform other work, such as Study or Decipher Script. However, the Character cannot do more than one additional action or help more than one additional person. 
+
+;Effect on Actions(Combat): This allows a Character to attempt to hit ANY target with their bonus action, regardless of whether they attempted to target them with their main/extra attacks that round. Normally, a Character can only use their bonus attack action to hit a target that they have already attempted to hit that round.
+
+'''Normal''': -
+
+'''Special''': -

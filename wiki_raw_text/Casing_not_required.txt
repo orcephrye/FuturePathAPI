@@ -1,0 +1,4 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the Explosive section click [[Weapons#Explosives_.28Grenades.2FTraps.29|here]].
+
+;Casing Not Required
+* This means that this [[Weapons#The_Charge|Charge]] doesn't need a casing to be used.

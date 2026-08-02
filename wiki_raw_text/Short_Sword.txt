@@ -1,0 +1,51 @@
+{|
+|+ '''Simple Short Sword'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Simple Short Sword
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / d6
+
+'''Proficiency Requirement''': 2 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''': Melee Weapon
+
+'''Range''': 0ft
+
+'''Default Attributes''': Archaic
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $480 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a simple metal stick with a sharp edge and a strapped handle on one side. Most civilizations made these simple tools for protection and hunting thousands of years before they went to the stars. Some species regard them with pride as they look at where they came from while others try to forget darker pasts. 
+;Explanations: The cost is this high for a tech level 0 sword because of its novelty. It is assumed that this sword is old or even ancient. It is given the 'Archaic' attribute which is why it also has a higher procure difficulty.
+|}

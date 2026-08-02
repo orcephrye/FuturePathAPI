@@ -1,0 +1,19 @@
+Jam is a function of a spaceship. Space Ships and other functions can be found [[Space_Ships#Officer.2FShip_Functions|here]]. This allows a spaceship to send out a jamming signal with a wide range of possible actions, all affecting either Communications or Sensors.
+
+=== Description ===
+
+List of possible Actions:
+# '''Jam Opponent Sensor Array''': This makes it more difficult for a target ship to target any ship for one round. This is an opposing roll against the enemy's Scan roll. If successful, the scan fails. This doesn't stop the ship from being detected if the enemy ship's Passive Sensors are better than the target ship's Detection DC.
+# '''Scramble Communications Array''': This makes it more difficult for a target ship to communicate. This is an opposing roll. Jamming is declared, and if the target ship wishes to attempt to bypass the interference, then the two Sensor Offices make opposing rolls. By default, a target ship doesn't know who is scrambling its communications array. The opponent ship must make a Scan check to check if your ship is doing it. The DC for their check is simply 10 + Class(masterworked) Level of Jammer. If the ship has a Masterworked Jamming Device, it can make the jam appear to be due to natural causes. This, however, gives the Sensor officer a disadvantage when doing an apposing check.
+# '''Scramble Beam''': This scrambles transportation technologies and stops the use of transporters. A scramble must occur before the transporter starts. This is an opposing roll, so the DC for this action is the Beam roll. If you exceed the roll by more than 5, there is a 20% chance the equipment takes minor damage and needs repairs before it can attempt to beam again. Repair DC is 7 + Number exceeded the roll by. Max 20. 
+# '''Scramble Drones''': This Jams drones working for a target ship. This simple causes the drones not to function for one round. Not all drones require constant communications with the mothership, so this may not always work. The DC is 12 + Target Ship Sensor Mod + Drone Controller Class Level + Misc Mods. 
+# '''Jam Missile Launcher''': Specify a target to attempt to disrupt missile launch systems and guided missiles. This acts similarly to point defense and provides 1d10 per Missile launched at the ship, up to 3. Classification Level increases the max.  
+# '''Disrupt Hacking''': This temporarily de-syncs a hacker from your system. The Hacker still has authorization on the system but temporarily loses connection, causing them to forfeit a turn. The DC is 7 + Target Ship's Sensor Mod + Target Ship's Electronics Mod.
+
+A Jamming unit always requires at least a Hard Point to install. 
+
+: '''Associated Ship Attribute''': Electronics
+: '''Associated Ship Position''': Communications/Sensor Officer
+: '''Roll''': d20 + Electronics Mod + Class Level
+: '''Price''': The base price for a Jamming unit is $200,000. It is another $200,000 per ship size. And Masterworked Jamming Unit's add their base price for every class level.
+: '''Procure Diff''': A Jamming unit is considered illegal and dangerous. The procurement difficulty is +2, as most Civilizations try their damnedest to ensure the average person doesn't get their hands on such an annoying and disruptive technology.

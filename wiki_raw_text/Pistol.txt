@@ -1,0 +1,104 @@
+{|
+|+ '''Pistol'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Pistol
+
+'''Power / Speed''' (Total Level/Dice): Small / Semi-Auto = Level 2 / d6
+
+'''Proficiency Requirement''': 2 Levels in Range Branch
+
+'''Weapon Style & Arch Type''':  Personal Firearm
+
+'''Range''': 100ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $650 / -1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 7
+
+'''Reload Speed''': Move Action
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''': Versatile
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A common kinetic projectile based self reloading single hand fire arm.
+;Explanations:
+|}
+
+==Revolver==
+{|
+|+ '''Revolver'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Revolver
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / d6
+
+'''Proficiency Requirement''': 2 Levels in Range Branch
+
+'''Weapon Style & Arch Type''':  Personal Firearm
+
+'''Range''': 100ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $850 / -1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 8
+
+'''Reload Speed''': Move Action
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''':  Versatile 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories: 
+;Description: This is a simple early model firearm capable of repeated shots before reloading.
+;Explanations: A customization point was spent on Critical Range. The price is reduced because of the Personal Firearm Weapon-Arch Type. 
+|}

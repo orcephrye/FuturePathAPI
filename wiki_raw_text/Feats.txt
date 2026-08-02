@@ -1,0 +1,265 @@
+Feats are like Talents except that instead of being associated with a specific Path or Class, Feats can be taken by anybody as long as the Character meets the Prerequisites. Feats are themed and organized into two '''categories''', '''Tactical''' and '''Utility'''. Then those categories have '''sub-categoreis''', ie: Ranged Combat or Space Ship Operations. 
+
+Feats are normally acquired when leveling up. The default levels of gaining feats for any character are every odd level starting with 1. At levels 4, 8, 12, 16 and 20 the Character gains the choice between an ability modifier boost or a '''Bonus Feat'''.  Bonus Feats specify the categories from which a Character can choose; this normally is anything in the Utility category.
+
+;Tactical Feats: Themed around combat and aggression, these feats almost exclusively focus on improving a Character's combat abilities. 
+
+;Utility Feats: Themed around utility and functionality, these feats focus on enhancing existing abilities like skill checks and saving throws. They can also provide new options or actions a Character can do in or out of combat. 
+
+
+==Feats==
+{| class="wikitable sortable" style="10px;"
+|+ Table: Feats
+! style="text-algin:left;" | Feat
+! Prerequisites
+! Summary
+|-
+! colspan="3" | Category: '''Tactical''' 
+|-
+! colspan="3" | Sub-Category: Combat Martial Arts
+|-
+|[[Blind Fight]]|| - ||re-roll melee attacks that miss because of concealment. 
+|-
+|[[Martial Art Focus|Martial Arts Focus]]|| Strength or Dexterity Score of 15 or higher|| The Damage die for unarmed strikes goes up a level.
+|-
+|[[Martial Arts Master| - Martial Arts Master]]|| Martial Arts Focus, Advantage Die 1d8.|| The character’s threat range on an unarmed strike im­proves to 19–20.
+|-
+|[[Dan Martial Artist| - Dan Martial Artiest]]|| Martial Arts Master, Advantage Die 1d12.|| When the character scores a critical hit with an unarmed strike, its triple damage die.
+|-
+|[[Nerve Pinch| - Nerve Pinch]]|| Martial Arts Focus, Advantage Die 1d8.|| Perform a melee attack that can paralyze the target.
+|-
+|[[Defensive Martial Arts]]|| - ||+1 AC bonus against only melee attacks.
+|-
+|[[Elusive Target| - Elusive Target]]|| Dexterity 14, Defensive Martial Arts.|| Opponents that target you with a melee attack take disadvantage.
+|-
+|[[Muscle Memory| - Muscle Memory]]|| Advantage Die 1d10, Defensive Martial Arts, || In melee, if an enemy attacks and misses, the character may immediately make a trip against the opponent.
+|-
+|[[Improved Feint| - Improved Feint]]|| Intelligence 13, Defensive Martial Arts. || Advantage bonus on Bluff checks made to feint in melee combat.
+|-
+! colspan="3" | Sub-Category: Melee Weapon Combat
+|-
+|[[Weapon Finesse]]|| - || Use Dexterity modifier instead of Strength modifier on attack rolls.
+|-
+| [[Melee Weapon Focus]]|| - || Character gains advantage while using specific melee weapons
+|-
+| [[Improved Melee Weapon Focus| - Improved Melee Weapon Focus]]|| Melee Weapon Focus || Melee weapons now due 1 damage die level higher of damage.
+|-
+| [[Sweeping Blow| - Sweeping Blow]]|| Melee Weapon Focus, Advantage Die 1d8 || Causes the target to perform a saving throw or be tripped
+|-
+| [[Throw Off Guard| - Throw Off Guard]]|| Melee Weapon Focus || Causes the target to have a temporarily lower AC when defending against other enemy attacks.
+|-
+| [[Defensive Strike| - Defensive Strike]]|| Melee Weapon Focus || Deal less damage but increase your own AC against the target's attacks.
+|-
+| [[Aggressive Strike| - Aggressive Strike]]|| Melee Weapon Focus, Affinity Die 1d6 || Deal more damage but decrease your own AC against the target's attacks.
+|-
+! colspan="3" | Sub-Category: Ranged Combat
+|-
+|[[Bazooka Arm]]|| - || The Character is extremely effective at throwing grenades.
+|-
+|[[Point Blank Shot]]|| - ||Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft.
+|-
+|[[Double Tap| Double Tap]]|| Advantage Die d6 || Disadvantage on this attack, but deals +1 die of damage with a successful hit.
+|-
+|[[Precise Shot]]|| - || Take a full-round action to line up a shot for a bonus.
+|-
+|[[Dead Aim| - Dead Aim]]|| Wisdom 13, Precise Shot.|| Take a round to study the target on the following round, shoot for a major bonus.
+|-
+|[[Trick Shot| - Trick Shot]]|| Precise Shot.|| A character may ignore the cover of a target.
+|-
+|[[Burst Fire]]|| Proficiency level 5+ || Can use Burst Fire weapon attribute even if not on the weapon. Deal +1 dice of damage.
+|-
+|[[Quick Draw]]|| - ||The character can draw a weapon as a free action.
+|-
+|[[Quick Reload]]|| Dex Mod 1+ ||Reloading a firearm with an already filled box magazine or speed loader is a Simple Action. 
+|-
+! colspan="3" | Sub-Category: Techniques
+|-
+|[[Advanced Combat Techniques|Advance Combat Techniques]]|| - || Allows a Character to learn a single Advance Combat Technique.
+|-
+| [[TechniqueFocus|Technique Focus]]|| - || Pick a Technique that can be used once per day without counting against total usage.
+|-
+| [[TechniqueNovice|Technique, Novice]]|| - || A Character can use Level 0 Techniques infinitely.
+|-
+| [[TechniqueAdvance| - Technique, Advance]]|| Novice Technique || A Character can sacrifice a higher-level technique to be able to use another lower-level technique.
+|-
+| [[TechniqueMaster| - Technique, Master]]|| Advance Technique || Techniques that use Character Class level to modify stats now use Character level.
+|-
+| [[QuickenTechnique| - Technique, Quicken]]|| Novice Technique || A Technique can now be performed as a Free Action.
+|-
+| [[Split-Brain Coordination| - Split-Brain Coordination]] || Novice Technique || Grants a Bonus Attack action
+|-
+! colspan="3" | Sub-Category: Two-Weapon Fighting
+|-
+| [[Akimbo Specialist]]|| - ||The character can now gain an advantage when using off-hand weapons.
+|-
+| [[Niten Ichi| - Niten Ichi]]|| Akimbo Specialist, Advantage Die d10 || The character takes no penalties for using two melee weapons.
+|-
+| [[Gun-Fu| - Gun-Fu]]|| Akimbo Specialist, Advantage Die d10 || The character takes no penalties for using two ranged weapons.
+|-
+! colspan="3" | Sub-Category: Proficiency Tree
+|-
+| [[Training Expert]]|| - || Immediately gain and spend another Proficiency Tree point
+|-
+| [[Power Armor Expert]]|| 5 levels in Armor Proficiency || Gain a point in Power Armor Proficiency Tree as well as the ability to train in that tree.
+|-
+| [[Heavy Melee Weapon Training]]|| No Other Weapon/Armor Proficiency Training || Allows one to gain more than 6 points in the Melee Weapon Proficiency Tree more cheaply.
+|-
+| [[Heavy Ranged Weapon Training]]|| No Other Weapon/Armor Proficiency Training || Allows one to gain more than 6 points in the Ranged Weapon Proficiency Tree more cheaply.
+|-
+| [[ Heavy Armor Training]]|| No Weapon Proficiency Training || Allows one to gain more than 7 points in the Armor Proficiency Tree more cheaply.
+|-
+! colspan="3" | Sub-Category: Difficulties
+|-
+|[[Craft Cybernetics]]|| 3 Ranks split Craft (Electrical/Mechanical), *Knowledge (Sciences) 1 Rank.|| You can build cybernetic attachments.
+|-
+|[[Cybernetic Surgery]]|| Medical 3 ranks, Surgery.|| You can install or remove a cybernetic attachment.
+|-
+|[[Cyborg Enthusiast]]|| Cyborg || Continue to improve Cybernetic abilities
+|-
+|[[Cyborg Competent]]|| Cyborg Enthusiast || Continue to improve Cybernetic abilities
+|-
+|[[Cyborg Expert]]|| Cyborg Competent || Continue to improve Cybernetic abilities
+|-
+|[[Cyborg Master]]|| Cyborg Expert || Continue to improve Cybernetic abilities
+|-
+|[[Cybertaker]]|| - || Gain another Cybernetic Power or Slot
+|-
+| [[Cyber Tweaks]]|| Cyborg Enthusiast || Can convert 1 Power to a Slot or 1 Slot to a Power
+|-
+| [[Mutagenesis]]|| Mutant or Psion || Gain 1 MP per every 5 levels.
+|-
+| [[Eradiator]]|| Mutant || Can have more than 1 secondary mutation and ignore certain cost penalties.
+|-
+| [[Bio-Singularity]]|| Mutant or Psion || Can spend more MP then normal.
+|-
+| [[Slicer]]|| Craft Pharmacutiels 2 Ranks, Craft Chemicals 1 Rank || Can craft special concotions that grant tempoary mutations.
+|-
+| [[Synaptic Overclock]] || Psion || Can Empower Psion techinques 
+|-
+| [[Cognitive Resonance]] || Psion || Can more quickly level up Psioinic powers.
+|-
+! colspan="3" | Category: Utility<div id="Utility"></div>
+|-
+! colspan="3" | Sub-Category: Space Ship Operations
+|-
+| [[Spaceship Captain]]|| Leadership || Provides the ability to use Advance Ship Functions.
+|-
+| [[Spaceship Helm Officer]]|| Pilot 2 Rank || Provides the ability to use Advance Ship Functions.
+|-
+| [[Spaceship Weapons Officer]]|| || Provides the ability to use Advance Ship Functions.
+|-
+| [[Spaceship Communications Officer]]|| || Provides the ability to use Advance Ship Functions.
+|-
+| [[Spaceship Engineer]]|| Craft (Electronic, Mechanical) 1 rank || Provides the ability to use Advance Ship Functions.
+|-
+| [[Spaceship Science Officer]]|| Study 2 Rank || Provides the ability to use Advance Ship Functions.
+|-
+| [[Spaceship Medical Officer]]|| Medical 2 rank || Provides the ability to use Advance Ship Functions.
+|-
+! colspan="3" | Sub-Category: Leadership & Companions
+|-
+| [[Leadership]]|| - || Allows a Character to roll with an advantage when assisting others in actions.
+|- 
+| [[Manager| - Manager]]|| Leadership || Allows a Character to assist multiple people and actions in the same round.
+|-
+| [[Companionship]]|| - || Allows a Character to more easily have an Animal or Robot Companion
+|-
+| [[Improved Companionship| - Companionship, Improved]]|| Companionship || Improves the leveling of a Companion
+|-
+! colspan="3" | Sub-Category: Specialty Skills 
+|-
+| [[Demolitions]]|| - || A special skill for professional settings and disarming of explosives.
+|-
+| [[Escape Artist]]|| - || A special skill for slipping bonds and escaping from grapples.
+|-
+| [[Perform|Performer]]|| - || A special skill for entertaining people.
+|-
+| [[Handle Animal]]|| - || A special skill for working with animals.
+|-
+! colspan="3" | Sub-Category: Skill Enhancements
+|-
+|[[Acrobatic]]|| - ||Misc +2 bonus to the Acrobatic skill.
+|-
+|[[Animal Affinity]]|| - ||The character gets an advantage bonus on all Handle Animal checks.
+|-
+|[[Athletic]]|| - ||Misc +2 bonus to the Athletic skill.
+|-
+|[[Athletic Prowess]]|| - ||Allows the Athletic skill rank to boost your Intimidate Skill.
+|-
+|[[Attentive]]|| - ||The character gets an minor +1 bonus on Study and Sense Motive skills
+|-
+|[[Builder]]|| - ||Pick one new skill under craft to become class skills.
+|-
+|[[Cautious]]|| - ||Misc +2 bonus to the Disable Device skill. 
+|-
+|[[Confident]]|| - ||Misc +1 bonus to the Diplomacy and Bluff skill. 
+|-
+|[[Computer Wiz]]|| - ||Misc +2 bonus to the Computer Use skill. 
+|-
+|[[Deceptive]]|| - ||Misc +1 bonus to both the Bluff and Disguise skills.  
+|-
+|[[Educated]]|| - ||Pick two Knowledge skills. The character gets a permanent +2 Misc bonus on all checks with those skills.
+|-
+|[[Hawk Eye]]|| - ||Misc +1 bonus to Perception Skill
+|-
+|[[Guide]]|| - ||Misc +1 bonus to both the Pilot and Survival skills. 
+|-
+|[[Intimidating Prowess]]|| - || Add your Strength Modifier to Intimidated skill checks in addition to your Charisma
+|-
+|[[Linguist]]|| - || Gain another Rank in both Language and a specific language of your choice.
+|-
+|[[Medical Expert]]|| - ||Misc +1 bonus to both the Craft (pharmaceutical) and Medical skills.  
+|-
+|[[Meticulous]]|| - || Misc +1 bonus to both the Decipher Script and the Study skill.
+|-
+|[[Nimble]]|| - ||Misc +2 bonus on the Sleight of Hand skill. 
+|-
+|[[Persuasive]]|| - || You gain a Misc +1 to both Diplomacy and Intimidate skills.
+|-
+|[[Professional]]|| - || Instantly gain another Rank in Profession
+|-
+|[[Stealthy]]|| - ||Misc +2 bonus on the Stealth skill.  
+|-
+|[[Studious]]|| - ||Misc +2 bonus on the Study skill and a Misc +1 to any Knowledge skill.
+|-
+|[[Surgeon]]|| Medical 2 ranks ||The character can use the Medical skill to perform surgery without penalty.
+|-
+|[[Trustworthy]]|| - ||Misc +2 bonus on the Diplomacy skill.
+|-
+! colspan="3" | Sub-Category: Misc Feats
+|-
+|[[Alertness]]|| - ||The character gets a +2 permanent bonus to Passive Perception. 
+|-
+|[[Drive-By Attack]]|| - ||Takes no vehicle movement penalty when making an attack
+|-
+|[[Endurance]]|| - || Advantage bonus on the following checks and saves, see list in the description.
+|-
+|[[Great Fortitude]]|| Advantage Die 1d8 ||Advantage bonus on all Constitution sav­ing throws.
+|-
+|[[Jerry Rigging]]|| - || You can repair items without material costs just once. You can repair structures in 1/10th the time.
+|-
+|[[Iron Will]]|| Advantage Die 1d8 ||Advantage on all Wisdom saving throws.
+|-
+|[[Lightning Reflexes]]|| Advantage Die 1d8||Advantage bonus on all Dexterity saving throws.
+|-
+|[[Mastercrafter]]|| - || Reduces the DC check for crafting masterworked items by 2.
+|-
+| [[Multitasker]]|| - || Allows a Character to do multiple skills or actions at a time.
+|-
+|[[Planetary Adaption]]|| - ||You gain one of the benefits listed in the description, depending on your planet of origin.
+|-
+|[[Salvage]]|| - || Salvaging a destroyed vehicle, starship, robot, or cybernetic attachment takes less time and is more likely to wield valuables
+|-
+|[[Talented]]|| Advantage Die 1d10 || The Character can choose a talent to be affected by Character level instead of Class
+|-
+|[[Track]]|| - ||A character can add there Advantage Die too survival check when tracking
+|-
+|[[Wild Talent]]|| - ||Select one 0-level psionic power. 
+|-
+|[[Ultra Immune System]]|| - ||You gain an advantage bonus on Constitution saving throws to resist poisons, diseases, and radiation sickness. 
+|-
+|[[Xenomedic]]|| Knowledge (Sciences) 4 ranks, Medical 5 ranks, Surgery||Use the Medical skill on a living creature regardless of its type, without penalty.
+|-
+|[[Zero-G Training]]|| Dexterity 13, Acrobatics 2 ranks.|| You take no disadvantage on attack rolls in low-gravity or zero-gravity environments.
+|-
+|}

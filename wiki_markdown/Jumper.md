@@ -1,0 +1,7 @@
+You are a natural leaper.
+
+**Prerequisites**: 2 Rank in Acrobatics
+
+**Benefit**: Gain Advantage on all Acrobatic checks. You always count as
+having a running start when making jump checks using Acrobatics even if
+you are standing still.

@@ -1,0 +1,20 @@
+Beaming is a function of a Space ship. Space Ships and other functions can be found [[Space_Ships#Officer.2FShip_Functions|here]]. This allows near instant transportation between sites. There are multi-types of Beaming technology. Each different type of Beaming technology has its ups and downs as shown below.
+
+== Description ==
+
+Want your atoms to be converted into raw energy while there exact position relative to ever other atom is recorded as data and then that raw energy along with that data to be 'streamed', 'beamed', or 'teleported' to another location where a quantum computer with memrister processors handle yottabit's of data that is you and takes the energy packet uses it to rebuild each atom in the exact position it was before? NO? Oh... well then you are like most sentient creatures. Ethical and moral questions about life and death aside these devices all work in different ways but the main result is the same. 
+
+This allows for the transportation of matter at a very fast rate without the need of a container or shipping system. All the energy is expended on only one end of the journey. And the journey itself usually feels instant for the object being transported. This has its advantages, but also comes with dangers. Jamming signals or other disruptions can cause beaming technology not to work. And if signals are disrupted during transport the only hope for the object being moved is safety mechanisms which if they fail mean certain death.
+
+A Beaming station, or transporter pad always takes at least one Bay.
+
+: '''Associated Ship Attribute''': Electronics
+: '''Roll''': d20 + Electronics Mod + Class Level (Only necessary when beaming through some difficult conditions)
+: '''Price''': Beaming technology is priced on the size of the object it can transport. And the bigger the object bigger the ship needs to be to support it. Below is the base prices. The size rating that a Beaming device and transport is based on the Character size chart which uses the same sizes as Ships. So a Beaming device that can beam a Huge size Character/Object can only be installed on a Huge ship or bigger. Just because you are in a larger ship doesn't mean you have to by a Beaming device of that size. But it will still take up the whole compartment.
+
+; Sizes
+:* Medium: $100,000
+:* Large: $250,000
+:* Huge: $800,000
+:* Gargantuan: $2,200,000
+:* Colossal: $5,500,000

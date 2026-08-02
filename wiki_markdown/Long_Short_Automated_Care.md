@@ -1,0 +1,13 @@
+Long/Short Automated Care is an Advanced Function for crew members. To
+learn about other functions, go to the [Space Ship
+Functions](Space_Ships#Officer.2FShip_Functions "Space Ship Functions"){.wikilink}
+section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
+
+## Description
+
+If a Medical Bay or Facility is provided, then the Medic will move the
+Character into the Bay or Facility, where they receive automatic,
+constant attention from the Medic. This qualifies as receiving constant
+Long/Short Term Care automatically successfully. For more rules
+regarding Care, review the [Medical](Medical "Medical"){.wikilink}
+skill.

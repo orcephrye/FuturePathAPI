@@ -1,0 +1,49 @@
+{|
+|+ '''Improved Steal Combat Knife'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Improved Steal Combat Knife
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2/d6
+
+'''Weapon Arch Type''':  Melee Weapon
+
+'''Range''': 0ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $500 / 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~1 pound
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

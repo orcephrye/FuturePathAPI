@@ -1,0 +1,10 @@
+
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisites''': Leadership
+
+'''Benefits''': Allows a character to assist multiple people at the same time, even if the actions are unrelated and different. The number of different people that can be assisted in one turn is equal to the character's Wisdom Mod. When assisting a single person gain x2 Advantage.
+
+'''Normal''': Character's can normally only assist one person at a time.
+
+'''Special''': This also accounts for aiding someone with Crafting skills. Crafting Structure skill checks also reduce manufacturing time by 10%.

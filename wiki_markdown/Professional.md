@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: -
+
+**Benefit**: Instantly gain a Rank in the Profession Skill. This also
+includes any bonus wealth associated with increasing the Profession
+skill. This increase is not subject to the normal rule limiting a Skills
+max Rank.
+
+**Normal**: -
+
+**Special**: This feat can be taken multiple times.

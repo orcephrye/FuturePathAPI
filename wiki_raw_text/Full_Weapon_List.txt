@@ -1,0 +1,333 @@
+This is a page dedicated to all known weapon examples. This is '''not''' an exhaustive list of all possible weapons, just examples created using the [[Weapons#Simple_Weapon_Creation|Weapon Creation]] rules. For all the rules on weapons, visit the [[Weapons]] page.
+
+: '''Note''': Weapon text is explained in the [[Weapon Text Formatting]] page.
+
+{| class="wikitable"
+|+ Table: Weapon Examples
+! colspan="15" | Tech Level 0
+|-
+! style="text-algin:left;"|Weapon
+! Style & Arch Type
+! Hit<br/>Die
+! AP
+! Damage<br/> Type
+! Critical<br/> Multiplier
+! Critical<br/> Range 
+! Accuracy<br/> Bonus
+! Damage<br/> Bonus
+! Ammo
+! Range
+! Reload<br/> Speed
+! Default Attributes
+! Bonus Abilities
+! Cost /<br/> Proc Diff
+|-
+! colspan="15" | Melee Weapons
+|-
+| [[Knife|Simple Knife]] || Melee Weapon || d4 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || Archaic || - || $120 / 1
+|-
+| [[Short_Sword|Simple Short Sword]] || Melee Weapon || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || Archaic || - || $480 / 1
+|-
+| [[Quarter-Staff|Simple Quarter Staff]]|| Melee Weapon || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || Archaic || Versatile || $480 / 1
+|-
+| [[Broad_Sword|Simple Broad Sword]] || Melee Weapon || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || Archaic || - || $960 / 1
+|-
+| [[Spear|Simple Spear]] || Melee Weapon || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 15ft+ || N/A || Archaic, Clunky, Throw-able || - || $960 / 1
+|-
+| [[War Hammer]] || Melee Weapon || d10 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || Archaic || Overwhelming || $1,200 / 1
+|-
+| [[Bullwhip]] || Flexible/Chain Melee || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 10ft Reach || N/A || Archaic || Reach, Disarming || $120 / 1
+|-
+! colspan="15" | Ranged Weapons
+|-
+| [[Throwing_Knife/Star|Simple Throwing Knife]] || Throwing Weapon || d2 || 0 || Kinetic || x3 || 20 || +0 || +0 || N/A || 30ft+ || N/A || Archaic, Throw-able || - || $35 / 1 
+|-
+| [[Simple_Bow|Simple Short Bow]] || Archaic Ranged Weapon  || d4 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 150ft || N/A || Archaic || - || $360 / 1
+|-
+| [[Long_Bow|Simple Long Bow]] || Archaic Ranged Weapon || d6 || 0 || Kinetic || x2 || 19-20 || +0 || +0 || N/A || 350ft || N/A || Archaic || - || $1,620 / 1
+|-
+| [[Cross Bow]] || Archaic Ranged Weapon || d8 || 0 || Kinetic || x2 || 20 || +2 || +0 || N/A || 150ft || Standard Action || Archaic, Clunky || - || $2,160 / 1
+|-
+| [[Primitive_Harpoon|Primitive Harpoon]] || Specialized Projectile Weapon || d2 || 0 || Kinetic || x2 || 20 || +0 || +0 || 1 || 50ft || Standard || Archaic, Throw-able || Special Ammunition, Pinned || $1,090 / 1
+|-
+! colspan="15" | Tech Level 1
+|-
+! style="text-algin:left;"|Weapon
+! Style & Arch Type
+! Hit<br/>Die
+! AP
+! Damage<br/> Type
+! Critical<br/> Multiplier
+! Critical<br/> Range 
+! Accuracy<br/> Bonus
+! Damage<br/> Bonus
+! Ammo
+! Range
+! Reload<br/> Speed
+! Default Attributes
+! Bonus Abilities
+! Cost /<br/> Proc Diff
+|-
+! colspan="15" | Melee Weapons
+|-
+| [[Improved_Knife|Combat Knife]] || Melee Weapon || d4 || 0 ||Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $80 / 0
+|-
+| [[Improved_Knife#Improved_Combat_Knife|Improved Combat Knife]] || Melee Weapon || d6 || 1 ||Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $400 / 0
+|-
+| [[Riot Baton]] || Melee Weapon || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $320 / 0
+|-
+| [[Riot_Baton|Heavy Grip Riot Baton]] || Melee Weapon || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || Knock Out Blow || $400 / 0
+|-
+| [[Improved Sword]] || Melee Weapon || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $620 / 0
+|-
+| [[Improved_Sword|Extended Grip Sword]] || Melee Weapon || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || Versatile || $780 / 0
+|-
+| [[Tactical_Rapier|Tactical Rapier]] || Finesse Melee || d4 || 0 || Kinetic || x2 || 20 || +1 || +0 || N/A || 0ft || N/A || - || - || $400 / 0
+|-
+! colspan="15" | Ranged Weapons
+|-
+| [[Throwing_Knife/Star|Large Throwing Star]] || Throwing Weapon || d4 || 0 || Kinetic || x3 || 20 || +0 || +0 || N/A || 30ft+ || N/A || Throw-able || - || $80 / 0
+|-
+| [[Pistol]] || Personal Firearm || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || 7 || 100ft || Standard || - || Versatile || $650 / 0
+|-
+| [[Improved Bow]] || - || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 900ft || N/A || - || - || $800 / 0
+|-
+| [[Pistol#Revolver|Revolver]] || Personal Firearm || d6 || 0 || Kinetic || x2 || 19-20 || +0 || +0 || 8 || 100ft || Standard || - || Versatile || $850 / 0
+|-
+| [[Improved_Bow|Composite Hunting Bow]] || - || d6 || 0 || Kinetic || x3 || 20 || +0 || +0 || N/A || 900ft || N/A || - || - || $1000 / 0
+|-
+| [[Hunting Rifle]] || Hunting Rifle || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || 9 || 900ft || Standard || - || - || $1,290 / 0
+|-
+| [[Hunting_Rifle#Bedded Hunting Rifle|Bedded Hunting Rifle]] || Hunting Rifle || d8 || 0 || Kinetic || x2 || 20 || +1 || +0 || 9 || 900ft || Standard || - || - || $1,650 / 0
+|-
+| [[Side Arm]] || Side Arm || d8 || 0 || Kinetic || x2 || 19-20 || +0 || +1 || 8 || 300ft || Standard || - || Versatile || $1,700 / 1
+|-
+| [[Simple CQB]] || Close Quarters Weapon || d8 || 0 || Kinetic || x3 || 20 || +0 || +1 || 3 || 100ft || Standard || Exotic || Fully Unload  || $2,600 / 1
+|-
+| [[Simple_CQB#Uzi|Uzi]] || Close Quarters Weapon || d8 || 0 || Kinetic || x3 || 20 || +0 || +1 || 3 || 100ft || Standard || Exotic || Fully Unload  || $3,000 / 1 
+|-
+| [[Assault Weapon]] || Assault Weapon || d10 || 0 || Kinetic || x2 || 20 || +1 || +0 || 6 || 300ft || Standard || - || - || $3,450 / 1 
+|-
+| [[Assault_Weapon#M16_Assault_Weapon|M16]] || Assault Weapon || d10 || 0 || Kinetic || x2 || 19-20 || +1 || +0 || 6 || 300ft || Standard || - || Switch Firing Modes  || $4,250 / 1
+|-
+| [[Sniper Rifle]]|| Sniper Rifle || d10 || 0 || Kinetic || x2 || 19-20 || +0 || +0 || 7 || 2700ft || Standard || - || - || $4,800 / 1
+|-
+| [[Sniper_Rifle#Tactical Scope Rifle|Tactical Scope Rifle]]|| Sniper Rifle || d10 || 0 || Kinetic || x2 || 19-20 || +1 || +0 || 7 || 2700ft || Standard || - || - || $5,600 / 1
+|-
+| [[Simple LMG]]|| Light Machine Weapon || d12 || 0 || Kinetic || x3 || 19-20 || +0 || +0 || 6 || 300ft || Standard || - || Suppression Fire || $6,050 / 1  
+|-
+! colspan="15" | Tech Level 2
+|-
+! style="text-algin:left;"|Weapon
+! Style & Arch Type
+! Hit<br/>Die
+! AP
+! Damage<br/> Type
+! Critical<br/> Multiplier
+! Critical<br/> Range 
+! Accuracy<br/> Bonus
+! Damage<br/> Bonus
+! Ammo
+! Range
+! Reload<br/> Speed
+! Default Attributes
+! Bonus Abilities
+! Cost /<br/> Proc Diff
+|-
+! colspan="15" | Melee Weapons
+|-
+| [[Advanced Knife]] || Melee Weapon || d6 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $400 / 0 
+|-
+| [[Energy Baton]] || Melee Weapon, Energy || d6 || 0 || Electrical || x2 || 20 || +0 || +1 || N/A || 0ft || N/A || - || Knock Out Blow  || $600 / 0
+|-
+| [[Advanced_Knife#Superior_Steal_Knife|Superior Steal Knife]] || Melee Weapon || d6 || 0 || Kinetic || x2 || 18-20 || +0 || +0 || N/A || 0ft || N/A || - || - || $850 / 0
+|-
+| [[Advanced Sword]]|| Melee Weapon || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $800 / 0
+|-
+| [[Advanced_Sword#Powered_Sword|Powered Sword]]|| Melee Weapon, Energy || d8 || 0 || Kinetic & Electric || x3 || 20 || +0 || +1 || N/A || 0ft || N/A || - || - || $1,200 / 0
+|-
+| [[Advanced_Sword#Frequency_Sword|Frequency Sword]]|| Melee Weapon || d8 || 0 || Kinetic & Electric || x3 || 19-20 || +0 || +0 || N/A || 0ft || N/A || - || - || $1,200 / 0
+|-
+| [[Energy Hammer]] || Melee Weapon, Energy || d10 || 0 || Kinetic & Electric || x2 || 20 || +0 || +1 || N/A || 0ft || N/A || - || Shocking || $2,400 / 0
+|-
+| [[Monofilament_Dagger|Monofilament Dagger]] || Finesse Melee || d2 || 1 || Kinetic || x2 || 20 || +1 || +0 || N/A || 0ft || N/A || - || - || $150 / 1
+|-
+| [[Cryo_Axe|Cryo-Axe]] || Melee Weapon, Cryogenic || d8 || 0 || Thermal (Cold) || x2 || 19-20 || +1 || +0 || N/A || 0ft || N/A || - || - || $1,200 / 1
+|-
+| [[Acid_Blade|Acid-Etched Blade]] || Finesse Melee, Corrosive || d6 || 1 || Chemical || x2 || 20 || +1 || +0 || N/A || 0ft || N/A || - || Linger || $1,200 / 1
+|-
+| [[Shock_Whip|Shock Whip]] || Flexible/Chain Melee, Energy || d6 || 0 || Electrical || x2 || 20 || +1 || +1 || N/A || 10ft Reach || N/A || - || Reach, Disarming || $800 / 0
+|-
+! colspan="15" | Ranged Weapons
+|-
+| [[Throwing_Knife/Star#Assassins_Star| Assassins Star]] || Throwing Weapon || d8 || 0 || Kinetic || x3 || 20 || +0 || +0 || N/A || 30ft+ || N/A || Throw-able || Expendable || $600 / 1
+|-
+| [[Tangler_Gun|Tangler Gun]] || Specialized Projectile Weapon || - || 0 || N/A || - || - || +0 || +0 || 5 || 25ft || Standard || - || Entangled Target, Special Ammunition || $1,380 / 1
+|-
+| [[Acid_Spitter|Acid Spitter]] || Personal Firearm, Corrosive || d8 || 0 || Chemical || x2 || 19-20 || +1 || +0 || 7 || 50ft || Standard || - || Versatile || $2,490 / 0
+|-
+| [[Corrosive_Shotgun|Acid-Rain Shotgun]] || Shotgun, Corrosive || d12 || 0 || Chemical || x2 || 19-20 || +1 || +0 || 6 || 25ft || Standard || - || Linger || $5,280 / 1
+|-
+| [[Laser Pistol]] || Personal Firearm, Laser || d8 || 0 || Thermal || x2 || 20 || +1 || +0 || 6 || 100ft || Standard || - || Versatile || $1,610 / 0  
+|-
+| [[Energy Blaster]] || Side Arm, Energy || d8 || 0 || Electric || x2 || 20 || +1 || +2 || 6 || 300ft || Standard || - || Versatile || $2,300 / 1
+|-
+| [[Laser_Pistol#Tactical_Laser_Pistol|Tactical Laser Pistol]] || Personal Firearm, Laser || d8 || 1 || Thermal || x2 || 20 || +2 || +0 || 6 || 100ft || Standard || - || Versatile ||  $2,490 / 0   
+|-
+| [[Laser Shotgun]] || Shotgun, Laser || d12 || 0 || Thermal || x2 || 20 || +1 || +0 || 6 || 25ft || Standard || - || - ||  $3,520 / 0
+|-
+| [[Laser Rifle]] || DMR Weapon, Laser || d12 || 1 || Thermal || x2 || 20 || +1 || +0 || 5 || 900ft || Standard || - || Switch Firing Modes ||  $5,280 / 1   
+|-
+| [[Laser QCB]] || Close Quarters Weapon, Laser || d12 || 0 || Thermal || x3 || 20 || +1 || +0 || 2 || 100ft || Standard || Exotic || Fully Unload || $6,280 / 1 
+|-
+| [[Laser_Rifle#Tactical_Laser_Rifle|Tactical Laser Rifle]] || DMR Weapon, Laser || d12 || 1 || Thermal || x2 || 19-20 || +1 || +0 || 5 || 900ft || Standard || - || Switch Firing Modes, Fully Unload ||  $7,920 / 1   
+|-
+| [[Laser Sniper Rifle]] || Sniper Rifle, Laser || d12 || 0 || Thermal || x2 || 19-20 || +1 || +0 || 6 || 8100ft || Standard || Clunky || - || $7,920 / 1
+|-
+| [[Laser_QCB#Hybrid_Sub_Machine_Gun|Hybrid SMG]] || Close Quarters Weapon || d12 || 0 || Kinetic & Chemical || x3 || 19-20 || +0 || +0 || 3 || 100ft || Standard || Exotic || Fully Unload || $8,920 / 1 
+|-
+| [[Laser LMG]] || Light Machine Weapon, Laser || d12 || 0 || Thermal || x3 || 19-20 || +1 || +0 || 15 || 900ft || Standard || Clunky || Suppression Fire, Custom Ammunition || $9,170 / 1 
+|-
+| [[Laser_Sniper_Rifle#Halo_Scoped_Sniper_Laser_Rifle|Scoped Sniper Rifle]] || Sniper Rifle, Laser || d12 || 0 || Thermal || x2 || 19-20 || +3|| +0 || 6 || 8100ft || Standard || Clunky || - || $10,560 / 1 
+|-
+| [[Firestar_Rocket_Launcher|M-53 Firestar]] || Heavy Ordnance || 2d8 || 5 || Kinetic || x4 || 20 || +2 || +0 || 2 || 2,700ft || Standard || Clunky, Two-Handed || Suppression Fire, Exploding Die || $14,920 / 3
+|-
+| [[Grenade_Launcher|Fully Auto Grenade Launcher]] || - || 2d8 || 0 || Kinetic || x3 || 19-20 || +2 || +0 || 6 || 25ft || Standard || - || - || $16,560 / 0
+|-
+! colspan="15" | Tech Level 3
+|-
+! style="text-algin:left;"|Weapon
+! Style & Arch Type
+! Hit<br/>Die
+! AP
+! Damage<br/> Type
+! Critical<br/> Multiplier
+! Critical<br/> Range 
+! Accuracy<br/> Bonus
+! Damage<br/> Bonus
+! Ammo
+! Range
+! Reload<br/> Speed
+! Default Attributes
+! Bonus Abilities
+! Cost /<br/> Proc Diff
+|-
+! colspan="15" | Melee Weapons
+|-
+| [[Plasma Sword]] || Melee Weapon, Plasma || d12 || 0 || Thermal || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || Versatile || $1,920 / 1
+|-
+| [[Plasma_Sword#Expert_Hilt_Plasma_Sword|Export Hilt Plasma Sword]] || Melee Weapon, Plasma || d12 || 2 || Thermal || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || Versatile || $2,880 / 1
+|-
+| [[Particle Knife]] || Melee Weapon, Particle || d6 || 0 || Chemical & Kinetic || x3 || 18-20 || +1 || +1 || N/A || 0ft || N/A || - || - || $5,280 / 1
+|-
+| [[Breaching Hammer]] || Advanced Customized Melee || 2d4 || Kinetic & Chemical || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || Duel-Sided,Explosive,Split-Die || $3,360 / 1
+|-
+| [[Gravity Hammer]] || Melee Weapon, Gravity || d10 || 1 || Nill (AoE Removed) || x3 || 20 || +0 || +1 || N/A || 0ft || N/A || - || Disarming || $7,200 / 1
+|-
+| [[Neural_Foil|Neural Foil]] || Finesse Melee, Laser || d4 || 1 || Thermal || x2 || 19-20 || +2 || +0 || N/A || 0ft || N/A || - || Initiative +1 || $1,320 / 1
+|-
+| [[Gravity_Lash|Gravity Lash]] || Flexible/Chain Melee, Gravity || d8 || 2 || Nill || x2 || 20 || +1 || +0 || N/A || 10ft Reach || N/A || - || AoE 15ft, Disarming || $4,560 / 2
+|-
+! colspan="15" | Ranged Weapons
+|-
+| [[Throwing_Knife/Star#Phasing_Star| Phasing Star]] || Throwing Weapon || d6 || 0 || Kinetic || x2 || 20 || +1 || +2 || N/A || 30ft+ || N/A || Throw-able || - || $700 / 1
+|-
+| [[Plasma Pistol]] || Personal Firearm, Plasma || d10 || 0 || Thermal || x2 || 20 || +0 || +0 || 5 || 50ft || Standard || - || Versatile || $1,770 / 1 
+|-
+| [[Plasma_Pistol#Tactical_Plasma_Pistol|Tactical Plasma Pistol]] || Personal Firearm, Plasma || d10 || 1 || Thermal || x2 || 20 || +1 || +1 || 5 || 100ft || Standard || - || Versatile || $3,460 / 1
+|-
+| [[Plasma Shotgun]] || Shotgun, Plasma || 2d8 || 0 || Thermal || x2 || 20 || +0 || +0 || 6 || 30ft || Standard || - || - || $5,760 / 1 
+|-
+| [[Plasma Rifle]] || Assault Weapon, Plasma  || 2d8 || 0 || Thermal || x2 || 20 || +0 || +0 || 5 || 300ft || Standard || - || Switch Firing Modes, Fully Unload || $6,010 / 1 
+|-
+| [[Plasma Sniper Rifle]] || Sniper Rifle, Plasma || 2d8 || 0 || Thermal || x2 || 19-20 || +0 || +0 || 6 || 2,700ft || Standard || Clunky || - || $8,640 / 1 
+|-
+| [[Plasma QCB]] || Close Quarters Weapon, Plasma || 2d10 || 0 || Thermal || x2 || 20 || +0 || +0 || 2 || 50ft || Standard || Exotic || Fully Unload || $8,640 / 1
+|-
+| [[Plasma LMG]] || Light Machine Weapon, Plasma || 2d10 || 0 || Thermal || x2 || 20 || +0 || +0 || 18 || 2,700ft || Standard || Clunky || Suppression Fire, Custom Ammunition || $9,910 / 1 
+|-
+| [[Radiation_LMG|Gamma-Spitter]] || Light Machine Weapon, Irradiated || d12 || Ignores || Thermal (Radiation) || x3 || 18-20 || +1 || +1 || 18 || 300ft || Standard || Clunky, Two-Handed || Suppression Fire, Volatile || $11,330 / 2
+|-
+| [[Cryonic_Rifle|Cryonic Rifle]] || Assault Weapon, Cryogenic || d12 || 0 || Thermal (Cold) || x2 || 19-20 || +1 || +0 || 6 || 900ft || Standard || - || Switch Firing Modes || $10,330 / 1
+|-
+| [[Radiation_Sniper|Rad-Longshot]] || Sniper Rifle, Irradiated || d10 || 0 || Thermal (Radiation) || x2 || 19-20 || +0 || +0 || 7 || 2,700ft || Standard || - || - || $8,640 / 2
+|-
+| [[Plasma_Rifle#Tactical_Plasma_Rifle|Tactical Plasma Rifle]] || Assault Weapon, Plasma || 2d8 || 1 || Thermal || x2 || 20 || +1 || +1 || 5 || 300ft || Standard || - || Switch Firing Modes, Fully Unload || $10,330 / 1 
+|-
+| [[Rail Gun]] || Sniper Rifle || d12 || 0 || Kinetic & Kinetic || x3 || 20 || +0 || +1 || 7 || 8100ft || Standard || Clunky || - || $12,960 / 2
+|-
+| [[Plasma_Sniper_Rifle#Hybrid_Sniper_Rifle|Hybrid Sniper Rifle]] || Sniper Rifle, Plasma || 2d8 || 0 || Kinetic & Thermal || x3 || 19-20 || +2 || +0 || 6 || 2,700ft || Standard || Clunky || - || $12,960 / 1  
+|- 
+| [[Plasma_QCB#Micro_Plasma_Rapid_Pistol|Mirco Plasma Rapid Pistol]] || Close Quarters Weapon, Plasma || 2d10 || 0 || Thermal || x3 || 19-20 || +0 || +0 || 2 || 50ft || Simple || Exotic || Fully Unload || $15,120 / 1  
+|-
+| [[Plasma_LMG#Hybrid_Auto_Cannon|Hybrid Auto Cannon]] || Light Machine Weapon || 2d8 || 0 || Kinetic & Thermal || x3 || 19-20 || +0 || +0 || 18 || 2,700ft || Two Rounds || Clunky || Suppression Fire, Custom Ammunition || $15,120 / 1  
+|-
+| [[Plasma Shotgun#High Powered Particle Shotgun|Particle Shotgun]] || Shotgun, Particle || d12 || 0 || Chemical / Kinetic || x2 || 19-20 || +2 || +1 || 7 || 30ft || Standard || - || - || $15,840 / 1  
+|-
+| [[HE_Missile_Tube|HE-Missile Tube]] || Heavy Ordnance || 2d10 || 5 || Kinetic || x4 || 19-20 || +2 || +0 || 1 || 2,700ft || Two Rounds || Clunky, Two-Handed, Exotic || Exploding Die || $21,400 / 3
+|-
+! colspan="15" | Tech Level 4
+|-
+! style="text-algin:left;"|Weapon
+! Style & Arch Type
+! Hit<br/>Die
+! AP
+! Damage<br/> Type
+! Critical<br/> Multiplier
+! Critical<br/> Range 
+! Accuracy<br/> Bonus
+! Damage<br/> Bonus
+! Ammo
+! Range
+! Reload<br/> Speed
+! Default Attributes
+! Bonus Abilities
+! Cost /<br/> Proc Diff
+|-
+! colspan="15" | Melee Weapons
+|-
+| [[Particle Sword]] || Melee Weapon, Particle || d10 || 0 || Chemical & Kinetic || x2 || 20 || +1 || +1 || N/A || 0ft || N/A || Clunky || - ||  $4,480 / 1
+|-
+| [[Particle_Sword#Beam_Sword|Beam Sword]] || Melee Weapon, Plasma || d12 || 1 || Thermal || x2 || 19-20 || +0 || +2 || N/A || 0ft || N/A || Clunky || - || $4,480 / 1 
+|-
+| [[Superior Knife]] || Melee Weapon, Particle || d8 || 0 || Kinetic || x3 || 18-20 || +1 || +1 || N/A || 0ft || N/A || -  || Versatile || $6,240 / 1
+|-
+| [[Phase_Sabre|Phase-Shift Sabre]] || Finesse Melee, Nanotech || d4 || 1 || ALL || x2 || 18-20 || +1 || +0 || N/A || 0ft || N/A || - || Initiative +1 || $3,360 / 3
+|-
+| [[Nano_Scythe|Nano-Scythe]] || Melee Weapon, Nanotech || d12 || 0 || ALL || x4 || 19-20 || +1 || +0 || N/A || 0ft || N/A || Clunky, Two-Handed || - || $13,440 / 3
+|-
+| [[Anti-Matter Hammer]] || Melee Weapon, Anti-Matter || d12 || 3 || Thermal & Kinetic || x3 || 20 || +0 || +2 || N/A || 0ft || N/A || Clunky || Knock Out Blow || $5,760 / 2
+|- 
+! colspan="15" | Ranged Weapons
+|-
+| [[Gravity Rifle]] || Gravity || d12 || 1 || Nill/AoE 15ft || x2 || 20 || +0 || +0 || 5 || 300ft || Standard || - || - || $6,240 / 2
+|-
+| [[Energy Rail Cannon]] ||  Sniper Rifle, Energy || d12 || 0 || Electrical || x2 || 20 || +0 || +1 || 6 || 8,100ft || Standard || Clunky || - || $6,240 / 1 
+|-
+| [[Anti-Matter Pistol]] || Side Arm || 2d8 || 3 || Thermal & Kinetic || x2 || 20 || +0 || +1 || 5 || 300ft || Standard || - || Versatile || $6,240 / 2 
+|-
+| [[Sonic Beam]] || DMR Weapon || d12 || 0 || Kinetic || x2 || 20 || +0 || +0 || 6 || 900ft || Standard || - || Switch Firing Modes || $7,240 / 1
+|-
+| [[Gravity_Rifle#Gravity_Pulse_Rifle|Gravity Pulse Rifle]] || Gravity || d12 || 2 || Nill/AoE 15ft || x3 || 19-20 || +1 || +0 || 5 || - || Standard || - || - || $12,480 / 2
+|-
+| [[Anti-Matter_Pistol#Anti-Matter_Blaster|Anti-Matter Blaster]] || Side Arm || 2d8 || 3 || Thermal & Kinetic || x3 || 19-20 || +2 || +3 || 5 || 300ft || Standard || - || Versatile || $12,480 / 2 
+|-
+| [[Energy_Rail_Cannon#Charged Rapid Rail Cannon|Charged Rail Cannon]] || Sniper Rifle, Energy || d12 || 0|| Electrical || x4 || 20 || +0 || +1 || 6 || 8,100ft || Simple || Clunky || - || $12,480 / 1 
+|-
+| [[Sonic_Beam#Tactical_Sonic_Beam|Tactical Sonic Beam]] || DMR Weapon || d12 || 1 || Kinetic || x3 || 19-20 || +1 || +0 || 6 || 900ft || Standard || - || Switch Firing Modes, Fully Unload || $13,480 / 1 
+|-
+| [[Energy_Rail_Cannon#Hybrid_Accelerated_Rail_Gun|Hybrid Accelerate Rail Gun]] || Sniper Rifle, Particle || d12 || 0 || Chemical & Electrical || x4 || 20 || +1 || +1 || 7 || 8,100ft || Standard || Clunky || - || $18,720 / 1
+|-
+| [[Anti-Matter Shotgun]] || Shotgun,Anti-Matter || 2d10 || 3 || Thermal & Kinetic || x3 || 19-20 || +1 || +1 || 5 || 30ft || Standard || Clunky || - || $23,040 / 2 
+|-
+| [[Anti-Matter Rifle]] || Assault Weapon, Anti-Matter || 2d10 || 3 || Thermal & Kinetic || x2 || 20 || +0 || +0 || 5 || 300ft || Standard || - || Switch Firing Modes || $28,080 / 2 
+|-
+| [[Anti-Matter_Rifle#Optimized_Anti-Matter_Rifle|Optimized Anti-Matter Rifle]] || Assault Weapon, Anti-Matter|| 2d10 || 4 || Thermal & Kinetic || x3 || 20 || +0 || +2 || 5 || 300ft || Standard || - || Switch Firing Modes || $37,440 / 2 
+|-
+| [[Nano_Rifle|Nano-Disassembler]] || Assault Weapon, Nanotech || d12 || 0 || ALL || x2 || 19-20 || +0 || +0 || 6 || 900ft || Standard || - || Switch Firing Modes || $37,690 / 3
+|-
+| [[Singularity Cannon]] || Gravity || 2d10 || 2 || Nill/AoE 30ft || x2 || 19-20 || +1 || +1 || 1 || 2,700ft || Two Rounds || Clunky || - || $46,800 / 3 
+|-
+| [[Nano_Siege_Cannon|Nano-Obliterator]] || Heavy Ordnance, Nanotech || 2d12 || 5 || ALL || x4 || 20 || +2 || +0 || 1 || 2,700ft || Two Rounds || Clunky, Two-Handed, Exotic || Smart Targeting, Exploding Die || $90,250 / 4
+|-
+|}

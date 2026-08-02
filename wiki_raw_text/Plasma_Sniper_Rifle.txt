@@ -1,0 +1,105 @@
+{|
+|+ '''Rail Gun'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Rail Gun
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Semi-Auto = Level 5 / 2d8*
+
+'''Proficiency Requirement''': 6 Levels in Ranged
+
+'''Weapon Style & Arch Type''':  Sniper Rifle, Plasma
+
+'''Range''': 2,700 (Range penalty reduced by half)
+
+'''Default Attributes''': Plasma
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $8,640 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~30 pounds
+
+'''Bonus Abilities''':  
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: Plasma Based Sniper Rilfe.
+;Explanations: 
+|}
+
+
+==Hybrid Sniper Rifle==
+{|
+|+ '''Hybrid Sniper Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Hybrid Sniper Rifle
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Semi-Auto = Level 5 / 2d8*
+
+'''Proficiency Requirement''': 6 Levels in Ranged
+
+'''Weapon Style & Arch Type''':  Sniper Rifle, Plasma
+
+'''Range''': 2700ft
+
+'''Default Attributes''': Plasma
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $12,960 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +2
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Kinetic, Thermal
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

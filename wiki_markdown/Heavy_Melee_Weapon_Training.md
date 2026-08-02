@@ -1,0 +1,14 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: No Other Proficiency Training. IE, If you pick this,
+you cannot also pick Heavy Ranged Weapon Training or Heavy Armor
+Training.
+
+**Benefit**: Allows one to gain Proficiency Level 6 and higher for only
+1 Training Point instead of 2 in the Melee Weapon Branch.
+
+**Normal**: Normally, a Character has to spend two points for level 6 or
+higher.
+
+**Special**: -

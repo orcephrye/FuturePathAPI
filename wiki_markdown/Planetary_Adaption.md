@@ -1,0 +1,61 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+Your physiology has been altered by life on a planet with a harsh
+climate or adverse environmental conditions.
+
+**Prerequisite**: -
+
+**Benefit**: You gain one of the benefits listed below, depending on
+your planet of origin.
+
+Barren World
+: You gain a Misc +1 bonus to the Survival skill and an advantage bonus
+  on Constitution checks against starvation and thirst.
+
+<!-- -->
+
+Cold World
+: You gain a Misc +1 bonus to the Survival skill and an advantage bonus
+  on Constitution saves against extreme cold.
+
+<!-- -->
+
+Dark World
+: You gain darkvision out to a range of 60 feet. Darkvision is black and
+  white only, but otherwise works as normal sight.
+
+<!-- -->
+
+High-G World
+: You gain a +1 bonus to your Strength ability. Reduce your base height
+  by 6 inches.
+
+<!-- -->
+
+Hot World
+: You gain a Misc +1 bonus to the Survival skill and an advantage bonus
+  on Constitution saves against extreme heat.
+
+<!-- -->
+
+Jungle World
+: You have a Misc +2 bonus to the Survival skill and Misc +1 bonus too
+  the Handle Animal Skill
+
+<!-- -->
+
+Low-G World
+: You gain a +1 bonus to your Dexterity. Increase your base height by 6
+  inches.
+
+<!-- -->
+
+Water World
+: Your Swim distance is the same as your movement. You gain an advantage
+  bonus on Swim checks and can hold your breath for a number of rounds
+  equal to four times your Constitution score.
+
+**Normal**: -
+
+**Special**: You can only select this feat twice

@@ -1,0 +1,29 @@
+## Cryonic Rifle {#cryonic_rifle}
+
++--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+
+| **Main Attributes**:                                                     |   | **Secondary Attributes**:                                                |   | **Accessories and Description**:                                         |
+|                                                                          |   |                                                                          |   |                                                                          |
+| ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------ |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Name**: Cryonic Rifle                                                  |   | **Accuracy Bonus**: +1                                                   |   | Weapon Accessories                                                       |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Power / Speed** (Total Level/Dice): Large / Full Auto = Level 5 / 1d12 |   | **Bonus Damage**: 0                                                      |   | :                                                                        |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Proficiency Requirement**: 5 Levels in Ranged                          |   | **AP Damage**: 0                                                         |   | Description: This is a specialized Designated Marksman Rifle that saps   |
+|                                                                          |   |                                                                          |   | the heat from its target, causing it to suffer extreme cold.             |
+| **Weapon Style & Arch Type**: Assault Specialized Weapon                 |   | **Critical Damage**: x2                                                  |   |                                                                          |
+|                                                                          |   |                                                                          |   | Explanations                                                             |
+| **Range**: 900ft                                                         |   | **Critical Range**: 19-20                                                |   |                                                                          |
+|                                                                          |   |                                                                          |   | :                                                                        |
+| **Default Attributes**:                                                  |   | **Damage Type**: Thermal (Cold)                                          |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Masterwork**: No                                                       |   | **Ammunition**: 5                                                        |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Cost/Procure Diff**: \$10,330 / 1                                      |   | **Reload Speed**: Standard                                               |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+|                                                                          |   | **Weight**: Roughly \~10 pounds                                          |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+|                                                                          |   | **Bonus Abilities**: Switch Firing Modes                                 |   |                                                                          |
++--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+
+
+: **Cryonic Rifle**

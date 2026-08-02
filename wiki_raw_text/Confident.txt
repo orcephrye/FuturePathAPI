@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''': Misc +1 bonus to the [[Diplomacy]] and [[Bluff]] skill. Even if they do not have that skill trained. At the 12th Character level, this will become +2.
+
+'''Normal''': -
+
+'''Special''': -

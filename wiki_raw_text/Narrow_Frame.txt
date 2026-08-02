@@ -1,0 +1,8 @@
+
+Your excellent coordination allows you to maneuver better in close quarters.
+
+'''Prerequisites''': -
+
+'''Benefit''': You do not take penalties on your attack rolls, movement speed, or to your AC for squeezing through a narrow space that is no less than roughly half as wide as your normal space.
+
+'''Normal''': Squeezing through a narrow space is usually considered difficult terrain when moving which means each square of movement (5ft) is counted as 2 squares (10ft). Narrow space also implies the Character is flat-footed and takes a disadvantage when doing an attack.

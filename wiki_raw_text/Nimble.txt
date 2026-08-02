@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''': Misc +2 bonus on the [[Sleight of Hand]] skill. 
+
+'''Normal''': -
+
+'''Special''': Remember that the Sleight of Hand skill can’t be used untrained.

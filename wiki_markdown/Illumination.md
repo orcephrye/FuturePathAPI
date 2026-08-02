@@ -1,0 +1,10 @@
+This is a Weapon Accessory. To learn more about Weapons, go
+[here](Weapons "here"){.wikilink}.
+
+This is a small flashlight connected to the barrel of the gun. It can
+shine light on anything in front of the gun.
+
+Benefit
+: Lights up a 45ft Cone from the direction of the gun. It can be easily
+  turned on and off as a Free Action and can be used in and out of
+  combat to see one\'s surroundings in the dark.

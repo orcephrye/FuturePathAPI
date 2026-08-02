@@ -1,0 +1,51 @@
+{|
+|+ '''Energy Baton'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Electric Baton
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / d6
+
+'''Proficiency Requirement''': 2 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''':  Melee Weapon, Energy
+
+'''Range''': 0ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $600 / 0 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': +1
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Electrical
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 2 to 3 pounds
+
+'''Bonus Abilities''':  Knock Out Blow
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A weapon usually used in defense and in crowd control.
+;Explanations: This improves upon the Riot Baton by giving the Baton the 'Energy' weapon Style.
+|}

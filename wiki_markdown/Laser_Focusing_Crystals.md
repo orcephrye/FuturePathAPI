@@ -1,0 +1,34 @@
+This is a page dedicated to Laser Focusing Crystals for Spaceship Laser
+weapons. To learn more about Space Ship Weapons and Equipment go
+[here](Ship_Equipment "here"){.wikilink} and to learn more about Space
+Ships themselves go [here](Space_Ships "here"){.wikilink}.
+
+However, firing a laser through a focusing crystal puts strain on the
+custom crystals, and it can only be used for a limited time before being
+replaced. By default, a focusing crystal can only fire a laser 10 times
+before it needs to be replaced. Attaching a new crystal takes time and
+cannot be done during combat. However, the crystal can be ejected
+quickly during combat, which will simply make the laser fire normally.
+Crystals must be carried in a special case and occupy roughly the same
+amount of space as a missile of the same Weapon size.
+
+### Burst Fire Crystals {#burst_fire_crystals}
+
+This reduces laser focus and removes some accuracy, creating a -1 on the
+d10 for any range greater than Small. However, with a Small range, this
+gains a +1. When used as Point Defense/Flak, the Laser takes no penalty
+and can explode on 9-10s.
+
+Cost
+: \$50k for Small, \$150k for Medium, \$450k for Large, \$1350k for Huge
+  weapons.
+
+### Shield Piecing Crystals {#shield_piecing_crystals}
+
+This grants a +1 for every 2 Shield Mod the target ship has. However,
+this doesn\'t stack with the Sensor bonus. This helps whenever a Sensor
+[Scan](Scan "Scan"){.wikilink} failed.
+
+Cost
+: \$50k for Small, \$150k for Medium, \$450k for Large, \$1350k for Huge
+  weapons.

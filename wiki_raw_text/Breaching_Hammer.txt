@@ -1,0 +1,80 @@
+{|
+|+ '''The Breaching Hammer'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Breaching Hammer
+
+'''Power / Speed''' (Total Level/Dice): Large / Manual = Level 3 / d8
+
+'''Proficiency Requirement''': 3 Levels in Melee
+
+'''Weapon Arch Type''': Corrosive Melee (Side A) 2d4 (K) + 1d4 (C) / Customized Advanced Melee Weapon (Side B) 
+
+'''Range''': -
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $3360 / 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes Side A''':
+----
+'''Damage Die''': 2d4 (K) + 1d4 (C)
+
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic/Chemical
+
+'''Ammunition''': -
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 15-25lbs
+
+'''Bonus Abilities''':  Duel Sided, Exploding, Split Die
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes Side B''':
+----
+'''Damage Die''': Ammo Dependent
+
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': -
+
+'''DR Damage''': -
+
+'''Critical Damage''': -
+
+'''Critical Range''': 20
+
+'''Damage Type''': Ammo Dependent
+
+'''Ammunition''': 6 Rounds
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 15-25lbs
+
+'''Bonus Abilities''': Dual-Sided, Grenade Launcher, Exploding, Reach +5ft
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This weapon is dual-sided and has different attributes based on which side is used to attack. 
+;Explanations: This is a dual-sided melee weapon. Side B is the Grenade Launcher that has been made into a melee weapon with the Advanced Customization Melee Weapon Style. The Damage Die of the weapon is dependent on the grenade that is used. Consider this as a replacement for the grenade-throwing rules. The Weapon cannot modify the Damage by providing it with Bonuses or Bonus effects. The Exploding Die is an exception. Accuracy and Critical Range can be improved to help land the grenade. 
+
+On Side A, the weapon is Corrosive, so it does 1d4 (K) damage on top of the normal Kinetic Damage type. Each time the weapon hits a target, roll an additional 1d4 to determine how many rounds the corrosive chemicals start on. If the target has already been hit before, then this is the new value for how long the chemicals stay on. If the new value is smaller than the remaining previous value, ignore the result.
+|}

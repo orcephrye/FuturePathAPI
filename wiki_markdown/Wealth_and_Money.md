@@ -1,0 +1,456 @@
+<div class="toclimit-1">
+<div style="float:right; margin-left: 20px">
+</div>
+</div>
+
+  Credit Score   Loan           Budget
+  -------------- -------------- ---------------
+  0              \-             \$0
+  1              \$10,000       \$250 +250
+  2              \$10,000       \$500
+  3              \$10,000       \$750
+  4              \$10,000       \$1000
+  5              \$10,000       \$1250
+  6              \$50,000       \$1500
+  7              \$50,000       \$1750
+  8              \$50,000       \$2000
+  9              \$50,000       \$2250
+  10             \$50,000       \$2500
+  11             \$120,000      \$3000 +500
+  12             \$120,000      \$3500
+  13             \$120,000      \$4000
+  14             \$120,000      \$4500
+  15             \$120,000      \$5000
+  16             \$250,000      \$5500
+  17             \$250,000      \$6000
+  18             \$250,000      \$6500
+  19             \$250,000      \$7000
+  20             \$250,000      \$7500
+  21             \$500,000      \$8500 +1000
+  22             \$500,000      \$9500
+  23             \$500,000      \$10500
+  24             \$500,000      \$11500
+  25             \$500,000      \$12500
+  26             \$1,000,000    \$13500
+  27             \$1,000,000    \$14500
+  28             \$1,000,000    \$15500
+  29             \$1,000,000    \$16500
+  30             \$1,000,000    \$17500
+  31             \$2,5000,000   \$19000 +1500
+  32             \$2,5000,000   \$20500
+  33             \$2,5000,000   \$22000
+  34             \$2,5000,000   \$23500
+  35             \$2,5000,000   \$25000
+  36             \$6,500,000    \$26500
+  37             \$6,500,000    \$28000
+  38             \$6,500,000    \$29500
+  39             \$6,500,000    \$31000
+  40             \$6,500,000    \$32500
+  41             \$10,000,000   \$34500 +2000
+  42             \$10,000,000   \$36500
+                                
+
+  : Credit Score to Load and Budget amount
+
+The exchange of goods and services can grow complicated as civilizations
+advance. It started with the simple barter system and evolved into
+Credit and Debt with banks and so on. All before advanced technologies
+such as electronic transfers, cryptocurrency, etc\...
+
+This wealth system is an attempt to simplify money and wealth management
+while still representing some of the complexities of our modern and
+possibly future economy, without compromising gameplay or storytelling.
+
+Most players may only need to review the Basic Rules. Advanced Rules are
+only there for more complicated purchases if the GM and/or Characters
+wish to role-play buying equipment, such as ships that may cost vastly
+more than what they have on hand. As well as how additional sources of
+income come into play.
+
+## Basic Rules {#basic_rules}
+
+### ISC (Credits) {#isc_credits}
+
+ISC is simply the amount of wealth a Character has to freely and
+immediately spend. All things revolve around the **ISC**, which is short
+for **Inter-Stellar Credits**, also generically referred to as Credits.
+Credits are the official currency used galaxy-wide, and characters will
+use them to buy items while adventuring. Characters gain credits through
+their [Occupations](Occupations "Occupations"){.wikilink} as well as
+adventuring.
+
+    Lore: One of the biggest things the Jove brought to the Milky Way was a way to be an intermediary for trade. No longer did alien Civilizations exchange resources through rare-material trade; instead, they used modern concepts of money and credit. The Jove set up a banking system that connected across the galaxy using state-of-the-art quantum-entanglement communication systems. The Interstellar Ledger of Wealth is the foundation of the bank. An advanced public ledger that uses powerful encryption systems monitored by all who wish to participate. There is no exclusive member within the bank who makes the public accountable to themselves. Almost all civilizations recognized ISC (or just Credits for short) as a valid form of currency. Some governments have even converted their local currency into ISC/Credits.
+
+There are other currencies that are local to Civilizations. Sometimes
+that currency is recognized by neighboring Civilizations. However, the
+details of other currencies and their value should be left to the GM and
+the story being told. As for most Characters\'s traveling around the
+Ring of Life within the Milky Way Credits are all that is needed.
+
+### Credit Score {#credit_score}
+
+**Credit Score** determines how much debt a Character can get into, or
+in other words, how much they can spend on \'big ticket\' items.
+Character\'s spend points of their Credit Score to buy extra big items
+such as Space Ships.
+
+The starting Credit Score is determined by the Profession a Character
+has, as well as any Ranks they have in their Profession Skill. A
+[Profession](Professions "Profession"){.wikilink} will have a \'Credit
+Rating Range\'. Start with the lowest number in that range and then add
+the Character\'s Wisdom, then any additional Ranks from their Profession
+Skill, and that is their starting Credit Score.
+
+### Budget
+
+**Budget** determines how much a Character makes in ISC in one month
+while working in their Profession. The Character has to have had time to
+work their profession, so if they are off adventuring, then they have
+not earned money from their Budget.
+
+This is often used as an \'in-between\' mechanic. A way of stating what
+the Character is doing and what they got for it, while not on the main
+adventure or story. For example, the GM could state that it has been 3
+months with nothing new happening for the Characters in their story. So
+the Players can say that their Characters were doing what they normally
+do during this downtime. And they earned 3 months\' worth of their
+Budget.
+
+### Character Sheet {#character_sheet}
+
+    Editing Character Sheet: Credits show how much money a Character has on them. Their wealth is shown on the second page of the Character sheet, near the bottom, underneath the items section. This section has three parts: (Credit Score/Budget/ISC). At level one, all 3 of these things are determined by a character's Profession. 
+
+### Starting Wealth {#starting_wealth}
+
+To determine starting wealth or ISC the Player must first pick a
+Profession for the Character. Visit the
+[Professions](Professions "Professions"){.wikilink} page. The Profession
+will have a **Starting Bonus Income**. The Player may also add 1
+month\'s worth of their Budget.
+
+To determine starting Credit Score look at the picked Profession it will
+have a **Credit Rating Range** section. Pick the lowest number in that
+range, then add the Character\'s Wisdom modifier. Then add and any Ranks
+in the Profession skill. This is their total Credit Score.
+
+Lastly, to determine the Budget, review the table titled \'Credit Score
+to Load and Budget amount\' to the right.
+
+## Buying Stuff {#buying_stuff}
+
+Most items have a set price based on Credits. Such as [Neural Computer
+Link](General_Equipment#Computers_and_Consumer_Electronics "Neural Computer Link"){.wikilink}
+for \$2500 credits. The Player can see how many credits the Character
+has on hand. If the Character has enough Credits, they subtract that
+amount from their wealth and get the item.
+
+The primary thing is simply the number of credits. If a character has
+\$10,000 ISK then they can buy \$10,000 worth of something.
+
+### Bargaining/Appraising/Hageling
+
+Items normally have a set value, and that is it. The Characters should
+know and expect that if they walk into a store, the price on the tag is
+simply non-negotiable. However, the Player can have a Character attempt
+to \'appraise\' an item\'s value using Knowledge/Craft skills. If it is
+a gadget or another piece of technology, they can use their tech score
+as a Knowledge Skill to appraise an item and see if they are being
+ripped off.
+
+If a character finds themselves in a situation where they may bargain,
+they can use the [Diplomacy](Diplomacy "Diplomacy"){.wikilink} skill as
+described to bargain for it.
+
+### Tech Level {#tech_level}
+
+Most items have a technology level associated with them. Especially
+[Weapons](Weapons "Weapons"){.wikilink} and
+[Armor](Armor "Armor"){.wikilink}. This can be used to restrict which
+items are available in a given location. A GM, for example, could say
+that a particular store only contains Tech Level 1 and 2 Weapons. Or
+this general store specializes in only high-priced Tech 4 equipment.
+
+A GM can sell an item at a higher-tech level than specified. There are
+rules for this in [Weapons](Weapons "Weapons"){.wikilink} and
+[Armor](Armor "Armor"){.wikilink}. For [General
+Equipment](General_Equipment "General Equipment"){.wikilink}, however,
+there are no \'up teching\' rules. The GM is free to apply a minor
+bonus, such as doubling an item\'s usage, and so on. However, the price
+is always x2 for each increase in Tech level.
+
+### Procure Difficulty {#procure_difficulty}
+
++---------+------------+-----------------------------------------------+
+| Level   | Extra Cost | Explanation                                   |
++=========+============+===============================================+
+| Level 0 | %0         | The item should be common and can be found    |
+|         |            | with little difficulty\                       |
+|         |            | in stores as long as it\'s in the same tech   |
+|         |            | level.                                        |
++---------+------------+-----------------------------------------------+
+| Level 1 | %10        | The item is not common, however, usually not  |
+|         |            | illegal. It could be found\                   |
+|         |            | in larger stores and cities, popular places   |
+|         |            | of trade, or places that\                     |
+|         |            | specialize in having it.                      |
++---------+------------+-----------------------------------------------+
+| Level 2 | %20        | Possibly a controlled substance or object.    |
+|         |            | The characters will likely\                   |
+|         |            | have to work to find the item. Sometimes it   |
+|         |            | can be illegal. You will have\                |
+|         |            | to go to places known to have it. It will be  |
+|         |            | rare to see it anywhere else.                 |
++---------+------------+-----------------------------------------------+
+| Level 3 | %50        | Likely restricted to only military or special |
+|         |            | fields of study or experimental.\             |
+|         |            | Almost always illegal or simply extremely     |
+|         |            | rare and probably unknown to\                 |
+|         |            | the average person unless the character is    |
+|         |            | familiar with the items field.                |
++---------+------------+-----------------------------------------------+
+| Level 4 | X2         | Highly unlikely to be found anywhere except   |
+|         |            | in hidden markets. Dangerous\                 |
+|         |            | in some societies to be caught having the     |
+|         |            | item, either because of its\                  |
+|         |            | illegality or social stigma.                  |
++---------+------------+-----------------------------------------------+
+| Level 5 | X3         | Usually not for sale precious items. Or       |
+|         |            | extremely illegal or both. If it\'s not\      |
+|         |            | highly illegal, then it is a niche item that  |
+|         |            | few people would ever know about.\            |
+|         |            | Possibly one of a kind.                       |
++---------+------------+-----------------------------------------------+
+
+: Table: Procure Difficulty Levels
+
+This mechanic helps convey to the Player how difficult it would be for a
+Character to obtain an item. Each item, piece of equipment, weapon, or
+armor in the game should have a Procure Difficult already attached. By
+default, prices are not adjusted for Procure Difficulty. It is up to the
+GM to determine if part of the difficulty of acquiring the item is due
+to cost. If not specified, the default Procure Difficulty is 0.
+
+The GM can adjust the Procure Difficulty as they see fit. Many factors
+can affect an item\'s Procure Difficulty. To the right is a table with
+examples of what each level can mean. The levels are more like a
+guideline or scale to easily communicate the difficulty of procuring any
+item in the game to other players.
+
+There are 6 levels of difficulty 0 through 5. Although it doesn\'t
+always concern the item\'s legality, it merely concerns how difficult it
+is to obtain and/or how dangerous it would be to be caught with it. Zero
+is the easiest and means that the item is not illegal and is fairly
+common. 5 means that it is usually illegal or 1 of a kind. This also
+carries severe consequences if caught buying, selling, or being in
+possession of it.
+
+The GM can add the difficulty number to rolls associated with
+bluff/diplomacy/intimidate or any other skill/ability check that has to
+do with acquiring it. If you walk into a shoddy shop in a small,
+unpopular space station, you likely won\'t find a Proc Diff 4 or 5 item,
+and probably not even a 3 unless they specialize in it, and then
+they\'ll likely charge an arm and a leg for it.
+
+Below is a chart with a few basic scenarios to help get an idea of what
+can increase an item\'s Procure Difficulty.
+
+  Scenario               Difficulty increase   Explanation
+  ---------------------- --------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Illegal                +2                    The item is considered illegal by the society from which the player is attempting to purchase it.
+  Highly Illegal         +4                    The item is considered highly illegal, meaning that the punishment for being associated with it can be extremely severe.
+  Controlled Substance   +1                    The item is controlled by the local government and is slated to be purchased only by qualified persons.
+  MasterWorked           +1                    The item is constructed with better-than-normal materials, making it more valuable and rare.
+  Off World Merch        +1/2                  This means the item was not manufactured on the planet/space-station the character is attempting to buy it on. However, the degree of difficulty increase depends on how far away the item is and how easy it is for that society to travel that distance. A Tech Level 4 civilization can easily traverse a much larger range, and thus the item would have to be in a very, very distant solar system.
+  Ancient Alien Tech     +2/4                  Looking for ancient tech? It may be hard. Depending on whether you are looking for it on the planet it originated from or some other location.
+  Taboo Item             +1                    You are looking for something that the society you are in finds distasteful or perhaps superstitious about.
+  Ancient Artifact       +1/-                  An acient statue or old painting. The ritual artifact of a long-lost civilization. The Proc Diff can increase at the GM\'s discretion.
+
+  : Table: Procure Difficulty Scenarios
+
+## Advanced Rules {#advanced_rules}
+
+### Budget {#budget_1}
+
+A budget is a static number linked to the Player\'s Credit Score. The
+Budget is like a bucket that gets refilled every month for the
+Character. But the bucket itself is the same size.
+
+The Character must be actively doing their job in the game. During the
+job only qualifies if they spend at least 6-8+ hours 4 too 5+ days
+and/or at least 35 hours in a week. Another situation would be if there
+is \'downtime\' between adventuring and the Player wishes for the
+Character to be doing their Profession.
+
+To determine if the Character gets their budget and the amount, the
+Player must roll a Profession skill check, DC 20. For every 5 roll
+misses, you lose 25% of the Budget. For every +5, gain a 5% bonus. If
+they lose part or all of the budget, an excuse could be that they got
+sick, fired, or had some other story. Same for if the Character gets a
+bonus.
+
+Optional Rule
+: The GM can also use this opportunity to provide a roleplaying bonus in
+  the form of a free Skill Point to spend on ranking up the Profession.
+  For example, if the player rolls a natural 20 or if the DC is beaten
+  by +10 or so on.
+
+### Loans
+
+  Credit Score Range   Loan Amount     Time In Years
+  -------------------- --------------- ---------------
+  0                    \-              \-
+  1 - 5                \$10,000        1-2y
+  6 - 10               \$50,000        2-4y
+  11 - 15              \$120,000       4-10y
+  16 - 20              \$250,000       15-30y
+  21 - 25              \$500,000       30y
+  26 - 30              \$1,000,000     30y
+  31 - 35              \$2,5000,000    30-45y
+  36 - 40              \$6,500,000     30-45y
+  41 - 45              \$10,000,000    45y
+  46 - 50              \$20,000,000    45y
+  51 - 59              \$45,000,000    45-60y
+  60 - 69              \$100,000,000   45-60y
+  70 - 79              \$250,000,000   60y
+  80 - 89              \$500,000,000   60y
+  90 - 99              1,000,000,000   60+y
+  100+                 1+ Billion      100+y
+                                       
+
+  : Credit Score and Loan Size
+
+Buying something that you can not normally afford via a Loan is one of
+the defining things of modern society. A Future Path hero will also need
+to make large purchases, sometimes much bigger than they can normally
+afford. They can accomplish this by getting Loans. Loans reduce your
+total Credit Score. A character\'s Credit Score determines the amount of
+a loan one can get.
+
+Loans are not permanent adjustments to Credit. However, they do last a
+while. The GM can have some say in how long the loan\'s time frame is.
+The Player can attempt to get a better Time by rolling **1d20 + Int or
+1d20 + Cha** against a DC15 to lower the loan below the minimum amount
+of time. Another option is to take another -1 hit to the Credit Score,
+since you are attempting to pay off the loan faster. Each -1 reduces the
+time by 10%. Normally, however, the length is so long that, from the
+campaign\'s perspective, this adjustment is permanent.
+
+The table to the right, titled \'Credit Score and Loan Size,\' shows the
+loan amounts per credit score.
+
+A Character gets ISC for each Credit Point. For example, if a Character
+has a Credit score of 7 then if they take 1 point of their score they
+can get a loan of \$50,000. The Character now has a Credit Score of 6,
+and their Budget has been updated to reflect the lower monthly income.
+
+A single Loan cannot exceed 3 points of Credit. A Character cannot take
+more than 3 points out of their Credit for a Loan or Loans in a 6 month
+time period of gameplay. A Character cannot have a negative Credit
+Score.
+
+### Additional Sources of Income {#additional_sources_of_income}
+
+`<u>`{=html}**Bonus**`</u>`{=html}: While on the job, your employer may
+recognize your good work and give you a bonus. This may be a reward that
+the GM gives a player. Or the player may roll a
+[Profession](Profession "Profession"){.wikilink} skill check and get a
+natural 20. The bonus can be anything the GM considers fair. However, a
+quick calculation would be to take the player\'s Credit Score minus 3
+and use that Budget value as the bonus. If you cannot go down 3 ranks
+because it would end up at 0 or a negative number, then you can simply
+use 1 or \$250 as the bonus.
+
+`<u>`{=html}**Rewards**`</u>`{=html}: This is likely to actually be the
+most common source of income for most characters. When a character
+completes a task or favor for someone, they may want to compensate them
+for their time. Doing a mission will likely also provide some finical
+compensation. This normally is only in the form of ISC. However, one
+possible reward from a patron may be a new source of income. This would
+take the form of a Credit Score increase and a subsequent improvement to
+the Budget.
+
+Of course, rewards may also take the form of sellable items.
+
+`<u>`{=html}**Stock Market**`</u>`{=html}: The Stock Market can be
+confusing and is massively complex. Depending on the campaign setting,
+the GM doesn\'t need to bother with it. In the official Campaign setting
+for Future Path the Galaxy does have a **Galatic Market Trading** system
+that depends on the **Interstellar Ledger of Wealth**. Characters can
+choose to role-play investing in this market system as part of a story.
+Perhaps a way to get inside some corporation, or simply as a means of
+getting a quick buck.
+
+There are two types of trading a Player can do in the Market. **Short
+Term Investments** and **Long Term Investments**. The difference is the
+DC rating and where the profits, if any, actually go. To invest you will
+need ISC. If the Player invests in Short Term then the DC is 20 and the
+check is \"1d20 + Wisdom Mod\". The profits go directly into the
+Player\'s Bonus Income and appear within a month of in-game time.
+Long-Term investments, on the other hand, have a DC of 15, and the check
+is \"1d20 + Wisdom Mod\". The profits are in the form of an increase in
+the Character\'s Credit Score. The Long-Term Investment must be at least
+3 times the Player\'s Budget.
+
+How much profit goes to your Bonus Income from a Short Term Investment?
+How much is your credit raised from a Long Term Investment? This depends
+on how well you beat the DC. Below are two tables that explain.
+
+  Roll Check Outcome   Bonus Income
+  -------------------- -------------------
+  20 (after Mod)       Break even
+  20 (Natural)         Investment + 100%
+  21 - 25              Investment + 20%
+  26 - 30              Investment + 50%
+  31 - 35              Investment + 100%
+  36+                  Investment + 200%
+                       
+
+  : Short Term Investments (Base DC is 20)
+
+  Roll Check Outcome   Bonus Income
+  -------------------- ---------------------
+  15 - 20              Break even no bonus
+  20 (Natural)         +1 Credit Score
+  21 - 30              +1 Credit Score
+  31 - 40              +2 Credit Score
+                       
+
+  : Long Term Investments (Base DC is 15)
+
+NOTE
+: You can only make one investment a month. Although you may have a
+  talent/feat that can increase that amount.
+
+`<u>`{=html}**Gambling**`</u>`{=html}: Gambling has the risk of causing
+debt and thus can subtract from the Character\'s Credit Score. The
+Gambling has a DC 25 and a check of 1d20 + Charisma. If you fail the
+check with a 1, you get 1 subtracted from your credit score. If the
+Player simply fails, the Character gets no money back. Beat it by less
+than 5, and the Character gets their bet back. If the Player beats it by
+more than 5, you get what you gambled back +10%. The Character gets +10%
+for every 5 points the DC is beaten. If you get a natural 20, you get a
++100%.
+
+If the Character is gambling against other Characters, then this is an
+opposing Charisma check.
+
+`<u>`{=html}**Customized Income**`</u>`{=html}: Any source of steady
+wealth that is legal can be translated as an increase to your credit
+score. The Player may have an anonymous supporter of her work, who
+provides donations monthly, as an example. The bonus to credit is
+calculated by determining how much it takes to reach the next Credit
+level, subtracting that amount from the extra income, and adding a level
+to your credit. Keep doing this until you can no longer increase your
+credit. For example, if a Player has a credit level of 9 and is
+receiving \$1000 a month from an anonymous supporter. To calculate the
+player\'s new credit score, you take the amount required to reach level
+10, which is \$250, and subtract it from \$1000, resulting in \$750. You
+now have \$750 a month and a credit level of 10. You can repeat this
+again, but you will now need to subtract \$500 from the remaining \$750
+to go from level 10 to level 11. Now the Player has a credit score of 11
+and \$250 extra income or Bonus income. She cannot go up any more levels
+because \$250 is not enough to go from level 11 to level 12.
+
+Why is that important if all that means is your Budget is higher, which
+it technically is anyway. Loaning power. The Player went from the 6 - 10
+range to 11 - 15 range and is now able to qualify for a larger purchase.

@@ -1,0 +1,4 @@
+Fly Offensively/Defensively is a Function of crew members. To learn about other functions go the [[Space_Ships#Officer.2FShip_Functions|Space Ship Functions]] section of the [[Space Ships]] page.
+
+== Description ==
+This is a Pilot check done against the Enemy vessel. The Pilot picks the target vessel and then rolls. If they win then there choice outcome happens. If the Pilot choose Offensive flight then the Weapon’s office needs 1 less d10 for Battle Damage. (Minimum is 1). If the Pilot choose Defensive flight then the enemy ship has to have 1 more successful d10 in order to deliver Battle Damage. The enemy ship’s Pilots choice only matters if there pilot check wins. If there are more enemy ships then there Pilot checks are unopposed then they automatically win. Remember that in Swarm combat the Pilot can target the Swarm as a whole single entity.

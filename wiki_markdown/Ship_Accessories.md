@@ -1,0 +1,180 @@
+This is a list of miscellaneous ship accessories that provide different
+functionality or bonuses. To learn more about different ship equipment
+visit the [Ship Equipment](Ship_Equipment "Ship Equipment"){.wikilink}
+page. To learn more about Spaceships in general visit the [Space
+Ships](Space_Ships "Space Ships"){.wikilink} page.
+
+### Warp Field Expander {#warp_field_expander}
+
+Description
+: This system uses the ship\'s Warp Drive to extend a warp field around
+  a nearby ship to allow it to travel as fast as it in warp.
+
+**Requirements**: The ship must be size Large or larger. This can only
+be used on ships of the same size or smaller. The ship must have a Warp
+style FTL and can only work on other Warp style FTLs.
+
+**Hard Points / Bays**: 1 HP / 1 Bay
+
+**Price**: \$450,000 (Additional \$450,000 every size above Large)
+
+### Jump Assistance Drive {#jump_assistance_drive}
+
+Description
+: This acts like a Jump Gate and can assist in jumping other ships.
+
+**Requirements**: The ship must be size Medium or larger. This can only
+be used on ships of the same size or smaller. The target ship must have
+a Jump Drive.
+
+**Hard Points / Bays**: 1 HP / 1 Bay
+
+**Price**: \$30,000 (Additional \$30,000 for every size above Medium)
+
+### Shield Extender {#shield_extender}
+
+Description
+: This allows the ship to give some of this shield over to another
+  target ship. Whatever is provided to the target ship is taken away
+  from the assisting ship. This can only happen if the ship systems are
+  compatible. The amount is optional.
+
+**Requirements**: Requires at least small size ship.
+
+**Hard Points / Bays**: 1 Bay
+
+**Price**: \$1,500,000 (\$1,000,000 for every size ship above Small)
+
+### Shield Enhancer {#shield_enhancer}
+
+Description
+: This passively provides a bonus to the ship shields. Either in the
+  form of DR or in the form of Hit Points depending on ship shield
+  configuration.
+
+**Requirements**: The minimal size of the ship is small.
+
+**Hard Points / Bays**: 1 HP
+
+**Price**: \$600,000 (Another \$600,000 for every size ship above
+small.)
+
+### Phase Discriminator {#phase_discriminator}
+
+Description
+: This assists in finding cloaked/stealthed ships or Slip Stream/Phase
+  Shift FTL drives. It provides a +1 by default but more enhanced
+  version can be more powerful.
+
+**Requirements**: The ship\'s Core must be Tech Level 2 or higher.
+
+**Hard Points / Bays**: 1 HP
+
+**Price**: \$500,000 (Additional \$500,000 for every +1 bonus to sensors
+max 6)
+
+### Plasma Flow Enhancer {#plasma_flow_enhancer}
+
+Description
+: All FTL drives use plasma in some fashion or another. This sub-system
+  is designed to increase the efficiency of the plasma even though it
+  may break manufacture regulations.
+
+**Requirements**:
+
+**Hard Points / Bays**: 1 Bay
+
+**Price**: \$200,000 (Changes to \$400,000 for Large ships, \$600,000
+for Gargantuan)
+
+### Drone Controller {#drone_controller}
+
+Description
+: This allows a ship to carry, deploy, and control drones. The Bay holds
+  drones while the Hard Point is the control interface. Each
+  Classification upgrade provides a bonus to either holding a drone in
+  the bay or controller 1 more drone at a time. By default, a ship can
+  control 2 drones and the Bay can hold 4. Each ship size has its own
+  size of drone which is considered 4 sizes smaller. The smallest sized
+  ship is Medium.
+
+**Requirements**:
+
+**Hard Points / Bays**: 1 HP / 1 Bay
+
+**Price**: \$500,000 (Additional \$500,000 for every Classification
+improvement or size bigger than Medium)
+
+### Engine Boosters {#engine_boosters}
+
+Description
+: Passive sub-light engine thrusters and fuel injectors designed to
+  provide emergency thrust. Provides a +2 bonus on all active Pilot
+  checks using Engines (such as Close/Widen Distance or Emergency
+  Evasive Thrusters).
+
+**Requirements**: Must have at least 1 rank in the Pilot skill.
+
+**Hard Points / Bays**: 1 HP or 1 Customization Slot
+
+**Price**: \$250,000 (Additional \$250,000 for each ship size above
+Tiny)
+
+### Reactor Auxiliary Capacitor {#reactor_auxiliary_capacitor}
+
+Description
+: A bank of heavy-duty, fast-discharge capacitors that stores reserve
+  energy. Provides a +2 bonus on Craft checks to Overclock Core. If the
+  overclock check fails, the capacitor absorbs the energy backcharge,
+  preventing reactor strain or damage (consumes its charge, requiring 1
+  round to recharge).
+
+**Requirements**: Must have an Engineering Bay or Facility on board.
+
+**Hard Points / Bays**: 1 Customization Slot
+
+**Price**: \$150,000
+
+### Holographic Decoy Launcher {#holographic_decoy_launcher}
+
+Description
+: A tactical launcher that ejects short-lived, high-emission holographic
+  decoy canisters to disrupt enemy targeting. Required to use the active
+  decoy portion of the Sensor Spoofing / Decoy Projection function.
+  Grants a +2 bonus to the Comms Officer\'s Electronics check and
+  increases the guided missile miss chance from 50% to 75% for that
+  round. Holds 3 decoy charges.
+
+**Requirements**:
+
+**Hard Points / Bays**: 1 HP
+
+**Price**: \$120,000 (Additional \$120,000 for every size above Tiny)
+
+### Fire-Control Matrix {#fire_control_matrix}
+
+Description
+: An advanced targeting computer that tracks multi-target trajectories
+  and compensates for stellar noise. Grants a +1 bonus to all Weapons
+  Officer attack rolls (d10s) and allows the Weapons Officer to ignore
+  the -2 penalty when using Defensive Fire.
+
+**Requirements**:
+
+**Hard Points / Bays**: 1 HP or 1 Customization Slot
+
+**Price**: \$300,000
+
+### Advanced Recycler Grid {#advanced_recycler_grid}
+
+Description
+: Multi-stage filtration and oxygen-water reclamation systems that
+  maximize life support efficiency. Increases the default passenger
+  capacity of the hull by 25% and grants a +2 bonus to Constitution
+  saves against internal infestations or toxic hazards.
+
+**Requirements**:
+
+**Hard Points / Bays**: 1 Customization Slot
+
+**Price**: \$80,000

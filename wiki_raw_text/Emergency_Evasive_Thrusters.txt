@@ -1,0 +1,6 @@
+Emergency Evasive Thrusters is an Advanced Function for Helm Officers. To learn about other functions, go to the [[Space_Ships#Officer.2FShip_Functions|Space Ship Functions]] section of the [[Space Ships]] page.
+
+== Description ==
+The Helm Officer executes a sudden, violent maneuver using emergency auxiliary thrusters to evade an immediate threat. 
+
+The Pilot makes an opposing Pilot check. If unapposed, then the DC is 15. If successful, the ship gains a massive defensive bonus, forcing the enemy attack to require 2 additional success dice to deal Battle Damage. This also combines Close/Widen Distance, allowing the Pilot to move the ship into a more desirable distance. However, the violent G-forces and energy drain cut the ship's Movement Speed in half for the following round, and the extreme instability makes the Weapons Officer's job the next round harder, taking a -2 to all d10s.

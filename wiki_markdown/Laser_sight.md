@@ -1,0 +1,9 @@
+This is a Weapon Accessory. To learn more about Weapons go
+[here](Weapons "here"){.wikilink}.
+
+A Laser sight can provide a +1 Accuracy bonus for whatever weapon it is
+attached to.
+
+Benefit
+: +1 Accuracy Bonus to Ranged Weapons only. This only counts for the
+  first range increment of the Weapon.

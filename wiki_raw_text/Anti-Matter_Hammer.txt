@@ -1,0 +1,51 @@
+{|
+|+ '''Anti-Matter Hammer'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Anti-Matter Hammer
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Manual = Level 4 / d12*
+
+'''Proficiency Requirement''': 5 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''':  Anti-Matter, Melee Weapon
+
+'''Range''': 0ft
+
+'''Default Attributes''': Clunky
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $5,760 / 2 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': +2
+
+'''AP Damage''': 3
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Thermal & Kinetic 
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 3 to 5 pounds
+
+'''Bonus Abilities''':  Knock Out Blow
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

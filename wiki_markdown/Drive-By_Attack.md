@@ -1,0 +1,13 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: -
+
+**Benefit**: The Character does not have to roll a Dexterity-based
+\'Ride check\' to confirm if they take disadvantage or not. It is simply
+an auto success.
+
+**Normal**: When attacking from a moving vehicle, a character takes a
+penalty if they do not succeed a ride check.
+
+**Special**: -

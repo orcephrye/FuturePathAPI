@@ -1,0 +1,3 @@
+This is a Power Armor Mod. Please review the [[Armor#Power_Armor|Power Armor]] rules for more information. 
+
+This simply provides the Rocket Pack mod up front without taking a Mod space.

@@ -1,0 +1,347 @@
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! </span>  '''
+
+'''THIS IS NOT READY... this is more of a holding place!'''
+
+Here is a place to put Prestige Class ideas:
+
+
+* Blade Runner: A prestige class which requires the base Profession of Technosavant and Tracer. These people hunt down robots and help protect the world against the threat of AI.
+
+* Bug Hunter: A prestige class that requires the base Profession of Xenophile and Dreadnaught.
+
+* Temporal Assassin: A prestige class that has a base of Swindler and Tracer
+
+* Black Hat: A prestige class of Tracer and either an Engineer or Technosavant
+== Ranger ==
+
+The Ranger is a broad group of specialist military core that focus on quick, small, effective insurgencies on land. Where Space Marines are large massive fleets of war the Ranger battalions are small and mobile units able to adjust to many different worlds quickly. Rangers prefer fighting planetside and are usefully called are for special missions or if something needs to be done discreetly. They are also a smaller military force and thus easier and cheaper to move. 
+
+Rangers are a feared type of force as they are usually a sign of a much large fleet heading your way. They show up first to scout and get a handle on the different environment. Take out tactical locations of importance and setup there allies for a successful invasion or occupation.
+
+Play the Ranger if you want to have a long ranged tactical combat expertise.
+
+The fastest path into this advanced class is through the [[Future_Hero_Base_Class#Path_of_Dexterity_.28Fast_Hero.29|Path of Dexterity(Fast Hero)]], though other paths are possible.
+
+'''<u>Requirements</u>''':
+
+# Level: At least Level 2
+# Core Class: Path of Dexterity '''OR''' Ability: Dexterity Score 16+ '''OR''' Ability: Wisdom Score 15+ and Dexterity score of 12+
+
+
+'''<u>Restrictions</u>''':
+ 
+N/A
+
+'''<u>Class Information</u>''':
+
+<u>Ability Affinity</u>: Dexterity, Wisdom 
+
+<u>Class Skills</u>: Athletics (Str), Demolitions (Int), Escape Artist (Dex), Intimidate (Cha), Perception (Wis), Stealth (Wis), Survival (Wis)
+
+<u>Feat Bonuses</u>: [[Alertness]]
+
+<u>Extra Info</u>: At level 1 the player must choose between Animal Care or Ranged Sneak Attack talents.
+
+
+{| class="wikitable"
+|+ Table: The Ranger
+! style="text-algin:left;"|Class <br \>Level
+! Special 
+|-
+|1st|| Animal Care or Ranged Sneak Attack
+|-
+|2nd|| Precise Shot
+|-
+|3rd|| Prey
+|-
+|4th|| Extra Attack<br />Phantom Shot
+|-
+|5th|| Steady Aim 
+|-
+|6th|| Bonus Feat
+|-
+|7th|| Stunning Hit, Knock Prone
+|-
+|8th|| Extra Attack
+|-
+|9th|| Regroup
+|-
+|10th|| Deadly Aim
+|}
+
+
+=== Ranger's Class Features  ===
+
+;Animal Care
+A 1st level the ranger gains the skill Handle Animal as a class skill and can have a pet animal companion like the Xenophile. However, this animal is a domesticated and military-trained animal unit and assists in combat situations. The animal companion level is 1/2th the Ranger level round up. 
+
+;Ranged Sneak Attack
+The ranger has gained extra level of training with a specific weapon type. This weapon has to be a Large to Gigantic ranged weapon, and as long as the Ranger is using this weapon type, they can gain a Sneak Attack damage bonus on the first attack on a target that is either unaware of the Ranger or flanked. This sneak attack acts just like a [[Character_Professions#Tracer|Tracer]] and levels up like a Tracers does.
+
+;Precise Shot
+At 2nd level the Ranger negates the disadvantage for firing into a combat situation. This is when a target is currently in melee with an opponent. Normally in this situation a Character would have disadvantage to accuracy.
+
+;Prey
+This acts like the [[Character_Professions#Space_Marine|Space Marine]]'s Prey talent. At 3rd level, the Ranger can select a target to be their 'prey' as a simple action. To re-target another before the Space Marine's current prey dies requires a standard action. This ability allows them to gain advantage while targeting them and allows them to do an extra 1d6 damage.
+
+At 9th level the Space Marine gains double advantage and deals 2d6 extra damage. 
+
+;Phantom Shot
+At 4th level the Ranger can shoot a target and remain in stealth as long as the Ranger doesn't take any extra attack actions. The DC to perceive the Ranger is lowered by 5 each shot. However, the Ranger doesn't need to re-roll, and the enemy has to be actively concerned and looking to re-roll a Perception check, meaning that the DC will likely have to go below the enemy's Passive Perception before the enemy can find the Ranger.
+
+;Steady Aim
+At 5th level the Ranger can take a Standard action for a single shoot that has an advantage bonus to accuracy.
+
+At 10th level the advantage bonus changes to 2 stacked advantage bonuses.
+
+;Stunning Hit
+At 7th level the Ranger can take a Standard action to attempt a shot that will not only do normal damage but also daze the target for one round. The target must make a Constitution saving throw against a DC of 10 + Dex Mod + 1/2 Ranger level round down. 
+
+;Knock Prone
+At 7th level the Ranger can take a Standard action to attempt a shot that will not only do normal damage but also knock a target prone. The target must make a Dexterity saving throw against a DC of 10 + Dex Mod + 1/2 Ranger level round down. 
+
+;Regroup
+At 9th level the Ranger can retreat to a safe location using a Standard action to go x4 his base speed while also taking Total Defense which grants a +2 to the Ranger's AC until his next turn.
+
+;Deadly Aim
+At 10th level the Ranger can use a Standard action to study a target. After that for 1d4 + Wis Mod turns the crit range of his ranged weapon against that target is lowed by 2. The Ranger has to be using a weapon he is proficient with.
+
+
+== Explorer ==
+Uncharted star system, newly discovered ancient civilization, new planet that no sentient being has landed on. The explorer thrives at bring first, in the unknown, or simply for the challenge of it all. Some have their own agendas or work with an organization. But wither its money, frame or simply personal need, the Explorer's investigative abilities and curiosity is both impressive and dangerous. Explorers are driven too unraveling the secrets of vanished alien civilizations, mapping new star systems, surveying distant planets for colonization, digging for ancient treasures or even trying to travel beyond this dimension. 
+
+If Explorers aren't out alone they are found acting as scouts and guides in the far reaches of space. 
+
+Choose the Explorer if you want your Character to excel at exploration and uncovering secrets in places where most others fear to go.
+
+
+The fastest path into this advanced class is through the [[Future_Hero_Base_Class#Path_of_Wisdom_.28Dedicated_Hero.29|Path of Wisdom(Dedicated Hero)]], though other paths are possible.
+
+'''<u>Requirements</u>''':  To qualify to become an Explorer, a character must fulfill the following criteria.
+
+# Level: At least Level 2
+# Core Class: Path of Wisdom '''OR''' Ability: Wisdom Score 16+ '''OR''' Ability: Charisma Score 16+ and Wisdom score of 10+
+
+
+'''<u>Restrictions</u>''':
+
+
+
+'''<u>Class Information</u>''':
+
+<u>Class Affinity</u>: Wisdom and Charisma
+
+<u>Class Skills</u>: The Explorer’s class skills are as follows. Decipher Script(Int), Choose Any Two Knowledges (Int), Perception (Wis), Pilot (Dex), Language(RD), Study (Int), Survival (Wis).
+
+<u>Feat Bonuses</u>: [[Guide]], [[Spaceship Operations]]
+ 	   
+{| class="wikitable" style="margin-left: 10px;"
+|+ Table: The Explorer
+! style="text-algin:left;" | Class Level
+! Special
+
+|-
+| 1st ||Explorer lore, survivalist 
+|-
+| 2nd ||Resolve, skilled searcher 
+|-
+| 3rd || Extra Attack
+|-
+| 4th ||Trap sense (+1) 
+|-
+| 5th ||Extra step 
+|-
+| 6th || Bonus Feat
+|-
+| 7th ||Trap sense (+2) 
+|-
+| 8th ||Explorer’s evasion 
+|-
+| 9th || Extra Attack
+|-
+| 10th ||Extra step, trap sense (+3) 
+|}
+
+
+=== Explorer's Class Features ===
+The following class features pertain to the Explorer advanced class.
+
+;Explorer Lore
+An Explorer picks up stray and obscure facts during her adventures. Starting at level 1 the Explorer may make a special Explorer lore check with a bonus equal to her Explorer class level + her Intelligence modifier to see whether or not she knows some relevant knowledge about notable people, legendary items, or noteworthy places. If the Explorer has 5 or more ranks in Knowledge (history), she gains a +2 bonus on this check. She may take 10 but cannot take 20 on this check.
+An Explorer lore check does not reveal the powers of a magic or psionic item but may give some hint as to its general function; an Explorer may not take 10 or take 20 on this check.
+ 
+
+{| class="wikitable" style=" margin-left: 10px;"
+|+ Table: Explorer Lore
+! style="text-algin:left;" | DC
+! Type of Knowledge
+! Examples
+
+|-
+| 10 || Common,  known  by  at  least  a  substantial  minority  of  the  local  population.  ||A  local  official’s  hobbies  and  interests;  common  legends  or  rumors  about  a  powerful  place  of  mystery. 
+|-
+| 20 || Uncommon  but  available,  known  by  only  a  few  people  in  the  area.  ||The  coordinates  of  an  known  but  uncharted  world;  legends  or  rumors  about  a  powerful  psionic  artifact. 
+|-
+| 25 || Obscure,  known  by  few,  hard  to  come  by.  ||The  customs  of  a  documented  alien  species;  the  true  homeworld  of  an  ancient  royal  dynasty. 
+|-
+| 30 || Extremely  obscure,  known  by  very  few,  possibly  forgotten  by  most  who  once  knew  it,  possibly  known  only  by  those  who  don’t  understand  the  knowledge’s  significance.  ||The  most  likely  location  of  a  long-lost  pharaoh’s  tomb;  the  history  of  a  powerful  artifact  and  its  creator;  the  likely  coordinates  of  a  fabled  but  as-yet-undiscovered  planet. 
+|}
+
+
+;Survivalist
+At 1st level, the Explorer gains the bonus feat [[Track|Track]].
+
+;Resolve
+Beginning at 2nd level, an Explorer gains a morale bonus equal to one-half her Explorer class level (rounded down) on saving throws to resist fear effects and Intimidate checks.
+
+;Skilled Searcher
+When actively searching for secret doors or traps, an Explorer of 2nd level or higher gains a bonus on her Perception checks equal to one-half her Explorer class level (rounded down).
+
+;Trap Sense
+At 4th level, an Explorer gains an intuitive sense that alerts her to danger from traps, giving her an advantage bonus on Dexterity saves made to avoid traps. Also the Explorer can passively sense traps while moving.
+
+These bonuses rise to 2 stacked Advantage bonuses at 7th level and 3 stacked Advantage bonuses at 10th level.
+
+;Extra Step
+An Explorer of 5th level or higher has +5 ft base range of movement now. Also the Explorer can now spend an Inertia point to ignore movement penalties because of environment.
+
+At 10th level, the Explorer gains an additional +5ft.
+
+;Bonus Feat
+: At 6th level the Explore gets a free additional Bonus Feat of her choice as long as she is eligible. 
+
+;Explorer’s Evasion
+If an Explorer of 8th level or higher is exposed to any effect that normally allows a character to attempt a Dexterity saving throw for half damage, the Explorer suffers no damage if she makes a successful saving throw. If the Explorer already has evasion, she gains improved evasion instead. Improved evasion works similar to evasion, except the Explorer suffers only half damage on a failed saving throw.
+
+
+== Space Monkey ==
+Astronauts? What civilization would be without them? They would be backwater, Tech Level 0 or worse -1. One of the defining moments and perhaps the most significant in terms of its neighbors is when a Civilization becomes space worthy. And this is achieved by Astronauts. As a Civilization continues its prestigious climb into space it begins to realize that some of its citizens are more comfortable in the harshness of space. Long veterans of space flight and adventuring usually start to personify space as a harsh mistress and other titles. Different Civilizations have different names for these people but the common name is Space Monkey. 
+
+Comfort and willingness to go into the dangerous far reaches of space isn't the only reason these Space Monkeys become valuable to there society.  Its there talent and knack for all things space. Its one thing to just survive in space, its another thing to thrive in it. When a Nation, or mega-corporation needs to tame a hostile world, moon or build a massive jump station in the deep reaches of space to help connect distance parts of a fast empire or trade route the Space Monkey is the perfect person for the job. Willing to take on almost any challenge for cash Space Monkey's are seen all over the galaxy making space a safer or at least easier place to live for the rest of civilization. Often caught on the fringe of space having to deal with problems with nothing but a Monkey Wrench (Possible where the name came from) they are great at adapting to the situation.
+
+Choose Space Monkey if you want a Character who can survive and thrive in the far-flung reaches of space. Far from modern civilization, risking it all for adventure and/or money.
+
+
+The fastest path into this advanced class is through the [[Future_Hero_Base_Class#Path_of_Constitution_.28Tough_Hero.29|Path of Constitution(Tough Hero)]]. though other paths are possible.
+
+
+'''<u>Requirements</u>''': To qualify to become a Space Monkey, a character must fulfill the following criteria.
+
+# Level: At least Level 2
+# Core Class: Path of Constitution '''OR''' Ability: Constitution Score 16+ '''OR''' Ability: Strength Score 15+ and Constitution score of 12+
+
+
+'''<u>Restrictions</u>''':
+# You cannot be an Ambassador class. 
+
+'''<u>Class Information</u>''':
+
+<u>Ability Affinity</u>: Constitution and Strength
+
+<u>Class Skills</u>: The Space Monkey’s class skills are as follows. Athletics (Str), Computer Use (Int), Craft both [Mechanical, Structural](Int), Demolitions (Int), Disable Device (Int), Drive (Dex), Escape Artist (Dex),  Choose Any One Knowledge (Int), Pilot (Dex), Perception (Wis), Survival (Wis), Medical (Wis)
+
+<u>Feat Bonuses</u>: [[Endurance]], [[Spaceship Operations]]
+
+{| class="wikitable"
+|+ Table: The Space Monkey
+! style="text-algin:left;"|Class Level
+! Special
+
+|-
+|1st||Hibernation Trance
+|-
+|2nd||Monkey's Wrench
+|-
+|3rd||Extra Attack<br />Space Suitable(1)
+|-
+|4th||Monkey's Unite
+|-
+|5th||Know Location (+2)<br />Space Suit Homey
+|-
+|6th||Bonus feat
+|-
+|7th||Monkey Shines
+|-
+|8th||Know Location (+4),<br /> Space Suitable(2)
+|-
+|9th||Extra Attack<br />The Pilot is a Monkey
+|-
+|10th||Monkey Shot
+|}
+
+=== Space Monkey's Class Features ===
+The following class features pertain to the Space Monkey advanced class.
+
+;Hibernation Trance
+: A Space Monkey can enter a deep trance that allows him to gain the full benefits of sleep or bed rest in a forth of the usual time.
+
+;Monkey’s Wrench
+: Space Monkeys use tools expertly and creatively. Starting at 2nd level, a Space Monkey gains a competence bonus equal to one-half his Space Monkey class level on skill checks made when using a tool kit. This bonus stacks with the tool kit’s normal equipment bonus.
+
+;Space Suitable
+: At 3rd level, a Space Monkey becomes more comfortable in armor. He treats any suit of armor as though its armor penalty and maximum Dexterity bonus were 1 better.
+: At 8th level the armor penalty and maximum Dexterity bonus are 2 better.
+
+;Monkeys Unite
+: Space Monkeys fight better together. Starting at 4th level, a Space Monkey gains a Minor +1 morale bonus on attack rolls when fighting adjacent to another Space Monkey.
+: Furthermore, a Space Monkey gains an additional stacked advantage bonus on attack rolls against an opponent flanked by another Space Monkey.
+
+;Know Location
+: At 5th level, a Space Monkey gains a Misc +1 competence bonus on Navigate and Survival skills to avoid becoming lost. This bonus increases to +2 at 8th level.
+
+;Space Suit Homey
+: At 5th level, a Space Monkey no longer suffers restrictions while wearing a Space Suit or Power Armor. (A Space Monkey will still need the Armor Proficiency (Powered) feat to wear power armor)
+
+;Bonus Feat
+: At 6th level the Space Monkey can pick a Bonus Feat for free. The Character still has to be eligible for the Feat.
+
+;Monkey Shines
+: Upon reaching 7th level, a Space Monkey has learned sneaky tactics. He can use the Bluff technique of feinting in combat as a free action, allowing him to feint and attack in the same round.
+: If the Space Monkey also has the Improved Feint feat, he gains 2 stacked advantage bonuses (instead of the feat’s usual advantage bonus) on Bluff checks made to feint in combat.
+
+;The Pilot is a Monkey
+: At 9th level the Space Monkey only takes 1/2 penalty for flying craft that he isn't proficient in. 
+
+;Monkey Shot
+: At 10th-level Space Monkey gains an extra attack while still applying his Affinity Die. A Space Monkey can do this only 2 times in between full rests.
+
+
+== Swindler's Techniques ==
+
+-- THIS IS A MAYBE! CURRENTLY NOT SURE IF I SHOULD GIVE THIS CLASS TECHNIQUES --
+
+This is for the [[Character_Professions#Swindler|Swindler]] advance class. 
+
+'''<u>Level 0</u>''':
+* Determine Fate
+:: A Swindler can use this to determine exactly how difficult a particular challenge really is. This forced the GM to tell the Swindler, just the Swindler, the DC (Difficulty Check) for a particular action. This can only be used outside of combat.
+* Cheaters Eye
+:: The Swindler gets an advantage to bluff and diplomacy checks for 1 hour.
+* The Right Time
+:: For the remainder of the day any Take 10/20 actions or halved in time. So a Take 10 action takes only 5 minutes but still yields a 10 as if the Character roll'ed a 10. 
+* Warp Ahoy
+:: This reduces the percentile change of running into a problem while at Warp. This action can be taken even if the Swindler isn't flying. But he has to be aware that he is on a ship and at warp and can only do this once in between 8 hours of rest. The Swindler can also reverse this and make it a higher change that Warp will fail.
+
+'''<u>Level 1</u>''':
+* Back Stab
+:: The target person gets an advantage roll when attacking a target from behind or flanking.
+* Luckiest
+:: This provides an advantage dice to all Attack and Saving throws for the Swindler for 1 turn per 1/2 Swindler level. This is considered a Standard action and can only target himself.
+* Good Graces
+:: The Swindler can use this on any other target except for themselves. This grants an advantage to Saving throws from 1 turn per 1/2 Swindler level.
+* Rewind
+:: The Swindler can use this Technique at any time even outside of there turn. This allows the Swindler to re-roll a dice or force an enemy to re-roll a dice. This can only be used once per day.
+
+'''<u>Level 2</u>''':
+* Ill Will
+:: This forces a target to take disadvantages to attack rolls for 1 turn per 1/2 Swindler level. A Wisdom Saving throw reduces the number of turns by half. 
+* Bestow Luck
+:: A Swindler can target a friendly person as will as a free action and during that turn the Character can roll d20 twice and take the higher roll. This action can only be used once per combat.
+* Double Take
+:: The Swindler can declare this Technique as a free action and any d20 rolls the Swindler can roll a a d20 twice and take the higher roll. If used as a standard action the Swindler can target an foe and force them to roll twice and take the lower.
+
+'''<u>Level 3</u>''':
+* Master of Fortune
+:: For the next 1 + Cha Mod turns the Swindler rolls d20's twice for all d20 checks.
+* Distort Time
+:: If the out-comb of a round for the Swindler's team is not satisfactory for the Swindler then he can choose to redo his actions but only his actions. This does not effect the other team members even if there actions where previously effected by the Swindler. This can only be used once per Combat.

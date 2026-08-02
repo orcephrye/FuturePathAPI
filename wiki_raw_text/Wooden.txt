@@ -1,0 +1,46 @@
+{|
+|+ '''Wooden'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Wooden
+
+'''Level''': 3
+
+'''Protection +AC / X DR''': +3 / 0
+
+'''Maximum Dexterity''': +6
+
+'''Proficiency Requirement''': 4
+
+'''Default Attributes''': Archaic
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $2,000 / 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': -10ft
+
+'''Weight''': 30 lbs
+
+'''Bonus Abilities''': Protection Against Grapple +4
+
+'''Negative Points Earned''': 2
+
+'''Custom Points Spent''': 1
+
+'''Customization Slots Used''': 1
+
+'''Remaining Slots''': 0
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

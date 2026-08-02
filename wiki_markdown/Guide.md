@@ -1,0 +1,11 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: -
+
+**Benefit**: Misc +1 bonus to both the Pilot and Survival skills. At
+12th level, this increases to +2.
+
+**Normal**: -
+
+**Special**: -

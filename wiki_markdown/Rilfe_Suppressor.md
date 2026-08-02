@@ -1,0 +1,18 @@
+This is a Weapon Accessory. To learn more about Weapons, go
+[here](Weapons "here"){.wikilink}.
+
+If fired in Stealth, this doesn\'t break stealth. However, it does
+reduce the DC in locating you by 4 each shot fired.
+
+This can only be armed with rifles.
+
+At Tech Level 3 the DC is only reduced by 2 each shot fired instead of
+4.
+
+There are no crafting or masterworked bonuses for this item.
+
+Benefit
+: Allows for a Weapon Style\'s of Hunting Rifle or Assault Specialized
+  Weapon to be used without breaking stealth. Reduces Detection DC by 4
+  each shot fired while in combat at Tech Level 2. Tech Level 3 reduces
+  by 3, and Tech Level 4 reduces DC by 2.

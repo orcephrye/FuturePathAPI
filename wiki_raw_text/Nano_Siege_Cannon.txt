@@ -1,0 +1,51 @@
+{|
+|+ '''Nanotech Siege Cannon'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Nano-Obliterator
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Super Fast = Level 8 / 2d12 (Via Hit Die Increase)
+
+'''Proficiency Requirement''': 10 Levels in Ranged (Heavy Weapon + Nanotech)
+
+'''Weapon Style & Arch Type''': Heavy Ordnance, Nanotech
+
+'''Range''': 2,700ft
+
+'''Default Attributes''': Clunky, Two-Handed, Exotic
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $90,250 / 4 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +2
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 5 (Style)
+
+'''Critical Damage''': x4 (Gigantic)
+
+'''Critical Range''': 20
+
+'''Damage Type''': ALL (Kinetic & Thermal & Electrical & Chemical)
+
+'''Ammunition''': 1
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~80 pounds
+
+'''Bonus Abilities''':  Smart Targeting
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A massive experimental weapon that fires a concentrated beam of nanites designed to evaporate fortified structures.
+;Explanations: This weapon uses the Heavy Ordnance style and Nanotech Arch-Type. It ignores 5 points of DR, uses Exploding Dice, and ignores Cover within its first range increment. The price includes the +$2,500 style modifier, the 5x Nanotech multiplier, and 4 customization points (2 for Hit Die Increase to WL 8, and 2 for Accuracy +2).
+|}

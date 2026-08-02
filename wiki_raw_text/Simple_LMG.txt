@@ -1,0 +1,51 @@
+{|
+|+ '''Light Machine Gun'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Light Machine Gun
+
+'''Power / Speed''' (Total Level/Dice): Large / Full Auto = Level 5 / d12
+
+'''Proficiency Requirement''': 5 Levels in Range Branch
+
+'''Weapon Style & Arch Type''':  Light Machine Weapon
+
+'''Range''': 300ft
+
+'''Default Attributes''': Clunky, Custom Ammunition
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $6,050 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Full Round Action
+
+'''Weight''': Roughly ~20 pounds
+
+'''Bonus Abilities''':  Suppression Fire 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+Description: Usually heavy weapons that deliver more damage and firepower down range. They are weapons that usually fit the role of support and allow for suppressive fire.
+;Explanations: Because of the weapon Arch-Type this gun has the 'Suppression Fire' ability. It also has a much higher cost because of both its Arch-Type and its x3 critical. Two negatives were taken with this weapon. The Reload Speed was reduced to a 'Standard Action' and the range was reduced by one increment. This gave two negative points, which were spent for 1 extra customization point. Level 1 weapon plus two negative points means 2 customization. One customization was spent on critical damage, and the other one on critical range. This weapon is hard hitting and even more terrifying when a critical hit is achieved.
+|}

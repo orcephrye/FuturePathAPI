@@ -1,0 +1,46 @@
+{|
+|+ '''Superior Mounted Armor'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Superior Mounted Armor
+
+'''Level''': 6
+
+'''Protection +AC / X DR''': +6 / 0
+
+'''Maximum Dexterity''': +3
+
+'''Proficiency Requirement''': 6
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $48,000 / 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': -5ft
+
+'''Weight''': 20 lbs
+
+'''Bonus Abilities''': Weapon Mount (Small)
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 3
+
+'''Customization Slots Used''': 1
+
+'''Remaining Slots''': 4
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

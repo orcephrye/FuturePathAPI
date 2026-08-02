@@ -1,0 +1,386 @@
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS STILL UNDER
+CONSTRUCTION! `</span>`{=html}** This story is incomplete and is more of
+a rough outline, a terribly written jumble of thoughts. Please avoid
+until this warning changes.
+
+The following is the story of adventures in [The Great Ring
+Galaxy](Galaxy_Map "The Great Ring Galaxy"){.wikilink}. The story can
+show any new adventurer what to expect while roaming the vast expanse of
+space.
+
+## A Fateful Landing {#a_fateful_landing}
+
+### Chapter One {#chapter_one}
+
+Sarah strained to look at her reflection in the cracked mirror. She was
+hoping to see someone else. But, instead, she just saw the same dirty
+hair, brown eyes, chapped lips, and grungy clothing.
+[Humans](Species#Humans "Humans"){.wikilink} that left their home planet
+seemed to suffer this fate. A place she never saw, as she was born far
+away- not even planetside. Her parents left Earth a while back. \"It
+wasn\'t safe.\"
+
+When Sarah was seven, her parents got caught up in a labor camp as they
+struggled to survive. For the last ten years, most of her life, she\'s
+worked tirelessly for the profit of some alien who cared little for
+others and even less for [humans](Species#Humans "humans"){.wikilink}.
+However, that was then, and this is now. Now she looked in the mirror as
+she flew across the stars, freed by a human man named Bosch. Her parents
+were happy to see her escape. The ship bumped a little bit and shook
+Sarah from her gaze. She turned around and left her tiny quarters to
+join the rest of the crew on the flight deck.
+
+The flight deck felt massive, with its wide view screen wrapping around
+the room, giving way to the deep blackness of space. In truth, it was
+cramped for a [Large
+Civilian](Common_Mil._Large_Hull "Large Civilian"){.wikilink} ship. But
+Sarah loved it the most. It was where she practiced flying and learned a
+lot about spaceships. Most of the crew had been happy to teach, and she
+wanted to be as helpful and as useful as possible as quickly as
+possible. A thought flashed through her mind: a fear of being abandoned,
+of a disappointing human who failed to contribute. She buried that
+thought quickly. At the moment, she wished she knew more about
+[Spaceship
+Operations](Space_Ships#Officer/Ship_Functions "Spaceship Operations"){.wikilink},
+but didn\'t want those thoughts to ruin a chance to enjoy landing on a
+new alien planet. She glanced up at Bosch, who had left his captain\'s
+chair to stand over the Tamara, the [helms
+officer](Helm_Officer "helms officer"){.wikilink}. He had not noticed
+her as he focused on what the instruments on the Helms console were
+saying about the approaching planet.
+
+The communications console lights up. An electronic voice comes through
+the speaker, informing the ship\'s crew of the descent path. Sarah looks
+at her newfound peers. An odd group of desperadoes. Despite being the
+newest member, she seemed to fit right in poor, desperate, and not a
+care in the Ring for the law. Here was a crew who knew that credits
+talked, and those who listened were fat and happy. There were a lot of
+credits being offered, according to a distress beacon, the ship was
+heading toward. She knew little else about the crew. She, after all,
+just joined them a few weeks ago. She and Bosch were the only
+[humans](Species#Humans "humans"){.wikilink}.
+
+Sarahed peeked over Boch\'s shoulder at the pilot, who was a
+[Volar](Species#Volar "Volar"){.wikilink}, a species she had never seen
+until joining this crew. This alien, and hopefully new friend, had dark
+green leafy hair and pale green skin, spotted with light and dark
+shapes. Her name was Tamara. Sarah had quickly realized that Tamara wore
+as little clothing as hygienically necessary and did not like being
+touched without permission. A very awkward first meet. But after a
+while, she was able to break past the differences between their species,
+and she learned that Tamara could be warm and inviting. Tamara gets the
+captain\'s quarters because it\'s the only one with a window, and they
+would sit and watch the stars go by to pass the time. Captain Bosch
+didn\'t mind the small, cramped quarters. He says it reminds him of his
+time in the Soviet Navy, whatever that is or was.
+
+A [Cryous](Species#Cryous "Cryous"){.wikilink} was curled up on the
+weapons console, twiddling both sets of thumbs. His name was Leth, or at
+least that is how Bosch pronounced it. The Cryous had mostly blue scaly
+skin and the lower body of a snake, and the upper body of a four-armed
+humanoid. His lower set of arms was weaker and much shorter than the
+top. Cryous she learned had very different-sized bodies depending on
+whether they were male or female. Leth was small, only two feet tall
+when standing, while females were supposedly much larger. Leth seemed to
+ignore Sarah for the most part. He tried to show her how to shoot a
+weapon a couple of times, but Sarah figured it was because Bosch told
+him too. Other than that, nobody else was in the bridge room. \"Kid\"
+was in the engine room, of course. He seemed never to leave that place.
+Bosch called him Kid, although he was a grown man for his species. He
+was a Murids or \"Ratfolk,\" as humans called him. To Sarah, it seemed
+more like \"Mouse folk.\" Kid was fun to be around. He talked in squeaks
+that made her laugh, and he seemed to have much more energy than Tamara.
+The thought of landing soon made her think of the time she mentioned to
+Kid about how \'slower\' Tamara sometimes appeared, and he explained,
+\"It\'s because she is a flipping plant! \*squeak\* Once she\...
+\*squeak\*\... is planetside she will be bouncing around just you wait!
+\*squeak\*\". Sarah smiled at the thought of being planetside with
+Tamara jumping around under the sun\'s rays, positively blooming with
+energy.
+
+Another crew member bumped into her on the way into the bridge. \"Excuse
+me huuuman you are blocking the entrance!\" said the little
+[Grayling](Species#Graelycxazshngs_.28aka_Graylings.29 "Grayling"){.wikilink}.
+His big dark eyes seemed to look down at her despite being a foot
+smaller. \"Oh, sorry, I didn\'t mean\" Sarah started to say but was
+interrupted again by the alien as he moved past and went for the
+communications console without saying a word. Emulex was his name, and
+Bosch\'s nickname for him was \"Pain in my ass.\" He, too, was a
+relatively new member of the crew and had signed up temporarily to avoid
+some apparent legal trouble in another Arm of the galaxy.
+
+The ship bumped again. It jerked the crew around this time, causing
+Sarah to nearly fall over.
+
+\"By the Ring, keep this ship steady!\" Spouted Bosch with an angry
+Russian accent. The [Volar](Species#Volar "Volar"){.wikilink} seemed to
+ignore her captain as she concentrated on the many lights flashing red
+on her console. Tamara reached out and turned up the light of some UV
+lamp she had previously installed. Sarah had noticed them all over
+Tarama\'s quarters when she first been invited in, apparently it helps
+keep Tarama focused and awake, so one naturally was installed on the
+pilot\'s station. The fact that she was turning it up during this
+descent made Sarah a tad worried. She was no pilot and, in fact, had
+spent the better part of the last ten years underground, but still, she
+noticed that things did not appear to be going as planned. The
+viewscreen was now hot, and it was impossible to see beyond a big red
+blur. Finally, Tamara turns to the rest of the crew. \"Hold on, this is
+going only to get worse!\".
+
+Just then, as if the universe answered the pilot\'s remark, the ship
+bumped so hard that Sarah yelped as she was up and back bumping her head
+on the ceiling.
+
+Sarah was shaken awake by Leth. \"Here quickly, the air herezzz not good
+for most speciesss!\" he hissed as he shoved a mask on Sarah\'s bloody
+face. She struggled to stay conscious and held onto a familiar voice.
+Bosch is yelling somewhere off in the distance. \"Of all the damned
+places! All the places in the Ring, it has to be this planet! This
+system!\" \"It\'s not all bad, sir!\" Another far-off voice said. \"We
+got our lives at least, and they know where we landed.\" Kid replied
+even further in the distance. \"That was an automated \*squeak\* voice.
+The people who sent that distress call are likely \*squeak\* dead or, at
+the very least, unable to help. \*squeak\*\" Bosch sounded closer now.
+Sarah\'s eyes opened again to see Bosch\'s bearded face directly in
+front of hers. He lifted her up after checking her mask. She turned and
+faced the rest of the crew. \"Listen up! They say strange life forms
+appeared here from time to time, and this place is already known for its
+hostile environment. We were supposed to land in a safe zone in the
+middle of the colony. We gotta get there on foot, and we gotta do it
+quick!\" Bosch took a quick survey of everyone as they huddled up around
+him. \"Where is dam Emulex!?\"
+
+\"I haven\'t seen him at all.\" Responded Tamara while nodding toward a
+hole in the wreckage. \"He must still be inside the ship\". Bosh cursed
+under his breath. \"Well dam that pain in my ass. Kid and I will go in
+and look for him. You and Leth start looking around the wreckage out
+here.\" Everyone except Sarah started moving. She just stood still,
+trying to recover from what had just happened, but a sudden feeling of
+needing to do something or the feeling of helplessness was going to
+creep up. She looked at Bosh. \"What can I do?\"
+
+There was a short pause as Bosh stopped moving toward the wreckage.
+\"Hrmm\... start looking through all this wreckage. A lot of this
+spilled out from the cargo bay, and there may be some useful survival
+gear or just food\... or anything. Just find anything you think could be
+useful.\" And with that, he turned and hastened his pace to catch up
+with Kid, who was now only visible by the tail sticking out of a hole at
+the side of the ship.
+
+She pondered her new mission, relieved by the focus it gave her. But
+what does survival gear even look like? She turned to ask Tamara, but
+found that Tamara had already disappeared into the dark forest ahead,
+and presumably so had Leth, as she suddenly realized she was alone. She
+had rarely been alone when in the labor camp. As a forced laborer, she
+had no privacy; it was all work, meal, sleep, and repeat. She was
+shocked when she was given her own private sleeping quarters. A whole
+world all too herself on a strange ship. That ship now lies heavily
+damaged and smoking in front of her, with its insides spilled out, and
+to whose contents she now needed to search. Alone. But she had work to
+focus on, and if there was one thing Sarah was good at, she thought to
+herself, \"It\'s focusing on the task at hand\". See looked at the
+wreckage and took stock of its size, and if anything stood out at first
+glance. She perceived a good starting point, a \"plan of attack\" as her
+father would put it. \"When the task-master gives you more work than you
+think you can do, it\'s good to take a step back and try to break it up
+into smaller pieces.\" Her mom would chime in, \"And if that doesn\'t do
+it, then it\'s best to just start anywhere, try not to feel
+overwhelmed\". Sarah had no idea what she was looking for, so she
+figured all she could do was start.
+
+After some time and picking through boxes and containers, she had two
+piles. One with questionable things that didn\'t look damaged, and the
+other pile things she could actually identify, a scanner of some sort,
+and a med-kit were her two big finds. She felt a little bit of pride,
+even though she knew it must have been more luck than skill that got her
+to spot these in the rumble. Just then, a noise came from within the
+ship, and 2 figures climbed out of the hole. Covered in black grime and
+coughing Bosh held a seemingly lifeless grayling. Tamara gasps.
+
+\"\*squeak\* No no little human \*squeak\* he is just unconscious\"
+Huffed Kid.
+
+Bosh laid Emulex down and noticed the two piles. \"What do we\...\" Bosh
+was interrupted by a scream coming from down the backside of the
+wreckage. And suddenly, Leth slithered out from the dark forest with a
+gun in hand.
+
+### Chapter Two {#chapter_two}
+
+Leth looked horrible. Sarah\'s eyes widened as she saw what looked like
+giant, puffy red bulbs of pus oozing from all around his face. He tried
+to see something, but just nervous garbled noises came. Instead, he
+pointed behind him as a new noise came to everyone\'s hearing. An
+ever-increasing buzzing sound. The sound made Sarah\'s skin crawl; she
+had never heard such a sound, but her mind seemed to instinctively know
+death when it heard it.
+
+\"Dangit! Were in the Ring, is my gun!\" Shouted Bosh. Just then, from
+the other side of the clearing burst out Tarama. Sarah, in shock, noted
+Tarama\'s fast movement. \"I never saw her move so fast before!\" she
+thought. Her mind was brought back to the present when her eyes caught
+the flash of laser fire from Tarama. Sarah spun back to Leth with
+wonder, for a flash of a thought, Sarah wondered, \"Did Tarama just
+shoot Leth!?\". The laser hit its mark, but it wasn\'t her crewmate, but
+a massive bug the size of a cat that had come out of the forest. The
+laser seemed to have an overwhelming effect, causing the giant insectoid
+to explode. Its guts rained down, and luckily, Leth dodged bits of
+insect on his way to the rest of his crew.
+
+\"\*squeak!!!\*\" Was the only noise from Kid as he raised both hands up
+well above his head in triumph. \"Nice, shoot Tarama.\" Grunted Bosh as
+he quickly laid down the still unconscious grayling. He then walked over
+to Leth, who collapsed and appeared to have difficulty breathing. \"We
+need a Medkit! Now!\" Bosh turned to Sarah, who appeared shaken by the
+encounter.
+
+Sarah\'s mind whirled with thoughts, driven by fear. She felt stuck in a
+loop until Bosh\'s booming voice knocked her out of it. \"Huh\...\" She
+turned to Bosh, only to see everyone now looking at her. Instead of
+panic, though, her mind flashed his previous words. \"Medkit.. right!\"
+She rushed to where she had placed the medical kit and hurried back to
+Bosh.
+
+Bosh grabbed it with a grunt and quickly tore it open. With a flash, he
+had a needle poking into Leth. Leth only groaned at the sudden and
+not-too-polite stab. Tarama walked back from inspecting what remained of
+the attacker. \"These are Fiber Hornets. They are solitary creatures
+that burrow into living trees. Leth probably walked too close to its
+nest. From what I remember, they are especially territorial when eating,
+or hungry, or just alive.\" Bosh said nothing in response. Focused on
+treating Leth\'s injuries, he had switched from the needle to some weird
+blue goo that he rubbed on Leth\'s wounds.
+
+\"\*squeak\* I don\'t know if that is good or \*squeak\* bad news.\"
+Mubbled Kid. Tarama responded, \"Best you go back in there and get
+everyone a weapon.\" The little Murid turned to go, but then looked back
+nervously at Sarah. She puzzled, looked back at him. \"Rrrr\...
+\*squeak\* everyone?\" He asked. Sarah suddenly felt a little offended;
+she didn\'t want to be, didn\'t she just prove herself? Before She or
+Tarama could answer, Bosh replied, \"Everyone,\" and Leth just grunted
+what Sarah felt was actual approval. She couldn\'t help but smile back
+at the Kid as he scurried back into the hull of the ship. \"Tarama, go
+scout around the camp and make sure we don\'t have any more surprises
+out there.\" Bosh ordered.
+
+Bosh turned to Sarah. She could feel his gaze on her as he said,
+\"Better use those eyeballs and help me find some more survival gear.\"
+She turned and hurried toward the rest of the damaged cargo bay. In
+roughly twenty minutes, they came together and found a few more useful
+things. Including some travel bags, a rope that looked a little singed,
+an environmental scanner, a few packs of rations, and so on. She saw
+with some surprise a large mound of guns and ammunition lying on the
+ground, and a silly sight of Kid clearly straining under the weight of
+an unusually large case. He nearly fell on his bottom before righting
+himself and placing the case on the ground next to the other things with
+a \"humphf\".
+
+Bosh strode up. \"Well done, Kid, and you too, Sarah.\" Leth sat
+upright. \"Ugh, I am feeling better now. But where is Tarama? She could
+use that environmental scanner you guys found.\" Everyone looked around,
+and Sarah noticed that nobody moved towards the trees. A moment passed,
+and fear started to grow from all around. Everyone seemed tense, and the
+noises of the forest became suspect. Sarah has never been to a forest,
+or any other planet, actually. She suddenly missed the familiar
+cavernous hallways that echoed all the noises from far down and all
+around. Nobody could sneak up on anybody in those mines. Her
+concentration was broken by a weird and close-by noise. It sounded like
+heaving breathing. Is something watching us? Sarah felt like it sounded
+hungry, but she tried to bury the thought. However, it sounded like it
+was getting closer. She turned and quickly walked up to Bosh and
+whispered, \"Do you hear that breathing noise? What do you think it is
+from?\" Bosh looked quizzically at her for a second, and then a flash of
+understanding seemed to come, only to be quickly replaced by something
+she thought was humorous! Kid chuckled behind her, and Sarah suddenly
+felt alien and new to this crew, as if it were the first day she joined
+them. \"What? What? I don\'t get it!\" She said, and then quickly
+clasped her hands over her mouth, realizing she had made too much noise.
+Bosh pointed to the Grayling lying on the grass. He was still
+unconscious, but he was snoring even louder than before. And then a
+hardy laugh from Bosh and a \*squeak\* from Kid, burst through the
+tension like a thunderclap, and Sarah couldn\'t help but laugh along.
+Leth was using his smaller arms to hold his chest: \"Stop it! Stop!
+Please don\'t make me laugh now.\"
+
+All the commotion finally roused the Gralying from his slumber. Emulex
+blinked and then shot up with surprising speed. \"Huh.. what\... What
+happened?\" Just as Bosh was about to respond, a sound came from the
+forest. All the merryment seemed to vanish. The vacuum was quickly
+replaced by tension. Everyone quickly turned toward the noise. Out of
+the shadows of the thick forest came Tarama.
+
+Relief seemed to flood in all at once for all the group except the
+confused Grayling, who was more stunned by his new surroundings. As
+Tarama came walking up to the group, Emulex gave Bosch a questioning
+glance. \"We crashed.\" is all Bosch said as he turned his attention to
+Tarama. \"What\'s the news?\" Leth spoke up before Tarama could answer,
+and we found you a scanner! Sarah thought to herself, \"We?\" But she
+didn\'t feel like correcting Leth as she wanted to hear from Tarama.
+Tarama spotted short of the whole group, as it looked to be pondering
+what to do or how to say it. The silence made Sarah almost ache. Bosch
+seemed unfazed by the long pause. \"We have two options. Both involve
+heading towards the mountains. Best bet is we find an explorer\'s trail,
+[Xeno-Biologists](Character_Professions#Xenophile "Xeno-Biologists"){.wikilink}
+study the wildlife on this planet, and they have safe houses in mountain
+passes. The other option is a cave passage. If memory serves, this
+mountain range is full of them.\"
+
+\"Is there a third less insane option?\" grumbled Leth, still rubbing a
+sore-looking spot on his face. Bosch replied, \"I hate to abandon the
+ship. Is it absolutely necessary?\" Tarama again paused, but this time
+for much shorter a time. \"It is. A storm is coming; you cannot sense
+it, but I can. Storms on this planet are a chaotic thing. They bring
+both life and death. Much of the planet\'s life cycle revolves around
+deadly and timely storms. That is why the mountains are our best bet. If
+we cannot find an explorer\'s tail in time, then I am sure we can at
+least find a more suitable shelter.\"
+
+## Camping can be fun\...right? {#camping_can_be_fun...right}
+
+Outline: Tamara has been severely wounded, and moving through the thick
+woods is slow. They eventually find a clearing and camp for the night.
+While Bosch tends to Tamara\'s wounds, Kid tries to cheer the nervous
+Sarah up by telling her the story of how he became an engineer.
+
+## Dark or Light {#dark_or_light}
+
+Outline: The team attempts to find a better shelter. They come across a
+cave that Bosch believes will lead them to the other side of the
+mountains and much closer to the colony. While taking a break in the
+caves, Tamara explains why she broke away from her species traditions
+and joined up with Bosch. Later on, however, the cave proves even more
+dangerous than the forest outside. As they flee, Tamara dies.
+
+## Alone
+
+Outline: Once back out in daylight the team gets separated, and Sarah
+and Leth have to find a way to meet back up with the others. Leth tries
+to explain to Sarah how to deal with the loose and hopelessness of the
+situation by sharing his own story. In the end, Leth has to sacrifice
+himself to allow Sarah to escape and meet back up with the rest of the
+team.
+
+## Safe! Now where is the Danger? {#safe_now_where_is_the_danger}
+
+Outline: Once in the colony Sarah follows a single comms set up by Kid
+to find Bosch. However along the way she finds a new ally a Dimension
+Knight who informs her that she has the \'gift\'. She and the Knight
+face off against an unknown alien threat that was at least partially
+responsible for bringing the colony to ruin. And at the same time meet
+back up with her crewmates. Bosch instantly hates the Dimension Knight.
+
+## All for something {#all_for_something}
+
+Outline: Once together the team realizes that they must find the source
+of the devastation to rescue themselves from being stuck on this planet.
+While on the search Bosch explains to Sarah a part of his life story in
+an attempt to make her side with him and stay with the crew. However,
+this contradicts the theme that he and the other crew members had been
+telling her which was to define your own path. However, at the same
+time, Bosch has proven to be right about every decision he has made.
+Sarah proves to herself and everyone else that she can handle herself in
+a fight and that she does indeed have the \'gift\' which is what the
+Dimension Knight was talking about. The Knight wants her to leave with
+him to train and become a Knight. In the end, she most chooses between
+staying with Bosch or leaving this new life or a whole new one with the
+Knight.

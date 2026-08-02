@@ -1,0 +1,11 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: Dex Mod +1 or higher.
+
+**Benefit**: Reloading a firearm with an already filled box magazine or
+speed loader is a Simple action.
+
+**Normal**: Reloading is normally a Standard Action.
+
+**Special**: -

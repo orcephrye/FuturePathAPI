@@ -1,0 +1,14 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the
+Explosive section click
+[here](Weapons#Explosives_.28Grenades.2FTraps.29 "here"){.wikilink}.
+
+Sense Micro Gravity
+
+- This is a special super sensitive sensor able to identify and separate
+  the smallest gravitation space time effects into different targets. It
+  can be told to go trigger under specific gravitation waves come by.
+  This system cannot be fooled by even the most advanced clocking
+  technologies. The object would have to admit no form of gravity or
+  have no effect on space time. Currently no such object could exist and
+  still effect its surroundings. This means this sense is theoretically
+  impossible to fool.

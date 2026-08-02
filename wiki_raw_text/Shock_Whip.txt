@@ -1,0 +1,51 @@
+{|
+|+ '''Shock Whip'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Shock Whip
+
+'''Power / Speed''' (Total Level/Dice): Medium / Manual = Level 2 / 1d6
+
+'''Proficiency Requirement''': 2 Levels in Melee
+
+'''Weapon Style & Arch Type''': Flexible/Chain Melee, Energy
+
+'''Range''': 10ft Reach
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $800 / 0 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': +1 (Energy)
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2 (Fixed)
+
+'''Critical Range''': 20
+
+'''Damage Type''': Electrical
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~3 pounds
+
+'''Bonus Abilities''':  Reach (10ft)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A flexible lash that delivers a powerful electric discharge upon impact, perfect for crowd control.
+;Explanations: This weapon uses the Flexible/Chain Melee style and Energy Arch-Type (1.5x cost multiplier). It ignores Partial Cover and gains the Disarming Critical effect. The 2 customization points from Tech Level 2 are spent on Reach (+5ft for a total of 10ft) and Accuracy +1.
+|}

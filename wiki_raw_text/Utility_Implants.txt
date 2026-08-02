@@ -1,0 +1,63 @@
+<div class="toclimit-1"><div style="float:right; margin-left: 20px">__TOC__</div></div>
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! </span>  '''
+
+This page is dedicated to Utility Implants for [[Cybernetics]]. 
+
+== Overview ==
+
+Utility Implants are based on items from [[General Equipment]]. There are only some basic rules to follow on how to convert an item into an Implant for use as a Cyborg. 
+# These Implants cannot include Weapons, Weapon Mounts, Armor or an AC/DR enhancing bonus.
+# Items do not require the use of power unless that item requires power. When in doubt if the device requires Electrical and/or Mechanical parts to construct. IE: scanner, communications device, hologuise etc...
+# All Implants must be Masterworked crafted. The first level of Masterwork doesn't improve the device simply modifies it to be suitable for Implantation.
+# Items can also use another Masterwork level which doesn't improve the Item but grants it a micro power supply, which behaves like the Framework Powerpack, that removes that Items Power slot requirement.
+# Utilities by default leave a visible outward trace.
+# Utilities can be upgraded with Masterwork or Tech improvements following the [[Cybernetics#Implant_Tech.2FMasterwork_Traits|Implant Tech and Masterwork Traits]] rules.
+# The first Utilities Implant doesn't require a Detractor. All following Utilities Implants do.
+
+== General Equipment Categories ==
+
+This goes over the different [[General Equipment]] categories and helps to provide some explanations and guidance.
+
+=== Bags and Boxes ===
+
+The [[General_Equipment#Bags_and_Boxes|Bags and Boxes]] section is simply for containing things. This requires no power and is useful for storing or hiding items inside your person. This can include holding weapons as well. 
+
+=== Clothing ===
+
+The [[General_Equipment#Clothing|Clothing]] section can be ignored. This cannot be used as an implant.
+
+=== Computers and Consumer Electronics ===
+
+The [[General_Equipment#Computers_and_Consumer_Electronics|Computers and Consumer Electronics]] is part of the Crafting type [[-_Electronic|Electronic]] and thus require 1 power slot to operate. Do you want a person computer built into your body? Do you want to have a remote communications device that can be controlled with your mind and allow you to talk without using sound? A built in Fabricator can enhance crafting even while in combat while an A.I Assistant can give Computer Use skill bonuses. Have a 'hackcard' built into a hand or be able to link your brain directly into any computer system. 
+
+=== Crafting Materials and Equipment ===
+
+The [[General_Equipment#Crafting_Materials_and_Equipment|Crafting Materials and Equipment]] section can be ignored. This cannot be used as an implant.
+
+=== Surveillance Gear ===
+
+The [[General_Equipment#Surveillance_Gear|Surveillance Gear]] is part of the crafting type [[-_Electronic|Electronic]] and thus require 1 power slot to operate. The implant uses are obvious hear. Binoculars would be an ocular implant. The Tracker bot '''cannot''' be an Implant. 
+
+=== Profession Kits ===
+
+The [[General_Equipment#Profession_Kits|Profession Kits]] do not require power. This section can be ignored but technically a Character can implant a Kit in there body. They can replenish a Kits uses without preforming another surgery. But it will cost the price of a whole new Implant ready kit. The only advantage is having instance access to a Kit and being able to move around without having to carry it.
+
+=== Survival Gear ===
+
+The [[General_Equipment#Survival_Gear|Survival Gear]] section is crafting type [[-_Mechanical|Mechanical]] and some items require power wiles other don't. Not all items are able to become an Implant. A Compass would be an internal compass that would grant the wearer a 'sixth sense' about their direction planet side. A Directed Light Source could be built into there hands or head although night vision or some other Implant would be fare superior. Duct Tape, Face Mask, Rations, Maps of any kind, Towel are all examples of Items that cannot be used as an Implant. The Environmental Recreation Personal Shield can be an Implant as it doesn't provide a AC or DR.
+
+=== Scanners ===
+
+The [[General_Equipment#Scanners|Scanners]] section is crafting type [[-_Electronic|Electronic]] and thus require 1 power slot to operate. A scanner built into the system acts just like a normal scanner but can be activated via the mind. However, without a Neural Link Implant or upgrade it will still have to be visually seen to be able to gain the results and benefits of its use. 
+
+=== Poisons ===
+
+The [[General_Equipment#Poisons|Poisons]] section can be ignored. This cannot be used as an implant. To better explain this is simply the buying or crafting of different chemicals not there storage or delivery system. Other Implants may utilize Poisons.
+
+=== Medical Items ===
+
+The [[General_Equipment#Medical_Items|Medical Items]] section uses crafting type [[-_Pharmaceutical|Pharmaceutical]] and doesn't require power. Only the following items can be used as an Implant. Pill Capsules, Syringe, Spray Bottle, Spray Grenade. These are delivery methods for Pharmaceuticals and as an Implant that will have been modified to fit this roll. IE: a Pill Capsules Implant would be a dispensary for the Pills that could be activated by the mind. Syringes could pop out from a persons skin or other protruding appendage to be able to quickly inject a patient and so on. A Spray Grenade would also like the Pill Capsules be a dispensary.
+
+=== Miscellaneous Equipment ===
+
+The [[General_Equipment#Miscellaneous_Equipment|Miscellaneous Equipment]] section uses all sorts of different crafting types and may or may not require power. Please use your own discretion.

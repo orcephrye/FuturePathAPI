@@ -1,0 +1,284 @@
+**`<u>`{=html} `<span style="color:#ff0000">`{=html} THIS NEEDS
+UPDATING! `</span>`{=html} `</u>`{=html}**
+
+What\'s different about Future Path? What sets it apart from D20-style
+TTRPs, or for that matter, any other pen-and-paper game? Well, glad you
+asked!
+
+**1. d20+ System**:
+
+: 
+
+  : This is the resolution system. d20 or d10 systems are named as such
+    because they indicate which primary die is used to resolve
+    conflicts. d20+ is named because players will roll a d20 plus
+    additional dice depending on their level and the situation. This
+    system is based on 3 main concepts.
+    1.  Rolling more unique dice is fun.
+    2.  Rolling less often improves the pace and action.
+    3.  Mitigating static modifiers allows for more dynamic play.
+  : Together, these statements form the base for a lot of
+    decision-making for the game rules. Static modifiers still exist,
+    but primarily for Ability Score, Item bonuses, and Miscellaneous
+    modifiers. While everything else is a die roll of some sort, where
+    the die increases over time, with the occasional static modifier
+    bonus. Dies have levels, and the higher the level, the bigger the
+    die gets. Characters gain access to higher die levels as they level
+    up. There are different level progressions for Skills, Weapons and
+    Advantage die.
+
+**2. [Advantage](Advantage "Advantage"){.wikilink} and Disadvantage**:
+
+: 
+
+  : Advantages and Disadvantages are calculated through a Character\'s
+    **Advantage Die** which is a Die provided by the Character\'s Path
+    and improves as the Character levels up. The idea is that as the
+    Character gains experience, they are more likely to take better
+    advantage of opportunities. And in turn, the bigger you are, the
+    harder you fall, so the Advantage Die is also used when a character
+    has a disadvantage for the opposite effect. The important part here
+    is that an advantageous situation, ie, flanking, never stops being
+    useful. In some games, this bonus would be a static +2, which, by
+    the time the character is level 10, is often overlooked compared to.
+    This also means that your Character\'s advantage/disadvantage is
+    variable, as the Player could roll a 1 or higher. Advantage mechanic
+    also replaces the Base Attack Bonus or other such mechanics.
+
+**3. [Combat](Combat "Combat"){.wikilink}**:
+
+: 
+
+  : In FuturePath [combat](Combat "combat"){.wikilink} character relay
+    on the [Advantage](Advantage "Advantage"){.wikilink} system instead
+    of something like Base Attack Bonus. This is a significant part of
+    why this system is called **d20+**. Character\'s accuracy improves
+    over time based on the improving Advantage Die, which is
+    semi-random. The man\'s goal with Combat
+    [Encounters](Encounters "Encounters"){.wikilink} in FuturePath is to
+    improve the pace of the action and make combat scale well,
+    time-management-wise, with the character\'s level. To this end the
+    following things are different:
+
+<!-- -->
+
+: 
+
+  : **3.1 Remove Initiative Rolling**
+
+    : 
+
+      : Rolling for Initiative to start combat is removed. Each team has
+        a static Team initiative score, which is determined at the start
+        of play, not at the start of combat. Combat and just start as
+        the GM should know what the opposing team\'s total Initiative
+        is.
+  : **3.2 Group Turns instead of Player turns**
+
+    : 
+
+      : Instead of it being a Player\'s turn, it is a Group\'s turn. The
+        Player\'s Character\'s make up the Team. And that team, as well
+        as the enemy team, is divided up into 2 groups. The Vanguard and
+        Rearguard. The Team that goes first has its Vanguard act as a
+        whole before the enemy\'s Vanguard. And then it is the
+        Rearguards\' turn. Players in each group act together. So, it is
+        a group\'s turn instead of a Player\'s turn. This helps keep
+        combat engaging, as you don\'t have to wait long before it is
+        your turn to act again, and you act as a group with your
+        teammates.
+  : **3.3 Tactical Opportunity instead of Attacks of Opportunity**
+
+    : 
+
+      : Attacks of Opportunity no longer exist. They have been replaced
+        with Tactical Opportunity, which adds modifiers to the enemy\'s
+        next turn, avoiding breaking up the flow of combat.
+  : **3.4 Extra Damage instead of Extra Attack**
+
+    : 
+
+      : Additional attacks do not exist in FuturePath. Instead, it is
+        Extra Damage, and it is determined by the Character Path and
+        Level. Extra Damage is given depending on how much the Character
+        beats the AC of the target. The more they level up, the higher
+        the Advantage Die, and the more Extra Damage is granted. Thus
+        increasing the chance of more damage. This also means that the
+        pace of combat is disrupted by a Player rolling for 4 or 5
+        different attacks.
+  : **3.5 Three Second Rounds instead of Six Second Rounds**
+
+    : Rounds are considered 3 seconds instead of the typical 6 seconds
+      found in the d20 system. This means that players have only one
+      standard action instead of two. This helps reduce the time players
+      spend trying to figure out what to do.
+
+**4. [Character Path](Character_Path "Character Path"){.wikilink} and
+[Professions](Character_Professions "Professions"){.wikilink}**:
+
+: 
+
+  : In FuturePath Player\'s choose their Character\'s **Path** first. A
+    Path helps provide a general direction and focus. It is not as
+    specific as a Class. It answers the question: \"What am I good at?\"
+    or \"What is my general theme?\" Examples are \"Strong Hero\",
+    \"Fast Hero\" etc\... Paths determine the Character\'s Ability
+    Affinity, which provides an advantage on saving throws for the
+    Ability. It also determines Hit Die, how an Advantage Die
+    progresses, and when the Character gains Extra Damage. A Path also
+    has themed Talents to choose from. A Path level is the same as the
+    Character level, and a Character cannot multi-path. A level 10
+    Character that is on the Path of Dexterity is also a level 10 Fast
+    Character. **Professions**, on the other hand, are a little more
+    specific. They answer the questions \"What do I do?\" or \"What am I
+    capable of?\". They only go up to 10 levels. When leveling up, a
+    Character chooses a Class to level up alongside their Path.
+    Professions focus on providing Character\'s with additional flavor,
+    abilities, combat options etc.. It is encouraged to multi-class.
+
+**5. [Skills](SkillsBasics "Skills"){.wikilink}**:
+
+: 
+
+  : Our approach to handling Skills may seem at first glance to be the
+    same old same old. However, there are several major differences.
+    There are 3 types of skills. **Natural**, **UnNatural**, and **Rank
+    Dependent**. The \"Rank Dependent\" is a new addition to our
+    ruleset. The idea is that the skill\'s rank determines the best
+    possible outcome. Instead of just helping to beat a DC by adding a
+    modifier to your d20 roll, it also predetermines how good your
+    success is if you do indeed succeed. The best example is with
+    Language. Now, language is handled by having a skill rank for each
+    Language you know. If you have a rank of just 1 in say \"Common
+    Human,\" then your best possible outcome is just being able to tell
+    that what you are reading/listening to is indeed Human speech, and
+    maybe a few words here and there. Even if you succeed with a
+    natural 20. Your Character is just learning the language. The higher
+    the rank, the better the best possible outcome will be. Many rules
+    sets sort of use this with Crafting by restricting how powerful the
+    items a Character can craft based on their Craft rank. This is also
+    the case here.
+
+<!-- -->
+
+: 
+
+  : To Learn more please visit the [Skills
+    Basics](SkillsBasics "Skills Basics"){.wikilink} page.
+
+**6. [Language](Language "Language"){.wikilink}**:
+
+: 
+
+  : As noted above in the Skills section, we treat language differently.
+    Language is \'Rank Dependent\', meaning the Character does not just
+    get a language at every skill level and instantly is fluent in it.
+    The Language skill determines the number of languages a character
+    can have. It is also added to any check involving comprehension of a
+    foreign language. Each language you use has its own Skill and Rank.
+    The rank of that skill predetermines the best possible outcome. At
+    rank 1 of a specific language skill, a player is just learning that
+    language. The ranks are 1 through 5, with 5 indicating fluency to
+    the point that they appear to speak and write it as if it were their
+    first language, and can manipulate accents. Spending a point on the
+    Language skill automatically grants a new Language that starts
+    Trained at Rank 1.
+
+**7. [Techniques](Techniques "Techniques"){.wikilink}**:
+
+: 
+
+  : In a lot of Sci-Fi Pen & Paper games, the aspect of casting magic is
+    missing. Well although \'magic\' as defined in most Fantasy realms
+    is not present in the Future Path setting a similar game mechanic
+    called [Techniques](Techniques "Techniques"){.wikilink} is. This
+    system allows fantastical Sci-Fi elements to take shape and enables
+    Players to enjoy creating Characters who can still perform feats of
+    prowess that may seem like magic to the untrained eye.
+
+**8. [Wealth System](Wealth_and_Money "Wealth System"){.wikilink}**:
+
+: 
+
+  : A lot of P&P (Pen and Paper) game systems use a simplified way of
+    handling wealth. The goal is to streamline gameplay and make it more
+    about the story than about epic shopping. However, this forces the
+    GM and the Player to role-play in a certain way. What if you want to
+    play out attempting to pay for the illegal substance or your new
+    Star Ship. Buying a ship can be a major commitment and achievement
+    for a Player. So why not have Players manage their money? Well\...
+    it\'s difficult when you get into modern finance. Things are more
+    complicated. There needs to be a middle ground. We believe that our
+    [Wealth System](Wealth_and_Money "Wealth System"){.wikilink} is a
+    good middle ground that helps to express a Players\' Wealth in a way
+    that represents modern money without bogging down gameplay.
+
+<!-- -->
+
+: 
+
+  : We use the **Credit** system. This allows players to own \'ISC\' or
+    Inter-Stellar Credits, have a Credit Score that determines their
+    monthly income (if that applies), and buy vastly more expensive
+    items. However, each time a Character buys something costly, they
+    lose 1 or more Credit Score points. There are only a few difficult
+    ways to get a Credit Score back which means Players will have to
+    choose what expensive things to buy.
+
+<!-- -->
+
+: 
+
+  : Items in the game are all rated by the **Procure Difficulty**
+    system, which is a way to sum up how both rare and difficult an item
+    is to acquire. And lastly, all items also have an attribute
+    associated with **Tech Level**. All these attributes when combined,
+    allow GMs an easy way to both control and convey the availability of
+    items to players in an easy and quick way. Making \'epic shopping\'
+    experiences much faster. For example, a GM could tell the party when
+    they walk into a weapons depot that there are only Tech Level 1,2
+    items with 0,1 and 2 Procure Difficulties available. That way the
+    players can look at the list of items and know exactly what they can
+    and cannot get in that store.
+
+**9. [Campaign Setting](Galaxy_Map "Campaign Setting"){.wikilink}**:
+
+: 
+
+  : What initially inspired the creation of this game was the severe
+    lack of a Campaign Setting to explore for d20 Future/Modern. There
+    was no Forgotten Realms or Golarion to explore. Although not wholly
+    a bad thing, it kept the d20 Modern/Future game from feeling
+    complete. The galaxy FuturePath is set in is full of civilizations
+    with varying levels of technology, from alien planets with no
+    sentient life to empires that spread across the stars. However,
+    there are still largely unknown pieces of space with mysteries and
+    dangers. Large amounts of explored space with civilizations all
+    striving to prove themselves, while at the same time, massive
+    amounts of unexplored space and unsolved mysteries. The idea is that
+    a GM can start their players in an established, known part of the
+    world, but then not be creatively tied down, as they can jump into
+    sections of the unexplored universe where unknown alien
+    civilizations can exist.
+
+**10. [Tech
+Level](Tech_Level_and_Civ_Progress "Tech Level"){.wikilink}**:
+
+: 
+
+  : Technology is so cool! Sci-Fi is surrounded by the neat tech that
+    unlocks wondrous impossibilities and brings them into the palm of a
+    Character\'s hand. They can bring power and awe. People of lower
+    understanding may simply view someone with advanced technology as a
+    god. Or at least someone of great power that should be feared. This
+    is full of fun storytelling possibilities. Technology and the belief
+    in what is possible are the fuel for Sci-Fi stories and can empower
+    GMs and Players alike. In Future Path Player Characters inherit the
+    Tech Level of the civilization they grow up in. The Tech Level
+    affects what level of items a player can repair/modify/craft. And
+    penalties are given for the use of items with Tech Levels too high
+    for a character to understand. More on Tech Level
+    [here](Tech_Level_and_Civ_Progress "here"){.wikilink}. They can also
+    earn the ability to use, repair, and even craft items of a higher
+    Tech level at certain points in the adventure. Giving something for
+    a Character to strive for and the Player to look forward to.

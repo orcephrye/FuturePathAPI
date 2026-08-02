@@ -1,0 +1,51 @@
+{|
+|+ '''Spear'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Simple Spear
+
+'''Power / Speed''' (Total Level/Dice): Large / Manual = Level 3 / d8
+
+'''Proficiency Requirement''': 4 Levels in Melee Branch
+
+'''Weapon Style & Arch Type''': Melee Weapon
+
+'''Range''': Reach 10ft, Ranged: 15ft + 5ft per strength mod.
+
+'''Default Attributes''': Clunky, Throw-able
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $960 / 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 1
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly 8 to 10 pounds
+
+'''Bonus Abilities''':   
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: These spears where often made crudely with stone or bone at the tip. As technology advanced metal was eventually used. These where common for hunting however they where clunky when used as a melee weapon as they where bulky.
+;Explanations: This weapon can be used as both Melee and as a Ranged weapon. With Melee the weapon has a Reach of 10ft. But its range is based on the strength modifier of the person throwing it. The weight is increased by two and the clunky attribute is earned. This earns to negative points which are used for one customization. That customization is 1 DR Damage. This reflects the kinetic energy built up by the large spear hurdling threw the air giving it a lot of stopping power.
+|}

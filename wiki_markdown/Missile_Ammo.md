@@ -1,0 +1,74 @@
+This is a page dedicated to Missile Ammo for Spaceships. To learn more
+about Space Ship Weapons and Equipment go
+[here](Ship_Equipment "here"){.wikilink} and to learn more about Space
+Ships themselves go [here](Space_Ships "here"){.wikilink}.
+
+: Short Ranged Missiles
+
+  : Description: These missiles have a bonus to accuracy making them a
+    short hit. Except that take a range increment is one size smaller.
+    For small weapons this is 1/2. However, these missiles gain
+    advantage to accuracy.
+  : Price: Normal Price after +1 procure difficulty increase.
+: Medium Ranged Missiles
+
+  : Description: These are the default normal missiles. They are found
+    everywhere and usually come with bulk buying discounts. They have no
+    other advantages.
+  : Price: Normal cost.
+: Long Ranged Missiles
+
+  : Description: These missiles fire on targets at a long distance. The
+    range increment is one size higher +10%. For Gigantic the range is
+    triple. However these missiles reduce there damage to increase the
+    fuel. The damage is d4 instead of d6.
+  : Price: Normal Price after +1 procure difficulty increase.
+: Seeker Missiles
+
+  : Description: These are normal range missiles that have a bonus to
+    accuracy. Can advantage when firing them. They have advanced
+    tracking systems that improve there ability to hit.
+  : Price: Double Normal Cost and then add Procure Diff +1
+: Scatter Missiles
+
+  : Description: A Multi-Explosive Head Rocket or MEHR are designed to
+    hit the target across a spread. The range increment is reduced to
+    the size category smaller with small being 1/2 the range and the
+    damage is reduced by 1 die per size category starting with medium.
+    However the weapon gains advantage to accuracy and cannot be jammed
+    or targeted with counter measures.
+  : Price: Double Normal Cost and then add Procure Diff +1
+: Mine Laying
+
+  : Description: These smart bombs lie in a stealth mode making it
+    difficult to detect and once a ship gets close enough it activates
+    and rockets toward the nearest victim. The goal is to lay multiple
+    of these around an area that is known for enemy traffic. The objects
+    can stay active for decades and are extremely devastating.
+  : Price: Halve the normal cost however Procure Diff is +3 as this is
+    illegal even for military to use.
+: Torpedo
+
+  : Description: These are long range heavy rockets. These are known for
+    there straight but fast trajectories and even more so for there
+    devastating pay loads. The range of these weapons are one size
+    increment up and for Gigantic it is quadruple. They take
+    disadvantage to hit and use d10s for damage die.
+  : Price: Triple Cost and then add Procure Diff +2
+: Defense Missiles
+
+  : Description: These reaction anti-missile or drone counter missiles
+    are especially designed to hit tiny fast moving objects. They can
+    target and destroy incoming fire. Each Defense Missile fired per
+    round has a 50/50 chance of destroying a missile or hitting a drone.
+    The damage done to the drone is Xd4 instead of Xd6 and the X is -1
+    for every size category starting with small.
+  : Price: 50% increase after including the Procure Diff +2.
+: Shield Piercers
+
+  : Description: Especially designed rockets to shred through enemy
+    target shields. If the shield configuration is set for DR this
+    missile negates 50% of the DR round up. If the configuration is set
+    for Shield Hit Points then this missile rolls double the number of
+    damage die but only damages shields.
+  : Price: Triple Cost and then add Procure Diff +2

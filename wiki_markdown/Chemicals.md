@@ -1,0 +1,73 @@
+The symptoms of poisoning can range from headaches and vomiting, to a
+painful death. The statistics for the poisons mentioned below are in
+their pure form, which is very hard to obtain from legal or black market
+sources. The authenticity of poisons purchased on the black market is
+also very difficult to determine.
+
++--------------+-----------+-----------+---------------+---------+-----------+
+| Name         | Save      | Frequency | Effect        | Cure    | Cost      |
++==============+===========+===========+===============+=========+===========+
+| Botulinum    | Con DC 35 | 1 round   | 20 hp damage  | 3 saves | \$150,000 |
+|              |           | (25)      | immediately\  |         |           |
+|              |           |           | then 1 Con    |         |           |
+|              |           |           | damage/minute |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Ricin        | Con DC 30 | 1 round   | 10 hp damage  | 2 saves | \$35,000  |
+|              |           | (10)      | immediately\  |         |           |
+|              |           |           | then 3 Con    |         |           |
+|              |           |           | damage if     |         |           |
+|              |           |           | fail saves    |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Anthrax      | Con DC 28 | 1 round   | 3 Con damage  | 2 saves | \$35,000  |
+|              |           | (8)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Sarin        | Con DC 26 | 1 round   | 3 Con damage  | 2 save  | \$20,000  |
+|              |           | (8)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Tetrodotoxin | Con DC 25 | 1 round   | 3 Con damage  | 1 save  | \$15,000  |
+|              |           | (7)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Cyanide      | Con DC 25 | 1 round   | 3 Con damage  | 1 save  | \$3,000   |
+|              |           | (6)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Strychnine   | Con DC 22 | 1 round   | 2 Con damage  | 1 save  | \$2,000   |
+|              |           | (6)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Mercury      | Con DC 22 | 1 round   | 2 Con damage  | 1 save  | \$650     |
+|              |           | (6)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Amatoxin     | Con DC 20 | 1 round   | 2 Con damage  | 1 save  | \$1,000   |
+|              |           | (5)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Arsenic      | Con DC 18 | 1 round   | 1 Con damage  | 1 save  | \$900     |
+|              |           | (5)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Amatoxin     | Con DC 17 | 1 round   | 1 Con damage  | 1 save  | \$900     |
+|              |           | (4)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Coniine      | Con DC 15 | 1 round   | 1 Con damage  | 1 save  | \$650     |
+|              |           | (4)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Black Adder  | Con DC 13 | 1 round   | 1 Con damage  | 1 save  | \$500     |
+| Venom        |           | (6)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+| Heroin       | Con DC 12 | 1 round   | 1 Con damage  | 1 save  | \$275     |
+|              |           | (4)       |               |         |           |
++--------------+-----------+-----------+---------------+---------+-----------+
+
+It is possible to distill or refine common household products (such as
+cleaners) plants or over-the-counter and prescription drugs to extract
+poisonous content that can be administered by various different methods.
+These extracts are significantly less potent than the pure poisons
+mentioned in the table above and it requires the craft (pharmaceutical)
+skill and appropriate equipment to obtain.
+
+The toxicity of the distilled/refined extract and the necessary
+equipment costs and craft DC\'s are outlined in the table below:
+
+  Con Save DC   Craft DC   Time to extract   Frequency     Effect         Cure
+  ------------- ---------- ----------------- ------------- -------------- --------
+  10            15         1 hr.             1 round (3)   1 con damage   1 save
+  15            20         3 hr.             1 round (3)   1 con damage   1 save
+  20            25         6 hr.             1 round (3)   1 con damage   1 save
+  25            30         12 hr.            1 round (3)   1 con damage   1 save

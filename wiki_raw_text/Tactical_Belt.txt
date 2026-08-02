@@ -1,0 +1,5 @@
+This is a Weapon Accessory. To learn more about Weapons, go [[Weapons|here]].
+
+A Tactical Belt is designed to keep ammunition within easy reach. It provides multiple Quick Access Slots specifically for Magazines or individual rounds. This allows a Character to perform a 'Reload' or retrieve a fresh magazine as a Simple Move Action.
+
+;Benefit: 4 Quick Access Slots for Magazines.

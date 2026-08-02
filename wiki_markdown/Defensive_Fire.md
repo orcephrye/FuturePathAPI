@@ -1,0 +1,18 @@
+Defensive Fire is an Advanced Function for crew members. To learn about
+other functions go the [Space Ship
+Functions](Space_Ships#Officer.2FShip_Functions "Space Ship Functions"){.wikilink}
+section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
+
+## Description
+
+This allows the Weapon's Officer to turn one or more of their Hard
+Points into a point defense system against Missiles. If the Weapon\'s
+Office chooses to withhold using a Projectile, Laser, or Plasma Weapon
+Hardpoint to attack, they can instead use one of these to defend against
+incoming missiles. For each hardpoint, the Weapon\'s officer chooses to
+use as defense, they gain 1d10. However, each hardpoint takes a -2 to
+the die roll unless it is a Laser, which only takes a -1.
+
+Note about Lasers
+: At Class 1 a laser can be used to both fire on an enemy ship and act
+  as Point Defense. At Class 5, a Laser doesn\'t have a negative point.

@@ -1,0 +1,10 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**: Affinity Die 1d4.
+
+**Benefit**: The character can draw a holstered or quick-access weapon
+as a Free action.
+
+**Normal**: A character can draw a holstered or quick-access weapon as a
+Simple action.

@@ -1,0 +1,123 @@
+Your ability to learn from observation, through scientific research, or
+by reading and learning.
+
+## Check
+
+The Character can use Study to observe and learn from behavior, analyze
+clues, collect and learn from evidence, and conduct research and
+science.
+
+A Character will generally use a
+[Perception](Perception "Perception"){.wikilink} check to discover clues
+and the Study skill to analyze the information or attempt to learn from
+it in some way. Perception is used to find the obvious clues in a room,
+things that stand out. But Study can reveal information in a room that
+is not obvious or is inherently complicated.
+
+### Observe Behavior {#observe_behavior}
+
+The Character can watch and learn about a Character from a distance.
+Giving them the ability to pick up on the nuances of a target\'s action
+that would otherwise be hidden from the untrained eye. This is useful to
+learn clues during a \'stack out\' or while \'stalking\' a target. The
+DC is up to the GM, but normally it\'s base is 15. It can normally take
+all day or all night and thus cannot be tried again until the next stack
+out.
+
+### Analyze Clue {#analyze_clue}
+
+The Character can make a Study check to apply forensics knowledge to a
+clue. This function of the Study skill does not give the character clues
+that did not exist before. It simply allows the character to extract
+additional information from a clue they have found.
+
+The base DC to analyze a clue is 15. It is modified by the time elapsed
+since the clue was left and by whether the scene was disturbed.
+
+  Circumstances                              DC Modifier
+  ------------------------------------------ -------------
+  Every day since event (max modifier +10)   2
+  Scene is outdoors                          5
+  Scene slightly disturbed                   2
+  Scene moderately disturbed                 4
+  Scene extremely disturbed                  6
+
+A Character cannot Try Again to Analyze a Clue. They can submit it as
+Evidence and have a Lab \'Research\' it or \'Research\' it themselves.
+See below.
+
+### Collect Evidence {#collect_evidence}
+
+The character can collect and prepare evidence material for a lab. This
+use of the Study skill requires an Evidence kit.
+
+To collect a piece of evidence, make a Study check (DC 15). If the
+character succeeds, the evidence is usable by a crime lab. If the
+character fails, a crime lab analysis can be done, but the lab takes a
+--5 penalty on any necessary check. If the character fails by 5 or more,
+the lab analysis simply cannot be done. On the other hand, if the
+character succeeds by 10 or more, the lab gains a +2 circumstance bonus
+on its checks to analyze the material.
+
+This Investigate skill function does not provide the character with
+evidence items. It simply allows the character to collect items he or
+she has found in a manner that best aids their later analysis at a crime
+lab.
+
+### Researching a Topic/Item/Event {#researching_a_topicitemevent}
+
+Researching a topic takes time, skill, and some luck. The GM determines
+how obscure a particular topic is (the more obscure, the higher the DC)
+and what information might be available, depending on where the
+character is conducting his or her research.
+
+This is similar to Gather Information (Diplomacy check), however, Gather
+Information requires communication with people, while Researching is
+something one can do by themselves and depends on a different Ability
+Score. This can be done on the evidence collected using the \'Collect
+Evidence\' check noted above.
+
+Information ranges from general to protected. Given enough time (usually
+1d6 hours) and a successful skill check, the character gets a general
+idea about a given topic. This assumes that no obvious reasons exist why
+such information would be unavailable, and that the character has a way
+to acquire restricted or protected information. The higher the check
+result, the better and more complete the information. If the character
+wants to discover a specific fact, date, map, or similar bit of
+information, add +5 to +15 to the DC.
+
+## Try Again {#try_again}
+
+Generally, analyzing a clue again doesn't add new insight unless another
+clue is introduced. Evidence collected cannot be recollected, unless
+there is more of it to take. A character can take 10 and 20 when making
+a Study check. Analyzing a clue is a full-round action. Collecting
+evidence generally takes 1d4 minutes per object. Lab work and research
+can take 1d6 hours.
+
+## Special
+
+- Collecting evidence requires an Evidence Kit from [General
+  Equipment](General_Equipment "General Equipment"){.wikilink}. If the
+  character does not have the appropriate kit, the character takes a
+  double disadvantage penalty on his or her check.
+- Researching a topic or event only requires a computer or being at a
+  Library. Special Access Computers or certain Libraries (with maybe a
+  Librarian assistant) can provide bonuses. Helping someone research a
+  topic or event can not only improve the outcome but also reduce the
+  time it takes.
+- Researching an object like Evidence requires a Lab of some sort. A
+  Science Lab or a Crime Lab is a good example. Without a lab, the
+  Character can only \'Analyze\' it.
+- **Feats**:
+
+1.  A Character with the [Attentive](Attentive "Attentive"){.wikilink}
+    Feat gets a Misc +1 bonus to Study and Sense Motive skills. At level
+    Character Lvl 12, this turns into +2 for both Study and Sense Motive
+    skills.
+2.  A Character with the
+    [Meticulous](Meticulous "Meticulous"){.wikilink} Feat gets Misc +1
+    bonus to both the Decipher Script and the Study skill.
+3.  A Character with the [Studious](Studious "Studious"){.wikilink}
+    Feat, gets Misc +2 bonus on the Study skill and a Misc +1 to any
+    Knowledge skill.

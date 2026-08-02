@@ -1,0 +1,49 @@
+{|
+|+ '''Hybrid Auto Cannon'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Hybrid Auto Cannon
+
+'''Power / Speed''' (Total Level/Dice): Gigantic / Full Auto = Level 6/2d8
+
+'''Weapon Arch Type''':  Light Machine Weapon
+
+'''Range''': 2,700ft
+
+'''Default Attributes''': Clunky
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $3,650 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x3
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Kinetic, Thermal
+
+'''Ammunition''': N/A
+
+'''Reload Speed''': N/A
+
+'''Weight''': Roughly ~30 pounds
+
+'''Bonus Abilities''':  Suppression Fire
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

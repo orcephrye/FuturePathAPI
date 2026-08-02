@@ -1,0 +1,46 @@
+{|
+|+ '''Nano Mesh Regen'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Nano Mesh Regen
+
+'''Level''': 3
+
+'''Protection +AC / X DR''': +1 / 0
+
+'''Maximum Dexterity''': +7
+
+'''Proficiency Requirement''': 3
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $10,000 / 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': Normal
+
+'''Weight''': 10 lbs
+
+'''Bonus Abilities''': Regeneration +6
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 2
+
+'''Customization Slots Used''': 2
+
+'''Remaining Slots''': 2
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

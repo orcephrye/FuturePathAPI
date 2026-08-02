@@ -1,0 +1,207 @@
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS STILL UNDER
+CONSTRUCTION! `</span>`{=html}**
+
+While a mutation can take many forms, it typically denotes an abnormal
+trait or ability that is not common in the species. Mutations can be
+pronounced or unnoticeable. They may grant extraordinary abilities or
+effect subtle to grotesque changes in a creature's physiology.
+
+Mutations may appear at birth or manifest as consequences of radiation
+exposure or some horrible physical trauma.
+
+Characters who are Mutants cannot benefit from other difficulties.
+
+Player\'s use the Mutation Point(MP) system presented below to acquire
+mutations. GMs do not necessarily have to strictly follow the rules
+below when creating NPCs or villains for the Players to fight. Thus,
+they can use these rules creatively to support storytelling and player
+adventure.
+
+## Mutation Points {#mutation_points}
+
+Mutation Points (MP) provide a simple method of selecting mutations
+while preserving game balance. All creatures (including Player Heroes)
+begin with 0 MP. A creature/character gains MP by selecting one or more
+[drawbacks](Mutation_Drawbacks "drawbacks"){.wikilink} that make the
+creature less effective in some way. Then they "spend" the MP on one or
+more beneficial mutations. The total MP spent on beneficial mutations
+cannot exceed the total MP the creature gains from drawbacks. A creature
+may still have unspent MP after choosing beneficial mutations, however.
+These unspent MP can be stored for later use.
+
+### Earning MP Points {#earning_mp_points}
+
+Every odd level, starting at level 1, a Character can earn and spend MP
+points. A Character cannot use MP points on even levels, only when
+leveling up a Character on an odd level ie 3,5,7 etc\... can a Character
+modify mutations by earning and spending MP points. One exception is the
+ability to earn an MP with a feat. A Character can gain any number of MP
+but can only spend up to their Character Level + 3 in MP. So at level 1,
+they can spend 4 MP points to gain a mutation and will have to wait
+until level 3 to earn and/or spend more MP, at which time they can
+utilize up to 6 MP. To earn MP the Character must gain a
+[Drawback](Mutation_Drawbacks "Drawback"){.wikilink} from the options
+below.
+
+### Delayed Manifestation {#delayed_manifestation}
+
+The choice to become a Mutant doesn\'t have to happen when building a
+Level 1 Character. Instead, a Player can choose to have their Character
+become a Mutant at a higher level. The Player should develop a story
+explanation for the late manifestation of powers. The simplest option is
+to say the mutation doesn\'t start to manifest until later in life. The
+Character gains a penalty of -1 MP for every 5 levels skipped. If a
+Character becomes a mutant at an even level the number of MP that they
+can spend is equal to their lower odd level.
+
+**NOTE:** This applies to even preplanned Characters. The idea is to
+avoid a character dynamically changing their power level. However, the
+GM should be able to make exceptions. If, for example, the GM has a
+Character fall into a vat of chemicals, this could be the outcome, and
+it should be up to the GM and Player if this penalty applies.
+
+### Innate Drawbacks {#innate_drawbacks}
+
+While the Player can choose from a list of
+[Drawbacks](Mutation_Drawbacks "Drawbacks"){.wikilink} to make the
+Mutant Character unique, there are also some aspects of being a Mutant
+that are shared.
+
+- For every **3 MP** spent, the Character gains a -1 to
+  [Disguise](Disguise "Disguise"){.wikilink} checks. This works the same
+  as Cybernetics, where the [Disguise](Disguise "Disguise"){.wikilink}
+  now has two DCs: one to see if the person notices you are a Mutant
+  (the lower one) and another to correctly identify you. However,
+  because Mutants are rare, the GM should consider this when an NPC
+  attempts to identify the Character in question.
+
+<!-- -->
+
+- For every **5 MP** spent, the Character gets -1 to one of the
+  following Ability Scores: **Strength**, **Dexterity**,
+  **Constitution**, or **Charisma**. The Player decides which Ability
+  gets the negative.
+
+## Mutation Drawbacks {#mutation_drawbacks}
+
+Visit the [Mutation
+Drawbacks](Mutation_Drawbacks "Mutation Drawbacks"){.wikilink} page to
+see a full list of all drawbacks. Below is a table for Drawbacks.
+
+  Drawback                   MP Value
+  -------------------------- ----------
+  Ability Decay              5
+  Blood Hunger               4
+  Brittle Bones              2
+  Chemical Dependency        3
+  Combat Fear                4
+  Festering Sores            2
+  Frailty                    3
+  Insanity                   5
+  Heat/Cold Susceptibility   1
+  Lethargy                   4
+  Light Sensitivity          1
+  Pheromone Repulsion        1
+  Reduced Speed              2
+  Slow Minded                3
+  Thin Skin                  2
+  Ultraviolet Allergy        3
+  Weak Immune System         3
+
+  : Table: Drawbacks
+
+## Mutations
+
+### Types of Mutations {#types_of_mutations}
+
+There Four Types of Mutations. **Cosmetic**, **Offensive**,
+**Defensive** and **Enhanced Abilities**. There are also
+**Customizations**, which are a list of improvements that can be added
+to existing Offensive/Defensive and to some extent Enhanced Abilities.
+To view the full list of Mutations with descriptions, visit the
+[Mutation Enhancements
+page](Mutation_Enhancements "Mutation Enhancements page"){.wikilink}.
+
+Cosmetic
+
+: 
+
+: These Abilities instantly increase your Desguise Penality as if you
+  spent 3 more MP points. However, it requires no other Innate Drawbacks
+  and provides no enhancements or other effects for the Character. All
+  Cosmetic-only Mutations cost 0 MP points unless specified otherwise.
+  There are examples provided below. A Player, however, can make their
+  own choice about how their appearance changes, but should discuss this
+  with the GM.
+
+<!-- -->
+
+Offensive
+
+: 
+
+: These are enhancements that directly affect combat or in some way
+  improve a Character\'s ability to attack. These give the Character a
+  new Natural Attack ability or enhance an existing ability. Notably,
+  this doesn\'t include physical enhancements such as Super Strength.
+  Offensive Types either provide a new Natural Attack or directly affect
+  Advantage Die, Attack Bonuses, Extra Attacks, Critical Modifiers, or
+  any offensive Combat-related modifier.
+
+<!-- -->
+
+Defensive
+
+: 
+
+: These are enhancements that focus on defense in combat situations.
+  They can involve both passive and reactive abilities. Examples include
+  Scale Skin, which provides a Natural AC bonus, and Body Regeneration,
+  which can provide HP recovery. Just like with the Offensive Type,
+  this, however, doesn\'t include passive Ability bonuses, as this would
+  be classified as an Enhanced Ability. Defensive Types either provide
+  new Natural Abilities such as passive healing or directly affect AC,
+  DR, Damage Resistance, HP, Saving Throws, or any defensive
+  Combat-related modifier.
+
+<!-- -->
+
+Enhanced Abilities
+
+: 
+
+: This category is a broad set of Mutations. They can include new
+  natural abilities such as Flight or Dark Vision. They can include
+  passive improvements that focus on enhancing one or more of the 6
+  Physical Abilities or any of the Skills. This also includes any
+  Mutation that doesn\'t fit in the other 3 Types.
+
+### Gaining Mutation Types {#gaining_mutation_types}
+
+By default, a Mutant can only have up to **2** of each **type** of
+Mutation Enhancement except for Cosmetic. A **Primary** and
+**Secondary** for each Type. For Cosmetic, it is assumed that the first
+mutation is the most pronounced, and all following Cosmetic changes are
+less pronounced. A Character only gets the penalty for Disguise once
+with Cosmetics.
+
+For Offensive, Defensive, and other Enhanced Abilities, if a Character
+chooses a second mutation of the same type, they must do two things.
+First, they must declare which Mutation is the Primary mutation. For
+example, if the Character has Fangs and then gains Claws, they must
+declare which is their Primary Natural Attack and which is considered
+Secondary. This allows for the combat rules for secondary weapons to
+apply. Second, the Character has to pay 1 more MP point immediately to
+gain the Secondary mutation. And from then on, whenever improving their
+Secondary mutation, it always costs 1 more MP. Feats can remove this
+restriction.
+
+Lastly, for every new Mutation after the 3rd non-Cosmetic mutation
+gained by the Mutant, it costs an additional 1MP but only once upon
+gaining the mutation. Again, there are Feats that can change this.
+
+### Mutation Tables {#mutation_tables}
+
+Below is a table of Mutations Enhancements separated by Type and with
+links to a full description located on the [Mutation
+Enhancements](Mutation_Enhancements "Mutation Enhancements"){.wikilink}

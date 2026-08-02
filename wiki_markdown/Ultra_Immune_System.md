@@ -1,0 +1,14 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+You are less susceptible to the ravages of poison, disease, and
+radiation poisoning.
+
+**Prerequisite**: -
+
+**Benefits**: You gain an advantage bonus on Constitution saving throws
+to resist poisons, diseases, and radiation sickness.
+
+**Normal**: -
+
+**Special**: -

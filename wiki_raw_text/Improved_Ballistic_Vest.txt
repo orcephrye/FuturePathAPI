@@ -1,0 +1,46 @@
+{|
+|+ '''Improved Ballistic Vest'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Improved Ballistic Vest
+
+'''Level''': 3
+
+'''Protection +AC / X DR''': +1 / 2 DR (A)
+
+'''Maximum Dexterity''': +6
+
+'''Proficiency Requirement''': 3
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,250 / 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': Normal
+
+'''Weight''': 15 lbs
+
+'''Bonus Abilities''': N/A
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 0
+
+'''Customization Slots Used''': 0
+
+'''Remaining Slots''': 3
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

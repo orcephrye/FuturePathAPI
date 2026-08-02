@@ -1,0 +1,49 @@
+{|
+|+ '''Assault Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Assault Rifle
+
+'''Power / Speed''' (Total Level/Dice): Medium / Semi-Auto= Level 3/d8
+
+'''Weapon Arch Type''': Assault Specialized Weapon 
+
+'''Range''': 300ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $1,100 / 1 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': 0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': Kinetic
+
+'''Ammunition''': 7
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':  Enhanced Combat Options (Overrun)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: This is a standard and most common ranged weapon used by civilian forces for both defense and hunting during there Type 1 phase. Commonly are non-automatic versions of military weapons.
+;Explanations: The weapon gains the Bonus Ability of 'Enhanced Combat Options' for the combat technique 'Overrun' but of the weapons Arch-Type.
+|}

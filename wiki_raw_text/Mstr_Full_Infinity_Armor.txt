@@ -1,0 +1,46 @@
+{|
+|+ '''Masterwork Full Infinity Armor'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Mstr Full Infinity Armor
+
+'''Level''': 9
+
+'''Protection +AC / X DR''': +9 / DR (1A, 1C,E,T)
+
+'''Maximum Dexterity''': +1
+
+'''Proficiency Requirement''': 9
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': 5 / +4P, +1P
+
+'''Cost/Procure Diff''': $812,000 / 4
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': Halved
+
+'''Weight''': 40 lbs
+
+'''Bonus Abilities''': Regeneration +12
+
+'''Negative Points Earned''': 2
+
+'''Custom Points Spent''': 8
+
+'''Customization Slots Used''': 5
+
+'''Remaining Slots''': 1
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

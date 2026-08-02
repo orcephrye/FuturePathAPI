@@ -1,0 +1,4 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the Explosive section click [[Weapons#Explosives_.28Grenades.2FTraps.29|here]].
+
+;Teleport
+* This teleports a target or group of targets within the specified range to a different location. The effect is instant and the distance can be no more then 100ft. However accessories can be used to extend the range. It cannot teleport a person into a space that is already occupied.

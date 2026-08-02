@@ -1,0 +1,565 @@
+<div class="toclimit-1"><div style="float:right; margin-left: 20px">__TOC__</div></div>
+Below are the instructions on how to create a Character, as well as basic rules for advancing the Character in levels. If you have never played a Pen and Paper game before, you may wish to review the [[Basics|Getting Started]] page. You can also skip Character Creation and use a [[Starter_Characters#Starter_Character_Sheets|Starter Character]].
+
+Below you will see instructions on how to edit the Character sheet manually. Instructions on manually editing a character sheet are boxed. For example:
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Anything in this box-like format will be instructions for editing the Character sheet. 
+</pre>
+
+==What you need==
+
+Great! You made it. Time to take the character from your imagination and put it on paper! A few things you will need first: 
+
+# Dice! You need to get a d20 dice set. Here is a URL to help get you started [https://www.google.com/search?btnG=1&pws=0&q=d20+Dice+Set&gws_rd=ssl Google Search for "d20 Dice Set"]
+# A Character Sheet. Download [https://drive.google.com/uc?export=download&id=1cZ3PPchkXAgTSWTHKsONEIWNrg8PhN2P here]! 
+:* '''Note''': The Character sheet is form-fillable when you download it.
+
+== Summary ==
+
+Here is a summary of the steps that are explained in more detail in the sections below. 
+
+:'''[[#A_Character_Idea|1.]]''' Think of your Character's names, backstory etc... (optional)
+:'''[[#Choose_A_Species|2.]]''' Choose a [[Species]]
+::* Species provide features such as Size, Speed, Tech Proficiency, Homeworld, etc.
+:'''[[#Proficiency_Levels|3.]]''' Pick/record starting [[Proficiency_Tree|Proficiency Levels]]
+:'''[[#Choose_A_Path|4.]]''' Choose a [[Character_Path|Path]]
+::* The Path provides stats like Advantage Die, Ability Affinity, Hit Die (but not total Hit Points yet)
+::* Path also provides other features that will be explored in the sections below, such as Favored Skills, Talents, Feats, etc.
+:'''[[#Ability_Themes|5.]]''' Determine [[Ability_Themes|Ability Theme]] Scores and Modifiers
+:'''[[#Calculating_Health|6.]]''' Calculate Ability Score dependent states, IE: [[#Calculating_Health|Health]] (Hit Points), [[#Passive_Perception|Passive Perception]], [[#Initiative|Initiative]]
+:'''[[#Skills|7.]]''' Record Favored [[SkillsBasics|Skills]] and Spend starting Skill Points.
+:'''[[#Talents|8.]]''' Choose starting Talent from the Character's Path
+:'''[[#Feats|9.]]''' Choose starting Feats, one optional provided by the Path and one from the [[Feats]] page.
+:'''[[#Picking_an_Occupation|10.]]''' Pick a [[Occupations|Occupations]] and record Starting ISK/Credit Score
+:'''[[#Getting_Equipment|11.]]''' Acquire [[General_Equipment|Equipment]], [[Full_Weapon_List|Weapons]], and [[Armor#Armor_Examples|Armor]]. 
+:'''[[#AC|12.]]''' Record AC and any additional states that are affected by purchased items.
+
+==A Character Idea==
+Often overlooked but important is the simple idea of what you want to role-play. If role-playing is new to you or just not your thing, you can role-play yourself or an "ideal" or "ridiculous" version of you. 
+
+Feel free to go as in-depth as you like; there is no need to start with a well-formed character. Some people love to talk about their character ideas: backstories, history, family history, and that one time when they ran into that one guy on that one planet and shenanigans ensued. You can start your character off with as much or as little detail as you like, provided the essential parts of the Character sheet get filled out. 
+
+Consider asking yourself a few questions:
+
+# What is your Character's alignment/morals? Is your character good or evil? More on this on the [[Alignment]] page.
+# What is your Character's dream, big objective, or end game?
+# What is your Character's name?
+
+You can go as deeply into these questions as you like. Or provide a simple answer and move on. Either is fine. If a question like "What is your Character's name?" causes you to pause and linger too long, unable to come up with an answer, then simply move on to another detail and revisit it later.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Alignment/Name/Sex): At the top of the Character sheet, to the right of the "Future Path" title, is a series of blanks with the titles directly below each blank. Fill in the first few blanks now. "Character Name," "Alignment," and "Player Name" (That's your name in case you lose your sheet at a group event or something). There are also fields for you to enter "Sex", "Weight", and "Height". 
+</pre>
+
+If you feel stuck here, that is okay. If you already know what Class you want to play as, go ahead with the rest of the steps and come back to this one when you are done.
+
+===Qurks/Flaws and other Difficults ===
+One way to add extra flavor to your Character is to add a [[Difficulties|Difficulty]] such as a '''[[Quirks|Quirk or Flaw]]''', which are minor changes mostly for role-playing purposes that give your Character more depth and also something to try to overcome. However, there are also 3 advanced customizations '''[[Cybernetics]]''', '''[[Mutations]]''' and '''[[Psionics]]'''.
+
+==Choose A Species==
+Visit the [[Species|Species]] page for a list of available playable Species. The GM may also have made up new species to play as. Feel free to create your own if you want. Just make sure to ask the GM if it's okay to play an alternate Species.
+
+Species grant Traits to Characters as well as affect appearance and other characteristics. Species Traits can directly affect the Character's stats or provide special abilities only available to that Species.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: You can write your Species choice on your character sheet below the 'Character Class and Levels' section, which is directly below the 'Character Name' at the top right corner of the first page.
+</pre>
+
+=== Size and Speed ===
+
+Both size and speed are required boxes that are provided by the picked Species, although they can be modified later through Feats, Armor, or other rules. A Character sheet needs to have Size and Speed recorded as there are rules that impact gameplay that rely on these stats. By default a Species '''Size''' is '''Medium'''. By default, a Species default walk '''Speed''' is '''15ft''', and run is twice Base at '''30ft'''. Climbing and Swimming are both half Base speed (speed is measured in 5ft increments, and when halving speed, always round up. So 1/2 of 15ft is 10ft. The Burrow speed is always 5ft unless specified otherwise.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: Size is found at the top of the first page, right after the 'Species' box and before the 'Gender' box. Further below that section, past the 'DR' boxes, is the section dedicated to Speed. There, you can record your tactical movement speeds. 
+</pre>
+
+=== Tech Proficiency Level ===
+
+Species provide the starting Tech Proficiency level. The default starting Tech Level is 2 if nothing is provided. Unless it is obvious, the species isn't advanced. To learn about how Tech Level affects a Character and how to utilize it, go [[Tech|here]].
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: 'Tech Proficiency Level' can be found at the top of the first page under the large box titled 'Character Description and Background'. All Proficiencies are denoted with boxes that are checked off to indicate what Tech Level the Character understands.
+</pre>
+
+More on Proficiency levels in the next [[Character_Creation_and_Advancement#Proficiency_Levels|section]].
+
+=== Character Description (Homeworld/Gender/Height/Weight/Hair Color/Eyes) ===
+
+It is up to you as to how in-depth you wish to imagine your Character. The species can inform these attributes and help a Player determine the Character's appearance. Please note the Species 'Visual Description' and 'Physical Traits' to get an idea of how the Character may appear. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet:  Homeworld is located at the top of the first page, to the right of the 'Character Path/Level and Professions' section, or directly below the 'Player' section. While Gender, Height, Weight, Hair Color, and Eyes are found at the top of the first page. Are all on the same row, one after another, in order after the Species and Size boxes. Below these boxes is a large box for 'Character Description and Background.' This is a good place to provide a short extra explanation of appearance. 
+</pre>
+
+== Proficiency Levels ==
+
+This goes over the default starting values of the Character's [[Proficiency Tree]].
+
+; Tech Proficiency: You should have already filled out this information as part of the [[Character_Creation_and_Advancement#Tech_Proficiency_Level|previous section]]. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: This is located on the first page near the top, just below the 'SPEED' section and 'Character Description and Background' box. There are 4 square boxes that are underlined. Fill in all the boxes under and before the Character's Tech Level provided by the Species. All other Proficiency levels are located further down the page, in different sections near what they're associated with.
+</pre>
+
+; Melee and Ranged Proficiency Levels: By now, you probably know if you want your character to be better at Range or Melee weapons. You can choose not to focus on any one and gain 2 Levels in both Ranged and Melee. Or you can choose 3 levels in Ranged and 1 Level in Melee, or 3 levels in Melee and 1 Level in Ranged as your starting weapon Proficiency levels. Feel free to change this as you plan your character.
+
+; Armor Proficiency Levels: This starts at 2. It is always two unless a [[Species]] or [[Character Professions]] changes it. 
+
+; Power Armor Levels: This will always start at 0. Power armor requires a Feat called [[Power Armor Expert]] to start putting levels into it.
+
+; Item Use Proficiency Levels: This always starts out at zero.
+
+==Choose A Path ==
+Paths are in the [[Character_Path|Character Paths]] section. Character Paths represent a Character's favored Ability and also provide many of the base stats. Nobody starts out instantly as a Field Officer, Starfighter, or Envoy. It takes time to perfect one's abilities and understand one's strengths and weaknesses. Be aware that some [[Species]] (such as the Ovex) have a custom Path. Paths do not limit a Character, only help make it easier to go in a particular direction. 
+
+The choices, in summary, are as follows:
+
+* [[Character_Path#Path_of_Strength_.28Strong_Hero.29|Path of Strength]]
+
+* [[Character_Path#Path_of_Dexterity_.28Fast_Hero.29|Path of Dexterity]]
+
+* [[Character_Path#Path_of_Constitution_.28Tough_Hero.29|Path of Constitution]]
+
+* [[Character_Path#Path_of_Intelligence_.28Smart_Hero.29|Path of Intelligence]]
+
+* [[Character_Path#Path_of_Wisdom_.28Dedicated_Hero.29|Path of Wisdom]]
+
+* [[Character_Path#Path_of_Charisma_.28Charismatic_Hero.29|Path of Charisma]]
+
+* [[Character_Path#Path_of_No_Path_(The_Freelancer)|Path of No Path]]
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: At the top right of the Character Sheet are a couple of different sections for writing down things such as Character and Player Name. There is also a section titled: "Character Paths/Level and Professions". Here, you will enter the Path you take and your level in it. For example: "Path of Strength - Lvl1" 
+</pre>
+
+Even though the Character Path does provide the Hit Die(HD), the Hit Points cannot be calculated until the Ability scores are written down. More on Ability scores in the next section. But first, if you want a review of what '''HD''' and '''HP''' means or how health is handled go [[Health and Injury|here]]
+
+=== Advantage Die ===
+
+[[Advantage]] Die is a Die that gradually increases over Character levels. It is rolled alongside the d20 when using weapons or items your character is [[Proficiency_Tree|proficient]] with to aid in success. It represents an increased aptitude for certain [[Ability_Scores|abilities]], [[Skills|skills]] and various [[Weapons|weapons]] and [[General_Equipment|equipment]] as the Character levels up. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: A Character's Advantage Die is provided in the Character Path Table. It can be recorded on the Character Sheet in the box next to 'Advantage Die' located near the top left side of the first page. Next to the Ability scores under the 'INITIATIVE' and 'HP' boxes.
+</pre>
+
+=== Ability Affinity ===
+
+All the Paths, with the exception of 'The Path of No Path,' provide a single Ability Theme that the Character has an 'Affinity' with. More about filling out your Character's Ability Theme scores in the [[Character_Creation_and_Advancement#Ability_Themes|next section]].
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: Most Characters also have an affinity with a single Ability at level one. This is provided by their Path. On the Character sheet, the 6 Abilities are at the top left of the first page. Each has a small checkbox in the top-left corner of their ability square. That box is used to record which abilities you have an affinity with. As you gain new Character Professions, more checkboxes can be filled in as different Professions provide additional Ability Affinities.
+</pre>
+
+=== Hit Die ===
+
+Your Path provides the Character's Hit Die. This is used along with the Constitution Ability Theme to determine total health and how much health is gained per level. Once Ability Themes are determined, the 'Total Hit Points' can be filled out, but for now, the 'Hit Die' box can be filled in.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: At the top of the first page, under the 'Future Path' title, is the 'HP' section, which has the 'Hit Die' and 'Total Hit Points' followed by the 'DR' boxes. For now, just fill in the 'Hit Die' box with the die provided by the chosen Path.
+</pre>
+
+=== Other Path Features ===
+
+A Character's Path provides 'Favored Skills', 'Skill Points per Level', 'Starting Feat', and the option of a 'Talent' at level one. Each of these will be addressed in the sections below.
+
+=== A Note about Character Professions ===
+
+Character Professions require a Character to be at least level '''Two'''. However, it is good to be aware of them and to think about what Class you may want to pick for your Character once they level up. Professions are specializations that better define your Character and what they do. Think of it almost as a career choice. It adds more specific Talents and special abilities to your character. To review Character Professions, visit the [[Character Professions]] page.
+
+;Suggestion: It may be useful to review what [[Character Professions|Character Professions]] you want before picking a Character Path and/or before selecting your Ability Theme Scores. Each Advanced Class can ignore the Path requirement if the Character meets the [[Character_Creation_and_Advancement#Ability_Scores|Ability Score]] requirement and vice versa.
+
+==Ability Themes==
+{| class="wikitable" style="float:right; margin-left: 10px;"
+|+ Table: Ability Score Modifiers 
+! style="text-align:left;" | Ability Score 
+!  Modifier
+|-
+| 1  || –5                                                                                                                                                                                 
+|-
+| 2–3  || –4                                                                                                                                                                               
+|-
+| 4–5  || –3                                                                                                                                                                               
+|-
+| 6–7  || –2                                                                                                                                                                               
+|-
+| 8–9  || –1                                                                                                                                                                               
+|-
+| 10–11  || 0                                                                                                                                                                              
+|-
+| 12–13  || 1 
+|-
+| 14–15  || 2 
+|-
+| 16–17  || 3 
+|-
+| 18–19  || 4 
+|-
+| 20–21  || 5 
+|-
+| 22–23  || 6 
+|-
+| 24–25  || 7 
+|}
+
+{| class="wikitable" style="float:right; margin: auto 10px;"
+|+Table: Ability Score Costs 
+! style="text-align:left;" | Score
+! Points
+|-
+| 7||–4
+|-
+| 8||–2
+|-
+| 9||–1
+|-
+| 10||0
+|-
+| 11||1
+|-
+| 12||2
+|-
+| 13||3
+|-
+| 14||5
+|-
+| 15||7
+|-
+| 16||10
+|-
+| 17||13
+|-
+| 18||17
+|}
+
+{| class="wikitable" style="float:right; margin-left: auto; margin-right: 10px;"
+|+ Table: Ability Score Points
+! style="text-align:left;" | Campaign Type
+! Points
+|-
+| Low Fantasy||10
+|-
+| Standard Fantasy||15
+|-
+| High Fantasy||20
+|-
+| Epic Fantasy||25
+|}
+
+The next step is the foundation of your Hero; the [[Ability Themes|Ability Theme]] Scores. The Standard Fantasy Scores are 15, 14, 13, 12, 10, 8. The Player can then choose which Ability Theme gets which of the 6 scores. It's good to already know what you want the Character to be like and what Profession or Professions you hope to gain as you level up, so that you have a good idea where at least some of the scores should go.
+
+The Player can also roll for their Character's Ability Theme Scores or use the Point Buy system to 'buy' the scores. Learn more under the [[Character_Creation_and_Advancement#Alternate_Ability_Score_Rules|Alternate Ability Score Rules]]
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Ability Scores): Read the sections below for the different choices and details on setting up your ability scores. The Ability Scores section of the Character Sheet is on the first page, near the top, just below the "Future Path" title. It is a vertical column that starts with STR and ends with CHA. Each Ability has a SCORE/Modifier/TEMP SCORE/TEMP Modifier. We will only need to fill out the SCORE for now. 
+</pre>
+
+Once you select, roll, or buy up your ability scores (see alternate rules), you will want to record them on your Character Sheet. Your ability score may also be modified by the [[Species|Species]] you pick. And then once you figure out what your total score is, you may want to record what your modifier is. To the right is a table with the modifiers per ability score.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Ability Modifier): To the right is a table titled "Ability Score Modifiers". The math for this is also: "(Ability Score / 2) - 5 [round result down]". Normally, we wait to fill this out until you have picked your species, which is the next step. The reason for this is to avoid having to erase and rewrite the score.
+</pre>
+
+=== Alternate Ability Score Rules ===
+It is ultimately the choice of the GM to decide how Characters choose ability scores. So, this section is more for the GM to read than for a player. If you want to be the GM or just want to roll up some Character sheets for fun, then, by all means, read ahead. 
+
+{| class="mw-collapsible mw-collapsed wikitable"
+! Alternate Rules for rolling Ability scores.
+|-
+|
+During gaming, the GM may want to create a "High Fantasy" or "Low Fantasy" like setting. "High Fantasy" simply means the stats on average are going to be higher, and there will be big epic battles with Characters that are sure to succeed. On the other hand, playing a "Low Fantasy" game, you may have a less powerful character that is closer to the average Joe. 
+
+The different systems below accommodate both "Low" and "High" fantasy play styles.
+
+# '''Dice roll'''. Like all things, the tabletop dice roll decides all. Roll 4d6 (Four, six-sided dice) remove the lowest roll and add the other 3. Do this 6 times to end up with 6 total scores. The numbers will range from 3 to 18. Re-roll the dice for any total below 7. If you want different rules for getting Ability scores please review the Alternate rules section below.
+## You can roll for each Ability one after another, starting with Strength and ending with Charisma. Or you may record the totals on a sheet of paper. And then take the totals and apply them where you feel they are most needed. 
+## The GM may want to change when players re-roll totals that are too low. Or perhaps re-roll totals that are too high. 
+## The GM may also offer to have the player roll the 4d6 7 total times and remove the lowest total.
+## The GM can also change the number of dice rolled to adjust for high or low fantasy. Such as 3d6 for low or 5d6 for Epic
+# '''Point Buy'''. The Player spends the points they receive at level one to buy ability points. The Player automatically starts with 10 in all attributes, which are considered "average" or "normal" levels for those abilities. To the right, you can see the "Ability Score Points" table, and a character starts out with 15 points to spend for a Standard Fantasy. Another table to the right, titled "Ability Score Costs," informs the player how much that Score will cost. A player can also 'sell' a point, dropping their score from 10 to as low as 7 for extra points that can then be spent to increase a score elsewhere.  
+## The number of points given to the player to spend can change depending on whether the GM wants to play in a "Low", "Standard", "High", or "Epic" level of Fantasy/Sci-Fi. There is a table to the right detailing the ability points per fantasy type.
+## You can have players start out at 9 or 8 instead of 10. The ability score isn't just a score that provides modifiers when rolling. It is also supposed to represent role-playing aspects of a character. Perhaps your character isn't that Strong or Charismatic. Forcing characters to start lower and pay more to advance may help them think not only about the strong parts but also the weaknesses of a character.
+# '''Standard Spread''': The Player can also forgo rolling or point buy and simply be given the '''Standard Spread'''. They can then choose where each of the 6 scores goes.
+## Standard Fantasy: 15, 14, 13, 12, 10, 8
+## Low Fantasy: 14, 12, 10, 10, 8, 8
+## High Fantasy: 19, 18, 16, 13, 12, 10
+
+;Note for the GM: Both "Dice roll" and "Point Buy" have their advantages and disadvantages. Some people dislike the point buy because characters are likely to look too much alike. If you are a Strong/Soldier Hero, you know exactly where to spend your points for the most optimal build for that class, and it is likely that all of Strong/Soldiers will look the same. On the one hand, this gives the Player the most control over their character and helps avoid Players who may "Power Roll" for super-high scores. On the other hand, this reduces individuality by creating a more "cookie-cutter" character. The Dice Roll method puts a certain amount of chance into the creation of the Character. Sometimes working around unexpected bad ability scores can be interesting and fun, bringing a challenging, different aspect to role-playing. 
+
+|}
+
+== Calculating Health ==
+
+Now that you have rolled up and recorded your Ability scores, you can record your Character's Hit Points or HP. More a review on how Health is interpreted in Future Path, go to the [[Health and Injury|Health and Injury]] page.
+
+The Character Path informs the character of its "Hit Die". This defines how much HP a character gets per level. A Hit Die of d8 means you roll a d8 to determine your HP. At level 1 you take your maximum which is your highest possible number on the die. A character gets to add their Constitution modifier for every level to their total HP.
+
+As they level up, a player can choose between taking the average for the Hit Die + Con Mod or rolling for it using the Hit Die and then adding the Con Mod.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (HP): The Hit Points section is located on the first page, near the top left of the character sheet, just below the 'Future Path' title letters. A player can record both their Hit Die and their current HP (Hit Points). The large empty box just below the Hit Points section, labeled 'Wounds/Current HP', is where to record damage received during combat.
+</pre>
+
+== Passive Perception ==
+
+All Characters have a Passive Perception. This is the Character's awareness of their surroundings. When a Character rolls for a [[Perception]] Skill check, they are actively looking for something. However, Passive Perception is simply a Character's alertness while doing their daily routine. Passive Perception is a 10 + Wisdom Modifier. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: Passive Perception is recorded in the 'PASS. PERCEPTION' box just above the 'SKILLS' section and below the Ability Scores.
+</pre>
+
+==Initiative==
+
+Your initiative shows your Character's quickness, awareness, and willingness to react. Using a bit of luck with a d20 check, a person with a high initiative is more likely to go before another Player or opponents in a standoff situation. You can read up more about how the initiative is involved in gameplay on the [[Combat]] page. Initiative equals a Character's Wisdom Modifier + Dexterity Modifier. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Initiative): Your Initiative is located below the "HP" and "Wounds/Current HP" sections just above 'Advantage Die'. Your Initiative is normally your Dexterity and Wisdom Modifier.
+</pre>
+
+== Skills ==
+You will notice that on each Character Path, there are the 'Favored Skills' and 'Skill Points at Each Additional Level' sections. To learn more about skills and how to use them, you can go to the [[SkillsBasics|Skills Basics]] page. Each Class also provides Favored Skills. Each Favored Skill automatically gains a Skill Rank. If the Character already has that Favored Skill and earned it again through a Feat/Class etc... gain a Skill Point that must be spent on that Class when possible.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Favored Skill Box): To the left of the first page, below the Ability Score section of the Character Sheet, there is the Skills list. Notably, the largest section of the sheet. The Skills list has multiple columns: two checkboxes, Skill Name, Ranks, Ability Mod, Skill Die, and Misc Mod. At this point, we care only for the first square checkbox. You can check these off as your favored skills. 
+</pre>
+
+The amount of starting skill points your character gets is based on what your Character Path is. There is a section labeled 'Skill Points per Level' that shows how many skill points you get per level. You may also earn 1 Skill Point instead of choosing between two Feats from the 'Starting Feat' section. If you are starting out as a level 10 hero, then you add up the skill points for all 10 levels and spend them at once. Once you have identified what your Favored Skills are, you can spend your skill points. To add a Rank in a Favored Skill, you spend 1 point. To add a Rank to any other skill, you spend 2 points. The number of Ranks you can have in a skill is limited by 1/2 your Character Level, rounded up. The Language skill is special in that all Characters have it as a Favored skill and doesn't have a level limitation.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet: Once a skill Rank is earned, you can record the Skill Rank under the 'Ranks' column of the 'SKILLS' section next to the name of the skill you ranked up. The sum of Skill Rank + Ability Modifier provides the Skill Die level. The Skill Die represents a die or dice that can be rolled with a d20 to perform the skill in the game. On the character sheet at the bottom below the 'SKILLS' section, there is an explanation of which die is used at what Rank. For example, Skill Die level of 1 is a 1d2. You can record the die under the 'Skill Die' column, which is just right of the 'Ranks' column. 
+</pre>
+
+=== Filling in Skill Die Column ===
+
+The Skill Die is determined by the Skill Rank. The following table shows the Skill Rank and its corresponding level. [[SkillsBasics#Skill_Die_Levels|Skill Rank/Die Levels and success %]] table. They are also at the bottom of the Character Sheet PDF.
+
+==Choose Feats and Talents==
+
+Talents and Feats are extraordinary abilities that can be either passive or active. Or in some cases, it can have aspects of both. Talents are based on Character Path and Class, while Feats are picked by the Player as the Character levels up. Every Hero starts with at least one Talent at level one and must pick from the Path they choose. A Character also earns a Feat at level one and one every odd level. The [[Species]] you pick may have additional Talents or Feats. 
+
+===Talents===
+Determine how many Talents your Character starts out with (usually one), which is based on the class level. And pick one from the available Talent Professions. You will see them listed below the Character Path and Character Class tables. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Talents): Located on the bottom half of the second page of the Character Sheet, underneath the panel for "Techniques". Here, you can record both Talents and Feats that your character gains over time. 
+</pre>
+
+===Feats===
+The chosen path has a 'Starting Feat' section, which gives you the option of picking between two Feats or ignoring this for more Skill Points. Then at level 1, the Character gains one Feat without any Category restrictions. Some species, like humans, also provide a Bonus Feat at level 1.
+
+Determine how many feats your character receives, based on his class and level, and select them from those presented in [[Feats]]. Sometimes a Class provides a Feat that can only come from a particular Category which are '''Tatical''' or  '''Utility''' or Sub-Categories, such as '''Ranged Combat''' or '''Misc Feats'''.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Feats): Located on the bottom half of the second page of the Character Sheet, underneath the section for "Techniques" and slightly to the right is the "Feats and Talents" section. Here, you can record both Talents and Feats that your character gains over time.
+</pre>
+
+==Picking an Occupation==
+
+An [[Occupations|Occupation]] determines a Character's starting wealth; it should specify the 'Starting Bonus Income' and the 'Credit Rating Range'. A Character takes the lowest Credit score and then adds their Wisdom modifier (ignore negative modifiers). Also, automatically gain additional ISK (money) equal to 'Average Monthly Income' times the Wisdom modifier, and again ignore if the Wisdom modifier is negative. If the Character is starting out above level 1, then add their 'Average Monthly Income' for each level after level 1 to their Starting Bonus Income.
+
+You do not need to pick an Occupation to have a starting wealth if you do not want to. You can start with $4,000 creds per level to spend and a Credit Score of 4 + Wisdom Mod (ignore negatives)
+
+More about using and spending wealth on the [[Wealth_and_Money|Wealth]] page. 
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Wealth): On the second page, at the bottom left-hand corner, is the "Wealth" panel. In this box are "WEALTH in $ISK" and "CREDIT SCORE".
+</pre>
+
+===Getting Equipment===
+
+For equipment (not weapons or armor), go to the [[General_Equipment|General Equipment]] page. [[General_Equipment#Starter_Packs|Starter Packs]] are designed to help Heroes get into the action without having to do a lot of 'epic shopping' as they are bundles of general equipment that may be useful for a starting adventure. Consider a Starter Pack as things a Hero/Character already has without spending money, excluding weapons and armor. If they choose to pick their own 'starter' items, then as long as they are not more than 15 items and as long as they are not of a higher tech value than the Starting Character's Tech level, and they are not master-worked, then they should not subtract from starting wealth. 
+
+For Weapons go [[Full_Weapon_List|here]], and for Armor, go [[Armor#Armor_Examples|here]]. Armor and Weapons do subtract from the Character's starting wealth. If the Player wishes to customization there own [[Weapons|Weapons]] or [[Armor|Armor]] visit thier respected pages.
+
+=== AC ===
+
+[[Armor Class]] is a calculation of how hard it is to hit and deal damage to the Character. It is calculated with the following. 
+: '''AC = 10 + Armor Bonus + Dexterity Modifier + Size Modifier + Natural Armor + Miscellaneous Modifiers'''
+
+'''Flat-Footed''' and '''Touch''' can now also be filled in. They are located just to the right of the section for AC. '''Flat-Footed''' is a Character's AC without a Dexterity Bonus. While '''Touch''' is a Character's AC without Armor bonuses.
+
+Note: Armor can also reduce a wearer's Run, Sprint, Dash, Swim, and Climb speed.
+
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Armor Speed): On the first page, at the top, there is a 'SPEED' section. There is a box directly under the Swim and Climb boxes and to the right of the 'Base / Run' speed boxes. This is for recording the Armored Run Speed/-# of squares penalty.
+</pre>
+
+==Advancement==
+
+Character Advancement is based on experience gained by Players achieving goals, beating monsters, solving problems, etc. Below is a chart that details the experience a Player must have to reach the next level. There are 3 columns for XP. Labeled '''Slow''', '''Medium''', and '''Fast'''. These represent the speed at which the GM wants the Player Characters to progress. 
+
+Alternatively, the GM can simply declare a Character or Characters leveled up as a reward for getting past a certain point in the story. This would forgo the need to track XP.
+
+{| class="wikitable" style="10px;"
+|+ Table: Character Advancement 
+! style="text-align:left;" rowspan="2" | Character Level
+! colspan="3" | Experience Point Total
+! rowspan="2" | Talents*
+! rowspan="2" | Feats*
+! rowspan="2" | Pick Between<br />Custom Character Bonus
+|-
+! Slow 
+! Medium 
+! Fast
+|-
+| 1st || — || — || — || Talent || Feats(All) || —
+|-
+| 2nd || 3,000 || 2,000 || 1,300 || — || — || —
+|-
+| 3rd || 7,500 || 5,000 || 3,300 || - || Feat(Tactical) || —
+|-
+| 4th || 14,000 || 9,000 || 6,000 || — || — || Ability +1/Bonus Feat(Path)
+|-
+| 5th || 23,000 || 15,000 || 10,000 || - || Feat(Utility) || —
+|-
+| 6th || 35,000 || 23,000 || 15,000 || Talent || — || —
+|-
+| 7th || 53,000 || 35,000 || 23,000 || - || Feat(Tactical) || —
+|-
+| 8th || 77,000 || 51,000 || 34,000 || — || — || Ability +1/Bonus Feat(Path)
+|-
+| 9th || 115,000 || 75,000 || 50,000 || - || Feat(Utility) || —
+|-
+| 10th || 160,000 || 105,000 || 71,000 || — || — || —
+|-
+| 11th || 235,000 || 155,000 || 105,000 || - || Feat(Tactical) || —
+|-
+| 12th || 330,000 || 220,000 || 145,000 || Talent || — || Ability +1
+|-
+| 13th || 475,000 || 315,000 || 210,000 || - || Feat(Utility) || —
+|-
+| 14th || 665,000 || 445,000 || 295,000 || — || — || —
+|-
+| 15th || 955,000 || 635,000 || 425,000 || - || Feat(Tactical) || —
+|-
+| 16th || 1,350,000 || 890,000 || 600,000 || — || — || Ability +1/Bonus Feat(Path)
+|-
+| 17th || 1,900,000 || 1,300,000 || 850,000 || - || Feat(Utility) || —
+|-
+| 18th || 2,700,000 || 1,800,000 || 1,200,000 || Talent || — || —
+|-
+| 19th || 3,850,000 || 2,550,000 || 1,700,000 || - || Feat(Tactical) || —
+|-
+| 20th || 5,350,000 || 3,600,000 || 2,400,000 || — || — || Ability +1/Bonus Feat(Path)
+|-
+| style="font-size:70%; text-align:left;" colspan="7" | *The Talents and Feats are for Character Paths only and do not show other Talents/Feats gained by other means
+|}
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+Editing Character Sheet (Experience): On the bottom of the second page, there is a section titled 'EXPERIENCE POINTS' and a smaller section titled 'NEXT LEVEL'. Under Experience Points, you can keep track of how much experience the Character currently has. The section next to it records the required experience for the next level.
+</pre>
+
+At each level, a Character gets a variety of improvements and new things to choose from. The following is a complete list of all possible things a character can get. Skill points, Hit Dice/HP, ability score bonus, feat, talent, special ability, species bonus. 
+
+:'''1)''' Check your [[Character_Path|Character Path]].
+:: Your Path is the first thing you should check. The Character Path lets you know how many skill points, how much HP, Talents, or Feats you get at each level. (Although Character Professions also provide talents and feats.)
+:# Skills: The number of skill points should either be 1 + Int mod or 2 + Int mod. This should be the same number of skill points that you got to spend at level 1.
+:# Hit Points: There are multiple ways to add HP, and your GM usually will state which type, which will probably be inspired by either a Low, Regular, or High Fantasy setting.
+::# Default Option: Take the '''Level Up Average''' specified by the Character's Path. This is Average Roll + 1 + Con Mod. For example, a 1d8 hit die would be 4 + 1 + Con Mod.
+::# Normal Level Option: You roll for your HP at each level. Using the "Hit Die," you then add your CON modifier for the total amount you get to add to your HP.
+::# Low: Gain HP equal to the Character Constitution Modifier score, minimal +1.
+::# High: You automatically take your maximum roll using the "Hit Die". For example, if your hit die is d6 you get 6 + Con Modifier for the total amount you add to your HP.
+:# Path Talent: If you get a Talent associated with your Path on '''1st''', '''6th''', '''12th''', '''18th''' levels.
+:# Feat: If you get a Feat on every odd level starting on level 1. You must select a feat from the [[Feats]] page and meet all prerequisites. 
+:# Custom Character Bonus: This is a choice between an Ability Score bonus or a Bonus Feat from the Miscellaneous category. You gain this at '''4th''', '''8th''', '''16th''', '''20th''' levels.
+::# If you get an Ability score bonus, then that means that you can add +1 to any two Ability scores of your choice. This is a permanent change to the Character's ability score and may also affect the modifier. 
+::# If you choose a Bonus Feat, then you can pick from the Miscellaneous category on the [[Feats]] page. Any Feat that the Character has the pre-requirements for.
+:'''2)''' Check your [[Character Professions|Advanced Professions]]
+:# Character Professions Talents: Most [[Character Professions]] have a Talent or other feature that is earned at each level.
+:# Techniques: Some [[Character Professions]] have [[Techniques]]. The ones that do usually increase the number of Techniques they know per level. And some Techniques improve on their own.
+:'''3)''' Check your [[Species]]
+:: Sometimes a [[Species]] has a special feature that can be unlocked or improved upon at higher levels.
+:'''4)''' [[Proficiency_Tree|Proficiency]]
+:: Gain a Training Point, then choose to spend or hold your current points.
+:'''5)''' [[Hero_Companions|Companion]]
+:: If the character has an Animal or Robotic Companion, the companion's level is determined relative to its owner.

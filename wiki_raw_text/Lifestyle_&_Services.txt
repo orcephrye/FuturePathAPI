@@ -1,0 +1,99 @@
+''' <span style="color:#ff0000"> THIS PAGE IS STILL UNDER CONSTRUCTION! </span>  '''
+
+== Lifestyle ==
+
+Lifestyle items include travel expenses, entertainment and meals beyond the ordinary and housing, for those characters interested in buying a home rather than renting. Lifestyle items are shown on the table below.
+{| class="wikitable"
+|+Lifestyle Items
+! style="text-algin:left;"|Housing 
+! Cost
+
+|-
+|Small condo ||$85,000
+|-
+|Large condo ||$120,000
+|-
+|Small house ||$130,000
+|-
+|Medium house ||$200,000
+|-
+|Large house ||$400,000
+|-
+|Mansion ||$2,500,000
+|-
+! style="text-algin:left;"|Entertainment 
+! Cost
+
+|-
+|Movie ticket ||$10
+|-
+|Theater ticket ||$40
+|-
+|Sporting event ticket ||$60
+|-
+! style="text-algin:left;"|Meals 
+! Cost
+
+|-
+|Fast food ||$10
+|-
+|Family restaurant ||$15
+|-
+|Upscale restaurant ||$25
+|-
+|Fancy restaurant ||$60
+|}
+
+== Services ==
+
+The broad spectrum of services available to characters is only represented in overview here. Services are identified on Table: Services.
+{| class="wikitable"
+! style="text-algin:left;"|Auto repair 
+! Cost
+
+|-
+|1 to 10 hp damage ||$50
+|-
+|11 to 20 hp damage ||$100
+|-
+|21 to 30 hp damage ||$200
+|-
+|30+ hp damage ||$400
+|-
+
+! style="text-algin:left;"|Towing 
+! Cost
+
+|-
+|Any ||$800
+|-
+
+! style="text-algin:left;"|Bail bonds 
+! Cost
+
+|-
+|Property crime ||$1,000
+|-
+|Assault crime ||$5,000
+|-
+|Death crime ||$50,000
+|-
+
+! style="text-algin:left;"|Bribery 
+! Cost
+
+|-
+|Bouncer ||$50
+|-
+|Bureaucrat ||$1,000
+|-
+|Informant ||$1,000
+|-
+|Police officer ||$1,000
+|-
+! style="text-algin:left;"|Legal Services 
+! Cost
+
+|-
+|??? ||$100 + $100 per ranks <br/>in Knowledge (civics)
+|}

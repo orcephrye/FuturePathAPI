@@ -1,0 +1,51 @@
+{|
+|+ '''Laser Shotgun'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Laser Shotgun
+
+'''Power / Speed''' (Total Level/Dice): Large / Semi-Auto = Level 4 / 1d12*
+
+'''Proficiency Requirement''': 4 Levels in Ranged
+
+'''Weapon Style & Arch Type''': Shotgun, Laser
+
+'''Range''': Pellet 30ft / Slug 900ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $3,520 / 0 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +1
+
+'''Bonus Damage''': 0
+
+'''AP Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 20
+
+'''Damage Type''': Thermal
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~5 pounds
+
+'''Bonus Abilities''':   N/A 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: A shotgun that uses lasers instead of a projectile. Near the end of the nozzle there is a rotating crystal that helps generate a random dispersion of the laser beam. 
+;Explanations: 
+|}

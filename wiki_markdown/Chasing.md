@@ -1,0 +1,17 @@
+This is a Explosive (Grenade/Mine) attribute. To go back to the
+Explosive section click
+[here](Weapons#Explosives_.28Grenades.2FTraps.29 "here"){.wikilink}.
+
+Chasing
+
+- This means that the [Casing](Weapons#The_Casing "Casing"){.wikilink}
+  will chase after the target until it can maximize the charges
+  effectiveness. This instantly gives a +5 to the DC of the Trap/Mine to
+  avoid its damage. This also means that if one person triggers it the
+  Trap/Mine may move to a location where it can do the most damage. Or
+  that the Trap/Mine can be hiding in a vent or otherwise out of site
+  and be triggered by motion/sound or some other sense and then move
+  into position.
+
+The mode of its locomotion can be anything from wheels to legs like a
+spider.

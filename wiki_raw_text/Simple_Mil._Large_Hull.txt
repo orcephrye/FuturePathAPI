@@ -1,0 +1,132 @@
+{|
+| valign="top" |
+'''Ship Name''': Simple Mil. Large Hull
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 1
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Large
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': N/A
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 10
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 12 (Modifier: +1)
+
+'''Weapons''': 12 (Modifier: +1)
+
+'''Structure''': 12 (Modifier: +1)
+
+'''Shields''': 12 (Modifier: +1)
+
+'''Electronics''': 12 (Modifier: +1)
+
+'''Sensors''': 10 (Modifier: +0)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 1 (Size Mod))
+
+'''Detection DC''': 9
+
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
+
+'''Battle Damage''': 3
+
+'''Initiative''': 0 (Engines 1 + Sensors 0 - Structure 1)
+
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 5 successes (Base 4 + 1 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
+
+'''Repair DC Bonus''': +1 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +1 (equal to Engines Mod)
+
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+
+'''Cargo Capacity''': 1,500 Units (1,000 Base + 500 from Cargo Bay)
+
+'''Passenger Capacity''': 64 (32 Base + 32 from Passenger Bay)
+
+'''FTL Engine/Speed''': [[Space_Ships#Jump_Assistance_Drive|Assisted Jump Drive]] (Warp 1)
+
+'''Cost and Procure Diff''': $120,694,100 / 2 (Procure Diff: 2)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 0
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 0
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 7 / 7 / 0
+
+'''Bays (Total/Used/Free)''': 4 / 4 / 0
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
+;Description: A large-scale military patrol ship featuring an extensive weapons array, a fire-control system, and strong hull defenses.
+;Explanations: Built for major planetary defense or sector patrols, utilizing a Fire-Control Matrix to improve gunnery and mounting heavy projectile and plasma ordnance.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Space_Ships#Jump_Assistance_Drive|Assisted Jump Drive]] (Takes up 1 HP & 1 Bay)
+Hard Point 2: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
+Hard Point 3: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
+Hard Point 4: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
+Hard Point 5: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
+Hard Point 6: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Plasma|Large Plasma Ammo]])
+Hard Point 7: [[Ship_Equipment#Large_Weapons|Large Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Large Missile Ammo]])
+
+: '''Cost of Hard Point items''': $12,204,100 ($100,000 FTL Drive + $2,560,000 Projectiles + $102,400 Ammo + $2,500,000 Lasers + $1,666,700 Crystals + $1,875,000 Plasma + $150,000 Ammo + $3,125,000 Missile + $125,000 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+Bay 1: [[Space_Ships#Jump_Assistance_Drive|Assisted Jump Drive (FTL)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Large)]]
+Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Large)]]
+Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay (Level 1)]]
+
+: '''Cost of Bay items''': $190,000 ($80,000 Cargo Bay + $80,000 Passenger Bay + $30,000 Engineering Bay)
+|}

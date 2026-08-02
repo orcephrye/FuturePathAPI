@@ -1,0 +1,46 @@
+{|
+|+ '''Improved Tactical Body Armor'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Improved Tactical Body Armor
+
+'''Level''': 4
+
+'''Protection +AC / X DR''': +4 / 0
+
+'''Maximum Dexterity''': +5
+
+'''Proficiency Requirement''': 4
+
+'''Default Attributes''': N/A
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $4,900 / 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Speed Diff/Penality''': -5 ft
+
+'''Weight''': 20 lbs
+
+'''Bonus Abilities''': Quick Slot 2
+
+'''Negative Points Earned''': 0
+
+'''Custom Points Spent''': 1
+
+'''Customization Slots Used''': 1
+
+'''Remaining Slots''': 2
+
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: 
+;Explanations: 
+|}

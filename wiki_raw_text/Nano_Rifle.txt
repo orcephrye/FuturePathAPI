@@ -1,0 +1,51 @@
+{|
+|+ '''Nanotech Rifle'''
+| valign="top" |
+'''Main Attributes''':
+----
+'''Name''': Nano-Disassembler
+
+'''Power / Speed''' (Total Level/Dice): Large / Full Auto = Level 5 / 1d12
+
+'''Proficiency Requirement''': 7 Levels in Ranged (Increase of 2 due to Nanotech)
+
+'''Weapon Style & Arch Type''': Assault Specialized Weapon, Nanotech
+
+'''Range''': 900ft
+
+'''Default Attributes''': 
+
+'''Masterwork''': No
+
+'''Cost/Procure Diff''': $37,690 / 3 
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Secondary Attributes''':
+----
+'''Accuracy Bonus''': +0
+
+'''Bonus Damage''': 0
+
+'''DR Damage''': 0
+
+'''Critical Damage''': x2
+
+'''Critical Range''': 19-20
+
+'''Damage Type''': ALL (Kinetic & Thermal & Electrical & Chemical)
+
+'''Ammunition''': 6
+
+'''Reload Speed''': Standard
+
+'''Weight''': Roughly ~10 pounds
+
+'''Bonus Abilities''':  Switch Firing Modes
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Accessories and Description''':
+-----------
+;Weapon Accessories:
+;Description: The pinnacle of infantry weaponry, this rifle fires swarms of nanomachines that deconstruct targets at a molecular level, ignoring almost all forms of defense.
+;Explanations: This weapon uses the Nanotech Arch-Type. Its ALL damage type ignores all but Total DR. It features Smart Targeting, allowing the user to ignore Cover bonuses for targets within the first range increment (900ft). 
+|}

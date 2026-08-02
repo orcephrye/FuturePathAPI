@@ -1,0 +1,24 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+You can construct cybernetic attachments.
+
+**Prerequisites**: Must have 3 Ranks in total, split between Craft
+(Electrical) **and** (Mechanical) (at least one Rank in both), 1 Rank in
+[Medical](Medical "Medical"){.wikilink}. 1 rank in [Profession
+Doctor](Profession "Profession Doctor"){.wikilink} **or** Knowledge
+Sciences 1 Rank.
+
+**Benefits**: You can build cybernetic attachments. You must first buy
+all necessary components for construction, then invest 24 hours in its
+construction. At the end of that time, you must succeed at a Craft
+(mechanical) check (DC 20) and a Craft (electrical) check (DC 20).
+
+If both Craft checks succeed, the cybernetic attachment functions
+properly and can be installed at any time (see the Cybernetic Surgery
+feat). If either or both checks fail, the attachment's design is flawed;
+another 24 hours must be spent fixing the problems, and two new checks
+must be made at the end of that time.
+
+**Special**: This feat does not allow you to build a cybernetic
+attachment of a higher Tech Level than the Character\'s Tech level.

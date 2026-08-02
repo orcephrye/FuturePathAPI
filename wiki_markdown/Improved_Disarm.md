@@ -1,0 +1,5 @@
+**Prerequisites**: Intelligence 13, Combat Expertise.
+
+**Benefit**: The character does not provoke an attack of opportunity
+when the character attempts to disarm an opponent, nor does the opponent
+get a chance to disarm the character.

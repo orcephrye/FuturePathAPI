@@ -1,0 +1,5 @@
+'''Prerequisites''': Brawl, Affinity Die 1d8.
+
+'''Benefit''': When making an unarmed attack, the character gets to add there affinity die to accuracy checks.
+
+'''Normal''': Normally a Character adds nothing for unarmed melee strikes.

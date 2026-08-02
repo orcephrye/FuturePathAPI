@@ -1,0 +1,9 @@
+You are adept at creating mastercraft electronic and mechanical devices (including tools, vehicles, weapons, robot manipulators, and armor).
+
+'''Prerequisites''': -
+
+'''Benefit''': Reduces the DC check for crafting masterworked items by 2.
+
+'''Normal''': -
+
+'''Special''': -

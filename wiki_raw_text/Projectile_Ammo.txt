@@ -1,0 +1,13 @@
+This is a page dedicated to different custom Projectile Ammo for Spaceships. To learn more about Space Ship Weapons and Equipment go [[Ship_Equipment|here]] and to learn more about Space Ships themselves go [[Space_Ships|here]].
+
+=== Explosive Rounds ===
+
+This grants the '''Explode''' attribute to the Projectile weapon. This means any d10 that lands on a natural 10 can automatically and immediately be re-rolled to determine if it counts as two successful hits instead of one. This happens before re-rolls associated with the Weapon's mod.
+
+;Cost: This doubles the cost.
+
+=== Armor Piercing === 
+
+This allows the re-rolls of 1s to happen automatically and immediately, and to count before re-rolls on the Weapon's mod.
+
+;Cost: This doubles the cost.

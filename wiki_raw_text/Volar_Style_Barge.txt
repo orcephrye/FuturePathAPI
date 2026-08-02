@@ -1,0 +1,128 @@
+{|
+| valign="top" |
+'''Ship Name''': Volar Style Barge
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Ship Core''': Tech Level 2
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Size''': Medium
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Hull Configuration''': Barge
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Number of Attribute Points''': 15
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 12 - 2 = 10 (Modifier: +0)
+
+'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+
+'''Structure''': 14 (Modifier: +2)
+
+'''Shields''': 13 (Modifier: +1)
+
+'''Electronics''': 12 (Modifier: +1)
+
+'''Sensors''': 10 (Modifier: +0)
+
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 9 (Base 9 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+
+'''Detection DC''': 9
+
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
+
+'''Battle Damage''': 3
+
+'''Initiative''': -2 (Engines 0 + Sensors 0 - Structure 2)
+
+'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Secondary Ship Statistics''':
+----
+'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
+
+'''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
+
+'''Battle Damage Defense (BD-DC)''': 6 / 5 (6 successes / 5 Reflector)
+
+'''Repair DC Bonus''': +1 (equal to Weapons Mod)
+
+'''Tactical Mobility''': +0 (equal to Engines Mod)
+
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+
+'''Cargo Capacity''': 1,785 Units (1,020 Base Barge size-up + 765 from 3 Cargo Bays)
+
+'''Passenger Capacity''': 32 (16 Base + 16 from Passenger Bay)
+
+'''FTL Engine/Speed''': [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Warp 1-7)
+
+'''Cost and Procure Diff''': $12,872,800 / -1 (Procure Diff: -1, includes super common Barge discount)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Ship Functions''':
+----
+'''Beam''': 0
+
+'''Bombard''': 0
+
+'''Cloak''': 0
+
+'''Crypto''': 0
+
+'''Feint''': 0
+
+'''Grapple''': 0
+
+'''Jam''': 0
+
+'''Ram''': 0
+
+'''Scan''': 0
+
+'''Target''': 0
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+''' - Hard Points and Bays''':
+----
+'''Hard Points (Total/Used/Free)''': 2 / 2 / 0 (Reduced by 2 from Barge config)
+
+'''Bays (Total/Used/Free)''': 5 / 5 / 0 (Reduced by 1 from Barge config)
+
+''' - Accessories and Description''':
+----
+;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
+;Description: A robust, mass-produced Volar civilian cargo hauler, designed for interplanetary transit of freight and crew members.
+;Explanations: Extremely easy to repair and highly customizable, this barge focuses its point allocation on high Structure and Weapons to handle hull stress and pirate deterrence.
+|}
+
+{|
+| valign="top" |
+'''Hard Point Items''':
+----
+Hard Point 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Takes up 1 HP & 1 Bay)
+Hard Point 2: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
+
+: '''Cost of Hard Point items''': $632,800 ($300,000 FTL Drive + $320,000 Projectile + $12,800 Ammo)
+|width="30px"|&nbsp;<!--spacer-column-->
+| valign="top" |
+'''Bay Items''':
+----
+Bay 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
+Bay 3: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
+Bay 4: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
+Bay 5: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Medium)]]
+
+: '''Cost of Bay items''': $160,000 ($120,000 Cargo Bays + $40,000 Passenger Bay)
+|}

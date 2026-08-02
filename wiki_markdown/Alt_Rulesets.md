@@ -1,0 +1,116 @@
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS STILL UNDER
+CONSTRUCTION! `</span>`{=html}**
+
+## Fantasy Levels {#fantasy_levels}
+
+There are 3 Fantasy Level Settings in which this game can be played.
+Currently \<AS OF ALPHA 3\>, only 1 of those levels is supported. The
+three levels are Normal (Supported/Default), Low, and High.
+
+### Low Fantasy {#low_fantasy}
+
+This is a grim, darker, harsher environment. The character\'s health
+doesn\'t increase significantly, meaning death is just around every
+encounter. Here, leveling provides more functions and choices for a
+Character, but not necessarily more power.
+
+### High Fantasy {#high_fantasy}
+
+This allows the characters to gain max health and extra bonuses as they
+level. The difference between just 1 or 2 levels can be significant in
+terms of both survivability and power.
+
+## Normal Vs Hidden Vs Subtle Rolls {#normal_vs_hidden_vs_subtle_rolls}
+
+The GM and the Players should agree before gameplay if they wish to use
+something other than Normal Rolling in their game, and what additional
+customizations and rules should be applied.
+
+### Defining Normal/Hidden/Subtle Rolls {#defining_normalhiddensubtle_rolls}
+
+Normal Rolling
+: Here, the Player rolls for all the actions a Character commits to or
+  reacts to that require checks. The GM rolls for all NPCs and enemies.
+  If, for example, the Character encounters a situation that involves a
+  show of Strength, such as climbing a long flight of stairs while
+  holding something heavy. The Player would roll a Strength check for
+  the Character. They would then share that result with the GM, who
+  would inform the Player of success or failure. In this situation, the
+  Player knows their own result but doesn\'t know the DC, though the GM
+  may share that value ahead of time if they wish.
+
+<!-- -->
+
+Hidden Rolling
+: Here, the GM rolls for most actions a Player does. The exception is
+  usually Combat. The thing hidden about the roll is only its final
+  total. Whether or not the check passes or fails is not hidden from the
+  Player. The GM should share success or failure results immediately,
+  either through a dramatization or simply by stating the fact. The goal
+  is to hide certain forms of meta-gaming and maintain suspense in the
+  story. It allows the GM to hide the true difficulty of the situation
+  from the Players. The Players should trust the GM, and the GM should
+  role \'in good faith\' and not attempt to lie about the result. This
+  is useful for suspenseful moments of role-playing or out-of-combat
+  encounters where the roll matters and its resulting success or failure
+  is immediately apparent.
+
+:;Example: To follow the scenario above, the Player states to the GM the
+intent of the Character to take on the challenge of going up the long
+stairs while holding their fallen comrade. The GM rolls the Strength
+check and verifies with the Player any bonuses. Then the GM explains in
+the story. \"Your host, your wounded friend, over your shoulders, who
+seems light to your strong arms. As you climb the stairs, you start to
+slow. Keeping your focus on the end goal ahead, you soon realize your
+friend\'s weight, which was light at first, feels much heavier now that
+you have been carrying her for so long. You collapse just before the
+top\". The Player doesn\'t know just how much they failed; they have no
+idea of their result, but they do know they failed.
+
+:;Note: It may be useful for the GM to make these type of rolls inside
+of a **Dice Boat**, **Dice Tower** or some other type of container. That
+way, if there is ever any debate about the result, the GM can still show
+the true total.
+
+Subtle Rolling
+: Here, like Hidden Rolling, the GM rolls for Player actions. But only
+  for a certain type of action. These actions were the success or
+  failure of the roll, which is not immediately apparent to the Player
+  or party. It often involves the Player asking the GM for something or
+  the Character gaining something from an encounter. This is excellent
+  for a specific set of Skills. All Knowledge checks, Study, Perception,
+  and Sense Motive. When the GM performs a Stuble roll, they hide not
+  only the final total but also whether the roll succeeded or failed
+  from the Player. The goal is to prevent Players from using their
+  out-of-game knowledge of their roll\'s result to determine whether
+  their Character\'s behavior changes. A perfect example of a conflict
+  in meta-gaming.
+
+:;Example: The previous scenario about a Strength check doesn\'t fit as
+a Subtle Check. Instead, the perfect example is Sense Motive. The Player
+wants a Character to sense the motive of an NPC. They inform the GM as
+much. The GM rolls a Sense Motive Skill check for the Character and
+verifies with the Player any bonuses. The check fails, and the GM knows
+the NPC is lying. But they inform the Player that the Character cannot
+detect any malicious or deceitful behavior. Only later does the Player
+realize that they were lied to and that the Sense Motive check failed.
+This results in the Player/Character acting only on the information they
+\*should\* be acting on and not additional information such as the roll
+total.
+
+:;Subtle Rolling Critical Failures: Normally, a Skill check cannot
+critically fail. But as an **optional** rule, when the GM rolls a
+Natural One, they can do things like provide false information or inform
+the Character that they are confident in their knowledge or senses. An
+Example might be a critical failure of a Perception check, and the GM
+informs that the only player in the party to notice the shadow moving
+through the sky was this one Player who critically failed. There was no
+shadow. Another example could be a Knowledge check where a normal
+failure just yields no knowledge, but a Critical failure results in the
+GM providing false information.
+
+## Placeholder content {#placeholder_content}
+
+Going to add this stuff later:
+
+- [Mechs](Mechs "Mechs"){.wikilink}

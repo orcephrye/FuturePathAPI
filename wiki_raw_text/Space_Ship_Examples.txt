@@ -1,0 +1,3 @@
+Here are examples for different ships using the [[Space Ships]] rules. They can also include items from the [[Ship Equipment]].
+
+{{Template:Ship Examples}}

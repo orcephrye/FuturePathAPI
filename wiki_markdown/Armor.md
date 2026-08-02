@@ -1,0 +1,1251 @@
+Armor is used to help protect a Character. The primary attribute of
+Armor is its AC Bonus. AC stands for Armor Class and is the number an
+attacker has to beat in an accuracy check in order to roll for damage.
+However just like [weapons](Weapons "weapons"){.wikilink} Armor has
+multiple attributes and they can all be customized using Customization
+points.
+
+    Editing Character Sheet: The box to record AC is located on the first page below the Character Attributes section. It is a combination of 10 + Armor + Shield + Dexterity Mod + Size + Natural Armor + Misc Mod.
+
+You can skip to the [Armor
+Examples](Armor#Armor_Examples "Armor Examples"){.wikilink} section if
+you want a quick list of armor to choose from. The first section is a
+focus on personal body armor and not Power Armor or full body mechanic
+suites. Power Armor is any Armor that provides an AC bonus of +10 or
+more and will be explained in detail in the [Power
+Armor](Armor#Power_Armor "Power Armor"){.wikilink} section at the bottom
+of this page.
+
+## Armor and Attributes {#armor_and_attributes}
+
++--------+-------------+-----------+-----------+-----------+-------------+
+| Armor\ | Armor AC\   | Maximum   | Speed     | Average   | Average     |
+| Level  | Bonus/Level | Dex\      | Diff      | Weight\   | Base Cost\  |
+|        |             | Bonus     |           | (Tech 2)  | Procure     |
+|        |             |           |           |           | Diff        |
++========+=============+===========+===========+===========+=============+
+| 0      | \+ 0        | +9        | Normal    | 0.25 lbs  | \$10/+0     |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 1      | \+ 1        | +8        | Normal    | 5 lbs     | \$150/+0    |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 2      | \+ 2        | +7        | Normal    | 10 lbs    | \$350/+0    |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 3      | \+ 3        | +6        | Normal    | 15 lbs    | \$1,000/+0  |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 4      | \+ 4        | +5        | \- 5ft    | 20 lbs    | \$2,200/+0  |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 5      | \+ 5        | +4        | \- 5ft    | 25 lbs    | \$4,500/+0  |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 6      | \+ 6        | +3        | \- 10ft   | 30 lbs    | \$9,000/+1  |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 7      | \+ 7        | +2        | \- 10ft   | 35 lbs    | \$18,000/+1 |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 8      | \+ 8        | +1        | Halved    | 40 lbs    | \$30,000/+2 |
++--------+-------------+-----------+-----------+-----------+-------------+
+| 9      | \+ 9        | +0        | Halved    | 45 lbs    | \$55,000/+2 |
++--------+-------------+-----------+-----------+-----------+-------------+
+
+: Table: Armor
+
+Armor AC Bonus (Armor Level)
+: The Armor AC Bonus is the bonus this armor gives to the wearer. This
+  Bonus can also be traded for Damage Reduction (DR).
+
+<!-- -->
+
+: **Trading DR**: When crafted, Armor can provide AC or DR. For every 1
+  AC traded, the armor gains 4 **DR Units**. These units can be spent to
+  acquire DR of various types:
+  - 1 DR Unit = 1 DR (Specific: Chemical, Electrical, or Thermal)
+  - 2 DR Units = 1 DR (Kinetic)
+  - 4 DR Units = 1 DR (ALL)
+: For example, trading 1 AC (4 units) could provide 1 DR (ALL), or 2 DR
+  (Kinetic), or 4 DR (Chemical), or a combination like 1 DR (Kinetic)
+  and 2 DR (Thermal).
+
+<!-- -->
+
+: **Note**: Armor AC Bonus also directly relates to the **Level** of the
+  Armor and thus the required Armor Proficiency Level the Character must
+  have to use it. This stays true regardless of whether AC is traded out
+  for DR or other things. So when crafting Armor, it is best to
+  determine the AC, then trade out for DR, and record the AC.
+
+<!-- -->
+
+Maximum Dex Bonus
+: As the Armor gets stronger at protecting the wearer, the person loses
+  the ability to apply some of their Dexterity Mod to their AC. If they
+  have +6 Armor and their Dexterity modifier is +4, then they cannot add
+  all 4 points of Dexterity Mod to their AC. They can only add +3.
+
+<!-- -->
+
+Speed Diff
+: The bigger the Armor, the harder it is to move around in it. This
+  reduces the character\'s Run/Sprint/Dash/Swim/Climb movement but not
+  their base walking speed.
+
+<!-- -->
+
+Average Weight
+: This is the average weight of the Armor if it were built by a Tech 2
+  civilization. The lower the tech level, the heavier the armor +5 lbs
+  per Level, and the higher the tech level, the lighter the armor -5 lbs
+  per level. +0 Armor is unaffected by this. The minimum armor that
+  provides any amount of AC/DR is 1 lb per Armor level. Anything 35 lbs
+  or heavier is considered \'Heavy\'. Armor Proficiency is based on
+  Armor level and not weight. But weight can contribute to other
+  factors. The Tech Level adjustment to weight doesn\'t affect Speed;
+  that only happens during Armor Customization.
+
+<!-- -->
+
+Average Base Cost/Procure Diff
+: This is the average cost of the armor before you add in the price for
+  the Tech Level. Tech Level affects the **Base Cost** of the Armor.
+  While Procure Difficulty, Masterworking, and Customizations are all
+  multipliers of the Base Cost.
+
+## Armor Tech Levels {#armor_tech_levels}
+
+Tech level also has an important roll to play in Armor. It decides how
+many Customization points can be spent and the maximum AC bonus Armor
+can provide, among other things. The table to the left shows what each
+Tech Level means for Armor.
+
++-------------+--------------+-----------------+-----------+--------------+
+| Tech Levels | Level Limit\ | Max \# of       | Extra\    | Extra\       |
+|             | Max AC Bonus | Customization/\ | Base Cost | Procure Diff |
+|             |              | Bonus           |           |              |
+|             |              | Customization   |           |              |
+|             |              | Points          |           |              |
++=============+==============+=================+===========+==============+
+| Level 0     | +5           | 1/0             | +\$0      | +1           |
++-------------+--------------+-----------------+-----------+--------------+
+| Level 1     | +6           | 2/0             | +\$0      | +0           |
++-------------+--------------+-----------------+-----------+--------------+
+| Level 2     | +7           | 3/1             | +\$250    | +0           |
++-------------+--------------+-----------------+-----------+--------------+
+| Level 3     | +8           | 4/2             | +\$1000   | +1           |
++-------------+--------------+-----------------+-----------+--------------+
+| Level 4     | +9           | 5/3             | +\$3000   | +1           |
++-------------+--------------+-----------------+-----------+--------------+
+
+: Table: Armor Tech Levels
+
+Tech Levels
+: This is the Tech Level. The higher the Tech Level, the better the
+  armor can be.
+
+<!-- -->
+
+Max AC Bonus
+: This is the maximum amount of AC or DR that the Armor of that Tech
+  Level can have.
+
+<!-- -->
+
+Max \# Customization/Bonus Customization
+: The first number is the number of positive customizations the Armor
+  can have. The second number is the number of free customization points
+  the Armor has due to its tech level. IE: Tech level 2 can have a
+  maximum of 3 positive customizations done to it (not including
+  Masterworking) and gets one free customization point.
+
+<!-- -->
+
+Extra Base Cost
+: This is the extra cost to the Armor\'s **Base Cost** if you declare
+  that it is that tech level. So if you declare the armor is Tech level
+  2, you add \$250 to the **Base Cost**, which would also be its **Total
+  Armor Cost** if no other modifiers such as Masterworking or
+  Customizations are added to the total. How much Masterworking or
+  Customizations cost depends on the Armor\'s **Base Cost**.
+
+<!-- -->
+
+Extra Procure Diff
+: This is the increase in how difficult it is to acquire the armor if it
+  is of that tech level.
+
+## Armor Examples {#armor_examples}
+
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Armor                                                                                    | Level    | AC       | DR       | Max\     | Prof\*\  | Speed    | Weight   | Average     | Master-\  | Cstm\*\*\   | Bonus        |
+|                                                                                          |          |          |          | Dex      | Lvl      | Diff     |          | Cost\       | Worked?   | +N/-P/-S(S) | Attributes   |
+|                                                                                          |          |          |          |          |          |          |          | Procure     |           |             |              |
+|                                                                                          |          |          |          |          |          |          |          | Diff        |           |             |              |
++==========================================================================================+==========+==========+==========+==========+==========+==========+==========+=============+===========+=============+==============+
+| Tech Level 0                                                                                                                                                                                                                 |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Padded Armor](Padded_Armor "Padded Armor"){.wikilink}                                   | 1        | +1       | 0        | +8       | 2        | Normal   | 15 lbs   | \$150/1     | \-        | 0 / 0 /     | Archaic      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(1)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Leather Armor](Leather_Armor "Leather Armor"){.wikilink}                                | 2        | +2       | 0        | +7       | 3        | -5 ft    | 20 lbs   | \$350/1     | \-        | 0 / 0 /     | Archaic      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(1)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Leather Armor](Mstr_Leather_Armor "Mstr Leather Armor"){.wikilink}                 | 2        | +2       | 2 DR (K) | +7       | 4        | -5ft     | 20 lbs   | \$1,050/2   | 1/+1P     | 0 / 1 /     | Archaic      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(1)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Studded Leather](Studded_Leather "Studded Leather"){.wikilink}                          | 3        | +2       | 2DR (K)  | +5       | 4        | -5ft     | 25 lbs   | \$1,000/1   | \-        | 0 / 0 /     | Archaic      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(1)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Wooden](Wooden "Wooden"){.wikilink}                                                     | 3        | +3       | 0        | +6       | 4        | -10ft    | 30 lbs   | \$2,000/1   | \-        | 2 / 1 /     | Archaic,     |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(1)        | Protection   |
+|                                                                                          |          |          |          |          |          |          |          |             |           |             | Against      |
+|                                                                                          |          |          |          |          |          |          |          |             |           |             | Grapple +4   |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Chain Armor](Chain_Armor "Chain Armor"){.wikilink}                                      | 4        | +4       | 0        | +5       | 5        | -10ft    | 30 lbs   | \$2,200/1   | \-        | 0 / 0 /     | Archaic      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(1)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Full Plate](Full_Plate "Full Plate"){.wikilink}                                         | 5        | +5       | 2DR (K)  | +4       | 6        | Halved   | 40 lbs   | \$9,000/1   | \-        | 2 / 1 /     | Archaic,     |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(1)        | Clumsy       |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Full Plate](Mstr_Full_Plate "Mstr Full Plate"){.wikilink}                          | 5        | +5       | 2DR (K)  | +4       | 7        | -10ft    | 35 lbs   | \$13,500/2  | 1/+1P     | 0 / 1 /     | Archaic      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(1)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Armor                                                                                    | Level    | AC       | DR       | Max\     | Prof\*\  | Speed    | Weight   | Average     | Master-\  | Cstm\*\*\   | Bonus        |
+|                                                                                          |          |          |          | Dex      | Lvl      | Diff     |          | Cost\       | Worked?   | +N/-P/-S(S) | Attributes   |
+|                                                                                          |          |          |          |          |          |          |          | Procure     |           |             |              |
+|                                                                                          |          |          |          |          |          |          |          | Diff        |           |             |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Tech Level 1                                                                                                                                                                                                                 |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Gilly Suit](Gilly_Suit "Gilly Suit"){.wikilink}                                         | 0        | +0       | 0        | +5       | 2        | Normal   | 0.25 lbs | \$85/0      | \-        | 2 / 1 /     | Stealth      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(2)        | Assist +2    |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Basic Light Armor](Basic_Light_Armor "Basic Light Armor"){.wikilink}                    | 1        | +1       | 0        | +8       | 1        | Normal   | 10 lbs   | \$150/0     | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Ballistic Vest](Ballistic_Vest "Ballistic Vest"){.wikilink}                             | 1        | +0       | 1 DR (A) | +7       | 2        | Normal   | 10 lbs   | \$350/0     | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Hybrid Vest](Hybrid_Vest "Hybrid Vest"){.wikilink}                                      | 2        | +1       | 1 DR (A) | +7       | 2        | Normal   | 15 lbs   | \$350/0     | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Hazard Suit](Hazard_Suit "Hazard Suit"){.wikilink}                                      | 2        | +1       | DR (3C,  | +7       | 2        | Normal   | 15 lbs   | \$350/0     | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          | 1T)      |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Kevlar Vest](Kevlar_Vest "Kevlar Vest"){.wikilink}                                      | 3        | +2       | 2 DR (K) | +6       | 3        | -5 ft    | 20 lbs   | \$1,000/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Kevlar Vest](Mstr_Kevlar_Vest "Mstr Kevlar Vest"){.wikilink}                       | 3        | +3       | 1 DR (K) | +6       | 4        | -5 ft    | 20 lbs   | \$3,000/1   | 1/+1P     | 0 / 1 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Plated Vest](Plated_Vest "Plated Vest"){.wikilink}                                      | 3        | +3       | 0        | +6       | 3        | -5 ft    | 20 lbs   | \$1,000/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Kevlar Body Armor](Kevlar_Body_Armor "Kevlar Body Armor"){.wikilink}                    | 4        | +3       | 2 DR (K) | +6       | 3        | -5 ft    | 25 lbs   | \$2,200/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Tactical Body Armor](Tactical_Body_Armor "Tactical Body Armor"){.wikilink}              | 4        | +3       | 0        | +5       | 4        | -5 ft    | 25 lbs   | \$4,400/0   | \-        | 2 / 1 /     | Quick Slot 1 |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Tactical Body                                                                      | 4        | +4       | 0        | +5       | 5        | -5 ft    | 25 lbs   | \$6,600/1   | 1/+1P     | 0 / 1 /     | Quick Slot 1 |
+| Armor](Mstr_Tactical_Body_Armor "Mstr Tactical Body Armor"){.wikilink}                   |          |          |          |          |          |          |          |             |           | 1(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Full Riot Gear](Full_Riot_Gear "Full Riot Gear"){.wikilink}                             | 5        | +5       | 0        | +4       | 5        | -10ft    | 30 lbs   | \$4,500/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Full Plated Armor](Full_Plated_Armor "Full Plated Armor"){.wikilink}                    | 6        | +6       | 0        | +3       | 6        | -10ft    | 35 lbs   | \$9,000/1   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(2)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Armor                                                                                    | Level    | AC       | DR       | Max\     | Prof\*\  | Speed    | Weight   | Average     | Master-\  | Cstm\*\*\   | Bonus        |
+|                                                                                          |          |          |          | Dex      | Lvl      | Diff     |          | Cost\       | Worked?   | +N/-P/-S(S) | Attributes   |
+|                                                                                          |          |          |          |          |          |          |          | Procure     |           |             |              |
+|                                                                                          |          |          |          |          |          |          |          | Diff        |           |             |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Tech Level 2                                                                                                                                                                                                                 |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Personal Vest](Improved_Personal_Vest "Improved Personal Vest"){.wikilink}     | 1        | +1       | 0        | +8       | 2        | Normal   | 5 lbs    | \$1,050/1   | 1/+1P     | 0 / 2 /     | Shirt        |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Light Armor](Improved_Light_Armor "Improved Light Armor"){.wikilink}           | 2        | +2       | 0        | +7       | 2        | Normal   | 10 lbs   | \$600/0     | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Hazard Suit](Improved_Hazard_Suit "Improved Hazard Suit"){.wikilink}           | 2        | +1       | DR (4C,  | +7       | 2        | Normal   | 10 lbs   | \$1,200/0   | \-        | 0 / 1 /     | \-           |
+|                                                                                          |          |          | 2T)      |          |          |          |          |             |           | 1(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Ballistic Vest](Improved_Ballistic_Vest "Improved Ballistic Vest"){.wikilink}  | 3        | +1       | 2 DR (A) | +6       | 3        | Normal   | 15 lbs   | \$1,250/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Stealth Suit](Stealth_Suit "Stealth Suit"){.wikilink}                                   | 3        | +2       | 4DR (T)  | +6       | 3        | Normal   | 15 lbs   | \$2,500/0   | \-        | 0 / 1 /     | Stealth      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(3)        | Assist +2    |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Stealth Suit](Mstr_Stealth_Suit "Mstr Stealth Suit"){.wikilink}                    | 3        | +3       | 4DR (T)  | +6       | 4        | Normal   | 15 lbs   | \$7,500/1   | 2/+2P     | 0 / 3 /     | Stealth      |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 3(3)        | Assist +4    |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Basic Regeneration Suit](Basic_Regeneration_Suit "Basic Regeneration Suit"){.wikilink}  | 4        | +3       | 0        | +6       | 4        | -5ft     | 20 lbs   | \$7,450/1   | \-        | 0 / 1 /     | Regeneration |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(3)        | +2           |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Tactical Body                                                                  | 4        | +4       | 0        | +5       | 4        | -5 ft    | 20 lbs   | \$4,900/0   | \-        | 0 / 1 /     | Quick Slot 2 |
+| Armor](Improved_Tactical_Body_Armor "Improved Tactical Body Armor"){.wikilink}           |          |          |          |          |          |          |          |             |           | 1(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mounted Medium Armor](Mounted_Medium_Armor "Mounted Medium Armor"){.wikilink}           | 4        | +3       | 0        | +5       | 4        | -10ft    | 35 lbs   | \$9,800/0   | \-        | 4 / 3 /     | Weapon Mount |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(3)        | (Small)      |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Medium Armor](Improved_Medium_Armor "Improved Medium Armor"){.wikilink}        | 5        | +5       | 0        | +4       | 5        | -5ft     | 25 lbs   | \$4,750/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Hybrid Vest](Improved_Hybrid_Vest "Improved Hybrid Vest"){.wikilink}           | 5        | +2       | 3 DR (A) | +4       | 5        | -5ft     | 25 lbs   | \$4,750/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Grounded Armor](Grounded_Armor "Grounded Armor"){.wikilink}                             | 5        | +3       | 8 DR (E) | +4       | 5        | -5ft     | 25 lbs   | \$4,750/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Thermal Plated Armor](Thermal_Plated_Armor "Thermal Plated Armor"){.wikilink}           | 6        | +4       | 8 DR (T) | +3       | 6        | -10ft    | 30 lbs   | \$9,250/1   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Hybrid Tactical Armor](Hybrid_Tactical_Armor "Hybrid Tactical Armor"){.wikilink}        | 6        | +2       | 4 DR (A) | +3       | 6        | -10ft    | 30 lbs   | \$18,500/1  | \-        | 0 / 1 /     | Quick Slot 2 |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Enhanced Steel Plating](Enhanced_Steel_Plating "Enhanced Steel Plating"){.wikilink}     | 7        | +6       | 2 DR (K) | +3       | 7        | -10ft    | 35 lbs   | \$18,250/1  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Improved Heavy Armor](Improved_Heavy_Armor "Improved Heavy Armor"){.wikilink}           | 7        | +7       | 0        | +2       | 7        | -10ft    | 35 lbs   | \$18,250/1  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Improved Heavy                                                                     | 7        | +7       | 0        | +2       | 7        | -5ft     | 25 lbs   | \$73,000/2  | 1/+1P     | 0 / 2 /     | \-           |
+| Armor](Mstr_Improved_Heavy_Armor "Mstr Improved Heavy Armor"){.wikilink}                 |          |          |          |          |          |          |          |             |           | 2(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Full Printed Steel](Full_Printed_Steel "Full Printed Steel"){.wikilink}                 | 7        | +5       | 2 DR (A) | +2       | 7        | -10ft    | 35 lbs   | \$18,250/1  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(3)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Armor                                                                                    | Level    | AC       | DR       | Max\     | Prof\*\  | Speed    | Weight   | Average     | Master-\  | Cstm\*\*\   | Bonus        |
+|                                                                                          |          |          |          | Dex      | Lvl      | Diff     |          | Cost\       | Worked?   | +N/-P/-S(S) | Attributes   |
+|                                                                                          |          |          |          |          |          |          |          | Procure     |           |             |              |
+|                                                                                          |          |          |          |          |          |          |          | Diff        |           |             |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Tech Level 3                                                                                                                                                                                                                 |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Nano Mesh Shirt](Nano_Mesh_Shirt "Nano Mesh Shirt"){.wikilink}                          | 0        | +0       | 1 DR (A) | +9       | 0        | Normal   | 1 lbs    | \$3,030/1   | \-        | 0 / 2 /     | Shirt        |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Nano Mesh Shirt](Mstr_Nano_Mesh_Shirt "Mstr Nano Mesh Shirt"){.wikilink}           | 1        | +1       | 1 DR (A) | +8       | 2        | Normal   | 1 lbs    | \$8,050/2   | 2/+2P     | 0 / 4 /     | Shirt        |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 3(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Personal Vest](Advanced_Personal_Vest "Advanced Personal Vest"){.wikilink}     | 1        | +1       | 0        | +8       | 0        | Normal   | 1 lbs    | \$3,450/1   | \-        | 0 / 2 /     | Shirt        |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Light Armor](Advanced_Light_Armor "Advanced Light Armor"){.wikilink}           | 2        | +2       | 0        | +7       | 2        | Normal   | 5 lbs    | \$1,350/1   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Advanced Light                                                                     | 2        | +2       | 1 DR (A) | +7       | 2        | Normal   | 5 lbs    | \$6,750/2   | 1/+1P     | 0 / 3 /     | Protection   |
+| Armor](Mstr_Advanced_Light_Armor "Mstr Advanced Light Armor"){.wikilink}                 |          |          |          |          |          |          |          |             |           | 2(4)        | Against      |
+|                                                                                          |          |          |          |          |          |          |          |             |           |             | Grapple +4   |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Stealth Shirt](Stealth_Shirt "Stealth Shirt"){.wikilink}                                | 2        | +1       | 0        | +7       | 2        | Normal   | 5 lbs    | \$4,050/1   | \-        | 2 / 3 /     | Shirt,       |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(4)        | Stealth      |
+|                                                                                          |          |          |          |          |          |          |          |             |           |             | Assist +2    |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Hazard Suit](Advanced_Hazard_Suit "Advanced Hazard Suit"){.wikilink}           | 3        | +1       | DR (6C,  | +6       | 3        | Normal   | 10 lbs   | \$2,000/1   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          | 2T)      |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Nano Mesh Regen](Nano_Mesh_Regen "Nano Mesh Regen"){.wikilink}                          | 3        | +1       | 0        | +7       | 3        | Normal   | 10 lbs   | \$10,000/2  | \-        | 0 / 2 /     | Regeneration |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(4)        | +6           |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Responsive Armor](Responsive_Armor "Responsive Armor"){.wikilink}                       | 3        | +3       | 0        | +6       | 3        | Normal   | 10 lbs   | \$6,000/1   | \-        | 0 / 2 /     | Protection   |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(4)        | Against Trip |
+|                                                                                          |          |          |          |          |          |          |          |             |           |             | +6           |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Ballistic Vest](Advanced_Ballistic_Vest "Advanced Ballistic Vest"){.wikilink}  | 4        | 0        | 4 DR (A) | +5       | 4        | Normal   | 15 lbs   | \$3,200/0   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Tactical Body                                                                  | 4        | +4       | 1 DR (K) | +5       | 4        | -5 ft    | 25 lbs   | \$9,600/0   | \-        | 0 / 2 /     | Quick Slot 3 |
+| Armor](Advanced_Tactical_Body_Armor "Advanced Tactical Body Armor"){.wikilink}           |          |          |          |          |          |          |          |             |           | 2(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Mounted Armor](Advanced_Mounted_Armor "Advanced Mounted Armor"){.wikilink}     | 5        | +4       | 0        | +4       | 5        | -5ft     | 25 lbs   | \$22,000/1  | \-        | 2 / 3 /     | Weapon Mount |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(4)        | (Small)      |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Medium Armor](Advanced_Medium_Armor "Advanced Medium Armor"){.wikilink}        | 5        | +5       | 0        | +4       | 5        | -5ft     | 20 lbs   | \$5,500/1   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Regeneration Suit](Regeneration_Suit "Regeneration Suit"){.wikilink}                    | 6        | +6       | 0        | +3       | 6        | -5ft     | 25 lbs   | \$50,000/2  | \-        | 0 / 2 /     | Regeneration |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(4)        | +6           |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Shielded Suit](Shielded_Suit "Shielded Suit"){.wikilink}                                | 6        | +1       | 5 DR (A) | +3       | 6        | -5ft     | 25 lbs   | \$10,000/1  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Hybrid Vest](Advanced_Hybrid_Vest "Advanced Hybrid Vest"){.wikilink}           | 7        | +3       | 4 DR (A) | +2       | 7        | -10ft    | 30 lbs   | \$19,000/2  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Advanced Heavy Armor](Advanced_Heavy_Armor "Advanced Heavy Armor"){.wikilink}           | 7        | +7       | 0        | +2       | 7        | -5ft     | 25 lbs   | \$38,000/2  | \-        | 0 / 1 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Shielded Hybrid Plating](Shielded_Hybrid_Plating "Shielded Hybrid Plating"){.wikilink}  | 8        | +4       | 4 DR (A) | +1       | 8        | -10ft    | 35 lbs   | \$31,000/2  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Full Nano-Mesh Shielded                                                                 | 8        | +8       | 1 DR (A) | +1       | 8        | -10ft    | 35 lbs   | \$93,000/3  | \-        | 0 / 2 /     | \-           |
+| Suit](Full_Nano-Mesh_Shielded_Suit "Full Nano-Mesh Shielded Suit"){.wikilink}            |          |          |          |          |          |          |          |             |           | 1(4)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Armor                                                                                    | Level    | AC       | DR       | Max\     | Prof\*\  | Speed    | Weight   | Average     | Master-\  | Cstm\*\*\   | Bonus        |
+|                                                                                          |          |          |          | Dex      | Lvl      | Diff     |          | Cost\       | Worked?   | +N/-P/-S(S) | Attributes   |
+|                                                                                          |          |          |          |          |          |          |          | Procure     |           |             |              |
+|                                                                                          |          |          |          |          |          |          |          | Diff        |           |             |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Tech Level 4                                                                                                                                                                                                                 |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Cloak Suit](Cloak_Suit "Cloak Suit"){.wikilink}                                         | 0        | +0       | 0        | +8       | 0        | Normal   | 0.25 lbs | \$9,030/1   | \-        | 0 / 3 /     | Shirt,       |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 3(5)        | Stealth      |
+|                                                                                          |          |          |          |          |          |          |          |             |           |             | Assist +6    |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [High Tech Personal Vest](High_Tech_Personal_Vest "High Tech Personal Vest"){.wikilink}  | 1        | +1       | 1 DR (K) | +8       | 1        | Normal   | 1 lbs    | \$9,450/1   | \-        | 0 / 3 /     | Shirt        |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Hazard Suit](Superior_Hazard_Suit "Superior Hazard Suit"){.wikilink}           | 2        | +1       | DR (10C, | +7       | 2        | Normal   | 1 lbs    | \$10,050/1  | \-        | 0 / 2 /     | \-           |
+|                                                                                          |          |          | 6T)      |          |          |          |          |             |           | 2(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Shield Suit](Superior_Shield_Suit "Superior Shield Suit"){.wikilink}           | 3        | 0        | DR (4A,  | +6       | 3        | Normal   | 5 lbs    | \$12,000/1  | \-        | 0 / 3 /     | \-           |
+|                                                                                          |          |          | 1K)      |          |          |          |          |             |           | 2(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Tactical Body                                                                  | 4        | +4       | 2 DR (K) | +5       | 4        | Normal   | 10 lbs   | \$15,600/1  | \-        | 0 / 3 /     | Quick Slot 4 |
+| Armor](Superior_Tactical_Body_Armor "Superior Tactical Body Armor"){.wikilink}           |          |          |          |          |          |          |          |             |           | 3(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Hyper Reactive Regen                                                                    | 4        | +2       | 1 DR (K) | +6       | 4        | Normal   | 10 Lbs   | \$36,400/2  | \-        | 4 / 4 /     | Regeneration |
+| Shirt](Hyper_Reactive_Regen_Shirt "Hyper Reactive Regen Shirt"){.wikilink}               |          |          |          |          |          |          |          |             |           | 3(5)        | +8           |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Ballistic Vest](Superior_Ballistic_Vest "Superior Ballistic Vest"){.wikilink}  | 5        | 0        | 5 DR (A) | +4       | 5        | Normal   | 15 lbs   | \$9,500/1   | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Mounted Armor](Superior_Mounted_Armor "Superior Mounted Armor"){.wikilink}     | 6        | +6       | 0        | +3       | 6        | -5ft     | 20 lbs   | \$48,000/2  | \-        | 0 / 3 /     | Weapon Mount |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 1(5)        | (Small)      |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Full Body                                                                      | 7        | +6       | 2 DR (K) | +3       | 7        | -5ft     | 25 lbs   | \$63,000/ 2 | \-        | 0 / 3 /     | \-           |
+| Armor](Superior_Full_Body_Armor "Superior Full Body Armor"){.wikilink}                   |          |          |          |          |          |          |          |             |           | 2(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Superior Hybrid Vest](Superior_Hybrid_Vest "Superior Hybrid Vest"){.wikilink}           | 9        | +4       | 5 DR (A) | +0       | 9        | -10ft    | 35 lbs   | \$58,000/2  | \-        | 0 / 0 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 0(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Enhanced Shielded Hybrid                                                                | 9        | +7       | DR (2A,  | +1       | 9        | -10ft    | 35 lbs   | \$232,000/3 | \-        | 0 / 3 /     | \-           |
+| Plating](Enhanced_Shielded_Hybrid_Plating "Enhanced Shielded Hybrid Plating"){.wikilink} |          |          | 2E)      |          |          |          |          |             |           | 2(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Full Infinity Armor](Full_Infinity_Armor "Full Infinity Armor"){.wikilink}              | 9        | +9       | 1 DR (A) | +1       | 9        | Halved   | 40 lbs   | \$290,000/3 | \-        | 2 / 4 /     | \-           |
+|                                                                                          |          |          |          |          |          |          |          |             |           | 2(5)        |              |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| [Mstr Full Infinity                                                                      | 9        | +9       | DR (1A,  | +1       | 9        | Halved   | 40 lbs   | \$812,000/4 | 5/+4P,+1P | 2 / 8 /     | Regeneration |
+| Armor](Mstr_Full_Infinity_Armor "Mstr Full Infinity Armor"){.wikilink}                   |          |          | 1C,E,T)  |          |          |          |          |             |           | 5(5+1)      | +12          |
++------------------------------------------------------------------------------------------+----------+----------+----------+----------+----------+----------+----------+-------------+-----------+-------------+--------------+
+| Prof\* Lvl means [Armor Proficiency Level](Proficiency_Tree#Armor_Branch "Armor Proficiency Level"){.wikilink}                                                                                                               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cstm +N/-P/-S(S) means Negative Points Earned / Customization Points Spent / Customization Slots Used (Total Slots Item has)                                                                                                 |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: Table: Example Armor
+
+## Aquiring Armor {#aquiring_armor}
+
+When attempting to obtain Armor, there are several things a Character
+may need to consider.
+
+- When choosing Armor, a Player must consider if their character class
+  has any Armor restrictions
+- A Character cannot take full advantage of Armor that has a higher
+  Armor Proficiency requirement. For more information review: [Armor
+  Proficiency
+  Branch](Proficiency_Tree#Armor_Branch "Armor Proficiency Branch"){.wikilink}.
+- The Player should consider what Tech level the Armor can be. The Tech
+  level can increase the price and the procurement difficulty. A
+  Character cannot craft or modify Armor that has a higher tech level.
+- The Player should consider the cost as explained in the next section
+  below.
+
+### Armor Cost {#armor_cost}
+
+- Tech Levels add to the **Base Cost** of the Armor.
+- For each Masterworked Level, increase the cost of the Armor by adding
+  the **Base Cost** to it. Ie: Armor Base Cost \* (1 + Masterwork Level)
+  = Total Armor Cost
+- For every Customization Point spent on the Armor, add the Armor\'s
+  Base Cost to the Total Cost.
+- The exception to adding Base Cost for Armor is when an Armor is Level
+  0 (AC 0). In this case, treat the Base Cost of the Armor as \$75 +
+  Tech Level Cost Increase when calculating the cost of Masterworking
+  and Customizations.
+
+## Crafting Armor {#crafting_armor}
+
+In Future Path, the player can create their own customized armor just
+like in [Weapons](Weapons "Weapons"){.wikilink}. Rules for crafting and
+customizing armor.
+
+1.  Crafting Armor requires the
+    [Structural](-_Structural "Structural"){.wikilink} skill to be
+    trained.
+2.  Crafting Armor\'s Max Level/AC is Skill Rank dependent. The Skill
+    must have at least 1 Rank to craft 0-3 AC Armor. 2 Ranks for 4-5, 3
+    Ranks for 6-7, 4 Ranks for 8-9.
+3.  Masterworking requires at least +2 Ranks in
+    [Structural](-_Structural "Structural"){.wikilink} for the Armor
+    Level. Read more
+    [here](Armor#Crafting_Masterworked_Armor "here"){.wikilink}.
+4.  Crafting costs 1/2 of the cost of the Item crafted in
+    [supplies](General_Equipment#Crafting_Materials_and_Equipment "supplies"){.wikilink}.
+5.  A Character cannot craft Armor that requires an Armor Proficiency
+    level that is more than 1 greater than the Character possesses.
+6.  **Skill [Structural](-_Structural "Structural"){.wikilink} DC** is
+    equal too **DC 12** + **Tech Level** + **Armor Level/Max AC** + **2
+    per Masterwork level**.
+7.  Crafting time is one day per Skill Rank requirement, excluding
+    Masterwork. IE: Armor Levels 0-3 require 1 Rank so 1 day to craft
+    etc\...
+
+### Armor Customizations {#armor_customizations}
+
+Customization of Armor can be done either at Crafting or after the Armor
+has been crafted. However, re-crafting Armor to Up Tech it or improve
+its Masterwork requires additional money and risks destroying the Armor
+if the check is failed by too much. More on this later. For now, this
+will focus on customizing Armor when it is first crafted.
+
+Tech Level determines the total number of base Customization Slots Armor
+can have, as well as any Free starting Customization Points that can be
+spent. Each Masterworked level can provide either 1 Customization Slot
+or 1 Customization Point. These two Attributes also affect the cost.
+When attempting to build and customize armor, it is important to
+determine the Tech Level and Masterwork level before starting.
+
+To customize the Armor, the Player should follow these steps.
+
+1.  Determine the Tech Level and Masterwork Level of the Armor.
+2.  Perform any AC to DR trading. These rules are slightly different
+    from those for gaining DR with customizations. All AC to DR trading
+    should happen **before** customization points or earned or spent.
+3.  Map out how many Customization Points you need in order to Craft the
+    desired Armor. If you do not have enough points, the armor will need
+    to be crafted with negative attributes, which in turn grant Negative
+    Points. Every 2 Negative points is worth 1 Customization point.
+4.  Now spend your free Customization points provided by the Tech Level,
+    Masterwork, and any Negative Points.
+5.  Calculate the final cost of the product. Each Customization Point
+    spent costs the same as the **Base Cost** of the Armor and is added
+    to the **Total Armor** Cost.
+
+Note
+: You do not need to spend all Customization points or Negative points.
+  The Armor can be \'re-crafted\' in the future, and those unused points
+  never go away.
+
+Please review the Customization Attributes for a full description of
+what they do and how much Customization/Negative points they cost and/or
+yield.
+
+### Description of Customization Attributes {#description_of_customization_attributes}
+
+Besides the default values from the table above, a Player can customize
+other attributes of the Armor. Below is a list of all attributes that
+can be customized:
+
+Notes
+
+: 
+
+- 1 Customization point is worth 2 Negative points and vice versa.
+- By default, an improvement costs 1 Customization point
+- By default, a diminishment yields 1 Negative point.
+- Most things will say they cost X number of Customization points.
+- Customization and Negative points are freely interchangeable.
+- You cannot gain a Diminshment/Negative on an Attribute of Armor to
+  then spend points to get Improvements on that same Attribute.
+
+<!-- -->
+
+- **AC Bonus**:
+
++----------------------------------------------------------------------+
+| Player can adjust the AC Bonus of the Armor.                         |
++======================================================================+
+| Improvement                                                          |
+| : You cannot spend points to increase the AC level. Simply pick a    |
+|   higher-level armor.                                                |
+|                                                                      |
+| Diminishment                                                         |
+| : This instantly yields 2 negative points instead of one. This       |
+|   doesn\'t decrease the cost of the armor or its Level.              |
++----------------------------------------------------------------------+
+
+- **DR Bonus**:
+
++----------------------------------------------------------------------+
+| This provides Damage reduction to Armor for different types of       |
+| attacks.                                                             |
++======================================================================+
+| Notes                                                                |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+| - DR Stands for Damage Reduction. DR stacks but cannot stack higher  |
+|   than 10. IE: Armor with 5 DR (A) and 7 DR (E) is attacked for      |
+|   Electric Damage; the total DR in this case would be 10.            |
+| - All DR trading between AC and DR must happen before                |
+|   customization/negative points are earned or spent.                 |
+|                                                                      |
+| Improvement                                                          |
+| : Costs 1 Customization point. Gains 2 **DR Units** (see [Trading    |
+|   DR](Armor#Trading_DR "Trading DR"){.wikilink}). In summary:        |
+|   - 1 Point = 2 DR (C, E, or T)                                      |
+|   - 1 Point = 1 DR (K)                                               |
+|   - 2 Points = 1 DR (A)                                              |
+|                                                                      |
+| Diminishment                                                         |
+| : Taking away one DR of the following 3 types **Chemical** /         |
+|   **Electric** / **Thermal** yields 1 Negative point. While removing |
+|   1 **Kinetic** yields 2 Negative points and 1 DR (A) yields 3       |
+|   negative points.                                                   |
++----------------------------------------------------------------------+
+
+- **Maximum Dex**:
+
++----------------------------------------------------------------------+
+| Player can adjust the maximum Dex bonus the Character gets while     |
+| using the Armor.                                                     |
++======================================================================+
+| Improvement                                                          |
+| : Costs 2 customization points. It can increase the max Dex by 1.    |
+|   The allowed total combined AC Bonus from Dex and Armor can never   |
+|   be more than 10.                                                   |
+|                                                                      |
+| Diminishment                                                         |
+| : Yields negative points relative to its starting Max Dex value. 7-9 |
+|   yielded no Negative Points, 6-4 yielded 1 Negative Point, 3-0      |
+|   yielded 2 Negative Points. You cannot go below Zero. You cannot    |
+|   gain more than 4 Negative Points using this process.               |
++----------------------------------------------------------------------+
+
+- **Speed Diff**:
+
++----------------------------------------------------------------------+
+| Player can adjust the speed penalty for wearing armor.               |
++======================================================================+
+| Improvement                                                          |
+| : Costs 1 Customization point. It can increase the speed to the next |
+|   higher amount. The speeds are (Normal/-5ft/-10ft/Halved).          |
+|                                                                      |
+| Diminishment                                                         |
+| : Decreasing the speed yields a negative point. You can only change  |
+|   this attribute once. The Weight can also affect Speed Diff. This   |
+|   can be used to reverse the negative side effect.                   |
++----------------------------------------------------------------------+
+
+- **Weight**:
+
++----------------------------------------------------------------------+
+| The Weight and thus clumsiness of the armor.                         |
++======================================================================+
+| Improvement                                                          |
+| : This costs 1 Customization point. It can affect speed when         |
+|   lowering the weight to match the weight in the [Armor              |
+|   Table](Armor#Armor_and_Attributes "Armor Table"){.wikilink} use    |
+|   that row\'s Speed instead of the Armor Level\'\'s speed. This is   |
+|   also used to determine the Size category for certain rules. This   |
+|   may make the Armor usable when it would otherwise be considered    |
+|   **clunky** or too large.                                           |
+|                                                                      |
+| Diminishment                                                         |
+| : This yields 1 Negative point if it doesn\'t affect Speed or Size.  |
+|   If it does adjust this, then it yields 2 Negative points.          |
++----------------------------------------------------------------------+
+
+- **Special Attributes**:
+
++------------------------------------------------------------------------+
+| A list of special attributes that can be applied to armor.             |
++========================================================================+
+| There is multi special attributes that can be applied to armor. There  |
+| are rules governing each of them.                                      |
++------------------------------------------------------------------------+
+| **Protection against Combat Techniques**: Cost: 1 customization point. |
+| Advantage: Can provide a +4 AC bonus to guard against a single type of |
+| [Combat                                                                |
+| Technique](Techniques#Combat_Techniques "Combat Technique"){.wikilink} |
+| or Advanced Combat Technique. This Special Attribute can be taken      |
+| multiple times and stacks, providing an additional +2 for each         |
+| additional time. However, it can only be picked for one type of Combat |
+| Technique. You cannot have Armor that protects against more than one   |
+| Combat Technique.                                                      |
++------------------------------------------------------------------------+
+| **Regeneration**: Cost: 1 customization point. Pre-req: Requires at    |
+| least Tech level 2. Spending customization points on Regen costs twice |
+| as much. This makes the Armor have +1 to procure diff. For every 1     |
+| customization point spent, the Armor gives HP equal to the Armor\'s    |
+| Tech Level, per turn, to the wearer, if needed. For every 2 times      |
+| taken, increase the cost by 1. To regenerate, the Armor had to use     |
+| Pharmaceutics as ammunition. Each carton of pharmaceuticals is worth 5 |
+| rounds of use. Once the cartridge is used up, it will need to be       |
+| reloaded, which is a multiple-round action explained below. The        |
+| Pharmaceutics costs the price of special [large                        |
+| ammunition](Weapons#Ammunition "large ammunition"){.wikilink}.         |
+| Reloading in combat rules by round:                                    |
+|                                                                        |
+| 1.  Round One: Acquire the Ammo. This can be a Simple action if the    |
+|     Pharmaceutical Carton is in a quick-access slot; otherwise, it is  |
+|     a Standard Action.                                                 |
+| 2.  Round Two: Apply the Carton, replacing the previously spent        |
+|     Carton. This is considered a Reload. By default, this is a         |
+|     Standard Action. But if the Character has the Feat Quick Reload,   |
+|     it becomes a Simple Action.                                        |
+|                                                                        |
+| - **Note**: No matter what, this requires two rounds.                  |
+| - **After Combat**: The Character can choose to have the Armor consume |
+|   the remaining Pharmaceuticals to finish restoring what the Armor     |
+|   can. If the Character chooses to replenish the Ammo, then any        |
+|   remaining Pharmaceuticals are wasted.                                |
++------------------------------------------------------------------------+
+| **Stealth Assist**: Cost: 1 customization point. This can only be used |
+| the same number of times as the Tech Level of the Armor. Each time     |
+| this customization is acquired, it provides a +2 bonus to              |
+| [Stealth](Stealth "Stealth"){.wikilink} skill checks.                  |
++------------------------------------------------------------------------+
+| **Weapon Mount**: Cost: 3 customization points. This can only be used  |
+| once. This allows for a weapon that would normally qualify for an      |
+| Off-Handed weapon only to be mounted on the Armor. This increases the  |
+| Armor\'s Weight and, in turn, the Speed following the Weight           |
+| diminishment rules. The Weight and Slots Increase is based on Size.    |
+| Small is 5 lbs and takes up 1 Slot; Medium is 10 lbs and takes up 2    |
+| Slots; Large is 15 lbs and takes up 3 Slots; and Gigantic is 25 lbs    |
+| and takes up 5 Slots, but Gigantic doesn\'t qualify. Treat this weapon |
+| as an offhanded weapon for the rules of Two Weapon Fighting. Except    |
+| that this weapon cannot benefit from Two Weapon Fighting Feats. If the |
+| Character already has an off-hand weapon, then this weapon acts like   |
+| Bonus Damage for the off-handed weapon.                                |
++------------------------------------------------------------------------+
+| **Shirt**: At Level 0, Armor can be declared a **Shirt** for 0 cost.   |
+| At Level 1, it costs 2 Customization points; at Level 2, it costs 4.   |
+| Spending Customization Points on a Shirt costs double. A Shirt cannot  |
+| provide more than 2 AC, 5 DR (A), or an equivalent in DR. Also, Shirt  |
+| Armor cannot be Clumsy or have a Weapon Mount. The Armor has to be     |
+| Tech 1 or higher. The Base Price is doubled. The Armor can be worn as  |
+| a shirt and can be easily hidden as part of a disguise. It can also be |
+| worn under other Armor; however, its AC bonus, if any, does not stack. |
+| DR stacks, however. If both a Shirt and above Armor have Regeneration, |
+| then only the shirt\'s regeneration works. A Shirt that has been       |
+| modified to provide **Protection against Combat Techniques** costs the |
+| same but only provides a +2.                                           |
++------------------------------------------------------------------------+
+| **Quick Slots**: This costs 1 Customization point. It requires at      |
+| least Tech Level 1 Armor. It provides a number of Quick Access slots   |
+| equal to the Tech Level built into the armor, allowing the wearer to   |
+| retrieve a small item (such as a pharmaceutical carton, grenade, ammo  |
+| magazines, etc.) as a Simple action. This Quick Slot cannot store Guns |
+| or other medium to large items. Review quick slot rules                |
+| [here](Weapons#Weapon_Accessories "here"){.wikilink}.                  |
++------------------------------------------------------------------------+
+| **Clumsy**: Cost: Free, as this is earned by changing the Speed below  |
+| half or by increasing the weight of the armor over 45 lbs. Clumsy      |
+| means that even if you are proficient with the armor, the Character    |
+| still takes disadvantage on all Saving Throws, the following Skill     |
+| checks: Athletics, Acrobatics, Pilot, Sleight of Hand, Medical. When   |
+| performing Combat Accuracy checks, the Character does not benefit from |
+| Minor or Major hits, and the Character cannot benefit from more than 1 |
+| Advantage.                                                             |
++------------------------------------------------------------------------+
+| **Archaic**: This is all Tech Level 0 Armor. This simply requires 1    |
+| more Armor Proficiency to wear.                                        |
++------------------------------------------------------------------------+
+
+### Re-Crafting Armor {#re_crafting_armor}
+
+You cannot Re-Craft Armor to improve its Armor Level/Max AC Bonus. Only
+to improve its Tech Level or Masterwork level. To Re-Craft Armor, it
+must first be in working condition. If it has [Item
+Damage](Item_Damage "Item Damage"){.wikilink}, that will need to be
+repaired first.
+
+Treat Re-Craft just like crafting an item, but with the following rule
+changes.
+
+1.  The Cost is the same as if you were crafting Armor, but for every 4
+    the Player beats the Craft DC, reduce the cost by %10, showing the
+    ability for the Character to recycle components.
+2.  Crafting time is halved.
+3.  The Craft DC check is +1 for Up-Teching and an additional +1 for
+    Masterworking. Not per level, just +1. This goes on top of the
+    normal craft DC.
+4.  If the Craft check fails by less than 5, then the Item is fine, but
+    no improvements are given, and another attempt can be made within 24
+    hours.
+5.  If the Craft check fails by more than 5 but by 10 or less, the Item
+    receives Item Damage of one Scar and must be repaired before another
+    attempt can be made.
+6.  If the Craft check fails by more than 10, the Item is so damaged
+    that it receives maximum possible Item Damage without being
+    destroyed. It takes twice as long to repair.
+7.  If the Check critically fails, then the Item is destroyed.
+
+## Crafting Masterworked Armor {#crafting_masterworked_armor}
+
+Crafting requires a Character to have the Craft
+[Structure](-_Structural "Structure"){.wikilink} Skill. The normal
+crafting rules for how long it takes and how expensive the materials are
+are all the same. So are the rules for Masterwork crafting.
+
+To summarize, for Masterwork crafting, you have to have at least a skill
+rank of 3 and must also have [Advanced build
+materials](General_Equipment#Crafting_Materials_and_Equipment "Advanced build materials"){.wikilink}
+for that item. The maximum level of Masterworked Armor is +5 and each
+level provides either +1 to the **Maximum Number of Customizations** or
++1 extra free **Customization point**.
+
+The Masterwork Skill Rank requirement goes up based on the number of
+Masterwork Levels and the armor level. Crafting Masterwork level 1 Armor
+is +2 to the Skill Rank base requirement for that Armor\'s Level range.
+1 Rank to craft 0-3 AC Armor. 2 Ranks for 4-5, 3 Ranks for 6-7, 4 Ranks
+for 8-9. So, to craft Armor Level 9 with a +9 AC bonus with 5 levels of
+Masterwork, that would require a Skill Rank of 10.
+
+One exception to crafting structure rules is that you **cannot**
+collaborate and divide up the work on crafting armor.
+
+## Power Armor {#power_armor}
+
+**`<u>`{=html} `<span style="color:#ff0000">`{=html} Needs work NOT
+ALPHA 3 READY! `</span>`{=html} `</u>`{=html}**
+
+Power Armor is an advanced full-body suit that provides powered
+assistance to the wearer. They can be completed and are even dangerous
+to wield and thus require special training. In order for a Character to
+wear one, they have to have at least 1 rank in the **Power Armor
+Branch** of the Proficiency Tree. In order to unlock the Power Armor
+Branch to put points in it, the Character has to have the [Power Armor
+Expert](Power_Armor_Expert "Power Armor Expert"){.wikilink} Feat.
+
+Power Armor comes in 5 different **Classes**. Class E through A. E being
+the most low-tech, simple manufacturing, and Class A being the most
+advanced technological build possible. The higher the Classification of
+the build the more advanced the Civilization has to be. So Tech 2
+Civilizations can build Class E and D. While Tech 3 can build C and B,
+and Tech 4 can build A.
+
+All Power Armor by default provides a +4 Strength Mod bonus and an AC
+bonus of +5, and negates all possible Dexterity or Wisdom bonuses toward
+the wearer\'s AC. However, the Armor does come with 5 additional
+customization or **Mods** slots that can be filled. These mods can
+provide everything from massive AC boosts, DR, extra weapon mounts, too
+special abilities and so on.
+
+### Power Armor Types {#power_armor_types}
+
+There are different Power Armor Types, which describe what they do and
+their default attributes. Each type also provides a special ability for
+the wearer.
+
+Masterworked Suits provide an additional Mod slot; however, they cost
+twice as much and gain an additional Procure Diff.
+
++-------------------------------------------------------------------------------+
+| \- Multipurpose Space Suit                                                    |
++===============================================================================+
+| Designed for all different kinds of long \'space walk\' missions. From        |
+| repairing to surveying and across a variety of environments. This suit is     |
+| designed to be defined against all the elements.                              |
+|                                                                               |
+| : **Special Abilities**: [Repair                                              |
+|   Assistant](Repair_Assistant "Repair Assistant"){.wikilink}, [Always On      |
+|   Monitor](Always_On_Monitor "Always On Monitor"){.wikilink}, [Environmental  |
+|   Stabilizer](Environmental_Stabilizer "Environmental Stabilizer"){.wikilink} |
+|                                                                               |
+| <!-- -->                                                                      |
+|                                                                               |
+| :                                                                             |
+|                                                                               |
+|   : Cost/Procure Diff: \$20,000/0                                             |
++-------------------------------------------------------------------------------+
+
++--------------------------------------------------------------------------+
+| \- Tactical Force Suit                                                   |
++==========================================================================+
+| Designed for small tactical special force teams to help with fast \'in   |
+| and out\' jobs. Stealth and Reliable Precision are always on the minds   |
+| of the developers for Tactical Force Suits.                              |
+|                                                                          |
+| : **Special Abilities**: [Always On                                      |
+|   Monitor](Always_On_Monitor "Always On Monitor"){.wikilink}, [Stealth   |
+|   Assistance](Stealth_Assistance "Stealth Assistance"){.wikilink} +4,    |
+|   [Co-operative                                                          |
+|   Targeting](Co-operative_Targeting "Co-operative Targeting"){.wikilink} |
+|                                                                          |
+| <!-- -->                                                                 |
+|                                                                          |
+| :                                                                        |
+|                                                                          |
+|   : Cost/Procure Diff: \$550,000/3                                       |
++--------------------------------------------------------------------------+
+
++--------------------------------------------------------------------------+
+| \- Combat Suit                                                           |
++==========================================================================+
+| The generic military-grade full-body suit. Most counties have at least   |
+| some need for these. They are multi-purpose with a focus on protecting   |
+| the wearer, allowing them to stay in the fight.                          |
+|                                                                          |
+| : **Special Abilities**: [Armor                                          |
+|   Hardening](Armor_Hardening "Armor Hardening"){.wikilink}, [Shield      |
+|   Booster](Shield_Booster "Shield Booster"){.wikilink}, [Co-operative    |
+|   Targeting](Co-operative_Targeting "Co-operative Targeting"){.wikilink} |
+|                                                                          |
+| <!-- -->                                                                 |
+|                                                                          |
+| :                                                                        |
+|                                                                          |
+|   : Cost/Procure Diff: \$425,000/2                                       |
++--------------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Recon Suit                                                        |
++======================================================================+
+| Designed for past pace, non-stop moving. When you need some insane   |
+| person to dash out from an entrenched position, either to get intel  |
+| out to friends or find intel on the enemies, it\'s best to have that |
+| person in a Recon Suit.                                              |
+|                                                                      |
+| : **Default Adjustments**: Instead of +4 Strength Mod its +4         |
+|   Dexterity Mod. Instead of an AC bonus of +4, it allows the         |
+|   character to use their full Dex Mod toward AC.                     |
+|                                                                      |
+| <!-- -->                                                             |
+|                                                                      |
+| : **Special Abilities**: [Always On                                  |
+|   Monitor](Always_On_Monitor "Always On Monitor"){.wikilink},        |
+|   [Stealth                                                           |
+|   Assistance](Stealth_Assistance "Stealth Assistance"){.wikilink}    |
+|   +2, [Rocket Pack](Rocket_Pack "Rocket Pack"){.wikilink}, [Speed    |
+|   Booster](Speed_Booster "Speed Booster"){.wikilink}                 |
+|                                                                      |
+| <!-- -->                                                             |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Cost/Procure Diff: \$500,000/2                                   |
++----------------------------------------------------------------------+
+
++---------------------------------------------------------------------------+
+| \- Support Suit                                                           |
++===========================================================================+
+| Here to lend a helping hand. The Support suit can carry tons of extra     |
+| ammo, grenades, med packs, and other gear. They can also put up a good    |
+| fight and come prepared to take a hit.                                    |
+|                                                                           |
+| : **Special Abilities**:                                                  |
+|   [Extra-Storage](Extra-Storage "Extra-Storage"){.wikilink},              |
+|   [Co-operative                                                           |
+|   Targeting](Co-operative_Targeting "Co-operative Targeting"){.wikilink}, |
+|   [Extra Armor](Extra_Armor "Extra Armor"){.wikilink}                     |
+|                                                                           |
+| <!-- -->                                                                  |
+|                                                                           |
+| :                                                                         |
+|                                                                           |
+|   : Cost/Procure Diff: \$400,000/2                                        |
++---------------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Combat Harden Medical Suit                                        |
++======================================================================+
+| Designed to be able to get into the thick of things and save lives,  |
+| you are destined to become the crew\'s favorite person. Just so long |
+| as you are cra.. BRAVE enough to do the job.                         |
+|                                                                      |
+| : **Special Abilities**: [Armor                                      |
+|   Hardening](Armor_Hardening "Armor Hardening"){.wikilink}, [Shield  |
+|   Booster](Shield_Booster "Shield Booster"){.wikilink}, [Medical     |
+|   Assistant](Medical_Assistant "Medical Assistant"){.wikilink}       |
+|                                                                      |
+| <!-- -->                                                             |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Cost/Procure Diff: \$350,000/1                                   |
++----------------------------------------------------------------------+
+
+### Power Armor Mods {#power_armor_mods}
+
+Power Armor Modifications or **Mods** are based on the Classification or
+**Class** of the Armor. Which is indicated by a **Grade**. Class E is
+the lowest tier Armor while Class A is the highest tier. When buying
+Power Armor, the Suit itself has a class that determines how well
+certain types of Mods work and how many of them.
+
+The higher the Class the higher the cost. All prices are based on Class
+E. Each Class is %50 more on top of the Base Class E price. So a
+\$100,000 E Mod will cost \$350,000 as an A Mod.
+
+Below is a list of all the available Mods and their rules, as well as
+what it means to have a Masterworked Mod.
+
++----------------------------------------------------------------------+
+| \- Reflective Armor                                                  |
++======================================================================+
+| Class E and D provides a +1 AC bonus for each time used. Class C and |
+| B provides +1 for every use and an additional +1 for every other use |
+| of the Mod. Class A provides +2 for every use.                       |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Cannot be Masterworked.                            |
+|   : Cost/Procure Diff: \$200,000/2                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Ablative Armor                                                    |
++======================================================================+
+| Provides +20 Hit Points at Class E. Each higher class level provides |
+| an additional 2. So at Class A each Ablative Armor mod would provide |
+| 30 HP. Ablative Armor needs to be repaired to recover, which takes   |
+| time and Crafting Structure Rank 2.                                  |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Provides an additional +5 of HP                    |
+|   : Cost/Procure Diff: \$200,000/1                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Absorptive Armor                                                  |
++======================================================================+
+| Class E and D provide 2 Total DR, 3 Kinetic DR, or 4 DR for a        |
+| specific Damage Type. Class C and B provide 3 Total DR, 4 Kinetic    |
+| DR, or 6 DR for a specific Damage Type. Class A provides 4 Total DR  |
+| or 6 Kinetic Dr or 8 DR for a specific Damage Type.                  |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Cannot be Masterworked.                            |
+|   : Cost/Procure Diff: \$200,000/1                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Regenerative Shielding                                            |
++======================================================================+
+| This is a shield that acts like a second skin and provides           |
+| additional Hit Points like Ablative Armor. However, it regenerates   |
+| some of its Shields every turn. Provides +10 Hit Points at Class E.  |
+| Each higher class level provides an additional 2. So at Class A, it  |
+| would provide up to 20 HP. For every Mod applied, it regenerates +1  |
+| per turn for Class E through C. B and A it regenerates +2 per turn.  |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Provides either +5 additional HP or +2 additional  |
+|     regen per turn.                                                  |
+|   : Cost/Procure Diff: \$200,000/2                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Shield Manipulator                                                |
++======================================================================+
+| This allows the wearer to turn the personal shield into a shield     |
+| wall. Which can take up a 10x10ft surface area or any 2d shape that  |
+| does not exceed that surface area. The end of the shield cannot go   |
+| beyond 15ft from the suit. The shield only absorbs damage from one   |
+| direction. This can only be taken once.                              |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Allows the shield to be 15x15ft and go up to 30ft  |
+|     from the suit.                                                   |
+|   : Cost/Procure Diff: \$100,000/1                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Weapon Mount                                                      |
++======================================================================+
+| This allows the suit to have a weapon, even a heavy weapon mounted   |
+| onto itself. This can be taken twice, but both weapons have to be    |
+| non-heavy. The weapon acts fully autonomously like its own           |
+| character. In combat, it takes its turn with the wearer but does not |
+| use the wearer\'s actions. Also, it only needs to perform one        |
+| accuracy check, which applies to all weapons mounted on the suit.    |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Cannot be Masterworked.                            |
+|   : Cost/Procure Diff: \$100,000/2                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Skill Assist Mods                                                 |
++======================================================================+
+| This provides a static Misc bonus to a skill of your choice by +2    |
+| for every mod used. The skills that can be \'Assisted\' are as       |
+| follows: [Medical](Medical "Medical"){.wikilink},                    |
+| [Stealth](Stealth "Stealth"){.wikilink}, [Sleight of                 |
+| Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink},                 |
+| [Perception](Perception "Perception"){.wikilink},                    |
+| [Intimidate](Intimidate "Intimidate"){.wikilink}, [Escape            |
+| Artist](Escape_Artist "Escape Artist"){.wikilink}, [Disable          |
+| Device](Disable_Device "Disable Device"){.wikilink},                 |
+| [Demolitions](Demolitions "Demolitions"){.wikilink},                 |
+| [Athletics](Athletics "Athletics"){.wikilink},                       |
+| [Acrobatics](Acrobatics "Acrobatics"){.wikilink}.                    |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Provides a +3 instead of +2.                       |
+|   : Cost/Procure Diff: \$100,000/1                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Targeting Assist                                                  |
++======================================================================+
+| This provides a static +1 to accuracy checks. It can only be used    |
+| once, and it\'s improved by 1 for every higher Class grade. So for   |
+| Class A this provides a +5 to accuracy checks.                       |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: This acts as if it is a grade higher than what it  |
+|     actually is. For Grade A Masterworked, this means +6.            |
+|   : Cost/Procure Diff: \$200,000/3                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Regenerative Healing                                              |
++======================================================================+
+| For Class E this provides a +2 to health back to the Wearer every    |
+| turn. It provides an additional +2 for each higher grade, so Class A |
+| would provide +10 per turn.                                          |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: This acts as if it is a grade higher than what it  |
+|     actually is. For Grade A Masterworked, this means +12.           |
+|   : Cost/Procure Diff: \$200,000/3                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Rocket Pack                                                       |
++======================================================================+
+| This provides a booster pack that allows the person to make massive  |
+| leaps into the air or control their movement in a vacuum. If taken   |
+| twice, the suit can carry a person and even fly or float             |
+| semi-permanently. The amount of flight time is based on the Class    |
+| level. 10 minutes for E, plus 10 minutes for each higher grade. This |
+| can be taken 3 times. On the third time, the suit becomes            |
+| spaceworthy on most low-gravity planets (Mars, for example).         |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: This allows the Rocket Pack act like it has one    |
+|     more pack attached. If The Suit has 3 masterworked packs, then   |
+|     it is space-worthy under even high gravity conditions, such as   |
+|     x2 gravity of Earth.                                             |
+|   : Cost/Procure Diff: \$100,000/1                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Flex Mod                                                          |
++======================================================================+
+| Refits of joints and motors of the base Suit so that it can become   |
+| much more flexible. Allows up to +2 of the wearer\'s Dex Mod to be   |
+| used toward the total AC. This can only be applied once with Class E |
+| and for every grade higher, one more time.                           |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: This changes the +2 to a +3.                       |
+|   : Cost/Procure Diff: \$200,000/3                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Neural Interface Mod                                              |
++======================================================================+
+| Allows the user to control every aspect of the Suit directly with    |
+| their mind. No need for annoying HUD interfaces, the wearer\'s mind  |
+| sees all. This lets wearers apply up to +2 of their Wisdom Mod to    |
+| their total AC. This can only be used once at Class E. However,      |
+| every grade higher can fit one more.                                 |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: This changes the +2 to a +3.                       |
+|   : Cost/Procure Diff: \$200,000/3                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Cloaking                                                          |
++======================================================================+
+| Allows the Suit to completely cloak. By default, you are not         |
+| undetectable unless you move. Even smells are hidden. However, if    |
+| you move the default Perception Check, DC is 25 for Class E and +5   |
+| for every grade higher. Also, once you declock, there is a cool-down |
+| of 18 seconds or 6 turns. The cooldown is 3 seconds shorter or 1     |
+| turn shorter for every grade higher.                                 |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: This makes the cloak act a grade higher than it    |
+|     already is. If Grade A, then this makes the DC 50; however, the  |
+|     cool down cannot go below 1 turn or 3 seconds. (Only a Tech 4    |
+|     advanced or Tech 5 civ could have such tech)                     |
+|   : Cost/Procure Diff: \$300,000/2                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Storage Pack                                                      |
++======================================================================+
+| Allows to store massive amounts of Volume and weight into what seems |
+| like a small space. Not easily accessible by the Wearer themselves,  |
+| but other players can access it. This can easily carry up to 100 lbs |
+| of stuff.                                                            |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Cannot be Masterworked.                            |
+|   : Cost/Procure Diff: \$10,000/0                                    |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Strength Boost                                                    |
++======================================================================+
+| Allows for a boost in Strength Mod of +2 for every time this is      |
+| taken. However, this can only be taken once at Class E and once more |
+| for each higher Grade.                                               |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Provides a +3 instead of a +2.                     |
+|   : Cost/Procure Diff: \$100,000/1                                   |
++----------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+| \- Protection against Combat Techniques                              |
++======================================================================+
+| Just like for Armor this provides protection against a specific type |
+| of Combat Technique. Class E provides +3, with an additional +1 for  |
+| each higher Grade.                                                   |
+|                                                                      |
+| :                                                                    |
+|                                                                      |
+|   : Masterworked: Provides +1 to the protection.                     |
+|   : Cost/Procure Diff: \$100,000/2                                   |
++----------------------------------------------------------------------+
+
+### Crafting Power Armor {#crafting_power_armor}
+
+Crafting Power Armor requires Craft +2 in Structure and +1 in both
+Mechanical and Electrical. The Bill of Materials (IE: Cost) of crafting
+is calculated the same as for Armor or any other Structure.
+
+To do Masterwork, it requires Craft +5 in Structure and +3 in Mechanical
+and Electrical. There are no Masterwork levels for Power Armor or Power
+Armor Mods. Buying a Masterworked Suit costs double the base price.
+Buying Masterworked Power Armor Mods costs triple the base price per
+Mod. The Procure difficulty is increased by 1.
+
+Unlike crafting Armor, this can be divided up between qualified players
+like any other Structure. rocure Diff: \$100,000/2 \|}
+
+### Crafting Power Armor {#crafting_power_armor_1}
+
+Crafting Power Armor requires Craft +2 in Structure and +1 in both
+Mechanical and Electrical. The Bill of Materials (IE: Cost) of crafting
+is calculated the same as for Armor or any other Structure.
+
+To do Masterwork, it requires Craft +5 in Structure and +3 in Mechanical
+and Electrical. There are no Masterwork levels for Power Armor or Power
+Armor Mods. Buying a Masterworked Suit costs double the base price.
+Buying Masterworked Power Armor Mods costs triple the base price per
+Mod. The Procure difficulty is increased by 1.
+
+Unlike crafting Armor, this can be divided up between qualified players
+like any other Structure.

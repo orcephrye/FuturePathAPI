@@ -1,0 +1,450 @@
+**`<span style="color:#ff0000">`{=html} THIS PAGE IS STILL UNDER
+CONSTRUCTION! `</span>`{=html}**
+
+## Summary
+
+There are 6 levels of Technological advancement that help categorize
+tech for buying, repairing, crafting, and using. Zero through Five.
+Where Zero ranges from bows and arrows to muskets, and 5 borders on
+Godlike abilities that warp the laws that govern reality. There are no
+playable Tech Level 5 Species. And a Hero cannot craft Tech Level 5
+without special rules and max level. Also, technically there is a -1
+Level. This represents a Species starting to learn about the natural
+world around them; consider -1 to be sticks-and-stones-sorta technology,
+where concepts like the wheel are discovered. Below is a quick summary
+of all the tech levels.
+
+- **Tech Level -1**: Barely even considered a civilization; a species is
+  just beginning to learn to work with tools and manipulate the
+  environment around them, think fire, sticks, stones, the wheel.
+- **Tech Level 0**: Electricity has yet to be discovered or will be at
+  the later years of a Tech 0 civilization. Weapons can range from Bows
+  and Arrows to Muskets. Steam engines and low-efficiency fossil fuels
+  are also used in the later years of Tech 0.
+- **Tech Level 1**: Starts out around the time of learning to split the
+  Atom. Enters an age of electronic thinking machines. Starts out
+  exploring their own Solar System. Doesn\'t start with FTLs, but FTL
+  discovery can often mark the start of the transition period from Tech
+  1 to 2.
+- **Tech Level 2**: Defiently has FTL technology. (Faster-Than-Light).
+  Their civilization can span many systems. Can achieve early
+  gravity-manipulating tech.
+- **Tech Level 3**: FTL techology includes ultra fast 10k+ LY speeds.
+  Can easily communicate and travel vast distances, and can have a
+  cohesive civilization spanning thousands of light-years.
+- **Tech Level 4**: Can travel the span of a whole galaxy within roughly
+  1 year\'s time. Has the means to control a whole galaxy\'s resources.
+- **Tech Level 5**: Can travel across galaxies. Can access the
+  multiverse. Can pull unimaginable amounts of energy into highly dense,
+  localized spots, affecting the fabric of reality to some measurable
+  degree.
+
+## Extened Explination {#extened_explination}
+
+This page is about what the different Tech Level\'s mean for both a
+Civilization and for an individual Character. To go to the rules page
+for using Tech Level, go [here](Tech "here"){.wikilink}.
+
+First and foremost, the Milky Way is full of life. But not as full as it
+should have been. And only in the last 1,000,000 years has life begun
+exploring beyond its immediate surroundings using FTL technology. The
+question that plagued Humanity for so long is summed up with the [Fermi
+Paradox](https://en.wikipedia.org/wiki/Fermi_paradox). The Fermi Paradox
+brings to light the interesting question of \"Are we alone in the
+Universe.\" In Future Path, the answer is absolutely no; the universe is
+full of life. But the Galaxy isn\'t so overflowing with alien life as it
+should be, according to the math. Even though there are an estimated 40
+billion habitable planets in our galaxy alone. Many of which are far
+older than Earth.
+
+In the fictional Universe of FuturePath, most life is only possible
+within the **Ring of Life.** This is a boundary line similar to the
+[Goldilocks
+Zone](https://en.wikipedia.org/wiki/Circumstellar_habitable_zone) of a
+solar system, but instead of for planets, it\'s for the solar systems
+themselves. Stars that form within this range are not too close to the
+center of the Milky Way and thus do not experience higher radiation.
+They are also not too far out of the reaches where the density and thus
+the probability of life is less. It\'s not to say that life is
+impossible outside this Ring, but the vast majority of Sentient life is
+found within it.
+
+There are multiple reasons given for why life isn\'t as abundant as it
+should be. The general consensus is that it is a combination of reasons,
+and the big debate between scientists and historians is which factors
+matter most. However, most agree that two theories impact life in the
+galaxy more than any other. The **Dark Forest** theory and the **Great
+Filter** theory.
+
+Dark Forest
+
+: 
+
+: The Universe is dangerous. Any mass, something even as small as a
+  bullet, sufficiently sped up close to the speed of light, would be
+  capable of destroying whole planets. And it would be impossible to
+  detect in time to stop, especially without FTL abilities. Thus, once a
+  species exposes its existence, it also exposes itself to instant death
+  of unknown origin. Armed with this knowledge, civilizations take one 1
+  of 2 major survival strategies. Agressively expand and destroy all
+  life they detect, or stay isolated and quit, tiptoeing around if
+  necessary, but avoiding detection and becoming isolationists. This
+  would mean most alien species refuse to show themselves, and the ones
+  that do destroy a lot of life before it can rise.
+
+<!-- -->
+
+Great Filter
+
+: 
+
+: The other reason the Galaxy isn\'t already teeming with life is the
+  Great Filter. This is the term for all the significant milestones that
+  civilization must cross to join the elite group of Sentient species
+  capable of spreading across the galaxy. The Great Filter is an
+  ever-present, cruel force of nature, and it will never leave.
+
+<!-- -->
+
+The Tech Levels
+
+: 
+
+: The Tech levels start once most of the major milestones/filters from
+  the Great Filter have been surpassed, and the life is now sentient,
+  and can look around and ask about their place in the Universe. There
+  are a few milestones a Civilization must pass before being considered
+  a Tech Level 1 Civilization. Part of continuing to climb the Tech
+  Level ladder is overcoming the challenges posed by the Great Filter;
+  however, it is not the only way to improve.
+
+**NOTE**: The Tech Level system is loosely based on the [Kardashev
+Scale](https://en.wikipedia.org/wiki/Kardashev_scale), incorporating the
+idea of \'The Great Filter\' and Carl Sagan\'s information-based
+approach.
+
+## The Great Filter {#the_great_filter}
+
+A real force of nature, this ever-present filter cruelly extinguishes
+all species unable to pass its tests. It is represented by challenges
+that a species will inevitably face. Sadly, as a species progresses, the
+old challenges never fully go away; they just become less severe as new
+challenges arise.
+
+1.  The first challenge is becoming sentient. And during this type, a
+    mindless microbial or beast of the wild is unable to fathom the
+    cosmos or its position in it. It is unable to be aware of the harm
+    that may come to it, or it may, in fact, be doing to its species
+    chances of survival. The celestial body it is on could be hit by an
+    asteroid that could wipe out all life. The star could be too
+    unstable or too old. The solar system could collide with another,
+    creating a gravitomagnetic tear that would rip the celestial body
+    from its home and leave it adrift in space. All life would likely
+    die out over time. Such is the cruel hand of the Great Filter. Such
+    is the fate of most life. Death before it ever had a chance.
+2.  Once sentient, these creatures must continue to evolve into a
+    species capable of space flight. Capable of dealing with at least a
+    few of the first challenges. All sentient species question at some
+    point what it all means. About who they are and their place in the
+    cosmos. What are those dots up there? How far away are they? Is
+    there somebody else looking down at us? Most who can answer these
+    questions eventually succeed in reaching out into the void. However,
+    during these fragile, curious times, the first challenge still looms
+    overhead. However, now there is a new challenger that nature has
+    brought. The species now must also contend with itself. Technology
+    is a double-edged sword. It strengthens the individual to influence
+    an ever larger number of people. And with that power comes the
+    possibility of destruction. There have been many species that could
+    not resolve their differences and chose a path of mutual destruction
+    rather than embracing life. There have also been species that had
+    little problem dealing with such issues. Although few are so lucky
+    as to have this challenge be a minor one.
+3.  At this point, most Civilizations are considered at least Tech
+    Level 1. Although many would argue that this achievement typically
+    doesn\'t happen until a Civilization starts to colonize space. Some
+    civilizations have reached space, but are still not quite at Tech
+    Level 1. At this point, a Civilization has been experimenting with
+    Advanced Technology. Several significant breakthroughs that can lead
+    to further advancement or destruction. The careful use of
+    Anti-Matter is one. This can become a planet-killing weapon well
+    beyond the scope of a Fusion Bomb. Another is A.I. An event called
+    the \'Singularity\' can occur. This is where an A.I system can start
+    to learn and improve upon itself faster then its flesh and blood
+    creators can. Sometimes this is a joyous occasion. Other times, it
+    is a joyless occasion as the machines attempt to take over the
+    flesh. These Civilizations are carefully monitored by the other,
+    more advanced Civilizations to make sure things do not get out of
+    hand. (Mainly for their own selfless protection). Advanced A.I is
+    usually illegal or has many heavy stipulations placed on it to
+    ensure control.
+4.  Warp drive is usually a staple of a fully mature Tech 1
+    Civilization. Although space travel doesn\'t become commonplace for
+    most Civilizations until they reach Tech Level 2, having a
+    Civilization reach beyond its own solar system and colonize other
+    systems is a crucial step in reducing the threat of the Great
+    Filter. It is at this point that a Civilization has to worry most
+    about other alien species. Most advanced civilizations ignore lower
+    species until those species reach Tech Level 1. The inter-galactic
+    law forbids the abuse of lower species by higher Civilizations. But
+    once a Civilization reaches a certain point Inter-Galatic law no
+    longer protects them. At this point, the threat of being enslaved or
+    wiped out by another advanced Civilization not willing to share its
+    neighbor\'s space.
+
+## The levels of a Civilization {#the_levels_of_a_civilization}
+
+There are 6 levels. -1 through 4. Levels are hotly debated among the
+scholars of the Milky Way Galaxy. Many people prefer a firm definition
+that establishes a clear boundary between levels. However, the different
+rules do not always apply in all cases. Some species may have technology
+well beyond a Lvl 2 Civ yet still haven\'t go out into the heavens.
+Instead, scholars have created a system that loosely describes
+accomplishments a Civilization would likely achieve in the early years
+of its lvl, and the goals it will need to meet or at least make
+significant headway toward reaching the next lvl. These achievements and
+goals interestingly have a pattern to where the amount of energy that a
+species is capable of safely using and the amount of unique information
+they can process and understand
+
+Although the tech level is represented by a civilization\'s overall
+level, it\'s a loose approximation. Tech level zero, for instance,
+accounts for both -1 and 0 Civilization Level. Also, Tech Level 4 is
+represented by both strong level 3 Civilizations and any possible level
+4 Civ. In Civilization, there are two types of Tech it can focus on. It
+can focus on Military Tech, (Armor, Weapons, some Equipment/Chemicals)
+or Social Tech (General Equipment/Transporation/Chemicals/Some Armor). A
+new Level 2 Civilization may still have a Military Tech Level of 1 but a
+Social Tech Level of 2. However, a strong Level 2 Civilization implies
+that it has at least Level 2 in both Tech Levels.
+
+There are three levels of understanding that a Civilization can have
+about any subject. Ignorance/Awareness/Understanding. Understanding
+doesn\'t mean to say the civilization possesses complete understanding.
+Only that it has a working/piratical knowledge of it that could be used
+to benefit the Civilization. Ignorance implies that the Civilization is
+unaware of the subject, and if a Character were to attempt to mention or
+explain it to a common citizen, that Character would hit a brick wall in
+the conversation. Awareness means there is knowledge of such things, but
+not enough for the civilization to incorporate it into daily life. To
+say that it isn\'t being used in common technologies in a conscious and
+practical way.
+
+### Level 1 {#level_1}
+
+- Energy: \~4x10\^16 Watts
+- Unique Bits: 10\^6 \~ 10\^12 unique bits
+
+<!-- -->
+
+- Accomplishments:
+
+This is when a Civilization first reaches space. (Not probes but an
+actual sentient member of the Species). Space travel is now possible,
+although probably difficult and not yet commonplace. Their home planet
+is likely largely explored. Perhaps not 100%, but the subject of
+Geography should be at the Understanding level. They should be able to
+harness the power of their planet and the majority, if not all, of its
+resources. From fossil fuels to radioactivity to geothermal. Subjects,
+such as Chemistry, Physics, and other such subjects, should be at an
+Awareness level.
+
+- Self-Awareness Accomplishments:
+
+It is likely that a Civilization has reached a point where they began to
+understand their own brains and how they think. Psychology, Neurology,
+and Biology(may be different depending on Species) subjects should be at
+least Awareness level of Knowledge. The subject of ones Local History
+should be at Understanding.
+
+- Goals:
+
+The local solar system is now theirs for the taking. Resources abound.
+One major goal for new spacefaring species is to hold dominion over
+their own solar system. A strong lvl 1 Species will be able to easily go
+too and fro within their solar system. Space travel should become more
+common. Harnessing the power of the local star. Not only do these mean a
+better understanding of renewable energies, but also of Fusion power. A
+species may begin to consider going faster than Sub-Light Travel (SLT)
+and work on Faster-Than-Light (FTL) transportation. They may acquire FTL
+at this stage although many consider this to be the point a Civilization
+enters Level 2.
+
+### Level 2 {#level_2}
+
+- Energy: \~4x10\^33 Watts
+- Unique Bits: 10\^12 \~ 10\^18 unique bits
+
+<!-- -->
+
+- Accomplishments:
+
+One debated marker for a Tech Level 2 Civ is FTL travel. Or simply the
+ability to travel between stars in a piratical manner. (Which doesn\'t
+always mean FTL). In either case, nobody ever considers a mature lvl 2
+Civ to be without FTL. Subjects such as Physics, Quantum Mechanics, and
+Electromagnetism are all within an understanding level. The local solar
+system is largely explored. Its resources have been made known and are
+being exploited for the benefit of the Civilization. If the solar system
+has another planet the species can live on or at least land on they have
+done that by now and are building settlements. Power is also important.
+Fusion is being used to its fullest and new forms of power are coming
+around. Anti-Matter generators are a thing now. The subject of
+Anti-Matter should be at least an Awareness level.
+
+- Self-Awareness Accomplishments:
+
+A Species now has a much better understanding of itself and its place
+within the universe. Fully understanding its role may still be debated
+but at least the conversation has a new seriousness to it. They may
+start to spend much more time devoted to the arts, to war, or to
+learning. Species are better informed about mental illness and are
+usually able to diagnose it, or at least cure it. Psychology, Neurology,
+and Biology are all likely to be at or around the Understanding level.
+Species are working on dealing with problems like death at and removing
+all possible types of sickness.
+
+- Goals:
+
+By becoming more aware of themselves, species may begin to weed out
+negative aspects of their behavior. Things that the species may find as
+a whole distasteful or to be a deterrent to the survival of the Species.
+Having a better understanding of how emotions work and how/why humanity
+reacts can help to stop them. Although this can also lead to horrible
+sudo-utopias where people are forced to live a certain way. Species will
+likely struggle with this issue as they become more aware of how to
+possibly \"Fix\" the problem. Species will want to learn faster and more
+powerful ways of space travel and power generation. They will need to
+gain a much deeper understanding of the universe and how it works to
+achieve these lofty goals. A lvl 2 species that is on the verge of lvl 3
+may also be able to unlock the mysteries of longevity and possibly
+immortality. They will begin to assume major roles in the galaxy and
+affect its inhabitants.
+
+### Level 3 {#level_3}
+
+- Energy: \~4x10\^44 Watts
+- Unique Bits: 10\^18 \~ 10\^24 unique bits
+
+<!-- -->
+
+- Accomplishments:
+
+These are tried and true civilizations. Few truly reach such a height.
+Many believe that the people who created the Jove were lvl3. These
+people are capable of exploring whole galaxies within a reasonable
+amount of time. lvl 3 Civs have either discovered or are on the way to
+discovering faster forms of FTL. Instant forms of travel, such as being
+able to create wormholes or use Jump drives. All the subjects attributed
+to an lvl 3 civilization either are or will soon become Understanding
+level. Most Species raised within this type of Civilization gain bonuses
+for learning new Subjects. The Species will expand across the entire
+galaxy.
+
+- Self-Awareness Accomplishments:
+
+These Species will likely have learned many lessons from their past
+attempts to self-improve. Whether that means physical, emotional, or
+spiritual. It is likely that these people have worked out how to govern
+themselves without massive conflict (notice not any conflict) and is
+more easily able to relate and deal with other Species/Civs. They are
+now truly capable or self-improvement without the conflicts that may
+have originated before. All Subjects that deal with this, from Politics
+to history, should all be at the Understanding level.
+
+- Goal:
+
+More Power and more powerful ways of travel. The Galaxy may start to
+feel too small for the explorers and adventurers of this Species.
+Although no known civilization has yet to figure out a piratical way of
+Inter-Galatic travel, it is thought to be possible. The few truly lvl3
+Civilizations of the Milky Way has been working on the problem.
+Self-improvement is another type of adventure. Depending on past
+success, some Level 3 Species may still be working on longevity.
+However, other, more drastic improvements may be on the horizon for
+these power Species.
+
+### Level 4 {#level_4}
+
+Little is known about lvl4. It is there simply because it is thought to
+be reachable. Some species, for whatever reason, be it pride or
+narcissism or simply ignorance, have claimed to be in the ranks of level
+4. Either-case all things need to be categorized by some philosopher or
+another.
+
+- Energy: \< Infinity Watts (This means that although the Civilization
+  doesn\'t actually have Infinity, it may seem that way from lower
+  civilizations. Energy is no longer a problem at all.)
+- Unique Bits: 10\^24 \~ 10\^31 unique bits
+
+<!-- -->
+
+- Accomplishments:
+
+All Subjects attributed to the Civ would be at a \"beyond
+understanding\" level and would be common knowledge among all its
+members. All other Subjects that the Species has yet to master would be
+at an Awareness level. These types of people would be intergalactic in
+power. They would have an Understanding level of Knowledge regarding
+inter-dimensions, multiverse, cosmology. The Universe would become their
+playground.
+
+- Self-Awareness Accomplishments:
+
+For these people, conflicts would be pointless except as a way to avoid
+boredom. It is doubtful that a Species of such knowledge and technology
+wouldn\'t have beaten back the powers of Time and death. They would
+likely be immortal in one way or another.
+
+- Goals:
+
+It is debated if there would be anything a fully realized lvl4
+civilization would try to achieve. That would imply a Lvl 5. It is also
+hard to imagine anything beyond. Some people debate that there is a
+spiritual plane of existence and that perhaps it may be possible for
+there to be a lvl 5. If there was, then the Universe would seem small
+and malleable as clay in the hand of a potter to a Level 5 Civ. Were we
+created by such a Civilization? Would they allow such powerful Species
+to join them? Such Questions have sparked millions of debates, but it is
+believed that if there were anything left for lvl 4 to do, other than
+rule the universe, it would be to answer them.
+
+Now, what about sentient species that do not yet have spaceflight or are
+not considered lvl 1? Well, there are two levels for them.
+
+### Level Zero {#level_zero}
+
+This is a Civilization that has yet to go to space but shows all the
+promise of accomplishing such a goal. This is a civilization that has
+discovered a way of categorizing the things around them, as well as
+using logical steps to prove ideas and thoughts amongst each other. For
+humans, they would have become level Zero around the Renaissance era.
+(Although you could argue that certain cultures reached this level
+before the Renaissance era).
+
+### Level Negative One {#level_negative_one}
+
+This is a Species just as they come into sentience and start to gather
+amongst themselves. Their only goals would be to begin to become aware
+of the world around them, and of themselves and the individuals in that
+world. The step from -1 to 0 is when they start to have an Aware level
+of Knowledge regarding the world around them. Biology, Chemistry, and
+Math.
+
+## Questions
+
+What determines a civilization\'s level of knowledge on a subject when I
+am creating a Civ?
+
+Common Knowledge. Ask yourself if an everyday person living in that time
+can explain at least the simplest way that particular Subject. You may
+not be a Math major, but you can explain 1+1. You may not know how a car
+works, but if someone from 200 years ago were to ask you. You could
+explain that it uses fire to move, and instead of burning wood or coal,
+you burn a super-flammable liquid derived from oil, similar to the oil
+you might use in a lamp. They may not understand how it all relates, but
+they got a good enough answer that it would likely satisfy most common
+people. (except for maybe some super curious folk). Once a Subject is
+common enough, then it should become available. When leveling up or
+creating a Civilization you should ask what drives them. What things
+would they want to focus on? Those are the Subjects you want them to
+have.
