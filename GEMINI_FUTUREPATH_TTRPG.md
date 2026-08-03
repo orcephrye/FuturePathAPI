@@ -50,6 +50,14 @@ Skills are handled a differently compared to other d20 based systems. Here is th
 @./GEMINI_SKILLSBASICS.md
 
 
+## Skills, Feat-Based Skills, and Skill-Like Abilities
+
+Comprehensive overview of all Skills, Feat-Based Skills, and Skill-Like Abilities in d20 FuturePath:
+
+@./GEMINI_SKILLS.md
+
+
+
 ## Ability Themes
 
 The core capabilities of a character, including scores, modifiers, and die levels:

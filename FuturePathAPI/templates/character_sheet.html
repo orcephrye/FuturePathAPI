@@ -257,6 +257,25 @@
       font-weight: 700 !important;
     }
 
+    /* Proficiency Checkbox Styling with half spacing */
+    .prof-check-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      margin-right: 6px;
+      cursor: pointer;
+    }
+    .prof-check-item .form-check-input {
+      margin-top: 0;
+      cursor: pointer;
+    }
+    .prof-check-item .prof-num-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      user-select: none;
+      line-height: 1;
+    }
+
     @media (min-width: 992px) {
       .col-card-abilities {
         flex: 0 0 50% !important;
@@ -328,6 +347,44 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+
+    #skillsTable th, #skillsTable td {
+      padding: 0.2rem 0.25rem !important;
+      font-size: 0.8rem;
+    }
+    #skillsTable .form-control-sm {
+      padding: 0.05rem 0.15rem !important;
+      font-size: 0.78rem;
+    }
+
+    @media (min-width: 992px) {
+      .col-skills-side {
+        width: 45% !important;
+        flex: 0 0 45% !important;
+        max-width: 45% !important;
+        order: 1 !important;
+      }
+      .col-armor-side {
+        width: 55% !important;
+        flex: 0 0 55% !important;
+        max-width: 55% !important;
+        order: 2 !important;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .col-skills-side {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        order: 2 !important;
+      }
+      .col-armor-side {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        order: 1 !important;
+      }
     }
 
     .form-control, .form-select {
@@ -409,6 +466,11 @@
     .badge-unnatural {
       background-color: #1e3a8a;
       color: #bfdbfe;
+    }
+
+    .badge-rank-dep {
+      background-color: #581c87;
+      color: #e9d5ff;
     }
 
     /* Action Buttons Toolbar */
@@ -654,7 +716,9 @@
         </div>
       </div>
       <div class="d-flex align-items-center gap-2">
-        <span class="badge header-badge"><i class="fa-solid fa-microchip me-1"></i> Tech Level: System Ready</span>
+        <button class="btn btn-cyber-outline btn-sm" data-bs-toggle="modal" data-bs-target="#themeModal">
+          <i class="fa-solid fa-palette me-1"></i> Theme
+        </button>
       </div>
     </div>
   </header>
@@ -673,9 +737,6 @@
           <i class="fa-solid fa-upload me-1"></i> Import JSON
           <input type="file" id="importJsonInput" accept=".json" style="display:none;" onchange="importCharacterJSON(event)">
         </label>
-        <button class="btn btn-cyber-outline btn-sm" data-bs-toggle="modal" data-bs-target="#themeModal">
-          <i class="fa-solid fa-palette me-1"></i> Theme
-        </button>
       </div>
 
       <div class="d-flex align-items-center gap-2">
@@ -698,8 +759,8 @@
         <!-- Character Identity Header -->
         <div class="sheet-card">
           <div class="card-header-custom">
-            <span><i class="fa-solid fa-id-card me-2"></i>Character Identity & Profile</span>
-            <small class="text-muted">d20 FuturePath Core</small>
+            <span><i class="fa-solid fa-id-card me-2"></i>Character Identity</span>
+            <small class="text-muted">d20 FuturePath</small>
           </div>
           <div class="card-body">
             <div class="row g-3">
@@ -777,8 +838,12 @@
           <div class="col-12 col-lg-auto col-card-abilities">
             <div class="sheet-card h-100">
               <div class="card-header-custom">
-                <span><i class="fa-solid fa-dumbbell me-2"></i>Ability Themes (STR, DEX, CON, INT, WIS, CHA)</span>
-                <small class="text-muted">Modifier = Math.floor(Score/2) - 5</small>
+                <span class="d-none d-xl-inline"><i class="fa-solid fa-dumbbell me-2"></i>Ability Themes (STR, DEX, CON, INT, WIS, CHA)</span>
+                <span class="d-inline d-xl-none"><i class="fa-solid fa-dumbbell me-2"></i>Ability Themes</span>
+                <small class="text-muted d-none d-xl-inline">
+                  <span class="d-none d-xxl-inline">Modifier = Math.floor (Score/2)-5</span>
+                  <span class="d-inline d-xxl-none">Mod = floor (Score/2)-5</span>
+                </small>
               </div>
               <div class="card-body">
                 <div class="row g-2 text-center">
@@ -786,7 +851,10 @@
                   <!-- STR -->
                   <div class="col-4 col-sm-2">
                     <div class="stat-box">
-                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">STR</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
+                        <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_STR" id="primaryAbility_STR">
+                        <label class="stat-label fw-bold fs-6 text-cyan mb-0" for="primaryAbility_STR" style="cursor: pointer;">STR</label>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreSTR" id="scoreSTR" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modSTR" id="modSTR" readonly>
@@ -796,7 +864,10 @@
                   <!-- DEX -->
                   <div class="col-4 col-sm-2">
                     <div class="stat-box">
-                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">DEX</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
+                        <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_DEX" id="primaryAbility_DEX">
+                        <label class="stat-label fw-bold fs-6 text-cyan mb-0" for="primaryAbility_DEX" style="cursor: pointer;">DEX</label>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreDEX" id="scoreDEX" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modDEX" id="modDEX" readonly>
@@ -806,7 +877,10 @@
                   <!-- CON -->
                   <div class="col-4 col-sm-2">
                     <div class="stat-box">
-                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">CON</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
+                        <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_CON" id="primaryAbility_CON">
+                        <label class="stat-label fw-bold fs-6 text-cyan mb-0" for="primaryAbility_CON" style="cursor: pointer;">CON</label>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreCON" id="scoreCON" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modCON" id="modCON" readonly>
@@ -816,7 +890,10 @@
                   <!-- INT -->
                   <div class="col-4 col-sm-2">
                     <div class="stat-box">
-                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">INT</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
+                        <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_INT" id="primaryAbility_INT">
+                        <label class="stat-label fw-bold fs-6 text-cyan mb-0" for="primaryAbility_INT" style="cursor: pointer;">INT</label>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreINT" id="scoreINT" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modINT" id="modINT" readonly>
@@ -826,7 +903,10 @@
                   <!-- WIS -->
                   <div class="col-4 col-sm-2">
                     <div class="stat-box">
-                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">WIS</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
+                        <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_WIS" id="primaryAbility_WIS">
+                        <label class="stat-label fw-bold fs-6 text-cyan mb-0" for="primaryAbility_WIS" style="cursor: pointer;">WIS</label>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreWIS" id="scoreWIS" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modWIS" id="modWIS" readonly>
@@ -836,7 +916,10 @@
                   <!-- CHA -->
                   <div class="col-4 col-sm-2">
                     <div class="stat-box">
-                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">CHA</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
+                        <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_CHA" id="primaryAbility_CHA">
+                        <label class="stat-label fw-bold fs-6 text-cyan mb-0" for="primaryAbility_CHA" style="cursor: pointer;">CHA</label>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreCHA" id="scoreCHA" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modCHA" id="modCHA" readonly>
@@ -853,21 +936,27 @@
             <div class="sheet-card h-100">
               <div class="card-header-custom">
                 <span><i class="fa-solid fa-heart-pulse me-2"></i>Health and Injury</span>
-                <small class="text-muted">Vitality</small>
+                <small class="text-muted d-none d-xl-inline">Vitality</small>
               </div>
               <div class="card-body">
                 <div class="row g-2 text-center align-items-center">
                   
                   <div class="col-5 text-center">
                     <div class="stat-box">
-                      <div class="stat-label">Hit Die</div>
+                      <div class="stat-label">
+                        <span class="d-none d-xl-inline">Hit Die</span>
+                        <span class="d-inline d-xl-none">HD</span>
+                      </div>
                       <input type="text" class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan" name="hitDie">
                     </div>
                   </div>
 
                   <div class="col-7 text-center">
                     <div class="stat-box">
-                      <div class="stat-label">Max HP + Temp HP</div>
+                      <div class="stat-label">
+                        <span class="d-none d-xl-inline">Max HP + Temp HP</span>
+                        <span class="d-inline d-xl-none">M. HP + TMP HP</span>
+                      </div>
                       <div class="d-flex align-items-center justify-content-center gap-1 mt-1">
                         <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input" name="maxHP" style="max-width: 60px;">
                         <span class="fw-bold text-info fs-5 px-1">+</span>
@@ -878,14 +967,20 @@
 
                   <div class="col-6 text-center mt-2">
                     <div class="stat-box">
-                      <div class="stat-label">Current HP</div>
+                      <div class="stat-label">
+                        <span class="d-none d-xl-inline">Current HP</span>
+                        <span class="d-inline d-xl-none">Crnt. HP</span>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-success" name="currentHP">
                     </div>
                   </div>
 
                   <div class="col-6 text-center mt-2">
                     <div class="stat-box">
-                      <div class="stat-label">Nonlethal Dmg</div>
+                      <div class="stat-label">
+                        <span class="d-none d-xl-inline">Nonlethal Dmg</span>
+                        <span class="d-inline d-xl-none">Nonlethal</span>
+                      </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning" name="nonlethalHP">
                     </div>
                   </div>
@@ -895,39 +990,70 @@
             </div>
           </div>
 
-          <!-- Character Attributes -->
+          <!-- Attributes -->
           <div class="col-12 col-lg-auto col-card-attributes">
             <div class="sheet-card h-100">
-              <div class="card-header-custom">
-                <span><i class="fa-solid fa-sliders me-2"></i>Character Attributes</span>
+              <div class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-1">
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span><i class="fa-solid fa-sliders me-2"></i>Attributes</span>
+                  <div class="d-inline-flex align-items-center flex-wrap gap-1 border-start ps-2 ms-md-1">
+                    <span class="small text-muted fw-bold me-1" style="font-size: 0.72rem;">Tech Prof:</span>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="techProf1" id="techProf1" onchange="handleWeaponProficiencyChange('techProf', 1, 4, this.checked)"><span class="prof-num-label">1</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="techProf2" id="techProf2" onchange="handleWeaponProficiencyChange('techProf', 2, 4, this.checked)"><span class="prof-num-label">2</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="techProf3" id="techProf3" onchange="handleWeaponProficiencyChange('techProf', 3, 4, this.checked)"><span class="prof-num-label">3</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="techProf4" id="techProf4" onchange="handleWeaponProficiencyChange('techProf', 4, 4, this.checked)"><span class="prof-num-label">4</span></label>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
                 <div class="row g-3">
                   
                   <div class="col-6 text-center">
-                    <label class="form-label small text-uppercase text-muted fw-bold">Advantage Die (Ad)</label>
-                    <select class="form-select form-select-sm hp-stat-input text-center fw-bold" name="advantageDie" id="advantageDie">
-                      <option value="" selected></option>
-                      <option value="d4">1d4</option>
-                      <option value="d6">1d6</option>
-                      <option value="d8">1d8</option>
-                      <option value="d10">1d10</option>
-                    </select>
+                    <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
+                      <label class="form-label small text-uppercase text-muted fw-bold mb-0">
+                        <span class="d-none d-xxl-inline">Advantage Die (Ad)</span>
+                        <span class="d-none d-lg-inline d-xxl-none">Adv. Die (Ad)</span>
+                        <span class="d-inline d-lg-none">AD</span>
+                      </label>
+                      <select class="form-select form-select-sm hp-stat-input text-center fw-bold" name="advantageDie" id="advantageDie" style="max-width: 85px;">
+                        <option value="" selected></option>
+                        <option value="d4">1d4</option>
+                        <option value="d6">1d6</option>
+                        <option value="d8">1d8</option>
+                        <option value="d10">1d10</option>
+                      </select>
+                    </div>
                   </div>
 
                   <div class="col-6 text-center">
-                    <label class="form-label small text-uppercase text-muted fw-bold">Initiative</label>
-                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan" name="initiative" id="initiative">
+                    <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
+                      <label class="form-label small text-uppercase text-muted fw-bold mb-0">
+                        <span class="d-none d-lg-inline">Initiative</span>
+                        <span class="d-inline d-lg-none">Init</span>
+                      </label>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan" name="initiative" id="initiative" style="max-width: 65px;">
+                    </div>
                   </div>
 
                   <div class="col-6 text-center">
-                    <label class="form-label small text-uppercase text-muted fw-bold">Inertia</label>
-                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-info" name="inertia" id="inertia">
+                    <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
+                      <label class="form-label small text-uppercase text-muted fw-bold mb-0">
+                        <span class="d-none d-lg-inline">Inertia</span>
+                        <span class="d-inline d-lg-none">Iner</span>
+                      </label>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-info" name="inertia" id="inertia" style="max-width: 65px;">
+                    </div>
                   </div>
 
                   <div class="col-6 text-center">
-                    <label class="form-label small text-uppercase text-muted fw-bold">Passive Perception</label>
-                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning" name="passivePerception" id="passivePerception">
+                    <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
+                      <label class="form-label small text-uppercase text-muted fw-bold mb-0">
+                        <span class="d-none d-xxl-inline">Passive Perception</span>
+                        <span class="d-none d-xl-inline d-xxl-none">Pass. Perception</span>
+                        <span class="d-inline d-xl-none">Pass. Perc.</span>
+                      </label>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning" name="passivePerception" id="passivePerception" style="max-width: 65px;">
+                    </div>
                   </div>
 
                 </div>
@@ -937,22 +1063,643 @@
 
         </div>
 
-        <!-- Armor Stats, Damage Reduction & Speed Row -->
+        <!-- Main Two-Column Row (Below Ability Themes): Left 45% Skills, Right 55% Armor/Combat/Gear -->
         <div class="row g-3 mt-1">
 
-          <!-- Armor Stats Card -->
-          <div class="col-12 col-lg-auto col-card-armor">
-            <div class="sheet-card h-100">
+          <!-- LEFT COLUMN (45% Desktop / 100% Mobile): Skills Sheet Card -->
+          <div class="col-12 col-lg-5 col-skills-side">
+            <div class="sheet-card mb-0">
+              <div class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-1 py-2 px-3">
+                <span><i class="fa-solid fa-list-check me-2"></i>Skills</span>
+                <div class="d-inline-flex align-items-center flex-wrap gap-2 ms-auto">
+                  <div class="d-flex align-items-center gap-1">
+                    <span class="small text-muted fw-bold" style="font-size: 0.72rem;">Skills Per Level:</span>
+                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center py-0 px-1" name="skillsPerLevel" style="width: 40px; font-size: 0.8rem; font-weight: 600;">
+                  </div>
+                  <div class="d-flex align-items-center gap-1">
+                    <span class="small text-muted fw-bold" style="font-size: 0.72rem;">Unused Points:</span>
+                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center py-0 px-1" name="unusedSkillPoints" style="width: 40px; font-size: 0.8rem; font-weight: 600;">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-custom mb-0 align-middle" id="skillsTable">
+                    <thead>
+                      <tr>
+                        <th style="width: 25px;" class="text-center px-1" title="Favored Skill">F</th>
+                        <th class="px-1">Skill Name</th>
+                        <th style="width: 110px;" class="text-center px-1">Rank = Skill Die</th>
+                        <th style="width: 10px;" class="text-center text-cyan px-0">+</th>
+                        <th style="width: 80px;" class="text-center px-1">Key Ability</th>
+                        <th style="width: 10px;" class="text-center text-cyan px-0">+</th>
+                        <th style="width: 50px;" class="text-center px-1">Misc Mod</th>
+                        <th style="width: 10px;" class="text-center text-cyan px-0">=</th>
+                        <th style="width: 60px;" class="text-center px-1">Total Bonus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr data-skill="acrobatics" data-ability="DEX" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_acrobatics"></td>
+                        <td>Acrobatics <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_acrobatics" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_acrobatics" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">DEX</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_acrobatics" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="athletics" data-ability="STR" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_athletics"></td>
+                        <td>Athletics <span class="badge badge-natural ms-2">Natural</span><span class="badge badge-rank-dep ms-1">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_athletics" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_athletics" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">STR</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_athletics" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="bluff" data-ability="CHA" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_bluff"></td>
+                        <td>Bluff <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_bluff" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_bluff" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">CHA</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_bluff" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="computer_use" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_computer_use"></td>
+                        <td>Computer Use <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_computer_use" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_computer_use" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_computer_use" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="craft_chemical" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_chemical"></td>
+                        <td>Craft (Chemical) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_chemical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_craft_chemical" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_craft_chemical" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="craft_electronic" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_electronic"></td>
+                        <td>Craft (Electronic) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_electronic" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_craft_electronic" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_craft_electronic" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="craft_mechanical" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_mechanical"></td>
+                        <td>Craft (Mechanical) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_mechanical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_craft_mechanical" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_craft_mechanical" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="craft_pharmaceutical" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_pharmaceutical"></td>
+                        <td>Craft (Pharmaceutical) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_pharmaceutical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_craft_pharmaceutical" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_craft_pharmaceutical" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="craft_structural" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_structural"></td>
+                        <td>Craft (Structural) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_structural" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_craft_structural" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_craft_structural" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="diplomacy" data-ability="CHA" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_diplomacy"></td>
+                        <td>Diplomacy <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_diplomacy" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_diplomacy" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">CHA</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_diplomacy" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="disable_device" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_disable_device"></td>
+                        <td>Disable Device <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_disable_device" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_disable_device" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_disable_device" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="disguise" data-ability="CHA" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_disguise"></td>
+                        <td>Disguise <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_disguise" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_disguise" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">CHA</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_disguise" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="intimidate" data-ability="CHA" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_intimidate"></td>
+                        <td>Intimidate <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_intimidate" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_intimidate" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">CHA</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_intimidate" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="knowledge_culture" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_culture"></td>
+                        <td>Knowledge (Culture) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_culture" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_knowledge_culture" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_knowledge_culture" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="knowledge_current_events" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_current_events"></td>
+                        <td>Knowledge (Current Events) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_current_events" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_knowledge_current_events" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_knowledge_current_events" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="knowledge_history" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_history"></td>
+                        <td>Knowledge (History) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_history" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_knowledge_history" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_knowledge_history" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="knowledge_science" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_science"></td>
+                        <td>Knowledge (Science) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_science" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_knowledge_science" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_knowledge_science" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="knowledge_philosophy" data-ability="INT" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_philosophy"></td>
+                        <td>Knowledge (Philosophy) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_philosophy" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_knowledge_philosophy" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_knowledge_philosophy" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="medical" data-ability="WIS" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_medical"></td>
+                        <td>Medical <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_medical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_medical" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">WIS</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_medical" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="perception" data-ability="WIS" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_perception"></td>
+                        <td>Perception <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_perception" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_perception" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">WIS</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_perception" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="pilot" data-ability="DEX" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_pilot"></td>
+                        <td>Pilot <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_pilot" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_pilot" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">DEX</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_pilot" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="sense_motive" data-ability="WIS" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_sense_motive"></td>
+                        <td>Sense Motive <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_sense_motive" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_sense_motive" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">WIS</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_sense_motive" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="sleight_of_hand" data-ability="DEX" data-natural="false">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_sleight_of_hand"></td>
+                        <td>Sleight of Hand <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_sleight_of_hand" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_sleight_of_hand" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">DEX</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_sleight_of_hand" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="stealth" data-ability="DEX" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_stealth"></td>
+                        <td>Stealth <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_stealth" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_stealth" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">DEX</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_stealth" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="study" data-ability="INT" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_study"></td>
+                        <td>Study <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_study" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_study" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">INT</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_study" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                      <tr data-skill="survival" data-ability="WIS" data-natural="true">
+                        <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_survival"></td>
+                        <td>Survival <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+                            <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_survival" placeholder="0" style="width: 42px;" oninput="calculateStats()">
+                            <span class="fw-bold text-cyan">=</span>
+                            <input type="text" class="form-control form-control-sm skill-die text-center" name="skillDie_survival" style="width: 54px;">
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td>
+                          <div class="d-inline-flex align-items-center gap-1">
+                            <span class="fw-bold" style="min-width: 32px;">WIS</span>
+                            <input type="text" class="form-control form-control-sm skill-ab-mod text-center py-0 px-1" style="width: 44px; font-weight: 600;" readonly>
+                          </div>
+                        </td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+                        <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_survival" placeholder="0" oninput="calculateStats()"></td>
+                        <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+                        <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN (55% Desktop / 100% Mobile): Armor Stats, Damage Reduction, Speed, Armor & Weapons -->
+          <div class="col-12 col-lg-7 col-armor-side">
+
+            <!-- Armor Stats Card -->
+            <div class="sheet-card mb-1">
               <div class="card-header-custom">
-                <span><i class="fa-solid fa-shield-halved me-2"></i>Armor Stats</span>
-                <small class="text-muted">AC = 10 + Armor + DEX + Size + Natural + Misc</small>
+                <span>
+                  <i class="fa-solid fa-shield-halved me-2"></i>
+                  <span class="d-none d-md-inline">Armor Stats</span>
+                  <span class="d-inline d-md-none">AC</span>
+                </span>
+                <small class="text-muted">
+                  <span class="d-none d-md-inline">AC = 10 + Armor + DEX + Size + Natural + Misc</span>
+                  <span class="d-inline d-md-none">= 10 + Armor + DEX + Size + Ntrl + Misc</span>
+                </small>
               </div>
               <div class="card-body">
                 <div class="row g-3 align-items-center">
                   
                   <!-- Prominent Square AC Summary Fields -->
-                  <div class="col-12 col-sm-5 col-md-5">
-                    <div class="row g-2 text-center">
+                  <div class="col-12 col-md-5 col-lg-12 col-xxl-5">
+                    <div class="row g-2 text-center justify-content-center">
                       <div class="col-4">
                         <div class="ac-square-box ac-box-total">
                           <div class="ac-box-label">TOTAL AC</div>
@@ -975,13 +1722,13 @@
                   </div>
 
                   <!-- AC Component Calculation Inputs -->
-                  <div class="col-12 col-sm-7 col-md-7">
-                    <div class="d-flex align-items-center justify-content-center justify-content-sm-end text-center flex-nowrap gap-1 overflow-auto py-1">
-                      <div class="text-center px-1">
+                  <div class="col-12 col-md-7 col-lg-12 col-xxl-7">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end justify-content-lg-center justify-content-xxl-end text-center flex-nowrap gap-1 overflow-auto py-1">
+                      <div class="text-center px-1 d-none d-sm-block">
                         <label class="stat-label d-block mb-1 text-muted">Base</label>
                         <div class="fw-bold fs-5 text-center text-cyan py-1">10</div>
                       </div>
-                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1">+</div>
+                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1 d-none d-sm-block">+</div>
                       <div class="text-center">
                         <label class="stat-label d-block mb-1 text-muted">Armor</label>
                         <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input" name="acArmorBonus" id="acArmorBonus" oninput="calculateStats()">
@@ -1012,171 +1759,317 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Damage Reduction (DR) Card -->
-          <div class="col-12 col-sm-6 col-lg-auto col-card-dr">
-            <div class="sheet-card h-100">
-              <div class="card-header-custom">
-                <span><i class="fa-solid fa-shield-virus me-2"></i>Damage Reduction (DR)</span>
+            <!-- DR & Speed Row -->
+            <div class="row g-3 mt-0">
+              <!-- Damage Reduction (DR) Card -->
+              <div class="col-12 col-md-6">
+                <div class="sheet-card h-100">
+                  <div class="card-header-custom">
+                    <span><i class="fa-solid fa-shield-virus me-2"></i>Damage Reduction (DR)</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-2 text-center justify-content-center">
+                      <div class="col-4">
+                        <div class="dr-square-box dr-box-kinetic">
+                          <div class="dr-box-label">Kinetic</div>
+                          <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drKinetic" id="drKinetic">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="dr-square-box dr-box-electric">
+                          <div class="dr-box-label">Electric</div>
+                          <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drElectric" id="drElectric">
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="dr-square-box dr-box-thermal">
+                          <div class="dr-box-label">Thermal</div>
+                          <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drThermal" id="drThermal">
+                        </div>
+                      </div>
+                      <div class="col-4 mt-2">
+                        <div class="dr-square-box dr-box-chemical">
+                          <div class="dr-box-label">Chemical</div>
+                          <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drChemical" id="drChemical">
+                        </div>
+                      </div>
+                      <div class="col-4 mt-2">
+                        <div class="dr-square-box dr-box-all">
+                          <div class="dr-box-label">ALL DR</div>
+                          <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drAll" id="drAll">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="card-body">
-                <div class="row g-2 text-center justify-content-center">
-                  <div class="col-4">
-                    <div class="dr-square-box dr-box-kinetic">
-                      <div class="dr-box-label">Kinetic</div>
-                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drKinetic" id="drKinetic">
-                    </div>
+
+              <!-- Speed Card -->
+              <div class="col-12 col-md-6">
+                <div class="sheet-card h-100">
+                  <div class="card-header-custom">
+                    <span><i class="fa-solid fa-person-running me-2"></i>Speed</span>
                   </div>
-                  <div class="col-4">
-                    <div class="dr-square-box dr-box-electric">
-                      <div class="dr-box-label">Electric</div>
-                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drElectric" id="drElectric">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between text-center gap-1 mb-2 overflow-auto py-1">
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Base</label>
+                        <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                          <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="baseSpeed">
+                          <span class="input-group-text px-1">ft</span>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Climb</label>
+                        <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                          <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="climbSpeed">
+                          <span class="input-group-text px-1">ft</span>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Swim</label>
+                        <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                          <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="swimSpeed">
+                          <span class="input-group-text px-1">ft</span>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Fly</label>
+                        <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                          <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="flySpeed">
+                          <span class="input-group-text px-1">ft</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="dr-square-box dr-box-thermal">
-                      <div class="dr-box-label">Thermal</div>
-                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drThermal" id="drThermal">
-                    </div>
-                  </div>
-                  <div class="col-4 mt-2">
-                    <div class="dr-square-box dr-box-chemical">
-                      <div class="dr-box-label">Chemical</div>
-                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drChemical" id="drChemical">
-                    </div>
-                  </div>
-                  <div class="col-4 mt-2">
-                    <div class="dr-square-box dr-box-all">
-                      <div class="dr-box-label">ALL DR</div>
-                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drAll" id="drAll">
+                    <div class="pt-2 border-top">
+                      <label class="stat-label d-block mb-1 text-muted text-center">Combat Speed</label>
+                      <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="input-group input-group-sm" style="max-width: 80px;">
+                          <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="combatSpeedFt">
+                          <span class="input-group-text px-1">ft</span>
+                        </div>
+                        <div class="input-group input-group-sm" style="max-width: 80px;">
+                          <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="combatSpeedSq">
+                          <span class="input-group-text px-1">sq</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Speed Card -->
-          <div class="col-12 col-sm-6 col-lg-auto col-card-speed">
-            <div class="sheet-card h-100">
-              <div class="card-header-custom">
-                <span><i class="fa-solid fa-person-running me-2"></i>Speed</span>
-              </div>
-              <div class="card-body">
-                
-                <!-- Movement Types Row -->
-                <div class="d-flex align-items-center justify-content-between text-center gap-1 mb-2 overflow-auto py-1">
-                  <div class="text-center">
-                    <label class="stat-label d-block mb-1 text-muted">Base</label>
-                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
-                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="baseSpeed">
-                      <span class="input-group-text px-1">ft</span>
-                    </div>
-                  </div>
-
-                  <div class="text-center">
-                    <label class="stat-label d-block mb-1 text-muted">Climb</label>
-                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
-                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="climbSpeed">
-                      <span class="input-group-text px-1">ft</span>
-                    </div>
-                  </div>
-
-                  <div class="text-center">
-                    <label class="stat-label d-block mb-1 text-muted">Swim</label>
-                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
-                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="swimSpeed">
-                      <span class="input-group-text px-1">ft</span>
-                    </div>
-                  </div>
-
-                  <div class="text-center">
-                    <label class="stat-label d-block mb-1 text-muted">Fly</label>
-                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
-                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="flySpeed">
-                      <span class="input-group-text px-1">ft</span>
-                    </div>
+            <!-- Armor & Defensive Equipment -->
+            <div class="sheet-card mt-3">
+              <div class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <span><i class="fa-solid fa-shield-halved me-2"></i>Armor</span>
+                  <div class="d-inline-flex align-items-center flex-wrap gap-1 border-start ps-3 ms-md-2">
+                    <span class="small text-muted fw-bold me-2" style="font-size: 0.75rem;">Armor Proficiency:</span>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf1" id="armorProf1" onchange="handleArmorProficiencyChange(1, this.checked)"><span class="prof-num-label">1</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf2" id="armorProf2" onchange="handleArmorProficiencyChange(2, this.checked)"><span class="prof-num-label">2</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf3" id="armorProf3" onchange="handleArmorProficiencyChange(3, this.checked)"><span class="prof-num-label">3</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf4" id="armorProf4" onchange="handleArmorProficiencyChange(4, this.checked)"><span class="prof-num-label">4</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf5" id="armorProf5" onchange="handleArmorProficiencyChange(5, this.checked)"><span class="prof-num-label">5</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf6" id="armorProf6" onchange="handleArmorProficiencyChange(6, this.checked)"><span class="prof-num-label">6</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf7" id="armorProf7" onchange="handleArmorProficiencyChange(7, this.checked)"><span class="prof-num-label">7</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf8" id="armorProf8" onchange="handleArmorProficiencyChange(8, this.checked)"><span class="prof-num-label">8</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf9" id="armorProf9" onchange="handleArmorProficiencyChange(9, this.checked)"><span class="prof-num-label">9</span></label>
+                    <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="armorProf10" id="armorProf10" onchange="handleArmorProficiencyChange(10, this.checked)"><span class="prof-num-label">10</span></label>
                   </div>
                 </div>
-
-                <!-- Combat Speed Row (ft & sq) -->
-                <div class="pt-2 border-top">
-                  <label class="stat-label d-block mb-1 text-muted text-center">Combat Speed</label>
-                  <div class="d-flex justify-content-center align-items-center gap-3">
-                    <div class="input-group input-group-sm" style="max-width: 80px;">
-                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="combatSpeedFt">
-                      <span class="input-group-text px-1">ft</span>
-                    </div>
-                    <div class="input-group input-group-sm" style="max-width: 80px;">
-                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="combatSpeedSq">
-                      <span class="input-group-text px-1">sq</span>
-                    </div>
-                  </div>
+                <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addArmorRow()">
+                  <i class="fa-solid fa-plus me-1"></i> Add Armor
+                </button>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-custom mb-0 align-middle" id="armorTable">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th style="width: 75px;" class="text-center">AC Bonus</th>
+                        <th style="width: 95px;" class="text-center">Max DEX Bonus</th>
+                        <th style="width: 95px;" class="text-center">Speed Penalty</th>
+                        <th style="width: 50px;" class="no-print"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="armor-main-row">
+                        <td><input type="text" class="form-control form-control-sm" name="armorName[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
+                        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                      </tr>
+                      <tr class="armor-notes-row">
+                        <td colspan="5" class="pt-0 pb-2 border-bottom">
+                          <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Bonus Attributes:</span>
+                            <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="armor-main-row">
+                        <td><input type="text" class="form-control form-control-sm" name="armorName[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
+                        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                      </tr>
+                      <tr class="armor-notes-row">
+                        <td colspan="5" class="pt-0 pb-2 border-bottom">
+                          <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Bonus Attributes:</span>
+                            <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-
               </div>
             </div>
-          </div>
 
-        </div>
+            <!-- Weapons & Attack Routines -->
+            <div class="sheet-card mt-3">
+              <div class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <span><i class="fa-solid fa-gun me-2"></i>Weapons</span>
+                  <div class="d-flex flex-column gap-1 border-start ps-3 ms-md-2">
+                    
+                    <!-- Melee Proficiency (Top) -->
+                    <div class="d-inline-flex align-items-center flex-wrap gap-1">
+                      <span class="small text-muted fw-bold me-2" style="font-size: 0.75rem; min-width: 125px;">Melee Proficiency:</span>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf1" id="meleeProf1" onchange="handleWeaponProficiencyChange('meleeProf', 1, 9, this.checked)"><span class="prof-num-label">1</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf2" id="meleeProf2" onchange="handleWeaponProficiencyChange('meleeProf', 2, 9, this.checked)"><span class="prof-num-label">2</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf3" id="meleeProf3" onchange="handleWeaponProficiencyChange('meleeProf', 3, 9, this.checked)"><span class="prof-num-label">3</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf4" id="meleeProf4" onchange="handleWeaponProficiencyChange('meleeProf', 4, 9, this.checked)"><span class="prof-num-label">4</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf5" id="meleeProf5" onchange="handleWeaponProficiencyChange('meleeProf', 5, 9, this.checked)"><span class="prof-num-label">5</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf6" id="meleeProf6" onchange="handleWeaponProficiencyChange('meleeProf', 6, 9, this.checked)"><span class="prof-num-label">6</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf7" id="meleeProf7" onchange="handleWeaponProficiencyChange('meleeProf', 7, 9, this.checked)"><span class="prof-num-label">7</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf8" id="meleeProf8" onchange="handleWeaponProficiencyChange('meleeProf', 8, 9, this.checked)"><span class="prof-num-label">8</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="meleeProf9" id="meleeProf9" onchange="handleWeaponProficiencyChange('meleeProf', 9, 9, this.checked)"><span class="prof-num-label">9</span></label>
+                    </div>
 
-        <!-- Armor & Defensive Equipment -->
-        <div class="sheet-card mt-3">
-          <div class="card-header-custom">
-            <span><i class="fa-solid fa-shield-halved me-2"></i>Armor & Defensive Gear</span>
-            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addArmorRow()">
-              <i class="fa-solid fa-plus me-1"></i> Add Armor
-            </button>
-          </div>
-          <div class="card-body p-0">
-            <div class="table-responsive">
-              <table class="table table-custom mb-0 align-middle" id="armorTable">
-                <thead>
-                  <tr>
-                    <th style="width: 160px;">Name</th>
-                    <th style="width: 75px;" class="text-center">AC Bonus</th>
-                    <th style="width: 95px;" class="text-center">Max DEX Bonus</th>
-                    <th style="width: 95px;" class="text-center">Speed Penalty</th>
-                    <th>Bonus Attributes</th>
-                    <th style="width: 50px;" class="no-print"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
+                    <!-- Ranged Proficiency (Bottom) -->
+                    <div class="d-inline-flex align-items-center flex-wrap gap-1">
+                      <span class="small text-muted fw-bold me-2" style="font-size: 0.75rem; min-width: 125px;">Ranged Proficiency:</span>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf1" id="rangedProf1" onchange="handleWeaponProficiencyChange('rangedProf', 1, 9, this.checked)"><span class="prof-num-label">1</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf2" id="rangedProf2" onchange="handleWeaponProficiencyChange('rangedProf', 2, 9, this.checked)"><span class="prof-num-label">2</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf3" id="rangedProf3" onchange="handleWeaponProficiencyChange('rangedProf', 3, 9, this.checked)"><span class="prof-num-label">3</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf4" id="rangedProf4" onchange="handleWeaponProficiencyChange('rangedProf', 4, 9, this.checked)"><span class="prof-num-label">4</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf5" id="rangedProf5" onchange="handleWeaponProficiencyChange('rangedProf', 5, 9, this.checked)"><span class="prof-num-label">5</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf6" id="rangedProf6" onchange="handleWeaponProficiencyChange('rangedProf', 6, 9, this.checked)"><span class="prof-num-label">6</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf7" id="rangedProf7" onchange="handleWeaponProficiencyChange('rangedProf', 7, 9, this.checked)"><span class="prof-num-label">7</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf8" id="rangedProf8" onchange="handleWeaponProficiencyChange('rangedProf', 8, 9, this.checked)"><span class="prof-num-label">8</span></label>
+                      <label class="prof-check-item"><input class="form-check-input" type="checkbox" name="rangedProf9" id="rangedProf9" onchange="handleWeaponProficiencyChange('rangedProf', 9, 9, this.checked)"><span class="prof-num-label">9</span></label>
+                    </div>
+
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addWeaponRow()">
+                  <i class="fa-solid fa-plus me-1"></i> Add Weapon
+                </button>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-custom mb-0 align-middle" id="weaponsTable">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th style="width: 105px;" class="text-center">Damage / Die</th>
+                        <th style="width: 65px;" class="text-center">Acc+</th>
+                        <th style="width: 60px;" class="text-center">AP</th>
+                        <th style="width: 90px;" class="text-center">Critical</th>
+                        <th style="width: 95px;" class="text-center">Type</th>
+                        <th style="width: 100px;" class="text-center">Range</th>
+                        <th style="width: 85px;" class="text-center">Ammo</th>
+                        <th style="width: 50px;" class="no-print"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="weapon-main-row">
+                        <td><input type="text" class="form-control form-control-sm" name="wepName[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepDmg[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAtk[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAP[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepCrit[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepType[]"></td>
+                        <td>
+                          <div class="input-group input-group-sm">
+                            <input type="text" class="form-control form-control-sm text-center px-1" name="wepRange[]">
+                            <span class="input-group-text px-1">ft</span>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAmmo[]"></td>
+                        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                      </tr>
+                      <tr class="weapon-notes-row">
+                        <td colspan="9" class="pt-0 pb-2 border-bottom">
+                          <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes & Attributes:</span>
+                            <input type="text" class="form-control form-control-sm" name="wepNotes[]">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="weapon-main-row">
+                        <td><input type="text" class="form-control form-control-sm" name="wepName[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepDmg[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAtk[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAP[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepCrit[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepType[]"></td>
+                        <td>
+                          <div class="input-group input-group-sm">
+                            <input type="text" class="form-control form-control-sm text-center px-1" name="wepRange[]">
+                            <span class="input-group-text px-1">ft</span>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAmmo[]"></td>
+                        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                      </tr>
+                      <tr class="weapon-notes-row">
+                        <td colspan="9" class="pt-0 pb-2 border-bottom">
+                          <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes & Attributes:</span>
+                            <input type="text" class="form-control form-control-sm" name="wepNotes[]">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="weapon-main-row">
+                        <td><input type="text" class="form-control form-control-sm" name="wepName[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepDmg[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAtk[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAP[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepCrit[]"></td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepType[]"></td>
+                        <td>
+                          <div class="input-group input-group-sm">
+                            <input type="text" class="form-control form-control-sm text-center px-1" name="wepRange[]">
+                            <span class="input-group-text px-1">ft</span>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control form-control-sm text-center" name="wepAmmo[]"></td>
+                        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                      </tr>
+                      <tr class="weapon-notes-row">
+                        <td colspan="9" class="pt-0 pb-2 border-bottom">
+                          <div class="input-group input-group-sm">
+                            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes & Attributes:</span>
+                            <input type="text" class="form-control form-control-sm" name="wepNotes[]">
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Weapons & Attack Routines -->
-        <div class="sheet-card mt-3">
-          <div class="card-header-custom">
-            <span><i class="fa-solid fa-gun me-2"></i>Weapons & Combat Attacks</span>
-            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addWeaponRow()">
-              <i class="fa-solid fa-plus me-1"></i> Add Weapon
-            </button>
           </div>
-          <div class="card-body p-0">
-            <div class="table-responsive">
-              <table class="table table-custom mb-0 align-middle" id="weaponsTable">
-                <thead>
-                  <tr>
-                    <th>Weapon Name</th>
-                    <th style="width: 100px;">Atk Bonus</th>
-                    <th style="width: 110px;">Damage / Die</th>
-                    <th style="width: 100px;">Range</th>
-                    <th style="width: 90px;">Ammo</th>
-                    <th style="width: 90px;">TL / Procure</th>
-                    <th>Notes & Attributes</th>
-                    <th style="width: 50px;" class="no-print"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-            </div>
-          </div>
+
         </div>
 
         <div class="print-footer">
@@ -1189,132 +2082,6 @@
            PAGE 2: SKILLS & PROFICIENCIES
            ========================================== -->
       <div class="print-page-2 mt-4">
-
-        <!-- Skills System -->
-        <div class="sheet-card">
-          <div class="card-header-custom">
-            <span><i class="fa-solid fa-list-check me-2"></i>Skills System (Ranks 0 to 5)</span>
-            <small class="text-muted">Natural vs Unnatural (Training required for Unnatural)</small>
-          </div>
-          <div class="card-body p-0">
-            <div class="table-responsive">
-              <table class="table table-custom mb-0 align-middle" id="skillsTable">
-                <thead>
-                  <tr>
-                    <th>Skill Name</th>
-                    <th style="width: 100px;">Type</th>
-                    <th style="width: 90px;">Key Ability</th>
-                    <th style="width: 90px;">Rank (0-5)</th>
-                    <th style="width: 90px;">Ability Mod</th>
-                    <th style="width: 90px;">Misc Mod</th>
-                    <th style="width: 100px;">Total Bonus</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr data-skill="acrobatics" data-ability="DEX" data-natural="true">
-                    <td>Acrobatics</td>
-                    <td><span class="badge badge-natural">Natural</span></td>
-                    <td>DEX</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_acrobatics" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_acrobatics" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="athletics" data-ability="STR" data-natural="true">
-                    <td>Athletics</td>
-                    <td><span class="badge badge-natural">Natural</span></td>
-                    <td>STR</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_athletics" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_athletics" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="computer_use" data-ability="INT" data-natural="false">
-                    <td>Computer Use</td>
-                    <td><span class="badge badge-unnatural">Unnatural</span></td>
-                    <td>INT</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_computer_use" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_computer_use" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="demolitions" data-ability="INT" data-natural="false">
-                    <td>Demolitions</td>
-                    <td><span class="badge badge-unnatural">Unnatural</span></td>
-                    <td>INT</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_demolitions" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_demolitions" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="drive" data-ability="DEX" data-natural="true">
-                    <td>Drive</td>
-                    <td><span class="badge badge-natural">Natural</span></td>
-                    <td>DEX</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_drive" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_drive" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="engineering" data-ability="INT" data-natural="false">
-                    <td>Engineering</td>
-                    <td><span class="badge badge-unnatural">Unnatural</span></td>
-                    <td>INT</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_engineering" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_engineering" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="medical" data-ability="WIS" data-natural="false">
-                    <td>Medical</td>
-                    <td><span class="badge badge-unnatural">Unnatural</span></td>
-                    <td>WIS</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_medical" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_medical" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="perception" data-ability="WIS" data-natural="true">
-                    <td>Perception</td>
-                    <td><span class="badge badge-natural">Natural</span></td>
-                    <td>WIS</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_perception" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_perception" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="pilot" data-ability="DEX" data-natural="false">
-                    <td>Pilot</td>
-                    <td><span class="badge badge-unnatural">Unnatural</span></td>
-                    <td>DEX</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_pilot" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_pilot" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="stealth" data-ability="DEX" data-natural="true">
-                    <td>Stealth</td>
-                    <td><span class="badge badge-natural">Natural</span></td>
-                    <td>DEX</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_stealth" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_stealth" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                  <tr data-skill="tech_crafting" data-ability="INT" data-natural="false">
-                    <td>Tech Crafting</td>
-                    <td><span class="badge badge-unnatural">Unnatural</span></td>
-                    <td>INT</td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_tech_crafting" placeholder="0" oninput="calculateStats()"></td>
-                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
-                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_tech_crafting" placeholder="0" oninput="calculateStats()"></td>
-                    <td><span class="fw-bold text-cyan skill-total"></span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
 
         <!-- Custom Languages & Skills -->
         <div class="sheet-card">
@@ -1686,7 +2453,6 @@
       const skillRows = document.querySelectorAll('#skillsTable tbody tr');
       skillRows.forEach(row => {
         const abilityKey = row.getAttribute('data-ability');
-        const isNatural = row.getAttribute('data-natural') === 'true';
 
         const rankInput = row.querySelector('.skill-rank');
         const abModInput = row.querySelector('.skill-ab-mod');
@@ -1701,17 +2467,12 @@
           if (abModInput) abModInput.value = '';
           if (totalSpan) totalSpan.innerText = '';
         } else {
-          const rank = parseInt(rankStr || 0, 10);
           const misc = parseInt(miscStr || 0, 10);
 
-          let abMod = scoreStr ? (mods[abilityKey] || 0) : 0;
-          if (!isNatural && rank < 1) {
-            abMod = 0;
-          }
+          const abMod = scoreStr ? (mods[abilityKey] || 0) : 0;
+          if (abModInput) abModInput.value = scoreStr ? formatModStr(abMod) : '';
 
-          if (abModInput) abModInput.value = formatModStr(abMod);
-
-          const totalBonus = rank + abMod + misc;
+          const totalBonus = abMod + misc;
           if (totalSpan) totalSpan.innerText = formatModStr(totalBonus);
         }
       });
@@ -1722,33 +2483,68 @@
     // Dynamic Row Adders
     function addWeaponRow() {
       const tbody = document.querySelector('#weaponsTable tbody');
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
+      
+      const tr1 = document.createElement('tr');
+      tr1.classList.add('weapon-main-row');
+      tr1.innerHTML = `
         <td><input type="text" class="form-control form-control-sm" name="wepName[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="wepAtk[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="wepDmg[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="wepRange[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="wepAmmo[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="wepTL[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="wepNotes[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="wepDmg[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="wepAtk[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="wepAP[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="wepCrit[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="wepType[]"></td>
+        <td>
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control form-control-sm text-center px-1" name="wepRange[]">
+            <span class="input-group-text px-1">ft</span>
+          </div>
+        </td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="wepAmmo[]"></td>
         <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
       `;
-      tbody.appendChild(tr);
+      
+      const tr2 = document.createElement('tr');
+      tr2.classList.add('weapon-notes-row');
+      tr2.innerHTML = `
+        <td colspan="9" class="pt-0 pb-2 border-bottom">
+          <div class="input-group input-group-sm">
+            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes & Attributes:</span>
+            <input type="text" class="form-control form-control-sm" name="wepNotes[]">
+          </div>
+        </td>
+      `;
+
+      tbody.appendChild(tr1);
+      tbody.appendChild(tr2);
       triggerAutoSave();
     }
 
     function addArmorRow() {
       const tbody = document.querySelector('#armorTable tbody');
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
+      
+      const tr1 = document.createElement('tr');
+      tr1.classList.add('armor-main-row');
+      tr1.innerHTML = `
         <td><input type="text" class="form-control form-control-sm" name="armorName[]"></td>
         <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
         <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
         <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
-        <td><input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]"></td>
         <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
       `;
-      tbody.appendChild(tr);
+      
+      const tr2 = document.createElement('tr');
+      tr2.classList.add('armor-notes-row');
+      tr2.innerHTML = `
+        <td colspan="5" class="pt-0 pb-2 border-bottom">
+          <div class="input-group input-group-sm">
+            <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Bonus Attributes:</span>
+            <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
+          </div>
+        </td>
+      `;
+
+      tbody.appendChild(tr1);
+      tbody.appendChild(tr2);
       triggerAutoSave();
     }
 
@@ -1796,9 +2592,33 @@
       triggerAutoSave();
     }
 
+    function handleWeaponProficiencyChange(prefix, num, max, isChecked) {
+      if (isChecked) {
+        for (let i = 1; i <= num; i++) {
+          const chk = document.getElementById(prefix + i);
+          if (chk) chk.checked = true;
+        }
+      } else {
+        for (let i = num; i <= max; i++) {
+          const chk = document.getElementById(prefix + i);
+          if (chk) chk.checked = false;
+        }
+      }
+      triggerAutoSave();
+    }
+
+    function handleArmorProficiencyChange(num, isChecked) {
+      handleWeaponProficiencyChange('armorProf', num, 10, isChecked);
+    }
+
     function removeRow(btn) {
       const tr = btn.closest('tr');
-      if (tr) tr.remove();
+      if (tr) {
+        if (tr.nextElementSibling && (tr.nextElementSibling.classList.contains('weapon-notes-row') || tr.nextElementSibling.classList.contains('armor-notes-row'))) {
+          tr.nextElementSibling.remove();
+        }
+        tr.remove();
+      }
       calculateStats();
       triggerAutoSave();
     }
