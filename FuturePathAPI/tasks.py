@@ -37,7 +37,13 @@ tasks = [
         "description": "Produces a random number between 1 and the rolling number. Optional is to add the number"
         'of dice rolls. You can also pass dice via JSON with the "/tasks/roll" endpoint',
         "uri": f"{END_POINT}/tasks/roll",
-    }
+    },
+    {
+        "id": 2,
+        "name": "character_sheet",
+        "description": "Interactive form-fillable character sheet for d20 FuturePath with mobile, desktop, and multi-page print support.",
+        "uri": f"{END_POINT}/tasks/character_sheet",
+    },
 ]
 
 

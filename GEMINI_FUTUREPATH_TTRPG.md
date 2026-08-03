@@ -83,3 +83,11 @@ Branches of training that unlock weapon use, armor grades, technology, and items
 This helps explain the process of creating a new Character for FuturePath
 
 @./GEMINI_CHARACTER_CREATION.md
+
+
+## Character Paths
+
+Overview of the 7 core Character Paths (Strong, Fast, Tough, Smart, Dedicated, Charismatic, Freelancer), Ability Affinities, Hit Dice, and Talent Trees:
+
+@./GEMINI_CHARACTER_PATH.md
+

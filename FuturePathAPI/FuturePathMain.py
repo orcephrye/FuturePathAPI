@@ -10,6 +10,7 @@
 from flask import jsonify
 
 from FuturePathAPI import (
+    CharacterSheet,  # noqa: F401
     Rolling,  # noqa: F401
     authentication,  # noqa: F401
     tasks,  # noqa: F401
@@ -47,6 +48,12 @@ options = [
         "description": "Visit the documentation via a web browser: "
         "http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html",
         "uri": "http://api.d20futurepath.com/docs/build/html/d20FuturePathAPI.html",
+    },
+    {
+        "id": 5,
+        "name": "character_sheet",
+        "description": "Form-fillable character sheet for d20 FuturePath.",
+        "uri": f"{END_POINT}/tasks/character_sheet",
     },
 ]
 

@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d20 FuturePath - Character Sheet</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts: Orbitron, Outfit & Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+  <style>
+    :root {
+      /* Cosmic Dark (Default) Theme Variables */
+      --bg-gradient: radial-gradient(circle at top left, #111827, #030712);
+      --text-color: #f1f5f9;
+      --card-bg: #131b2e;
+      --card-border: #1f2d4d;
+      --accent-cyan: #00f0ff;
+      --accent-blue: #3b82f6;
+      --input-bg: #1a243b;
+      --input-border: #2b3a5c;
+      --input-text: #ffffff;
+      --input-placeholder: #64748b;
+      --header-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      --header-border: #00f0ff;
+      --navbar-bg: rgba(17, 24, 39, 0.85);
+      --modal-bg: rgba(17, 24, 39, 0.95);
+      --modal-border: rgba(255, 255, 255, 0.08);
+      --modal-text: #f1f5f9;
+      --theme-card-bg: rgba(31, 41, 55, 0.4);
+      --theme-card-border: rgba(255, 255, 255, 0.08);
+      --theme-card-selected-border: #3b82f6;
+      --theme-card-text: #f1f5f9;
+    }
+
+    body.theme-cosmic-light {
+      /* Cosmic Light Theme Variables */
+      --bg-gradient: radial-gradient(circle at top left, #f5f3ff, #e0e7ff, #e8eaf6);
+      --text-color: #1e293b;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --card-border: rgba(59, 130, 246, 0.2);
+      --accent-cyan: #0284c7;
+      --accent-blue: #1d4ed8;
+      --input-bg: #f1f5f9;
+      --input-border: #cbd5e1;
+      --input-text: #0f172a;
+      --input-placeholder: #94a3b8;
+      --header-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+      --header-border: #3b82f6;
+      --navbar-bg: rgba(255, 255, 255, 0.85);
+      --modal-bg: rgba(255, 255, 255, 0.95);
+      --modal-border: rgba(0, 0, 0, 0.08);
+      --modal-text: #0f172a;
+      --theme-card-bg: rgba(241, 245, 249, 0.8);
+      --theme-card-border: rgba(0, 0, 0, 0.06);
+      --theme-card-selected-border: #1d4ed8;
+      --theme-card-text: #334155;
+    }
+
+    body.theme-bootstrap-dark {
+      /* Bootstrap Dark Theme Variables */
+      --bg-gradient: #212529;
+      --text-color: #dee2e6;
+      --card-bg: #2c3034;
+      --card-border: #495057;
+      --accent-cyan: #0dcaf0;
+      --accent-blue: #0d6efd;
+      --input-bg: #212529;
+      --input-border: #495057;
+      --input-text: #dee2e6;
+      --input-placeholder: #6c757d;
+      --header-bg: #2c3034;
+      --header-border: #0d6efd;
+      --navbar-bg: #2c3034;
+      --modal-bg: #212529;
+      --modal-border: #495057;
+      --modal-text: #dee2e6;
+      --theme-card-bg: #2c3034;
+      --theme-card-border: #495057;
+      --theme-card-selected-border: #0d6efd;
+      --theme-card-text: #dee2e6;
+    }
+
+    body.theme-bootstrap-light {
+      /* Bootstrap Light Theme Variables */
+      --bg-gradient: #ffffff;
+      --text-color: #212529;
+      --card-bg: #f8f9fa;
+      --card-border: #dee2e6;
+      --accent-cyan: #0dcaf0;
+      --accent-blue: #0d6efd;
+      --input-bg: #ffffff;
+      --input-border: #ced4da;
+      --input-text: #212529;
+      --input-placeholder: #6c757d;
+      --header-bg: #f8f9fa;
+      --header-border: #0d6efd;
+      --navbar-bg: #f8f9fa;
+      --modal-bg: #ffffff;
+      --modal-border: #dee2e6;
+      --modal-text: #212529;
+      --theme-card-bg: #f8f9fa;
+      --theme-card-border: #dee2e6;
+      --theme-card-selected-border: #0d6efd;
+      --theme-card-text: #212529;
+    }
+
+    body {
+      background: var(--bg-gradient) !important;
+      color: var(--text-color) !important;
+      font-family: 'Outfit', 'Inter', sans-serif;
+      padding-bottom: 2rem;
+      min-height: 100vh;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    .app-header {
+      background: var(--header-bg) !important;
+      border-bottom: 2px solid var(--header-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-icon {
+      color: var(--accent-cyan);
+    }
+
+    .header-title {
+      color: var(--text-color) !important;
+    }
+
+    .header-subtitle {
+      color: var(--accent-cyan) !important;
+      font-weight: 500;
+      opacity: 0.95;
+    }
+
+    .header-badge {
+      background: var(--card-bg) !important;
+      border: 1px solid var(--header-border) !important;
+      color: var(--accent-cyan) !important;
+      font-weight: 600;
+    }
+
+    .ac-square-box {
+      background: var(--input-bg) !important;
+      border: 2px solid var(--card-border);
+      border-radius: 8px;
+      padding: 8px 6px;
+      text-align: center;
+    }
+
+    .ac-box-total {
+      border-color: #10b981 !important;
+    }
+
+    .ac-box-touch {
+      border-color: #0ea5e9 !important;
+    }
+
+    .ac-box-flat {
+      border-color: #f59e0b !important;
+    }
+
+    .ac-box-label {
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .ac-box-total .ac-box-label { color: #10b981; }
+    .ac-box-touch .ac-box-label { color: #0ea5e9; }
+    .ac-box-flat .ac-box-label { color: #f59e0b; }
+
+    .dr-square-box {
+      background: var(--input-bg) !important;
+      border: 2px solid var(--card-border);
+      border-radius: 8px;
+      padding: 4px 2px;
+      text-align: center;
+    }
+
+    .dr-box-label {
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    /* DR Damage Type Border & Color Rules */
+    .dr-box-kinetic { border-color: #a855f7 !important; }
+    .dr-box-kinetic .dr-box-label, .dr-box-kinetic input { color: #a855f7 !important; }
+
+    .dr-box-electric { border-color: #3b82f6 !important; }
+    .dr-box-electric .dr-box-label, .dr-box-electric input { color: #3b82f6 !important; }
+
+    .dr-box-chemical { border-color: #eab308 !important; }
+    .dr-box-chemical .dr-box-label, .dr-box-chemical input { color: #eab308 !important; }
+
+    .dr-box-thermal { border-color: #ef4444 !important; }
+    .dr-box-thermal .dr-box-label, .dr-box-thermal input { color: #ef4444 !important; }
+
+    .dr-box-all { border-color: #18181b !important; }
+    .dr-box-all .dr-box-label, .dr-box-all input { color: #18181b !important; }
+
+    /* Theme adjustments for ALL DR border in dark mode themes */
+    body[data-bs-theme="dark"] .dr-box-all { border-color: #e4e4e7 !important; }
+    body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"] .dr-box-all input { color: #e4e4e7 !important; }
+
+    .ac-square-input {
+      height: 48px;
+      font-size: 1.35rem;
+      font-weight: 800 !important;
+      background: var(--card-bg) !important;
+      border: 1.5px solid var(--input-border) !important;
+      border-radius: 6px;
+    }
+
+    .ac-comp-input {
+      width: 46px;
+      max-width: 48px;
+      padding: 0.25rem 0.15rem !important;
+      font-size: 1rem !important;
+      font-weight: 700 !important;
+    }
+
+    .hp-stat-input {
+      width: 92px;
+      max-width: 96px;
+      margin: 0 auto;
+      padding: 0.25rem 0.25rem !important;
+      font-size: 1.1rem !important;
+      font-weight: 700 !important;
+    }
+
+    .ability-stat-input {
+      width: 60px;
+      max-width: 64px;
+      margin: 0 auto;
+      padding: 0.2rem 0.2rem !important;
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+    }
+
+    @media (min-width: 992px) {
+      .col-card-abilities {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+      }
+      .col-card-health {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+      }
+      .col-card-attributes {
+        flex: 0 0 25% !important;
+        max-width: 25% !important;
+      }
+
+      .col-card-armor {
+        flex: 0 0 55% !important;
+        max-width: 55% !important;
+      }
+      .col-card-dr {
+        flex: 0 0 22.5% !important;
+        max-width: 22.5% !important;
+      }
+      .col-card-speed {
+        flex: 0 0 22.5% !important;
+        max-width: 22.5% !important;
+      }
+    }
+
+    @media print {
+      .ac-square-box {
+        border: 2px solid #000 !important;
+        background: #fff !important;
+      }
+      .ac-square-input {
+        border: 1.5px solid #000 !important;
+        background: #fff !important;
+        color: #000 !important;
+      }
+      .ac-box-label {
+        color: #000 !important;
+      }
+      .ac-comp-input {
+        border: 1.5px solid #000 !important;
+        background: #fff !important;
+      }
+    }
+
+    .sheet-card {
+      background-color: var(--card-bg) !important;
+      border: 1px solid var(--card-border) !important;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 1.25rem;
+      transition: all 0.25s ease;
+    }
+
+    .sheet-card:hover {
+      border-color: var(--accent-blue) !important;
+    }
+
+    .card-header-custom {
+      background: rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 1rem;
+      border-top-left-radius: 11px;
+      border-top-right-radius: 11px;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-control, .form-select {
+      background-color: var(--input-bg) !important;
+      border: 1px solid var(--input-border) !important;
+      color: var(--input-text) !important;
+      font-weight: 500;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .form-control::placeholder {
+      color: var(--input-placeholder) !important;
+    }
+
+    .form-control:focus, .form-select:focus {
+      background-color: var(--input-bg) !important;
+      border-color: var(--accent-blue) !important;
+      color: var(--input-text) !important;
+      box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25) !important;
+    }
+
+    .form-control-sm, .form-select-sm {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .input-group-text {
+      background-color: var(--input-bg) !important;
+      border: 1px solid var(--input-border) !important;
+      color: var(--accent-cyan) !important;
+      font-weight: 600;
+    }
+
+    .stat-box {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.15);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--text-color);
+      opacity: 0.8;
+      font-weight: 700;
+    }
+
+    .stat-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+    }
+
+    .table-custom {
+      color: var(--text-color) !important;
+      font-size: 0.88rem;
+    }
+
+    .table-custom th {
+      background-color: rgba(0, 0, 0, 0.15) !important;
+      color: var(--accent-cyan) !important;
+      border-bottom: 2px solid var(--card-border) !important;
+      font-weight: 600;
+    }
+
+    .table-custom td {
+      border-color: var(--card-border) !important;
+      vertical-align: middle;
+    }
+
+    .badge-natural {
+      background-color: #065f46;
+      color: #a7f3d0;
+    }
+
+    .badge-unnatural {
+      background-color: #1e3a8a;
+      color: #bfdbfe;
+    }
+
+    /* Action Buttons Toolbar */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--navbar-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-cyber {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #fff;
+      border: 1px solid var(--accent-cyan);
+      font-weight: 600;
+    }
+    .btn-cyber:hover {
+      background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+      color: #fff;
+      box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+    }
+
+    .btn-cyber-outline {
+      background: transparent;
+      color: var(--accent-cyan);
+      border: 1px solid var(--accent-cyan);
+      font-weight: 600;
+    }
+    .btn-cyber-outline:hover {
+      background: rgba(0, 240, 255, 0.15);
+      color: var(--text-color);
+    }
+
+    /* Theme Card Selector Styling */
+    .theme-card {
+      background: var(--theme-card-bg) !important;
+      border: 2px solid var(--theme-card-border) !important;
+      border-radius: 14px !important;
+      color: var(--theme-card-text) !important;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .theme-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2) !important;
+    }
+
+    .theme-card.active {
+      border-color: var(--theme-card-selected-border) !important;
+      box-shadow: 0 0 0 2px var(--theme-card-selected-border) !important;
+    }
+
+    .theme-preview {
+      height: 60px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cosmic-dark-preview {
+      background: radial-gradient(circle at top left, #111827, #030712);
+    }
+    .cosmic-dark-preview::before {
+      content: '';
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 24px; height: 12px;
+      border-radius: 4px;
+      background: linear-gradient(145deg, #1f2937, #111827);
+    }
+
+    .cosmic-light-preview {
+      background: radial-gradient(circle at top left, #f5f3ff, #e0e7ff, #e8eaf6);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .cosmic-light-preview::before {
+      content: '';
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 24px; height: 12px;
+      border-radius: 4px;
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    }
+
+    .bootstrap-dark-preview {
+      background: #212529;
+    }
+    .bootstrap-dark-preview::before {
+      content: '';
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 24px; height: 12px;
+      border-radius: 4px;
+      background: #343a40;
+    }
+
+    .bootstrap-light-preview {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .bootstrap-light-preview::before {
+      content: '';
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 24px; height: 12px;
+      border-radius: 4px;
+      background: #f8f9fa;
+    }
+
+    /* Modal styling */
+    .modal-content {
+      background: var(--modal-bg) !important;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--modal-border) !important;
+      border-radius: 20px !important;
+      color: var(--modal-text) !important;
+    }
+
+    /* Printable Formatting Rules */
+    @media print {
+      @page {
+        size: letter portrait;
+        margin: 0.4in;
+      }
+
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 10pt;
+        padding-bottom: 0;
+      }
+
+      .no-print, .action-bar, .app-header, .btn-remove-row, .btn-add-row {
+        display: none !important;
+      }
+
+      .sheet-card {
+        background-color: #ffffff !important;
+        border: 1px solid #666666 !important;
+        box-shadow: none !important;
+        margin-bottom: 0.75rem !important;
+        break-inside: avoid;
+      }
+
+      .card-header-custom {
+        background-color: #e5e7eb !important;
+        color: #000000 !important;
+        border-bottom: 1px solid #666666 !important;
+        font-weight: bold;
+      }
+
+      .form-control, .form-select {
+        background-color: transparent !important;
+        border: none !important;
+        border-bottom: 1px solid #444444 !important;
+        border-radius: 0 !important;
+        color: #000000 !important;
+        padding: 2px 4px !important;
+        font-weight: 600 !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .input-group-text {
+        background-color: transparent !important;
+        border: none !important;
+        color: #000000 !important;
+        font-weight: bold;
+      }
+
+      .stat-box {
+        background-color: #f9fafb !important;
+        border: 1px solid #888888 !important;
+      }
+
+      .stat-val {
+        color: #000000 !important;
+      }
+
+      .table-custom th {
+        background-color: #e5e7eb !important;
+        color: #000000 !important;
+        border-bottom: 1px solid #000000 !important;
+      }
+
+      .table-custom td {
+        border-color: #cccccc !important;
+        color: #000000 !important;
+      }
+
+      .badge-natural, .badge-unnatural {
+        border: 1px solid #000000 !important;
+        color: #000000 !important;
+        background: transparent !important;
+      }
+
+      .print-page-1, .print-page-2, .print-page-3 {
+        break-after: page;
+        page-break-after: always;
+      }
+
+      .print-page-3 {
+        break-after: auto;
+        page-break-after: auto;
+      }
+
+      .print-footer {
+        display: block !important;
+        text-align: center;
+        font-size: 8pt;
+        color: #555;
+        margin-top: 10px;
+        border-top: 1px solid #ccc;
+        padding-top: 4px;
+      }
+    }
+
+    .print-footer {
+      display: none;
+    }
+  </style>
+</head>
+<body class="theme-cosmic-dark">
+
+  <!-- Top Header Banner -->
+  <header class="app-header py-3 mb-2 no-print">
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-solid fa-atom header-icon fs-2"></i>
+        <div>
+          <h1 class="h4 mb-0 brand-title header-title">d20 FUTUREPATH</h1>
+          <small class="header-subtitle">Web Character Sheet & Character Generator</small>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span class="badge header-badge"><i class="fa-solid fa-microchip me-1"></i> Tech Level: System Ready</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Action Controls Toolbar -->
+  <div class="action-bar no-print">
+    <div class="container-fluid px-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn btn-cyber btn-sm" onclick="window.print()">
+          <i class="fa-solid fa-print me-1"></i> Print / Save PDF
+        </button>
+        <button class="btn btn-cyber-outline btn-sm" onclick="exportCharacterJSON()">
+          <i class="fa-solid fa-download me-1"></i> Export JSON
+        </button>
+        <label class="btn btn-cyber-outline btn-sm mb-0">
+          <i class="fa-solid fa-upload me-1"></i> Import JSON
+          <input type="file" id="importJsonInput" accept=".json" style="display:none;" onchange="importCharacterJSON(event)">
+        </label>
+        <button class="btn btn-cyber-outline btn-sm" data-bs-toggle="modal" data-bs-target="#themeModal">
+          <i class="fa-solid fa-palette me-1"></i> Theme
+        </button>
+      </div>
+
+      <div class="d-flex align-items-center gap-2">
+        <span id="saveStatus" class="text-muted small me-2"><i class="fa-solid fa-check text-success"></i> Auto-saved</span>
+        <button class="btn btn-outline-danger btn-sm" onclick="resetForm()">
+          <i class="fa-solid fa-rotate-left me-1"></i> Clear Sheet
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container-fluid px-4">
+    <form id="characterForm">
+
+      <!-- ==========================================
+           PAGE 1: CORE IDENTITY, STATS & COMBAT
+           ========================================== -->
+      <div class="print-page-1">
+
+        <!-- Character Identity Header -->
+        <div class="sheet-card">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-id-card me-2"></i>Character Identity & Profile</span>
+            <small class="text-muted">d20 FuturePath Core</small>
+          </div>
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <label class="form-label small text-uppercase text-muted fw-bold">Character Name</label>
+                <input type="text" class="form-control" name="charName" placeholder="e.g. Commander Vane">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <label class="form-label small text-uppercase text-muted fw-bold">Player Name</label>
+                <input type="text" class="form-control" name="playerName">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <label class="form-label small text-uppercase text-muted fw-bold mb-0">Species</label>
+                  <button type="button" class="btn btn-link btn-sm p-0 text-cyan text-decoration-none no-print" onclick="randomizeSpecies(true)" title="Suggest Random Major Species">
+                    <i class="fa-solid fa-dice"></i> <small>Random</small>
+                  </button>
+                </div>
+                <input type="text" class="form-control" name="species" id="speciesInput" placeholder="e.g. Human">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <label class="form-label small text-uppercase text-muted fw-bold">Character Path</label>
+                <select class="form-select" name="charPath" id="charPath" onchange="calculateStats()">
+                  <option value=""></option>
+                  <option value="Path of Strength">Path of Strength (Strong Hero)</option>
+                  <option value="Path of Dexterity">Path of Dexterity (Fast Hero)</option>
+                  <option value="Path of Constitution">Path of Constitution (Tough Hero)</option>
+                  <option value="Path of Intelligence">Path of Intelligence (Smart Hero)</option>
+                  <option value="Path of Wisdom">Path of Wisdom (Dedicated Hero)</option>
+                  <option value="Path of Charisma">Path of Charisma (Charismatic Hero)</option>
+                  <option value="Path of No Path">Path of No Path (The Freelancer)</option>
+                </select>
+              </div>
+              <div class="col-6 col-sm-3 col-md-2 col-lg-2">
+                <label class="form-label small text-uppercase text-muted fw-bold">Path Lvl</label>
+                <input type="text" inputmode="numeric" class="form-control" name="pathLevel" id="pathLevel" onchange="calculateStats()">
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-3">
+                <label class="form-label small text-uppercase text-muted fw-bold">Class(es) & Levels</label>
+                <input type="text" class="form-control" name="classList">
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <label class="form-label small text-uppercase text-muted fw-bold">Alignment / Faction</label>
+                <input type="text" class="form-control" name="alignment">
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label class="form-label small text-uppercase text-muted fw-bold">Size</label>
+                <input type="text" class="form-control" name="charSize">
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label class="form-label small text-uppercase text-muted fw-bold">Gender</label>
+                <input type="text" class="form-control" name="gender">
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label class="form-label small text-uppercase text-muted fw-bold">Height</label>
+                <input type="text" class="form-control" name="height">
+              </div>
+              <div class="col-6 col-sm-3 col-md-1">
+                <label class="form-label small text-uppercase text-muted fw-bold">Hair</label>
+                <input type="text" class="form-control" name="hairColor">
+              </div>
+              <div class="col-6 col-sm-3 col-md-2">
+                <label class="form-label small text-uppercase text-muted fw-bold">Eye Color</label>
+                <input type="text" class="form-control" name="eyeColor">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ability Themes, Health & Advantage System -->
+        <div class="row g-3">
+
+          <!-- Core Ability Themes -->
+          <div class="col-12 col-lg-auto col-card-abilities">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-dumbbell me-2"></i>Ability Themes (STR, DEX, CON, INT, WIS, CHA)</span>
+                <small class="text-muted">Modifier = Math.floor(Score/2) - 5</small>
+              </div>
+              <div class="card-body">
+                <div class="row g-2 text-center">
+                  
+                  <!-- STR -->
+                  <div class="col-4 col-sm-2">
+                    <div class="stat-box">
+                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">STR</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreSTR" id="scoreSTR" oninput="calculateStats()">
+                      <div class="stat-label">MOD</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modSTR" id="modSTR" readonly>
+                    </div>
+                  </div>
+
+                  <!-- DEX -->
+                  <div class="col-4 col-sm-2">
+                    <div class="stat-box">
+                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">DEX</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreDEX" id="scoreDEX" oninput="calculateStats()">
+                      <div class="stat-label">MOD</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modDEX" id="modDEX" readonly>
+                    </div>
+                  </div>
+
+                  <!-- CON -->
+                  <div class="col-4 col-sm-2">
+                    <div class="stat-box">
+                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">CON</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreCON" id="scoreCON" oninput="calculateStats()">
+                      <div class="stat-label">MOD</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modCON" id="modCON" readonly>
+                    </div>
+                  </div>
+
+                  <!-- INT -->
+                  <div class="col-4 col-sm-2">
+                    <div class="stat-box">
+                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">INT</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreINT" id="scoreINT" oninput="calculateStats()">
+                      <div class="stat-label">MOD</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modINT" id="modINT" readonly>
+                    </div>
+                  </div>
+
+                  <!-- WIS -->
+                  <div class="col-4 col-sm-2">
+                    <div class="stat-box">
+                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">WIS</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreWIS" id="scoreWIS" oninput="calculateStats()">
+                      <div class="stat-label">MOD</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modWIS" id="modWIS" readonly>
+                    </div>
+                  </div>
+
+                  <!-- CHA -->
+                  <div class="col-4 col-sm-2">
+                    <div class="stat-box">
+                      <div class="stat-label fw-bold fs-6 text-cyan mb-1">CHA</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreCHA" id="scoreCHA" oninput="calculateStats()">
+                      <div class="stat-label">MOD</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan my-1 ability-stat-input" name="modCHA" id="modCHA" readonly>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health and Injury -->
+          <div class="col-12 col-lg-auto col-card-health">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-heart-pulse me-2"></i>Health and Injury</span>
+                <small class="text-muted">Vitality</small>
+              </div>
+              <div class="card-body">
+                <div class="row g-2 text-center align-items-center">
+                  
+                  <div class="col-5 text-center">
+                    <div class="stat-box">
+                      <div class="stat-label">Hit Die</div>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan" name="hitDie">
+                    </div>
+                  </div>
+
+                  <div class="col-7 text-center">
+                    <div class="stat-box">
+                      <div class="stat-label">Max HP + Temp HP</div>
+                      <div class="d-flex align-items-center justify-content-center gap-1 mt-1">
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input" name="maxHP" style="max-width: 60px;">
+                        <span class="fw-bold text-info fs-5 px-1">+</span>
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-info" name="tempHP" style="max-width: 60px;">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 text-center mt-2">
+                    <div class="stat-box">
+                      <div class="stat-label">Current HP</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-success" name="currentHP">
+                    </div>
+                  </div>
+
+                  <div class="col-6 text-center mt-2">
+                    <div class="stat-box">
+                      <div class="stat-label">Nonlethal Dmg</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning" name="nonlethalHP">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Character Attributes -->
+          <div class="col-12 col-lg-auto col-card-attributes">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-sliders me-2"></i>Character Attributes</span>
+              </div>
+              <div class="card-body">
+                <div class="row g-3">
+                  
+                  <div class="col-6 text-center">
+                    <label class="form-label small text-uppercase text-muted fw-bold">Advantage Die (Ad)</label>
+                    <select class="form-select form-select-sm hp-stat-input text-center fw-bold" name="advantageDie" id="advantageDie">
+                      <option value="" selected></option>
+                      <option value="d4">1d4</option>
+                      <option value="d6">1d6</option>
+                      <option value="d8">1d8</option>
+                      <option value="d10">1d10</option>
+                    </select>
+                  </div>
+
+                  <div class="col-6 text-center">
+                    <label class="form-label small text-uppercase text-muted fw-bold">Initiative</label>
+                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan" name="initiative" id="initiative">
+                  </div>
+
+                  <div class="col-6 text-center">
+                    <label class="form-label small text-uppercase text-muted fw-bold">Inertia</label>
+                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-info" name="inertia" id="inertia">
+                  </div>
+
+                  <div class="col-6 text-center">
+                    <label class="form-label small text-uppercase text-muted fw-bold">Passive Perception</label>
+                    <input type="text" inputmode="numeric" class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning" name="passivePerception" id="passivePerception">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Armor Stats, Damage Reduction & Speed Row -->
+        <div class="row g-3 mt-1">
+
+          <!-- Armor Stats Card -->
+          <div class="col-12 col-lg-auto col-card-armor">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-shield-halved me-2"></i>Armor Stats</span>
+                <small class="text-muted">AC = 10 + Armor + DEX + Size + Natural + Misc</small>
+              </div>
+              <div class="card-body">
+                <div class="row g-3 align-items-center">
+                  
+                  <!-- Prominent Square AC Summary Fields -->
+                  <div class="col-12 col-sm-5 col-md-5">
+                    <div class="row g-2 text-center">
+                      <div class="col-4">
+                        <div class="ac-square-box ac-box-total">
+                          <div class="ac-box-label">TOTAL AC</div>
+                          <input type="text" class="form-control text-center fw-bold ac-square-input text-success" id="acTotalDisplay" name="acTotal" readonly>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="ac-square-box ac-box-touch">
+                          <div class="ac-box-label">TOUCH AC</div>
+                          <input type="text" class="form-control text-center fw-bold ac-square-input text-info" id="acTouchDisplay" name="acTouch" readonly>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="ac-square-box ac-box-flat">
+                          <div class="ac-box-label">FLAT-FOOTED</div>
+                          <input type="text" class="form-control text-center fw-bold ac-square-input text-warning" id="acFlatDisplay" name="acFlat" readonly>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- AC Component Calculation Inputs -->
+                  <div class="col-12 col-sm-7 col-md-7">
+                    <div class="d-flex align-items-center justify-content-center justify-content-sm-end text-center flex-nowrap gap-1 overflow-auto py-1">
+                      <div class="text-center px-1">
+                        <label class="stat-label d-block mb-1 text-muted">Base</label>
+                        <div class="fw-bold fs-5 text-center text-cyan py-1">10</div>
+                      </div>
+                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1">+</div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Armor</label>
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input" name="acArmorBonus" id="acArmorBonus" oninput="calculateStats()">
+                      </div>
+                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1">+</div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">DEX</label>
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input" name="acDexMod" id="acDexMod" oninput="onAcDexManualInput()">
+                      </div>
+                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1">+</div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Size</label>
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input" name="acSizeMod" id="acSizeMod" oninput="calculateStats()">
+                      </div>
+                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1">+</div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Natural</label>
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input" name="acNaturalArmor" id="acNaturalArmor" oninput="calculateStats()">
+                      </div>
+                      <div class="fw-bold text-cyan fs-5 align-self-end pb-1 px-1">+</div>
+                      <div class="text-center">
+                        <label class="stat-label d-block mb-1 text-muted">Misc</label>
+                        <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input" name="acMiscMod" id="acMiscMod" oninput="calculateStats()">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Damage Reduction (DR) Card -->
+          <div class="col-12 col-sm-6 col-lg-auto col-card-dr">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-shield-virus me-2"></i>Damage Reduction (DR)</span>
+              </div>
+              <div class="card-body">
+                <div class="row g-2 text-center justify-content-center">
+                  <div class="col-4">
+                    <div class="dr-square-box dr-box-kinetic">
+                      <div class="dr-box-label">Kinetic</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drKinetic" id="drKinetic">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="dr-square-box dr-box-electric">
+                      <div class="dr-box-label">Electric</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drElectric" id="drElectric">
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="dr-square-box dr-box-thermal">
+                      <div class="dr-box-label">Thermal</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drThermal" id="drThermal">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-2">
+                    <div class="dr-square-box dr-box-chemical">
+                      <div class="dr-box-label">Chemical</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drChemical" id="drChemical">
+                    </div>
+                  </div>
+                  <div class="col-4 mt-2">
+                    <div class="dr-square-box dr-box-all">
+                      <div class="dr-box-label">ALL DR</div>
+                      <input type="text" inputmode="numeric" class="form-control form-control-sm text-center ac-comp-input fw-bold mx-auto" name="drAll" id="drAll">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speed Card -->
+          <div class="col-12 col-sm-6 col-lg-auto col-card-speed">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-person-running me-2"></i>Speed</span>
+              </div>
+              <div class="card-body">
+                
+                <!-- Movement Types Row -->
+                <div class="d-flex align-items-center justify-content-between text-center gap-1 mb-2 overflow-auto py-1">
+                  <div class="text-center">
+                    <label class="stat-label d-block mb-1 text-muted">Base</label>
+                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="baseSpeed">
+                      <span class="input-group-text px-1">ft</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <label class="stat-label d-block mb-1 text-muted">Climb</label>
+                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="climbSpeed">
+                      <span class="input-group-text px-1">ft</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <label class="stat-label d-block mb-1 text-muted">Swim</label>
+                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="swimSpeed">
+                      <span class="input-group-text px-1">ft</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <label class="stat-label d-block mb-1 text-muted">Fly</label>
+                    <div class="input-group input-group-sm mx-auto" style="max-width: 65px;">
+                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="flySpeed">
+                      <span class="input-group-text px-1">ft</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Combat Speed Row (ft & sq) -->
+                <div class="pt-2 border-top">
+                  <label class="stat-label d-block mb-1 text-muted text-center">Combat Speed</label>
+                  <div class="d-flex justify-content-center align-items-center gap-3">
+                    <div class="input-group input-group-sm" style="max-width: 80px;">
+                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="combatSpeedFt">
+                      <span class="input-group-text px-1">ft</span>
+                    </div>
+                    <div class="input-group input-group-sm" style="max-width: 80px;">
+                      <input type="text" inputmode="numeric" class="form-control text-center fw-bold px-1" name="combatSpeedSq">
+                      <span class="input-group-text px-1">sq</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Armor & Defensive Equipment -->
+        <div class="sheet-card mt-3">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-shield-halved me-2"></i>Armor & Defensive Gear</span>
+            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addArmorRow()">
+              <i class="fa-solid fa-plus me-1"></i> Add Armor
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-custom mb-0 align-middle" id="armorTable">
+                <thead>
+                  <tr>
+                    <th style="width: 160px;">Name</th>
+                    <th style="width: 75px;" class="text-center">AC Bonus</th>
+                    <th style="width: 95px;" class="text-center">Max DEX Bonus</th>
+                    <th style="width: 95px;" class="text-center">Speed Penalty</th>
+                    <th>Bonus Attributes</th>
+                    <th style="width: 50px;" class="no-print"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weapons & Attack Routines -->
+        <div class="sheet-card mt-3">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-gun me-2"></i>Weapons & Combat Attacks</span>
+            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addWeaponRow()">
+              <i class="fa-solid fa-plus me-1"></i> Add Weapon
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-custom mb-0 align-middle" id="weaponsTable">
+                <thead>
+                  <tr>
+                    <th>Weapon Name</th>
+                    <th style="width: 100px;">Atk Bonus</th>
+                    <th style="width: 110px;">Damage / Die</th>
+                    <th style="width: 100px;">Range</th>
+                    <th style="width: 90px;">Ammo</th>
+                    <th style="width: 90px;">TL / Procure</th>
+                    <th>Notes & Attributes</th>
+                    <th style="width: 50px;" class="no-print"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="print-footer">
+          Page 1 - d20 FuturePath Character Sheet
+        </div>
+      </div>
+
+
+      <!-- ==========================================
+           PAGE 2: SKILLS & PROFICIENCIES
+           ========================================== -->
+      <div class="print-page-2 mt-4">
+
+        <!-- Skills System -->
+        <div class="sheet-card">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-list-check me-2"></i>Skills System (Ranks 0 to 5)</span>
+            <small class="text-muted">Natural vs Unnatural (Training required for Unnatural)</small>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-custom mb-0 align-middle" id="skillsTable">
+                <thead>
+                  <tr>
+                    <th>Skill Name</th>
+                    <th style="width: 100px;">Type</th>
+                    <th style="width: 90px;">Key Ability</th>
+                    <th style="width: 90px;">Rank (0-5)</th>
+                    <th style="width: 90px;">Ability Mod</th>
+                    <th style="width: 90px;">Misc Mod</th>
+                    <th style="width: 100px;">Total Bonus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-skill="acrobatics" data-ability="DEX" data-natural="true">
+                    <td>Acrobatics</td>
+                    <td><span class="badge badge-natural">Natural</span></td>
+                    <td>DEX</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_acrobatics" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_acrobatics" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="athletics" data-ability="STR" data-natural="true">
+                    <td>Athletics</td>
+                    <td><span class="badge badge-natural">Natural</span></td>
+                    <td>STR</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_athletics" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_athletics" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="computer_use" data-ability="INT" data-natural="false">
+                    <td>Computer Use</td>
+                    <td><span class="badge badge-unnatural">Unnatural</span></td>
+                    <td>INT</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_computer_use" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_computer_use" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="demolitions" data-ability="INT" data-natural="false">
+                    <td>Demolitions</td>
+                    <td><span class="badge badge-unnatural">Unnatural</span></td>
+                    <td>INT</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_demolitions" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_demolitions" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="drive" data-ability="DEX" data-natural="true">
+                    <td>Drive</td>
+                    <td><span class="badge badge-natural">Natural</span></td>
+                    <td>DEX</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_drive" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_drive" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="engineering" data-ability="INT" data-natural="false">
+                    <td>Engineering</td>
+                    <td><span class="badge badge-unnatural">Unnatural</span></td>
+                    <td>INT</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_engineering" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_engineering" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="medical" data-ability="WIS" data-natural="false">
+                    <td>Medical</td>
+                    <td><span class="badge badge-unnatural">Unnatural</span></td>
+                    <td>WIS</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_medical" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_medical" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="perception" data-ability="WIS" data-natural="true">
+                    <td>Perception</td>
+                    <td><span class="badge badge-natural">Natural</span></td>
+                    <td>WIS</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_perception" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_perception" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="pilot" data-ability="DEX" data-natural="false">
+                    <td>Pilot</td>
+                    <td><span class="badge badge-unnatural">Unnatural</span></td>
+                    <td>DEX</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_pilot" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_pilot" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="stealth" data-ability="DEX" data-natural="true">
+                    <td>Stealth</td>
+                    <td><span class="badge badge-natural">Natural</span></td>
+                    <td>DEX</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_stealth" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_stealth" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                  <tr data-skill="tech_crafting" data-ability="INT" data-natural="false">
+                    <td>Tech Crafting</td>
+                    <td><span class="badge badge-unnatural">Unnatural</span></td>
+                    <td>INT</td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank" name="skillRank_tech_crafting" placeholder="0" oninput="calculateStats()"></td>
+                    <td><input type="text" class="form-control form-control-sm skill-ab-mod" readonly></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm skill-misc-mod" name="skillMisc_tech_crafting" placeholder="0" oninput="calculateStats()"></td>
+                    <td><span class="fw-bold text-cyan skill-total"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Languages & Skills -->
+        <div class="sheet-card">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-language me-2"></i>Languages & Special Custom Skills</span>
+            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addCustomSkillRow()">
+              <i class="fa-solid fa-plus me-1"></i> Add Language / Custom Skill
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-custom mb-0 align-middle" id="customSkillsTable">
+                <thead>
+                  <tr>
+                    <th>Language / Custom Skill Name</th>
+                    <th style="width: 120px;">Rank (1-5 Fluency)</th>
+                    <th>Fluency & Notes</th>
+                    <th style="width: 50px;" class="no-print"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" class="form-control form-control-sm" name="customSkillName[]" placeholder="Language / Skill Name"></td>
+                    <td><input type="text" inputmode="numeric" class="form-control form-control-sm" name="customSkillRank[]" placeholder="5"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="customSkillNotes[]" placeholder="Fluency & notes"></td>
+                    <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proficiency Tree & Feats -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-sitemap me-2"></i>Proficiency Tree Unlocks</span>
+              </div>
+              <div class="card-body">
+                <div class="mb-2">
+                  <label class="form-label small text-uppercase text-muted fw-bold">Weapon Proficiency Grades</label>
+                  <input type="text" class="form-control form-control-sm" name="profWeapons" placeholder="Simple, Energy Small Arms, Advanced Plasma">
+                </div>
+                <div class="mb-2">
+                  <label class="form-label small text-uppercase text-muted fw-bold">Armor Grades</label>
+                  <input type="text" class="form-control form-control-sm" name="profArmor" placeholder="Light Armor, Powered Exosuit">
+                </div>
+                <div>
+                  <label class="form-label small text-uppercase text-muted fw-bold">Tech & Item Grades</label>
+                  <input type="text" class="form-control form-control-sm" name="profTech" placeholder="TL 5 Cybernetics, Starship Avionics">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-award me-2"></i>Feats & Class Talents</span>
+              </div>
+              <div class="card-body">
+                <textarea class="form-control" name="featsAndTalents" rows="4" placeholder="List feats (e.g. Lithe Attacker, Overclock Core) and Class Talents..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="print-footer">
+          Page 2 - d20 FuturePath Character Sheet
+        </div>
+      </div>
+
+
+      <!-- ==========================================
+           PAGE 3: TECHNIQUES, EQUIPMENT & NOTES
+           ========================================== -->
+      <div class="print-page-3 mt-4">
+
+        <!-- Sci-Fi Techniques & Prowess -->
+        <div class="sheet-card">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-bolt-lightning me-2"></i>Sci-Fi Techniques & Prowess</span>
+            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addTechniqueRow()">
+              <i class="fa-solid fa-plus me-1"></i> Add Technique
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-custom mb-0 align-middle" id="techniquesTable">
+                <thead>
+                  <tr>
+                    <th>Technique Name</th>
+                    <th style="width: 90px;">TL</th>
+                    <th style="width: 110px;">Cost / Energy</th>
+                    <th style="width: 100px;">Range</th>
+                    <th>Effect & Maneuver Details</th>
+                    <th style="width: 50px;" class="no-print"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" class="form-control form-control-sm" name="techName[]" value="Overclock Core"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="techTL[]" value="TL 5"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="techCost[]" value="2 Energy"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="techRange[]" value="Self"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="techEffect[]" value="Boosts DEX modifier by +2 for 3 rounds; applies EMP risk."></td>
+                    <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment, Gear & Inventory -->
+        <div class="sheet-card">
+          <div class="card-header-custom">
+            <span><i class="fa-solid fa-box-archive me-2"></i>Gear, Inventory & Cybernetics</span>
+            <button type="button" class="btn btn-sm btn-cyber btn-add-row" onclick="addGearRow()">
+              <i class="fa-solid fa-plus me-1"></i> Add Gear
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-custom mb-0 align-middle" id="gearTable">
+                <thead>
+                  <tr>
+                    <th>Item Description</th>
+                    <th style="width: 80px;">Qty</th>
+                    <th style="width: 90px;">Weight</th>
+                    <th style="width: 80px;">TL</th>
+                    <th style="width: 110px;">Procure DC</th>
+                    <th>Notes</th>
+                    <th style="width: 50px;" class="no-print"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="text" class="form-control form-control-sm" name="gearItem[]" value="Field Medical Kit"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="gearQty[]" value="1"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="gearWeight[]" value="3 lbs"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="gearTL[]" value="TL 4"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="gearDC[]" value="DC 12"></td>
+                    <td><input type="text" class="form-control form-control-sm" name="gearNotes[]" value="5 charges remaining"></td>
+                    <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Companion & Starship Notes & Backstory -->
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-robot me-2"></i>Robot / Animal Companion & Starship Info</span>
+              </div>
+              <div class="card-body">
+                <textarea class="form-control" name="companionNotes" rows="5" placeholder="Companion stats, Starship modifications, or drone attributes..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="sheet-card h-100">
+              <div class="card-header-custom">
+                <span><i class="fa-solid fa-book-open me-2"></i>Background, Campaign Notes & Objectives</span>
+              </div>
+              <div class="card-body">
+                <textarea class="form-control" name="backstoryNotes" rows="5" placeholder="Character backstory, campaign contacts, galactic sector notes..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="print-footer">
+          Page 3 - d20 FuturePath Character Sheet
+        </div>
+
+      </div>
+
+    </form>
+  </main>
+
+  <!-- Theme Selector Modal -->
+  <div class="modal fade no-print" id="themeModal" tabindex="-1" aria-labelledby="themeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="themeModalLabel"><i class="fa-solid fa-palette me-2"></i>Choose Display Theme</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="theme-card p-3 text-center active" id="theme-cosmic-dark" onclick="setTheme('cosmic-dark')">
+                <div class="theme-preview cosmic-dark-preview mb-2"></div>
+                <div class="fw-bold small">Cosmic Dark</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-cosmic-light" onclick="setTheme('cosmic-light')">
+                <div class="theme-preview cosmic-light-preview mb-2"></div>
+                <div class="fw-bold small">Cosmic Light</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-bootstrap-dark" onclick="setTheme('bootstrap-dark')">
+                <div class="theme-preview bootstrap-dark-preview mb-2"></div>
+                <div class="fw-bold small">Bootstrap Dark</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-bootstrap-light" onclick="setTheme('bootstrap-light')">
+                <div class="theme-preview bootstrap-light-preview mb-2"></div>
+                <div class="fw-bold small">Bootstrap Light</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript Logic & Calculations -->
+  <script>
+    // Theme Management Functions (matching mobileDiceRoller)
+    function setTheme(themeName) {
+      const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light'];
+      if (!themes.includes(themeName)) {
+        themeName = 'cosmic-dark';
+      }
+
+      const body = document.body;
+      const header = document.querySelector('.app-header');
+
+      themes.forEach((t) => body.classList.remove(`theme-${t}`));
+      body.classList.add(`theme-${themeName}`);
+
+      const isLight = themeName.endsWith('-light');
+      body.setAttribute('data-bs-theme', isLight ? 'light' : 'dark');
+      if (header) {
+        header.setAttribute('data-bs-theme', isLight ? 'light' : 'dark');
+      }
+
+      document.querySelectorAll('.theme-card').forEach(c => c.classList.remove('active'));
+      const activeCard = document.getElementById(`theme-${themeName}`);
+      if (activeCard) activeCard.classList.add('active');
+
+      localStorage.setItem('theme', themeName);
+    }
+
+    function applyTheme() {
+      let savedTheme = localStorage.getItem('theme');
+      const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light'];
+      if (!savedTheme || !themes.includes(savedTheme)) {
+        savedTheme = 'cosmic-dark';
+      }
+      setTheme(savedTheme);
+    }
+
+    // Calculate Ability Modifier: Math.floor(score/2) - 5
+    function getAbilityMod(score) {
+      const val = parseInt(score, 10);
+      if (isNaN(val)) return 0;
+      return Math.floor(val / 2) - 5;
+    }
+
+    function formatModStr(mod) {
+      const val = parseInt(mod, 10);
+      if (isNaN(val)) return '+0';
+      return val >= 0 ? `+${val}` : `${val}`;
+    }
+
+
+
+    let isAcDexManuallySet = false;
+
+    function onAcDexManualInput() {
+      isAcDexManuallySet = true;
+      calculateStats();
+    }
+
+    function syncDexModToAc(force = false) {
+      if (force) {
+        isAcDexManuallySet = false;
+      }
+      const scoreDEXInput = document.getElementById('scoreDEX');
+      const acDexInput = document.getElementById('acDexMod');
+      if (acDexInput && !isAcDexManuallySet) {
+        if (!scoreDEXInput || scoreDEXInput.value.trim() === '') {
+          acDexInput.value = '';
+        } else {
+          const dexMod = getAbilityMod(scoreDEXInput.value);
+          acDexInput.value = dexMod;
+        }
+      }
+    }
+
+    // Live calculation of Modifiers & Skills
+    function calculateStats() {
+      const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
+      const mods = {};
+
+      stats.forEach(st => {
+        const inputEl = document.getElementById(`score${st}`);
+        const modEl = document.getElementById(`mod${st}`);
+
+        if (!inputEl || inputEl.value.trim() === '') {
+          mods[st] = 0;
+          if (modEl) modEl.value = '';
+        } else {
+          const mod = getAbilityMod(inputEl.value);
+          mods[st] = mod;
+          if (modEl) modEl.value = formatModStr(mod);
+        }
+      });
+
+      // Sync DEX Mod to AC if not manually overridden
+      syncDexModToAc();
+
+      // Calculate Armor Class (AC = 10 + Armor + DEX + Size + Natural + Misc)
+      const acArmorVal = document.getElementById('acArmorBonus')?.value;
+      const acDexVal = document.getElementById('acDexMod')?.value;
+      const acSizeVal = document.getElementById('acSizeMod')?.value;
+      const acNaturalVal = document.getElementById('acNaturalArmor')?.value;
+      const acMiscVal = document.getElementById('acMiscMod')?.value;
+
+      const hasAnyAcVal = [acArmorVal, acDexVal, acSizeVal, acNaturalVal, acMiscVal].some(v => v && v.trim() !== '');
+
+      const acTotalDisplay = document.getElementById('acTotalDisplay');
+      const acTouchDisplay = document.getElementById('acTouchDisplay');
+      const acFlatDisplay = document.getElementById('acFlatDisplay');
+      const armorClassInput = document.getElementsByName('armorClass')[0];
+
+      if (!hasAnyAcVal && (!document.getElementById('scoreDEX')?.value)) {
+        if (acTotalDisplay) acTotalDisplay.value = '';
+        if (acTouchDisplay) acTouchDisplay.value = '';
+        if (acFlatDisplay) acFlatDisplay.value = '';
+        if (armorClassInput) armorClassInput.value = '';
+      } else {
+        const acArmor = parseInt(acArmorVal || 0, 10);
+        const acDex = parseInt(acDexVal || 0, 10);
+        const acSize = parseInt(acSizeVal || 0, 10);
+        const acNatural = parseInt(acNaturalVal || 0, 10);
+        const acMisc = parseInt(acMiscVal || 0, 10);
+
+        const totalAC = 10 + acArmor + acDex + acSize + acNatural + acMisc;
+        const touchAC = 10 + acDex + acSize + acMisc;
+        const flatAC = 10 + acArmor + acSize + acNatural + acMisc;
+
+        if (acTotalDisplay) acTotalDisplay.value = totalAC;
+        if (acTouchDisplay) acTouchDisplay.value = touchAC;
+        if (acFlatDisplay) acFlatDisplay.value = flatAC;
+        if (armorClassInput) armorClassInput.value = totalAC;
+      }
+
+      // Update Skills
+      const skillRows = document.querySelectorAll('#skillsTable tbody tr');
+      skillRows.forEach(row => {
+        const abilityKey = row.getAttribute('data-ability');
+        const isNatural = row.getAttribute('data-natural') === 'true';
+
+        const rankInput = row.querySelector('.skill-rank');
+        const abModInput = row.querySelector('.skill-ab-mod');
+        const miscInput = row.querySelector('.skill-misc-mod');
+        const totalSpan = row.querySelector('.skill-total');
+
+        const rankStr = rankInput?.value || '';
+        const miscStr = miscInput?.value || '';
+        const scoreStr = document.getElementById(`score${abilityKey}`)?.value || '';
+
+        if (!scoreStr && !rankStr && !miscStr) {
+          if (abModInput) abModInput.value = '';
+          if (totalSpan) totalSpan.innerText = '';
+        } else {
+          const rank = parseInt(rankStr || 0, 10);
+          const misc = parseInt(miscStr || 0, 10);
+
+          let abMod = scoreStr ? (mods[abilityKey] || 0) : 0;
+          if (!isNatural && rank < 1) {
+            abMod = 0;
+          }
+
+          if (abModInput) abModInput.value = formatModStr(abMod);
+
+          const totalBonus = rank + abMod + misc;
+          if (totalSpan) totalSpan.innerText = formatModStr(totalBonus);
+        }
+      });
+
+      triggerAutoSave();
+    }
+
+    // Dynamic Row Adders
+    function addWeaponRow() {
+      const tbody = document.querySelector('#weaponsTable tbody');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" class="form-control form-control-sm" name="wepName[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="wepAtk[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="wepDmg[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="wepRange[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="wepAmmo[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="wepTL[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="wepNotes[]"></td>
+        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+      `;
+      tbody.appendChild(tr);
+      triggerAutoSave();
+    }
+
+    function addArmorRow() {
+      const tbody = document.querySelector('#armorTable tbody');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" class="form-control form-control-sm" name="armorName[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
+        <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
+        <td><input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]"></td>
+        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+      `;
+      tbody.appendChild(tr);
+      triggerAutoSave();
+    }
+
+    function addCustomSkillRow() {
+      const tbody = document.querySelector('#customSkillsTable tbody');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" class="form-control form-control-sm" name="customSkillName[]" placeholder="Language / Skill Name"></td>
+        <td><input type="text" inputmode="numeric" class="form-control form-control-sm" name="customSkillRank[]" placeholder="5"></td>
+        <td><input type="text" class="form-control form-control-sm" name="customSkillNotes[]" placeholder="Fluency notes"></td>
+        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+      `;
+      tbody.appendChild(tr);
+      triggerAutoSave();
+    }
+
+    function addTechniqueRow() {
+      const tbody = document.querySelector('#techniquesTable tbody');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" class="form-control form-control-sm" name="techName[]" placeholder="Technique Name"></td>
+        <td><input type="text" class="form-control form-control-sm" name="techTL[]" value="TL 5"></td>
+        <td><input type="text" class="form-control form-control-sm" name="techCost[]" value="1 Energy"></td>
+        <td><input type="text" class="form-control form-control-sm" name="techRange[]" value="Touch"></td>
+        <td><input type="text" class="form-control form-control-sm" name="techEffect[]" placeholder="Effect details"></td>
+        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+      `;
+      tbody.appendChild(tr);
+      triggerAutoSave();
+    }
+
+    function addGearRow() {
+      const tbody = document.querySelector('#gearTable tbody');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" class="form-control form-control-sm" name="gearItem[]" placeholder="Gear Item"></td>
+        <td><input type="text" class="form-control form-control-sm" name="gearQty[]" value="1"></td>
+        <td><input type="text" class="form-control form-control-sm" name="gearWeight[]" value="1 lb"></td>
+        <td><input type="text" class="form-control form-control-sm" name="gearTL[]" value="TL 5"></td>
+        <td><input type="text" class="form-control form-control-sm" name="gearDC[]" value="DC 10"></td>
+        <td><input type="text" class="form-control form-control-sm" name="gearNotes[]" placeholder="Notes"></td>
+        <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+      `;
+      tbody.appendChild(tr);
+      triggerAutoSave();
+    }
+
+    function removeRow(btn) {
+      const tr = btn.closest('tr');
+      if (tr) tr.remove();
+      calculateStats();
+      triggerAutoSave();
+    }
+
+    // Auto-Save & JSON Export/Import
+    let autoSaveTimeout = null;
+    function triggerAutoSave() {
+      clearTimeout(autoSaveTimeout);
+      autoSaveTimeout = setTimeout(() => {
+        saveToLocalStorage();
+        const statusEl = document.getElementById('saveStatus');
+        if (statusEl) {
+          statusEl.innerHTML = '<i class="fa-solid fa-check text-success"></i> Auto-saved';
+        }
+      }, 500);
+    }
+
+    function getFormDataObj() {
+      const form = document.getElementById('characterForm');
+      const formData = new FormData(form);
+      const data = {};
+
+      for (let [key, value] of formData.entries()) {
+        if (key.endsWith('[]')) {
+          if (!data[key]) data[key] = [];
+          data[key].push(value);
+        } else {
+          data[key] = value;
+        }
+      }
+      return data;
+    }
+
+    function saveToLocalStorage() {
+      const data = getFormDataObj();
+      localStorage.setItem('d20FuturePathCharData', JSON.stringify(data));
+    }
+
+    function loadFromLocalStorage() {
+      const saved = localStorage.getItem('d20FuturePathCharData');
+      if (!saved) return;
+      try {
+        const data = JSON.parse(saved);
+        populateForm(data);
+      } catch(e) {
+        console.error('Error loading saved character data', e);
+      }
+    }
+
+    function populateForm(data) {
+      if (!data) return;
+      const form = document.getElementById('characterForm');
+
+      // Rebuild dynamic table rows if saved
+      if (data['armorName[]'] && Array.isArray(data['armorName[]'])) {
+        const tbody = document.querySelector('#armorTable tbody');
+        tbody.innerHTML = '';
+        data['armorName[]'].forEach((_, idx) => {
+          addArmorRow();
+        });
+      }
+
+      if (data['wepName[]'] && Array.isArray(data['wepName[]'])) {
+        const tbody = document.querySelector('#weaponsTable tbody');
+        tbody.innerHTML = '';
+        data['wepName[]'].forEach((_, idx) => {
+          addWeaponRow();
+        });
+      }
+
+      if (data['customSkillName[]'] && Array.isArray(data['customSkillName[]'])) {
+        const tbody = document.querySelector('#customSkillsTable tbody');
+        tbody.innerHTML = '';
+        data['customSkillName[]'].forEach((_, idx) => {
+          addCustomSkillRow();
+        });
+      }
+
+      if (data['techName[]'] && Array.isArray(data['techName[]'])) {
+        const tbody = document.querySelector('#techniquesTable tbody');
+        tbody.innerHTML = '';
+        data['techName[]'].forEach((_, idx) => {
+          addTechniqueRow();
+        });
+      }
+
+      if (data['gearItem[]'] && Array.isArray(data['gearItem[]'])) {
+        const tbody = document.querySelector('#gearTable tbody');
+        tbody.innerHTML = '';
+        data['gearItem[]'].forEach((_, idx) => {
+          addGearRow();
+        });
+      }
+
+      // Populate field values
+      Object.keys(data).forEach(key => {
+        const val = data[key];
+        if (key.endsWith('[]')) {
+          const inputs = form.querySelectorAll(`[name="${key}"]`);
+          if (Array.isArray(val)) {
+            val.forEach((itemVal, i) => {
+              if (inputs[i]) inputs[i].value = itemVal;
+            });
+          }
+        } else {
+          const input = form.querySelector(`[name="${key}"]`);
+          if (input) input.value = val;
+        }
+      });
+
+      calculateStats();
+    }
+
+    function exportCharacterJSON() {
+      const data = getFormDataObj();
+      const name = data.charName ? data.charName.replace(/[^a-zA-Z0-9_-]/g, '_') : 'Character';
+      const jsonStr = JSON.stringify(data, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `d20FuturePath_${name}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importCharacterJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const data = JSON.parse(e.target.result);
+          populateForm(data);
+          alert('Character sheet imported successfully!');
+        } catch(err) {
+          alert('Error parsing JSON file. Please ensure it is a valid d20 FuturePath character file.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // Major Species Random Suggestion Logic
+    const majorSpeciesList = [
+      "Human",
+      "Volar",
+      "Grayling",
+      "Lepidonain",
+      "Cryous",
+      "Ovex",
+      "Aconian",
+      "Murid",
+      "Avisari",
+      "Khepri"
+    ];
+
+    function randomizeSpecies(fillInput = false) {
+      const randomSpec = majorSpeciesList[Math.floor(Math.random() * majorSpeciesList.length)];
+      const speciesInput = document.getElementById('speciesInput');
+      if (speciesInput) {
+        if (fillInput) {
+          speciesInput.value = randomSpec;
+          triggerAutoSave();
+        } else {
+          speciesInput.placeholder = `e.g. ${randomSpec}`;
+        }
+      }
+    }
+
+    function resetForm() {
+      if (confirm('Are you sure you want to clear the character sheet? All unsaved inputs will be lost.')) {
+        document.getElementById('characterForm').reset();
+        localStorage.removeItem('d20FuturePathCharData');
+        calculateStats();
+        randomizeSpecies(false);
+      }
+    }
+
+    // Attach event listeners for change/input & theme setup
+    document.addEventListener('DOMContentLoaded', () => {
+      applyTheme();
+      randomizeSpecies(false);
+      loadFromLocalStorage();
+      calculateStats();
+
+      const form = document.getElementById('characterForm');
+      form.addEventListener('input', () => {
+        calculateStats();
+      });
+      form.addEventListener('change', () => {
+        calculateStats();
+      });
+    });
+  </script>
+</body>
+</html>
