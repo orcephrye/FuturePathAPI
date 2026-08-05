@@ -13,1621 +13,9 @@
   <!-- Google Fonts: Audiowide, Orbitron, Outfit & Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-  <style>
-    :root {
-      /* Cosmic Dark (Default) Theme Variables */
-      --bg-gradient: radial-gradient(circle at top left, #111827, #030712);
-      --text-color: #f1f5f9;
-      --card-bg: #131b2e;
-      --card-border: #1f2d4d;
-      --accent-cyan: #00f0ff;
-      --accent-blue: #3b82f6;
-      --input-bg: #1a243b;
-      --input-border: #2b3a5c;
-      --input-text: #ffffff;
-      --input-placeholder: #64748b;
-      --header-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-      --header-border: #00f0ff;
-      --navbar-bg: rgba(17, 24, 39, 0.85);
-      --modal-bg: rgba(17, 24, 39, 0.95);
-      --modal-border: rgba(255, 255, 255, 0.08);
-      --modal-text: #f1f5f9;
-      --theme-card-bg: rgba(31, 41, 55, 0.4);
-      --theme-card-border: rgba(255, 255, 255, 0.08);
-      --theme-card-selected-border: #3b82f6;
-      --theme-card-text: #f1f5f9;
-    }
-
-    body.theme-cosmic-light {
-      /* Cosmic Light Theme Variables */
-      --bg-gradient: radial-gradient(circle at top left, #f5f3ff, #e0e7ff, #e8eaf6);
-      --text-color: #1e293b;
-      --card-bg: rgba(255, 255, 255, 0.9);
-      --card-border: rgba(59, 130, 246, 0.2);
-      --accent-cyan: #0284c7;
-      --accent-blue: #1d4ed8;
-      --input-bg: #f1f5f9;
-      --input-border: #cbd5e1;
-      --input-text: #0f172a;
-      --input-placeholder: #94a3b8;
-      --header-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-      --header-border: #3b82f6;
-      --navbar-bg: rgba(255, 255, 255, 0.85);
-      --modal-bg: rgba(255, 255, 255, 0.95);
-      --modal-border: rgba(0, 0, 0, 0.08);
-      --modal-text: #0f172a;
-      --theme-card-bg: rgba(241, 245, 249, 0.8);
-      --theme-card-border: rgba(0, 0, 0, 0.06);
-      --theme-card-selected-border: #1d4ed8;
-      --theme-card-text: #334155;
-    }
-
-    body.theme-bootstrap-dark {
-      /* Bootstrap Dark Theme Variables */
-      --bg-gradient: #212529;
-      --text-color: #dee2e6;
-      --card-bg: #2c3034;
-      --card-border: #495057;
-      --accent-cyan: #0dcaf0;
-      --accent-blue: #0d6efd;
-      --input-bg: #212529;
-      --input-border: #495057;
-      --input-text: #dee2e6;
-      --input-placeholder: #6c757d;
-      --header-bg: #2c3034;
-      --header-border: #0d6efd;
-      --navbar-bg: #2c3034;
-      --modal-bg: #212529;
-      --modal-border: #495057;
-      --modal-text: #dee2e6;
-      --theme-card-bg: #2c3034;
-      --theme-card-border: #495057;
-      --theme-card-selected-border: #0d6efd;
-      --theme-card-text: #dee2e6;
-    }
-
-    body.theme-bootstrap-light {
-      /* Bootstrap Light Theme Variables */
-      --bg-gradient: #ffffff;
-      --text-color: #212529;
-      --card-bg: #f8f9fa;
-      --card-border: #dee2e6;
-      --accent-cyan: #0dcaf0;
-      --accent-blue: #0d6efd;
-      --input-bg: #ffffff;
-      --input-border: #ced4da;
-      --input-text: #212529;
-      --input-placeholder: #6c757d;
-      --header-bg: #f8f9fa;
-      --header-border: #0d6efd;
-      --navbar-bg: #f8f9fa;
-      --modal-bg: #ffffff;
-      --modal-border: #dee2e6;
-      --modal-text: #212529;
-      --theme-card-bg: #f8f9fa;
-      --theme-card-border: #dee2e6;
-      --theme-card-selected-border: #0d6efd;
-      --theme-card-text: #212529;
-    }
-
-    body {
-      background: var(--bg-gradient) !important;
-      color: var(--text-color) !important;
-      font-family: 'Outfit', 'Inter', sans-serif;
-      padding-bottom: 2rem;
-      min-height: 100vh;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    h1, h2, h3, h4, .brand-title {
-      font-family: 'Orbitron', sans-serif;
-      letter-spacing: 0.5px;
-    }
-
-    .app-header {
-      background: var(--header-bg) !important;
-      border-bottom: 2px solid var(--header-border);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .header-icon {
-      color: var(--accent-cyan);
-    }
-
-    .header-logo-img {
-      height: 42px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.35));
-      transition: filter 0.25s ease, transform 0.25s ease;
-      cursor: pointer;
-    }
-
-    .header-logo-img:hover {
-      filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.75));
-      transform: scale(1.06);
-    }
-
-    .header-title {
-      font-family: 'Audiowide', cursive, sans-serif !important;
-      letter-spacing: 2.5px;
-      color: var(--text-color) !important;
-      text-shadow: 0 0 12px rgba(0, 240, 255, 0.35);
-    }
-
-    .header-subtitle {
-      color: var(--accent-cyan) !important;
-      font-weight: 500;
-      opacity: 0.95;
-    }
-
-    .header-badge {
-      background: var(--card-bg) !important;
-      border: 1px solid var(--header-border) !important;
-      color: var(--accent-cyan) !important;
-    }
-
-    .custom-toc-menu {
-      background-color: var(--card-bg) !important;
-      border: 1px solid var(--accent-cyan) !important;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
-    }
-
-    .custom-toc-menu .dropdown-item {
-      transition: background-color 0.15s ease, color 0.15s ease;
-      font-size: 0.82rem;
-    }
-
-    .custom-toc-menu .dropdown-item:hover,
-    .custom-toc-menu .dropdown-item:focus {
-      background-color: rgba(0, 240, 255, 0.15) !important;
-      color: #fff !important;
-    }
-
-    .toc-card-link {
-      color: #cbd5e1 !important;
-    }
-
-    .toc-highlight {
-      outline: 2px solid var(--accent-cyan) !important;
-      box-shadow: 0 0 16px rgba(0, 240, 255, 0.5) !important;
-      transition: outline 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .ac-square-box {
-      background: var(--input-bg) !important;
-      border: 2px solid var(--card-border);
-      border-radius: 8px;
-      padding: 4px 4px;
-      text-align: center;
-    }
-
-    .ac-box-total {
-      border-color: #10b981 !important;
-    }
-
-    .ac-box-touch {
-      border-color: #0ea5e9 !important;
-    }
-
-    .ac-box-flat {
-      border-color: #f59e0b !important;
-    }
-
-    .ac-box-label {
-      font-size: 0.62rem;
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      text-transform: uppercase;
-      margin-bottom: 2px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    .ac-box-total .ac-box-label { color: #10b981; }
-    .ac-box-touch .ac-box-label { color: #0ea5e9; }
-    .ac-box-flat .ac-box-label { color: #f59e0b; }
-
-    .dr-square-box {
-      background: var(--input-bg) !important;
-      border: 2px solid var(--card-border);
-      border-radius: 8px;
-      padding: 3px 2px;
-      text-align: center;
-    }
-
-    .dr-box-label {
-      font-size: 0.62rem;
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      text-transform: uppercase;
-      margin-bottom: 1px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    /* DR Damage Type Border & Color Rules */
-    .dr-box-kinetic { border-color: #a855f7 !important; }
-    .dr-box-kinetic .dr-box-label, .dr-box-kinetic input { color: #a855f7 !important; }
-
-    .dr-box-electric { border-color: #3b82f6 !important; }
-    .dr-box-electric .dr-box-label, .dr-box-electric input { color: #3b82f6 !important; }
-
-    .dr-box-chemical { border-color: #eab308 !important; }
-    .dr-box-chemical .dr-box-label, .dr-box-chemical input { color: #eab308 !important; }
-
-    .dr-box-thermal { border-color: #ef4444 !important; }
-    .dr-box-thermal .dr-box-label, .dr-box-thermal input { color: #ef4444 !important; }
-
-    .dr-box-all { border-color: #18181b !important; }
-    .dr-box-all .dr-box-label, .dr-box-all input { color: #18181b !important; }
-
-    /* Theme adjustments for ALL DR border in dark mode themes */
-    body[data-bs-theme="dark"] .dr-box-all { border-color: #e4e4e7 !important; }
-    body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"] .dr-box-all input { color: #e4e4e7 !important; }
-
-    .ac-square-input {
-      height: 38px;
-      font-size: 1.15rem;
-      font-weight: 800 !important;
-      background: var(--card-bg) !important;
-      border: 1.5px solid var(--input-border) !important;
-      border-radius: 6px;
-    }
-
-    .ac-comp-input {
-      width: 40px;
-      max-width: 44px;
-      padding: 0.15rem 0.1rem !important;
-      font-size: 0.92rem !important;
-      font-weight: 700 !important;
-    }
-
-    .hp-stat-input {
-      width: 92px;
-      max-width: 96px;
-      margin: 0 auto;
-      padding: 0.25rem 0.25rem !important;
-      font-size: 1.1rem !important;
-      font-weight: 700 !important;
-    }
-
-    .ability-stat-input {
-      width: 60px;
-      max-width: 64px;
-      margin: 0 auto;
-      padding: 0.2rem 0.2rem !important;
-      font-size: 1.05rem !important;
-      font-weight: 700 !important;
-    }
-
-    /* Synthwave Core Ability Theme Color Classes */
-    .text-ability-str { color: #f43f5e !important; }
-    .text-ability-dex { color: #84cc16 !important; }
-    .text-ability-con { color: #d97706 !important; }
-    .text-ability-int { color: #3b82f6 !important; }
-    .text-ability-wis { color: #8b5cf6 !important; }
-    .text-ability-cha { color: #ec4899 !important; }
-
-    .stat-box-str { border-color: rgba(244, 63, 94, 0.4) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
-    .stat-box-dex { border-color: rgba(132, 204, 22, 0.4) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
-    .stat-box-con { border-color: rgba(217, 119, 6, 0.4) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
-    .stat-box-int { border-color: rgba(59, 130, 246, 0.4) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
-    .stat-box-wis { border-color: rgba(139, 92, 246, 0.4) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
-    .stat-box-cha { border-color: rgba(236, 72, 153, 0.4) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
-
-    .stat-box-str:hover { border-color: #f43f5e !important; box-shadow: 0 0 10px rgba(244, 63, 94, 0.4); }
-    .stat-box-dex:hover { border-color: #84cc16 !important; box-shadow: 0 0 10px rgba(132, 204, 22, 0.4); }
-    .stat-box-con:hover { border-color: #d97706 !important; box-shadow: 0 0 10px rgba(217, 119, 6, 0.4); }
-    .stat-box-int:hover { border-color: #3b82f6 !important; box-shadow: 0 0 10px rgba(59, 130, 246, 0.4); }
-    .stat-box-wis:hover { border-color: #8b5cf6 !important; box-shadow: 0 0 10px rgba(139, 92, 246, 0.4); }
-    .stat-box-cha:hover { border-color: #ec4899 !important; box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); }
-
-    /* Proficiency Checkbox Styling with half spacing */
-    .prof-check-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 2px;
-      margin-right: 6px;
-      cursor: pointer;
-    }
-    .prof-check-item .form-check-input {
-      margin-top: 0;
-      cursor: pointer;
-    }
-    .prof-check-item .prof-num-label {
-      font-size: 0.8rem;
-      font-weight: 700;
-      user-select: none;
-      line-height: 1;
-    }
-
-    @media (min-width: 992px) {
-      .col-card-abilities {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
-      }
-      .col-card-health {
-        flex: 0 0 25% !important;
-        max-width: 25% !important;
-      }
-      .col-card-attributes {
-        flex: 0 0 25% !important;
-        max-width: 25% !important;
-      }
-
-      .col-card-armor {
-        flex: 0 0 55% !important;
-        max-width: 55% !important;
-      }
-      .col-card-dr {
-        flex: 0 0 22.5% !important;
-        max-width: 22.5% !important;
-      }
-      .col-card-speed {
-        flex: 0 0 22.5% !important;
-        max-width: 22.5% !important;
-      }
-    }
-
-    .sheet-card {
-      background-color: var(--card-bg) !important;
-      border: 1px solid var(--card-border) !important;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      margin-bottom: 0.85rem;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .sheet-card.h-100:has(.collapse:not(.show)) {
-      height: auto !important;
-    }
-
-    .sheet-card:hover {
-      border-color: var(--accent-blue) !important;
-    }
-
-    .card-header-custom {
-      background: rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid var(--card-border);
-      padding: 0.75rem 1rem;
-      border-top-left-radius: 11px;
-      border-top-right-radius: 11px;
-      font-weight: 600;
-      color: var(--accent-cyan);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      user-select: none;
-      transition: background-color 0.2s ease, border-radius 0.2s ease, border-bottom-color 0.2s ease;
-    }
-
-    .card-header-custom:hover {
-      background: rgba(0, 240, 255, 0.06);
-    }
-
-    .card-header-custom.collapsed {
-      border-bottom-left-radius: 11px;
-      border-bottom-right-radius: 11px;
-      border-bottom-color: transparent;
-    }
-
-    .collapse-icon {
-      transition: transform 0.25s ease;
-      display: inline-block;
-      font-size: 0.85rem;
-      opacity: 0.85;
-    }
-
-    .card-header-custom.collapsed .collapse-icon {
-      transform: rotate(-90deg);
-    }
-
-    #skillsTable th, #skillsTable td {
-      padding: 0.2rem 0.25rem !important;
-      font-size: 0.8rem;
-    }
-    #skillsTable .form-control-sm {
-      padding: 0.05rem 0.15rem !important;
-      font-size: 0.78rem;
-    }
-
-    @media (min-width: 992px) {
-      .col-skills-side {
-        width: 45% !important;
-        flex: 0 0 45% !important;
-        max-width: 45% !important;
-        order: 1 !important;
-      }
-      .col-armor-side {
-        width: 55% !important;
-        flex: 0 0 55% !important;
-        max-width: 55% !important;
-        order: 2 !important;
-      }
-    }
-    @media (max-width: 991.98px) {
-      .col-skills-side {
-        width: 100% !important;
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        order: 2 !important;
-      }
-      .col-armor-side {
-        width: 100% !important;
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        order: 1 !important;
-      }
-    }
-
-    .trait-desc-textarea {
-      resize: vertical;
-      overflow-y: hidden;
-      min-height: 31px;
-      line-height: 1.3;
-    }
-
-    /* Affinity Tag Buttons */
-    .affinity-tag {
-      font-size: 0.72rem;
-      border-radius: 4px;
-      transition: all 0.2s ease-in-out;
-      background-color: rgba(255, 255, 255, 0.05);
-      color: var(--text-muted);
-      border: 1px solid var(--card-border);
-      text-decoration: line-through;
-      text-decoration-thickness: 2px;
-      opacity: 0.5;
-      filter: grayscale(70%);
-    }
-    .affinity-tag:hover {
-      opacity: 0.85;
-      transform: scale(1.05);
-    }
-    .affinity-tag.active {
-      text-decoration: none !important;
-      opacity: 1 !important;
-      filter: none !important;
-    }
-    .affinity-tag.active.tag-str { background-color: #ef4444 !important; color: #ffffff !important; border-color: #f87171 !important; box-shadow: 0 0 6px rgba(239, 68, 68, 0.5); }
-    .affinity-tag.active.tag-dex { background-color: #10b981 !important; color: #ffffff !important; border-color: #34d399 !important; opacity: 1; box-shadow: 0 0 6px rgba(16, 185, 129, 0.5); }
-    .affinity-tag.active.tag-con { background-color: #f59e0b !important; color: #000000 !important; border-color: #fbbf24 !important; opacity: 1; box-shadow: 0 0 6px rgba(245, 158, 11, 0.5); }
-    .affinity-tag.active.tag-int { background-color: #06b6d4 !important; color: #000000 !important; border-color: #22d3ee !important; opacity: 1; box-shadow: 0 0 6px rgba(6, 182, 212, 0.5); }
-    .affinity-tag.active.tag-wis { background-color: #8b5cf6 !important; color: #ffffff !important; border-color: #a78bfa !important; opacity: 1; box-shadow: 0 0 6px rgba(139, 92, 246, 0.5); }
-    .affinity-tag.active.tag-cha { background-color: #ec4899 !important; color: #ffffff !important; border-color: #f472b6 !important; opacity: 1; box-shadow: 0 0 6px rgba(236, 72, 153, 0.5); }
-
-    .form-control, .form-select {
-      background-color: var(--input-bg) !important;
-      border: 1px solid var(--input-border) !important;
-      color: var(--input-text) !important;
-      font-weight: 500;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
-
-    .form-control::placeholder {
-      color: var(--input-placeholder) !important;
-    }
-
-    .form-control:focus, .form-select:focus {
-      background-color: var(--input-bg) !important;
-      border-color: var(--accent-blue) !important;
-      color: var(--input-text) !important;
-      box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25) !important;
-    }
-
-    .form-control-sm, .form-select-sm {
-      padding: 0.25rem 0.5rem;
-      font-size: 0.85rem;
-    }
-
-    .input-group-text {
-      background-color: var(--input-bg) !important;
-      border: 1px solid var(--input-border) !important;
-      color: var(--accent-cyan) !important;
-      font-weight: 600;
-    }
-
-    .stat-box {
-      text-align: center;
-      background: rgba(0, 0, 0, 0.15);
-      border: 1px solid var(--card-border);
-      border-radius: 8px;
-      padding: 0.5rem;
-    }
-
-    .stat-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      color: var(--text-color);
-      opacity: 0.8;
-      font-weight: 700;
-    }
-
-    .stat-val {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--accent-cyan);
-    }
-
-    .table-custom {
-      color: var(--text-color) !important;
-      font-size: 0.88rem;
-    }
-
-    .table-custom th {
-      background-color: rgba(0, 0, 0, 0.15) !important;
-      color: var(--accent-cyan) !important;
-      border-bottom: 2px solid var(--card-border) !important;
-      font-weight: 600;
-    }
-
-    .table-custom td {
-      border-color: var(--card-border) !important;
-      vertical-align: middle;
-    }
-
-    .badge-natural {
-      background-color: #065f46;
-      color: #a7f3d0;
-    }
-
-    .badge-unnatural {
-      background-color: #1e3a8a;
-      color: #bfdbfe;
-    }
-
-    .badge-rank-dep {
-      background-color: #581c87;
-      color: #e9d5ff;
-    }
-
-    @media (max-width: 1399.98px) {
-      .badge-natural {
-        font-size: 0 !important;
-        padding: 0.2em 0.45em !important;
-      }
-      .badge-natural::after {
-        content: "N";
-        font-size: 0.7rem;
-      }
-
-      .badge-unnatural {
-        font-size: 0 !important;
-        padding: 0.2em 0.45em !important;
-      }
-      .badge-unnatural::after {
-        content: "U";
-        font-size: 0.7rem;
-      }
-
-      .badge-rank-dep {
-        font-size: 0 !important;
-        padding: 0.2em 0.45em !important;
-      }
-      .badge-rank-dep::after {
-        content: "R";
-        font-size: 0.7rem;
-      }
-    }
-
-    /* Action Buttons Toolbar */
-    .action-bar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: var(--navbar-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--card-border);
-      padding: 0.75rem 0;
-      margin-bottom: 1.5rem;
-    }
-
-    .btn-cyber {
-      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-      color: #fff;
-      border: 1px solid var(--accent-cyan);
-      font-weight: 600;
-    }
-    .btn-cyber:hover {
-      background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
-      color: #fff;
-      box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
-    }
-
-    .btn-cyber-outline {
-      background: transparent;
-      color: var(--accent-cyan);
-      border: 1px solid var(--accent-cyan);
-      font-weight: 600;
-    }
-    .btn-cyber-outline:hover {
-      background: rgba(0, 240, 255, 0.15);
-      color: var(--text-color);
-    }
-
-    /* Page Navigation & Section Header Styling */
-    .page-header-bar {
-      background: var(--card-bg) !important;
-      border: 1px solid var(--card-border) !important;
-      border-left: 4px solid var(--accent-cyan) !important;
-      border-radius: 8px;
-      padding: 0.35rem 0.75rem;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
-
-    .page-header-title {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--accent-cyan);
-      letter-spacing: 0.5px;
-      margin: 0;
-    }
-
-    .page-header-badge {
-      background: rgba(0, 240, 255, 0.1);
-      color: var(--accent-cyan);
-      border: 1px solid var(--accent-cyan);
-      border-radius: 4px;
-      padding: 0.1rem 0.4rem;
-      font-size: 0.7rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-
-    .card-hidden-all,
-    body.is-print-mode .card-hidden-all {
-      display: none !important;
-    }
-    @media print {
-      .card-hidden-all {
-        display: none !important;
-      }
-    }
-
-    /* Ruled Notebook / Writing Paper Textarea Styling */
-    .notebook-textarea {
-      background-attachment: local;
-      background-image: linear-gradient(to bottom, transparent calc(1.85rem - 1px), rgba(0, 240, 255, 0.2) 1px);
-      background-size: 100% 1.85rem;
-      line-height: 1.85rem;
-      padding-top: 0.15rem;
-      padding-bottom: 0.15rem;
-      overflow-y: hidden;
-      resize: vertical;
-    }
-
-    /* Card Reorder Controls Lock Styling */
-    body.layout-locked .card-reorder-controls {
-      display: none !important;
-    }
-
-    /* Theme Card Selector Styling */
-    .theme-card {
-      background: var(--theme-card-bg) !important;
-      border: 2px solid var(--theme-card-border) !important;
-      border-radius: 14px !important;
-      color: var(--theme-card-text) !important;
-      cursor: pointer;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      overflow: hidden;
-    }
-
-    .theme-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2) !important;
-    }
-
-    .theme-card.active {
-      border-color: var(--theme-card-selected-border) !important;
-      box-shadow: 0 0 0 2px var(--theme-card-selected-border) !important;
-    }
-
-    .theme-preview {
-      height: 60px;
-      border-radius: 8px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .cosmic-dark-preview {
-      background: radial-gradient(circle at top left, #111827, #030712);
-    }
-    .cosmic-dark-preview::before {
-      content: '';
-      position: absolute;
-      bottom: 8px; right: 8px;
-      width: 24px; height: 12px;
-      border-radius: 4px;
-      background: linear-gradient(145deg, #1f2937, #111827);
-    }
-
-    .cosmic-light-preview {
-      background: radial-gradient(circle at top left, #f5f3ff, #e0e7ff, #e8eaf6);
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-    .cosmic-light-preview::before {
-      content: '';
-      position: absolute;
-      bottom: 8px; right: 8px;
-      width: 24px; height: 12px;
-      border-radius: 4px;
-      background: linear-gradient(145deg, #ffffff, #f1f5f9);
-    }
-
-    .bootstrap-dark-preview {
-      background: #212529;
-    }
-    .bootstrap-dark-preview::before {
-      content: '';
-      position: absolute;
-      bottom: 8px; right: 8px;
-      width: 24px; height: 12px;
-      border-radius: 4px;
-      background: #343a40;
-    }
-
-    .bootstrap-light-preview {
-      background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-    .bootstrap-light-preview::before {
-      content: '';
-      position: absolute;
-      bottom: 8px; right: 8px;
-      width: 24px; height: 12px;
-      border-radius: 4px;
-      background: #f8f9fa;
-    }
-
-    /* Modal styling */
-    .modal-content {
-      background: var(--modal-bg) !important;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--modal-border) !important;
-      border-radius: 20px !important;
-      color: var(--modal-text) !important;
-    }
-
-    /* Printable & Print View Mode Formatting Rules */
-    @page {
-      size: letter portrait;
-      margin: 0.25in;
-    }
-
-    body.is-print-mode {
-      background: #ffffff !important;
-      color: #000000 !important;
-      font-size: 7.5pt !important;
-      padding-bottom: 0 !important;
-      min-height: auto !important;
-    }
-
-    /* Print Footer - Hidden by default on screen (desktop & mobile) */
-    .print-footer {
-      display: none !important;
-    }
-
-    body.is-print-mode .no-print,
-    body.is-print-mode .action-bar,
-    body.is-print-mode .app-header,
-    body.is-print-mode .btn-remove-row,
-    body.is-print-mode .btn-add-row,
-    body.is-print-mode .collapse-icon,
-    @media print .no-print,
-    @media print .action-bar,
-    @media print .app-header,
-    @media print .btn-remove-row,
-    @media print .btn-add-row,
-    @media print .collapse-icon {
-      display: none !important;
-    }
-
-    body.is-print-mode .sheet-card,
-    @media print .sheet-card {
-      background-color: #ffffff !important;
-      border: 1px solid #555555 !important;
-      box-shadow: none !important;
-      margin-bottom: 0.2rem !important;
-      break-inside: avoid;
-      page-break-inside: avoid;
-      border-radius: 4px !important;
-    }
-
-    body.is-print-mode .sheet-card.h-100,
-    @media print .sheet-card.h-100 {
-      height: auto !important;
-    }
-
-    body.is-print-mode .collapse,
-    @media print .collapse {
-      display: block !important;
-      visibility: visible !important;
-      height: auto !important;
-    }
-
-    body.is-print-mode .card-header-custom,
-    @media print .card-header-custom {
-      background-color: #e5e7eb !important;
-      color: #000000 !important;
-      border-bottom: 1px solid #555555 !important;
-      font-weight: bold !important;
-      border-radius: 0 !important;
-      padding: 0.15rem 0.35rem !important;
-      font-size: 7.5pt !important;
-      line-height: 1.2 !important;
-    }
-
-    body.is-print-mode .card-header-custom small,
-    body.is-print-mode .card-header-custom .text-muted,
-    @media print .card-header-custom small,
-    @media print .card-header-custom .text-muted {
-      color: #444444 !important;
-      font-size: 6.5pt !important;
-      font-weight: normal !important;
-    }
-
-    body.is-print-mode .card-body,
-    @media print .card-body {
-      padding: 0.2rem 0.35rem !important;
-    }
-
-    body.is-print-mode .form-label,
-    @media print .form-label {
-      font-size: 6.5pt !important;
-      margin-bottom: 1px !important;
-      line-height: 1 !important;
-      color: #000000 !important;
-      font-weight: 700 !important;
-    }
-
-    body.is-print-mode .form-control,
-    body.is-print-mode .form-select,
-    @media print .form-control,
-    @media print .form-select {
-      background-color: transparent !important;
-      border: none !important;
-      border-bottom: 1px solid #444444 !important;
-      border-radius: 0 !important;
-      color: #000000 !important;
-      padding: 0 2px !important;
-      font-weight: 600 !important;
-      font-size: 7.2pt !important;
-      height: 16px !important;
-      min-height: 16px !important;
-      line-height: 16px !important;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      box-shadow: none !important;
-    }
-
-    body.is-print-mode .form-control::placeholder,
-    @media print .form-control::placeholder {
-      color: transparent !important;
-    }
-
-    /* Identity card print styles */
-    body.is-print-mode #collapseIdentity .card-body,
-    @media print #collapseIdentity .card-body {
-      padding: 2px 6px !important;
-    }
-    body.is-print-mode #collapseIdentity .row,
-    @media print #collapseIdentity .row {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      --bs-gutter-x: 0.3rem !important;
-      --bs-gutter-y: 0.05rem !important;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-    }
-    body.is-print-mode #collapseIdentity [class*="col-"],
-    @media print #collapseIdentity [class*="col-"] {
-      display: flex !important;
-      align-items: center !important;
-      gap: 3px !important;
-      padding-top: 1px !important;
-      padding-bottom: 1px !important;
-    }
-    body.is-print-mode #collapseIdentity .col-12.col-lg-3,
-    body.is-print-mode #collapseIdentity .col-lg-3,
-    @media print #collapseIdentity .col-12.col-lg-3,
-    @media print #collapseIdentity .col-lg-3 {
-      flex: 0 0 25% !important;
-      max-width: 25% !important;
-      width: 25% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-12.col-lg-2,
-    body.is-print-mode #collapseIdentity .col-lg-2,
-    @media print #collapseIdentity .col-12.col-lg-2,
-    @media print #collapseIdentity .col-lg-2 {
-      flex: 0 0 16.66666667% !important;
-      max-width: 16.66666667% !important;
-      width: 16.66666667% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-12.col-md-3,
-    body.is-print-mode #collapseIdentity .col-md-3,
-    @media print #collapseIdentity .col-12.col-md-3,
-    @media print #collapseIdentity .col-md-3 {
-      flex: 0 0 25% !important;
-      max-width: 25% !important;
-      width: 25% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-6.col-md-1,
-    body.is-print-mode #collapseIdentity .col-md-1,
-    @media print #collapseIdentity .col-6.col-md-1,
-    @media print #collapseIdentity .col-md-1 {
-      flex: 0 0 8.33333333% !important;
-      max-width: 8.33333333% !important;
-      width: 8.33333333% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-6.col-md-2,
-    body.is-print-mode #collapseIdentity .col-md-2,
-    @media print #collapseIdentity .col-6.col-md-2,
-    @media print #collapseIdentity .col-md-2 {
-      flex: 0 0 16.66666667% !important;
-      max-width: 16.66666667% !important;
-      width: 16.66666667% !important;
-    }
-    body.is-print-mode #collapseIdentity .form-label,
-    @media print #collapseIdentity .form-label {
-      font-size: 5.8pt !important;
-      margin-bottom: 0 !important;
-      line-height: 1 !important;
-      white-space: nowrap !important;
-      flex-shrink: 0 !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode #collapseIdentity .form-control,
-    body.is-print-mode #collapseIdentity .form-select,
-    @media print #collapseIdentity .form-control,
-    @media print #collapseIdentity .form-select {
-      height: 13px !important;
-      font-size: 6.5pt !important;
-      padding: 0 2px !important;
-      border: none !important;
-      border-bottom: 1px solid #444444 !important;
-      border-radius: 0 !important;
-      flex: 1 1 auto !important;
-      min-width: 0 !important;
-    }
-
-    body.is-print-mode .input-group-text,
-    @media print .input-group-text {
-      background-color: transparent !important;
-      border: none !important;
-      color: #000000 !important;
-      font-weight: bold;
-      font-size: 7pt !important;
-    }
-    body.is-print-mode .stat-box,
-    @media print .stat-box {
-      background-color: #f9fafb !important;
-      border: 1px solid #888888 !important;
-      padding: 0.1rem !important;
-    }
-    body.is-print-mode .stat-label,
-    @media print .stat-label {
-      font-size: 6pt !important;
-      color: #000000 !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode .stat-val,
-    @media print .stat-val {
-      color: #000000 !important;
-      font-size: 8.5pt !important;
-    }
-
-    body.is-print-mode .ac-square-box,
-    @media print .ac-square-box {
-      border: 1.5px solid #000000 !important;
-      background: #ffffff !important;
-      padding: 2px 3px !important;
-    }
-    body.is-print-mode .ac-square-input,
-    @media print .ac-square-input {
-      border: 1px solid #000000 !important;
-      background: #ffffff !important;
-      color: #000000 !important;
-      height: 22px !important;
-      font-size: 8.5pt !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode .ac-box-label,
-    @media print .ac-box-label {
-      color: #000000 !important;
-      font-size: 5.5pt !important;
-      margin-bottom: 1px !important;
-    }
-    body.is-print-mode .ac-comp-input,
-    @media print .ac-comp-input {
-      border: 1px solid #000000 !important;
-      background: #ffffff !important;
-      height: 15px !important;
-      font-size: 7pt !important;
-      width: 32px !important;
-      max-width: 36px !important;
-    }
-    body.is-print-mode .ability-stat-input,
-    body.is-print-mode .hp-stat-input,
-    @media print .ability-stat-input,
-    @media print .hp-stat-input {
-      height: 15px !important;
-      font-size: 7.2pt !important;
-      padding: 0 1px !important;
-      margin: 1px auto !important;
-    }
-    body.is-print-mode .dr-square-box,
-    @media print .dr-square-box {
-      background: #ffffff !important;
-      border: 1px solid #000000 !important;
-      padding: 2px 1px !important;
-    }
-    body.is-print-mode .dr-box-label,
-    @media print .dr-box-label {
-      font-size: 5.5pt !important;
-      color: #000000 !important;
-      margin-bottom: 1px !important;
-    }
-
-    body.is-print-mode .table-custom th,
-    @media print .table-custom th {
-      background-color: #e5e7eb !important;
-      color: #000000 !important;
-      border-bottom: 1px solid #000000 !important;
-      padding: 1px 2px !important;
-      font-size: 6.8pt !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode .table-custom td,
-    @media print .table-custom td {
-      border-color: #cccccc !important;
-      color: #000000 !important;
-      padding: 1px 2px !important;
-      font-size: 6.8pt !important;
-      line-height: 1.1 !important;
-    }
-
-    body.is-print-mode #skillsTable th,
-    body.is-print-mode #skillsTable td,
-    @media print #skillsTable th,
-    @media print #skillsTable td {
-      padding: 0.05rem 0.15rem !important;
-      font-size: 6.8pt !important;
-    }
-    body.is-print-mode #skillsTable .form-control-sm,
-    @media print #skillsTable .form-control-sm {
-      padding: 0 1px !important;
-      font-size: 6.5pt !important;
-      height: 13px !important;
-    }
-
-    body.is-print-mode .badge-natural,
-    body.is-print-mode .badge-unnatural,
-    body.is-print-mode .badge-rank-dep,
-    @media print .badge-natural,
-    @media print .badge-unnatural,
-    @media print .badge-rank-dep {
-      font-size: 0 !important;
-      padding: 0.1em 0.35em !important;
-      border: 1px solid #000000 !important;
-      color: #000000 !important;
-      background: transparent !important;
-      display: inline-block !important;
-      line-height: 1 !important;
-      vertical-align: middle !important;
-    }
-    body.is-print-mode .badge-natural::after,
-    @media print .badge-natural::after {
-      content: "N" !important;
-      font-size: 6.5pt !important;
-      font-weight: bold !important;
-      color: #000000 !important;
-    }
-    body.is-print-mode .badge-unnatural::after,
-    @media print .badge-unnatural::after {
-      content: "U" !important;
-      font-size: 6.5pt !important;
-      font-weight: bold !important;
-      color: #000000 !important;
-    }
-    body.is-print-mode .badge-rank-dep::after,
-    @media print .badge-rank-dep::after {
-      content: "R" !important;
-      font-size: 6.5pt !important;
-      font-weight: bold !important;
-      color: #000000 !important;
-    }
-    body.is-print-mode input[type="checkbox"],
-    body.is-print-mode .form-check-input,
-    @media print input[type="checkbox"],
-    @media print .form-check-input {
-      background-color: #ffffff !important;
-      background-image: none !important;
-      border: 1px solid #000000 !important;
-      appearance: none !important;
-      -webkit-appearance: none !important;
-      -moz-appearance: none !important;
-      box-shadow: none !important;
-      width: 10px !important;
-      height: 10px !important;
-      vertical-align: middle !important;
-    }
-    body.is-print-mode input[type="checkbox"]:checked,
-    body.is-print-mode .form-check-input:checked,
-    @media print input[type="checkbox"]:checked,
-    @media print .form-check-input:checked {
-      background-color: #000000 !important;
-      border-color: #000000 !important;
-      color: #ffffff !important;
-    }
-    body.is-print-mode .prof-check-item .form-check-input:checked + .prof-num-label,
-    @media print .prof-check-item .form-check-input:checked + .prof-num-label {
-      color: #000000 !important;
-      font-weight: normal !important;
-    }
-    body.is-print-mode .print-footer {
-      display: block !important;
-      text-align: center;
-      font-size: 7.5pt;
-      color: #555;
-      margin-top: 4px;
-      border-top: 1px solid #ccc;
-      padding-top: 2px;
-    }
-
-    body.is-print-mode .row,
-    @media print .row {
-      display: flex !important;
-      flex-wrap: wrap !important;
-    }
-    body.is-print-mode .col-card-abilities,
-    @media print .col-card-abilities {
-      flex: 0 0 44% !important;
-      max-width: 44% !important;
-      width: 44% !important;
-    }
-    body.is-print-mode .col-card-health,
-    @media print .col-card-health {
-      flex: 0 0 25% !important;
-      max-width: 25% !important;
-      width: 25% !important;
-    }
-    body.is-print-mode .col-card-attributes,
-    @media print .col-card-attributes {
-      flex: 0 0 31% !important;
-      max-width: 31% !important;
-      width: 31% !important;
-    }
-    body.is-print-mode .col-skills-side,
-    @media print .col-skills-side {
-      width: 45% !important;
-      flex: 0 0 45% !important;
-      max-width: 45% !important;
-      order: 1 !important;
-    }
-    body.is-print-mode .col-armor-side,
-    @media print .col-armor-side {
-      width: 55% !important;
-      flex: 0 0 55% !important;
-      max-width: 55% !important;
-      order: 2 !important;
-    }
-    body.is-print-mode .col-12.col-lg-7,
-    body.is-print-mode .col-lg-7,
-    @media print .col-12.col-lg-7,
-    @media print .col-lg-7 {
-      flex: 0 0 58% !important;
-      max-width: 58% !important;
-      width: 58% !important;
-    }
-    body.is-print-mode .col-12.col-lg-5,
-    body.is-print-mode .col-lg-5,
-    @media print .col-12.col-lg-5,
-    @media print .col-lg-5 {
-      flex: 0 0 42% !important;
-      max-width: 42% !important;
-      width: 42% !important;
-    }
-    body.is-print-mode .col-12.col-lg-6,
-    body.is-print-mode .col-lg-6,
-    @media print .col-12.col-lg-6,
-    @media print .col-lg-6 {
-      flex: 0 0 50% !important;
-      max-width: 50% !important;
-      width: 50% !important;
-    }
-
-    @media print {
-      @page {
-        size: letter portrait;
-        margin: 0.25in;
-      }
-      body {
-        background: #ffffff !important;
-        color: #000000 !important;
-        font-size: 7.5pt !important;
-        padding-bottom: 0 !important;
-        min-height: auto !important;
-      }
-
-      .no-print, .action-bar, .app-header, .btn-remove-row, .btn-add-row, .collapse-icon {
-        display: none !important;
-      }
-
-      .sheet-card {
-        background-color: #ffffff !important;
-        border: 1px solid #555555 !important;
-        box-shadow: none !important;
-        margin-bottom: 0.2rem !important;
-        margin-top: 0 !important;
-        break-inside: avoid;
-        page-break-inside: avoid;
-        border-radius: 4px !important;
-      }
-
-      .sheet-card.h-100 {
-        height: auto !important;
-      }
-
-      .collapse {
-        display: block !important;
-        visibility: visible !important;
-        height: auto !important;
-      }
-
-      .card-header-custom {
-        background-color: #e5e7eb !important;
-        color: #000000 !important;
-        border-bottom: 1px solid #555555 !important;
-        font-weight: bold !important;
-        border-radius: 0 !important;
-        padding: 0.15rem 0.35rem !important;
-        font-size: 7.5pt !important;
-        line-height: 1.2 !important;
-      }
-
-      .card-header-custom small,
-      .card-header-custom .text-muted {
-        color: #444444 !important;
-        font-size: 6.5pt !important;
-        font-weight: normal !important;
-      }
-
-      .print-footer {
-        display: block !important;
-        text-align: center;
-        font-size: 7.5pt;
-        color: #555;
-        margin-top: 4px;
-        border-top: 1px solid #ccc;
-        padding-top: 2px;
-      }
-    }
-
-    body.is-print-mode .card-body {
-      padding: 0.2rem 0.35rem !important;
-    }
-
-    body.is-print-mode .form-label {
-      font-size: 6.5pt !important;
-      margin-bottom: 1px !important;
-      line-height: 1 !important;
-      color: #000000 !important;
-      font-weight: 700 !important;
-    }
-
-    body.is-print-mode .form-control,
-    body.is-print-mode .form-select {
-      background-color: transparent !important;
-      border: none !important;
-      border-bottom: 1px solid #444444 !important;
-      border-radius: 0 !important;
-      color: #000000 !important;
-      padding: 0 2px !important;
-      font-weight: 600 !important;
-      font-size: 7.2pt !important;
-      height: 16px !important;
-      min-height: 16px !important;
-      line-height: 16px !important;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      box-shadow: none !important;
-    }
-
-    body.is-print-mode .form-control::placeholder {
-      color: transparent !important;
-    }
-
-    /* Ultra-Compact Inline & Multi-Column Character Identity Card in Print Mode */
-    body.is-print-mode #collapseIdentity .card-body {
-      padding: 2px 6px !important;
-    }
-    body.is-print-mode #collapseIdentity .row {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      --bs-gutter-x: 0.3rem !important;
-      --bs-gutter-y: 0.05rem !important;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-    }
-    body.is-print-mode #collapseIdentity [class*="col-"] {
-      display: flex !important;
-      align-items: center !important;
-      gap: 3px !important;
-      padding-top: 1px !important;
-      padding-bottom: 1px !important;
-    }
-    body.is-print-mode #collapseIdentity .col-12.col-lg-3,
-    body.is-print-mode #collapseIdentity .col-lg-3 {
-      flex: 0 0 25% !important;
-      max-width: 25% !important;
-      width: 25% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-12.col-lg-2,
-    body.is-print-mode #collapseIdentity .col-lg-2 {
-      flex: 0 0 16.66666667% !important;
-      max-width: 16.66666667% !important;
-      width: 16.66666667% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-12.col-md-3,
-    body.is-print-mode #collapseIdentity .col-md-3 {
-      flex: 0 0 25% !important;
-      max-width: 25% !important;
-      width: 25% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-6.col-md-1,
-    body.is-print-mode #collapseIdentity .col-md-1 {
-      flex: 0 0 8.33333333% !important;
-      max-width: 8.33333333% !important;
-      width: 8.33333333% !important;
-    }
-    body.is-print-mode #collapseIdentity .col-6.col-md-2,
-    body.is-print-mode #collapseIdentity .col-md-2 {
-      flex: 0 0 16.66666667% !important;
-      max-width: 16.66666667% !important;
-      width: 16.66666667% !important;
-    }
-    body.is-print-mode #collapseIdentity .form-label {
-      font-size: 5.8pt !important;
-      margin-bottom: 0 !important;
-      line-height: 1 !important;
-      white-space: nowrap !important;
-      flex-shrink: 0 !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode #collapseIdentity .form-control,
-    body.is-print-mode #collapseIdentity .form-select {
-      height: 13px !important;
-      font-size: 6.5pt !important;
-      padding: 0 2px !important;
-      border: none !important;
-      border-bottom: 1px solid #444444 !important;
-      border-radius: 0 !important;
-      flex: 1 1 auto !important;
-      min-width: 0 !important;
-    }
-
-    body.is-print-mode .input-group-text {
-      background-color: transparent !important;
-      border: none !important;
-      color: #000000 !important;
-      font-weight: bold;
-      font-size: 7pt !important;
-    }
-    body.is-print-mode .stat-box {
-      background-color: #f9fafb !important;
-      border: 1px solid #888888 !important;
-      padding: 0.1rem !important;
-    }
-    body.is-print-mode .stat-label {
-      font-size: 6pt !important;
-      color: #000000 !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode .stat-val {
-      color: #000000 !important;
-      font-size: 8.5pt !important;
-    }
-
-    body.is-print-mode .ac-square-box {
-      border: 1.5px solid #000000 !important;
-      background: #ffffff !important;
-      padding: 2px 3px !important;
-    }
-    body.is-print-mode .ac-square-input {
-      border: 1px solid #000000 !important;
-      background: #ffffff !important;
-      color: #000000 !important;
-      height: 22px !important;
-      font-size: 8.5pt !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode .ac-box-label {
-      color: #000000 !important;
-      font-size: 5.5pt !important;
-      margin-bottom: 1px !important;
-    }
-    body.is-print-mode .ac-comp-input {
-      border: 1px solid #000000 !important;
-      background: #ffffff !important;
-      height: 15px !important;
-      font-size: 7pt !important;
-      width: 32px !important;
-      max-width: 36px !important;
-    }
-    body.is-print-mode .ability-stat-input,
-    body.is-print-mode .hp-stat-input {
-      height: 15px !important;
-      font-size: 7.2pt !important;
-      padding: 0 1px !important;
-      margin: 1px auto !important;
-    }
-    body.is-print-mode .dr-square-box {
-      background: #ffffff !important;
-      border: 1px solid #000000 !important;
-      padding: 2px 1px !important;
-    }
-    body.is-print-mode .dr-box-label {
-      font-size: 5.5pt !important;
-      color: #000000 !important;
-      margin-bottom: 1px !important;
-    }
-
-    body.is-print-mode .table-custom th {
-      background-color: #e5e7eb !important;
-      color: #000000 !important;
-      border-bottom: 1px solid #000000 !important;
-      padding: 1px 2px !important;
-      font-size: 6.8pt !important;
-      font-weight: bold !important;
-    }
-    body.is-print-mode .table-custom td {
-      border-color: #cccccc !important;
-      color: #000000 !important;
-      padding: 1px 2px !important;
-      font-size: 6.8pt !important;
-      line-height: 1.1 !important;
-    }
-
-    body.is-print-mode #skillsTable th,
-    body.is-print-mode #skillsTable td {
-      padding: 0.05rem 0.15rem !important;
-      font-size: 6.8pt !important;
-    }
-    body.is-print-mode #skillsTable .form-control-sm {
-      padding: 0 1px !important;
-      font-size: 6.5pt !important;
-      height: 13px !important;
-    }
-
-    body.is-print-mode .badge-natural,
-    body.is-print-mode .badge-unnatural,
-    body.is-print-mode .badge-rank-dep {
-      font-size: 0 !important;
-      padding: 0.1em 0.35em !important;
-      border: 1px solid #000000 !important;
-      color: #000000 !important;
-      background: transparent !important;
-      display: inline-block !important;
-      line-height: 1 !important;
-      vertical-align: middle !important;
-    }
-    body.is-print-mode .badge-natural::after {
-      content: "N" !important;
-      font-size: 6.5pt !important;
-      font-weight: bold !important;
-      color: #000000 !important;
-    }
-    body.is-print-mode .badge-unnatural::after {
-      content: "U" !important;
-      font-size: 6.5pt !important;
-      font-weight: bold !important;
-      color: #000000 !important;
-    }
-    body.is-print-mode .badge-rank-dep::after {
-      content: "R" !important;
-      font-size: 6.5pt !important;
-      font-weight: bold !important;
-      color: #000000 !important;
-    }
-    body.is-print-mode input[type="checkbox"],
-    body.is-print-mode .form-check-input {
-      background-color: #ffffff !important;
-      background-image: none !important;
-      border: 1px solid #000000 !important;
-      appearance: none !important;
-      -webkit-appearance: none !important;
-      -moz-appearance: none !important;
-      box-shadow: none !important;
-      width: 10px !important;
-      height: 10px !important;
-      vertical-align: middle !important;
-    }
-    body.is-print-mode input[type="checkbox"]:checked,
-    body.is-print-mode .form-check-input:checked {
-      background-color: #000000 !important;
-      border-color: #000000 !important;
-      color: #ffffff !important;
-    }
-    body.is-print-mode .prof-check-item .form-check-input:checked + .prof-num-label {
-      color: #000000 !important;
-      font-weight: normal !important;
-    }
-    body.is-print-mode .print-footer {
-      display: block !important;
-      text-align: center;
-      font-size: 7.5pt;
-      color: #555;
-      margin-top: 4px;
-      border-top: 1px solid #ccc;
-      padding-top: 2px;
-    }
-
-    /* Force Multi-Column Grid Layout in Print Mode */
-    body.is-print-mode .row {
-      display: flex !important;
-      flex-wrap: wrap !important;
-    }
-    body.is-print-mode .col-card-abilities {
-      flex: 0 0 44% !important;
-      max-width: 44% !important;
-      width: 44% !important;
-    }
-    body.is-print-mode .col-card-health {
-      flex: 0 0 25% !important;
-      max-width: 25% !important;
-      width: 25% !important;
-    }
-    body.is-print-mode .col-card-attributes {
-      flex: 0 0 31% !important;
-      max-width: 31% !important;
-      width: 31% !important;
-    }
-    body.is-print-mode .col-skills-side {
-      width: 45% !important;
-      flex: 0 0 45% !important;
-      max-width: 45% !important;
-      order: 1 !important;
-    }
-    body.is-print-mode .col-armor-side {
-      width: 55% !important;
-      flex: 0 0 55% !important;
-      max-width: 55% !important;
-      order: 2 !important;
-    }
-    body.is-print-mode .col-12.col-lg-7,
-    body.is-print-mode .col-lg-7 {
-      flex: 0 0 58% !important;
-      max-width: 58% !important;
-      width: 58% !important;
-    }
-    body.is-print-mode .col-12.col-lg-5,
-    body.is-print-mode .col-lg-5 {
-      flex: 0 0 42% !important;
-      max-width: 42% !important;
-      width: 42% !important;
-    }
-    body.is-print-mode .col-12.col-lg-6,
-    body.is-print-mode .col-lg-6 {
-      flex: 0 0 50% !important;
-      max-width: 50% !important;
-    }
-  </style>
+  <!-- External FuturePath Static Stylesheets -->
+  <link rel="stylesheet" href="/v1/static/css/themes.css">
+  <link rel="stylesheet" href="/v1/static/css/character_sheet.css">
 </head>
 <body class="theme-cosmic-dark layout-locked">
 
@@ -1807,9 +195,16 @@
                 <label class="form-label small text-uppercase text-muted fw-bold">Alignment / Faction</label>
                 <input type="text" class="form-control" name="alignment">
               </div>
-              <div class="col-6 col-sm-3 col-md-1">
-                <label class="form-label small text-uppercase text-muted fw-bold">Size</label>
-                <input type="text" class="form-control" name="charSize">
+              <div class="col-6 col-sm-4 col-md-2 col-lg-1">
+                <label class="form-label small text-uppercase text-muted fw-bold" for="charSize">Size</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="charSize" id="charSize" list="sizesDatalist" placeholder="Medium" oninput="calculateStats()" onchange="calculateStats()">
+                  <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" id="sizesDropdownBtn" onclick="toggleDatalist('charSize')" title="Show Size Suggestions">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </div>
+                <datalist id="sizesDatalist">
+                </datalist>
               </div>
               <div class="col-6 col-sm-3 col-md-1">
                 <label class="form-label small text-uppercase text-muted fw-bold">Gender</label>
@@ -1859,6 +254,7 @@
                       <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
                         <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_STR" id="primaryAbility_STR">
                         <label class="stat-label fw-bold fs-6 text-ability-str mb-0" for="primaryAbility_STR" style="cursor: pointer;">STR</label>
+                        <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" style="cursor: pointer;" onclick="rollAbilityCheck('STR')" title="Roll STR Check"></i>
                       </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreSTR" id="scoreSTR" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
@@ -1872,6 +268,7 @@
                       <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
                         <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_DEX" id="primaryAbility_DEX">
                         <label class="stat-label fw-bold fs-6 text-ability-dex mb-0" for="primaryAbility_DEX" style="cursor: pointer;">DEX</label>
+                        <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" style="cursor: pointer;" onclick="rollAbilityCheck('DEX')" title="Roll DEX Check"></i>
                       </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreDEX" id="scoreDEX" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
@@ -1885,6 +282,7 @@
                       <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
                         <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_CON" id="primaryAbility_CON">
                         <label class="stat-label fw-bold fs-6 text-ability-con mb-0" for="primaryAbility_CON" style="cursor: pointer;">CON</label>
+                        <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" style="cursor: pointer;" onclick="rollAbilityCheck('CON')" title="Roll CON Check"></i>
                       </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreCON" id="scoreCON" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
@@ -1898,6 +296,7 @@
                       <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
                         <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_INT" id="primaryAbility_INT">
                         <label class="stat-label fw-bold fs-6 text-ability-int mb-0" for="primaryAbility_INT" style="cursor: pointer;">INT</label>
+                        <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" style="cursor: pointer;" onclick="rollAbilityCheck('INT')" title="Roll INT Check"></i>
                       </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreINT" id="scoreINT" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
@@ -1911,6 +310,7 @@
                       <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
                         <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_WIS" id="primaryAbility_WIS">
                         <label class="stat-label fw-bold fs-6 text-ability-wis mb-0" for="primaryAbility_WIS" style="cursor: pointer;">WIS</label>
+                        <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" style="cursor: pointer;" onclick="rollAbilityCheck('WIS')" title="Roll WIS Check"></i>
                       </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreWIS" id="scoreWIS" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
@@ -1924,6 +324,7 @@
                       <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
                         <input class="form-check-input mt-0" type="checkbox" name="primaryAbility_CHA" id="primaryAbility_CHA">
                         <label class="stat-label fw-bold fs-6 text-ability-cha mb-0" for="primaryAbility_CHA" style="cursor: pointer;">CHA</label>
+                        <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" style="cursor: pointer;" onclick="rollAbilityCheck('CHA')" title="Roll CHA Check"></i>
                       </div>
                       <input type="text" inputmode="numeric" class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" name="scoreCHA" id="scoreCHA" oninput="calculateStats()">
                       <div class="stat-label">MOD</div>
@@ -2102,6 +503,7 @@
                       <tr>
                         <th style="width: 25px;" class="text-center px-1" title="Favored Skill">F</th>
                         <th class="px-1">Skill Name</th>
+                        <th style="width: 25px;" class="text-center px-1 no-print"></th>
                         <th style="width: 110px;" class="text-center px-1">Rank = Skill Die</th>
                         <th style="width: 10px;" class="text-center text-cyan px-0">+</th>
                         <th style="width: 80px;" class="text-center px-1">Key Ability</th>
@@ -2115,6 +517,9 @@
                       <tr data-skill="acrobatics" data-ability="DEX" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_acrobatics"></td>
                         <td>Acrobatics <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_acrobatics" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2137,6 +542,9 @@
                       <tr data-skill="athletics" data-ability="STR" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_athletics"></td>
                         <td>Athletics <span class="badge badge-natural ms-2">Natural</span><span class="badge badge-rank-dep ms-1">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_athletics" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2159,6 +567,9 @@
                       <tr data-skill="bluff" data-ability="CHA" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_bluff"></td>
                         <td>Bluff <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_bluff" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2181,6 +592,9 @@
                       <tr data-skill="computer_use" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_computer_use"></td>
                         <td>Computer Use <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_computer_use" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2203,6 +617,9 @@
                       <tr data-skill="craft_chemical" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_chemical"></td>
                         <td>Craft (Chemical) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_chemical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2225,6 +642,9 @@
                       <tr data-skill="craft_electronic" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_electronic"></td>
                         <td>Craft (Electronic) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_electronic" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2247,6 +667,9 @@
                       <tr data-skill="craft_mechanical" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_mechanical"></td>
                         <td>Craft (Mechanical) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_mechanical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2269,6 +692,9 @@
                       <tr data-skill="craft_pharmaceutical" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_pharmaceutical"></td>
                         <td>Craft (Pharmaceutical) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_pharmaceutical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2291,6 +717,9 @@
                       <tr data-skill="craft_structural" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_craft_structural"></td>
                         <td>Craft (Structural) <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_craft_structural" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2313,6 +742,9 @@
                       <tr data-skill="diplomacy" data-ability="CHA" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_diplomacy"></td>
                         <td>Diplomacy <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_diplomacy" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2335,6 +767,9 @@
                       <tr data-skill="disable_device" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_disable_device"></td>
                         <td>Disable Device <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_disable_device" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2357,6 +792,9 @@
                       <tr data-skill="disguise" data-ability="CHA" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_disguise"></td>
                         <td>Disguise <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_disguise" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2379,6 +817,9 @@
                       <tr data-skill="intimidate" data-ability="CHA" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_intimidate"></td>
                         <td>Intimidate <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_intimidate" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2401,6 +842,9 @@
                       <tr data-skill="knowledge_culture" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_culture"></td>
                         <td>Knowledge (Culture) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_culture" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2423,6 +867,9 @@
                       <tr data-skill="knowledge_current_events" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_current_events"></td>
                         <td>Knowledge (Current Events) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_current_events" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2445,6 +892,9 @@
                       <tr data-skill="knowledge_history" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_history"></td>
                         <td>Knowledge (History) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_history" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2467,6 +917,9 @@
                       <tr data-skill="knowledge_science" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_science"></td>
                         <td>Knowledge (Science) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_science" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2489,6 +942,9 @@
                       <tr data-skill="knowledge_philosophy" data-ability="INT" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_knowledge_philosophy"></td>
                         <td>Knowledge (Philosophy) <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_knowledge_philosophy" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2511,6 +967,9 @@
                       <tr data-skill="medical" data-ability="WIS" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_medical"></td>
                         <td>Medical <span class="badge badge-rank-dep ms-2">Rank Dep.</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_medical" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2533,6 +992,9 @@
                       <tr data-skill="perception" data-ability="WIS" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_perception"></td>
                         <td>Perception <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_perception" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2555,6 +1017,9 @@
                       <tr data-skill="pilot" data-ability="DEX" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_pilot"></td>
                         <td>Pilot <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_pilot" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2577,6 +1042,9 @@
                       <tr data-skill="sense_motive" data-ability="WIS" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_sense_motive"></td>
                         <td>Sense Motive <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_sense_motive" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2599,6 +1067,9 @@
                       <tr data-skill="sleight_of_hand" data-ability="DEX" data-natural="false">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_sleight_of_hand"></td>
                         <td>Sleight of Hand <span class="badge badge-unnatural ms-2">Unnatural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_sleight_of_hand" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2621,6 +1092,9 @@
                       <tr data-skill="stealth" data-ability="DEX" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_stealth"></td>
                         <td>Stealth <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_stealth" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2643,6 +1117,9 @@
                       <tr data-skill="study" data-ability="INT" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_study"></td>
                         <td>Study <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_study" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -2665,6 +1142,9 @@
                       <tr data-skill="survival" data-ability="WIS" data-natural="true">
                         <td class="text-center"><input class="form-check-input" type="checkbox" name="skillFavored_survival"></td>
                         <td>Survival <span class="badge badge-natural ms-2">Natural</span></td>
+                        <td class="text-center no-print">
+                          <i class="fa-solid fa-dice text-cyan roll-skill-btn" style="cursor: pointer;" onclick="rollSkillCheck(this)" title="Roll Skill Check"></i>
+                        </td>
                         <td>
                           <div class="d-inline-flex align-items-center gap-1 justify-content-center">
                             <input type="text" inputmode="numeric" class="form-control form-control-sm skill-rank text-center" name="skillRank_survival" placeholder="0" style="width: 42px;" oninput="calculateStats()">
@@ -4277,7 +2757,8 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="row g-3">
+          <h6 class="text-uppercase text-cyan fw-bold mb-2 small"><i class="fa-solid fa-sliders me-1"></i>Core Themes</h6>
+          <div class="row g-3 mb-3">
             <div class="col-6">
               <div class="theme-card p-3 text-center active" id="theme-cosmic-dark" onclick="setTheme('cosmic-dark')">
                 <div class="theme-preview cosmic-dark-preview mb-2"></div>
@@ -4302,6 +2783,58 @@
                 <div class="fw-bold small">Bootstrap Light</div>
               </div>
             </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-industrial" onclick="setTheme('industrial')">
+                <div class="theme-preview industrial-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-industry me-1 text-warning"></i>Industrial</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Megacity & Hazard Flare</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-aegis" onclick="setTheme('aegis')">
+                <div class="theme-preview aegis-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-shield-halved me-1" style="color: #818cf8;"></i>Aegis</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Fleet Void & Cobalt Command</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-tattoo" onclick="setTheme('tattoo')">
+                <div class="theme-preview tattoo-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-compass-drafting me-1" style="color: #ff2a85;"></i>Tattoo</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Ornate Dye & Magenta Ink</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-curvilinea" onclick="setTheme('curvilinea')">
+                <div class="theme-preview curvilinea-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-globe me-1 text-danger"></i>Curvilinea</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Red Dwarf Sun & Arid Terra</div>
+              </div>
+            </div>
+          </div>
+          <h6 class="text-uppercase text-cyan fw-bold mt-3 mb-2 small"><i class="fa-solid fa-dna me-1"></i>Species Themes</h6>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-volar" onclick="setTheme('volar')">
+                <div class="theme-preview volar-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-leaf me-1 text-success"></i>Volar</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Emerald & Bio-Flora</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-human-terra" onclick="setTheme('human-terra')">
+                <div class="theme-preview human-terra-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-earth-americas me-1 text-primary"></i>Human Terra</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Stellar Command & Blue Marble</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="theme-card p-3 text-center" id="theme-grayling" onclick="setTheme('grayling')">
+                <div class="theme-preview grayling-preview mb-2"></div>
+                <div class="fw-bold small"><i class="fa-solid fa-brain me-1" style="color: #c084fc;"></i>Grayling</div>
+                <div class="text-muted" style="font-size: 0.68rem;">Sleek Slate & Psionic Violet</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -4318,7 +2851,7 @@
   <script>
     // Theme Management Functions (matching mobileDiceRoller)
     function setTheme(themeName) {
-      const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light'];
+      const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'volar', 'human-terra', 'grayling'];
       if (!themes.includes(themeName)) {
         themeName = 'cosmic-dark';
       }
@@ -4328,6 +2861,7 @@
 
       themes.forEach((t) => body.classList.remove(`theme-${t}`));
       body.classList.add(`theme-${themeName}`);
+      body.setAttribute('data-theme', themeName);
 
       const isLight = themeName.endsWith('-light');
       body.setAttribute('data-bs-theme', isLight ? 'light' : 'dark');
@@ -4344,7 +2878,7 @@
 
     function applyTheme() {
       let savedTheme = localStorage.getItem('theme');
-      const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light'];
+      const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'volar', 'human-terra', 'grayling'];
       if (!savedTheme || !themes.includes(savedTheme)) {
         savedTheme = 'cosmic-dark';
       }
@@ -4389,6 +2923,39 @@
       }
     }
 
+    function getSizeModifier(sizeText) {
+      if (!sizeText) return 0;
+      const s = sizeText.trim().toLowerCase();
+      switch (s) {
+        case 'fine': return 4;
+        case 'diminutive': return 3;
+        case 'tiny': return 2;
+        case 'small': return 1;
+        case 'medium': return 0;
+        case 'large': return -1;
+        case 'huge': return -2;
+        case 'gargantuan': return -3;
+        case 'colossal': return -4;
+        default:
+          const parsed = parseInt(sizeText, 10);
+          return isNaN(parsed) ? 0 : parsed;
+      }
+    }
+
+    function syncSizeToAc() {
+      const charSizeInput = document.getElementById('charSize');
+      const acSizeInput = document.getElementById('acSizeMod');
+      if (!charSizeInput || !acSizeInput) return;
+
+      const charSizeVal = charSizeInput.value.trim();
+      if (charSizeVal === '') {
+        acSizeInput.value = '';
+        return;
+      }
+      const mod = getSizeModifier(charSizeVal);
+      acSizeInput.value = formatModStr(mod);
+    }
+
     // Live calculation of Modifiers & Skills
     function calculateStats() {
       const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
@@ -4410,6 +2977,8 @@
 
       // Sync DEX Mod to AC if not manually overridden
       syncDexModToAc();
+      // Sync Size Modifier to AC
+      syncSizeToAc();
 
       // Calculate Armor Class (AC = 10 + Armor + DEX + Size + Natural + Misc)
       const acArmorVal = document.getElementById('acArmorBonus')?.value;
@@ -4554,6 +3123,24 @@
       }
     }
 
+    async function loadSizesDatalist() {
+      const datalist = document.getElementById('sizesDatalist');
+      if (!datalist) return;
+      try {
+        let response = await fetch('/tasks/character_sheet/sizes');
+        if (!response.ok) {
+          response = await fetch('/v1/tasks/character_sheet/sizes');
+        }
+        if (!response.ok) return;
+        const sizes = await response.json();
+        if (Array.isArray(sizes) && sizes.length > 0) {
+          datalist.innerHTML = sizes.map(size => `<option value="${size}">`).join('');
+        }
+      } catch (err) {
+        console.warn('Failed to load sizes from API:', err);
+      }
+    }
+
     async function loadOccupationsDatalist() {
       const datalist = document.getElementById('occupationDatalist');
       const input = document.getElementById('occupationInput');
@@ -4634,6 +3221,161 @@
       } catch (err) {
         console.warn('Failed to load skill die levels from API:', err);
       }
+    }
+
+    async function rollAbilityCheck(abilityKey, event) {
+      const modInput = document.getElementById(`mod${abilityKey}`);
+      const modVal = modInput ? parseInt(modInput.value || '0', 10) : 0;
+      const isPrimaryChecked = document.getElementById(`primaryAbility_${abilityKey}`)?.checked;
+      const advDieSelect = document.getElementById('advantageDie');
+      const advDieVal = advDieSelect ? advDieSelect.value.trim() : '';
+
+      let dString = 'd20';
+      if (isPrimaryChecked && advDieVal) {
+        const formattedAdvDie = advDieVal.startsWith('d') ? `1${advDieVal}` : advDieVal;
+        dString += `+${formattedAdvDie}`;
+      }
+
+      if (!isNaN(modVal) && modVal !== 0) {
+        if (modVal > 0) {
+          dString += `+${modVal}`;
+        } else {
+          dString += `${modVal}`;
+        }
+      }
+
+      const iconEl = window.event ? window.event.currentTarget : null;
+      if (iconEl) iconEl.classList.add('fa-spin');
+
+      try {
+        const response = await fetch(`/v1/tasks/roll/${encodeURIComponent(dString)}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        let total = 0;
+        let breakdown = '';
+        if (data.Rolls && data.Rolls.length > 0) {
+          total = data.Rolls[0].Total;
+          if (data.Rolls[0].Dice) {
+            breakdown = `[Dice: ${data.Rolls[0].Dice.join(', ')}]`;
+          }
+        } else if (typeof data.Total === 'number') {
+          total = data.Total;
+        }
+
+        showRollNotification(`${abilityKey} Check (${dString})`, total, breakdown);
+      } catch (err) {
+        console.error('Error rolling dice:', err);
+        alert(`Failed to roll dice for ${abilityKey}: ${err.message}`);
+      } finally {
+        if (iconEl) iconEl.classList.remove('fa-spin');
+      }
+    }
+
+    async function rollSkillCheck(btnOrIcon) {
+      const row = btnOrIcon.closest('tr');
+      if (!row) return;
+
+      let skillName = 'Skill';
+      const nameCell = row.cells[1] || row.cells[0];
+      if (nameCell) {
+        const inputName = nameCell.querySelector('input[type="text"]');
+        if (inputName && inputName.value.trim()) {
+          skillName = inputName.value.trim();
+        } else {
+          const clone = nameCell.cloneNode(true);
+          clone.querySelectorAll('.badge, .no-print').forEach(el => el.remove());
+          const text = clone.textContent.trim();
+          if (text) skillName = text;
+        }
+      }
+
+      const dieInput = row.querySelector('.skill-die');
+      const skillDieVal = dieInput ? dieInput.value.trim() : '';
+
+      const totalSpan = row.querySelector('.skill-total');
+      let totalBonus = 0;
+      if (totalSpan && totalSpan.innerText) {
+        totalBonus = parseInt(totalSpan.innerText.replace('+', ''), 10) || 0;
+      }
+
+      let dString = 'd20';
+      if (skillDieVal) {
+        const formattedDie = skillDieVal.startsWith('d') ? `1${skillDieVal}` : skillDieVal;
+        dString += `+${formattedDie}`;
+      }
+
+      if (!isNaN(totalBonus) && totalBonus !== 0) {
+        if (totalBonus > 0) {
+          dString += `+${totalBonus}`;
+        } else {
+          dString += `${totalBonus}`;
+        }
+      }
+
+      const iconEl = btnOrIcon.classList.contains('fa-dice') ? btnOrIcon : btnOrIcon.querySelector('.fa-dice');
+      if (iconEl) iconEl.classList.add('fa-spin');
+
+      try {
+        const response = await fetch(`/v1/tasks/roll/${encodeURIComponent(dString)}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        let total = 0;
+        let breakdown = '';
+        if (data.Rolls && data.Rolls.length > 0) {
+          total = data.Rolls[0].Total;
+          if (data.Rolls[0].Dice) {
+            breakdown = `[Dice: ${data.Rolls[0].Dice.join(', ')}]`;
+          }
+        } else if (typeof data.Total === 'number') {
+          total = data.Total;
+        }
+
+        showRollNotification(`${skillName} Check (${dString})`, total, breakdown);
+      } catch (err) {
+        console.error('Error rolling skill check:', err);
+        alert(`Failed to roll dice for ${skillName}: ${err.message}`);
+      } finally {
+        if (iconEl) iconEl.classList.remove('fa-spin');
+      }
+    }
+
+    function showRollNotification(title, total, details = '') {
+      let toastContainer = document.getElementById('rollToastContainer');
+      if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.id = 'rollToastContainer';
+        toastContainer.style.position = 'fixed';
+        toastContainer.style.bottom = '20px';
+        toastContainer.style.right = '20px';
+        toastContainer.style.zIndex = '1090';
+        toastContainer.style.minWidth = '240px';
+        document.body.appendChild(toastContainer);
+      }
+
+      const toast = document.createElement('div');
+      toast.className = 'toast show align-items-center text-bg-dark border-cyan shadow-lg mb-2 no-print';
+      toast.setAttribute('role', 'alert');
+      toast.style.background = '#0d1117';
+      toast.style.border = '1px solid #00f0ff';
+      toast.style.boxShadow = '0 0 10px rgba(0,240,255,0.4)';
+      toast.innerHTML = `
+        <div class="d-flex p-2 align-items-center justify-content-between">
+          <div>
+            <div class="small text-uppercase text-cyan fw-bold">${title}</div>
+            <div class="fs-4 fw-bold text-white mb-0">${total} <small class="text-muted fs-6" style="font-size: 0.75rem;">${details}</small></div>
+          </div>
+          <button type="button" class="btn-close btn-close-white ms-3" onclick="this.closest('.toast').remove()"></button>
+        </div>
+      `;
+      toastContainer.appendChild(toast);
+
+      setTimeout(() => {
+        if (toast && toast.parentNode) {
+          toast.remove();
+        }
+      }, 5000);
     }
 
     function autoExpandTextarea(el) {
@@ -6200,6 +4942,7 @@
       loadProfessionsDatalist();
       loadAdvantageDieLevels();
       loadSkillDieLevels();
+      loadSizesDatalist();
       loadFromLocalStorage();
 
       const urlParams = new URLSearchParams(window.location.search);

@@ -37,6 +37,7 @@ class TinyDBConnection(object):
         "occupations",
         "advantage_die_levels",
         "skill_die_levels",
+        "sizes",
     ]
     defaultCollect = None
     connection = None

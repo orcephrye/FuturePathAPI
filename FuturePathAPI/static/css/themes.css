@@ -1,0 +1,271 @@
+/* ==========================================================================
+   FUTUREPATH CHARACTER SHEET - THEME DEFINITIONS
+   ========================================================================== */
+
+/* 1. Cosmic Dark (Default) Theme */
+:root, body.theme-cosmic-dark, [data-theme="cosmic-dark"] {
+  --bg-gradient: radial-gradient(circle at top left, #111827, #030712);
+  --text-color: #f1f5f9;
+  --card-bg: #131b2e;
+  --card-border: #1f2d4d;
+  --accent-cyan: #00f0ff;
+  --accent-blue: #3b82f6;
+  --input-bg: #1a243b;
+  --input-border: #2b3a5c;
+  --input-text: #ffffff;
+  --input-placeholder: #64748b;
+  --header-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  --header-border: #00f0ff;
+  --navbar-bg: rgba(17, 24, 39, 0.85);
+  --modal-bg: rgba(17, 24, 39, 0.95);
+  --modal-border: rgba(255, 255, 255, 0.08);
+  --modal-text: #f1f5f9;
+  --theme-card-bg: rgba(31, 41, 55, 0.4);
+  --theme-card-border: rgba(255, 255, 255, 0.08);
+  --theme-card-selected-border: #3b82f6;
+  --theme-card-text: #f1f5f9;
+}
+
+/* 2. Cosmic Light Theme */
+body.theme-cosmic-light, [data-theme="cosmic-light"] {
+  --bg-gradient: radial-gradient(circle at top left, #f5f3ff, #e0e7ff, #e8eaf6);
+  --text-color: #1e293b;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: rgba(59, 130, 246, 0.2);
+  --accent-cyan: #0284c7;
+  --accent-blue: #1d4ed8;
+  --input-bg: #f1f5f9;
+  --input-border: #cbd5e1;
+  --input-text: #0f172a;
+  --input-placeholder: #94a3b8;
+  --header-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  --header-border: #3b82f6;
+  --navbar-bg: rgba(255, 255, 255, 0.85);
+  --modal-bg: rgba(255, 255, 255, 0.95);
+  --modal-border: rgba(0, 0, 0, 0.08);
+  --modal-text: #0f172a;
+  --theme-card-bg: rgba(241, 245, 249, 0.8);
+  --theme-card-border: rgba(0, 0, 0, 0.06);
+  --theme-card-selected-border: #1d4ed8;
+  --theme-card-text: #334155;
+}
+
+/* 3. Bootstrap Dark Theme */
+body.theme-bootstrap-dark, [data-theme="bootstrap-dark"] {
+  --bg-gradient: #212529;
+  --text-color: #dee2e6;
+  --card-bg: #2c3034;
+  --card-border: #495057;
+  --accent-cyan: #0dcaf0;
+  --accent-blue: #0d6efd;
+  --input-bg: #212529;
+  --input-border: #495057;
+  --input-text: #dee2e6;
+  --input-placeholder: #6c757d;
+  --header-bg: #2c3034;
+  --header-border: #0d6efd;
+  --navbar-bg: #2c3034;
+  --modal-bg: #212529;
+  --modal-border: #495057;
+  --modal-text: #dee2e6;
+  --theme-card-bg: #2c3034;
+  --theme-card-border: #495057;
+  --theme-card-selected-border: #0d6efd;
+  --theme-card-text: #dee2e6;
+}
+
+/* 4. Bootstrap Light Theme */
+body.theme-bootstrap-light, [data-theme="bootstrap-light"] {
+  --bg-gradient: #ffffff;
+  --text-color: #212529;
+  --card-bg: #f8f9fa;
+  --card-border: #dee2e6;
+  --accent-cyan: #0dcaf0;
+  --accent-blue: #0d6efd;
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --input-text: #212529;
+  --input-placeholder: #6c757d;
+  --header-bg: #f8f9fa;
+  --header-border: #0d6efd;
+  --navbar-bg: #f8f9fa;
+  --modal-bg: #ffffff;
+  --modal-border: #dee2e6;
+  --modal-text: #212529;
+  --theme-card-bg: #f8f9fa;
+  --theme-card-border: #dee2e6;
+  --theme-card-selected-border: #0d6efd;
+  --theme-card-text: #212529;
+}
+
+/* 5. Industrial Theme (Megacity Cyberpunk & Hazard Flare) */
+body.theme-industrial, [data-theme="industrial"] {
+  --bg-gradient: radial-gradient(circle at top left, #121215, #09090b);
+  --text-color: #fafafa;
+  --card-bg: #1a1a22;
+  --card-border: rgba(255, 107, 0, 0.4);
+  --accent-cyan: #ff9100;
+  --accent-blue: #ff6b00;
+  --input-bg: #111117;
+  --input-border: #33261f;
+  --input-text: #fafafa;
+  --input-placeholder: #ffb74d;
+  --header-bg: linear-gradient(135deg, #09090b 0%, #261b17 100%);
+  --header-border: #ff9100;
+  --navbar-bg: rgba(9, 9, 11, 0.9);
+  --modal-bg: rgba(9, 9, 11, 0.95);
+  --modal-border: rgba(255, 145, 0, 0.25);
+  --modal-text: #fafafa;
+  --theme-card-bg: rgba(26, 26, 34, 0.6);
+  --theme-card-border: rgba(255, 107, 0, 0.3);
+  --theme-card-selected-border: #ff9100;
+  --theme-card-text: #fafafa;
+}
+
+/* 6. Aegis Theme (Warship Fleet & Deep Cobalt Command) */
+body.theme-aegis, [data-theme="aegis"] {
+  --bg-gradient: radial-gradient(circle at top left, #070d1e, #02050e);
+  --text-color: #f8fafc;
+  --card-bg: #0c1630;
+  --card-border: rgba(99, 102, 241, 0.4);
+  --accent-cyan: #818cf8;
+  --accent-blue: #6366f1;
+  --input-bg: #070f24;
+  --input-border: #1a2554;
+  --input-text: #f8fafc;
+  --input-placeholder: #a5b4fc;
+  --header-bg: linear-gradient(135deg, #02050e 0%, #121c42 100%);
+  --header-border: #818cf8;
+  --navbar-bg: rgba(2, 5, 14, 0.9);
+  --modal-bg: rgba(2, 5, 14, 0.95);
+  --modal-border: rgba(129, 140, 248, 0.25);
+  --modal-text: #f8fafc;
+  --theme-card-bg: rgba(12, 22, 48, 0.6);
+  --theme-card-border: rgba(99, 102, 241, 0.3);
+  --theme-card-selected-border: #818cf8;
+  --theme-card-text: #f8fafc;
+}
+
+/* 7. Tattoo Theme (Ornate Body Dye & Magenta Ink Glow) */
+body.theme-tattoo, [data-theme="tattoo"] {
+  --bg-gradient: radial-gradient(circle at top left, #14141d, #0a0a0f);
+  --text-color: #fcf4ff;
+  --card-bg: #1b1a26;
+  --card-border: rgba(244, 63, 94, 0.4);
+  --accent-cyan: #ff2a85;
+  --accent-blue: #f43f5e;
+  --input-bg: #12111a;
+  --input-border: #3d1c2d;
+  --input-text: #fcf4ff;
+  --input-placeholder: #ff85b3;
+  --header-bg: linear-gradient(135deg, #0a0a0f 0%, #361122 100%);
+  --header-border: #ff2a85;
+  --navbar-bg: rgba(10, 10, 15, 0.9);
+  --modal-bg: rgba(10, 10, 15, 0.95);
+  --modal-border: rgba(255, 42, 133, 0.25);
+  --modal-text: #fcf4ff;
+  --theme-card-bg: rgba(27, 26, 38, 0.6);
+  --theme-card-border: rgba(244, 63, 94, 0.3);
+  --theme-card-selected-border: #ff2a85;
+  --theme-card-text: #fcf4ff;
+}
+
+/* 8. Curvilinea Theme (Red Dwarf Sun & Arid Terra) */
+body.theme-curvilinea, [data-theme="curvilinea"] {
+  --bg-gradient: radial-gradient(circle at top left, #200e11, #120a0b);
+  --text-color: #fff1f2;
+  --card-bg: #281418;
+  --card-border: rgba(239, 68, 68, 0.4);
+  --accent-cyan: #f97316;
+  --accent-blue: #ef4444;
+  --input-bg: #170b0d;
+  --input-border: #421e22;
+  --input-text: #fff1f2;
+  --input-placeholder: #fca5a5;
+  --header-bg: linear-gradient(135deg, #120a0b 0%, #3d161a 100%);
+  --header-border: #f97316;
+  --navbar-bg: rgba(18, 10, 11, 0.9);
+  --modal-bg: rgba(18, 10, 11, 0.95);
+  --modal-border: rgba(249, 115, 22, 0.25);
+  --modal-text: #fff1f2;
+  --theme-card-bg: rgba(40, 20, 24, 0.6);
+  --theme-card-border: rgba(239, 68, 68, 0.3);
+  --theme-card-selected-border: #f97316;
+  --theme-card-text: #fff1f2;
+}
+
+/* ==========================================================================
+   SPECIES THEMES
+   ========================================================================== */
+
+/* Volar (Bio-Flora Emerald & Mint) */
+body.theme-volar, [data-theme="volar"] {
+  --bg-gradient: radial-gradient(circle at top left, #12251d, #09140f);
+  --text-color: #f0fdf4;
+  --card-bg: #152c22;
+  --card-border: rgba(16, 185, 129, 0.4);
+  --accent-cyan: #00f5a0;
+  --accent-blue: #10b981;
+  --input-bg: #0e1e17;
+  --input-border: #1d4031;
+  --input-text: #f0fdf4;
+  --input-placeholder: #4ad695;
+  --header-bg: linear-gradient(135deg, #09140f 0%, #153b2d 100%);
+  --header-border: #00f5a0;
+  --navbar-bg: rgba(9, 20, 15, 0.9);
+  --modal-bg: rgba(9, 20, 15, 0.95);
+  --modal-border: rgba(0, 245, 160, 0.25);
+  --modal-text: #f0fdf4;
+  --theme-card-bg: rgba(21, 44, 34, 0.6);
+  --theme-card-border: rgba(16, 185, 129, 0.3);
+  --theme-card-selected-border: #00f5a0;
+  --theme-card-text: #f0fdf4;
+}
+
+/* Human Terra (Stellar Command & Blue Marble) */
+body.theme-human-terra, [data-theme="human-terra"] {
+  --bg-gradient: radial-gradient(circle at top left, #0b1329, #050a17);
+  --text-color: #f8fafc;
+  --card-bg: #0f1c3a;
+  --card-border: rgba(56, 189, 248, 0.4);
+  --accent-cyan: #00d2ff;
+  --accent-blue: #38bdf8;
+  --input-bg: #0a1329;
+  --input-border: #182e5c;
+  --input-text: #f8fafc;
+  --input-placeholder: #7dd3fc;
+  --header-bg: linear-gradient(135deg, #050a17 0%, #112247 100%);
+  --header-border: #00d2ff;
+  --navbar-bg: rgba(5, 10, 23, 0.9);
+  --modal-bg: rgba(5, 10, 23, 0.95);
+  --modal-border: rgba(0, 210, 255, 0.25);
+  --modal-text: #f8fafc;
+  --theme-card-bg: rgba(15, 28, 58, 0.6);
+  --theme-card-border: rgba(56, 189, 248, 0.3);
+  --theme-card-selected-border: #00d2ff;
+  --theme-card-text: #f8fafc;
+}
+
+/* Grayling (Sleek Slate & Psionic Violet) */
+body.theme-grayling, [data-theme="grayling"] {
+  --bg-gradient: radial-gradient(circle at top left, #121620, #0b0d12);
+  --text-color: #f8fafc;
+  --card-bg: #181e2b;
+  --card-border: rgba(168, 85, 247, 0.4);
+  --accent-cyan: #c084fc;
+  --accent-blue: #a855f7;
+  --input-bg: #10141e;
+  --input-border: #292440;
+  --input-text: #f8fafc;
+  --input-placeholder: #e9d5ff;
+  --header-bg: linear-gradient(135deg, #0b0d12 0%, #241638 100%);
+  --header-border: #c084fc;
+  --navbar-bg: rgba(11, 13, 18, 0.9);
+  --modal-bg: rgba(11, 13, 18, 0.95);
+  --modal-border: rgba(192, 132, 252, 0.25);
+  --modal-text: #f8fafc;
+  --theme-card-bg: rgba(24, 30, 43, 0.6);
+  --theme-card-border: rgba(168, 85, 247, 0.3);
+  --theme-card-selected-border: #c084fc;
+  --theme-card-text: #f8fafc;
+}

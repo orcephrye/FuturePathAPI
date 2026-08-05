@@ -110,6 +110,18 @@ ADVANTAGE_DIE_LEVELS = [
 
 SKILL_DIE_LEVELS = list(ADVANTAGE_DIE_LEVELS)
 
+SIZES = [
+    "Fine",
+    "Diminutive",
+    "Tiny",
+    "Small",
+    "Medium",
+    "Large",
+    "Huge",
+    "Gargantuan",
+    "Colossal",
+]
+
 _db_instance = None
 
 
@@ -143,6 +155,7 @@ def init_reference_tables(db_conn=None):
         "skill_die_levels": [
             {"level": i + 1, "die": item} for i, item in enumerate(SKILL_DIE_LEVELS)
         ],
+        "sizes": [{"name": item} for item in SIZES],
     }
 
     for table_name, data in tables_data.items():

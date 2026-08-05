@@ -50,6 +50,7 @@ tasks = [
             "occupations": f"{END_POINT}/tasks/character_sheet/occupations",
             "advantage_die_levels": f"{END_POINT}/tasks/character_sheet/advantage_die_levels",
             "skill_die_levels": f"{END_POINT}/tasks/character_sheet/skill_die_levels",
+            "sizes": f"{END_POINT}/tasks/character_sheet/sizes",
         },
     },
 ]

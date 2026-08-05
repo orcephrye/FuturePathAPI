@@ -110,3 +110,15 @@ def get_skill_die_levels():
     :Content-Type: application/json
     """
     return jsonify(_get_table_data("skill_die_levels", key_field="die"))
+
+
+@app.route("/tasks/character_sheet/sizes", methods=["GET"])
+def get_sizes():
+    """
+    :OPTIONS: GET
+    :PATH: /tasks/character_sheet/sizes
+    :DESC: Returns a JSON list of all official Sizes.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_table_data("sizes", key_field="name"))
+
