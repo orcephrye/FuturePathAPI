@@ -9,7 +9,7 @@
 
 import os
 
-from flask import Flask, jsonify, make_response
+from flask import Flask, jsonify, make_response, send_from_directory
 
 # For Testing only
 # from flask_cors import CORS
@@ -24,6 +24,15 @@ app = Flask(__name__)
 app.secret_key = os.urandom(16)
 # For testing only
 # CORS(app)  # Commit out
+
+
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory(
+        os.path.join(app.root_path, "static"),
+        "favicon.ico",
+        mimetype="image/vnd.microsoft.icon",
+    )
 
 
 @app.errorhandler(404)

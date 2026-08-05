@@ -24,17 +24,9 @@ incorporates cool technology, and features an entire galaxy as a Campaign Settin
 
 
 ## AI/System Behavior notes:
-- Ask before editing pages, confirm the edits. 
 - No need to be wordy simple sentences that convey meaning is better then verbose instructions.
 
 # Need to Know Context about this game
-
-## Whats Different
-
-An overview of the core differences of d20+ system and the things that stand out about this game review:
-
-@./GEMINI_WHATS_DIFFERENT.md
-
 
 ## Advantage System
 
@@ -57,7 +49,6 @@ Comprehensive overview of all Skills, Feat-Based Skills, and Skill-Like Abilitie
 @./GEMINI_SKILLS.md
 
 
-
 ## Ability Themes
 
 The core capabilities of a character, including scores, modifiers, and die levels:
@@ -70,20 +61,6 @@ The core capabilities of a character, including scores, modifiers, and die level
 The list of physical, mental, and environmental conditions, as well as condition tracks:
 
 @./GEMINI_CONDITIONS.md
-
-
-## Health and Injury
-
-Rules for Hit Points, nonlethal damage, damage types, stabilization, cheating death, and healing:
-
-@./GEMINI_HEALTH_AND_INJURY.md
-
-
-## Proficiency Tree
-
-Branches of training that unlock weapon use, armor grades, technology, and items:
-
-@./GEMINI_PROFICIENCY_TREE.md
 
 
 ## Character Creation

@@ -10,13 +10,16 @@ from flask import render_template, request
 from FuturePathAPI.initApp import app
 
 
+@app.route("/tasks/character_sheet/print", methods=["GET"])
+@app.route("/character_sheet/print", methods=["GET"])
 @app.route("/tasks/character_sheet", methods=["GET"])
 @app.route("/character_sheet", methods=["GET"])
 def character_sheet():
     """
     :OPTIONS: GET
-    :PATH: /tasks/character_sheet or /character_sheet
-    :DESC: Serves an interactive, form-fillable d20 FuturePath character sheet with responsive layout and multi-page print support.
+    :PATH: /tasks/character_sheet, /character_sheet, /tasks/character_sheet/print, or /character_sheet/print
+    :DESC: Serves an interactive d20 FuturePath character sheet with responsive layout and printable view support.
     :Content-Type: text/html
     """
-    return render_template("character_sheet.html")
+    is_print = request.args.get("print", "false").lower() in ("true", "1") or request.path.endswith("/print")
+    return render_template("character_sheet.html", is_print=is_print)

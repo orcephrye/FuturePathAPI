@@ -12,7 +12,8 @@ os.environ.setdefault("SCRIPT_NAME", "/v1")
 
 workers = 1  # For development/testing
 # workers = multiprocessing.cpu_count() * 2 + 1
-bind = "127.0.0.1:8000"
+#bind = "127.0.0.1:8000"
+bind = "0.0.0.0:8000"
 reload = True
 
 # For use with a UNIX socket instead of loopback address
