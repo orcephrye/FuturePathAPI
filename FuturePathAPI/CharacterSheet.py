@@ -6,10 +6,14 @@
 # Date: 02/15/2022
 # Description: Form-fillable Web Character Sheet endpoint for d20 FuturePath
 
-from flask import render_template, request
+from flask import send_from_directory
 from FuturePathAPI.initApp import app
 
 
+@app.route("/v1/tasks/character_sheet/print", methods=["GET"])
+@app.route("/v1/character_sheet/print", methods=["GET"])
+@app.route("/v1/tasks/character_sheet", methods=["GET"])
+@app.route("/v1/character_sheet", methods=["GET"])
 @app.route("/tasks/character_sheet/print", methods=["GET"])
 @app.route("/character_sheet/print", methods=["GET"])
 @app.route("/tasks/character_sheet", methods=["GET"])
@@ -17,9 +21,9 @@ from FuturePathAPI.initApp import app
 def character_sheet():
     """
     :OPTIONS: GET
-    :PATH: /tasks/character_sheet, /character_sheet, /tasks/character_sheet/print, or /character_sheet/print
+    :PATH: /v1/tasks/character_sheet, /tasks/character_sheet, /character_sheet, /tasks/character_sheet/print, or /character_sheet/print
     :DESC: Serves an interactive d20 FuturePath character sheet with responsive layout and printable view support.
     :Content-Type: text/html
     """
-    is_print = request.args.get("print", "false").lower() in ("true", "1") or request.path.endswith("/print")
-    return render_template("character_sheet.html", is_print=is_print)
+    return send_from_directory(app.static_folder, "character_sheet.html")
+
