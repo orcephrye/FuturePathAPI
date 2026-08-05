@@ -108,6 +108,8 @@ ADVANTAGE_DIE_LEVELS = [
     "2d12+10",
 ]
 
+SKILL_DIE_LEVELS = list(ADVANTAGE_DIE_LEVELS)
+
 _db_instance = None
 
 
@@ -137,6 +139,9 @@ def init_reference_tables(db_conn=None):
         "occupations": [{"name": item} for item in OCCUPATIONS],
         "advantage_die_levels": [
             {"level": i + 1, "die": item} for i, item in enumerate(ADVANTAGE_DIE_LEVELS)
+        ],
+        "skill_die_levels": [
+            {"level": i + 1, "die": item} for i, item in enumerate(SKILL_DIE_LEVELS)
         ],
     }
 

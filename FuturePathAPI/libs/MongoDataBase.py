@@ -26,6 +26,7 @@ class MongoConnection(object):
         "professions",
         "occupations",
         "advantage_die_levels",
+        "skill_die_levels",
     ]
     defaultCollect = None
     connection = None

@@ -99,3 +99,14 @@ def get_advantage_die_levels():
     :Content-Type: application/json
     """
     return jsonify(_get_table_data("advantage_die_levels", key_field="die"))
+
+
+@app.route("/tasks/character_sheet/skill_die_levels", methods=["GET"])
+def get_skill_die_levels():
+    """
+    :OPTIONS: GET
+    :PATH: /tasks/character_sheet/skill_die_levels
+    :DESC: Returns a JSON list of all official Skill Die levels.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_table_data("skill_die_levels", key_field="die"))

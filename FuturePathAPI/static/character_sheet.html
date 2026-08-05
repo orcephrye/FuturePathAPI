@@ -4469,6 +4469,18 @@
         }
 
         const rankStr = rankInput?.value || '';
+        const dieInput = row.querySelector('.skill-die');
+        const rankNum = parseInt(rankStr, 10);
+
+        if (dieInput) {
+          if (!isNaN(rankNum) && rankNum >= 1 && Array.isArray(skillDieLevels) && skillDieLevels.length > 0) {
+            const dieIndex = Math.min(rankNum - 1, skillDieLevels.length - 1);
+            dieInput.value = skillDieLevels[dieIndex];
+          } else if (!rankStr || isNaN(rankNum) || rankNum <= 0) {
+            dieInput.value = '';
+          }
+        }
+
         const miscStr = miscInput?.value || '';
         const scoreStr = document.getElementById(`score${abilityKey}`)?.value || '';
 
@@ -4601,6 +4613,26 @@
         }
       } catch (err) {
         console.warn('Failed to load advantage die levels from API:', err);
+      }
+    }
+
+    let skillDieLevels = [
+      "1d2", "1d2+1", "1d4+1", "1d4+2", "1d6+2", "1d6+3", "1d8+3", "1d8+4",
+      "1d10+4", "1d10+5", "1d12+5", "1d12+6", "2d6+7", "2d8+7", "2d8+8",
+      "2d10+8", "2d10+9", "2d12+9", "2d12+10"
+    ];
+
+    async function loadSkillDieLevels() {
+      try {
+        const response = await fetch('/v1/tasks/character_sheet/skill_die_levels');
+        if (!response.ok) return;
+        const levels = await response.json();
+        if (Array.isArray(levels) && levels.length > 0) {
+          skillDieLevels = levels;
+          calculateStats();
+        }
+      } catch (err) {
+        console.warn('Failed to load skill die levels from API:', err);
       }
     }
 
@@ -6167,6 +6199,7 @@
       loadOccupationsDatalist();
       loadProfessionsDatalist();
       loadAdvantageDieLevels();
+      loadSkillDieLevels();
       loadFromLocalStorage();
 
       const urlParams = new URLSearchParams(window.location.search);
