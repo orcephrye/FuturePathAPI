@@ -29,7 +29,14 @@ def matches_query(doc, query):
 
 
 class TinyDBConnection(object):
-    collections = ["usernames"]
+    collections = [
+        "usernames",
+        "character_paths",
+        "species",
+        "professions",
+        "occupations",
+        "advantage_die_levels",
+    ]
     defaultCollect = None
     connection = None
     db = None

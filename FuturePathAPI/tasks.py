@@ -43,6 +43,13 @@ tasks = [
         "name": "character_sheet",
         "description": "Interactive form-fillable character sheet for d20 FuturePath with mobile, desktop, and multi-page print support.",
         "uri": f"{END_POINT}/tasks/character_sheet",
+        "sub_endpoints": {
+            "character_paths": f"{END_POINT}/tasks/character_sheet/character_paths",
+            "species": f"{END_POINT}/tasks/character_sheet/species",
+            "professions": f"{END_POINT}/tasks/character_sheet/professions",
+            "occupations": f"{END_POINT}/tasks/character_sheet/occupations",
+            "advantage_die_levels": f"{END_POINT}/tasks/character_sheet/advantage_die_levels",
+        },
     },
 ]
 

@@ -19,7 +19,14 @@ _fallback_cache = {}
 
 
 class MongoConnection(object):
-    collections = ["usernames"]
+    collections = [
+        "usernames",
+        "character_paths",
+        "species",
+        "professions",
+        "occupations",
+        "advantage_die_levels",
+    ]
     defaultCollect = None
     connection = None
     db = None

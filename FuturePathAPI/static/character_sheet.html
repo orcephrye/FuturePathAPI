@@ -1769,25 +1769,30 @@
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                 <div class="d-flex justify-content-between align-items-center mb-1">
-                  <label class="form-label small text-uppercase text-muted fw-bold mb-0">Species</label>
-                  <button type="button" class="btn btn-link btn-sm p-0 text-cyan text-decoration-none no-print" onclick="randomizeSpecies(true)" title="Suggest Random Major Species">
+                  <label class="form-label small text-uppercase text-muted fw-bold mb-0" for="speciesInput">Species</label>
+                  <button type="button" class="btn btn-link btn-sm p-0 text-cyan text-decoration-none no-print" onclick="randomizeSpecies(true)" title="Suggest Random Species">
                     <i class="fa-solid fa-dice"></i> <small>Random</small>
                   </button>
                 </div>
-                <input type="text" class="form-control" name="species" id="speciesInput" placeholder="e.g. Human" oninput="syncSpeciesName()">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="species" id="speciesInput" list="speciesDatalist" placeholder="e.g. Human" oninput="syncSpeciesName()" onchange="syncSpeciesName()">
+                  <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" id="speciesDropdownBtn" onclick="toggleDatalist('speciesInput')" title="Show Species Suggestions">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </div>
+                <datalist id="speciesDatalist">
+                </datalist>
               </div>
               <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                <label class="form-label small text-uppercase text-muted fw-bold">Character Path</label>
-                <select class="form-select" name="charPath" id="charPath" onchange="calculateStats()">
-                  <option value=""></option>
-                  <option value="Path of Strength">Path of Strength (Strong Hero)</option>
-                  <option value="Path of Dexterity">Path of Dexterity (Fast Hero)</option>
-                  <option value="Path of Constitution">Path of Constitution (Tough Hero)</option>
-                  <option value="Path of Intelligence">Path of Intelligence (Smart Hero)</option>
-                  <option value="Path of Wisdom">Path of Wisdom (Dedicated Hero)</option>
-                  <option value="Path of Charisma">Path of Charisma (Charismatic Hero)</option>
-                  <option value="Path of No Path">Path of No Path (The Freelancer)</option>
-                </select>
+                <label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Character Path</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" name="charPath" id="charPath" list="charPathDatalist" placeholder="e.g. Path of Strength" oninput="calculateStats()" onchange="calculateStats()">
+                  <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" id="charPathDropdownBtn" onclick="toggleDatalist('charPath')" title="Show Path Suggestions">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </div>
+                <datalist id="charPathDatalist">
+                </datalist>
               </div>
               <div class="col-6 col-sm-3 col-md-2 col-lg-2">
                 <label class="form-label small text-uppercase text-muted fw-bold">Path Lvl</label>
@@ -3534,8 +3539,13 @@
                     <div class="col-12 col-md-5">
                       <div class="input-group input-group-sm">
                         <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Title:</span>
-                        <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]">
+                        <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]" list="professionDatalist" placeholder="e.g. Combat Medic">
+                        <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
                       </div>
+                      <datalist id="professionDatalist">
+                      </datalist>
                     </div>
                     <div class="col-6 col-md-2">
                       <div class="input-group input-group-sm">
@@ -3595,57 +3605,8 @@
           </div>
         </div>
 
-        <div class="print-footer">
-           Page 2 - d20 FuturePath Character Sheet
-        </div>
-      </div>
-
-
-      <!-- ==========================================
-           PAGE 3: TECHNIQUES, EQUIPMENT & NOTES
-           ========================================== -->
-      <div class="print-page-3 mt-4" id="page-3">
-
-        <!-- Page 3 Header -->
-        <div id="page-3-header" class="page-header-bar no-print flex-wrap gap-2">
-          <div class="d-flex align-items-center gap-2">
-            <span class="page-header-badge"><span class="d-none d-sm-inline"><i class="fa-solid fa-file-lines me-1"></i>Page </span>3</span>
-            <span class="page-header-title">Techniques, Equipment & Notes</span>
-          </div>
-          <div class="d-flex align-items-center gap-2 flex-wrap ms-auto">
-            <div id="page-3-toggles" class="d-flex align-items-center gap-2 flex-wrap">
-              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="togglePowerArmorContainer" title="Toggle visibility of the Power Armor card">
-                <input class="form-check-input my-0" type="checkbox" role="switch" id="togglePowerArmorVisibility" checked onchange="togglePowerArmorCardVisibility(this.checked)">
-                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="togglePowerArmorVisibility" style="font-size: 0.75rem; cursor: pointer;">
-                  <span class="d-none d-sm-inline">Power Armor</span><span class="d-inline d-sm-none">PA</span>
-                </label>
-              </div>
-              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleTechniquesContainer" title="Toggle visibility of the Techniques card">
-                <input class="form-check-input my-0" type="checkbox" role="switch" id="toggleTechniquesVisibility" checked onchange="toggleTechniquesCardVisibility(this.checked)">
-                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleTechniquesVisibility" style="font-size: 0.75rem; cursor: pointer;">
-                  <span class="d-none d-sm-inline">Techniques</span><span class="d-inline d-sm-none">Tech</span>
-                </label>
-              </div>
-              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleBackstoryContainer" title="Toggle visibility of the Background, Campaign Notes & Objectives card">
-                <input class="form-check-input my-0" type="checkbox" role="switch" id="toggleBackstoryVisibility" checked onchange="toggleBackstoryCardVisibility(this.checked)">
-                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleBackstoryVisibility" style="font-size: 0.75rem; cursor: pointer;">
-                  Notes
-                </label>
-              </div>
-            </div>
-            <div class="btn-group btn-group-sm">
-              <button type="button" class="btn btn-cyber-outline py-0 px-2 small" onclick="expandPageCards(3)" title="Expand all cards on Page 3">
-                <i class="fa-solid fa-angles-down me-sm-1"></i><span class="d-none d-sm-inline">Expand</span>
-              </button>
-              <button type="button" class="btn btn-cyber-outline py-0 px-2 small" onclick="collapsePageCards(3)" title="Collapse all cards on Page 3">
-                <i class="fa-solid fa-angles-up me-sm-1"></i><span class="d-none d-sm-inline">Collapse</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
         <!-- Wealth / Credits and Experience Card -->
-        <div class="sheet-card mb-3" id="wealthXpCard" data-default-page="3">
+        <div class="sheet-card mt-3 mb-3" id="wealthXpCard" data-default-page="2">
           <div class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseWealthXP" aria-expanded="true" aria-controls="collapseWealthXP">
             <div>
               <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
@@ -3661,56 +3622,61 @@
               <div class="row g-2 align-items-center">
                 
                 <!-- Box 1: Occupation (Far Left) -->
-                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                  <div class="stat-box d-flex align-items-center gap-2 px-2 py-1 h-100">
-                    <label class="stat-label text-muted fw-bold mb-0 text-nowrap">
-                      <span class="d-none d-xl-inline">Occupation:</span>
-                      <span class="d-inline d-xl-none">Occ:</span>
-                    </label>
-                    <input type="text" class="form-control form-control-sm text-start fw-bold px-1 text-cyan" name="occupationVal" id="occupationVal" placeholder="e.g. Bounty Hunter">
-                  </div>
-                </div>
-
-                <!-- Box 2: Wealth -->
-                <div class="col-12 col-sm-6 col-md-2 col-xl-2">
-                  <div class="stat-box d-flex align-items-center gap-2 px-2 py-1 h-100">
-                    <label class="stat-label text-muted fw-bold mb-0 text-nowrap">
-                      <span>Wealth:</span>
-                    </label>
-                    <input type="text" class="form-control form-control-sm text-center fw-bold px-1" name="wealthVal">
-                  </div>
-                </div>
-
-                <!-- Box 3: Credit Score -->
-                <div class="col-12 col-sm-6 col-md-3 col-xl-2">
-                  <div class="stat-box d-flex align-items-center gap-2 px-2 py-1 h-100">
-                    <label class="stat-label text-muted fw-bold mb-0 text-nowrap">
-                      <span class="d-none d-xl-inline">Credit Score:</span>
-                      <span class="d-inline d-xl-none">Credit:</span>
-                    </label>
-                    <input type="text" class="form-control form-control-sm text-center fw-bold px-1" name="creditScoreVal">
-                  </div>
-                </div>
-
-                <!-- Box 4: Experience Earned -->
                 <div class="col-12 col-sm-6 col-md-3 col-xl-3">
-                  <div class="stat-box d-flex align-items-center gap-2 px-2 py-1 h-100">
-                    <label class="stat-label text-muted fw-bold mb-0 text-nowrap">
-                      <span class="d-none d-xl-inline">Experience Earned:</span>
-                      <span class="d-inline d-xl-none">XP:</span>
-                    </label>
-                    <input type="text" class="form-control form-control-sm text-center fw-bold px-1" name="experienceEarnedVal">
+                  <div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+                    <div class="stat-label mb-1" for="occupationInput">
+                      <span class="d-none d-sm-inline">Occupation</span><span class="d-inline d-sm-none">Occ</span>
+                    </div>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan" name="occupation" id="occupationInput" list="occupationDatalist" placeholder="e.g. Academic">
+                      <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" id="occupationDropdownBtn" onclick="toggleDatalist('occupationInput')" title="Show Occupation Suggestions">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                    </div>
+                    <datalist id="occupationDatalist">
+                    </datalist>
                   </div>
                 </div>
 
-                <!-- Box 5: Next Level -->
-                <div class="col-12 col-sm-6 col-md-2 col-xl-2">
-                  <div class="stat-box d-flex align-items-center gap-2 px-2 py-1 h-100">
-                    <label class="stat-label text-muted fw-bold mb-0 text-nowrap">
-                      <span class="d-none d-xl-inline">Next Level:</span>
-                      <span class="d-inline d-xl-none">Lvl Up:</span>
-                    </label>
-                    <input type="text" class="form-control form-control-sm text-center fw-bold px-1" name="nextLevelVal">
+                <!-- Box 2: Current Wealth Score -->
+                <div class="col-6 col-sm-6 col-md-3 col-xl-2">
+                  <div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+                    <div class="stat-label mb-1" title="Current available Wealth bonus for financial checks">
+                      <span class="d-none d-sm-inline">Current Wealth</span><span class="d-inline d-sm-none">Wealth</span>
+                    </div>
+                    <div class="input-group input-group-sm">
+                      <span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;"><i class="fa-solid fa-dollar-sign"></i></span>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan" name="currentWealthScore" placeholder="+0">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Box 3: Credits -->
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3">
+                  <div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+                    <div class="stat-label mb-1" title="Physical or digital liquid credits on hand">
+                      <span class="d-none d-sm-inline">Credits</span><span class="d-inline d-sm-none">Cred</span>
+                    </div>
+                    <div class="input-group input-group-sm">
+                      <span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;">₡</span>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan" name="liquidCredits" placeholder="0">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Box 4: Current Level, XP & Next Level (Far Right) -->
+                <div class="col-12 col-sm-6 col-md-3 col-xl-4">
+                  <div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+                    <div class="stat-label mb-1">
+                      <span class="d-none d-md-inline">XP / Total Level / Next Level</span><span class="d-inline d-md-none">XP / Lvl / Next</span>
+                    </div>
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan px-1" name="xpCurrent" placeholder="0 XP" title="Current Experience Points">
+                      <span class="input-group-text px-1 py-0 small text-muted" style="font-size: 0.7rem;"><span class="d-none d-sm-inline">/ Lvl</span><span class="d-inline d-sm-none">/L</span></span>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan px-1" name="totalCharLevel" placeholder="1" title="Total Character Level">
+                      <span class="input-group-text px-1 py-0 small text-cyan" style="font-size: 0.7rem;" title="XP required for Next Level"><i class="fa-solid fa-angles-up me-1"></i><span class="d-none d-sm-inline">Next</span></span>
+                      <input type="text" class="form-control form-control-sm text-center fw-bold text-cyan px-1" name="xpNextLevel" placeholder="2000" title="XP Required for Next Level">
+                    </div>
                   </div>
                 </div>
 
@@ -3720,7 +3686,7 @@
         </div>
 
         <!-- General Equipment -->
-        <div class="sheet-card mb-3" id="gearCard" data-default-page="3">
+        <div class="sheet-card mb-3" id="gearCard" data-default-page="2">
           <div class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapseGear" aria-expanded="true" aria-controls="collapseGear">
             <div class="d-flex align-items-center gap-3 flex-wrap">
               <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
@@ -3760,6 +3726,7 @@
                 <thead>
                   <tr>
                     <th>Name</th>
+                    <style style="display:none;"></style>
                     <th style="width: 80px;">Qty</th>
                     <th style="width: 90px;">Weight</th>
                     <th style="width: 80px;">TL</th>
@@ -3782,6 +3749,62 @@
           </div>
         </div>
       </div>
+
+        <div class="print-footer">
+           Page 2 - d20 FuturePath Character Sheet
+        </div>
+      </div>
+
+
+      <!-- ==========================================
+           PAGE 3: TECHNIQUES, EQUIPMENT & NOTES
+           ========================================== -->
+      <div class="print-page-3 mt-4" id="page-3">
+
+        <!-- Page 3 Header -->
+        <div id="page-3-header" class="page-header-bar no-print flex-wrap gap-2">
+          <div class="d-flex align-items-center gap-2">
+            <span class="page-header-badge"><span class="d-none d-sm-inline"><i class="fa-solid fa-file-lines me-1"></i>Page </span>3</span>
+            <span class="page-header-title">Techniques, Equipment & Notes</span>
+          </div>
+          <div class="d-flex align-items-center gap-2 flex-wrap ms-auto">
+            <div id="page-3-toggles" class="d-flex align-items-center gap-2 flex-wrap">
+              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="togglePowerArmorContainer" title="Toggle visibility of the Power Armor card">
+                <input class="form-check-input my-0" type="checkbox" role="switch" id="togglePowerArmorVisibility" checked onchange="togglePowerArmorCardVisibility(this.checked)">
+                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="togglePowerArmorVisibility" style="font-size: 0.75rem; cursor: pointer;">
+                  <span class="d-none d-sm-inline">Power Armor</span><span class="d-inline d-sm-none">PA</span>
+                </label>
+              </div>
+              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleTechniquesContainer" title="Toggle visibility of the Techniques card">
+                <input class="form-check-input my-0" type="checkbox" role="switch" id="toggleTechniquesVisibility" checked onchange="toggleTechniquesCardVisibility(this.checked)">
+                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleTechniquesVisibility" style="font-size: 0.75rem; cursor: pointer;">
+                  <span class="d-none d-sm-inline">Techniques</span><span class="d-inline d-sm-none">Tech</span>
+                </label>
+              </div>
+              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleBackstoryContainer" title="Toggle visibility of the Background, Campaign Notes & Objectives card">
+                <input class="form-check-input my-0" type="checkbox" role="switch" id="toggleBackstoryVisibility" checked onchange="toggleBackstoryCardVisibility(this.checked)">
+                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleBackstoryVisibility" style="font-size: 0.75rem; cursor: pointer;">
+                  Notes
+                </label>
+              </div>
+              <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleConditionsContainer" title="Toggle visibility of the Standard Conditions & Status Tracks card">
+                <input class="form-check-input my-0" type="checkbox" role="switch" id="toggleConditionsVisibility" checked onchange="toggleConditionsCardVisibility(this.checked)">
+                <label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleConditionsVisibility" style="font-size: 0.75rem; cursor: pointer;">
+                  Conditions
+                </label>
+              </div>
+            </div>
+            <div class="btn-group btn-group-sm">
+              <button type="button" class="btn btn-cyber-outline py-0 px-2 small" onclick="expandPageCards(3)" title="Expand all cards on Page 3">
+                <i class="fa-solid fa-angles-down me-sm-1"></i><span class="d-none d-sm-inline">Expand</span>
+              </button>
+              <button type="button" class="btn btn-cyber-outline py-0 px-2 small" onclick="collapsePageCards(3)" title="Collapse all cards on Page 3">
+                <i class="fa-solid fa-angles-up me-sm-1"></i><span class="d-none d-sm-inline">Collapse</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
 
         <!-- Techniques -->
         <div class="sheet-card" id="techniquesCard" data-default-page="3">
@@ -3818,7 +3841,10 @@
                     <div class="col-12 col-sm-9 col-md-3">
                       <div class="input-group input-group-sm">
                         <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Profession:</span>
-                        <input type="text" class="form-control form-control-sm fw-bold" name="techProfession[]" placeholder="e.g. Cyberneticist">
+                        <input type="text" class="form-control form-control-sm fw-bold" name="techProfession[]" list="professionDatalist" placeholder="e.g. Cyberneticist">
+                        <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
                       </div>
                     </div>
                     <div class="col-4 col-sm-3 col-md-2">
@@ -3993,6 +4019,242 @@
           <div class="collapse show" id="collapseBackstory">
             <div class="card-body">
               <textarea class="form-control notebook-textarea" name="backstoryNotes" rows="5" placeholder="Character backstory, campaign contacts, galactic sector notes..." oninput="autoExpandTextarea(this)"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conditions Card -->
+        <div class="sheet-card mt-3" id="conditionsCard" data-default-page="3">
+          <div class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseConditions" aria-expanded="true" aria-controls="collapseConditions">
+            <div>
+              <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+              <span><i class="fa-solid fa-notes-medical me-2"></i>Conditions</span>
+            </div>
+            <div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
+              <button type="button" class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up"><i class="fa-solid fa-arrow-up"></i></button>
+              <button type="button" class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down"><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+          </div>
+          <div class="collapse show" id="collapseConditions">
+            <div class="card-body">
+              <div class="row g-3">
+
+                <!-- Column 1: Non-Track Standard Conditions -->
+                <div class="col-12 col-md-6">
+                  <h6 class="text-cyan fw-bold mb-3"><i class="fa-solid fa-list-check me-2"></i>Standard Conditions</h6>
+
+                  <!-- Blinded -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_blinded" id="cond_blinded">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_blinded">Blinded</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Total concealment. Takes <strong>3Ad (Disadvantage)</strong> on melee attacks, DEX, and Perception checks. Cannot read or perform visual tasks.
+                    </div>
+                  </div>
+
+                  <!-- Deafened -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_deafened" id="cond_deafened">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_deafened">Deafened</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Takes <strong>1Ad (Disadvantage)</strong> on Initiative and Perception checks. Passive Perception reduced by 1/2 WIS modifier (round down).
+                    </div>
+                  </div>
+
+                  <!-- Confused -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_confused" id="cond_confused">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_confused">Confused</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Mentally befuddled; treats all targets as enemies. Takes <strong>1Ad (Disadvantage)</strong> on INT and WIS checks. If attacked, must attack last attacker. Otherwise, acts randomly.
+                    </div>
+                  </div>
+
+                  <!-- Entangled -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_entangled" id="cond_entangled">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_entangled">Entangled</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Takes <strong>1Ad (Disadvantage)</strong> on Attack Rolls and DEX saves. Immobile if anchored; half speed and no running/charging if unanchored. Attackers gain <strong>1Ad (Advantage)</strong> against target.
+                    </div>
+                  </div>
+
+                  <!-- Flat-Footed -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_flat_footed" id="cond_flat_footed">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_flat_footed">Flat-Footed</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Caught unaware or unable to react. Loses Dexterity bonus to AC.
+                    </div>
+                  </div>
+
+                  <!-- Helpless / Incapacitated / Unconscious -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_helpless" id="cond_helpless">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_helpless">Helpless / Incapacitated / Unconscious</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Paralyzed, sleeping, or unconscious. Effective AC = 5 + size mod. Vulnerable to <em>Coup de Grace</em>. Passive Perception reduced to 1/4 (round down), no skill checks.
+                    </div>
+                  </div>
+
+                  <!-- Prone -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_prone" id="cond_prone">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_prone">Prone</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Standing up is a Simple Action (prevents Bonus Action). Melee attacks take <strong>1Ad (Disadvantage)</strong>, no techniques. Gains <strong>1Ad (Advantage)</strong> on Ranged attacks against targets &gt; 10ft away.
+                    </div>
+                  </div>
+
+                  <!-- Unstable / Dying -->
+                  <div class="condition-item">
+                    <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" name="cond_unstable" id="cond_unstable">
+                      <label class="form-check-label fw-bold text-cyan" for="cond_unstable">Unstable / Dying</label>
+                    </div>
+                    <div class="small text-muted ps-4">
+                      Triggered at 0 HP. Roll <strong>1d4 CON damage</strong> each turn in combat (every 20 mins out of combat). Move walk speed only. Stabilized by DC 20 Medical check.
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Column 2: Status Tracks -->
+                <div class="col-12 col-md-6">
+                  <h6 class="text-cyan fw-bold mb-3"><i class="fa-solid fa-bars-staggered me-2"></i>Status Tracks</h6>
+
+                  <!-- Fatigue Track -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-battery-quarter me-1"></i>Fatigue Track:</div>
+                    <div class="ps-2">
+                      <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="checkbox" name="cond_winded" id="cond_winded">
+                        <label class="form-check-label fw-bold small" for="cond_winded">Winded</label>
+                      </div>
+                      <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="checkbox" name="cond_fatigued" id="cond_fatigued">
+                        <label class="form-check-label fw-bold small" for="cond_fatigued">Fatigued</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="cond_exhausted" id="cond_exhausted">
+                        <label class="form-check-label fw-bold small" for="cond_exhausted">Exhausted</label>
+                      </div>
+                    </div>
+                    <div class="small text-muted ps-2 mt-1">
+                      <div><strong>Winded:</strong> Fatigued penalty, removed by 1-min breather. Winded + Winded = Fatigued.</div>
+                      <div><strong>Fatigued:</strong> Half speed. <strong>1Ad (Disadvantage)</strong> on STR/DEX saves & Combat Melee Tech. -1 Melee attacks, temp -2 DEX. Needs 8 hrs rest.</div>
+                      <div><strong>Exhausted:</strong> No Bonus Actions, Run, Sprint, or Melee Tech. <strong>1Ad (Disadvantage)</strong> on Melee, -2 Ranged. Temp -2 STR, -4 DEX. Needs 8 hrs rest.</div>
+                    </div>
+                  </div>
+
+                  <!-- Fear Track -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-ghost me-1"></i>Fear Track:</div>
+                    <div class="ps-2">
+                      <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="checkbox" name="cond_frightened" id="cond_frightened">
+                        <label class="form-check-label fw-bold small" for="cond_frightened">Frightened</label>
+                      </div>
+                      <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="checkbox" name="cond_cowering" id="cond_cowering">
+                        <label class="form-check-label fw-bold small" for="cond_cowering">Cowering</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="cond_panicked" id="cond_panicked">
+                        <label class="form-check-label fw-bold small" for="cond_panicked">Panicked</label>
+                      </div>
+                    </div>
+                    <div class="small text-muted ps-2 mt-1">
+                      <div><strong>Frightened:</strong> <strong>1Ad (Disadvantage)</strong> on all actions.</div>
+                      <div><strong>Cowering:</strong> Frozen. Lose DEX to AC/saves/skills, <strong>2Ad (Disadvantage)</strong> on all actions. DC 13 WIS check each turn.</div>
+                      <div><strong>Panicked:</strong> Flees by most direct route. Can only defend, cannot attack.</div>
+                    </div>
+                  </div>
+
+                  <!-- Grapple Track -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-hand-fist me-1"></i>Grapple Track:</div>
+                    <div class="ps-2">
+                      <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="checkbox" name="cond_grappled" id="cond_grappled">
+                        <label class="form-check-label fw-bold small" for="cond_grappled">Grappled</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="cond_pinned" id="cond_pinned">
+                        <label class="form-check-label fw-bold small" for="cond_pinned">Pinned</label>
+                      </div>
+                    </div>
+                    <div class="small text-muted ps-2 mt-1">
+                      <div><strong>Grappled:</strong> Attack only with bare hands, light weapon, or escape. Lose DEX to AC (except vs grappler).</div>
+                      <div><strong>Pinned:</strong> Immobile. Lose DEX to AC against all attackers.</div>
+                    </div>
+                  </div>
+
+                  <!-- Nausea Track -->
+                  <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+                    <div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-face-dizzy me-1"></i>Nausea Track:</div>
+                    <div class="ps-2">
+                      <div class="form-check form-check-inline me-3">
+                        <input class="form-check-input" type="checkbox" name="cond_nauseated" id="cond_nauseated">
+                        <label class="form-check-label fw-bold small" for="cond_nauseated">Nauseated</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="cond_sickened" id="cond_sickened">
+                        <label class="form-check-label fw-bold small" for="cond_sickened">Sickened</label>
+                      </div>
+                    </div>
+                    <div class="small text-muted ps-2 mt-1">
+                      <div><strong>Nauseated:</strong> Cannot gain Advantage. <strong>2Ad (Disadvantage)</strong> on attention-requiring actions.</div>
+                      <div><strong>Sickened:</strong> Treated as Nauseated. Lose <strong>1 CON per day</strong> (rolled) until cured via Medical check or death.</div>
+                    </div>
+                  </div>
+
+                  <!-- Shaken Track -->
+                  <div class="condition-item">
+                    <div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-skull me-1"></i>Shaken Track:</div>
+                    <div class="ps-2">
+                      <div class="form-check form-check-inline me-2">
+                        <input class="form-check-input" type="checkbox" name="cond_shaken" id="cond_shaken">
+                        <label class="form-check-label fw-bold small" for="cond_shaken">Shaken</label>
+                      </div>
+                      <div class="form-check form-check-inline me-2">
+                        <input class="form-check-input" type="checkbox" name="cond_dazed" id="cond_dazed">
+                        <label class="form-check-label fw-bold small" for="cond_dazed">Dazed</label>
+                      </div>
+                      <div class="form-check form-check-inline me-2">
+                        <input class="form-check-input" type="checkbox" name="cond_stunned" id="cond_stunned">
+                        <label class="form-check-label fw-bold small" for="cond_stunned">Stunned</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="cond_paralyzed" id="cond_paralyzed">
+                        <label class="form-check-label fw-bold small" for="cond_paralyzed">Paralyzed</label>
+                      </div>
+                    </div>
+                    <div class="small text-muted ps-2 mt-1">
+                      <div><strong>Shaken:</strong> <strong>1Ad (Disadvantage)</strong> on attacks, saves, and skill checks.</div>
+                      <div><strong>Dazed:</strong> Cannot gain Advantage, <strong>2Ad (Disadvantage)</strong> on all actions. Retains normal AC (1 rd).</div>
+                      <div><strong>Stunned:</strong> Lose DEX to AC, drop held items, cannot attack/move (1 rd).</div>
+                      <div><strong>Paralyzed:</strong> Cannot move or act. Considered Helpless.</div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
@@ -4247,6 +4509,101 @@
       }
     }
 
+    let professionsList = [];
+
+    function toggleDatalist(inputIdOrEl) {
+      const input = typeof inputIdOrEl === 'string' ? document.getElementById(inputIdOrEl) : inputIdOrEl;
+      if (!input) return;
+      if (typeof input.showPicker === 'function') {
+        try {
+          input.showPicker();
+          return;
+        } catch (e) {
+          // Fallback if showPicker isn't allowed in context
+        }
+      }
+      input.focus();
+      const evt = new KeyboardEvent('keydown', { key: 'ArrowDown', keyCode: 40, bubbles: true });
+      input.dispatchEvent(evt);
+    }
+
+    async function loadCharacterPathsDatalist() {
+      const datalist = document.getElementById('charPathDatalist');
+      if (!datalist) return;
+      try {
+        const response = await fetch('/v1/tasks/character_sheet/paths');
+        if (!response.ok) return;
+        const paths = await response.json();
+        if (Array.isArray(paths)) {
+          datalist.innerHTML = paths.map(path => `<option value="${path}">`).join('');
+        }
+      } catch (err) {
+        console.warn('Failed to load character paths from API:', err);
+      }
+    }
+
+    async function loadOccupationsDatalist() {
+      const datalist = document.getElementById('occupationDatalist');
+      const input = document.getElementById('occupationInput');
+      try {
+        const response = await fetch('/v1/tasks/character_sheet/occupations');
+        if (!response.ok) return;
+        const occupations = await response.json();
+        if (Array.isArray(occupations) && occupations.length > 0) {
+          if (datalist) {
+            datalist.innerHTML = occupations.map(occ => `<option value="${occ}">`).join('');
+          }
+          if (input) {
+            const randomOcc = occupations[Math.floor(Math.random() * occupations.length)];
+            input.placeholder = `e.g. ${randomOcc}`;
+          }
+        }
+      } catch (err) {
+        console.warn('Failed to load occupations from API:', err);
+      }
+    }
+
+    async function loadProfessionsDatalist() {
+      const datalist = document.getElementById('professionDatalist');
+      try {
+        const response = await fetch('/v1/tasks/character_sheet/professions');
+        if (!response.ok) return;
+        const professions = await response.json();
+        if (Array.isArray(professions) && professions.length > 0) {
+          professionsList = professions;
+          if (datalist) {
+            datalist.innerHTML = professions.map(prof => `<option value="${prof}">`).join('');
+          }
+          document.querySelectorAll('input[name="profTitle[]"], input[name="techProfession[]"]').forEach(input => {
+            const randomProf = professions[Math.floor(Math.random() * professions.length)];
+            input.placeholder = `e.g. ${randomProf}`;
+          });
+        }
+      } catch (err) {
+        console.warn('Failed to load professions from API:', err);
+      }
+    }
+
+    async function loadAdvantageDieLevels() {
+      const select = document.getElementById('advantageDie');
+      if (!select) return;
+      try {
+        const response = await fetch('/v1/tasks/character_sheet/advantage_die_levels');
+        if (!response.ok) return;
+        const levels = await response.json();
+        if (Array.isArray(levels) && levels.length > 0) {
+          const currentVal = select.value;
+          select.innerHTML = '<option value="" selected></option>' + levels.map(die => {
+            const label = die.startsWith('d') ? `1${die}` : die;
+            return `<option value="${die}">${label}</option>`;
+          }).join('');
+          if (currentVal) select.value = currentVal;
+        }
+      } catch (err) {
+        console.warn('Failed to load advantage die levels from API:', err);
+      }
+    }
+
     function autoExpandTextarea(el) {
       if (!el) return;
       el.style.height = 'auto';
@@ -4415,7 +4772,10 @@
           <div class="col-12 col-sm-9 col-md-3">
             <div class="input-group input-group-sm">
               <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Profession:</span>
-              <input type="text" class="form-control form-control-sm fw-bold" name="techProfession[]" placeholder="e.g. Cyberneticist">
+              <input type="text" class="form-control form-control-sm fw-bold" name="techProfession[]" list="professionDatalist" placeholder="e.g. Cyberneticist">
+              <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
             </div>
           </div>
           <div class="col-4 col-sm-3 col-md-2">
@@ -4477,6 +4837,11 @@
         </div>
       `;
       container.appendChild(div);
+      const newTechProfInput = div.querySelector('input[name="techProfession[]"]');
+      if (newTechProfInput && professionsList && professionsList.length > 0) {
+        const randomProf = professionsList[Math.floor(Math.random() * professionsList.length)];
+        newTechProfInput.placeholder = `e.g. ${randomProf}`;
+      }
       triggerAutoSave();
     }
 
@@ -4577,7 +4942,10 @@
           <div class="col-12 col-md-5">
             <div class="input-group input-group-sm">
               <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Title:</span>
-              <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]">
+              <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]" list="professionDatalist" placeholder="e.g. Combat Medic">
+              <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
             </div>
           </div>
           <div class="col-6 col-md-2">
@@ -4631,6 +4999,11 @@
         </div>
       `;
       container.appendChild(div);
+      const newInput = div.querySelector('input[name="profTitle[]"]');
+      if (newInput && professionsList && professionsList.length > 0) {
+        const randomProf = professionsList[Math.floor(Math.random() * professionsList.length)];
+        newInput.placeholder = `e.g. ${randomProf}`;
+      }
       triggerAutoSave();
     }
 
@@ -4881,26 +5254,52 @@
       reader.readAsText(file);
     }
 
-    // Major Species Random Suggestion Logic
-    const majorSpeciesList = [
-      "Human",
+    // Species Random Suggestion & Datalist Logic
+    let speciesList = [
+      "Humans",
       "Volar",
-      "Grayling",
-      "Lepidonain",
+      "Graylings",
+      "Lepidonains",
       "Cryous",
       "Ovex",
-      "Aconian",
-      "Murid",
+      "Aconians",
+      "Murids",
       "Avisari",
-      "Khepri"
+      "Khepri",
+      "Sayor",
+      "Kurgian",
+      "Tygerion",
+      "Xrototaxian",
+      "Chronodes",
+      "Jove"
     ];
 
+    async function loadSpeciesDatalist() {
+      const datalist = document.getElementById('speciesDatalist');
+      try {
+        const response = await fetch('/v1/tasks/character_sheet/species');
+        if (!response.ok) return;
+        const speciesData = await response.json();
+        if (Array.isArray(speciesData) && speciesData.length > 0) {
+          speciesList = speciesData;
+          if (datalist) {
+            datalist.innerHTML = speciesData.map(sp => `<option value="${sp}">`).join('');
+          }
+          randomizeSpecies(false);
+        }
+      } catch (err) {
+        console.warn('Failed to load species from API:', err);
+      }
+    }
+
     function randomizeSpecies(fillInput = false) {
-      const randomSpec = majorSpeciesList[Math.floor(Math.random() * majorSpeciesList.length)];
+      if (!speciesList || speciesList.length === 0) return;
+      const randomSpec = speciesList[Math.floor(Math.random() * speciesList.length)];
       const speciesInput = document.getElementById('speciesInput');
       if (speciesInput) {
         if (fillInput) {
           speciesInput.value = randomSpec;
+          syncSpeciesName();
           triggerAutoSave();
         } else {
           speciesInput.placeholder = `e.g. ${randomSpec}`;
@@ -4912,6 +5311,7 @@
       document.querySelectorAll('.sheet-card').forEach(card => {
         if (!card._originalParentContainer) {
           card._originalParentContainer = card.parentElement;
+          card._originalNextSibling = card.nextElementSibling;
         }
       });
     }
@@ -4931,34 +5331,39 @@
       if (event) event.preventDefault();
       if (!confirm('Are you sure you want to reset all cards back to their original page positions?')) return;
 
+      localStorage.removeItem('d20FuturePathCardOrder');
+      localStorage.removeItem('d20FuturePathPushedDownCards');
       pushedDownCards.clear();
-      initOriginalParentContainers();
 
       document.querySelectorAll('.sheet-card').forEach(card => {
         if (card._originalParentContainer) {
-          const footer = card._originalParentContainer.querySelector(':scope > .print-footer');
-          if (footer) {
-            card._originalParentContainer.insertBefore(card, footer);
+          const container = card._originalParentContainer;
+          const nextSib = card._originalNextSibling;
+          if (nextSib && container.contains(nextSib)) {
+            container.insertBefore(card, nextSib);
           } else {
-            card._originalParentContainer.appendChild(card);
+            const footer = container.querySelector(':scope > .print-footer');
+            if (footer) {
+              container.insertBefore(card, footer);
+            } else {
+              container.appendChild(card);
+            }
           }
         }
       });
 
-      // Remove dynamic overflow pages beyond page 3 if empty
+      // Remove dynamic overflow pages beyond page 3
       document.querySelectorAll('[id^="page-"]').forEach(page => {
         const num = parseInt(page.id.replace('page-', ''), 10);
         if (num > 3) {
-          const movable = getMovableCardsInPage(page);
-          if (movable.length === 0) {
-            page.remove();
-          }
+          page.remove();
         }
       });
 
+      updateHeaderToggleSwitches();
       updateMoveButtonVisibilities();
+      saveCardOrder();
       scheduleAutoPagination();
-      triggerAutoSave();
     }
 
     function hardResetPage(event) {
@@ -5060,8 +5465,8 @@
 
       const map = {
         'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'skillsCard': 1,
-        'speciesTraitsCard': 2, 'pathTalentsCard': 2, 'featsCard': 2, 'professionsCard': 2,
-        'wealthXpCard': 3, 'gearCard': 3, 'techniquesCard': 3, 'powerArmorCard': 3, 'backstoryCard': 3
+        'speciesTraitsCard': 2, 'pathTalentsCard': 2, 'featsCard': 2, 'professionsCard': 2, 'wealthXpCard': 2, 'gearCard': 2,
+        'techniquesCard': 3, 'powerArmorCard': 3, 'backstoryCard': 3, 'conditionsCard': 3
       };
       return map[cardEl.id] || 1;
     }
@@ -5433,7 +5838,8 @@
       const items = [
         { cardId: 'powerArmorCard', containerId: 'togglePowerArmorContainer' },
         { cardId: 'techniquesCard', containerId: 'toggleTechniquesContainer' },
-        { cardId: 'backstoryCard', containerId: 'toggleBackstoryContainer' }
+        { cardId: 'backstoryCard', containerId: 'toggleBackstoryContainer' },
+        { cardId: 'conditionsCard', containerId: 'toggleConditionsContainer' }
       ];
 
       items.forEach(item => {
@@ -5691,6 +6097,28 @@
       }
     }
 
+    function toggleConditionsCardVisibility(show) {
+      const card = document.getElementById('conditionsCard');
+      if (card) {
+        if (show) {
+          card.classList.remove('card-hidden-all', 'd-none');
+        } else {
+          card.classList.add('card-hidden-all', 'd-none');
+        }
+      }
+      localStorage.setItem('d20FuturePathShowConditionsCard', show ? 'true' : 'false');
+    }
+
+    function restoreConditionsVisibilityState() {
+      const toggleInput = document.getElementById('toggleConditionsVisibility');
+      const savedState = localStorage.getItem('d20FuturePathShowConditionsCard');
+      if (savedState !== null) {
+        const isVisible = savedState === 'true';
+        if (toggleInput) toggleInput.checked = isVisible;
+        toggleConditionsCardVisibility(isVisible);
+      }
+    }
+
     function restoreCollapseStates() {
       try {
         const saved = localStorage.getItem('d20FuturePathCollapsedCards');
@@ -5732,8 +6160,13 @@
 
     // Attach event listeners for change/input & theme setup
     document.addEventListener('DOMContentLoaded', () => {
+      initOriginalParentContainers();
       applyTheme();
-      randomizeSpecies(false);
+      loadCharacterPathsDatalist();
+      loadSpeciesDatalist();
+      loadOccupationsDatalist();
+      loadProfessionsDatalist();
+      loadAdvantageDieLevels();
       loadFromLocalStorage();
 
       const urlParams = new URLSearchParams(window.location.search);
@@ -5752,8 +6185,7 @@
       restoreTechniquesVisibilityState();
       restorePowerArmorVisibilityState();
       restoreBackstoryVisibilityState();
-
-      initOriginalParentContainers();
+      restoreConditionsVisibilityState();
       calculateStats();
       updateProficiencyCounts();
 
@@ -5763,6 +6195,12 @@
 
       scheduleAutoPagination();
       updateTableOfContents();
+
+      if (isPrintParam) {
+        setTimeout(() => {
+          window.print();
+        }, 300);
+      }
 
       window.addEventListener('beforeprint', () => {
         document.body.classList.add('is-print-mode');
