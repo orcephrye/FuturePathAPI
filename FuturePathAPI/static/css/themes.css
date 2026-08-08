@@ -14,6 +14,8 @@
   --input-border: #2b3a5c;
   --input-text: #ffffff;
   --input-placeholder: #64748b;
+  --text-muted: #64748b;
+  --text-muted: #64748b;
   --header-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
   --header-border: #00f0ff;
   --navbar-bg: rgba(17, 24, 39, 0.85);
@@ -38,6 +40,7 @@ body.theme-cosmic-light, [data-theme="cosmic-light"] {
   --input-border: #cbd5e1;
   --input-text: #0f172a;
   --input-placeholder: #94a3b8;
+  --text-muted: #94a3b8;
   --header-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
   --header-border: #3b82f6;
   --navbar-bg: rgba(255, 255, 255, 0.85);
@@ -62,6 +65,7 @@ body.theme-bootstrap-dark, [data-theme="bootstrap-dark"] {
   --input-border: #495057;
   --input-text: #dee2e6;
   --input-placeholder: #6c757d;
+  --text-muted: #6c757d;
   --header-bg: #2c3034;
   --header-border: #0d6efd;
   --navbar-bg: #2c3034;
@@ -86,6 +90,7 @@ body.theme-bootstrap-light, [data-theme="bootstrap-light"] {
   --input-border: #ced4da;
   --input-text: #212529;
   --input-placeholder: #6c757d;
+  --text-muted: #6c757d;
   --header-bg: #f8f9fa;
   --header-border: #0d6efd;
   --navbar-bg: #f8f9fa;
@@ -110,6 +115,7 @@ body.theme-industrial, [data-theme="industrial"] {
   --input-border: #33261f;
   --input-text: #fafafa;
   --input-placeholder: #ffb74d;
+  --text-muted: #ffb74d;
   --header-bg: linear-gradient(135deg, #09090b 0%, #261b17 100%);
   --header-border: #ff9100;
   --navbar-bg: rgba(9, 9, 11, 0.9);
@@ -134,6 +140,7 @@ body.theme-aegis, [data-theme="aegis"] {
   --input-border: #1a2554;
   --input-text: #f8fafc;
   --input-placeholder: #a5b4fc;
+  --text-muted: #a5b4fc;
   --header-bg: linear-gradient(135deg, #02050e 0%, #121c42 100%);
   --header-border: #818cf8;
   --navbar-bg: rgba(2, 5, 14, 0.9);
@@ -147,27 +154,29 @@ body.theme-aegis, [data-theme="aegis"] {
 }
 
 /* 7. Tattoo Theme (Ornate Body Dye & Magenta Ink Glow) */
+/* 7. Tattoo Theme (Dark Slate, Neon Rose & Solar Amber Ink) */
 body.theme-tattoo, [data-theme="tattoo"] {
-  --bg-gradient: radial-gradient(circle at top left, #14141d, #0a0a0f);
-  --text-color: #fcf4ff;
-  --card-bg: #1b1a26;
+  --bg-gradient: radial-gradient(circle at top left, #151214, #0b090a);
+  --text-color: #fff1f2;
+  --card-bg: #221c20;
   --card-border: rgba(244, 63, 94, 0.4);
-  --accent-cyan: #ff2a85;
-  --accent-blue: #f43f5e;
-  --input-bg: #12111a;
-  --input-border: #3d1c2d;
-  --input-text: #fcf4ff;
-  --input-placeholder: #ff85b3;
-  --header-bg: linear-gradient(135deg, #0a0a0f 0%, #361122 100%);
-  --header-border: #ff2a85;
-  --navbar-bg: rgba(10, 10, 15, 0.9);
-  --modal-bg: rgba(10, 10, 15, 0.95);
-  --modal-border: rgba(255, 42, 133, 0.25);
-  --modal-text: #fcf4ff;
-  --theme-card-bg: rgba(27, 26, 38, 0.6);
+  --accent-cyan: #f43f5e;
+  --accent-blue: #f59e0b;
+  --input-bg: #120e10;
+  --input-border: #3b202c;
+  --input-text: #fff1f2;
+  --input-placeholder: #fb7185;
+  --text-muted: #fb7185;
+  --header-bg: linear-gradient(135deg, #0b090a 0%, #361c28 100%);
+  --header-border: #f43f5e;
+  --navbar-bg: rgba(11, 9, 10, 0.9);
+  --modal-bg: rgba(11, 9, 10, 0.95);
+  --modal-border: rgba(244, 63, 94, 0.25);
+  --modal-text: #fff1f2;
+  --theme-card-bg: rgba(34, 28, 32, 0.6);
   --theme-card-border: rgba(244, 63, 94, 0.3);
-  --theme-card-selected-border: #ff2a85;
-  --theme-card-text: #fcf4ff;
+  --theme-card-selected-border: #f43f5e;
+  --theme-card-text: #fff1f2;
 }
 
 /* 8. Curvilinea Theme (Red Dwarf Sun & Arid Terra) */
@@ -182,6 +191,7 @@ body.theme-curvilinea, [data-theme="curvilinea"] {
   --input-border: #421e22;
   --input-text: #fff1f2;
   --input-placeholder: #fca5a5;
+  --text-muted: #fca5a5;
   --header-bg: linear-gradient(135deg, #120a0b 0%, #3d161a 100%);
   --header-border: #f97316;
   --navbar-bg: rgba(18, 10, 11, 0.9);
@@ -194,56 +204,84 @@ body.theme-curvilinea, [data-theme="curvilinea"] {
   --theme-card-text: #fff1f2;
 }
 
+
+/* 10. Viper Theme (Olive Scales & Solar Amber Glow) */
+body.theme-viper, [data-theme="viper"] {
+  --bg-gradient: radial-gradient(circle at top left, #141a16, #0a0e0c);
+  --text-color: #f0fdf4;
+  --card-bg: #1b241e;
+  --card-border: rgba(245, 158, 11, 0.4);
+  --accent-cyan: #f59e0b;
+  --accent-blue: #10b981;
+  --input-bg: #0f1611;
+  --input-border: #233629;
+  --input-text: #f0fdf4;
+  --input-placeholder: #fbbf24;
+  --text-muted: #fbbf24;
+  --header-bg: linear-gradient(135deg, #0a0e0c 0%, #1f2e24 100%);
+  --header-border: #f59e0b;
+  --navbar-bg: rgba(10, 14, 12, 0.9);
+  --modal-bg: rgba(10, 14, 12, 0.95);
+  --modal-border: rgba(245, 158, 11, 0.25);
+  --modal-text: #f0fdf4;
+  --theme-card-bg: rgba(27, 36, 30, 0.6);
+  --theme-card-border: rgba(245, 158, 11, 0.3);
+  --theme-card-selected-border: #f59e0b;
+  --theme-card-text: #f0fdf4;
+}
+
 /* ==========================================================================
    SPECIES THEMES
    ========================================================================== */
 
-/* Volar (Bio-Flora Emerald & Mint) */
+/* Volar (Emerald Primary & Solar Amber Accent) */
 body.theme-volar, [data-theme="volar"] {
-  --bg-gradient: radial-gradient(circle at top left, #12251d, #09140f);
+  --bg-gradient: radial-gradient(circle at top left, #141a16, #0a0e0c);
   --text-color: #f0fdf4;
-  --card-bg: #152c22;
+  --card-bg: #1b241e;
   --card-border: rgba(16, 185, 129, 0.4);
-  --accent-cyan: #00f5a0;
-  --accent-blue: #10b981;
-  --input-bg: #0e1e17;
-  --input-border: #1d4031;
+  --accent-cyan: #10b981;
+  --accent-blue: #f59e0b;
+  --input-bg: #0f1611;
+  --input-border: #233629;
   --input-text: #f0fdf4;
-  --input-placeholder: #4ad695;
-  --header-bg: linear-gradient(135deg, #09140f 0%, #153b2d 100%);
-  --header-border: #00f5a0;
-  --navbar-bg: rgba(9, 20, 15, 0.9);
-  --modal-bg: rgba(9, 20, 15, 0.95);
-  --modal-border: rgba(0, 245, 160, 0.25);
+  --input-placeholder: #34d399;
+  --text-muted: #34d399;
+  --header-bg: linear-gradient(135deg, #0a0e0c 0%, #1f2e24 100%);
+  --header-border: #10b981;
+  --navbar-bg: rgba(10, 14, 12, 0.9);
+  --modal-bg: rgba(10, 14, 12, 0.95);
+  --modal-border: rgba(16, 185, 129, 0.25);
   --modal-text: #f0fdf4;
-  --theme-card-bg: rgba(21, 44, 34, 0.6);
+  --theme-card-bg: rgba(27, 36, 30, 0.6);
   --theme-card-border: rgba(16, 185, 129, 0.3);
-  --theme-card-selected-border: #00f5a0;
+  --theme-card-selected-border: #10b981;
   --theme-card-text: #f0fdf4;
 }
 
-/* Human Terra (Stellar Command & Blue Marble) */
-body.theme-human-terra, [data-theme="human-terra"] {
-  --bg-gradient: radial-gradient(circle at top left, #0b1329, #050a17);
-  --text-color: #f8fafc;
-  --card-bg: #0f1c3a;
-  --card-border: rgba(56, 189, 248, 0.4);
-  --accent-cyan: #00d2ff;
-  --accent-blue: #38bdf8;
-  --input-bg: #0a1329;
-  --input-border: #182e5c;
-  --input-text: #f8fafc;
-  --input-placeholder: #7dd3fc;
-  --header-bg: linear-gradient(135deg, #050a17 0%, #112247 100%);
-  --header-border: #00d2ff;
-  --navbar-bg: rgba(5, 10, 23, 0.9);
-  --modal-bg: rgba(5, 10, 23, 0.95);
-  --modal-border: rgba(0, 210, 255, 0.25);
-  --modal-text: #f8fafc;
-  --theme-card-bg: rgba(15, 28, 58, 0.6);
-  --theme-card-border: rgba(56, 189, 248, 0.3);
-  --theme-card-selected-border: #00d2ff;
-  --theme-card-text: #f8fafc;
+/* Human (Icy Ocean Slate & Frost Cyan) */
+body.theme-human, [data-theme="human"] {
+  --bg-gradient: radial-gradient(circle at top left, #0f172a, #080d1a);
+  --text-color: #f0f9ff;
+  --card-bg: #1e293b;
+  --card-border: rgba(125, 211, 252, 0.4);
+  --accent-cyan: #7dd3fc;
+  --accent-blue: #0284c7;
+  --input-bg: #0c1322;
+  --input-border: #263852;
+  --input-text: #f0f9ff;
+  --input-placeholder: #bae6fd;
+  --text-muted: #bae6fd;
+  --header-bg: linear-gradient(135deg, #080d1a 0%, #173354 100%);
+  --header-border: #7dd3fc;
+  --navbar-bg: rgba(8, 13, 26, 0.9);
+  --modal-bg: rgba(8, 13, 26, 0.95);
+  --modal-border: rgba(125, 211, 252, 0.25);
+  --modal-text: #f0f9ff;
+  --theme-card-bg: rgba(30, 41, 59, 0.6);
+  --theme-card-border: rgba(125, 211, 252, 0.3);
+  --theme-card-selected-border: #7dd3fc;
+  --theme-card-text: #f0f9ff;
 }
 
 /* Grayling (Sleek Slate & Psionic Violet) */
@@ -258,6 +296,7 @@ body.theme-grayling, [data-theme="grayling"] {
   --input-border: #292440;
   --input-text: #f8fafc;
   --input-placeholder: #e9d5ff;
+  --text-muted: #e9d5ff;
   --header-bg: linear-gradient(135deg, #0b0d12 0%, #241638 100%);
   --header-border: #c084fc;
   --navbar-bg: rgba(11, 13, 18, 0.9);
@@ -268,4 +307,153 @@ body.theme-grayling, [data-theme="grayling"] {
   --theme-card-border: rgba(168, 85, 247, 0.3);
   --theme-card-selected-border: #c084fc;
   --theme-card-text: #f8fafc;
+}
+
+/* Lepidonain (Regal Bronze & Antique Amber) */
+body.theme-lepidonain, [data-theme="lepidonain"] {
+  --bg-gradient: radial-gradient(circle at top left, #1c1512, #0f0b09);
+  --text-color: #fff7ed;
+  --card-bg: #291f1a;
+  --card-border: rgba(249, 115, 22, 0.4);
+  --accent-cyan: #f97316;
+  --accent-blue: #fef08a;
+  --input-bg: #140e0b;
+  --input-border: #422d20;
+  --input-text: #fff7ed;
+  --input-placeholder: #ffedd5;
+  --text-muted: #ffedd5;
+  --header-bg: linear-gradient(135deg, #0f0b09 0%, #3d2618 100%);
+  --header-border: #f97316;
+  --navbar-bg: rgba(15, 11, 9, 0.9);
+  --modal-bg: rgba(15, 11, 9, 0.95);
+  --modal-border: rgba(249, 115, 22, 0.25);
+  --modal-text: #fff7ed;
+  --theme-card-bg: rgba(41, 31, 26, 0.6);
+  --theme-card-border: rgba(249, 115, 22, 0.3);
+  --theme-card-selected-border: #f97316;
+  --theme-card-text: #fff7ed;
+}
+
+/* Cryous (Deep Navy & Bio-Electric Cyan) */
+body.theme-cryous, [data-theme="cryous"] {
+  --bg-gradient: radial-gradient(circle at top left, #071324, #030914);
+  --text-color: #f0f9ff;
+  --card-bg: #0b1d36;
+  --card-border: rgba(0, 240, 255, 0.4);
+  --accent-cyan: #00f0ff;
+  --accent-blue: #0284c7;
+  --input-bg: #061121;
+  --input-border: #132f57;
+  --input-text: #f0f9ff;
+  --input-placeholder: #38bdf8;
+  --text-muted: #38bdf8;
+  --header-bg: linear-gradient(135deg, #030914 0%, #0d2847 100%);
+  --header-border: #00f0ff;
+  --navbar-bg: rgba(3, 9, 20, 0.9);
+  --modal-bg: rgba(3, 9, 20, 0.95);
+  --modal-border: rgba(0, 240, 255, 0.25);
+  --modal-text: #f0f9ff;
+  --theme-card-bg: rgba(11, 29, 54, 0.6);
+  --theme-card-border: rgba(0, 240, 255, 0.3);
+  --theme-card-selected-border: #00f0ff;
+  --theme-card-text: #f0f9ff;
+}
+
+/* Aconian (Galactic Silver & Trade Gold) */
+body.theme-aconian, [data-theme="aconian"] {
+  --bg-gradient: radial-gradient(circle at top left, #12151c, #0a0b0f);
+  --text-color: #f8fafc;
+  --card-bg: #1c212c;
+  --card-border: rgba(148, 163, 184, 0.4);
+  --accent-cyan: #e2e8f0;
+  --accent-blue: #facc15;
+  --input-bg: #0e1017;
+  --input-border: #2d3547;
+  --input-text: #f8fafc;
+  --input-placeholder: #cbd5e1;
+  --text-muted: #cbd5e1;
+  --header-bg: linear-gradient(135deg, #0a0b0f 0%, #2b3242 100%);
+  --header-border: #e2e8f0;
+  --navbar-bg: rgba(10, 11, 15, 0.9);
+  --modal-bg: rgba(10, 11, 15, 0.95);
+  --modal-border: rgba(148, 163, 184, 0.25);
+  --modal-text: #f8fafc;
+  --theme-card-bg: rgba(28, 33, 44, 0.6);
+  --theme-card-border: rgba(148, 163, 184, 0.3);
+  --theme-card-selected-border: #e2e8f0;
+  --theme-card-text: #f8fafc;
+}
+
+/* Murid (Electric Cobalt & Magenta Dye) */
+body.theme-murid, [data-theme="murid"] {
+  --bg-gradient: radial-gradient(circle at top left, #12101d, #090810);
+  --text-color: #fdf2f8;
+  --card-bg: #1a172a;
+  --card-border: rgba(236, 72, 153, 0.4);
+  --accent-cyan: #ec4899;
+  --accent-blue: #3b82f6;
+  --input-bg: #0d0c17;
+  --input-border: #34203e;
+  --input-text: #fdf2f8;
+  --input-placeholder: #f472b6;
+  --text-muted: #f472b6;
+  --header-bg: linear-gradient(135deg, #090810 0%, #2d173b 100%);
+  --header-border: #ec4899;
+  --navbar-bg: rgba(9, 8, 16, 0.9);
+  --modal-bg: rgba(9, 8, 16, 0.95);
+  --modal-border: rgba(236, 72, 153, 0.25);
+  --modal-text: #fdf2f8;
+  --theme-card-bg: rgba(26, 23, 42, 0.6);
+  --theme-card-border: rgba(236, 72, 153, 0.3);
+  --theme-card-selected-border: #ec4899;
+  --theme-card-text: #fdf2f8;
+}
+
+/* Avisari (Nebula Violet & Shimmering Gold) */
+body.theme-avisari, [data-theme="avisari"] {
+  --bg-gradient: radial-gradient(circle at top left, #100d24, #080614);
+  --text-color: #fefce8;
+  --card-bg: #181436;
+  --card-border: rgba(251, 191, 36, 0.4);
+  --accent-cyan: #fbbf24;
+  --accent-blue: #818cf8;
+  --input-bg: #0c091f;
+  --input-border: #2e2354;
+  --input-text: #fefce8;
+  --input-placeholder: #fde047;
+  --text-muted: #fde047;
+  --header-bg: linear-gradient(135deg, #080614 0%, #291a4d 100%);
+  --header-border: #fbbf24;
+  --navbar-bg: rgba(8, 6, 20, 0.9);
+  --modal-bg: rgba(8, 6, 20, 0.95);
+  --modal-border: rgba(251, 191, 36, 0.25);
+  --modal-text: #fefce8;
+  --theme-card-bg: rgba(24, 20, 54, 0.6);
+  --theme-card-border: rgba(251, 191, 36, 0.3);
+  --theme-card-selected-border: #fbbf24;
+  --theme-card-text: #fefce8;
+}
+/* Khepri (Dark Chitin Slate & Bio Toxic Lime) */
+body.theme-khepri, [data-theme="khepri"] {
+  --bg-gradient: radial-gradient(circle at top left, #131718, #0b0e0f);
+  --text-color: #f7fee7;
+  --card-bg: #1b2123;
+  --card-border: rgba(163, 230, 53, 0.4);
+  --accent-cyan: #a3e635;
+  --accent-blue: #f59e0b;
+  --input-bg: #0e1213;
+  --input-border: #26332a;
+  --input-text: #f7fee7;
+  --input-placeholder: #bef264;
+  --text-muted: #bef264;
+  --header-bg: linear-gradient(135deg, #0b0e0f 0%, #1f2b23 100%);
+  --header-border: #a3e635;
+  --navbar-bg: rgba(11, 14, 15, 0.9);
+  --modal-bg: rgba(11, 14, 15, 0.95);
+  --modal-border: rgba(163, 230, 53, 0.25);
+  --modal-text: #f7fee7;
+  --theme-card-bg: rgba(27, 33, 35, 0.6);
+  --theme-card-border: rgba(163, 230, 53, 0.3);
+  --theme-card-selected-border: #a3e635;
+  --theme-card-text: #f7fee7;
 }

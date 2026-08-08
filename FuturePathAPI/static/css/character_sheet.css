@@ -368,7 +368,7 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.05);
-  color: var(--text-muted);
+  color: var(--text-muted, #64748b);
   border: 1px solid var(--card-border);
   text-decoration: line-through;
   text-decoration-thickness: 2px;
@@ -709,7 +709,7 @@ body.layout-locked .card-reorder-controls {
 }
 
 .volar-preview {
-  background: radial-gradient(circle at top left, #12251d, #09140f);
+  background: radial-gradient(circle at top left, #141a16, #0a0e0c);
 }
 .volar-preview::before {
   content: '';
@@ -717,23 +717,23 @@ body.layout-locked .card-reorder-controls {
   bottom: 8px; right: 8px;
   width: 24px; height: 12px;
   border-radius: 4px;
-  background: linear-gradient(145deg, #152c22, #00f5a0);
+  background: linear-gradient(145deg, #1b241e, #10b981);
 }
 
-.human-terra-preview {
-  background: radial-gradient(circle at top left, #0b1329, #050a17);
+.human-preview {
+  background: radial-gradient(circle at top left, #0f172a, #080d1a);
 }
-.human-terra-preview::before {
+.human-preview::before {
   content: '';
   position: absolute;
   bottom: 8px; right: 8px;
   width: 24px; height: 12px;
   border-radius: 4px;
-  background: linear-gradient(145deg, #0f1c3a, #00d2ff);
+  background: linear-gradient(145deg, #1e293b, #7dd3fc);
 }
 
 .tattoo-preview {
-  background: radial-gradient(circle at top left, #14141d, #0a0a0f);
+  background: radial-gradient(circle at top left, #151214, #0b090a);
 }
 .tattoo-preview::before {
   content: '';
@@ -741,7 +741,7 @@ body.layout-locked .card-reorder-controls {
   bottom: 8px; right: 8px;
   width: 24px; height: 12px;
   border-radius: 4px;
-  background: linear-gradient(145deg, #1b1a26, #ff2a85);
+  background: linear-gradient(145deg, #221c20, #f43f5e);
 }
 
 .curvilinea-preview {
@@ -766,6 +766,91 @@ body.layout-locked .card-reorder-controls {
   width: 24px; height: 12px;
   border-radius: 4px;
   background: linear-gradient(145deg, #181e2b, #c084fc);
+}
+
+
+.viper-preview {
+  background: radial-gradient(circle at top left, #141a16, #0a0e0c);
+}
+.viper-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #1b241e, #f59e0b);
+}
+
+.lepidonain-preview {
+  background: radial-gradient(circle at top left, #1c1512, #0f0b09);
+}
+.lepidonain-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #291f1a, #f97316);
+}
+
+.cryous-preview {
+  background: radial-gradient(circle at top left, #071324, #030914);
+}
+.cryous-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #0b1d36, #00f0ff);
+}
+
+.aconian-preview {
+  background: radial-gradient(circle at top left, #12151c, #0a0b0f);
+}
+.aconian-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #1c212c, #e2e8f0);
+}
+
+.murid-preview {
+  background: radial-gradient(circle at top left, #12101d, #090810);
+}
+.murid-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #1a172a, #ec4899);
+}
+
+.avisari-preview {
+  background: radial-gradient(circle at top left, #100d24, #080614);
+}
+.avisari-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #181436, #fbbf24);
+}
+
+.khepri-preview {
+  background: radial-gradient(circle at top left, #131718, #0b0e0f);
+}
+.khepri-preview::before {
+  content: '';
+  position: absolute;
+  bottom: 8px; right: 8px;
+  width: 24px; height: 12px;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #1b2123, #a3e635);
 }
 
 /* Modal styling */
@@ -814,6 +899,18 @@ body.is-print-mode .sheet-card {
   break-inside: avoid;
   page-break-inside: avoid;
   border-radius: 4px !important;
+}
+
+/* Custom datalist dropdown for mobile cross-browser compatibility */
+.custom-datalist-dropdown {
+  -webkit-overflow-scrolling: touch;
+}
+.custom-datalist-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-datalist-dropdown::-webkit-scrollbar-thumb {
+  background: var(--card-border, rgba(255, 255, 255, 0.2));
+  border-radius: 4px;
 }
 
 body.is-print-mode .sheet-card.h-100 {

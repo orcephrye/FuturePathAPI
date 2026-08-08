@@ -28,51 +28,10 @@ incorporates cool technology, and features an entire galaxy as a Campaign Settin
 
 # Need to Know Context about this game
 
-## Advantage System
-
-This is an explanation of the Advantage system in d20 FuturePath: 
-
-@./GEMINI_ADVANTAGE.md
-
-
-## Skill Basics
-
-Skills are handled a differently compared to other d20 based systems. Here is the basic rules for Skills.
-
-@./GEMINI_SKILLSBASICS.md
-
-
-## Skills, Feat-Based Skills, and Skill-Like Abilities
-
-Comprehensive overview of all Skills, Feat-Based Skills, and Skill-Like Abilities in d20 FuturePath:
-
-@./GEMINI_SKILLS.md
-
-
-## Ability Themes
-
-The core capabilities of a character, including scores, modifiers, and die levels:
-
-@./GEMINI_ABILITY_THEMES.md
-
-
-## Conditions
-
-The list of physical, mental, and environmental conditions, as well as condition tracks:
-
-@./GEMINI_CONDITIONS.md
-
-
 ## Character Creation
 
 This helps explain the process of creating a new Character for FuturePath
 
 @./GEMINI_CHARACTER_CREATION.md
 
-
-## Character Paths
-
-Overview of the 7 core Character Paths (Strong, Fast, Tough, Smart, Dedicated, Charismatic, Freelancer), Ability Affinities, Hit Dice, and Talent Trees:
-
-@./GEMINI_CHARACTER_PATH.md
 
