@@ -11,3 +11,4 @@
 # IDE settings
 .idea/
 .vscode/
+/node_modules/

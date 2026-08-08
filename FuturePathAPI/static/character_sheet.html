@@ -5207,7 +5207,29 @@
       reader.readAsText(file);
     }
 
+    async function loadCharacterFromAPI(charId) {
+      if (!charId) return;
+      try {
+        const response = await fetch(`/v1/tasks/character_sheet/starter_characters/${encodeURIComponent(charId)}`);
+        if (!response.ok) {
+          console.warn(`Could not load character sheet for ID '${charId}' (HTTP ${response.status}).`);
+          return;
+        }
+        const data = await response.json();
+        if (data && !data.error) {
+          populateForm(data);
+          const charName = data.identityCard?.charName || data.identityCard?.characterName;
+          if (charName) {
+            document.title = `d20 FuturePath - Character Sheet (${charName})`;
+          }
+        }
+      } catch (err) {
+        console.error('Error preloading character sheet from API:', err);
+      }
+    }
+
     // Species Random Suggestion & Datalist Logic
+
     let speciesList = [
       "Humans",
       "Volar",
@@ -6126,6 +6148,11 @@
 
       const urlParams = new URLSearchParams(window.location.search);
       const isPrintParam = urlParams.get('print') === 'true' || urlParams.get('print') === '1' || window.location.pathname.endsWith('/print');
+      const apiCharId = urlParams.get('id') || urlParams.get('character_id') || urlParams.get('starter_id');
+      if (apiCharId) {
+        loadCharacterFromAPI(apiCharId);
+      }
+
 
       setupCollapseInteractions();
       if (isPrintParam) {

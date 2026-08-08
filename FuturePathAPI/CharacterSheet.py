@@ -9,12 +9,19 @@
 from flask import jsonify, send_from_directory
 from FuturePathAPI.initApp import app
 from FuturePathAPI.libs.ReferenceData import get_reference_db, init_reference_tables
+from FuturePathAPI.libs.StarterCharacters import (
+    init_starter_characters_table,
+    get_all_starter_characters,
+    get_starter_character_by_id
+)
 
-# Initialize reference tables on module load
+# Initialize reference and starter character tables on module load
 try:
     init_reference_tables()
+    init_starter_characters_table()
 except Exception:
     pass
+
 
 
 @app.route("/tasks/character_sheet/print", methods=["GET"])
@@ -121,4 +128,34 @@ def get_sizes():
     :Content-Type: application/json
     """
     return jsonify(_get_table_data("sizes", key_field="name"))
+
+
+@app.route("/v1/tasks/character_sheet/starter_characters", methods=["GET"])
+@app.route("/tasks/character_sheet/starter_characters", methods=["GET"])
+def get_starter_characters():
+    """
+    :OPTIONS: GET
+    :PATH: /tasks/character_sheet/starter_characters, /v1/tasks/character_sheet/starter_characters
+    :DESC: Returns a list of pre-seeded starter character sheets.
+    :Content-Type: application/json
+    """
+    characters = get_all_starter_characters()
+    return jsonify(characters)
+
+
+@app.route("/v1/tasks/character_sheet/starter_characters/<char_id>", methods=["GET"])
+@app.route("/tasks/character_sheet/starter_characters/<char_id>", methods=["GET"])
+def get_starter_character(char_id):
+    """
+    :OPTIONS: GET
+    :PATH: /tasks/character_sheet/starter_characters/<char_id>, /v1/tasks/character_sheet/starter_characters/<char_id>
+    :DESC: Returns a specific starter character sheet JSON payload by ID.
+    :Content-Type: application/json
+    """
+    character = get_starter_character_by_id(char_id)
+    if not character:
+        return jsonify({"error": f"Starter character '{char_id}' not found"}), 404
+    return jsonify(character)
+
+
 
