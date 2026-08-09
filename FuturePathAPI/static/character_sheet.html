@@ -5414,9 +5414,11 @@
         }
       });
       localStorage.setItem('d20FuturePathCollapsedCards', JSON.stringify(collapsedIds));
+    }    function getMaxPageHeight(pageNum = 1) {
+      if (!document.body.classList.contains('is-print-mode')) return 1880;
+      return pageNum === 1 ? 950 : 1000;
     }
 
-    const MAX_PAGE_HEIGHT = 1880;
     let autoPaginateTimeout = null;
     const pushedDownCards = new Set();
 
@@ -5429,8 +5431,20 @@
 
     function getElementContentHeight(el) {
       if (!el) return 0;
+      const wasPrintMode = document.body.classList.contains('is-print-mode');
+      const savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+      const savedScrollX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
+
+      if (!wasPrintMode) document.body.classList.add('is-print-mode');
+
       const rect = el.getBoundingClientRect();
-      return Math.max(el.offsetHeight, el.scrollHeight, Math.ceil(rect.height));
+      const height = Math.max(el.offsetHeight, el.scrollHeight, Math.ceil(rect.height));
+
+      if (!wasPrintMode) {
+        document.body.classList.remove('is-print-mode');
+        window.scrollTo({ top: savedScrollY, left: savedScrollX, behavior: 'instant' });
+      }
+      return height;
     }
 
     function getDefaultPage(cardEl) {
@@ -5495,85 +5509,102 @@
     const PULL_UP_SAFETY_BUFFER = 25; // 25px buffer to account for margins/padding when a card is inserted
 
     function autoPaginateCards() {
-      let pageNum = 1;
-      let iterations = 0;
+      const wasPrintMode = document.body.classList.contains('is-print-mode');
+      const savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+      const savedScrollX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
 
-      while (iterations++ < 40) {
-        const currentPage = document.getElementById(`page-${pageNum}`);
-        if (!currentPage) break;
+      if (!wasPrintMode) document.body.classList.add('is-print-mode');
 
-        const cards = getMovableCardsInPage(currentPage);
-        const currentHeight = getElementContentHeight(currentPage);
 
-        // 1. PUSH DOWN OVERFLOW: If page height > 1880px and has >= 1 visible card
-        if (currentHeight > MAX_PAGE_HEIGHT && cards.length > 0) {
-          const lastCard = cards[cards.length - 1];
-          const nextPage = getOrCreatePageContainer(pageNum + 1);
-          const nextFooter = nextPage.querySelector('.print-footer');
-          const firstNextCard = getMovableCardsInPage(nextPage)[0];
+      try {
+        let pageNum = 1;
+        let iterations = 0;
 
-          pushedDownCards.add(lastCard);
-          console.log(`[AutoPaginate] Page ${pageNum} height (${currentHeight}px) > ${MAX_PAGE_HEIGHT}px. Pushing card "${lastCard.id}" down to Page ${pageNum + 1}`);
+        while (iterations++ < 40) {
+          const currentPage = document.getElementById(`page-${pageNum}`);
+          if (!currentPage) break;
 
-          if (firstNextCard) {
-            nextPage.insertBefore(lastCard, firstNextCard);
-          } else if (nextFooter) {
-            nextPage.insertBefore(lastCard, nextFooter);
-          } else {
-            nextPage.appendChild(lastCard);
-          }
-          continue;
-        }
+          const maxH = getMaxPageHeight(pageNum);
+          const cards = getMovableCardsInPage(currentPage);
+          const currentHeight = getElementContentHeight(currentPage);
 
-        // 2. PULL UP UNDERFLOW: Check if first card of nextPage can move UP to currentPage
-        const nextPage = document.getElementById(`page-${pageNum + 1}`);
-        if (nextPage) {
-          const nextCards = getMovableCardsInPage(nextPage);
-          if (nextCards.length > 0) {
-            const firstNextCard = nextCards[0];
-            const cardDefaultPage = getDefaultPage(firstNextCard);
+          // 1. PUSH DOWN OVERFLOW: If page height > maxH and has >= 1 visible card
+          if (currentHeight > maxH && cards.length > 0) {
+            const lastCard = cards[cards.length - 1];
+            const nextPage = getOrCreatePageContainer(pageNum + 1);
+            const nextFooter = nextPage.querySelector('.print-footer');
+            const firstNextCard = getMovableCardsInPage(nextPage)[0];
 
-            // RULE 5 & 6: Card can ONLY move up to currentPage IF:
-            // 1. pageNum >= cardDefaultPage
-            // 2. The card was NOT just pushed down in this run (prevents immediate thrashing)
-            // 3. currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= MAX_PAGE_HEIGHT
-            if (pageNum >= cardDefaultPage && !pushedDownCards.has(firstNextCard)) {
-              const cardHeight = getElementContentHeight(firstNextCard) || 150;
+            pushedDownCards.add(lastCard);
+            console.log(`[AutoPaginate] Page ${pageNum} height (${currentHeight}px) > ${maxH}px. Pushing card "${lastCard.id}" down to Page ${pageNum + 1}`);
 
-              if (currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= MAX_PAGE_HEIGHT) {
-                console.log(`[AutoPaginate] Page ${pageNum} height (${currentHeight}px) + card "${firstNextCard.id}" (${cardHeight}px) + buffer (${PULL_UP_SAFETY_BUFFER}px) <= ${MAX_PAGE_HEIGHT}px. Pulling card UP to Page ${pageNum}`);
-
-                if (firstNextCard._originalParentContainer && currentPage.contains(firstNextCard._originalParentContainer)) {
-                  firstNextCard._originalParentContainer.appendChild(firstNextCard);
-                } else {
-                  const currentFooter = currentPage.querySelector('.print-footer');
-                  if (currentFooter) {
-                    currentPage.insertBefore(firstNextCard, currentFooter);
-                  } else {
-                    currentPage.appendChild(firstNextCard);
-                  }
-                }
-
-                // Cleanup empty auto-generated page (Page 4+)
-                if (pageNum + 1 > 3 && getMovableCardsInPage(nextPage).length === 0) {
-                  nextPage.remove();
-                }
-                continue;
-              }
+            if (firstNextCard) {
+              nextPage.insertBefore(lastCard, firstNextCard);
+            } else if (nextFooter) {
+              nextPage.insertBefore(lastCard, nextFooter);
+            } else {
+              nextPage.appendChild(lastCard);
             }
-          } else if (pageNum + 1 > 3) {
-            // Remove empty page > 3
-            nextPage.remove();
+            continue;
           }
-        }
 
-        pageNum++;
+          // 2. PULL UP UNDERFLOW: Check if first card of nextPage can move UP to currentPage
+          const nextPage = document.getElementById(`page-${pageNum + 1}`);
+          if (nextPage) {
+            const nextCards = getMovableCardsInPage(nextPage);
+            if (nextCards.length > 0) {
+              const firstNextCard = nextCards[0];
+              const cardDefaultPage = getDefaultPage(firstNextCard);
+
+              // RULE 5 & 6: Card can ONLY move up to currentPage IF:
+              // 1. pageNum >= cardDefaultPage
+              // 2. The card was NOT just pushed down in this run (prevents immediate thrashing)
+              // 3. currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= maxH
+              if (pageNum >= cardDefaultPage && !pushedDownCards.has(firstNextCard)) {
+                const cardHeight = getElementContentHeight(firstNextCard) || 150;
+
+                if (currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= maxH) {
+                  console.log(`[AutoPaginate] Page ${pageNum} height (${currentHeight}px) + card "${firstNextCard.id}" (${cardHeight}px) + buffer (${PULL_UP_SAFETY_BUFFER}px) <= ${maxH}px. Pulling card UP to Page ${pageNum}`);
+
+                  if (firstNextCard._originalParentContainer && currentPage.contains(firstNextCard._originalParentContainer)) {
+                    firstNextCard._originalParentContainer.appendChild(firstNextCard);
+                  } else {
+                    const currentFooter = currentPage.querySelector('.print-footer');
+                    if (currentFooter) {
+                      currentPage.insertBefore(firstNextCard, currentFooter);
+                    } else {
+                      currentPage.appendChild(firstNextCard);
+                    }
+                  }
+
+                  // Cleanup empty auto-generated page (Page 4+)
+                  if (pageNum + 1 > 3 && getMovableCardsInPage(nextPage).length === 0) {
+                    nextPage.remove();
+                  }
+                  continue;
+                }
+              }
+            } else if (pageNum + 1 > 3) {
+              // Remove empty page > 3
+              nextPage.remove();
+            }
+          }
+          pageNum++;
+        }
+      } finally {
+        if (!wasPrintMode) {
+          document.body.classList.remove('is-print-mode');
+          window.scrollTo({ top: savedScrollY, left: savedScrollX, behavior: 'instant' });
+        }
       }
+
 
       updateHeaderToggleSwitches();
       saveCardOrder();
       updateMoveButtonVisibilities();
     }
+
+
 
     function getReorderableCards() {
       const pageEls = Array.from(document.querySelectorAll('[id^="page-"]'))
@@ -5616,10 +5647,10 @@
           return false;
         }
 
-        // Check if target page is full (> 1880px)
+        // Check if target page is full
         const targetHeight = getElementContentHeight(prevPage);
         const cardHeight = getElementContentHeight(card) || 150;
-        if (targetHeight + cardHeight > MAX_PAGE_HEIGHT) {
+        if (targetHeight + cardHeight > getMaxPageHeight(prevPageNum)) {
           return false;
         }
 
@@ -5641,16 +5672,18 @@
       if (cardPage === nextPage) {
         return true;
       } else {
-        // Check if target page is full (> 1880px)
+        // Check if target page is full
         const targetHeight = getElementContentHeight(nextPage);
         const cardHeight = getElementContentHeight(card) || 150;
-        if (targetHeight + cardHeight > MAX_PAGE_HEIGHT) {
+        const nextPageNum = parseInt(nextPage.id.replace('page-', ''), 10) || 1;
+        if (targetHeight + cardHeight > getMaxPageHeight(nextPageNum)) {
           return false;
         }
 
         return true;
       }
     }
+
 
     function updateMoveButtonVisibilities() {
       const { cards } = getReorderableCards();
