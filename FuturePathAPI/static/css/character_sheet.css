@@ -877,6 +877,24 @@ body.is-print-mode {
   min-height: auto !important;
 }
 
+/* Page break rules for printable sheet pages */
+body.is-print-mode [id^="page-"],
+body.is-print-mode [class*="print-page-"],
+body.is-print-mode .dynamic-page {
+  break-after: page !important;
+  page-break-after: always !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  margin-top: 0 !important;
+}
+
+body.is-print-mode [id^="page-"]:last-of-type,
+body.is-print-mode [class*="print-page-"]:last-of-type,
+body.is-print-mode .dynamic-page:last-of-type {
+  break-after: auto !important;
+  page-break-after: auto !important;
+}
+
 /* Print Footer - Hidden by default on screen */
 .print-footer {
   display: none !important;
@@ -890,6 +908,7 @@ body.is-print-mode .btn-add-row,
 body.is-print-mode .collapse-icon {
   display: none !important;
 }
+
 
 body.is-print-mode .sheet-card {
   background-color: #ffffff !important;
@@ -1045,6 +1064,298 @@ body.is-print-mode #collapseIdentity .form-select {
   min-width: 0 !important;
 }
 
+/* Speed card print styles */
+body.is-print-mode #collapseSpeed .card-body {
+  padding: 2px 6px !important;
+}
+body.is-print-mode #collapseSpeed .row {
+  --bs-gutter-x: 0.2rem !important;
+  --bs-gutter-y: 0.05rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+body.is-print-mode #collapseSpeed .stat-label {
+  font-size: 5.8pt !important;
+  margin-bottom: 1px !important;
+  line-height: 1 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+body.is-print-mode #collapseSpeed .form-control {
+  height: 13px !important;
+  font-size: 6.5pt !important;
+  padding: 0 1px !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #444444 !important;
+  border-radius: 0 !important;
+}
+body.is-print-mode #collapseSpeed .input-group-text {
+  height: 13px !important;
+  font-size: 6pt !important;
+  padding: 0 1px !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #444444 !important;
+}
+body.is-print-mode #collapseSpeed .input-group {
+  max-width: 46px !important;
+}
+body.is-print-mode #collapseSpeed .mt-2 {
+  margin-top: 2px !important;
+  padding-top: 2px !important;
+}
+
+/* Conditions card print styles */
+body.is-print-mode #collapseConditions .card-body {
+  padding: 2px 6px !important;
+}
+body.is-print-mode #collapseConditions .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  --bs-gutter-x: 0.4rem !important;
+  --bs-gutter-y: 0.05rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+body.is-print-mode #collapseConditions [class*="col-"] {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+  width: 50% !important;
+}
+
+body.is-print-mode #collapseConditions h6 {
+  font-size: 7pt !important;
+  margin-bottom: 2px !important;
+  margin-top: 0 !important;
+}
+body.is-print-mode #collapseConditions .condition-item {
+  margin-bottom: 2px !important;
+  padding-bottom: 2px !important;
+}
+body.is-print-mode #collapseConditions .form-check {
+  margin-bottom: 0 !important;
+  min-height: auto !important;
+}
+body.is-print-mode #collapseConditions .form-check-label {
+  font-size: 6.2pt !important;
+  margin-bottom: 0 !important;
+}
+body.is-print-mode #collapseConditions .small.text-muted,
+body.is-print-mode #collapseConditions .small {
+  font-size: 5.5pt !important;
+  line-height: 1.05 !important;
+  padding-left: 0.6rem !important;
+}
+
+/* Professions card print styles */
+body.is-print-mode #collapseProfessions .card-body {
+  padding: 2px 6px !important;
+}
+body.is-print-mode #professionsContainer {
+  gap: 4px !important;
+}
+body.is-print-mode .profession-block {
+  padding: 3px 5px !important;
+  margin-bottom: 4px !important;
+  border: 1px solid #777777 !important;
+  border-radius: 3px !important;
+  background-color: transparent !important;
+}
+body.is-print-mode #collapseProfessions .profession-block .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  --bs-gutter-x: 0.3rem !important;
+  --bs-gutter-y: 0 !important;
+}
+body.is-print-mode #collapseProfessions .profession-block .col-12.col-md-5,
+body.is-print-mode #collapseProfessions .profession-block .col-md-5 {
+  flex: 0 0 42% !important;
+  max-width: 42% !important;
+  width: 42% !important;
+}
+body.is-print-mode #collapseProfessions .profession-block .col-6.col-md-2,
+body.is-print-mode #collapseProfessions .profession-block .col-md-2 {
+  flex: 0 0 16% !important;
+  max-width: 16% !important;
+  width: 16% !important;
+}
+body.is-print-mode #collapseProfessions .profession-block .col-12.col-md-4,
+body.is-print-mode #collapseProfessions .profession-block .col-md-4 {
+  flex: 0 0 42% !important;
+  max-width: 42% !important;
+  width: 42% !important;
+}
+body.is-print-mode .affinity-tag {
+  font-size: 5.8pt !important;
+  padding: 0 2px !important;
+  height: 13px !important;
+  line-height: 12px !important;
+  border-radius: 2px !important;
+}
+body.is-print-mode .affinity-tag.active {
+  border: 1px solid #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+body.is-print-mode .prof-talents-table th,
+body.is-print-mode .prof-talents-table td {
+  padding: 1px 2px !important;
+  font-size: 6.5pt !important;
+}
+
+/* Wealth / Credits & Experience card print styles */
+body.is-print-mode #collapseWealthXP .card-body {
+  padding: 2px 6px !important;
+}
+body.is-print-mode #collapseWealthXP .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch !important;
+  --bs-gutter-x: 0.3rem !important;
+  --bs-gutter-y: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(1) {
+  flex: 0 0 28% !important;
+  max-width: 28% !important;
+  width: 28% !important;
+}
+body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(2) {
+  flex: 0 0 18% !important;
+  max-width: 18% !important;
+  width: 18% !important;
+}
+body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(3) {
+  flex: 0 0 18% !important;
+  max-width: 18% !important;
+  width: 18% !important;
+}
+body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(4) {
+  flex: 0 0 36% !important;
+  max-width: 36% !important;
+  width: 36% !important;
+}
+body.is-print-mode #collapseWealthXP .stat-box {
+  padding: 2px 4px !important;
+  background-color: #f9fafb !important;
+  border: 1px solid #888888 !important;
+  border-radius: 3px !important;
+}
+body.is-print-mode #collapseWealthXP .stat-label {
+  font-size: 5.8pt !important;
+  margin-bottom: 1px !important;
+  line-height: 1 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+body.is-print-mode #collapseWealthXP .form-control {
+  height: 13px !important;
+  font-size: 6.5pt !important;
+  padding: 0 1px !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+body.is-print-mode #collapseWealthXP .input-group-text {
+  height: 13px !important;
+  font-size: 6pt !important;
+  padding: 0 1px !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+/* Techniques card print styles */
+body.is-print-mode #collapseTechniques .card-body {
+  padding: 2px 6px !important;
+}
+body.is-print-mode #techniqueLevelsContainer {
+  gap: 4px !important;
+}
+body.is-print-mode .technique-level-block {
+  padding: 3px 5px !important;
+  margin-bottom: 4px !important;
+  border: 1px solid #777777 !important;
+  border-radius: 3px !important;
+  background-color: transparent !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  --bs-gutter-x: 0.25rem !important;
+  --bs-gutter-y: 0 !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nth-child(1) {
+  flex: 0 0 10% !important; max-width: 10% !important; width: 10% !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nth-child(2) {
+  flex: 0 0 38% !important; max-width: 38% !important; width: 38% !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nth-child(3) {
+  flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nth-child(4) {
+  flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nth-child(5) {
+  flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+}
+body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nth-child(6) {
+  flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+}
+body.is-print-mode .techniques-sub-table th,
+body.is-print-mode .techniques-sub-table td {
+  padding: 1px 2px !important;
+  font-size: 6.5pt !important;
+}
+
+/* Power Armor card print styles */
+body.is-print-mode #collapsePowerArmor .card-body {
+  padding: 2px 6px !important;
+}
+body.is-print-mode #powerArmorContainer {
+  gap: 4px !important;
+}
+body.is-print-mode .power-armor-block {
+  padding: 3px 5px !important;
+  margin-bottom: 4px !important;
+  border: 1px solid #777777 !important;
+  border-radius: 3px !important;
+  background-color: transparent !important;
+}
+body.is-print-mode #collapsePowerArmor .power-armor-block .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  --bs-gutter-x: 0.3rem !important;
+  --bs-gutter-y: 0 !important;
+}
+body.is-print-mode #collapsePowerArmor .power-armor-block [class*="col-"]:nth-child(1) {
+  flex: 0 0 60% !important; max-width: 60% !important; width: 60% !important;
+}
+body.is-print-mode #collapsePowerArmor .power-armor-block [class*="col-"]:nth-child(2) {
+  flex: 0 0 40% !important; max-width: 40% !important; width: 40% !important;
+}
+body.is-print-mode .pa-mods-table th,
+body.is-print-mode .pa-mods-table td {
+  padding: 1px 2px !important;
+  font-size: 6.5pt !important;
+}
+
+
+
+
+
+
 body.is-print-mode .input-group-text {
   background-color: transparent !important;
   border: none !important;
@@ -1093,13 +1404,21 @@ body.is-print-mode .ac-comp-input {
   width: 32px !important;
   max-width: 36px !important;
 }
+body.is-print-mode .stat-box .form-control,
+body.is-print-mode .stat-box input,
+body.is-print-mode .stat-box select,
 body.is-print-mode .ability-stat-input,
 body.is-print-mode .hp-stat-input {
   height: 15px !important;
   font-size: 7.2pt !important;
   padding: 0 1px !important;
   margin: 1px auto !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
 }
+
 body.is-print-mode .dr-square-box {
   background: #ffffff !important;
   border: 1px solid #000000 !important;
@@ -1111,16 +1430,28 @@ body.is-print-mode .dr-box-label {
   margin-bottom: 1px !important;
 }
 
-body.is-print-mode .table-custom th {
+body.is-print-mode .table-custom th,
+body.is-print-mode table th {
   background-color: #e5e7eb !important;
   color: #000000 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
   border-bottom: 1px solid #000000 !important;
   padding: 1px 2px !important;
   font-size: 6.8pt !important;
   font-weight: bold !important;
 }
-body.is-print-mode .table-custom td {
-  border-color: #cccccc !important;
+body.is-print-mode .table-custom td,
+body.is-print-mode table td,
+body.is-print-mode .table-custom tr,
+body.is-print-mode table tr {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
   color: #000000 !important;
   padding: 1px 2px !important;
   font-size: 6.8pt !important;
@@ -1131,7 +1462,10 @@ body.is-print-mode #skillsTable th,
 body.is-print-mode #skillsTable td {
   padding: 0.05rem 0.15rem !important;
   font-size: 6.8pt !important;
+  border: none !important;
+  border-bottom: none !important;
 }
+
 body.is-print-mode #skillsTable .form-control-sm {
   padding: 0 1px !important;
   font-size: 6.5pt !important;
@@ -1263,7 +1597,25 @@ body.is-print-mode .col-lg-6 {
     min-height: auto !important;
   }
 
+  [id^="page-"],
+  [class*="print-page-"],
+  .dynamic-page {
+    break-after: page !important;
+    page-break-after: always !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-top: 0 !important;
+  }
+
+  [id^="page-"]:last-of-type,
+  [class*="print-page-"]:last-of-type,
+  .dynamic-page:last-of-type {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
   .no-print, .action-bar, .app-header, .btn-remove-row, .btn-add-row, .collapse-icon {
+
     display: none !important;
   }
 
@@ -1306,7 +1658,291 @@ body.is-print-mode .col-lg-6 {
     font-weight: normal !important;
   }
 
+  .table-custom tr,
+  .table-custom td,
+  table tr,
+  table td,
+  .stat-box .form-control,
+  .stat-box input,
+  .stat-box select,
+  .ability-stat-input,
+  .hp-stat-input {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+  }
+
+
+  #collapseSpeed .card-body {
+    padding: 2px 6px !important;
+  }
+  #collapseSpeed .row {
+    --bs-gutter-x: 0.2rem !important;
+    --bs-gutter-y: 0.05rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #collapseSpeed .stat-label {
+    font-size: 5.8pt !important;
+    margin-bottom: 1px !important;
+    line-height: 1 !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+  }
+  #collapseSpeed .form-control {
+    height: 13px !important;
+    font-size: 6.5pt !important;
+    padding: 0 1px !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #444444 !important;
+    border-radius: 0 !important;
+  }
+  #collapseSpeed .input-group-text {
+    height: 13px !important;
+    font-size: 6pt !important;
+    padding: 0 1px !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #444444 !important;
+  }
+  #collapseSpeed .input-group {
+    max-width: 46px !important;
+  }
+  #collapseSpeed .mt-2 {
+    margin-top: 2px !important;
+    padding-top: 2px !important;
+  }
+
+  #collapseConditions .card-body {
+    padding: 2px 6px !important;
+  }
+  #collapseConditions .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    --bs-gutter-x: 0.4rem !important;
+    --bs-gutter-y: 0.05rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #collapseConditions [class*="col-"] {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  #collapseConditions h6 {
+    font-size: 7pt !important;
+    margin-bottom: 2px !important;
+    margin-top: 0 !important;
+  }
+  #collapseConditions .condition-item {
+    margin-bottom: 2px !important;
+    padding-bottom: 2px !important;
+  }
+  #collapseConditions .form-check {
+    margin-bottom: 0 !important;
+    min-height: auto !important;
+  }
+  #collapseConditions .form-check-label {
+    font-size: 6.2pt !important;
+    margin-bottom: 0 !important;
+  }
+  #collapseProfessions .card-body {
+    padding: 2px 6px !important;
+  }
+  #professionsContainer {
+    gap: 4px !important;
+  }
+  .profession-block {
+    padding: 3px 5px !important;
+    margin-bottom: 4px !important;
+    border: 1px solid #777777 !important;
+    border-radius: 3px !important;
+    background-color: transparent !important;
+  }
+  #collapseProfessions .profession-block .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    margin-bottom: 2px !important;
+    --bs-gutter-x: 0.3rem !important;
+    --bs-gutter-y: 0 !important;
+  }
+  #collapseProfessions .profession-block .col-12.col-md-5,
+  #collapseProfessions .profession-block .col-md-5 {
+    flex: 0 0 42% !important;
+    max-width: 42% !important;
+    width: 42% !important;
+  }
+  #collapseProfessions .profession-block .col-6.col-md-2,
+  #collapseProfessions .profession-block .col-md-2 {
+    flex: 0 0 16% !important;
+    max-width: 16% !important;
+    width: 16% !important;
+  }
+  #collapseProfessions .profession-block .col-12.col-md-4,
+  #collapseProfessions .profession-block .col-md-4 {
+    flex: 0 0 42% !important;
+    max-width: 42% !important;
+    width: 42% !important;
+  }
+  .affinity-tag {
+    font-size: 5.8pt !important;
+    padding: 0 2px !important;
+    height: 13px !important;
+    line-height: 12px !important;
+    border-radius: 2px !important;
+  }
+  .affinity-tag.active {
+    border: 1px solid #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  #collapseWealthXP .card-body {
+    padding: 2px 6px !important;
+  }
+  #collapseWealthXP .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    --bs-gutter-x: 0.3rem !important;
+    --bs-gutter-y: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  #collapseWealthXP [class*="col-"]:nth-child(1) {
+    flex: 0 0 28% !important;
+    max-width: 28% !important;
+    width: 28% !important;
+  }
+  #collapseWealthXP [class*="col-"]:nth-child(2) {
+    flex: 0 0 18% !important;
+    max-width: 18% !important;
+    width: 18% !important;
+  }
+  #collapseWealthXP [class*="col-"]:nth-child(3) {
+    flex: 0 0 18% !important;
+    max-width: 18% !important;
+    width: 18% !important;
+  }
+  #collapseWealthXP [class*="col-"]:nth-child(4) {
+    flex: 0 0 36% !important;
+    max-width: 36% !important;
+    width: 36% !important;
+  }
+  #collapseWealthXP .stat-box {
+    padding: 2px 4px !important;
+    background-color: #f9fafb !important;
+    border: 1px solid #888888 !important;
+    border-radius: 3px !important;
+  }
+  #collapseWealthXP .stat-label {
+    font-size: 5.8pt !important;
+    margin-bottom: 1px !important;
+    line-height: 1 !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+  }
+  #collapseWealthXP .form-control {
+    height: 13px !important;
+    font-size: 6.5pt !important;
+    padding: 0 1px !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+  }
+  #collapseTechniques .card-body {
+    padding: 2px 6px !important;
+  }
+  #techniqueLevelsContainer {
+    gap: 4px !important;
+  }
+  .technique-level-block {
+    padding: 3px 5px !important;
+    margin-bottom: 4px !important;
+    border: 1px solid #777777 !important;
+    border-radius: 3px !important;
+    background-color: transparent !important;
+  }
+  #collapseTechniques .technique-level-block .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    margin-bottom: 2px !important;
+    --bs-gutter-x: 0.25rem !important;
+    --bs-gutter-y: 0 !important;
+  }
+  #collapseTechniques .technique-level-block [class*="col-"]:nth-child(1) {
+    flex: 0 0 10% !important; max-width: 10% !important; width: 10% !important;
+  }
+  #collapseTechniques .technique-level-block [class*="col-"]:nth-child(2) {
+    flex: 0 0 38% !important; max-width: 38% !important; width: 38% !important;
+  }
+  #collapseTechniques .technique-level-block [class*="col-"]:nth-child(3) {
+    flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+  }
+  #collapseTechniques .technique-level-block [class*="col-"]:nth-child(4) {
+    flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+  }
+  #collapseTechniques .technique-level-block [class*="col-"]:nth-child(5) {
+    flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+  }
+  #collapseTechniques .technique-level-block [class*="col-"]:nth-child(6) {
+    flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
+  }
+  .techniques-sub-table th,
+  .techniques-sub-table td {
+    padding: 1px 2px !important;
+    font-size: 6.5pt !important;
+  }
+
+  #collapsePowerArmor .card-body {
+    padding: 2px 6px !important;
+  }
+  #powerArmorContainer {
+    gap: 4px !important;
+  }
+  .power-armor-block {
+    padding: 3px 5px !important;
+    margin-bottom: 4px !important;
+    border: 1px solid #777777 !important;
+    border-radius: 3px !important;
+    background-color: transparent !important;
+  }
+  #collapsePowerArmor .power-armor-block .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    margin-bottom: 2px !important;
+    --bs-gutter-x: 0.3rem !important;
+    --bs-gutter-y: 0 !important;
+  }
+  #collapsePowerArmor .power-armor-block [class*="col-"]:nth-child(1) {
+    flex: 0 0 60% !important; max-width: 60% !important; width: 60% !important;
+  }
+  #collapsePowerArmor .power-armor-block [class*="col-"]:nth-child(2) {
+    flex: 0 0 40% !important; max-width: 40% !important; width: 40% !important;
+  }
+  .pa-mods-table th,
+  .pa-mods-table td {
+    padding: 1px 2px !important;
+    font-size: 6.5pt !important;
+  }
+
   .print-footer {
+
+
+
+
+
+
     display: block !important;
     text-align: center;
     font-size: 7.5pt;
