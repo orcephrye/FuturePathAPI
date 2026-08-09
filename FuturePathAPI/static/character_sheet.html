@@ -167,7 +167,7 @@
 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
 <label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Character Path</label>
 <div class="input-group">
-<label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" onchange="calculateStats()" oninput="calculateStats()" placeholder="e.g. Path of Strength" type="text"/>
+<label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" placeholder="e.g. Path of Strength" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="charPathDropdownBtn" onclick="toggleDatalist('identityCard_charPath')" title="Show Path Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -177,7 +177,7 @@
 </div>
 <div class="col-6 col-sm-3 col-md-2 col-lg-2">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_pathLevel">Path Lvl</label>
-<input class="form-control" id="identityCard_pathLevel" inputmode="numeric" name="pathLevel" onchange="calculateStats()" type="text"/>
+<input class="form-control" id="identityCard_pathLevel" inputmode="numeric" name="pathLevel" type="text"/>
 </div>
 <div class="col-12 col-sm-6 col-md-3">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_classList">Profession(s) &amp; Levels</label>
@@ -190,7 +190,7 @@
 <div class="col-6 col-sm-4 col-md-2 col-lg-1">
 <label class="form-label small text-uppercase text-muted fw-bold" for="charSize">Size</label>
 <div class="input-group">
-<label class="visually-hidden" for="identityCard_charSize">Charsize</label><input class="form-control" id="identityCard_charSize" list="sizesDatalist" name="charSize" onchange="calculateStats()" oninput="calculateStats()" placeholder="Medium" type="text"/>
+<label class="visually-hidden" for="identityCard_charSize">Charsize</label><input class="form-control" id="identityCard_charSize" list="sizesDatalist" name="charSize" placeholder="Medium" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="sizesDropdownBtn" onclick="toggleDatalist('identityCard_charSize')" title="Show Size Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -245,7 +245,7 @@
 <label class="stat-label fw-bold fs-6 text-ability-str mb-0" for="primaryAbility_STR" style="cursor: pointer;">STR</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('STR')" style="cursor: pointer;" title="Roll STR Check"></i>
 </div>
-<label class="visually-hidden" for="abilityScoresCard_scoreSTR">Scorestr</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreSTR" inputmode="numeric" name="scoreSTR" oninput="calculateStats()" type="text"/>
+<label class="visually-hidden" for="abilityScoresCard_scoreSTR">Scorestr</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreSTR" inputmode="numeric" name="scoreSTR" type="text"/>
 <div class="stat-label">MOD</div>
 <label class="visually-hidden" for="abilityScoresCard_modSTR">Modstr</label><input class="form-control form-control-sm text-center fw-bold text-ability-str my-1 ability-stat-input" id="abilityScoresCard_modSTR" name="modSTR" readonly="" type="text"/>
 </div>
@@ -258,7 +258,7 @@
 <label class="stat-label fw-bold fs-6 text-ability-dex mb-0" for="primaryAbility_DEX" style="cursor: pointer;">DEX</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('DEX')" style="cursor: pointer;" title="Roll DEX Check"></i>
 </div>
-<label class="visually-hidden" for="abilityScoresCard_scoreDEX">Scoredex</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreDEX" inputmode="numeric" name="scoreDEX" oninput="calculateStats()" type="text"/>
+<label class="visually-hidden" for="abilityScoresCard_scoreDEX">Scoredex</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreDEX" inputmode="numeric" name="scoreDEX" type="text"/>
 <div class="stat-label">MOD</div>
 <label class="visually-hidden" for="abilityScoresCard_modDEX">Moddex</label><input class="form-control form-control-sm text-center fw-bold text-ability-dex my-1 ability-stat-input" id="abilityScoresCard_modDEX" name="modDEX" readonly="" type="text"/>
 </div>
@@ -271,7 +271,7 @@
 <label class="stat-label fw-bold fs-6 text-ability-con mb-0" for="primaryAbility_CON" style="cursor: pointer;">CON</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('CON')" style="cursor: pointer;" title="Roll CON Check"></i>
 </div>
-<label class="visually-hidden" for="abilityScoresCard_scoreCON">Scorecon</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreCON" inputmode="numeric" name="scoreCON" oninput="calculateStats()" type="text"/>
+<label class="visually-hidden" for="abilityScoresCard_scoreCON">Scorecon</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreCON" inputmode="numeric" name="scoreCON" type="text"/>
 <div class="stat-label">MOD</div>
 <label class="visually-hidden" for="abilityScoresCard_modCON">Modcon</label><input class="form-control form-control-sm text-center fw-bold text-ability-con my-1 ability-stat-input" id="abilityScoresCard_modCON" name="modCON" readonly="" type="text"/>
 </div>
@@ -284,7 +284,7 @@
 <label class="stat-label fw-bold fs-6 text-ability-int mb-0" for="primaryAbility_INT" style="cursor: pointer;">INT</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('INT')" style="cursor: pointer;" title="Roll INT Check"></i>
 </div>
-<label class="visually-hidden" for="abilityScoresCard_scoreINT">Scoreint</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreINT" inputmode="numeric" name="scoreINT" oninput="calculateStats()" type="text"/>
+<label class="visually-hidden" for="abilityScoresCard_scoreINT">Scoreint</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreINT" inputmode="numeric" name="scoreINT" type="text"/>
 <div class="stat-label">MOD</div>
 <label class="visually-hidden" for="abilityScoresCard_modINT">Modint</label><input class="form-control form-control-sm text-center fw-bold text-ability-int my-1 ability-stat-input" id="abilityScoresCard_modINT" name="modINT" readonly="" type="text"/>
 </div>
@@ -297,7 +297,7 @@
 <label class="stat-label fw-bold fs-6 text-ability-wis mb-0" for="primaryAbility_WIS" style="cursor: pointer;">WIS</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('WIS')" style="cursor: pointer;" title="Roll WIS Check"></i>
 </div>
-<label class="visually-hidden" for="abilityScoresCard_scoreWIS">Scorewis</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreWIS" inputmode="numeric" name="scoreWIS" oninput="calculateStats()" type="text"/>
+<label class="visually-hidden" for="abilityScoresCard_scoreWIS">Scorewis</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreWIS" inputmode="numeric" name="scoreWIS" type="text"/>
 <div class="stat-label">MOD</div>
 <label class="visually-hidden" for="abilityScoresCard_modWIS">Modwis</label><input class="form-control form-control-sm text-center fw-bold text-ability-wis my-1 ability-stat-input" id="abilityScoresCard_modWIS" name="modWIS" readonly="" type="text"/>
 </div>
@@ -310,7 +310,7 @@
 <label class="stat-label fw-bold fs-6 text-ability-cha mb-0" for="primaryAbility_CHA" style="cursor: pointer;">CHA</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('CHA')" style="cursor: pointer;" title="Roll CHA Check"></i>
 </div>
-<label class="visually-hidden" for="abilityScoresCard_scoreCHA">Scorecha</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreCHA" inputmode="numeric" name="scoreCHA" oninput="calculateStats()" type="text"/>
+<label class="visually-hidden" for="abilityScoresCard_scoreCHA">Scorecha</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreCHA" inputmode="numeric" name="scoreCHA" type="text"/>
 <div class="stat-label">MOD</div>
 <label class="visually-hidden" for="abilityScoresCard_modCHA">Modcha</label><input class="form-control form-control-sm text-center fw-bold text-ability-cha my-1 ability-stat-input" id="abilityScoresCard_modCHA" name="modCHA" readonly="" type="text"/>
 </div>
@@ -489,7 +489,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_acrobatics">Skillrank_Acrobatics</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_acrobatics" inputmode="numeric" name="skillRank_acrobatics" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_acrobatics">Skillrank_Acrobatics</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_acrobatics" inputmode="numeric" name="skillRank_acrobatics" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_acrobatics">Skilldie_Acrobatics</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_acrobatics" name="skillDie_acrobatics" style="width: 54px;" type="text"/>
 </div>
@@ -502,7 +502,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_acrobatics">Skillmisc_Acrobatics</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_acrobatics" inputmode="numeric" name="skillMisc_acrobatics" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_acrobatics">Skillmisc_Acrobatics</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_acrobatics" inputmode="numeric" name="skillMisc_acrobatics" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -514,7 +514,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_athletics">Skillrank_Athletics</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_athletics" inputmode="numeric" name="skillRank_athletics" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_athletics">Skillrank_Athletics</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_athletics" inputmode="numeric" name="skillRank_athletics" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_athletics">Skilldie_Athletics</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_athletics" name="skillDie_athletics" style="width: 54px;" type="text"/>
 </div>
@@ -527,7 +527,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_athletics">Skillmisc_Athletics</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_athletics" inputmode="numeric" name="skillMisc_athletics" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_athletics">Skillmisc_Athletics</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_athletics" inputmode="numeric" name="skillMisc_athletics" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -539,7 +539,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_bluff">Skillrank_Bluff</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_bluff" inputmode="numeric" name="skillRank_bluff" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_bluff">Skillrank_Bluff</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_bluff" inputmode="numeric" name="skillRank_bluff" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_bluff">Skilldie_Bluff</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_bluff" name="skillDie_bluff" style="width: 54px;" type="text"/>
 </div>
@@ -552,7 +552,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_bluff">Skillmisc_Bluff</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_bluff" inputmode="numeric" name="skillMisc_bluff" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_bluff">Skillmisc_Bluff</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_bluff" inputmode="numeric" name="skillMisc_bluff" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -564,7 +564,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_computer_use">Skillrank_Computer_Use</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_computer_use" inputmode="numeric" name="skillRank_computer_use" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_computer_use">Skillrank_Computer_Use</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_computer_use" inputmode="numeric" name="skillRank_computer_use" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_computer_use">Skilldie_Computer_Use</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_computer_use" name="skillDie_computer_use" style="width: 54px;" type="text"/>
 </div>
@@ -577,7 +577,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_computer_use">Skillmisc_Computer_Use</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_computer_use" inputmode="numeric" name="skillMisc_computer_use" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_computer_use">Skillmisc_Computer_Use</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_computer_use" inputmode="numeric" name="skillMisc_computer_use" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -589,7 +589,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_craft_chemical">Skillrank_Craft_Chemical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_chemical" inputmode="numeric" name="skillRank_craft_chemical" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_craft_chemical">Skillrank_Craft_Chemical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_chemical" inputmode="numeric" name="skillRank_craft_chemical" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_craft_chemical">Skilldie_Craft_Chemical</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_craft_chemical" name="skillDie_craft_chemical" style="width: 54px;" type="text"/>
 </div>
@@ -602,7 +602,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_chemical">Skillmisc_Craft_Chemical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_chemical" inputmode="numeric" name="skillMisc_craft_chemical" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_chemical">Skillmisc_Craft_Chemical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_chemical" inputmode="numeric" name="skillMisc_craft_chemical" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -614,7 +614,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_craft_electronic">Skillrank_Craft_Electronic</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_electronic" inputmode="numeric" name="skillRank_craft_electronic" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_craft_electronic">Skillrank_Craft_Electronic</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_electronic" inputmode="numeric" name="skillRank_craft_electronic" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_craft_electronic">Skilldie_Craft_Electronic</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_craft_electronic" name="skillDie_craft_electronic" style="width: 54px;" type="text"/>
 </div>
@@ -627,7 +627,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_electronic">Skillmisc_Craft_Electronic</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_electronic" inputmode="numeric" name="skillMisc_craft_electronic" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_electronic">Skillmisc_Craft_Electronic</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_electronic" inputmode="numeric" name="skillMisc_craft_electronic" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -639,7 +639,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_craft_mechanical">Skillrank_Craft_Mechanical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_mechanical" inputmode="numeric" name="skillRank_craft_mechanical" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_craft_mechanical">Skillrank_Craft_Mechanical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_mechanical" inputmode="numeric" name="skillRank_craft_mechanical" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_craft_mechanical">Skilldie_Craft_Mechanical</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_craft_mechanical" name="skillDie_craft_mechanical" style="width: 54px;" type="text"/>
 </div>
@@ -652,7 +652,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_mechanical">Skillmisc_Craft_Mechanical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_mechanical" inputmode="numeric" name="skillMisc_craft_mechanical" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_mechanical">Skillmisc_Craft_Mechanical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_mechanical" inputmode="numeric" name="skillMisc_craft_mechanical" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -664,7 +664,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_craft_pharmaceutical">Skillrank_Craft_Pharmaceutical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_pharmaceutical" inputmode="numeric" name="skillRank_craft_pharmaceutical" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_craft_pharmaceutical">Skillrank_Craft_Pharmaceutical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_pharmaceutical" inputmode="numeric" name="skillRank_craft_pharmaceutical" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_craft_pharmaceutical">Skilldie_Craft_Pharmaceutical</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_craft_pharmaceutical" name="skillDie_craft_pharmaceutical" style="width: 54px;" type="text"/>
 </div>
@@ -677,7 +677,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_pharmaceutical">Skillmisc_Craft_Pharmaceutical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_pharmaceutical" inputmode="numeric" name="skillMisc_craft_pharmaceutical" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_pharmaceutical">Skillmisc_Craft_Pharmaceutical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_pharmaceutical" inputmode="numeric" name="skillMisc_craft_pharmaceutical" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -689,7 +689,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_craft_structural">Skillrank_Craft_Structural</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_structural" inputmode="numeric" name="skillRank_craft_structural" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_craft_structural">Skillrank_Craft_Structural</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_craft_structural" inputmode="numeric" name="skillRank_craft_structural" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_craft_structural">Skilldie_Craft_Structural</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_craft_structural" name="skillDie_craft_structural" style="width: 54px;" type="text"/>
 </div>
@@ -702,7 +702,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_structural">Skillmisc_Craft_Structural</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_structural" inputmode="numeric" name="skillMisc_craft_structural" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_craft_structural">Skillmisc_Craft_Structural</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_craft_structural" inputmode="numeric" name="skillMisc_craft_structural" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -714,7 +714,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_diplomacy">Skillrank_Diplomacy</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_diplomacy" inputmode="numeric" name="skillRank_diplomacy" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_diplomacy">Skillrank_Diplomacy</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_diplomacy" inputmode="numeric" name="skillRank_diplomacy" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_diplomacy">Skilldie_Diplomacy</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_diplomacy" name="skillDie_diplomacy" style="width: 54px;" type="text"/>
 </div>
@@ -727,7 +727,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_diplomacy">Skillmisc_Diplomacy</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_diplomacy" inputmode="numeric" name="skillMisc_diplomacy" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_diplomacy">Skillmisc_Diplomacy</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_diplomacy" inputmode="numeric" name="skillMisc_diplomacy" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -739,7 +739,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_disable_device">Skillrank_Disable_Device</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_disable_device" inputmode="numeric" name="skillRank_disable_device" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_disable_device">Skillrank_Disable_Device</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_disable_device" inputmode="numeric" name="skillRank_disable_device" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_disable_device">Skilldie_Disable_Device</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_disable_device" name="skillDie_disable_device" style="width: 54px;" type="text"/>
 </div>
@@ -752,7 +752,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_disable_device">Skillmisc_Disable_Device</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_disable_device" inputmode="numeric" name="skillMisc_disable_device" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_disable_device">Skillmisc_Disable_Device</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_disable_device" inputmode="numeric" name="skillMisc_disable_device" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -764,7 +764,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_disguise">Skillrank_Disguise</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_disguise" inputmode="numeric" name="skillRank_disguise" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_disguise">Skillrank_Disguise</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_disguise" inputmode="numeric" name="skillRank_disguise" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_disguise">Skilldie_Disguise</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_disguise" name="skillDie_disguise" style="width: 54px;" type="text"/>
 </div>
@@ -777,7 +777,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_disguise">Skillmisc_Disguise</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_disguise" inputmode="numeric" name="skillMisc_disguise" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_disguise">Skillmisc_Disguise</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_disguise" inputmode="numeric" name="skillMisc_disguise" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -789,7 +789,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_intimidate">Skillrank_Intimidate</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_intimidate" inputmode="numeric" name="skillRank_intimidate" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_intimidate">Skillrank_Intimidate</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_intimidate" inputmode="numeric" name="skillRank_intimidate" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_intimidate">Skilldie_Intimidate</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_intimidate" name="skillDie_intimidate" style="width: 54px;" type="text"/>
 </div>
@@ -802,7 +802,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_intimidate">Skillmisc_Intimidate</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_intimidate" inputmode="numeric" name="skillMisc_intimidate" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_intimidate">Skillmisc_Intimidate</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_intimidate" inputmode="numeric" name="skillMisc_intimidate" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -814,7 +814,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_knowledge_culture">Skillrank_Knowledge_Culture</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_culture" inputmode="numeric" name="skillRank_knowledge_culture" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_knowledge_culture">Skillrank_Knowledge_Culture</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_culture" inputmode="numeric" name="skillRank_knowledge_culture" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_knowledge_culture">Skilldie_Knowledge_Culture</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_knowledge_culture" name="skillDie_knowledge_culture" style="width: 54px;" type="text"/>
 </div>
@@ -827,7 +827,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_culture">Skillmisc_Knowledge_Culture</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_culture" inputmode="numeric" name="skillMisc_knowledge_culture" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_culture">Skillmisc_Knowledge_Culture</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_culture" inputmode="numeric" name="skillMisc_knowledge_culture" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -839,7 +839,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_knowledge_current_events">Skillrank_Knowledge_Current_Events</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_current_events" inputmode="numeric" name="skillRank_knowledge_current_events" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_knowledge_current_events">Skillrank_Knowledge_Current_Events</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_current_events" inputmode="numeric" name="skillRank_knowledge_current_events" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_knowledge_current_events">Skilldie_Knowledge_Current_Events</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_knowledge_current_events" name="skillDie_knowledge_current_events" style="width: 54px;" type="text"/>
 </div>
@@ -852,7 +852,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_current_events">Skillmisc_Knowledge_Current_Events</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_current_events" inputmode="numeric" name="skillMisc_knowledge_current_events" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_current_events">Skillmisc_Knowledge_Current_Events</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_current_events" inputmode="numeric" name="skillMisc_knowledge_current_events" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -864,7 +864,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_knowledge_history">Skillrank_Knowledge_History</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_history" inputmode="numeric" name="skillRank_knowledge_history" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_knowledge_history">Skillrank_Knowledge_History</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_history" inputmode="numeric" name="skillRank_knowledge_history" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_knowledge_history">Skilldie_Knowledge_History</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_knowledge_history" name="skillDie_knowledge_history" style="width: 54px;" type="text"/>
 </div>
@@ -877,7 +877,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_history">Skillmisc_Knowledge_History</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_history" inputmode="numeric" name="skillMisc_knowledge_history" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_history">Skillmisc_Knowledge_History</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_history" inputmode="numeric" name="skillMisc_knowledge_history" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -889,7 +889,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_knowledge_science">Skillrank_Knowledge_Science</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_science" inputmode="numeric" name="skillRank_knowledge_science" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_knowledge_science">Skillrank_Knowledge_Science</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_science" inputmode="numeric" name="skillRank_knowledge_science" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_knowledge_science">Skilldie_Knowledge_Science</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_knowledge_science" name="skillDie_knowledge_science" style="width: 54px;" type="text"/>
 </div>
@@ -902,7 +902,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_science">Skillmisc_Knowledge_Science</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_science" inputmode="numeric" name="skillMisc_knowledge_science" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_science">Skillmisc_Knowledge_Science</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_science" inputmode="numeric" name="skillMisc_knowledge_science" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -914,7 +914,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_knowledge_philosophy">Skillrank_Knowledge_Philosophy</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_philosophy" inputmode="numeric" name="skillRank_knowledge_philosophy" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_knowledge_philosophy">Skillrank_Knowledge_Philosophy</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_knowledge_philosophy" inputmode="numeric" name="skillRank_knowledge_philosophy" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_knowledge_philosophy">Skilldie_Knowledge_Philosophy</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_knowledge_philosophy" name="skillDie_knowledge_philosophy" style="width: 54px;" type="text"/>
 </div>
@@ -927,7 +927,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_philosophy">Skillmisc_Knowledge_Philosophy</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_philosophy" inputmode="numeric" name="skillMisc_knowledge_philosophy" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_knowledge_philosophy">Skillmisc_Knowledge_Philosophy</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_knowledge_philosophy" inputmode="numeric" name="skillMisc_knowledge_philosophy" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -939,7 +939,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_medical">Skillrank_Medical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_medical" inputmode="numeric" name="skillRank_medical" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_medical">Skillrank_Medical</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_medical" inputmode="numeric" name="skillRank_medical" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_medical">Skilldie_Medical</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_medical" name="skillDie_medical" style="width: 54px;" type="text"/>
 </div>
@@ -952,7 +952,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_medical">Skillmisc_Medical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_medical" inputmode="numeric" name="skillMisc_medical" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_medical">Skillmisc_Medical</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_medical" inputmode="numeric" name="skillMisc_medical" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -964,7 +964,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_perception">Skillrank_Perception</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_perception" inputmode="numeric" name="skillRank_perception" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_perception">Skillrank_Perception</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_perception" inputmode="numeric" name="skillRank_perception" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_perception">Skilldie_Perception</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_perception" name="skillDie_perception" style="width: 54px;" type="text"/>
 </div>
@@ -977,7 +977,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_perception">Skillmisc_Perception</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_perception" inputmode="numeric" name="skillMisc_perception" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_perception">Skillmisc_Perception</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_perception" inputmode="numeric" name="skillMisc_perception" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -989,7 +989,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_pilot">Skillrank_Pilot</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_pilot" inputmode="numeric" name="skillRank_pilot" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_pilot">Skillrank_Pilot</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_pilot" inputmode="numeric" name="skillRank_pilot" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_pilot">Skilldie_Pilot</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_pilot" name="skillDie_pilot" style="width: 54px;" type="text"/>
 </div>
@@ -1002,7 +1002,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_pilot">Skillmisc_Pilot</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_pilot" inputmode="numeric" name="skillMisc_pilot" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_pilot">Skillmisc_Pilot</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_pilot" inputmode="numeric" name="skillMisc_pilot" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1014,7 +1014,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_sense_motive">Skillrank_Sense_Motive</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_sense_motive" inputmode="numeric" name="skillRank_sense_motive" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_sense_motive">Skillrank_Sense_Motive</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_sense_motive" inputmode="numeric" name="skillRank_sense_motive" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_sense_motive">Skilldie_Sense_Motive</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_sense_motive" name="skillDie_sense_motive" style="width: 54px;" type="text"/>
 </div>
@@ -1027,7 +1027,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_sense_motive">Skillmisc_Sense_Motive</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_sense_motive" inputmode="numeric" name="skillMisc_sense_motive" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_sense_motive">Skillmisc_Sense_Motive</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_sense_motive" inputmode="numeric" name="skillMisc_sense_motive" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1039,7 +1039,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_sleight_of_hand">Skillrank_Sleight_Of_Hand</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_sleight_of_hand" inputmode="numeric" name="skillRank_sleight_of_hand" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_sleight_of_hand">Skillrank_Sleight_Of_Hand</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_sleight_of_hand" inputmode="numeric" name="skillRank_sleight_of_hand" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_sleight_of_hand">Skilldie_Sleight_Of_Hand</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_sleight_of_hand" name="skillDie_sleight_of_hand" style="width: 54px;" type="text"/>
 </div>
@@ -1052,7 +1052,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_sleight_of_hand">Skillmisc_Sleight_Of_Hand</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_sleight_of_hand" inputmode="numeric" name="skillMisc_sleight_of_hand" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_sleight_of_hand">Skillmisc_Sleight_Of_Hand</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_sleight_of_hand" inputmode="numeric" name="skillMisc_sleight_of_hand" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1064,7 +1064,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_stealth">Skillrank_Stealth</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_stealth" inputmode="numeric" name="skillRank_stealth" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_stealth">Skillrank_Stealth</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_stealth" inputmode="numeric" name="skillRank_stealth" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_stealth">Skilldie_Stealth</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_stealth" name="skillDie_stealth" style="width: 54px;" type="text"/>
 </div>
@@ -1077,7 +1077,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_stealth">Skillmisc_Stealth</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_stealth" inputmode="numeric" name="skillMisc_stealth" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_stealth">Skillmisc_Stealth</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_stealth" inputmode="numeric" name="skillMisc_stealth" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1089,7 +1089,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_study">Skillrank_Study</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_study" inputmode="numeric" name="skillRank_study" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_study">Skillrank_Study</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_study" inputmode="numeric" name="skillRank_study" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_study">Skilldie_Study</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_study" name="skillDie_study" style="width: 54px;" type="text"/>
 </div>
@@ -1102,7 +1102,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_study">Skillmisc_Study</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_study" inputmode="numeric" name="skillMisc_study" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_study">Skillmisc_Study</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_study" inputmode="numeric" name="skillMisc_study" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1114,7 +1114,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="coreSkills_skillRank_survival">Skillrank_Survival</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_survival" inputmode="numeric" name="skillRank_survival" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="coreSkills_skillRank_survival">Skillrank_Survival</label><input class="form-control form-control-sm skill-rank text-center" id="coreSkills_skillRank_survival" inputmode="numeric" name="skillRank_survival" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="coreSkills_skillDie_survival">Skilldie_Survival</label><input class="form-control form-control-sm skill-die text-center" id="coreSkills_skillDie_survival" name="skillDie_survival" style="width: 54px;" type="text"/>
 </div>
@@ -1127,7 +1127,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="coreSkills_skillMisc_survival">Skillmisc_Survival</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_survival" inputmode="numeric" name="skillMisc_survival" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="coreSkills_skillMisc_survival">Skillmisc_Survival</label><input class="form-control form-control-sm skill-misc-mod" id="coreSkills_skillMisc_survival" inputmode="numeric" name="skillMisc_survival" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1192,7 +1192,7 @@
 <div class="fw-bold text-cyan fs-5 align-self-center px-1 d-none d-sm-block">+</div>
 <div class="text-center">
 <label class="stat-label d-block mb-0 text-muted" for="global_acArmorBonus">Armor</label>
-<input class="form-control form-control-sm text-center ac-comp-input" id="global_acArmorBonus" inputmode="numeric" name="acArmorBonus" oninput="calculateStats()" type="text"/>
+<input class="form-control form-control-sm text-center ac-comp-input" id="global_acArmorBonus" inputmode="numeric" name="acArmorBonus" type="text"/>
 </div>
 <div class="fw-bold text-cyan fs-5 align-self-center px-1">+</div>
 <div class="text-center">
@@ -1202,17 +1202,17 @@
 <div class="fw-bold text-cyan fs-5 align-self-center px-1">+</div>
 <div class="text-center">
 <label class="stat-label d-block mb-0 text-muted" for="global_acSizeMod">Size</label>
-<input class="form-control form-control-sm text-center ac-comp-input" id="global_acSizeMod" inputmode="numeric" name="acSizeMod" oninput="calculateStats()" type="text"/>
+<input class="form-control form-control-sm text-center ac-comp-input" id="global_acSizeMod" inputmode="numeric" name="acSizeMod" type="text"/>
 </div>
 <div class="fw-bold text-cyan fs-5 align-self-center px-1">+</div>
 <div class="text-center">
 <label class="stat-label d-block mb-0 text-muted" for="global_acNaturalArmor">Natural</label>
-<input class="form-control form-control-sm text-center ac-comp-input" id="global_acNaturalArmor" inputmode="numeric" name="acNaturalArmor" oninput="calculateStats()" type="text"/>
+<input class="form-control form-control-sm text-center ac-comp-input" id="global_acNaturalArmor" inputmode="numeric" name="acNaturalArmor" type="text"/>
 </div>
 <div class="fw-bold text-cyan fs-5 align-self-center px-1">+</div>
 <div class="text-center">
 <label class="stat-label d-block mb-0 text-muted" for="global_acMiscMod">Misc</label>
-<input class="form-control form-control-sm text-center ac-comp-input" id="global_acMiscMod" inputmode="numeric" name="acMiscMod" oninput="calculateStats()" type="text"/>
+<input class="form-control form-control-sm text-center ac-comp-input" id="global_acMiscMod" inputmode="numeric" name="acMiscMod" type="text"/>
 </div>
 </div>
 </div>
@@ -1592,7 +1592,7 @@
 <td class="fw-semibold">Knowledge (Technology)</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_knowledge_tech_custom">Skillrank_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_knowledge_tech_custom" inputmode="numeric" name="skillRank_knowledge_tech_custom" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_knowledge_tech_custom">Skillrank_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_knowledge_tech_custom" inputmode="numeric" name="skillRank_knowledge_tech_custom" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_knowledge_tech_custom">Skilldie_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_knowledge_tech_custom" name="skillDie_knowledge_tech_custom" style="width: 54px;" type="text"/>
 </div>
@@ -1605,7 +1605,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_knowledge_tech_custom">Skillmisc_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_knowledge_tech_custom" inputmode="numeric" name="skillMisc_knowledge_tech_custom" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_knowledge_tech_custom">Skillmisc_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_knowledge_tech_custom" inputmode="numeric" name="skillMisc_knowledge_tech_custom" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1614,7 +1614,7 @@
 <td class="fw-semibold">Profession</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_profession_custom">Skillrank_Profession_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_profession_custom" inputmode="numeric" name="skillRank_profession_custom" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_profession_custom">Skillrank_Profession_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_profession_custom" inputmode="numeric" name="skillRank_profession_custom" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_profession_custom">Skilldie_Profession_Custom</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_profession_custom" name="skillDie_profession_custom" style="width: 54px;" type="text"/>
 </div>
@@ -1627,7 +1627,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_profession_custom">Skillmisc_Profession_Custom</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_profession_custom" inputmode="numeric" name="skillMisc_profession_custom" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_profession_custom">Skillmisc_Profession_Custom</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_profession_custom" inputmode="numeric" name="skillMisc_profession_custom" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1636,7 +1636,7 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillName1">Customfeatskillname1</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customFeatSkillName1" name="customFeatSkillName1" placeholder="Skill Name" type="text"/></td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_1">Skillrank_Feat_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_1" inputmode="numeric" name="skillRank_feat_custom_1" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_1">Skillrank_Feat_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_1" inputmode="numeric" name="skillRank_feat_custom_1" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_feat_custom_1">Skilldie_Feat_Custom_1</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_feat_custom_1" name="skillDie_feat_custom_1" style="width: 54px;" type="text"/>
 </div>
@@ -1657,7 +1657,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_feat_custom_1">Skillmisc_Feat_Custom_1</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_feat_custom_1" inputmode="numeric" name="skillMisc_feat_custom_1" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_feat_custom_1">Skillmisc_Feat_Custom_1</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_feat_custom_1" inputmode="numeric" name="skillMisc_feat_custom_1" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1666,7 +1666,7 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillName2">Customfeatskillname2</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customFeatSkillName2" name="customFeatSkillName2" placeholder="Skill Name" type="text"/></td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_2">Skillrank_Feat_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_2" inputmode="numeric" name="skillRank_feat_custom_2" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_2">Skillrank_Feat_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_2" inputmode="numeric" name="skillRank_feat_custom_2" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_feat_custom_2">Skilldie_Feat_Custom_2</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_feat_custom_2" name="skillDie_feat_custom_2" style="width: 54px;" type="text"/>
 </div>
@@ -1687,7 +1687,7 @@
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_feat_custom_2">Skillmisc_Feat_Custom_2</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_feat_custom_2" inputmode="numeric" name="skillMisc_feat_custom_2" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_feat_custom_2">Skillmisc_Feat_Custom_2</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_feat_custom_2" inputmode="numeric" name="skillMisc_feat_custom_2" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1715,13 +1715,13 @@
 <td class="fw-semibold">Language</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_main">Skillrank_Lang_Main</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_main" inputmode="numeric" name="skillRank_lang_main" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_main">Skillrank_Lang_Main</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_main" inputmode="numeric" name="skillRank_lang_main" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_main">Skilldie_Lang_Main</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_main" name="skillDie_lang_main" style="width: 54px;" type="text"/>
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_main">Skillmisc_Lang_Main</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_main" inputmode="numeric" name="skillMisc_lang_main" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_main">Skillmisc_Lang_Main</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_main" inputmode="numeric" name="skillMisc_lang_main" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1730,13 +1730,13 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName1">Customlangname1</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName1" name="customLangName1" placeholder="Language / Dialect" type="text"/></td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_1">Skillrank_Lang_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_1" inputmode="numeric" name="skillRank_lang_custom_1" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_1">Skillrank_Lang_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_1" inputmode="numeric" name="skillRank_lang_custom_1" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_1">Skilldie_Lang_Custom_1</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_1" name="skillDie_lang_custom_1" style="width: 54px;" type="text"/>
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_1">Skillmisc_Lang_Custom_1</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_custom_1" inputmode="numeric" name="skillMisc_lang_custom_1" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_1">Skillmisc_Lang_Custom_1</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_custom_1" inputmode="numeric" name="skillMisc_lang_custom_1" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1745,13 +1745,13 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName2">Customlangname2</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName2" name="customLangName2" placeholder="Language / Dialect" type="text"/></td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_2">Skillrank_Lang_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_2" inputmode="numeric" name="skillRank_lang_custom_2" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_2">Skillrank_Lang_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_2" inputmode="numeric" name="skillRank_lang_custom_2" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_2">Skilldie_Lang_Custom_2</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_2" name="skillDie_lang_custom_2" style="width: 54px;" type="text"/>
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_2">Skillmisc_Lang_Custom_2</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_custom_2" inputmode="numeric" name="skillMisc_lang_custom_2" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_2">Skillmisc_Lang_Custom_2</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_custom_2" inputmode="numeric" name="skillMisc_lang_custom_2" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1760,13 +1760,13 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName3">Customlangname3</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName3" name="customLangName3" placeholder="Language / Dialect" type="text"/></td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_3">Skillrank_Lang_Custom_3</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_3" inputmode="numeric" name="skillRank_lang_custom_3" oninput="calculateStats()" placeholder="0" style="width: 42px;" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_3">Skillrank_Lang_Custom_3</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_3" inputmode="numeric" name="skillRank_lang_custom_3" placeholder="0" style="width: 42px;" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_3">Skilldie_Lang_Custom_3</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_3" name="skillDie_lang_custom_3" style="width: 54px;" type="text"/>
 </div>
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_3">Skillmisc_Lang_Custom_3</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_custom_3" inputmode="numeric" name="skillMisc_lang_custom_3" oninput="calculateStats()" placeholder="0" type="text"/></td>
+<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_3">Skillmisc_Lang_Custom_3</label><input class="form-control form-control-sm skill-misc-mod" id="languageCustomSkillsCard_skillMisc_lang_custom_3" inputmode="numeric" name="skillMisc_lang_custom_3" placeholder="0" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -3972,9 +3972,9 @@
     // Auto-Save & JSON Export/Import
     let autoSaveTimeout = null;
     function triggerAutoSave() {
-      scheduleAutoPagination();
       clearTimeout(autoSaveTimeout);
       autoSaveTimeout = setTimeout(() => {
+        scheduleAutoPagination();
         saveToLocalStorage();
       }, 500);
     }
@@ -5171,7 +5171,7 @@
       updateProficiencyCounts();
       setTimeout(() => {
         document.querySelectorAll('.notebook-textarea, .trait-desc-textarea').forEach(el => autoExpandTextarea(el));
-        scheduleAutoPagination();
+        scheduleAutoPagination(50);
       }, 0);
     }
 
@@ -5338,7 +5338,7 @@
       updateHeaderToggleSwitches();
       updateMoveButtonVisibilities();
       saveCardOrder();
-      scheduleAutoPagination();
+      scheduleAutoPagination(50);
     }
 
     function hardResetPage(event) {
@@ -5422,26 +5422,31 @@
     let autoPaginateTimeout = null;
     const pushedDownCards = new Set();
 
-    function scheduleAutoPagination() {
+    function scheduleAutoPagination(delay = 500) {
       if (autoPaginateTimeout) clearTimeout(autoPaginateTimeout);
       autoPaginateTimeout = setTimeout(() => {
         autoPaginateCards();
-      }, 50);
+      }, delay);
     }
 
     function getElementContentHeight(el) {
       if (!el) return 0;
-      const wasPrintMode = document.body.classList.contains('is-print-mode');
+      const isAlreadyPrintMode = document.body.classList.contains('is-print-mode');
+      if (isAlreadyPrintMode) {
+        return Math.max(el.offsetHeight, el.scrollHeight, Math.ceil(el.getBoundingClientRect().height));
+      }
+
       const savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
       const savedScrollX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
 
-      if (!wasPrintMode) document.body.classList.add('is-print-mode');
-
+      document.body.classList.add('is-print-mode');
       const rect = el.getBoundingClientRect();
       const height = Math.max(el.offsetHeight, el.scrollHeight, Math.ceil(rect.height));
+      document.body.classList.remove('is-print-mode');
 
-      if (!wasPrintMode) {
-        document.body.classList.remove('is-print-mode');
+      const currentY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+      const currentX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
+      if (currentY !== savedScrollY || currentX !== savedScrollX) {
         window.scrollTo({ top: savedScrollY, left: savedScrollX, behavior: 'instant' });
       }
       return height;
@@ -5509,12 +5514,12 @@
     const PULL_UP_SAFETY_BUFFER = 25; // 25px buffer to account for margins/padding when a card is inserted
 
     function autoPaginateCards() {
+      pushedDownCards.clear();
       const wasPrintMode = document.body.classList.contains('is-print-mode');
       const savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
       const savedScrollX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
 
       if (!wasPrintMode) document.body.classList.add('is-print-mode');
-
 
       try {
         let pageNum = 1;
@@ -5536,7 +5541,6 @@
             const firstNextCard = getMovableCardsInPage(nextPage)[0];
 
             pushedDownCards.add(lastCard);
-            console.log(`[AutoPaginate] Page ${pageNum} height (${currentHeight}px) > ${maxH}px. Pushing card "${lastCard.id}" down to Page ${pageNum + 1}`);
 
             if (firstNextCard) {
               nextPage.insertBefore(lastCard, firstNextCard);
@@ -5556,16 +5560,10 @@
               const firstNextCard = nextCards[0];
               const cardDefaultPage = getDefaultPage(firstNextCard);
 
-              // RULE 5 & 6: Card can ONLY move up to currentPage IF:
-              // 1. pageNum >= cardDefaultPage
-              // 2. The card was NOT just pushed down in this run (prevents immediate thrashing)
-              // 3. currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= maxH
               if (pageNum >= cardDefaultPage && !pushedDownCards.has(firstNextCard)) {
                 const cardHeight = getElementContentHeight(firstNextCard) || 150;
 
                 if (currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= maxH) {
-                  console.log(`[AutoPaginate] Page ${pageNum} height (${currentHeight}px) + card "${firstNextCard.id}" (${cardHeight}px) + buffer (${PULL_UP_SAFETY_BUFFER}px) <= ${maxH}px. Pulling card UP to Page ${pageNum}`);
-
                   if (firstNextCard._originalParentContainer && currentPage.contains(firstNextCard._originalParentContainer)) {
                     firstNextCard._originalParentContainer.appendChild(firstNextCard);
                   } else {
@@ -5594,7 +5592,11 @@
       } finally {
         if (!wasPrintMode) {
           document.body.classList.remove('is-print-mode');
-          window.scrollTo({ top: savedScrollY, left: savedScrollX, behavior: 'instant' });
+          const currentY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+          const currentX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
+          if (currentY !== savedScrollY || currentX !== savedScrollX) {
+            window.scrollTo({ top: savedScrollY, left: savedScrollX, behavior: 'instant' });
+          }
         }
       }
 
@@ -6206,9 +6208,9 @@
 
       document.addEventListener('hidden.bs.collapse', saveCollapseStates);
       document.addEventListener('shown.bs.collapse', saveCollapseStates);
-      window.addEventListener('resize', scheduleAutoPagination);
+      window.addEventListener('resize', () => scheduleAutoPagination(150));
 
-      scheduleAutoPagination();
+      scheduleAutoPagination(50);
       updateTableOfContents();
 
       if (isPrintParam) {
@@ -6232,13 +6234,45 @@
       });
 
       const form = document.getElementById('characterForm');
-      form.addEventListener('input', () => {
-        calculateStats();
-      });
-      form.addEventListener('change', () => {
-        calculateStats();
-      });
+      if (form) {
+        form.addEventListener('input', (e) => {
+          if (isStatOrCalcInput(e.target)) {
+            debouncedCalculateStats();
+          } else {
+            triggerAutoSave();
+          }
+        });
+        form.addEventListener('change', (e) => {
+          if (isStatOrCalcInput(e.target)) {
+            debouncedCalculateStats();
+          } else {
+            triggerAutoSave();
+          }
+        });
+      }
     });
+
+    function isStatOrCalcInput(target) {
+      if (!target) return false;
+      const id = target.id || '';
+      const name = target.name || '';
+      const classList = target.classList;
+
+      if (id.includes('score') || id.includes('charPath') || id.includes('pathLevel') || id.includes('charSize') || id.includes('speciesInput')) return true;
+      if (id.includes('ac') || id.includes('AC')) return true;
+      if (classList && (classList.contains('skill-rank') || classList.contains('skill-misc-mod') || classList.contains('skill-ab-select') || classList.contains('ability-stat-input'))) return true;
+      if (name.startsWith('skillRank_') || name.startsWith('skillMisc_')) return true;
+      if (name.includes('gearWeight') || name.includes('gearQty') || name.includes('armorAC') || name.includes('armorMaxDex')) return true;
+      return false;
+    }
+
+    let calcStatsTimeout = null;
+    function debouncedCalculateStats() {
+      if (calcStatsTimeout) clearTimeout(calcStatsTimeout);
+      calcStatsTimeout = setTimeout(() => {
+        calculateStats();
+      }, 40);
+    }
   </script>
 </body>
 </html>

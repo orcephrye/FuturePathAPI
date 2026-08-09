@@ -366,7 +366,7 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
 .affinity-tag {
   font-size: 0.72rem;
   border-radius: 4px;
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, filter 0.2s ease-in-out;
   background-color: rgba(255, 255, 255, 0.05);
   color: var(--text-muted, #64748b);
   border: 1px solid var(--card-border);
@@ -612,7 +612,7 @@ body.layout-locked .card-reorder-controls {
   border-radius: 14px !important;
   color: var(--theme-card-text) !important;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
 
