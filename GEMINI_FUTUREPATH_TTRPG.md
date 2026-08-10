@@ -28,10 +28,15 @@ incorporates cool technology, and features an entire galaxy as a Campaign Settin
 
 # Need to Know Context about this game
 
-## Character Creation
+## Character Creation & Advancement
 
 This helps explain the process of creating a new Character for FuturePath
 
 @./GEMINI_CHARACTER_CREATION.md
+
+## Quirks & Flaws
+
+@./GEMINI_QUIRKS.md
+
 
 

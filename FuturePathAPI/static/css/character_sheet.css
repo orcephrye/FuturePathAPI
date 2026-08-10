@@ -326,6 +326,25 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
   font-size: 0.78rem;
 }
 
+.skill-rank {
+  width: 42px;
+}
+.skill-ab-mod {
+  width: 44px;
+  font-weight: 600;
+}
+.skill-misc-mod {
+  width: 42px;
+  text-align: center;
+}
+.skill-die {
+  width: 54px;
+}
+.skill-ability-label {
+  display: inline-block;
+  min-width: 32px;
+}
+
 @media (min-width: 992px) {
   .col-skills-side {
     width: 45% !important;
@@ -353,6 +372,39 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
     max-width: 100% !important;
     order: 1 !important;
   }
+
+  /* Mobile Skills Table Inputs (shrunk to max 3 chars space, ~half size) */
+  .skill-rank,
+  #skillsTable .skill-rank {
+    width: 25px !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+  .skill-ab-mod,
+  #skillsTable .skill-ab-mod {
+    width: 25px !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+  .skill-misc-mod,
+  #skillsTable .skill-misc-mod {
+    width: 25px !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+  .skill-die,
+  #skillsTable .skill-die {
+    width: 38px !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+  .skill-ability-label {
+    min-width: 24px !important;
+  }
+  #skillsTable th:nth-child(4) { width: 75px !important; }
+  #skillsTable th:nth-child(6) { width: 58px !important; }
+  #skillsTable th:nth-child(8) { width: 32px !important; }
+  #skillsTable th:nth-child(10) { width: 45px !important; }
 }
 
 .trait-desc-textarea {
@@ -923,6 +975,7 @@ body.is-print-mode .sheet-card {
 /* Custom datalist dropdown for mobile cross-browser compatibility */
 .custom-datalist-dropdown {
   -webkit-overflow-scrolling: touch;
+  z-index: 99999 !important;
 }
 .custom-datalist-dropdown::-webkit-scrollbar {
   width: 6px;
@@ -1472,6 +1525,34 @@ body.is-print-mode #skillsTable .form-control-sm {
   height: 13px !important;
 }
 
+body.is-print-mode .skill-rank,
+body.is-print-mode #skillsTable .skill-rank {
+  width: 22px !important;
+  padding: 0 !important;
+}
+body.is-print-mode .skill-ab-mod,
+body.is-print-mode #skillsTable .skill-ab-mod {
+  width: 22px !important;
+  padding: 0 !important;
+}
+body.is-print-mode .skill-misc-mod,
+body.is-print-mode #skillsTable .skill-misc-mod {
+  width: 22px !important;
+  padding: 0 !important;
+}
+body.is-print-mode .skill-die,
+body.is-print-mode #skillsTable .skill-die {
+  width: 34px !important;
+  padding: 0 !important;
+}
+body.is-print-mode .skill-ability-label {
+  min-width: 20px !important;
+}
+body.is-print-mode #skillsTable th:nth-child(4) { width: 65px !important; }
+body.is-print-mode #skillsTable th:nth-child(6) { width: 48px !important; }
+body.is-print-mode #skillsTable th:nth-child(8) { width: 28px !important; }
+body.is-print-mode #skillsTable th:nth-child(10) { width: 38px !important; }
+
 body.is-print-mode .badge-natural,
 body.is-print-mode .badge-unnatural,
 body.is-print-mode .badge-rank-dep {
@@ -1555,28 +1636,16 @@ body.is-print-mode .col-card-attributes {
   width: 31% !important;
 }
 body.is-print-mode .col-skills-side {
-  width: 45% !important;
-  flex: 0 0 45% !important;
-  max-width: 45% !important;
+  width: 50% !important;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
   order: 1 !important;
 }
 body.is-print-mode .col-armor-side {
-  width: 55% !important;
-  flex: 0 0 55% !important;
-  max-width: 55% !important;
+  width: 50% !important;
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
   order: 2 !important;
-}
-body.is-print-mode .col-12.col-lg-7,
-body.is-print-mode .col-lg-7 {
-  flex: 0 0 58% !important;
-  max-width: 58% !important;
-  width: 58% !important;
-}
-body.is-print-mode .col-12.col-lg-5,
-body.is-print-mode .col-lg-5 {
-  flex: 0 0 42% !important;
-  max-width: 42% !important;
-  width: 42% !important;
 }
 body.is-print-mode .col-12.col-lg-6,
 body.is-print-mode .col-lg-6 {

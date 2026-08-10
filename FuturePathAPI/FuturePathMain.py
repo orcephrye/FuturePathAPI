@@ -13,6 +13,7 @@ from FuturePathAPI import (
     CharacterSheet,  # noqa: F401
     Rolling,  # noqa: F401
     authentication,  # noqa: F401
+    data,  # noqa: F401
     tasks,  # noqa: F401
     user,  # noqa: F401
 )
@@ -54,6 +55,12 @@ options = [
         "name": "character_sheet",
         "description": "Form-fillable character sheet for d20 FuturePath.",
         "uri": f"{END_POINT}/tasks/character_sheet",
+    },
+    {
+        "id": 6,
+        "name": "data",
+        "description": "Endpoints to retrieve raw d20 FuturePath reference data.",
+        "uri": f"{END_POINT}/data",
     },
 ]
 

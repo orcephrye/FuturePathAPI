@@ -130,7 +130,6 @@ def get_sizes():
     return jsonify(_get_table_data("sizes", key_field="name"))
 
 
-@app.route("/v1/tasks/character_sheet/starter_characters", methods=["GET"])
 @app.route("/tasks/character_sheet/starter_characters", methods=["GET"])
 def get_starter_characters():
     """
@@ -143,7 +142,6 @@ def get_starter_characters():
     return jsonify(characters)
 
 
-@app.route("/v1/tasks/character_sheet/starter_characters/<char_id>", methods=["GET"])
 @app.route("/tasks/character_sheet/starter_characters/<char_id>", methods=["GET"])
 def get_starter_character(char_id):
     """
