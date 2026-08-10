@@ -8,12 +8,13 @@
 
 import logging
 import os
+
 import bcrypt
 from itsdangerous import URLSafeTimedSerializer as Serializer
 from tinydb import TinyDB
 
 from FuturePathAPI import MAINDIR
-from FuturePathAPI.libs import loadYamlDBConfig, getRedis, tokenExpire
+from FuturePathAPI.libs import getRedis, loadYamlDBConfig, tokenExpire
 
 log = logging.getLogger("TinyDB")
 _fallback_cache = {}

@@ -12,18 +12,18 @@
   --accent-blue: #3b82f6;
   --input-bg: #1a243b;
   --input-border: #2b3a5c;
-  --input-text: #ffffff;
+  --input-text: #fff;
   --input-placeholder: #64748b;
   --text-muted: #64748b;
   --text-muted: #64748b;
   --header-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
   --header-border: #00f0ff;
-  --navbar-bg: rgba(17, 24, 39, 0.85);
-  --modal-bg: rgba(17, 24, 39, 0.95);
-  --modal-border: rgba(255, 255, 255, 0.08);
+  --navbar-bg: rgb(17 24 39 / 85%);
+  --modal-bg: rgb(17 24 39 / 95%);
+  --modal-border: rgb(255 255 255 / 8%);
   --modal-text: #f1f5f9;
-  --theme-card-bg: rgba(31, 41, 55, 0.4);
-  --theme-card-border: rgba(255, 255, 255, 0.08);
+  --theme-card-bg: rgb(31 41 55 / 40%);
+  --theme-card-border: rgb(255 255 255 / 8%);
   --theme-card-selected-border: #3b82f6;
   --theme-card-text: #f1f5f9;
 }
@@ -32,8 +32,8 @@
 body.theme-cosmic-light, [data-theme="cosmic-light"] {
   --bg-gradient: radial-gradient(circle at top left, #f5f3ff, #e0e7ff, #e8eaf6);
   --text-color: #1e293b;
-  --card-bg: rgba(255, 255, 255, 0.9);
-  --card-border: rgba(59, 130, 246, 0.2);
+  --card-bg: rgb(255 255 255 / 90%);
+  --card-border: rgb(59 130 246 / 20%);
   --accent-cyan: #0284c7;
   --accent-blue: #1d4ed8;
   --input-bg: #f1f5f9;
@@ -43,12 +43,12 @@ body.theme-cosmic-light, [data-theme="cosmic-light"] {
   --text-muted: #94a3b8;
   --header-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
   --header-border: #3b82f6;
-  --navbar-bg: rgba(255, 255, 255, 0.85);
-  --modal-bg: rgba(255, 255, 255, 0.95);
-  --modal-border: rgba(0, 0, 0, 0.08);
+  --navbar-bg: rgb(255 255 255 / 85%);
+  --modal-bg: rgb(255 255 255 / 95%);
+  --modal-border: rgb(0 0 0 / 8%);
   --modal-text: #0f172a;
-  --theme-card-bg: rgba(241, 245, 249, 0.8);
-  --theme-card-border: rgba(0, 0, 0, 0.06);
+  --theme-card-bg: rgb(241 245 249 / 80%);
+  --theme-card-border: rgb(0 0 0 / 6%);
   --theme-card-selected-border: #1d4ed8;
   --theme-card-text: #334155;
 }
@@ -80,13 +80,13 @@ body.theme-bootstrap-dark, [data-theme="bootstrap-dark"] {
 
 /* 4. Bootstrap Light Theme */
 body.theme-bootstrap-light, [data-theme="bootstrap-light"] {
-  --bg-gradient: #ffffff;
+  --bg-gradient: #fff;
   --text-color: #212529;
   --card-bg: #f8f9fa;
   --card-border: #dee2e6;
   --accent-cyan: #0dcaf0;
   --accent-blue: #0d6efd;
-  --input-bg: #ffffff;
+  --input-bg: #fff;
   --input-border: #ced4da;
   --input-text: #212529;
   --input-placeholder: #6c757d;
@@ -94,7 +94,7 @@ body.theme-bootstrap-light, [data-theme="bootstrap-light"] {
   --header-bg: #f8f9fa;
   --header-border: #0d6efd;
   --navbar-bg: #f8f9fa;
-  --modal-bg: #ffffff;
+  --modal-bg: #fff;
   --modal-border: #dee2e6;
   --modal-text: #212529;
   --theme-card-bg: #f8f9fa;
@@ -108,7 +108,7 @@ body.theme-industrial, [data-theme="industrial"] {
   --bg-gradient: radial-gradient(circle at top left, #121215, #09090b);
   --text-color: #fafafa;
   --card-bg: #1a1a22;
-  --card-border: rgba(255, 107, 0, 0.4);
+  --card-border: rgb(255 107 0 / 40%);
   --accent-cyan: #ff9100;
   --accent-blue: #ff6b00;
   --input-bg: #111117;
@@ -118,12 +118,12 @@ body.theme-industrial, [data-theme="industrial"] {
   --text-muted: #ffb74d;
   --header-bg: linear-gradient(135deg, #09090b 0%, #261b17 100%);
   --header-border: #ff9100;
-  --navbar-bg: rgba(9, 9, 11, 0.9);
-  --modal-bg: rgba(9, 9, 11, 0.95);
-  --modal-border: rgba(255, 145, 0, 0.25);
+  --navbar-bg: rgb(9 9 11 / 90%);
+  --modal-bg: rgb(9 9 11 / 95%);
+  --modal-border: rgb(255 145 0 / 25%);
   --modal-text: #fafafa;
-  --theme-card-bg: rgba(26, 26, 34, 0.6);
-  --theme-card-border: rgba(255, 107, 0, 0.3);
+  --theme-card-bg: rgb(26 26 34 / 60%);
+  --theme-card-border: rgb(255 107 0 / 30%);
   --theme-card-selected-border: #ff9100;
   --theme-card-text: #fafafa;
 }
@@ -133,7 +133,7 @@ body.theme-aegis, [data-theme="aegis"] {
   --bg-gradient: radial-gradient(circle at top left, #070d1e, #02050e);
   --text-color: #f8fafc;
   --card-bg: #0c1630;
-  --card-border: rgba(99, 102, 241, 0.4);
+  --card-border: rgb(99 102 241 / 40%);
   --accent-cyan: #818cf8;
   --accent-blue: #6366f1;
   --input-bg: #070f24;
@@ -143,23 +143,24 @@ body.theme-aegis, [data-theme="aegis"] {
   --text-muted: #a5b4fc;
   --header-bg: linear-gradient(135deg, #02050e 0%, #121c42 100%);
   --header-border: #818cf8;
-  --navbar-bg: rgba(2, 5, 14, 0.9);
-  --modal-bg: rgba(2, 5, 14, 0.95);
-  --modal-border: rgba(129, 140, 248, 0.25);
+  --navbar-bg: rgb(2 5 14 / 90%);
+  --modal-bg: rgb(2 5 14 / 95%);
+  --modal-border: rgb(129 140 248 / 25%);
   --modal-text: #f8fafc;
-  --theme-card-bg: rgba(12, 22, 48, 0.6);
-  --theme-card-border: rgba(99, 102, 241, 0.3);
+  --theme-card-bg: rgb(12 22 48 / 60%);
+  --theme-card-border: rgb(99 102 241 / 30%);
   --theme-card-selected-border: #818cf8;
   --theme-card-text: #f8fafc;
 }
 
 /* 7. Tattoo Theme (Ornate Body Dye & Magenta Ink Glow) */
+
 /* 7. Tattoo Theme (Dark Slate, Neon Rose & Solar Amber Ink) */
 body.theme-tattoo, [data-theme="tattoo"] {
   --bg-gradient: radial-gradient(circle at top left, #151214, #0b090a);
   --text-color: #fff1f2;
   --card-bg: #221c20;
-  --card-border: rgba(244, 63, 94, 0.4);
+  --card-border: rgb(244 63 94 / 40%);
   --accent-cyan: #f43f5e;
   --accent-blue: #f59e0b;
   --input-bg: #120e10;
@@ -169,12 +170,12 @@ body.theme-tattoo, [data-theme="tattoo"] {
   --text-muted: #fb7185;
   --header-bg: linear-gradient(135deg, #0b090a 0%, #361c28 100%);
   --header-border: #f43f5e;
-  --navbar-bg: rgba(11, 9, 10, 0.9);
-  --modal-bg: rgba(11, 9, 10, 0.95);
-  --modal-border: rgba(244, 63, 94, 0.25);
+  --navbar-bg: rgb(11 9 10 / 90%);
+  --modal-bg: rgb(11 9 10 / 95%);
+  --modal-border: rgb(244 63 94 / 25%);
   --modal-text: #fff1f2;
-  --theme-card-bg: rgba(34, 28, 32, 0.6);
-  --theme-card-border: rgba(244, 63, 94, 0.3);
+  --theme-card-bg: rgb(34 28 32 / 60%);
+  --theme-card-border: rgb(244 63 94 / 30%);
   --theme-card-selected-border: #f43f5e;
   --theme-card-text: #fff1f2;
 }
@@ -184,7 +185,7 @@ body.theme-curvilinea, [data-theme="curvilinea"] {
   --bg-gradient: radial-gradient(circle at top left, #200e11, #120a0b);
   --text-color: #fff1f2;
   --card-bg: #281418;
-  --card-border: rgba(239, 68, 68, 0.4);
+  --card-border: rgb(239 68 68 / 40%);
   --accent-cyan: #f97316;
   --accent-blue: #ef4444;
   --input-bg: #170b0d;
@@ -194,12 +195,12 @@ body.theme-curvilinea, [data-theme="curvilinea"] {
   --text-muted: #fca5a5;
   --header-bg: linear-gradient(135deg, #120a0b 0%, #3d161a 100%);
   --header-border: #f97316;
-  --navbar-bg: rgba(18, 10, 11, 0.9);
-  --modal-bg: rgba(18, 10, 11, 0.95);
-  --modal-border: rgba(249, 115, 22, 0.25);
+  --navbar-bg: rgb(18 10 11 / 90%);
+  --modal-bg: rgb(18 10 11 / 95%);
+  --modal-border: rgb(249 115 22 / 25%);
   --modal-text: #fff1f2;
-  --theme-card-bg: rgba(40, 20, 24, 0.6);
-  --theme-card-border: rgba(239, 68, 68, 0.3);
+  --theme-card-bg: rgb(40 20 24 / 60%);
+  --theme-card-border: rgb(239 68 68 / 30%);
   --theme-card-selected-border: #f97316;
   --theme-card-text: #fff1f2;
 }
@@ -210,7 +211,7 @@ body.theme-viper, [data-theme="viper"] {
   --bg-gradient: radial-gradient(circle at top left, #141a16, #0a0e0c);
   --text-color: #f0fdf4;
   --card-bg: #1b241e;
-  --card-border: rgba(245, 158, 11, 0.4);
+  --card-border: rgb(245 158 11 / 40%);
   --accent-cyan: #f59e0b;
   --accent-blue: #10b981;
   --input-bg: #0f1611;
@@ -220,12 +221,12 @@ body.theme-viper, [data-theme="viper"] {
   --text-muted: #fbbf24;
   --header-bg: linear-gradient(135deg, #0a0e0c 0%, #1f2e24 100%);
   --header-border: #f59e0b;
-  --navbar-bg: rgba(10, 14, 12, 0.9);
-  --modal-bg: rgba(10, 14, 12, 0.95);
-  --modal-border: rgba(245, 158, 11, 0.25);
+  --navbar-bg: rgb(10 14 12 / 90%);
+  --modal-bg: rgb(10 14 12 / 95%);
+  --modal-border: rgb(245 158 11 / 25%);
   --modal-text: #f0fdf4;
-  --theme-card-bg: rgba(27, 36, 30, 0.6);
-  --theme-card-border: rgba(245, 158, 11, 0.3);
+  --theme-card-bg: rgb(27 36 30 / 60%);
+  --theme-card-border: rgb(245 158 11 / 30%);
   --theme-card-selected-border: #f59e0b;
   --theme-card-text: #f0fdf4;
 }
@@ -239,7 +240,7 @@ body.theme-volar, [data-theme="volar"] {
   --bg-gradient: radial-gradient(circle at top left, #141a16, #0a0e0c);
   --text-color: #f0fdf4;
   --card-bg: #1b241e;
-  --card-border: rgba(16, 185, 129, 0.4);
+  --card-border: rgb(16 185 129 / 40%);
   --accent-cyan: #10b981;
   --accent-blue: #f59e0b;
   --input-bg: #0f1611;
@@ -249,12 +250,12 @@ body.theme-volar, [data-theme="volar"] {
   --text-muted: #34d399;
   --header-bg: linear-gradient(135deg, #0a0e0c 0%, #1f2e24 100%);
   --header-border: #10b981;
-  --navbar-bg: rgba(10, 14, 12, 0.9);
-  --modal-bg: rgba(10, 14, 12, 0.95);
-  --modal-border: rgba(16, 185, 129, 0.25);
+  --navbar-bg: rgb(10 14 12 / 90%);
+  --modal-bg: rgb(10 14 12 / 95%);
+  --modal-border: rgb(16 185 129 / 25%);
   --modal-text: #f0fdf4;
-  --theme-card-bg: rgba(27, 36, 30, 0.6);
-  --theme-card-border: rgba(16, 185, 129, 0.3);
+  --theme-card-bg: rgb(27 36 30 / 60%);
+  --theme-card-border: rgb(16 185 129 / 30%);
   --theme-card-selected-border: #10b981;
   --theme-card-text: #f0fdf4;
 }
@@ -264,7 +265,7 @@ body.theme-human, [data-theme="human"] {
   --bg-gradient: radial-gradient(circle at top left, #0f172a, #080d1a);
   --text-color: #f0f9ff;
   --card-bg: #1e293b;
-  --card-border: rgba(125, 211, 252, 0.4);
+  --card-border: rgb(125 211 252 / 40%);
   --accent-cyan: #7dd3fc;
   --accent-blue: #0284c7;
   --input-bg: #0c1322;
@@ -274,12 +275,12 @@ body.theme-human, [data-theme="human"] {
   --text-muted: #bae6fd;
   --header-bg: linear-gradient(135deg, #080d1a 0%, #173354 100%);
   --header-border: #7dd3fc;
-  --navbar-bg: rgba(8, 13, 26, 0.9);
-  --modal-bg: rgba(8, 13, 26, 0.95);
-  --modal-border: rgba(125, 211, 252, 0.25);
+  --navbar-bg: rgb(8 13 26 / 90%);
+  --modal-bg: rgb(8 13 26 / 95%);
+  --modal-border: rgb(125 211 252 / 25%);
   --modal-text: #f0f9ff;
-  --theme-card-bg: rgba(30, 41, 59, 0.6);
-  --theme-card-border: rgba(125, 211, 252, 0.3);
+  --theme-card-bg: rgb(30 41 59 / 60%);
+  --theme-card-border: rgb(125 211 252 / 30%);
   --theme-card-selected-border: #7dd3fc;
   --theme-card-text: #f0f9ff;
 }
@@ -289,7 +290,7 @@ body.theme-grayling, [data-theme="grayling"] {
   --bg-gradient: radial-gradient(circle at top left, #121620, #0b0d12);
   --text-color: #f8fafc;
   --card-bg: #181e2b;
-  --card-border: rgba(168, 85, 247, 0.4);
+  --card-border: rgb(168 85 247 / 40%);
   --accent-cyan: #c084fc;
   --accent-blue: #a855f7;
   --input-bg: #10141e;
@@ -299,12 +300,12 @@ body.theme-grayling, [data-theme="grayling"] {
   --text-muted: #e9d5ff;
   --header-bg: linear-gradient(135deg, #0b0d12 0%, #241638 100%);
   --header-border: #c084fc;
-  --navbar-bg: rgba(11, 13, 18, 0.9);
-  --modal-bg: rgba(11, 13, 18, 0.95);
-  --modal-border: rgba(192, 132, 252, 0.25);
+  --navbar-bg: rgb(11 13 18 / 90%);
+  --modal-bg: rgb(11 13 18 / 95%);
+  --modal-border: rgb(192 132 252 / 25%);
   --modal-text: #f8fafc;
-  --theme-card-bg: rgba(24, 30, 43, 0.6);
-  --theme-card-border: rgba(168, 85, 247, 0.3);
+  --theme-card-bg: rgb(24 30 43 / 60%);
+  --theme-card-border: rgb(168 85 247 / 30%);
   --theme-card-selected-border: #c084fc;
   --theme-card-text: #f8fafc;
 }
@@ -314,7 +315,7 @@ body.theme-lepidonain, [data-theme="lepidonain"] {
   --bg-gradient: radial-gradient(circle at top left, #1c1512, #0f0b09);
   --text-color: #fff7ed;
   --card-bg: #291f1a;
-  --card-border: rgba(249, 115, 22, 0.4);
+  --card-border: rgb(249 115 22 / 40%);
   --accent-cyan: #f97316;
   --accent-blue: #fef08a;
   --input-bg: #140e0b;
@@ -324,12 +325,12 @@ body.theme-lepidonain, [data-theme="lepidonain"] {
   --text-muted: #ffedd5;
   --header-bg: linear-gradient(135deg, #0f0b09 0%, #3d2618 100%);
   --header-border: #f97316;
-  --navbar-bg: rgba(15, 11, 9, 0.9);
-  --modal-bg: rgba(15, 11, 9, 0.95);
-  --modal-border: rgba(249, 115, 22, 0.25);
+  --navbar-bg: rgb(15 11 9 / 90%);
+  --modal-bg: rgb(15 11 9 / 95%);
+  --modal-border: rgb(249 115 22 / 25%);
   --modal-text: #fff7ed;
-  --theme-card-bg: rgba(41, 31, 26, 0.6);
-  --theme-card-border: rgba(249, 115, 22, 0.3);
+  --theme-card-bg: rgb(41 31 26 / 60%);
+  --theme-card-border: rgb(249 115 22 / 30%);
   --theme-card-selected-border: #f97316;
   --theme-card-text: #fff7ed;
 }
@@ -339,7 +340,7 @@ body.theme-cryous, [data-theme="cryous"] {
   --bg-gradient: radial-gradient(circle at top left, #071324, #030914);
   --text-color: #f0f9ff;
   --card-bg: #0b1d36;
-  --card-border: rgba(0, 240, 255, 0.4);
+  --card-border: rgb(0 240 255 / 40%);
   --accent-cyan: #00f0ff;
   --accent-blue: #0284c7;
   --input-bg: #061121;
@@ -349,12 +350,12 @@ body.theme-cryous, [data-theme="cryous"] {
   --text-muted: #38bdf8;
   --header-bg: linear-gradient(135deg, #030914 0%, #0d2847 100%);
   --header-border: #00f0ff;
-  --navbar-bg: rgba(3, 9, 20, 0.9);
-  --modal-bg: rgba(3, 9, 20, 0.95);
-  --modal-border: rgba(0, 240, 255, 0.25);
+  --navbar-bg: rgb(3 9 20 / 90%);
+  --modal-bg: rgb(3 9 20 / 95%);
+  --modal-border: rgb(0 240 255 / 25%);
   --modal-text: #f0f9ff;
-  --theme-card-bg: rgba(11, 29, 54, 0.6);
-  --theme-card-border: rgba(0, 240, 255, 0.3);
+  --theme-card-bg: rgb(11 29 54 / 60%);
+  --theme-card-border: rgb(0 240 255 / 30%);
   --theme-card-selected-border: #00f0ff;
   --theme-card-text: #f0f9ff;
 }
@@ -364,7 +365,7 @@ body.theme-aconian, [data-theme="aconian"] {
   --bg-gradient: radial-gradient(circle at top left, #12151c, #0a0b0f);
   --text-color: #f8fafc;
   --card-bg: #1c212c;
-  --card-border: rgba(148, 163, 184, 0.4);
+  --card-border: rgb(148 163 184 / 40%);
   --accent-cyan: #e2e8f0;
   --accent-blue: #facc15;
   --input-bg: #0e1017;
@@ -374,12 +375,12 @@ body.theme-aconian, [data-theme="aconian"] {
   --text-muted: #cbd5e1;
   --header-bg: linear-gradient(135deg, #0a0b0f 0%, #2b3242 100%);
   --header-border: #e2e8f0;
-  --navbar-bg: rgba(10, 11, 15, 0.9);
-  --modal-bg: rgba(10, 11, 15, 0.95);
-  --modal-border: rgba(148, 163, 184, 0.25);
+  --navbar-bg: rgb(10 11 15 / 90%);
+  --modal-bg: rgb(10 11 15 / 95%);
+  --modal-border: rgb(148 163 184 / 25%);
   --modal-text: #f8fafc;
-  --theme-card-bg: rgba(28, 33, 44, 0.6);
-  --theme-card-border: rgba(148, 163, 184, 0.3);
+  --theme-card-bg: rgb(28 33 44 / 60%);
+  --theme-card-border: rgb(148 163 184 / 30%);
   --theme-card-selected-border: #e2e8f0;
   --theme-card-text: #f8fafc;
 }
@@ -389,7 +390,7 @@ body.theme-murid, [data-theme="murid"] {
   --bg-gradient: radial-gradient(circle at top left, #12101d, #090810);
   --text-color: #fdf2f8;
   --card-bg: #1a172a;
-  --card-border: rgba(236, 72, 153, 0.4);
+  --card-border: rgb(236 72 153 / 40%);
   --accent-cyan: #ec4899;
   --accent-blue: #3b82f6;
   --input-bg: #0d0c17;
@@ -399,12 +400,12 @@ body.theme-murid, [data-theme="murid"] {
   --text-muted: #f472b6;
   --header-bg: linear-gradient(135deg, #090810 0%, #2d173b 100%);
   --header-border: #ec4899;
-  --navbar-bg: rgba(9, 8, 16, 0.9);
-  --modal-bg: rgba(9, 8, 16, 0.95);
-  --modal-border: rgba(236, 72, 153, 0.25);
+  --navbar-bg: rgb(9 8 16 / 90%);
+  --modal-bg: rgb(9 8 16 / 95%);
+  --modal-border: rgb(236 72 153 / 25%);
   --modal-text: #fdf2f8;
-  --theme-card-bg: rgba(26, 23, 42, 0.6);
-  --theme-card-border: rgba(236, 72, 153, 0.3);
+  --theme-card-bg: rgb(26 23 42 / 60%);
+  --theme-card-border: rgb(236 72 153 / 30%);
   --theme-card-selected-border: #ec4899;
   --theme-card-text: #fdf2f8;
 }
@@ -414,7 +415,7 @@ body.theme-avisari, [data-theme="avisari"] {
   --bg-gradient: radial-gradient(circle at top left, #100d24, #080614);
   --text-color: #fefce8;
   --card-bg: #181436;
-  --card-border: rgba(251, 191, 36, 0.4);
+  --card-border: rgb(251 191 36 / 40%);
   --accent-cyan: #fbbf24;
   --accent-blue: #818cf8;
   --input-bg: #0c091f;
@@ -424,21 +425,22 @@ body.theme-avisari, [data-theme="avisari"] {
   --text-muted: #fde047;
   --header-bg: linear-gradient(135deg, #080614 0%, #291a4d 100%);
   --header-border: #fbbf24;
-  --navbar-bg: rgba(8, 6, 20, 0.9);
-  --modal-bg: rgba(8, 6, 20, 0.95);
-  --modal-border: rgba(251, 191, 36, 0.25);
+  --navbar-bg: rgb(8 6 20 / 90%);
+  --modal-bg: rgb(8 6 20 / 95%);
+  --modal-border: rgb(251 191 36 / 25%);
   --modal-text: #fefce8;
-  --theme-card-bg: rgba(24, 20, 54, 0.6);
-  --theme-card-border: rgba(251, 191, 36, 0.3);
+  --theme-card-bg: rgb(24 20 54 / 60%);
+  --theme-card-border: rgb(251 191 36 / 30%);
   --theme-card-selected-border: #fbbf24;
   --theme-card-text: #fefce8;
 }
+
 /* Khepri (Dark Chitin Slate & Bio Toxic Lime) */
 body.theme-khepri, [data-theme="khepri"] {
   --bg-gradient: radial-gradient(circle at top left, #131718, #0b0e0f);
   --text-color: #f7fee7;
   --card-bg: #1b2123;
-  --card-border: rgba(163, 230, 53, 0.4);
+  --card-border: rgb(163 230 53 / 40%);
   --accent-cyan: #a3e635;
   --accent-blue: #f59e0b;
   --input-bg: #0e1213;
@@ -448,12 +450,12 @@ body.theme-khepri, [data-theme="khepri"] {
   --text-muted: #bef264;
   --header-bg: linear-gradient(135deg, #0b0e0f 0%, #1f2b23 100%);
   --header-border: #a3e635;
-  --navbar-bg: rgba(11, 14, 15, 0.9);
-  --modal-bg: rgba(11, 14, 15, 0.95);
-  --modal-border: rgba(163, 230, 53, 0.25);
+  --navbar-bg: rgb(11 14 15 / 90%);
+  --modal-bg: rgb(11 14 15 / 95%);
+  --modal-border: rgb(163 230 53 / 25%);
   --modal-text: #f7fee7;
-  --theme-card-bg: rgba(27, 33, 35, 0.6);
-  --theme-card-border: rgba(163, 230, 53, 0.3);
+  --theme-card-bg: rgb(27 33 35 / 60%);
+  --theme-card-border: rgb(163 230 53 / 30%);
   --theme-card-selected-border: #a3e635;
   --theme-card-text: #f7fee7;
 }

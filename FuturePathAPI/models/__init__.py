@@ -34,6 +34,8 @@ def register_model(arg=None):
     else:
         return decorator
 
+# Import model files to trigger registration
+from FuturePathAPI.models.Armor import Armor, ArmorDr
 from FuturePathAPI.models.CraftingModels import (
     Action,
     ActionType,
@@ -42,9 +44,6 @@ from FuturePathAPI.models.CraftingModels import (
     CraftingType,
     Rule,
 )
-
-# Import model files to trigger registration
-from FuturePathAPI.models.Armor import Armor, ArmorDr
 
 
 

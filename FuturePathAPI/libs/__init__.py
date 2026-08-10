@@ -7,9 +7,11 @@
 
 import logging
 import os
+
 import redis
 import yaml
 from flask_login import UserMixin
+
 from FuturePathAPI import MAINDIR
 
 log = logging.getLogger("Database")
@@ -77,10 +79,10 @@ class User(UserMixin):
 DB_TYPE = os.environ.get("DB_TYPE", "TinyDB").strip()
 
 if DB_TYPE.lower() == "mongodb":
-    from FuturePathAPI.libs.MongoDataBase import MongoConnection as DBConnection
     from FuturePathAPI.libs.MongoDataBase import MongoCollection as DBCollection
+    from FuturePathAPI.libs.MongoDataBase import MongoConnection as DBConnection
     from FuturePathAPI.libs.MongoDataBase import UserManager
 else:
-    from FuturePathAPI.libs.TinyDataBase import TinyDBConnection as DBConnection
     from FuturePathAPI.libs.TinyDataBase import TinyDBCollection as DBCollection
+    from FuturePathAPI.libs.TinyDataBase import TinyDBConnection as DBConnection
     from FuturePathAPI.libs.TinyDataBase import UserManager

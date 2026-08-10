@@ -7,9 +7,10 @@
 # Description: Raw reference data endpoints for d20 FuturePath API
 
 import logging
+
 from flask import jsonify
 
-from FuturePathAPI.initApp import END_POINT, app, not_found
+from FuturePathAPI.initApp import END_POINT, app
 from FuturePathAPI.libs.ReferenceData import (
     ADVANTAGE_DIE_LEVELS,
     CHARACTER_PATHS,
@@ -176,3 +177,22 @@ def get_data_sizes():
     :Content-Type: application/json
     """
     return jsonify(_get_table_data("sizes", key_field="name", fallback_list=SIZES))
+
+@app.route("/data/all", methods=["GET"])
+def get_all_reference_data():
+    """
+    :OPTIONS: GET
+    :PATH: /data/all
+    :DESC: Returns a JSON list of all reference data endpoints.
+    :Content-Type: application/json
+    """
+    return jsonify({
+        "sizes": _get_table_data("sizes", key_field="name", fallback_list=SIZES),
+        "skill_die_levels": _get_table_data("skill_die_levels", key_field="die", fallback_list=SKILL_DIE_LEVELS),
+        "advantage_die_levels": _get_table_data("advantage_die_levels", key_field="die", fallback_list=ADVANTAGE_DIE_LEVELS),
+        "occupations": _get_table_data("occupations", key_field="name", fallback_list=OCCUPATIONS),
+        "professions": _get_table_data("professions", key_field="name", fallback_list=PROFESSIONS),
+        "species": _get_table_data("species", key_field="name", fallback_list=SPECIES),
+        "paths": _get_table_data("character_paths", key_field="name", fallback_list=CHARACTER_PATHS),
+        "quirks": _get_quirks_data(),
+    })

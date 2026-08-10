@@ -17,6 +17,13 @@ and much more. For now it is limited to dice rolling. And is utilized by an HTML
 * The 'Rolling.py' file holds all the logic for rolling. 
 * The 'libs' dir is were extra code that can be reused by one or more tasks is located.
 
+## Linting/Styling checks
+Each Linter is a command that should run in shell.
+* When editing Python use: > ruff check --fix
+* When editing HTML use: > npx htmlhint filename.html
+* When editing CSS use: > npx stylelint --fix filename.css
+* When editing JavaScript use: > node jslint.mjs filename.js
+
 ## Docs
 The 'docs' dir has all the docs built by Sphinx. 
 Also there is the README.md file:

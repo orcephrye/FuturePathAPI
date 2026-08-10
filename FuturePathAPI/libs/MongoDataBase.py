@@ -8,11 +8,12 @@
 
 import logging
 import traceback
+
 import bcrypt
 from itsdangerous import URLSafeTimedSerializer as Serializer
 from pymongo import MongoClient
 
-from FuturePathAPI.libs import loadYamlDBConfig, getRedis, tokenExpire
+from FuturePathAPI.libs import getRedis, loadYamlDBConfig, tokenExpire
 
 log = logging.getLogger("MongoDB")
 _fallback_cache = {}

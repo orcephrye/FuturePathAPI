@@ -7,6 +7,7 @@
 # Description: Reference data tables for d20 FuturePath character sheets
 
 import logging
+
 from FuturePathAPI.libs import DBConnection, loadYamlDBConfig
 
 log = logging.getLogger("ReferenceData")
@@ -23,14 +24,14 @@ CHARACTER_PATHS = [
 ]
 
 SPECIES = [
-    "Humans",
+    "Human",
     "Volar",
-    "Graylings",
-    "Lepidonains",
+    "Grayling",
+    "Lepidonain",
     "Cryous",
     "Ovex",
-    "Aconians",
-    "Murids",
+    "Aconian",
+    "Murid",
     "Avisari",
     "Khepri",
     "Sayor",

@@ -7,12 +7,13 @@
 # Description: Form-fillable Web Character Sheet endpoint and reference data endpoints for d20 FuturePath
 
 from flask import jsonify, send_from_directory
+
 from FuturePathAPI.initApp import app
 from FuturePathAPI.libs.ReferenceData import get_reference_db, init_reference_tables
 from FuturePathAPI.libs.StarterCharacters import (
-    init_starter_characters_table,
     get_all_starter_characters,
-    get_starter_character_by_id
+    get_starter_character_by_id,
+    init_starter_characters_table,
 )
 
 # Initialize reference and starter character tables on module load

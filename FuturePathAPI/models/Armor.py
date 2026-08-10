@@ -7,8 +7,9 @@
 # Description: Crafting and Creation foundation models and DB manager
 
 import logging
+from typing import List, Literal, Optional
+
 from pydantic import BaseModel, Field, model_validator
-from typing import Literal, Optional, List
 
 from FuturePathAPI.models import CraftingType, register_model
 

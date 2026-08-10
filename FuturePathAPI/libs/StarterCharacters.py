@@ -8,7 +8,9 @@
 
 import logging
 from typing import Any, Dict, List, Optional, Union
+
 from pydantic import BaseModel, ConfigDict, Field
+
 from FuturePathAPI.libs import DBConnection, loadYamlDBConfig
 
 log = logging.getLogger("StarterCharacters")

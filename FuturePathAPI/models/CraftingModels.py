@@ -6,14 +6,15 @@
 # Date: 07/13/2026
 # Description: Crafting and Creation foundation models and DB manager
 
-import logging
 import base64
+import logging
 import pickle
 from enum import Enum
-from pydantic import BaseModel, Field
-from typing import Any, Dict, List, Literal, Optional
+from typing import Any, Dict, List, Optional
 
-from FuturePathAPI.libs import DBConnection, DBCollection, loadYamlDBConfig
+from pydantic import BaseModel, Field
+
+from FuturePathAPI.libs import DBCollection, DBConnection, loadYamlDBConfig
 from FuturePathAPI.models import MODEL_REGISTRY
 
 log = logging.getLogger("CraftingModels")
