@@ -1119,9 +1119,9 @@ body.is-print-mode #collapseIdentity .col-lg-3 {
 
 body.is-print-mode #collapseIdentity .col-12.col-lg-2,
 body.is-print-mode #collapseIdentity .col-lg-2 {
-  flex: 0 0 16.66666667% !important;
-  max-width: 16.66666667% !important;
-  width: 16.66666667% !important;
+  flex: 0 0 16.6667% !important;
+  max-width: 16.6667% !important;
+  width: 16.6667% !important;
 }
 
 body.is-print-mode #collapseIdentity .col-12.col-md-3,
@@ -1133,16 +1133,16 @@ body.is-print-mode #collapseIdentity .col-md-3 {
 
 body.is-print-mode #collapseIdentity .col-6.col-md-1,
 body.is-print-mode #collapseIdentity .col-md-1 {
-  flex: 0 0 8.33333333% !important;
-  max-width: 8.33333333% !important;
-  width: 8.33333333% !important;
+  flex: 0 0 8.3333% !important;
+  max-width: 8.3333% !important;
+  width: 8.3333% !important;
 }
 
 body.is-print-mode #collapseIdentity .col-6.col-md-2,
 body.is-print-mode #collapseIdentity .col-md-2 {
-  flex: 0 0 16.66666667% !important;
-  max-width: 16.66666667% !important;
-  width: 16.66666667% !important;
+  flex: 0 0 16.6667% !important;
+  max-width: 16.6667% !important;
+  width: 16.6667% !important;
 }
 
 body.is-print-mode #collapseIdentity .form-label {
@@ -2100,6 +2100,54 @@ body.is-print-mode .col-lg-6 {
     border: 1px solid #777 !important;
     border-radius: 3px !important;
     background-color: transparent !important;
+  }
+
+  #collapseCybernetics .cyber-meta-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+
+    --bs-gutter-x: 0.2rem !important;
+    --bs-gutter-y: 0 !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  #collapseCybernetics .cyber-meta-row > [class*="col-"] {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  #collapseCybernetics .cyber-meta-row .input-group-text,
+  #collapseCybernetics .cyber-meta-row .form-control {
+    font-size: 6pt !important;
+    padding: 0 2px !important;
+    height: auto !important;
+  }
+
+  #collapsePsionics .psionic-meta-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+
+    --bs-gutter-x: 0.2rem !important;
+    --bs-gutter-y: 0 !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  #collapsePsionics .psionic-meta-row > [class*="col-"] {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  #collapsePsionics .psionic-meta-row .input-group-text,
+  #collapsePsionics .psionic-meta-row .form-control {
+    font-size: 6pt !important;
+    padding: 0 2px !important;
+    height: auto !important;
   }
 
   #collapseTechniques .technique-level-block .row {

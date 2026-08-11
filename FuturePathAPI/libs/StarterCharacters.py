@@ -131,12 +131,14 @@ class ArmorDefensesCard(BaseModel):
 class WeaponItem(BaseModel):
     model_config = ConfigDict(extra="allow", populate_by_name=True)
     Name: str
+    Lvl: Optional[Union[int, str]] = "1"
     Damage: Optional[str] = ""
     Accuracy: Optional[str] = ""
     AP: Optional[str] = ""
     Critical: Optional[str] = ""
     Type: Optional[str] = ""
     Range: Optional[str] = ""
+    isMelee: Optional[bool] = False
     Ammo: Optional[str] = ""
     Notes: Optional[str] = ""
 
@@ -251,7 +253,7 @@ OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
         "identityCard": {
             "charName": "Beckett Kane",
             "playerName": "Starter Character",
-            "species": "Humans",
+            "species": "Human",
             "charPath": "Path of Strength (Strong Hero)",
             "pathLevel": 1,
             "classList": "Space Marine (1)",
@@ -420,7 +422,7 @@ OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
         "identityCard": {
             "charName": "Cxaz",
             "playerName": "Starter Character",
-            "species": "Graylings",
+            "species": "Grayling",
             "charPath": "Path of Intelligence (Smart Hero)",
             "pathLevel": 1,
             "classList": "Engineer (1)",

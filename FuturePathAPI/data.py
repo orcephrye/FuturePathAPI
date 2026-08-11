@@ -8,12 +8,15 @@
 
 import logging
 
-from flask import jsonify
+from flask import jsonify, request
 
 from FuturePathAPI.initApp import END_POINT, app
 from FuturePathAPI.libs.ReferenceData import (
     ADVANTAGE_DIE_LEVELS,
     CHARACTER_PATHS,
+    DETRACTORS,
+    MUTATION_DRAWBACKS,
+    MUTATION_ENHANCEMENTS,
     OCCUPATIONS,
     PROFESSIONS,
     QUIRKS,
@@ -34,6 +37,9 @@ except Exception as e:
 
 data_endpoints = {
     "quirks": f"{END_POINT}/data/quirks",
+    "detractors": f"{END_POINT}/data/detractors",
+    "mutation_drawbacks": f"{END_POINT}/data/mutation_drawbacks",
+    "mutation_enhancements": f"{END_POINT}/data/mutation_enhancements",
     "character_paths": f"{END_POINT}/data/character_paths",
     "species": f"{END_POINT}/data/species",
     "professions": f"{END_POINT}/data/professions",
@@ -79,6 +85,69 @@ def _get_quirks_data():
     return QUIRKS
 
 
+def _get_detractors_data():
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection="detractors"))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                return docs
+        except Exception as e:
+            log.error(f"Error fetching detractors: {e}")
+    return DETRACTORS
+
+
+def _get_mutation_drawbacks_data():
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection="mutation_drawbacks"))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                return docs
+        except Exception as e:
+            log.error(f"Error fetching mutation drawbacks: {e}")
+    return MUTATION_DRAWBACKS
+
+
+def _get_mutation_enhancements_data():
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection="mutation_enhancements"))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                if len(docs) == 1 and "cosmetic" in docs[0]:
+                    return docs[0]
+                elif docs:
+                    return docs
+        except Exception as e:
+            log.error(f"Error fetching mutation enhancements: {e}")
+    return MUTATION_ENHANCEMENTS
+
+
+def _shorten_mutation_enhancements(data):
+    if not isinstance(data, dict):
+        return data
+
+    shortened = {}
+    for category, items in data.items():
+        shortened_category = []
+        for item in items:
+            shortened_category.append({"Name": item.get('Name'),
+                                       "Benefit": item.get('Benefit') if item.get('Benefit', "") else item.get('Description', ""),
+                                       "MP Cost": item.get('MP Cost')})
+        shortened[category] = shortened_category
+    return shortened
+
+
 @app.route("/data", methods=["GET"])
 def get_data_index():
     """
@@ -99,6 +168,45 @@ def get_data_quirks():
     :Content-Type: application/json
     """
     return jsonify(_get_quirks_data())
+
+
+@app.route("/data/detractors", methods=["GET"])
+def get_data_detractors():
+    """
+    :OPTIONS: GET
+    :PATH: /data/detractors
+    :DESC: Returns a JSON array of objects representing all d20 FuturePath Detractors.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_detractors_data())
+
+
+@app.route("/data/mutation_drawbacks", methods=["GET"])
+@app.route("/data/mutationdrawbacks", methods=["GET"])
+def get_data_mutation_drawbacks():
+    """
+    :OPTIONS: GET
+    :PATH: /data/mutation_drawbacks, /data/mutationdrawbacks
+    :DESC: Returns a JSON array of objects representing all d20 FuturePath Mutation Drawbacks.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_mutation_drawbacks_data())
+
+
+@app.route("/data/mutation_enhancements", methods=["GET"])
+@app.route("/data/mutationenhancements", methods=["GET"])
+def get_data_mutation_enhancements():
+    """
+    :OPTIONS: GET
+    :PATH: /data/mutation_enhancements, /data/mutationenhancements
+    :DESC: Returns a JSON dataset representing all d20 FuturePath Mutation Enhancements. Supports optional 'short' query parameter (?short=true or ?short).
+    :Content-Type: application/json
+    """
+    data = _get_mutation_enhancements_data()
+    is_short = request.args.get("short") is not None and request.args.get("short").lower() != "false"
+    if is_short:
+        return jsonify(_shorten_mutation_enhancements(data))
+    return jsonify(data)
 
 
 @app.route("/data/character_paths", methods=["GET"])
@@ -195,4 +303,7 @@ def get_all_reference_data():
         "species": _get_table_data("species", key_field="name", fallback_list=SPECIES),
         "paths": _get_table_data("character_paths", key_field="name", fallback_list=CHARACTER_PATHS),
         "quirks": _get_quirks_data(),
+        "detractors": _get_detractors_data(),
+        "mutation_drawbacks": _get_mutation_drawbacks_data(),
+        "mutation_enhancements": _shorten_mutation_enhancements(_get_mutation_enhancements_data()),
     })

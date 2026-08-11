@@ -1461,12 +1461,13 @@
 <thead>
 <tr>
 <th>Name</th>
-<th class="text-center th-wep-dmg" style="width: 105px;"><span class="d-print-none">Damage / Die</span><span class="d-none d-print-block">Dmg Die</span></th>
+<th class="text-center" style="width: 55px;">Lvl</th>
+<th class="text-center th-wep-dmg" style="width: 135px;"><span class="d-print-none">Damage / Die</span><span class="d-none d-print-block">Dmg Die</span></th>
 <th class="text-center" style="width: 65px;">Acc+</th>
 <th class="text-center" style="width: 60px;">AP</th>
 <th class="text-center" style="width: 90px;">Critical</th>
 <th class="text-center" style="width: 95px;">Type</th>
-<th class="text-center" style="width: 100px;">Range</th>
+<th class="text-center" style="width: 120px;">Range</th>
 <th class="text-center" style="width: 85px;">Ammo</th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
@@ -1474,13 +1475,39 @@
 <tbody>
 <tr class="weapon-main-row">
 <td><label class="visually-hidden" for="weaponsCard_wepName_0">Wepname</label><input class="form-control form-control-sm" id="weaponsCard_wepName_0" name="wepName[]" type="text"/></td>
-<td><label class="visually-hidden" for="weaponsCard_wepDmg_0">Wepdmg</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepDmg_0" name="wepDmg[]" type="text"/></td>
+<td class="text-center">
+<label class="visually-hidden" for="weaponsCard_wepLvl_0">Weapon Level</label>
+<select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_0" name="wepLvl[]">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</td>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="weaponsCard_wepDmg_0">Wepdmg</label>
+<input class="form-control form-control-sm text-center px-1" id="weaponsCard_wepDmg_0" name="wepDmg[]" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="rollWeaponCheck(this)" title="Roll Accuracy & Damage" type="button">
+<i class="fa-solid fa-dice text-cyan"></i>
+</button>
+</div>
+</td>
 <td><label class="visually-hidden" for="weaponsCard_wepAtk_0">Wepatk</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepAtk_0" name="wepAtk[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepAP_0">Wepap</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepAP_0" name="wepAP[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepCrit_0">Wepcrit</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepCrit_0" name="wepCrit[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepType_0">Weptype</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepType_0" name="wepType[]" type="text"/></td>
 <td>
 <div class="input-group input-group-sm">
+<div class="input-group-text px-1 no-print" title="Melee Weapon (checked = Melee, unchecked = Ranged)">
+<label class="visually-hidden" for="weaponsCard_wepIsMelee_0">Melee Weapon</label><input class="form-check-input my-0" id="weaponsCard_wepIsMelee_0" name="wepIsMelee[]" type="checkbox"/>
+<span class="ms-1 small fw-bold text-muted" style="font-size: 0.65rem;">M</span>
+</div>
 <label class="visually-hidden" for="weaponsCard_wepRange_0">Weprange</label><input class="form-control form-control-sm text-center px-1" id="weaponsCard_wepRange_0" name="wepRange[]" type="text"/>
 <span class="input-group-text px-1">ft</span>
 </div>
@@ -1489,7 +1516,7 @@
 <td class="no-print text-center"><button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button></td>
 </tr>
 <tr class="weapon-notes-row">
-<td class="pt-0 pb-2 border-bottom" colspan="9">
+<td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
 <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes &amp; Attributes:</span>
 <label class="visually-hidden" for="weaponsCard_wepNotes_0">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_0" name="wepNotes[]" type="text"/>
@@ -1498,13 +1525,39 @@
 </tr>
 <tr class="weapon-main-row">
 <td><label class="visually-hidden" for="weaponsCard_wepName_1">Wepname</label><input class="form-control form-control-sm" id="weaponsCard_wepName_1" name="wepName[]" type="text"/></td>
-<td><label class="visually-hidden" for="weaponsCard_wepDmg_1">Wepdmg</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepDmg_1" name="wepDmg[]" type="text"/></td>
+<td class="text-center">
+<label class="visually-hidden" for="weaponsCard_wepLvl_1">Weapon Level</label>
+<select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_1" name="wepLvl[]">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</td>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="weaponsCard_wepDmg_1">Wepdmg</label>
+<input class="form-control form-control-sm text-center px-1" id="weaponsCard_wepDmg_1" name="wepDmg[]" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="rollWeaponCheck(this)" title="Roll Accuracy & Damage" type="button">
+<i class="fa-solid fa-dice text-cyan"></i>
+</button>
+</div>
+</td>
 <td><label class="visually-hidden" for="weaponsCard_wepAtk_1">Wepatk</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepAtk_1" name="wepAtk[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepAP_1">Wepap</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepAP_1" name="wepAP[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepCrit_1">Wepcrit</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepCrit_1" name="wepCrit[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepType_1">Weptype</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepType_1" name="wepType[]" type="text"/></td>
 <td>
 <div class="input-group input-group-sm">
+<div class="input-group-text px-1 no-print" title="Melee Weapon (checked = Melee, unchecked = Ranged)">
+<label class="visually-hidden" for="weaponsCard_wepIsMelee_1">Melee Weapon</label><input class="form-check-input my-0" id="weaponsCard_wepIsMelee_1" name="wepIsMelee[]" type="checkbox"/>
+<span class="ms-1 small fw-bold text-muted" style="font-size: 0.65rem;">M</span>
+</div>
 <label class="visually-hidden" for="weaponsCard_wepRange_1">Weprange</label><input class="form-control form-control-sm text-center px-1" id="weaponsCard_wepRange_1" name="wepRange[]" type="text"/>
 <span class="input-group-text px-1">ft</span>
 </div>
@@ -1513,7 +1566,7 @@
 <td class="no-print text-center"><button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button></td>
 </tr>
 <tr class="weapon-notes-row">
-<td class="pt-0 pb-2 border-bottom" colspan="9">
+<td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
 <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes &amp; Attributes:</span>
 <label class="visually-hidden" for="weaponsCard_wepNotes_1">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_1" name="wepNotes[]" type="text"/>
@@ -1522,13 +1575,39 @@
 </tr>
 <tr class="weapon-main-row">
 <td><label class="visually-hidden" for="weaponsCard_wepName_2">Wepname</label><input class="form-control form-control-sm" id="weaponsCard_wepName_2" name="wepName[]" type="text"/></td>
-<td><label class="visually-hidden" for="weaponsCard_wepDmg_2">Wepdmg</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepDmg_2" name="wepDmg[]" type="text"/></td>
+<td class="text-center">
+<label class="visually-hidden" for="weaponsCard_wepLvl_2">Weapon Level</label>
+<select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_2" name="wepLvl[]">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</td>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="weaponsCard_wepDmg_2">Wepdmg</label>
+<input class="form-control form-control-sm text-center px-1" id="weaponsCard_wepDmg_2" name="wepDmg[]" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="rollWeaponCheck(this)" title="Roll Accuracy & Damage" type="button">
+<i class="fa-solid fa-dice text-cyan"></i>
+</button>
+</div>
+</td>
 <td><label class="visually-hidden" for="weaponsCard_wepAtk_2">Wepatk</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepAtk_2" name="wepAtk[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepAP_2">Wepap</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepAP_2" name="wepAP[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepCrit_2">Wepcrit</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepCrit_2" name="wepCrit[]" type="text"/></td>
 <td><label class="visually-hidden" for="weaponsCard_wepType_2">Weptype</label><input class="form-control form-control-sm text-center" id="weaponsCard_wepType_2" name="wepType[]" type="text"/></td>
 <td>
 <div class="input-group input-group-sm">
+<div class="input-group-text px-1 no-print" title="Melee Weapon (checked = Melee, unchecked = Ranged)">
+<label class="visually-hidden" for="weaponsCard_wepIsMelee_2">Melee Weapon</label><input class="form-check-input my-0" id="weaponsCard_wepIsMelee_2" name="wepIsMelee[]" type="checkbox"/>
+<span class="ms-1 small fw-bold text-muted" style="font-size: 0.65rem;">M</span>
+</div>
 <label class="visually-hidden" for="weaponsCard_wepRange_2">Weprange</label><input class="form-control form-control-sm text-center px-1" id="weaponsCard_wepRange_2" name="wepRange[]" type="text"/>
 <span class="input-group-text px-1">ft</span>
 </div>
@@ -1537,7 +1616,7 @@
 <td class="no-print text-center"><button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button></td>
 </tr>
 <tr class="weapon-notes-row">
-<td class="pt-0 pb-2 border-bottom" colspan="9">
+<td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
 <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes &amp; Attributes:</span>
 <label class="visually-hidden" for="weaponsCard_wepNotes_2">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_2" name="wepNotes[]" type="text"/>
@@ -1577,6 +1656,7 @@
 <thead>
 <tr>
 <th class="px-1">Skill Name</th>
+<th class="text-center px-1 no-print" style="width: 25px;"></th>
 <th class="text-center px-1" style="width: 110px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
 <th class="text-center px-1" style="width: 80px;">Key Ability</th>
@@ -1590,6 +1670,9 @@
 <!-- Knowledge (Technology) -->
 <tr data-ability="INT" data-skill="knowledge_tech_custom">
 <td class="fw-semibold">Knowledge (Technology)</td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_knowledge_tech_custom">Skillrank_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_knowledge_tech_custom" inputmode="numeric" name="skillRank_knowledge_tech_custom" placeholder="0" maxlength="3" type="text"/>
@@ -1612,6 +1695,9 @@
 <!-- Profession -->
 <tr data-ability="WIS" data-skill="profession_custom">
 <td class="fw-semibold">Profession</td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_profession_custom">Skillrank_Profession_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_profession_custom" inputmode="numeric" name="skillRank_profession_custom" placeholder="0" maxlength="3" type="text"/>
@@ -1634,6 +1720,9 @@
 <!-- Custom Entry 1 -->
 <tr data-ability="-" data-skill="feat_custom_1">
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillName1">Customfeatskillname1</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customFeatSkillName1" name="customFeatSkillName1" placeholder="Skill Name" type="text"/></td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_1">Skillrank_Feat_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_1" inputmode="numeric" name="skillRank_feat_custom_1" placeholder="0" maxlength="3" type="text"/>
@@ -1664,6 +1753,9 @@
 <!-- Custom Entry 2 -->
 <tr data-ability="-" data-skill="feat_custom_2">
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillName2">Customfeatskillname2</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customFeatSkillName2" name="customFeatSkillName2" placeholder="Skill Name" type="text"/></td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_2">Skillrank_Feat_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_2" inputmode="numeric" name="skillRank_feat_custom_2" placeholder="0" maxlength="3" type="text"/>
@@ -1702,6 +1794,7 @@
 <thead>
 <tr>
 <th class="px-1">Skill Name</th>
+<th class="text-center px-1 no-print" style="width: 25px;"></th>
 <th class="text-center px-1" style="width: 110px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
 <th class="text-center px-1" style="width: 50px;">Misc Mod</th>
@@ -1713,6 +1806,9 @@
 <!-- Top Skill: Language -->
 <tr data-ability="-" data-skill="lang_main">
 <td class="fw-semibold">Language</td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_main">Skillrank_Lang_Main</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_main" inputmode="numeric" name="skillRank_lang_main" placeholder="0" maxlength="3" type="text"/>
@@ -1728,6 +1824,9 @@
 <!-- Custom Entry 1 -->
 <tr data-ability="-" data-skill="lang_custom_1">
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName1">Customlangname1</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName1" name="customLangName1" placeholder="Language / Dialect" type="text"/></td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_1">Skillrank_Lang_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_1" inputmode="numeric" name="skillRank_lang_custom_1" placeholder="0" maxlength="3" type="text"/>
@@ -1743,6 +1842,9 @@
 <!-- Custom Entry 2 -->
 <tr data-ability="-" data-skill="lang_custom_2">
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName2">Customlangname2</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName2" name="customLangName2" placeholder="Language / Dialect" type="text"/></td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_2">Skillrank_Lang_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_2" inputmode="numeric" name="skillRank_lang_custom_2" placeholder="0" maxlength="3" type="text"/>
@@ -1758,6 +1860,9 @@
 <!-- Custom Entry 3 -->
 <tr data-ability="-" data-skill="lang_custom_3">
 <td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName3">Customlangname3</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName3" name="customLangName3" placeholder="Language / Dialect" type="text"/></td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
 <label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_3">Skillrank_Lang_Custom_3</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_3" inputmode="numeric" name="skillRank_lang_custom_3" placeholder="0" maxlength="3" type="text"/>
@@ -2179,6 +2284,30 @@
 <span class="d-none d-sm-inline">Quirks</span><span class="d-inline d-sm-none">Quirks</span>
 </label>
 </div>
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleDetractorsContainer" title="Toggle visibility of the Detractors card">
+<label class="visually-hidden" for="global_toggleDetractorsVisibility">global_toggleDetractorsVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleDetractorsVisibility" onchange="toggleDetractorsCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleDetractorsVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<span class="d-none d-sm-inline">Detractors</span><span class="d-inline d-sm-none">Detractor</span>
+</label>
+</div>
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleCyberneticsContainer" title="Toggle visibility of the Cybernetics card">
+<label class="visually-hidden" for="global_toggleCyberneticsVisibility">global_toggleCyberneticsVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleCyberneticsVisibility" onchange="toggleCyberneticsCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleCyberneticsVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<span class="d-none d-sm-inline">Cybernetics</span><span class="d-inline d-sm-none">Cyber</span>
+</label>
+</div>
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleMutationsContainer" title="Toggle visibility of the Mutations card">
+<label class="visually-hidden" for="global_toggleMutationsVisibility">global_toggleMutationsVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleMutationsVisibility" onchange="toggleMutationsCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleMutationsVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<span class="d-none d-sm-inline">Mutations</span><span class="d-inline d-sm-none">Mut</span>
+</label>
+</div>
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="togglePsionicsContainer" title="Toggle visibility of the Psionics card">
+<label class="visually-hidden" for="global_togglePsionicsVisibility">global_togglePsionicsVisibility</label><input checked="" class="form-check-input my-0" id="global_togglePsionicsVisibility" onchange="togglePsionicsCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_togglePsionicsVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<span class="d-none d-sm-inline">Psionics</span><span class="d-inline d-sm-none">Psi</span>
+</label>
+</div>
 </div>
 <div class="btn-group btn-group-sm">
 <button class="btn btn-cyber-outline py-0 px-2 small" onclick="expandPageCards(3)" title="Expand all cards on Page 3" type="button">
@@ -2342,6 +2471,446 @@
 </table>
 <datalist id="quirksDatalist">
 </datalist>
+</div>
+</div>
+</div>
+</div>
+<!-- Detractors Card -->
+<div class="sheet-card mt-3" data-default-page="3" id="detractorsCard">
+<div aria-controls="collapseDetractors" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseDetractors">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><i class="fa-solid fa-triangle-exclamation me-2"></i>Detractors</span>
+</div>
+<div class="d-flex align-items-center gap-2 no-collapse">
+<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+<button class="btn btn-sm btn-cyber btn-add-row" onclick="addDetractorRow()" type="button">
+<i class="fa-solid fa-plus me-1"></i> Detractor
+</button>
+</div>
+</div>
+<div class="collapse show" id="collapseDetractors">
+<div class="card-body p-0">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="detractorsTable">
+<thead>
+<tr>
+<th style="width: 250px;">Name</th>
+<th>Description</th>
+<th class="no-print" style="width: 50px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="detractorsCard_detractorName_0">Detractor Name</label>
+<input class="form-control form-control-sm" id="detractorsCard_detractorName_0" list="detractorsDatalist" name="detractorName[]" placeholder="Detractor Name" type="text" onchange="onDetractorNameInput(this)"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Detractor Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+</td>
+<td>
+<label class="visually-hidden" for="detractorsCard_detractorDesc_0">Detractor Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="detractorsCard_detractorDesc_0" name="detractorDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+<datalist id="detractorsDatalist">
+</datalist>
+</div>
+</div>
+</div>
+</div>
+<!-- Cybernetics Card -->
+<div class="sheet-card mt-3" data-default-page="3" id="cyberneticsCard">
+<div aria-controls="collapseCybernetics" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseCybernetics">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><i class="fa-solid fa-microchip me-2"></i>Cybernetics</span>
+</div>
+<div class="d-flex align-items-center gap-2 no-collapse">
+<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+</div>
+</div>
+<div class="collapse show" id="collapseCybernetics">
+<div class="card-body">
+<!-- Top Metadata Row (all on one line) -->
+<div class="row g-2 align-items-center mb-3 cyber-meta-row">
+<div class="col-3 col-sm-3 col-md-2">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Cyborg Level</span><span class="d-inline d-sm-none d-print-inline">Cyborg Lvl</span>:</span>
+<label class="visually-hidden" for="cyberneticsCard_cyborgLevel">Cyborg Level</label>
+<input class="form-control form-control-sm text-center fw-bold" id="cyberneticsCard_cyborgLevel" name="cyborgLevel" placeholder="1" type="text"/>
+</div>
+</div>
+<div class="col-5 col-sm-9 col-md-6">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Framework Details</span><span class="d-inline d-sm-none d-print-inline">Framework</span>:</span>
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Tech Level</span><span class="d-inline d-sm-none d-print-inline">TL</span>:</span>
+<label class="visually-hidden" for="cyberneticsCard_frameworkTechLevel">Framework Tech Level</label>
+<input class="form-control form-control-sm text-center fw-bold" id="cyberneticsCard_frameworkTechLevel" name="frameworkTechLevel" placeholder="1" type="text"/>
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Masterworked</span><span class="d-inline d-sm-none d-print-inline">Mstwk</span>:</span>
+<label class="visually-hidden" for="cyberneticsCard_frameworkMasterworked">Framework Masterworked</label>
+<input class="form-control form-control-sm text-center fw-bold" id="cyberneticsCard_frameworkMasterworked" name="frameworkMasterworked" placeholder="0" type="text"/>
+</div>
+</div>
+<div class="col-2 col-sm-3 col-md-2">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Power:</span>
+<label class="visually-hidden" for="cyberneticsCard_power">Power</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="cyberneticsCard_power" name="cyberPower" placeholder="0" type="text"/>
+</div>
+</div>
+<div class="col-2 col-sm-3 col-md-2">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Slots:</span>
+<label class="visually-hidden" for="cyberneticsCard_slots">Slots</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="cyberneticsCard_slots" name="cyberSlots" placeholder="0" type="text"/>
+</div>
+</div>
+</div>
+<!-- Implants Table Section -->
+<div class="border rounded overflow-hidden mb-3">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="cyberImplantsTable">
+<thead>
+<tr>
+<th style="width: 250px;">Implant Name</th>
+<th>Description</th>
+<th class="no-print text-center" style="width: 110px;">
+<button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addCyberImplantRow()" style="font-size: 0.72rem;" type="button">
+<i class="fa-solid fa-plus me-1"></i> Implant
+</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<label class="visually-hidden" for="cyberneticsCard_implantName_0">Implant Name</label>
+<input class="form-control form-control-sm" id="cyberneticsCard_implantName_0" name="implantName[]" placeholder="Implant Name" type="text"/>
+</td>
+<td>
+<label class="visually-hidden" for="cyberneticsCard_implantDesc_0">Implant Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="cyberneticsCard_implantDesc_0" name="implantDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Drawbacks Table Section -->
+<div class="border rounded overflow-hidden">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="cyberDrawbacksTable">
+<thead>
+<tr>
+<th style="width: 250px;">Drawback Name</th>
+<th>Description</th>
+<th class="no-print text-center" style="width: 110px;">
+<button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addCyberDrawbackRow()" style="font-size: 0.72rem;" type="button">
+<i class="fa-solid fa-plus me-1"></i> Drawback
+</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<label class="visually-hidden" for="cyberneticsCard_drawbackName_0">Drawback Name</label>
+<input class="form-control form-control-sm" id="cyberneticsCard_drawbackName_0" name="cyberDrawbackName[]" placeholder="Drawback Name" type="text"/>
+</td>
+<td>
+<label class="visually-hidden" for="cyberneticsCard_drawbackDesc_0">Drawback Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="cyberneticsCard_drawbackDesc_0" name="cyberDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mutations Card -->
+<div class="sheet-card mt-3" data-default-page="3" id="mutationsCard">
+<div aria-controls="collapseMutations" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseMutations">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><i class="fa-solid fa-dna me-2"></i>Mutations</span>
+</div>
+<div class="d-flex align-items-center gap-2 no-collapse">
+<div class="d-flex align-items-center gap-2 me-2" onclick="event.stopPropagation();">
+<div class="input-group input-group-sm" style="width: 125px;">
+<span class="input-group-text fw-bold text-muted py-0 px-1" style="font-size: 0.7rem;">Earned:</span>
+<label class="visually-hidden" for="mutationsCard_mpEarned">MP Earned</label>
+<input class="form-control form-control-sm text-center fw-bold text-success py-0 px-1" id="mutationsCard_mpEarned" name="mutationsMPEarned" readonly placeholder="0" type="text" style="font-size: 0.8rem;"/>
+</div>
+<div class="input-group input-group-sm" style="width: 120px;">
+<span class="input-group-text fw-bold text-muted py-0 px-1" style="font-size: 0.7rem;">Spent:</span>
+<label class="visually-hidden" for="mutationsCard_mpSpent">MP Spent</label>
+<input class="form-control form-control-sm text-center fw-bold text-danger py-0 px-1" id="mutationsCard_mpSpent" name="mutationsMPSpent" readonly placeholder="0" type="text" style="font-size: 0.8rem;"/>
+</div>
+</div>
+<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+</div>
+</div>
+<div class="collapse show" id="collapseMutations">
+<div class="card-body">
+<!-- Mutation Drawbacks Table Section -->
+<div class="border rounded overflow-hidden mb-3">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="mutationsDrawbacksTable">
+<thead>
+<tr>
+<th style="width: 220px;">Drawback Name</th>
+<th>Description</th>
+<th class="text-center" style="width: 70px;">MP</th>
+<th class="no-print text-center" style="width: 110px;">
+<button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addMutationDrawbackRow()" style="font-size: 0.72rem;" type="button">
+<i class="fa-solid fa-plus me-1"></i> Drawback
+</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="mutationsCard_drawbackName_0">Mutation Drawback Name</label>
+<input class="form-control form-control-sm" id="mutationsCard_drawbackName_0" list="mutationDrawbacksDatalist" name="mutationDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Drawback Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+</td>
+<td>
+<label class="visually-hidden" for="mutationsCard_drawbackDesc_0">Mutation Drawback Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_drawbackDesc_0" name="mutationDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td>
+<label class="visually-hidden" for="mutationsCard_drawbackMP_0">MP</label>
+<input class="form-control form-control-sm text-center fw-bold" id="mutationsCard_drawbackMP_0" name="mutationDrawbackMP[]" oninput="calculateMutationsMPTotals()" placeholder="0" type="text"/>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Mutation Enhancements Table Section -->
+<div class="border rounded overflow-hidden">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="mutationsEnhancementsTable">
+<thead>
+<tr>
+<th style="width: 220px;">Enhancement Name</th>
+<th>Description</th>
+<th class="text-center" style="width: 70px;">MP</th>
+<th class="no-print text-center" style="width: 130px;">
+<button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addMutationEnhancementRow()" style="font-size: 0.72rem;" type="button">
+<i class="fa-solid fa-plus me-1"></i> Enhancement
+</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="mutationsCard_enhancementName_0">Mutation Enhancement Name</label>
+<input class="form-control form-control-sm" id="mutationsCard_enhancementName_0" list="mutationEnhancementsDatalist" name="mutationEnhancementName[]" onchange="onMutationEnhancementNameInput(this)" oninput="onMutationEnhancementNameInput(this)" placeholder="Enhancement Name" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Enhancement Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+</td>
+<td>
+<label class="visually-hidden" for="mutationsCard_enhancementDesc_0">Mutation Enhancement Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_enhancementDesc_0" name="mutationEnhancementDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td>
+<label class="visually-hidden" for="mutationsCard_enhancementMP_0">MP</label>
+<input class="form-control form-control-sm text-center fw-bold" id="mutationsCard_enhancementMP_0" name="mutationEnhancementMP[]" oninput="calculateMutationsMPTotals()" placeholder="0" type="text"/>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<datalist id="mutationDrawbacksDatalist"></datalist>
+<datalist id="mutationEnhancementsDatalist"></datalist>
+</div>
+</div>
+</div>
+<!-- Psionics Card -->
+<div class="sheet-card mt-3" data-default-page="3" id="psionicsCard">
+<div aria-controls="collapsePsionics" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapsePsionics">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><i class="fa-solid fa-brain me-2"></i>Psionics</span>
+</div>
+<div class="d-flex align-items-center gap-2 no-collapse">
+<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+<button class="btn btn-sm btn-cyber btn-add-row" onclick="addPsionicLevelBlock()" type="button">
+<i class="fa-solid fa-plus me-1"></i> Psionic Level
+</button>
+</div>
+</div>
+<div class="collapse show" id="collapsePsionics">
+<div class="card-body">
+<!-- Psionic Drawbacks Table Section -->
+<div class="border rounded overflow-hidden mb-3">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="psionicsDrawbacksTable">
+<thead>
+<tr>
+<th style="width: 220px;">Drawback Name</th>
+<th>Description</th>
+<th class="text-center" style="width: 70px;">MP</th>
+<th class="no-print text-center" style="width: 110px;">
+<button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addPsionicDrawbackRow()" style="font-size: 0.72rem;" type="button">
+<i class="fa-solid fa-plus me-1"></i> Drawback
+</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="psionicsCard_drawbackName_0">Psionic Drawback Name</label>
+<input class="form-control form-control-sm" id="psionicsCard_drawbackName_0" list="mutationDrawbacksDatalist" name="psionicDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Drawback Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+</td>
+<td>
+<label class="visually-hidden" for="psionicsCard_drawbackDesc_0">Psionic Drawback Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="psionicsCard_drawbackDesc_0" name="psionicDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td>
+<label class="visually-hidden" for="psionicsCard_drawbackMP_0">MP</label>
+<input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_drawbackMP_0" name="psionicDrawbackMP[]" placeholder="0" type="text"/>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Psionic Level Blocks Container -->
+<div class="d-flex flex-column gap-3" id="psionicLevelsContainer">
+<div class="psionic-level-block border rounded p-3 bg-opacity-10 bg-secondary">
+<div class="row g-2 align-items-center mb-3 psionic-meta-row">
+<div class="col-6 col-sm-3 col-md-2">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Level</span><span class="d-inline d-sm-none d-print-inline">Lvl</span>:</span>
+<label class="visually-hidden" for="psionicsCard_psionicLevel_0">Level</label>
+<input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_psionicLevel_0" name="psionicLevel[]" type="text" value="0"/>
+</div>
+</div>
+<div class="col-12 col-sm-9 col-md-3">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Psionic Type</span><span class="d-inline d-sm-none d-print-inline">Type</span>:</span>
+<label class="visually-hidden" for="psionicsCard_psionicType_0">Psionic Type</label>
+<input class="form-control form-control-sm fw-bold" id="psionicsCard_psionicType_0" name="psionicType[]" placeholder="e.g. Telepathy" type="text"/>
+</div>
+</div>
+<div class="col-4 col-sm-3 col-md-2">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">DC:</span>
+<label class="visually-hidden" for="psionicsCard_psionicDC_0">DC</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="psionicsCard_psionicDC_0" name="psionicDC[]" placeholder="10" type="text"/>
+</div>
+</div>
+<div class="col-4 col-sm-3 col-md-2">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;"><span class="d-none d-sm-inline d-print-none">Learned</span><span class="d-inline d-sm-none d-print-inline">Lrnd</span>:</span>
+<label class="visually-hidden" for="psionicsCard_psionicLearned_0">Learned</label>
+<input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_psionicLearned_0" name="psionicLearned[]" placeholder="0" type="text"/>
+</div>
+</div>
+<div class="col-4 col-sm-3 col-md-1">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Uses:</span>
+<label class="visually-hidden" for="psionicsCard_psionicUses_0">Uses</label>
+<input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_psionicUses_0" name="psionicUses[]" placeholder="0" type="text"/>
+</div>
+</div>
+<div class="col-4 col-sm-3 col-md-1">
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Used:</span>
+<label class="visually-hidden" for="psionicsCard_psionicUsed_0">Used</label>
+<input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_psionicUsed_0" name="psionicUsed[]" placeholder="0" type="text"/>
+</div>
+</div>
+<div class="col-12 col-md-1 text-end no-print ms-auto">
+<button class="btn btn-sm btn-outline-danger py-1 px-2" onclick="removePsionicLevelBlock(this)" title="Remove Psionic Level" type="button">
+<i class="fa-solid fa-trash"></i>
+</button>
+</div>
+</div>
+<!-- Psionic Techniques Sub-Table -->
+<div class="border rounded overflow-hidden">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle psionic-sub-table">
+<thead>
+<tr>
+<th style="width: 250px;">Technique Name</th>
+<th style="width: 100px;">Range</th>
+<th>Description</th>
+<th class="no-print text-center" style="width: 110px;">
+<button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addPsionicTechniqueRow(this)" style="font-size: 0.72rem;" type="button">
+<i class="fa-solid fa-plus me-1"></i> Technique
+</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><label class="visually-hidden" for="psionicsCard_psionicTechName_0">Technique Name</label><input class="form-control form-control-sm" id="psionicsCard_psionicTechName_0" name="psionicTechName[]" placeholder="Technique Name" type="text"/></td>
+<td><label class="visually-hidden" for="psionicsCard_psionicTechRange_0">Range</label><input class="form-control form-control-sm" id="psionicsCard_psionicTechRange_0" name="psionicTechRange[]" placeholder="Range" type="text"/></td>
+<td><label class="visually-hidden" for="psionicsCard_psionicTechDesc_0">Description</label><textarea class="form-control form-control-sm trait-desc-textarea" id="psionicsCard_psionicTechDesc_0" name="psionicTechDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea></td>
+<td class="no-print text-center"><button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
