@@ -61,10 +61,10 @@
 <i class="fa-solid fa-print"></i><span class="d-none d-sm-inline ms-1">Print / Save PDF</span>
 </button>
 <button class="btn btn-cyber-outline btn-sm" onclick="exportCharacterJSON()" title="Export JSON" type="button">
-<i class="fa-solid fa-download"></i><span class="d-none d-sm-inline ms-1">Export JSON</span>
+<i class="fa-solid fa-download"></i><span class="d-none d-sm-inline ms-1">Export (Save)</span>
 </button>
 <label class="btn btn-cyber-outline btn-sm mb-0" for="global_importJsonInput" title="Import JSON">
-<i class="fa-solid fa-upload"></i><span class="d-none d-sm-inline ms-1">Import JSON</span>
+<i class="fa-solid fa-upload"></i><span class="d-none d-sm-inline ms-1">Import</span>
 <input accept=".json" id="global_importJsonInput" onchange="importCharacterJSON(event)" style="display:none;" type="file"/>
 </label>
 <div class="btn-group btn-group-sm ms-md-2">
@@ -1938,17 +1938,16 @@
 </div>
 </div>
 </div>
-<!-- Box 4: Current Level, XP & Next Level (Far Right) -->
+<!-- Box 4: Total XP & Next Level (Far Right) -->
 <div class="col-12 col-sm-6 col-md-3 col-xl-4">
 <div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
 <div class="stat-label mb-1">
-<span class="d-none d-md-inline">XP / Total Level / Next Level</span><span class="d-inline d-md-none">XP / Lvl / Next</span>
+<span class="d-none d-sm-inline">Total XP / Next Level</span><span class="d-inline d-sm-none">XP / Next</span>
 </div>
 <div class="input-group input-group-sm">
-<label class="visually-hidden" for="wealthXpCard_xpCurrent">Xpcurrent</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpCurrent" name="xpCurrent" placeholder="0 XP" title="Current Experience Points" type="text"/>
-<span class="input-group-text px-1 py-0 small text-muted" style="font-size: 0.7rem;"><span class="d-none d-sm-inline">/ Lvl</span><span class="d-inline d-sm-none">/L</span></span>
-<label class="visually-hidden" for="wealthXpCard_totalCharLevel">Totalcharlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_totalCharLevel" name="totalCharLevel" placeholder="1" title="Total Character Level" type="text"/>
-<span class="input-group-text px-1 py-0 small text-cyan" style="font-size: 0.7rem;" title="XP required for Next Level"><i class="fa-solid fa-angles-up me-1"></i><span class="d-none d-sm-inline">Next</span></span>
+<span class="input-group-text px-1 py-0 small text-cyan fw-bold" style="font-size: 0.7rem;">XP</span>
+<label class="visually-hidden" for="wealthXpCard_xpCurrent">Xpcurrent</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1 me-1" id="wealthXpCard_xpCurrent" name="xpCurrent" placeholder="0 XP" title="Current Experience Points" type="text"/>
+<span class="input-group-text px-1 py-0 small text-cyan ms-1" style="font-size: 0.7rem;" title="XP required for Next Level"><i class="fa-solid fa-angles-up me-1"></i><span class="d-none d-sm-inline">Next</span></span>
 <label class="visually-hidden" for="wealthXpCard_xpNextLevel">Xpnextlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpNextLevel" name="xpNextLevel" placeholder="2000" title="XP Required for Next Level" type="text"/>
 </div>
 </div>
@@ -2233,12 +2232,12 @@
 <table class="table table-custom mb-0 align-middle" id="gearTable">
 <thead>
 <tr>
-<th>Name</th>
+<th style="width: 200px;">Name</th>
 <style style="display:none;"></style>
 <th style="width: 80px;">Qty</th>
 <th style="width: 90px;">Weight</th>
 <th style="width: 80px;">TL</th>
-<th style="width: 50%;">Notes</th>
+<th>Notes</th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
 </thead>
@@ -2395,7 +2394,7 @@
 <table class="table table-custom mb-0 align-middle techniques-sub-table">
 <thead>
 <tr>
-<th style="width: 250px;">Technique Name</th>
+<th style="width: 200px;">Technique Name</th>
 <th style="width: 100px;">Range</th>
 <th>Description</th>
 <th class="no-print text-center" style="width: 110px;">
@@ -2685,7 +2684,7 @@
 <table class="table table-custom mb-0 align-middle" id="mutationsDrawbacksTable">
 <thead>
 <tr>
-<th style="width: 220px;">Drawback Name</th>
+<th style="width: 200px;">Drawback Name</th>
 <th>Description</th>
 <th class="text-center" style="width: 70px;">MP</th>
 <th class="no-print text-center" style="width: 110px;">
@@ -2728,7 +2727,7 @@
 <table class="table table-custom mb-0 align-middle" id="mutationsEnhancementsTable">
 <thead>
 <tr>
-<th style="width: 220px;">Enhancement Name</th>
+<th style="width: 200px;">Enhancement Name</th>
 <th>Description</th>
 <th class="text-center" style="width: 70px;">MP</th>
 <th class="no-print text-center" style="width: 130px;">
@@ -2795,7 +2794,7 @@
 <table class="table table-custom mb-0 align-middle" id="psionicsDrawbacksTable">
 <thead>
 <tr>
-<th style="width: 220px;">Drawback Name</th>
+<th style="width: 200px;">Drawback Name</th>
 <th>Description</th>
 <th class="text-center" style="width: 70px;">MP</th>
 <th class="no-print text-center" style="width: 110px;">
@@ -2890,7 +2889,7 @@
 <table class="table table-custom mb-0 align-middle psionic-sub-table">
 <thead>
 <tr>
-<th style="width: 250px;">Technique Name</th>
+<th style="width: 200px;">Technique Name</th>
 <th style="width: 100px;">Range</th>
 <th>Description</th>
 <th class="no-print text-center" style="width: 110px;">

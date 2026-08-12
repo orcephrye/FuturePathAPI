@@ -1173,7 +1173,7 @@ function addTechniqueLevelBlock(levelVal) {
         <table class="table table-custom mb-0 align-middle techniques-sub-table">
           <thead>
             <tr>
-              <th style="width: 250px;">Technique Name</th>
+              <th style="width: 200px;">Technique Name</th>
               <th style="width: 100px;">Range</th>
               <th>Description</th>
               <th style="width: 110px;" class="no-print text-center">
@@ -1733,7 +1733,7 @@ function addPsionicLevelBlock(levelData = {}) {
         <table class="table table-custom mb-0 align-middle psionic-sub-table">
           <thead>
             <tr>
-              <th style="width: 250px;">Technique Name</th>
+              <th style="width: 200px;">Technique Name</th>
               <th style="width: 100px;">Range</th>
               <th>Description</th>
               <th class="no-print text-center" style="width: 110px;">
@@ -1985,7 +1985,7 @@ function addProfessionBlock() {
         <table class="table table-custom mb-0 align-middle prof-talents-table">
           <thead>
             <tr>
-              <th style="width: 250px;">Name</th>
+              <th style="width: 200px;">Name</th>
               <th>Description</th>
               <th style="width: 100px;" class="no-print text-center">
                 <button type="button" class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addProfTalentRow(this)" style="font-size: 0.72rem;">
@@ -4263,6 +4263,15 @@ function scheduleAutoPagination(delay = 500) {
   }, delay);
 }
 
+function reexpandAllTextareas() {
+  document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea').forEach((el) => {
+    el.style.height = 'auto';
+    if (el.scrollHeight > 0) {
+      el.style.height = `${el.scrollHeight}px`;
+    }
+  });
+}
+
 function getElementContentHeight(el) {
   if (!el) {
     return 0;
@@ -4276,9 +4285,11 @@ function getElementContentHeight(el) {
   const savedScrollX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
 
   document.body.classList.add('is-print-mode');
+  reexpandAllTextareas();
   const rect = el.getBoundingClientRect();
   const height = Math.max(el.offsetHeight, el.scrollHeight, Math.ceil(rect.height));
   document.body.classList.remove('is-print-mode');
+  reexpandAllTextareas();
 
   const currentY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
   const currentX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
@@ -4368,6 +4379,13 @@ function autoPaginateCards() {
     document.body.classList.add('is-print-mode');
   }
 
+  document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea').forEach((el) => {
+    el.style.height = 'auto';
+    if (el.scrollHeight > 0) {
+      el.style.height = `${el.scrollHeight}px`;
+    }
+  });
+
   try {
     let pageNum = 1;
     let iterations = 0;
@@ -4440,6 +4458,7 @@ function autoPaginateCards() {
   } finally {
     if (!wasPrintMode) {
       document.body.classList.remove('is-print-mode');
+      reexpandAllTextareas();
       window.requestAnimationFrame(() => {
         const currentY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
         const currentX = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
@@ -5096,7 +5115,7 @@ function addPowerArmorBlock() {
         <table class="table table-custom mb-0 align-middle pa-mods-table">
           <thead>
             <tr>
-              <th style="width: 250px;">Mod Name</th>
+              <th style="width: 200px;">Mod Name</th>
               <th>Description</th>
               <th style="width: 100px;" class="no-print text-center">
                 <button type="button" class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addPowerArmorModRow(this)" style="font-size: 0.72rem;">
@@ -5317,6 +5336,12 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('beforeprint', () => {
     document.body.classList.add('is-print-mode');
     expandAllCards();
+    document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea').forEach((el) => {
+      el.style.height = 'auto';
+      if (el.scrollHeight > 0) {
+        el.style.height = `${el.scrollHeight}px`;
+      }
+    });
   });
 
   window.addEventListener('afterprint', () => {
@@ -5325,6 +5350,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!printParam) {
       document.body.classList.remove('is-print-mode');
       restoreCollapseStates();
+      reexpandAllTextareas();
     }
   });
 

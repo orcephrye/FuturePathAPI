@@ -1068,8 +1068,9 @@ body.is-print-mode .form-label {
   font-weight: 700 !important;
 }
 
-body.is-print-mode .form-control,
-body.is-print-mode .form-select {
+body.is-print-mode input.form-control,
+body.is-print-mode select.form-select,
+body.is-print-mode .form-control:not(textarea) {
   background-color: transparent !important;
   border: none !important;
   border-bottom: 1px solid #444 !important;
@@ -1083,6 +1084,34 @@ body.is-print-mode .form-select {
   line-height: 16px !important;
   appearance: none;
   box-shadow: none !important;
+}
+
+body.is-print-mode textarea,
+body.is-print-mode textarea.form-control,
+body.is-print-mode .notebook-textarea,
+body.is-print-mode .trait-desc-textarea {
+  background-color: transparent !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  font-size: 7.2pt !important;
+  line-height: 1.15 !important;
+  padding: 0 2px !important;
+  margin: 0 !important;
+  min-height: 15px !important;
+  resize: none !important;
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  overflow: visible !important;
+  border: none !important;
+  border-bottom: 1px solid #777 !important;
+  border-radius: 0 !important;
+}
+
+body.is-print-mode #backstoryCard .notebook-textarea {
+  min-height: 5.5rem !important;
+  border: 1px solid #777 !important;
+  border-radius: 3px !important;
+  padding: 4px 6px !important;
 }
 
 body.is-print-mode .form-control::placeholder {
@@ -1544,9 +1573,37 @@ body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nt
 }
 
 body.is-print-mode .techniques-sub-table th,
-body.is-print-mode .techniques-sub-table td {
+body.is-print-mode .techniques-sub-table td,
+body.is-print-mode .psionic-sub-table th,
+body.is-print-mode .psionic-sub-table td {
   padding: 1px 2px !important;
   font-size: 6.5pt !important;
+}
+
+body.is-print-mode #gearTable th,
+body.is-print-mode #gearTable td,
+body.is-print-mode .techniques-sub-table th:first-child,
+body.is-print-mode .techniques-sub-table td:first-child,
+body.is-print-mode .psionic-sub-table th:first-child,
+body.is-print-mode .psionic-sub-table td:first-child,
+body.is-print-mode #gearTable th:first-child,
+body.is-print-mode #gearTable td:first-child,
+body.is-print-mode #mutationsDrawbacksTable th:first-child,
+body.is-print-mode #mutationsDrawbacksTable td:first-child,
+body.is-print-mode #mutationsEnhancementsTable th:first-child,
+body.is-print-mode #mutationsEnhancementsTable td:first-child,
+body.is-print-mode #psionicsDrawbacksTable th:first-child,
+body.is-print-mode #psionicsDrawbacksTable td:first-child {
+  width: 125px !important;
+  max-width: 125px !important;
+}
+
+body.is-print-mode .techniques-sub-table th:nth-child(2),
+body.is-print-mode .techniques-sub-table td:nth-child(2),
+body.is-print-mode .psionic-sub-table th:nth-child(2),
+body.is-print-mode .psionic-sub-table td:nth-child(2) {
+  width: 65px !important;
+  max-width: 65px !important;
 }
 
 /* Power Armor card print styles */
@@ -2065,6 +2122,26 @@ body.is-print-mode .col-lg-6 {
     background-color: transparent !important;
   }
 
+  textarea,
+  textarea.form-control,
+  .notebook-textarea,
+  .trait-desc-textarea {
+    line-height: 1.15 !important;
+    padding: 0 2px !important;
+    margin: 0 !important;
+    min-height: 15px !important;
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+    overflow: visible !important;
+  }
+
+  #backstoryCard .notebook-textarea {
+    min-height: 5.5rem !important;
+    border: 1px solid #777 !important;
+    border-radius: 3px !important;
+    padding: 4px 6px !important;
+  }
+
 
   #collapseSpeed .card-body {
     padding: 2px 6px !important;
@@ -2440,10 +2517,38 @@ body.is-print-mode .col-lg-6 {
     flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
   }
 
+  #gearTable th,
+  #gearTable td,
   .techniques-sub-table th,
-  .techniques-sub-table td {
+  .techniques-sub-table td,
+  .psionic-sub-table th,
+  .psionic-sub-table td {
     padding: 1px 2px !important;
     font-size: 6.5pt !important;
+  }
+
+  #gearTable th:first-child,
+  #gearTable td:first-child,
+  .techniques-sub-table th:first-child,
+  .techniques-sub-table td:first-child,
+  .psionic-sub-table th:first-child,
+  .psionic-sub-table td:first-child,
+  #mutationsDrawbacksTable th:first-child,
+  #mutationsDrawbacksTable td:first-child,
+  #mutationsEnhancementsTable th:first-child,
+  #mutationsEnhancementsTable td:first-child,
+  #psionicsDrawbacksTable th:first-child,
+  #psionicsDrawbacksTable td:first-child {
+    width: 125px !important;
+    max-width: 125px !important;
+  }
+
+  .techniques-sub-table th:nth-child(2),
+  .techniques-sub-table td:nth-child(2),
+  .psionic-sub-table th:nth-child(2),
+  .psionic-sub-table td:nth-child(2) {
+    width: 65px !important;
+    max-width: 65px !important;
   }
 
   #collapsePowerArmor .card-body {
