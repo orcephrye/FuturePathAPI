@@ -35,7 +35,7 @@ function toggleLockTheme(isLocked) {
 
 function setTheme(themeName) {
   const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'viper', 'volar', 'human', 'grayling', 'lepidonain', 'cryous', 'aconian', 'murid', 'avisari', 'khepri'];
-  // console.log("function setTheme called with themeName:", themeName)
+  console.log("setTheme called wth themeName:", themeName);
   if (!themes.includes(themeName)) {
     themeName = 'cosmic-dark';
   }
@@ -63,6 +63,7 @@ function setTheme(themeName) {
 }
 
 function applyTheme() {
+  console.log("applyTheme called!");
   let savedTheme = localStorage.getItem('theme');
   const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'viper', 'volar', 'human', 'grayling', 'lepidonain', 'cryous', 'aconian', 'murid', 'avisari', 'khepri'];
   if (!savedTheme || !themes.includes(savedTheme)) {
@@ -150,8 +151,22 @@ function syncSizeToAc() {
   acSizeInput.value = formatModStr(mod);
 }
 
-// Live calculation of Modifiers & Skills
+let isStatsCalcScheduled = false;
+
 function calculateStats() {
+  if (isStatsCalcScheduled) {
+    return;
+  }
+  isStatsCalcScheduled = true;
+  queueMicrotask(() => {
+    isStatsCalcScheduled = false;
+    performCalculateStats();
+  });
+}
+
+// Live calculation of Modifiers & Skills
+function performCalculateStats() {
+  console.log("calculateStats called!");
   const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
   const mods = {};
 
@@ -353,7 +368,6 @@ function calculateStats() {
   }
 
   calculateTotalWeight();
-  syncSpeciesName();
   syncPathName();
   triggerAutoSave();
 }
@@ -370,7 +384,7 @@ function syncPathName() {
 }
 
 function syncSpeciesName() {
-  const speciesInput = document.getElementById('identityCard_speciesInput') || document.getElementById('speciesInput');
+  const speciesInput = document.getElementById('identityCard_speciesInput');
   const speciesVal = (speciesInput ? speciesInput.value.trim() : '');
   const displayEl = document.getElementById('headerSpeciesDisplay');
   if (displayEl) {
@@ -1091,7 +1105,6 @@ function updateCustomSkillAbility(select) {
       modInput.classList.add('text-muted');
     }
   }
-  calculateStats();
 }
 
 function addArmorRow() {
@@ -3048,6 +3061,7 @@ function saveToLocalStorage() {
 function loadFromLocalStorage() {
   const saved = localStorage.getItem('d20FuturePathCharData');
   if (!saved) {
+    applyTheme();
     return;
   }
   try {
@@ -3090,6 +3104,38 @@ function populateForm(data) {
   } else {
     flatData = data;
   }
+
+  // Populate field values
+  Object.keys(flatData).forEach((key) => {
+    const val = flatData[key];
+    if (key.endsWith('[]')) {
+      const inputs = form.querySelectorAll(`[name="${key}"]`);
+      if (Array.isArray(val)) {
+        val.forEach((itemVal, i) => {
+          if (inputs[i]) {
+            if (inputs[i].type === 'checkbox') {
+              inputs[i].checked = Boolean(itemVal);
+            } else {
+              inputs[i].value = itemVal;
+            }
+          }
+        });
+      }
+    } else {
+      const inputs = form.querySelectorAll(`[name="${key}"]`);
+      if (inputs.length > 0) {
+        inputs.forEach((input) => {
+          if (input.type === 'checkbox') {
+            input.checked = Boolean(val);
+          } else if (input.type === 'radio') {
+            input.checked = (input.value === val);
+          } else {
+            input.value = val;
+          }
+        });
+      }
+    }
+  });
 
   // Populate armorDefensesCard armorsList
   const armorsData = (data.armorDefensesCard ? data.armorDefensesCard.armorsList : undefined) || flatData.armorsList || flatData['armorName[]'];
@@ -3360,7 +3406,13 @@ function populateForm(data) {
   // Populate speciesTraitsCard
   const traitsData = (data.speciesTraitsCard ? data.speciesTraitsCard.speciesTraitsList : undefined) || flatData.speciesTraitsList || flatData['speciesTraitName[]'];
   if (Array.isArray(traitsData)) {
+    const speciesInput = document.getElementById('identityCard_speciesInput');
+    const speciesVal = (speciesInput ? speciesInput.value.trim() : '');
+    const displayEl = document.getElementById('headerSpeciesDisplay');
     const tbody = document.querySelector('#speciesTraitsTable tbody');
+    if (displayEl) {
+      displayEl.textContent = (speciesVal ? `[ ${speciesVal} ]` : '');
+    }
     if (tbody) {
       tbody.innerHTML = '';
       traitsData.forEach((traitObj) => {
@@ -3859,38 +3911,6 @@ function populateForm(data) {
     }
   }
 
-  // Populate field values
-  Object.keys(flatData).forEach((key) => {
-    const val = flatData[key];
-    if (key.endsWith('[]')) {
-      const inputs = form.querySelectorAll(`[name="${key}"]`);
-      if (Array.isArray(val)) {
-        val.forEach((itemVal, i) => {
-          if (inputs[i]) {
-            if (inputs[i].type === 'checkbox') {
-              inputs[i].checked = Boolean(itemVal);
-            } else {
-              inputs[i].value = itemVal;
-            }
-          }
-        });
-      }
-    } else {
-      const inputs = form.querySelectorAll(`[name="${key}"]`);
-      if (inputs.length > 0) {
-        inputs.forEach((input) => {
-          if (input.type === 'checkbox') {
-            input.checked = Boolean(val);
-          } else if (input.type === 'radio') {
-            input.checked = (input.value === val);
-          } else {
-            input.value = val;
-          }
-        });
-      }
-    }
-  });
-
   // Populate proficiency counts & check off corresponding boxes
   const profGroups = [
     { prefix: 'armorProf', countKey: 'armorProfCount', max: 10 },
@@ -4018,6 +4038,8 @@ function populateForm(data) {
       }
       toggleConditionsCardVisibility(layout.conditionsVisible);
     }
+  } else {
+    applyTheme();
   }
 
   calculateStats();
@@ -5324,15 +5346,16 @@ function setupCollapseInteractions() {
 // Attach event listeners for change/input & theme setup
 document.addEventListener('DOMContentLoaded', () => {
   initOriginalParentContainers();
-  applyTheme();
+  //applyTheme();
   loadAllReferanceData();
-  loadFromLocalStorage();
 
   const urlParams = new URLSearchParams(window.location.search);
   const isPrintParam = (urlParams.get('print') === 'true' || urlParams.get('print') === '1' || window.location.pathname.endsWith('/print'));
   const apiCharId = urlParams.get('id') || urlParams.get('character_id') || urlParams.get('starter_id');
   if (apiCharId) {
     loadCharacterFromAPI(apiCharId);
+  } else {
+    loadFromLocalStorage();
   }
 
   setupCollapseInteractions();
@@ -5421,7 +5444,7 @@ function isStatOrCalcInput(target) {
   const name = target.name || '';
   const classList = target.classList;
 
-  if (id.includes('score') || id.includes('charPath') || id.includes('pathLevel') || id.includes('charSize') || id.includes('speciesInput')) {
+  if (id.includes('score') || id.includes('charPath') || id.includes('pathLevel') || id.includes('charSize')) {
     return true;
   }
   if (id.includes('ac') || id.includes('AC')) {
