@@ -34,9 +34,5 @@ This helps explain the process of creating a new Character for FuturePath
 
 @./GEMINI_CHARACTER_CREATION.md
 
-## Quirks & Flaws
-
-@./GEMINI_QUIRKS.md
-
 
 

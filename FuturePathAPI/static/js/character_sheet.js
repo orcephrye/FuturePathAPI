@@ -11,6 +11,7 @@ let skillDieLevels = [
   "1d10+4", "1d10+5", "1d12+5", "1d12+6", "2d6+7", "2d8+7", "2d8+8",
   "2d10+8", "2d10+9", "2d12+9", "2d12+10"
 ];
+let isPopulatingForm = false;
 
 function updateLockThemeUI(isLocked) {
     const switchEl = document.getElementById("lockThemeSwitch");
@@ -34,6 +35,7 @@ function toggleLockTheme(isLocked) {
 
 function setTheme(themeName) {
   const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'viper', 'volar', 'human', 'grayling', 'lepidonain', 'cryous', 'aconian', 'murid', 'avisari', 'khepri'];
+  // console.log("function setTheme called with themeName:", themeName)
   if (!themes.includes(themeName)) {
     themeName = 'cosmic-dark';
   }
@@ -344,7 +346,7 @@ function syncSpeciesName() {
   }
 
   const isLocked = (localStorage.getItem('themeLocked') === 'true');
-  if (speciesVal && !isLocked) {
+  if (speciesVal && !isLocked && !isPopulatingForm) {
     const lower = speciesVal.toLowerCase();
     setTheme(lower);
   }
@@ -979,7 +981,7 @@ function addWeaponRow() {
     <td><label class="visually-hidden" for="weaponsCard_wepName_${idx}">Wepname</label><input type="text" class="form-control form-control-sm" id="weaponsCard_wepName_${idx}" name="wepName[]"></td>
     <td class="text-center">
       <label class="visually-hidden" for="weaponsCard_wepLvl_${idx}">Weapon Level</label>
-      <select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_${idx}" name="wepLvl[]">
+      <select class="form-select form-select-sm text-start ps-2 pe-1 fw-bold mx-auto" id="weaponsCard_wepLvl_${idx}" name="wepLvl[]" style="max-width: 58px;">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -1961,7 +1963,7 @@ function addProfessionBlock() {
       </div>
       <div class="col-12 col-md-4">
         <div class="d-flex align-items-center gap-1 flex-wrap">
-          <span class="small fw-bold text-muted me-1" style="font-size: 0.75rem;">Affinities:</span>
+          <span class="small fw-bold text-muted me-1 prof-affinity-label" style="font-size: 0.65rem;">Affinities:</span>
           <button type="button" class="btn btn-sm affinity-tag tag-str py-0 px-2 fw-bold" onclick="toggleAffinityTag(this, 'STR')">STR</button>
           <button type="button" class="btn btn-sm affinity-tag tag-dex py-0 px-2 fw-bold" onclick="toggleAffinityTag(this, 'DEX')">DEX</button>
           <button type="button" class="btn btn-sm affinity-tag tag-con py-0 px-2 fw-bold" onclick="toggleAffinityTag(this, 'CON')">CON</button>
@@ -2130,7 +2132,6 @@ function removeRow(btn) {
 }
 
 // Auto-Save & JSON Export/Import
-let isPopulatingForm = false;
 let autoSaveTimeout = null;
 function triggerAutoSave() {
   if (isPopulatingForm) {
@@ -3978,14 +3979,15 @@ function populateForm(data) {
       toggleConditionsCardVisibility(layout.conditionsVisible);
     }
   }
+
+  calculateStats();
+  updateProficiencyCounts();
 } catch (err) {
   console.error('Error populating character form:', err);
 } finally {
   isPopulatingForm = false;
 }
 
-  calculateStats();
-  updateProficiencyCounts();
   setTimeout(() => {
     document.querySelectorAll('.notebook-textarea, .trait-desc-textarea').forEach((el) => autoExpandTextarea(el));
     scheduleAutoPagination(50);
@@ -4247,7 +4249,7 @@ function getMaxPageHeight(pageNum = 1) {
   if (!document.body.classList.contains('is-print-mode')) {
     return 1880;
   }
-  return (pageNum === 1 ? 900 : 1000);
+  return (pageNum === 1 ? 920 : 1000);
 }
 
 let autoPaginateTimeout = null;
@@ -4296,8 +4298,8 @@ function getDefaultPage(cardEl) {
   }
 
   const map = {
-    'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'languageCustomSkillsCard': 1,
-    'speciesTraitsCard': 2, 'pathTalentsCard': 2, 'featsCard': 2, 'professionsCard': 2, 'wealthXpCard': 2, 'equipmentCard': 2,
+    'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'languageCustomSkillsCard': 1, 'wealthXpCard': 1,
+    'speciesTraitsCard': 2, 'pathTalentsCard': 2, 'featsCard': 2, 'professionsCard': 2, 'equipmentCard': 2,
     'techniquesCard': 3, 'quirksCard': 3, 'detractorsCard': 3, 'cyberneticsCard': 3, 'mutationsCard': 3, 'psionicsCard': 3,
     'powerArmorCard': 4, 'backstoryCard': 4, 'conditionsCard': 4
   };

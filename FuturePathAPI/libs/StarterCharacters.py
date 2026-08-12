@@ -490,7 +490,7 @@ OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
             ]
         },
         "UI_Layout": {
-            "theme": "cyberpunk-neon",
+            "theme": "viper",
             "layoutLocked": True
         }
     })

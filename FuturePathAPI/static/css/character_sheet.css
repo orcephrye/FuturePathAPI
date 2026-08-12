@@ -960,15 +960,17 @@ body.layout-locked .card-reorder-controls {
 /* Printable & Print View Mode Formatting Rules */
 @page {
   size: letter portrait;
-  margin: 0.25in;
+  margin: 0; /* Setting margin: 0 signals browsers to disable native headers & footers (URL, title, date) */
 }
 
 body.is-print-mode {
   background: #fff !important;
   color: #000 !important;
   font-size: 7.5pt !important;
-  padding-bottom: 0 !important;
+  padding: 0 0.25in 0.25in !important;
   min-height: auto !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
 
 /* Page break rules for printable sheet pages */
@@ -978,6 +980,7 @@ body.is-print-mode .dynamic-page {
   break-after: page !important;
   break-inside: avoid !important;
   margin-top: 0 !important;
+  padding-top: 0.25in !important;
 }
 
 body.is-print-mode [id^="page-"]:last-of-type,
@@ -1110,39 +1113,67 @@ body.is-print-mode #collapseIdentity [class*="col-"] {
   padding-bottom: 1px !important;
 }
 
-body.is-print-mode #collapseIdentity .col-12.col-lg-3,
-body.is-print-mode #collapseIdentity .col-lg-3 {
-  flex: 0 0 25% !important;
-  max-width: 25% !important;
-  width: 25% !important;
+body.is-print-mode #collapseIdentity .col-identity-name,
+body.is-print-mode #collapseIdentity .col-identity-player {
+  flex: 0 0 24.5% !important;
+  max-width: 24.5% !important;
+  width: 24.5% !important;
 }
 
-body.is-print-mode #collapseIdentity .col-12.col-lg-2,
-body.is-print-mode #collapseIdentity .col-lg-2 {
-  flex: 0 0 16.6667% !important;
-  max-width: 16.6667% !important;
-  width: 16.6667% !important;
+body.is-print-mode #collapseIdentity .col-identity-species {
+  flex: 0 0 16% !important;
+  max-width: 16% !important;
+  width: 16% !important;
 }
 
-body.is-print-mode #collapseIdentity .col-12.col-md-3,
-body.is-print-mode #collapseIdentity .col-md-3 {
-  flex: 0 0 25% !important;
-  max-width: 25% !important;
-  width: 25% !important;
+body.is-print-mode #collapseIdentity .col-identity-path {
+  flex: 0 0 28% !important;
+  max-width: 28% !important;
+  width: 28% !important;
 }
 
-body.is-print-mode #collapseIdentity .col-6.col-md-1,
-body.is-print-mode #collapseIdentity .col-md-1 {
-  flex: 0 0 8.3333% !important;
-  max-width: 8.3333% !important;
-  width: 8.3333% !important;
+body.is-print-mode #collapseIdentity .col-identity-level {
+  flex: 0 0 7% !important;
+  max-width: 7% !important;
+  width: 7% !important;
 }
 
-body.is-print-mode #collapseIdentity .col-6.col-md-2,
-body.is-print-mode #collapseIdentity .col-md-2 {
-  flex: 0 0 16.6667% !important;
-  max-width: 16.6667% !important;
-  width: 16.6667% !important;
+body.is-print-mode #collapseIdentity #identityCard_pathLevel {
+  max-width: 32px !important;
+  width: 32px !important;
+  text-align: center !important;
+}
+
+body.is-print-mode #collapseIdentity .col-identity-professions {
+  flex: 0 0 32% !important;
+  max-width: 32% !important;
+  width: 32% !important;
+}
+
+body.is-print-mode #collapseIdentity .col-identity-alignment {
+  flex: 0 0 22% !important;
+  max-width: 22% !important;
+  width: 22% !important;
+}
+
+body.is-print-mode #collapseIdentity .col-identity-size {
+  flex: 0 0 8% !important;
+  max-width: 8% !important;
+  width: 8% !important;
+}
+
+body.is-print-mode #collapseIdentity .col-identity-gender,
+body.is-print-mode #collapseIdentity .col-identity-height,
+body.is-print-mode #collapseIdentity .col-identity-hair {
+  flex: 0 0 7.5% !important;
+  max-width: 7.5% !important;
+  width: 7.5% !important;
+}
+
+body.is-print-mode #collapseIdentity .col-identity-eyes {
+  flex: 0 0 15.5% !important;
+  max-width: 15.5% !important;
+  width: 15.5% !important;
 }
 
 body.is-print-mode #collapseIdentity .form-label {
@@ -1238,9 +1269,11 @@ body.is-print-mode #collapseConditions [class*="col-"] {
 }
 
 body.is-print-mode #collapseConditions h6 {
-  font-size: 7pt !important;
+  font-size: 7.5pt !important;
   margin-bottom: 2px !important;
   margin-top: 0 !important;
+  color: #000 !important;
+  font-weight: bold !important;
 }
 
 body.is-print-mode #collapseConditions .condition-item {
@@ -1254,15 +1287,20 @@ body.is-print-mode #collapseConditions .form-check {
 }
 
 body.is-print-mode #collapseConditions .form-check-label {
-  font-size: 6.2pt !important;
+  font-size: 7pt !important;
   margin-bottom: 0 !important;
+  color: #000 !important;
+  font-weight: bold !important;
 }
 
 body.is-print-mode #collapseConditions .small.text-muted,
-body.is-print-mode #collapseConditions .small {
-  font-size: 5.5pt !important;
-  line-height: 1.05 !important;
+body.is-print-mode #collapseConditions .small,
+body.is-print-mode #collapseConditions .text-muted {
+  font-size: 6.8pt !important;
+  line-height: 1.15 !important;
   padding-left: 0.6rem !important;
+  color: #111827 !important;
+  opacity: 1 !important;
 }
 
 /* Professions card print styles */
@@ -1313,18 +1351,60 @@ body.is-print-mode #collapseProfessions .profession-block .col-md-4 {
   width: 42% !important;
 }
 
+body.is-print-mode #collapseProfessions .text-muted,
+body.is-print-mode .profession-block .text-muted,
+body.is-print-mode .prof-affinity-label {
+  color: #111827 !important;
+  opacity: 1 !important;
+  font-weight: bold !important;
+  font-size: 5.5pt !important;
+}
+
 body.is-print-mode .affinity-tag {
   font-size: 5.8pt !important;
   padding: 0 2px !important;
   height: 13px !important;
   line-height: 12px !important;
   border-radius: 2px !important;
+  border: 1px solid #999 !important;
+  background-color: #f3f4f6 !important;
+  color: #374151 !important;
 }
 
-body.is-print-mode .affinity-tag.active {
-  border: 1px solid #000 !important;
-  background-color: #000 !important;
+body.is-print-mode .affinity-tag.active.tag-str {
+  background-color: #e11d48 !important;
   color: #fff !important;
+  border: 1px solid #be123c !important;
+}
+
+body.is-print-mode .affinity-tag.active.tag-dex {
+  background-color: #4d7c0f !important;
+  color: #fff !important;
+  border: 1px solid #3f6212 !important;
+}
+
+body.is-print-mode .affinity-tag.active.tag-con {
+  background-color: #d97706 !important;
+  color: #fff !important;
+  border: 1px solid #b45309 !important;
+}
+
+body.is-print-mode .affinity-tag.active.tag-int {
+  background-color: #1d4ed8 !important;
+  color: #fff !important;
+  border: 1px solid #1e40af !important;
+}
+
+body.is-print-mode .affinity-tag.active.tag-wis {
+  background-color: #6d28d9 !important;
+  color: #fff !important;
+  border: 1px solid #5b21b6 !important;
+}
+
+body.is-print-mode .affinity-tag.active.tag-cha {
+  background-color: #be185d !important;
+  color: #fff !important;
+  border: 1px solid #9f1239 !important;
 }
 
 body.is-print-mode .prof-talents-table th,
@@ -1414,16 +1494,19 @@ body.is-print-mode #collapseTechniques .card-body {
   padding: 2px 6px !important;
 }
 
-body.is-print-mode #techniqueLevelsContainer {
+body.is-print-mode #techniqueLevelsContainer,
+body.is-print-mode #psionicLevelsContainer {
   gap: 4px !important;
 }
 
-body.is-print-mode .technique-level-block {
+body.is-print-mode .technique-level-block,
+body.is-print-mode .psionic-level-block {
   padding: 3px 5px !important;
   margin-bottom: 4px !important;
   border: 1px solid #777 !important;
   border-radius: 3px !important;
   background-color: transparent !important;
+  background: none !important;
 }
 
 body.is-print-mode #collapseTechniques .technique-level-block .row {
@@ -1537,6 +1620,21 @@ body.is-print-mode .stat-val {
   font-size: 8.5pt !important;
 }
 
+/* Preserve Ability Theme colors and colored borders in print mode */
+body.is-print-mode .stat-box-str { border: 1px solid #f43f5e !important; }
+body.is-print-mode .stat-box-dex { border: 1px solid #84cc16 !important; }
+body.is-print-mode .stat-box-con { border: 1px solid #d97706 !important; }
+body.is-print-mode .stat-box-int { border: 1px solid #3b82f6 !important; }
+body.is-print-mode .stat-box-wis { border: 1px solid #8b5cf6 !important; }
+body.is-print-mode .stat-box-cha { border: 1px solid #ec4899 !important; }
+
+body.is-print-mode .text-ability-str { color: #e11d48 !important; }
+body.is-print-mode .text-ability-dex { color: #4d7c0f !important; }
+body.is-print-mode .text-ability-con { color: #d97706 !important; }
+body.is-print-mode .text-ability-int { color: #1d4ed8 !important; }
+body.is-print-mode .text-ability-wis { color: #6d28d9 !important; }
+body.is-print-mode .text-ability-cha { color: #be185d !important; }
+
 body.is-print-mode .ac-square-box {
   border: 1.5px solid #000 !important;
   background: #fff !important;
@@ -1592,6 +1690,84 @@ body.is-print-mode .dr-box-label {
   font-size: 5.5pt !important;
   color: #000 !important;
   margin-bottom: 1px !important;
+}
+
+/* Armor Stats Print Colors & Borders */
+body.is-print-mode .ac-box-total { border: 1.5px solid #10b981 !important; }
+
+body.is-print-mode .ac-box-total .ac-box-label,
+body.is-print-mode #global_acTotalDisplay { color: #059669 !important; }
+
+body.is-print-mode .ac-box-touch { border: 1.5px solid #0ea5e9 !important; }
+
+body.is-print-mode .ac-box-touch .ac-box-label,
+body.is-print-mode #global_acTouchDisplay { color: #0284c7 !important; }
+
+body.is-print-mode .ac-box-flat { border: 1.5px solid #f59e0b !important; }
+
+body.is-print-mode .ac-box-flat .ac-box-label,
+body.is-print-mode #global_acFlatDisplay { color: #d97706 !important; }
+
+/* Damage Reduction (DR) Card Print Colors & Borders */
+body.is-print-mode .dr-box-kinetic { border: 1.5px solid #a855f7 !important; }
+
+body.is-print-mode .dr-box-kinetic .dr-box-label,
+body.is-print-mode .dr-box-kinetic input { color: #7e22ce !important; }
+
+body.is-print-mode .dr-box-electric { border: 1.5px solid #3b82f6 !important; }
+
+body.is-print-mode .dr-box-electric .dr-box-label,
+body.is-print-mode .dr-box-electric input { color: #1d4ed8 !important; }
+
+body.is-print-mode .dr-box-thermal { border: 1.5px solid #ef4444 !important; }
+
+body.is-print-mode .dr-box-thermal .dr-box-label,
+body.is-print-mode .dr-box-thermal input { color: #dc2626 !important; }
+
+body.is-print-mode .dr-box-chemical { border: 1.5px solid #eab308 !important; }
+
+body.is-print-mode .dr-box-chemical .dr-box-label,
+body.is-print-mode .dr-box-chemical input { color: #ca8a04 !important; }
+
+body.is-print-mode .dr-box-all { border: 1.5px solid #52525b !important; }
+
+body.is-print-mode .dr-box-all .dr-box-label,
+body.is-print-mode .dr-box-all input { color: #27272a !important; }
+
+/* Custom Sheet Card Header Icon Colors for Print View Mode */
+body.is-print-mode #identityCard .card-header-custom i:not(.collapse-icon) { color: #0284c7 !important; }
+body.is-print-mode #abilityScoresCard .card-header-custom i:not(.collapse-icon) { color: #d97706 !important; }
+body.is-print-mode #healthInjuryCard .card-header-custom i:not(.collapse-icon) { color: #dc2626 !important; }
+body.is-print-mode #attributesCard .card-header-custom i:not(.collapse-icon) { color: #059669 !important; }
+body.is-print-mode #coreSkills .card-header-custom i:not(.collapse-icon) { color: #2563eb !important; }
+body.is-print-mode #ArmorStatsCard .card-header-custom i:not(.collapse-icon) { color: #0891b2 !important; }
+body.is-print-mode #DamageReductionCard .card-header-custom i:not(.collapse-icon) { color: #7c3aed !important; }
+body.is-print-mode #SpeedCard .card-header-custom i:not(.collapse-icon) { color: #ea580c !important; }
+body.is-print-mode #armorDefensesCard .card-header-custom i:not(.collapse-icon) { color: #0284c7 !important; }
+body.is-print-mode #weaponsCard .card-header-custom i:not(.collapse-icon) { color: #e11d48 !important; }
+body.is-print-mode #languageCustomSkillsCard .card-header-custom i:not(.collapse-icon) { color: #0d9488 !important; }
+body.is-print-mode #speciesTraitsCard .card-header-custom i:not(.collapse-icon) { color: #65a30d !important; }
+body.is-print-mode #pathTalentsCard .card-header-custom i:not(.collapse-icon) { color: #9333ea !important; }
+body.is-print-mode #featsCard .card-header-custom i:not(.collapse-icon) { color: #ca8a04 !important; }
+body.is-print-mode #professionsCard .card-header-custom i:not(.collapse-icon) { color: #475569 !important; }
+body.is-print-mode #wealthXpCard .card-header-custom i:not(.collapse-icon) { color: #d97706 !important; }
+body.is-print-mode #equipmentCard .card-header-custom i:not(.collapse-icon) { color: #b45309 !important; }
+body.is-print-mode #techniquesCard .card-header-custom i:not(.collapse-icon) { color: #0284c7 !important; }
+body.is-print-mode #quirksCard .card-header-custom i:not(.collapse-icon) { color: #c026d3 !important; }
+body.is-print-mode #detractorsCard .card-header-custom i:not(.collapse-icon) { color: #e11d48 !important; }
+body.is-print-mode #cyberneticsCard .card-header-custom i:not(.collapse-icon) { color: #2563eb !important; }
+body.is-print-mode #mutationsCard .card-header-custom i:not(.collapse-icon) { color: #16a34a !important; }
+body.is-print-mode #psionicsCard .card-header-custom i:not(.collapse-icon) { color: #8b5cf6 !important; }
+body.is-print-mode #powerArmorCard .card-header-custom i:not(.collapse-icon) { color: #0284c7 !important; }
+body.is-print-mode #backstoryCard .card-header-custom i:not(.collapse-icon) { color: #4338ca !important; }
+body.is-print-mode #conditionsCard .card-header-custom i:not(.collapse-icon) { color: #dc2626 !important; }
+
+/* Character Identity Header 'd20 FuturePath' text in print mode */
+body.is-print-mode #identityCard .card-header-custom small,
+body.is-print-mode #identityCard .card-header-custom .text-muted {
+  color: #000 !important;
+  font-weight: bold !important;
+  opacity: 1 !important;
 }
 
 body.is-print-mode .table-custom th,
@@ -1740,6 +1916,17 @@ body.is-print-mode .print-footer {
 body.is-print-mode .row {
   display: flex !important;
   flex-wrap: wrap !important;
+
+  --bs-gutter-x: 0.3rem !important;
+  --bs-gutter-y: 0.15rem !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+body.is-print-mode .row > * {
+  margin-top: 0.15rem !important;
+  margin-bottom: 0 !important;
 }
 
 body.is-print-mode .col-card-abilities {
@@ -1765,6 +1952,7 @@ body.is-print-mode .col-skills-side {
   flex: 0 0 50% !important;
   max-width: 50% !important;
   order: 1 !important;
+  margin-top: 0.15rem !important;
 }
 
 body.is-print-mode .col-armor-side {
@@ -1772,6 +1960,7 @@ body.is-print-mode .col-armor-side {
   flex: 0 0 50% !important;
   max-width: 50% !important;
   order: 2 !important;
+  margin-top: 0.15rem !important;
 }
 
 body.is-print-mode .col-12.col-lg-6,
@@ -1783,14 +1972,14 @@ body.is-print-mode .col-lg-6 {
 @media print {
   @page {
     size: letter portrait;
-    margin: 0.25in;
+    margin: 0; /* Setting margin: 0 signals browsers to disable native headers & footers (URL, title, date) */
   }
 
   body {
     background: #fff !important;
     color: #000 !important;
     font-size: 7.5pt !important;
-    padding-bottom: 0 !important;
+    padding: 0 0.25in 0.25in !important;
     min-height: auto !important;
   }
 
@@ -1800,6 +1989,7 @@ body.is-print-mode .col-lg-6 {
     break-after: page !important;
     break-inside: avoid !important;
     margin-top: 0 !important;
+    padding-top: 0.25in !important;
   }
 
   [id^="page-"]:last-of-type,
@@ -1848,6 +2038,13 @@ body.is-print-mode .col-lg-6 {
     color: #444 !important;
     font-size: 6.5pt !important;
     font-weight: normal !important;
+  }
+
+  #identityCard .card-header-custom small,
+  #identityCard .card-header-custom .text-muted {
+    color: #000 !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
   }
 
   .table-custom tr,
@@ -1939,9 +2136,11 @@ body.is-print-mode .col-lg-6 {
   }
 
   #collapseConditions h6 {
-    font-size: 7pt !important;
+    font-size: 7.5pt !important;
     margin-bottom: 2px !important;
     margin-top: 0 !important;
+    color: #000 !important;
+    font-weight: bold !important;
   }
 
   #collapseConditions .condition-item {
@@ -1955,8 +2154,20 @@ body.is-print-mode .col-lg-6 {
   }
 
   #collapseConditions .form-check-label {
-    font-size: 6.2pt !important;
+    font-size: 7pt !important;
     margin-bottom: 0 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+  }
+
+  #collapseConditions .small.text-muted,
+  #collapseConditions .small,
+  #collapseConditions .text-muted {
+    font-size: 6.8pt !important;
+    line-height: 1.15 !important;
+    padding-left: 0.6rem !important;
+    color: #111827 !important;
+    opacity: 1 !important;
   }
 
   #collapseProfessions .card-body {
@@ -2006,18 +2217,60 @@ body.is-print-mode .col-lg-6 {
     width: 42% !important;
   }
 
+  #collapseProfessions .text-muted,
+  .profession-block .text-muted,
+  .prof-affinity-label {
+    color: #111827 !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+    font-size: 5.5pt !important;
+  }
+
   .affinity-tag {
     font-size: 5.8pt !important;
     padding: 0 2px !important;
     height: 13px !important;
     line-height: 12px !important;
     border-radius: 2px !important;
+    border: 1px solid #999 !important;
+    background-color: #f3f4f6 !important;
+    color: #374151 !important;
   }
 
-  .affinity-tag.active {
-    border: 1px solid #000 !important;
-    background-color: #000 !important;
+  .affinity-tag.active.tag-str {
+    background-color: #e11d48 !important;
     color: #fff !important;
+    border: 1px solid #be123c !important;
+  }
+
+  .affinity-tag.active.tag-dex {
+    background-color: #4d7c0f !important;
+    color: #fff !important;
+    border: 1px solid #3f6212 !important;
+  }
+
+  .affinity-tag.active.tag-con {
+    background-color: #d97706 !important;
+    color: #fff !important;
+    border: 1px solid #b45309 !important;
+  }
+
+  .affinity-tag.active.tag-int {
+    background-color: #1d4ed8 !important;
+    color: #fff !important;
+    border: 1px solid #1e40af !important;
+  }
+
+  .affinity-tag.active.tag-wis {
+    background-color: #6d28d9 !important;
+    color: #fff !important;
+    border: 1px solid #5b21b6 !important;
+  }
+
+  .affinity-tag.active.tag-cha {
+    background-color: #be185d !important;
+    color: #fff !important;
+    border: 1px solid #9f1239 !important;
   }
 
   #collapseWealthXP .card-body {
@@ -2090,16 +2343,19 @@ body.is-print-mode .col-lg-6 {
     padding: 2px 6px !important;
   }
 
-  #techniqueLevelsContainer {
+  #techniqueLevelsContainer,
+  #psionicLevelsContainer {
     gap: 4px !important;
   }
 
-  .technique-level-block {
+  .technique-level-block,
+  .psionic-level-block {
     padding: 3px 5px !important;
     margin-bottom: 4px !important;
     border: 1px solid #777 !important;
     border-radius: 3px !important;
     background-color: transparent !important;
+    background: none !important;
   }
 
   #collapseCybernetics .cyber-meta-row {

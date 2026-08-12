@@ -140,15 +140,15 @@
 <div class="collapse show" id="collapseIdentity">
 <div class="card-body">
 <div class="row g-3">
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-identity-name">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_charName">Character Name</label>
 <input class="form-control" id="identityCard_charName" name="charName" placeholder="e.g. Commander Vane" type="text"/>
 </div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-identity-player">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_playerName">Player Name</label>
 <input class="form-control" id="identityCard_playerName" name="playerName" type="text"/>
 </div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-identity-species">
 <div class="d-flex justify-content-between align-items-center mb-1">
 <label class="form-label small text-uppercase text-muted fw-bold mb-0" for="speciesInput">Species</label>
 <button class="btn btn-link btn-sm p-0 text-cyan text-decoration-none no-print" onclick="randomizeSpecies(true)" title="Suggest Random Species" type="button">
@@ -164,8 +164,8 @@
 <datalist id="speciesDatalist">
 </datalist>
 </div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Character Path</label>
+<div class="col-12 col-sm-6 col-md-3 col-lg-3 col-identity-path">
+<label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Path</label>
 <div class="input-group">
 <label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" placeholder="e.g. Path of Strength" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="charPathDropdownBtn" onclick="toggleDatalist('identityCard_charPath')" title="Show Path Suggestions" type="button">
@@ -175,19 +175,19 @@
 <datalist id="charPathDatalist">
 </datalist>
 </div>
-<div class="col-6 col-sm-3 col-md-2 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_pathLevel">Path Lvl</label>
-<input class="form-control" id="identityCard_pathLevel" inputmode="numeric" name="pathLevel" type="text"/>
+<div class="col-6 col-sm-3 col-md-1 col-lg-1 col-identity-level">
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_pathLevel">Level</label>
+<input class="form-control" id="identityCard_pathLevel" inputmode="numeric" maxlength="3" name="pathLevel" type="text"/>
 </div>
-<div class="col-12 col-sm-6 col-md-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_classList">Profession(s) &amp; Levels</label>
+<div class="col-12 col-sm-6 col-md-4 col-identity-professions">
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_classList">Profession(s)</label>
 <input class="form-control" id="identityCard_classList" name="classList" type="text"/>
 </div>
-<div class="col-12 col-sm-6 col-md-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_alignment">Alignment / Faction</label>
+<div class="col-12 col-sm-6 col-md-3 col-identity-alignment">
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_alignment">Alignment</label>
 <input class="form-control" id="identityCard_alignment" name="alignment" type="text"/>
 </div>
-<div class="col-6 col-sm-4 col-md-2 col-lg-1">
+<div class="col-6 col-sm-4 col-md-1 col-identity-size">
 <label class="form-label small text-uppercase text-muted fw-bold" for="charSize">Size</label>
 <div class="input-group">
 <label class="visually-hidden" for="identityCard_charSize">Charsize</label><input class="form-control" id="identityCard_charSize" list="sizesDatalist" name="charSize" placeholder="Medium" type="text"/>
@@ -198,20 +198,20 @@
 <datalist id="sizesDatalist">
 </datalist>
 </div>
-<div class="col-6 col-sm-3 col-md-1">
+<div class="col-6 col-sm-3 col-md-1 col-identity-gender">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_gender">Gender</label>
 <input class="form-control" id="identityCard_gender" name="gender" type="text"/>
 </div>
-<div class="col-6 col-sm-3 col-md-1">
+<div class="col-6 col-sm-3 col-md-1 col-identity-height">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_height">Height</label>
 <input class="form-control" id="identityCard_height" name="height" type="text"/>
 </div>
-<div class="col-6 col-sm-3 col-md-1">
+<div class="col-6 col-sm-3 col-md-1 col-identity-hair">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_hairColor">Hair</label>
 <input class="form-control" id="identityCard_hairColor" name="hairColor" type="text"/>
 </div>
-<div class="col-6 col-sm-3 col-md-2">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_eyeColor">Eye Color</label>
+<div class="col-6 col-sm-3 col-md-1 col-identity-eyes">
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_eyeColor">Eyes</label>
 <input class="form-control" id="identityCard_eyeColor" name="eyeColor" type="text"/>
 </div>
 </div>
@@ -398,7 +398,7 @@
 <span class="d-none d-lg-inline d-xxl-none">Adv. Die (Ad)</span>
 <span class="d-inline d-lg-none">AD</span>
 </label>
-<select class="form-select form-select-sm hp-stat-input text-center fw-bold" id="global_advantageDie" name="advantageDie" style="max-width: 85px;">
+<select class="form-select form-select-sm hp-stat-input text-start ps-2 pe-1 fw-bold" id="global_advantageDie" name="advantageDie" style="max-width: 100px;">
 <option selected="" value=""></option>
 <option value="d4">1d4</option>
 <option value="d6">1d6</option>
@@ -441,8 +441,8 @@
 </div>
 </div>
 </div>
-<!-- Main Two-Column Row (Below Ability Themes): Left 45% Skills, Right 55% Armor/Combat/Gear -->
-<div class="row g-3 mt-0">
+<!-- Main Two-Column Row Left: Skills / Right: Armor/Combat/Gear -->
+<div class="row g-3 mt-0 mb-1">
 <!-- LEFT COLUMN (45% Desktop / 100% Mobile): Skills Sheet Card -->
 <div class="col-12 col-lg-5 col-skills-side">
 <div class="sheet-card mb-0" id="coreSkills">
@@ -1461,7 +1461,7 @@
 <thead>
 <tr>
 <th>Name</th>
-<th class="text-center" style="width: 55px;">Lvl</th>
+<th class="text-center" style="width: 68px;">Lvl</th>
 <th class="text-center th-wep-dmg" style="width: 135px;"><span class="d-print-none">Damage / Die</span><span class="d-none d-print-block">Dmg Die</span></th>
 <th class="text-center" style="width: 65px;">Acc+</th>
 <th class="text-center" style="width: 60px;">AP</th>
@@ -1477,7 +1477,7 @@
 <td><label class="visually-hidden" for="weaponsCard_wepName_0">Wepname</label><input class="form-control form-control-sm" id="weaponsCard_wepName_0" name="wepName[]" type="text"/></td>
 <td class="text-center">
 <label class="visually-hidden" for="weaponsCard_wepLvl_0">Weapon Level</label>
-<select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_0" name="wepLvl[]">
+<select class="form-select form-select-sm text-start ps-2 pe-1 fw-bold mx-auto" id="weaponsCard_wepLvl_0" name="wepLvl[]" style="max-width: 58px;">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -1527,7 +1527,7 @@
 <td><label class="visually-hidden" for="weaponsCard_wepName_1">Wepname</label><input class="form-control form-control-sm" id="weaponsCard_wepName_1" name="wepName[]" type="text"/></td>
 <td class="text-center">
 <label class="visually-hidden" for="weaponsCard_wepLvl_1">Weapon Level</label>
-<select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_1" name="wepLvl[]">
+<select class="form-select form-select-sm text-start ps-2 pe-1 fw-bold mx-auto" id="weaponsCard_wepLvl_1" name="wepLvl[]" style="max-width: 58px;">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -1577,7 +1577,7 @@
 <td><label class="visually-hidden" for="weaponsCard_wepName_2">Wepname</label><input class="form-control form-control-sm" id="weaponsCard_wepName_2" name="wepName[]" type="text"/></td>
 <td class="text-center">
 <label class="visually-hidden" for="weaponsCard_wepLvl_2">Weapon Level</label>
-<select class="form-select form-select-sm text-center px-1 fw-bold" id="weaponsCard_wepLvl_2" name="wepLvl[]">
+<select class="form-select form-select-sm text-start ps-2 pe-1 fw-bold mx-auto" id="weaponsCard_wepLvl_2" name="wepLvl[]" style="max-width: 58px;">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -1883,6 +1883,80 @@
 </div>
 </div>
 </div>
+<!-- Wealth / Credits and Experience Card -->
+<div class="sheet-card mt-1 mb-1" data-default-page="1" id="wealthXpCard">
+<div aria-controls="collapseWealthXP" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseWealthXP">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><i class="fa-solid fa-coins me-2"></i>Wealth / Credits &amp; Experience</span>
+</div>
+<div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+</div>
+<div class="collapse show" id="collapseWealthXP">
+<div class="card-body">
+<div class="row g-2 align-items-center">
+<!-- Box 1: Occupation (Far Left) -->
+<div class="col-12 col-sm-6 col-md-3 col-xl-3">
+<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+<div class="stat-label mb-1" for="occupationInput">
+<span class="d-none d-sm-inline">Occupation</span><span class="d-inline d-sm-none">Occ</span>
+</div>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="wealthXpCard_occupationInput">Occupation</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_occupationInput" list="occupationDatalist" name="occupation" placeholder="e.g. Academic" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" id="occupationDropdownBtn" onclick="toggleDatalist('wealthXpCard_occupationInput')" title="Show Occupation Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+<datalist id="occupationDatalist">
+</datalist>
+</div>
+</div>
+<!-- Box 2: Current Wealth Score -->
+<div class="col-6 col-sm-6 col-md-3 col-xl-2">
+<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+<div class="stat-label mb-1" title="Current available Wealth bonus for financial checks">
+<span class="d-none d-sm-inline">Current Wealth</span><span class="d-inline d-sm-none">Wealth</span>
+</div>
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;"><i class="fa-solid fa-dollar-sign"></i></span>
+<label class="visually-hidden" for="wealthXpCard_currentWealthScore">Currentwealthscore</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_currentWealthScore" name="currentWealthScore" placeholder="+0" type="text"/>
+</div>
+</div>
+</div>
+<!-- Box 3: Credits -->
+<div class="col-6 col-sm-6 col-md-3 col-xl-3">
+<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+<div class="stat-label mb-1" title="Physical or digital liquid credits on hand">
+<span class="d-none d-sm-inline">Credits</span><span class="d-inline d-sm-none">Cred</span>
+</div>
+<div class="input-group input-group-sm">
+<span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;">₡</span>
+<label class="visually-hidden" for="wealthXpCard_liquidCredits">Liquidcredits</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_liquidCredits" name="liquidCredits" placeholder="0" type="text"/>
+</div>
+</div>
+</div>
+<!-- Box 4: Current Level, XP & Next Level (Far Right) -->
+<div class="col-12 col-sm-6 col-md-3 col-xl-4">
+<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
+<div class="stat-label mb-1">
+<span class="d-none d-md-inline">XP / Total Level / Next Level</span><span class="d-inline d-md-none">XP / Lvl / Next</span>
+</div>
+<div class="input-group input-group-sm">
+<label class="visually-hidden" for="wealthXpCard_xpCurrent">Xpcurrent</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpCurrent" name="xpCurrent" placeholder="0 XP" title="Current Experience Points" type="text"/>
+<span class="input-group-text px-1 py-0 small text-muted" style="font-size: 0.7rem;"><span class="d-none d-sm-inline">/ Lvl</span><span class="d-inline d-sm-none">/L</span></span>
+<label class="visually-hidden" for="wealthXpCard_totalCharLevel">Totalcharlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_totalCharLevel" name="totalCharLevel" placeholder="1" title="Total Character Level" type="text"/>
+<span class="input-group-text px-1 py-0 small text-cyan" style="font-size: 0.7rem;" title="XP required for Next Level"><i class="fa-solid fa-angles-up me-1"></i><span class="d-none d-sm-inline">Next</span></span>
+<label class="visually-hidden" for="wealthXpCard_xpNextLevel">Xpnextlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpNextLevel" name="xpNextLevel" placeholder="2000" title="XP Required for Next Level" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="print-footer">
           Page 1 - d20 FuturePath Character Sheet
         </div>
@@ -2072,7 +2146,7 @@
 </div>
 <div class="col-12 col-md-4">
 <div class="d-flex align-items-center gap-1 flex-wrap">
-<span class="small fw-bold text-muted me-1" style="font-size: 0.75rem;">Affinities:</span>
+<span class="small fw-bold text-muted me-1 prof-affinity-label" style="font-size: 0.65rem;">Affinities:</span>
 <button class="btn btn-sm affinity-tag tag-str py-0 px-2 fw-bold" onclick="toggleAffinityTag(this, 'STR')" type="button">STR</button>
 <button class="btn btn-sm affinity-tag tag-dex py-0 px-2 fw-bold" onclick="toggleAffinityTag(this, 'DEX')" type="button">DEX</button>
 <button class="btn btn-sm affinity-tag tag-con py-0 px-2 fw-bold" onclick="toggleAffinityTag(this, 'CON')" type="button">CON</button>
@@ -2118,80 +2192,7 @@
 </div>
 </div>
 </div>
-<!-- Wealth / Credits and Experience Card -->
-<div class="sheet-card mt-3 mb-3" data-default-page="2" id="wealthXpCard">
-<div aria-controls="collapseWealthXP" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseWealthXP">
-<div>
-<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-coins me-2"></i>Wealth / Credits &amp; Experience</span>
-</div>
-<div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
-<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
-<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
-</div>
-</div>
-<div class="collapse show" id="collapseWealthXP">
-<div class="card-body">
-<div class="row g-2 align-items-center">
-<!-- Box 1: Occupation (Far Left) -->
-<div class="col-12 col-sm-6 col-md-3 col-xl-3">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1" for="occupationInput">
-<span class="d-none d-sm-inline">Occupation</span><span class="d-inline d-sm-none">Occ</span>
-</div>
-<div class="input-group input-group-sm">
-<label class="visually-hidden" for="wealthXpCard_occupationInput">Occupation</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_occupationInput" list="occupationDatalist" name="occupation" placeholder="e.g. Academic" type="text"/>
-<button class="btn btn-cyber-outline btn-sm px-2 no-print" id="occupationDropdownBtn" onclick="toggleDatalist('wealthXpCard_occupationInput')" title="Show Occupation Suggestions" type="button">
-<i class="fa-solid fa-chevron-down"></i>
-</button>
-</div>
-<datalist id="occupationDatalist">
-</datalist>
-</div>
-</div>
-<!-- Box 2: Current Wealth Score -->
-<div class="col-6 col-sm-6 col-md-3 col-xl-2">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1" title="Current available Wealth bonus for financial checks">
-<span class="d-none d-sm-inline">Current Wealth</span><span class="d-inline d-sm-none">Wealth</span>
-</div>
-<div class="input-group input-group-sm">
-<span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;"><i class="fa-solid fa-dollar-sign"></i></span>
-<label class="visually-hidden" for="wealthXpCard_currentWealthScore">Currentwealthscore</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_currentWealthScore" name="currentWealthScore" placeholder="+0" type="text"/>
-</div>
-</div>
-</div>
-<!-- Box 3: Credits -->
-<div class="col-6 col-sm-6 col-md-3 col-xl-3">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1" title="Physical or digital liquid credits on hand">
-<span class="d-none d-sm-inline">Credits</span><span class="d-inline d-sm-none">Cred</span>
-</div>
-<div class="input-group input-group-sm">
-<span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;">₡</span>
-<label class="visually-hidden" for="wealthXpCard_liquidCredits">Liquidcredits</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_liquidCredits" name="liquidCredits" placeholder="0" type="text"/>
-</div>
-</div>
-</div>
-<!-- Box 4: Current Level, XP & Next Level (Far Right) -->
-<div class="col-12 col-sm-6 col-md-3 col-xl-4">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1">
-<span class="d-none d-md-inline">XP / Total Level / Next Level</span><span class="d-inline d-md-none">XP / Lvl / Next</span>
-</div>
-<div class="input-group input-group-sm">
-<label class="visually-hidden" for="wealthXpCard_xpCurrent">Xpcurrent</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpCurrent" name="xpCurrent" placeholder="0 XP" title="Current Experience Points" type="text"/>
-<span class="input-group-text px-1 py-0 small text-muted" style="font-size: 0.7rem;"><span class="d-none d-sm-inline">/ Lvl</span><span class="d-inline d-sm-none">/L</span></span>
-<label class="visually-hidden" for="wealthXpCard_totalCharLevel">Totalcharlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_totalCharLevel" name="totalCharLevel" placeholder="1" title="Total Character Level" type="text"/>
-<span class="input-group-text px-1 py-0 small text-cyan" style="font-size: 0.7rem;" title="XP required for Next Level"><i class="fa-solid fa-angles-up me-1"></i><span class="d-none d-sm-inline">Next</span></span>
-<label class="visually-hidden" for="wealthXpCard_xpNextLevel">Xpnextlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpNextLevel" name="xpNextLevel" placeholder="2000" title="XP Required for Next Level" type="text"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 <!-- General Equipment -->
 <div class="sheet-card mb-3" data-default-page="2" id="equipmentCard">
 <div aria-controls="collapseGear" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapseGear">
