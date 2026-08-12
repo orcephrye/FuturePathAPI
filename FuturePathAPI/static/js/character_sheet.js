@@ -1102,6 +1102,7 @@ function addArmorRow() {
   tr1.innerHTML = `
     <td><input type="text" class="form-control form-control-sm" name="armorName[]"></td>
     <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
+    <td><input type="text" class="form-control form-control-sm text-center" name="armorDR[]"></td>
     <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
     <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
     <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
@@ -1110,7 +1111,7 @@ function addArmorRow() {
   const tr2 = document.createElement('tr');
   tr2.classList.add('armor-notes-row');
   tr2.innerHTML = `
-    <td colspan="5" class="pt-0 pb-2 border-bottom">
+    <td colspan="6" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
         <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Bonus Attributes:</span>
         <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
@@ -2202,10 +2203,12 @@ function getFormDataObj() {
         }
 
         const acBonusEl = mainRow.querySelector('input[name="armorACBonus[]"]');
+        const drEl = mainRow.querySelector('input[name="armorDR[]"]');
         const maxDexEl = mainRow.querySelector('input[name="armorMaxDex[]"]');
         const speedPenEl = mainRow.querySelector('input[name="armorSpeedPenalty[]"]');
 
         const acBonus = (acBonusEl ? acBonusEl.value.trim() : '');
+        const drVal = (drEl ? drEl.value.trim() : '');
         const maxDex = (maxDexEl ? maxDexEl.value.trim() : '');
         const speedPen = (speedPenEl ? speedPenEl.value.trim() : '');
 
@@ -2219,6 +2222,7 @@ function getFormDataObj() {
         armorsList.push({
           "Name": name,
           "AC Bonus": acBonus,
+          "DR": drVal,
           "Max Dex": maxDex,
           "Speed Penalty": speedPen,
           "Bonus Attributes": bonusAttrs
@@ -3108,6 +3112,10 @@ function populateForm(data) {
           const acIn = lastMain.querySelector('input[name="armorACBonus[]"]');
           if (acIn) {
             acIn.value = armorObj["AC Bonus"] || armorObj.acBonus || '';
+          }
+          const drIn = lastMain.querySelector('input[name="armorDR[]"]');
+          if (drIn) {
+            drIn.value = armorObj.DR || armorObj.dr || '';
           }
           const maxDexIn = lastMain.querySelector('input[name="armorMaxDex[]"]');
           if (maxDexIn) {
