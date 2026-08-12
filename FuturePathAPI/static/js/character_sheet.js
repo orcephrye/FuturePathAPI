@@ -320,6 +320,38 @@ function calculateStats() {
     }
   });
 
+  // Calculate Initiative (WIS MOD + DEX MOD)
+  const initEl = document.getElementById('global_initiative') || document.getElementsByName('initiative')[0];
+  const scoreWISEl = document.getElementById('abilityScoresCard_scoreWIS') || document.getElementById('global_scoreWIS');
+  const scoreDEXInput = document.getElementById('abilityScoresCard_scoreDEX') || document.getElementById('global_scoreDEX');
+  const hasWisScore = Boolean(scoreWISEl && scoreWISEl.value.trim() !== '');
+  const hasDexScore = Boolean(scoreDEXInput && scoreDEXInput.value.trim() !== '');
+
+  if (initEl) {
+    if (!hasWisScore && !hasDexScore) {
+      initEl.value = '';
+    } else {
+      const wisMod = mods.WIS || 0;
+      const dexMod = mods.DEX || 0;
+      initEl.value = formatModStr(wisMod + dexMod);
+    }
+  }
+
+  // Calculate Passive Perception (8 + WIS MOD + Math.floor(Perception Skill Rank / 2))
+  const passivePercEl = document.getElementById('global_passivePerception') || document.getElementsByName('passivePerception')[0];
+  const percRankEl = document.getElementById('coreSkills_skillRank_perception') || document.getElementsByName('skillRank_perception')[0];
+  const percRankVal = parseInt((percRankEl ? percRankEl.value : 0), 10) || 0;
+
+  if (passivePercEl) {
+    if (!hasWisScore && (!percRankEl || percRankEl.value.trim() === '')) {
+      passivePercEl.value = '';
+    } else {
+      const wisMod = mods.WIS || 0;
+      const halfPercRank = Math.floor(percRankVal / 2);
+      passivePercEl.value = 8 + wisMod + halfPercRank;
+    }
+  }
+
   calculateTotalWeight();
   syncSpeciesName();
   syncPathName();
