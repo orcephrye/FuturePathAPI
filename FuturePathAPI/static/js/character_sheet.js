@@ -1,4 +1,3 @@
-/*jslint browser, devel, fart, for, long, single, this, unordered, variable, white*/
 /*global bootstrap*/
 
 let professionsList = [];
@@ -283,11 +282,19 @@ function performCalculateStats() {
     const totalSpan = row.querySelector('.skill-total');
     let abSpan = null;
     if (abModInput && abModInput.parentElement) {
-      abSpan = abModInput.parentElement.querySelector('span');
+      abSpan = abModInput.parentElement.querySelector('span, select');
     }
 
-    if (abilityKey) {
+    if (abilityKey && abilityKey !== '-') {
       const abClass = `text-ability-${abilityKey.toLowerCase()}`;
+      ['str', 'dex', 'con', 'int', 'wis', 'cha'].forEach((ab) => {
+        if (abSpan && ab !== abilityKey.toLowerCase()) {
+          abSpan.classList.remove(`text-ability-${ab}`);
+        }
+        if (abModInput && ab !== abilityKey.toLowerCase()) {
+          abModInput.classList.remove(`text-ability-${ab}`);
+        }
+      });
       if (abSpan && !abSpan.classList.contains(abClass)) {
         abSpan.classList.add(abClass);
       }
@@ -658,17 +665,62 @@ async function loadAllReferanceData() {
       mutationEnhancementDatalist.innerHTML = optionList.join('');
     }
     if (advdieDataList && Array.isArray(allData.advantage_die_levels) && allData.advantage_die_levels.length > 0) {
-      const currentVal = advdieDataList.value;
-      advdieDataList.innerHTML = '<option value="" selected></option>' + allData.advantage_die_levels.map((die) => {
-        const label = (die.startsWith('d') ? `1${die}` : die);
-        return `<option value="${die}">${label}</option>`;
-      }).join('');
-      if (currentVal) {
-        advdieDataList.value = currentVal;
-      }
+      const optionList = ['<option value=""></option>'];
+      allData.advantage_die_levels.forEach((item) => {
+        const die = (typeof item === 'object' && item !== null) ? (item.die || item.name || item.value || '') : String(item);
+        if (die && !optionList.some((opt) => opt.includes(`value="${die}"`))) {
+          const label = (die.startsWith('d') ? `1${die}` : die);
+          optionList.push(`<option value="${die}">${label}</option>`);
+        }
+      });
+      advdieDataList.innerHTML = optionList.join('');
+      setAdvantageDieValue(advdieDataList, pendingAdvantageDieValue || advdieDataList.value);
     }
   } catch (err) {
     console.warn("Failed to load reference data:", err);
+  }
+}
+
+let pendingAdvantageDieValue = null;
+
+function setAdvantageDieValue(selectEl, val) {
+  if (!selectEl) {
+    return;
+  }
+  if (val !== undefined && val !== null && String(val).trim() !== '') {
+    pendingAdvantageDieValue = String(val).trim();
+  }
+  const targetVal = pendingAdvantageDieValue || (selectEl.value ? selectEl.value.trim() : '');
+  if (!targetVal) {
+    return;
+  }
+
+  // 1. Direct match
+  for (const opt of selectEl.options) {
+    if (opt.value === targetVal) {
+      selectEl.value = opt.value;
+      return;
+    }
+  }
+
+  // 2. Normalized match (e.g. 'd4' <-> '1d4')
+  const with1 = targetVal.startsWith('d') ? `1${targetVal}` : targetVal;
+  const without1 = targetVal.replace(/^1(d\d+.*)/, '$1');
+
+  for (const opt of selectEl.options) {
+    if (opt.value === with1 || opt.value === without1) {
+      selectEl.value = opt.value;
+      return;
+    }
+  }
+
+  // 3. Partial prefix match (e.g. 'd4' or '1d4' matching '1d4+1')
+  const baseDie = targetVal.replace(/^1?/, '');
+  for (const opt of selectEl.options) {
+    if (opt.value && opt.value.replace(/^1?/, '').startsWith(baseDie)) {
+      selectEl.value = opt.value;
+      return;
+    }
   }
 }
 
@@ -2359,9 +2411,9 @@ function getFormDataObj() {
         const rank = ((rankVal !== undefined && rankVal !== '') ? (parseInt(rankVal, 10) || 0) : 0);
 
         let keyAbility = row.getAttribute('data-ability') || '-';
-        const abSpan = row.querySelector('span[class*="text-ability-"]') || row.querySelector('td:nth-child(6) span');
-        if (abSpan && abSpan.textContent.trim()) {
-          keyAbility = abSpan.textContent.trim();
+        const abEl = row.querySelector('select.skill-ab-select, span[class*="text-ability-"], td:nth-child(6) span');
+        if (abEl) {
+          keyAbility = (abEl.value || abEl.textContent || '').trim();
         }
 
         const miscEl = row.querySelector('.skill-misc-mod');
@@ -3129,6 +3181,8 @@ function populateForm(data) {
             input.checked = Boolean(val);
           } else if (input.type === 'radio') {
             input.checked = (input.value === val);
+          } else if (input.name === 'advantageDie' || input.id === 'global_advantageDie') {
+            setAdvantageDieValue(input, val);
           } else {
             input.value = val;
           }
@@ -3136,6 +3190,12 @@ function populateForm(data) {
       }
     }
   });
+
+  const advDieVal = flatData.advantageDie || data.advantageDie || (data.attributesCard ? data.attributesCard.advantageDie : (data.abilityScoresCard ? data.abilityScoresCard.advantageDie : undefined));
+  const advDieSelect = document.getElementById('global_advantageDie');
+  if (advDieSelect && advDieVal !== undefined) {
+    setAdvantageDieValue(advDieSelect, advDieVal);
+  }
 
   // Populate armorDefensesCard armorsList
   const armorsData = (data.armorDefensesCard ? data.armorDefensesCard.armorsList : undefined) || flatData.armorsList || flatData['armorName[]'];
@@ -3313,6 +3373,15 @@ function populateForm(data) {
         const favChk = matchedRow.querySelector('.form-check-input');
         if (favChk && favored !== undefined) {
           favChk.checked = Boolean(favored);
+        }
+
+        const keyAb = skillObj["Key Ability"] || skillObj.keyAbility;
+        const abSelect = matchedRow.querySelector('.skill-ab-select');
+        if (abSelect && keyAb) {
+          abSelect.value = keyAb;
+          if (typeof updateCustomSkillAbility === 'function') {
+            updateCustomSkillAbility(abSelect);
+          }
         }
       }
     });

@@ -195,12 +195,12 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
 }
 
 /* Synthwave Core Ability Theme Color Classes */
-.text-ability-str { color: #f43f5e !important; }
-.text-ability-dex { color: #84cc16 !important; }
-.text-ability-con { color: #d97706 !important; }
-.text-ability-int { color: #3b82f6 !important; }
-.text-ability-wis { color: #8b5cf6 !important; }
-.text-ability-cha { color: #ec4899 !important; }
+.text-ability-str, select.text-ability-str, .form-select.text-ability-str { color: #f43f5e !important; }
+.text-ability-dex, select.text-ability-dex, .form-select.text-ability-dex { color: #84cc16 !important; }
+.text-ability-con, select.text-ability-con, .form-select.text-ability-con { color: #d97706 !important; }
+.text-ability-int, select.text-ability-int, .form-select.text-ability-int { color: #3b82f6 !important; }
+.text-ability-wis, select.text-ability-wis, .form-select.text-ability-wis { color: #8b5cf6 !important; }
+.text-ability-cha, select.text-ability-cha, .form-select.text-ability-cha { color: #ec4899 !important; }
 
 .stat-box-str { border-color: rgb(244 63 94 / 40%) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
 .stat-box-dex { border-color: rgb(132 204 22 / 40%) !important; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
@@ -355,6 +355,31 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
   display: inline-block;
   min-width: 32px;
 }
+
+select.skill-ab-select-no-arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none !important;
+  padding-right: 0.25rem !important;
+  cursor: pointer;
+}
+
+select.skill-ab-select-no-arrow::-ms-expand {
+  display: none;
+}
+
+select.skill-ab-select option {
+  background-color: var(--modal-bg, #1e293b);
+  color: var(--text-color, #ffffff);
+}
+
+select.skill-ab-select option[value="STR"] { color: #f43f5e; }
+select.skill-ab-select option[value="DEX"] { color: #84cc16; }
+select.skill-ab-select option[value="CON"] { color: #d97706; }
+select.skill-ab-select option[value="INT"] { color: #3b82f6; }
+select.skill-ab-select option[value="WIS"] { color: #8b5cf6; }
+select.skill-ab-select option[value="CHA"] { color: #ec4899; }
 
 @media (width >= 992px) {
   .col-skills-side {
@@ -1685,12 +1710,12 @@ body.is-print-mode .stat-box-int { border: 1px solid #3b82f6 !important; }
 body.is-print-mode .stat-box-wis { border: 1px solid #8b5cf6 !important; }
 body.is-print-mode .stat-box-cha { border: 1px solid #ec4899 !important; }
 
-body.is-print-mode .text-ability-str { color: #e11d48 !important; }
-body.is-print-mode .text-ability-dex { color: #4d7c0f !important; }
-body.is-print-mode .text-ability-con { color: #d97706 !important; }
-body.is-print-mode .text-ability-int { color: #1d4ed8 !important; }
-body.is-print-mode .text-ability-wis { color: #6d28d9 !important; }
-body.is-print-mode .text-ability-cha { color: #be185d !important; }
+body.is-print-mode .text-ability-str, body.is-print-mode select.text-ability-str { color: #e11d48 !important; }
+body.is-print-mode .text-ability-dex, body.is-print-mode select.text-ability-dex { color: #4d7c0f !important; }
+body.is-print-mode .text-ability-con, body.is-print-mode select.text-ability-con { color: #d97706 !important; }
+body.is-print-mode .text-ability-int, body.is-print-mode select.text-ability-int { color: #1d4ed8 !important; }
+body.is-print-mode .text-ability-wis, body.is-print-mode select.text-ability-wis { color: #6d28d9 !important; }
+body.is-print-mode .text-ability-cha, body.is-print-mode select.text-ability-cha { color: #be185d !important; }
 
 body.is-print-mode .ac-square-box {
   border: 1.5px solid #000 !important;
