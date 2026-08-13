@@ -1124,7 +1124,7 @@ function addWeaponRow() {
   tr2.innerHTML = `
     <td colspan="10" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
-        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes & Attributes:</span>
+        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Notes &amp; Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
         <label class="visually-hidden" for="weaponsCard_wepNotes_${idx}">Wepnotes</label><input type="text" class="form-control form-control-sm" id="weaponsCard_wepNotes_${idx}" name="wepNotes[]">
       </div>
     </td>
@@ -1178,7 +1178,7 @@ function addArmorRow() {
   tr2.innerHTML = `
     <td colspan="6" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
-        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Bonus Attributes:</span>
+        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Bonus Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
         <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
       </div>
     </td>
@@ -4395,10 +4395,17 @@ function scheduleAutoPagination(delay = 500) {
 }
 
 function reexpandAllTextareas() {
-  document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea').forEach((el) => {
+  const textareas = document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea');
+  if (textareas.length === 0) {
+    return;
+  }
+  textareas.forEach((el) => {
     el.style.height = 'auto';
+  });
+  void textareas[0].offsetHeight;
+  textareas.forEach((el) => {
     if (el.scrollHeight > 0) {
-      el.style.height = `${el.scrollHeight}px`;
+      el.style.height = `${el.scrollHeight + 2}px`;
     }
   });
 }
@@ -4510,12 +4517,7 @@ function autoPaginateCards() {
     document.body.classList.add('is-print-mode');
   }
 
-  document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea').forEach((el) => {
-    el.style.height = 'auto';
-    if (el.scrollHeight > 0) {
-      el.style.height = `${el.scrollHeight}px`;
-    }
-  });
+  reexpandAllTextareas();
 
   try {
     let pageNum = 1;
@@ -4587,6 +4589,7 @@ function autoPaginateCards() {
       }
     }
   } finally {
+    reexpandAllTextareas();
     if (!wasPrintMode) {
       document.body.classList.remove('is-print-mode');
       reexpandAllTextareas();
@@ -5468,12 +5471,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('beforeprint', () => {
     document.body.classList.add('is-print-mode');
     expandAllCards();
-    document.querySelectorAll('.notebook-textarea, .trait-desc-textarea, textarea').forEach((el) => {
-      el.style.height = 'auto';
-      if (el.scrollHeight > 0) {
-        el.style.height = `${el.scrollHeight}px`;
-      }
-    });
+    reexpandAllTextareas();
   });
 
   window.addEventListener('afterprint', () => {

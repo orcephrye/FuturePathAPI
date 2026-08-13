@@ -357,8 +357,6 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
 }
 
 select.skill-ab-select-no-arrow {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background-image: none !important;
   padding-right: 0.25rem !important;
@@ -371,7 +369,7 @@ select.skill-ab-select-no-arrow::-ms-expand {
 
 select.skill-ab-select option {
   background-color: var(--modal-bg, #1e293b);
-  color: var(--text-color, #ffffff);
+  color: var(--text-color, #fff);
 }
 
 select.skill-ab-select option[value="STR"] { color: #f43f5e; }
@@ -1126,10 +1124,11 @@ body.is-print-mode .trait-desc-textarea {
   resize: none !important;
   white-space: pre-wrap !important;
   word-break: break-word !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   border: none !important;
   border-bottom: 1px solid #777 !important;
   border-radius: 0 !important;
+  box-sizing: border-box !important;
 }
 
 body.is-print-mode #backstoryCard .notebook-textarea {
@@ -1747,11 +1746,16 @@ body.is-print-mode .ac-comp-input {
   max-width: 36px !important;
 }
 
+body.is-print-mode #healthInjuryCard input,
+body.is-print-mode #healthInjuryCard .form-control,
 body.is-print-mode .stat-box .form-control,
 body.is-print-mode .stat-box input,
 body.is-print-mode .stat-box select,
 body.is-print-mode .ability-stat-input,
 body.is-print-mode .hp-stat-input {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
   height: 15px !important;
   font-size: 7.2pt !important;
   padding: 0 1px !important;
@@ -1760,6 +1764,7 @@ body.is-print-mode .hp-stat-input {
   border-bottom: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
+  text-align: center !important;
 }
 
 body.is-print-mode .dr-square-box {
@@ -1919,6 +1924,15 @@ body.is-print-mode #skillsTable .skill-die {
   padding: 0 !important;
 }
 
+body.is-print-mode .d-print-none {
+  display: none !important;
+}
+
+body.is-print-mode .d-print-inline,
+body.is-print-mode .d-none.d-print-inline {
+  display: inline !important;
+}
+
 body.is-print-mode .skill-ability-label {
   min-width: 20px !important;
 }
@@ -1926,6 +1940,100 @@ body.is-print-mode #skillsTable th:nth-child(4) { width: 65px !important; }
 body.is-print-mode #skillsTable th:nth-child(6) { width: 48px !important; }
 body.is-print-mode #skillsTable th:nth-child(8) { width: 28px !important; }
 body.is-print-mode #skillsTable th:nth-child(10) { width: 38px !important; }
+
+/* Armor Table Print Column Widths */
+body.is-print-mode #armorTable {
+  table-layout: fixed !important;
+  width: 100% !important;
+}
+
+body.is-print-mode #armorTable th:nth-child(1),
+body.is-print-mode #armorTable td:nth-child(1) {
+  width: 45% !important;
+}
+
+body.is-print-mode #armorTable th:nth-child(2),
+body.is-print-mode #armorTable td:nth-child(2) {
+  width: 13% !important;
+}
+
+body.is-print-mode #armorTable th:nth-child(3),
+body.is-print-mode #armorTable td:nth-child(3) {
+  width: 10% !important;
+}
+
+body.is-print-mode #armorTable th:nth-child(4),
+body.is-print-mode #armorTable td:nth-child(4) {
+  width: 16% !important;
+}
+
+body.is-print-mode #armorTable th:nth-child(5),
+body.is-print-mode #armorTable td:nth-child(5) {
+  width: 16% !important;
+}
+
+/* Weapons Table Print Column Widths */
+body.is-print-mode #weaponsTable {
+  table-layout: fixed !important;
+  width: 100% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(1),
+body.is-print-mode #weaponsTable td:nth-child(1) {
+  width: 36% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(2),
+body.is-print-mode #weaponsTable td:nth-child(2) {
+  width: 5% !important;
+}
+
+body.is-print-mode #weaponsTable select[name="wepLvl[]"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  font-size: 6.5pt !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(3),
+body.is-print-mode #weaponsTable td:nth-child(3) {
+  width: 13% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(4),
+body.is-print-mode #weaponsTable td:nth-child(4) {
+  width: 6% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(5),
+body.is-print-mode #weaponsTable td:nth-child(5) {
+  width: 5% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(6),
+body.is-print-mode #weaponsTable td:nth-child(6) {
+  width: 10% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(7),
+body.is-print-mode #weaponsTable td:nth-child(7) {
+  width: 9% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(8),
+body.is-print-mode #weaponsTable td:nth-child(8) {
+  width: 10% !important;
+}
+
+body.is-print-mode #weaponsTable th:nth-child(9),
+body.is-print-mode #weaponsTable td:nth-child(9) {
+  width: 6% !important;
+}
+
+body.is-print-mode #weaponsTable input[name="wepAmmo[]"] {
+  padding: 0 !important;
+  font-size: 6.5pt !important;
+}
 
 body.is-print-mode .badge-natural,
 body.is-print-mode .badge-unnatural,
@@ -2127,6 +2235,19 @@ body.is-print-mode .col-lg-6 {
     color: #000 !important;
     font-weight: bold !important;
     opacity: 1 !important;
+  }
+
+  #healthInjuryCard input,
+  #healthInjuryCard .form-control,
+  .stat-box .form-control,
+  .stat-box input,
+  .stat-box select,
+  .ability-stat-input,
+  .hp-stat-input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
   }
 
   .table-custom tr,
