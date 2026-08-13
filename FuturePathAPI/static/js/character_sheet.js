@@ -35,7 +35,7 @@ function toggleLockTheme(isLocked) {
 
 function setTheme(themeName) {
   const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'viper', 'volar', 'human', 'grayling', 'lepidonain', 'cryous', 'aconian', 'murid', 'avisari', 'khepri'];
-  console.log("setTheme called wth themeName:", themeName);
+  //console.log("setTheme called wth themeName:", themeName);
   if (!themes.includes(themeName)) {
     themeName = 'cosmic-dark';
   }
@@ -63,7 +63,7 @@ function setTheme(themeName) {
 }
 
 function applyTheme() {
-  console.log("applyTheme called!");
+  //console.log("applyTheme called!");
   let savedTheme = localStorage.getItem('theme');
   const themes = ['cosmic-dark', 'cosmic-light', 'bootstrap-dark', 'bootstrap-light', 'industrial', 'aegis', 'tattoo', 'curvilinea', 'viper', 'volar', 'human', 'grayling', 'lepidonain', 'cryous', 'aconian', 'murid', 'avisari', 'khepri'];
   if (!savedTheme || !themes.includes(savedTheme)) {
@@ -166,7 +166,7 @@ function calculateStats() {
 
 // Live calculation of Modifiers & Skills
 function performCalculateStats() {
-  console.log("calculateStats called!");
+  //console.log("calculateStats called!");
   const stats = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
   const mods = {};
 
