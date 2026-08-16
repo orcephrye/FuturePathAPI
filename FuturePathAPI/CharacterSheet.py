@@ -48,6 +48,8 @@ def _get_table_data(table_name, key_field="name"):
     for doc in docs:
         if key_field in doc:
             items.append(doc[key_field])
+        elif "Name" in doc:
+            items.append(doc["Name"])
         elif "name" in doc:
             items.append(doc["name"])
         elif "die" in doc:

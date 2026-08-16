@@ -323,6 +323,18 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
   transform: rotate(-90deg);
 }
 
+.header-icon-link {
+  color: inherit;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.header-icon-link:hover {
+  color: var(--neon-cyan, #00f0ff);
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 5px rgb(0 240 255 / 60%));
+}
+
 #skillsTable th, #skillsTable td {
   padding: 0.2rem 0.25rem !important;
   font-size: 0.8rem;
@@ -396,14 +408,32 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
 }
 
 @media (width <= 991.98px) {
-  .col-skills-side {
+  body:not(.is-print-mode) .sheet-card {
+    margin-top: 0 !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  body:not(.is-print-mode) .sheet-card:last-child {
+    margin-bottom: 0.25rem !important;
+  }
+
+  body:not(.is-print-mode) [class*="col-"] > .sheet-card {
+    margin-top: 0 !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  body:not(.is-print-mode) .row {
+    --bs-gutter-y: 0 !important;
+  }
+
+  body:not(.is-print-mode) .col-skills-side {
     width: 100% !important;
     flex: 0 0 100% !important;
     max-width: 100% !important;
     order: 2 !important;
   }
 
-  .col-armor-side {
+  body:not(.is-print-mode) .col-armor-side {
     width: 100% !important;
     flex: 0 0 100% !important;
     max-width: 100% !important;
@@ -411,41 +441,608 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   }
 
   /* Mobile Skills Table Inputs (shrunk to max 3 chars space, ~half size) */
-  .skill-rank,
-  #skillsTable .skill-rank {
+  body:not(.is-print-mode) .skill-rank,
+  body:not(.is-print-mode) #skillsTable .skill-rank {
     width: 25px !important;
     padding-left: 1px !important;
     padding-right: 1px !important;
   }
 
-  .skill-ab-mod,
-  #skillsTable .skill-ab-mod {
+  body:not(.is-print-mode) .skill-ab-mod,
+  body:not(.is-print-mode) #skillsTable .skill-ab-mod {
     width: 25px !important;
     padding-left: 1px !important;
     padding-right: 1px !important;
   }
 
-  .skill-misc-mod,
-  #skillsTable .skill-misc-mod {
+  body:not(.is-print-mode) .skill-misc-mod,
+  body:not(.is-print-mode) #skillsTable .skill-misc-mod {
     width: 25px !important;
     padding-left: 1px !important;
     padding-right: 1px !important;
   }
 
-  .skill-die,
-  #skillsTable .skill-die {
+  body:not(.is-print-mode) .skill-die,
+  body:not(.is-print-mode) #skillsTable .skill-die {
     width: 38px !important;
     padding-left: 1px !important;
     padding-right: 1px !important;
   }
 
-  .skill-ability-label {
+  body:not(.is-print-mode) .skill-ability-label {
     min-width: 24px !important;
   }
-  #skillsTable th:nth-child(4) { width: 75px !important; }
-  #skillsTable th:nth-child(6) { width: 58px !important; }
-  #skillsTable th:nth-child(8) { width: 32px !important; }
-  #skillsTable th:nth-child(10) { width: 45px !important; }
+  body:not(.is-print-mode) #skillsTable th:nth-child(4) { width: 75px !important; }
+  body:not(.is-print-mode) #skillsTable th:nth-child(6) { width: 58px !important; }
+  body:not(.is-print-mode) #skillsTable th:nth-child(8) { width: 32px !important; }
+  body:not(.is-print-mode) #skillsTable th:nth-child(10) { width: 45px !important; }
+}
+
+/* Mobile Skills Table: 2-line layout for sm or smaller breakpoints */
+@media (width <= 767.98px) {
+  body:not(.is-print-mode) #skillsTable thead {
+    display: none !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable,
+  body:not(.is-print-mode) #skillsTable tbody {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 5px 4px 4px !important;
+    border-bottom: 1px solid var(--card-border, #444) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Line 1: Favored Checkbox, Skill Name + Badges, Roll Button */
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(1) {
+    flex: 0 0 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(2) {
+    flex: 1 1 calc(100% - 56px) !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    padding: 0 4px !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(3) {
+    flex: 0 0 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* Line 2: Rank/Die, +, Ability/Mod, +, Misc Mod, =, Total */
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(4) {
+    flex: 0 0 auto !important;
+    margin-left: 24px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(4) .skill-rank {
+    width: 32px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(4) .skill-die {
+    width: 44px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(5) {
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(6) {
+    flex: 0 0 auto !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(6) .skill-ability-label {
+    min-width: 28px !important;
+    font-size: 0.8rem !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(6) .skill-ab-select {
+    font-size: 0.8rem !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(6) .skill-ab-mod {
+    width: 32px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(7) {
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(8) {
+    flex: 0 0 auto !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(8) .skill-misc-mod {
+    width: 34px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(9) {
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  body:not(.is-print-mode) #skillsTable tbody tr > td:nth-child(10) {
+    flex: 0 0 auto !important;
+    min-width: 32px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 4px !important;
+    border: none !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Mobile Weapons Table: 3-row layout for sm or smaller breakpoints */
+@media (width <= 767.98px) {
+  body:not(.is-print-mode) #weaponsTable thead {
+    display: none !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable,
+  body:not(.is-print-mode) #weaponsTable tbody {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-end !important;
+    width: 100% !important;
+    padding: 6px 4px 2px !important;
+    border-top: 1px solid var(--card-border, #444) !important;
+    border-bottom: none !important;
+    gap: 3px 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td::before {
+    display: block !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    color: var(--bs-secondary-color, #888) !important;
+    margin-bottom: 2px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  /* Row 1: Name, Lvl, Damage / Die */
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(1) {
+    flex: 1 1 calc(100% - 170px) !important;
+    min-width: 90px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(1)::before {
+    content: "Name";
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(2) {
+    flex: 0 0 48px !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(2)::before {
+    content: "Lvl";
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(2) select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(3) {
+    flex: 0 0 105px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(3)::before {
+    content: "Damage / Die";
+    text-align: center !important;
+  }
+
+  /* Row 2: Acc+, AP, Critical, Type */
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(4) {
+    flex: 1 1 18% !important;
+    min-width: 48px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(4)::before {
+    content: "Acc+";
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(5) {
+    flex: 1 1 18% !important;
+    min-width: 48px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(5)::before {
+    content: "AP";
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(6) {
+    flex: 1 1 28% !important;
+    min-width: 60px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(6)::before {
+    content: "Critical";
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(7) {
+    flex: 1 1 30% !important;
+    min-width: 70px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(7)::before {
+    content: "Type";
+    text-align: center !important;
+  }
+
+  /* Row 3: Range, Ammo, Delete Button */
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(8) {
+    flex: 1 1 calc(100% - 130px) !important;
+    min-width: 120px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(8)::before {
+    content: "Range";
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(9) {
+    flex: 0 0 70px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(9)::before {
+    content: "Ammo";
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(10) {
+    flex: 0 0 38px !important;
+    justify-content: flex-end !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(10)::before {
+    content: "";
+    visibility: hidden !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-main-row > td:nth-child(10) button {
+    height: 31px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Row 4: Notes & Attributes (Attrs:) */
+  body:not(.is-print-mode) #weaponsTable tr.weapon-notes-row {
+    display: block !important;
+    width: 100% !important;
+    border-bottom: 2px solid var(--card-border, #444) !important;
+    margin-bottom: 4px !important;
+  }
+
+  body:not(.is-print-mode) #weaponsTable tr.weapon-notes-row > td {
+    display: block !important;
+    width: 100% !important;
+    padding: 2px 4px 6px !important;
+    border: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Mobile Trait / Talent / Feat / Item Description Tables & Textareas (Line 1: Names/Attributes + Action, Line 2: Description) */
+  body:not(.is-print-mode) #speciesTraitsTable thead tr,
+  body:not(.is-print-mode) #pathTalentsTable thead tr,
+  body:not(.is-print-mode) #featsTable thead tr,
+  body:not(.is-print-mode) #quirksTable thead tr,
+  body:not(.is-print-mode) #detractorsTable thead tr,
+  body:not(.is-print-mode) #cyberImplantsTable thead tr,
+  body:not(.is-print-mode) #cyberDrawbacksTable thead tr,
+  body:not(.is-print-mode) .prof-talents-table thead tr,
+  body:not(.is-print-mode) .pa-mods-table thead tr,
+  body:not(.is-print-mode) #mutationsDrawbacksTable thead tr,
+  body:not(.is-print-mode) #mutationsEnhancementsTable thead tr,
+  body:not(.is-print-mode) #psionicsDrawbacksTable thead tr,
+  body:not(.is-print-mode) .techniques-sub-table thead tr,
+  body:not(.is-print-mode) .psionic-sub-table thead tr {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 4px 6px !important;
+  }
+
+  body:not(.is-print-mode) #speciesTraitsTable thead th:nth-child(2),
+  body:not(.is-print-mode) #pathTalentsTable thead th:nth-child(2),
+  body:not(.is-print-mode) #featsTable thead th:nth-child(2),
+  body:not(.is-print-mode) #quirksTable thead th:nth-child(2),
+  body:not(.is-print-mode) #detractorsTable thead th:nth-child(2),
+  body:not(.is-print-mode) #cyberImplantsTable thead th:nth-child(2),
+  body:not(.is-print-mode) #cyberDrawbacksTable thead th:nth-child(2),
+  body:not(.is-print-mode) .prof-talents-table thead th:nth-child(2),
+  body:not(.is-print-mode) .pa-mods-table thead th:nth-child(2),
+  body:not(.is-print-mode) #mutationsDrawbacksTable thead th:nth-child(2),
+  body:not(.is-print-mode) #mutationsDrawbacksTable thead th:nth-child(3),
+  body:not(.is-print-mode) #mutationsEnhancementsTable thead th:nth-child(2),
+  body:not(.is-print-mode) #mutationsEnhancementsTable thead th:nth-child(3),
+  body:not(.is-print-mode) #psionicsDrawbacksTable thead th:nth-child(2),
+  body:not(.is-print-mode) #psionicsDrawbacksTable thead th:nth-child(3),
+  body:not(.is-print-mode) .techniques-sub-table thead th:nth-child(2),
+  body:not(.is-print-mode) .techniques-sub-table thead th:nth-child(3),
+  body:not(.is-print-mode) .psionic-sub-table thead th:nth-child(2),
+  body:not(.is-print-mode) .psionic-sub-table thead th:nth-child(3) {
+    display: none !important;
+  }
+
+  body:not(.is-print-mode) #speciesTraitsTable thead th:first-child,
+  body:not(.is-print-mode) #pathTalentsTable thead th:first-child,
+  body:not(.is-print-mode) #featsTable thead th:first-child,
+  body:not(.is-print-mode) #quirksTable thead th:first-child,
+  body:not(.is-print-mode) #detractorsTable thead th:first-child,
+  body:not(.is-print-mode) #cyberImplantsTable thead th:first-child,
+  body:not(.is-print-mode) #cyberDrawbacksTable thead th:first-child,
+  body:not(.is-print-mode) .prof-talents-table thead th:first-child,
+  body:not(.is-print-mode) .pa-mods-table thead th:first-child,
+  body:not(.is-print-mode) #mutationsDrawbacksTable thead th:first-child,
+  body:not(.is-print-mode) #mutationsEnhancementsTable thead th:first-child,
+  body:not(.is-print-mode) #psionicsDrawbacksTable thead th:first-child,
+  body:not(.is-print-mode) .techniques-sub-table thead th:first-child,
+  body:not(.is-print-mode) .psionic-sub-table thead th:first-child {
+    flex: 1 1 auto !important;
+    border: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  body:not(.is-print-mode) #speciesTraitsTable thead th:last-child,
+  body:not(.is-print-mode) #pathTalentsTable thead th:last-child,
+  body:not(.is-print-mode) #featsTable thead th:last-child,
+  body:not(.is-print-mode) #quirksTable thead th:last-child,
+  body:not(.is-print-mode) #detractorsTable thead th:last-child,
+  body:not(.is-print-mode) #cyberImplantsTable thead th:last-child,
+  body:not(.is-print-mode) #cyberDrawbacksTable thead th:last-child,
+  body:not(.is-print-mode) .prof-talents-table thead th:last-child,
+  body:not(.is-print-mode) .pa-mods-table thead th:last-child,
+  body:not(.is-print-mode) #mutationsDrawbacksTable thead th:last-child,
+  body:not(.is-print-mode) #mutationsEnhancementsTable thead th:last-child,
+  body:not(.is-print-mode) #psionicsDrawbacksTable thead th:last-child,
+  body:not(.is-print-mode) .techniques-sub-table thead th:last-child,
+  body:not(.is-print-mode) .psionic-sub-table thead th:last-child {
+    flex: 0 0 auto !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    width: auto !important;
+  }
+
+  /* 3-Column Tables: Line 1 (Name + Trash), Line 2 (Description) */
+  body:not(.is-print-mode) #speciesTraitsTable tbody tr,
+  body:not(.is-print-mode) #pathTalentsTable tbody tr,
+  body:not(.is-print-mode) #featsTable tbody tr,
+  body:not(.is-print-mode) #quirksTable tbody tr,
+  body:not(.is-print-mode) #detractorsTable tbody tr,
+  body:not(.is-print-mode) #cyberImplantsTable tbody tr,
+  body:not(.is-print-mode) #cyberDrawbacksTable tbody tr,
+  body:not(.is-print-mode) .prof-talents-table tbody tr,
+  body:not(.is-print-mode) .pa-mods-table tbody tr {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 4px 6px 6px !important;
+    border-bottom: 1px solid var(--card-border, #444) !important;
+    gap: 4px 0 !important;
+  }
+
+  body:not(.is-print-mode) #speciesTraitsTable tbody tr > td:first-child,
+  body:not(.is-print-mode) #pathTalentsTable tbody tr > td:first-child,
+  body:not(.is-print-mode) #featsTable tbody tr > td:first-child,
+  body:not(.is-print-mode) #quirksTable tbody tr > td:first-child,
+  body:not(.is-print-mode) #detractorsTable tbody tr > td:first-child,
+  body:not(.is-print-mode) #cyberImplantsTable tbody tr > td:first-child,
+  body:not(.is-print-mode) #cyberDrawbacksTable tbody tr > td:first-child,
+  body:not(.is-print-mode) .prof-talents-table tbody tr > td:first-child,
+  body:not(.is-print-mode) .pa-mods-table tbody tr > td:first-child {
+    order: 1 !important;
+    flex: 1 1 calc(100% - 44px) !important;
+    max-width: calc(100% - 44px) !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #speciesTraitsTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #pathTalentsTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #featsTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #quirksTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #detractorsTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #cyberImplantsTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #cyberDrawbacksTable tbody tr > td:last-child,
+  body:not(.is-print-mode) .prof-talents-table tbody tr > td:last-child,
+  body:not(.is-print-mode) .pa-mods-table tbody tr > td:last-child {
+    order: 2 !important;
+    flex: 0 0 38px !important;
+    max-width: 38px !important;
+    padding: 0 !important;
+    border: none !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+
+  body:not(.is-print-mode) #speciesTraitsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #pathTalentsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #featsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #quirksTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #detractorsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #cyberImplantsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #cyberDrawbacksTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) .prof-talents-table tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) .pa-mods-table tbody tr > td:nth-child(2) {
+    order: 3 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* 4-Column Tables: Line 1 (Name + Attribute + Trash), Line 2 (Description) */
+  body:not(.is-print-mode) #mutationsDrawbacksTable tbody tr,
+  body:not(.is-print-mode) #mutationsEnhancementsTable tbody tr,
+  body:not(.is-print-mode) #psionicsDrawbacksTable tbody tr,
+  body:not(.is-print-mode) .techniques-sub-table tbody tr,
+  body:not(.is-print-mode) .psionic-sub-table tbody tr {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 4px 6px 6px !important;
+    border-bottom: 1px solid var(--card-border, #444) !important;
+    gap: 4px 6px !important;
+  }
+
+  body:not(.is-print-mode) #mutationsDrawbacksTable tbody tr > td:nth-child(1),
+  body:not(.is-print-mode) #mutationsEnhancementsTable tbody tr > td:nth-child(1),
+  body:not(.is-print-mode) #psionicsDrawbacksTable tbody tr > td:nth-child(1),
+  body:not(.is-print-mode) .techniques-sub-table tbody tr > td:nth-child(1),
+  body:not(.is-print-mode) .psionic-sub-table tbody tr > td:nth-child(1) {
+    order: 1 !important;
+    flex: 1 1 calc(100% - 120px) !important;
+    min-width: 120px !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #mutationsDrawbacksTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #mutationsEnhancementsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #psionicsDrawbacksTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) .techniques-sub-table tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) .psionic-sub-table tbody tr > td:nth-child(2) {
+    order: 2 !important;
+    flex: 0 0 65px !important;
+    max-width: 75px !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #mutationsDrawbacksTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #mutationsEnhancementsTable tbody tr > td:last-child,
+  body:not(.is-print-mode) #psionicsDrawbacksTable tbody tr > td:last-child,
+  body:not(.is-print-mode) .techniques-sub-table tbody tr > td:last-child,
+  body:not(.is-print-mode) .psionic-sub-table tbody tr > td:last-child {
+    order: 3 !important;
+    flex: 0 0 38px !important;
+    max-width: 38px !important;
+    padding: 0 !important;
+    border: none !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+
+  body:not(.is-print-mode) #mutationsDrawbacksTable tbody tr > td:nth-child(3),
+  body:not(.is-print-mode) #mutationsEnhancementsTable tbody tr > td:nth-child(3),
+  body:not(.is-print-mode) #psionicsDrawbacksTable tbody tr > td:nth-child(3),
+  body:not(.is-print-mode) .techniques-sub-table tbody tr > td:nth-child(3),
+  body:not(.is-print-mode) .psionic-sub-table tbody tr > td:nth-child(3) {
+    order: 4 !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) .trait-desc-textarea,
+  body:not(.is-print-mode) textarea[name*="Desc"],
+  body:not(.is-print-mode) textarea[name*="Effect"] {
+    cursor: pointer !important;
+    min-height: 31px !important;
+    font-size: 0.82rem !important;
+  }
 }
 
 .trait-desc-textarea {
@@ -572,7 +1169,7 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   color: #e9d5ff;
 }
 
-@media (width <= 1399.98px) {
+@media (768px <= width <= 1399.98px) {
   .badge-natural {
     font-size: 0 !important;
     padding: 0.2em 0.45em !important;
@@ -997,6 +1594,14 @@ body.is-print-mode {
 }
 
 /* Page break rules for printable sheet pages */
+body.is-print-mode main.container-fluid,
+body.is-print-mode #characterForm {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
 body.is-print-mode [id^="page-"],
 body.is-print-mode [class*="print-page-"],
 body.is-print-mode .dynamic-page {
@@ -1004,12 +1609,86 @@ body.is-print-mode .dynamic-page {
   break-inside: avoid !important;
   margin-top: 0 !important;
   padding-top: 0.25in !important;
+  width: 7.75in !important;
+  max-width: 7.75in !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
 }
 
 body.is-print-mode [id^="page-"]:last-of-type,
 body.is-print-mode [class*="print-page-"]:last-of-type,
 body.is-print-mode .dynamic-page:last-of-type {
   break-after: auto !important;
+}
+
+/* Force standard 2-column and grid card layouts in print mode on all device widths */
+body.is-print-mode .col-skills-side {
+  width: 45% !important;
+  flex: 0 0 45% !important;
+  max-width: 45% !important;
+  order: 1 !important;
+}
+
+body.is-print-mode .col-armor-side {
+  width: 55% !important;
+  flex: 0 0 55% !important;
+  max-width: 55% !important;
+  order: 2 !important;
+}
+
+body.is-print-mode .col-card-abilities {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+  width: 50% !important;
+}
+
+body.is-print-mode .col-card-health {
+  flex: 0 0 25% !important;
+  max-width: 25% !important;
+  width: 25% !important;
+}
+
+body.is-print-mode .col-card-attributes {
+  flex: 0 0 25% !important;
+  max-width: 25% !important;
+  width: 25% !important;
+}
+
+body.is-print-mode .col-card-armor {
+  flex: 0 0 55% !important;
+  max-width: 55% !important;
+  width: 55% !important;
+}
+
+body.is-print-mode .col-card-dr {
+  flex: 0 0 22.5% !important;
+  max-width: 22.5% !important;
+  width: 22.5% !important;
+}
+
+body.is-print-mode .col-card-speed {
+  flex: 0 0 22.5% !important;
+  max-width: 22.5% !important;
+  width: 22.5% !important;
+}
+
+body.is-print-mode .col-12.col-lg-6,
+body.is-print-mode .col-lg-6,
+body.is-print-mode .col-12.col-xl-6,
+body.is-print-mode .col-xl-6,
+body.is-print-mode .col-12.col-xxl-6,
+body.is-print-mode .col-xxl-6 {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+  width: 50% !important;
+}
+
+body.is-print-mode .col-12.col-lg-12,
+body.is-print-mode .col-lg-12 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 /* Print Footer - Hidden by default on screen */
@@ -1522,24 +2201,38 @@ body.is-print-mode #collapseWealthXP .stat-label {
   font-weight: 700 !important;
 }
 
+body.is-print-mode #collapseWealthXP .input-group {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
 body.is-print-mode #collapseWealthXP .form-control {
-  height: 13px !important;
-  font-size: 6.5pt !important;
-  padding: 0 1px !important;
-  margin-bottom: 0 !important;
+  height: 15px !important;
+  font-size: 7.2pt !important;
+  padding: 0 2px !important;
+  margin: 0 !important;
   border: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
+  text-align: center !important;
+  flex: 1 1 auto !important;
+  width: auto !important;
+  max-width: 100% !important;
 }
 
 body.is-print-mode #collapseWealthXP .input-group-text {
-  height: 13px !important;
-  font-size: 6pt !important;
-  padding: 0 1px !important;
+  height: 15px !important;
+  font-size: 6.5pt !important;
+  padding: 0 2px !important;
   background-color: transparent !important;
   border: none !important;
   border-bottom: none !important;
+  color: #000 !important;
+  line-height: 15px !important;
 }
 
 /* Techniques card print styles */
@@ -1628,6 +2321,17 @@ body.is-print-mode .psionic-sub-table th:nth-child(2),
 body.is-print-mode .psionic-sub-table td:nth-child(2) {
   width: 65px !important;
   max-width: 65px !important;
+}
+
+body.is-print-mode #mutationsDrawbacksTable th:nth-child(2),
+body.is-print-mode #mutationsDrawbacksTable td:nth-child(2),
+body.is-print-mode #mutationsEnhancementsTable th:nth-child(2),
+body.is-print-mode #mutationsEnhancementsTable td:nth-child(2),
+body.is-print-mode #psionicsDrawbacksTable th:nth-child(2),
+body.is-print-mode #psionicsDrawbacksTable td:nth-child(2) {
+  width: 35px !important;
+  max-width: 35px !important;
+  text-align: center !important;
 }
 
 /* Power Armor card print styles */
@@ -1748,10 +2452,9 @@ body.is-print-mode .ac-comp-input {
 
 body.is-print-mode #healthInjuryCard input,
 body.is-print-mode #healthInjuryCard .form-control,
-body.is-print-mode .stat-box .form-control,
-body.is-print-mode .stat-box input,
+body.is-print-mode .stat-box:not(#collapseWealthXP .stat-box) .form-control:not(.input-group *),
+body.is-print-mode .stat-box:not(#collapseWealthXP .stat-box) input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
 body.is-print-mode .stat-box select,
-body.is-print-mode .ability-stat-input,
 body.is-print-mode .hp-stat-input {
   width: 100% !important;
   max-width: 100% !important;
@@ -1949,12 +2652,12 @@ body.is-print-mode #armorTable {
 
 body.is-print-mode #armorTable th:nth-child(1),
 body.is-print-mode #armorTable td:nth-child(1) {
-  width: 45% !important;
+  width: 38% !important;
 }
 
 body.is-print-mode #armorTable th:nth-child(2),
 body.is-print-mode #armorTable td:nth-child(2) {
-  width: 13% !important;
+  width: 12% !important;
 }
 
 body.is-print-mode #armorTable th:nth-child(3),
@@ -1964,12 +2667,17 @@ body.is-print-mode #armorTable td:nth-child(3) {
 
 body.is-print-mode #armorTable th:nth-child(4),
 body.is-print-mode #armorTable td:nth-child(4) {
-  width: 16% !important;
+  width: 14% !important;
 }
 
 body.is-print-mode #armorTable th:nth-child(5),
 body.is-print-mode #armorTable td:nth-child(5) {
-  width: 16% !important;
+  width: 12% !important;
+}
+
+body.is-print-mode #armorTable th:nth-child(6),
+body.is-print-mode #armorTable td:nth-child(6) {
+  width: 14% !important;
 }
 
 /* Weapons Table Print Column Widths */
@@ -2071,14 +2779,25 @@ body.is-print-mode .badge-rank-dep::after {
 
 body.is-print-mode input[type="checkbox"],
 body.is-print-mode .form-check-input {
-  background-color: #fff !important;
-  background-image: none !important;
-  border: 1px solid #000 !important;
   appearance: none !important;
-  box-shadow: none !important;
   width: 10px !important;
   height: 10px !important;
+  min-width: 10px !important;
+  min-height: 10px !important;
+  border: 1px solid #000 !important;
+  border-radius: 2px !important;
+  background-color: #fff !important;
+  background-image: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  margin: 0 !important;
   vertical-align: middle !important;
+  cursor: default !important;
+  box-shadow: none !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
 
 body.is-print-mode input[type="checkbox"]:checked,
@@ -2087,6 +2806,64 @@ body.is-print-mode .form-check-input:checked {
   border-color: #000 !important;
   color: #fff !important;
 }
+
+body.is-print-mode input[type="checkbox"]:checked::after,
+body.is-print-mode .form-check-input:checked::after {
+  content: "✓" !important;
+  font-size: 8px !important;
+  line-height: 1 !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* Ability Scores Card Print Alignment & Fonts */
+body.is-print-mode #collapseAbilities .d-flex {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  margin-bottom: 2px !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+body.is-print-mode #collapseAbilities input.form-check-input {
+  width: 10px !important;
+  height: 10px !important;
+  min-width: 10px !important;
+  max-width: 10px !important;
+  flex: 0 0 10px !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+}
+
+body.is-print-mode #collapseAbilities label.stat-label {
+  font-size: 8.5pt !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  display: inline-block !important;
+  text-align: center !important;
+  flex: 0 0 auto !important;
+}
+
+body.is-print-mode #collapseAbilities .ability-stat-input {
+  width: 32px !important;
+  max-width: 36px !important;
+  margin: 1px auto !important;
+  height: 15px !important;
+  text-align: center !important;
+}
+
+body.is-print-mode #collapseAbilities label.text-ability-str { color: #e11d48 !important; }
+body.is-print-mode #collapseAbilities label.text-ability-dex { color: #4d7c0f !important; }
+body.is-print-mode #collapseAbilities label.text-ability-con { color: #d97706 !important; }
+body.is-print-mode #collapseAbilities label.text-ability-int { color: #1d4ed8 !important; }
+body.is-print-mode #collapseAbilities label.text-ability-wis { color: #6d28d9 !important; }
+body.is-print-mode #collapseAbilities label.text-ability-cha { color: #be185d !important; }
 
 body.is-print-mode .prof-check-item .form-check-input:checked + .prof-num-label {
   color: #000 !important;
@@ -2145,12 +2922,32 @@ body.is-print-mode .col-skills-side {
   margin-top: 0.15rem !important;
 }
 
+body.is-print-mode .col-skills-side #SpeedCard {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+}
+
 body.is-print-mode .col-armor-side {
   width: 50% !important;
   flex: 0 0 50% !important;
   max-width: 50% !important;
   order: 2 !important;
   margin-top: 0.15rem !important;
+}
+
+body.is-print-mode:has(.col-skills-side #SpeedCard) #drSpeedRow #drCardCol,
+body.is-print-mode:has(.col-skills-side #SpeedCard) #drSpeedRow #speedCardCol {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
+body.is-print-mode:not(:has(.col-skills-side #SpeedCard)) #drSpeedRow #drCardCol,
+body.is-print-mode:not(:has(.col-skills-side #SpeedCard)) #drSpeedRow #speedCardCol {
+  width: 50% !important;
+  max-width: 50% !important;
+  flex: 0 0 50% !important;
 }
 
 body.is-print-mode .col-12.col-lg-6,
@@ -2239,10 +3036,9 @@ body.is-print-mode .col-lg-6 {
 
   #healthInjuryCard input,
   #healthInjuryCard .form-control,
-  .stat-box .form-control,
-  .stat-box input,
+  .stat-box:not(#collapseWealthXP .stat-box) .form-control:not(.input-group *),
+  .stat-box:not(#collapseWealthXP .stat-box) input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
   .stat-box select,
-  .ability-stat-input,
   .hp-stat-input {
     width: 100% !important;
     max-width: 100% !important;
@@ -2288,6 +3084,25 @@ body.is-print-mode .col-lg-6 {
     padding: 4px 6px !important;
   }
 
+  .col-skills-side #SpeedCard {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+  }
+
+  body:has(.col-skills-side #SpeedCard) #drSpeedRow #drCardCol,
+  body:has(.col-skills-side #SpeedCard) #drSpeedRow #speedCardCol {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  body:not(:has(.col-skills-side #SpeedCard)) #drSpeedRow #drCardCol,
+  body:not(:has(.col-skills-side #SpeedCard)) #drSpeedRow #speedCardCol {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+  }
 
   #collapseSpeed .card-body {
     padding: 2px 6px !important;
@@ -2551,16 +3366,86 @@ body.is-print-mode .col-lg-6 {
     font-weight: 700 !important;
   }
 
+  #collapseWealthXP .input-group {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
   #collapseWealthXP .form-control {
-    height: 13px !important;
-    font-size: 6.5pt !important;
-    padding: 0 1px !important;
-    margin-bottom: 0 !important;
+    height: 15px !important;
+    font-size: 7.2pt !important;
+    padding: 0 2px !important;
+    margin: 0 !important;
     border: none !important;
     border-bottom: none !important;
     box-shadow: none !important;
     background-color: transparent !important;
+    text-align: center !important;
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: 100% !important;
   }
+
+  #collapseWealthXP .input-group-text {
+    height: 15px !important;
+    font-size: 6.5pt !important;
+    padding: 0 2px !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    color: #000 !important;
+    line-height: 15px !important;
+  }
+
+  /* Ability Scores Print Alignment & Fonts */
+  #collapseAbilities .d-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 3px !important;
+    margin-bottom: 2px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  #collapseAbilities input.form-check-input {
+    width: 10px !important;
+    height: 10px !important;
+    min-width: 10px !important;
+    max-width: 10px !important;
+    flex: 0 0 10px !important;
+    margin: 0 !important;
+    display: inline-block !important;
+  }
+
+  #collapseAbilities label.stat-label {
+    font-size: 8.5pt !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    text-align: center !important;
+    flex: 0 0 auto !important;
+  }
+
+  #collapseAbilities .ability-stat-input {
+    width: 32px !important;
+    max-width: 36px !important;
+    margin: 1px auto !important;
+    height: 15px !important;
+    text-align: center !important;
+  }
+
+  #collapseAbilities label.text-ability-str { color: #e11d48 !important; }
+  #collapseAbilities label.text-ability-dex { color: #4d7c0f !important; }
+  #collapseAbilities label.text-ability-con { color: #d97706 !important; }
+  #collapseAbilities label.text-ability-int { color: #1d4ed8 !important; }
+  #collapseAbilities label.text-ability-wis { color: #6d28d9 !important; }
+  #collapseAbilities label.text-ability-cha { color: #be185d !important; }
 
   #collapseTechniques .card-body {
     padding: 2px 6px !important;
@@ -2695,6 +3580,17 @@ body.is-print-mode .col-lg-6 {
   .psionic-sub-table td:nth-child(2) {
     width: 65px !important;
     max-width: 65px !important;
+  }
+
+  #mutationsDrawbacksTable th:nth-child(2),
+  #mutationsDrawbacksTable td:nth-child(2),
+  #mutationsEnhancementsTable th:nth-child(2),
+  #mutationsEnhancementsTable td:nth-child(2),
+  #psionicsDrawbacksTable th:nth-child(2),
+  #psionicsDrawbacksTable td:nth-child(2) {
+    width: 35px !important;
+    max-width: 35px !important;
+    text-align: center !important;
   }
 
   #collapsePowerArmor .card-body {

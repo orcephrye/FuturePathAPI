@@ -13,14 +13,47 @@ from FuturePathAPI.libs import DBConnection, loadYamlDBConfig
 log = logging.getLogger("ReferenceData")
 
 CHARACTER_PATHS = [
-    "Path of Strength (Strong Hero)",
-    "Path of Dexterity (Fast Hero)",
-    "Path of Constitution (Tough Hero)",
-    "Path of Intelligence (Smart Hero)",
-    "Path of Wisdom (Dedicated Hero)",
-    "Path of Charisma (Charismatic Hero)",
-    "Path of No Path (The Freelancer)",
-    "Ovex Path",
+    {
+        "Name": "Path of Strength (Strong Hero)",
+        "Affinity": "Strength",
+    },
+    {
+        "Name": "Path of Dexterity (Fast Hero)",
+        "Affinity": "Dexterity",
+    },
+    {
+        "Name": "Path of Constitution (Tough Hero)",
+        "Affinity": "Constitution",
+    },
+    {
+        "Name": "Path of Intelligence (Smart Hero)",
+        "Affinity": "Intelligence",
+    },
+    {
+        "Name": "Path of Wisdom (Dedicated Hero)",
+        "Affinity": "Wisdom",
+    },
+    {
+        "Name": "Path of Charisma (Charismatic Hero)",
+        "Affinity": "Charisma",
+    },
+    {
+        "Name": "Path of No Path (The Freelancer)",
+    },
+    {
+        "Name": "Ovex Path (Fighter Module)",
+    },
+    {
+        "Name": "Ovex Path (Leadership Module)",
+    },
+    {
+        "Name": "Ovex Path (Specialist Module)",
+        "Affinity": "Intelligence",
+    },
+    {
+        "Name": "Ovex Path (Assistance Module)",
+        "Affinity": "Wisdom",
+    },
 ]
 
 SPECIES = [
@@ -42,21 +75,66 @@ SPECIES = [
 ]
 
 PROFESSIONS = [
-    "Combat Medic",
-    "Dimension Knight",
-    "Dreadnought",
-    "Engineer",
-    "Envoy",
-    "Electro-Mancer",
-    "Field Officer",
-    "Helix Warrior",
-    "Shield Splicer",
-    "Space Marine",
-    "Starfighter",
-    "Swindler",
-    "Technosavant",
-    "Tracer",
-    "Xenophile",
+    {
+        "Name": "Combat Medic",
+        "Affinity": ["Wisdom", "Dexterity"],
+    },
+    {
+        "Name": "Dimension Knight",
+        "Affinity": ["Strength", "Wisdom"],
+    },
+    {
+        "Name": "Dreadnought",
+        "Affinity": ["Dexterity", "Constitution"],
+    },
+    {
+        "Name": "Engineer",
+        "Affinity": ["Intelligence", "Constitution"],
+    },
+    {
+        "Name": "Envoy",
+        "Affinity": ["Charisma", "Wisdom"],
+    },
+    {
+        "Name": "Electro-Mancer",
+        "Affinity": ["Intelligence", "Dexterity"],
+    },
+    {
+        "Name": "Field Officer",
+        "Affinity": ["Charisma", "Wisdom"],
+    },
+    {
+        "Name": "Helix Warrior",
+        "Affinity": ["Strength", "Wisdom"],
+    },
+    {
+        "Name": "Shield Splicer",
+        "Affinity": ["Constitution", "Wisdom"],
+    },
+    {
+        "Name": "Space Marine",
+        "Affinity": ["Dexterity", "Strength"],
+    },
+    {
+        "Name": "Starfighter",
+        "Affinity": ["Dexterity", "Charisma"],
+    },
+    {
+        "Name": "Swindler",
+        "Affinity": ["Charisma", "Dexterity"],
+    },
+    {
+        "Name": "Technosavant",
+        "Affinity": ["Intelligence", "Wisdom"],
+    },
+    {
+        "Name": "Tracer",
+        "Affinity": ["Wisdom", "Intelligence"],
+    },
+    {
+        "Name": "Xenophile",
+        "Affinity": ["Wisdom", "Charisma"],
+    },
 ]
 
 OCCUPATIONS = [
@@ -963,9 +1041,9 @@ def init_reference_tables(db_conn=None):
         return None
 
     tables_data = {
-        "character_paths": [{"name": item} for item in CHARACTER_PATHS],
+        "character_paths": CHARACTER_PATHS,
         "species": [{"name": item} for item in SPECIES],
-        "professions": [{"name": item} for item in PROFESSIONS],
+        "professions": PROFESSIONS,
         "occupations": [{"name": item} for item in OCCUPATIONS],
         "advantage_die_levels": [
             {"level": i + 1, "die": item} for i, item in enumerate(ADVANTAGE_DIE_LEVELS)

@@ -107,7 +107,7 @@
 </div>
 </div>
 </div>
-<main class="container-fluid px-4">
+<main class="container-fluid px-1">
 <form id="characterForm">
 <!-- ==========================================
            PAGE 1: CORE IDENTITY, STATS & COMBAT
@@ -167,12 +167,23 @@
 <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-identity-path">
 <label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Path</label>
 <div class="input-group">
-<label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" placeholder="e.g. Path of Strength" type="text"/>
+<label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" onchange="handlePathChange(this.value)" placeholder="e.g. Path of Strength" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="charPathDropdownBtn" onclick="toggleDatalist('identityCard_charPath')" title="Show Path Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
 </div>
 <datalist id="charPathDatalist">
+<option value="Path of Strength (Strong Hero)"></option>
+<option value="Path of Dexterity (Fast Hero)"></option>
+<option value="Path of Constitution (Tough Hero)"></option>
+<option value="Path of Intelligence (Smart Hero)"></option>
+<option value="Path of Wisdom (Dedicated Hero)"></option>
+<option value="Path of Charisma (Charismatic Hero)"></option>
+<option value="Path of No Path (The Freelancer)"></option>
+<option value="Ovex Path (Fighter Module)"></option>
+<option value="Ovex Path (Leadership Module)"></option>
+<option value="Ovex Path (Specialist Module)"></option>
+<option value="Ovex Path (Assistance Module)"></option>
 </datalist>
 </div>
 <div class="col-6 col-sm-3 col-md-1 col-lg-1 col-identity-level">
@@ -184,7 +195,10 @@
 <input class="form-control" id="identityCard_classList" name="classList" type="text"/>
 </div>
 <div class="col-12 col-sm-6 col-md-3 col-identity-alignment">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_alignment">Alignment</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_alignment">
+<span class="d-none d-xl-inline d-print-none">Alignment / Factions</span>
+<span class="d-inline d-xl-none d-print-inline">Alignment</span>
+</label>
 <input class="form-control" id="identityCard_alignment" name="alignment" type="text"/>
 </div>
 <div class="col-6 col-sm-4 col-md-1 col-identity-size">
@@ -226,8 +240,8 @@
 <div aria-controls="collapseAbilities" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseAbilities">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span class="d-none d-xl-inline"><i class="fa-solid fa-dumbbell me-2"></i>Ability Themes (STR, DEX, CON, INT, WIS, CHA)</span>
-<span class="d-inline d-xl-none"><i class="fa-solid fa-dumbbell me-2"></i>Ability Themes</span>
+<span class="d-none d-xl-inline"><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Ability_Themes" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Ability Themes on d20futurepath.com"><i class="fa-solid fa-dumbbell"></i></a>Ability Themes (STR, DEX, CON, INT, WIS, CHA)</span>
+<span class="d-inline d-xl-none"><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Ability_Themes" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Ability Themes on d20futurepath.com"><i class="fa-solid fa-dumbbell"></i></a>Ability Themes</span>
 </div>
 <small class="text-muted d-none d-xl-inline">
 <span class="d-none d-xxl-inline">Modifier = Math.floor (Score/2)-5</span>
@@ -242,7 +256,7 @@
 <div class="stat-box stat-box-str">
 <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
 <label class="visually-hidden" for="abilityScoresCard_primaryAbility_STR">Primaryability_Str</label><input class="form-check-input mt-0" id="abilityScoresCard_primaryAbility_STR" name="primaryAbility_STR" type="checkbox"/>
-<label class="stat-label fw-bold fs-6 text-ability-str mb-0" for="primaryAbility_STR" style="cursor: pointer;">STR</label>
+<label class="stat-label fw-bold fs-6 text-ability-str mb-0" for="abilityScoresCard_primaryAbility_STR" style="cursor: pointer;">STR</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('STR')" style="cursor: pointer;" title="Roll STR Check"></i>
 </div>
 <label class="visually-hidden" for="abilityScoresCard_scoreSTR">Scorestr</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreSTR" inputmode="numeric" name="scoreSTR" type="text"/>
@@ -255,7 +269,7 @@
 <div class="stat-box stat-box-dex">
 <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
 <label class="visually-hidden" for="abilityScoresCard_primaryAbility_DEX">Primaryability_Dex</label><input class="form-check-input mt-0" id="abilityScoresCard_primaryAbility_DEX" name="primaryAbility_DEX" type="checkbox"/>
-<label class="stat-label fw-bold fs-6 text-ability-dex mb-0" for="primaryAbility_DEX" style="cursor: pointer;">DEX</label>
+<label class="stat-label fw-bold fs-6 text-ability-dex mb-0" for="abilityScoresCard_primaryAbility_DEX" style="cursor: pointer;">DEX</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('DEX')" style="cursor: pointer;" title="Roll DEX Check"></i>
 </div>
 <label class="visually-hidden" for="abilityScoresCard_scoreDEX">Scoredex</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreDEX" inputmode="numeric" name="scoreDEX" type="text"/>
@@ -268,7 +282,7 @@
 <div class="stat-box stat-box-con">
 <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
 <label class="visually-hidden" for="abilityScoresCard_primaryAbility_CON">Primaryability_Con</label><input class="form-check-input mt-0" id="abilityScoresCard_primaryAbility_CON" name="primaryAbility_CON" type="checkbox"/>
-<label class="stat-label fw-bold fs-6 text-ability-con mb-0" for="primaryAbility_CON" style="cursor: pointer;">CON</label>
+<label class="stat-label fw-bold fs-6 text-ability-con mb-0" for="abilityScoresCard_primaryAbility_CON" style="cursor: pointer;">CON</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('CON')" style="cursor: pointer;" title="Roll CON Check"></i>
 </div>
 <label class="visually-hidden" for="abilityScoresCard_scoreCON">Scorecon</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreCON" inputmode="numeric" name="scoreCON" type="text"/>
@@ -281,7 +295,7 @@
 <div class="stat-box stat-box-int">
 <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
 <label class="visually-hidden" for="abilityScoresCard_primaryAbility_INT">Primaryability_Int</label><input class="form-check-input mt-0" id="abilityScoresCard_primaryAbility_INT" name="primaryAbility_INT" type="checkbox"/>
-<label class="stat-label fw-bold fs-6 text-ability-int mb-0" for="primaryAbility_INT" style="cursor: pointer;">INT</label>
+<label class="stat-label fw-bold fs-6 text-ability-int mb-0" for="abilityScoresCard_primaryAbility_INT" style="cursor: pointer;">INT</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('INT')" style="cursor: pointer;" title="Roll INT Check"></i>
 </div>
 <label class="visually-hidden" for="abilityScoresCard_scoreINT">Scoreint</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreINT" inputmode="numeric" name="scoreINT" type="text"/>
@@ -294,7 +308,7 @@
 <div class="stat-box stat-box-wis">
 <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
 <label class="visually-hidden" for="abilityScoresCard_primaryAbility_WIS">Primaryability_Wis</label><input class="form-check-input mt-0" id="abilityScoresCard_primaryAbility_WIS" name="primaryAbility_WIS" type="checkbox"/>
-<label class="stat-label fw-bold fs-6 text-ability-wis mb-0" for="primaryAbility_WIS" style="cursor: pointer;">WIS</label>
+<label class="stat-label fw-bold fs-6 text-ability-wis mb-0" for="abilityScoresCard_primaryAbility_WIS" style="cursor: pointer;">WIS</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('WIS')" style="cursor: pointer;" title="Roll WIS Check"></i>
 </div>
 <label class="visually-hidden" for="abilityScoresCard_scoreWIS">Scorewis</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreWIS" inputmode="numeric" name="scoreWIS" type="text"/>
@@ -307,7 +321,7 @@
 <div class="stat-box stat-box-cha">
 <div class="d-flex align-items-center justify-content-center gap-1 mb-1">
 <label class="visually-hidden" for="abilityScoresCard_primaryAbility_CHA">Primaryability_Cha</label><input class="form-check-input mt-0" id="abilityScoresCard_primaryAbility_CHA" name="primaryAbility_CHA" type="checkbox"/>
-<label class="stat-label fw-bold fs-6 text-ability-cha mb-0" for="primaryAbility_CHA" style="cursor: pointer;">CHA</label>
+<label class="stat-label fw-bold fs-6 text-ability-cha mb-0" for="abilityScoresCard_primaryAbility_CHA" style="cursor: pointer;">CHA</label>
 <i class="fa-solid fa-dice text-cyan no-print roll-ability-btn" onclick="rollAbilityCheck('CHA')" style="cursor: pointer;" title="Roll CHA Check"></i>
 </div>
 <label class="visually-hidden" for="abilityScoresCard_scoreCHA">Scorecha</label><input class="form-control form-control-sm text-center my-1 fw-bold ability-stat-input" id="abilityScoresCard_scoreCHA" inputmode="numeric" name="scoreCHA" type="text"/>
@@ -326,7 +340,7 @@
 <div aria-controls="collapseHealth" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseHealth">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-heart-pulse me-2"></i>Health &amp; Injury</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Health_and_Injury" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Health &amp; Injury on d20futurepath.com"><i class="fa-solid fa-heart-pulse"></i></a>Health &amp; Injury</span>
 </div>
 <small class="text-muted d-none d-xl-inline">Vitality</small>
 </div>
@@ -445,11 +459,11 @@
 <div class="row g-3 mt-0 mb-1">
 <!-- LEFT COLUMN (45% Desktop / 100% Mobile): Skills Sheet Card -->
 <div class="col-12 col-lg-5 col-skills-side">
-<div class="sheet-card mb-0" id="coreSkills">
+<div class="sheet-card" id="coreSkills">
 <div aria-controls="collapseCoreSkills" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-1 py-2 px-3" data-bs-target="#collapseCoreSkills">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-list-check me-2"></i>Skills</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Skills" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Skills on d20futurepath.com"><i class="fa-solid fa-list-check"></i></a>Skills</span>
 </div>
 <div class="d-inline-flex align-items-center flex-wrap gap-2 ms-auto no-collapse">
 <div class="d-flex align-items-center gap-1">
@@ -1153,7 +1167,7 @@
 <!-- RIGHT COLUMN (55% Desktop / 100% Mobile): Armor Stats, Damage Reduction, Speed, Armor & Weapons -->
 <div class="col-12 col-lg-7 col-armor-side">
 <!-- Armor Stats Card -->
-<div class="sheet-card mb-1" id="ArmorStatsCard">
+<div class="sheet-card" id="ArmorStatsCard">
 <div aria-controls="collapseArmorStats" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between" data-bs-target="#collapseArmorStats">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
@@ -1233,10 +1247,10 @@
 </div>
 </div>
 <!-- DR & Speed Row -->
-<div class="row g-2 mt-0">
+<div class="row g-2 mt-0" id="drSpeedRow">
 <!-- Damage Reduction (DR) Card -->
-<div class="col-12 col-md-6">
-<div class="sheet-card mb-1" id="DamageReductionCard">
+<div class="col-12 col-md-6" id="drCardCol">
+<div class="sheet-card" id="DamageReductionCard">
 <div aria-controls="collapseDR" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseDR">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
@@ -1282,8 +1296,8 @@
 </div>
 </div>
 <!-- Speed Card -->
-<div class="col-12 col-md-6">
-<div class="sheet-card mb-1" id="SpeedCard">
+<div class="col-12 col-md-6" id="speedCardCol">
+<div class="sheet-card" id="SpeedCard">
 <div aria-controls="collapseSpeed" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseSpeed">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
@@ -1339,11 +1353,11 @@
 </div>
 </div>
 <!-- Armor & Defensive Equipment -->
-<div class="sheet-card mt-1" data-default-page="1" id="armorDefensesCard">
+<div class="sheet-card" data-default-page="1" id="armorDefensesCard">
 <div aria-controls="collapseArmor" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapseArmor">
 <div class="d-flex align-items-center gap-3 flex-wrap">
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-shield-halved me-2"></i>Armor</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Armor#Armor_Examples" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Armor on d20futurepath.com"><i class="fa-solid fa-shield-halved"></i></a>Armor</span>
 <div class="d-inline-flex align-items-center flex-wrap gap-1 border-start ps-3 ms-md-2 no-collapse" onclick="event.stopPropagation();">
 <span class="small text-muted fw-bold me-2" style="font-size: 0.75rem;">
 <span class="d-none d-xxl-inline">Armor Proficiency:</span>
@@ -1374,10 +1388,11 @@
 <thead>
 <tr>
 <th>Name</th>
-<th class="text-center" style="width: 75px;">AC Bonus</th>
-<th class="text-center" style="width: 95px;">DR</th>
-<th class="text-center" style="width: 95px;">Max DEX Bonus</th>
-<th class="text-center" style="width: 95px;">Speed Penalty</th>
+<th class="text-center" style="width: 75px;"><span class="d-none d-md-inline">AC Bonus</span><span class="d-inline d-md-none">AC</span></th>
+<th class="text-center" style="width: 80px;">DR</th>
+<th class="text-center" style="width: 95px;"><span class="d-none d-md-inline">Max DEX Bonus</span><span class="d-inline d-md-none">DEX</span></th>
+<th class="text-center" style="width: 75px;"><span class="d-none d-md-inline">Weight</span><span class="d-inline d-md-none">WT</span></th>
+<th class="text-center" style="width: 95px;"><span class="d-none d-md-inline">Speed Penalty</span><span class="d-inline d-md-none">- Speed</span></th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
 </thead>
@@ -1387,13 +1402,14 @@
 <td><label class="visually-hidden" for="armorDefensesCard_armorACBonus_0">Armoracbonus</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorACBonus_0" name="armorACBonus[]" type="text"/></td>
 <td><label class="visually-hidden" for="armorDefensesCard_armorDR_0">Armordr</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorDR_0" name="armorDR[]" type="text"/></td>
 <td><label class="visually-hidden" for="armorDefensesCard_armorMaxDex_0">Armormaxdex</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorMaxDex_0" name="armorMaxDex[]" type="text"/></td>
+<td><label class="visually-hidden" for="armorDefensesCard_armorWeight_0">Armorweight</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorWeight_0" name="armorWeight[]" type="text"/></td>
 <td><label class="visually-hidden" for="armorDefensesCard_armorSpeedPenalty_0">Armorspeedpenalty</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorSpeedPenalty_0" name="armorSpeedPenalty[]" type="text"/></td>
 <td class="no-print text-center"><button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button></td>
 </tr>
 <tr class="armor-notes-row">
-<td class="pt-0 pb-2 border-bottom" colspan="6">
+<td class="pt-0 pb-2 border-bottom" colspan="7">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Bonus Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Bonus Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
 <label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_0">Armorbonusattributes</label><input class="form-control form-control-sm" id="armorDefensesCard_armorBonusAttributes_0" name="armorBonusAttributes[]" type="text"/>
 </div>
 </td>
@@ -1403,13 +1419,14 @@
 <td><label class="visually-hidden" for="armorDefensesCard_armorACBonus_1">Armoracbonus</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorACBonus_1" name="armorACBonus[]" type="text"/></td>
 <td><label class="visually-hidden" for="armorDefensesCard_armorDR_1">Armordr</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorDR_1" name="armorDR[]" type="text"/></td>
 <td><label class="visually-hidden" for="armorDefensesCard_armorMaxDex_1">Armormaxdex</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorMaxDex_1" name="armorMaxDex[]" type="text"/></td>
+<td><label class="visually-hidden" for="armorDefensesCard_armorWeight_1">Armorweight</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorWeight_1" name="armorWeight[]" type="text"/></td>
 <td><label class="visually-hidden" for="armorDefensesCard_armorSpeedPenalty_1">Armorspeedpenalty</label><input class="form-control form-control-sm text-center" id="armorDefensesCard_armorSpeedPenalty_1" name="armorSpeedPenalty[]" type="text"/></td>
 <td class="no-print text-center"><button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button></td>
 </tr>
 <tr class="armor-notes-row">
-<td class="pt-0 pb-2 border-bottom" colspan="6">
+<td class="pt-0 pb-2 border-bottom" colspan="7">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Bonus Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Bonus Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
 <label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_1">Armorbonusattributes</label><input class="form-control form-control-sm" id="armorDefensesCard_armorBonusAttributes_1" name="armorBonusAttributes[]" type="text"/>
 </div>
 </td>
@@ -1421,11 +1438,11 @@
 </div>
 </div>
 <!-- Weapons & Attack Routines -->
-<div class="sheet-card mt-1 mb-1" data-default-page="1" id="weaponsCard">
+<div class="sheet-card" data-default-page="1" id="weaponsCard">
 <div aria-controls="collapseWeapons" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapseWeapons">
 <div class="d-flex align-items-center gap-3 flex-wrap">
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-gun me-2"></i>Weapons</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Full_Weapon_List" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Weapons on d20futurepath.com"><i class="fa-solid fa-gun"></i></a>Weapons</span>
 <div class="d-flex flex-column gap-1 border-start ps-3 ms-md-2 no-collapse" onclick="event.stopPropagation();">
 <!-- Melee Proficiency (Top) -->
 <div class="d-inline-flex align-items-center flex-wrap gap-1">
@@ -1533,7 +1550,7 @@
 <tr class="weapon-notes-row">
 <td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Notes &amp; Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
 <label class="visually-hidden" for="weaponsCard_wepNotes_0">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_0" name="wepNotes[]" type="text"/>
 </div>
 </td>
@@ -1583,7 +1600,7 @@
 <tr class="weapon-notes-row">
 <td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes &amp; Attributes:</span>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
 <label class="visually-hidden" for="weaponsCard_wepNotes_1">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_1" name="wepNotes[]" type="text"/>
 </div>
 </td>
@@ -1633,7 +1650,7 @@
 <tr class="weapon-notes-row">
 <td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;">Notes &amp; Attributes:</span>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
 <label class="visually-hidden" for="weaponsCard_wepNotes_2">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_2" name="wepNotes[]" type="text"/>
 </div>
 </td>
@@ -1647,7 +1664,7 @@
 </div>
 </div>
 <!-- Language & Custom Skills Card -->
-<div class="sheet-card mt-1 mb-1" data-default-page="1" id="languageCustomSkillsCard">
+<div class="sheet-card" data-default-page="1" id="languageCustomSkillsCard">
 <div aria-controls="collapseLanguageCustom" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseLanguageCustom">
 <div class="row w-100 g-2 align-items-center me-0">
 <div class="col-12 col-lg-6 d-flex align-items-center">
@@ -1899,11 +1916,11 @@
 </div>
 </div>
 <!-- Wealth / Credits and Experience Card -->
-<div class="sheet-card mt-1 mb-1" data-default-page="1" id="wealthXpCard">
+<div class="sheet-card" data-default-page="1" id="wealthXpCard">
 <div aria-controls="collapseWealthXP" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseWealthXP">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-coins me-2"></i>Wealth / Credits &amp; Experience</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Occupations" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Occupations on d20futurepath.com"><i class="fa-solid fa-coins"></i></a>Wealth / Credits &amp; Experience</span>
 </div>
 <div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
 <button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
@@ -2002,7 +2019,7 @@
 <div aria-controls="collapseSpeciesTraits" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseSpeciesTraits">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-dna me-2"></i>Species Traits <span class="text-cyan ms-1 fw-bold" id="headerSpeciesDisplay"></span></span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Species" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Species on d20futurepath.com"><i class="fa-solid fa-dna"></i></a>Species Traits <span class="text-cyan ms-1 fw-bold" id="headerSpeciesDisplay"></span></span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2038,11 +2055,11 @@
 </div>
 </div>
 <!-- Path Talents Card -->
-<div class="sheet-card mt-3" data-default-page="2" id="pathTalentsCard">
+<div class="sheet-card" data-default-page="2" id="pathTalentsCard">
 <div aria-controls="collapsePathTalents" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapsePathTalents">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-route me-2"></i>Path Talents <span class="text-cyan ms-1 fw-bold" id="headerPathDisplay"></span></span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Character_Path" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Character Path on d20futurepath.com"><i class="fa-solid fa-route"></i></a>Path Talents <span class="text-cyan ms-1 fw-bold" id="headerPathDisplay"></span></span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2078,11 +2095,11 @@
 </div>
 </div>
 <!-- Feats Card -->
-<div class="sheet-card mt-3" data-default-page="2" id="featsCard">
+<div class="sheet-card" data-default-page="2" id="featsCard">
 <div aria-controls="collapseFeats" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseFeats">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-award me-2"></i>Feats</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Feats" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Feats on d20futurepath.com"><i class="fa-solid fa-award"></i></a>Feats</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2118,11 +2135,11 @@
 </div>
 </div>
 <!-- Character Professions Card -->
-<div class="sheet-card mt-3" data-default-page="2" id="professionsCard">
+<div class="sheet-card" data-default-page="2" id="professionsCard">
 <div aria-controls="collapseProfessions" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseProfessions">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-briefcase me-2"></i>Character Professions &amp; Talents</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Character_Professions" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Character Professions on d20futurepath.com"><i class="fa-solid fa-briefcase"></i></a>Character Professions &amp; Talents</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2136,6 +2153,23 @@
 </div>
 <div class="collapse show" id="collapseProfessions">
 <div class="card-body">
+<datalist id="professionDatalist">
+<option value="Combat Medic"></option>
+<option value="Dimension Knight"></option>
+<option value="Dreadnought"></option>
+<option value="Engineer"></option>
+<option value="Envoy"></option>
+<option value="Electro-Mancer"></option>
+<option value="Field Officer"></option>
+<option value="Helix Warrior"></option>
+<option value="Shield Splicer"></option>
+<option value="Space Marine"></option>
+<option value="Starfighter"></option>
+<option value="Swindler"></option>
+<option value="Technosavant"></option>
+<option value="Tracer"></option>
+<option value="Xenophile"></option>
+</datalist>
 <div class="d-flex flex-column gap-3" id="professionsContainer">
 <!-- Initial Profession Block -->
 <div class="profession-block border rounded p-3 bg-opacity-10 bg-secondary">
@@ -2144,13 +2178,11 @@
 <div class="col-12 col-md-5">
 <div class="input-group input-group-sm">
 <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Title:</span>
-<label class="visually-hidden" for="professionsCard_profTitle_0">Proftitle</label><input class="form-control form-control-sm fw-bold" id="professionsCard_profTitle_0" list="professionDatalist" name="profTitle[]" placeholder="e.g. Combat Medic" type="text"/>
+<label class="visually-hidden" for="professionsCard_profTitle_0">Proftitle</label><input class="form-control form-control-sm fw-bold" id="professionsCard_profTitle_0" list="professionDatalist" name="profTitle[]" onchange="handleProfessionChange(this)" placeholder="e.g. Combat Medic" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
 </div>
-<datalist id="professionDatalist">
-</datalist>
 </div>
 <div class="col-6 col-md-2">
 <div class="input-group input-group-sm">
@@ -2208,11 +2240,11 @@
 </div>
 
 <!-- General Equipment -->
-<div class="sheet-card mb-3" data-default-page="2" id="equipmentCard">
+<div class="sheet-card" data-default-page="2" id="equipmentCard">
 <div aria-controls="collapseGear" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapseGear">
 <div class="d-flex align-items-center gap-3 flex-wrap">
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-box-archive me-2"></i>General Equipment</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=General_Equipment" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View General Equipment on d20futurepath.com"><i class="fa-solid fa-box-archive"></i></a>General Equipment</span>
 <div class="d-inline-flex align-items-center flex-wrap gap-1 border-start ps-3 ms-md-2 no-collapse" onclick="event.stopPropagation();">
 <span class="small text-muted fw-bold me-2" style="font-size: 0.75rem;">
 <span class="d-none d-xxl-inline">Item Crafting Proficiency:</span>
@@ -2339,7 +2371,7 @@
 <div aria-controls="collapseTechniques" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseTechniques">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-bolt-lightning me-2"></i>Techniques</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Techniques" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Techniques on d20futurepath.com"><i class="fa-solid fa-bolt-lightning"></i></a>Techniques</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2436,11 +2468,11 @@
 </div>
 </div>
 <!-- Quirks & Flaws Card -->
-<div class="sheet-card mt-3" data-default-page="3" id="quirksCard">
+<div class="sheet-card" data-default-page="3" id="quirksCard">
 <div aria-controls="collapseQuirks" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseQuirks">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-masks-theater me-2"></i>Quirks &amp; Flaws</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Quirks" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Quirks &amp; Flaws on d20futurepath.com"><i class="fa-solid fa-masks-theater"></i></a>Quirks &amp; Flaws</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2491,11 +2523,11 @@
 </div>
 </div>
 <!-- Detractors Card -->
-<div class="sheet-card mt-3" data-default-page="3" id="detractorsCard">
+<div class="sheet-card" data-default-page="3" id="detractorsCard">
 <div aria-controls="collapseDetractors" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseDetractors">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-triangle-exclamation me-2"></i>Detractors</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Difficulties#Detractors" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Detractors on d20futurepath.com"><i class="fa-solid fa-triangle-exclamation"></i></a>Detractors</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2546,11 +2578,11 @@
 </div>
 </div>
 <!-- Cybernetics Card -->
-<div class="sheet-card mt-3" data-default-page="3" id="cyberneticsCard">
+<div class="sheet-card" data-default-page="3" id="cyberneticsCard">
 <div aria-controls="collapseCybernetics" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseCybernetics">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-microchip me-2"></i>Cybernetics</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Cybernetics" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Cybernetics on d20futurepath.com"><i class="fa-solid fa-microchip"></i></a>Cybernetics</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2666,11 +2698,11 @@
 </div>
 </div>
 <!-- Mutations Card -->
-<div class="sheet-card mt-3" data-default-page="3" id="mutationsCard">
+<div class="sheet-card" data-default-page="3" id="mutationsCard">
 <div aria-controls="collapseMutations" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseMutations">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-dna me-2"></i>Mutations</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Mutations" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Mutations on d20futurepath.com"><i class="fa-solid fa-dna"></i></a>Mutations</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="d-flex align-items-center gap-2 me-2" onclick="event.stopPropagation();">
@@ -2700,8 +2732,8 @@
 <thead>
 <tr>
 <th style="width: 200px;">Drawback Name</th>
+<th class="text-center" style="width: 60px;">MP</th>
 <th>Description</th>
-<th class="text-center" style="width: 70px;">MP</th>
 <th class="no-print text-center" style="width: 110px;">
 <button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addMutationDrawbackRow()" style="font-size: 0.72rem;" type="button">
 <i class="fa-solid fa-plus me-1"></i> Drawback
@@ -2721,12 +2753,12 @@
 </div>
 </td>
 <td>
-<label class="visually-hidden" for="mutationsCard_drawbackDesc_0">Mutation Drawback Description</label>
-<textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_drawbackDesc_0" name="mutationDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-</td>
-<td>
 <label class="visually-hidden" for="mutationsCard_drawbackMP_0">MP</label>
 <input class="form-control form-control-sm text-center fw-bold" id="mutationsCard_drawbackMP_0" name="mutationDrawbackMP[]" oninput="calculateMutationsMPTotals()" placeholder="0" type="text"/>
+</td>
+<td>
+<label class="visually-hidden" for="mutationsCard_drawbackDesc_0">Mutation Drawback Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_drawbackDesc_0" name="mutationDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
 </td>
 <td class="no-print text-center">
 <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
@@ -2743,8 +2775,8 @@
 <thead>
 <tr>
 <th style="width: 200px;">Enhancement Name</th>
+<th class="text-center" style="width: 60px;">MP</th>
 <th>Description</th>
-<th class="text-center" style="width: 70px;">MP</th>
 <th class="no-print text-center" style="width: 130px;">
 <button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addMutationEnhancementRow()" style="font-size: 0.72rem;" type="button">
 <i class="fa-solid fa-plus me-1"></i> Enhancement
@@ -2764,12 +2796,12 @@
 </div>
 </td>
 <td>
-<label class="visually-hidden" for="mutationsCard_enhancementDesc_0">Mutation Enhancement Description</label>
-<textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_enhancementDesc_0" name="mutationEnhancementDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-</td>
-<td>
 <label class="visually-hidden" for="mutationsCard_enhancementMP_0">MP</label>
 <input class="form-control form-control-sm text-center fw-bold" id="mutationsCard_enhancementMP_0" name="mutationEnhancementMP[]" oninput="calculateMutationsMPTotals()" placeholder="0" type="text"/>
+</td>
+<td>
+<label class="visually-hidden" for="mutationsCard_enhancementDesc_0">Mutation Enhancement Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_enhancementDesc_0" name="mutationEnhancementDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
 </td>
 <td class="no-print text-center">
 <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
@@ -2785,11 +2817,11 @@
 </div>
 </div>
 <!-- Psionics Card -->
-<div class="sheet-card mt-3" data-default-page="3" id="psionicsCard">
+<div class="sheet-card" data-default-page="3" id="psionicsCard">
 <div aria-controls="collapsePsionics" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapsePsionics">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-brain me-2"></i>Psionics</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Mutations" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Psionics on d20futurepath.com"><i class="fa-solid fa-brain"></i></a>Psionics</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-collapse">
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
@@ -2810,8 +2842,8 @@
 <thead>
 <tr>
 <th style="width: 200px;">Drawback Name</th>
+<th class="text-center" style="width: 60px;">MP</th>
 <th>Description</th>
-<th class="text-center" style="width: 70px;">MP</th>
 <th class="no-print text-center" style="width: 110px;">
 <button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addPsionicDrawbackRow()" style="font-size: 0.72rem;" type="button">
 <i class="fa-solid fa-plus me-1"></i> Drawback
@@ -2831,12 +2863,12 @@
 </div>
 </td>
 <td>
-<label class="visually-hidden" for="psionicsCard_drawbackDesc_0">Psionic Drawback Description</label>
-<textarea class="form-control form-control-sm trait-desc-textarea" id="psionicsCard_drawbackDesc_0" name="psionicDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-</td>
-<td>
 <label class="visually-hidden" for="psionicsCard_drawbackMP_0">MP</label>
 <input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_drawbackMP_0" name="psionicDrawbackMP[]" placeholder="0" type="text"/>
+</td>
+<td>
+<label class="visually-hidden" for="psionicsCard_drawbackDesc_0">Psionic Drawback Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="psionicsCard_drawbackDesc_0" name="psionicDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
 </td>
 <td class="no-print text-center">
 <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
@@ -2976,7 +3008,7 @@
 </div>
 </div>
 <!-- Power Armor Card -->
-<div class="sheet-card mb-3" data-default-page="4" id="powerArmorCard">
+<div class="sheet-card" data-default-page="4" id="powerArmorCard">
 <div aria-controls="collapsePowerArmor" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapsePowerArmor">
 <div class="d-flex align-items-center gap-3 flex-wrap">
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
@@ -3061,7 +3093,7 @@
 </div>
 </div>
 <!-- Background, Campaign Notes & Objectives Card -->
-<div class="sheet-card mt-3" data-default-page="4" id="backstoryCard">
+<div class="sheet-card" data-default-page="4" id="backstoryCard">
 <div aria-controls="collapseBackstory" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseBackstory">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
@@ -3079,11 +3111,11 @@
 </div>
 </div>
 <!-- Conditions Card -->
-<div class="sheet-card mt-3" data-default-page="4" id="conditionsCard">
+<div class="sheet-card" data-default-page="4" id="conditionsCard">
 <div aria-controls="collapseConditions" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseConditions">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-notes-medical me-2"></i>Conditions</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Conditions" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Conditions on d20futurepath.com"><i class="fa-solid fa-notes-medical"></i></a>Conditions</span>
 </div>
 <div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
 <button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
@@ -3447,8 +3479,24 @@
 </div>
 </div>
 </div>
-<div class="modal-footer">
-<button class="btn btn-secondary btn-sm" data-bs-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+<!-- Mobile Text Field Description Modal -->
+<div aria-hidden="true" aria-labelledby="descEditModalLabel" class="modal fade no-print" id="descEditModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content shadow-lg">
+<div class="modal-header d-flex align-items-center justify-content-between py-2 px-3">
+<h5 class="modal-title fs-6 mb-0 d-flex align-items-center" id="descEditModalLabel"><i class="fa-solid fa-pen-to-square text-cyan me-2"></i><span id="descEditModalTitle">Edit Description</span></h5>
+<button aria-label="Close" class="btn-close ms-0" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body p-3">
+<label class="form-label small text-muted mb-1" id="descEditModalSubtitle" for="descEditModalTextarea">Description Details</label>
+<textarea class="form-control" id="descEditModalTextarea" placeholder="Enter description..." rows="6" style="font-size: 0.92rem;"></textarea>
+</div>
+<div class="modal-footer py-2 px-3 d-flex justify-content-between">
+<button class="btn btn-secondary btn-sm" data-bs-dismiss="modal" type="button">Cancel</button>
+<button class="btn btn-cyber btn-sm px-3" id="descEditModalSaveBtn" onclick="saveDescriptionModal()" type="button">Done</button>
 </div>
 </div>
 </div>

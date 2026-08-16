@@ -60,6 +60,8 @@ def _get_table_data(table_name, key_field="name", fallback_list=None):
                 for doc in docs:
                     if key_field in doc:
                         items.append(doc[key_field])
+                    elif "Name" in doc:
+                        items.append(doc["Name"])
                     elif "name" in doc:
                         items.append(doc["name"])
                     elif "die" in doc:
@@ -67,7 +69,15 @@ def _get_table_data(table_name, key_field="name", fallback_list=None):
                 return items
         except Exception as e:
             log.error(f"Error fetching table '{table_name}': {e}")
-    return fallback_list if fallback_list is not None else []
+    if fallback_list is not None:
+        if fallback_list and isinstance(fallback_list[0], dict):
+            return [
+                doc.get(key_field) or doc.get("Name") or doc.get("name")
+                for doc in fallback_list
+                if (doc.get(key_field) or doc.get("Name") or doc.get("name"))
+            ]
+        return fallback_list
+    return []
 
 
 def _get_quirks_data():
@@ -148,6 +158,36 @@ def _shorten_mutation_enhancements(data):
     return shortened
 
 
+def _get_character_paths_data():
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection="character_paths"))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                return docs
+        except Exception as e:
+            log.error(f"Error fetching character paths: {e}")
+    return CHARACTER_PATHS
+
+
+def _get_professions_data():
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection="professions"))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                return docs
+        except Exception as e:
+            log.error(f"Error fetching professions: {e}")
+    return PROFESSIONS
+
+
 @app.route("/data", methods=["GET"])
 def get_data_index():
     """
@@ -218,7 +258,7 @@ def get_data_character_paths():
     :DESC: Returns a JSON list of all official Character Paths.
     :Content-Type: application/json
     """
-    return jsonify(_get_table_data("character_paths", key_field="name", fallback_list=CHARACTER_PATHS))
+    return jsonify(_get_character_paths_data())
 
 
 @app.route("/data/species", methods=["GET"])
@@ -240,7 +280,7 @@ def get_data_professions():
     :DESC: Returns a JSON list of all official Character Professions.
     :Content-Type: application/json
     """
-    return jsonify(_get_table_data("professions", key_field="name", fallback_list=PROFESSIONS))
+    return jsonify(_get_professions_data())
 
 
 @app.route("/data/occupations", methods=["GET"])
@@ -300,8 +340,10 @@ def get_all_reference_data():
         "advantage_die_levels": _get_table_data("advantage_die_levels", key_field="die", fallback_list=ADVANTAGE_DIE_LEVELS),
         "occupations": _get_table_data("occupations", key_field="name", fallback_list=OCCUPATIONS),
         "professions": _get_table_data("professions", key_field="name", fallback_list=PROFESSIONS),
+        "character_professions": _get_professions_data(),
         "species": _get_table_data("species", key_field="name", fallback_list=SPECIES),
         "paths": _get_table_data("character_paths", key_field="name", fallback_list=CHARACTER_PATHS),
+        "character_paths": _get_character_paths_data(),
         "quirks": _get_quirks_data(),
         "detractors": _get_detractors_data(),
         "mutation_drawbacks": _get_mutation_drawbacks_data(),

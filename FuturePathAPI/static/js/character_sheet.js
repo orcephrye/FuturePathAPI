@@ -1,6 +1,10 @@
 /*global bootstrap*/
 
-let professionsList = [];
+let professionsList = [
+  "Combat Medic", "Dimension Knight", "Dreadnought", "Engineer", "Envoy",
+  "Electro-Mancer", "Field Officer", "Helix Warrior", "Shield Splicer",
+  "Space Marine", "Starfighter", "Swindler", "Technosavant", "Tracer", "Xenophile"
+];
 let quirksData = [];
 let detractorsData = [];
 let speciesList;
@@ -11,6 +15,197 @@ let skillDieLevels = [
   "2d10+8", "2d10+9", "2d12+9", "2d12+10"
 ];
 let isPopulatingForm = false;
+
+const FALLBACK_CHARACTER_PATHS = [
+  { Name: "Path of Strength (Strong Hero)", Affinity: "Strength" },
+  { Name: "Path of Dexterity (Fast Hero)", Affinity: "Dexterity" },
+  { Name: "Path of Constitution (Tough Hero)", Affinity: "Constitution" },
+  { Name: "Path of Intelligence (Smart Hero)", Affinity: "Intelligence" },
+  { Name: "Path of Wisdom (Dedicated Hero)", Affinity: "Wisdom" },
+  { Name: "Path of Charisma (Charismatic Hero)", Affinity: "Charisma" },
+  { Name: "Path of No Path (The Freelancer)" },
+  { Name: "Ovex Path (Fighter Module)" },
+  { Name: "Ovex Path (Leadership Module)" },
+  { Name: "Ovex Path (Specialist Module)", Affinity: "Intelligence" },
+  { Name: "Ovex Path (Assistance Module)", Affinity: "Wisdom" }
+];
+
+const FALLBACK_PROFESSIONS = [
+  { Name: "Combat Medic", Affinity: ["Wisdom", "Dexterity"] },
+  { Name: "Dimension Knight", Affinity: ["Strength", "Wisdom"] },
+  { Name: "Dreadnought", Affinity: ["Dexterity", "Constitution"] },
+  { Name: "Engineer", Affinity: ["Intelligence", "Constitution"] },
+  { Name: "Envoy", Affinity: ["Charisma", "Wisdom"] },
+  { Name: "Electro-Mancer", Affinity: ["Intelligence", "Dexterity"] },
+  { Name: "Field Officer", Affinity: ["Charisma", "Wisdom"] },
+  { Name: "Helix Warrior", Affinity: ["Strength", "Wisdom"] },
+  { Name: "Shield Splicer", Affinity: ["Constitution", "Wisdom"] },
+  { Name: "Space Marine", Affinity: ["Dexterity", "Strength"] },
+  { Name: "Starfighter", Affinity: ["Dexterity", "Charisma"] },
+  { Name: "Swindler", Affinity: ["Charisma", "Dexterity"] },
+  { Name: "Technosavant", Affinity: ["Intelligence", "Wisdom"] },
+  { Name: "Tracer", Affinity: ["Wisdom", "Intelligence"] },
+  { Name: "Xenophile", Affinity: ["Wisdom", "Charisma"] }
+];
+
+let characterPathsData = FALLBACK_CHARACTER_PATHS;
+let characterProfessionsData = FALLBACK_PROFESSIONS;
+
+const ABILITY_CODE_MAP = {
+  strength: "STR",
+  str: "STR",
+  dexterity: "DEX",
+  dex: "DEX",
+  constitution: "CON",
+  con: "CON",
+  intelligence: "INT",
+  int: "INT",
+  wisdom: "WIS",
+  wis: "WIS",
+  charisma: "CHA",
+  cha: "CHA"
+};
+
+function getAbilityCode(abilityName) {
+  if (!abilityName || typeof abilityName !== "string") {
+    return null;
+  }
+  const clean = abilityName.trim().toLowerCase();
+  if (ABILITY_CODE_MAP[clean]) {
+    return ABILITY_CODE_MAP[clean];
+  }
+  if (clean.length >= 3 && ABILITY_CODE_MAP[clean.substring(0, 3)]) {
+    return ABILITY_CODE_MAP[clean.substring(0, 3)];
+  }
+  return null;
+}
+
+function enableAbilityThemeCheckbox(abilityCode) {
+  if (!abilityCode) {
+    return;
+  }
+  const chk = document.getElementById(`abilityScoresCard_primaryAbility_${abilityCode}`) ||
+              document.querySelector(`input[name="primaryAbility_${abilityCode}"]`);
+  if (chk && !chk.checked) {
+    chk.checked = true;
+    chk.dispatchEvent(new Event("change", { bubbles: true }));
+    triggerAutoSave();
+  }
+}
+
+function getPathReferenceObject(query) {
+  if (!query || typeof query !== "string") {
+    return null;
+  }
+  const q = query.trim().toLowerCase();
+  if (!q) {
+    return null;
+  }
+  const list = (Array.isArray(characterPathsData) && characterPathsData.length > 0)
+    ? characterPathsData
+    : FALLBACK_CHARACTER_PATHS;
+
+  // 1. Exact match on full Name (e.g. "Path of Strength (Strong Hero)")
+  let found = list.find((p) => (p.Name || p.name || "").toLowerCase() === q);
+  if (found) {
+    return found;
+  }
+
+  // 2. Match on base Name before parenthesis (e.g. "Path of Strength")
+  found = list.find((p) => {
+    const name = (p.Name || p.name || "").toLowerCase();
+    const baseName = name.split(" (")[0].trim();
+    return q === baseName;
+  });
+  if (found) {
+    return found;
+  }
+
+  // 3. Match on subtitle inside parenthesis (e.g. "Strong Hero")
+  found = list.find((p) => {
+    const name = (p.Name || p.name || "").toLowerCase();
+    const match = name.match(/\(([^)]+)\)/);
+    if (match && match[1]) {
+      return q === match[1].trim().toLowerCase();
+    }
+    return false;
+  });
+  return found || null;
+}
+
+function getProfessionReferenceObject(query) {
+  if (!query || typeof query !== "string") {
+    return null;
+  }
+  const q = query.trim().toLowerCase();
+  if (!q) {
+    return null;
+  }
+  const list = (Array.isArray(characterProfessionsData) && characterProfessionsData.length > 0)
+    ? characterProfessionsData
+    : FALLBACK_PROFESSIONS;
+
+  // Exact match on Name only (e.g. "Combat Medic")
+  return list.find((p) => (p.Name || p.name || (typeof p === "string" ? p : "")).toLowerCase() === q) || null;
+}
+
+function handlePathChange(pathVal) {
+  syncPathName();
+  if (!pathVal || typeof pathVal !== "string") {
+    return;
+  }
+  const clean = pathVal.trim();
+  if (!clean) {
+    return;
+  }
+
+  const pathObj = getPathReferenceObject(clean);
+  if (pathObj && pathObj.Affinity) {
+    const abCode = getAbilityCode(pathObj.Affinity);
+    if (abCode) {
+      enableAbilityThemeCheckbox(abCode);
+    }
+  }
+}
+
+function handleProfessionChange(inputEl) {
+  if (!inputEl) {
+    return;
+  }
+  const val = inputEl.value.trim();
+  if (!val) {
+    return;
+  }
+  const block = inputEl.closest(".profession-block");
+  if (!block) {
+    return;
+  }
+
+  const profObj = getProfessionReferenceObject(val);
+  if (profObj && Array.isArray(profObj.Affinity) && profObj.Affinity.length > 0) {
+    const codes = profObj.Affinity.map((aff) => getAbilityCode(aff)).filter(Boolean);
+
+    block.querySelectorAll(".affinity-tag").forEach((btn) => {
+      const tagText = btn.textContent.trim().toUpperCase();
+      if (codes.includes(tagText)) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+
+    const hiddenInput = block.querySelector(".prof-affinities-input");
+    if (hiddenInput) {
+      hiddenInput.value = codes.join(",");
+    }
+
+    codes.forEach((code) => {
+      enableAbilityThemeCheckbox(code);
+    });
+
+    triggerAutoSave();
+  }
+}
 
 function updateLockThemeUI(isLocked) {
     const switchEl = document.getElementById("lockThemeSwitch");
@@ -439,17 +634,21 @@ function toggleDatalist(inputIdOrEl) {
     if ((input.id.includes('speciesInput') || input.id === 'speciesInput') && speciesList !== undefined) {
       options = speciesList;
     } else if (input.id.includes('charPath') || input.id === 'charPath') {
-      options = ['Path of Strength', 'Path of Speed', 'Path of Fortitude', 'Path of Intellect', 'Path of Willpower', 'Path of Presence'];
+      options = (characterPathsData && characterPathsData.length > 0)
+        ? characterPathsData.map((p) => p.Name || p.name || p).filter(Boolean)
+        : FALLBACK_CHARACTER_PATHS.map((p) => p.Name);
     } else if (input.id.includes('charSize') || input.id === 'charSize') {
       options = ['Fine', 'Diminutive', 'Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan', 'Colossal'];
     } else if (input.id.includes('occupationInput') || input.id === 'occupationInput') {
-      options = ['Academic', 'Adventurer', 'Athlete', 'Blue Collar', 'Bureaucrat', 'Creative', 'Criminal', 'Dilettante', 'Doctor', 'Emergency Services', 'Entrepreneur', 'Investigator', 'Law Enforcement', 'Military', 'Religious', 'Rural', 'Student', 'Technician', 'White Collar'];
+      options = ['Academic', 'Adventurer', 'Athlete', 'Blue Collar', 'Creative', 'Criminal', 'Cyber-Specialist', 'Dilettante', 'Diplomat', 'Doctor', 'Emergency Services', 'Entrepreneur', 'Jobless', 'Investigative', 'Law Enforcement', 'Mercenary', 'Military', 'Pioneer', 'Religious', 'Rural', 'Student', 'Spacer', 'Technician', 'White Collar'];
     } else if ((input.id.includes('quirkName') || input.name === 'quirkName[]' || (input.placeholder && input.placeholder.toLowerCase().includes('quirk'))) && quirksData !== undefined && quirksData.length > 0) {
       options = quirksData.map((q) => q.Name || q.name || q).filter(Boolean);
     } else if ((input.id.includes('detractorName') || input.name === 'detractorName[]' || (input.placeholder && input.placeholder.toLowerCase().includes('detractor'))) && detractorsData !== undefined && detractorsData.length > 0) {
       options = detractorsData.map((d) => d.Name || d.name || d).filter(Boolean);
-    } else if (professionsList !== undefined && professionsList.length > 0) {
-      options = professionsList;
+    } else if (input.id.includes('profTitle') || input.name === 'profTitle[]' || input.id.includes('techProfession') || input.name === 'techProfession[]' || listId === 'professionDatalist' || (professionsList !== undefined && professionsList.length > 0)) {
+      options = (professionsList && professionsList.length > 0)
+        ? professionsList
+        : FALLBACK_PROFESSIONS.map((p) => p.Name);
     }
   }
 
@@ -602,6 +801,14 @@ async function loadAllReferanceData() {
     if (pathDatalist && Array.isArray(allData.paths)) {
       pathDatalist.innerHTML = allData.paths.map((path) => `<option value="${path}">`).join('');
     }
+    if (Array.isArray(allData.character_paths) && allData.character_paths.length > 0) {
+      characterPathsData = allData.character_paths;
+    }
+    if (Array.isArray(allData.character_professions) && allData.character_professions.length > 0) {
+      characterProfessionsData = allData.character_professions;
+    } else if (Array.isArray(allData.professions) && allData.professions.length > 0 && typeof allData.professions[0] === 'object') {
+      characterProfessionsData = allData.professions;
+    }
     if (sizeDatalist && Array.isArray(allData.sizes) && allData.sizes.length > 0) {
       sizeDatalist.innerHTML = allData.sizes.map((size) => `<option value="${size}">`).join('');
     }
@@ -619,11 +826,15 @@ async function loadAllReferanceData() {
       const randomOcc = allData.occupations[Math.floor(Math.random() * allData.occupations.length)];
       wealthDatalist.placeholder = `e.g. ${randomOcc}`;
     }
-    if (professionDatalist && Array.isArray(allData.professions) && allData.professions.length > 0) {
-      professionsList = allData.professions;
-      professionDatalist.innerHTML = allData.professions.map((prof) => `<option value="${prof}">`).join('');
+    const rawProf = allData.professions || allData.character_professions;
+    if (rawProf && Array.isArray(rawProf) && rawProf.length > 0) {
+      professionsList = rawProf.map((p) => (typeof p === "object" ? (p.Name || p.name) : p)).filter(Boolean);
+      const profListEl = document.getElementById("professionDatalist");
+      if (profListEl) {
+        profListEl.innerHTML = professionsList.map((prof) => `<option value="${prof}">`).join("");
+      }
       document.querySelectorAll('input[name="profTitle[]"], input[name="techProfession[]"]').forEach((input) => {
-        const randomProf = allData.professions[Math.floor(Math.random() * allData.professions.length)];
+        const randomProf = professionsList[Math.floor(Math.random() * professionsList.length)];
         input.placeholder = `e.g. ${randomProf}`;
       });
     }
@@ -761,16 +972,21 @@ async function rollAbilityCheck(abilityKey, event) {
 
     let total = 0;
     let breakdown = '';
+    let isCritical = false;
     if (data.Rolls && data.Rolls.length > 0) {
       total = data.Rolls[0].Total;
-      if (data.Rolls[0].Dice) {
-        breakdown = `[Dice: ${data.Rolls[0].Dice.join(', ')}]`;
+      const dice = data.Rolls[0].Dice;
+      if (dice && Array.isArray(dice)) {
+        if (dice.length > 0 && dice[0] === 20) {
+          isCritical = true;
+        }
+        breakdown = formatDiceBreakdown(dice, true, isCritical);
       }
     } else if (typeof data.Total === 'number') {
       total = data.Total;
     }
 
-    showRollNotification(`${abilityKey} Check (${dString})`, total, breakdown);
+    showRollNotification(`${abilityKey} Check (${dString})`, total, breakdown, isCritical);
   } catch (err) {
     console.error('Error rolling dice:', err);
     alert(`Failed to roll dice for ${abilityKey}: ${err.message}`);
@@ -846,16 +1062,21 @@ async function rollSkillCheck(btnOrIcon) {
 
     let total = 0;
     let breakdown = '';
+    let isCritical = false;
     if (data.Rolls && data.Rolls.length > 0) {
       total = data.Rolls[0].Total;
-      if (data.Rolls[0].Dice) {
-        breakdown = `[Dice: ${data.Rolls[0].Dice.join(', ')}]`;
+      const dice = data.Rolls[0].Dice;
+      if (dice && Array.isArray(dice)) {
+        if (dice.length > 0 && dice[0] === 20) {
+          isCritical = true;
+        }
+        breakdown = formatDiceBreakdown(dice, true, isCritical);
       }
     } else if (typeof data.Total === 'number') {
       total = data.Total;
     }
 
-    showRollNotification(`${skillName} Check (${dString})`, total, breakdown);
+    showRollNotification(`${skillName} Check (${dString})`, total, breakdown, isCritical);
   } catch (err) {
     console.error('Error rolling skill check:', err);
     alert(`Failed to roll dice for ${skillName}: ${err.message}`);
@@ -866,7 +1087,20 @@ async function rollSkillCheck(btnOrIcon) {
   }
 }
 
-function showRollNotification(title, total, details = '') {
+function formatDiceBreakdown(diceArray, hasD20 = false, isCritical = false) {
+  if (!diceArray || !Array.isArray(diceArray)) {
+    return '';
+  }
+  const formatted = diceArray.map((d, index) => {
+    if (index === 0 && hasD20 && (d === 20 || isCritical)) {
+      return `<span class="badge bg-warning text-dark fw-bold px-1 py-0" style="font-size: 0.85rem; box-shadow: 0 0 8px rgba(255,215,0,0.85);">20</span>`;
+    }
+    return d;
+  });
+  return `[Dice: ${formatted.join(', ')}]`;
+}
+
+function showRollNotification(title, total, details = '', isCritical = false) {
   let toastContainer = document.getElementById('rollToastContainer');
   if (!toastContainer) {
     toastContainer = document.createElement('div');
@@ -875,41 +1109,74 @@ function showRollNotification(title, total, details = '') {
     toastContainer.style.bottom = '20px';
     toastContainer.style.right = '20px';
     toastContainer.style.zIndex = '1090';
-    toastContainer.style.minWidth = '240px';
+    toastContainer.style.minWidth = '280px';
     document.body.appendChild(toastContainer);
   }
 
   const toast = document.createElement('div');
-  toast.className = 'toast show align-items-center text-bg-dark border-cyan shadow-lg mb-2 no-print';
   toast.setAttribute('role', 'alert');
-  toast.style.background = '#0d1117';
-  toast.style.border = '1px solid #00f0ff';
-  toast.style.boxShadow = '0 0 10px rgba(0,240,255,0.4)';
-  toast.innerHTML = `
-    <div class="d-flex p-2 align-items-center justify-content-between">
-      <div>
-        <div class="small text-uppercase text-cyan fw-bold">${title}</div>
-        <div class="fs-4 fw-bold text-white mb-0">${total} <small class="text-muted fs-6" style="font-size: 0.75rem;">${details}</small></div>
+
+  if (isCritical) {
+    toast.className = 'toast show align-items-center text-bg-dark border-warning shadow-lg mb-2 no-print';
+    toast.style.background = 'linear-gradient(135deg, #1c1905 0%, #0d1117 100%)';
+    toast.style.border = '2px solid #ffd700';
+    toast.style.boxShadow = '0 0 20px rgba(255, 215, 0, 0.6), 0 0 35px rgba(255, 215, 0, 0.25)';
+    toast.innerHTML = `
+      <div class="d-flex p-2 align-items-center justify-content-between">
+        <div>
+          <div class="d-flex align-items-center gap-1">
+            <span class="small text-uppercase text-warning fw-bold">${title}</span>
+            <span class="badge bg-warning text-dark fw-bold px-1 py-0 ms-1" style="font-size: 0.68rem; letter-spacing: 0.5px;">
+              <i class="fa-solid fa-star me-1"></i>NAT 20
+            </span>
+          </div>
+          <div class="small fw-bold text-warning mt-1" style="font-size: 0.75rem; text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);">
+            <i class="fa-solid fa-crown me-1"></i>CRITICAL SUCCESS!
+          </div>
+          <div class="fs-3 fw-bold text-warning mb-0" style="text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);">
+            ${total} <small class="text-white-50 fs-6" style="font-size: 0.75rem;">${details}</small>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-close-white ms-3" onclick="this.closest('.toast').remove()"></button>
       </div>
-      <button type="button" class="btn-close btn-close-white ms-3" onclick="this.closest('.toast').remove()"></button>
-    </div>
-  `;
+    `;
+  } else {
+    toast.className = 'toast show align-items-center text-bg-dark border-cyan shadow-lg mb-2 no-print';
+    toast.style.background = '#0d1117';
+    toast.style.border = '1px solid #00f0ff';
+    toast.style.boxShadow = '0 0 10px rgba(0,240,255,0.4)';
+    toast.innerHTML = `
+      <div class="d-flex p-2 align-items-center justify-content-between">
+        <div>
+          <div class="small text-uppercase text-cyan fw-bold">${title}</div>
+          <div class="fs-4 fw-bold text-white mb-0">${total} <small class="text-muted fs-6" style="font-size: 0.75rem;">${details}</small></div>
+        </div>
+        <button type="button" class="btn-close btn-close-white ms-3" onclick="this.closest('.toast').remove()"></button>
+      </div>
+    `;
+  }
+
   toastContainer.appendChild(toast);
 
   setTimeout(() => {
     if (toast && toast.parentNode) {
       toast.remove();
     }
-  }, 5000);
+  }, isCritical ? 7000 : 5000);
 }
 
 function autoExpandTextarea(el) {
   if (!el) {
     return;
   }
+  const oldHeight = el.offsetHeight || el.clientHeight || parseFloat(el.style.height) || 0;
   el.style.height = 'auto';
-  el.style.height = (el.scrollHeight) + 'px';
-  scheduleAutoPagination();
+  const newHeight = el.scrollHeight;
+  el.style.height = `${newHeight}px`;
+
+  if (Math.abs(newHeight - oldHeight) > 2) {
+    scheduleAutoPagination(500);
+  }
 }
 
 function calculateTotalWeight() {
@@ -940,6 +1207,20 @@ function calculateTotalWeight() {
           }
         }
         totalWeight += (parsedWeight * qty);
+        hasValidWeight = true;
+      }
+    }
+  });
+
+  const armorRows = document.querySelectorAll('#armorTable tbody tr.armor-main-row');
+  armorRows.forEach((row) => {
+    const weightInput = row.querySelector('input[name="armorWeight[]"]');
+    if (weightInput && weightInput.value.trim() !== '') {
+      const rawWeightStr = weightInput.value.trim();
+      const cleanStr = rawWeightStr.replace(/lbs?/gi, '').trim();
+      const parsedWeight = parseFloat(cleanStr);
+      if (!Number.isNaN(parsedWeight)) {
+        totalWeight += parsedWeight;
         hasValidWeight = true;
       }
     }
@@ -1026,16 +1307,21 @@ async function rollWeaponCheck(btn) {
     const accData = await accResp.json();
     let accTotal = 0;
     let accDetails = '';
+    let accCritical = false;
     if (accData.Rolls && accData.Rolls.length > 0) {
       accTotal = accData.Rolls[0].Total;
-      if (accData.Rolls[0].Dice) {
-        accDetails = `[Dice: ${accData.Rolls[0].Dice.join(', ')}]`;
+      const dice = accData.Rolls[0].Dice;
+      if (dice && Array.isArray(dice)) {
+        if (dice.length > 0 && dice[0] === 20) {
+          accCritical = true;
+        }
+        accDetails = formatDiceBreakdown(dice, true, accCritical);
       }
     } else if (typeof accData.Total === 'number') {
       accTotal = accData.Total;
     }
 
-    showRollNotification(`${weaponName} - Accuracy (${accuracyFormula})`, accTotal, accDetails);
+    showRollNotification(`${weaponName} - Accuracy (${accuracyFormula})`, accTotal, accDetails, accCritical);
 
     if (dmgExpr) {
       let formattedDmg = dmgExpr;
@@ -1055,7 +1341,7 @@ async function rollWeaponCheck(btn) {
         } else if (typeof dmgData.Total === 'number') {
           dmgTotal = dmgData.Total;
         }
-        showRollNotification(`${weaponName} - Damage (${formattedDmg})`, dmgTotal, dmgDetails);
+        showRollNotification(`${weaponName} - Damage (${formattedDmg})`, dmgTotal, dmgDetails, false);
       }
     }
   } catch (err) {
@@ -1124,7 +1410,7 @@ function addWeaponRow() {
   tr2.innerHTML = `
     <td colspan="10" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
-        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Notes &amp; Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
+        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
         <label class="visually-hidden" for="weaponsCard_wepNotes_${idx}">Wepnotes</label><input type="text" class="form-control form-control-sm" id="weaponsCard_wepNotes_${idx}" name="wepNotes[]">
       </div>
     </td>
@@ -1133,6 +1419,7 @@ function addWeaponRow() {
   tbody.appendChild(tr1);
   tbody.appendChild(tr2);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function updateCustomSkillAbility(select) {
@@ -1169,6 +1456,7 @@ function addArmorRow() {
     <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
     <td><input type="text" class="form-control form-control-sm text-center" name="armorDR[]"></td>
     <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
+    <td><input type="text" class="form-control form-control-sm text-center" name="armorWeight[]"></td>
     <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
     <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
   `;
@@ -1176,9 +1464,9 @@ function addArmorRow() {
   const tr2 = document.createElement('tr');
   tr2.classList.add('armor-notes-row');
   tr2.innerHTML = `
-    <td colspan="6" class="pt-0 pb-2 border-bottom">
+    <td colspan="7" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
-        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-print-none">Bonus Attributes:</span><span class="d-none d-print-inline">Attrs:</span></span>
+        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Bonus Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
         <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
       </div>
     </td>
@@ -1187,6 +1475,7 @@ function addArmorRow() {
   tbody.appendChild(tr1);
   tbody.appendChild(tr2);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addCustomSkillRow() {
@@ -1200,6 +1489,7 @@ function addCustomSkillRow() {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addTechniqueLevelBlock(levelVal) {
@@ -1300,6 +1590,7 @@ function addTechniqueLevelBlock(levelVal) {
     newTechProfInput.placeholder = `e.g. ${randomProf}`;
   }
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function removeTechniqueLevelBlock(btn) {
@@ -1307,6 +1598,7 @@ function removeTechniqueLevelBlock(btn) {
   if (block) {
     block.remove();
     triggerAutoSave();
+    scheduleAutoPagination(100);
   }
 }
 
@@ -1334,6 +1626,7 @@ function addTechniqueRow(btn) {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addGearRow() {
@@ -1349,6 +1642,7 @@ function addGearRow() {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addSpeciesTraitRow() {
@@ -1364,6 +1658,7 @@ function addSpeciesTraitRow() {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addPathTalentRow() {
@@ -1379,6 +1674,7 @@ function addPathTalentRow() {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addFeatRow() {
@@ -1394,6 +1690,7 @@ function addFeatRow() {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function onQuirkNameInput(input) {
@@ -1470,6 +1767,7 @@ function addQuirkRow(name = '', desc = '') {
   }
 
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function onDetractorNameInput(input) {
@@ -1546,6 +1844,7 @@ function addDetractorRow(name = '', desc = '') {
   }
 
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addCyberImplantRow(name = '', desc = '') {
@@ -1581,6 +1880,7 @@ function addCyberImplantRow(name = '', desc = '') {
   }
 
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addCyberDrawbackRow(name = '', desc = '') {
@@ -1616,6 +1916,7 @@ function addCyberDrawbackRow(name = '', desc = '') {
   }
 
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addMutationDrawbackRow(name = '', desc = '', mp = '') {
@@ -1636,12 +1937,12 @@ function addMutationDrawbackRow(name = '', desc = '', mp = '') {
       </div>
     </td>
     <td>
-      <label class="visually-hidden" for="mutationsCard_drawbackDesc_${idx}">Mutation Drawback Description</label>
-      <textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_drawbackDesc_${idx}" name="mutationDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-    </td>
-    <td>
       <label class="visually-hidden" for="mutationsCard_drawbackMP_${idx}">MP</label>
       <input class="form-control form-control-sm text-center fw-bold" id="mutationsCard_drawbackMP_${idx}" name="mutationDrawbackMP[]" oninput="calculateMutationsMPTotals()" placeholder="0" type="text"/>
+    </td>
+    <td>
+      <label class="visually-hidden" for="mutationsCard_drawbackDesc_${idx}">Mutation Drawback Description</label>
+      <textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_drawbackDesc_${idx}" name="mutationDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
     </td>
     <td class="no-print text-center">
       <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
@@ -1666,6 +1967,7 @@ function addMutationDrawbackRow(name = '', desc = '', mp = '') {
 
   calculateMutationsMPTotals();
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addMutationEnhancementRow(name = '', desc = '', mp = '') {
@@ -1686,12 +1988,12 @@ function addMutationEnhancementRow(name = '', desc = '', mp = '') {
       </div>
     </td>
     <td>
-      <label class="visually-hidden" for="mutationsCard_enhancementDesc_${idx}">Mutation Enhancement Description</label>
-      <textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_enhancementDesc_${idx}" name="mutationEnhancementDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-    </td>
-    <td>
       <label class="visually-hidden" for="mutationsCard_enhancementMP_${idx}">MP</label>
       <input class="form-control form-control-sm text-center fw-bold" id="mutationsCard_enhancementMP_${idx}" name="mutationEnhancementMP[]" oninput="calculateMutationsMPTotals()" placeholder="0" type="text"/>
+    </td>
+    <td>
+      <label class="visually-hidden" for="mutationsCard_enhancementDesc_${idx}">Mutation Enhancement Description</label>
+      <textarea class="form-control form-control-sm trait-desc-textarea" id="mutationsCard_enhancementDesc_${idx}" name="mutationEnhancementDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
     </td>
     <td class="no-print text-center">
       <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
@@ -1716,6 +2018,7 @@ function addMutationEnhancementRow(name = '', desc = '', mp = '') {
 
   calculateMutationsMPTotals();
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addPsionicDrawbackRow(name = '', desc = '', mp = '') {
@@ -1736,12 +2039,12 @@ function addPsionicDrawbackRow(name = '', desc = '', mp = '') {
       </div>
     </td>
     <td>
-      <label class="visually-hidden" for="psionicsCard_drawbackDesc_${idx}">Psionic Drawback Description</label>
-      <textarea class="form-control form-control-sm trait-desc-textarea" id="psionicsCard_drawbackDesc_${idx}" name="psionicDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-    </td>
-    <td>
       <label class="visually-hidden" for="psionicsCard_drawbackMP_${idx}">MP</label>
       <input class="form-control form-control-sm text-center fw-bold" id="psionicsCard_drawbackMP_${idx}" name="psionicDrawbackMP[]" placeholder="0" type="text"/>
+    </td>
+    <td>
+      <label class="visually-hidden" for="psionicsCard_drawbackDesc_${idx}">Psionic Drawback Description</label>
+      <textarea class="form-control form-control-sm trait-desc-textarea" id="psionicsCard_drawbackDesc_${idx}" name="psionicDrawbackDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
     </td>
     <td class="no-print text-center">
       <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
@@ -1765,6 +2068,7 @@ function addPsionicDrawbackRow(name = '', desc = '', mp = '') {
   }
 
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function addPsionicLevelBlock(levelData = {}) {
@@ -1925,14 +2229,16 @@ function addPsionicTechniqueRow(btnOrTable, name = '', range = '', desc = '') {
   }
 
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function removePsionicLevelBlock(btn) {
   const block = btn.closest('.psionic-level-block');
   if (block) {
     block.remove();
+    triggerAutoSave();
+    scheduleAutoPagination(100);
   }
-  triggerAutoSave();
 }
 
 function onMutationDrawbackNameInput(inputEl) {
@@ -2047,7 +2353,7 @@ function addProfessionBlock() {
       <div class="col-12 col-md-5">
         <div class="input-group input-group-sm">
           <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Title:</span>
-          <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]" list="professionDatalist" placeholder="e.g. Combat Medic">
+          <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]" list="professionDatalist" onchange="handleProfessionChange(this)" placeholder="e.g. Combat Medic">
           <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
@@ -2110,6 +2416,7 @@ function addProfessionBlock() {
     newInput.placeholder = `e.g. ${randomProf}`;
   }
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function toggleAffinityTag(btn, ability) {
@@ -2124,6 +2431,14 @@ function toggleAffinityTag(btn, ability) {
   if (hiddenInput) {
     hiddenInput.value = activeTags.join(',');
   }
+
+  if (btn.classList.contains('active')) {
+    const abCode = getAbilityCode(ability);
+    if (abCode) {
+      enableAbilityThemeCheckbox(abCode);
+    }
+  }
+
   triggerAutoSave();
 }
 
@@ -2132,6 +2447,7 @@ function removeProfessionBlock(btn) {
   if (block) {
     block.remove();
     triggerAutoSave();
+    scheduleAutoPagination(500);
   }
 }
 
@@ -2153,6 +2469,7 @@ function addProfTalentRow(btn) {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(500);
 }
 
 function getProfInput(prefix, i) {
@@ -2227,6 +2544,7 @@ function removeRow(btn) {
   }
   calculateStats();
   triggerAutoSave();
+  scheduleAutoPagination(500);
 }
 
 // Auto-Save & JSON Export/Import
@@ -2237,7 +2555,6 @@ function triggerAutoSave() {
   }
   clearTimeout(autoSaveTimeout);
   autoSaveTimeout = setTimeout(() => {
-    scheduleAutoPagination();
     saveToLocalStorage();
   }, 500);
 }
@@ -2270,11 +2587,13 @@ function getFormDataObj() {
         const acBonusEl = mainRow.querySelector('input[name="armorACBonus[]"]');
         const drEl = mainRow.querySelector('input[name="armorDR[]"]');
         const maxDexEl = mainRow.querySelector('input[name="armorMaxDex[]"]');
+        const weightEl = mainRow.querySelector('input[name="armorWeight[]"]');
         const speedPenEl = mainRow.querySelector('input[name="armorSpeedPenalty[]"]');
 
         const acBonus = (acBonusEl ? acBonusEl.value.trim() : '');
         const drVal = (drEl ? drEl.value.trim() : '');
         const maxDex = (maxDexEl ? maxDexEl.value.trim() : '');
+        const weightVal = (weightEl ? weightEl.value.trim() : '');
         const speedPen = (speedPenEl ? speedPenEl.value.trim() : '');
 
         const notesRow = mainRow.nextElementSibling;
@@ -2289,6 +2608,7 @@ function getFormDataObj() {
           "AC Bonus": acBonus,
           "DR": drVal,
           "Max Dex": maxDex,
+          "Weight": weightVal,
           "Speed Penalty": speedPen,
           "Bonus Attributes": bonusAttrs
         });
@@ -3227,6 +3547,10 @@ function populateForm(data) {
           if (maxDexIn) {
             maxDexIn.value = armorObj["Max Dex"] || armorObj.maxDex || '';
           }
+          const weightIn = lastMain.querySelector('input[name="armorWeight[]"]');
+          if (weightIn) {
+            weightIn.value = armorObj.Weight || armorObj.weight || '';
+          }
           const spdIn = lastMain.querySelector('input[name="armorSpeedPenalty[]"]');
           if (spdIn) {
             spdIn.value = armorObj["Speed Penalty"] || armorObj.speedPenalty || '';
@@ -4119,10 +4443,7 @@ function populateForm(data) {
   isPopulatingForm = false;
 }
 
-  setTimeout(() => {
-    document.querySelectorAll('.notebook-textarea, .trait-desc-textarea').forEach((el) => autoExpandTextarea(el));
-    scheduleAutoPagination(50);
-  }, 0);
+  reexpandAllTextareas();
 }
 
 function exportCharacterJSON() {
@@ -4380,16 +4701,20 @@ function getMaxPageHeight(pageNum = 1) {
   if (!document.body.classList.contains('is-print-mode')) {
     return 1880;
   }
-  return (pageNum === 1 ? 920 : 1000);
+  return (pageNum === 1 ? 1130 : 1100);
 }
 
 let autoPaginateTimeout = null;
 
 function scheduleAutoPagination(delay = 500) {
+  if (isPopulatingForm) {
+    return;
+  }
   if (autoPaginateTimeout) {
     clearTimeout(autoPaginateTimeout);
   }
   autoPaginateTimeout = setTimeout(() => {
+    autoPaginateTimeout = null;
     autoPaginateCards();
   }, delay);
 }
@@ -4500,14 +4825,34 @@ function getOrCreatePageContainer(pageNum) {
     </div>
   `;
 
-  const container = document.querySelector('.sheet-container') || document.body;
-  container.appendChild(page);
+  const form = document.getElementById('characterForm');
+  if (form) {
+    let nextPageEl = null;
+    let nextIdx = pageNum + 1;
+    while (nextIdx <= 20) {
+      const candidate = document.getElementById(`page-${nextIdx}`);
+      if (candidate && candidate.parentNode === form) {
+        nextPageEl = candidate;
+        break;
+      }
+      nextIdx += 1;
+    }
+    if (nextPageEl) {
+      form.insertBefore(page, nextPageEl);
+    } else {
+      form.appendChild(page);
+    }
+  } else {
+    const fallbackContainer = document.querySelector('.sheet-container') || document.body;
+    fallbackContainer.appendChild(page);
+  }
   return page;
 }
 
 const PULL_UP_SAFETY_BUFFER = 25; // 25px buffer to account for margins/padding when a card is inserted
 
 function autoPaginateCards() {
+  console.log("autoPaginateCards called");
   pushedDownCards.clear();
   const wasPrintMode = document.body.classList.contains('is-print-mode');
   const savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -4516,7 +4861,6 @@ function autoPaginateCards() {
   if (!wasPrintMode) {
     document.body.classList.add('is-print-mode');
   }
-
   reexpandAllTextareas();
 
   try {
@@ -4534,6 +4878,10 @@ function autoPaginateCards() {
       const cards = getMovableCardsInPage(currentPage);
       const currentHeight = getElementContentHeight(currentPage);
 
+      //console.log("Current page: ", pageNum)
+      //console.log("Max Page Height", maxH);
+      //console.log("Current Height", currentHeight);
+
       // 1. PUSH DOWN OVERFLOW: If page height > maxH and has >= 1 visible card
       if (currentHeight > maxH && cards.length > 0) {
         const lastCard = cards[cards.length - 1];
@@ -4550,6 +4898,15 @@ function autoPaginateCards() {
         } else {
           nextPage.appendChild(lastCard);
         }
+
+        // Keep Armor and Weapons together
+        if (lastCard.id === 'weaponsCard') {
+          const armorCard = document.getElementById('armorDefensesCard');
+          if (armorCard && armorCard.closest('[id^="page-"]') === currentPage) {
+            pushedDownCards.add(armorCard);
+            nextPage.insertBefore(armorCard, lastCard);
+          }
+        }
       } else {
         // 2. PULL UP UNDERFLOW: Check if first card of nextPage can move UP to currentPage
         const nextPage = document.getElementById(`page-${pageNum + 1}`);
@@ -4560,7 +4917,18 @@ function autoPaginateCards() {
             const cardDefaultPage = getDefaultPage(firstNextCard);
 
             if (pageNum === 1 && cardDefaultPage === 1 && !pushedDownCards.has(firstNextCard)) {
-              const cardHeight = getElementContentHeight(firstNextCard) || 150;
+              let cardHeight = getElementContentHeight(firstNextCard) || 150;
+              let isArmorPair = false;
+              let secondCard = null;
+
+              if (firstNextCard.id === 'armorDefensesCard') {
+                const nextCandidate = nextCards[1];
+                if (nextCandidate && nextCandidate.id === 'weaponsCard') {
+                  isArmorPair = true;
+                  secondCard = nextCandidate;
+                  cardHeight += (getElementContentHeight(secondCard) || 150);
+                }
+              }
 
               if (currentHeight + cardHeight + PULL_UP_SAFETY_BUFFER <= maxH) {
                 if (firstNextCard.originalParentContainer && currentPage.contains(firstNextCard.originalParentContainer)) {
@@ -4571,6 +4939,19 @@ function autoPaginateCards() {
                     currentPage.insertBefore(firstNextCard, currentFooter);
                   } else {
                     currentPage.appendChild(firstNextCard);
+                  }
+                }
+
+                if (isArmorPair && secondCard) {
+                  if (secondCard.originalParentContainer && currentPage.contains(secondCard.originalParentContainer)) {
+                    secondCard.originalParentContainer.appendChild(secondCard);
+                  } else {
+                    const currentFooter = currentPage.querySelector('.print-footer');
+                    if (currentFooter) {
+                      currentPage.insertBefore(secondCard, currentFooter);
+                    } else {
+                      currentPage.appendChild(secondCard);
+                    }
                   }
                 }
 
@@ -4603,9 +4984,19 @@ function autoPaginateCards() {
     }
   }
 
+  ensureFootersAreLastChild();
   updateHeaderToggleSwitches();
   saveCardOrder();
   updateMoveButtonVisibilities();
+}
+
+function ensureFootersAreLastChild() {
+  document.querySelectorAll('[id^="page-"]').forEach((page) => {
+    const footer = page.querySelector(':scope > .print-footer');
+    if (footer && page.lastElementChild !== footer) {
+      page.appendChild(footer);
+    }
+  });
 }
 
 function getReorderableCards() {
@@ -5271,6 +5662,7 @@ function addPowerArmorBlock() {
   `;
   container.appendChild(div);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function removePowerArmorBlock(btn) {
@@ -5278,6 +5670,7 @@ function removePowerArmorBlock(btn) {
   if (block) {
     block.remove();
     triggerAutoSave();
+    scheduleAutoPagination(100);
   }
 }
 
@@ -5302,6 +5695,7 @@ function addPowerArmorModRow(btn) {
   `;
   tbody.appendChild(tr);
   triggerAutoSave();
+  scheduleAutoPagination(100);
 }
 
 function togglePowerArmorCardVisibility(show) {
@@ -5400,7 +5794,7 @@ function setupCollapseInteractions() {
   document.querySelectorAll('.card-header-custom').forEach((header) => {
     header.style.cursor = 'pointer';
     header.addEventListener('click', (e) => {
-      if (e.target.closest('button, input, select, label, .no-collapse, .prof-check-item')) {
+      if (e.target.closest('button, input, select, label, a, .no-collapse, .prof-check-item')) {
         return;
       }
       const targetId = header.getAttribute('data-bs-target');
@@ -5456,11 +5850,18 @@ document.addEventListener('DOMContentLoaded', () => {
     updateProficiencyCounts();
   }
 
-  document.addEventListener('hidden.bs.collapse', saveCollapseStates);
-  document.addEventListener('shown.bs.collapse', saveCollapseStates);
-  window.addEventListener('resize', () => scheduleAutoPagination(150));
+  document.addEventListener('hidden.bs.collapse', () => {
+    saveCollapseStates();
+    scheduleAutoPagination(150);
+  });
+  document.addEventListener('shown.bs.collapse', () => {
+    saveCollapseStates();
+    scheduleAutoPagination(150);
+  });
+  window.addEventListener('resize', () => scheduleAutoPagination(250));
 
-  scheduleAutoPagination(50);
+  reexpandAllTextareas();
+  scheduleAutoPagination(100);
 
   if (isPrintParam) {
     setTimeout(() => {
@@ -5471,6 +5872,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('beforeprint', () => {
     document.body.classList.add('is-print-mode');
     expandAllCards();
+    autoPaginateCards();
     reexpandAllTextareas();
   });
 
@@ -5481,6 +5883,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.remove('is-print-mode');
       restoreCollapseStates();
       reexpandAllTextareas();
+      scheduleAutoPagination(50);
     }
   });
 
@@ -5494,6 +5897,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     form.addEventListener('change', (e) => {
+      if (e.target && (e.target.id === 'identityCard_charPath' || e.target.name === 'charPath')) {
+        handlePathChange(e.target.value);
+      } else if (e.target && e.target.name === 'profTitle[]') {
+        handleProfessionChange(e.target);
+      }
       if (isStatOrCalcInput(e.target)) {
         debouncedCalculateStats();
       } else {
@@ -5501,7 +5909,125 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  const modalTextarea = document.getElementById('descEditModalTextarea');
+  if (modalTextarea) {
+    modalTextarea.addEventListener('input', () => {
+      if (activeDescTargetElement) {
+        activeDescTargetElement.value = modalTextarea.value;
+        autoExpandTextarea(activeDescTargetElement);
+        triggerAutoSave();
+      }
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth > 767.98) {
+      return;
+    }
+    if (document.body.classList.contains('is-print-mode')) {
+      return;
+    }
+
+    const target = e.target;
+    if (!target) {
+      return;
+    }
+
+    if (target.matches('.trait-desc-textarea, textarea[name*="Desc"], textarea[name*="desc"], textarea[name*="Effect"], textarea[name*="Notes"], input[name="armorBonusAttributes[]"], textarea[name="backstoryNotes"]')) {
+      e.preventDefault();
+      target.blur();
+      openDescriptionModal(target);
+    }
+  });
 });
+
+let activeDescTargetElement = null;
+
+function openDescriptionModal(target) {
+  if (!target) {
+    return;
+  }
+  activeDescTargetElement = target;
+
+  const modalEl = document.getElementById('descEditModal');
+  const titleEl = document.getElementById('descEditModalTitle');
+  const subtitleEl = document.getElementById('descEditModalSubtitle');
+  const textareaEl = document.getElementById('descEditModalTextarea');
+
+  if (!modalEl || !titleEl || !textareaEl) {
+    return;
+  }
+
+  // Derive contextual title and subtitle
+  let itemName = '';
+  const row = target.closest('tr');
+  if (row) {
+    const nameInput = row.querySelector('input[type="text"]:not([readonly])');
+    if (nameInput && nameInput.value.trim()) {
+      itemName = nameInput.value.trim();
+    }
+  }
+
+  const card = target.closest('.sheet-card');
+  let cardTitle = '';
+  if (card) {
+    const headerTitle = card.querySelector('.card-header-custom span');
+    if (headerTitle) {
+      cardTitle = headerTitle.textContent.trim();
+    }
+  }
+
+  if (itemName && cardTitle) {
+    titleEl.textContent = itemName;
+    if (subtitleEl) {
+      subtitleEl.textContent = `${cardTitle} - Description Details`;
+    }
+  } else if (itemName) {
+    titleEl.textContent = itemName;
+    if (subtitleEl) {
+      subtitleEl.textContent = 'Description Details';
+    }
+  } else if (cardTitle) {
+    titleEl.textContent = cardTitle;
+    if (subtitleEl) {
+      subtitleEl.textContent = 'Description Details';
+    }
+  } else {
+    titleEl.textContent = 'Edit Description';
+    if (subtitleEl) {
+      subtitleEl.textContent = 'Description Details';
+    }
+  }
+
+  textareaEl.value = target.value || '';
+
+  if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalEl);
+    modalInstance.show();
+    setTimeout(() => {
+      textareaEl.focus();
+    }, 300);
+  }
+}
+
+function saveDescriptionModal() {
+  const modalEl = document.getElementById('descEditModal');
+  const textareaEl = document.getElementById('descEditModalTextarea');
+  if (activeDescTargetElement && textareaEl) {
+    activeDescTargetElement.value = textareaEl.value;
+    autoExpandTextarea(activeDescTargetElement);
+    activeDescTargetElement.dispatchEvent(new Event('input', { bubbles: true }));
+    activeDescTargetElement.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+
+  if (typeof bootstrap !== 'undefined' && bootstrap.Modal && modalEl) {
+    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+    if (modalInstance) {
+      modalInstance.hide();
+    }
+  }
+}
 
 function isStatOrCalcInput(target) {
   if (!target) {
@@ -5523,7 +6049,7 @@ function isStatOrCalcInput(target) {
   if (name.startsWith('skillRank_') || name.startsWith('skillMisc_')) {
     return true;
   }
-  if (name.includes('gearWeight') || name.includes('gearQty') || name.includes('armorAC') || name.includes('armorMaxDex')) {
+  if (name.includes('gearWeight') || name.includes('gearQty') || name.includes('armorAC') || name.includes('armorMaxDex') || name.includes('armorWeight')) {
     return true;
   }
   return false;

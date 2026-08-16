@@ -29,6 +29,8 @@ determineModifier = re.compile(r"[\+|-]\d{1,2}", re.IGNORECASE)
 splitString = re.compile(r"([\+|-])")
 reverseSplitString = re.compile(r"(\d){0,3}d\d{1,2}")
 
+EXPLODABLE_DICE = {2, 4, 6, 8, 10, 12}
+
 
 """
 .. module:: Rolling
@@ -118,11 +120,27 @@ def parse_die_options(options):
     if "addAll" in options:
         dieOptions["addAll"] = covertToDigit(options.get("addAll", 0))
 
+    if "exploding" in options:
+        exp_val = options.get("exploding", 0)
+        if isinstance(exp_val, str) and exp_val.lower() == "true":
+            dieOptions["exploding"] = 1
+        elif isinstance(exp_val, str) and exp_val.lower() == "false":
+            dieOptions["exploding"] = 0
+        else:
+            dieOptions["exploding"] = covertToDigit(exp_val)
+
+    if "luck" in options:
+        luck_val = options.get("luck", False)
+        if isinstance(luck_val, str):
+            dieOptions["luck"] = luck_val.lower() in ("true", "1", "yes")
+        else:
+            dieOptions["luck"] = bool(luck_val)
+
     return dieOptions
 
 
 def parse_dice_options(options):
-
+    options = dict(options)
     options.pop("rerollTotal", None)
     options.pop("rerollDie", None)
 
@@ -140,7 +158,7 @@ def roll_from_get(dString):
     :OPTIONS: GET
     :PATH: /tasks/roll/<dString>
     :VARIABLES: dString (string) This stands for Die or Dice String.
-    :PARAM: dropLowest, rerollTotal, rerollDie, subAll, addAll
+    :PARAM: dropLowest, rerollTotal, rerollDie, subAll, addAll, exploding, luck
     :DESC: The Die or Dice described in dString is analyzed for rolling. HTTP Parameters are passed to adjust the
         rolling.
     Examples:
@@ -172,6 +190,11 @@ def roll_from_get(dString):
     addAll: (default value: 0)
         This has to be an Int. This acts like subAll. It  adjusts the probability range of
         ALL die to be rolled by adding the Int value off ALL possible numbers before rolling.
+    exploding: (default value: 0)
+        This can be False, True, or Int. True == 1. When enabled, rolling the maximum face value
+        triggers an additional roll of that die added to the total (up to the specified number of explosions).
+    luck: (default value: False)
+        This can be False, True, or 1. Rolls twice and selects the highest result.
     :Content-Type: application/json
     """
 
@@ -187,7 +210,7 @@ def roll_from_get(dString):
 
     die = DieAnalyzer.die_str_analyzer(dString, dieOptions)
 
-    return jsonify(DieRoller.roll_dice(dice=die[0], connectors=die[1], diceOptions={}))
+    return jsonify(DieRoller.roll_dice(dice=die[0], connectors=die[1], diceOptions=die[2]))
 
 
 @app.route("/tasks/roll", methods=["POST"])
@@ -267,8 +290,8 @@ def roll_from_json():
             * The top keys are 'dice', 'diceOptions' and 'modifier'.
             * An item in the 'dice' list should have 'id, 'dString', and optionally 'modifier', 'connectorString',
               and 'dieOptions'.
-            * dieOptions are: 'dropLowest', 'rerollTotal', 'rerollDie'. 'subAll', 'addAll'.
-            * diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll'
+            * dieOptions are: 'dropLowest', 'rerollTotal', 'rerollDie', 'subAll', 'addAll', 'exploding', 'luck'.
+            * diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll', 'exploding', 'luck'
 
         dropLowest: (default value: False)
             This can be either False, True, or Int. True == 1. If True or 1 then this
@@ -292,6 +315,15 @@ def roll_from_json():
             Is for 'diceOptions' only. This has to be an Int. This will take each die give in the 'dices' list
             and preform the same action Int number of times. Max 10. The return json will look as if the request was
             originally submitted asking for each roll. (Helpful for when testing)
+        exploding: (default value: 0)
+            Can be False, True, or Int. True == 1. When enabled, rolling the maximum face value
+            triggers an additional roll of that die added to the total (up to the specified number of explosions).
+            NOTE: In 'dieOptions' (per-die), this can be applied to any die regardless of sides. In 'diceOptions' (global),
+            it only applies to dice in EXPLODABLE_DICE {2, 4, 6, 8, 10, 12}.
+        luck: (default value: False)
+            Can be False, True, or 1. Rolls twice and selects the highest result.
+            NOTE: In 'dieOptions' (per-die), this can be applied to any die. In 'diceOptions' (global), it only
+            applies to d20 dice.
     :Accept: application/json
     :Content-Type: application/json
     """
@@ -680,20 +712,21 @@ class Roller(object):
         return die[-1] * multipler
 
     @staticmethod
-    def _roller(die, multipler):
-        # print(f'_roller:\n\tdie: {die}\n\tmultipler: {multipler}')
-        if type(multipler) is list:
+    def _roller(die, multipler, luck=False, explosions=0):
+        if isinstance(multipler, Iterable):
+            multipler = sum(multipler)
+        if luck or explosions > 0:
             return sum(
-                [
-                    randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
-                    for rpg in [_getProbability(die, repeat=m) for m in multipler]
-                ]
+                DieRoller._roll_single_die(die, luck=luck, explosions=explosions)
+                for _ in range(multipler)
             )
+        if multipler == 1:
+            return DieRoller._roll_single_die(die, luck=False, explosions=0)
         rpg = _getProbability(die, repeat=multipler)
         return randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
 
     @staticmethod
-    def _drop_lowest(die, multipler, dropLowest):
+    def _drop_lowest(die, multipler, dropLowest, luck=False, explosions=0):
         if isinstance(multipler, Iterable):
             multipler = sum(multipler)
 
@@ -703,27 +736,28 @@ class Roller(object):
                 "dice to roll"
             )
 
-        multipler = [1] * multipler
         choices = [
-            randomPicker(rpg.numberDict.keys(), p=rpg.probabilityMap)
-            for rpg in [_getProbability(die, repeat=m) for m in multipler]
+            DieRoller._roll_single_die(die, luck=luck, explosions=explosions)
+            for _ in range(multipler)
         ]
-        if type(dropLowest) is not int:
-            choices.pop(choices.index(min(choices)))
-            return sum(choices)
-        for _ in range(int(dropLowest)):
+        drop_count = 1 if type(dropLowest) is not int else int(dropLowest)
+        for _ in range(drop_count):
             choices.pop(choices.index(min(choices)))
         return sum(choices)
 
     @staticmethod
-    def _reroll_total(die, multipler, rerollTotal, dropLowest=False, **kwargs):
+    def _reroll_total(die, multipler, rerollTotal, dropLowest=False, luck=False, explosions=0, **kwargs):
         if rerollTotal >= DieRoller._get_max_roll(die, multipler):
             raise Exception("Total is equal to or exceeds dice's max possible roll")
 
         if dropLowest:
-            rollFunc = functools.partial(DieRoller._drop_lowest, dropLowest=dropLowest)
+            rollFunc = functools.partial(
+                DieRoller._drop_lowest, dropLowest=dropLowest, luck=luck, explosions=explosions
+            )
         else:
-            rollFunc = DieRoller._roller
+            rollFunc = functools.partial(
+                DieRoller._roller, luck=luck, explosions=explosions
+            )
 
         count = 0
         while count < 11:
@@ -768,8 +802,62 @@ class DieRoller(Roller):
         return DieRoller.roll_die(*args, **kwargs)
 
     @staticmethod
+    def _resolve_die_options(die_tuple, die_options=None, global_dice_options=None):
+        if die_options is None:
+            die_options = {}
+        if global_dice_options is None:
+            global_dice_options = {}
+        die_options = dict(die_options)
+        global_dice_options = dict(global_dice_options)
+
+        sides = len(die_tuple)
+
+        # Resolve Luck:
+        # Per-die in dieOptions: ignore sides == 20 restriction.
+        # Global in diceOptions: enforce sides == 20 restriction.
+        if "luck" in die_options:
+            luck = bool(die_options["luck"])
+        elif global_dice_options.get("luck"):
+            luck = (sides == 20)
+        else:
+            luck = False
+
+        # Resolve Exploding:
+        # Per-die in dieOptions: ignore EXPLODABLE_DICE restriction.
+        # Global in diceOptions: enforce EXPLODABLE_DICE {2, 4, 6, 8, 10, 12}.
+        if "exploding" in die_options:
+            explosions = int(die_options["exploding"])
+        elif "exploding" in global_dice_options and int(global_dice_options["exploding"]) > 0:
+            explosions = int(global_dice_options["exploding"]) if sides in EXPLODABLE_DICE else 0
+        else:
+            explosions = 0
+
+        return luck, explosions
+
+    @staticmethod
+    def _roll_single_die(die_tuple, luck=False, explosions=0):
+        sides = len(die_tuple)
+
+        def _pick():
+            return int(choice(die_tuple))
+
+        if luck:
+            base_roll = max(_pick(), _pick())
+        else:
+            base_roll = _pick()
+
+        total = base_roll
+        explosions_left = explosions
+        current_roll = base_roll
+        while current_roll == sides and explosions_left > 0:
+            explosions_left -= 1
+            current_roll = _pick()
+            total += current_roll
+
+        return total
+
+    @staticmethod
     def roll_die(*args, **kwargs):
-        # print("rollDie:\n\targs; %s\n\tkwargs: %s" % (args, kwargs))
         die, multipler = None, None
         if not args:
             return None
@@ -778,16 +866,39 @@ class DieRoller(Roller):
         elif isinstance(args[0], tuple):
             die, multipler = args[0], args[1]
         multipler = DieRoller.reducer(multipler)
-        if kwargs.get("rerollTotal") is not None:
-            return DieRoller._reroll_total(die, multipler, **kwargs)
-        if kwargs.get("dropLowest", False):
-            return DieRoller._drop_lowest(die, multipler, kwargs.get("dropLowest"))
-        return DieRoller._roller(die, multipler)
+        if isinstance(multipler, list):
+            multipler = sum(multipler)
+
+        die_opts = kwargs.get("dieOptions", kwargs)
+        dice_opts = kwargs.get("diceOptions", {})
+
+        luck, explosions = DieRoller._resolve_die_options(die, die_opts, dice_opts)
+
+        dropLowest = kwargs.get("dropLowest", False)
+        if not dropLowest and isinstance(die_opts, dict):
+            dropLowest = die_opts.get("dropLowest", False)
+
+        rerollTotal = kwargs.get("rerollTotal")
+        if rerollTotal is None and isinstance(die_opts, dict):
+            rerollTotal = die_opts.get("rerollTotal")
+
+        if rerollTotal is not None:
+            return DieRoller._reroll_total(
+                die, multipler, rerollTotal, dropLowest=dropLowest, luck=luck, explosions=explosions
+            )
+        if dropLowest:
+            return DieRoller._drop_lowest(
+                die, multipler, dropLowest, luck=luck, explosions=explosions
+            )
+        return DieRoller._roller(die, multipler, luck=luck, explosions=explosions)
 
     @staticmethod
-    def roll_total(die, modifier, dieOptions):
-        # print("rollTotal:\n\tdie; %s\n\tmodifier: %s\n\tdieOptions: %s" % (die, modifier, dieOptions))
-        roll = DieRoller.roll_die(*die, **dict(dieOptions))
+    def roll_total(die, modifier, dieOptions, diceOptions=None):
+        if diceOptions is None:
+            diceOptions = {}
+        roll = DieRoller.roll_die(
+            *die, dieOptions=dict(dieOptions), diceOptions=dict(diceOptions)
+        )
         return _add_modifier(modifier, roll)
 
     @staticmethod
@@ -806,7 +917,6 @@ class DieRoller(Roller):
 
     @staticmethod
     def roll_dice(dice, connectors, diceOptions):
-        # print "rollDice:\n\tdice; %s\n\tconnectors: %s\n\tdiceOptions: %s" % (dice, connectors, diceOptions)
         connectors = DieRoller._checkConnectors(connectors)
         diceOptions = dict(diceOptions)
         try:
@@ -823,10 +933,22 @@ class DieRoller(Roller):
                 "dice to roll"
             )
 
-        diceRolls = [[DieRoller.roll_total(die[0], die[1], die[2]) for die in dice]]
+        diceRolls = [
+            [
+                DieRoller.roll_total(
+                    die[0], die[1], die[2], diceOptions=diceOptions
+                )
+                for die in dice
+            ]
+        ]
         for _ in range(repeatRoll - 1):
             diceRolls.append(
-                [DieRoller.roll_total(die[0], die[1], die[2]) for die in dice]
+                [
+                    DieRoller.roll_total(
+                        die[0], die[1], die[2], diceOptions=diceOptions
+                    )
+                    for die in dice
+                ]
             )
 
         diceTotals = [sum(roll) for roll in diceRolls]
@@ -936,8 +1058,8 @@ class DieAnalyzer(object):
         7) The top keys are 'dice', 'diceOptions' and 'modifier'.
         8) An item in the 'dice' list should have 'id, 'dString', and can have 'modifier', 'connectorString',
             and 'dieOptions'.
-        9) dieOptions are: 'dropLowest', 'rerollTotal', 'rerollDie'. 'subAll', 'addAll'.
-        10) diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll'
+        9) dieOptions are: 'dropLowest', 'rerollTotal', 'rerollDie', 'subAll', 'addAll', 'exploding', 'luck'.
+        10) diceOptions are: 'dropLowest', 'subAll', 'addAll', 'repeatRoll', 'exploding', 'luck'
 
     dropLowest: (default value: False) This can be either False, True, or Int. True == 1. If True or 1 then this
         causes the roller to drop the lowest die before totalling the value. If the number is higher than 1 then
@@ -955,17 +1077,34 @@ class DieAnalyzer(object):
     repeatRoll: (default value: False) This has to be an Int. This will take each die give in the 'dices' list
         and preform the same action Int number of times. Max 10. The return json will look as if the request was
         originally submitted asking for each roll. (Helpful for when testing)
+    exploding: (default value: 0) Can be False, True, or Int. True == 1. When enabled, rolling the maximum face value
+        triggers an additional roll of that die added to the total (up to the specified number of explosions).
+        NOTE: In 'dieOptions' (per-die) or inline '*' notation, this applies to any die regardless of sides.
+        In 'diceOptions' (global), it only applies to dice in EXPLODABLE_DICE {2, 4, 6, 8, 10, 12}.
+    luck: (default value: False) Can be False, True, or 1. Rolls twice and selects the highest result.
+        NOTE: In 'dieOptions' (per-die) or inline '^' notation, this applies to any die regardless of sides.
+        In 'diceOptions' (global), it only applies to d20 dice.
     """
 
     def __init__(self):
         pass
 
     @staticmethod
+    def _clean_token_and_get_opts(token_str, base_die_options=None):
+        token_opts = dict(base_die_options) if base_die_options else {}
+        if "^" in token_str:
+            token_opts["luck"] = True
+        if "*" in token_str:
+            match_exp = re.search(r"\*(\d+)", token_str)
+            if match_exp:
+                token_opts["exploding"] = int(match_exp.group(1))
+            else:
+                token_opts["exploding"] = 1
+        cleaned_str = re.sub(r"[\^\*]\d*", "", token_str)
+        return cleaned_str, token_opts
+
+    @staticmethod
     def die_str_analyzer(dString, dieOptions=None):
-
-        def _convertSingleDie(die):
-            return die[0], die[1], tuple(dieOptions.items())
-
         if dieOptions is None:
             dieOptions = {}
 
@@ -995,11 +1134,14 @@ class DieAnalyzer(object):
                 if "d" in item and tmpDieStr == "":
                     tmpDieStr = item
                 elif "d" in item:
+                    cleaned_str, token_opts = DieAnalyzer._clean_token_and_get_opts(
+                        tmpDieStr[:-1], dieOptions
+                    )
                     dies.append(
                         (
-                            _determine_numbers(tmpDieStr[:-1], **dieOptions),
-                            _determine_modifier(tmpDieStr[:-1]),
-                            (),
+                            _determine_numbers(cleaned_str, **token_opts),
+                            _determine_modifier(cleaned_str),
+                            tuple(token_opts.items()),
                         )
                     )
                     dieConnectors.append(tmpDieStr[-1])
@@ -1007,24 +1149,27 @@ class DieAnalyzer(object):
                 else:
                     tmpDieStr += item
             index += 1
+
+        cleaned_str, token_opts = DieAnalyzer._clean_token_and_get_opts(
+            tmpDieStr, dieOptions
+        )
         dies.append(
             (
-                _determine_numbers(tmpDieStr, **dieOptions),
-                _determine_modifier(tmpDieStr),
-                (),
+                _determine_numbers(cleaned_str, **token_opts),
+                _determine_modifier(cleaned_str),
+                tuple(token_opts.items()),
             )
         )
 
         if len(dies) > 1:
             return dies, dieConnectors, tuple(dieOptions.items())
-        dies[0] = _convertSingleDie(dies[0])
         return dies, dieConnectors, ()
 
     @staticmethod
     def die_json_analyzer(dJSON):
 
         def _sortHelper(i):
-            return i.get("id")
+            return i.get("id", 0)
 
         try:
             dies = []
@@ -1040,15 +1185,16 @@ class DieAnalyzer(object):
                 dice.append(dJSON)
 
             for item in dice:
+                d_str = str(item.get("dString", ""))
+                item_die_opts = parse_die_options(item.get("dieOptions", {}))
+                cleaned_d_str, merged_opts = DieAnalyzer._clean_token_and_get_opts(
+                    d_str, item_die_opts
+                )
                 dies.append(
                     (
-                        (
-                            str(item.get("dString")),
-                            str(item.get("modifier", "")),
-                            tuple(
-                                parse_die_options(item.get("dieOptions", {})).items()
-                            ),
-                        )
+                        cleaned_d_str,
+                        str(item.get("modifier", "")),
+                        tuple(merged_opts.items()),
                     )
                 )
                 if dice.index(item) < (len(dice) - 1):
