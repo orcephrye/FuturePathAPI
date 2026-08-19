@@ -72,6 +72,7 @@ class AttributesCard(BaseModel):
     advantageDie: Optional[str] = None
     initiative: Optional[Union[int, str]] = None
     inertia: Optional[Union[int, str]] = None
+    extraDamage: Optional[Union[int, str]] = 0
     passivePerception: Optional[Union[int, str]] = None
     techProfCount: Optional[int] = 0
 
@@ -283,7 +284,8 @@ OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
             "advantageDie": "d4",
             "initiative": "+1",
             "inertia": 10,
-            "passivePerception": 11,
+            "extraDamage": 0,
+            "passivePerception": 9,
             "techProfCount": 1
         },
         "coreSkills": {
@@ -375,7 +377,8 @@ OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
             "advantageDie": "d4",
             "initiative": "+1",
             "inertia": 10,
-            "passivePerception": 15,
+            "extraDamage": 0,
+            "passivePerception": 11,
             "techProfCount": 2
         },
         "coreSkills": {
@@ -452,7 +455,8 @@ OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
             "advantageDie": "d4",
             "initiative": "+2",
             "inertia": 10,
-            "passivePerception": 11,
+            "extraDamage": 0,
+            "passivePerception": 9,
             "techProfCount": 4
         },
         "coreSkills": {

@@ -39,9 +39,31 @@
 <i class="fa-solid fa-book-open-reader text-cyan"></i>
 <span class="d-none d-md-inline ms-1">Creation Rules</span>
 </a>
-<button class="btn btn-cyber-outline btn-sm" data-bs-target="#themeModal" data-bs-toggle="modal" title="Change Theme" type="button">
-<i class="fa-solid fa-palette me-1"></i> Theme
-        </button>
+<div class="dropdown d-inline-block">
+<button aria-expanded="false" aria-label="Header Menu" class="btn btn-cyber-outline btn-sm" data-bs-toggle="dropdown" id="headerMenuButton" title="Menu" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+<ul aria-labelledby="headerMenuButton" class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-lg py-1" style="min-width: 180px;">
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2" data-bs-target="#themeModal" data-bs-toggle="modal" type="button">
+<i class="fa-solid fa-palette text-cyan me-2" style="width: 18px; text-align: center;"></i>
+<span>Theme</span>
+</button>
+</li>
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2" id="cardLayoutLockButton" onclick="toggleCardLayoutLock()" title="Lock / Unlock Card Layout Reordering" type="button">
+<i class="fa-solid fa-lock text-warning me-2" id="cardLayoutLockIcon" style="width: 18px; text-align: center;"></i>
+<span id="cardLayoutLockText">Layout Locked</span>
+</button>
+</li>
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2" data-bs-target="#diceHistoryModal" data-bs-toggle="modal" onclick="renderDiceHistory()" type="button">
+<i class="fa-solid fa-dice text-cyan me-2" style="width: 18px; text-align: center;"></i>
+<span>History</span>
+</button>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </header>
@@ -75,9 +97,8 @@
 <i class="fa-solid fa-angles-up"></i><span class="d-none d-sm-inline ms-1">Collapse All</span>
 </button>
 </div>
-<button class="btn btn-cyber-outline btn-sm ms-md-1" id="cardLayoutLockButton" onclick="toggleCardLayoutLock()" title="Lock / Unlock Card Layout Reordering" type="button">
-<i class="fa-solid fa-lock text-warning" id="cardLayoutLockIcon"></i>
-<span id="cardLayoutLockText"><span class="d-none d-sm-inline ms-1">Layout Locked</span></span>
+<button class="btn btn-cyber-outline btn-sm ms-md-1" data-bs-target="#diceHistoryModal" data-bs-toggle="modal" onclick="renderDiceHistory()" title="Dice Rolling History" type="button">
+<i class="fa-solid fa-dice"></i><span class="d-none d-sm-inline ms-1">History</span>
 </button>
 </div>
 <div class="d-flex align-items-center gap-2">
@@ -150,7 +171,7 @@
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-identity-species">
 <div class="d-flex justify-content-between align-items-center mb-1">
-<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="speciesInput">Species</label>
+<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="speciesInput">Species<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Species" rel="noopener noreferrer" target="_blank" title="View Species on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <button class="btn btn-link btn-sm p-0 text-cyan text-decoration-none no-print" onclick="randomizeSpecies(true)" title="Suggest Random Species" type="button">
 <i class="fa-solid fa-dice"></i> <small>Random</small>
 </button>
@@ -165,7 +186,7 @@
 </datalist>
 </div>
 <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-identity-path">
-<label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Path</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Path<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Character_Path" rel="noopener noreferrer" target="_blank" title="View Character Path on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
 <label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" onchange="handlePathChange(this.value)" placeholder="e.g. Path of Strength" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="charPathDropdownBtn" onclick="toggleDatalist('identityCard_charPath')" title="Show Path Suggestions" type="button">
@@ -191,18 +212,19 @@
 <input class="form-control" id="identityCard_pathLevel" inputmode="numeric" maxlength="3" name="pathLevel" type="text"/>
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-identity-professions">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_classList">Profession(s)</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_classList">Profession(s)<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Character_Professions" rel="noopener noreferrer" target="_blank" title="View Character Professions on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <input class="form-control" id="identityCard_classList" name="classList" type="text"/>
 </div>
 <div class="col-12 col-sm-6 col-md-3 col-identity-alignment">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_alignment">
 <span class="d-none d-xl-inline d-print-none">Alignment / Factions</span>
 <span class="d-inline d-xl-none d-print-inline">Alignment</span>
+<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Alignment" rel="noopener noreferrer" target="_blank" title="View Alignment on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 </label>
 <input class="form-control" id="identityCard_alignment" name="alignment" type="text"/>
 </div>
 <div class="col-6 col-sm-4 col-md-1 col-identity-size">
-<label class="form-label small text-uppercase text-muted fw-bold" for="charSize">Size</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="charSize">Size<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Key_Terms#Size" rel="noopener noreferrer" target="_blank" title="View Size on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
 <label class="visually-hidden" for="identityCard_charSize">Charsize</label><input class="form-control" id="identityCard_charSize" list="sizesDatalist" name="charSize" placeholder="Medium" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="sizesDropdownBtn" onclick="toggleDatalist('identityCard_charSize')" title="Show Size Suggestions" type="button">
@@ -404,49 +426,77 @@
 </div>
 <div class="collapse show" id="collapseAttributes">
 <div class="card-body">
-<div class="row g-3">
-<div class="col-6 text-center">
-<div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
-<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="global_advantageDie">
-<span class="d-none d-xxl-inline">Advantage Die (Ad)</span>
-<span class="d-none d-lg-inline d-xxl-none">Adv. Die (Ad)</span>
-<span class="d-inline d-lg-none">AD</span>
+<div class="row g-2 align-items-center">
+<div class="col-7 text-center pe-1">
+<div class="advantage-die-box">
+<label class="form-label small text-uppercase text-muted fw-bold mb-1 text-nowrap" for="global_advantageDie">
+<span class="d-none d-xxl-inline">Advantage Die (AD)</span>
+<span class="d-inline d-xxl-none">AD DIE</span>
+<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Advantage" rel="noopener noreferrer" target="_blank" title="View Advantage on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 </label>
-<select class="form-select form-select-sm hp-stat-input text-start ps-2 pe-1 fw-bold" id="global_advantageDie" name="advantageDie" style="max-width: 100px;">
+<div class="d-flex align-items-center justify-content-center gap-1 flex-nowrap">
+<select class="form-select form-select-sm hp-stat-input text-start ps-1 pe-3 fw-bold" id="global_advantageDie" name="advantageDie" style="max-width: 75px; min-width: 55px; font-size: 0.78rem;">
 <option selected="" value=""></option>
 <option value="d4">1d4</option>
 <option value="d6">1d6</option>
 <option value="d8">1d8</option>
 <option value="d10">1d10</option>
 </select>
+<label class="visually-hidden" for="global_advantageMod">+/-AD</label>
+<select class="form-select form-select-sm hp-stat-input text-center px-1 fw-bold no-print d-print-none" id="global_advantageMod" style="max-width: 62px; min-width: 46px; font-size: 0.78rem;" title="+/-AD">
+<option value="-3AD" title="Triple Disadvantage (-3AD)">(-3AD)</option>
+<option value="-2AD" title="Double Disadvantage (-2AD)">(-2AD)</option>
+<option value="-1AD" title="Disadvantage (-1AD)">(-1AD)</option>
+<option selected="" value="-" title="No Advantage (-)">(-)</option>
+<option value="+1AD" title="Advantage (+1AD)">(+1AD)</option>
+<option value="+2AD" title="Double Advantage (+2AD)">(+2AD)</option>
+<option value="+3AD" title="Triple Advantage (+3AD)">(+3AD)</option>
+</select>
 </div>
 </div>
-<div class="col-6 text-center">
+</div>
+<div class="col-5 text-center ps-1">
 <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
-<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="global_initiative">
-<span class="d-none d-lg-inline">Initiative</span>
-<span class="d-inline d-lg-none">Init</span>
+<label class="form-label small text-uppercase text-muted fw-bold mb-0 text-nowrap" for="global_extraDamage">
+<span class="d-none d-xxl-inline d-print-none">Extra Damage</span>
+<span class="d-inline d-xxl-none d-print-inline">Ex. Dmg</span>
+<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Ground_Combat_Guide#Attack_Actions" rel="noopener noreferrer" target="_blank" title="View Extra Damage on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 </label>
-<input class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan" id="global_initiative" inputmode="numeric" name="initiative" readonly="" style="max-width: 65px;" title="Initiative = WIS Mod + DEX Mod" type="text"/>
+<select class="form-select form-select-sm hp-stat-input text-start ps-2 fw-bold" id="global_extraDamage" name="extraDamage" style="max-width: 60px; min-width: 45px; font-size: 0.8rem;">
+<option selected="" value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
 </div>
 </div>
-<div class="col-6 text-center">
+<div class="col-4 text-center">
 <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
-<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="global_inertia">
-<span class="d-none d-lg-inline">Inertia</span>
-<span class="d-inline d-lg-none">Iner</span>
+<label class="form-label small text-uppercase text-muted fw-bold mb-0 text-nowrap" for="global_initiative">
+<span class="d-none d-xxl-inline">Initiative</span>
+<span class="d-inline d-xxl-none">Init</span>
+<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Combat#The_Initiative_Phase" rel="noopener noreferrer" target="_blank" title="View Initiative on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 </label>
-<input class="form-control form-control-sm text-center fw-bold hp-stat-input text-info" id="global_inertia" inputmode="numeric" name="inertia" style="max-width: 65px;" type="text"/>
+<input class="form-control form-control-sm text-center fw-bold hp-stat-input text-cyan px-1" id="global_initiative" inputmode="numeric" name="initiative" readonly="" style="max-width: 50px; min-width: 36px;" title="Initiative = WIS Mod + DEX Mod" type="text"/>
 </div>
 </div>
-<div class="col-6 text-center">
+<div class="col-4 text-center">
 <div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
-<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="global_passivePerception">
-<span class="d-none d-xxl-inline">Passive Perception</span>
-<span class="d-none d-xl-inline d-xxl-none">Pass. Perception</span>
-<span class="d-inline d-xl-none">Pass. Perc.</span>
+<label class="form-label small text-uppercase text-muted fw-bold mb-0 text-nowrap" for="global_passivePerception">
+<span class="d-inline d-print-inline">Pass. Perc.</span>
+<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Perception#Passive_Perception" rel="noopener noreferrer" target="_blank" title="View Passive Perception on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 </label>
-<input class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning" id="global_passivePerception" inputmode="numeric" name="passivePerception" readonly="" style="max-width: 65px;" title="Passive Perception = 8 + WIS Mod + 1/2 Perception Rank" type="text"/>
+<input class="form-control form-control-sm text-center fw-bold hp-stat-input text-warning px-1" id="global_passivePerception" inputmode="numeric" name="passivePerception" readonly="" style="max-width: 50px; min-width: 36px;" title="Passive Perception = 8 + WIS Mod + 1/2 Perception Misc Mod" type="text"/>
+</div>
+</div>
+<div class="col-4 text-center">
+<div class="d-flex flex-row flex-md-column align-items-center justify-content-center gap-1">
+<label class="form-label small text-uppercase text-muted fw-bold mb-0 text-nowrap" for="global_inertia">
+<span class="d-none d-xxl-inline">Inertia</span>
+<span class="d-inline d-xxl-none">Iner</span>
+<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Inertia" rel="noopener noreferrer" target="_blank" title="View Inertia on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</label>
+<input class="form-control form-control-sm text-center fw-bold hp-stat-input text-info px-1" id="global_inertia" inputmode="numeric" name="inertia" style="max-width: 50px; min-width: 36px;" type="text"/>
 </div>
 </div>
 </div>
@@ -3333,6 +3383,27 @@
 </div>
 </form>
 </main>
+<!-- Dice Rolling History Modal -->
+<div aria-hidden="true" aria-labelledby="diceHistoryModalLabel" class="modal fade no-print" id="diceHistoryModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header d-flex align-items-center justify-content-between">
+<h5 class="modal-title mb-0" id="diceHistoryModalLabel"><i class="fa-solid fa-dice text-cyan me-2"></i>Dice Roll History</h5>
+<div class="d-flex align-items-center gap-2">
+<button class="btn btn-outline-danger btn-sm py-1 px-2" onclick="clearDiceHistory()" title="Clear Roll History" type="button">
+<i class="fa-solid fa-trash-can me-1"></i>Clear
+</button>
+<button aria-label="Close" class="btn-close ms-0" data-bs-dismiss="modal" type="button"></button>
+</div>
+</div>
+<div class="modal-body p-3">
+<div class="d-flex flex-column gap-2" id="diceHistoryList">
+<!-- Populated dynamically by renderDiceHistory() -->
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- Theme Selector Modal -->
 <div aria-hidden="true" aria-labelledby="themeModalLabel" class="modal fade no-print" id="themeModal" tabindex="-1">
 <div class="modal-dialog modal-dialog-centered">

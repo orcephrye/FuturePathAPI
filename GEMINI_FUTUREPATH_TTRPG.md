@@ -34,5 +34,10 @@ This helps explain the process of creating a new Character for FuturePath
 
 @./GEMINI_CHARACTER_CREATION.md
 
+## Explosives (Grenades & Traps)
+
+@./GEMINI_EXPLOSIVES.md
+
+
 
 

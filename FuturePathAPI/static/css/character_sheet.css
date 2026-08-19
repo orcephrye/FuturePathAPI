@@ -17,9 +17,30 @@ h1, h2, h3, h4, .brand-title {
 }
 
 .app-header {
+  position: relative;
+  z-index: 1050;
   background: var(--header-bg) !important;
   border-bottom: 2px solid var(--header-border);
   box-shadow: 0 4px 20px rgb(0 0 0 / 15%);
+}
+
+.app-header .dropdown-menu {
+  background-color: var(--card-bg, #0f172a) !important;
+  border: 1px solid var(--card-border, #334155) !important;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 50%) !important;
+  border-radius: 8px;
+  z-index: 1060 !important;
+}
+
+.app-header .dropdown-item {
+  color: var(--text-color, #e2e8f0);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.app-header .dropdown-item:hover,
+.app-header .dropdown-item:focus {
+  background-color: rgb(0 240 255 / 15%) !important;
+  color: #fff !important;
 }
 
 .header-icon {
@@ -1121,6 +1142,32 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 0.5rem;
+}
+
+.advantage-die-box {
+  text-align: center;
+  background: rgb(0 0 0 / 15%);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 0.25rem 0.35rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.advantage-die-box label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.advantage-die-box .form-select {
+  padding-left: 4px;
+  padding-right: 14px;
+  background-position: right 3px center;
+  background-size: 9px 7px;
+}
+
+.advantage-die-box:hover {
+  border-color: var(--neon-cyan, #00f0ff);
+  box-shadow: 0 0 8px rgb(0 240 255 / 25%);
 }
 
 .stat-label {
@@ -2394,6 +2441,35 @@ body.is-print-mode .stat-box {
   padding: 0.1rem !important;
 }
 
+body.is-print-mode .advantage-die-box {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.25rem !important;
+}
+
+body.is-print-mode .advantage-die-box label {
+  display: inline !important;
+  margin-bottom: 0 !important;
+  white-space: nowrap !important;
+}
+
+body.is-print-mode .advantage-die-box > div {
+  display: inline-flex !important;
+}
+
+body.is-print-mode .advantage-die-box select {
+  width: auto !important;
+  min-width: 55px !important;
+  max-width: 75px !important;
+}
+
 body.is-print-mode .stat-label {
   font-size: 6pt !important;
   color: #000 !important;
@@ -2468,6 +2544,14 @@ body.is-print-mode .hp-stat-input {
   box-shadow: none !important;
   background-color: transparent !important;
   text-align: center !important;
+}
+
+body.is-print-mode #global_extraDamage {
+  width: auto !important;
+  min-width: 32px !important;
+  max-width: 48px !important;
+  padding: 0 !important;
+  background-image: none !important;
 }
 
 body.is-print-mode .dr-square-box {
@@ -3001,6 +3085,43 @@ body.is-print-mode .col-lg-6 {
 
   .sheet-card.h-100 {
     height: auto !important;
+  }
+
+  .advantage-die-box {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.25rem !important;
+  }
+
+  .advantage-die-box label {
+    display: inline !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .advantage-die-box > div {
+    display: inline-flex !important;
+  }
+
+  .advantage-die-box select {
+    width: auto !important;
+    min-width: 55px !important;
+    max-width: 75px !important;
+  }
+
+  #global_extraDamage {
+    width: auto !important;
+    min-width: 32px !important;
+    max-width: 48px !important;
+    padding: 0 !important;
+    background-image: none !important;
   }
 
   .collapse {

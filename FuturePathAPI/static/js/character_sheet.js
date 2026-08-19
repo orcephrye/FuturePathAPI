@@ -554,18 +554,18 @@ function performCalculateStats() {
     }
   }
 
-  // Calculate Passive Perception (8 + WIS MOD + Math.floor(Perception Skill Rank / 2))
+  // Calculate Passive Perception (8 + WIS MOD + Math.floor(Perception Skill Misc Mod / 2))
   const passivePercEl = document.getElementById('global_passivePerception') || document.getElementsByName('passivePerception')[0];
-  const percRankEl = document.getElementById('coreSkills_skillRank_perception') || document.getElementsByName('skillRank_perception')[0];
-  const percRankVal = parseInt((percRankEl ? percRankEl.value : 0), 10) || 0;
+  const percMiscEl = document.getElementById('coreSkills_skillMisc_perception') || document.getElementsByName('skillMisc_perception')[0];
+  const percMiscVal = parseInt((percMiscEl ? percMiscEl.value : 0), 10) || 0;
 
   if (passivePercEl) {
-    if (!hasWisScore && (!percRankEl || percRankEl.value.trim() === '')) {
+    if (!hasWisScore && (!percMiscEl || percMiscEl.value.trim() === '')) {
       passivePercEl.value = '';
     } else {
       const wisMod = mods.WIS || 0;
-      const halfPercRank = Math.floor(percRankVal / 2);
-      passivePercEl.value = 8 + wisMod + halfPercRank;
+      const halfPercMisc = Math.floor(percMiscVal / 2);
+      passivePercEl.value = 8 + wisMod + halfPercMisc;
     }
   }
 
@@ -935,6 +935,40 @@ function setAdvantageDieValue(selectEl, val) {
   }
 }
 
+function getSelectedAdvantageMod() {
+  const el = document.getElementById('global_advantageMod');
+  if (!el) {
+    return 0;
+  }
+  const val = el.value.trim();
+  if (val === '+1AD' || val === '+1') {
+    return 1;
+  }
+  if (val === '+2AD' || val === '+2') {
+    return 2;
+  }
+  if (val === '+3AD' || val === '+3') {
+    return 3;
+  }
+  if (val === '-1AD' || val === '-1') {
+    return -1;
+  }
+  if (val === '-2AD' || val === '-2') {
+    return -2;
+  }
+  if (val === '-3AD' || val === '-3') {
+    return -3;
+  }
+  return 0;
+}
+
+function resetAdvantageMod() {
+  const advModSelect = document.getElementById('global_advantageMod');
+  if (advModSelect) {
+    advModSelect.value = '-';
+  }
+}
+
 async function rollAbilityCheck(abilityKey, event) {
   const modInput = document.getElementById(`abilityScoresCard_mod${abilityKey}`);
   const modVal = (modInput ? parseInt(modInput.value || '0', 10) : 0);
@@ -942,19 +976,27 @@ async function rollAbilityCheck(abilityKey, event) {
   const isPrimaryChecked = (primaryEl ? primaryEl.checked : false);
   const advDieSelect = document.getElementById('global_advantageDie');
   const advDieVal = (advDieSelect ? advDieSelect.value.trim() : '');
+  const adModCount = getSelectedAdvantageMod();
+
+  resetAdvantageMod();
 
   let dString = 'd20';
-  if (isPrimaryChecked && advDieVal) {
-    const formattedAdvDie = (advDieVal.startsWith('d') ? `1${advDieVal}` : advDieVal);
-    dString += `+${formattedAdvDie}`;
-  }
-
   if (!Number.isNaN(modVal) && modVal !== 0) {
     if (modVal > 0) {
       dString += `+${modVal}`;
     } else {
       dString += `${modVal}`;
     }
+  }
+
+  const baseAdCount = (isPrimaryChecked && advDieVal ? 1 : 0);
+  const totalAdCount = baseAdCount + adModCount;
+  const advDieType = (advDieVal ? (advDieVal.startsWith('d') ? advDieVal : advDieVal.replace(/^\d+/, '')) : 'd4');
+
+  if (totalAdCount > 0 && advDieVal) {
+    dString += `+${totalAdCount}${advDieType}`;
+  } else if (totalAdCount < 0 && advDieVal) {
+    dString += `-${Math.abs(totalAdCount)}${advDieType}`;
   }
 
   const iconEl = (window.event ? window.event.currentTarget : null);
@@ -986,7 +1028,7 @@ async function rollAbilityCheck(abilityKey, event) {
       total = data.Total;
     }
 
-    showRollNotification(`${abilityKey} Check (${dString})`, total, breakdown, isCritical);
+    showRollNotification(`<i class="fa-solid fa-dumbbell me-1"></i>${abilityKey} Check (${dString})`, total, breakdown, isCritical);
   } catch (err) {
     console.error('Error rolling dice:', err);
     alert(`Failed to roll dice for ${abilityKey}: ${err.message}`);
@@ -1033,6 +1075,12 @@ async function rollSkillCheck(btnOrIcon) {
     totalBonus = parseInt(totalSpan.innerText.replace('+', ''), 10) || 0;
   }
 
+  const advDieSelect = document.getElementById('global_advantageDie');
+  const advDieVal = (advDieSelect ? advDieSelect.value.trim() : '');
+  const adModCount = getSelectedAdvantageMod();
+
+  resetAdvantageMod();
+
   let dString = 'd20';
   if (skillDieVal) {
     const formattedDie = (skillDieVal.startsWith('d') ? `1${skillDieVal}` : skillDieVal);
@@ -1045,6 +1093,13 @@ async function rollSkillCheck(btnOrIcon) {
     } else {
       dString += `${totalBonus}`;
     }
+  }
+
+  const advDieType = (advDieVal ? (advDieVal.startsWith('d') ? advDieVal : advDieVal.replace(/^\d+/, '')) : 'd4');
+  if (adModCount > 0 && advDieVal) {
+    dString += `+${adModCount}${advDieType}`;
+  } else if (adModCount < 0 && advDieVal) {
+    dString += `-${Math.abs(adModCount)}${advDieType}`;
   }
 
   const iconEl = (btnOrIcon.classList.contains('fa-dice') ? btnOrIcon : btnOrIcon.querySelector('.fa-dice'));
@@ -1076,7 +1131,7 @@ async function rollSkillCheck(btnOrIcon) {
       total = data.Total;
     }
 
-    showRollNotification(`${skillName} Check (${dString})`, total, breakdown, isCritical);
+    showRollNotification(`<i class="fa-solid fa-list-check me-1"></i>${skillName} Check (${dString})`, total, breakdown, isCritical);
   } catch (err) {
     console.error('Error rolling skill check:', err);
     alert(`Failed to roll dice for ${skillName}: ${err.message}`);
@@ -1100,7 +1155,185 @@ function formatDiceBreakdown(diceArray, hasD20 = false, isCritical = false) {
   return `[Dice: ${formatted.join(', ')}]`;
 }
 
-function showRollNotification(title, total, details = '', isCritical = false) {
+function recordDiceRoll(title, total, details = '', isCritical = false) {
+  try {
+    const raw = localStorage.getItem('d20FuturePathRollHistory');
+    let history = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(history)) {
+      history = [];
+    }
+
+    const now = new Date();
+    const timestamp = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+    const entry = {
+      id: `${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+      title: title,
+      total: total,
+      details: details,
+      isCritical: Boolean(isCritical),
+      timestamp: timestamp
+    };
+
+    history.unshift(entry);
+    if (history.length > 20) {
+      history = history.slice(0, 20);
+    }
+
+    localStorage.setItem('d20FuturePathRollHistory', JSON.stringify(history));
+
+    const listEl = document.getElementById('diceHistoryList');
+    const modalEl = document.getElementById('diceHistoryModal');
+    if (listEl && modalEl && modalEl.classList.contains('show')) {
+      renderDiceHistory();
+    }
+  } catch (err) {
+    console.error('Error recording dice roll history:', err);
+  }
+}
+
+function renderDiceHistory() {
+  const listEl = document.getElementById('diceHistoryList');
+  if (!listEl) {
+    return;
+  }
+
+  let history = [];
+  try {
+    const raw = localStorage.getItem('d20FuturePathRollHistory');
+    if (raw) {
+      history = JSON.parse(raw);
+    }
+  } catch (err) {
+    console.error('Error reading dice roll history:', err);
+  }
+
+  if (!Array.isArray(history) || history.length === 0) {
+    listEl.innerHTML = `
+      <div class="text-center text-muted py-4">
+        <i class="fa-solid fa-dice-d20 fa-3x mb-3 text-cyan opacity-50"></i>
+        <p class="mb-0 fw-semibold">No dice rolls recorded yet.</p>
+        <small class="text-muted opacity-75">Your last 20 rolls will appear here.</small>
+      </div>
+    `;
+    return;
+  }
+
+  let html = '';
+  history.forEach((entry, idx) => {
+    if (entry.isCritical) {
+      html += `
+        <div class="p-2 rounded border border-warning shadow-sm" style="background: linear-gradient(135deg, rgba(35, 28, 5, 0.95) 0%, rgba(13, 17, 23, 0.95) 100%);">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <div class="d-flex align-items-center gap-1">
+              <span class="badge bg-warning text-dark fw-bold px-1 py-0" style="font-size: 0.65rem;">
+                <i class="fa-solid fa-crown me-1"></i>NAT 20
+              </span>
+              <span class="small text-warning fw-bold text-uppercase" style="font-size: 0.78rem;">${idx + 1}. ${entry.title}</span>
+            </div>
+            <span class="text-muted small" style="font-size: 0.72rem;"><i class="fa-regular fa-clock me-1"></i>${entry.timestamp}</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fs-4 fw-bold text-warning" style="text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);">${entry.total}</div>
+            <small class="text-white-50 ms-2 text-end" style="font-size: 0.78rem;">${entry.details || ''}</small>
+          </div>
+        </div>
+      `;
+    } else {
+      html += `
+        <div class="p-2 rounded border border-secondary shadow-sm" style="background: rgba(13, 17, 23, 0.9); border-color: rgba(0, 240, 255, 0.25) !important;">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <span class="small text-cyan fw-bold text-uppercase" style="font-size: 0.78rem;">${idx + 1}. ${entry.title}</span>
+            <span class="text-muted small" style="font-size: 0.72rem;"><i class="fa-regular fa-clock me-1"></i>${entry.timestamp}</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fs-4 fw-bold text-white">${entry.total}</div>
+            <small class="text-muted ms-2 text-end" style="font-size: 0.78rem;">${entry.details || ''}</small>
+          </div>
+        </div>
+      `;
+    }
+  });
+
+  listEl.innerHTML = html;
+}
+
+function clearDiceHistory() {
+  localStorage.removeItem('d20FuturePathRollHistory');
+  renderDiceHistory();
+}
+
+async function handleExtraDamageRoll(config, currentToast) {
+  if (currentToast && currentToast.parentNode) {
+    currentToast.remove();
+  }
+
+  const { weaponName, formattedDmg, currentTotal, remainingPresses } = config;
+  const extraDamageSelect = document.getElementById('global_extraDamage');
+  const extraDamageVal = (extraDamageSelect ? parseInt(extraDamageSelect.value || '0', 10) : 0);
+
+  try {
+    let rollUrl = formattedDmg;
+    if (/^d\d+/i.test(rollUrl)) {
+      rollUrl = `1${rollUrl}`;
+    }
+    const resp = await fetch(`/v1/tasks/roll/${encodeURIComponent(rollUrl)}`);
+    if (!resp.ok) {
+      alert(`Failed to roll extra damage for ${weaponName}: HTTP ${resp.status}`);
+      return;
+    }
+    const data = await resp.json();
+    let rollTotal = 0;
+    let rollDiceStr = '';
+    if (data.Rolls && data.Rolls.length > 0) {
+      rollTotal = data.Rolls[0].Total;
+      if (data.Rolls[0].Dice) {
+        rollDiceStr = `[Dice: ${data.Rolls[0].Dice.join(', ')}]`;
+      }
+    } else if (typeof data.Total === 'number') {
+      rollTotal = data.Total;
+    }
+
+    if (extraDamageVal === 0) {
+      // Major Hit Reroll Mechanic: compare new roll vs previous roll
+      let finalTotal = currentTotal;
+      let note = '';
+      if (rollTotal > currentTotal) {
+        finalTotal = rollTotal;
+        note = `(Major Hit: Kept higher ${rollTotal} vs ${currentTotal} ${rollDiceStr})`;
+      } else {
+        finalTotal = currentTotal;
+        note = `(Major Hit: Kept previous ${currentTotal} vs ${rollTotal} ${rollDiceStr})`;
+      }
+      showRollNotification(`<i class="fa-solid fa-burst me-1"></i>${weaponName} - Damage (Major Hit Reroll)`, finalTotal, note, false, null);
+    } else {
+      // Additive Mechanic: add to current total
+      const newTotal = currentTotal + rollTotal;
+      const currentRemaining = (typeof remainingPresses === 'number' ? remainingPresses : extraDamageVal);
+      const nextRemaining = currentRemaining - 1;
+      const detailStr = `(Added +${rollTotal} ${rollDiceStr}, Base: ${currentTotal})`;
+
+      let nextConfig = null;
+      if (nextRemaining > 0) {
+        nextConfig = {
+          weaponName,
+          formattedDmg,
+          currentTotal: newTotal,
+          remainingPresses: nextRemaining
+        };
+      }
+
+      showRollNotification(`<i class="fa-solid fa-burst me-1"></i>${weaponName} - Damage (+ Ex. Dmg)`, newTotal, detailStr, false, nextConfig);
+    }
+  } catch (err) {
+    console.error('Error rolling extra damage:', err);
+    alert(`Failed to roll extra damage: ${err.message}`);
+  }
+}
+
+function showRollNotification(title, total, details = '', isCritical = false, extraDamageConfig = null) {
+  recordDiceRoll(title, total, details, isCritical);
+
   let toastContainer = document.getElementById('rollToastContainer');
   if (!toastContainer) {
     toastContainer = document.createElement('div');
@@ -1114,7 +1347,12 @@ function showRollNotification(title, total, details = '', isCritical = false) {
   }
 
   const toast = document.createElement('div');
-  toast.setAttribute('role', 'alert');
+  let extraBtnHtml = '';
+  if (extraDamageConfig) {
+    const btnClass = (isCritical ? 'btn-outline-warning' : 'btn-cyber-outline');
+    const extraStyles = (isCritical ? 'font-size: 0.72rem; line-height: 1.4;' : 'font-size: 0.72rem; border-color: #00f0ff; color: #00f0ff; line-height: 1.4;');
+    extraBtnHtml = '<button type="button" class="btn ' + btnClass + ' btn-sm py-0 px-2 fw-bold extra-dmg-btn" style="' + extraStyles + '" title="Extra Damage / Major Hit Reroll">+ Ex. Dmg</button>';
+  }
 
   if (isCritical) {
     toast.className = 'toast show align-items-center text-bg-dark border-warning shadow-lg mb-2 no-print';
@@ -1133,11 +1371,13 @@ function showRollNotification(title, total, details = '', isCritical = false) {
           <div class="small fw-bold text-warning mt-1" style="font-size: 0.75rem; text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);">
             <i class="fa-solid fa-crown me-1"></i>CRITICAL SUCCESS!
           </div>
-          <div class="fs-3 fw-bold text-warning mb-0" style="text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);">
-            ${total} <small class="text-white-50 fs-6" style="font-size: 0.75rem;">${details}</small>
+          <div class="fs-3 fw-bold text-warning mb-0 d-flex align-items-center flex-wrap gap-2" style="text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);">
+            <span>${total}</span>
+            <small class="text-white-50 fs-6" style="font-size: 0.75rem;">${details}</small>
+            ${extraBtnHtml}
           </div>
         </div>
-        <button type="button" class="btn-close btn-close-white ms-3" onclick="this.closest('.toast').remove()"></button>
+        <button type="button" class="btn-close btn-close-white ms-3 align-self-start mt-1" onclick="this.closest('.toast').remove()"></button>
       </div>
     `;
   } else {
@@ -1149,11 +1389,25 @@ function showRollNotification(title, total, details = '', isCritical = false) {
       <div class="d-flex p-2 align-items-center justify-content-between">
         <div>
           <div class="small text-uppercase text-cyan fw-bold">${title}</div>
-          <div class="fs-4 fw-bold text-white mb-0">${total} <small class="text-muted fs-6" style="font-size: 0.75rem;">${details}</small></div>
+          <div class="fs-4 fw-bold text-white mb-0 d-flex align-items-center flex-wrap gap-2">
+            <span>${total}</span>
+            <small class="text-muted fs-6" style="font-size: 0.75rem;">${details}</small>
+            ${extraBtnHtml}
+          </div>
         </div>
-        <button type="button" class="btn-close btn-close-white ms-3" onclick="this.closest('.toast').remove()"></button>
+        <button type="button" class="btn-close btn-close-white ms-3 align-self-start mt-1" onclick="this.closest('.toast').remove()"></button>
       </div>
     `;
+  }
+
+  if (extraDamageConfig) {
+    const extraBtn = toast.querySelector('.extra-dmg-btn');
+    if (extraBtn) {
+      extraBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        handleExtraDamageRoll(extraDamageConfig, toast);
+      });
+    }
   }
 
   toastContainer.appendChild(toast);
@@ -1162,7 +1416,7 @@ function showRollNotification(title, total, details = '', isCritical = false) {
     if (toast && toast.parentNode) {
       toast.remove();
     }
-  }, isCritical ? 7000 : 5000);
+  }, isCritical ? 21000 : 15000);
 }
 
 function autoExpandTextarea(el) {
@@ -1273,12 +1527,11 @@ async function rollWeaponCheck(btn) {
   const profCount = getWeaponProficiencyCount(isMelee);
   const advDieSelect = document.getElementById('global_advantageDie');
   const advDieVal = (advDieSelect ? advDieSelect.value.trim() : '');
+  const adModCount = getSelectedAdvantageMod();
+
+  resetAdvantageMod();
 
   let accuracyFormula = 'd20';
-  if (wepLvl <= profCount && advDieVal) {
-    const formattedAdvDie = (advDieVal.startsWith('d') ? `1${advDieVal}` : advDieVal);
-    accuracyFormula += `+${formattedAdvDie}`;
-  }
 
   const staticAcc = (Number.isNaN(accVal) ? 0 : accVal);
   const staticAb = (Number.isNaN(abilityMod) ? 0 : abilityMod);
@@ -1288,6 +1541,16 @@ async function rollWeaponCheck(btn) {
     accuracyFormula += `+${totalStaticBonus}`;
   } else if (totalStaticBonus < 0) {
     accuracyFormula += `${totalStaticBonus}`;
+  }
+
+  const baseAdCount = (wepLvl <= profCount && advDieVal ? 1 : 0);
+  const totalAdCount = baseAdCount + adModCount;
+  const advDieType = (advDieVal ? (advDieVal.startsWith('d') ? advDieVal : advDieVal.replace(/^\d+/, '')) : 'd4');
+
+  if (totalAdCount > 0 && advDieVal) {
+    accuracyFormula += `+${totalAdCount}${advDieType}`;
+  } else if (totalAdCount < 0 && advDieVal) {
+    accuracyFormula += `-${Math.abs(totalAdCount)}${advDieType}`;
   }
 
   const dmgIn = tr.querySelector('input[name="wepDmg[]"]');
@@ -1321,12 +1584,21 @@ async function rollWeaponCheck(btn) {
       accTotal = accData.Total;
     }
 
-    showRollNotification(`${weaponName} - Accuracy (${accuracyFormula})`, accTotal, accDetails, accCritical);
+    showRollNotification(`<i class="fa-solid fa-crosshairs me-1"></i>${weaponName} - Accuracy (${accuracyFormula})`, accTotal, accDetails, accCritical);
 
     if (dmgExpr) {
       let formattedDmg = dmgExpr;
       if (/^d\d+/i.test(formattedDmg)) {
         formattedDmg = `1${formattedDmg}`;
+      }
+      const strModEl = document.getElementById('abilityScoresCard_modSTR');
+      const strMod = (strModEl ? parseInt(strModEl.value || '0', 10) : (isMelee ? abilityMod : 0));
+      if (isMelee && !Number.isNaN(strMod) && strMod !== 0) {
+        if (strMod > 0) {
+          formattedDmg += `+${strMod}`;
+        } else {
+          formattedDmg += `${strMod}`;
+        }
       }
       const dmgResp = await fetch(`/v1/tasks/roll/${encodeURIComponent(formattedDmg)}`);
       if (dmgResp.ok) {
@@ -1341,7 +1613,16 @@ async function rollWeaponCheck(btn) {
         } else if (typeof dmgData.Total === 'number') {
           dmgTotal = dmgData.Total;
         }
-        showRollNotification(`${weaponName} - Damage (${formattedDmg})`, dmgTotal, dmgDetails, false);
+
+        const extraDamageSelect = document.getElementById('global_extraDamage');
+        const extraDmgSetting = (extraDamageSelect ? parseInt(extraDamageSelect.value || '0', 10) : 0);
+        const extraDamageConfig = {
+          weaponName: weaponName,
+          formattedDmg: formattedDmg,
+          currentTotal: dmgTotal,
+          remainingPresses: extraDmgSetting
+        };
+        showRollNotification(`<i class="fa-solid fa-burst me-1"></i>${weaponName} - Damage (${formattedDmg})`, dmgTotal, dmgDetails, false, extraDamageConfig);
       }
     }
   } catch (err) {
@@ -4569,6 +4850,7 @@ function resetFormText(event) {
   if (confirm('Are you sure you want to clear all text and input fields on this sheet? All unsaved inputs will be lost.')) {
     document.getElementById('characterForm').reset();
     localStorage.removeItem('d20FuturePathCharData');
+    resetAdvantageMod();
     calculateStats();
     updateProficiencyCounts();
     randomizeSpecies(false);
@@ -5428,10 +5710,10 @@ function setCardLayoutLocked(locked) {
   if (locked) {
     document.body.classList.add('layout-locked');
     if (icon) {
-      icon.className = 'fa-solid fa-lock text-warning';
+      icon.className = 'fa-solid fa-lock text-warning me-2';
     }
     if (text) {
-      text.innerHTML = '<span class="d-none d-sm-inline ms-1">Layout Locked</span>';
+      text.innerHTML = 'Layout Locked';
     }
     if (btn) {
       btn.classList.remove('active');
@@ -5440,10 +5722,10 @@ function setCardLayoutLocked(locked) {
   } else {
     document.body.classList.remove('layout-locked');
     if (icon) {
-      icon.className = 'fa-solid fa-lock-open text-cyan';
+      icon.className = 'fa-solid fa-lock-open text-cyan me-2';
     }
     if (text) {
-      text.innerHTML = '<span class="d-none d-sm-inline ms-1">Layout Unlocked</span>';
+      text.innerHTML = 'Layout Unlocked';
     }
     if (btn) {
       btn.classList.add('active');
@@ -5859,6 +6141,11 @@ document.addEventListener('DOMContentLoaded', () => {
     scheduleAutoPagination(150);
   });
   window.addEventListener('resize', () => scheduleAutoPagination(250));
+
+  const diceHistoryModalEl = document.getElementById('diceHistoryModal');
+  if (diceHistoryModalEl) {
+    diceHistoryModalEl.addEventListener('show.bs.modal', renderDiceHistory);
+  }
 
   reexpandAllTextareas();
   scheduleAutoPagination(100);
