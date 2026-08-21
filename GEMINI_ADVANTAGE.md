@@ -1,43 +1,54 @@
 # Advantage System Summary
 
 ## Advantage & Disadvantage
-Used for situational difficulty adjustments on accuracy checks, skill checks, and saving throws.
-**Formula:** `1d20 +/- Advantage Die + Modifiers`
+Used for situational difficulty adjustments on accuracy checks (most commonly with proficient weapons), skill checks, and saving throws.
+* **Core Formula:** `1d20 +/- Advantage Die + Modifiers`
+* **Shorthand:** Notated as `1AD`, `2AD`, `3AD` or `XAd` (e.g., `1d20 + 1Ad + Modifiers`).
+* **Character Sheet:** Located near the top of the first page next to the Initiative box.
 
-## Advantage Die (Ad) Levels
-Die size increases based on Path progression. Levels below are **Die Levels**, not character levels. Most characters reach Level 16 naturally; Levels 17–20 are typically achieved through Feats, Abilities, or Techniques.
-*   **Lvl 1:** 0-1 (d2-1)
-*   **Lvl 2:** 1d2
-*   **Lvl 3:** 1d2+1
-*   **Lvl 4:** 1d4+1
-*   **Lvl 5:** 1d4+2
-*   **Lvl 6:** 1d6+2
-*   **Lvl 7:** 1d6+3
-*   **Lvl 8:** 1d8+3
-*   **Lvl 9:** 1d8+4
-*   **Lvl 10:** 1d10+4
-*   **Lvl 11:** 1d10+5
-*   **Lvl 12:** 1d12+5
-*   **Lvl 13:** 1d12+6
-*   **Lvl 14:** 2d6+7
-*   **Lvl 15:** 2d8+7
-*   **Lvl 16:** 2d8+8
-*   **Lvl 17:** 2d10+8
-*   **Lvl 18:** 2d10+9
-*   **Lvl 19:** 2d12+9
-*   **Lvl 20:** 2d12+10
+## Advantage Die (AD) Progression & Rules
+* **Die Levels vs Character Level:** Die levels (0–20) are **Die Levels**, NOT character levels.
+* **Starting & Max Progression:** All characters start at **Level 1** (`d2`). Standard Path progression advances characters up to **Level 18** (`d12+12`). Levels 19 and 20 are unlocked through Feats, Talents, Techniques, or special abilities.
+* **D2 Rolling:** Roll any die; **Odd** = 1, **Even** = 2.
 
-## Core Rules
-*   **Stacking:** Multiple sources of advantage stack up to a maximum of **3 dice**. 
-*   **Single Set:** High-level Advantage Dice (e.g., 2d6+7) and **Skill Rank Dice** count as a single "die set" toward the 3-die limit.
-*   **Cancellation:** Advantage and Disadvantage cancel each other out on a 1-for-1 basis.
-*   **D2 Rolls:** Roll any die; Odd = 1, Even = 2.
-*   **Inability to Act:** If an action requires more than 3 Disadvantage dice (a cumulative total after cancellation), it cannot be attempted.
-*   **Shorthand:** Notated as `XAd` (e.g., `1d20 + 2Ad`).
+### Advantage Die Levels & Success Probabilities
+
+| Die Level* | Advantage Die | DC5 | DC10 | DC15 | DC20 | DC25 | DC30 | DC35 | DC40 | DC45 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **0** | 0 | 80.00% | 55.00% | 30.00% | 5.00% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **1** | d2 | 87.50% | 62.50% | 37.50% | 12.50% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **2** | d2+1 | 92.50% | 67.50% | 42.50% | 17.50% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **3** | d2+2 | 97.50% | 72.50% | 47.50% | 22.50% | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **4** | d4+2 | 98.75% | 77.50% | 52.50% | 27.50% | 3.75% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **5** | d4+3 | 100.00% | 82.50% | 57.50% | 32.50% | 7.50% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **6** | d4+4 | 100.00% | 87.50% | 62.50% | 37.50% | 12.50% | 0.00% | 0.00% | 0.00% | 0.00% |
+| **7** | d6+4 | 100.00% | 91.67% | 67.50% | 42.50% | 17.50% | 0.83% | 0.00% | 0.00% | 0.00% |
+| **8** | d6+5 | 100.00% | 95.00% | 72.50% | 47.50% | 22.50% | 2.50% | 0.00% | 0.00% | 0.00% |
+| **9** | d6+6 | 100.00% | 97.50% | 77.50% | 52.50% | 27.50% | 5.00% | 0.00% | 0.00% | 0.00% |
+| **10** | d8+6 | 100.00% | 98.13% | 82.50% | 57.50% | 32.50% | 9.38% | 0.00% | 0.00% | 0.00% |
+| **11** | d8+7 | 100.00% | 99.38% | 86.88% | 62.50% | 37.50% | 13.13% | 0.63% | 0.00% | 0.00% |
+| **12** | d8+8 | 100.00% | 100.00% | 90.63% | 67.50% | 42.50% | 17.50% | 1.88% | 0.00% | 0.00% |
+| **13** | d10+8 | 100.00% | 100.00% | 92.50% | 72.50% | 47.50% | 22.50% | 5.00% | 0.00% | 0.00% |
+| **14** | d10+9 | 100.00% | 100.00% | 95.00% | 77.50% | 52.50% | 27.50% | 7.50% | 0.00% | 0.00% |
+| **15** | d10+10 | 100.00% | 100.00% | 97.00% | 82.00% | 57.50% | 32.50% | 10.50% | 0.50% | 0.00% |
+| **16** | d12+10 | 100.00% | 100.00% | 97.50% | 85.00% | 62.50% | 37.50% | 15.00% | 2.50% | 0.00% |
+| **17** | d12+11 | 100.00% | 100.00% | 98.75% | 88.33% | 67.50% | 42.50% | 18.75% | 4.17% | 0.00% |
+| **18** | d12+12 | 100.00% | 100.00% | 99.58% | 91.25% | 72.50% | 47.50% | 22.92% | 6.25% | 0.00% |
+| **19** | 2d6+13 | 100.00% | 100.00% | 100.00% | 97.22% | 79.86% | 55.00% | 30.00% | 7.78% | 0.14% |
+| **20** | 2d6+14 | 100.00% | 100.00% | 100.00% | 98.61% | 84.44% | 60.00% | 35.00% | 11.39% | 0.56% |
+
+*\* Note: Die Level is NOT Character Level.*
+
+## Extra Advantage & Stacking Rules
+* **Maximum Advantage:** Stacks up to a maximum of **Triple Advantage (3AD / Extra Extra Advantage)**.
+* **Rolling Multiple Advantage (2AD / 3AD):**
+  * **2AD (Double Advantage):** Roll the Advantage Die twice, take the **highest** rolled die value, then add the static modifier **twice** (e.g., if AD is `d6+4`, roll 2d6, take highest, + 8).
+  * **3AD (Triple Advantage):** Roll the Advantage Die three times, take the **highest** rolled die value, then add the static modifier **three times** (e.g., if AD is `d6+4`, roll 3d6, take highest, + 12).
+* **Cancellation:** Advantage and Disadvantage **cancel each other out** on a 1-for-1 basis (e.g., Flanking Advantage + Shaken Disadvantage = 0 AD).
 
 ## Luck Mechanics
-Affects the d20 roll itself, rather than adding dice. Represents metaphysical or otherworldly influence.
-*   **Luck:** Roll 2d20, take highest.
-*   **Extra Lucky:** Roll 3d20, take highest.
-*   **Unlucky:** Roll 2d20, take lowest.
-*   **Extra Unlucky:** Roll 3d20, take lowest.
+Affects the d20 roll itself rather than adding an Advantage Die. Represents metaphysical or otherworldly influence.
+* **Luck:** Roll 2d20, take the highest result.
+* **Extra Lucky:** Roll 3d20, take the highest result.
+* **Unlucky:** Roll 2d20, take the lowest result.
+* **Extra Unlucky:** Roll 3d20, take the lowest result.

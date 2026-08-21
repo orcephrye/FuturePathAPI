@@ -6,44 +6,41 @@
 Skills can seem daunting at first. However, realize that not all skills
 or skill rules will apply to your character. It is unlikely that you
 will ever use all the skills available for even a fully leveled-up
-character. If you want to review the skills themselves, a list of them
-can be found on the [Skills](Skills "Skills"){.wikilink} page. Also,
-Skills, similar to [Abilities](Ability_Themes "Abilities"){.wikilink},
-are like themes representing a set of possible actions, and thus the
-Skills in FuturePath are not meant to be an exhaustive list.
+character. If you want to review the skills themselves, a list is
+available on the [Skills](Skills "Skills"){.wikilink} page.
 
 `<u>`{=html}Summary`</u>`{=html}
 : Skills are actions that Characters can do in the game that require
   confirmation, as well as having defined outcomes. While a generic
-  action can be loosely associated with an Ability, a Skill is a more
+  action can be loosely associated with an
+  [Ability](Ability_Themes "Ability"){.wikilink}, a Skill is a more
   specific action. IE: Talking nicely to an NPC
   ([Charisma](Ability_Themes_In_Depth#Charisma "Charisma"){.wikilink}
   check) vs attempting to convince the NPC of something
   ([Diplomacy](Diplomacy "Diplomacy"){.wikilink} check). Skills have
   **Ranks**. The Rank determines the **Skill Die** that a Player rolls
   along with the standard d20. To gain more ranks, a player spends
-  **Skill Points** which are earned at every level. Some skills are
+  **Skill Points** which are earned at every level. A Character\'s Path
+  and Class provide **Favored Skills**. All Favored Skills only cost 1
+  skill point to rank up, while non-favored skills require 2 skill
+  points to improve the Rank. Whenever a Character gets a Favored Skill
+  either at level 1 or at any other level, they get 1 Skill Point that
+  they must spend directly on that Skill. Characters can hold onto Skill
+  Points that they cannot or do not want to spend. Some skills are
   **Natural** which means the skill can be used even if the Rank is
   zero. Once a skill has at least one rank, then that Skill is
-  considered to be **Trained**. A Character\'s Path and Class provides
-  **Favored Skills**. All Favored Skills only cost 1 skill point to rank
-  up, while non-favored skills require 2 skill points to improve the
-  Rank. Whenever a Character gets a Favored Skill either at level 1 or
-  at any other level, they get 1 Skill Point that they must spend
-  directly on that Skill. Characters can hold onto Skill Points that
-  they cannot or do not want to spend.
+  considered to be **Trained**.
 
 <!-- -->
 
 : Skills also have **Competency Levels**. These resemble milestones in
   the Character\'s training, signifying the Character\'s advancement in
   a particular skill. The Competency Levels are **Unexperienced** (Rank
-  0-1), **Novice** (Rank 2-3), **Intermediate** (Rank 4-5),
-  **Competent** (Rank 6-7), **Expert** (Rank 8-9), **Master** (Rank 10).
-  Each Competency Level, starting at Novice, adds a +1 to the total.
-  Sometimes, a task provided by the GM may have a Competency
-  requirement. This will adjust the DC depending on the Player\'s skill
-  Competency.
+  0-2), **Novice** (Rank 3-5), **Intermediate** (Rank 6-8),
+  **Experienced** (Rank 9-11) **Competent** (Rank 12-14), **Expert**
+  (Rank 15-7), **Master** (Rank 18-20). Sometimes, a task provided by
+  the GM may have a Competency requirement. This will adjust the DC
+  depending on the Player\'s skill Competency.
 
 <!-- -->
 
@@ -112,14 +109,14 @@ on. They all fall under the Ability of
     minimum is 1, even if the Intelligence modifier is negative. To
     learn more about leveling, visit the [Character Creation and
     Advancement](Character_Creation_and_Advancement "Character Creation and Advancement"){.wikilink}
-    page. The maximum Rank a skill can be is 1/2 Character Level rounded
-    up, with the Exception of Language and Profession, which are not
-    limited. Skill Points do not need to be spent and can be held onto
-    until the Player wishes to spend them. Meaning any unspent skill
-    points roll over to the next level. Each Skill Point spent on a
-    Skill improves its Rank. There are also Feats, Path, and Class
-    attributes that improve skills, usually with **Misc Mods**
-    (Miscellaneous Modifiers)
+    page. The maximum Rank a skill can be is the Character Level, with
+    the Exception of Language and Feat-based skills, which are not
+    limited. Skill Points can be held onto until the Player wishes to
+    spend them. Unspent skill points roll over to the next level. Each
+    Skill Point spent on a Favored Skill improves its Rank, while all
+    other Skills require two Skill Points to improve their rank. There
+    are also Feats, Path, and Class attributes that improve skills,
+    usually with **Misc Mods** (Miscellaneous Modifiers)
 5.  **How do I use Skills?**: The Player declares that they are going to
     use a Skill and for what purpose. The Player may also want to
     declare what they hope the outcome will be and how their Character
@@ -232,35 +229,34 @@ language.
 #### Language exceptions {#language_exceptions}
 
 - **[Language](Language "Language"){.wikilink}** Ranks are not bound by
-  the 1/2 round up of Character Level. Their Max Rank level is 10.
-  Always considered a Favored Skill for all Paths. For more information,
-  review the specific [page](Language "page"){.wikilink}.
+  the Character Level. Their Max Rank level is 10. Always considered a
+  Favored Skill for all Paths. For more information, review the specific
+  [page](Language "page"){.wikilink}.
 
 ## Skill Ranks {#skill_ranks}
 
-Skills are Ranked. The skill ranks are 1 through 10. The maximum Rank
-for a skill that a character can have is half Character Level, rounded
-up. IE, At Character level 2, it is still just Rank 1, while at level
-15, it is Rank 8. Skill points can be spent to rank up a Skill. It costs
-1 skill point to move a Favored Skill up a rank and 2 skill points to
-move a Non-Favored Skill up a rank.
+Skills are Ranked. The skill ranks are 1 through 20. The maximum Rank
+for a skill is equal to the Character Level. Skill points can be spent
+to rank up a Skill. It costs 1 skill point to rank up the Favored Skill
+and 2 skill points to move a Non-Favored Skill up a rank.
 
 ### Skill Competency Levels {#skill_competency_levels}
 
 Skills also have a Competency Level that is determined by the Rank.
 Competency Levels are used to distinguish Characters who have focused on
 a Skill. The levels provide a Miscellaneous Modification Bonus to the
-Skill Check. The Competency levels are: **Unexperienced +0** (Rank 0-1),
-**Novice +1** (Rank 2-3), **Intermediate +2** (Rank 4-5), **Competent
-+3** (Rank 6-7), **Expert +4** (Rank 8-9), **Master +5**(Rank 10)
+Skill Check. The Competency levels are: **Unexperienced** (Rank 0-2),
+**Novice** (Rank 3-5), **Intermediate** (Rank 6-8), **Experienced**
+(Rank 9-11) **Competent** (Rank 12-14), **Expert** (Rank 15-7),
+**Master** (Rank 18-20)
 
 Sometimes a DC may include a **Competency level requirement**. For
 example: \"An attempt to
 [Hack](Computer_Use#Computer_Hacking "Hack"){.wikilink} into the Ship\'s
 computer system: Computer Use DC15 (Competent)\". This means for a
-Character whose Computer Use is rank 6 or 7, the DC is 15. But for every
-Competency Level below or above, the GM should add or remove 3 to the
-DC.
+Character whose Computer Use is rank 12 through 14, the DC is 15. But
+for every Competency Level below or above, the GM should add or remove 3
+to the DC.
 
 **`<u>`{=html}GM Notes:`</u>`{=html}**
 
@@ -281,49 +277,67 @@ DC.
 
 ### Skill Die Levels {#skill_die_levels}
 
-The rank determines the **Skill Die Level** which in turn tells the
-Player what Die to roll when doing a skill check. An untrained Skill
+The rank determines the **Skill Die Level** which, in turn, tells the
+Player which Die to roll when making a skill check. An untrained Skill
 cannot have a Skill Die when doing a Check, as it cannot have ranks.
 
 Below is a list of **Skill Dies** listed by their **Skill Rank** level.
 This includes the **+X** provided by the Competency Level that is
 associated with the Rank.
 
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Skill  | Competency    | Skill  | DC5     | DC10   | DC15   | DC20   | DC25   | DC30   | DC35  |
-| Rank\* | Level         | Die    |         |        |        |        |        |        |       |
-+========+===============+========+=========+========+========+========+========+========+=======+
-| Rank 0 | Unexperienced | 0      | 80.00%  | 55.00% | 30.00% | 5.00%  | 0.00%  | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 1 | Unexperienced | 1d2    | 87.50%  | 62.50% | 37.50% | 12.50% | 0.00%  | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 2 | Novice        | 1d2+1  | 92.50%  | 67.50% | 42.50% | 17.50% | 0.00%  | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 3 | Novice        | 1d4+1  | 96.25%  | 72.50% | 47.50% | 22.50% | 1.25%  | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 4 | Intermediate  | 1d4+2  | 98.75%  | 77.50% | 52.50% | 27.50% | 3.75%  | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 5 | Intermediate  | 1d6+2  | 99.17%  | 82.50% | 57.50% | 32.50% | 8.33%  | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 6 | Competent     | 1d6+3  | 100.00% | 87.50% | 62.50% | 37.50% | 12.50% | 0.00%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 7 | Competent     | 1d8+3  | 100.00% | 90.62% | 67.50% | 42.50% | 17.50% | 1.88%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 8 | Expert        | 1d8+4  | 100.00% | 93.75% | 72.50% | 47.50% | 22.50% | 3.75%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank 9 | Expert        | 1d10+4 | 100.00% | 95.00% | 77.50% | 52.50% | 27.50% | 7.50%  | 0.00% |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| Rank   | Master        | 1d10+5 | 100.00% | 97.00% | 82.00% | 57.50% | 32.50% | 10.50% | 0.50% |
-| 10     |               |        |         |        |        |        |        |        |       |
-+--------+---------------+--------+---------+--------+--------+--------+--------+--------+-------+
-| This is **NOT** character level but **Skill Rank** level. Most characters max out at an AD     |
-| Level of 16, Feats, Abilities, Techniques, etc., can enhance the Die level.                    |
-+------------------------------------------------------------------------------------------------+
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| Skill\    | Competency\   | Skill\    | DC5       | DC10      | DC15      | DC20      | DC25      | DC30      | DC35      | DC40      | DC45      |
+| Rank\*    | Level         | Die       |           |           |           |           |           |           |           |           |           |
++===========+===============+===========+===========+===========+===========+===========+===========+===========+===========+===========+===========+
+| 0         | Unexperienced | 0         | 80.00%    | 55.00%    | 30.00%    | 5.00%     | 0.00%     | 0.00%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 1         | Unexperienced | d2        | 87.50%    | 62.50%    | 37.50%    | 12.50%    | 0.00%     | 0.00%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 2         | Unexperienced | 2d2       | 95.00%    | 70.00%    | 45.00%    | 20.00%    | 0.00%     | 0.00%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 3         | Novice        | 2d2+1     | 98.75%    | 75.00%    | 50.00%    | 25.00%    | 1.25%     | 0.00%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 4         | Novice        | d4+d2+1   | 99.38%    | 80.00%    | 55.00%    | 30.00%    | 5.63%     | 0.00%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 5         | Novice        | 2d4+1     | 99.69%    | 85.00%    | 60.00%    | 35.00%    | 10.31%    | 0.00%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 6         | Intermediate  | 2d4+2     | 100.00%   | 89.69%    | 65.00%    | 40.00%    | 15.00%    | 0.31%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 7         | Intermediate  | d6+d4+2   | 100.00%   | 92.92%    | 70.00%    | 45.00%    | 20.00%    | 2.08%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 8         | Intermediate  | 2d6+2     | 100.00%   | 95.14%    | 75.00%    | 50.00%    | 25.00%    | 4.86%     | 0.00%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 9         | Experienced   | 2d6+3     | 100.00%   | 97.22%    | 79.86%    | 55.00%    | 30.00%    | 7.78%     | 0.14%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 10        | Experienced   | d8+d6+3   | 100.00%   | 97.92%    | 83.96%    | 60.00%    | 35.00%    | 12.08%    | 1.04%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 11        | Experienced   | 2d8+3     | 100.00%   | 98.44%    | 87.27%    | 65.00%    | 40.00%    | 16.56%    | 2.73%     | 0.00%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 12        | Competent     | 2d8+4     | 100.00%   | 99.22%    | 90.62%    | 69.92%    | 45.00%    | 20.78%    | 4.38%     | 0.08%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 13        | Competent     | d10+d8+4  | 100.00%   | 99.37%    | 92.50%    | 74.37%    | 50.00%    | 25.63%    | 7.50%     | 0.63%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 14        | Competent     | 2d10+4    | 100.00%   | 99.50%    | 94.00%    | 78.25%    | 55.00%    | 30.50%    | 11.00%    | 1.75%     | 0.00%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 15        | Expert        | 2d10+5    | 100.00%   | 99.80%    | 95.80%    | 82.20%    | 59.95%    | 35.20%    | 14.20%    | 2.80%     | 0.05%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 16        | Expert        | d12+d10+5 | 100.00%   | 99.83%    | 96.50%    | 85.00%    | 64.58%    | 40.17%    | 18.50%    | 5.00%     | 0.42%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 17        | Expert        | 2d12+5    | 100.00%   | 99.86%    | 97.08%    | 87.36%    | 68.78%    | 45.14%    | 22.92%    | 7.64%     | 1.22%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 18        | Master        | 2d12+6    | 100.00%   | 99.97%    | 98.06%    | 90.07%    | 73.06%    | 50.00%    | 26.94%    | 9.93%     | 1.94%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 19        | Master        | 2d6+d12+7 | 100.00%   | 100.00%   | 99.59%    | 94.62%    | 80.09%    | 57.44%    | 32.91%    | 12.88%    | 2.41%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| 20        | Master        | 4d6+8     | 100.00%   | 100.00%   | 99.98%    | 98.23%    | 87.04%    | 64.92%    | 40.02%    | 16.77%    | 2.96%     |
++-----------+---------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
+| \* This is **NOT** character level but **Skill Rank** level.                                                                                      |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : Table: Skill Rank/Die Levels and success %
 
 Note
-: It may appear nearly impossible to succeed at a DC of 35 and
+: It may appear nearly impossible to succeed at a DC of 45 and
   completely impossible above this value. However, the probability chart
   does not account for the Ability Modifier, nor does it account for any
   Misc Modifiers a Character may earn. There are also times when

@@ -1665,8 +1665,34 @@ body.is-print-mode .dynamic-page {
 
 body.is-print-mode [id^="page-"]:last-of-type,
 body.is-print-mode [class*="print-page-"]:last-of-type,
-body.is-print-mode .dynamic-page:last-of-type {
+body.is-print-mode .dynamic-page:last-of-type,
+body.is-print-mode .print-page-last,
+body.is-print-mode [id^="page-"].print-page-last,
+body.is-print-mode [class*="print-page-"].print-page-last {
   break-after: auto !important;
+}
+
+/* Hide empty pages in print mode / printer preview */
+body.is-print-mode .print-page-empty,
+body.is-print-mode [id^="page-"].print-page-empty,
+body.is-print-mode [class*="print-page-"].print-page-empty,
+body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) {
+  display: none !important;
+  break-after: auto !important;
+  break-inside: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body.is-print-mode .print-page-empty .print-footer,
+body.is-print-mode [id^="page-"].print-page-empty .print-footer,
+body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) .print-footer {
+  display: none !important;
 }
 
 /* Force standard 2-column and grid card layouts in print mode on all device widths */
@@ -2336,6 +2362,8 @@ body.is-print-mode #collapseTechniques .technique-level-block [class*="col-"]:nt
   flex: 0 0 13% !important; max-width: 13% !important; width: 13% !important;
 }
 
+body.is-print-mode #gearTable th,
+body.is-print-mode #gearTable td,
 body.is-print-mode .techniques-sub-table th,
 body.is-print-mode .techniques-sub-table td,
 body.is-print-mode .psionic-sub-table th,
@@ -2344,14 +2372,17 @@ body.is-print-mode .psionic-sub-table td {
   font-size: 6.5pt !important;
 }
 
-body.is-print-mode #gearTable th,
-body.is-print-mode #gearTable td,
+body.is-print-mode #gearTable {
+  table-layout: fixed !important;
+  width: 100% !important;
+}
+
+body.is-print-mode #gearTable th:first-child,
+body.is-print-mode #gearTable td:first-child,
 body.is-print-mode .techniques-sub-table th:first-child,
 body.is-print-mode .techniques-sub-table td:first-child,
 body.is-print-mode .psionic-sub-table th:first-child,
 body.is-print-mode .psionic-sub-table td:first-child,
-body.is-print-mode #gearTable th:first-child,
-body.is-print-mode #gearTable td:first-child,
 body.is-print-mode #mutationsDrawbacksTable th:first-child,
 body.is-print-mode #mutationsDrawbacksTable td:first-child,
 body.is-print-mode #mutationsEnhancementsTable th:first-child,
@@ -2360,6 +2391,39 @@ body.is-print-mode #psionicsDrawbacksTable th:first-child,
 body.is-print-mode #psionicsDrawbacksTable td:first-child {
   width: 125px !important;
   max-width: 125px !important;
+}
+
+body.is-print-mode #gearTable th:nth-child(2),
+body.is-print-mode #gearTable td:nth-child(2) {
+  width: 30px !important;
+  max-width: 30px !important;
+  text-align: center !important;
+}
+
+body.is-print-mode #gearTable th:nth-child(3),
+body.is-print-mode #gearTable td:nth-child(3) {
+  width: 35px !important;
+  max-width: 35px !important;
+  text-align: center !important;
+}
+
+body.is-print-mode #gearTable th:nth-child(4),
+body.is-print-mode #gearTable td:nth-child(4) {
+  width: 24px !important;
+  max-width: 24px !important;
+  text-align: center !important;
+}
+
+body.is-print-mode #gearTable th:nth-child(5),
+body.is-print-mode #gearTable td:nth-child(5) {
+  width: auto !important;
+  max-width: none !important;
+}
+
+body.is-print-mode #gearTable input[name="gearQty[]"],
+body.is-print-mode #gearTable input[name="gearWeight[]"],
+body.is-print-mode #gearTable input[name="gearTL[]"] {
+  text-align: center !important;
 }
 
 body.is-print-mode .techniques-sub-table th:nth-child(2),
@@ -3065,8 +3129,34 @@ body.is-print-mode .col-lg-6 {
 
   [id^="page-"]:last-of-type,
   [class*="print-page-"]:last-of-type,
-  .dynamic-page:last-of-type {
+  .dynamic-page:last-of-type,
+  .print-page-last,
+  [id^="page-"].print-page-last,
+  [class*="print-page-"].print-page-last {
     break-after: auto !important;
+  }
+
+  /* Hide empty pages in print mode / printer preview */
+  .print-page-empty,
+  [id^="page-"].print-page-empty,
+  [class*="print-page-"].print-page-empty,
+  [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) {
+    display: none !important;
+    break-after: auto !important;
+    break-inside: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .print-page-empty .print-footer,
+  [id^="page-"].print-page-empty .print-footer,
+  [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) .print-footer {
+    display: none !important;
   }
 
   .no-print, .action-bar, .app-header, .btn-remove-row, .btn-add-row, .collapse-icon {
@@ -3679,6 +3769,11 @@ body.is-print-mode .col-lg-6 {
     font-size: 6.5pt !important;
   }
 
+  #gearTable {
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+
   #gearTable th:first-child,
   #gearTable td:first-child,
   .techniques-sub-table th:first-child,
@@ -3693,6 +3788,39 @@ body.is-print-mode .col-lg-6 {
   #psionicsDrawbacksTable td:first-child {
     width: 125px !important;
     max-width: 125px !important;
+  }
+
+  #gearTable th:nth-child(2),
+  #gearTable td:nth-child(2) {
+    width: 30px !important;
+    max-width: 30px !important;
+    text-align: center !important;
+  }
+
+  #gearTable th:nth-child(3),
+  #gearTable td:nth-child(3) {
+    width: 35px !important;
+    max-width: 35px !important;
+    text-align: center !important;
+  }
+
+  #gearTable th:nth-child(4),
+  #gearTable td:nth-child(4) {
+    width: 24px !important;
+    max-width: 24px !important;
+    text-align: center !important;
+  }
+
+  #gearTable th:nth-child(5),
+  #gearTable td:nth-child(5) {
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  #gearTable input[name="gearQty[]"],
+  #gearTable input[name="gearWeight[]"],
+  #gearTable input[name="gearTL[]"] {
+    text-align: center !important;
   }
 
   .techniques-sub-table th:nth-child(2),

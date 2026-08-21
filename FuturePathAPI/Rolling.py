@@ -68,6 +68,8 @@ def rollCharacter(level):
         return jsonify(Rolling.HighFantasyCharacterStats())
     elif level == "low":
         return jsonify(Rolling.LowFantasyCharacterStats())
+    elif level == "epic":
+        return jsonify(Rolling.EpicFantasyCharacterStats())
     else:
         if accept == "application/json":
             response = jsonify(
@@ -1285,6 +1287,20 @@ class Rolling(object):
     def percentile(**kwargs):
         # TODO: Change this to better reflect a Pen&Paper percentile roll using 2d10s.
         return Rolling.roller("d100", dieOptions=kwargs)
+
+    @staticmethod
+    def EpicFantasyCharacterStats():
+        roll = {
+            "dice": [
+                {
+                    "id": 1,
+                    "dString": "5d6",
+                    "dieOptions": {"dropLowest": 2, "rerollTotal": 10},
+                }
+            ],
+            "diceOptions": {"repeatRoll": 7, "dropLowest": 1},
+        }
+        return Rolling.json_roller(roll)
 
     @staticmethod
     def HighFantasyCharacterStats():

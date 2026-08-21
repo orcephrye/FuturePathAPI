@@ -10,9 +10,9 @@ let detractorsData = [];
 let speciesList;
 const pushedDownCards = new Set();
 let skillDieLevels = [
-  "1d2", "1d2+1", "1d4+1", "1d4+2", "1d6+2", "1d6+3", "1d8+3", "1d8+4",
-  "1d10+4", "1d10+5", "1d12+5", "1d12+6", "2d6+7", "2d8+7", "2d8+8",
-  "2d10+8", "2d10+9", "2d12+9", "2d12+10"
+  "d2", "2d2", "2d2+1", "d4+d2+1", "2d4+1", "2d4+2", "d6+d4+2", "2d6+2",
+  "2d6+3", "d8+d6+3", "2d8+3", "2d8+4", "d10+d8+4", "2d10+4", "2d10+5",
+  "d12+d10+5", "2d12+5", "2d12+6", "2d6+d12+7", "4d6+8"
 ];
 let isPopulatingForm = false;
 
@@ -829,9 +829,8 @@ async function loadAllReferanceData() {
     const rawProf = allData.professions || allData.character_professions;
     if (rawProf && Array.isArray(rawProf) && rawProf.length > 0) {
       professionsList = rawProf.map((p) => (typeof p === "object" ? (p.Name || p.name) : p)).filter(Boolean);
-      const profListEl = document.getElementById("professionDatalist");
-      if (profListEl) {
-        profListEl.innerHTML = professionsList.map((prof) => `<option value="${prof}">`).join("");
+      if (professionDatalist) {
+        professionDatalist.innerHTML = professionsList.map((prof) => `<option value="${prof}">`).join("");
       }
       document.querySelectorAll('input[name="profTitle[]"], input[name="techProfession[]"]').forEach((input) => {
         const randomProf = professionsList[Math.floor(Math.random() * professionsList.length)];
@@ -1015,12 +1014,18 @@ async function rollAbilityCheck(abilityKey, event) {
     let total = 0;
     let breakdown = '';
     let isCritical = false;
+    let d20Val = null;
+    let allDice = [];
     if (data.Rolls && data.Rolls.length > 0) {
       total = data.Rolls[0].Total;
       const dice = data.Rolls[0].Dice;
       if (dice && Array.isArray(dice)) {
-        if (dice.length > 0 && dice[0] === 20) {
-          isCritical = true;
+        allDice = dice;
+        if (dice.length > 0) {
+          d20Val = dice[0];
+          if (dice[0] === 20) {
+            isCritical = true;
+          }
         }
         breakdown = formatDiceBreakdown(dice, true, isCritical);
       }
@@ -1028,7 +1033,18 @@ async function rollAbilityCheck(abilityKey, event) {
       total = data.Total;
     }
 
-    showRollNotification(`<i class="fa-solid fa-dumbbell me-1"></i>${abilityKey} Check (${dString})`, total, breakdown, isCritical);
+    const title = `<i class="fa-solid fa-dumbbell me-1"></i>${abilityKey} Check (${dString})`;
+    const luckConfig = (typeof d20Val === 'number' ? {
+      title,
+      currentTotal: total,
+      currentD20: d20Val,
+      allDice,
+      dString,
+      luckCount: 0,
+      luckHistory: [d20Val]
+    } : null);
+
+    showRollNotification(title, total, breakdown, isCritical, null, luckConfig);
   } catch (err) {
     console.error('Error rolling dice:', err);
     alert(`Failed to roll dice for ${abilityKey}: ${err.message}`);
@@ -1118,12 +1134,18 @@ async function rollSkillCheck(btnOrIcon) {
     let total = 0;
     let breakdown = '';
     let isCritical = false;
+    let d20Val = null;
+    let allDice = [];
     if (data.Rolls && data.Rolls.length > 0) {
       total = data.Rolls[0].Total;
       const dice = data.Rolls[0].Dice;
       if (dice && Array.isArray(dice)) {
-        if (dice.length > 0 && dice[0] === 20) {
-          isCritical = true;
+        allDice = dice;
+        if (dice.length > 0) {
+          d20Val = dice[0];
+          if (dice[0] === 20) {
+            isCritical = true;
+          }
         }
         breakdown = formatDiceBreakdown(dice, true, isCritical);
       }
@@ -1131,7 +1153,18 @@ async function rollSkillCheck(btnOrIcon) {
       total = data.Total;
     }
 
-    showRollNotification(`<i class="fa-solid fa-list-check me-1"></i>${skillName} Check (${dString})`, total, breakdown, isCritical);
+    const title = `<i class="fa-solid fa-list-check me-1"></i>${skillName} Check (${dString})`;
+    const luckConfig = (typeof d20Val === 'number' ? {
+      title,
+      currentTotal: total,
+      currentD20: d20Val,
+      allDice,
+      dString,
+      luckCount: 0,
+      luckHistory: [d20Val]
+    } : null);
+
+    showRollNotification(title, total, breakdown, isCritical, null, luckConfig);
   } catch (err) {
     console.error('Error rolling skill check:', err);
     alert(`Failed to roll dice for ${skillName}: ${err.message}`);
@@ -1331,7 +1364,94 @@ async function handleExtraDamageRoll(config, currentToast) {
   }
 }
 
-function showRollNotification(title, total, details = '', isCritical = false, extraDamageConfig = null) {
+async function handleLuckRoll(isLucky, luckConfig, currentToast) {
+  if (currentToast && currentToast.parentNode) {
+    currentToast.remove();
+  }
+
+  const {
+    title,
+    currentTotal,
+    currentD20,
+    allDice,
+    dString,
+    luckCount,
+    luckHistory
+  } = luckConfig;
+
+  try {
+    const resp = await fetch('/v1/tasks/roll/d20');
+    if (!resp.ok) {
+      alert(`Failed to roll d20 for Luck: HTTP ${resp.status}`);
+      return;
+    }
+    const data = await resp.json();
+    let newD20 = 0;
+    if (data.Rolls && data.Rolls.length > 0 &&
+        data.Rolls[0].Dice && data.Rolls[0].Dice.length > 0) {
+      newD20 = data.Rolls[0].Dice[0];
+    } else if (typeof data.Total === 'number') {
+      newD20 = data.Total;
+    } else {
+      newD20 = Math.floor(Math.random() * 20) + 1;
+    }
+
+    let keptD20 = currentD20;
+    const label = (isLucky ? 'Lucky' : 'Unlucky');
+    let note = '';
+
+    if (isLucky) {
+      keptD20 = Math.max(currentD20, newD20);
+      note = `(Lucky: rolled d20 [${newD20}] vs [${currentD20}], kept ${keptD20})`;
+    } else {
+      keptD20 = Math.min(currentD20, newD20);
+      note = `(Unlucky: rolled d20 [${newD20}] vs [${currentD20}], kept ${keptD20})`;
+    }
+
+    const diff = keptD20 - currentD20;
+    const newTotal = currentTotal + diff;
+    const isCritical = (keptD20 === 20);
+
+    const updatedDice = (Array.isArray(allDice) && allDice.length > 0)
+      ? [keptD20, ...allDice.slice(1)]
+      : [keptD20];
+
+    const diceBreakdown = formatDiceBreakdown(updatedDice, true, isCritical);
+    const noteClass = (isLucky ? 'text-success' : 'text-danger');
+    const detailStr = `${diceBreakdown} <span class="${noteClass}" style="font-size: 0.72rem;">${note}</span>`;
+
+    const cleanTitle = title.replace(/\s*\((Lucky|Unlucky)\)/gi, '');
+    const updatedTitle = `${cleanTitle} (${label})`;
+
+    const nextCount = (typeof luckCount === 'number' ? luckCount : 0) + 1;
+    let nextLuckConfig = null;
+    if (nextCount < 2) {
+      nextLuckConfig = {
+        title: cleanTitle,
+        currentTotal: newTotal,
+        currentD20: keptD20,
+        allDice: updatedDice,
+        dString,
+        luckCount: nextCount,
+        luckHistory: [...(luckHistory || [currentD20]), newD20]
+      };
+    }
+
+    showRollNotification(
+      updatedTitle,
+      newTotal,
+      detailStr,
+      isCritical,
+      null,
+      nextLuckConfig
+    );
+  } catch (err) {
+    console.error('Error rolling luck:', err);
+    alert(`Failed to roll luck: ${err.message}`);
+  }
+}
+
+function showRollNotification(title, total, details = '', isCritical = false, extraDamageConfig = null, luckConfig = null) {
   recordDiceRoll(title, total, details, isCritical);
 
   let toastContainer = document.getElementById('rollToastContainer');
@@ -1352,6 +1472,14 @@ function showRollNotification(title, total, details = '', isCritical = false, ex
     const btnClass = (isCritical ? 'btn-outline-warning' : 'btn-cyber-outline');
     const extraStyles = (isCritical ? 'font-size: 0.72rem; line-height: 1.4;' : 'font-size: 0.72rem; border-color: #00f0ff; color: #00f0ff; line-height: 1.4;');
     extraBtnHtml = '<button type="button" class="btn ' + btnClass + ' btn-sm py-0 px-2 fw-bold extra-dmg-btn" style="' + extraStyles + '" title="Extra Damage / Major Hit Reroll">+ Ex. Dmg</button>';
+  }
+
+  let luckBtnsHtml = '';
+  if (luckConfig && typeof luckConfig.currentD20 === 'number') {
+    const luckyStyles = 'font-size: 0.72rem; border-color: #00ff88; color: #00ff88; line-height: 1.4;';
+    const unluckyStyles = 'font-size: 0.72rem; border-color: #ff4466; color: #ff6688; line-height: 1.4;';
+    luckBtnsHtml = '<button type="button" class="btn btn-outline-success btn-sm py-0 px-2 fw-bold lucky-btn" style="' + luckyStyles + '" title="Lucky Reroll (roll d20, take higher)">+ Lucky</button>' +
+      '<button type="button" class="btn btn-outline-danger btn-sm py-0 px-2 fw-bold unlucky-btn" style="' + unluckyStyles + '" title="Unlucky Reroll (roll d20, take lower)">- UnLucky</button>';
   }
 
   if (isCritical) {
@@ -1375,6 +1503,7 @@ function showRollNotification(title, total, details = '', isCritical = false, ex
             <span>${total}</span>
             <small class="text-white-50 fs-6" style="font-size: 0.75rem;">${details}</small>
             ${extraBtnHtml}
+            ${luckBtnsHtml}
           </div>
         </div>
         <button type="button" class="btn-close btn-close-white ms-3 align-self-start mt-1" onclick="this.closest('.toast').remove()"></button>
@@ -1393,6 +1522,7 @@ function showRollNotification(title, total, details = '', isCritical = false, ex
             <span>${total}</span>
             <small class="text-muted fs-6" style="font-size: 0.75rem;">${details}</small>
             ${extraBtnHtml}
+            ${luckBtnsHtml}
           </div>
         </div>
         <button type="button" class="btn-close btn-close-white ms-3 align-self-start mt-1" onclick="this.closest('.toast').remove()"></button>
@@ -1406,6 +1536,23 @@ function showRollNotification(title, total, details = '', isCritical = false, ex
       extraBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         handleExtraDamageRoll(extraDamageConfig, toast);
+      });
+    }
+  }
+
+  if (luckConfig) {
+    const luckyBtn = toast.querySelector('.lucky-btn');
+    if (luckyBtn) {
+      luckyBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        handleLuckRoll(true, luckConfig, toast);
+      });
+    }
+    const unluckyBtn = toast.querySelector('.unlucky-btn');
+    if (unluckyBtn) {
+      unluckyBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        handleLuckRoll(false, luckConfig, toast);
       });
     }
   }
@@ -1571,12 +1718,18 @@ async function rollWeaponCheck(btn) {
     let accTotal = 0;
     let accDetails = '';
     let accCritical = false;
+    let accD20Val = null;
+    let accAllDice = [];
     if (accData.Rolls && accData.Rolls.length > 0) {
       accTotal = accData.Rolls[0].Total;
       const dice = accData.Rolls[0].Dice;
       if (dice && Array.isArray(dice)) {
-        if (dice.length > 0 && dice[0] === 20) {
-          accCritical = true;
+        accAllDice = dice;
+        if (dice.length > 0) {
+          accD20Val = dice[0];
+          if (dice[0] === 20) {
+            accCritical = true;
+          }
         }
         accDetails = formatDiceBreakdown(dice, true, accCritical);
       }
@@ -1584,7 +1737,18 @@ async function rollWeaponCheck(btn) {
       accTotal = accData.Total;
     }
 
-    showRollNotification(`<i class="fa-solid fa-crosshairs me-1"></i>${weaponName} - Accuracy (${accuracyFormula})`, accTotal, accDetails, accCritical);
+    const accTitle = `<i class="fa-solid fa-crosshairs me-1"></i>${weaponName} - Accuracy (${accuracyFormula})`;
+    const accLuckConfig = (typeof accD20Val === 'number' ? {
+      title: accTitle,
+      currentTotal: accTotal,
+      currentD20: accD20Val,
+      allDice: accAllDice,
+      dString: accuracyFormula,
+      luckCount: 0,
+      luckHistory: [accD20Val]
+    } : null);
+
+    showRollNotification(accTitle, accTotal, accDetails, accCritical, null, accLuckConfig);
 
     if (dmgExpr) {
       let formattedDmg = dmgExpr;
@@ -5270,6 +5434,7 @@ function autoPaginateCards() {
   updateHeaderToggleSwitches();
   saveCardOrder();
   updateMoveButtonVisibilities();
+  updateEmptyPages();
 }
 
 function ensureFootersAreLastChild() {
@@ -5277,6 +5442,49 @@ function ensureFootersAreLastChild() {
     const footer = page.querySelector(':scope > .print-footer');
     if (footer && page.lastElementChild !== footer) {
       page.appendChild(footer);
+    }
+  });
+}
+
+function updateEmptyPages() {
+  const pageEls = Array.from(document.querySelectorAll('[id^="page-"]'))
+    .filter((page) => /^page-\d+$/.test(page.id));
+
+  const visiblePages = [];
+
+  pageEls.forEach((page) => {
+    const cards = page.querySelectorAll('.sheet-card');
+    let hasVisibleCard = false;
+    cards.forEach((card) => {
+      if (card.closest('[id^="page-"]') === page) {
+        if (!card.classList.contains('card-hidden-all') &&
+            !card.classList.contains('d-none') &&
+            card.style.display !== 'none' &&
+            !card.hidden &&
+            window.getComputedStyle(card).display !== 'none') {
+          hasVisibleCard = true;
+        }
+      }
+    });
+
+    if (!hasVisibleCard) {
+      page.classList.add('print-page-empty');
+      page.classList.remove('print-page-last');
+    } else {
+      page.classList.remove('print-page-empty');
+      visiblePages.push(page);
+    }
+  });
+
+  visiblePages.forEach((page, index) => {
+    if (index === visiblePages.length - 1) {
+      page.classList.add('print-page-last');
+    } else {
+      page.classList.remove('print-page-last');
+    }
+    const footer = page.querySelector(':scope > .print-footer');
+    if (footer) {
+      footer.textContent = `Page ${index + 1} - d20 FuturePath Character Sheet`;
     }
   });
 }
@@ -5750,6 +5958,8 @@ function toggleTechniquesCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowTechniquesCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreTechniquesVisibilityState() {
@@ -5774,6 +5984,8 @@ function toggleQuirksCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowQuirksCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreQuirksVisibilityState() {
@@ -5798,6 +6010,8 @@ function toggleDetractorsCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowDetractorsCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreDetractorsVisibilityState() {
@@ -5822,6 +6036,8 @@ function toggleCyberneticsCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowCyberneticsCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreCyberneticsVisibilityState() {
@@ -5846,6 +6062,8 @@ function toggleMutationsCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowMutationsCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreMutationsVisibilityState() {
@@ -5870,6 +6088,8 @@ function togglePsionicsCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowPsionicsCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restorePsionicsVisibilityState() {
@@ -5990,6 +6210,8 @@ function togglePowerArmorCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowPowerArmorCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restorePowerArmorVisibilityState() {
@@ -6014,6 +6236,8 @@ function toggleBackstoryCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowBackstoryCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreBackstoryVisibilityState() {
@@ -6038,6 +6262,8 @@ function toggleConditionsCardVisibility(show) {
     }
   }
   localStorage.setItem('d20FuturePathShowConditionsCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
 }
 
 function restoreConditionsVisibilityState() {
@@ -6148,6 +6374,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   reexpandAllTextareas();
+  updateEmptyPages();
   scheduleAutoPagination(100);
 
   if (isPrintParam) {
@@ -6160,6 +6387,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('is-print-mode');
     expandAllCards();
     autoPaginateCards();
+    updateEmptyPages();
     reexpandAllTextareas();
   });
 

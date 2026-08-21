@@ -107,9 +107,66 @@ the day and the right to annex the system.
 
 }}
 
-### Points of Interest in Detail {#points_of_interest_in_detail}
+## Running this PoI Adventure {#running_this_poi_adventure}
 
-- **Customs & Arrival Port (The Docking Bay):**
+This is a **Point of Interest** style dungeon crawl. Instead of fixed
+rooms and corridors, the players choose to walk from one location (Point
+of Interest) to another **PoI**/location. Each PoI will have 1 or more
+encounters that will help inform the Players or possibly mislead the
+players to the final PoI, which in this adventure One Shot is the
+[Sector 9 Cargo
+Docks](#The_Climax:_Sector_9_Cargo_Docks "Sector 9 Cargo Docks"){.wikilink}.
+The Players start out at the [Heng\'s Cometary
+Noodles](#Heng's_Cometary_Noodles_(Flavor) "Heng's Cometary Noodles"){.wikilink}
+and the GM should read more on how to start the adventure
+[below](#Starting_the_Adventure "below"){.wikilink}.
+
+## Starting the Adventure {#starting_the_adventure}
+
+The Location
+: The Adventures/Heroes start out together at [Heng\'s Cometary
+  Noodles](#Heng's_Cometary_Noodles_(Flavor) "Heng's Cometary Noodles"){.wikilink}.
+  The locals call it \'Hangs\' The GM should ask the Players if they
+  have a reason to know each other or have gathered at DDs. They should
+  all already know the game\'s starting premise and their characters,
+  and the whole station should already know of the coming armada. If the
+  Players cannot think of a reason or simply do not want to. Provide
+  them with the following:
+
+> The usual liveliness of Hangs seems gone, like someone opened an
+> airlock all of a sudden. People talk in muted, hushed voices. You have
+> to strain to pick up any noise. You all know what is being discussed.
+> You lean in close around the table too. The smell of hot noodles hits
+> your nose, begging not to be ignored, but you are too busy thinking
+> about the situation at hand. Here together is a group of people you
+> know and trust. They are all here for the same reason as everybody
+> else. The Armada is on its way, and all anybody can think about is
+> what the heck are you all gonna do about it.
+
+GM Notes
+: Make sure the Players know that the last place Lady Kaelen was seen
+  was the [Customs & Arrival
+  Port](#Customs_&_Arrival_Port_(The_Docking_Bay) "Customs & Arrival Port"){.wikilink}.
+  They can go to the other [Utility & Flavor
+  Locations](#Utility_&_Flavor_Locations "Utility & Flavor Locations"){.wikilink}.
+  If they try to go to any other locations, encourage them not to go,
+  but there is nothing stopping them.
+
+If they decide to go to another location to start the investigation that
+isn\'t the \'Customs & Arrival Port \', then you can try one last thing.
+Read the following:
+
+> As your group leaves Hang\'s, one of the other patrons leaves with
+> you. He is a nervous-looking Aconain. \"Hey\... rrr\... I heard y\'all
+> talking about\... well, about what\'s going on. I work on the docks.
+> My co-workers said they saw the Lady. One of them is a Murid named
+> Roban. He says he even talked to her. He may know something. If any of
+> you are planning on doing anything\... if there is anything to do,
+> that is. That\'s who I would talk to first!\"
+
+## Points of Interest in Detail {#points_of_interest_in_detail}
+
+### Customs & Arrival Port (The Docking Bay) {#customs_arrival_port_the_docking_bay}
 
 :\* **The Situation:** The entry point where Kaelen and Valen first
 boarded the station under forged credentials.
@@ -128,7 +185,7 @@ official reveals they used high-end, luxury-grade forged transponders
 ::\* A DC 12 sensors sweep detects a strange residue of volatile gas-ore
 on the landing pads (leads to the red herring **Silo 12**).
 
-- **Gilded Comet Casino (Upper Promenade):**
+### Gilded Comet Casino (Upper Promenade) {#gilded_comet_casino_upper_promenade}
 
 :\* **The Situation:** A high-end casino where Kaelen was seen in public
 under a disguise.
@@ -153,7 +210,7 @@ specialized mid-deck medication (leads to the **Medical Clinic**).
 mentions the royal consulate suite has been occupied (leads to the red
 herring **Consulate Office**).
 
-- **The Smuggler\'s Den (The Underbelly):**
+### The Smuggler\'s Den (The Underbelly) {#the_smugglers_den_the_underbelly}
 
 :\* **The Situation:** A crowded, smoky dive bar frequented by asteroid
 miners and smugglers.
@@ -173,7 +230,7 @@ to the **Refinery Control Room**).
 ::\* A smuggler brags about a royal vessel docked nearby (leads to the
 red herring **Hangar B**).
 
-- **Medical Clinic (Mid-Deck):**
+### Medical Clinic (Mid-Deck) {#medical_clinic_mid_deck}
 
 :\* **The Situation:** A crowded clinic where Kaelen was treated for
 mild radiation sickness.
@@ -192,7 +249,7 @@ resident doctor reveals that Aconian agents were asking about the
 couple. He heard them mention hacking the security grid from the
 **Refinery Control Room**.
 
-- **Refinery Control Room (Industrial Level):**
+### Refinery Control Room (Industrial Level) {#refinery_control_room_industrial_level}
 
 :\* **The Situation:** The central station grid where Vandar\'s agents
 are actively hacking security to track Kaelen.
@@ -205,7 +262,7 @@ intercept the terminal reveals the agents have traced Kaelen\'s royal
 signet ring beacon and are moving her to the cargo bay (leads to
 **Sector 9 Cargo Docks**).
 
-- **Beltway Refhab 42 (Lower Habitation):**
+### Beltway Refhab 42 (Lower Habitation) {#beltway_refhab_42_lower_habitation}
 
 :\* **The Situation:** The safe house where Kaelen was hiding, now
 trashed.
@@ -216,102 +273,6 @@ trashed.
 [Perception](Perception "Perception"){.wikilink} check to investigate
 the room reveals signs of a struggle and a dropped Aconian tracer signal
 pointing directly to **Sector 9 Cargo Docks**.
-
-### Red Herring Locations {#red_herring_locations}
-
-- **Silo 12 (Gas Silos - Red Herring):**
-
-:\* **The Lead:** Unregistered refinery shuttle residue at the docks.
-
-:\* **The Reality:** An illegal gas-ore smuggling ring run by desperate
-local miners. Players must negotiate a stand-off (DC 14
-[Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
-[Intimidate](Intimidate "Intimidate"){.wikilink}).
-
-:\* **The Payoff:** The miners bribe the players with 2,000 ISC to look
-the other way and mention their buyer operates out of the **Smuggler\'s
-Den**.
-
-- **Consulate Office (Upper Promenade - Red Herring):**
-
-:\* **The Lead:** The official royal suite where an Aconian VIP might
-reside.
-
-:\* **The Reality:** The suite is empty of royals, occupied only by a
-panicked diplomat who lost his exotic pet star-ferret.
-
-:\* **The Payoff:** Capturing the ferret (DC 12
-[Acrobatics](Acrobatics "Acrobatics"){.wikilink} or
-[Survival](Survival "Survival"){.wikilink}) earns the diplomat\'s
-gratitude. He rewards the players with a Tech Level 2 item and mentions
-seeing Valen at the **Gilded Comet Casino**.
-
-- **Hangar B (Herald\'s Vessel - Red Herring):**
-
-:\* **The Lead:** An official Aconian vessel parked in the private
-docks.
-
-:\* **The Reality:** The ship of Prince Jarek's personal Herald, who is
-here to deliver the formal martial law declaration.
-
-:\* **The Payoff:** Hacking the ship\'s comms logs (DC 13 [Computer
-Use](Computer_Use "Computer Use"){.wikilink}) reveals the fleet\'s
-arrival schedule (granting the players 1 extra hour of in-game
-investigation time) and links the Herald\'s guards to the **Refinery
-Control Room**.
-
-### Utility & Flavor Locations {#utility_flavor_locations}
-
-- **The Drifter\'s Depot (General Store - Utility):**
-
-:\* **The Situation:** A cluttered warehouse shop run by **Jax**, a
-grumpy but fair retired Belter miner. It sells survival gear, tools, and
-technical supplies.
-
-:\* **Function:** Players can restock or purchase equipment from the
-[General Equipment](General_Equipment "General Equipment"){.wikilink}
-list using their Credit Score or ISC ([Wealth &
-Money](Wealth_and_Money "Wealth & Money"){.wikilink}).
-
-:\* **Clue/Rumor:** Jax complains about a nervous young man (Valen) who
-came in earlier and bought a high-grade radiation hazard suit and water
-filtration packs, which are far too clean for a local Belter to need.
-
-- **Void-Forge Munitions (Weapons & Armor - Utility):**
-
-:\* **The Situation:** A heavily fortified storefront smelling of gun
-oil, ozone, and metal shavings. Run by **Vera**, a no-nonsense cyborg
-veteran.
-
-:\* **Function:** Players can buy firearms, ammunition, and various
-armor grades ([Weapons](Weapons "Weapons"){.wikilink} /
-[Armor](Armor "Armor"){.wikilink}).
-
-:\* **Clue/Rumor:** Vera mentions that a group of Aconians tried to buy
-heavy weapons under the table, but she kicked them out because they
-lacked local licenses and had \"shifty mercenary eyes.\"
-
-- **Heng\'s Cometary Noodles (Flavor):**
-
-:\* **The Situation:** A tiny, neon-lit noodle stall serving synthetic
-kelp noodles and steaming hot broth, run by the talkative **Uncle
-Heng**. It is the social hub of the lower decks.
-
-:\* **Flavor:** Spending 5 ISC on a bowl of noodles and talking to the
-patrons grants the crew a temporary +1 bonus to their next stamina or
-morale check and reveals station rumors about Aconian agents lurking
-near the docks.
-
-- **The Oasis Bio-Dome (Flavor):**
-
-:\* **The Situation:** A small, pressurized dome containing real soil,
-genetically engineered pine trees, and recycled natural air. It is the
-only green space on the station, reserved for citizens needing
-\"psychological decompression.\"
-
-:\* **Flavor:** A peaceful, quiet sanctuary where the players can rest,
-discuss their findings, and escape the noisy industrial hum of the
-mining station.
 
 ### The Climax: Sector 9 Cargo Docks {#the_climax_sector_9_cargo_docks}
 
@@ -335,3 +296,99 @@ but Kaelen and Valen must flee into exile.
 :\* **Option C: Cover Up and Run.** Help the lovers escape using the
 smuggler shuttle. The station faces temporary Aconian occupation, but
 the lovers escape to the outer rim.
+
+## Red Herring Locations {#red_herring_locations}
+
+### Silo 12 (Gas Silos - Red Herring) {#silo_12_gas_silos___red_herring}
+
+:\* **The Lead:** Unregistered refinery shuttle residue at the docks.
+
+:\* **The Reality:** An illegal gas-ore smuggling ring run by desperate
+local miners. Players must negotiate a stand-off (DC 14
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+[Intimidate](Intimidate "Intimidate"){.wikilink}).
+
+:\* **The Payoff:** The miners bribe the players with 2,000 ISC to look
+the other way and mention their buyer operates out of the **Smuggler\'s
+Den**.
+
+### Consulate Office (Upper Promenade - Red Herring) {#consulate_office_upper_promenade___red_herring}
+
+:\* **The Lead:** The official royal suite where an Aconian VIP might
+reside.
+
+:\* **The Reality:** The suite is empty of royals, occupied only by a
+panicked diplomat who lost his exotic pet star-ferret.
+
+:\* **The Payoff:** Capturing the ferret (DC 12
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} or
+[Survival](Survival "Survival"){.wikilink}) earns the diplomat\'s
+gratitude. He rewards the players with a Tech Level 2 item and mentions
+seeing Valen at the **Gilded Comet Casino**.
+
+### Hangar B (Herald\'s Vessel - Red Herring) {#hangar_b_heralds_vessel___red_herring}
+
+:\* **The Lead:** An official Aconian vessel parked in the private
+docks.
+
+:\* **The Reality:** The ship of Prince Jarek's personal Herald, who is
+here to deliver the formal martial law declaration.
+
+:\* **The Payoff:** Hacking the ship\'s comms logs (DC 13 [Computer
+Use](Computer_Use "Computer Use"){.wikilink}) reveals the fleet\'s
+arrival schedule (granting the players 1 extra hour of in-game
+investigation time) and links the Herald\'s guards to the **Refinery
+Control Room**.
+
+## Utility & Flavor Locations {#utility_flavor_locations}
+
+### The Drifter\'s Depot (General Store - Utility) {#the_drifters_depot_general_store___utility}
+
+:\* **The Situation:** A cluttered warehouse shop run by **Jax**, a
+grumpy but fair retired Belter miner. It sells survival gear, tools, and
+technical supplies.
+
+:\* **Function:** Players can restock or purchase equipment from the
+[General Equipment](General_Equipment "General Equipment"){.wikilink}
+list using their Credit Score or ISC ([Wealth &
+Money](Wealth_and_Money "Wealth & Money"){.wikilink}).
+
+:\* **Clue/Rumor:** Jax complains about a nervous young man (Valen) who
+came in earlier and bought a high-grade radiation hazard suit and water
+filtration packs, which are far too clean for a local Belter to need.
+
+### Void-Forge Munitions (Weapons & Armor - Utility) {#void_forge_munitions_weapons_armor___utility}
+
+:\* **The Situation:** A heavily fortified storefront smelling of gun
+oil, ozone, and metal shavings. Run by **Vera**, a no-nonsense cyborg
+veteran.
+
+:\* **Function:** Players can buy firearms, ammunition, and various
+armor grades ([Weapons](Weapons "Weapons"){.wikilink} /
+[Armor](Armor "Armor"){.wikilink}).
+
+:\* **Clue/Rumor:** Vera mentions that a group of Aconians tried to buy
+heavy weapons under the table, but she kicked them out because they
+lacked local licenses and had \"shifty mercenary eyes.\"
+
+### Heng\'s Cometary Noodles (Flavor) {#hengs_cometary_noodles_flavor}
+
+:\* **The Situation:** A tiny, neon-lit noodle shop serving synthetic
+kelp noodles and steaming hot broth, run by the talkative **Uncle
+Heng**. It is the social hub for the whole station.
+
+:\* **Flavor:** Spending 5 ISC on a bowl of noodles and talking to the
+patrons grants the crew a temporary +1 bonus to their next Ability Check
+or Saving throw and reveals station rumors about Aconian agents lurking
+near the docks.
+
+### The Oasis Bio-Dome (Flavor) {#the_oasis_bio_dome_flavor}
+
+:\* **The Situation:** A small, pressurized dome containing real soil,
+genetically engineered pine trees, and recycled natural air. It is the
+only green space on the station, reserved for citizens needing
+\"psychological decompression.\"
+
+:\* **Flavor:** A peaceful, quiet sanctuary where the players can rest,
+discuss their findings, and escape the noisy industrial hum of the
+mining station.
