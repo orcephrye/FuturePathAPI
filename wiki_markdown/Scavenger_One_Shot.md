@@ -70,26 +70,25 @@ recovered using the expendable scavengers.
 *Read the following aloud to the players to start the adventure:*
 
 > \"Space is vast, cold, and quiet---until the Captain\'s voice barks
-> over the ship\'s comms, marking the end of a silent transit. The
-> Captain signed the contract before any of you could voice an
-> objection. A whopping 100,000 ISC from **Xeno-Synth Systems** to
-> salvage and secure **Aethelgard-7**, a decommissioned communications
-> and monitoring outpost drifting at the very edge of the system.
+> over the ship\'s comms. The Captain signed the contract before any of
+> you could voice an objection. A whopping 100,000 ISC from **Xeno-Synth
+> Systems** to salvage and secure **Aethelgard-7**, a decommissioned
+> communications and monitoring outpost drifting at the very edge of the
+> system.
 >
 > The official corporate brief says the station was decommissioned and
 > abandoned. But the pay is far too high for a standard
 > station-stripping run, and the corporate executive, **Dr. Valen
 > Vance**, was far too eager to hand over a custom, encrypted data drive
 > to extract the mainframe logs---warning you not to look at the files.
-> There is a mystery waiting in the dark of that hull, one that Vance is
-> paying handsomely to keep buried. But as scavengers, you don\'t get to
-> ask questions when the Captain has already accepted the credits.
+> He has given specific instructions to recover both the data and some
+> \'supplies\' left behind when the station was abandoned.
 >
 > Through the viewport, **Aethelgard-7** looms---a dead, silent
-> leviathan of steel and Fusion Core Radiator panels drifting against
-> the stars. No beacons flash, no docking return signal, no lights shine
-> through the small circular windows. Only the radiator panels, glowing
-> a faint red, indicate that the station still lives.
+> leviathan of steel drifting in silence. No beacons flash, no docking
+> return signal, no lights shine through the small circular windows.
+> Only a faint red glow from some radiator panels indicates that the
+> station still lives.
 >
 > Your salvage vessel maneuvers close, aligning with the external
 > docking ring. The thrusters roar one last time, followed by the heavy,
@@ -146,6 +145,15 @@ must wear **Emergency Pressure Suits** (AC +0, imposes **1Ad
 character must spend a Simple Action to apply a patch, or take 1d6
 Thermal (Cold) damage at the start of each of their turns
 [Conditions](Conditions "Conditions"){.wikilink}.
+
+GM Notes
+: Inform the players that in the airlock of their ship are pressure
+  suits for all the players. As well as some basic gear and equipment
+  that is available for any Character to pick up and add to their
+  inventory. This should include a couple of Frag Grenades, a Medical
+  Kit, and some Healing Concoction (1d8) Syringes 5 Pack.
+
+<!-- -->
 
 Details
 
@@ -655,11 +663,11 @@ height="512"}
 - **Skills**: Athletics +1, Perception, Study, Computer Use
 - **Attacks**:
 
-:\* **Melee**: Improvised Smash 1d6 + 4 \[Roll: Accuracy: 1d20 + 4 -
-(1d2+1) / Damage: 1d6 + 4\] This Attack takes disadvantage. Also, it is
-so slow that the target can attempt to dodge with a Dex Save of DC 14.
+:\* **Melee**: Improvised Smash -\[Roll: Accuracy: 1d20 + 4 - (1d2+1) /
+Damage: 1d4 + 4\] This Attack takes disadvantage. Also, it is so slow
+that the target can attempt to dodge with a Dex Save of DC 14.
 
-:\* **Ranged**: Improvised Throw Trash 1d8 \[Roll: Accuracy: 1d20 -
+:\* **Ranged**: Improvised Throw Trash - \[Roll: Accuracy: 1d20 -
 (1d2+1) / Damage: 1d8\] This Attack takes disadvantage. Also, it is so
 slow that the target can attempt to dodge with a Dex Save of DC 14.
 
@@ -684,13 +692,13 @@ height="512"}
 - **Initiative**: 3
 - **Attacks**:
 
-:\* **Ranged**: Laser Pistol x2/20 +1 1d8 (T) \[100ft\] \[Rolls:
+:\* **Ranged**: Laser Pistol - x2/20 +1 1d8 (T) \[100ft\] \[Rolls:
 Accuracy: 1d20 + 1d2 + 2 / Damage: 1d8 (T)\]
 
 - **Special**: They regenerate 1HP per round. If knocked out, the
   regeneration continues, and once they reach 1 HP, they rise again. In
-  order to stop this, they must take at least 6 negative damage, or
-  burn, or otherwise destroy the bodies.
+  order to stop this, they must take at least 6 negative damage, or be
+  burned, or otherwise have their bodies destroyed.
 
 <div style="clear: both">
 </div>
@@ -841,8 +849,8 @@ console) must also make a CON save (DC 15) or become stunned for 1
 round.
 
 :\* **Melee**: Can attack both phases of combat. Per phase, one Tentacle
-Whip Ranged 50ft Touch Attack x2/20 1d4 - 1 (K) + 1d4 (E) \[Roll:
-Accuracy: 1d20 + d2 / Damage: 1d4 - 1 (K) + 1d4 (E)\] (50ft is meant to
+Whip Ranged 50ft Touch Attack x2/20 1d4 - 1 (K) + 1d2 (E) \[Roll:
+Accuracy: 1d20 + d2 / Damage: 1d4 - 1 (K) + 1d2 (E)\] (50ft is meant to
 include the whole lab and extend slightly into the corridor)
 
 :\* **Grapple**: This can be done at the top of the round as a special
@@ -854,7 +862,7 @@ the Dr. gets advantage on the Grapple strength check. At the start of
 the next turn, the Dr must choose 1 of the following options.
 
 ::\* **Shock Grappled Person:** If the grapple is still intact, the Dr
-can do 1d8 (E) damage to the target.
+can do 1d6 (E) damage to the target.
 
 ::\* **Toss:** If the grapple is still intact, the Dr can choose to
 throw the opponent 20ft back towards the door.
@@ -889,10 +897,10 @@ her. Providing her with DR6 (A)
 - **Initiative**: 0
 - **Attacks**:
 
-:\* **Ranged**: Laser Pistol x2/20 +1 1d8 (T) \[100ft\] \[Rolls:
+:\* **Ranged**: Laser Pistol - x2/20 +1 1d8 (T) \[100ft\] \[Rolls:
 Accuracy: 1d20 + 1d2 + 2 / Damage: 1d8 (T)\]
 
-:\* **Melee**: Advanced Knife x2/20 1d6 \[Roll: Accuracy: 1d20 + d2 /
+:\* **Melee**: Advanced Knife - x2/20 1d6 \[Roll: Accuracy: 1d20 + d2 /
 Damage: 1d6 + 1 (K)\]
 
 - **Special**: They regenerate 2HP per round. If knocked out, the

@@ -1666,9 +1666,14 @@ Hero)](Future_Hero_Base_Class#Path_of_Charisma_.28Charismatic_Hero.29 "Path of C
 
 **`<u>`{=html}Restrictions`</u>`{=html}**:
 
-1.  Feats: The Envoy cannot use Power Armor.
-2.  Weapons: The Envoy cannot gain advantage when using Melee/Martial
-    weapons.
+- Feats: The Envoy cannot use Power Armor.
+- Weapons: The Envoy cannot gain advantage when using Melee/Martial
+  weapons.
+- Armor with a speed penalty gives a negative change when using
+  Techniques.
+
+:\* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20%
+chance of failure, Halve Speed causes a 40% chance of failure.
 
 **`<u>`{=html}Profession Information`</u>`{=html}**:
 
@@ -2119,7 +2124,13 @@ Hero)](Future_Hero_Base_Class#Path_of_Dexterity_.28Fast_Hero.29 "Path of Dexteri
 
 **`<u>`{=html}Restrictions`</u>`{=html}**:
 
-1.  Profession: Cannot also be a Shield Splicer.
+- Profession: Cannot also be a Shield Splicer.
+- Cannot utilize Techniques if in Power Armor.
+- Armor with a speed penalty gives a negative change when using
+  Techniques.
+
+:\* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20%
+chance of failure, Halve Speed causes a 40% chance of failure.
 
 **`<u>`{=html}Profession Information`</u>`{=html}**:
 
@@ -2394,7 +2405,7 @@ Level 10
 
 : Table: The Field Officer
 
-An Erie quite settles onto the cabin. The only sound left is the hum of
+An eerie quiet settles onto the cabin. The only sound left is the hum of
 motors below, crawling up the soldier\'s legs as if being forced out of
 the air from the opposing silence. Faces were shocked and full of
 despair. Not looking up, afraid to see the empty seats where their
@@ -2402,9 +2413,9 @@ comrades should be. Jacob, standing, holding onto a tether hanging from
 the ceiling to keep his balance as the vehicle hurriedly sends what\'s
 left of his team across the bumpy landscape, looks at the faces of his
 men and realizes he is losing them. The defeat was too much for them.
-Without the right words, the moral would be lost, and he knows what
-would happen next. \"First,\" he thought to himself, \"I must not let
-them see me down.\"
+Without the right words, morale would be lost, and he knows what would
+happen next. \"First,\" he thought to himself, \"I must not let them see
+me down.\"
 
 The Field Officer is a natural leader with the heart of a warrior. He
 understands how to direct allies and lead by example. The Field Officer
@@ -2432,8 +2443,13 @@ Hero)](Future_Hero_Base_Class#Path_of_Charisma_.28Charismatic_Hero.29 "Path of C
 
 **`<u>`{=html}Restrictions`</u>`{=html}**:
 
-1.  Feats: Cannot use power armor (negates the ability to use Profession
-    Techniques).
+- Feats: Cannot use power armor (negates the ability to use Profession
+  Techniques).
+- Armor with a speed penalty gives a negative change when using
+  Techniques.
+
+:\* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20%
+chance of failure, Halve Speed causes a 40% chance of failure.
 
 **`<u>`{=html}Profession Information`</u>`{=html}**:
 
@@ -2707,7 +2723,7 @@ tittered on the fringes of what society deems acceptable. Pushing
 against the wall of morality is, to some scientists, their duty. Helix
 Warrior\'s are examples of those experiments scientist do that sometimes
 pushes too hard against that wall. Genetic Modification is one of the
-big Great Filters of any Civilization. People, sometimes willing,
+big Great Filters of any Civilization. People, sometimes willingly,
 however usually not, are subjected to rigorous \"scientific\"
 experimentation. Their DNA is manipulated to purge anything deemed
 undesirable or a \"flaw.\" Some call this \"forced evolution.\" Most
@@ -2739,9 +2755,15 @@ Hero)](Core_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdom (Dedicated
 
 **`<u>`{=html}Restrictions`</u>`{=html}**:
 
-1.  Feats: Cannot take feats within the **Ranged Combat** sub-category
-    (except for [Bazooka Arm](Bazooka_Arm "Bazooka Arm"){.wikilink}).
-2.  Profession: Cannot also be a Dreadnought.
+- Feats: Cannot take feats within the **Ranged Combat** sub-category
+  (except for [Bazooka Arm](Bazooka_Arm "Bazooka Arm"){.wikilink}).
+- Profession: Cannot also be a Dreadnought.
+- Cannot utilize Techniques or Profession Talents if in Power Armor.
+- Armor with a speed penalty gives a negative change when using Helix
+  Strains.
+
+:\* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20%
+chance of failure, Halve Speed causes a 40% chance of failure.
 
 **`<u>`{=html}Profession Information`</u>`{=html}**:
 
@@ -3029,8 +3051,13 @@ Hero)](Future_Hero_Base_Class#Path_of_Wisdom_.28Dedicated_Hero.29 "Path of Wisdo
 
 **`<u>`{=html}Restrictions`</u>`{=html}**:
 
-1.  Profession: Cannot also be an Electro-Mancer.
-2.  Gear: Cannot wear Power Armor.
+- Profession: Cannot also be an Electro-Mancer.
+- Gear: Cannot wear Power Armor.
+- Armor with a speed penalty gives a negative change when using
+  Techniques.
+
+:\* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20%
+chance of failure, Halve Speed causes a 40% chance of failure.
 
 **`<u>`{=html}Profession Information`</u>`{=html}**:
 

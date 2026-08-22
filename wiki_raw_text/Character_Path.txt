@@ -112,41 +112,41 @@ Editing Character Sheet: Located on the first page to the right. It is the large
 |-
 |2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d4 +1|| Feat(Tatical)  || - || -
+|3rd||1d2 +2|| Feat(Tatical)  || - || -
 |-
 |4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
 |5th||1d4 +2|| Feat(Utility)  || Extra Damage || -
 |-
-|6th||1d6 +2|| Talent  || - || -
+|6th||1d4 +3|| Talent  || - || -
 |-
-|7th||1d6 +3|| Feat(Tatical) || - || -
+|7th||1d4 +4|| Feat(Tatical) || - || -
 |-
-|8th||1d8 +3|| -  || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| -  || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d8 +3|| Feat(Utility) || - || - 
+|9th||1d6 +5|| Feat(Utility) || - || - 
 |-
-|10th||1d8 +4|| - || - || -
+|10th||1d6 +6|| - || - || -
 |-  
-|11th||1d8 +4|| Feat(Tatical) || Extra Damage || -
+|11th||1d8 +6|| Feat(Tatical) || Extra Damage || -
 |-
-|12th||1d10 +4|| Talent || - || Ability +1
+|12th||1d8 +7|| Talent || - || Ability +1
 |-
-|13th||1d10 +5|| Feat(Utility) || - || - 
+|13th||1d8 +8|| Feat(Utility) || - || - 
 |-
-|14th||1d10 +5|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d12 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d12 +6|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +6|| Feat(Utility) || Extra Damage || - 
+|17th||1d10 +10|| Feat(Utility) || Extra Damage || - 
 |-
-|18th||2d6 +7|| Talent || -|| -
+|18th||1d12 +10|| Talent || -|| -
 |- 
-|19th||2d8 +7|| Feat(Tatical) || - || -
+|19th||1d12 +11|| Feat(Tatical) || - || -
 |-
-|20th||2d8 +8|| - || - || Ability +1/Bonus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
 |-
 |}
 
@@ -199,41 +199,41 @@ A Strong hero can push themselves to make an extreme effort. Take the following 
 |-
 |2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d4 +1|| Feat(Tatical)  || - || -
+|3rd||1d2 +2|| Feat(Tatical)  || - || -
 |-
 |4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
 |5th||1d4 +2|| Feat(Utility)  || Extra Damage || -
 |-
-|6th||1d6 +2|| Talent  || - || -
+|6th||1d4 +3|| Talent  || - || -
 |-
-|7th||1d6 +3|| Feat(Tatical) || - || -
+|7th||1d4 +4|| Feat(Tatical) || - || -
 |-
-|8th||1d8 +3|| -  || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| -  || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d8 +3|| Feat(Utility) || - || - 
+|9th||1d6 +5|| Feat(Utility) || - || - 
 |-
-|10th||1d8 +4|| - || - || -
+|10th||1d6 +6|| - || - || -
 |-  
-|11th||1d8 +4|| Feat(Tatical) || Extra Damage || -
+|11th||1d8 +6|| Feat(Tatical) || Extra Damage || -
 |-
-|12th||1d10 +4|| Talent || - || Ability +1
+|12th||1d8 +7|| Talent || - || Ability +1
 |-
-|13th||1d10 +5|| Feat(Utility) || - || - 
+|13th||1d8 +8|| Feat(Utility) || - || - 
 |-
-|14th||1d10 +5|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d12 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d12 +6|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +6|| Feat(Utility) || Extra Damage || - 
+|17th||1d10 +10|| Feat(Utility) || Extra Damage || - 
 |-
-|18th||2d6 +7|| Talent || -|| -
+|18th||1d12 +10|| Talent || -|| -
 |- 
-|19th||2d8 +7|| Feat(Tatical) || - || -
+|19th||1d12 +11|| Feat(Tatical) || - || -
 |-
-|20th||2d8 +8|| - || - || Ability +1/Bonus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
 |-
 |}
 
@@ -286,41 +286,41 @@ Also, the starting occupation the character selects can provide additional skill
 |-
 |2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d4 +1|| Feat(Tatical) || - || -
+|3rd||1d2 +2|| Feat(Tatical) || - || -
 |-
 |4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|5th||1d4 +2|| Feat(Utility)  || Extra Damage || -
+|5th||1d4 +3|| Feat(Utility)  || - || -
 |-
-|6th||1d6 +2|| Talent  || - || -
+|6th||1d4 +3|| Talent  || Extra Damage || -
 |-
-|7th||1d6 +3|| Feat(Tatical) || - || -
+|7th||1d4 +4|| Feat(Tatical) || - || -
 |-
-|8th||1d8 +3|| -  || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| -  || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d8 +3|| Feat(Utility) || - || - 
+|9th||1d6 +5|| Feat(Utility) || - || - 
 |-
-|10th||1d8 +4|| - || - || -
+|10th||1d6 +6|| - || - || -
 |-  
-|11th||1d8 +4|| Feat(Tatical) || Extra Damage || -
+|11th||1d8 +6|| Feat(Tatical) || - || -
 |-
-|12th||1d10 +4|| Talent || - || Ability +1
+|12th||1d8 +7|| Talent || Extra Damage || Ability +1
 |-
-|13th||1d10 +5|| Feat(Utility) || - || - 
+|13th||1d8 +8|| Feat(Utility) || - || - 
 |-
-|14th||1d10 +5|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d12 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d12 +6|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +6|| Feat(Utility) || Extra Damage || - 
+|17th||1d12 +10|| Feat(Utility) || - || - 
 |-
-|18th||2d6 +7|| Talent || -|| -
+|18th||1d12 +10|| Talent || Extra Damage || -
 |- 
-|19th||2d8 +7|| Feat(Tatical) || - || -
+|19th||1d12 +11|| Feat(Tatical) || - || -
 |-
-|20th||2d8 +8|| - || - || Ability +1/Bonus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
 |-
 |}
 A Tough Hero is less worried about being hit or pushed to the front lines. They can shrug off things and keep moving, which would bring others down. They are built like a tank and have great stamina. These are people who are more willing to take risks. They are more likely to survive the harsh conditions of Space exploration and are usually the defenders and support units. 
@@ -383,45 +383,45 @@ Also, the starting occupation the character selects can provide additional skill
 ! Extra Damage
 ! Choose Between<br />Custom Character Bonus
 |-
-|1st|| 0-1 || Feat(All) / Talent || - || -
+|1st|| 1d2 || Feat(All) / Talent || - || -
 |-
-|2nd||1d2|| - || - || -
+|2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d2 +1|| Feat(Tatical) || - || -
+|3rd||1d2 +2|| Feat(Tatical) || - || -
 |-
-|4th||1d4 +1|| - || - || Ability +1/Bonus Feat(Path)
+|4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|5th||1d4 +1|| Feat(Utility) || - || -
+|5th||1d4 +3|| Feat(Utility) || - || -
 |-
-|6th||1d4 +2|| Talent || - || -
+|6th||1d4 +4|| Talent || - || -
 |-
-|7th||1d4 +2|| Feat(Tatical) || Extra Damage || -
+|7th||1d4 +4|| Feat(Tatical) || Extra Damage || -
 |-
-|8th||1d6 +2|| - || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d6 +3|| Feat(Utility) || - || -
+|9th||1d6 +5|| Feat(Utility) || - || -
 |- 
-|10th||1d6 +3 || - || - || -
+|10th||1d6 +6 || - || - || -
 |- 
-|11th||1d8 +3|| Feat(Tatical) || - || -
+|11th||1d8 +6|| Feat(Tatical) || - || -
 |-
-|12th||1d8 +4|| Talent || - || Ability +1
+|12th||1d8 +7|| Talent || - || Ability +1
 |-
-|13th||1d8 +4|| Feat(Utility) || Extra Damage || -
+|13th||1d8 +8|| Feat(Utility) || Extra Damage || -
 |-
-|14th||1d10 +4|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d10 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d10 +5|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +5|| Feat(Utility) || - || -
+|17th||1d12 +10|| Feat(Utility) || - || -
 |-
-|18th||1d12 +6|| Talent || - || -
+|18th||1d12 +11|| Talent || - || -
 |- 
-|19th||1d12 +6|| Feat(Tatical) || Extra Damage || -
+|19th||1d12 +11|| Feat(Tatical) || Extra Damage || -
 |- 
-|20th||2d6 +7|| - || - || Ability +1/Bonus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
 |}
 The Smart Hero is all about brains over brawn. They rely on their academic knowledge to deal with what life throws at them. Most are brainy or bookworms and sometimes sure of themselves and their expertise. These are your scientists and engineers; they will be working with robots or studying alien life forms. In the military, they are used to help make a unit more flexible. 
 
@@ -472,44 +472,44 @@ Also, the hero's starting occupation can provide additional skills to choose fro
 |-
 |2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d4 +1|| Feat(Tatical)  || - || -
+|3rd||1d2 +2|| Feat(Tatical) || - || -
 |-
 |4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|5th||1d4 +2|| Feat(Utility)  || Extra Damage || -
+|5th||1d4 +3|| Feat(Utility)  || - || -
 |-
-|6th||1d6 +2|| Talent  || - || -
+|6th||1d4 +3|| Talent  || Extra Damage || -
 |-
-|7th||1d6 +3|| Feat(Tatical) || - || -
+|7th||1d4 +4|| Feat(Tatical) || - || -
 |-
-|8th||1d8 +3|| -  || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| -  || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d8 +3|| Feat(Utility) || - || - 
+|9th||1d6 +5|| Feat(Utility) || - || - 
 |-
-|10th||1d8 +4|| - || - || -
+|10th||1d6 +6|| - || - || -
 |-  
-|11th||1d8 +4|| Feat(Tatical) || Extra Damage || -
+|11th||1d8 +6|| Feat(Tatical) || - || -
 |-
-|12th||1d10 +4|| Talent || - || Ability +1
+|12th||1d8 +7|| Talent || Extra Damage || Ability +1
 |-
-|13th||1d10 +5|| Feat(Utility) || - || - 
+|13th||1d8 +8|| Feat(Utility) || - || - 
 |-
-|14th||1d10 +5|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d12 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d12 +6|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +6|| Feat(Utility) || Extra Damage || - 
+|17th||1d12 +10|| Feat(Utility) || - || - 
 |-
-|18th||2d6 +7|| Talent || -|| -
+|18th||1d12 +10|| Talent || Extra Damage || -
 |- 
-|19th||2d8 +7|| Feat(Tatical) || - || -
+|19th||1d12 +11|| Feat(Tatical) || - || -
 |-
-|20th||2d8 +8|| - || - || Ability +1/Bonus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
 |-
 |}
-A Dedicated Hero is focused and driven. They usually are the ones in a group with the most common sense and intuition. They can stay focused when others cannot and might be able to read a situation better than others. militaries have found that they make the best medics. Explorers and bounty hunters also require a massive amount of determination to find their targets or explore the great unknown expanses of the universe. 
+A Dedicated Hero is focused and driven. They usually are the ones in a group with the most common sense and intuition. They can stay focused when others cannot and might be able to read a situation better than others. The military has found that they make the best medics. Explorers and bounty hunters also require a massive amount of determination to find their targets or explore the great unknown expanses of the universe. 
 
 <u>Ability Affinity</u>: Wisdom
 
@@ -561,45 +561,45 @@ Also, the hero's starting occupation can provide additional skills to choose fro
 ! Extra Damage
 ! Choose Between<br />Custom Character Bonus
 |-
-|1st|| 0-1 || Feat(All) / Talent || - || -
+|1st|| 1d2 || Feat(All) / Talent || - || -
 |-
-|2nd||1d2|| - || - || -
+|2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d2 +1|| Feat(Tatical) || - || -
+|3rd||1d2 +2|| Feat(Tatical) || - || -
 |-
-|4th||1d4 +1|| - || - || Ability +1/Bonus Feat(Path)
+|4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|5th||1d4 +1|| Feat(Utility) || - || -
+|5th||1d4 +3|| Feat(Utility) || - || -
 |-
-|6th||1d4 +2|| Talent || - || -
+|6th||1d4 +4|| Talent || - || -
 |-
-|7th||1d4 +2|| Feat(Tatical) || Extra Damage || -
+|7th||1d4 +4|| Feat(Tatical) || Extra Damage || -
 |-
-|8th||1d6 +2|| - || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d6 +3|| Feat(Utility) || - || -
+|9th||1d6 +5|| Feat(Utility) || - || -
 |- 
-|10th||1d6 +3 || - || - || -
+|10th||1d6 +6 || - || - || -
 |- 
-|11th||1d8 +3|| Feat(Tatical) || - || -
+|11th||1d8 +6|| Feat(Tatical) || - || -
 |-
-|12th||1d8 +4|| Talent || - || Ability +1
+|12th||1d8 +7|| Talent || - || Ability +1
 |-
-|13th||1d8 +4|| Feat(Utility) || Extra Damage || -
+|13th||1d8 +8|| Feat(Utility) || Extra Damage || -
 |-
-|14th||1d10 +4|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d10 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d10 +5|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +5|| Feat(Utility) || - || -
+|17th||1d12 +10|| Feat(Utility) || - || -
 |-
-|18th||1d12 +6|| Talent || - || -
+|18th||1d12 +11|| Talent || - || -
 |- 
-|19th||1d12 +6|| Feat(Tatical) || Extra Damage || -
+|19th||1d12 +11|| Feat(Tatical) || Extra Damage || -
 |- 
-|20th||2d6 +7|| - || - || Ability +1/Bonus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
 |}
 The Charismatic Hero is never shy and always willing to take advantage of either their looks or words to influence others or get their own way. They can be seductive and interesting people, possessing a personal magnetism that makes them natural leaders. Many companies and governments use such people as envoys or ambassadors. Military officers, as well as crooks, try to swindle your money away.
 
@@ -653,45 +653,46 @@ Also, the hero's starting occupation can provide additional skills to choose fro
 ! Extra Damage
 ! Choose Between<br />Custom Character Bonus
 |-
-|1st|| 1d2 || Feat(All) || - || Bonus Feat(Path)
+|1st|| 1d2 || Feat(All) / Talent || - || -
 |-
 |2nd||1d2 +1|| - || - || -
 |-
-|3rd||1d4 +1|| Feat(Tatical)  || - || -
+|3rd||1d2 +2|| Feat(Tatical) || - || -
 |-
 |4th||1d4 +2|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|5th||1d4 +2|| Feat(Utility)  || - || -
+|5th||1d4 +3|| Feat(Utility)  || - || -
 |-
-|6th||1d6 +2|| Bonus Feat(All)  || Extra Damage || -
+|6th||1d4 +3|| Talent  || Extra Damage || -
 |-
-|7th||1d6 +3|| Feat(Tatical) || - || -
+|7th||1d4 +4|| Feat(Tatical) || - || -
 |-
-|8th||1d8 +3|| -  || - || Ability +1/Bonus Feat(Path)
+|8th||1d6 +4|| -  || - || Ability +1/Bonus Feat(Path)
 |-
-|9th||1d8 +3|| Feat(Utility) || - || - 
+|9th||1d6 +5|| Feat(Utility) || - || - 
 |-
-|10th||1d8 +4|| - || - || -
+|10th||1d6 +6|| - || - || -
 |-  
-|11th||1d8 +4|| Feat(Tatical) || - || -
+|11th||1d8 +6|| Feat(Tatical) || - || -
 |-
-|12th||1d10 +4|| Bonus Feat(All) || Extra Damage || Ability +1
+|12th||1d8 +7|| Talent || Extra Damage || Ability +1
 |-
-|13th||1d10 +5|| Feat(Utility) || - || - 
+|13th||1d8 +8|| Feat(Utility) || - || - 
 |-
-|14th||1d10 +5|| - || - || -
+|14th||1d10 +8|| - || - || -
 |-
-|15th||1d12 +5|| Feat(Tatical) || - || -
+|15th||1d10 +9|| Feat(Tatical) || - || -
 |-
-|16th||1d12 +6|| - || - || Ability +1/Bonus Feat(Path)
+|16th||1d10 +10|| - || - || Ability +1/Bonus Feat(Path)
 |-
-|17th||1d12 +6|| Feat(Utility) || - || - 
+|17th||1d12 +10|| Feat(Utility) || - || - 
 |-
-|18th||2d6 +7|| Bonus Feat(All) || Extra Damage || -
+|18th||1d12 +10|| Talent || Extra Damage || -
 |- 
-|19th||2d8 +7|| Feat(Tatical) || - || -
+|19th||1d12 +11|| Feat(Tatical) || - || -
 |-
-|20th||2d8 +8|| - || - || Ability +1/Bnus Feat(Path)
+|20th||1d12 +12|| - || - || Ability +1/Bonus Feat(Path)
+|-
 |}
 The Freelancer is a hero who refuses to be defined by a single specialty. They are the jacks-of-all-trades, the wanderers, and the survivors who have picked up a wide
 variety of skills across the galaxy. While they lack the focused "Talents" of other paths, they are unparalleled in their versatility. A Freelancer can be anything

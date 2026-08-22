@@ -8,10 +8,11 @@ A full list of Occupations can be seen
 determine a Character\'s starting wealth and credit score. It also
 determines things like bonus wealth when leaving up.
 
-As a Skill-like ability, Professional Ranks up with the Character level.
-So the Professional Rank is equal to Character Level divided by 2,
-rounded up. (Character Level / 2, rounded up). At Character level 19, a
-Character\'s Professional Rank would be 10.
+As a **Skill-like** ability, Professional Ranks up when a Character
+ranks up a [Profession](Character_Professions "Profession"){.wikilink}.
+If the Character has more than one Profession, then the Profession
+skill-like ability is equal to the number of Levels in the most
+leveled-up Character Profession.
 
 ## Check
 

@@ -2193,8 +2193,8 @@ Branch](Proficiency_Tree#Technology_Branch "Technology Branch"){.wikilink}.
 Crafting](Proficiency_Tree#Item_Crafting_Branch "Item Crafting"){.wikilink}.
 
 :\* This acts like gaining a Masterwork level and allows for a single
-[#Improvements](#Improvements "#Improvements"){.wikilink} per level of
-Up Teching.
+[Improvements](#Improvements "Improvements"){.wikilink} per level of Up
+Teching.
 
 :\* Items cannot be \'Down Teched,\' or in other words, they cannot be
 crafted at a lower Tech Level.

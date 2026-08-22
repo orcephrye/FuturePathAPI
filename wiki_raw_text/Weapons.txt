@@ -450,7 +450,9 @@ Special Ammo [[Craft|crafting]] requires that you have at least 3 ranks in the c
 == Explosives (Grenades/Traps) ==
 These deal damage to anything within an [[Combat#Area_of_Effect|area of effect]]. The area can be either circular or cone-shaped. Explosives can be placed in throwable objects or set in places, such as mines or traps. Explosives require no proficiency to use normally.
 
-Combat rules for thrown explosives are located in the combat section [[Ground_Combat_Guide#Attack_Actions|here]]. Planted explosive sits where it is placed until it is moved or goes off. This is considered a trap, so rules for making traps apply. More rules on traps in the [[Combat#Traps/Mines|Combat: Traps/Mines]] section.
+Combat rules for thrown explosives are located in the combat section [[Ground_Combat_Guide#Attack_Actions|here]]. A planted explosive remains where it is placed until it is moved or detonates. This is considered a trap, so rules for making traps apply. More rules on traps in the [[Combat#Traps/Mines|Combat: Traps/Mines]] section.
+
+;Crafting: When crafting an Explosive, the Crafter has to make each of the 3 separate components (Charge/Casing/Detonator) on their own. Each component uses a [[Craft|Crafting]] or [[Demolitions]] skill, whichever is higher. Follow the [[Craft]] rules when determining how much crafting material is necessary to purchase and use. The component will specify which Crafting skill is used to make the item; Demolitions can be substituted when crafting any Explosive or Grenade item.
 
 Below is a graph of commonly used explosives. Below that is the 'Making your Own Explosives' section, which has common components that can be mixed and matched to create your explosives.
 
@@ -600,7 +602,9 @@ Below is a graph of commonly used explosives. Below that is the 'Making your Own
 
 ==== The Charge ====
 
-This shows what the damage die will be. For example: Xd6 or Xd10. It doesn't say how many of those die. This also tells the user what the damage type will be. IE: Thermal or Chemical or etc. This also informs the user of the damage range. There can also be Charge Attributes that can affect the explosion.
+This shows what the damage die will be. For example: Xd6 or Xd10. It doesn't say how many of those dice. This also indicates the damage type. i.e., Thermal, Chemical, etc. This also informs the user of the damage range. There can also be Charge Attributes that can affect the explosion.
+
+;Crafting: All Charge crafting uses the [[-_Chemical|Craft Chemical]] skill.
 
 {| class="mw-collapsible mw-collapsed wikitable"
 ! colspan="6" | Table: Charges Listed by Tech Level
@@ -713,6 +717,8 @@ This shows what the damage die will be. For example: Xd6 or Xd10. It doesn't say
 
 This tells the user the maximum amount of charge that can be used. IE: The number of damage die like 2d6 or 4d10. This also informs the user if the device is throw-able, place-able, or both. If the device is placeable, the Casing also provides the default DC for a Perception skill check to notice it. This also informs the user of the area of effect, whether circular or cone-shaped. It can also provide additional attributes for weapon use, such as 'Sticky'.
 
+;Crafting: All Casing uses either [[-_Structural|Structural]] or [[-_Mechanical|Mechanical]]. The Character can choose which crafting skill to use.
+
 {| class="mw-collapsible mw-collapsed wikitable"
 ! colspan="6" | Table: Casings (Sorted by Tech Level)
 |-
@@ -802,6 +808,8 @@ This tells the user the maximum amount of charge that can be used. IE: The numbe
 
 This controls when and how the device is activated. For throw-able devices, this can include attributes such as 'On Contact' or 'Chasing'. For Place-able devices, this can include attributes such as 'Laser trip wire', 'Motion Sensitive', or 'Remote Controlled'. This can also provide a bonus to the DC check against Disable Device skill checks, making it harder to disable.
 
+;Crafting: All Casing uses either [[-_Electronic|Electronic]] or [[-_Mechanical|Mechanical]]. The Character can choose which crafting skill to use.
+
 {| class="mw-collapsible mw-collapsed wikitable"
 ! colspan="4" | Table: Detonators (Sorted by Tech Level)
 |-
@@ -863,12 +871,12 @@ This controls when and how the device is activated. For throw-able devices, this
 
 ==== Combining Explosive Components ====
 
-If the components already exist, then they do not require a crafting skill to make an explosive. But the Demolitions skill instead. Some restrictions apply when combining components. 
+If the components already exist, then they do not require a crafting skill to make an explosive
  
 # You cannot mix multiple types of Charges in the same Casing unless the Casing specifies. 
-# You can have more than one type of Detonator per Casing, but the Explosive cannot be throw-able and can still only be detonated once unless specified differently by the Casing.
+# You can have more than one type of Detonator per Casing, but the Explosive cannot be throw-able and can still only be detonated once unless specified by the Casing.
 
-It takes 10 minutes to safely combine the components. If rushed, the Player must make a Demolitions skill check of DC10 + 1 for every minute less. If the Player fails the check, the GM can decide the negative consequences. IE: Explosive device blows up in their face or becomes a dud, and so on.
+It takes 10 minutes to safely combine the components. If rushed, the Player must make a Craft Chemical or Demolitions skill check of DC10 + 1 for every minute less. If the Player fails the check, the GM can decide the negative consequences. IE: Explosive device blows up in their face or becomes a dud, and so on.
 
 == Weapon Accessories ==
 

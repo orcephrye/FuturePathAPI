@@ -31,9 +31,9 @@ Character can try to overcome their Quirk/Flaw.
   could be caused by a psychological condition, but it could also have
   arisen from past events or from a disease or parasite that affects the
   Character\'s mind. The Player/GM may also need to determine other
-  attributes of the difficulty, such as if the Character is ashamed of
-  their Quirk? Or another could be Hunted, where the Player will need to
-  determine who is hunting the Character and why.
+  attributes of the difficulty, such as whether the Character is ashamed
+  of their Quirk. Or another could be Hunted, where the Player will need
+  to determine who is hunting the Character and why.
 
 ### Penalty Explinations {#penalty_explinations}
 

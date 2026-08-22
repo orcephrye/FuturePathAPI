@@ -140,6 +140,19 @@ Dexterity save, the target must roll as a Constitution save of DC15 + 1
 for every Tech level of the grenade. If the target fails the check, he
 is knocked out for (+2)1d4 turns.
 
+### Defoliant Claymore {#defoliant_claymore}
+
+A directional anti-personnel tripwire mine utilizing Agent Orange
+defoliant compound. When tripped, it sprays concentrated chemical
+defoliant in a 10ft cone, dealing 3d6 chemical damage and destroying
+ambient vegetation.
+
+### Bounding Frag Mine {#bounding_frag_mine}
+
+A motion-activated jumping mine that leaps into the air before
+detonating. By exploding at waist height, it extends its kinetic blast
+radius by an extra 5ft (10ft total radius), dealing 3d6 kinetic damage.
+
 ## Tech Level 2 Explosives {#tech_level_2_explosives}
 
 ### EMP Explosive {#emp_explosive}
@@ -204,6 +217,45 @@ from tangler grenades stack with those from tangler guns.
 The hardened compound dissolves naturally after 8 hours or can be
 removed using Solvaway or another spray solvent.
 
+### Mag-Strike Grenade {#mag_strike_grenade}
+
+A heavy kinetic grenade housed in a stabilized magnetic casing. The
+mag-rails grant the thrower a +1 Accuracy bonus on throwing attack
+checks. It deals 4d8 kinetic damage upon detonation.
+
+### Laser Perimeter Trap {#laser_perimeter_trap}
+
+A directional ambush mine fitted with an invisible laser tripwire. When
+crossed, the positioned casing focuses high-yield RDX2 shrapnel into a
+tight 10ft killzone cone, dealing 4d8+1 kinetic damage.
+
+### Choke-Gas Grenade {#choke_gas_grenade}
+
+A high-dispersion chemical grenade using Cl-d compound. Detonation
+releases an enormous 60ft radius cloud of heavy irritant fog that
+lingers for 1d4 rounds, imposing 1x Disadvantage on all sight-based
+checks and attacks.
+
+### Confusion Drone Mine {#confusion_drone_mine}
+
+A self-propelled crawling mine equipped with mechanical walker legs.
+Upon detecting motion, it advances up to 15ft toward hostiles before
+dispersing a 30ft radius neuro-fog of M-A-D compound that inflicts
+Confusion for 1d4 rounds.
+
+### Shield-Splicer Ward {#shield_splicer_ward}
+
+A high-tech perimeter defense ward packed in a cloaked stealth mine
+casing (+2 Perception DC). When triggered by an optical laser wire, it
+discharges an S-S-T payload that casts defensive and offensive Shield
+Splicer disruption techniques on intruders in a 10ft radius.
+
+### Techno-Arc Grenade {#techno_arc_grenade}
+
+A magnetic-assisted tactical grenade containing a volatile T-M-T
+Technomancer technique charge. On contact, it discharges an arc of
+digitizing combat code across a 10ft radius.
+
 ## Tech Level 3 Explosives {#tech_level_3_explosives}
 
 ### Dis-solver Explosive {#dis_solver_explosive}
@@ -249,6 +301,39 @@ Constitution save (DC 15) or be stunned for 1d4 rounds. A creature that
 succeeds on the Dexterity save is not required to make a Constitution
 save and is unaffected by the grenade. A stun grenade has no effect on
 robots and other creatures immune to stunning effects.
+
+### Inferno Directional Charge {#inferno_directional_charge}
+
+A heavy directional mine triggered by an invisible cloaked tripwire.
+Upon activation, the Temperist-3 charge blasts a focused 10ft cone of
+plasma fire, dealing 5d8+2 thermal damage.
+
+### Heavy Blackout Smoker {#heavy_blackout_smoker}
+
+A containerized grenade designed for rapid urban extraction. On impact,
+it instantly discharges a 20ft radius sphere of thickened smoke that
+lingers for 1d6 rounds and imposes 2x Disadvantage on all sight-based
+checks and attacks.
+
+### ELT Grid Buster {#elt_grid_buster}
+
+An advanced electronic-warfare trap utilizing an ELT charge and cloaked
+invisible tripwire. When tripped, it releases an intense electromagnetic
+pulse in a 20ft radius, dealing 5d8 electrical damage and disabling
+electronic gear and cybernetics.
+
+### Hysteria Resonance Trap {#hysteria_resonance_trap}
+
+An advanced containerized mine fitted with a programmable Smart Sensor.
+When designated targets enter its 20ft radius, it emits a psionic Mind-X
+frequency wave that induces overwhelming Hate, Love, or Fear (Alter
+Emotion).
+
+### Warp Relocation Nade {#warp_relocation_nade}
+
+A homing hybrid grenade/mine fitted with a Contact 3 chasing detonator.
+On impact or detonation within 5ft, it creates a localized spatial warp
+that forcibly teleports targets caught within the area.
 
 ## Tech Level 4 Explosives {#tech_level_4_explosives}
 
@@ -301,3 +386,17 @@ a 1(5ft) radius. It deals 6d12 cold damage and is
 [Contagious](Contagious "Contagious"){.wikilink}, meaning any creature
 that touches a frozen target within 1d6 turns must also save or take
 half damage from the residual cold.
+
+### Mini-Nuke Chasing Mine {#mini_nuke_chasing_mine}
+
+A devastating directional siege mine that tracks micro-gravity
+perturbations via Gravity Sense. It crawls up to 30ft toward detected
+vehicles or heavy armor before detonating its high-yield M-Nuke charge,
+blasting a 30ft cone for 6d12 kinetic and radiation thermal damage.
+
+### Null-Void Canister {#null_void_canister}
+
+An all-purpose containerized tactical canister. Senses micro-gravity
+disruptions or detonates on contact, unleashing an impenetrable 30ft
+sphere/cone of Black-50 compound that causes 100% total optical blackout
+for 1d6 rounds.

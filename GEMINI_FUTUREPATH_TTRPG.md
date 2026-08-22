@@ -22,21 +22,21 @@ incorporates cool technology, and features an entire galaxy as a Campaign Settin
 - Current all files are located in a single directory 'wiki_raw_text'. They are all txt files written in a custom Markdown format called WikiText
 - Each txt text file is considered a page for the game. Each page is hosted on a MediaWiki site that displays all the rules for game play.
 
+### Updating d20 FuturePath files.
+- Use the bash script 'fetch_wiki.sh' to update the 'wiki_' dirs. 
+- Running `$bash fetch_wiki.sh <page_name>` should pull down that page from the wiki. This will override and delete the previous file. Do NOT do this unless instructed too. *Note* when running that command ignore '.txt' and '.md' file extensions
 
 ## AI/System Behavior notes:
 - No need to be wordy simple sentences that convey meaning is better then verbose instructions.
 
 # Need to Know Context about this game
+All the 'GEMINI_*.md' files contain information relevant to the game. They are titled with the subject they cover. Additional information may be linked here if they are relevant to the current goals/work/tasks.
 
 ## Character Creation & Advancement
 
 This helps explain the process of creating a new Character for FuturePath
 
 @./GEMINI_CHARACTER_CREATION.md
-
-## Explosives (Grenades & Traps)
-
-@./GEMINI_EXPLOSIVES.md
 
 
 

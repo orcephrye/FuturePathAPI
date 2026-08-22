@@ -51,7 +51,7 @@ Catch a Falling Character While Climbing
 
 ## Speed
 
-For every four ranks in this skill, your Character gains +5ft of base
+For every 6 ranks in this skill, your Character gains +5ft of base
 movement speed.
 
 ## Weight Capacity {#weight_capacity}

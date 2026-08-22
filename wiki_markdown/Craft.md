@@ -18,14 +18,17 @@ Mechanical, [Armor](Armor "Armor"){.wikilink} it is Structural, and for
 [General Equipment](General_Equipment "General Equipment"){.wikilink} it
 is listed at the top of each category. To repair an item, you need a
 craft rank of 1. To make an item, you need a craft rank of 2. To
-masterwork an item, you need a craft rank of 3, as well as 1 level in
+\'Uptech\' an item, you need a craft rank of 4, as well as 1 level in
+the [Item Crafting
+Branch](Proficiency_Tree#Item_Crafting_Branch "Item Crafting Branch"){.wikilink}.
+To masterwork an item, you need a craft rank of 6, as well as 1 level in
 the [Item Crafting
 Branch](Proficiency_Tree#Item_Crafting_Branch "Item Crafting Branch"){.wikilink}.
 Masterworked items require advanced crafting materials. For every
 additional level of Masterworking provided to an Item, the Character
-needs 1 more Rank in the appropriate skill.
+needs 3 more Ranks in the appropriate skill.
 
-    :Note: Crafting in most fantasy-themed pen and paper games has a large list of crafting skills, which include things such as visual art and writing. This is a world where not everyone is educated or literate. Where artisans have specialized crafts that take 1/2 a lifetime to learn and the other half to train a successor. However, modern civilizations likely have their kids learn most of those things in schools. So in this universe, crafting is focused strictly on creating and repairing useful equipment and ships/houses, etc... For advanced writing of manuscripts, artwork, and so on, pick a profession.
+    :Note: Crafting in most fantasy-themed pen and paper games has a large list of crafting skills, which include things such as visual art and writing. This is a world where not everyone is educated or literate. Where artisans have specialized crafts that take 1/2 a lifetime to learn and the other half to train a successor. However, modern civilizations likely have their kids learn most of those things in schools. So in this universe, crafting is strictly focused on creating and repairing useful equipment, ships/houses, etc. For advanced writing of manuscripts, artwork, and so on, pick a profession.
 
 ## Checks/Actions
 
@@ -37,7 +40,7 @@ Craft skills are specifically focused on creating or repairing objects.
 To use a Craft skill effectively, a character must have a crafting
 [Kit](General_Equipment#Profession_Kits "Kit"){.wikilink} specific to
 the craft (i.e: A Chemistry Kit) or some substitute for them. Without a
-kit a Character either cannot craft the item or takes double
+kit, a Character either cannot craft the item or takes double
 disadvantage. The Character also cannot attempt to make a master worked
 item without the correct kit. An Advanced Crafting kit can provide an
 advantage bonus to crafting items.
@@ -92,7 +95,7 @@ crafting DC:
 
 Other rules:
 
-- Masterworking by default adds +4 per Masterwork level
+- Masterworking by default adds +4 too DC per Masterwork level
 - Tech Level does affect crafting DC, however, Up Teching does. Each
   level of technology improvement to an Item increases its Craft DC by
   +4.

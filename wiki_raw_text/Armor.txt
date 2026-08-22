@@ -47,13 +47,13 @@ You can skip to the [[Armor#Armor_Examples|Armor Examples]] section if you want 
 :* 1 DR Unit = 1 DR (Specific: Chemical, Electrical, or Thermal)
 :* 2 DR Units = 1 DR (Kinetic)
 :* 4 DR Units = 1 DR (ALL)
-: For example, trading 1 AC (4 units) could provide 1 DR (ALL), or 2 DR (Kinetic), or 4 DR (Chemical), or a combination like 1 DR (Kinetic) and 2 DR (Thermal).
+:For example, trading 1 AC (4 units) could provide 1 DR (ALL), 2 DR (Kinetic), 4 DR (Chemical), or a combination such as 1 DR (Kinetic) and 2 DR (Thermal).
 
 : '''Note''': Armor AC Bonus also directly relates to the '''Level''' of the Armor and thus the required Armor Proficiency Level the Character must have to use it. This stays true regardless of whether AC is traded out for DR or other things. So when crafting Armor, it is best to determine the AC, then trade out for DR, and record the AC.
 
 ;Maximum Dex Bonus: As the Armor gets stronger at protecting the wearer, the person loses the ability to apply some of their Dexterity Mod to their AC. If they have +6 Armor and their Dexterity modifier is +4, then they cannot add all 4 points of Dexterity Mod to their AC. They can only add +3.
 
-;Speed Diff: The bigger the Armor, the harder it is to move around in it. This reduces the character's Run/Sprint/Dash/Swim/Climb movement but not their base walking speed. 
+;Speed Diff: The bigger the Armor, the harder it is to move around in it. This reduces the character's Run/Sprint/Dash/Swim/Climb movement but not their base walking speed. Speed diffs also impact the use of Techniques -5 Speed causes a 10% chance of failure, -10 Speed causes a 20% chance of failure, Halve Speed causes a 40% chance of failure. This also impacts Combat Techniques. It gives disadvantage/double disadvantage/triple disadvantage for -5, -10, and Halve on Disarm, Feint, Combination Melee Attack, and Melee Kick.
 
 ;Average Weight: This is the average weight of the Armor if it were built by a Tech 2 civilization. The lower the tech level, the heavier the armor +5 lbs per Level, and the higher the tech level, the lighter the armor -5 lbs per level. +0 Armor is unaffected by this. The minimum armor that provides any amount of AC/DR is 1 lb per Armor level. Anything 35 lbs or heavier is considered 'Heavy'.  Armor Proficiency is based on Armor level and not weight. But weight can contribute to other factors. The Tech Level adjustment to weight doesn't affect Speed; that only happens during Armor Customization.
 
@@ -338,7 +338,7 @@ In Future Path, the player can create their own customized armor just like in [[
 
 # Crafting Armor requires the [[-_Structural|Structural]] skill to be trained.
 # Crafting Armor's Max Level/AC is Skill Rank dependent. The Skill must have at least 1 Rank to craft 0-3 AC Armor. 2 Ranks for 4-5, 3 Ranks for 6-7, 4 Ranks for 8-9. 
-# Masterworking requires at least +2 Ranks in [[-_Structural|Structural]] for the Armor Level. Read more [[Armor#Crafting_Masterworked_Armor|here]].
+# Masterworking requires at least 6 Ranks in [[-_Structural|Structural]]. Read more [[Armor#Crafting_Masterworked_Armor|here]].
 # Crafting costs 1/2 of the cost of the Item crafted in [[General_Equipment#Crafting_Materials_and_Equipment|supplies]].
 # A Character cannot craft Armor that requires an Armor Proficiency level that is more than 1 greater than the Character possesses.
 # '''Skill [[-_Structural|Structural]] DC''' is equal too '''DC 12''' + '''Tech Level''' + '''Armor Level/Max AC''' + '''2 per Masterwork level'''.
@@ -467,9 +467,7 @@ Treat Re-Craft just like crafting an item, but with the following rule changes.
 
 Crafting requires a Character to have the Craft [[-_Structural|Structure]] Skill. The normal crafting rules for how long it takes and how expensive the materials are are all the same. So are the rules for Masterwork crafting. 
 
-To summarize, for Masterwork crafting, you have to have at least a skill rank of 3 and must also have [[General_Equipment#Crafting_Materials_and_Equipment|Advanced build materials]] for that item. The maximum level of Masterworked Armor is +5 and each level provides either +1 to the '''Maximum Number of Customizations''' or +1 extra free '''Customization point'''. 
-
-The Masterwork Skill Rank requirement goes up based on the number of Masterwork Levels and the armor level. Crafting Masterwork level 1 Armor is +2 to the Skill Rank base requirement for that Armor's Level range. 1 Rank to craft 0-3 AC Armor. 2 Ranks for 4-5, 3 Ranks for 6-7, 4 Ranks for 8-9. So, to craft Armor Level 9 with a +9 AC bonus with 5 levels of Masterwork, that would require a Skill Rank of 10.
+To summarize, for Masterwork crafting, you have to have at least a skill rank of 6 and must also have [[General_Equipment#Crafting_Materials_and_Equipment|Advanced build materials]] for that item. The maximum level of Masterworked Armor is +5, and each level provides either +1 to the '''Maximum Number of Customizations''' or +1 extra free '''Customization point'''. 
 
 One exception to crafting structure rules is that you '''cannot''' collaborate and divide up the work on crafting armor.
 

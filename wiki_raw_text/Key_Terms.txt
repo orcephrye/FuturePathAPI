@@ -146,7 +146,9 @@ Medium is the default size for just about everything. Characters and so on. The 
 : Instead of 'Races' like in some games, Future Path has 'Species'. These represent the different sentient creatures that are playable within the FuturePath Universe. They are listed [[Species|here]].
 
 === Speed ===
-: An attribute usually only referred to while in combat, and the default of which is 30. Speed is determined by Species but can also be affected by [[Athletics#Speed|Athletics Skill]]. Speed is measured in increments of 5ft. By default, a Character can Climb and Swim at half their movement speed.
+: Speed refers to how much distance, measured in 5ft increments, a Character can travel over a period of time. In combat, this period is 3 seconds; outside of combat, it is usually measured in hours or days. Out of combat is referred to as Travel, and rules for this can be found in [[Transportation]] and are usually measured by the '''Walk''' speed of a Character. Combat is a different matter. Normally, the default speed in combat is '''Run''', which is twice the Walk speed. There is also '''Dash''' and '''Sprint''' which one can read about more [[Ground_Combat_Guide#Move_Rules|Move Rules]] section inside the [[Ground Combat Guide]]. A Character also has a Swim, Climb, Fly, and Burrow speed. Burrow is always 5ft unless specified otherwise. Fly is optional for only certain species; 'Climb' and 'Swim' are always 1/2 the Walk speed, rounded up. However, Climb and Swim are also affected by Armor.
+
+Speed can also be affected by [[Athletics#Speed|Athletics Skill]] as well as some Talents and [[Feats]].
 
 === Talent ===
 : A Special feature that comes from a Character's Path or Class. Usually, this is an action they can do, but it could also be a passive bonus to an attribute.

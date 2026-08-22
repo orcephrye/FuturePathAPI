@@ -138,10 +138,11 @@ The Location
 > to strain to pick up any noise. You all know what is being discussed.
 > You lean in close around the table too. The smell of hot noodles hits
 > your nose, begging not to be ignored, but you are too busy thinking
-> about the situation at hand. Here together is a group of people you
-> know and trust. They are all here for the same reason as everybody
-> else. The Armada is on its way, and all anybody can think about is
-> what the heck are you all gonna do about it.
+> about the situation at hand. Huddled together are some of the only
+> people on this spinning can that you trust. They are all here for the
+> same reason as everybody else. The Armada is on its way, and all
+> anybody can think about is what the heck are you all gonna do about
+> it.
 
 GM Notes
 : Make sure the Players know that the last place Lady Kaelen was seen
@@ -344,51 +345,269 @@ Control Room**.
 
 ### The Drifter\'s Depot (General Store - Utility) {#the_drifters_depot_general_store___utility}
 
-:\* **The Situation:** A cluttered warehouse shop run by **Jax**, a
-grumpy but fair retired Belter miner. It sells survival gear, tools, and
-technical supplies.
+> Towering metal shelves reach all the way to the exposed ceiling
+> conduits, crammed with refurbished rebreathers, magnetic boots, coils
+> of high-tensile tether, and crates of salvaged mining components. The
+> air smells of vulcanized rubber, stale packing foam, and machine oil.
+>
+> Perched atop a reinforced stool behind the wire-mesh counter is
+> Jax---a grizzled, three-foot-tall Murid wearing a heavy leather work
+> apron with tinted darkvision goggles pushed up onto his brow. His
+> large, round ears twitch at every creak in the corridor, and his tail
+> flicks with mild impatience as his dexterous paws strip the wiring
+> from a disassembled plasma torch.
 
-:\* **Function:** Players can restock or purchase equipment from the
-[General Equipment](General_Equipment "General Equipment"){.wikilink}
-list using their Credit Score or ISC ([Wealth &
-Money](Wealth_and_Money "Wealth & Money"){.wikilink}).
+- **The Situation:** A packed surplus warehouse and salvage shop run by
+  **Jax**, a grumpy but fair retired Murid Belter miner. Having spent
+  decades cutting rock in the outer belt, Jax knows every tool, seal,
+  and hazard on the station and runs the premier hardware post on
+  Comet\'s Home.
+- **Surroundings:** Located along Freight Spur 4B near the mid-deck
+  cargo lifts. The corridor outside reverberates with the hydraulic hiss
+  of freight elevators and the rumble of automated pallet-loaders moving
+  ore containers.
+- **Function (Purchasing):** Players can restock or purchase equipment
+  from the [General
+  Equipment](General_Equipment "General Equipment"){.wikilink} list
+  using their Credit Score or hard cash ISC ([Wealth &
+  Money](Wealth_and_Money "Wealth & Money"){.wikilink}).
 
-:\* **Clue/Rumor:** Jax complains about a nervous young man (Valen) who
-came in earlier and bought a high-grade radiation hazard suit and water
-filtration packs, which are far too clean for a local Belter to need.
+<!-- -->
+
+- **Player Options & Investigations:**
+
+:\* **1. Shopping & Haggling:** Players can buy standard adventuring
+gear (rebreathers, comm-links, glow-rods, repair kits, medical packs). A
+DC 13 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+[Bluff](Bluff "Bluff"){.wikilink} check (or speaking in the Murid
+**Squeak Speak** dialect) earns Jax\'s respect, securing a 10% discount
+on non-electrical gear or a free roll of industrial hull sealant tape.
+
+:\* **2. The Suspicious Buyer (Valen\'s Lead):**
+
+::\* **Social (DC 12 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+[Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink}):** Buying at
+least 100 ISC of supplies or appealing to station solidarity gets Jax
+grumbling about a frantic young Aconian (Valen) who came in earlier.
+Valen bought two high-grade radiation hazard suits and emergency water
+filters with crisp off-station credits, yet fumbled like an amateur when
+trying to seal the hazard suit collars.
+
+:\* **3. Observation & Scouting (Perception):**
+
+::\* A DC 12 [Perception](Perception "Perception"){.wikilink} check
+notices that Jax\'s sales terminal on the counter is currently logged in
+and completely unlocked, making it easy to access while his back is
+turned.
+
+::\* A DC 15 [Perception](Perception "Perception"){.wikilink} check
+allows less morally upright crews to scout the back storage cage,
+revealing heavy reinforced magnetic deadbolts (DC 18
+[Disable_Device](Disable_Device "Disable_Device"){.wikilink}), a hidden
+kinetic floor sensor, and an electrified overhead capacitor---making it
+clear that attempting to rob the old miner would be a dangerous
+headache.
+
+::\* **Accessing the Terminal (DC 12
+[Computer_Use](Computer_Use "Computer_Use"){.wikilink} or
+[Sleight_of_Hand](Sleight_of_Hand "Sleight_of_Hand"){.wikilink}):**
+Accessing Jax\'s unlocked terminal while he is distracted allows players
+to pull the recent sales log, confirming the hazard suits were billed
+under a stolen employee ID registered to **Beltway Refhab 42**.
+
+:\* **4. Specialized Scavenger Tools:**
+
+: 
+
+  : Jax keeps specialized Belter mining gear in the back cage for
+    serious crews:
+    - **Heavy Plasma Torch (Tech Level 2):** Grants a +2 bonus on
+      [Disable Device](Disable_Device "Disable Device"){.wikilink} or
+      [Strength](Ability_Themes#Strength_(Str) "Strength"){.wikilink}
+      checks to breach sealed doors, bulkheads, or ventilation grates
+      (Procure DC 14 or 75 ISC).
+    - **Industrial Mag-Tether:** Can anchor up to 400 lbs in zero-g,
+      vertical maintenance shafts, or elevator conduits (Procure DC 11
+      or 25 ISC).
 
 ### Void-Forge Munitions (Weapons & Armor - Utility) {#void_forge_munitions_weapons_armor___utility}
 
-:\* **The Situation:** A heavily fortified storefront smelling of gun
-oil, ozone, and metal shavings. Run by **Vera**, a no-nonsense cyborg
-veteran.
+> Heavy blast doors slide open to reveal a reinforced bunker-style
+> armory smelling sharply of gun oil, ozone, and aerosolized bore
+> solvent. Racks of slugthrowers, laser carbines, vibro-blades, and
+> heavy ballistic vests line the bulkheads behind reinforced plasteel
+> glass.
+>
+> Perched on an elevated hydraulic platform behind the counter is
+> Calyx---a three-foot-tall Grayling whose sleek, slate-gray skin is
+> patterned with luminescent crimson ballistic tattoos. A gleaming
+> chrome cybernetic arm extends from her shoulder, and a multi-spectrum
+> optical lens whirs over one of her large dark eyes as she calmly
+> dry-fires a heavy combat rifle, sizing you up with cold, calculating
+> precision.
 
-:\* **Function:** Players can buy firearms, ammunition, and various
-armor grades ([Weapons](Weapons "Weapons"){.wikilink} /
-[Armor](Armor "Armor"){.wikilink}).
+- **The Situation:** A fortified, high-security armory run by **Calyx**,
+  a sharp-tongued Grayling veteran and master weaponsmith. Despite her
+  diminutive frame, Calyx's cybernetic enhancements and encyclopedic
+  knowledge of ballistics make her one of the most respected---and
+  feared---merchants on Comet\'s Home.
+- **Surroundings:** Located off the station\'s Security Concourse near
+  Docking Ring Beta. The storefront is shielded behind motorized blast
+  shutters, with a pair of ceiling-mounted automated micro-turrets
+  humming softly in standby mode.
+- **Function (Purchasing):** Players can buy firearms, ammunition,
+  tactical gear, and armor from the
+  [Weapons](Weapons "Weapons"){.wikilink} and
+  [Armor](Armor "Armor"){.wikilink} lists using their Credit Score or
+  hard cash ISC ([Wealth &
+  Money](Wealth_and_Money "Wealth & Money"){.wikilink}).
 
-:\* **Clue/Rumor:** Vera mentions that a group of Aconians tried to buy
-heavy weapons under the table, but she kicked them out because they
-lacked local licenses and had \"shifty mercenary eyes.\"
+:\* **Inventory Availability:** All Tech Level 2 and Tech Level 3 items
+with a Procure Difficulty of 2 or lower are available in stock. All Tech
+Level 3 items carry a +20% price markup due to frontier import costs.
+
+- **Player Options & Investigations:**
+
+:\* **1. Arming Up & Custom Weapon Tuning:**
+
+::\* Players can purchase standard weapons, armor, and ammunition.
+
+::\* **Grayling Precision Tuning:** Calyx can precision-tune one
+firearm\'s optics and barrel tolerances, granting a +1 bonus on the
+weapon\'s first attack roll in combat. This service costs **300 ISC**,
+or **150 ISC AND** a DC 13 [Craft
+Mechanical](-_Mechanical "Craft Mechanical"){.wikilink} or [Knowledge
+Technology](Tech "Knowledge Technology"){.wikilink} check to assist her.
+The GM should inform the players that performing this tuning takes **20
+minutes** of in-game time.
+
+:\* **2. The Mercenary Squad (Story & Rumor):**
+
+::\* **Social Checks:** A DC 14
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} check or a DC 18
+[Intimidate](Intimidate "Intimidate"){.wikilink} check gets Calyx
+talking. She mentions that a squad of tight-lipped Aconians tried to buy
+military-grade armor-piercing rounds and heavy weapons under the table
+earlier today, but she kicked them out because they lacked local
+licenses and had \"the sloppy arrogance of off-world private hitmen.\"
+
+::\* **Bribes / Tipping:** Placing hard cash on the counter loosens her
+tongue: each 100 ISC offered lowers the DC by 1 and grants the party
+another attempt to roll.
+
+::\* **[Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink}:** A
+[Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink} check can be
+rolled solely to determine if Calyx is telling the truth (she is
+completely truthful).
+
+:\* **3. Security, Scouting & Anti-Theft:**
+
+: 
+
+  : Less scrupulous crews scouting the armory for potential theft or
+    break-ins learn the following based on their
+    [Perception](Perception "Perception"){.wikilink} checks:
+    - **DC 14 [Perception](Perception "Perception"){.wikilink}:**
+      Reveals that Calyx's cybernetic ocular unit and neural link are
+      directly wired to the ceiling turrets and electrified floor
+      plates, making it clear that a direct robbery attempt would result
+      in lethal crossfire.
+    - **DC 18 [Perception](Perception "Perception"){.wikilink}:**
+      Identifies a subtle blind spot in the automated ceiling turrets\'
+      sensor sweep pattern, revealing a viable path to sneak past them.
+    - **DC 20 [Perception](Perception "Perception"){.wikilink}:** Spots
+      that the electronic keypad for entering the secure back storage
+      room has noticeable physical wear on specific digits, granting a
+      +2 bonus on [Disable
+      Device](Disable_Device "Disable Device"){.wikilink} checks made to
+      crack the lock.
 
 ### Heng\'s Cometary Noodles (Flavor) {#hengs_cometary_noodles_flavor}
 
-:\* **The Situation:** A tiny, neon-lit noodle shop serving synthetic
-kelp noodles and steaming hot broth, run by the talkative **Uncle
-Heng**. It is the social hub for the whole station.
+> The smell of sizzling synth-protein, fermented chili paste, and
+> steaming kelp broth usually makes Heng's the loudest, warmest spot on
+> Comet's Home. But tonight, the usual roar of clinking glasses, slurped
+> noodles, and Belter banter has gone dead quiet.
+>
+> Flickering overhead holo-screens loop an ominous emergency broadcast:
+> the Aconian fleet is inbound, demanding a missing royal or threatening
+> total martial annexation. Around the greasy corner booths, miners and
+> scavengers nurse their tea in grim silence, keeping their eyes glued
+> to the exits. Time is running out, the fleet is closing in, and
+> anxiety hangs heavy in the steam-filled air.
 
-:\* **Flavor:** Spending 5 ISC on a bowl of noodles and talking to the
-patrons grants the crew a temporary +1 bonus to their next Ability Check
-or Saving throw and reveals station rumors about Aconian agents lurking
-near the docks.
+:\* **The Situation:** Wedged beneath the main atmospheric exhaust
+conduits on Sub-Level 3, Heng\'s is an open-front diner glowing under a
+buzzing, retrofitted neon sign shaped like a comet diving into a ramen
+bowl. Bolted swivel stools line a stainless-steel counter stained by
+decades of asteroid-kelp chili oil. It is run by **Uncle Heng**, a
+gregarious elderly Human Belter with a cybernetic optical loupe who
+knows everyone's business.
+
+:\* **Surroundings:** The corridor outside is a high-traffic junction
+where fuel-stained asteroid miners and off-shift technicians pass by.
+Coolant lines sweat overhead, dripping onto metal floor grates that
+vibrate with the station\'s heavy ore processors.
+
+:\* **Flavor:** Spending 5 ISC on a steaming bowl of Uncle Heng\'s
+\"Deep Core Spicy Kelp Noodles\" and talking to the patrons grants the
+crew a temporary +1 bonus to their next Ability Check or Saving throw
+and reveals station rumors about Aconian agents lurking near the docks.
 
 ### The Oasis Bio-Dome (Flavor) {#the_oasis_bio_dome_flavor}
 
-:\* **The Situation:** A small, pressurized dome containing real soil,
-genetically engineered pine trees, and recycled natural air. It is the
-only green space on the station, reserved for citizens needing
-\"psychological decompression.\"
+> Stepping through the airlock into the Bio-Dome is like leaving the
+> mining station behind entirely. The ever-present mechanical grinding
+> and the harsh smell of ozone vanish, replaced by the rich aroma of
+> damp loamy soil, crushed pine needles, and sweet natural oxygen.
+>
+> Underneath a reinforced geodesic dome looking out onto the silent,
+> star-filled void and jagged asteroid belts, winding stone pathways
+> weave between genetically engineered dwarf pines, bioluminescent fern
+> beds, and a trickling water canal. Tending to a hydroponic flowering
+> bush is Vera---a serene, green-skinned Volar botanist whose leafy
+> head-bud gently sways as she mists the delicate flora.
 
-:\* **Flavor:** A peaceful, quiet sanctuary where the players can rest,
-discuss their findings, and escape the noisy industrial hum of the
-mining station.
+- **The Situation:** A climate-controlled botanical sanctuary and
+  psychological decompression garden run by **\'Vera**, a gentle Volar
+  botanist. It is the only true green space on Comet\'s Home, maintained
+  to prevent space madness and cabin fever among deep-space Belters.
+- **Surroundings:** Located atop the station's Upper Spire overlooking
+  the Promenade. The transparent dome provides a breathtaking view of
+  the comet's glowing tail and incoming freighter traffic, shielded by
+  high-grade radiation baffles.
+- **Function (Rest & Respite):** A peaceful, tranquil sanctuary where
+  the party can rest, discuss plans in privacy, and escape the noisy
+  industrial hum of the station.
+
+<!-- -->
+
+- **Player Options & Interactions:**
+
+:\* **1. Natural Rest (Psychological Decompression):**
+
+::\* Spending 30 minutes resting quietly in the garden clears non-lethal
+stress and grants a +1 morale bonus to the party\'s next
+[Wisdom](Ability_Themes#Wisdom_(Wis) "Wisdom"){.wikilink} or [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} check.
+
+:\* **2. Volar Herbal Tea:**
+
+::\* Vera is naturally attentive to the physical well-being of others.
+If she notices that the characters are visibly hurt, exhausted from
+prior encounters, or if the players successfully socialize with her (DC
+12 [Diplomacy](Diplomacy "Diplomacy"){.wikilink}), she warm-heartedly
+offers them cups of freshly brewed \"Deep Bloom Tea\" (10 ISC or offered
+free to friendly guests).
+
+::\* Drinking the herbal tea grants **Advantage (+1Ad)** on saving
+throws against poison, sickness, or fatigue for the next 4 hours.
+
+:\* **3. Private Planning & Anti-Surveillance:**
+
+::\* A DC 12 [Perception](Perception "Perception"){.wikilink} check
+allows players to recognize that the dense botanical canopy, trickling
+water canal, and lack of station electrical conduits provide total
+acoustic isolation---making the Bio-Dome one of the few places on
+Comet\'s Home completely immune to electronic eavesdropping, corporate
+wiretaps, or security listening bugs.

@@ -354,12 +354,26 @@ rules do not clearly specify. A Character\'s
 
 ### Speed
 
-: An attribute usually only referred to while in combat, and the default
-  of which is 30. Speed is determined by Species but can also be
-  affected by [Athletics
-  Skill](Athletics#Speed "Athletics Skill"){.wikilink}. Speed is
-  measured in increments of 5ft. By default, a Character can Climb and
-  Swim at half their movement speed.
+: Speed refers to how much distance, measured in 5ft increments, a
+  Character can travel over a period of time. In combat, this period is
+  3 seconds; outside of combat, it is usually measured in hours or days.
+  Out of combat is referred to as Travel, and rules for this can be
+  found in [Transportation](Transportation "Transportation"){.wikilink}
+  and are usually measured by the **Walk** speed of a Character. Combat
+  is a different matter. Normally, the default speed in combat is
+  **Run**, which is twice the Walk speed. There is also **Dash** and
+  **Sprint** which one can read about more [Move
+  Rules](Ground_Combat_Guide#Move_Rules "Move Rules"){.wikilink} section
+  inside the [Ground Combat
+  Guide](Ground_Combat_Guide "Ground Combat Guide"){.wikilink}. A
+  Character also has a Swim, Climb, Fly, and Burrow speed. Burrow is
+  always 5ft unless specified otherwise. Fly is optional for only
+  certain species; \'Climb\' and \'Swim\' are always 1/2 the Walk speed,
+  rounded up. However, Climb and Swim are also affected by Armor.
+
+Speed can also be affected by [Athletics
+Skill](Athletics#Speed "Athletics Skill"){.wikilink} as well as some
+Talents and [Feats](Feats "Feats"){.wikilink}.
 
 ### Talent
 

@@ -108,7 +108,7 @@ Galaxy, go to the [Humans](Humans "Humans"){.wikilink} page.
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Mammal
-- Locomotion: bipedal
+- Locomotion: bipedal (Base Speed: 15ft)
 - Reproduction: sexual
 - Average Height Male: 5\' 10\'\' (177 cm)
 - Average Height Female: 5\' 5\'\' (163 - 164 cm)
@@ -236,7 +236,7 @@ For a complete history and narrative about the Volar, go to the
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Plant
-- Locomotion: bipedal
+- Locomotion: bipedal (Base Speed 15ft)
 - Reproduction: Asexual
 - Average Height: 4\' 8\'\' (\~146 - 167 cm)
 - Average Life Span: 90 - 100 years
@@ -266,16 +266,14 @@ For a complete history and narrative about the Volar, go to the
     1/4th Character level round downturns. They have to re-roll for
     every turn they are within the radius. If they fail critically or
     twice in a row, then they become
-    [Sickened](Conditions#-_Sickened "Sickened"){.wikilink}.
-
-::\* **Note**: A Volar can choose to excrete this in the form of a
-liquid instead of using it as a defensive. The liquid becomes inert in
-12 hours unless it is Crafted. Craft Chemical (DC10) will concentrate it
-into a Poison with the same effect, while Craft Pharmaceutical (DC10)
-will create an antidote that can be used to avoid the effects. Once
-crafted, the item is good for up to 7 days.
-
-1.  **Rapid Re-Growth**: As long as the Volar is in well-lighted and
+    [Sickened](Conditions#-_Sickened "Sickened"){.wikilink}. **Note**: A
+    Volar can choose to excrete this in the form of a liquid instead of
+    using it as a defensive. The liquid becomes inert in 12 hours unless
+    it is Crafted. Craft Chemical (DC10) will concentrate it into a
+    Poison with the same effect, while Craft Pharmaceutical (DC10) will
+    create an antidote that can be used to avoid the effects. Once
+    crafted, the item is good for up to 7 days.
+4.  **Rapid Re-Growth**: As long as the Volar is in well-lighted and
     healthy conditions for a plant and takes a full day to rest, the
     Volar can rapidly heal. Restoring 100% of health in just one night
     of rest. They also gain an advantage in recovering from sickness,
@@ -361,7 +359,7 @@ For a complete history and narrative about the Graelycxazshngs go to the
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Mammal
-- Locomotion: bipedal
+- Locomotion: bipedal (Base Speed 15ft)
 - Reproduction: Sexual
 - Average Height Male and Female: 3\' 2\'\' (\~91 cm)
 - Average Life Span: 180 - 210 years
@@ -484,7 +482,7 @@ burned by the deals they make with Lepidonains.
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Reptilian
-- Locomotion: bipedal
+- Locomotion: bipedal (Base Speed 15ft)
 - Reproduction: sexual
 - Average Height Male: 6\' 2*(\~189 cm), Female: 4\' 6* (\~137 cm)
 - Average Life Span: 110 - 130 years
@@ -583,7 +581,8 @@ show signs of weakness.
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Amphibian
-- Locomotion: Serpentine or Rectilinear
+- Locomotion: Serpentine or Rectilinear (Male Base Speed 10ft, Female
+  Base Speed 15ft)
 - Reproduction: Sexual (External Fertilization)
 - Average Height Male: 2\' 10*(\~88 cm), Female: 5\' 6* (\~168 cm)
 - Average Life Span: 140 - 150 years
@@ -611,11 +610,10 @@ Traits for Both:
 
 1.  Lose 1 in Charisma, choose between Intelligence, Wisdom, or
     Constitution to add an ability point.
-2.  Speed is -5 ft.
-3.  Swim and Climb speed is the same movement speed.
-4.  Can breathe underwater.
-5.  Immune to the Trip Combat Technique.
-6.  If grappled, Cryous gains advantage to reverse the grapple.
+2.  Swim and Climb speed is the same movement speed.
+3.  Can breathe underwater.
+4.  Immune to the Trip Combat Technique.
+5.  If grappled, Cryous gains advantage to reverse the grapple.
 
 `<u>`{=html}**Relations**`</u>`{=html}
 
@@ -681,8 +679,8 @@ nearby, so they cannot hide from themselves.
 
 For a complete history and narrative about Ovex in The Great Ring
 Galaxy, go to the [Ovex](Ovex "Ovex"){.wikilink} page. They require
-their own [Path](Character_Path "Path"){.wikilink}. The player
-**cannot** pick a standard [Character
+their own [Ovex Path](RoboticBaseClass "Ovex Path"){.wikilink}. The
+player **cannot** pick a standard [Character
 Path](Character_Path "Character Path"){.wikilink}; instead, pick from
 [Ovex Path](RoboticBaseClass "Ovex Path"){.wikilink}. The Ovex can still
 have [Character
@@ -701,7 +699,8 @@ Professions](Character_Professions "Character Professions"){.wikilink}.
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Artifical/Robotic
-- Locomotion: Usually Bipedal but can vary
+- Locomotion: Usually Bipedal but can vary (Base Speed dependent on
+  Species chosen to imitate)
 - Reproduction: Forking (A Digital Clone)
 - Average Height: N/A
 - Average Life Space: Infinite (in theory)
@@ -795,7 +794,7 @@ For a complete history and narrative about the Aconians, go to the
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Mammal
-- Locomotion: Bipedal (10ft Base Walk Speed)
+- Locomotion: Bipedal (Base Speed 10ft)
 - Reproduction: Sexual
 - Average Height: 4ft 8inch
 - Average Life Span: \~650 years (Natural, un-augmented life span: 310
@@ -893,7 +892,8 @@ For a complete history and narrative about the Aconians, go to the
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Mammal
-- Locomotion: Bipedal (10ft Base Speed) or Quadruped (20ft Base Speed)
+- Locomotion: Bipedal or Quadruped (Base Speed: Bipedal 10ft / Quadruped
+  20ft)
 - Reproduction: Sexual
 - Average Height: 3ft 4inch
 - Average Life Span: 60 years
@@ -1009,7 +1009,7 @@ For a complete history and narrative about the Avisari, go to the
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Avian
-- Locomotion: Bipedal (10ft Base), Flight (40ft Base)
+- Locomotion: Bipedal or Flight (Base Speed: Bipedal 10ft, Flight 40ft)
 - Reproduction: Sexual (Egg-laying)
 - Average Height Male: 5\' 8*(\~173 cm), Female: 5\' 5* (\~165 cm)
 - Average Life Span: 100 - 120 years
@@ -1094,8 +1094,8 @@ For a complete history and narrative about the Khepri, go to the
 `<u>`{=html}**Species Traits**`</u>`{=html}
 
 - Class: Insectoid
-- Locomotion: Varies by Caste (Bipedal, Quadrupedal, or Hexapedal) Base
-  20ft
+- Locomotion: Varies by Caste (Quadrupedal, or Hexapedal) (Base Speed
+  for all is 20ft)
 - Reproduction: Sexual (Egg-laying / Matriarchal Hive)
 - Average Height: Varies by Caste (3\' 6*to 7\' 0*)
 - Average Life Span: 70 - 110 years
@@ -1113,9 +1113,9 @@ their biological adjustments:
 
     : **Hive Sense**: Khepri can sense the presence and general
       emotional state of other Khepri within 60 feet.
-    : **Wall Climber**: Khepri possess fine tarsal claws allowing them
-      to climb vertical surfaces as if they were walking (with base walk
-      speed); they can also run up vertical surfaces.
+    : **Wall Climber**: Khepri possess fine tarsal claws that allow them
+      to climb vertical surfaces as if walking (at base walk speed);
+      they can also run up vertical surfaces.
 2.  **Worker (Grunt)**
 
     : Gain +1 to Strength or Constitution, -1 to Charisma.

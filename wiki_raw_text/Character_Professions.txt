@@ -686,8 +686,10 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # Allegiance: You must pledge primary allegiance to a faction or group. (See Envoy's Allegiances below).
 
 '''<u>Restrictions</u>''':
-# Feats: The Envoy cannot use Power Armor.
-# Weapons: The Envoy cannot gain advantage when using Melee/Martial weapons.
+* Feats: The Envoy cannot use Power Armor.
+* Weapons: The Envoy cannot gain advantage when using Melee/Martial weapons.
+* Armor with a speed penalty gives a negative change when using Techniques.
+:* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20% chance of failure, Halve Speed causes a 40% chance of failure.
 
 '''<u>Profession Information</u>''':
 
@@ -863,7 +865,10 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # Path: Path of Intelligence '''OR''' Path: Path of Dexterity '''OR''' Ability: Intelligence Score 15+ with Dex Score of 12+ '''OR''' Ability: Dexterity Score 15+ with Int Score of 12+
 
 '''<u>Restrictions</u>''':
-# Profession: Cannot also be a Shield Splicer.
+* Profession: Cannot also be a Shield Splicer.
+* Cannot utilize Techniques if in Power Armor.
+* Armor with a speed penalty gives a negative change when using Techniques.
+:* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20% chance of failure, Halve Speed causes a 40% chance of failure.
 
 '''<u>Profession Information</u>''':
 
@@ -986,7 +991,7 @@ This can be stacked if slots are available. Also, this does not stack or work wi
 |-
 | style="font-size:70%; text-align:left;" colspan="6" | *Level 0 Techniques can be performed at will, with the [[TechniqueNovice|Technique Novice]] [[Feats|Feat]].
 |}
-An Erie quite settles onto the cabin. The only sound left is the hum of motors below, crawling up the soldier's legs as if being forced out of the air from the opposing silence. Faces were shocked and full of despair. Not looking up, afraid to see the empty seats where their comrades should be. Jacob, standing, holding onto a tether hanging from the ceiling to keep his balance as the vehicle hurriedly sends what's left of his team across the bumpy landscape, looks at the faces of his men and realizes he is losing them. The defeat was too much for them. Without the right words, the moral would be lost, and he knows what would happen next. "First," he thought to himself, "I must not let them see me down."
+An eerie quiet settles onto the cabin. The only sound left is the hum of motors below, crawling up the soldier's legs as if being forced out of the air from the opposing silence. Faces were shocked and full of despair. Not looking up, afraid to see the empty seats where their comrades should be. Jacob, standing, holding onto a tether hanging from the ceiling to keep his balance as the vehicle hurriedly sends what's left of his team across the bumpy landscape, looks at the faces of his men and realizes he is losing them. The defeat was too much for them. Without the right words, morale would be lost, and he knows what would happen next. "First," he thought to himself, "I must not let them see me down."
 
 The Field Officer is a natural leader with the heart of a warrior. He understands how to direct allies and lead by example. The Field Officer has the tactical expertise and uses such knowledge to coordinate armed forces in the battlefield. He is not afraid to get into the thick of things himself, especially if it means completing the mission at hand. Field Officers are seen commanding counter-terrorism teams, a group of trained soldiers, or even undisciplined mercs. Even pirates may find themselves taking advantage of a natural leader and assigning someone of such skill as a first mate to help keep the people in line.
 
@@ -999,7 +1004,9 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # Path: Path of Charisma '''OR''' Ability: Charisma Score 15+ '''OR''' Ability: Wisdom Score 15+ and Charisma score of 12+
 
 '''<u>Restrictions</u>''':
-# Feats: Cannot use power armor (negates the ability to use Profession Techniques).
+* Feats: Cannot use power armor (negates the ability to use Profession Techniques).
+* Armor with a speed penalty gives a negative change when using Techniques.
+:* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20% chance of failure, Halve Speed causes a 40% chance of failure.
 
 '''<u>Profession Information</u>''':
 
@@ -1120,7 +1127,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 | 10th || Genetic Path Upgrade, Darkvision (120 ft.)
 |}
 
-Most choose not to mess with Nature too much. Science has always tittered on the fringes of what society deems acceptable. Pushing against the wall of morality is, to some scientists, their duty. Helix Warrior's are examples of those experiments scientist do that sometimes pushes too hard against that wall. Genetic Modification is one of the big Great Filters of any Civilization. People, sometimes willing, however usually not, are subjected to rigorous "scientific" experimentation. Their DNA is manipulated to purge anything deemed undesirable or a "flaw." Some call this "forced evolution." Most call it eugenics. Some Civilizations allow such practices, while most others do not. All capable Civilizations do it at some point.
+Most choose not to mess with Nature too much. Science has always tittered on the fringes of what society deems acceptable. Pushing against the wall of morality is, to some scientists, their duty. Helix Warrior's are examples of those experiments scientist do that sometimes pushes too hard against that wall. Genetic Modification is one of the big Great Filters of any Civilization. People, sometimes willingly, however usually not, are subjected to rigorous "scientific" experimentation. Their DNA is manipulated to purge anything deemed undesirable or a "flaw." Some call this "forced evolution." Most call it eugenics. Some Civilizations allow such practices, while most others do not. All capable Civilizations do it at some point.
 
 Some Helix Warriors come out with no adverse side effects and use their abilities to help others or, at the very least, help themselves. Others are not as lucky. In either case, Helix Warriors manifest new abilities that make them more resilient super-soldiers, security guards, law enforcement officers, and more. 
 
@@ -1133,8 +1140,11 @@ The fastest path into this Profession is through the [[Core_Class#Path_of_Streng
 # Path: Path of Strength '''OR''' Path of Wisdom '''OR''' Ability: Strength Score 15+ '''OR''' Ability: Wisdom Score 15+ and Strength score of 12+
 
 '''<u>Restrictions</u>''':
-# Feats: Cannot take feats within the '''Ranged Combat''' sub-category (except for [[Bazooka Arm]]).
-# Profession: Cannot also be a Dreadnought.
+* Feats: Cannot take feats within the '''Ranged Combat''' sub-category (except for [[Bazooka Arm]]).
+* Profession: Cannot also be a Dreadnought.
+* Cannot utilize Techniques or Profession Talents if in Power Armor.
+* Armor with a speed penalty gives a negative change when using Helix Strains.
+:* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20% chance of failure, Halve Speed causes a 40% chance of failure.
 
 '''<u>Profession Information</u>''':
 
@@ -1270,8 +1280,10 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # Path: Path of Constitution '''OR''' Path: Path of Wisdom '''OR''' Ability: Constitution Score 15+ with Wis score of 12+ '''OR''' Ability: Wisdom Score 15+ with Con score of 12+
 
 '''<u>Restrictions</u>''':
-# Profession: Cannot also be an Electro-Mancer.
-# Gear: Cannot wear Power Armor.
+* Profession: Cannot also be an Electro-Mancer.
+* Gear: Cannot wear Power Armor.
+* Armor with a speed penalty gives a negative change when using Techniques.
+:* -5 Speed causes a 10% chance of failure, -10 Speed causes a 20% chance of failure, Halve Speed causes a 40% chance of failure.
 
 '''<u>Profession Information</u>''':
 

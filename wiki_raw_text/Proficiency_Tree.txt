@@ -41,7 +41,6 @@ The Armor Branch has 10 levels, and the default starting level for a Character i
 
 Item Use only has 2 levels. The starting Level is 0. This is solely for crafting Items, Weapons, and Armor in the game. 
 
-
 ;Level 0: The Character can only craft Items of their Tech Level and lower. They cannot craft Masterworked Items even if their Craft Skill is high enough. They cannot Uptech (Increase the Tech Level of an Item) even if they have the Tech Level and Craft Ranks. The repair DC for items of a higher tech level is +5 per tech level and also +5 for each Masterworked Level.
 
 ;Level 1: Characters can craft masetworked items up to level 3. Characters can now Uptech items to the Character's current Tech Level. Characters are no longer penalized for repairing Masterworked items. However, characters still get +2 DC per Tech Level above the Character's on Repair checks.

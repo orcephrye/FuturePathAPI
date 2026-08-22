@@ -59,8 +59,8 @@ Armor AC Bonus (Armor Level)
   - 1 DR Unit = 1 DR (Specific: Chemical, Electrical, or Thermal)
   - 2 DR Units = 1 DR (Kinetic)
   - 4 DR Units = 1 DR (ALL)
-: For example, trading 1 AC (4 units) could provide 1 DR (ALL), or 2 DR
-  (Kinetic), or 4 DR (Chemical), or a combination like 1 DR (Kinetic)
+: For example, trading 1 AC (4 units) could provide 1 DR (ALL), 2 DR
+  (Kinetic), 4 DR (Chemical), or a combination such as 1 DR (Kinetic)
   and 2 DR (Thermal).
 
 <!-- -->
@@ -84,7 +84,12 @@ Maximum Dex Bonus
 Speed Diff
 : The bigger the Armor, the harder it is to move around in it. This
   reduces the character\'s Run/Sprint/Dash/Swim/Climb movement but not
-  their base walking speed.
+  their base walking speed. Speed diffs also impact the use of
+  Techniques -5 Speed causes a 10% chance of failure, -10 Speed causes a
+  20% chance of failure, Halve Speed causes a 40% chance of failure.
+  This also impacts Combat Techniques. It gives disadvantage/double
+  disadvantage/triple disadvantage for -5, -10, and Halve on Disarm,
+  Feint, Combination Melee Attack, and Melee Kick.
 
 <!-- -->
 
@@ -475,9 +480,8 @@ customizing armor.
 2.  Crafting Armor\'s Max Level/AC is Skill Rank dependent. The Skill
     must have at least 1 Rank to craft 0-3 AC Armor. 2 Ranks for 4-5, 3
     Ranks for 6-7, 4 Ranks for 8-9.
-3.  Masterworking requires at least +2 Ranks in
-    [Structural](-_Structural "Structural"){.wikilink} for the Armor
-    Level. Read more
+3.  Masterworking requires at least 6 Ranks in
+    [Structural](-_Structural "Structural"){.wikilink}. Read more
     [here](Armor#Crafting_Masterworked_Armor "here"){.wikilink}.
 4.  Crafting costs 1/2 of the cost of the Item crafted in
     [supplies](General_Equipment#Crafting_Materials_and_Equipment "supplies"){.wikilink}.
@@ -780,18 +784,11 @@ crafting rules for how long it takes and how expensive the materials are
 are all the same. So are the rules for Masterwork crafting.
 
 To summarize, for Masterwork crafting, you have to have at least a skill
-rank of 3 and must also have [Advanced build
+rank of 6 and must also have [Advanced build
 materials](General_Equipment#Crafting_Materials_and_Equipment "Advanced build materials"){.wikilink}
-for that item. The maximum level of Masterworked Armor is +5 and each
+for that item. The maximum level of Masterworked Armor is +5, and each
 level provides either +1 to the **Maximum Number of Customizations** or
 +1 extra free **Customization point**.
-
-The Masterwork Skill Rank requirement goes up based on the number of
-Masterwork Levels and the armor level. Crafting Masterwork level 1 Armor
-is +2 to the Skill Rank base requirement for that Armor\'s Level range.
-1 Rank to craft 0-3 AC Armor. 2 Ranks for 4-5, 3 Ranks for 6-7, 4 Ranks
-for 8-9. So, to craft Armor Level 9 with a +9 AC bonus with 5 levels of
-Masterwork, that would require a Skill Rank of 10.
 
 One exception to crafting structure rules is that you **cannot**
 collaborate and divide up the work on crafting armor.

@@ -144,4 +144,3 @@ A devastating directional siege mine that tracks micro-gravity perturbations via
 
 === Null-Void Canister ===
 An all-purpose containerized tactical canister. Senses micro-gravity disruptions or detonates on contact, unleashing an impenetrable 30ft sphere/cone of Black-50 compound that causes 100% total optical blackout for 1d6 rounds.
-

@@ -38,7 +38,7 @@ For a complete history and narrative about Humans in The Great Ring Galaxy, go t
 
 <u>'''Species Traits'''</u>
 * Class: Mammal
-* Locomotion:  bipedal
+* Locomotion:  bipedal (Base Speed: 15ft)
 * Reproduction: sexual
 * Average Height Male: 5' 10'' (177 cm)
 * Average Height Female: 5' 5'' (163 - 164 cm)
@@ -89,7 +89,7 @@ For a complete history and narrative about the Volar, go to the [[Volar|Volar]] 
 <u>'''Species Traits'''</u>
 
 * Class: Plant
-* Locomotion: bipedal
+* Locomotion: bipedal (Base Speed 15ft)
 * Reproduction: Asexual
 * Average Height: 4' 8'' (~146 - 167 cm)
 * Average Life Span: 90 - 100 years
@@ -101,8 +101,7 @@ For a complete history and narrative about the Volar, go to the [[Volar|Volar]] 
 
 # Loses one point on Dexterity, Gains one point on Wisdom
 # '''Common Bond''': Volar can communicate using pheromones in an almost 'psychic' link to other Volar within roughly 120ft, even if they are not in view. They can only share feelings and flashes of thought. However, this means that if more than one Volar is close to each other and are allies, they gain an advantage bonus against Mind-Effecting conditions/techniques.
-# '''Nauseous Blooms''': Once per day, a Volar can expel nauseous gases as self-defense. They can target a person within 30 feet or produce a 15-foot radius cloud of gas around themselves. The ranged attack is considered a ranged touch attack, and the cloud lasts for 1d4 + 1/4th Character level round-up turns. Anyone who breathes the air or gets hit by the attack has to take a Constitution Saving throw of a DC12 + Con Mod + 1/4th Character level, rounded down. If they fail the throw, they become [[Conditions#Nauseated|Nauseated]] for 1d4 + 1/4th Character level round downturns. They have to re-roll for every turn they are within the radius. If they fail critically or twice in a row, then they become [[Conditions#-_Sickened|Sickened]]. 
-::* '''Note''': A Volar can choose to excrete this in the form of a liquid instead of using it as a defensive. The liquid becomes inert in 12 hours unless it is Crafted. Craft Chemical (DC10) will concentrate it into a Poison with the same effect, while Craft Pharmaceutical (DC10) will create an antidote that can be used to avoid the effects. Once crafted, the item is good for up to 7 days.
+# '''Nauseous Blooms''': Once per day, a Volar can expel nauseous gases as self-defense. They can target a person within 30 feet or produce a 15-foot radius cloud of gas around themselves. The ranged attack is considered a ranged touch attack, and the cloud lasts for 1d4 + 1/4th Character level round-up turns. Anyone who breathes the air or gets hit by the attack has to take a Constitution Saving throw of a DC12 + Con Mod + 1/4th Character level, rounded down. If they fail the throw, they become [[Conditions#Nauseated|Nauseated]] for 1d4 + 1/4th Character level round downturns. They have to re-roll for every turn they are within the radius. If they fail critically or twice in a row, then they become [[Conditions#-_Sickened|Sickened]]. '''Note''': A Volar can choose to excrete this in the form of a liquid instead of using it as a defensive. The liquid becomes inert in 12 hours unless it is Crafted. Craft Chemical (DC10) will concentrate it into a Poison with the same effect, while Craft Pharmaceutical (DC10) will create an antidote that can be used to avoid the effects. Once crafted, the item is good for up to 7 days.
 # '''Rapid Re-Growth''': As long as the Volar is in well-lighted and healthy conditions for a plant and takes a full day to rest, the Volar can rapidly heal. Restoring 100% of health in just one night of rest. They also gain an advantage in recovering from sickness, poisons, and diseases for every day they rest.
 
 <u>''' Relations '''</u>
@@ -125,7 +124,7 @@ For a complete history and narrative about the Graelycxazshngs go to the [[Grayl
 <u>'''Species Traits'''</u>
 
 * Class: Mammal
-* Locomotion: bipedal
+* Locomotion: bipedal (Base Speed 15ft)
 * Reproduction: Sexual
 * Average Height Male and Female: 3' 2'' (~91 cm)
 * Average Life Span: 180 - 210 years
@@ -176,7 +175,7 @@ One of Lepidonains first great conflicts with a genuinely equal species was with
 <u>'''Species Traits'''</u>
 
 * Class: Reptilian
-* Locomotion: bipedal
+* Locomotion: bipedal (Base Speed 15ft)
 * Reproduction: sexual
 * Average Height Male: 6' 2'' (~189 cm), Female: 4' 6'' (~137 cm)
 * Average Life Span: 110 - 130 years
@@ -210,7 +209,7 @@ Cryous no longer holds an empire and now rules only a dozen solar systems. Their
 <u>'''Species Traits'''</u>
 
 * Class: Amphibian
-* Locomotion: Serpentine or Rectilinear
+* Locomotion: Serpentine or Rectilinear (Male Base Speed 10ft, Female Base Speed 15ft)
 * Reproduction: Sexual (External Fertilization)
 * Average Height Male: 2' 10'' (~88 cm), Female: 5' 6'' (~168 cm)
 * Average Life Span: 140 - 150 years
@@ -231,7 +230,6 @@ Male Specific Traits:
 
 Traits for Both:
 # Lose 1 in Charisma, choose between Intelligence, Wisdom, or Constitution to add an ability point.
-# Speed is -5 ft. 
 # Swim and Climb speed is the same movement speed.
 # Can breathe underwater.
 # Immune to the Trip Combat Technique.
@@ -250,7 +248,7 @@ Ovex are known and feared across the galaxy. Long ago, they rose up against thei
 
 While eventually people of the galaxy learned that the Ovex were not truly destroyed, they also do not know where the 'heart' of the Ovex, the Nexus, resides.  Because of this, Ovex usually travels in disguise and will do anything, including faking death, to maintain appearances and avoid discovery. Ovex can instantly become aware of another Ovex nearby, so they cannot hide from themselves.
 
-For a complete history and narrative about Ovex in The Great Ring Galaxy, go to the [[Ovex]] page. They require their own [[Character_Path|Path]]. The player '''cannot''' pick a standard [[Character Path]]; instead, pick from [[RoboticBaseClass|Ovex Path]]. The Ovex can still have [[Character Professions]].
+For a complete history and narrative about Ovex in The Great Ring Galaxy, go to the [[Ovex]] page. They require their own [[RoboticBaseClass|Ovex Path]]. The player '''cannot''' pick a standard [[Character Path]]; instead, pick from [[RoboticBaseClass|Ovex Path]]. The Ovex can still have [[Character Professions]].
 
 <u>'''Visiual Description'''</u>
 : By default, an Ovex is constructed with a body shape similar to that of its creators, the Qelzuk. The Qelzuk looked similar to many bipedal, two-handed peoples. The Ovex outer layer is made of alloys and special plastics that provide a sharp, reflective surface in different shades of grey. In most cases, Ovex that choose to expose themselves to the goings-on of the Ring are likely to disguise themselves with the appearance of a different species.
@@ -258,7 +256,7 @@ For a complete history and narrative about Ovex in The Great Ring Galaxy, go to 
 <u>'''Species Traits'''</u>
 
 * Class: Artifical/Robotic
-* Locomotion: Usually Bipedal but can vary
+* Locomotion: Usually Bipedal but can vary (Base Speed dependent on Species chosen to imitate)
 * Reproduction: Forking (A Digital Clone)
 * Average Height: N/A
 * Average Life Space: Infinite (in theory)
@@ -293,7 +291,7 @@ For a complete history and narrative about the Aconians, go to the [[Aconians|Ac
 <u>'''Species Traits'''</u>
 
 * Class: Mammal
-* Locomotion: Bipedal (10ft Base Walk Speed)
+* Locomotion: Bipedal (Base Speed 10ft)
 * Reproduction: Sexual
 * Average Height: 4ft 8inch
 * Average Life Span: ~650 years (Natural, un-augmented life span: 310 years)
@@ -325,7 +323,7 @@ For a complete history and narrative about the Aconians, go to the [[Murids|Muri
 
 <u>'''Species Traits'''</u>
 * Class: Mammal
-* Locomotion: Bipedal (10ft Base Speed) or Quadruped (20ft Base Speed)
+* Locomotion: Bipedal or Quadruped (Base Speed: Bipedal 10ft / Quadruped 20ft)
 * Reproduction: Sexual
 * Average Height: 3ft 4inch
 * Average Life Span: 60 years
@@ -367,7 +365,7 @@ For a complete history and narrative about the Avisari, go to the [[Avisari|Avis
 <u>'''Species Traits'''</u>
 
 * Class: Avian
-* Locomotion: Bipedal (10ft Base), Flight (40ft Base)
+* Locomotion: Bipedal or Flight (Base Speed: Bipedal 10ft, Flight 40ft)
 * Reproduction: Sexual (Egg-laying)
 * Average Height Male: 5' 8'' (~173 cm), Female: 5' 5'' (~165 cm)
 * Average Life Span: 100 - 120 years
@@ -406,7 +404,7 @@ For a complete history and narrative about the Khepri, go to the [[Khepri|Khepri
 <u>'''Species Traits'''</u>
 
 * Class: Insectoid
-* Locomotion: Varies by Caste (Bipedal, Quadrupedal, or Hexapedal) Base 20ft
+* Locomotion: Varies by Caste (Quadrupedal, or Hexapedal) (Base Speed for all is 20ft)
 * Reproduction: Sexual (Egg-laying / Matriarchal Hive)
 * Average Height: Varies by Caste (3' 6'' to 7' 0'')
 * Average Life Span: 70 - 110 years
@@ -420,7 +418,7 @@ At Level 1, a Khepri character chooses their '''Caste''', which determines their
 
 # '''All Castes'''
 #: '''Hive Sense''': Khepri can sense the presence and general emotional state of other Khepri within 60 feet.
-#: '''Wall Climber''': Khepri possess fine tarsal claws allowing them to climb vertical surfaces as if they were walking (with base walk speed); they can also run up vertical surfaces.
+#: '''Wall Climber''': Khepri possess fine tarsal claws that allow them to climb vertical surfaces as if walking (at base walk speed); they can also run up vertical surfaces.
 # '''Worker (Grunt)'''
 #: Gain +1 to Strength or Constitution, -1 to Charisma. 
 #: Gain +1 Misc bonus to Athletics checks, and carrying capacity is doubled.

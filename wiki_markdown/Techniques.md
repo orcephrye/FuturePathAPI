@@ -136,6 +136,12 @@ Character can learn 1 new Advanced Combat Technique. Some professions
 allow the Character to learn Advanced Combat Techniques in place of
 learning a new Level 0 Technique from their class.
 
+Combat Techniques can be impacted by the Armor you wear. The negative
+impact depends on the Speed penalty the Armor has. -5 Speed penalty
+gives Disadvantage, -10 gives double Disadvantage, and Halve speed gives
+triple Disadvantage and this impacts the following feats: Disarm, Feint,
+Combination Melee Attack, and Melee Kick.
+
 To read more about Combat and actions that can be done in Combat, please
 go [here](Combat#The_Combat_Phase_.28Step_4.29 "here"){.wikilink}.
 
@@ -150,7 +156,7 @@ Or if done in conjunction with an **Overrun**, can move through the
 target and possibly knock them prone. The Technique uses the
 **Strength** Ability score. If the target fails the check by more than 5
 and it is used with **Overrun**, then the target is knocked prone. If
-the target passes the Saving throw, then they are not pushed back, and
+the target succeeds on the Saving throw, they are not pushed back, and
 if it was used with **Overrun**, the Character stops moving. The
 improved version of the Technique is the **Throw** Advanced Combat
 Technique.
@@ -172,11 +178,11 @@ attack.
 <div class="mw-collapsible-content">
 
 The Character is also considered at a disadvantage when attempting to
-Disarm. If the item is held by two hands then that also accounts as an
+Disarm. If the item is held by two hands, then that also counts as an
 additional Disadvantage. The Technique uses the **Dexterity** Ability
 score. If the target succeeds against the Saving throw then not only do
 they not drop the weapon but they gain Advantage against you on their
-next round. If they fail the Saving throw then they drop the weapon.
+next round. If they fail the Saving throw, then they drop the weapon.
 
 </div>
 </div>
@@ -200,23 +206,22 @@ grapple fails).
 Although both creatures have the grappled condition, you can, as the
 creature that initiated the grapple, release the grapple as a free
 action, removing the condition from both you and the target. After a
-successful grapple on the next round you can choose to continue
-grappling the foe which and also allows you to perform additional
-actions on the target. If you choose to continue and not release the
-grapple, before you can preform additional actions on the target you
-must make a new Grapple action, as a Standard Action, to determine the
-new DC of the hold. The Target can attempt to break the Grapple each
-round by rolling a Strength Saving throw against your Grapple DC. If
-your target does not break the grapple, you get an advantage
-circumstance bonus on grapple checks made against the same target in
-subsequent rounds.
+successful grapple on the next round, you can choose to continue
+grappling the foe, which also allows you to perform additional actions
+on the target. If you choose to continue and not release the grapple,
+before you can perform additional actions on the target, you must make a
+new Grapple action, as a Standard Action, to determine the new DC of the
+hold. The Target can attempt to break the Grapple each round by rolling
+a Strength Saving throw against your Grapple DC. If your target does not
+break the grapple, you get an advantage circumstance bonus on grapple
+checks made against the same target in subsequent rounds.
 
-Below are the different actions you can do too the target. Theses act
-like there own Combat Techniques with there own associated Ability and
-Saving throws. Remember that before this can be done another Grapple
-check to determine the next rounds DC must be done first. If one of
-these actions are chosen besides simply maintaining the Grapple then the
-action is the Declaration of the End of Your Turn. Otherwise simply
+Below are the different actions you can do to the target. These act like
+their own Combat Techniques with their own associated Ability and Saving
+throws. Remember that before this can be done, another Grapple check to
+determine the next round\'s DC must be done first. If one of these
+actions is chosen besides simply maintaining the Grapple, then the
+action is the Declaration of the End of Your Turn. Otherwise, simply
 keeping the Grapple going is a Standard Action.
 
 - **Move**
@@ -227,7 +232,7 @@ keeping the Grapple going is a Standard Action.
     the end of your movement, you can place your target in any square
     adjacent to you. This uses the **Strength** Ability Score. The
     target does a Strength Saving throw against the Strength technique.
-    If successful you fail to move the target. If you attempt to place
+    If successful, you fail to move the target. If you attempt to place
     your foe in a hazardous location, such as in a wall of fire or over
     a pit, the target receives both the Saving throw to stop the
     movement and a free attempt to break your grapple with an advantage
@@ -241,9 +246,9 @@ keeping the Grapple going is a Standard Action.
     strike](Weapons#Melee.2FMartial_Arts_Combat "unarmed strike"){.wikilink},
     a natural attack, or an attack made with armor spikes or a light or
     one-handed weapon. This damage can be either lethal or nonlethal.
-    Instead of rolling an accuracy check this is considered a
+    Instead of rolling an accuracy check, this is considered a
     **Strength** Ability Score Technique. If the Target succeeds at the
-    Saving Throw they gain a free attempt to break your grapple with an
+    Saving Throw, they gain a free attempt to break your grapple with an
     advantage bonus to the Strength Saving Throw during your turn.
 
 - **Pin**
@@ -284,33 +289,33 @@ keeping the Grapple going is a Standard Action.
     first initiates the grapple is the only one that makes a check, with
     an advantage bonus for each creature that assists in the grapple
     (using the Aid Another action). If they continue to gain assistance
-    from another they gain advantage and/or the Target gains
+    from another, they gain advantage and/or the Target gains
     disadvantage for each person assisting. Advantage and Disadvantage
     only stack 3 high and no higher.
-  - **A single Person Grappling more then one Target**: If a Person has
-    more then 2 hands they can attempt to Grapple more the one target.
-    It requires 2 free hands to preform a Grapple. However if the person
-    preforming the Grapple only has 1 free hand they can still attempt
-    the action at a disadvantage. It also only requires the same number
-    of hands to maintain a grapple that where used to start it. The
-    person cannot preform more then 1 grapple at a time. However they
-    can choose to maintain as many Grapples as the number of Number of
-    Hands/2 round up. The action to maintain a Grapple is a standard
+  - **A single Person Grappling more than one Target**: If a Person has
+    more than 2 hands, they can attempt to Grapple more than one target.
+    It requires 2 free hands to perform a Grapple. However, if the
+    person performing the Grapple only has 1 free hand, they can still
+    attempt the action at a disadvantage. It also only requires the same
+    number of hands to maintain a grapple that were used to start it.
+    The person cannot perform more than 1 grapple at a time. However
+    they can choose to maintain as many Grapples as the number of Number
+    of Hands/2 round up. The action to maintain a Grapple is a standard
     action and only needs to be rolled once for each turn and that roll
     counts for all Grapples the person has active. If one of the
-    grappled targets is successful at reversing the grapple then all
+    grappled targets is successful at reversing the grapple, then all
     other grappled persons are instantly freed. If any Grappled target
-    gains a free chance to escape **ALL** other grappled targets also
+    gains a free chance to escape, **ALL** other grappled targets also
     gain a chance to escape.
   - **Multiple persons can help free a grappled ally**: There are
     multiple ways to free a grappled ally.
-    - You can attempt to damage the grappler. If you succeeded with a
-      critical hit the grappled person gains an instant free attempt to
-      flee. The risk however if that you may hit the ally instead. You
+    - You can attempt to damage the grappler. If you succeed with a
+      critical hit, the grappled person gains an instant free attempt to
+      flee. The risk, however, is that you may hit the ally instead. You
       gain disadvantage when targeting an enemy who is grappled
       regardless if they are the ones doing the grappling or the ones
-      being grappled. If you miss the accuracy check by more then 5 then
-      you accidentally hit the wrong person.
+      being grappled. If you miss the accuracy check by more than 5,
+      then you accidentally hit the wrong person.
     - You can attempt to assist in freeing the ally with the Aid Another
       action. This gives them **double advantage** to escaping the
       grapple.
@@ -483,19 +488,19 @@ against you next around.
 </div>
 <div class="toccolours mw-collapsible mw-collapsed">
 
-**Combination Melee Attack**: You can attempt a weapon free combination
-melee attack as a full round action.
+**Combination Melee Attack**: You can attempt a weapon-free combination
+melee attack as a full-round action.
 
 <div class="mw-collapsible-content">
 
 This Technique allows the player to roll twice for an accuracy check for
 a Melee Attack using only physical combat and then take the highest
-roll. If a hit is confirmed the damage dice follows the same rules as a
+roll. If a hit is confirmed, the damage dice follow the same rules as a
 single melee punch noted in [Melee & Martial Arts
 Combat](Weapons#Melee.2FMartial_Arts_Combat "Melee & Martial Arts Combat"){.wikilink}
-except it is 1 damage dice higher. The draw back is that if both rolls
-fail then the Target gains advantage against you next round and this
-move negates your ability to preform a Bonus Attack.
+except it is 1 damage dice higher. The drawback is that if both rolls
+fail, then the Target gains Tactical Opportunity against you next round,
+and this move negates your ability to perform a Bonus Attack.
 
 </div>
 </div>

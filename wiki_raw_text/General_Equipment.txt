@@ -1105,7 +1105,7 @@ There are two forms of improvement:
 :* The Character doing the Up Teching must also be at or above the current Tech level in their [[Proficiency_Tree#Technology_Branch|Technology Branch]].
 :* The Character must be able to craft the same item brand new. 
 :* This requires 1 level in [[Proficiency_Tree#Item_Crafting_Branch|Item Crafting]].
-:* This acts like gaining a Masterwork level and allows for a single [[#Improvements]] per level of Up Teching.
+:* This acts like gaining a Masterwork level and allows for a single [[#Improvements|Improvements]] per level of Up Teching.
 :* Items cannot be 'Down Teched,' or in other words, they cannot be crafted at a lower Tech Level.
 
 The additional cost of Masterworking or Up Teching an item is based on the item's starting cost as shown. Take the starting cost and simply add it again to the Item for each Masterwork level and Up Teching done to it.

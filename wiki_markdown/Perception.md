@@ -92,21 +92,9 @@ Perception, so there is no need to ask during gameplay. The goal is to
 speed up encounters and make them more surprising, with less \'meta\'
 (out-of-game) knowledge required.
 
-**Passive Perception is**: 8 + 1/2 Ranks in Perception skill (round
-up) + Wisdom Modifier + Misc Modifiers
+**Passive Perception is**: 8 + Wisdom Modifier + 1/2 of Perception Misc
+Modifiers round down.
 
-**Note**: The max Passive Perception value without Misc Modifiers is 20.
-That means that even if the Character has 10 ranks in the Perception
-Skill and a 5 Wisdom Mod it still can only have a 20 in Passive
-Perception not a 23. However, in-game advantages can boost the score
-above 20. But only in-game advantages can do so.
-
-**Note**: By default, any Misc Modifier for Perception counts as a Misc
-Modifier for Passive Perception. However, if an ability specifies that
-it is for Passive Perception, this doesn\'t count towards Perception
-checks.
-
-**Note**: Taking Advantage of Passive Perception means that the Passive
-Perception total in that specific in-game situation provides 1/2,
-rounded down, of the maximum total value of the Character\'s Advantage
-Die.
+**Note**: Taking Advantage on a Passive Perception check means the
+Player or GM adds the static modifier part of Advantage Die to the total
+of the Passive Perception value.

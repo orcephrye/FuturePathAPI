@@ -250,8 +250,6 @@ Bonus Actions are usually earned through performing a successful Standard Action
 # The weapon must target the same opponent.
 # This is treated as an Off-Handed weapon attack in terms of penalties. However, this '''doesn't''' benefit from Two Weapon Fighting Feats.
 
-
-
 ;Bonus Movement Sprint/Dash (from Standard Move): When committed to a Standard Move Action, the Character is granted a Bonus Move Action that can take the place of their Simple Action if they have yet to perform one. This allows the Character to move at the same speed as their Move Action. If they were running, then this is considered '''Sprinting'''. If the Character didn't physically move location, then the Move Action speed is 0ft, and the Bonus Movement speed for this is their Walk speed; this is called a Dash. A Dash is considered a quick split-second movement of the Character's base Walk speed. A '''Dash''' allows the Character to move their Walk Speed, but it is implied that they do this quickly. '''Sprinting''' happens when the Character chooses to use their Bonus Move action after using the Standard Move Action to Walk/Run. '''Dash''' happens when the Move Action doesn't have the Character's physical move location, like reloading or standing up from Prone.
 
 * A Bonus Move Action can only happen if the Character is still able to move either in the same direction or a turn no greater than 90 degrees. If the Character is stopped short by the end of a hallway, then if their only direction is back the way they came, they will have to completely turn around, stopping all their momentum, which is what a Sprint/Dash is meant to represent.

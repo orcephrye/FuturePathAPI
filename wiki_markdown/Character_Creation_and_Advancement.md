@@ -139,11 +139,13 @@ Both size and speed are required boxes that are provided by the picked
 Species, although they can be modified later through Feats, Armor, or
 other rules. A Character sheet needs to have Size and Speed recorded as
 there are rules that impact gameplay that rely on these stats. By
-default a Species **Size** is **Medium**. By default, a Species default
-walk **Speed** is **15ft**, and run is twice Base at **30ft**. Climbing
-and Swimming are both half Base speed (speed is measured in 5ft
+default a Species **Size** is **Medium**. By default, a Species Base
+Walk **Speed** is **15ft**, and run is twice Walk at **30ft**. Climbing
+and Swimming are both half Walk speed (speed is measured in 5ft
 increments, and when halving speed, always round up. So 1/2 of 15ft is
 10ft. The Burrow speed is always 5ft unless specified otherwise.
+\'Combat\' Speed refers to \'Run\' Speed while wearing Armor. Some Armor
+can change this Speed.
 
     Editing Character Sheet: Size is found at the top of the first page, right after the 'Species' box and before the 'Gender' box. Further below that section, past the 'DR' boxes, is the section dedicated to Speed. There, you can record your tactical movement speeds. 
 
@@ -376,7 +378,7 @@ Suggestion
 
 The next step is the foundation of your Hero; the [Ability
 Theme](Ability_Themes "Ability Theme"){.wikilink} Scores. The Standard
-Fantasy Scores are 15, 14, 13, 12, 10, 8. The Player can then choose
+Fantasy Scores are **15, 14, 13, 12, 10, 8**. The Player can then choose
 which Ability Theme gets which of the 6 scores. It\'s good to already
 know what you want the Character to be like and what Profession or
 Professions you hope to gain as you level up, so that you have a good
@@ -506,7 +508,8 @@ awareness of their surroundings. When a Character rolls for a
 [Perception](Perception "Perception"){.wikilink} Skill check, they are
 actively looking for something. However, Passive Perception is simply a
 Character\'s alertness while doing their daily routine. Passive
-Perception is a 10 + Wisdom Modifier.
+Perception is 8 + 1/2 Ranks in Perception skill (round up) + Wisdom
+Modifier
 
     Editing Character Sheet: Passive Perception is recorded in the 'PASS. PERCEPTION' box just above the 'SKILLS' section and below the Ability Scores.
 
@@ -603,9 +606,18 @@ Income\' and the \'Credit Rating Range\'. A Character takes the lowest
 Credit score and then adds their Wisdom modifier (ignore negative
 modifiers). Also, automatically gain additional ISK (money) equal to
 \'Average Monthly Income\' times the Wisdom modifier, and again ignore
-if the Wisdom modifier is negative. If the Character is starting out
-above level 1, then add their \'Average Monthly Income\' for each level
-after level 1 to their Starting Bonus Income.
+if the Wisdom modifier is negative.
+
+Note regarding making a Character above level 1
+: If the Character is starting out above level 1, then add their
+  \'Average Monthly Income\' for each level after level 1 to their
+  Starting Bonus Income. As they level up, they should gain levels in a
+  Character Profession, which adds more Ranks to the
+  [Profession](Profession "Profession"){.wikilink} skill-like ability.
+  This increases the Credit rating. Also for every level after level 1
+  when leveling up, gain ISK equal to their Budget amount noted in the
+  **Credit Score to Load and Budget amount** located in the [Wealth and
+  Money](Wealth_and_Money "Wealth and Money"){.wikilink} page.
 
 You do not need to pick an Occupation to have a starting wealth if you
 do not want to. You can start with \$4,000 creds per level to spend and

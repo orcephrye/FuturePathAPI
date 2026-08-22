@@ -16,6 +16,8 @@ and much more. For now it is limited to dice rolling. And is utilized by an HTML
 * The 'tasks.py' holds all the currently supported tasks that the API support which is only Rolling at the moment.
 * The 'Rolling.py' file holds all the logic for rolling. 
 * The 'libs' dir is were extra code that can be reused by one or more tasks is located.
+* the wiki_* dirs wiki_markdown and wiki_raw_text directories is where the text for the WikiMedia site is stored for backup and reading purposes. 
+* The wiki_raw_text is straight from the MediaWiki site while the wiki_markdown is parsed/converted WikiText too Markdown as that is sometimes easier to ingest
 
 ## Linting/Styling checks
 Each Linter is a command that should run in shell.
@@ -33,15 +35,8 @@ Also there is the README.md file:
 @./GEMINI_FUTUREPATH_TTRPG.md
 
 # Active Tasks
-* Fix mobile view and size (breakpoints).
-** Most text fields get sized wrong in relation to buttons and other items. In mobile view the text field should be given more space and it should be interactable so that if pressed a modal view opens with the text.
-** For Armor and Weapons the top row fields get to squashed. We need to make two rows to handle them.
-** multiple entries of Mutations do not show up in mobile view. Only the first drawback and fist enhancement show.
-* Fix printing view issues.
-** Printing from mobile doesn't work. This is because mobile printing doesn't re-paginate based on printer sizes.
-** The printer view also suffers from certain text fields being too small relative too there neighbors. This is especially true for Weapons and Armor.
-** Some multiple line text fields do not expand if the text takes up multiple lines. This causes weird sizing issues and hides text.
-* The 'Alignment' text in the Character Identity should say Alignment / Factions and only be abbreviated to 'Alignment' if in mobile or printer view.
-* Add support to ended d20futurepath website links for any 'added' input fields such as an weapons/armor/general equipment/feats etc... (This should only be digital view NOT printer view)
-* Selected Affinities within the 'Character Professions & Talents' card automatically enables the associated Ability Theme check box. This should also work with the Character Paths.
-
+- Finish the second One Shot. (A Royal Pain)
+- Convert Start Characters for the new AD and Skill Die rules as well as onto the new Digital Character Sheets
+- Add Level 2 options to the Starter Characters.
+- Add a die roller builtin for rolling stats for a new Character sheet onto the Character Creation and Advantage page.
+- Review the Glossary/Key Terms page.

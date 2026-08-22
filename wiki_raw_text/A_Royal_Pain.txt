@@ -72,7 +72,7 @@ This is a '''Point of Interest''' style dungeon crawl. Instead of fixed rooms an
 ;The Location: The Adventures/Heroes start out together at [[#Heng's_Cometary_Noodles_(Flavor)|Heng's Cometary Noodles]]. The locals call it 'Hangs' The GM should ask the Players if they have a reason to know each other or have gathered at DDs. They should all already know the game's starting premise and their characters, and the whole station should already know of the coming armada. If the Players cannot think of a reason or simply do not want to. Provide them with the following:
 
 <blockquote>
-The usual liveliness of Hangs seems gone, like someone opened an airlock all of a sudden. People talk in muted, hushed voices. You have to strain to pick up any noise. You all know what is being discussed. You lean in close around the table too. The smell of hot noodles hits your nose, begging not to be ignored, but you are too busy thinking about the situation at hand. Here together is a group of people you know and trust. They are all here for the same reason as everybody else. The Armada is on its way, and all anybody can think about is what the heck are you all gonna do about it.
+The usual liveliness of Hangs seems gone, like someone opened an airlock all of a sudden. People talk in muted, hushed voices. You have to strain to pick up any noise. You all know what is being discussed. You lean in close around the table too. The smell of hot noodles hits your nose, begging not to be ignored, but you are too busy thinking about the situation at hand. Huddled together are some of the only people on this spinning can that you trust. They are all here for the same reason as everybody else. The Armada is on its way, and all anybody can think about is what the heck are you all gonna do about it.
 </blockquote>
 
 ;GM Notes: Make sure the Players know that the last place Lady Kaelen was seen was the [[#Customs_&_Arrival_Port_(The_Docking_Bay)|Customs & Arrival Port]]. They can go to the other [[#Utility_&_Flavor_Locations|Utility & Flavor Locations]]. If they try to go to any other locations, encourage them not to go, but there is nothing stopping them. 
@@ -86,26 +86,122 @@ As your group leaves Hang's, one of the other patrons leaves with you. He is a n
 == Points of Interest in Detail ==
 
 === Customs & Arrival Port (The Docking Bay) ===
-:* '''The Situation:''' The entry point where Kaelen and Valen first boarded the station under forged credentials.
-:* '''Investigation:''' 
-::* A DC 14 [[Computer_Use|Computer Use]] check to access the docking logs reveals they arrived via an unregistered smuggler shuttle (leads to the '''Smuggler's Den''').
-::* A DC 13 [[Perception]] or [[Diplomacy]] check with a harbor official reveals they used high-end, luxury-grade forged transponders (leads to the '''Gilded Comet Casino''').
-::* A DC 12 sensors sweep detects a strange residue of volatile gas-ore on the landing pads (leads to the red herring '''Silo 12''').
+
+<blockquote>
+The cavernous docking bay is a storm of noise, steam, and sheer desperation. Klaxons pulse amber overhead as departure flight boards flicker with canceled routes and exorbitant off-station charter fares. A massive, frantic crowd of Belter miners, roughnecks, and entire families lugging sealed crates are pressing hard against a flimsy, lightweight crowd-control barrier that is practically bowing under their weight. 
+
+The handful of port workers manning the desk look wildly unprepared and completely out of their depth, sweating through their uniforms as they shout into crackling megaphones to hold the mob back from the departure airlocks. 
+
+Meanwhile, the incoming arrivals gate sits eerie and abandoned. Stationed behind a cluttered desk near the disused arrival gates is a lone male Murid in a loose-fitting station vest, his darkvision goggles pushed up onto his twitching ears as he nervously clutches a datapad and tries to ignore the chaotic roar around him.
+</blockquote>
+
+* '''The Situation:''' Docking Bay 7 is the primary civilian and light freight hub on Comet's Home. Valen arrived ahead of time to wait for Lady Kaelen, who was secretly ferried onto the station aboard an illicit gas-hauler. When she arrived, Valen paid off the on-duty inspector—a Murid named Roban—to leave her off the passenger manifest. 
+* '''Surroundings:''' The infrastructure is buckling under panic. The customs barriers are thin modular stanchions meant for orderly queues, not a mass evacuation. Shouting matches and minor scuffles are breaking out across the concourse as desperate citizens try to buy passage off-station before the Aconian fleet locks down the sector.
+
+* '''Key NPCs:'''
+:* '''Roban (Murid Dock Inspector):''' Stressed, twitchy, and visibly overwhelmed. Being a Murid, he naturally respects Aconians, but he is terrified of being implicated in a royal scandal or facing imperial wrath. Valen handed him high-stakes casino chips to keep Kaelen's arrival off the official records. Roban pocketed the bribe, but to "cover his ass" (CYA) if imperial inquisitors ever search the logs, he secretly jotted down encrypted notes about the covert drop-off on his personal terminal log.
+:* '''Tessa Morrow (Human Volunteer Worker):''' An energetic but visibly flustered human Belter wearing an oversized, bright-orange emergency contractor vest with a stylus tucked into her messy hair. She took an emergency contract from the station's Head Office to help organize evacuation queues. She may be an old friend, former neighbor, or familiar face to one of the player characters.
+
+* '''Player Options & Investigations:'''
+:* '''1. Entering the Port — Spotting a Familiar Face (Perception):'''
+::* When the party enters the concourse, the GM should ask everyone to roll a [[Perception]] check.
+::* '''DC 14 [[Perception]]:''' The highest-rolling player spots Tessa Morrow struggling to hold back an angry line of Belters near Gate 3. The player recognizes her as a familiar acquaintance from around the station.
+::* '''Interacting with Tessa:'''
+:::* Tessa is relieved to see friendly faces. She explains that the station's Head Office is paying top credit to anyone willing to stay behind and help stabilize the station: "They're handing out all sorts of emergency hazard tasks. I drew port crowd duty... and as you can see, I'm getting eaten alive here!"
+:::* '''The Volunteer Job Offer (Time vs. Reward):''' Tessa asks if the crew can spare a few hours to help her secure the barriers, sort luggage, and calm the crowd. She offers to pay them straight from her emergency budget: '''100 ISC per hour''' for each character who helps.
+:::* '''The Trade-Off:''' Taking the job burns '''3 hours''' of the party's in-game investigation time before the Aconian fleet arrives. Each participating character earns '''300 ISC''' in cash.
+:::* '''Roban's Goodwill:''' Roban watches the party roll up their sleeves and sweat alongside the dock crew to restore order. This earns his respect and gratitude, granting the party a '''+4 morale bonus''' on all [[Diplomacy]] or [[Bluff]] checks made against Roban.
+:::* '''Asking Tessa About the Crisis:''' If asked if she knows anything about the missing royal, she shakes her head: "I've just been dealing with this stampede. But Roban would be the man... rrr, Murid to talk to. Although station security already interviewed him earlier."
+:* '''2. Reading the Crowd & The Overwhelmed Port (Study / Knowledge):'''
+::* A DC 12 [[Study]] or DC 11 [[Knowledge#Current_Events|Knowledge (Current Events)]] check reveals that departure ticket prices have surged tenfold, commercial traffic will be indefinitely halted within hours, and the station's makeshift barricades won't hold if another panic wave hits.
+:* '''3. Interrogating Roban the Murid (Social Encounter — Leads to Casino):'''
+::* Roban is stationed behind the arrival customs desk, twitching at every loud crash from the mob and clutching his personal datapad close.
+::* A DC 12 [[Sense_Motive]] check reveals Roban is sweating profusely and fidgeting with something heavy in his pocket. He clearly knows something dangerous and is terrified of getting caught.
+::* '''Social Checks (DC 13 [[Diplomacy]], DC 13 [[Bluff]], or DC 14 [[Intimidate]]):''' (''Note: Characters gain a +4 morale bonus if they helped Tessa!'')
+:::* Calming Roban, bluffing that the party are discreet private extractors, or intimidating him gets him to confess: a nervous young Aconian man (Valen) was waiting near arrivals. When a hooded Aconian woman (Lady Kaelen) slipped off an unscheduled transport, Valen handed Roban heavy, high-denomination chips from the '''Gilded Comet Casino''' to look the other way. Roban saw the pair head straight toward the upper promenade lounges to lay low (leads to the '''Gilded Comet Casino'''). Speaking the Murid dialect (''Squeak Speak'') provides a +2 circumstance bonus.
+:* '''4. Hacking the Terminal & Roban's CYA Notes (Computer Use / Sleight of Hand — Leads to Smugglers):'''
+::* While the official passenger manifest contains no record of Lady Kaelen, Roban's private encrypted dockhand terminal holds his personal CYA notes.
+::* A DC 13 [[Computer_Use|Computer Use]] check (or DC 13 [[Sleight_of_Hand]] to swipe his admin keycard) sifts through the raw bay telemetry and Roban's hidden sub-log. It reveals that an unregistered, battered light freighter named '''The Ispan''' made an emergency touchdown on '''Landing Pad 4''' under a falsified gas-refinery delivery permit. Its transponder broadcasted a rhythmic scrambled beacon code—a known underworld black-market signature (leads to the '''Smuggler's Den''').
+:* '''5. Forensics on Landing Pad 4 (Perception / Study — Red Herring Lead to Silo 12):'''
+::* Once players identify Landing Pad 4 (via the terminal or scouting the disused berths), they can physically inspect the landing slip where the mystery freighter touched down.
+::* A DC 12 [[Perception]] or DC 13 [[Study]] check reveals the pad is covered in thick, iridescent soot and smells pungently of raw, highly volatile unrefined comet gas. A hastily discarded, stained cargo strap next to the mooring clamp is labeled "Refinery Batch 88-Delta / Transfer to Silo 12" (leads to the red herring '''Silo 12''').
 
 === Gilded Comet Casino (Upper Promenade) ===
-:* '''The Situation:''' A high-end casino where Kaelen was seen in public under a disguise.
-:* '''Investigation:'''
-::* A DC 14 [[Sleight_of_Hand]] or [[Diplomacy]] check with the card dealer reveals Valen paid with rare Aconian military bullion, which only high-ranking nobles like Archon Vandar possess.
-::* A DC 13 [[Computer_Use|Computer Use]] check to hack the security room shows a suspicious figure trailing the couple toward the habitation deck (leads to '''Beltway Refhab 42''').
-::* A DC 12 [[Sense_Motive]] check on a cocktail waitress reveals she saw the couple buying specialized mid-deck medication (leads to the '''Medical Clinic''').
-::* If players ask about Aconian nobles in general, a concierge mentions the royal consulate suite has been occupied (leads to the red herring '''Consulate Office''').
+
+<blockquote>
+Stepping through the pneumatic gold-trimmed doors of the Gilded Comet is a blinding shock to the senses. After navigating the dim, grease-stained corridors and metallic dread of the lower decks, the casino erupts in a dazzle of brilliant violet neon, amber holo-chandeliers, and the kinetic chime of hundreds of spinning roulette tables. 
+
+The air smells richly of expensive synth-tobacco, spiced wine, and ionized air filtration. But beneath the clinking crystal glasses and the roar of the high-stakes tables, the atmosphere is electric with an almost manic tension. The crowd here is split in two: wealthy mining executives and station elites laughing in VIP lounges, eagerly anticipating the imperial order an Aconian annexation might bring—and desperate, glassy-eyed Belters reckless with terror, pouring their life savings onto the green felt in a wild bid to forget the armada closing in on their home.
+</blockquote>
+
+* '''The Situation:''' Valen brought Lady Kaelen here straight from the docking bay, believing a loud, bustling luxury venue full of wealthy off-worlders was the ideal place to blend in and plan their next move. However, Kaelen's aristocratic constitution was never built for Belter fringe space; she suffered acute respiratory distress from breathing in toxic chemical fumes that leaked from the failing containment seals aboard the smuggler's gas-freighter. 
+* '''Surroundings:''' Located along the station's Upper Promenade overlooking the glittering dust tail of the comet through reinforced panoramic viewing ports. Armed private casino enforcers in tailored black suits keep watch from elevated walkways, ensuring the dock panic never spills onto the gambling floor.
+
+* '''Key NPCs:'''
+:* '''Sariela (Young Aconian Cocktail Waitress):''' A young Aconian woman working on Comet's Home carrying glowing drink trays between the high-roller booths. Being an Aconian herself, she immediately noticed Lady Kaelen's refined high-court dialect and delicate posture despite her heavy Belter coat disguise. She attended to the secluded VIP booth where Valen and Kaelen sat, witnessed Kaelen's violent chemical coughing fit, and heard Valen frantically asking where to find a discreet doctor.
+:* '''Corvus (Lepidonain Pit Boss):''' An imposing Lepidonain with shimmering, iridescent scales, dressed in formal tailored vestments. He oversees the high-stakes tables with a sharp, predatory gaze, watching for card-counters, cheaters, and suspicious foreign currency.
+:* '''Alux (Grayling Concierge / Floor Host):''' A fastidious, sharp-tongued Grayling in formal silks with a whirring cybernetic monocle that logs VIP reservations in real-time. He openly looks down on "crude Belter miners" and fawns over aristocratic off-worlders, eager to boast about high-society connections.
+
+* '''Player Options & Investigations:'''
+:* '''1. Reading the Room & The Divided Crowd (Study / Knowledge / Perception):'''
+::* A DC 12 [[Perception]] check notices the jarring emotional split across the floor: one half of the patrons are toasting glasses to "inevitable imperial stability," while the other half are drinking furiously and frantically doubling down on bets in sheer fatalistic panic.
+::* A DC 13 [[Study]] or DC 13 [[Knowledge#Culture|Knowledge (Culture)]] / [[Knowledge#Current_Events|Knowledge (Current Events)]] check reveals that several station oligarchs stand to make fortunes if the Aconian Empire takes over and crushes independent miner unions.
+:* '''2. The Ailing Noble & The Aconian Waitress (Social Encounter — Leads to Medical Clinic):'''
+::* Sariela is circulating near Booth 14, scrubbing a spilled drink from the table where the couple was recently seated.
+::* A DC 13 [[Perception]] check spots a fine silk handkerchief left crumpled under the booth cushion, stained with flecks of caustic chemical phlegm and smelling sharply of industrial gas additives.
+::* A DC 13 [[Diplomacy]] or DC 12 [[Sense_Motive]] check (or tipping 20+ ISC) gets Sariela talking:
+:::* She confirms that a young Aconian man and a heavily cloaked woman occupied Booth 14. Being Aconian, Sariela instantly recognized the woman's refined, high-court inflection. The woman was violently coughing, wheezing, and clutching her chest from chemical fume poisoning. The young man was frantic, repeatedly asking where they could find a private doctor who wouldn't report unregistered patients to station security. Sariela pointed them toward the mid-deck clinic (leads to the '''Medical Clinic''').
+:* '''3. Hacking Surveillance / Security Bouncer (Computer Use / Sleight of Hand / Intimidate — Leads to Beltway Refhab 42):'''
+::* The casino's security hub is tucked behind a keycard-locked door near the cashier cage, monitoring high-definition feeds of all exits and service corridors.
+::* A DC 14 [[Computer_Use|Computer Use]] check (or DC 15 [[Sleight_of_Hand]] to lift a security keycard) accesses the surveillance archives. It shows Valen supporting a coughing Kaelen as they exit through Service Lift B, which descends directly into the Lower Habitation sector.
+:::* ''The Mercenary Shadow:'' The footage also reveals a cloaked, armored figure in stealth webbing discreetly stepping into the following lift shaft right behind them (leads to '''Beltway Refhab 42''').
+::* A DC 15 [[Intimidate]] check on the service-door bouncer forces him to admit he let the young couple and their shadowy pursuer into the maintenance lifts heading toward the hab slums.
+:* '''4. Questioning Concierge Alux (Diplomacy / Bluff / Knowledge [Culture] — Red Herring Lead to Consulate Office):'''
+::* Speaking with Alux about high-born Aconian nobles on Comet's Home.
+::* A DC 14 [[Diplomacy]] or DC 13 [[Bluff]] check flatters Alux's high-class sensibilities or poses as an imperial diplomatic delegation:
+:::* Alux proudly boasts that the station is currently honored by the presence of a true imperial luminary residing in the grand luxury suite of the '''Consulate Office''' across the promenade, assuming that must be who the party is seeking (leads to the red herring '''Consulate Office''').
+:* '''5. Optional: High-Stakes Gambling (Gamble / Sleight of Hand / Intelligence):'''
+::* Players who want to blend in or win fast credits can wager ISC at the "Comet Roulette" table or test their wits against Pit Boss Corvus at high-stakes cards:
+:::* A player can wager 50 to 500 ISC and make a DC 14 [[Gamble]], DC 15 [[Sleight_of_Hand]], or DC 14 [[Ability_Themes#Intelligence_(Int)|Intelligence]] check.
+:::* ''Success:'' Double their wager and gain a +2 circumstance bonus on social checks with casino staff for looking like high-rollers.
+:::* ''Failure:'' Lose their wager.
 
 === The Smuggler's Den (The Underbelly) ===
-:* '''The Situation:''' A crowded, smoky dive bar frequented by asteroid miners and smugglers.
-:* '''Investigation:'''
-::* A DC 13 [[Sense_Motive]] or [[Intimidate]] check locates the pilot who smuggled them in. Terrified of royal reprisal, he admits he dropped them off near the slums (leads to '''Beltway Refhab 42''').
-::* A DC 14 [[Perception]] check to eavesdrop on off-duty guards reveals that Archon Vandar's mercenaries were recently looking for camera feeds at the refinery controls (leads to the '''Refinery Control Room''').
-::* A smuggler brags about a royal vessel docked nearby (leads to the red herring '''Hangar B''').
+
+<blockquote>
+Tucked deep inside a decommissioned water-reclamation vault on Sub-Level 8, the Smuggler’s Den—known locally as "The Siphon"—is a haze of noxious synth-tobacco smoke, cheap fermented algae-liquor, and heavy industrial sub-bass that rattles the rusty deck plates. Tables fashioned from dented fuel drums are crowded with scarred asteroid scavengers, black-market brokers, and off-duty freight crews. 
+
+In a large corner booth, two rowdy, red-faced pirates are loudly slamming tin mugs against the table, slurring profanities and screaming at the ceiling about their coward captain who marooned them here when the armada news broke. Yet, for all the clinking glasses, shouting, and thumping music, the loud ruckus does nothing to hide the suffocating, paranoid tension hanging over the room—everyone is watching the shadows, clutching their sidearms, and waiting for the other shoe to drop.
+</blockquote>
+
+* '''The Situation:''' ''The Ispan'' arrived the previous morning, secretly dropped off Lady Kaelen and its volatile gas canisters at Pad 4, and blasted out of the station in extreme panic the moment the Aconian fleet broadcasted its ultimatum. In his frantic rush to escape, the captain literally marooned two of his own crew members on the station. 
+* '''The Conflict:''' The stranded crew are furious, roaring drunk, and loudly venting about their captain and the "hot cargo" VIP they ferried. Their loud mouths have attracted the attention of Archon Vandar’s undercover hitmen, who are circling the bar to silence or interrogate them. 
+* '''Surroundings:''' An illicit, chaotic underworld den. The patrons are used to rough brawls, but the underlying threat of imperial invasion has put everyone on a hair-trigger.
+
+* '''Key NPCs:'''
+:* '''Brant & Torg (Stranded Crew of ''The Ispan''):''' Brant is a loud, burly Human deckhand; Torg is a disgruntled, one-eyed Ovex rigger. Drunk, furious, and armed with heavy pipe-wrenches and slug-pistols, they are swearing bloody vengeance on their captain for ditching them.
+:* '''Vandar’s Strike Mercenaries (Equal to the Number of Player Characters):''' Tight-lipped, professional hitmen in civilian stealth dusters with concealed kinetic pistols and shock-knives. (''GM Note: Spawn 1 mercenary per player character to scale the combat encounter''). Their mission is to eliminate anyone who can link ''The Ispan'' or Archon Vandar to Lady Kaelen’s arrival.
+:* '''Danor (Old Aconian Bartender):''' A grizzled, cynical old Aconian expatriate who has lived on Comet's Home for decades. He has seen too many galactic wars to care about imperial politics, calmly wiping down the rusted counter while keeping a charged riot stun-baton within arm's reach.
+
+* '''Player Options & Investigations:'''
+:* '''1. Spotting the Ambush & Reading the Room (Perception / Study):'''
+::* When entering the bar, the GM should ask the players for a [[Perception]] check.
+::* '''DC 13 [[Perception]]:''' Characters spot the hitmen: figures in dark tactical dusters casually lingering near the pillars and exits, wearing concealed sub-dermal comms and slowly boxing in the drunken pirates' booth with hands hovering over their weapons.
+::* A DC 13 [[Study]] or DC 13 [[Knowledge#Current_Events|Knowledge (Current Events)]] check reveals the mercenary gear matches high-end off-world private security contracts—far too professional to be local station roughnecks.
+:* '''2. The Bar Gossip & Royal Transport Rumor (Red Herring Lead to Hangar B):'''
+::* While navigating the bar or listening to the surrounding tables before the brawl erupts:
+::* A DC 13 [[Perception]] or DC 12 [[Diplomacy]] check with other patrons overhears a boastful Belter ship-mechanic laughing off the entire missing royal panic, loudly telling anyone who will listen that an immaculate, gold-crested Aconian royal transport is currently parked under heavy guard in private '''Hangar B''', convinced the royal has been sitting on her own ship the whole time (leads to the red herring [[#Hangar_B_(Herald's_Vessel_-_Red_Herring)|Hangar B]]).
+:* '''3. The Confrontation & The Inevitable Bar Fight:'''
+::* Whether the players attempt to warn the pirates, question them directly, or stay back and watch, the confrontation quickly boils over into a chaotic bar fight as the mercenaries draw their weapons!
+::* '''Social Intervention (DC 14 [[Diplomacy]] or [[Intimidate]]):''' A quick-thinking player can alert the pirates or cause a distraction, granting the party and the pirates '''Advantage (+1Ad)''' on Initiative during the first round.
+::* '''The Brawl:''' Tables are flipped, glasses shatter, and patrons scramble for the doors. Brant and Torg throw heavy mugs and brawl wildly, while the mercenaries fight with lethal, cold precision.
+:* '''4. Interrogating Brant & Torg (Social / Sense Motive — Leads to Beltway Refhab 42):'''
+::* Once the mercenaries are dealt with and Brant and Torg are calmed down (or pulled out of the brawl):
+::* A DC 13 [[Diplomacy]] or DC 14 [[Intimidate]] check gets Brant, nursing a split lip and grateful (or terrified), to spill what he knows:
+:::* Brant confesses that when ''The Ispan'' docked at Pad 4, their captain met a nervous young man (Valen) who escorted the hooded royal woman off the ship. Brant overheard Valen saying he secured a lower-deck hideout using an emergency keycard stamped for '''Beltway Refhab 42''' (leads to [[#Beltway_Refhab_42_(Lower_Habitation)|Beltway Refhab 42]]).
+:* '''5. Searching the Mercenaries & Tactical Comms (Computer Use / Search — Leads to Refinery):'''
+::* Searching the downed hitmen after the brawl:
+::* A DC 14 [[Computer_Use|Computer Use]] or DC 13 [[Study]] check cracks the encrypted military datapad found in the mercenary lead’s pocket. It reveals intercepted station security feeds and a real-time comm-link routing back to a mercenary squad coordinator operating out of the '''Refinery Control Room''' (leads to [[#Refinery_Control_Room_(Industrial_Level)|Refinery Control Room]]).
 
 === Medical Clinic (Mid-Deck) ===
 :* '''The Situation:''' A crowded clinic where Kaelen was treated for mild radiation sickness.
@@ -134,9 +230,33 @@ As your group leaves Hang's, one of the other patrons leaves with you. He is a n
 == Red Herring Locations ==
 
 === Silo 12 (Gas Silos - Red Herring) ===
-:* '''The Lead:''' Unregistered refinery shuttle residue at the docks.
-:* '''The Reality:''' An illegal gas-ore smuggling ring run by desperate local miners. Players must negotiate a stand-off (DC 14 [[Diplomacy]] or [[Intimidate]]).
-:* '''The Payoff:''' The miners bribe the players with 2,000 ISC to look the other way and mention their buyer operates out of the '''Smuggler's Den'''.
+
+<blockquote>
+The catwalks of the Fuel Storage Annex rattle violently underfoot as massive cryogenic pumps thrum deep within the station's structural ribs. Giant, frost-covered spherical silos loom out of the shadows, wrapped in a labyrinth of hissing high-pressure pipes and flickering yellow hazard beacons. 
+
+The air here is freezing cold and stinks of raw ammonia and volatile comet fuel. Through the chemical fog near Silo 12, sparks shower down from an exposed manifold where several shadowy figures in pressurized welding masks are frantically wrenching open an emergency siphon valve. At the sound of your footsteps on the metal grate, the figures freeze—and three plasma cutters and slug-pistols snap directly toward you.
+</blockquote>
+
+* '''The Situation:''' Players followed the chemical soot and the discarded "Refinery Batch 88-Delta / Transfer to Silo 12" tag from Landing Pad 4, or were tracking the illicit fuel containers offloaded from ''The Ispan'', suspecting Kaelen was stashed in the fuel silos.
+* '''The Reality:''' There are no royals or fugitives here. Silo 12 is the site of a frantic, illicit fuel-siphoning operation run by desperate Belter wildcat miners stealing station gas to power their own escape craft before the Aconian blockade hits.
+* '''The Time Cost (Time-Wasters):''' Navigating the freezing labyrinth of industrial conduits, defusing the armed standoff, and inspecting the fuel tanks burns '''1.5 to 2 hours''' of precious in-game investigation time before the fleet arrives.
+
+* '''Key NPCs:'''
+:* '''Barek (Ovex Wildcat Miner):''' A hulking, four-armed Ovex Belter covered in frost-resistant work overalls, wielding a heavy industrial spanner and a primed rivet gun. Stressed, defensive, and desperate to secure enough fuel for his crew and family to flee the system.
+
+* '''Player Options & Investigations:'''
+:* '''1. De-escalating the Armed Standoff (Social Encounter):'''
+::* Barek's crew is on hair-trigger alert, assuming the players are station security or corporate enforcers sent to seize their stolen fuel.
+::* A DC 14 [[Diplomacy]] check calms Barek down and convinces him that the party doesn't care about stolen fuel and is only tracking a missing person.
+::* A DC 14 [[Intimidate]] check out-muscles Barek with an aggressive show of force, causing the wildcatters to lower their weapons and back away from the valve.
+::* A DC 13 [[Bluff]] check convinces the miners that the party are off-duty inspectors willing to turn a blind eye.
+:* '''2. Questioning Barek & The Reality (No Clues / Dead End):'''
+::* If the players ask about ''The Ispan'', the Pad 4 cargo, or missing Aconian nobles:
+:::* Barek spits onto the frosted grate and laughs bitterly: "Royals? Down in the freezing muck of Silo 12? You're out of your minds. ''The Ispan'' brought in three leaky, half-sealed containers of raw volatile gas to Pad 4 earlier. Our crew bought the lot off a black-market broker on the spot—everyone down here is frantic for whatever fuel they can get before the armada seals the sector. I was right here when we hauled the tanks in. It was just dirty, leaking gas cylinders and coughing dockhands. Nobody saw any fancy royals."
+:::* A DC 13 [[Perception]] or DC 13 [[Study]] check confirms the open silo contains only half-filled tanks of volatile liquid gas and siphoning hoses—zero signs of any passengers, disguises, or royal presence.
+:* '''3. Hazards & The Payoff (Skill / Reward):'''
+::* '''Hazard — Ruptured Manifold:''' A damaged pressure valve starts violently venting freezing, flammable gas during the conversation. A DC 14 [[-_Mechanical|Craft Mechanical]] or DC 14 [[Tech|Knowledge Technology]] check assists Barek in sealing the rupture, earning the crew's genuine gratitude.
+::* '''The Payoff:''' Barek offers the party '''400 ISC''' (or 2 canisters of ''Industrial Hull Sealant Foam'') as a "keep quiet" courtesy so they won't report the siphon tap to station dispatch.
 
 === Consulate Office (Upper Promenade - Red Herring) ===
 :* '''The Lead:''' The official royal suite where an Aconian VIP might reside.
@@ -158,49 +278,49 @@ Towering metal shelves reach all the way to the exposed ceiling conduits, cramme
 Perched atop a reinforced stool behind the wire-mesh counter is Jax—a grizzled, three-foot-tall Murid wearing a heavy leather work apron with tinted darkvision goggles pushed up onto his brow. His large, round ears twitch at every creak in the corridor, and his tail flicks with mild impatience as his dexterous paws strip the wiring from a disassembled plasma torch.
 </blockquote>
 
-:* '''The Situation:''' A packed surplus warehouse and salvage shop run by '''Jax''', a grumpy but fair retired Murid Belter miner. Having spent decades cutting rock in the outer belt, Jax knows every tool, seal, and hazard on the station and runs the premier hardware post on Comet's Home.
-:* '''Surroundings:''' Located along Freight Spur 4B near the mid-deck cargo lifts. The corridor outside reverberates with the hydraulic hiss of freight elevators and the rumble of automated pallet-loaders moving ore containers.
-:* '''Function (Purchasing):''' Players can restock or purchase equipment from the [[General_Equipment|General Equipment]] list using their Credit Score or hard cash ISC ([[Wealth_and_Money|Wealth & Money]]).
+* '''The Situation:''' A packed surplus warehouse and salvage shop run by '''Jax''', a grumpy but fair retired Murid Belter miner. Having spent decades cutting rock in the outer belt, Jax knows every tool, seal, and hazard on the station and runs the premier hardware post on Comet's Home.
+* '''Surroundings:''' Located along Freight Spur 4B near the mid-deck cargo lifts. The corridor outside reverberates with the hydraulic hiss of freight elevators and the rumble of automated pallet-loaders moving ore containers.
+* '''Function (Purchasing):''' Players can restock or purchase equipment from the [[General_Equipment|General Equipment]] list using their Credit Score or hard cash ISC ([[Wealth_and_Money|Wealth & Money]]).
 
-:* '''Player Options & Investigations:'''
-::* '''1. Shopping & Haggling:''' Players can buy standard adventuring gear (rebreathers, comm-links, glow-rods, repair kits, medical packs). A DC 13 [[Diplomacy]] or [[Bluff]] check (or speaking in the Murid [[Squeak_Speak|Squeak Speak]] dialect) earns Jax's respect, securing a 10% discount on non-electrical gear or a free roll of industrial hull sealant tape.
-::* '''2. The Suspicious Buyer (Valen's Lead):'''
-:::* '''Social (DC 12 [[Diplomacy]] or [[Sense_Motive]]):''' Buying at least 100 ISC of supplies or appealing to station solidarity gets Jax grumbling about a frantic young Aconian (Valen) who came in earlier. Valen bought two high-grade radiation hazard suits and emergency water filters with crisp off-station credits, yet fumbled like an amateur when trying to seal the hazard suit collars.
-:::* '''Observation & Scouting (Perception):'''
-::::* A DC 12 [[Perception]] check notices that Jax's sales terminal on the counter is currently logged in and completely unlocked, making it easy to access while his back is turned.
-::::* A DC 15 [[Perception]] check allows less morally upright crews to scout the back storage cage, revealing heavy reinforced magnetic deadbolts (DC 18 [[Disable_Device]]), a hidden kinetic floor sensor, and an electrified overhead capacitor—making it clear that attempting to rob the old miner would be a dangerous headache.
-:::* '''Accessing the Terminal (DC 12 [[Computer_Use]] or [[Sleight_of_Hand]]):''' Accessing Jax's unlocked terminal while he is distracted allows players to pull the recent sales log, confirming the hazard suits were billed under a stolen employee ID registered to '''Beltway Refhab 42'''.
-::* '''3. Specialized Scavenger Tools:'''
-:::* Jax keeps specialized Belter mining gear in the back cage for serious crews:
-::::* '''Heavy Plasma Torch (Tech Level 2):''' Grants a +2 bonus on [[Disable_Device]] or [[Strength]] checks to breach sealed doors, bulkheads, or ventilation grates (Procure DC 14 or 75 ISC).
-::::* '''Industrial Mag-Tether:''' Can anchor up to 400 lbs in zero-g, vertical maintenance shafts, or elevator conduits (Procure DC 11 or 25 ISC).
+* '''Player Options & Investigations:'''
+:* '''1. Shopping & Haggling:''' Players can buy standard adventuring gear (rebreathers, comm-links, glow-rods, repair kits, medical packs). A DC 13 [[Diplomacy]] or [[Bluff]] check (or speaking in the Murid '''Squeak Speak''' dialect) earns Jax's respect, securing a 10% discount on non-electrical gear or a free roll of industrial hull sealant tape.
+:* '''2. The Suspicious Buyer (Valen's Lead):'''
+::* '''Social (DC 12 [[Diplomacy]] or [[Sense_Motive]]):''' Buying at least 100 ISC of supplies or appealing to station solidarity gets Jax grumbling about a frantic young Aconian (Valen) who came in earlier. Valen bought two high-grade radiation hazard suits and emergency water filters with crisp off-station credits, yet fumbled like an amateur when trying to seal the hazard suit collars.
+:* '''3. Observation & Scouting (Perception):'''
+::* A DC 12 [[Perception]] check notices that Jax's sales terminal on the counter is currently logged in and completely unlocked, making it easy to access while his back is turned.
+::* A DC 15 [[Perception]] check allows less morally upright crews to scout the back storage cage, revealing heavy reinforced magnetic deadbolts (DC 18 [[Disable_Device]]), a hidden kinetic floor sensor, and an electrified overhead capacitor—making it clear that attempting to rob the old miner would be a dangerous headache.
+::* '''Accessing the Terminal (DC 12 [[Computer_Use]] or [[Sleight_of_Hand]]):''' Accessing Jax's unlocked terminal while he is distracted allows players to pull the recent sales log, confirming the hazard suits were billed under a stolen employee ID registered to '''Beltway Refhab 42'''.
+:* '''4. Specialized Scavenger Tools:'''
+:: Jax keeps specialized Belter mining gear in the back cage for serious crews:
+::* '''Heavy Plasma Torch (Tech Level 2):''' Grants a +2 bonus on [[Disable Device]] or [[Ability_Themes#Strength_(Str)|Strength]] checks to breach sealed doors, bulkheads, or ventilation grates (Procure DC 14 or 75 ISC).
+::* '''Industrial Mag-Tether:''' Can anchor up to 400 lbs in zero-g, vertical maintenance shafts, or elevator conduits (Procure DC 11 or 25 ISC).
 
 === Void-Forge Munitions (Weapons & Armor - Utility) ===
 
 <blockquote>
 Heavy blast doors slide open to reveal a reinforced bunker-style armory smelling sharply of gun oil, ozone, and aerosolized bore solvent. Racks of slugthrowers, laser carbines, vibro-blades, and heavy ballistic vests line the bulkheads behind reinforced plasteel glass. 
 
-Perched on an elevated hydraulic platform behind the counter is Vera—a three-foot-tall Grayling whose sleek, slate-gray skin is patterned with luminescent crimson ballistic tattoos. A gleaming chrome cybernetic arm extends from her shoulder, and a multi-spectrum optical lens whirs over one of her large dark eyes as she calmly dry-fires a heavy combat rifle, sizing you up with cold, calculating precision.
+Perched on an elevated hydraulic platform behind the counter is Calyx—a three-foot-tall Grayling whose sleek, slate-gray skin is patterned with luminescent crimson ballistic tattoos. A gleaming chrome cybernetic arm extends from her shoulder, and a multi-spectrum optical lens whirs over one of her large dark eyes as she calmly dry-fires a heavy combat rifle, sizing you up with cold, calculating precision.
 </blockquote>
 
-:* '''The Situation:''' A fortified, high-security armory run by '''Vera''', a sharp-tongued Grayling veteran and master weaponsmith. Despite her diminutive frame, Vera’s cybernetic enhancements and encyclopedic knowledge of ballistics make her one of the most respected—and feared—merchants on Comet's Home.
-:* '''Surroundings:''' Located off the station's Security Concourse near Docking Ring Beta. The storefront is shielded behind motorized blast shutters, with a pair of ceiling-mounted automated micro-turrets humming softly in standby mode.
-:* '''Function (Purchasing):''' Players can buy firearms, ammunition, tactical gear, and armor from the [[Weapons]] and [[Armor]] lists using their Credit Score or hard cash ISC ([[Wealth_and_Money|Wealth & Money]]).
-::* '''Inventory Availability:''' All Tech Level 2 and Tech Level 3 items with a Procure Difficulty of 2 or lower are available in stock. All Tech Level 3 items carry a +20% price markup due to frontier import costs.
+* '''The Situation:''' A fortified, high-security armory run by '''Calyx''', a sharp-tongued Grayling veteran and master weaponsmith. Despite her diminutive frame, Calyx’s cybernetic enhancements and encyclopedic knowledge of ballistics make her one of the most respected—and feared—merchants on Comet's Home.
+* '''Surroundings:''' Located off the station's Security Concourse near Docking Ring Beta. The storefront is shielded behind motorized blast shutters, with a pair of ceiling-mounted automated micro-turrets humming softly in standby mode.
+* '''Function (Purchasing):''' Players can buy firearms, ammunition, tactical gear, and armor from the [[Weapons]] and [[Armor]] lists using their Credit Score or hard cash ISC ([[Wealth_and_Money|Wealth & Money]]).
+:* '''Inventory Availability:''' All Tech Level 2 and Tech Level 3 items with a Procure Difficulty of 2 or lower are available in stock. All Tech Level 3 items carry a +20% price markup due to frontier import costs.
 
-:* '''Player Options & Investigations:'''
-::* '''1. Arming Up & Custom Weapon Tuning:'''
-:::* Players can purchase standard weapons, armor, and ammunition.
-:::* '''Grayling Precision Tuning:''' Vera can precision-tune one firearm's optics and barrel tolerances, granting a +1 bonus on the weapon's first attack roll in combat. This service costs '''300 ISC''', or '''150 ISC AND''' a DC 13 [[Craft_Mechanical]] or [[Knowledge_Technology]] check to assist her. The GM should inform the players that performing this tuning takes '''20 minutes''' of in-game time.
-::* '''2. The Mercenary Squad (Story & Rumor):'''
-:::* '''Social Checks:''' A DC 14 [[Diplomacy]] check or a DC 18 [[Intimidate]] check gets Vera talking. She mentions that a squad of tight-lipped Aconians tried to buy military-grade armor-piercing rounds and heavy weapons under the table earlier today, but she kicked them out because they lacked local licenses and had "the sloppy arrogance of off-world private hitmen."
-:::* '''Bribes / Tipping:''' Placing hard cash on the counter loosens her tongue: each 100 ISC offered lowers the DC by 1 and grants the party another attempt to roll.
-:::* '''[[Sense_Motive]]:''' A [[Sense_Motive]] check can be rolled solely to determine if Vera is telling the truth (she is completely truthful).
-::* '''3. Security, Scouting & Anti-Theft:'''
-:::* Less scrupulous crews scouting the armory for potential theft or break-ins learn the following based on their [[Perception]] checks:
-::::* '''DC 14 [[Perception]]:''' Reveals that Vera’s cybernetic ocular unit and neural link are directly wired to the ceiling turrets and electrified floor plates, making it clear that a direct robbery attempt would result in lethal crossfire.
-::::* '''DC 18 [[Perception]]:''' Identifies a subtle blind spot in the automated ceiling turrets' sensor sweep pattern, revealing a viable path to sneak past them.
-::::* '''DC 20 [[Perception]]:''' Spots that the electronic keypad for entering the secure back storage room has noticeable physical wear on specific digits, granting a +2 bonus on [[Disable_Device]] checks made to crack the lock.
+* '''Player Options & Investigations:'''
+:* '''1. Arming Up & Custom Weapon Tuning:'''
+::* Players can purchase standard weapons, armor, and ammunition.
+::* '''Grayling Precision Tuning:''' Calyx can precision-tune one firearm's optics and barrel tolerances, granting a +1 bonus on the weapon's first attack roll in combat. This service costs '''300 ISC''', or '''150 ISC AND''' a DC 13 [[-_Mechanical|Craft Mechanical]] or [[Tech|Knowledge Technology]] check to assist her. The GM should inform the players that performing this tuning takes '''20 minutes''' of in-game time.
+:* '''2. The Mercenary Squad (Story & Rumor):'''
+::* '''Social Checks:''' A DC 14 [[Diplomacy]] check or a DC 18 [[Intimidate]] check gets Calyx talking. She mentions that a squad of tight-lipped Aconians tried to buy military-grade armor-piercing rounds and heavy weapons under the table earlier today, but she kicked them out because they lacked local licenses and had "the sloppy arrogance of off-world private hitmen."
+::* '''Bribes / Tipping:''' Placing hard cash on the counter loosens her tongue: each 100 ISC offered lowers the DC by 1 and grants the party another attempt to roll.
+::* '''[[Sense_Motive]]:''' A [[Sense_Motive]] check can be rolled solely to determine if Calyx is telling the truth (she is completely truthful).
+:* '''3. Security, Scouting & Anti-Theft:'''
+:: Less scrupulous crews scouting the armory for potential theft or break-ins learn the following based on their [[Perception]] checks:
+::* '''DC 14 [[Perception]]:''' Reveals that Calyx’s cybernetic ocular unit and neural link are directly wired to the ceiling turrets and electrified floor plates, making it clear that a direct robbery attempt would result in lethal crossfire.
+::* '''DC 18 [[Perception]]:''' Identifies a subtle blind spot in the automated ceiling turrets' sensor sweep pattern, revealing a viable path to sneak past them.
+::* '''DC 20 [[Perception]]:''' Spots that the electronic keypad for entering the secure back storage room has noticeable physical wear on specific digits, granting a +2 bonus on [[Disable Device]] checks made to crack the lock.
 
 === Heng's Cometary Noodles (Flavor) ===
 
@@ -219,18 +339,18 @@ Flickering overhead holo-screens loop an ominous emergency broadcast: the Aconia
 <blockquote>
 Stepping through the airlock into the Bio-Dome is like leaving the mining station behind entirely. The ever-present mechanical grinding and the harsh smell of ozone vanish, replaced by the rich aroma of damp loamy soil, crushed pine needles, and sweet natural oxygen. 
 
-Underneath a reinforced geodesic dome looking out onto the silent, star-filled void and jagged asteroid belts, winding stone pathways weave between genetically engineered dwarf pines, bioluminescent fern beds, and a trickling water canal. Tending to a hydroponic flowering bush is Calyx—a serene, green-skinned Volar botanist whose leafy head-bud gently sways as she mists the delicate flora.
+Underneath a reinforced geodesic dome looking out onto the silent, star-filled void and jagged asteroid belts, winding stone pathways weave between genetically engineered dwarf pines, bioluminescent fern beds, and a trickling water canal. Tending to a hydroponic flowering bush is Vera—a serene, green-skinned Volar botanist whose leafy head-bud gently sways as she mists the delicate flora.
 </blockquote>
 
-:* '''The Situation:''' A climate-controlled botanical sanctuary and psychological decompression garden run by '''Calyx''', a gentle Volar botanist. It is the only true green space on Comet's Home, maintained to prevent space madness and cabin fever among deep-space Belters.
-:* '''Surroundings:''' Located atop the station’s Upper Spire overlooking the Promenade. The transparent dome provides a breathtaking view of the comet’s glowing tail and incoming freighter traffic, shielded by high-grade radiation baffles.
-:* '''Function (Rest & Respite):''' A peaceful, tranquil sanctuary where the party can rest, discuss plans in privacy, and escape the noisy industrial hum of the station.
+* '''The Situation:''' A climate-controlled botanical sanctuary and psychological decompression garden run by ''''Vera''', a gentle Volar botanist. It is the only true green space on Comet's Home, maintained to prevent space madness and cabin fever among deep-space Belters.
+* '''Surroundings:''' Located atop the station’s Upper Spire overlooking the Promenade. The transparent dome provides a breathtaking view of the comet’s glowing tail and incoming freighter traffic, shielded by high-grade radiation baffles.
+* '''Function (Rest & Respite):''' A peaceful, tranquil sanctuary where the party can rest, discuss plans in privacy, and escape the noisy industrial hum of the station.
 
-:* '''Player Options & Interactions:'''
-::* '''1. Natural Rest (Psychological Decompression):'''
-:::* Spending 30 minutes resting quietly in the garden clears non-lethal stress and grants a +1 morale bonus to the party's next [[Wisdom]] or [[Sense_Motive]] check.
-::* '''2. Volar Herbal Tea:'''
-:::* Calyx is naturally attentive to the physical well-being of others. If she notices that the characters are visibly hurt, exhausted from prior encounters, or if the players successfully socialize with her (DC 12 [[Diplomacy]]), she warm-heartedly offers them cups of freshly brewed "Deep Bloom Tea" (10 ISC or offered free to friendly guests).
-:::* Drinking the herbal tea grants '''Advantage (+1Ad)''' on saving throws against poison, sickness, or fatigue for the next 4 hours.
-::* '''3. Private Planning & Anti-Surveillance:'''
-:::* A DC 12 [[Perception]] check allows players to recognize that the dense botanical canopy, trickling water canal, and lack of station electrical conduits provide total acoustic isolation—making the Bio-Dome one of the few places on Comet's Home completely immune to electronic eavesdropping, corporate wiretaps, or security listening bugs.
+* '''Player Options & Interactions:'''
+:* '''1. Natural Rest (Psychological Decompression):'''
+::* Spending 30 minutes resting quietly in the garden clears non-lethal stress and grants a +1 morale bonus to the party's next [[Ability_Themes#Wisdom_(Wis)|Wisdom]] or [[Sense Motive]] check.
+:* '''2. Volar Herbal Tea:'''
+::* Vera is naturally attentive to the physical well-being of others. If she notices that the characters are visibly hurt, exhausted from prior encounters, or if the players successfully socialize with her (DC 12 [[Diplomacy]]), she warm-heartedly offers them cups of freshly brewed "Deep Bloom Tea" (10 ISC or offered free to friendly guests).
+::* Drinking the herbal tea grants '''Advantage (+1Ad)''' on saving throws against poison, sickness, or fatigue for the next 4 hours.
+:* '''3. Private Planning & Anti-Surveillance:'''
+::* A DC 12 [[Perception]] check allows players to recognize that the dense botanical canopy, trickling water canal, and lack of station electrical conduits provide total acoustic isolation—making the Bio-Dome one of the few places on Comet's Home completely immune to electronic eavesdropping, corporate wiretaps, or security listening bugs.

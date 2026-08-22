@@ -3,6 +3,7 @@
 The GM's role is to help guide the game for the Players. 
 
 * Dice Rolling App: [http://api.d20futurepath.com/files/mRoller.html Mobile Dice Roller]
+* Dice Probability Calculator: [[Dice Probability Calculator]]
 * Players' Character Sheet:  [https://drive.google.com/uc?export=download&id=1cZ3PPchkXAgTSWTHKsONEIWNrg8PhN2P d20FuturePath Character Sheet]
 * Space Ship Character Sheet: [https://drive.google.com/file/d/1946b8G1GyLHkqxxtlHCQjD3H0RdOR54a/view?usp=sharing d20FuturePath SpaceShip Sheet]
 * Animal Companion Sheet: [https://drive.google.com/uc?export=download&id=1Ti-L8kJQr06XojhFZiHdy2YrgrBXu0eq d20FuturePath Animal Companion Sheet]
