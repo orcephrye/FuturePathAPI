@@ -204,28 +204,143 @@ In a large corner booth, two rowdy, red-faced pirates are loudly slamming tin mu
 ::* A DC 14 [[Computer_Use|Computer Use]] or DC 13 [[Study]] check cracks the encrypted military datapad found in the mercenary lead’s pocket. It reveals intercepted station security feeds and a real-time comm-link routing back to a mercenary squad coordinator operating out of the '''Refinery Control Room''' (leads to [[#Refinery_Control_Room_(Industrial_Level)|Refinery Control Room]]).
 
 === Medical Clinic (Mid-Deck) ===
-:* '''The Situation:''' A crowded clinic where Kaelen was treated for mild radiation sickness.
-:* '''Investigation:'''
-::* '''Branch A (Hacking):''' A DC 14 [[Computer_Use|Computer Use]] check on the patient registry database reveals Valen used an employee badge registered to a technician living in '''Beltway Refhab 42'''.
-::* '''Branch B (Social):''' A DC 13 [[Diplomacy]] or [[Sense_Motive]] check with the resident doctor reveals that Aconian agents were asking about the couple. He heard them mention hacking the security grid from the '''Refinery Control Room'''.
+
+<blockquote>
+The heavy pressure doors of the Mid-Deck Medical Ward hiss open to a wave of cold, sterile air reeking of disinfectant, aerosolized antiseptic, and ozone bio-gel. Overhead fluorescent strips flicker across a crowded, chaotic ward where injured asteroid miners with plasma burns and terrified Belters suffering panic attacks overflow into the hallway on magnetic gurneys. 
+
+Gliding smoothly across the blood-spotted floor on a serpentine, pale-blue lower body is Dr. Merrill. A hydration collar hums softly around his neck to keep his amphibious skin and neck-gills moist in the dry station air. With his upper pair of long, webbed arms, he expertly applies a dermal regenerator to a groaning miner, while his smaller secondary lower arms calmly calibrate a floating medical datapad and prepare a tray of hypo-syringes without missing a beat.
+</blockquote>
+
+* '''The Situation:''' Valen rushed Lady Kaelen here immediately after her collapse at the casino. She was treated for acute chemical overexposure caused by breathing toxic vapor from ''The Ispan's'' leaky containment seals. Valen paid in hard cash under a forged maintenance badge and quickly moved her out. 
+* '''The Aftermath:''' Shortly after they left, a pair of Archon Vandar’s armed hitmen stormed into the clinic, aggressively demanding to see patient manifests. Dr. Merrill refused to break medical confidentiality, but the encounter left the entire staff on edge.
+* '''Surroundings:''' Located in Mid-Deck Sector 4, wedged between the residential corridors and life-support ducting. Medical alarms beep constantly, and exhausted triage droids roll between curtained cubicles.
+
+* '''Key NPCs:'''
+:* '''Dr. Merrill (Cryous Chief Medical Officer):''' A pale-blue skinned Cryous physician whose four arms allow him to conduct triage and administrative logging simultaneously. Tenacious, pragmatic, and fiercely committed to his Hippocratic oath. His species' innate sensitivity to the electromagnetic spectrum makes him acutely observant of concealed technology and bio-signs.
+:* '''Nurse Dax (Human Orderly):''' An exhausted, jumpy human triage nurse manning the intake terminal behind a reinforced plexiglass desk.
+
+* '''Player Options & Investigations:'''
+:* '''1. Reading the Clinic & Forensic Clues (Perception / Medicine):'''
+::* A DC 13 [[Perception]] or DC 13 [[Treat_Injury|Treat Injury]] check examining the biohazard disposal bin in Cubicle 3 reveals a freshly discarded aerosol canister of "Aero-Tox Pulmo-Mist"—a specialized, expensive counter-agent for treating industrial amine chemical overexposure, consistent with ''The Ispan's'' toxic leak.
+:* '''2. Interrogating Dr. Merrill (Social Encounter — Leads to Beltway Refhab 42):'''
+::* Dr. Merrill is initially defensive and cautious, fearing the party might be more mercenaries.
+::* A DC 13 [[Diplomacy]], DC 12 [[Sense_Motive]], or DC 13 [[Treat_Injury|Treat Injury]] check calms Dr. Merrill down or earns his trust:
+:::* ''The Safehouse Clue:'' He confirms he treated a young, delicate Aconian woman suffering from severe chemical overexposure. Her partner (Valen) was terrified, paid upfront with high-denomination credits, and registered under a borrowed maintenance work permit assigned to Pod 42-C in '''Beltway Refhab 42''' (leads to [[#Beltway_Refhab_42_(Lower_Habitation)|Beltway Refhab 42]]).
+::* A DC 14 [[Intimidate]] check gets him to disclose the safehouse location, though his neck-gills flare with defensive bio-static and he demands the party leave immediately.
+:* '''3. Hacking the Triage Terminal (Computer Use — Alternate Lead to Refhab 42):'''
+::* If the party avoids speaking to Dr. Merrill or wishes to verify the records:
+::* A DC 14 [[Computer_Use|Computer Use]] check hacks into the clinic's local prescription logs, pulling up the recent intake record for the chemical overexposure treatment and confirming the patient's billing was tied to '''Beltway Refhab 42''' (leads to [[#Beltway_Refhab_42_(Lower_Habitation)|Beltway Refhab 42]]).
+:* '''4. Tracking the Mercenaries (Perception / Diplomacy — Leads to Refinery):'''
+::* Inquiring about the suspicious armed men who visited earlier:
+::* A DC 13 [[Diplomacy]] or DC 13 [[Perception]] check prompts Dr. Merrill to mention that two heavily armed off-worlders in tactical stealth gear barged in roughly thirty minutes ago. Thanks to his Cryous electromagnetic sensitivity, Merrill detected their high-frequency encrypted radio chatter and overheard them confirming they were heading to hijack the station's main surveillance grid from the '''Refinery Control Room''' (leads to [[#Refinery_Control_Room_(Industrial_Level)|Refinery Control Room]]).
+:* '''5. Clinic Services & Restocking (Utility):'''
+::* '''Purchasing Supplies:''' Players can buy a [[General_Equipment#Medical_Kits|Medpack]] from Nurse Dax for '''2,500 ISC'''. If the players successfully used [[Diplomacy]] with Dr. Merrill, they earn a '''20% discount''', reducing the cost to '''2,000 ISC'''.
+::* '''Medical Treatment:''' Any character injured from previous encounters can have Dr. Merrill tend their wounds, restoring 1d8+2 Hit Points. Each treatment costs '''500 ISC''' and burns '''1 hour of in-game time''' per treated player.
 
 === Refinery Control Room (Industrial Level) ===
-:* '''The Situation:''' The central station grid where Vandar's agents are actively hacking security to track Kaelen.
-:* '''Investigation:'''
-::* A DC 14 [[Computer_Use|Computer Use]] or [[Disable_Device|Disable Device]] check to intercept the terminal reveals the agents have traced Kaelen's royal signet ring beacon and are moving her to the cargo bay (leads to '''Sector 9 Cargo Docks''').
+
+<blockquote>
+The deafening roar of industrial ore centrifuges and hissing gas distillation towers fills the humid, ozone-charged air of the Refinery Core. Narrow metal catwalks with low safety railings span dizzying vertical drops over bubbling vats of superheated silicate slurry and glowing plasma conduits. 
+
+Perched high above the machinery is the reinforced glass control booth. Inside, the lights have been dimmed to a tactical red. Several station technicians sit gagged and bound against the bulkhead, while two armored Aconian mercenaries in heavy tactical rigs stand guard with drawn blasters. At the central command console, an operative with a cybernetic neural link is tapping furiously into a military-grade portable slicing rig spliced directly into the station's main surveillance subnet.
+</blockquote>
+
+* '''The Situation:''' Archon Vandar’s tech squad stormed the refinery control booth, taking the station's engineering staff hostage to seize control of the local sensor network. Using military decryption algorithms, they triangulated Lady Kaelen’s emergency royal signet beacon to her safehouse in the slums. A capture team already dispatched to snatch her, while the remaining tech crew maintains the station-wide camera blackout and scrubs the data logs.
+* '''Surroundings:''' Located on Industrial Sub-Level 3. The ambient noise of massive mining machinery provides ample acoustic cover, but the narrow catwalks and superheated steam valves make any confrontation perilous.
+
+* '''Key NPCs:'''
+:* '''Operative Kael (Vandar's Combat Slicer):''' A ruthless Aconian combat tech specialist equipped with a portable military slicing deck and an energized shock-pistol. Focused entirely on purging evidence and coordinating comms.
+:* '''Vandar Strike Guards (Equal to Party Size - 1):''' Professional mercenaries in hardened tactical armor armed with heavy blasters and fragmentation flashbangs.
+:* '''Chief Engineer Garr (Human Station Engineer):''' The bruised, bound chief refinery operator, desperate to save his facility from sabotage.
+
+* '''Player Options & Investigations:'''
+:* '''1. Infiltration & Catwalk Navigation (Stealth / Engineering):'''
+::* A DC 13 [[Stealth]] or DC 13 [[Athletics]] check allows players to use the loud mechanical roar and billowing steam plumes to maneuver across the catwalks into an advantageous flanking position.
+::* A DC 14 [[Disable_Device|Disable Device]] or DC 14 [[-_Mechanical|Craft Mechanical]] check overrides a nearby steam manifold, venting superheated vapor onto the guards' gantry to blind them and grant the party '''Advantage (+1Ad)''' on Initiative during the first round of combat.
+:* '''2. Tactical Combat (The Control Room Breach):'''
+::* Slicers and guards fight defensively, using the heavy blast doors and console bulkheads as cover. Operative Kael attempts to smash the slicing deck if defeat is imminent.
+:* '''3. Hacking the Slicing Rig (Computer Use — Leads to Sector 9 Cargo Docks):'''
+::* Slicing into Kael’s portable rig or recovering the uncorrupted data drives from the console:
+::* A DC 14 [[Computer_Use|Computer Use]] or DC 13 [[Study]] check pulls up the live tactical feed and decrypted telemetry archives:
+:::* ''The Climax Lead:'' The screens display intercepted security footage of Vandar's strike team kicking down the door of Pod 42-C in the slums, subduing Valen, and dragging a struggling Lady Kaelen toward the freight lifts leading to '''Sector 9 Cargo Docks''' (leads directly to [[#The_Climax:_Sector_9_Cargo_Docks|Sector 9 Cargo Docks]]).
+:::* ''The Archon's Direct Order:'' The logs contain a recorded priority transmission from Archon Vandar himself: ''"Lady Kaelen is secured. Move her to Sector 9 Cargo Docks. Execute the merchant boy Valen and broadcast the station distress beacon the moment Prince Jarek's vanguard drops out of warp. The imperial annexation must proceed without loose ends."''
+:* '''4. Freeing Chief Engineer Garr (Social / Utility):'''
+::* Untying Garr and restoring control of the refinery earns the crew his immense gratitude.
+::* Garr uses his master terminal to hand the party an '''Industrial Master Bypass Fob''', granting a '''+2 circumstance bonus''' on any [[Disable Device]] or [[Computer Use]] checks made inside the cargo docks during the climax.
 
 === Beltway Refhab 42 (Lower Habitation) ===
-:* '''The Situation:''' The safe house where Kaelen was hiding, now trashed.
-:* '''Investigation:'''
-::* A DC 13 [[Survival]] or [[Perception]] check to investigate the room reveals signs of a struggle and a dropped Aconian tracer signal pointing directly to '''Sector 9 Cargo Docks'''.
+
+<blockquote>
+The lower residential tier of Sector 42 is a dim, claustrophobic labyrinth of corrugated metal bulkheads, flickering red emergency strips, and exposed pipes sweating foul-smelling graywater. The narrow corridor is deathly quiet—save for the low hum of life-support ventilators and the sharp stench of scorched wiring and fresh plasma discharge. 
+
+Outside Pod 42-C, the magnetic door has been violently blown off its hydraulic track, lying crumpled against the far wall. Inside, the cramped living pod has been torn apart: furniture is smashed, medical bandages are scattered across the floor, and a dark pool of blood trails toward an overturned storage locker where a young Aconian man lies slumped in a heap, motionless and bleeding out.
+</blockquote>
+
+* '''The Situation:''' Valen rented Pod 42-C under a forged maintenance permit as a temporary safehouse to allow Lady Kaelen to rest after her chemical overexposure while he attempted to arrange an off-station escape transport. 
+* '''The Ambush:''' Archon Vandar’s strike team tracked Kaelen’s signet ring beacon, breached the door with breaching charges, subdued Valen with lethal force, and dragged Lady Kaelen away to '''Sector 9 Cargo Docks'''. They left Valen for dead on the floor.
+* '''Surroundings:''' Located on Lower Habitation Sub-Level 6. The surrounding Belter residents are terrified, locking themselves inside their pods and ignoring the chaos.
+
+* '''Key NPCs:'''
+:* '''Valen (Merchant’s Son & Key Plot Witness):''' A young, handsome Aconian merchant's son, currently unconscious, concussed, and actively bleeding out from severe blaster shrapnel wounds. When stabilized, he provides the central plot twist: Archon Vandar orchestrating the fake runaway and betrayal to justify Prince Jarek's imperial annexation.
+:* '''Nervous Neighbor (Pod 42-B):''' A frightened elderly Belter miner peeking through the reinforced viewport of the neighboring unit.
+
+* '''Player Options & Investigations:'''
+:* '''1. Saving Valen's Life (Treat Injury AND Diplomacy):'''
+::* Players must perform '''both''' a medical stabilization check and a social composure check to get Valen to help them:
+::* '''Step 1: Stabilizing the Wounds (DC 20 [[Treat_Injury|Treat Injury]]):''' Valen is in critical condition, unconscious, and dying. A player must succeed on a DC 20 [[Treat_Injury|Treat Injury]] check to stop the hemorrhage and revive him.
+:::* ''Taking 20 (Time Trade-Off):'' A player may choose to '''Take 20''' on this check to guarantee success, but doing so takes '''20 minutes of in-game time'''—a critical cost with the Aconian fleet rapidly approaching orbital strike range.
+::* '''Step 2: Calming & Interrogating (DC 13 [[Diplomacy]] or DC 12 [[Sense_Motive]]):''' Once conscious, Valen wakes up in a state of wild panic and grief, screaming for Kaelen and trying to reach for nonexistent weapons. Calming him down gets him to reveal the entire conspiracy:
+:::* ''The Core Revelation:'' Valen breaks down: "It was Archon Vandar... he secretly contacted me weeks ago, offering money, forged credentials, and a private shuttle to help Kaelen escape her arranged marriage to Prince Jarek! But it was all a setup. His strike team stormed in here... they shot me and dragged Kaelen to Sector 9 Cargo Docks. They're going to execute me, stage a heroic 'rescue' of Kaelen, and blame the station for her kidnapping to give Prince Jarek justification to annex Comet's Home!"
+:::* ''The Crucial Evidence:'' Valen hands the party his '''Personal Encrypted Datapad''', containing the direct message logs, bank transfers, and safehouse blueprints provided to him by Archon Vandar—irrefutable proof of Vandar's treason.
+:* '''2. Crime Scene Forensics (Perception / Survival — Leads to Sector 9):'''
+::* Sifting through the debris of the breached pod:
+::* A DC 13 [[Perception]] or DC 13 [[Survival]] check follows the drag marks, heavy tactical combat boot treads, and scuff marks leading directly out of the room and down the hall to Freight Elevator 9, which descends exclusively into '''Sector 9 Cargo Docks''' (leads to [[#The_Climax:_Sector_9_Cargo_Docks|Sector 9 Cargo Docks]]).
+:* '''3. Interviewing the Neighbor (Social):'''
+::* Knocking on Pod 42-B or questioning the terrified neighbor:
+::* A DC 12 [[Diplomacy]] check with the neighbor gets them to open the latch slightly and tearfully admit seeing four heavily armed mercenaries in gray tactical armor dragging a hooded woman into Freight Elevator 9 roughly twenty minutes ago.
 
 === The Climax: Sector 9 Cargo Docks ===
-* '''The Situation:''' Vandar's mercenaries have captured Kaelen and pinned down Valen. They plan to execute Valen and frame the station for Kaelen's "murder" to justify the immediate Aconian invasion.
-* '''The Encounter:''' A tense standoff. Players can use stealth, hacking, or social pressure to resolve the situation, with combat as a high-stakes backup.
-* '''The Resolution:'''
-:* '''Option A: Yield to the Empire.''' Turn Kaelen over to the approaching fleet. The station is saved from martial law, but Kaelen is forced to marry Prince Jarek, and Valen is executed for treason.
-:* '''Option B: Expose the Archon.''' Use the station's main broadcast tower to stream Valen's testimony and Vandar's transaction records to the incoming fleet. Prince Jarek halts the invasion to arrest Vandar, but Kaelen and Valen must flee into exile.
-:* '''Option C: Cover Up and Run.''' Help the lovers escape using the smuggler shuttle. The station faces temporary Aconian occupation, but the lovers escape to the outer rim.
+
+<blockquote>
+Sector 9 is a colossal, vaulted freight bay surrounded by towering stacks of magnetized shipping containers, suspended gantry cranes, and the deep, sub-audible hum of atmospheric force-field emitters holding back the cold vacuum of space. Through the massive transparent bay doors, the jagged comet tail stretches into the stars—where the flashing red warp signatures of Prince Jarek’s incoming battle fleet have just begun dropping out of hyperspace.
+
+Parked on the central landing pad is an unmarked, black-armored stealth transport with its sub-light thrusters whining in warm-up cycle. Tied to a heavy cargo crate near the boarding ramp is Lady Kaelen in energy cuffs, her eyes blazing with defiance as she glares at the mercenary commander barking orders into a tactical comms link. Beside her, an automated broadcast dish is locking onto the imperial fleet's frequency, ready to transmit the fabricated "kidnapping distress signal" that will seal the station’s doom.
+</blockquote>
+
+* '''The Situation:''' Archon Vandar’s elite strike team is preparing to extract Lady Kaelen. Their plan is to execute their scapegoats, board their stealth shuttle, and transmit a false emergency beacon to Prince Jarek’s fleet claiming Belter extremists executed Valen and kidnapped Kaelen—giving the Prince the casus belli to open fire and occupy Comet's Home.
+* '''The Looming Clock:''' The Aconian Armada is already entering orbital range. The party has mere minutes to stop the broadcast, secure Kaelen, and decide the station's fate.
+
+* '''Dynamic Entry Points & Tactical Paths:'''
+:* '''Path A: Ground Assault / Infiltration (Arriving from Beltway Refhab 42):'''
+::* The party emerges from '''Freight Elevator 9''' directly onto the lower deck among rows of magnetized cargo containers and automated forklift drones.
+::* ''Tactical Advantage (The Evidence of Betrayal):'' If the party stabilized Valen and carries his '''Personal Encrypted Datapad''', they have direct proof of Vandar's conspiracy. If a stabilized Valen accompanies the party, Lady Kaelen spots him immediately. Her morale surges, and she uses her Aconian combat training to actively kick and distract her guard during Round 1, granting the party '''Advantage (+1Ad)''' on all attack rolls in the opening round.
+:* '''Path B: High-Ground Infiltration (Arriving from Refinery Control Room):'''
+::* The party emerges from the '''Overhead Maintenance Gantries''' 30 feet above the cargo floor, overlooking the entire bay.
+::* ''Tactical Advantage (Environmental Overrides):'' With '''Chief Engineer Garr's Industrial Master Bypass Fob''', a character can access the overhead crane console (DC 12 [[Computer_Use|Computer Use]] or [[Disable_Device|Disable Device]]):
+:::* ''Crane Drop:'' Drop a 5-ton cargo container directly between the mercenaries and the shuttle, instantly crushing one mercenary and cutting off their line of sight.
+:::* ''Atmospheric Lockdown / Blackout:'' Kill the bay lights to plunge the dock into darkness (granting total concealment to stealthy characters) or override the shuttle’s magnetic landing clamps to prevent it from taking off.
+:::* Carrying '''Vandar's Recorded Orders''' allows the party to broadcast Vandar's voice directly across the bay's PA speakers, throwing the mercenaries into immediate confusion.
+
+* '''Key NPCs:'''
+:* '''Lady Kaelen (Aconian Royal):''' A fierce, proud noblewoman. Bound in energy restraints, but furious at Vandar's betrayal and ready to fight the moment she is freed.
+:* '''Strike Commander Drake (Vandar’s Elite Enforcer):''' A heavily cyberized mercenary commander in powered combat armor equipped with a heavy plasma carbine, personal kinetic shielding, and a wrist-mounted shock blade.
+:* '''Vandar Strike Operatives (Equal to Party Size):''' Hardened mercenaries providing covering fire behind reinforced freight crates.
+
+* '''Player Options & Standoff:'''
+:* '''1. Combat:''' A dynamic firefight utilizing moving cranes, explosive fuel barrels, and container cover.
+:* '''2. Stealth Infiltration (DC 14 [[Stealth]] & DC 13 [[Disable_Device|Disable Device]]):''' Sneaking along the shadows to disable the broadcast transmitter dish and release Kaelen’s energy cuffs before the mercenaries realize the party is there.
+:* '''3. Psychological Pressure (DC 15 [[Intimidate]] or [[Diplomacy]]):''' Confronting Commander Drake with Vandar’s recorded betrayal and proof of the fleet's arrival, convincing his mercenaries that Vandar will discard them as loose ends the moment the armada lands.
+
+* '''The Three Story Resolutions:'''
+:* '''Option A: Expose the Archon (The Grand Triumph):'''
+::* Using the cargo bay's main broadcast array (or Herald Malakor's ship channel), the party streams Valen's datapad logs and Vandar's recorded orders directly to Prince Jarek’s flagship as the fleet surrounds the station.
+::* ''Outcome:'' Prince Jarek halts the orbital bombardment, publicly arrests Archon Vandar for high treason, and withdraws the armada. Kaelen and Valen are pardoned but choose to slip away into exile on the frontier to live freely. The station is saved!
+:* '''Option B: Yield to the Empire (The Imperial Compromise):'''
+::* The party defeats the mercenaries and hands Lady Kaelen over to Prince Jarek when the imperial landing craft touches down.
+::* ''Outcome:'' The station is spared military destruction and granted generous trade concessions, but Kaelen is forced to marry Prince Jarek, and Valen is arrested for treason unless the party uses their influence/wealth to help him flee.
+:* '''Option C: Smuggle and Run (The Outlaw Escape):'''
+::* The party commandeers the stealth transport (or ''The Ispan''), loading Kaelen and Valen aboard and launching into the outer rim before the blockade closes.
+::* ''Outcome:'' The lovers escape together into deep space. The station faces temporary imperial occupation and heavy fines, but the crew earns eternal gratitude and a massive underground bounty (5,000 ISC).
 
 == Red Herring Locations ==
 
@@ -258,15 +373,71 @@ The air here is freezing cold and stinks of raw ammonia and volatile comet fuel.
 ::* '''Hazard — Ruptured Manifold:''' A damaged pressure valve starts violently venting freezing, flammable gas during the conversation. A DC 14 [[-_Mechanical|Craft Mechanical]] or DC 14 [[Tech|Knowledge Technology]] check assists Barek in sealing the rupture, earning the crew's genuine gratitude.
 ::* '''The Payoff:''' Barek offers the party '''400 ISC''' (or 2 canisters of ''Industrial Hull Sealant Foam'') as a "keep quiet" courtesy so they won't report the siphon tap to station dispatch.
 
-=== Consulate Office (Upper Promenade - Red Herring) ===
-:* '''The Lead:''' The official royal suite where an Aconian VIP might reside.
-:* '''The Reality:''' The suite is empty of royals, occupied only by a panicked diplomat who lost his exotic pet star-ferret.
-:* '''The Payoff:''' Capturing the ferret (DC 12 [[Acrobatics]] or [[Survival]]) earns the diplomat's gratitude. He rewards the players with a Tech Level 2 item and mentions seeing Valen at the '''Gilded Comet Casino'''.
+=== Consulate Office (VIP Suites, Gilded Comet - Red Herring) ===
+
+<blockquote>
+The top floor of the Gilded Comet Casino is a secluded enclave of silent, deep-pile crimson carpeting, soft ambient brass lighting, and polished synth-mahogany doors inlaid with gilded Aconian sunburst crests. Brass memorial plaques along the wood-paneled hallway proudly commemorate the "Consulate's Quarters"—a lingering title from centuries past. 
+
+Unlike the chaotic, smoke-filled gambling halls below, this corridor is deathly quiet. But as you step toward the high-end suites, the silence is broken by a muffled crash and frantic shrieking coming from one set of double doors, while the neighboring grand suite stands chillingly ajar in total darkness.
+</blockquote>
+
+* '''The Backstory:''' Centuries ago when Comet's Home was first constructed, an Aconian imperial ambassador arrived to negotiate trade treaties. The station lacked formal diplomatic housing, so the ambassador was put up in the casino's penthouse. He loved the games, drinks, and luxury so much that he flatly refused to leave even after a proper embassy was built. Ever since, the casino's ultra-luxury VIP wing has been traditionally known as the '''"Consulate Office"'''.
+* '''The Reality:''' There are several private suites on this floor, but the party only has time and access to investigate two specific suites:
+# '''Suite 101 (The Grand Imperial Suite):''' Checked out to '''Archon Vandar''', a high-ranking Aconian dignitary who covertly arrived with a heavily armed squad officially registered as his "private security" ahead of Prince Jarek’s armada.
+# '''Suite 104 (The Diplomatic Suite):''' Occupied by '''Envoy Cassian''', a pompous, low-ranking trade delegate dealing with a domestic crisis.
+* '''The Time Cost (Time-Wasters):''' Thoroughly clearing, tossing, and investigating both suites burns '''1.5 to 2 hours''' of precious in-game time without yielding any direct leads on Lady Kaelen’s current whereabouts.
+
+* '''Key NPCs:'''
+:* '''Envoy Cassian (Aconian Trade Delegate):''' A vain, cowardly bureaucrat in ruffled silks and a powdered wig-crest who is on the station merely to audit silicate tariffs. Completely self-absorbed and oblivious to the broader political crisis, assuming any visitors are emergency hotel staff sent to rescue his room.
+:* '''"Nibbles" (Exotic Void-Ferret):''' Cassian's hyperactive, six-legged indigo alien pet, currently terrorizing Suite 104.
+
+* '''Player Options & Investigations:'''
+:* '''1. Suite 101: Archon Vandar’s Abandoned Staging Room (Perception / Study):'''
+::* Stepping into the grand suite reveals a luxurious penthouse that was recently used as an operational staging post and abandoned in extreme haste.
+::* A DC 13 [[Perception]] check finds heavy boot scuffs, discarded molded foam inserts from military-grade heavy weapon crates, empty tactical ration packs, and disassembled comm-scrambler docking cradles with their storage chips systematically torched.
+::* A DC 13 [[Study]] or DC 13 [[Computer_Use|Computer Use]] check queries the suite's private foyer terminal and baggage manifests:
+:::* ''The Discovery:'' The suite was registered to '''Archon Vandar''', accompanied by an elite squad logged on paper as his "private security detail." The registration stamps reveal they arrived on the station just prior to the emergency broadcast—a remarkably suspicious arrival time that predates the official fleet mobilization.
+:::* ''The Dead End:'' The room makes the party fully aware of Archon Vandar, his presence on the station, and his dangerous "security guards," but all mission manifests, target files, and tactical logs were thoroughly wiped. There is no evidence explaining *why* Vandar is here or where Lady Kaelen is currently located.
+:* '''2. Suite 104: Envoy Cassian & The Void-Ferret Chase (Skill Encounter):'''
+::* Entering the neighboring suite reveals Envoy Cassian standing atop a velvet sofa with his robes hitched up, screaming in terror as his exotic six-legged void-ferret darts across ceiling chandeliers, knocking over antique vases and shredding silk tapestries.
+::* Cassian refuses to speak until his pet is caught:
+:::* A DC 13 [[Acrobatics]] or [[Athletics]] check leaps across furniture to cut off the ferret as it darts along high curtain rods.
+:::* A DC 14 [[Survival]] or [[Sleight_of_Hand]] check corners the agile beast behind an overturned credenza or lures it into an emergency carrier with luxury sweetmeats.
+::* '''Questioning Cassian (No Clues / Dead End):'''
+:::* Once calmed with a glass of synth-wine, Cassian scoffs at any mention of Lady Kaelen: "Lady Kaelen? On this dreary mining rock? Absolute nonsense! If a royal of the Old Dynasty were here, the Imperial Protocol Directorate would have requisitioned this entire floor weeks ago. I am merely auditing silicate tariffs! I know nothing of runaways or conspirators."
+:::* A DC 13 [[Sense_Motive]] check confirms he is an utterly clueless bureaucrat.
+:* '''3. The Payoff (Reward):'''
+::* Relieved and grateful for the rescue of his prized pet, Cassian rewards the party with an '''Ornate Aconian Silk Sash''' (a luxury accessory worth '''400 ISC''' that grants a '''+1 circumstance bonus''' on social checks with high-society Aconians) and '''200 ISC''' in crisp imperial scrip.
 
 === Hangar B (Herald's Vessel - Red Herring) ===
-:* '''The Lead:''' An official Aconian vessel parked in the private docks.
-:* '''The Reality:''' The ship of Prince Jarek’s personal Herald, who is here to deliver the formal martial law declaration.
-:* '''The Payoff:''' Hacking the ship's comms logs (DC 13 [[Computer_Use|Computer Use]]) reveals the fleet's arrival schedule (granting the players 1 extra hour of in-game investigation time) and links the Herald's guards to the '''Refinery Control Room'''.
+
+<blockquote>
+Beyond the heavy magnetic airlock of Private Hangar B, the grime of the mining station gives way to a spotless, white-enameled executive berth. Resting atop magnetic landing struts is a sleek, chrome-hulled Aconian courier yacht. Its polished hull gleams under brilliant white spotlights, embossed with the gold-leaf crest of Prince Jarek’s royal house. 
+
+Two armored imperial sentries in ceremonial crimson cuirasses stand at attention at the bottom of the boarding ramp, their kinetic halberds gleaming and visor optics scanning the gantry. Through the yacht’s illuminated cockpit viewport, a rigid figure in high-collared diplomatic robes can be seen pacing back and forth, dictating into a holographic recording terminal.
+</blockquote>
+
+* '''The Situation:''' Players followed rumors from the Smuggler's Den that an ornate Aconian royal transport is docked in Hangar B, suspecting Lady Kaelen might be hiding aboard her own vessel.
+* '''The Reality:''' The vessel does not belong to Kaelen. It is the personal courier ship of '''Herald Malakor''', the formal envoy dispatched by Prince Jarek to deliver the official martial law declaration and demand the station's unconditional surrender once the fleet arrives.
+* '''The Time Cost (Time-Wasters):''' Infiltrating the private hangar, bypassing or deceiving the elite guards, and searching the ship's comms logs burns '''1.5 to 2 hours''' of precious in-game time without providing any clues to Lady Kaelen's current hideout.
+
+* '''Key NPCs:'''
+:* '''Herald Malakor (Prince Jarek’s Royal Envoy):''' A stern, haughty Aconian herald with rigid posture, wearing gold-embroidered formal heraldic robes. Completely loyal to Prince Jarek. He genuinely believes Lady Kaelen was violently abducted by Belter terrorists and views everyone on the station as mutinous conspirators.
+:* '''Imperial Honor Guards (2 Sentries):''' Disciplined, stoic Aconian palace guards in heavy armor equipped with stun-halberds and sidearms.
+
+* '''Player Options & Investigations:'''
+:* '''1. Gaining Access to the Hangar (Stealth / Social):'''
+::* The boarding ramp is secured by the two honor guards and a biometric gangway seal.
+::* A DC 13 [[Stealth]] or DC 14 [[Disable_Device|Disable Device]] check allows the party to slip across the overhead gantry walkways and bypass the executive slip's motion sensors to reach the ship's auxiliary airlock.
+::* A DC 14 [[Bluff]] or DC 14 [[Diplomacy]] check poses as station administrative liaisons sent to deliver formal diplomatic docking permits to the Herald.
+:* '''2. Confronting Herald Malakor (No Clues / Dead End):'''
+::* If the party speaks with Malakor or demands to know if Lady Kaelen is aboard:
+:::* Malakor is utterly indignant and sneers at the party: "You dare accuse the Prince's own herald of harboring the abducted Lady? She was kidnapped by you station vermin! Prince Jarek’s wrath is already upon you. I am here solely to record the formal terms of unconditional surrender. When the armada arrives, this entire rock will be placed under imperial martial governance!"
+:::* A DC 13 [[Sense_Motive]] check confirms Malakor is completely truthful—he is fiercely loyal to Prince Jarek, knows nothing of Valen or Archon Vandar’s plot, and has zero knowledge of where Kaelen actually is.
+:* '''3. Hacking the Ship’s Telemetry Logs (Computer Use — The Payoff):'''
+::* If players access the cockpit's communications terminal or hack the yacht's flight computer:
+::* A DC 14 [[Computer_Use|Computer Use]] check slices into the encrypted imperial military channel, revealing Prince Jarek’s fleet approach vectors and real-time jump countdown.
+::* '''The Payoff:''' The hacked data provides exact tactical telemetry on the fleet’s arrival time, giving the party precise knowledge of how much time they have left before the final orbital siege begins.
 
 == Utility & Flavor Locations ==
 
