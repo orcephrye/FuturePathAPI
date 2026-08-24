@@ -1,0 +1,560 @@
+{
+  "id": "hobrin_aurelius",
+  "character_id": "hobrin_aurelius",
+  "identityCard": {
+    "charName": "Hobrin Aurelius",
+    "playerName": "",
+    "species": "Aconian",
+    "charPath": "Path of Charisma (Charismatic Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Lawful Good",
+    "charSize": "Medium",
+    "gender": "Male",
+    "height": "4'5''",
+    "hairColor": "Dark Red",
+    "eyeColor": "White"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "10",
+    "modSTR": "+0",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "12",
+    "modDEX": "+1",
+    "primaryAbility_CON": false,
+    "scoreCON": "14",
+    "modCON": "+2",
+    "primaryAbility_INT": false,
+    "scoreINT": "12",
+    "modINT": "+1",
+    "primaryAbility_WIS": false,
+    "scoreWIS": "8",
+    "modWIS": "-1",
+    "primaryAbility_CHA": true,
+    "scoreCHA": "15",
+    "modCHA": "+2"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d6",
+    "maxHP": "8",
+    "tempHP": "",
+    "currentHP": "8",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+0",
+    "passivePerception": "9",
+    "inertia": "",
+    "techProfCount": 3
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "12",
+    "acTouch": "11",
+    "acFlat": "11",
+    "acArmorBonus": "1",
+    "acDexMod": "1",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "10",
+    "climbSpeed": "5",
+    "swimSpeed": "5",
+    "flySpeed": "0",
+    "combatSpeedFt": "20",
+    "combatSpeedSq": "4"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 1,
+    "armorsList": [
+      {
+        "Name": "Advanced Personal Vest",
+        "AC Bonus": "+1",
+        "DR": "",
+        "Max Dex": "8",
+        "Weight": "",
+        "Speed Penalty": "-",
+        "Bonus Attributes": "Shirt"
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 1,
+    "rangedProfCount": 1,
+    "weaponsList": [
+      {
+        "Name": "Shock Whip",
+        "Lvl": "1",
+        "Damage": "d6 + 1",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(E) M",
+        "Range": "10ft R",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": "Flexible Chain of Energy"
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 1,
+      "Key Ability": "-",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Ancient Language",
+      "Rank": 2,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Historian / Diplomat",
+    "currentWealthScore": "18,000",
+    "liquidCredits": "9",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Many Worlds: Planetary Adaption: Dark World",
+        "Description": "You gain darkvision out to a range of 60 feet. No color"
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Coordinate",
+        "Description": "The Charismatic hero has a knack for getting people to work together."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Academic",
+        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+      }
+    ]
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "",
+    "equipmentList": [
+      {
+        "Name": "Large Range Pack",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Windbraker",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Comms",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Camera",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Search and Rescue Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Range Finding Binoculars",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Directed Light Source",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Emergency Light Source",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Compass",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Galactic Map",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Rope",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations (Tech 3)",
+        "Qty": "7",
+        "Weight": "",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Purifier",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Environment Scanner +1",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Old Tombs",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": "Historical texts"
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "aconian",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": false,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}

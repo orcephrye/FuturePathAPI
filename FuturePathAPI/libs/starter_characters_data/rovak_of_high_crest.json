@@ -1,0 +1,542 @@
+{
+  "id": "rovak_of_high_crest",
+  "character_id": "rovak_of_high_crest",
+  "identityCard": {
+    "charName": "Rovak of High-Crest",
+    "playerName": "",
+    "species": "Avisari",
+    "charPath": "Path of Charisma (Charismatic Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Lawful Good",
+    "charSize": "Medium",
+    "gender": "Male",
+    "height": "5'8''",
+    "hairColor": "Blue",
+    "eyeColor": "Green"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "10",
+    "modSTR": "+0",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "14",
+    "modDEX": "+2",
+    "primaryAbility_CON": false,
+    "scoreCON": "12",
+    "modCON": "+1",
+    "primaryAbility_INT": false,
+    "scoreINT": "8",
+    "modINT": "-1",
+    "primaryAbility_WIS": false,
+    "scoreWIS": "13",
+    "modWIS": "+1",
+    "primaryAbility_CHA": true,
+    "scoreCHA": "16",
+    "modCHA": "+3"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d6",
+    "maxHP": "7",
+    "tempHP": "",
+    "currentHP": "7",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+3",
+    "passivePerception": "11",
+    "inertia": "",
+    "techProfCount": 3
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Athletics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Pilot",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "DEX",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "14",
+    "acTouch": "12",
+    "acFlat": "12",
+    "acArmorBonus": "2",
+    "acDexMod": "2",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "10",
+    "climbSpeed": "5",
+    "swimSpeed": "5",
+    "flySpeed": "40",
+    "combatSpeedFt": "20",
+    "combatSpeedSq": "4"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 1,
+    "armorsList": [
+      {
+        "Name": "Advanced Light Armor",
+        "AC Bonus": "+2",
+        "DR": "",
+        "Max Dex": "7",
+        "Weight": "",
+        "Speed Penalty": "-",
+        "Bonus Attributes": ""
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 0,
+    "rangedProfCount": 3,
+    "weaponsList": [
+      {
+        "Name": "Laser Pistol x2",
+        "Lvl": "1",
+        "Damage": "d8",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(R) T",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": "Character has two twin pistols"
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Blue Collar / Pilot",
+    "currentWealthScore": "8,750",
+    "liquidCredits": "7",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Avisari: Flight",
+        "Description": "As birds these creatures can also fly. Base 40ft when flying."
+      },
+      {
+        "Name": "Master Navigators",
+        "Description": "Gain Pilot as a Favored Skill and gain a +1 Misc bonus."
+      },
+      {
+        "Name": "Observant Eyes",
+        "Description": "Gain a +1 Misc bonus to Perception checks."
+      },
+      {
+        "Name": "Hollow Bones & Agility",
+        "Description": "Gain a +1 Misc bonus to Acrobatics checks."
+      },
+      {
+        "Name": "Bird Speech",
+        "Description": "Avisari can produce high-pitched vocalizations that are difficult for most other species to detect or discern. This allows them to communicate clearly in extremely loud environments or across vast distances where sound can travel (over 10 km)."
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Coordinate",
+        "Description": "As a standard technique action directing his or her allies and makes a Cha check (DC 10 + number of people), the hero provides any of his or her allies within 30 feet a +1 bonus on their accuracy checks and skill checks. This lasts for Cha Mod number of rounds. The hero can coordinate up to 3 party members, excluding themselves."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Leadership",
+        "Description": "Allows a Hero to roll with an advantage when assisting others in actions"
+      }
+    ]
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "",
+    "equipmentList": [
+      {
+        "Name": "Large Range Pack",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Outerwear",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Windbreaker",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Communication",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Camera (small attachable)",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Search-and-Rescue Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Directed Light Source",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Compass",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations (Tech 3)",
+        "Qty": "4",
+        "Weight": "",
+        "TL": "3",
+        "Notes": "5 day supply"
+      },
+      {
+        "Name": "Purifier (water)",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Environment Scanner +1",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "avisari",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": false,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}

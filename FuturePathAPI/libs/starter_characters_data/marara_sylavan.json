@@ -1,0 +1,592 @@
+{
+  "id": "marara_sylavan",
+  "character_id": "marara_sylavan",
+  "identityCard": {
+    "charName": "Marara Sylavan",
+    "playerName": "",
+    "species": "Volar",
+    "charPath": "Path of Wisdom (Dedicated Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Chaotic Neutral",
+    "charSize": "Medium",
+    "gender": "Asexual",
+    "height": "4'8''",
+    "hairColor": "Green",
+    "eyeColor": "Blue"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "8",
+    "modSTR": "-1",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "12",
+    "modDEX": "+1",
+    "primaryAbility_CON": false,
+    "scoreCON": "12",
+    "modCON": "+1",
+    "primaryAbility_INT": false,
+    "scoreINT": "10",
+    "modINT": "+0",
+    "primaryAbility_WIS": true,
+    "scoreWIS": "16",
+    "modWIS": "+3",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "14",
+    "modCHA": "+2"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d6",
+    "maxHP": "7",
+    "tempHP": "",
+    "currentHP": "7",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+4",
+    "passivePerception": "13",
+    "inertia": "",
+    "techProfCount": 3
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 2
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "12",
+    "acTouch": "11",
+    "acFlat": "11",
+    "acArmorBonus": "1",
+    "acDexMod": "1",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "15",
+    "climbSpeed": "10",
+    "swimSpeed": "10",
+    "flySpeed": "0",
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 1,
+    "armorsList": [
+      {
+        "Name": "Improved Personal Vest",
+        "AC Bonus": "+1",
+        "DR": "",
+        "Max Dex": "8",
+        "Weight": "",
+        "Speed Penalty": "-",
+        "Bonus Attributes": "Shirt"
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 0,
+    "rangedProfCount": 3,
+    "weaponsList": [
+      {
+        "Name": "Laser Pistol",
+        "Lvl": "1",
+        "Damage": "d8",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(T) R",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": ""
+      },
+      {
+        "Name": "Combat Knife",
+        "Lvl": "1",
+        "Damage": "d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(K) M",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": ""
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Handle Animal",
+      "Rank": 2,
+      "Key Ability": "WIS",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Botanist / Field Researcher",
+    "currentWealthScore": "14,000",
+    "liquidCredits": "8",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Common Bond",
+        "Description": "Volar can communicate using pheromones in an almost 'psychic' link"
+      },
+      {
+        "Name": "Nauseous Blooms",
+        "Description": "Once per day, a Volar can expel nauseous gases as self-defense."
+      },
+      {
+        "Name": "Rapid Re-Growth",
+        "Description": "Volar can rapidly heal. Restoring 100% of health in just one night of rest"
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Empathy",
+        "Description": "+1 Misc bonus to the Sense Motive Skill."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Attentive",
+        "Description": "The character gets a Misc +1 bonus to Study and Sense Motive skills."
+      },
+      {
+        "Name": "Handle Animal",
+        "Description": "Rank ( 2 ) = Skill Die ( 1d2 + 1 ) + Wis ( 3 ) + Misc Mod ( 0 )"
+      }
+    ]
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "",
+    "equipmentList": [
+      {
+        "Name": "Large Range Pack",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Outerwear",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Windbreaker",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Comms",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Camera (small)",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Search and Rescue Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Range Finding Binoculars",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Directed Light Source",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Emergency Light Source",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Compass",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Star Map (Local Sector)",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Rope",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations (Tech 2)",
+        "Qty": "10",
+        "Weight": "",
+        "TL": "2",
+        "Notes": "10 day supply"
+      },
+      {
+        "Name": "Purifier",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Environment Scanner +1",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Tent (Small 1 person)",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems\u2014hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "volar",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": false,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}

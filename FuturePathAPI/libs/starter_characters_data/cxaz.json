@@ -1,0 +1,555 @@
+{
+  "id": "cxaz",
+  "character_id": "cxaz",
+  "identityCard": {
+    "charName": "Cxaz",
+    "playerName": "",
+    "species": "Graylings",
+    "charPath": "Path of Intelligence (Smart Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Chaotic Good",
+    "charSize": "Small",
+    "gender": "Male",
+    "height": "3'2''",
+    "hairColor": "None",
+    "eyeColor": "Black"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "10",
+    "modSTR": "+0",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "12",
+    "modDEX": "+1",
+    "primaryAbility_CON": false,
+    "scoreCON": "10",
+    "modCON": "+0",
+    "primaryAbility_INT": true,
+    "scoreINT": "17",
+    "modINT": "+3",
+    "primaryAbility_WIS": false,
+    "scoreWIS": "15",
+    "modWIS": "+2",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d6",
+    "maxHP": "6",
+    "tempHP": "",
+    "currentHP": "6",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+3",
+    "passivePerception": "12",
+    "inertia": "",
+    "techProfCount": 2
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 2
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "14",
+    "acTouch": "12",
+    "acFlat": "13",
+    "acArmorBonus": "2",
+    "acDexMod": "1",
+    "acSizeMod": "+1",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "15",
+    "climbSpeed": "15",
+    "swimSpeed": "15",
+    "flySpeed": "0",
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 1,
+    "armorsList": [
+      {
+        "Name": "Advanced Light Armor",
+        "AC Bonus": "+2",
+        "DR": "",
+        "Max Dex": "7",
+        "Weight": "",
+        "Speed Penalty": "-",
+        "Bonus Attributes": "N/A"
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 0,
+    "rangedProfCount": 2,
+    "weaponsList": [
+      {
+        "Name": "Laser Pistol",
+        "Lvl": "1",
+        "Damage": "d8",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(T) R",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": ""
+      },
+      {
+        "Name": "Combat Knife",
+        "Lvl": "1",
+        "Damage": "d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(K) M",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": ""
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Engineer",
+    "currentWealthScore": "11,250",
+    "liquidCredits": "9",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Grayling Telecom Link",
+        "Description": "Graylings possess a direct mental affinity for technology and communications."
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Research",
+        "Description": "Gain a +1 Misc bonus to any Intelligence-based Skill."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Studious",
+        "Description": "Gain Misc +1 bonus to the Study skill and one Knowledge skill"
+      },
+      {
+        "Name": "Jerry Rigging",
+        "Description": "You can repair items without material costs just once."
+      }
+    ]
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "",
+    "equipmentList": [
+      {
+        "Name": "Contractor's Field Bag",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Secure Wallet",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit Casual",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Uniform",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Windbraker",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Comms",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Electrical Tool Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Mechanical Tool Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Directed Light Source",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Environment Scanner +1",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Duct Tape",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Duracable",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Young adult male engineer. Growing up on the arid homeworld of Cxazshngs, Cxaz was expected to follow family tradition and enter the prestigious cloning research guilds of Curvilinea Prime. However, he possessed a restless, hands-on mechanical curiosity that theoretical labs could never satisfy. Preferring grease, wire-splicing, and field improvisations over pristine academic suites, he boarded an outward-bound freighter to explore the wider galaxy. Inquisitive, quick-thinking, and eager to tinker with foreign alien technology, Cxaz is a gifted technician who views every broken starship system as an exciting puzzle. Standing just 3'2\" tall with a light frame, he has smooth grey skin, prominent dark eyes, and intricate, brightly colored geometric tattoos dyed into his scalp, neck, and arms\u2014a traditional practice of his people that he wears with pride."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "1",
+      "Profession": "Smart Hero",
+      "DC": "13",
+      "Learned": "1",
+      "Uses": "1",
+      "Used": "0",
+      "Techniques": [
+        {
+          "Name": "Missive (Telepath)",
+          "Range": "Close",
+          "Effect": "Send a short one-way telepathic message to a single subject"
+        }
+      ]
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "1",
+        "type": "Telepath",
+        "dc": "13",
+        "learned": "1",
+        "uses": "1",
+        "used": "0",
+        "techniquesList": [
+          {
+            "Name": "Missive",
+            "Range": "Close",
+            "Effect": "Send a short one-way telepathic message to a single subject"
+          }
+        ]
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "grayling",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": true,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": true,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}

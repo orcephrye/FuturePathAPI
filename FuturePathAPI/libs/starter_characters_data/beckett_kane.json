@@ -1,0 +1,552 @@
+{
+  "id": "beckett_kane",
+  "character_id": "beckett_kane",
+  "identityCard": {
+    "charName": "Beckett Kane",
+    "playerName": "",
+    "species": "Human",
+    "charPath": "Path of Strength (Strong Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Lawful Neutral",
+    "charSize": "Medium",
+    "gender": "Male",
+    "height": "5'11''",
+    "hairColor": "Brown",
+    "eyeColor": "Hazel"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": true,
+    "scoreSTR": "16",
+    "modSTR": "+3",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "12",
+    "modDEX": "+1",
+    "primaryAbility_CON": false,
+    "scoreCON": "14",
+    "modCON": "+2",
+    "primaryAbility_INT": false,
+    "scoreINT": "10",
+    "modINT": "+0",
+    "primaryAbility_WIS": false,
+    "scoreWIS": "12",
+    "modWIS": "+1",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d8",
+    "maxHP": "10",
+    "tempHP": "",
+    "currentHP": "10",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+2",
+    "passivePerception": "9",
+    "inertia": "",
+    "techProfCount": 1
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "13",
+    "acTouch": "11",
+    "acFlat": "12",
+    "acArmorBonus": "2",
+    "acDexMod": "1",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "2",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "15",
+    "climbSpeed": "10",
+    "swimSpeed": "10",
+    "flySpeed": "0",
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 2,
+    "armorsList": [
+      {
+        "Name": "Kevlar Vest",
+        "AC Bonus": "+2",
+        "DR": "2K",
+        "Max Dex": "7",
+        "Weight": "10",
+        "Speed Penalty": "-",
+        "Bonus Attributes": ""
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 1,
+    "rangedProfCount": 3,
+    "weaponsList": [
+      {
+        "Name": "Assault Weapon",
+        "Lvl": "3",
+        "Damage": "1d10",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2",
+        "Type": "K",
+        "Range": "300",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": "Enhanced Combat Options (Overrun)"
+      },
+      {
+        "Name": "Side Arm",
+        "Lvl": "3",
+        "Damage": "1d8+1",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/19-20",
+        "Type": "K",
+        "Range": "300",
+        "isMelee": false,
+        "Ammo": "7",
+        "Notes": ""
+      },
+      {
+        "Name": "Combat Knife",
+        "Lvl": "1",
+        "Damage": "1d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2",
+        "Type": "K",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": ""
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Technology)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Military",
+    "currentWealthScore": "10,759",
+    "liquidCredits": "10",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Diversity/Bonus Feat/Bonus Skill",
+        "Description": "Relocate any one Ability Point and declare any one Skill a Favored Skill/Gain an additional Bonus Feat (Misc Only)/Gain a Bonus Skill Point"
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Extreme Effort",
+        "Description": "Requires a standard action (without bonus action) and grants an advantage bonus on the check. The check can be for anything. You must decide to use this ability before making the check. Only once per day."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Point Blank Shot",
+        "Description": "Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft."
+      },
+      {
+        "Name": "Confident",
+        "Description": "Misc +1 Bonus to the Diplomacy and Bluff skill"
+      },
+      {
+        "Name": "Track",
+        "Description": "Add Advantage Die too Survival checks when tracking"
+      }
+    ]
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "50",
+    "equipmentList": [
+      {
+        "Name": "Fatigues",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Range Pack",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
+        "Notes": "A large backpack with extra external pockets and hooks for hanging"
+      },
+      {
+        "Name": "Remote Comms",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Binoculars",
+        "Qty": "1",
+        "Weight": "2",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations",
+        "Qty": "5",
+        "Weight": "2",
+        "TL": "1",
+        "Notes": "Small, simple, caring case for sealed food"
+      },
+      {
+        "Name": "Rope",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
+        "Notes": "50ft in length"
+      },
+      {
+        "Name": "Portable Stove",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Tent",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
+        "Notes": "Big enough for a single Medium sized person"
+      },
+      {
+        "Name": "Multipurpose Tool",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "1",
+        "Notes": "Like a 'swiss army knife'"
+      },
+      {
+        "Name": "Healing Concoction Syringe",
+        "Qty": "5",
+        "Weight": "1",
+        "TL": "1",
+        "Notes": "1d6 of healing"
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm—silent reminders of a war nobody won."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "human",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": false,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}

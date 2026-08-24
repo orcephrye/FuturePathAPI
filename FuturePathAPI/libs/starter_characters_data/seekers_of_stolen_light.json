@@ -1,0 +1,551 @@
+{
+  "id": "seekers_of_stolen_light",
+  "character_id": "seekers_of_stolen_light",
+  "identityCard": {
+    "charName": "Seekers of Stolen Light",
+    "playerName": "",
+    "species": "Chronodes",
+    "charPath": "Path of Intelligence (Smart Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Lawful Evil",
+    "charSize": "Tiny",
+    "gender": "Collective / Flock",
+    "height": "1'4''",
+    "hairColor": "Dark",
+    "eyeColor": "Black"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "7",
+    "modSTR": "-2",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "18",
+    "modDEX": "+4",
+    "primaryAbility_CON": false,
+    "scoreCON": "11",
+    "modCON": "+0",
+    "primaryAbility_INT": true,
+    "scoreINT": "15",
+    "modINT": "+2",
+    "primaryAbility_WIS": false,
+    "scoreWIS": "13",
+    "modWIS": "+1",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d6",
+    "maxHP": "6",
+    "tempHP": "",
+    "currentHP": "6",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+5",
+    "passivePerception": "11",
+    "inertia": "",
+    "techProfCount": 3
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "22",
+    "acTouch": "14",
+    "acFlat": "18",
+    "acArmorBonus": "0",
+    "acDexMod": "4",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "8",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "20",
+    "climbSpeed": "5",
+    "swimSpeed": "5",
+    "flySpeed": "40",
+    "combatSpeedFt": "40",
+    "combatSpeedSq": "8"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 0,
+    "armorsList": []
+  },
+  "weaponsCard": {
+    "meleeProfCount": 1,
+    "rangedProfCount": 2,
+    "weaponsList": [
+      {
+        "Name": "Natural Swarm Attack",
+        "Lvl": "1",
+        "Damage": "1d6+2+DEX",
+        "Accuracy": "+4",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "K",
+        "Range": "10ft",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": "Finesse (Dex) Melee attack 10ft reach"
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Demolitions",
+      "Rank": 2,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Technician",
+    "currentWealthScore": "11,500",
+    "liquidCredits": "9",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Swarm",
+        "Description": "This is a swarm of linked minds of birds. Cannot benefit from armor, or use weapons. All Area of Effect attacks hit the Swarm as if it was a 'Touch' attack."
+      },
+      {
+        "Name": "Natural Swarm Attack",
+        "Description": "a Finesse (Dex) Melee attack 10ft reach, 1d6 + 2 + Dex Mod"
+      },
+      {
+        "Name": "Hive Mind",
+        "Description": "The Chronodes are immune to mind affects and Confused condition."
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Research",
+        "Description": "Gain a +1 Misc bonus to any Intelligence-based Skill."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Natural Cyborgs",
+        "Description": "Automatically become a Cyborg Level 1 with a Tech 3 Frame."
+      },
+      {
+        "Name": "Educated",
+        "Description": "+1 Misc Bonus to two Knowledge skills."
+      },
+      {
+        "Name": "Demolitions",
+        "Description": "Gain the Demolitions Skill"
+      }
+    ]
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "1",
+    "frameworkTechLevel": "3",
+    "frameworkMasterworked": "No",
+    "power": "3",
+    "slots": "2",
+    "implantsList": [
+      {
+        "Name": "Supernumerary Limbs",
+        "Description": "One of the Chronodes has extra limbs/claws for manipulation."
+      },
+      {
+        "Name": "Stabilizer",
+        "Description": "Automatically stabilizes the Chronodes and restores 1d6 of health. Happens once then must be reloaded with pharma."
+      },
+      {
+        "Name": "Subcutaneous Communications",
+        "Description": "Can communicate wirelessly to devices through their minds."
+      }
+    ],
+    "drawbacksList": []
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "",
+    "equipmentList": [
+      {
+        "Name": "Tiny Range Pack",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit",
+        "Qty": "5",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Outerwear",
+        "Qty": "5",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Communications",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Camera",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Search-and-Rescue Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations (Tech 3)",
+        "Qty": "4",
+        "Weight": "",
+        "TL": "3",
+        "Notes": "30 Portions"
+      },
+      {
+        "Name": "Purifier",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Demolitions Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Electrical Tool Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Chemist Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      },
+      {
+        "Name": "Mechanical Tool Kit",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "",
+        "Notes": ""
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core\u2014a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "chronodes",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": false,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": true,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}

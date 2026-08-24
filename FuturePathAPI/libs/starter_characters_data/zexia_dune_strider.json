@@ -1,0 +1,554 @@
+{
+  "id": "zexia_dune_strider",
+  "character_id": "zexia_dune_strider",
+  "identityCard": {
+    "charName": "Zexia Dune-Strider",
+    "playerName": "",
+    "species": "Lepidonain",
+    "charPath": "Path of Dexterity (Fast Hero)",
+    "pathLevel": "1",
+    "classList": "",
+    "alignment": "Lawful Evil",
+    "charSize": "Medium",
+    "gender": "Female",
+    "height": "6'2''",
+    "hairColor": "None",
+    "eyeColor": "Green"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "15",
+    "modSTR": "+2",
+    "primaryAbility_DEX": true,
+    "scoreDEX": "14",
+    "modDEX": "+2",
+    "primaryAbility_CON": false,
+    "scoreCON": "14",
+    "modCON": "+2",
+    "primaryAbility_INT": false,
+    "scoreINT": "12",
+    "modINT": "+1",
+    "primaryAbility_WIS": false,
+    "scoreWIS": "10",
+    "modWIS": "+0",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d8",
+    "maxHP": "10",
+    "tempHP": "",
+    "currentHP": "10",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "1d2",
+    "extraDamage": "0",
+    "initiative": "+2",
+    "passivePerception": "10",
+    "inertia": "",
+    "techProfCount": 3
+  },
+  "coreSkills": {
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "STR",
+        "MiscMod": 2
+      },
+      {
+        "Name": "Bluff",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": false,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "14",
+    "acTouch": "12",
+    "acFlat": "12",
+    "acArmorBonus": "2",
+    "acDexMod": "2",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "20",
+    "climbSpeed": "10",
+    "swimSpeed": "19",
+    "flySpeed": "0",
+    "combatSpeedFt": "40",
+    "combatSpeedSq": "8"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 1,
+    "armorsList": [
+      {
+        "Name": "Improved Light Armor",
+        "AC Bonus": "+2",
+        "DR": "",
+        "Max Dex": "7",
+        "Weight": "",
+        "Speed Penalty": "-",
+        "Bonus Attributes": ""
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 2,
+    "rangedProfCount": 2,
+    "weaponsList": [
+      {
+        "Name": "Natural Attack Claws (x2)",
+        "Lvl": "1",
+        "Damage": "d4/d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(K) M",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": "Natural Attack"
+      },
+      {
+        "Name": "Powered Sword",
+        "Lvl": "1",
+        "Damage": "d8 + 1",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x3/20",
+        "Type": "(K, E) M",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": "Energy Weapon (Kinetic and Electric)"
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Warrior / Scion",
+    "currentWealthScore": "24,000",
+    "liquidCredits": "20",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Strength against Thermal",
+        "Description": "Heat damage resistance"
+      },
+      {
+        "Name": "Vulnerable against Thermal",
+        "Description": "Cold damage vulnerability"
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": [
+      {
+        "Name": "Increased Speed",
+        "Description": "The Fast hero's base speed increases by 5 feet."
+      }
+    ]
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Athletic",
+        "Description": "Misc +2 bonus to the Athletic skill."
+      },
+      {
+        "Name": "Akimbo Specialist",
+        "Description": "The character can now gain an advantage with off-hand weapons."
+      }
+    ]
+  },
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "",
+    "equipmentList": [
+      {
+        "Name": "Fatigues",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Outfit Formal",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Outfit Casual",
+        "Qty": "3",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Outfit Uniform",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Ranged Pack",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Comms",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Binoculars",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations",
+        "Qty": "5",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Rope",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Portable Stove",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Syringe (Healing Con 1d8)",
+        "Qty": "5",
+        "Weight": "",
+        "TL": "1",
+        "Notes": "1d8 healing"
+      },
+      {
+        "Name": "Multipurpose Tool",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Tent",
+        "Qty": "1",
+        "Weight": "",
+        "TL": "1",
+        "Notes": ""
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult female Lepidonain. A middle-aged woman from Lepidonain's homeworld of Lepidon Prime. Her family name, the Dune-Striders, is an ancient one. Her family, however, has fallen out of favor as the Lepidonain Empire struggles in the modern era. She aims to fix both these issues and believes the solution must come from somewhere out in the cosmos. She looks like a typical female Lepidonain but with vivid green eyes that show deep thinking and a vicious fighter."
+  },
+  "professionsCard": [],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "lepidonain",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": false,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": false
+  }
+}
