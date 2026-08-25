@@ -6,7 +6,11 @@
 # Date: 08/07/2026
 # Description: Pydantic schemas and database seeding for d20 FuturePath starter characters.
 
+import glob
+import json
 import logging
+import os
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -244,261 +248,41 @@ class CharacterSheetSchema(BaseModel):
 
 
 # ==============================================================================
-# Official Starter Characters Dataset Built via Pydantic Schemas
+# Dynamic Loader & Official Starter Characters Dataset
 # ==============================================================================
 
-OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = [
-    CharacterSheetSchema.model_validate({
-        "id": "beckett_kane",
-        "character_id": "beckett_kane",
-        "identityCard": {
-            "charName": "Beckett Kane",
-            "playerName": "Starter Character",
-            "species": "Human",
-            "charPath": "Path of Strength (Strong Hero)",
-            "pathLevel": 1,
-            "classList": "Space Marine (1)",
-            "alignment": "Mercenary Contractor",
-            "charSize": "Medium",
-            "gender": "Male",
-            "height": "6'1\"",
-            "hairColor": "Brown",
-            "eyeColor": "Hazel"
-        },
-        "abilityScoresCard": {
-            "scoreSTR": 16, "modSTR": "+3", "primaryAbility_STR": True,
-            "scoreDEX": 13, "modDEX": "+1",
-            "scoreCON": 14, "modCON": "+2",
-            "scoreINT": 10, "modINT": "+0",
-            "scoreWIS": 12, "modWIS": "+1",
-            "scoreCHA": 8,  "modCHA": "-1"
-        },
-        "healthInjuryCard": {
-            "hitDie": "d10",
-            "maxHP": 12,
-            "currentHP": 12,
-            "tempHP": 0,
-            "nonlethalHP": 0
-        },
-        "attributesCard": {
-            "advantageDie": "d4",
-            "initiative": "+1",
-            "inertia": 10,
-            "extraDamage": 0,
-            "passivePerception": 9,
-            "techProfCount": 1
-        },
-        "coreSkills": {
-            "skillsPerLevel": "3",
-            "unusedSkillPoints": "0",
-            "skillsList": [
-                {"Name": "Athletics", "Favored": True, "Rank": 1, "Key Ability": "STR", "MiscMod": 0},
-                {"Name": "Intimidate", "Favored": False, "Rank": 1, "Key Ability": "CHA", "MiscMod": 0},
-                {"Name": "Survival", "Favored": False, "Rank": 1, "Key Ability": "WIS", "MiscMod": 0}
-            ]
-        },
-        "speciesTraitsCard": {
-            "speciesTraitsList": [
-                {"Name": "Adaptable", "Description": "Gain +1 extra skill point at level 1 and +1 bonus feat."}
-            ]
-        },
-        "pathTalentsCard": {
-            "pathTalentsList": [
-                {"Name": "Extreme Effort", "Description": "+2 bonus on physical checks involving brute force."}
-            ]
-        },
-        "featsCard": {
-            "featsList": [
-                {"Name": "Personal Firearms Proficiency", "Description": "Proficient with personal ranged energy/ballistic firearms."},
-                {"Name": "Armor Proficiency (Medium)", "Description": "No armor penalty to physical defense checks when wearing medium armor."}
-            ]
-        },
-        "armorDefensesCard": {
-            "armorProfCount": 2,
-            "armorsList": [
-                {"Name": "Tactical Marine Vest", "AC Bonus": "+4", "Max Dex": "+3", "Speed Penalty": "-5 ft", "Bonus Attributes": "Ballistic & Energy resistance"}
-            ]
-        },
-        "weaponsCard": {
-            "meleeProfCount": 2,
-            "rangedProfCount": 2,
-            "weaponsList": [
-                {"Name": "Heavy Pulse Rifle", "Damage": "2d8", "Accuracy": "+4", "AP": "2", "Critical": "20/x2", "Type": "Energy", "Range": "80 ft", "Ammo": "30", "Notes": "Standard issue PMC rifle"},
-                {"Name": "Tactical Combat Knife", "Damage": "1d4+3", "Accuracy": "+4", "AP": "0", "Critical": "19-20/x2", "Type": "Piercing", "Range": "Melee", "Ammo": "-", "Notes": "Titanium blade"}
-            ]
-        },
-        "equipmentCard": {
-            "itemCraftProfCount": 1,
-            "totalGearWeight": "24",
-            "equipmentList": [
-                {"Name": "Field Medkit", "Qty": "1", "Weight": "3", "TL": "5", "Notes": "Restores 1d8 HP"},
-                {"Name": "Comlink (Earbud)", "Qty": "1", "Weight": "0.1", "TL": "6", "Notes": "Encrypted long range"},
-                {"Name": "Rations (5 days)", "Qty": "5", "Weight": "5", "TL": "4", "Notes": "Standard military paste"}
-            ]
-        },
-        "UI_Layout": {
-            "theme": "cosmic-dark",
-            "layoutLocked": True
-        }
-    }),
-    CharacterSheetSchema.model_validate({
-        "id": "marara_sylavan",
-        "character_id": "marara_sylavan",
-        "identityCard": {
-            "charName": "Marara Sylavan",
-            "playerName": "Starter Character",
-            "species": "Volar",
-            "charPath": "Path of Wisdom (Dedicated Hero)",
-            "pathLevel": 1,
-            "classList": "Xenophile (1)",
-            "alignment": "Botanical Institute / Field Researcher",
-            "charSize": "Medium",
-            "gender": "Female",
-            "height": "5'7\"",
-            "hairColor": "Leaf Green",
-            "eyeColor": "Sea Blue"
-        },
-        "abilityScoresCard": {
-            "scoreSTR": 10, "modSTR": "+0",
-            "scoreDEX": 12, "modDEX": "+1",
-            "scoreCON": 12, "modCON": "+1",
-            "scoreINT": 14, "modINT": "+2",
-            "scoreWIS": 16, "modWIS": "+3", "primaryAbility_WIS": True,
-            "scoreCHA": 13, "modCHA": "+1"
-        },
-        "healthInjuryCard": {
-            "hitDie": "d8",
-            "maxHP": 9,
-            "currentHP": 9,
-            "tempHP": 0,
-            "nonlethalHP": 0
-        },
-        "attributesCard": {
-            "advantageDie": "d4",
-            "initiative": "+1",
-            "inertia": 10,
-            "extraDamage": 0,
-            "passivePerception": 11,
-            "techProfCount": 2
-        },
-        "coreSkills": {
-            "skillsPerLevel": "4",
-            "unusedSkillPoints": "0",
-            "skillsList": [
-                {"Name": "Perception", "Favored": True, "Rank": 1, "Key Ability": "WIS", "MiscMod": 0},
-                {"Name": "Treat Injury", "Favored": True, "Rank": 1, "Key Ability": "WIS", "MiscMod": 0},
-                {"Name": "Knowledge (Earth & Life Sciences)", "Favored": False, "Rank": 1, "Key Ability": "INT", "MiscMod": 0},
-                {"Name": "Survival", "Favored": False, "Rank": 1, "Key Ability": "WIS", "MiscMod": 0}
-            ]
-        },
-        "speciesTraitsCard": {
-            "speciesTraitsList": [
-                {"Name": "Photosynthetic Skin", "Description": "Regenerates nonlethal damage faster under natural light."}
-            ]
-        },
-        "pathTalentsCard": {
-            "pathTalentsList": [
-                {"Name": "Awareness", "Description": "Gain intuition and quick reaction to environmental hazards."}
-            ]
-        },
-        "featsCard": {
-            "featsList": [
-                {"Name": "Xenobiology Specialist", "Description": "+2 bonus on Knowledge checks regarding alien lifeforms."}
-            ]
-        },
-        "equipmentCard": {
-            "itemCraftProfCount": 1,
-            "totalGearWeight": "15",
-            "equipmentList": [
-                {"Name": "Bioscanner datapad", "Qty": "1", "Weight": "2", "TL": "6", "Notes": "Analyzes flora and fauna DNA"},
-                {"Name": "Field Xenology Kit", "Qty": "1", "Weight": "5", "TL": "5", "Notes": "Specimen containers & reagents"}
-            ]
-        },
-        "UI_Layout": {
-            "theme": "emerald-matrix",
-            "layoutLocked": True
-        }
-    }),
-    CharacterSheetSchema.model_validate({
-        "id": "cxaz_grayling",
-        "character_id": "cxaz_grayling",
-        "identityCard": {
-            "charName": "Cxaz",
-            "playerName": "Starter Character",
-            "species": "Grayling",
-            "charPath": "Path of Intelligence (Smart Hero)",
-            "pathLevel": 1,
-            "classList": "Engineer (1)",
-            "alignment": "Independent Mechanic",
-            "charSize": "Small",
-            "gender": "Male",
-            "height": "3'2\"",
-            "hairColor": "None (Geometric Tattoos)",
-            "eyeColor": "Dark"
-        },
-        "abilityScoresCard": {
-            "scoreSTR": 8,  "modSTR": "-1",
-            "scoreDEX": 15, "modDEX": "+2",
-            "scoreCON": 10, "modCON": "+0",
-            "scoreINT": 17, "modINT": "+3", "primaryAbility_INT": True,
-            "scoreWIS": 12, "modWIS": "+1",
-            "scoreCHA": 10, "modCHA": "+0"
-        },
-        "healthInjuryCard": {
-            "hitDie": "d6",
-            "maxHP": 6,
-            "currentHP": 6,
-            "tempHP": 0,
-            "nonlethalHP": 0
-        },
-        "attributesCard": {
-            "advantageDie": "d4",
-            "initiative": "+2",
-            "inertia": 10,
-            "extraDamage": 0,
-            "passivePerception": 9,
-            "techProfCount": 4
-        },
-        "coreSkills": {
-            "skillsPerLevel": "6",
-            "unusedSkillPoints": "0",
-            "skillsList": [
-                {"Name": "Computer Use", "Favored": True, "Rank": 1, "Key Ability": "INT", "MiscMod": 0},
-                {"Name": "Craft (Mechanical)", "Favored": True, "Rank": 1, "Key Ability": "INT", "MiscMod": 0},
-                {"Name": "Craft (Electronic)", "Favored": True, "Rank": 1, "Key Ability": "INT", "MiscMod": 0},
-                {"Name": "Disable Device", "Favored": False, "Rank": 1, "Key Ability": "INT", "MiscMod": 0},
-                {"Name": "Repair", "Favored": True, "Rank": 1, "Key Ability": "INT", "MiscMod": 0}
-            ]
-        },
-        "speciesTraitsCard": {
-            "speciesTraitsList": [
-                {"Name": "Grayling Telecom Link", "Description": "Can interface directly with wireless low-bandwidth networks."}
-            ]
-        },
-        "pathTalentsCard": {
-            "pathTalentsList": [
-                {"Name": "Savant (Repair)", "Description": "Add bonus die on all complex electrical and mechanical repair tasks."}
-            ]
-        },
-        "featsCard": {
-            "featsList": [
-                {"Name": "Gearhead", "Description": "+2 bonus on Repair and Disable Device checks."}
-            ]
-        },
-        "equipmentCard": {
-            "itemCraftProfCount": 2,
-            "totalGearWeight": "12",
-            "equipmentList": [
-                {"Name": "Omni-Tool Rig", "Qty": "1", "Weight": "4", "TL": "6", "Notes": "Splicer and laser cutter"},
-                {"Name": "Spare Circuitry & Wire Kit", "Qty": "1", "Weight": "3", "TL": "5", "Notes": "Components for field repairs"}
-            ]
-        },
-        "UI_Layout": {
-            "theme": "viper",
-            "layoutLocked": True
-        }
-    })
-]
+def load_starter_characters_from_disk(data_dir: Optional[str] = None) -> List[CharacterSheetSchema]:
+    """
+    Gathers all '*.json' files in the 'FuturePathAPI/libs/starter_characters_data/' directory,
+    ensures 'id' and 'character_id' are set to the file name stem, validates each character
+    with CharacterSheetSchema, and returns the list of validated character sheets.
+    """
+    if data_dir is None:
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "starter_characters_data")
+
+    characters: List[CharacterSheetSchema] = []
+    json_pattern = os.path.join(data_dir, "*.json")
+    json_files = sorted(glob.glob(json_pattern))
+
+    for json_file in json_files:
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                raw_data = json.load(f)
+
+            # Assign id and character_id from filename (e.g. beckett_kane.json -> 'beckett_kane')
+            char_id = Path(json_file).stem
+            raw_data["id"] = char_id
+            raw_data["character_id"] = char_id
+
+            validated = CharacterSheetSchema.model_validate(raw_data)
+            characters.append(validated)
+        except Exception as e:
+            log.error(f"Error loading starter character from '{json_file}': {e}")
+
+    return characters
+
+
+OFFICIAL_STARTER_CHARACTERS: List[CharacterSheetSchema] = load_starter_characters_from_disk()
 
 
 # ==============================================================================
@@ -521,7 +305,7 @@ def get_starter_characters_db():
     return _db_instance
 
 
-def init_starter_characters_table(db_conn=None):
+def init_starter_characters_table(db_conn=None, force_reload: bool = False):
     """
     Validates official starter characters using Pydantic and seeds the 'starter_characters' collection.
     """
@@ -532,7 +316,12 @@ def init_starter_characters_table(db_conn=None):
 
     try:
         existing = list(db_conn.find(collection="starter_characters"))
-        if not existing:
+        if not existing or force_reload or len(existing) != len(OFFICIAL_STARTER_CHARACTERS):
+            if existing:
+                try:
+                    db_conn.drop(collection="starter_characters")
+                except Exception:
+                    pass
             # Validate every model instance and serialize to dict using dump
             validated_data = [
                 char_model.model_dump(by_alias=True)
@@ -557,8 +346,8 @@ def get_all_starter_characters(db_conn=None) -> List[Dict[str, Any]]:
 
     try:
         records = list(db_conn.find(collection="starter_characters"))
-        if not records:
-            init_starter_characters_table(db_conn)
+        if not records or len(records) != len(OFFICIAL_STARTER_CHARACTERS):
+            init_starter_characters_table(db_conn, force_reload=True)
             records = list(db_conn.find(collection="starter_characters"))
 
         # Clean out internal MongoDB/TinyDB IDs if needed and validate

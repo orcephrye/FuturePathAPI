@@ -1,6 +1,4 @@
 {
-  "id": "rovak_of_high_crest",
-  "character_id": "rovak_of_high_crest",
   "identityCard": {
     "charName": "Rovak of High-Crest",
     "playerName": "",
@@ -43,10 +41,10 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+3",
-    "passivePerception": "11",
+    "passivePerception": "9",
     "inertia": "",
     "techProfCount": 3
   },
@@ -70,7 +68,7 @@
       },
       {
         "Name": "Bluff",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 0
@@ -147,7 +145,7 @@
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -271,25 +269,38 @@
         "AC Bonus": "+2",
         "DR": "",
         "Max Dex": "7",
-        "Weight": "",
+        "Weight": "10",
         "Speed Penalty": "-",
         "Bonus Attributes": ""
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 0,
+    "meleeProfCount": 1,
     "rangedProfCount": 3,
     "weaponsList": [
       {
-        "Name": "Laser Pistol x2",
+        "Name": "Laser Pistol",
         "Lvl": "1",
         "Damage": "d8",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(R) T",
-        "Range": "100ft",
+        "Type": "T",
+        "Range": "100",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": "Character has two twin pistols"
+      },
+      {
+        "Name": "Laser Pistol",
+        "Lvl": "1",
+        "Damage": "d8",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "",
+        "Range": "100",
         "isMelee": false,
         "Ammo": "6",
         "Notes": "Character has two twin pistols"
@@ -298,8 +309,20 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Demolitions",
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
@@ -311,7 +334,7 @@
     }
   ],
   "wealthXpCard": {
-    "occupation": "Blue Collar / Pilot",
+    "occupation": "Blue Collar",
     "currentWealthScore": "8,750",
     "liquidCredits": "7",
     "xpCurrent": "0",
@@ -357,100 +380,97 @@
       }
     ]
   },
+  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "",
+    "totalGearWeight": "37",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
         "Qty": "3",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Outerwear",
         "Qty": "3",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Windbreaker",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Remote Communication",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Camera (small attachable)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Search-and-Rescue Kit",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Directed Light Source",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Rations (Tech 3)",
         "Qty": "4",
-        "Weight": "",
+        "Weight": "1",
         "TL": "3",
         "Notes": "5 day supply"
       },
       {
         "Name": "Purifier (water)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Environment Scanner +1",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
-  },
-  "professionsCard": [],
   "techniquesCard": [
     {
       "Level": "0",
@@ -477,6 +497,29 @@
     "implantsList": [],
     "drawbacksList": []
   },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
+  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -501,26 +544,6 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -537,6 +560,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }

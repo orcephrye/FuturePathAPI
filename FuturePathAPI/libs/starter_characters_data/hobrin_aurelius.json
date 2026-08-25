@@ -1,6 +1,4 @@
 {
-  "id": "hobrin_aurelius",
-  "character_id": "hobrin_aurelius",
   "identityCard": {
     "charName": "Hobrin Aurelius",
     "playerName": "",
@@ -43,10 +41,10 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+0",
-    "passivePerception": "9",
+    "passivePerception": "7",
     "inertia": "",
     "techProfCount": 3
   },
@@ -224,7 +222,7 @@
       },
       {
         "Name": "Study",
-        "Favored": true,
+        "Favored": false,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -264,7 +262,7 @@
     "combatSpeedSq": "4"
   },
   "armorDefensesCard": {
-    "armorProfCount": 1,
+    "armorProfCount": 2,
     "armorsList": [
       {
         "Name": "Advanced Personal Vest",
@@ -279,7 +277,7 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 1,
+    "rangedProfCount": 3,
     "weaponsList": [
       {
         "Name": "Shock Whip",
@@ -298,9 +296,15 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
       "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
@@ -317,17 +321,17 @@
     }
   ],
   "wealthXpCard": {
-    "occupation": "Historian / Diplomat",
-    "currentWealthScore": "18,000",
-    "liquidCredits": "9",
+    "occupation": "Academic",
+    "currentWealthScore": "10,000",
+    "liquidCredits": "7",
     "xpCurrent": "0",
     "xpNextLevel": "2000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds: Planetary Adaption: Dark World",
-        "Description": "You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Many Worlds",
+        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
       }
     ]
   },
@@ -347,128 +351,118 @@
       }
     ]
   },
+  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "",
+    "totalGearWeight": "35",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
         "Qty": "3",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Windbraker",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Camera",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Search and Rescue Kit",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Range Finding Binoculars",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Directed Light Source",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Emergency Light Source",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Galactic Map",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Rope",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Rations (Tech 3)",
         "Qty": "7",
-        "Weight": "",
+        "Weight": "1",
         "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Purifier",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Environment Scanner +1",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Old Tombs",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "3",
         "Notes": "Historical texts"
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
-  },
-  "professionsCard": [],
   "techniquesCard": [
     {
       "Level": "0",
@@ -495,6 +489,29 @@
     "implantsList": [],
     "drawbacksList": []
   },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -519,26 +536,6 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -555,6 +552,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }

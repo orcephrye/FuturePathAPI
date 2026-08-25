@@ -1,11 +1,9 @@
 {
-  "id": "kessa_steeltooth",
-  "character_id": "kessa_steeltooth",
   "identityCard": {
     "charName": "Kessa Steeltooth",
     "playerName": "",
     "species": "Murids",
-    "charPath": "Path of Dexterity (The Freelancer)",
+    "charPath": "Path of No Path (The Freelancer)",
     "pathLevel": "1",
     "classList": "Freelancer (1)",
     "alignment": "Chaotic Neutral",
@@ -19,7 +17,7 @@
     "primaryAbility_STR": false,
     "scoreSTR": "8",
     "modSTR": "-1",
-    "primaryAbility_DEX": true,
+    "primaryAbility_DEX": false,
     "scoreDEX": "14",
     "modDEX": "+2",
     "primaryAbility_CON": false,
@@ -43,15 +41,15 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+1",
-    "passivePerception": "9",
+    "passivePerception": "7",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
-    "skillsPerLevel": "1",
+    "skillsPerLevel": "5",
     "unusedSkillPoints": "",
     "skillsList": [
       {
@@ -112,7 +110,7 @@
       },
       {
         "Name": "Craft (Structural)",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -189,8 +187,8 @@
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -232,7 +230,7 @@
       {
         "Name": "Survival",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 0,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
@@ -264,21 +262,21 @@
     "combatSpeedSq": "4"
   },
   "armorDefensesCard": {
-    "armorProfCount": 1,
+    "armorProfCount": 2,
     "armorsList": [
       {
         "Name": "Improved Light Armor",
         "AC Bonus": "+2",
         "DR": "",
         "Max Dex": "7",
-        "Weight": "",
+        "Weight": "10",
         "Speed Penalty": "-",
         "Bonus Attributes": ""
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 0,
+    "meleeProfCount": 1,
     "rangedProfCount": 3,
     "weaponsList": [
       {
@@ -298,9 +296,15 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
       "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
@@ -311,7 +315,7 @@
     }
   ],
   "wealthXpCard": {
-    "occupation": "Freelancer / Scavenger",
+    "occupation": "Jobless",
     "currentWealthScore": "250",
     "liquidCredits": "0",
     "xpCurrent": "0",
@@ -348,65 +352,62 @@
       }
     ]
   },
+  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "",
+    "totalGearWeight": "23",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
         "Qty": "2",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Range Finding Binoculars",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Rations (Tech 2)",
         "Qty": "2",
-        "Weight": "",
+        "Weight": "1",
         "TL": "2",
         "Notes": "5 Portions"
       },
       {
         "Name": "Purifier",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears."
-  },
-  "professionsCard": [],
   "techniquesCard": [
     {
       "Level": "0",
@@ -433,6 +434,29 @@
     "implantsList": [],
     "drawbacksList": []
   },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears."
+  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -457,32 +481,12 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
   },
   "UI_Layout": {
-    "theme": "murids",
+    "theme": "murid",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,
@@ -493,6 +497,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }

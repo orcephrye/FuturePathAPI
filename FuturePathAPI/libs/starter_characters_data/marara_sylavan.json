@@ -1,6 +1,4 @@
 {
-  "id": "marara_sylavan",
-  "character_id": "marara_sylavan",
   "identityCard": {
     "charName": "Marara Sylavan",
     "playerName": "",
@@ -43,15 +41,15 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+4",
-    "passivePerception": "13",
+    "passivePerception": "11",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
-    "skillsPerLevel": "1",
+    "skillsPerLevel": "2",
     "unusedSkillPoints": "",
     "skillsList": [
       {
@@ -119,7 +117,7 @@
       },
       {
         "Name": "Diplomacy",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 0
@@ -168,7 +166,7 @@
       },
       {
         "Name": "Knowledge (Science)",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -231,7 +229,7 @@
       },
       {
         "Name": "Survival",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -264,21 +262,21 @@
     "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
-    "armorProfCount": 1,
+    "armorProfCount": 2,
     "armorsList": [
       {
         "Name": "Improved Personal Vest",
         "AC Bonus": "+1",
         "DR": "",
         "Max Dex": "8",
-        "Weight": "",
+        "Weight": "5",
         "Speed Penalty": "-",
         "Bonus Attributes": "Shirt"
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 0,
+    "meleeProfCount": 1,
     "rangedProfCount": 3,
     "weaponsList": [
       {
@@ -288,8 +286,8 @@
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(T) R",
-        "Range": "100ft",
+        "Type": "T",
+        "Range": "100",
         "isMelee": false,
         "Ammo": "6",
         "Notes": ""
@@ -301,7 +299,7 @@
         "Accuracy": "",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(K) M",
+        "Type": "K",
         "Range": "-",
         "isMelee": true,
         "Ammo": "-",
@@ -311,9 +309,15 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
       "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
@@ -368,139 +372,129 @@
       },
       {
         "Name": "Handle Animal",
-        "Description": "Rank ( 2 ) = Skill Die ( 1d2 + 1 ) + Wis ( 3 ) + Misc Mod ( 0 )"
+        "Description": ""
       }
     ]
   },
+  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "",
+    "totalGearWeight": "50",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
         "Qty": "3",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Outerwear",
         "Qty": "3",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Windbreaker",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Camera (small)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Search and Rescue Kit",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Range Finding Binoculars",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Directed Light Source",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Emergency Light Source",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Star Map (Local Sector)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Rope",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Rations (Tech 2)",
         "Qty": "10",
-        "Weight": "",
+        "Weight": "1",
         "TL": "2",
         "Notes": "10 day supply"
       },
       {
         "Name": "Purifier",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Environment Scanner +1",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Tent (Small 1 person)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems\u2014hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
-  },
-  "professionsCard": [],
   "techniquesCard": [
     {
       "Level": "0",
@@ -527,6 +521,29 @@
     "implantsList": [],
     "drawbacksList": []
   },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems—hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
+  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -551,26 +568,6 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -587,6 +584,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }

@@ -1,11 +1,9 @@
 {
-  "id": "ada",
-  "character_id": "ada",
   "identityCard": {
     "charName": "Ada (Ovex name: OVX-9482)",
     "playerName": "",
     "species": "Ovex",
-    "charPath": "Path of Wisdom (Dedicated Hero)",
+    "charPath": "Ovex Path (Assistance Module)",
     "pathLevel": "1",
     "classList": "",
     "alignment": "Chaotic Neutral",
@@ -43,10 +41,10 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+3",
-    "passivePerception": "12",
+    "passivePerception": "10",
     "inertia": "",
     "techProfCount": 4
   },
@@ -84,7 +82,7 @@
       },
       {
         "Name": "Craft (Chemical)",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -264,26 +262,26 @@
     "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
-    "armorProfCount": 0,
+    "armorProfCount": 2,
     "armorsList": [
       {
         "Name": "High Tech Personal Vest",
         "AC Bonus": "+1",
         "DR": "1K",
         "Max Dex": "8",
-        "Weight": "",
+        "Weight": "10",
         "Speed Penalty": "-",
         "Bonus Attributes": "Shirt (DR 1K)"
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 0,
-    "rangedProfCount": 0,
+    "meleeProfCount": 2,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
         "Name": "Monofilament Dagger(s) x2",
-        "Lvl": "1",
+        "Lvl": "2",
         "Damage": "d2",
         "Accuracy": "1",
         "AP": "1",
@@ -296,7 +294,7 @@
       },
       {
         "Name": "Personal Pistol",
-        "Lvl": "1",
+        "Lvl": "2",
         "Damage": "d6",
         "Accuracy": "0",
         "AP": "0",
@@ -311,9 +309,21 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
       "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Knowledge (Tech)",
+      "Rank": 0,
+      "Key Ability": "-",
       "MiscMod": 0
     },
     {
@@ -324,7 +334,7 @@
     }
   ],
   "wealthXpCard": {
-    "occupation": "Assistance Model",
+    "occupation": "Student",
     "currentWealthScore": "3,000",
     "liquidCredits": "1",
     "xpCurrent": "0",
@@ -358,65 +368,62 @@
       }
     ]
   },
+  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "",
+    "totalGearWeight": "27",
     "equipmentList": [
       {
         "Name": "Backpack (Medium)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Secure Wallet",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit Casual",
         "Qty": "3",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Computation Device",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Urban Map",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Thermal Container (Water)",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "On a personal journey to, in the eyes of the Ovex Nexus, reach maturity. Ada, or, as the Nexus knows it, OVX-9482-Sub-1850, is exploring the known universe, posing as a common sentient biological lifeform. This Ovex chose the appearance of an Acconian female. She is well-rounded at the waist, short, with long, bright, multi colored hair."
-  },
-  "professionsCard": [],
   "techniquesCard": [
     {
       "Level": "0",
@@ -443,30 +450,6 @@
     "implantsList": [],
     "drawbacksList": []
   },
-  "conditionsCard": {
-    "cond_blinded": false,
-    "cond_deafened": false,
-    "cond_confused": false,
-    "cond_entangled": false,
-    "cond_flat_footed": false,
-    "cond_helpless": false,
-    "cond_prone": false,
-    "cond_unstable": false,
-    "cond_winded": false,
-    "cond_fatigued": false,
-    "cond_exhausted": false,
-    "cond_frightened": false,
-    "cond_cowering": false,
-    "cond_panicked": false,
-    "cond_grappled": false,
-    "cond_pinned": false,
-    "cond_nauseated": false,
-    "cond_sickened": false,
-    "cond_shaken": false,
-    "cond_dazed": false,
-    "cond_stunned": false,
-    "cond_paralyzed": false
-  },
   "mutationsCard": {
     "mpEarned": "0",
     "mpSpent": "0",
@@ -491,8 +474,35 @@
     "powerArmorProfCount": 0,
     "powerArmorList": []
   },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "backstoryCard": {
+    "backstoryNotes": "On a personal journey to, in the eyes of the Ovex Nexus, reach maturity. Ada, or, as the Nexus knows it, OVX-9482-Sub-1850, is exploring the known universe, posing as a common sentient biological lifeform. This Ovex chose the appearance of an Acconian female. She is well-rounded at the waist, short, with long, bright, multi colored hair."
+  },
   "UI_Layout": {
-    "theme": "ovex",
+    "theme": "cosmic-dark",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,
@@ -503,6 +513,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }

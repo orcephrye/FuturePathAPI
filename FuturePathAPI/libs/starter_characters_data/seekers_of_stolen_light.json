@@ -1,6 +1,4 @@
 {
-  "id": "seekers_of_stolen_light",
-  "character_id": "seekers_of_stolen_light",
   "identityCard": {
     "charName": "Seekers of Stolen Light",
     "playerName": "",
@@ -43,10 +41,10 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+5",
-    "passivePerception": "11",
+    "passivePerception": "9",
     "inertia": "",
     "techProfCount": 3
   },
@@ -224,7 +222,7 @@
       },
       {
         "Name": "Study",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -239,12 +237,12 @@
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "22",
-    "acTouch": "14",
-    "acFlat": "18",
+    "acTotal": "24",
+    "acTouch": "16",
+    "acFlat": "20",
     "acArmorBonus": "0",
     "acDexMod": "4",
-    "acSizeMod": "+0",
+    "acSizeMod": "+2",
     "acNaturalArmor": "8",
     "acMiscMod": "0"
   },
@@ -264,17 +262,17 @@
     "combatSpeedSq": "8"
   },
   "armorDefensesCard": {
-    "armorProfCount": 0,
+    "armorProfCount": 1,
     "armorsList": []
   },
   "weaponsCard": {
-    "meleeProfCount": 1,
+    "meleeProfCount": 2,
     "rangedProfCount": 2,
     "weaponsList": [
       {
         "Name": "Natural Swarm Attack",
-        "Lvl": "1",
-        "Damage": "1d6+2+DEX",
+        "Lvl": "2",
+        "Damage": "1d6+2",
         "Accuracy": "+4",
         "AP": "",
         "Critical": "x2/20",
@@ -288,9 +286,15 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
       "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
@@ -353,6 +357,114 @@
       }
     ]
   },
+  "professionsCard": [],
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "45",
+    "equipmentList": [
+      {
+        "Name": "Tiny Range Pack",
+        "Qty": "3",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit",
+        "Qty": "5",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Outerwear",
+        "Qty": "5",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Communications",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Camera",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Search-and-Rescue Kit",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations (Tech 3)",
+        "Qty": "4",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": "30 Portions"
+      },
+      {
+        "Name": "Purifier",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Demolitions Kit",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Electrical Tool Kit",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Chemist Kit",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Mechanical Tool Kit",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "3",
+        "Notes": ""
+      }
+    ]
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
   "cyberneticsCard": {
     "cyborgLevel": "1",
     "frameworkTechLevel": "3",
@@ -375,116 +487,28 @@
     ],
     "drawbacksList": []
   },
-  "equipmentCard": {
-    "itemCraftProfCount": 0,
-    "totalGearWeight": "",
-    "equipmentList": [
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
       {
-        "Name": "Tiny Range Pack",
-        "Qty": "3",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Clothing Outfit",
-        "Qty": "5",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Outerwear",
-        "Qty": "5",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Remote Communications",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Camera",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Search-and-Rescue Kit",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Rations (Tech 3)",
-        "Qty": "4",
-        "Weight": "",
-        "TL": "3",
-        "Notes": "30 Portions"
-      },
-      {
-        "Name": "Purifier",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Demolitions Kit",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Electrical Tool Kit",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Chemist Kit",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
-      },
-      {
-        "Name": "Mechanical Tool Kit",
-        "Qty": "1",
-        "Weight": "",
-        "TL": "",
-        "Notes": ""
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core\u2014a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
-  },
-  "professionsCard": [],
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
+    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core—a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -510,32 +534,12 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
   },
   "UI_Layout": {
-    "theme": "chronodes",
+    "theme": "cosmic-dark",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,
@@ -546,6 +550,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }

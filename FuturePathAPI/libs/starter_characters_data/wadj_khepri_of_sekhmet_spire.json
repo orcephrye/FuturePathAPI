@@ -1,6 +1,4 @@
 {
-  "id": "wadj_khepri_of_sekhmet_spire",
-  "character_id": "wadj_khepri_of_sekhmet_spire",
   "identityCard": {
     "charName": "Wadj-Khepri of Sekhmet Spire",
     "playerName": "",
@@ -43,12 +41,12 @@
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
+    "advantageDie": "d2",
     "extraDamage": "0",
     "initiative": "+2",
-    "passivePerception": "12",
+    "passivePerception": "10",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
     "skillsPerLevel": "1",
@@ -84,7 +82,7 @@
       },
       {
         "Name": "Craft (Chemical)",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -119,7 +117,7 @@
       },
       {
         "Name": "Diplomacy",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 3
@@ -140,14 +138,14 @@
       },
       {
         "Name": "Intimidate",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 2
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -264,14 +262,14 @@
     "combatSpeedSq": "8"
   },
   "armorDefensesCard": {
-    "armorProfCount": 1,
+    "armorProfCount": 2,
     "armorsList": [
       {
         "Name": "Improved Personal Vest",
         "AC Bonus": "+1",
         "DR": "",
         "Max Dex": "8",
-        "Weight": "",
+        "Weight": "5",
         "Speed Penalty": "-",
         "Bonus Attributes": "Shirt"
       }
@@ -296,7 +294,7 @@
       },
       {
         "Name": "Acid Spitter",
-        "Lvl": "1",
+        "Lvl": "3",
         "Damage": "1d8",
         "Accuracy": "1",
         "AP": "",
@@ -311,9 +309,15 @@
   },
   "languageCustomSkillsCard": [
     {
-      "Name": "Knowledge (Tech)",
+      "Name": "Knowledge (Technology)",
       "Rank": 1,
       "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 1,
+      "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
@@ -324,7 +328,7 @@
     }
   ],
   "wealthXpCard": {
-    "occupation": "Khepri - Administrator / Diplomat",
+    "occupation": "Diplomat",
     "currentWealthScore": "25,000",
     "liquidCredits": "14",
     "xpCurrent": "0",
@@ -365,65 +369,62 @@
       }
     ]
   },
+  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "",
+    "totalGearWeight": "18",
     "equipmentList": [
       {
         "Name": "Briefcase",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Secure Wallet",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit Business",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit Formal",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Computation Device",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Communication",
         "Qty": "1",
-        "Weight": "",
-        "TL": "",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Rations (Tech 2)",
         "Qty": "3",
-        "Weight": "",
+        "Weight": "1",
         "TL": "2",
         "Notes": "5 pack"
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri\u2019s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen\u2014the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
-  },
-  "professionsCard": [],
   "techniquesCard": [
     {
       "Level": "0",
@@ -450,30 +451,6 @@
     "implantsList": [],
     "drawbacksList": []
   },
-  "conditionsCard": {
-    "cond_blinded": false,
-    "cond_deafened": false,
-    "cond_confused": false,
-    "cond_entangled": false,
-    "cond_flat_footed": false,
-    "cond_helpless": false,
-    "cond_prone": false,
-    "cond_unstable": false,
-    "cond_winded": false,
-    "cond_fatigued": false,
-    "cond_exhausted": false,
-    "cond_frightened": false,
-    "cond_cowering": false,
-    "cond_panicked": false,
-    "cond_grappled": false,
-    "cond_pinned": false,
-    "cond_nauseated": false,
-    "cond_sickened": false,
-    "cond_shaken": false,
-    "cond_dazed": false,
-    "cond_stunned": false,
-    "cond_paralyzed": false
-  },
   "mutationsCard": {
     "mpEarned": "0",
     "mpSpent": "0",
@@ -498,6 +475,33 @@
     "powerArmorProfCount": 0,
     "powerArmorList": []
   },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri’s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen—the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+  },
   "UI_Layout": {
     "theme": "khepri",
     "autoSwitchTheme": true,
@@ -510,6 +514,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "conditionsVisible": true
   }
 }
