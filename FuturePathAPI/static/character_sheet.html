@@ -171,7 +171,7 @@
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-identity-species">
 <div class="d-flex justify-content-between align-items-center mb-1">
-<label class="form-label small text-uppercase text-muted fw-bold mb-0" for="speciesInput">Species<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Species" rel="noopener noreferrer" target="_blank" title="View Species on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
+<label class="form-label small text-uppercase text-muted fw-bold mb-0">Species<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Species" rel="noopener noreferrer" target="_blank" title="View Species on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <button class="btn btn-link btn-sm p-0 text-cyan text-decoration-none no-print" onclick="randomizeSpecies(true)" title="Suggest Random Species" type="button">
 <i class="fa-solid fa-dice"></i> <small>Random</small>
 </button>
@@ -186,7 +186,7 @@
 </datalist>
 </div>
 <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-identity-path">
-<label class="form-label small text-uppercase text-muted fw-bold" for="charPath">Path<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Character_Path" rel="noopener noreferrer" target="_blank" title="View Character Path on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
+<label class="form-label small text-uppercase text-muted fw-bold">Path<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Character_Path" rel="noopener noreferrer" target="_blank" title="View Character Path on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
 <label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" onchange="handlePathChange(this.value)" placeholder="e.g. Path of Strength" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="charPathDropdownBtn" onclick="toggleDatalist('identityCard_charPath')" title="Show Path Suggestions" type="button">
@@ -224,7 +224,7 @@
 <input class="form-control" id="identityCard_alignment" name="alignment" type="text"/>
 </div>
 <div class="col-6 col-sm-4 col-md-1 col-identity-size">
-<label class="form-label small text-uppercase text-muted fw-bold" for="charSize">Size<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Key_Terms#Size" rel="noopener noreferrer" target="_blank" title="View Size on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
+<label class="form-label small text-uppercase text-muted fw-bold">Size<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Key_Terms#Size" rel="noopener noreferrer" target="_blank" title="View Size on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
 <label class="visually-hidden" for="identityCard_charSize">Charsize</label><input class="form-control" id="identityCard_charSize" list="sizesDatalist" name="charSize" placeholder="Medium" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="sizesDropdownBtn" onclick="toggleDatalist('identityCard_charSize')" title="Show Size Suggestions" type="button">
@@ -3029,19 +3029,19 @@
 <div class="d-flex align-items-center gap-2 flex-wrap" id="page-4-toggles">
 <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="togglePowerArmorContainer" title="Toggle visibility of the Power Armor card">
 <label class="visually-hidden" for="global_togglePowerArmorVisibility">global_togglePowerArmorVisibility</label><input checked="" class="form-check-input my-0" id="global_togglePowerArmorVisibility" onchange="togglePowerArmorCardVisibility(this.checked)" role="switch" type="checkbox"/>
-<label class="form-check-label small text-nowrap fw-bold text-cyan" for="togglePowerArmorVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<label class="form-check-label small text-nowrap fw-bold text-cyan" style="font-size: 0.75rem; cursor: pointer;">
 <span class="d-none d-sm-inline">Power Armor</span><span class="d-inline d-sm-none">PA</span>
 </label>
 </div>
 <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleBackstoryContainer" title="Toggle visibility of the Background, Campaign Notes &amp; Objectives card">
 <label class="visually-hidden" for="global_toggleBackstoryVisibility">global_toggleBackstoryVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleBackstoryVisibility" onchange="toggleBackstoryCardVisibility(this.checked)" role="switch" type="checkbox"/>
-<label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleBackstoryVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<label class="form-check-label small text-nowrap fw-bold text-cyan" style="font-size: 0.75rem; cursor: pointer;">
                   Notes
                 </label>
 </div>
 <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleConditionsContainer" title="Toggle visibility of the Standard Conditions &amp; Status Tracks card">
 <label class="visually-hidden" for="global_toggleConditionsVisibility">global_toggleConditionsVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleConditionsVisibility" onchange="toggleConditionsCardVisibility(this.checked)" role="switch" type="checkbox"/>
-<label class="form-check-label small text-nowrap fw-bold text-cyan" for="toggleConditionsVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<label class="form-check-label small text-nowrap fw-bold text-cyan" style="font-size: 0.75rem; cursor: pointer;">
                   Conditions
                 </label>
 </div>
@@ -3181,7 +3181,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_blinded">Cond_Blinded</label><input class="form-check-input" id="conditionsCard_cond_blinded" name="cond_blinded" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_blinded">Blinded</label>
+<label class="form-check-label fw-bold text-cyan">Blinded</label>
 </div>
 <div class="small text-muted ps-4">
                       Total concealment. Takes <strong>3Ad (Disadvantage)</strong> on melee attacks, DEX, and Perception checks. Cannot read or perform visual tasks.
@@ -3191,7 +3191,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_deafened">Cond_Deafened</label><input class="form-check-input" id="conditionsCard_cond_deafened" name="cond_deafened" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_deafened">Deafened</label>
+<label class="form-check-label fw-bold text-cyan">Deafened</label>
 </div>
 <div class="small text-muted ps-4">
                       Takes <strong>1Ad (Disadvantage)</strong> on Initiative and Perception checks. Passive Perception reduced by 1/2 WIS modifier (round down).
@@ -3201,7 +3201,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_confused">Cond_Confused</label><input class="form-check-input" id="conditionsCard_cond_confused" name="cond_confused" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_confused">Confused</label>
+<label class="form-check-label fw-bold text-cyan">Confused</label>
 </div>
 <div class="small text-muted ps-4">
                       Mentally befuddled; treats all targets as enemies. Takes <strong>1Ad (Disadvantage)</strong> on INT and WIS checks. If attacked, must attack last attacker. Otherwise, acts randomly.
@@ -3211,7 +3211,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_entangled">Cond_Entangled</label><input class="form-check-input" id="conditionsCard_cond_entangled" name="cond_entangled" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_entangled">Entangled</label>
+<label class="form-check-label fw-bold text-cyan">Entangled</label>
 </div>
 <div class="small text-muted ps-4">
                       Takes <strong>1Ad (Disadvantage)</strong> on Attack Rolls and DEX saves. Immobile if anchored; half speed and no running/charging if unanchored. Attackers gain <strong>1Ad (Advantage)</strong> against target.
@@ -3221,7 +3221,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_flat_footed">Cond_Flat_Footed</label><input class="form-check-input" id="conditionsCard_cond_flat_footed" name="cond_flat_footed" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_flat_footed">Flat-Footed</label>
+<label class="form-check-label fw-bold text-cyan">Flat-Footed</label>
 </div>
 <div class="small text-muted ps-4">
                       Caught unaware or unable to react. Loses Dexterity bonus to AC.
@@ -3231,7 +3231,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_helpless">Cond_Helpless</label><input class="form-check-input" id="conditionsCard_cond_helpless" name="cond_helpless" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_helpless">Helpless / Incapacitated / Unconscious</label>
+<label class="form-check-label fw-bold text-cyan">Helpless / Incapacitated / Unconscious</label>
 </div>
 <div class="small text-muted ps-4">
                       Paralyzed, sleeping, or unconscious. Effective AC = 5 + size mod. Vulnerable to <em>Coup de Grace</em>. Passive Perception reduced to 1/4 (round down), no skill checks.
@@ -3241,7 +3241,7 @@
 <div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_prone">Cond_Prone</label><input class="form-check-input" id="conditionsCard_cond_prone" name="cond_prone" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_prone">Prone</label>
+<label class="form-check-label fw-bold text-cyan">Prone</label>
 </div>
 <div class="small text-muted ps-4">
                       Standing up is a Simple Action (prevents Bonus Action). Melee attacks take <strong>1Ad (Disadvantage)</strong>, no techniques. Gains <strong>1Ad (Advantage)</strong> on Ranged attacks against targets &gt; 10ft away.
@@ -3251,7 +3251,7 @@
 <div class="condition-item">
 <div class="form-check mb-1">
 <label class="visually-hidden" for="conditionsCard_cond_unstable">Cond_Unstable</label><input class="form-check-input" id="conditionsCard_cond_unstable" name="cond_unstable" type="checkbox"/>
-<label class="form-check-label fw-bold text-cyan" for="cond_unstable">Unstable / Dying</label>
+<label class="form-check-label fw-bold text-cyan">Unstable / Dying</label>
 </div>
 <div class="small text-muted ps-4">
                       Triggered at 0 HP. Roll <strong>1d4 CON damage</strong> each turn in combat (every 20 mins out of combat). Move walk speed only. Stabilized by DC 20 Medical check.
@@ -3267,15 +3267,15 @@
 <div class="ps-2">
 <div class="form-check form-check-inline me-3">
 <label class="visually-hidden" for="conditionsCard_cond_winded">Cond_Winded</label><input class="form-check-input" id="conditionsCard_cond_winded" name="cond_winded" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_winded">Winded</label>
+<label class="form-check-label fw-bold small">Winded</label>
 </div>
 <div class="form-check form-check-inline me-3">
 <label class="visually-hidden" for="conditionsCard_cond_fatigued">Cond_Fatigued</label><input class="form-check-input" id="conditionsCard_cond_fatigued" name="cond_fatigued" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_fatigued">Fatigued</label>
+<label class="form-check-label fw-bold small">Fatigued</label>
 </div>
 <div class="form-check form-check-inline">
 <label class="visually-hidden" for="conditionsCard_cond_exhausted">Cond_Exhausted</label><input class="form-check-input" id="conditionsCard_cond_exhausted" name="cond_exhausted" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_exhausted">Exhausted</label>
+<label class="form-check-label fw-bold small">Exhausted</label>
 </div>
 </div>
 <div class="small text-muted ps-2 mt-1">
@@ -3290,15 +3290,15 @@
 <div class="ps-2">
 <div class="form-check form-check-inline me-3">
 <label class="visually-hidden" for="conditionsCard_cond_frightened">Cond_Frightened</label><input class="form-check-input" id="conditionsCard_cond_frightened" name="cond_frightened" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_frightened">Frightened</label>
+<label class="form-check-label fw-bold small">Frightened</label>
 </div>
 <div class="form-check form-check-inline me-3">
 <label class="visually-hidden" for="conditionsCard_cond_cowering">Cond_Cowering</label><input class="form-check-input" id="conditionsCard_cond_cowering" name="cond_cowering" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_cowering">Cowering</label>
+<label class="form-check-label fw-bold small">Cowering</label>
 </div>
 <div class="form-check form-check-inline">
 <label class="visually-hidden" for="conditionsCard_cond_panicked">Cond_Panicked</label><input class="form-check-input" id="conditionsCard_cond_panicked" name="cond_panicked" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_panicked">Panicked</label>
+<label class="form-check-label fw-bold small">Panicked</label>
 </div>
 </div>
 <div class="small text-muted ps-2 mt-1">
@@ -3313,11 +3313,11 @@
 <div class="ps-2">
 <div class="form-check form-check-inline me-3">
 <label class="visually-hidden" for="conditionsCard_cond_grappled">Cond_Grappled</label><input class="form-check-input" id="conditionsCard_cond_grappled" name="cond_grappled" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_grappled">Grappled</label>
+<label class="form-check-label fw-bold small">Grappled</label>
 </div>
 <div class="form-check form-check-inline">
 <label class="visually-hidden" for="conditionsCard_cond_pinned">Cond_Pinned</label><input class="form-check-input" id="conditionsCard_cond_pinned" name="cond_pinned" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_pinned">Pinned</label>
+<label class="form-check-label fw-bold small">Pinned</label>
 </div>
 </div>
 <div class="small text-muted ps-2 mt-1">
@@ -3331,11 +3331,11 @@
 <div class="ps-2">
 <div class="form-check form-check-inline me-3">
 <label class="visually-hidden" for="conditionsCard_cond_nauseated">Cond_Nauseated</label><input class="form-check-input" id="conditionsCard_cond_nauseated" name="cond_nauseated" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_nauseated">Nauseated</label>
+<label class="form-check-label fw-bold small" >Nauseated</label>
 </div>
 <div class="form-check form-check-inline">
 <label class="visually-hidden" for="conditionsCard_cond_sickened">Cond_Sickened</label><input class="form-check-input" id="conditionsCard_cond_sickened" name="cond_sickened" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_sickened">Sickened</label>
+<label class="form-check-label fw-bold small">Sickened</label>
 </div>
 </div>
 <div class="small text-muted ps-2 mt-1">
@@ -3349,19 +3349,19 @@
 <div class="ps-2">
 <div class="form-check form-check-inline me-2">
 <label class="visually-hidden" for="conditionsCard_cond_shaken">Cond_Shaken</label><input class="form-check-input" id="conditionsCard_cond_shaken" name="cond_shaken" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_shaken">Shaken</label>
+<label class="form-check-label fw-bold small">Shaken</label>
 </div>
 <div class="form-check form-check-inline me-2">
 <label class="visually-hidden" for="conditionsCard_cond_dazed">Cond_Dazed</label><input class="form-check-input" id="conditionsCard_cond_dazed" name="cond_dazed" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_dazed">Dazed</label>
+<label class="form-check-label fw-bold small">Dazed</label>
 </div>
 <div class="form-check form-check-inline me-2">
 <label class="visually-hidden" for="conditionsCard_cond_stunned">Cond_Stunned</label><input class="form-check-input" id="conditionsCard_cond_stunned" name="cond_stunned" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_stunned">Stunned</label>
+<label class="form-check-label fw-bold small">Stunned</label>
 </div>
 <div class="form-check form-check-inline">
 <label class="visually-hidden" for="conditionsCard_cond_paralyzed">Cond_Paralyzed</label><input class="form-check-input" id="conditionsCard_cond_paralyzed" name="cond_paralyzed" type="checkbox"/>
-<label class="form-check-label fw-bold small" for="cond_paralyzed">Paralyzed</label>
+<label class="form-check-label fw-bold small" >Paralyzed</label>
 </div>
 </div>
 <div class="small text-muted ps-2 mt-1">
