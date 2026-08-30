@@ -1,61 +1,61 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Kessa Steeltooth",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
-    "alignment": "Lawful Good",
-    "charSize": "Medium",
-    "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "species": "Murids",
+    "charPath": "Path of No Path (The Freelancer)",
+    "pathLevel": "2",
+    "classList": "Electro-Mancer (1)",
+    "alignment": "Chaotic Neutral",
+    "charSize": "Small",
+    "gender": "Female",
+    "height": "3'4''",
+    "hairColor": "Brown",
+    "eyeColor": "Black"
   },
   "abilityScoresCard": {
     "primaryAbility_STR": false,
-    "scoreSTR": "10",
-    "modSTR": "+0",
-    "primaryAbility_DEX": false,
-    "scoreDEX": "12",
-    "modDEX": "+1",
+    "scoreSTR": "8",
+    "modSTR": "-1",
+    "primaryAbility_DEX": true,
+    "scoreDEX": "14",
+    "modDEX": "+2",
     "primaryAbility_CON": false,
-    "scoreCON": "14",
-    "modCON": "+2",
-    "primaryAbility_INT": false,
-    "scoreINT": "12",
-    "modINT": "+1",
+    "scoreCON": "12",
+    "modCON": "+1",
+    "primaryAbility_INT": true,
+    "scoreINT": "16",
+    "modINT": "+3",
     "primaryAbility_WIS": false,
     "scoreWIS": "8",
     "modWIS": "-1",
-    "primaryAbility_CHA": true,
-    "scoreCHA": "15",
-    "modCHA": "+2"
+    "primaryAbility_CHA": false,
+    "scoreCHA": "12",
+    "modCHA": "+1"
   },
   "healthInjuryCard": {
-    "hitDie": "d6",
-    "maxHP": "8",
+    "hitDie": "d8",
+    "maxHP": "15",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "15",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
-    "initiative": "+0",
+    "initiative": "+1",
     "passivePerception": "7",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
+    "skillsPerLevel": "5",
     "unusedSkillPoints": "",
     "skillsList": [
       {
         "Name": "Acrobatics",
         "Favored": false,
-        "Rank": 0,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -75,8 +75,8 @@
       },
       {
         "Name": "Computer Use",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -89,15 +89,15 @@
       },
       {
         "Name": "Craft (Electronic)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Craft (Mechanical)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -110,29 +110,29 @@
       },
       {
         "Name": "Craft (Structural)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Diplomacy",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
       {
         "Name": "Disable Device",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Disguise",
         "Favored": false,
-        "Rank": 0,
+        "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
@@ -152,22 +152,22 @@
       },
       {
         "Name": "Knowledge (Current Events)",
-        "Favored": false,
-        "Rank": 0,
-        "Key Ability": "INT",
-        "MiscMod": 0
-      },
-      {
-        "Name": "Knowledge (History)",
         "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 1
       },
       {
-        "Name": "Knowledge (Science)",
+        "Name": "Knowledge (History)",
         "Favored": false,
         "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -187,8 +187,8 @@
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -201,15 +201,15 @@
       },
       {
         "Name": "Sense Motive",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
         "Name": "Sleight of Hand",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -222,10 +222,10 @@
       },
       {
         "Name": "Study",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Survival",
@@ -237,12 +237,12 @@
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "12",
-    "acTouch": "11",
-    "acFlat": "11",
-    "acArmorBonus": "1",
-    "acDexMod": "1",
-    "acSizeMod": "+0",
+    "acTotal": "15",
+    "acTouch": "13",
+    "acFlat": "13",
+    "acArmorBonus": "2",
+    "acDexMod": "2",
+    "acSizeMod": "+1",
     "acNaturalArmor": "0",
     "acMiscMod": "0"
   },
@@ -255,8 +255,8 @@
   },
   "SpeedCard": {
     "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "climbSpeed": "20",
+    "swimSpeed": "10",
     "flySpeed": "0",
     "combatSpeedFt": "20",
     "combatSpeedSq": "4"
@@ -265,39 +265,52 @@
     "armorProfCount": 2,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
-        "AC Bonus": "+1",
+        "Name": "Improved Light Armor",
+        "AC Bonus": "+2",
         "DR": "",
-        "Max Dex": "8",
-        "Weight": "5",
+        "Max Dex": "7",
+        "Weight": "10",
         "Speed Penalty": "-",
-        "Bonus Attributes": "Shirt"
+        "Bonus Attributes": ""
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "meleeProfCount": 1,
+    "rangedProfCount": 4,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
-        "Lvl": "2",
-        "Damage": "d6 + 1",
+        "Name": "Laser Pistol",
+        "Lvl": "3",
+        "Damage": "d8",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(E) M",
-        "Range": "10ft R",
+        "Type": "Thermal",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": ""
+      },
+      {
+        "Name": "Laser Shotgun",
+        "Lvl": "4",
+        "Damage": "d12",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "Thermal",
+        "Range": "30/900",
         "isMelee": true,
-        "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Ammo": "6",
+        "Notes": ""
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
@@ -309,172 +322,166 @@
     },
     {
       "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "occupation": "Jobless",
+    "currentWealthScore": "250",
+    "liquidCredits": "1",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Curious People",
+        "Description": "Studious Feat: Gain Misc +1 bonus to the Study skill and one Knowledge skill."
+      },
+      {
+        "Name": "Natural Climbers",
+        "Description": "Murids can climb speed as a quadruped or 20ft"
+      },
+      {
+        "Name": "Squeak Speak",
+        "Description": "The ability to communicate with others of the same species."
+      },
+      {
+        "Name": "Darkvision",
+        "Description": "Same range as normal sight"
       }
     ]
   },
   "pathTalentsCard": {
-    "pathTalentsList": [
-      {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
-      }
-    ]
+    "pathTalentsList": []
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Point Blank Shot",
+        "Description": "no penalties within 10ft, gains a +1 to damage dice within 10ft"
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Electro-Mancer",
+      "Level": "",
+      "Affinities": [
+        "DEX",
+        "INT"
+      ],
+      "Talents": [
+        {
+          "Name": "Electric Savant",
+          "Description": "Electro-Mancer (Electric Savant Path) A focus on Ranged and Smarts"
+        },
+        {
+          "Name": "Electric Attack",
+          "Description": "This is a Standard Attack Action Ranged 130ft. Accuracy: d20+AD+3, Damage 1d4+3"
+        },
+        {
+          "Name": "Sixth Sense",
+          "Description": "At 1st level, you are uniquely attuned to electromagnetic fields. You gain an Advantage Die on detection checks for electronic traps, hidden sensors, or data ports. Additionally, you can instantly tell if an electronic device within 30ft + 5ft per Int Mod is \"On\" or \"Off\" without a check."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "23",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
-        "Qty": "3",
+        "Qty": "2",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Windbraker",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Camera",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Search and Rescue Kit",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Range Finding Binoculars",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Directed Light Source",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Galactic Map",
-        "Qty": "1",
+        "Name": "Rations (Tech 2)",
+        "Qty": "2",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Rope",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
+        "TL": "2",
+        "Notes": "5 Portions"
       },
       {
         "Name": "Purifier",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
-      },
-      {
-        "Name": "Environment Scanner +1",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Old Tombs",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": "Historical texts"
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears."
   },
   "techniquesCard": [
     {
       "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
+      "Profession": "Electro-Mancer",
+      "DC": "13",
+      "Learned": "2",
+      "Uses": "2",
       "Used": "",
-      "Techniques": []
+      "Techniques": [
+        {
+          "Name": "Power Surge",
+          "Range": "Touch",
+          "Effect": "Overload an electronic device with a spike of voltage. You induce a minor surge in a device you are touching, causing it to shut down until reset or repaired. Robots and high-tech gear with redundant systems are immune."
+        },
+        {
+          "Name": "Adsorb Power",
+          "Range": "Touch",
+          "Effect": "Once Per Day: You tap into a Large or bigger generator. Roll an Intelligence check (DC 15). On success, you regain a use of 1 or more of a technique slot (Level 1–5 based on the result). Failure deals 1d6 Electric damage to you for every 5 points below the DC. If you beat the DC by 4 or less then regain a Zero level slot. For every 5 you beat the DC gain the ability to either gain a use of a 1 higher level slot or gain another use of the current level slot. For example: a roll of 25 would imply the Electro-Mancer could regain the use of 3 level zero techniques, or 1 level two, or 2 level ones."
+        }
+      ]
+    },
+    {
+      "Level": "1",
+      "Profession": "Electro-Mancer",
+      "DC": "14",
+      "Learned": "1",
+      "Uses": "1",
+      "Used": "",
+      "Techniques": [
+        {
+          "Name": "Static Armor",
+          "Range": "Touch",
+          "Effect": "Envelop yourself or an ally in a repelling field. Provides a +1 AC bonus for 4 hours. Bonus increases to +2 AC at level 7."
+        }
+      ]
     }
   ],
   "quirksCard": {
@@ -512,10 +519,6 @@
       }
     ]
   },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
-  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -540,12 +543,16 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "murid",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,
-    "techniquesVisible": false,
+    "techniquesVisible": true,
     "quirksVisible": false,
     "detractorsVisible": false,
     "cyberneticsVisible": false,

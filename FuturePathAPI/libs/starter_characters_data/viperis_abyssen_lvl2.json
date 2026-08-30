@@ -1,68 +1,68 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Viperis Abyssen",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
+    "species": "Cryous",
+    "charPath": "Path of Constitution (Tough Hero)",
+    "pathLevel": "2",
     "classList": "",
-    "alignment": "Lawful Good",
+    "alignment": "Chaotic Good",
     "charSize": "Medium",
-    "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "gender": "Female",
+    "height": "5'6''",
+    "hairColor": "None",
+    "eyeColor": "Black"
   },
   "abilityScoresCard": {
     "primaryAbility_STR": false,
-    "scoreSTR": "10",
-    "modSTR": "+0",
-    "primaryAbility_DEX": false,
-    "scoreDEX": "12",
+    "scoreSTR": "14",
+    "modSTR": "+2",
+    "primaryAbility_DEX": true,
+    "scoreDEX": "13",
     "modDEX": "+1",
-    "primaryAbility_CON": false,
-    "scoreCON": "14",
-    "modCON": "+2",
+    "primaryAbility_CON": true,
+    "scoreCON": "16",
+    "modCON": "+3",
     "primaryAbility_INT": false,
-    "scoreINT": "12",
-    "modINT": "+1",
+    "scoreINT": "10",
+    "modINT": "+0",
     "primaryAbility_WIS": false,
     "scoreWIS": "8",
     "modWIS": "-1",
-    "primaryAbility_CHA": true,
-    "scoreCHA": "15",
-    "modCHA": "+2"
+    "primaryAbility_CHA": false,
+    "scoreCHA": "11",
+    "modCHA": "+0"
   },
   "healthInjuryCard": {
-    "hitDie": "d6",
-    "maxHP": "8",
+    "hitDie": "d10",
+    "maxHP": "20",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "20",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
     "initiative": "+0",
     "passivePerception": "7",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
-    "unusedSkillPoints": "",
+    "skillsPerLevel": "1",
+    "unusedSkillPoints": "1",
     "skillsList": [
       {
         "Name": "Acrobatics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Athletics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "STR",
         "MiscMod": 0
       },
@@ -117,8 +117,8 @@
       },
       {
         "Name": "Diplomacy",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
@@ -138,31 +138,31 @@
       },
       {
         "Name": "Intimidate",
-        "Favored": false,
-        "Rank": 0,
-        "Key Ability": "CHA",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "STR",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Current Events)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (History)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Knowledge (Science)",
@@ -195,14 +195,14 @@
       {
         "Name": "Pilot",
         "Favored": false,
-        "Rank": 0,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Sense Motive",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -223,7 +223,7 @@
       {
         "Name": "Study",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -237,10 +237,10 @@
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "12",
+    "acTotal": "14",
     "acTouch": "11",
-    "acFlat": "11",
-    "acArmorBonus": "1",
+    "acFlat": "13",
+    "acArmorBonus": "3",
     "acDexMod": "1",
     "acSizeMod": "+0",
     "acNaturalArmor": "0",
@@ -248,223 +248,270 @@
   },
   "DamageReductionCard": {
     "drKinetic": "",
-    "drElectric": "",
+    "drElectric": "3",
     "drThermal": "",
     "drChemical": "",
-    "drAll": ""
+    "drAll": "2"
   },
   "SpeedCard": {
-    "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "baseSpeed": "15",
+    "climbSpeed": "10",
+    "swimSpeed": "15",
     "flySpeed": "0",
-    "combatSpeedFt": "20",
-    "combatSpeedSq": "4"
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
-    "armorProfCount": 2,
+    "armorProfCount": 3,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
-        "AC Bonus": "+1",
-        "DR": "",
-        "Max Dex": "8",
-        "Weight": "5",
+        "Name": "Improved Ballistic Vest",
+        "AC Bonus": "+3",
+        "DR": "2(A)",
+        "Max Dex": "7",
+        "Weight": "15",
         "Speed Penalty": "-",
-        "Bonus Attributes": "Shirt"
+        "Bonus Attributes": ""
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 2,
+    "meleeProfCount": 3,
     "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
-        "Lvl": "2",
-        "Damage": "d6 + 1",
-        "Accuracy": "1",
+        "Name": "Natural Electric Attack",
+        "Lvl": "3",
+        "Damage": "d6",
+        "Accuracy": "",
         "AP": "",
         "Critical": "x2/20",
         "Type": "(E) M",
-        "Range": "10ft R",
+        "Range": "-",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": "Only when grappled (Damage also gets +AD)"
+      },
+      {
+        "Name": "Powered Sword",
+        "Lvl": "3",
+        "Damage": "d8 + 1",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x3/20",
+        "Type": "(K, E) M",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": ""
+      },
+      {
+        "Name": "Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "(K) R",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "7",
+        "Notes": ""
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
       "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "occupation": "Adventurer",
+    "currentWealthScore": "6,500",
+    "liquidCredits": "5",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Cryous",
+        "Description": "Can Breathe Underwater, Immune to the Trip, Advantage to reverse grapples."
       }
     ]
   },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
+        "Name": "Undying",
+        "Description": "The Tough hero gains +10 Constitution when considered Unstable or Dying."
       }
     ]
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Endurance",
+        "Description": "Gain advantage to most Con saving throws."
+      },
+      {
+        "Name": "Training Expert",
+        "Description": "Immediately gain and spend another Proficiency Tree point"
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Dreadnought",
+      "Level": "",
+      "Affinities": [
+        "DEX",
+        "CON"
+      ],
+      "Talents": [
+        {
+          "Name": "Ability Surge",
+          "Description": "Starting at Dreadnought 1st level, the Dreadnought's uses her training and advanced physiology to push her self to the limits. When doing this they focus on a particular goal above all else and with raw force of git they attempt to achieve that goal at all cost. Doing this takes a Simple action and provides a +4 to Strength Score and +2 Dexterity Score. They also gain advantage on Constitution saving throws but disadvantage on Wisdom saves. The also gain temporary hit points explained below. This lasts for 1 + Constitution Mod number of rounds. Once no longer surging a Dreadnought is Fatigued. If already Fatigued then they are Exhausted. If already Exhausted then they become Unconscious.\n\n    When this happens the Dreadnought gains temporary health equal to 2 * Dreadnought level. So A level 4 Dreadnought that surges would gain 8 additional temporary health. This health goes away once they calm down. If that would bring them down to zero or below it instead bring them down too 1."
+        },
+        {
+          "Name": "Ideology",
+          "Description": "Vigilante"
+        },
+        {
+          "Name": "Justifying Reasoning",
+          "Description": "You gain Knowledge Current Events as a Favored Skill (+1 Rank). You gain an Advantage on Intimidate and Stealth checks when dealing with corrupt officials or known criminals."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "50",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
         "Qty": "3",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Windbraker",
-        "Qty": "1",
+        "Name": "Outerwear",
+        "Qty": "3",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Remote Comms",
+        "Name": "Windbreaker",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Comm",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Camera",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Search and Rescue Kit",
+        "Name": "Search-and-Rescue Kit",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Range Finding Binoculars",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Directed Light Source",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Emergency Light Source",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Galactic Map",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Rope",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
+        "Name": "Rations (Tech 2)",
+        "Qty": "5",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Purifier",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Environment Scanner +1",
+        "Name": "Environment Scanner",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
-      },
-      {
-        "Name": "Old Tombs",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": "Historical texts"
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "Adult female Cryous. She has worked hard, but has gained nothing. Her family is a military family. She joined for that reason, and found it lacking. She tried for different jobs, but most felt unfulfilling, and her parents saw her as directionless and, in her mind, a disappointment. To avoid them and to seek some meaning, she has left her homeworld. She has dark blue skin, with black eyes and short fins coming from her back."
   },
   "techniquesCard": [
     {
@@ -541,7 +588,7 @@
     "cond_paralyzed": false
   },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "cryous",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,

@@ -4,8 +4,8 @@
     "playerName": "",
     "species": "Aconian",
     "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
+    "pathLevel": "2",
+    "classList": "Swindler (1)",
     "alignment": "Lawful Good",
     "charSize": "Medium",
     "gender": "Male",
@@ -17,7 +17,7 @@
     "primaryAbility_STR": false,
     "scoreSTR": "10",
     "modSTR": "+0",
-    "primaryAbility_DEX": false,
+    "primaryAbility_DEX": true,
     "scoreDEX": "12",
     "modDEX": "+1",
     "primaryAbility_CON": false,
@@ -35,13 +35,13 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "8",
+    "maxHP": "14",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "14",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
     "initiative": "+0",
     "passivePerception": "7",
@@ -68,10 +68,10 @@
       },
       {
         "Name": "Bluff",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "CHA",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Computer Use",
@@ -118,7 +118,7 @@
       {
         "Name": "Diplomacy",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
@@ -131,10 +131,10 @@
       },
       {
         "Name": "Disguise",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "CHA",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Intimidate",
@@ -146,14 +146,14 @@
       {
         "Name": "Knowledge (Culture)",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Current Events)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -187,8 +187,8 @@
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -208,15 +208,15 @@
       },
       {
         "Name": "Sleight of Hand",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Stealth",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -269,7 +269,7 @@
         "AC Bonus": "+1",
         "DR": "",
         "Max Dex": "8",
-        "Weight": "5",
+        "Weight": "",
         "Speed Penalty": "-",
         "Bonus Attributes": "Shirt"
       }
@@ -277,7 +277,7 @@
   },
   "weaponsCard": {
     "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "rangedProfCount": 3,
     "weaponsList": [
       {
         "Name": "Shock Whip",
@@ -287,23 +287,36 @@
         "AP": "",
         "Critical": "x2/20",
         "Type": "(E) M",
-        "Range": "10ft R",
+        "Range": "10",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": "Flexible Chain of Energy (10ft Reach)"
+      },
+      {
+        "Name": "Energy Blaster",
+        "Lvl": "3",
+        "Damage": "d8+2",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "Electric",
+        "Range": "300",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": "Side Arm/Laser/Versatile"
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
@@ -314,7 +327,7 @@
       "MiscMod": 0
     },
     {
-      "Name": "Ancient Language",
+      "Name": "Acient Language",
       "Rank": 2,
       "Key Ability": "-",
       "MiscMod": 0
@@ -322,10 +335,10 @@
   ],
   "wealthXpCard": {
     "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "currentWealthScore": "14,000",
+    "liquidCredits": "8",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -348,13 +361,36 @@
       {
         "Name": "Academic",
         "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+      },
+      {
+        "Name": "Deceptive",
+        "Description": "Misc +1 bonus to both the Bluff and Disguise skills. If you have 5 or more ranks in Disguise or Bluff, the bonus increases to +2, respectively."
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Swindler",
+      "Level": "",
+      "Affinities": [
+        "DEX",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Cheat Fate",
+          "Description": "At Swindler 1st level, fortune favors the bold. Once per day, you may re-roll one roll you have just made before the result is announced. You must take the result of the re-roll. At 8th level, this can be used twice per day."
+        },
+        {
+          "Name": "Sneak Attack",
+          "Description": "At 1st level, you deal extra 1d4 points of damage on successful melee or light ranged weapon attacks against an unaware or flanked opponent. This can only be done once per round. This extra damage increases to +2d4 at 4th level, +3d4 at 7th level, and +4d4 at 10th level."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "35",
     "equipmentList": [
       {
         "Name": "Large Range Pack",

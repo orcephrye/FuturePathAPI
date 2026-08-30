@@ -1,55 +1,55 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Marara Sylavan",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
-    "alignment": "Lawful Good",
+    "species": "Volar",
+    "charPath": "Path of Wisdom (Dedicated Hero)",
+    "pathLevel": "2",
+    "classList": "Xenophile (Xenologist) (1)",
+    "alignment": "Chaotic Neutral",
     "charSize": "Medium",
-    "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "gender": "Asexual",
+    "height": "4'8''",
+    "hairColor": "Green",
+    "eyeColor": "Blue"
   },
   "abilityScoresCard": {
     "primaryAbility_STR": false,
-    "scoreSTR": "10",
-    "modSTR": "+0",
+    "scoreSTR": "8",
+    "modSTR": "-1",
     "primaryAbility_DEX": false,
     "scoreDEX": "12",
     "modDEX": "+1",
     "primaryAbility_CON": false,
-    "scoreCON": "14",
-    "modCON": "+2",
+    "scoreCON": "12",
+    "modCON": "+1",
     "primaryAbility_INT": false,
-    "scoreINT": "12",
-    "modINT": "+1",
-    "primaryAbility_WIS": false,
-    "scoreWIS": "8",
-    "modWIS": "-1",
+    "scoreINT": "10",
+    "modINT": "+0",
+    "primaryAbility_WIS": true,
+    "scoreWIS": "16",
+    "modWIS": "+3",
     "primaryAbility_CHA": true,
-    "scoreCHA": "15",
+    "scoreCHA": "14",
     "modCHA": "+2"
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "8",
+    "maxHP": "12",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "12",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
-    "initiative": "+0",
-    "passivePerception": "7",
+    "initiative": "+4",
+    "passivePerception": "11",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
+    "skillsPerLevel": "2",
     "unusedSkillPoints": "",
     "skillsList": [
       {
@@ -82,8 +82,8 @@
       },
       {
         "Name": "Craft (Chemical)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -103,8 +103,8 @@
       },
       {
         "Name": "Craft (Pharmaceutical)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -118,8 +118,8 @@
       {
         "Name": "Diplomacy",
         "Favored": true,
-        "Rank": 1,
-        "Key Ability": "CHA",
+        "Rank": 2,
+        "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
@@ -145,15 +145,15 @@
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Current Events)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -162,12 +162,12 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Knowledge (Science)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -180,8 +180,8 @@
       },
       {
         "Name": "Medical",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -204,7 +204,7 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "WIS",
-        "MiscMod": 0
+        "MiscMod": 2
       },
       {
         "Name": "Sleight of Hand",
@@ -222,15 +222,15 @@
       },
       {
         "Name": "Study",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
@@ -254,18 +254,18 @@
     "drAll": ""
   },
   "SpeedCard": {
-    "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "baseSpeed": "15",
+    "climbSpeed": "10",
+    "swimSpeed": "10",
     "flySpeed": "0",
-    "combatSpeedFt": "20",
-    "combatSpeedSq": "4"
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
     "armorProfCount": 2,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
+        "Name": "Improved Personal Vest",
         "AC Bonus": "+1",
         "DR": "",
         "Max Dex": "8",
@@ -277,194 +277,249 @@
   },
   "weaponsCard": {
     "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "rangedProfCount": 3,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
-        "Lvl": "2",
-        "Damage": "d6 + 1",
+        "Name": "Laser Pistol",
+        "Lvl": "3",
+        "Damage": "d8",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(E) M",
-        "Range": "10ft R",
+        "Type": "T",
+        "Range": "100",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": ""
+      },
+      {
+        "Name": "Advanced Knife",
+        "Lvl": "2",
+        "Damage": "d6",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "K",
+        "Range": "-",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": ""
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
+      "Key Ability": "WIS",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Handle Animal",
+      "Rank": 4,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
       "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
     "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "currentWealthScore": "17,600",
+    "liquidCredits": "9",
+    "xpCurrent": "2,000",
+    "xpNextLevel": "5,000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Common Bond",
+        "Description": "Volar can communicate using pheromones in an almost 'psychic' link to other Volar within roughly 120ft, even if they are not in view. They can only share feelings and flashes of thought. However, this means that if more than one Volar is close to each other and are allies, they gain an advantage bonus against Mind-Effecting conditions/techniques."
+      },
+      {
+        "Name": "Nauseous Blooms",
+        "Description": "Once per day, a Volar can expel nauseous gases as self-defense. They can target a person within 30 feet or produce a 15-foot radius cloud of gas around themselves. The ranged attack is considered a ranged touch attack, and the cloud lasts for 1d4 + 1/4th Character level round-up turns. Anyone who breathes the air or gets hit by the attack has to take a Constitution Saving throw of a DC12 + Con Mod + 1/4th Character level, rounded down. If they fail the throw, they become Nauseated for 1d4 + 1/4th Character level round downturns. They have to re-roll for every turn they are within the radius. If they fail critically or twice in a row, then they become Sickened. Note: A Volar can choose to excrete this in the form of a liquid instead of using it as a defensive. The liquid becomes inert in 12 hours unless it is Crafted. Craft Chemical (DC10) will concentrate it into a Poison with the same effect, while Craft Pharmaceutical (DC10) will create an antidote that can be used to avoid the effects. Once crafted, the item is good for up to 7 days."
+      },
+      {
+        "Name": "Rapid Re-Growth",
+        "Description": "As long as the Volar is in well-lighted and healthy conditions for a plant and takes a full day to rest, the Volar can rapidly heal. Restoring 100% of health in just one night of rest. They also gain an advantage in recovering from sickness, poisons, and diseases for every day they rest."
       }
     ]
   },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
+        "Name": "Empathy",
+        "Description": "+1 Misc bonus to the Sense Motive Skill."
+      },
+      {
+        "Name": "Xenomedic",
+        "Description": "You can, without penalty, use the Medical skill to perform surgery on a living creature regardless of its type. You cannot critically fail at a surgery on an alien creature."
       }
     ]
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Attentive",
+        "Description": "The character gets a Misc +1 bonus to Study and Sense Motive skills."
+      },
+      {
+        "Name": "Handle Animal",
+        "Description": "You are trained at working with animals and can teach them tricks, get them to follow your simple commands, or even domesticate them."
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Xenophile",
+      "Level": "",
+      "Affinities": [
+        "WIS",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Xenolore",
+          "Description": "At Xenophile 1st level, identifying the characteristics, special attacks, or vulnerabilities of a xenomorph is a Simple Action. Roll a Knowledge or Study check (DC 8 + xenomorph’s Hit Dice). Success allows you to unlock a fact. For every 4 points you exceed the DC, you learn another piece of information. Successfully identifying a creature's weakness grants you an Advantage Die on accuracy checks or saving throws against the target for a number of rounds equal to 1 + your Wisdom or Charisma modifier (whichever is higher)."
+        },
+        {
+          "Name": "Xeno Resistance",
+          "Description": "You gain a +1 bonus on saving throws to resist the Techniques, Talents, or special attacks from alien monsters. This increases to +2 at 5th level and +3 at 10th level."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "50",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Clothing Outfit",
         "Qty": "3",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Windbraker",
+        "Name": "Outerwear",
+        "Qty": "3",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Windbreaker",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Camera",
+        "Name": "Camera (small)",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Search and Rescue Kit",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Range Finding Binoculars",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Directed Light Source",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Compass",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Galactic Map",
+        "Name": "Star Map (Local Sector)",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Rope",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
+        "Name": "Rations (Tech 2)",
+        "Qty": "10",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
+        "TL": "2",
+        "Notes": "10 day supply"
       },
       {
         "Name": "Purifier",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Environment Scanner +1",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Old Tombs",
+        "Name": "Tent (Small 1 person)",
         "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": "Historical texts"
+        "Weight": "5",
+        "TL": "2",
+        "Notes": ""
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems—hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
   },
   "techniquesCard": [
     {
@@ -512,10 +567,6 @@
       }
     ]
   },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
-  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -540,8 +591,12 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "volar",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,

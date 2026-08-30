@@ -1,25 +1,25 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Zexia Dune-Strider",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
-    "alignment": "Lawful Good",
+    "species": "Lepidonain",
+    "charPath": "Path of Dexterity (Fast Hero)",
+    "pathLevel": "2",
+    "classList": "SpaceMarine (1)",
+    "alignment": "Lawful Evil",
     "charSize": "Medium",
-    "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "gender": "Female",
+    "height": "6'2''",
+    "hairColor": "None",
+    "eyeColor": "Green"
   },
   "abilityScoresCard": {
-    "primaryAbility_STR": false,
-    "scoreSTR": "10",
-    "modSTR": "+0",
-    "primaryAbility_DEX": false,
-    "scoreDEX": "12",
-    "modDEX": "+1",
+    "primaryAbility_STR": true,
+    "scoreSTR": "15",
+    "modSTR": "+2",
+    "primaryAbility_DEX": true,
+    "scoreDEX": "14",
+    "modDEX": "+2",
     "primaryAbility_CON": false,
     "scoreCON": "14",
     "modCON": "+2",
@@ -27,44 +27,44 @@
     "scoreINT": "12",
     "modINT": "+1",
     "primaryAbility_WIS": false,
-    "scoreWIS": "8",
-    "modWIS": "-1",
-    "primaryAbility_CHA": true,
-    "scoreCHA": "15",
-    "modCHA": "+2"
+    "scoreWIS": "10",
+    "modWIS": "+0",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
   },
   "healthInjuryCard": {
-    "hitDie": "d6",
-    "maxHP": "8",
+    "hitDie": "d8",
+    "maxHP": "18",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "18",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
-    "initiative": "+0",
-    "passivePerception": "7",
+    "initiative": "+2",
+    "passivePerception": "8",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 2
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
+    "skillsPerLevel": "2",
     "unusedSkillPoints": "",
     "skillsList": [
       {
         "Name": "Acrobatics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Athletics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "STR",
-        "MiscMod": 0
+        "MiscMod": 2
       },
       {
         "Name": "Bluff",
@@ -117,8 +117,8 @@
       },
       {
         "Name": "Diplomacy",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
@@ -138,15 +138,15 @@
       },
       {
         "Name": "Intimidate",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -159,10 +159,10 @@
       },
       {
         "Name": "Knowledge (History)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Knowledge (Science)",
@@ -181,28 +181,28 @@
       {
         "Name": "Medical",
         "Favored": false,
-        "Rank": 0,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
         "Name": "Pilot",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Sense Motive",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -215,33 +215,33 @@
       },
       {
         "Name": "Stealth",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Study",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "12",
-    "acTouch": "11",
-    "acFlat": "11",
-    "acArmorBonus": "1",
-    "acDexMod": "1",
+    "acTotal": "15",
+    "acTouch": "12",
+    "acFlat": "13",
+    "acArmorBonus": "3",
+    "acDexMod": "2",
     "acSizeMod": "+0",
     "acNaturalArmor": "0",
     "acMiscMod": "0"
@@ -251,220 +251,248 @@
     "drElectric": "",
     "drThermal": "",
     "drChemical": "",
-    "drAll": ""
+    "drAll": "2"
   },
   "SpeedCard": {
-    "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "baseSpeed": "20",
+    "climbSpeed": "10",
+    "swimSpeed": "19",
     "flySpeed": "0",
-    "combatSpeedFt": "20",
-    "combatSpeedSq": "4"
+    "combatSpeedFt": "40",
+    "combatSpeedSq": "8"
   },
   "armorDefensesCard": {
-    "armorProfCount": 2,
+    "armorProfCount": 3,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
-        "AC Bonus": "+1",
-        "DR": "",
-        "Max Dex": "8",
-        "Weight": "5",
+        "Name": "Improved Ballistic Vest",
+        "AC Bonus": "3",
+        "DR": "2 (A)",
+        "Max Dex": "6",
+        "Weight": "15",
         "Speed Penalty": "-",
-        "Bonus Attributes": "Shirt"
+        "Bonus Attributes": ""
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "meleeProfCount": 3,
+    "rangedProfCount": 1,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
-        "Lvl": "2",
-        "Damage": "d6 + 1",
-        "Accuracy": "1",
+        "Name": "Natural Attack Claws (x2)",
+        "Lvl": "1",
+        "Damage": "d4",
+        "Accuracy": "",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(E) M",
-        "Range": "10ft R",
+        "Type": "(K)",
+        "Range": "-",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": "Natural Attack (x2)"
+      },
+      {
+        "Name": "Powered Sword",
+        "Lvl": "3",
+        "Damage": "d8 + 1",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x3/20",
+        "Type": "(K, E)",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": "Energy Weapon (Kinetic and Electric)"
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
       "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "occupation": "Military",
+    "currentWealthScore": "10,750",
+    "liquidCredits": "9",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Strength against Thermal",
+        "Description": "Heat damage resistance"
+      },
+      {
+        "Name": "Vulnerable against Thermal",
+        "Description": "Cold damage vulnerability"
       }
     ]
   },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
+        "Name": "Increased Speed",
+        "Description": "The Fast hero's base speed increases by 5 feet."
       }
     ]
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Athletic",
+        "Description": "Misc +2 bonus to the Athletic skill."
+      },
+      {
+        "Name": "Akimbo Specialist",
+        "Description": "The character can now gain an advantage with off-hand weapons."
+      },
+      {
+        "Name": "Zero-G Training",
+        "Description": "You take no disadvantage on attack rolls in low-gravity or zero-gravity environments."
+      },
+      {
+        "Name": "Melee Weapon Focus",
+        "Description": "Character gains advantage while using specific melee weapons [ Melee Weapon, Energy ]"
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Space Marine",
+      "Level": "",
+      "Affinities": [
+        "STR",
+        "DEX"
+      ],
+      "Talents": [
+        {
+          "Name": "Military School",
+          "Description": "At 1st, 4th, and 8th level, the Space Marine can pick a Bonus Feat from the whole Tactical category."
+        },
+        {
+          "Name": "Iron Gut",
+          "Description": "At 1st level, the Space Marine gets the Zero-G Training feat for free."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "50",
     "equipmentList": [
       {
-        "Name": "Large Range Pack",
+        "Name": "Fatigues",
         "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
+        "Weight": "1",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Clothing Outfit",
+        "Name": "Outfit Formal",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Outfit Casual",
         "Qty": "3",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Windbraker",
+        "Name": "Outfit Uniform",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Ranged Pack",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Camera",
+        "Name": "Binoculars",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Search and Rescue Kit",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Range Finding Binoculars",
-        "Qty": "1",
+        "Name": "Rations",
+        "Qty": "5",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Directed Light Source",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Compass",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Galactic Map",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
         "Name": "Rope",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Purifier",
+        "Name": "Portable Stove",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Environment Scanner +1",
+        "Name": "Syringe (Healing Con 1d8)",
+        "Qty": "5",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": "1d8 healing"
+      },
+      {
+        "Name": "Multipurpose Tool",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Old Tombs",
+        "Name": "Tent",
         "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": "Historical texts"
+        "Weight": "5",
+        "TL": "1",
+        "Notes": ""
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "Adult female Lepidonain. A middle-aged woman from Lepidonain's homeworld of Lepidon Prime. Her family name, the Dune-Striders, is an ancient one. Her family, however, has fallen out of favor as the Lepidonain Empire struggles in the modern era. She aims to fix both these issues and believes the solution must come from somewhere out in the cosmos. She looks like a typical female Lepidonain but with vivid green eyes that show deep thinking and a vicious fighter."
   },
   "techniquesCard": [
     {
@@ -541,7 +569,7 @@
     "cond_paralyzed": false
   },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "lepidonain",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,

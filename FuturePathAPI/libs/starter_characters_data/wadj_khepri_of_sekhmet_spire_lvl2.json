@@ -1,0 +1,566 @@
+{
+  "identityCard": {
+    "charName": "Wadj-Khepri of Sekhmet Spire",
+    "playerName": "",
+    "species": "Khepri",
+    "charPath": "Path of Charisma (The Freelancer)",
+    "pathLevel": "2",
+    "classList": "Envoy (1)",
+    "alignment": "Lawful Neutral",
+    "charSize": "Medium",
+    "gender": "Male",
+    "height": "5'11''",
+    "hairColor": "None",
+    "eyeColor": "Black"
+  },
+  "abilityScoresCard": {
+    "primaryAbility_STR": false,
+    "scoreSTR": "7",
+    "modSTR": "-2",
+    "primaryAbility_DEX": false,
+    "scoreDEX": "10",
+    "modDEX": "+0",
+    "primaryAbility_CON": false,
+    "scoreCON": "11",
+    "modCON": "+0",
+    "primaryAbility_INT": false,
+    "scoreINT": "13",
+    "modINT": "+1",
+    "primaryAbility_WIS": true,
+    "scoreWIS": "14",
+    "modWIS": "+2",
+    "primaryAbility_CHA": true,
+    "scoreCHA": "16",
+    "modCHA": "+3"
+  },
+  "healthInjuryCard": {
+    "hitDie": "d8",
+    "maxHP": "13",
+    "tempHP": "",
+    "currentHP": "13",
+    "nonlethalHP": ""
+  },
+  "attributesCard": {
+    "advantageDie": "d2+1",
+    "extraDamage": "0",
+    "initiative": "+2",
+    "passivePerception": "10",
+    "inertia": "",
+    "techProfCount": 2
+  },
+  "coreSkills": {
+    "skillsPerLevel": "3",
+    "unusedSkillPoints": "",
+    "skillsList": [
+      {
+        "Name": "Acrobatics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Athletics",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "STR",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Bluff",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "CHA",
+        "MiscMod": 1
+      },
+      {
+        "Name": "Computer Use",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Chemical)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Electronic)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Mechanical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Pharmaceutical)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Craft (Structural)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Diplomacy",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "CHA",
+        "MiscMod": 3
+      },
+      {
+        "Name": "Disable Device",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Disguise",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "CHA",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Intimidate",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "CHA",
+        "MiscMod": 2
+      },
+      {
+        "Name": "Knowledge (Culture)",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Current Events)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (History)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Science)",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Knowledge (Philosophy)",
+        "Favored": true,
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Medical",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Perception",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Pilot",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sense Motive",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Sleight of Hand",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Stealth",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "DEX",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Study",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Survival",
+        "Favored": false,
+        "Rank": 0,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ]
+  },
+  "ArmorStatsCard": {
+    "acTotal": "11",
+    "acTouch": "10",
+    "acFlat": "11",
+    "acArmorBonus": "1",
+    "acDexMod": "0",
+    "acSizeMod": "+0",
+    "acNaturalArmor": "0",
+    "acMiscMod": "0"
+  },
+  "DamageReductionCard": {
+    "drKinetic": "",
+    "drElectric": "",
+    "drThermal": "",
+    "drChemical": "",
+    "drAll": ""
+  },
+  "SpeedCard": {
+    "baseSpeed": "20",
+    "climbSpeed": "20",
+    "swimSpeed": "10",
+    "flySpeed": "0",
+    "combatSpeedFt": "40",
+    "combatSpeedSq": "8"
+  },
+  "armorDefensesCard": {
+    "armorProfCount": 2,
+    "armorsList": [
+      {
+        "Name": "Improved Personal Vest",
+        "AC Bonus": "+1",
+        "DR": "",
+        "Max Dex": "8",
+        "Weight": "5",
+        "Speed Penalty": "-",
+        "Bonus Attributes": "Shirt"
+      }
+    ]
+  },
+  "weaponsCard": {
+    "meleeProfCount": 1,
+    "rangedProfCount": 4,
+    "weaponsList": [
+      {
+        "Name": "Combat Knife x2",
+        "Lvl": "1",
+        "Damage": "d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "Kenetic",
+        "Range": "-",
+        "isMelee": true,
+        "Ammo": "-",
+        "Notes": ""
+      },
+      {
+        "Name": "Acid Spitter",
+        "Lvl": "3",
+        "Damage": "1d8",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/19-20",
+        "Type": "Chemical",
+        "Range": "50",
+        "isMelee": false,
+        "Ammo": "7",
+        "Notes": "1d4 (C) damage for 1d3 rounds"
+      },
+      {
+        "Name": "Acid Rain Shotgun",
+        "Lvl": "4",
+        "Damage": "1d12",
+        "Accuracy": "1",
+        "AP": "",
+        "Critical": "x2/19-20",
+        "Type": "Chemical",
+        "Range": "25/300",
+        "isMelee": false,
+        "Ammo": "7",
+        "Notes": "1d4 (C) damage for 1d3 rounds"
+      }
+    ]
+  },
+  "languageCustomSkillsCard": [
+    {
+      "Name": "Knowledge (Technology)",
+      "Rank": 2,
+      "Key Ability": "INT",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Profession",
+      "Rank": 2,
+      "Key Ability": "WIS",
+      "MiscMod": 0
+    },
+    {
+      "Name": "Language",
+      "Rank": 0,
+      "Key Ability": "-",
+      "MiscMod": 0
+    }
+  ],
+  "wealthXpCard": {
+    "occupation": "Diplomat",
+    "currentWealthScore": "35,000",
+    "liquidCredits": "16",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
+  },
+  "speciesTraitsCard": {
+    "speciesTraitsList": [
+      {
+        "Name": "Hive Sense",
+        "Description": "Khepri can sense the presence and general emotional state of other Khepri within 60 feet."
+      },
+      {
+        "Name": "Wall Climber",
+        "Description": "climb speed equal to walk speed"
+      }
+    ]
+  },
+  "pathTalentsCard": {
+    "pathTalentsList": []
+  },
+  "featsCard": {
+    "featsList": [
+      {
+        "Name": "Leadership",
+        "Description": "Advantage when assisting others in actions."
+      },
+      {
+        "Name": "Confident",
+        "Description": "Misc +1 bonus to the Diplomacy and Bluff skill."
+      },
+      {
+        "Name": "Persuasive",
+        "Description": "Misc +1 to both Diplomacy and Intimidate skills."
+      },
+      {
+        "Name": "Point Blank Shot",
+        "Description": "Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft."
+      }
+    ]
+  },
+  "professionsCard": [
+    {
+      "Title": "Envoy",
+      "Level": "1",
+      "Affinities": [
+        "WIS",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Diplomatic Path",
+          "Description": "Emissary (Levels 3, 7, 10)"
+        },
+        {
+          "Name": "Plenipotentiary Privileges",
+          "Description": "At 1st level, if you are arrested for a crime, you can make a Diplomacy check to invoke your diplomatic credentials and bypass standard punishment. The standard DC for simple infractions is DC10. A crime like murder may be a DC25 check unless it is of an important person, then perhaps 35 or higher. If one of the Envoy's consuls (see the select consul Profession feature, below) is arrested for a crime and unable to secure her own release, the Envoy may intercede on the consul’s behalf. \nThe Emissary: Gain an Advantage Die on the check if the crime is bureaucratic, political, or a public misunderstanding.\nAn Envoy who routinely invokes the privilege of diplomatic immunity—either on her own behalf or to protect her selected consuls—is likely to be recalled or terminated by those she has sworn to represent."
+        },
+        {
+          "Name": "Stipend",
+          "Description": "At 1st, 4th, 7th, and 10th level, you gain a Profession rank increase of +1 and a bonus of $2,000 ISC per Envoy level."
+        }
+      ]
+    }
+  ],
+  "equipmentCard": {
+    "itemCraftProfCount": 0,
+    "totalGearWeight": "18",
+    "equipmentList": [
+      {
+        "Name": "Briefcase",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Secure Wallet",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit Business",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit Formal",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Computation Device",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Remote Communication",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Rations (Tech 2)",
+        "Qty": "3",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": "5 pack"
+      }
+    ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri’s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen—the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "Envoy",
+      "DC": "13",
+      "Learned": "2",
+      "Uses": "2",
+      "Used": "",
+      "Techniques": [
+        {
+          "Name": "Stirring Speech",
+          "Range": "Hearing",
+          "Effect": "2 Minutes Out of Combat: Motivate your comrades before a dangerous undertaking. You provide a speech that bolsters the squad's nerves. For the next 1 hour (or until the end of the first combat encounter), all affected allies gain an Advantage Die on Saving Throws and Opposing checks."
+        },
+        {
+          "Name": "Guidance",
+          "Range": "Hearing",
+          "Effect": "Provide expert supervision to ensure an ally's success. Instead of making a skill check to aid another, you may provide guidance. This grants a competence bonus on the ally’s skill check equal to your Charisma or Wisdom Modifier. The ally must be within sight and hearing distance and able to understand you."
+        }
+      ]
+    }
+  ],
+  "quirksCard": {
+    "quirksList": []
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
+  "conditionsCard": {
+    "cond_blinded": false,
+    "cond_deafened": false,
+    "cond_confused": false,
+    "cond_entangled": false,
+    "cond_flat_footed": false,
+    "cond_helpless": false,
+    "cond_prone": false,
+    "cond_unstable": false,
+    "cond_winded": false,
+    "cond_fatigued": false,
+    "cond_exhausted": false,
+    "cond_frightened": false,
+    "cond_cowering": false,
+    "cond_panicked": false,
+    "cond_grappled": false,
+    "cond_pinned": false,
+    "cond_nauseated": false,
+    "cond_sickened": false,
+    "cond_shaken": false,
+    "cond_dazed": false,
+    "cond_stunned": false,
+    "cond_paralyzed": false
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
+  "UI_Layout": {
+    "theme": "khepri",
+    "autoSwitchTheme": true,
+    "layoutLocked": false,
+    "powerArmorVisible": false,
+    "techniquesVisible": true,
+    "quirksVisible": false,
+    "detractorsVisible": false,
+    "cyberneticsVisible": false,
+    "mutationsVisible": false,
+    "psionicsVisible": false,
+    "notesVisible": true,
+    "conditionsVisible": true
+  }
+}

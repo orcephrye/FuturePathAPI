@@ -1,17 +1,17 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Cxaz",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
-    "alignment": "Lawful Good",
-    "charSize": "Medium",
+    "species": "Graylings",
+    "charPath": "Path of Intelligence (Smart Hero)",
+    "pathLevel": "2",
+    "classList": "Engineer (1)",
+    "alignment": "Chaotic Good",
+    "charSize": "Small",
     "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "height": "3'2''",
+    "hairColor": "None",
+    "eyeColor": "Black"
   },
   "abilityScoresCard": {
     "primaryAbility_STR": false,
@@ -20,36 +20,36 @@
     "primaryAbility_DEX": false,
     "scoreDEX": "12",
     "modDEX": "+1",
-    "primaryAbility_CON": false,
-    "scoreCON": "14",
-    "modCON": "+2",
-    "primaryAbility_INT": false,
-    "scoreINT": "12",
-    "modINT": "+1",
+    "primaryAbility_CON": true,
+    "scoreCON": "10",
+    "modCON": "+0",
+    "primaryAbility_INT": true,
+    "scoreINT": "17",
+    "modINT": "+3",
     "primaryAbility_WIS": false,
-    "scoreWIS": "8",
-    "modWIS": "-1",
-    "primaryAbility_CHA": true,
-    "scoreCHA": "15",
-    "modCHA": "+2"
+    "scoreWIS": "15",
+    "modWIS": "+2",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "8",
+    "maxHP": "10",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "10",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
-    "initiative": "+0",
-    "passivePerception": "7",
+    "initiative": "+3",
+    "passivePerception": "10",
     "inertia": "",
     "techProfCount": 3
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
+    "skillsPerLevel": "5",
     "unusedSkillPoints": "",
     "skillsList": [
       {
@@ -69,16 +69,16 @@
       {
         "Name": "Bluff",
         "Favored": false,
-        "Rank": 0,
-        "Key Ability": "CHA",
+        "Rank": 1,
+        "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Computer Use",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Craft (Chemical)",
@@ -89,15 +89,15 @@
       },
       {
         "Name": "Craft (Electronic)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Craft (Mechanical)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -110,22 +110,22 @@
       },
       {
         "Name": "Craft (Structural)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Diplomacy",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
       {
         "Name": "Disable Device",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -145,15 +145,15 @@
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Current Events)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -162,14 +162,14 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Knowledge (Science)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
-        "MiscMod": 0
+        "MiscMod": 2
       },
       {
         "Name": "Knowledge (Philosophy)",
@@ -188,7 +188,7 @@
       {
         "Name": "Perception",
         "Favored": false,
-        "Rank": 0,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -201,8 +201,8 @@
       },
       {
         "Name": "Sense Motive",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -222,10 +222,10 @@
       },
       {
         "Name": "Study",
-        "Favored": false,
-        "Rank": 1,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Survival",
@@ -237,12 +237,12 @@
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "12",
-    "acTouch": "11",
-    "acFlat": "11",
+    "acTotal": "13",
+    "acTouch": "12",
+    "acFlat": "12",
     "acArmorBonus": "1",
     "acDexMod": "1",
-    "acSizeMod": "+0",
+    "acSizeMod": "+1",
     "acNaturalArmor": "0",
     "acMiscMod": "0"
   },
@@ -254,118 +254,166 @@
     "drAll": ""
   },
   "SpeedCard": {
-    "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "baseSpeed": "15",
+    "climbSpeed": "15",
+    "swimSpeed": "15",
     "flySpeed": "0",
-    "combatSpeedFt": "20",
-    "combatSpeedSq": "4"
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
-    "armorProfCount": 2,
+    "armorProfCount": 3,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
-        "AC Bonus": "+1",
+        "Name": "Nano Mesh Regen",
+        "AC Bonus": "1",
         "DR": "",
-        "Max Dex": "8",
-        "Weight": "5",
+        "Max Dex": "7",
+        "Weight": "10",
         "Speed Penalty": "-",
-        "Bonus Attributes": "Shirt"
+        "Bonus Attributes": "Regeneeration +6 HP (Pharma Pack 5 rounds)"
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "meleeProfCount": 1,
+    "rangedProfCount": 3,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
-        "Lvl": "2",
-        "Damage": "d6 + 1",
+        "Name": "Laser Pistol",
+        "Lvl": "1",
+        "Damage": "d8",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "(E) M",
-        "Range": "10ft R",
+        "Type": "T",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": ""
+      },
+      {
+        "Name": "Combat Knife",
+        "Lvl": "1",
+        "Damage": "d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/20",
+        "Type": "K",
+        "Range": "-",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": ""
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
       "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "occupation": "Blue Collar",
+    "currentWealthScore": "1,400",
+    "liquidCredits": "9",
+    "xpCurrent": "2,000",
+    "xpNextLevel": "5,000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Grayling Telecom Link",
+        "Description": "Graylings possess a direct mental affinity for technology and communications."
       }
     ]
   },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
+        "Name": "Research",
+        "Description": "Gain a +1 Misc bonus to any Intelligence-based Skill."
       }
     ]
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Studious",
+        "Description": "Gain Misc +1 bonus to the Study skill and one Knowledge skill"
+      },
+      {
+        "Name": "Jerry Rigging",
+        "Description": "You can repair items without material costs just once."
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Engineer",
+      "Level": "",
+      "Affinities": [
+        "CON",
+        "INT"
+      ],
+      "Talents": [
+        {
+          "Name": "Extra-Curricular Training",
+          "Description": "The Master Architect: (Novice) \"Industrial Efficiency\" - You gain the Jerry Rigging feat for free. You reduce the material cost of crafting General Equipment by an additional 25%."
+        },
+        {
+          "Name": "Quick Construction",
+          "Description": "At Engineer 1st level, an engineer learns how to craft general equipment such as scratch-built electronic, mechanical, and structural objects more quickly than normal. When using the Craft (electronic), Craft (mechanical), or Craft (structural) skill to build a General Equipment item, the Engineer reduces the building time by 1/4.\n- At 5th level, the Engineer reduces the building time of ordinary objects to 1/8 and masterworked objects by half."
+        },
+        {
+          "Name": "Professional Repair",
+          "Description": "At 1st level, an Engineer has improved ways of repairing robots, vehicles, power armor, etc... An Engineer with the correct Professional Kit or appropriate facility (ie: workshop, or hanger) can gain bonuses to repair damage to a robot, vehicles, power armor, spaceships and so on. The DC and Time are no longer based on the Repair rules. This takes 1 hour of work. This can also be done in combat but requires an additional +5 to the DC check and a Standard Action. Review the table to the right for more info.\n- For Space Ships, this provides an Advantage to Repair checks to remove Battle Damage."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "54",
     "equipmentList": [
       {
-        "Name": "Large Range Pack",
+        "Name": "Contractor's Field Bag",
         "Qty": "1",
         "Weight": "5",
         "TL": "3",
         "Notes": ""
       },
       {
-        "Name": "Clothing Outfit",
-        "Qty": "3",
+        "Name": "Secure Wallet",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit Casual",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Uniform",
+        "Qty": "1",
         "Weight": "1",
         "TL": "3",
         "Notes": ""
@@ -385,63 +433,21 @@
         "Notes": ""
       },
       {
-        "Name": "Camera",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Search and Rescue Kit",
+        "Name": "Electrical Tool Kit",
         "Qty": "1",
         "Weight": "5",
         "TL": "3",
         "Notes": ""
       },
       {
-        "Name": "Range Finding Binoculars",
+        "Name": "Mechanical Tool Kit",
         "Qty": "1",
-        "Weight": "1",
+        "Weight": "5",
         "TL": "3",
         "Notes": ""
       },
       {
         "Name": "Directed Light Source",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Compass",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Galactic Map",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Rope",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Purifier",
         "Qty": "1",
         "Weight": "1",
         "TL": "3",
@@ -455,26 +461,46 @@
         "Notes": ""
       },
       {
-        "Name": "Old Tombs",
+        "Name": "Duct Tape",
         "Qty": "1",
         "Weight": "1",
         "TL": "3",
-        "Notes": "Historical texts"
+        "Notes": ""
+      },
+      {
+        "Name": "Duracable",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "3",
+        "Notes": ""
+      },
+      {
+        "Name": "Pharam Packs",
+        "Qty": "2",
+        "Weight": "10",
+        "TL": "3",
+        "Notes": "This is a packet of Pharmaceuticals that is used by the wearers Regen Armor. (850ISK a peice)"
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "Young adult male engineer. Growing up on the arid homeworld of Cxazshngs, Cxaz was expected to follow family tradition and enter the prestigious cloning research guilds of Curvilinea Prime. However, he possessed a restless, hands-on mechanical curiosity that theoretical labs could never satisfy. Preferring grease, wire-splicing, and field improvisations over pristine academic suites, he boarded an outward-bound freighter to explore the wider galaxy. Inquisitive, quick-thinking, and eager to tinker with foreign alien technology, Cxaz is a gifted technician who views every broken starship system as an exciting puzzle. Standing just 3'2\" tall with a light frame, he has smooth grey skin, prominent dark eyes, and intricate, brightly colored geometric tattoos dyed into his scalp, neck, and arms—a traditional practice of his people that he wears with pride."
   },
   "techniquesCard": [
     {
       "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
+      "Profession": "Telepath Grayling",
+      "DC": "13",
+      "Learned": "1",
+      "Uses": "-",
+      "Used": "0",
+      "Techniques": [
+        {
+          "Name": "Missive (Telepath)",
+          "Range": "Close",
+          "Effect": "Send a short one-way telepathic message to a single subject"
+        }
+      ]
     }
   ],
   "quirksCard": {
@@ -502,19 +528,21 @@
     "drawbacksList": [],
     "levelsList": [
       {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
+        "level": "1",
+        "type": "Telepath",
+        "dc": "13",
+        "learned": "1",
+        "uses": "1",
+        "used": "0",
+        "techniquesList": [
+          {
+            "Name": "Missive",
+            "Range": "Close",
+            "Description": "Send a short one-way telepathic message to a single subject"
+          }
+        ]
       }
     ]
-  },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -540,8 +568,12 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "grayling",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,
@@ -550,7 +582,7 @@
     "detractorsVisible": false,
     "cyberneticsVisible": false,
     "mutationsVisible": false,
-    "psionicsVisible": false,
+    "psionicsVisible": true,
     "notesVisible": true,
     "conditionsVisible": true
   }

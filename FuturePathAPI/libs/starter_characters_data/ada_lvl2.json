@@ -1,61 +1,61 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Ada (Ovex name: OVX-9482)",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
-    "alignment": "Lawful Good",
+    "species": "Ovex",
+    "charPath": "Ovex Path (Assistance Module)",
+    "pathLevel": "2",
+    "classList": "Combat Medic (1)",
+    "alignment": "Chaotic Neutral",
     "charSize": "Medium",
-    "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "gender": "N/A",
+    "height": "5'11''",
+    "hairColor": "Purple",
+    "eyeColor": "Red"
   },
   "abilityScoresCard": {
     "primaryAbility_STR": false,
-    "scoreSTR": "10",
-    "modSTR": "+0",
-    "primaryAbility_DEX": false,
-    "scoreDEX": "12",
+    "scoreSTR": "12",
+    "modSTR": "+1",
+    "primaryAbility_DEX": true,
+    "scoreDEX": "13",
     "modDEX": "+1",
     "primaryAbility_CON": false,
-    "scoreCON": "14",
-    "modCON": "+2",
+    "scoreCON": "8",
+    "modCON": "-1",
     "primaryAbility_INT": false,
-    "scoreINT": "12",
-    "modINT": "+1",
-    "primaryAbility_WIS": false,
-    "scoreWIS": "8",
-    "modWIS": "-1",
-    "primaryAbility_CHA": true,
-    "scoreCHA": "15",
-    "modCHA": "+2"
+    "scoreINT": "14",
+    "modINT": "+2",
+    "primaryAbility_WIS": true,
+    "scoreWIS": "15",
+    "modWIS": "+2",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "10",
+    "modCHA": "+0"
   },
   "healthInjuryCard": {
-    "hitDie": "d6",
-    "maxHP": "8",
+    "hitDie": "d8",
+    "maxHP": "11",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "11",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
-    "initiative": "+0",
-    "passivePerception": "7",
+    "initiative": "+3",
+    "passivePerception": "10",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 4
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
+    "skillsPerLevel": "4",
     "unusedSkillPoints": "",
     "skillsList": [
       {
         "Name": "Acrobatics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -75,15 +75,15 @@
       },
       {
         "Name": "Computer Use",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Craft (Chemical)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -103,8 +103,8 @@
       },
       {
         "Name": "Craft (Pharmaceutical)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -117,7 +117,7 @@
       },
       {
         "Name": "Diplomacy",
-        "Favored": true,
+        "Favored": false,
         "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 0
@@ -145,8 +145,8 @@
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -159,15 +159,15 @@
       },
       {
         "Name": "Knowledge (History)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Knowledge (Science)",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -180,15 +180,15 @@
       },
       {
         "Name": "Medical",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -201,8 +201,8 @@
       },
       {
         "Name": "Sense Motive",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -223,14 +223,14 @@
       {
         "Name": "Study",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
@@ -247,31 +247,40 @@
     "acMiscMod": "0"
   },
   "DamageReductionCard": {
-    "drKinetic": "",
+    "drKinetic": "2",
     "drElectric": "",
     "drThermal": "",
     "drChemical": "",
-    "drAll": ""
+    "drAll": "4"
   },
   "SpeedCard": {
-    "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "baseSpeed": "15",
+    "climbSpeed": "10",
+    "swimSpeed": "10",
     "flySpeed": "0",
-    "combatSpeedFt": "20",
-    "combatSpeedSq": "4"
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
-    "armorProfCount": 2,
+    "armorProfCount": 3,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
+        "Name": "High Tech Personal Vest",
         "AC Bonus": "+1",
-        "DR": "",
-        "Max Dex": "8",
+        "DR": "1K",
+        "Max Dex": "+8",
         "Weight": "5",
         "Speed Penalty": "-",
-        "Bonus Attributes": "Shirt"
+        "Bonus Attributes": "Shirt (DR 1K)"
+      },
+      {
+        "Name": "Superior Shield Suit",
+        "AC Bonus": "0",
+        "DR": "4A/1K",
+        "Max Dex": "+7",
+        "Weight": "15",
+        "Speed Penalty": "-",
+        "Bonus Attributes": "(Over Shirt) (AC Bonus doesn't stack)"
       }
     ]
   },
@@ -280,191 +289,171 @@
     "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
+        "Name": "Monofilament Dagger(s) x2",
         "Lvl": "2",
-        "Damage": "d6 + 1",
+        "Damage": "d2",
         "Accuracy": "1",
-        "AP": "",
+        "AP": "1",
         "Critical": "x2/20",
-        "Type": "(E) M",
-        "Range": "10ft R",
+        "Type": "K",
+        "Range": "M",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": "Finesse Weapon, (+1 to Init when holding)"
+      },
+      {
+        "Name": "Personal Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
+        "Accuracy": "0",
+        "AP": "0",
+        "Critical": "x2/20",
+        "Type": "K",
+        "Range": "100ft",
+        "isMelee": false,
+        "Ammo": "7",
+        "Notes": ""
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
-      "Name": "Language",
-      "Rank": 1,
+      "Name": "Knowledge (Tech)",
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     },
     {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Name": "Language",
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "occupation": "Student",
+    "currentWealthScore": "3,500",
+    "liquidCredits": "2",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Ovex Traits",
+        "Description": "Immune to Psionic Mind affects, Starvation. Full rest takes 4 hours. Do not need to breath."
       }
     ]
   },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
+        "Name": "The Nexus",
+        "Description": "Semi-Immortal. If 'death' happens the Ovex are rebooted back at the Nexus."
       }
     ]
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Biology Database Program",
+        "Description": "no penalties for alien species, +1 Misc Mod to Treat Injury"
+      },
+      {
+        "Name": "Bazooka Arm",
+        "Description": "The Character is extremely effective at throwing grenades."
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Combat Medic",
+      "Level": "1",
+      "Affinities": [
+        "DEX",
+        "WIS"
+      ],
+      "Talents": [
+        {
+          "Name": "Medic!",
+          "Description": "At Combat Medic 1st level, the Combat Medic can more quickly help people in need of aid. Medical skill checks can now be done as a Bonus Action that is granted after performing a Standard Action (Move). The Medic does not need to move any distance to gain this Bonus Action (e.g., preparing tools while standing next to an ally). This only counts for restoring HP, not for stabilizing a dying character.\nNote: While using skills or items in combat normally requires a Standard Action, this feature allows the Medical skill to be performed specifically as a Bonus Action following a move.\n\nWhen a natural 20 is rolled for a Medical skill check, an Inertia point is earned, and the Health restored is the maximum possible."
+        },
+        {
+          "Name": "Quick Chemistry",
+          "Description": "At 1st level, the Combat Medic can craft general chemicals and pharmaceuticals more quickly. When using the Craft (Chemical) or Craft (Pharmaceutical) skill to cook General Equipment items, the Combat Medic reduces the cooking/brewing time by 1/2.\nAt 5th level, the Combat Medic reduces the cooking/brewing time of masterworked chemical concoctions by half."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "37",
     "equipmentList": [
       {
-        "Name": "Large Range Pack",
+        "Name": "Backpack (Medium)",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Clothing Outfit",
-        "Qty": "3",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Windbraker",
+        "Name": "Secure Wallet",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Clothing Outfit Casual",
+        "Qty": "3",
+        "Weight": "1",
+        "TL": "2",
+        "Notes": ""
+      },
+      {
+        "Name": "Computation Device",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "2",
         "Notes": ""
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Camera",
+        "Name": "Urban Map",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
       },
       {
-        "Name": "Search and Rescue Kit",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Range Finding Binoculars",
+        "Name": "Thermal Container (Water)",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "2",
         "Notes": ""
-      },
-      {
-        "Name": "Directed Light Source",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Compass",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Galactic Map",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Rope",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Purifier",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Environment Scanner +1",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Old Tombs",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": "Historical texts"
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "On a personal journey to, in the eyes of the Ovex Nexus, reach maturity. Ada, or, as the Nexus knows it, OVX-9482-Sub-1850, is exploring the known universe, posing as a common sentient biological lifeform. This Ovex chose the appearance of an Acconian female. She is well-rounded at the waist, short, with long, bright, multi colored hair."
   },
   "techniquesCard": [
     {
@@ -541,7 +530,7 @@
     "cond_paralyzed": false
   },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "cosmic-dark",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,

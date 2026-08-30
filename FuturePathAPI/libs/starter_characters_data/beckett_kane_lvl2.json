@@ -1,68 +1,68 @@
 {
   "identityCard": {
-    "charName": "Hobrin Aurelius",
+    "charName": "Beckett Kane",
     "playerName": "",
-    "species": "Aconian",
-    "charPath": "Path of Charisma (Charismatic Hero)",
-    "pathLevel": "1",
-    "classList": "",
-    "alignment": "Lawful Good",
+    "species": "Human",
+    "charPath": "Path of Strength (Strong Hero)",
+    "pathLevel": "2",
+    "classList": "Space Marine (1)",
+    "alignment": "Lawful Neutral",
     "charSize": "Medium",
     "gender": "Male",
-    "height": "4'5''",
-    "hairColor": "Dark Red",
-    "eyeColor": "White"
+    "height": "5'11''",
+    "hairColor": "Brown",
+    "eyeColor": "Hazel"
   },
   "abilityScoresCard": {
-    "primaryAbility_STR": false,
-    "scoreSTR": "10",
-    "modSTR": "+0",
-    "primaryAbility_DEX": false,
+    "primaryAbility_STR": true,
+    "scoreSTR": "16",
+    "modSTR": "+3",
+    "primaryAbility_DEX": true,
     "scoreDEX": "12",
     "modDEX": "+1",
     "primaryAbility_CON": false,
     "scoreCON": "14",
     "modCON": "+2",
     "primaryAbility_INT": false,
-    "scoreINT": "12",
-    "modINT": "+1",
+    "scoreINT": "10",
+    "modINT": "+0",
     "primaryAbility_WIS": false,
-    "scoreWIS": "8",
-    "modWIS": "-1",
-    "primaryAbility_CHA": true,
-    "scoreCHA": "15",
-    "modCHA": "+2"
+    "scoreWIS": "12",
+    "modWIS": "+1",
+    "primaryAbility_CHA": false,
+    "scoreCHA": "8",
+    "modCHA": "-1"
   },
   "healthInjuryCard": {
-    "hitDie": "d6",
-    "maxHP": "8",
+    "hitDie": "d8",
+    "maxHP": "17",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "17",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "d2",
+    "advantageDie": "d2+1",
     "extraDamage": "0",
-    "initiative": "+0",
-    "passivePerception": "7",
+    "initiative": "+2",
+    "passivePerception": "9",
     "inertia": "",
-    "techProfCount": 3
+    "techProfCount": 1
   },
   "coreSkills": {
-    "skillsPerLevel": "3",
+    "skillsPerLevel": "1",
     "unusedSkillPoints": "",
     "skillsList": [
       {
         "Name": "Acrobatics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Athletics",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "STR",
         "MiscMod": 0
       },
@@ -71,7 +71,7 @@
         "Favored": false,
         "Rank": 0,
         "Key Ability": "CHA",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Computer Use",
@@ -117,9 +117,9 @@
       },
       {
         "Name": "Diplomacy",
-        "Favored": true,
+        "Favored": false,
         "Rank": 1,
-        "Key Ability": "CHA",
+        "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
@@ -138,15 +138,15 @@
       },
       {
         "Name": "Intimidate",
-        "Favored": false,
-        "Rank": 0,
-        "Key Ability": "CHA",
+        "Favored": true,
+        "Rank": 2,
+        "Key Ability": "STR",
         "MiscMod": 0
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -159,10 +159,10 @@
       },
       {
         "Name": "Knowledge (History)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Knowledge (Science)",
@@ -187,15 +187,15 @@
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
         "Name": "Pilot",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -215,256 +215,276 @@
       },
       {
         "Name": "Stealth",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
       {
         "Name": "Study",
-        "Favored": false,
+        "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "12",
+    "acTotal": "14",
     "acTouch": "11",
-    "acFlat": "11",
-    "acArmorBonus": "1",
+    "acFlat": "13",
+    "acArmorBonus": "3",
     "acDexMod": "1",
     "acSizeMod": "+0",
     "acNaturalArmor": "0",
     "acMiscMod": "0"
   },
   "DamageReductionCard": {
-    "drKinetic": "",
+    "drKinetic": "1",
     "drElectric": "",
     "drThermal": "",
     "drChemical": "",
     "drAll": ""
   },
   "SpeedCard": {
-    "baseSpeed": "10",
-    "climbSpeed": "5",
-    "swimSpeed": "5",
+    "baseSpeed": "15",
+    "climbSpeed": "10",
+    "swimSpeed": "10",
     "flySpeed": "0",
-    "combatSpeedFt": "20",
-    "combatSpeedSq": "4"
+    "combatSpeedFt": "30",
+    "combatSpeedSq": "6"
   },
   "armorDefensesCard": {
-    "armorProfCount": 2,
+    "armorProfCount": 3,
     "armorsList": [
       {
-        "Name": "Advanced Personal Vest",
-        "AC Bonus": "+1",
-        "DR": "",
-        "Max Dex": "8",
-        "Weight": "5",
+        "Name": "Mstr Kevlar Vest",
+        "AC Bonus": "3",
+        "DR": "1K",
+        "Max Dex": "7",
+        "Weight": "10",
         "Speed Penalty": "-",
-        "Bonus Attributes": "Shirt"
+        "Bonus Attributes": "Masterworked +1"
       }
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "meleeProfCount": 1,
+    "rangedProfCount": 3,
     "weaponsList": [
       {
-        "Name": "Shock Whip",
-        "Lvl": "2",
-        "Damage": "d6 + 1",
+        "Name": "Assault Weapon",
+        "Lvl": "3",
+        "Damage": "1d10",
         "Accuracy": "1",
         "AP": "",
-        "Critical": "x2/20",
-        "Type": "(E) M",
-        "Range": "10ft R",
+        "Critical": "x2",
+        "Type": "K",
+        "Range": "300",
+        "isMelee": false,
+        "Ammo": "6",
+        "Notes": "Enhanced Combat Options (Overrun)"
+      },
+      {
+        "Name": "Side Arm",
+        "Lvl": "3",
+        "Damage": "1d8+1",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2/19-20",
+        "Type": "K",
+        "Range": "300",
+        "isMelee": false,
+        "Ammo": "7",
+        "Notes": ""
+      },
+      {
+        "Name": "Combat Knife",
+        "Lvl": "1",
+        "Damage": "1d4",
+        "Accuracy": "",
+        "AP": "",
+        "Critical": "x2",
+        "Type": "K",
+        "Range": "-",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Flexible Chain of Energy"
+        "Notes": ""
       }
     ]
   },
   "languageCustomSkillsCard": [
     {
       "Name": "Knowledge (Technology)",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "INT",
       "MiscMod": 0
     },
     {
       "Name": "Profession",
-      "Rank": 1,
+      "Rank": 2,
       "Key Ability": "WIS",
       "MiscMod": 0
     },
     {
       "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Ancient Language",
-      "Rank": 2,
+      "Rank": 0,
       "Key Ability": "-",
       "MiscMod": 0
     }
   ],
   "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "10,000",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+    "occupation": "Military",
+    "currentWealthScore": "8,000",
+    "liquidCredits": "11",
+    "xpCurrent": "2,000",
+    "xpNextLevel": "5,000"
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
-        "Name": "Many Worlds",
-        "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
+        "Name": "Diversity/Bonus Feat/Bonus Skill",
+        "Description": "Relocate any one Ability Point and declare any one Skill a Favored Skill/Gain an additional Bonus Feat (Misc Only)/Gain a Bonus Skill Point"
       }
     ]
   },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
-        "Name": "Coordinate",
-        "Description": "The Charismatic hero has a knack for getting people to work together."
+        "Name": "Extreme Effort",
+        "Description": "Requires a standard action (without bonus action) and grants an advantage bonus on the check. The check can be for anything. You must decide to use this ability before making the check. Only once per day."
       }
     ]
   },
   "featsCard": {
     "featsList": [
       {
-        "Name": "Academic",
-        "Description": "+1 Misc bonus to Knowledge (History) and Study checks."
+        "Name": "Point Blank Shot",
+        "Description": "Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft."
+      },
+      {
+        "Name": "Confident",
+        "Description": "Misc +1 Bonus to the Diplomacy and Bluff skill"
+      },
+      {
+        "Name": "Track",
+        "Description": "Add Advantage Die too Survival checks when tracking"
+      },
+      {
+        "Name": "Zero-G Training",
+        "Description": "You take no disadvantage on attack rolls in low-gravity or zero-gravity environments."
+      },
+      {
+        "Name": "Bazooka Arm",
+        "Description": "Gain a +15ft range to throwing objects, including grenades. Also, a successful grenade-throwing accuracy check now falls within the range of 2 to 9. Meaning that 1 is 5ft to the left or low, while 10 is 5ft to the right or high, and so on for 1 and 10."
       }
     ]
   },
-  "professionsCard": [],
+  "professionsCard": [
+    {
+      "Title": "Space Marine",
+      "Level": "",
+      "Affinities": [
+        "STR",
+        "DEX"
+      ],
+      "Talents": [
+        {
+          "Name": "Military School",
+          "Description": "At 1st, 4th, and 8th level, the Space Marine can pick a Bonus Feat from the whole Tactical category."
+        },
+        {
+          "Name": "Iron Gut",
+          "Description": "At 1st level, the Space Marine gets the Zero-G Training feat for free."
+        }
+      ]
+    }
+  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "40",
+    "totalGearWeight": "50",
     "equipmentList": [
       {
-        "Name": "Large Range Pack",
+        "Name": "Fatigues",
+        "Qty": "1",
+        "Weight": "1",
+        "TL": "1",
+        "Notes": ""
+      },
+      {
+        "Name": "Range Pack",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Clothing Outfit",
-        "Qty": "3",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Windbraker",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
+        "TL": "1",
+        "Notes": "A large backpack with extra external pockets and hooks for hanging"
       },
       {
         "Name": "Remote Comms",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Camera",
+        "Name": "Binoculars",
         "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
+        "Weight": "2",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Search and Rescue Kit",
-        "Qty": "1",
-        "Weight": "5",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Range Finding Binoculars",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Directed Light Source",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Compass",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Galactic Map",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
+        "Name": "Rations",
+        "Qty": "5",
+        "Weight": "2",
+        "TL": "1",
+        "Notes": "Small, simple, caring case for sealed food"
       },
       {
         "Name": "Rope",
         "Qty": "1",
         "Weight": "5",
-        "TL": "3",
+        "TL": "1",
+        "Notes": "50ft in length"
+      },
+      {
+        "Name": "Portable Stove",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
         "Notes": ""
       },
       {
-        "Name": "Rations (Tech 3)",
-        "Qty": "7",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": ""
+        "Name": "Tent",
+        "Qty": "1",
+        "Weight": "5",
+        "TL": "1",
+        "Notes": "Big enough for a single Medium sized person"
       },
       {
-        "Name": "Purifier",
+        "Name": "Multipurpose Tool",
         "Qty": "1",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
+        "TL": "1",
+        "Notes": "Like a 'swiss army knife'"
       },
       {
-        "Name": "Environment Scanner +1",
-        "Qty": "1",
+        "Name": "Healing Concoction Syringe",
+        "Qty": "5",
         "Weight": "1",
-        "TL": "3",
-        "Notes": ""
-      },
-      {
-        "Name": "Old Tombs",
-        "Qty": "1",
-        "Weight": "1",
-        "TL": "3",
-        "Notes": "Historical texts"
+        "TL": "1",
+        "Notes": "1d6 of healing"
       }
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm—silent reminders of a war nobody won."
   },
   "techniquesCard": [
     {
@@ -512,10 +532,6 @@
       }
     ]
   },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
-  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -540,8 +556,12 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
-    "theme": "aconian",
+    "theme": "human",
     "autoSwitchTheme": true,
     "layoutLocked": false,
     "powerArmorVisible": false,
@@ -552,6 +572,6 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": true
+    "conditionsVisible": false
   }
 }
