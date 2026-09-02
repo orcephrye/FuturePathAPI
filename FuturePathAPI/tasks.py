@@ -53,6 +53,25 @@ tasks = [
             "sizes": f"{END_POINT}/tasks/character_sheet/sizes",
         },
     },
+    {
+        "id": 3,
+        "name": "ship_schematics_sheet",
+        "description": "Interactive form-fillable ship schematics sheet for d20 FuturePath with mobile, desktop, and single-page print support.",
+        "uri": f"{END_POINT}/tasks/ship_schematics_sheet",
+        "sub_endpoints": {
+            "hull_sizes": f"{END_POINT}/tasks/ship_schematics_sheet/hull_sizes",
+            "hull_configurations": f"{END_POINT}/tasks/ship_schematics_sheet/hull_configurations",
+            "quirks": f"{END_POINT}/tasks/ship_schematics_sheet/quirks",
+            "ftl_drives": f"{END_POINT}/tasks/ship_schematics_sheet/ftl_drives",
+            "hard_points_and_bays": f"{END_POINT}/tasks/ship_schematics_sheet/hard_points_and_bays",
+            "weapon_types": f"{END_POINT}/tasks/ship_schematics_sheet/weapon_types",
+            "bays": f"{END_POINT}/tasks/ship_schematics_sheet/bays",
+            "function_upgrades": f"{END_POINT}/tasks/ship_schematics_sheet/function_upgrades",
+            "attribute_upgrades": f"{END_POINT}/tasks/ship_schematics_sheet/attribute_upgrades",
+            "accessories": f"{END_POINT}/tasks/ship_schematics_sheet/accessories",
+            "species": f"{END_POINT}/tasks/ship_schematics_sheet/species",
+        },
+    },
 ]
 
 

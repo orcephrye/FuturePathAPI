@@ -26,12 +26,26 @@ from FuturePathAPI.libs.ReferenceData import (
     get_reference_db,
     init_reference_tables,
 )
+from FuturePathAPI.libs.SpaceShipReferenceData import (
+    HULL_CONFIGURATIONS,
+    HULL_SIZES,
+    SHIP_ACCESSORIES,
+    SHIP_ATTRIBUTE_UPGRADES,
+    SHIP_BAYS,
+    SHIP_FUNCTION_UPGRADES,
+    SHIP_QUIRKS,
+    SHIP_WEAPON_TYPES,
+    SPACECRAFT_HARD_POINTS_AND_BAYS,
+    SPACESHIP_FTL_DRIVES,
+    init_spaceship_reference_tables,
+)
 
 log = logging.getLogger("data")
 
 # Initialize reference tables on module load
 try:
     init_reference_tables()
+    init_spaceship_reference_tables()
 except Exception as e:
     log.error(f"Error initializing reference tables in data module: {e}")
 
@@ -47,6 +61,22 @@ data_endpoints = {
     "advantage_die_levels": f"{END_POINT}/data/advantage_die_levels",
     "skill_die_levels": f"{END_POINT}/data/skill_die_levels",
     "sizes": f"{END_POINT}/data/sizes",
+    "spaceship": f"{END_POINT}/data/spaceship",
+    "all_spaceship_reference_data": f"{END_POINT}/data/all_spaceship_reference_data",
+}
+
+spaceship_data_endpoints = {
+    "hull_sizes": f"{END_POINT}/data/spaceship/hull_sizes",
+    "hull_configurations": f"{END_POINT}/data/spaceship/hull_configurations",
+    "quirks": f"{END_POINT}/data/spaceship/quirks",
+    "ftl_drives": f"{END_POINT}/data/spaceship/ftl_drives",
+    "hard_points_and_bays": f"{END_POINT}/data/spaceship/hard_points_and_bays",
+    "weapon_types": f"{END_POINT}/data/spaceship/weapon_types",
+    "bays": f"{END_POINT}/data/spaceship/bays",
+    "function_upgrades": f"{END_POINT}/data/spaceship/function_upgrades",
+    "attribute_upgrades": f"{END_POINT}/data/spaceship/attribute_upgrades",
+    "accessories": f"{END_POINT}/data/spaceship/accessories",
+    "all": f"{END_POINT}/data/all_spaceship_reference_data",
 }
 
 
@@ -349,3 +379,174 @@ def get_all_reference_data():
         "mutation_drawbacks": _get_mutation_drawbacks_data(),
         "mutation_enhancements": _shorten_mutation_enhancements(_get_mutation_enhancements_data()),
     })
+
+
+def _get_spaceship_data(table_name, fallback_data):
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection=table_name))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                if isinstance(fallback_data, dict) and len(docs) == 1:
+                    return docs[0]
+                return docs
+        except Exception as e:
+            log.error(f"Error fetching spaceship table '{table_name}': {e}")
+    return fallback_data
+
+
+@app.route("/data/spaceship", methods=["GET"])
+def get_spaceship_data_index():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship
+    :DESC: Returns a JSON blob showing all available raw spaceship reference data endpoints.
+    :Content-Type: application/json
+    """
+    return jsonify({"spaceship_data": spaceship_data_endpoints})
+
+
+@app.route("/data/spaceship/hull_sizes", methods=["GET"])
+@app.route("/data/spaceship/sizes", methods=["GET"])
+def get_data_spaceship_hull_sizes():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/hull_sizes, /data/spaceship/sizes
+    :DESC: Returns a JSON list of all official Spaceship Hull Sizes and their base stats.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_hull_sizes", HULL_SIZES))
+
+
+@app.route("/data/spaceship/hull_configurations", methods=["GET"])
+@app.route("/data/spaceship/configurations", methods=["GET"])
+def get_data_spaceship_hull_configurations():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/hull_configurations, /data/spaceship/configurations
+    :DESC: Returns a JSON list of all official Spaceship Hull Configurations.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_hull_configurations", HULL_CONFIGURATIONS))
+
+
+@app.route("/data/spaceship/quirks", methods=["GET"])
+@app.route("/data/spaceship/ship_quirks", methods=["GET"])
+def get_data_spaceship_quirks():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/quirks, /data/spaceship/ship_quirks
+    :DESC: Returns a JSON list of all official Spaceship Quirks.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_quirks", SHIP_QUIRKS))
+
+
+@app.route("/data/spaceship/ftl_drives", methods=["GET"])
+@app.route("/data/spaceship/ftl_drive_types", methods=["GET"])
+def get_data_spaceship_ftl_drives():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/ftl_drives, /data/spaceship/ftl_drive_types
+    :DESC: Returns a JSON list of all official Spaceship FTL Drive Types.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_ftl_drives", SPACESHIP_FTL_DRIVES))
+
+
+@app.route("/data/spaceship/hard_points_and_bays", methods=["GET"])
+@app.route("/data/spaceship/hardpoints_and_bays", methods=["GET"])
+def get_data_spaceship_hard_points_and_bays():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/hard_points_and_bays, /data/spaceship/hardpoints_and_bays
+    :DESC: Returns a JSON list of hard points, bays, and customization slot bonuses per hull size.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_hard_points_and_bays", SPACECRAFT_HARD_POINTS_AND_BAYS))
+
+
+@app.route("/data/spaceship/weapon_types", methods=["GET"])
+@app.route("/data/spaceship/weapons", methods=["GET"])
+def get_data_spaceship_weapon_types():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/weapon_types, /data/spaceship/weapons
+    :DESC: Returns a JSON list of official Spaceship Weapon Types, costs, ammo, and bonuses.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_weapon_types", SHIP_WEAPON_TYPES))
+
+
+@app.route("/data/spaceship/bays", methods=["GET"])
+@app.route("/data/spaceship/ship_bays", methods=["GET"])
+def get_data_spaceship_bays():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/bays, /data/spaceship/ship_bays
+    :DESC: Returns a JSON list of official Spaceship Bays and Facilities.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_bays", SHIP_BAYS))
+
+
+@app.route("/data/spaceship/function_upgrades", methods=["GET"])
+def get_data_spaceship_function_upgrades():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/function_upgrades
+    :DESC: Returns a JSON list of official Spaceship Function Upgrades.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_function_upgrades", SHIP_FUNCTION_UPGRADES))
+
+
+@app.route("/data/spaceship/attribute_upgrades", methods=["GET"])
+def get_data_spaceship_attribute_upgrades():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/attribute_upgrades
+    :DESC: Returns a JSON object with Core System Attribute upgrade costs and rules.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_attribute_upgrades", SHIP_ATTRIBUTE_UPGRADES))
+
+
+@app.route("/data/spaceship/accessories", methods=["GET"])
+def get_data_spaceship_accessories():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/accessories
+    :DESC: Returns a JSON list of official Spaceship Accessories.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_spaceship_data("spaceship_accessories", SHIP_ACCESSORIES))
+
+
+@app.route("/data/spaceship/all", methods=["GET"])
+@app.route("/data/all_spaceship_reference_data", methods=["GET"])
+@app.route("/data/all_spaceship_refernce_data", methods=["GET"])
+def get_all_spaceship_reference_data():
+    """
+    :OPTIONS: GET
+    :PATH: /data/spaceship/all, /data/all_spaceship_reference_data, /data/all_spaceship_refernce_data
+    :DESC: Returns a JSON object of all spaceship reference data endpoints.
+    :Content-Type: application/json
+    """
+    return jsonify({
+        "hull_sizes": _get_spaceship_data("spaceship_hull_sizes", HULL_SIZES),
+        "hull_configurations": _get_spaceship_data("spaceship_hull_configurations", HULL_CONFIGURATIONS),
+        "ship_quirks": _get_spaceship_data("spaceship_quirks", SHIP_QUIRKS),
+        "quirks": _get_spaceship_data("spaceship_quirks", SHIP_QUIRKS),
+        "ftl_drives": _get_spaceship_data("spaceship_ftl_drives", SPACESHIP_FTL_DRIVES),
+        "hard_points_and_bays": _get_spaceship_data("spaceship_hard_points_and_bays", SPACECRAFT_HARD_POINTS_AND_BAYS),
+        "weapon_types": _get_spaceship_data("spaceship_weapon_types", SHIP_WEAPON_TYPES),
+        "bays": _get_spaceship_data("spaceship_bays", SHIP_BAYS),
+        "function_upgrades": _get_spaceship_data("spaceship_function_upgrades", SHIP_FUNCTION_UPGRADES),
+        "attribute_upgrades": _get_spaceship_data("spaceship_attribute_upgrades", SHIP_ATTRIBUTE_UPGRADES),
+        "accessories": _get_spaceship_data("spaceship_accessories", SHIP_ACCESSORIES),
+    })
+

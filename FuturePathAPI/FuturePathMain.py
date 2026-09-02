@@ -12,6 +12,7 @@ from flask import jsonify
 from FuturePathAPI import (
     CharacterSheet,  # noqa: F401
     Rolling,  # noqa: F401
+    ShipSchematicsSheet,  # noqa: F401
     authentication,  # noqa: F401
     data,  # noqa: F401
     tasks,  # noqa: F401
@@ -61,6 +62,12 @@ options = [
         "name": "data",
         "description": "Endpoints to retrieve raw d20 FuturePath reference data.",
         "uri": f"{END_POINT}/data",
+    },
+    {
+        "id": 7,
+        "name": "ship_schematics_sheet",
+        "description": "Form-fillable ship schematics sheet for d20 FuturePath.",
+        "uri": f"{END_POINT}/tasks/ship_schematics_sheet",
     },
 ]
 
