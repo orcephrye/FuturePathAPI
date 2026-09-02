@@ -345,6 +345,15 @@ function syncSizeToAc() {
   acSizeInput.value = formatModStr(mod);
 }
 
+function syncKnowledgeTechRank() {
+  const pathLevelInput = document.getElementById('identityCard_pathLevel') || document.getElementsByName('pathLevel')[0];
+  const ktRankInput = document.getElementById('languageCustomSkillsCard_skillRank_knowledge_tech_custom') || document.querySelector('tr[data-skill="knowledge_tech_custom"] .skill-rank');
+  if (pathLevelInput && ktRankInput) {
+    const lvlVal = pathLevelInput.value.trim();
+    ktRankInput.value = lvlVal;
+  }
+}
+
 let isStatsCalcScheduled = false;
 
 function calculateStats() {
@@ -386,6 +395,8 @@ function performCalculateStats() {
   syncDexModToAc();
   // Sync Size Modifier to AC
   syncSizeToAc();
+  // Sync Character Level to Knowledge (Technology) Skill Rank
+  syncKnowledgeTechRank();
 
   // Calculate Armor Class (AC = 10 + Armor + DEX + Size + Natural + Misc)
   const acArmorEl = document.getElementById('global_acArmorBonus');
@@ -600,7 +611,9 @@ function syncSpeciesName() {
   }
 }
 
-function toggleDatalist(inputIdOrEl) {
+let isSelectingDatalistOption = false;
+
+function toggleDatalist(inputIdOrEl, forceOpen = false) {
   let input = (typeof inputIdOrEl === 'string' ? document.getElementById(inputIdOrEl) : inputIdOrEl);
   if (!input && typeof inputIdOrEl === 'string') {
     input = document.querySelector(`[id$="${inputIdOrEl}"]`);
@@ -616,14 +629,14 @@ function toggleDatalist(inputIdOrEl) {
 
   const existing = document.querySelector('.custom-datalist-dropdown');
   if (existing) {
-    const isSameTarget = (existing.dataset.targetInputId === (input.id || ''));
+    const isSameTarget = (existing.dataset.targetInputId === (input.id || input.name || ''));
     existing.remove();
-    if (isSameTarget) {
+    if (isSameTarget && !forceOpen) {
       return;
     }
   }
 
-  const listId = input.getAttribute('list');
+  const listId = input.getAttribute('data-list') || input.getAttribute('list') || input.dataset.list;
   const datalist = (listId ? document.getElementById(listId) : null);
   let options = [];
   if (datalist && datalist.options && datalist.options.length > 0) {
@@ -631,24 +644,45 @@ function toggleDatalist(inputIdOrEl) {
   }
 
   if (!options || options.length === 0) {
-    if ((input.id.includes('speciesInput') || input.id === 'speciesInput') && speciesList !== undefined) {
+    const id = input.id || '';
+    const name = input.name || '';
+    if ((id.includes('speciesInput') || id === 'speciesInput' || listId === 'speciesDatalist') && speciesList !== undefined) {
       options = speciesList;
-    } else if (input.id.includes('charPath') || input.id === 'charPath') {
+    } else if (id.includes('charPath') || id === 'charPath' || listId === 'charPathDatalist') {
       options = (characterPathsData && characterPathsData.length > 0)
         ? characterPathsData.map((p) => p.Name || p.name || p).filter(Boolean)
         : FALLBACK_CHARACTER_PATHS.map((p) => p.Name);
-    } else if (input.id.includes('charSize') || input.id === 'charSize') {
+    } else if (id.includes('charSize') || id === 'charSize' || listId === 'sizesDatalist') {
       options = ['Fine', 'Diminutive', 'Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan', 'Colossal'];
-    } else if (input.id.includes('occupationInput') || input.id === 'occupationInput') {
+    } else if (id.includes('occupationInput') || id === 'occupationInput' || listId === 'occupationDatalist') {
       options = ['Academic', 'Adventurer', 'Athlete', 'Blue Collar', 'Creative', 'Criminal', 'Cyber-Specialist', 'Dilettante', 'Diplomat', 'Doctor', 'Emergency Services', 'Entrepreneur', 'Jobless', 'Investigative', 'Law Enforcement', 'Mercenary', 'Military', 'Pioneer', 'Religious', 'Rural', 'Student', 'Spacer', 'Technician', 'White Collar'];
-    } else if ((input.id.includes('quirkName') || input.name === 'quirkName[]' || (input.placeholder && input.placeholder.toLowerCase().includes('quirk'))) && quirksData !== undefined && quirksData.length > 0) {
+    } else if ((id.includes('quirkName') || name === 'quirkName[]' || listId === 'quirksDatalist' || (input.placeholder && input.placeholder.toLowerCase().includes('quirk'))) && quirksData !== undefined && quirksData.length > 0) {
       options = quirksData.map((q) => q.Name || q.name || q).filter(Boolean);
-    } else if ((input.id.includes('detractorName') || input.name === 'detractorName[]' || (input.placeholder && input.placeholder.toLowerCase().includes('detractor'))) && detractorsData !== undefined && detractorsData.length > 0) {
+    } else if ((id.includes('detractorName') || name === 'detractorName[]' || listId === 'detractorsDatalist' || (input.placeholder && input.placeholder.toLowerCase().includes('detractor'))) && detractorsData !== undefined && detractorsData.length > 0) {
       options = detractorsData.map((d) => d.Name || d.name || d).filter(Boolean);
-    } else if (input.id.includes('profTitle') || input.name === 'profTitle[]' || input.id.includes('techProfession') || input.name === 'techProfession[]' || listId === 'professionDatalist' || (professionsList !== undefined && professionsList.length > 0)) {
+    } else if (id.includes('profTitle') || name === 'profTitle[]' || id.includes('techProfession') || name === 'techProfession[]' || listId === 'professionDatalist' || (professionsList !== undefined && professionsList.length > 0)) {
       options = (professionsList && professionsList.length > 0)
         ? professionsList
         : FALLBACK_PROFESSIONS.map((p) => p.Name);
+    } else if (id.includes('drawbackName') || name.includes('DrawbackName') || listId === 'mutationDrawbacksDatalist') {
+      if (Array.isArray(window.mutationDrawbacksReferenceData) && window.mutationDrawbacksReferenceData.length > 0) {
+        options = window.mutationDrawbacksReferenceData.map((d) => d.Name || d.name || d).filter(Boolean);
+      }
+    } else if (id.includes('enhancementName') || name.includes('EnhancementName') || listId === 'mutationEnhancementsDatalist') {
+      if (window.mutationEnhancementsReferenceData && typeof window.mutationEnhancementsReferenceData === 'object') {
+        const optionList = [];
+        ['cosmetic', 'offensive', 'defensive', 'enhancements'].forEach((cat) => {
+          if (Array.isArray(window.mutationEnhancementsReferenceData[cat])) {
+            window.mutationEnhancementsReferenceData[cat].forEach((item) => {
+              const optName = (item.Name || item.name || item);
+              if (optName) {
+                optionList.push(optName);
+              }
+            });
+          }
+        });
+        options = optionList;
+      }
     }
   }
 
@@ -658,7 +692,7 @@ function toggleDatalist(inputIdOrEl) {
 
   const dropdown = document.createElement('div');
   dropdown.className = 'custom-datalist-dropdown shadow-lg rounded p-1 no-print';
-  dropdown.dataset.targetInputId = (input.id || '');
+  dropdown.dataset.targetInputId = (input.id || input.name || '');
 
   const updatePosition = () => {
     const rect = inputGroup.getBoundingClientRect();
@@ -685,14 +719,86 @@ function toggleDatalist(inputIdOrEl) {
 
   let cleanup;
   let onInputFilter;
+  let onKeyDown;
   let onScrollOrResize;
   let closeHandler;
+  let activeIndex = -1;
+  let currentFiltered = [];
+
+  const updateActiveHighlight = () => {
+    const items = dropdown.querySelectorAll('.dropdown-item-custom');
+    items.forEach((item, idx) => {
+      if (idx === activeIndex) {
+        item.style.background = 'var(--theme-card-bg, rgba(255,255,255,0.15))';
+        item.style.color = 'var(--accent-cyan, #00f0ff)';
+        item.scrollIntoView({ block: 'nearest' });
+      } else {
+        item.style.background = 'transparent';
+        item.style.color = 'var(--text-color, #ffffff)';
+      }
+    });
+  };
+
+  const selectOption = (opt) => {
+    isSelectingDatalistOption = true;
+    input.value = opt;
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+    if (typeof input.oninput === 'function') {
+      input.oninput(input);
+    }
+    if (typeof input.onchange === 'function') {
+      input.onchange(input);
+    }
+    setTimeout(() => {
+      isSelectingDatalistOption = false;
+    }, 50);
+    cleanup();
+  };
+
+  const renderItems = (filterVal = '') => {
+    dropdown.innerHTML = '';
+    const search = filterVal.toLowerCase().trim();
+    currentFiltered = options.filter((opt) => !search || opt.toLowerCase().includes(search));
+    activeIndex = -1;
+
+    if (currentFiltered.length === 0) {
+      const noMatch = document.createElement('div');
+      noMatch.className = 'p-2 text-muted small text-center italic';
+      noMatch.textContent = 'No matching suggestions';
+      dropdown.appendChild(noMatch);
+      return;
+    }
+
+    currentFiltered.forEach((opt, idx) => {
+      const item = document.createElement('div');
+      item.className = 'dropdown-item-custom p-2 rounded text-truncate user-select-none';
+      item.style.cssText = 'cursor: pointer; color: var(--text-color, #ffffff); font-size: 0.825rem; font-weight: 500; transition: background 0.12s ease;';
+      item.textContent = opt;
+
+      item.addEventListener('mouseenter', () => {
+        activeIndex = idx;
+        updateActiveHighlight();
+      });
+
+      const handleSelect = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        selectOption(opt);
+      };
+
+      item.addEventListener('mousedown', handleSelect);
+      item.addEventListener('touchstart', handleSelect, { passive: false });
+      dropdown.appendChild(item);
+    });
+  };
 
   cleanup = () => {
     if (dropdown.parentNode) {
       dropdown.remove();
     }
     input.removeEventListener('input', onInputFilter);
+    input.removeEventListener('keydown', onKeyDown);
     window.removeEventListener('scroll', onScrollOrResize, true);
     window.removeEventListener('resize', onScrollOrResize);
     document.removeEventListener('click', closeHandler);
@@ -705,53 +811,35 @@ function toggleDatalist(inputIdOrEl) {
     }
   };
 
-  const renderItems = (filterVal = '') => {
-    dropdown.innerHTML = '';
-    const search = filterVal.toLowerCase().trim();
-    const filtered = options.filter((opt) => !search || opt.toLowerCase().includes(search));
-
-    if (filtered.length === 0) {
-      const noMatch = document.createElement('div');
-      noMatch.className = 'p-2 text-muted small text-center italic';
-      noMatch.textContent = 'No matching suggestions';
-      dropdown.appendChild(noMatch);
-      return;
-    }
-
-    filtered.forEach((opt) => {
-      const item = document.createElement('div');
-      item.className = 'dropdown-item-custom p-2 rounded text-truncate user-select-none';
-      item.style.cssText = 'cursor: pointer; color: var(--text-color, #ffffff); font-size: 0.825rem; font-weight: 500; transition: background 0.12s ease;';
-      item.textContent = opt;
-
-      item.addEventListener('mouseenter', () => {
-        item.style.background = 'var(--theme-card-bg, rgba(255,255,255,0.1))';
-        item.style.color = 'var(--accent-cyan, #00f0ff)';
-      });
-      item.addEventListener('mouseleave', () => {
-        item.style.background = 'transparent';
-        item.style.color = 'var(--text-color, #ffffff)';
-      });
-
-      const selectOption = (e) => {
+  onKeyDown = (e) => {
+    if (e.key === 'ArrowDown') {
+      if (currentFiltered.length > 0) {
         e.preventDefault();
-        e.stopPropagation();
-        input.value = opt;
-        input.dispatchEvent(new Event('input', { bubbles: true }));
-        input.dispatchEvent(new Event('change', { bubbles: true }));
-        if (typeof input.oninput === 'function') {
-          input.oninput(input);
-        }
-        if (typeof input.onchange === 'function') {
-          input.onchange(input);
-        }
+        activeIndex = (activeIndex + 1) % currentFiltered.length;
+        updateActiveHighlight();
+      }
+    } else if (e.key === 'ArrowUp') {
+      if (currentFiltered.length > 0) {
+        e.preventDefault();
+        activeIndex = (activeIndex - 1 + currentFiltered.length) % currentFiltered.length;
+        updateActiveHighlight();
+      }
+    } else if (e.key === 'Enter') {
+      if (activeIndex >= 0 && activeIndex < currentFiltered.length) {
+        e.preventDefault();
+        selectOption(currentFiltered[activeIndex]);
+      } else if (currentFiltered.length === 1 && input.value.trim().length > 0) {
+        e.preventDefault();
+        selectOption(currentFiltered[0]);
+      } else {
         cleanup();
-      };
-
-      item.addEventListener('mousedown', selectOption);
-      item.addEventListener('touchstart', selectOption, { passive: false });
-      dropdown.appendChild(item);
-    });
+      }
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      cleanup();
+    } else if (e.key === 'Tab') {
+      cleanup();
+    }
   };
 
   renderItems(input.value);
@@ -763,6 +851,7 @@ function toggleDatalist(inputIdOrEl) {
     updatePosition();
   };
   input.addEventListener('input', onInputFilter);
+  input.addEventListener('keydown', onKeyDown);
 
   onScrollOrResize = () => {
     if (document.body.contains(dropdown)) {
@@ -777,6 +866,38 @@ function toggleDatalist(inputIdOrEl) {
     document.addEventListener('touchstart', closeHandler);
   }, 50);
 }
+
+document.addEventListener('input', (e) => {
+  if (isSelectingDatalistOption) {
+    return;
+  }
+  const target = e.target;
+  if (!target || target.tagName !== 'INPUT') {
+    return;
+  }
+  const listId = target.getAttribute('data-list') || target.getAttribute('list');
+  const targetId = target.id || '';
+  const targetName = target.name || '';
+  const isDatalistTarget = Boolean(listId) ||
+    targetId.includes('speciesInput') ||
+    targetId.includes('charPath') ||
+    targetId.includes('charSize') ||
+    targetId.includes('occupationInput') ||
+    targetId.includes('profTitle') || targetName === 'profTitle[]' ||
+    targetId.includes('techProfession') || targetName === 'techProfession[]' ||
+    targetId.includes('quirkName') || targetName === 'quirkName[]' ||
+    targetId.includes('detractorName') || targetName === 'detractorName[]' ||
+    targetId.includes('drawbackName') || targetName.includes('DrawbackName') ||
+    targetId.includes('enhancementName') || targetName.includes('EnhancementName');
+
+  if (isDatalistTarget) {
+    const existing = document.querySelector('.custom-datalist-dropdown');
+    const sameInput = existing && (existing.dataset.targetInputId === (target.id || target.name || ''));
+    if (!sameInput) {
+      toggleDatalist(target, true);
+    }
+  }
+});
 
 async function loadAllReferanceData() {
   const pathDatalist = document.getElementById('charPathDatalist');
@@ -1799,6 +1920,48 @@ async function rollWeaponCheck(btn) {
   }
 }
 
+async function rollGrenadeDeviation(e) {
+  if (e && typeof e.stopPropagation === 'function') {
+    e.stopPropagation();
+  }
+  const btn = (e && e.currentTarget ? e.currentTarget : document.querySelector('.roll-grenade-btn'));
+  const iconEl = (btn ? btn.querySelector('i') : null);
+  if (iconEl) {
+    iconEl.classList.add('fa-spin');
+  }
+
+  try {
+    let d1 = Math.floor(Math.random() * 10) + 1;
+    let d2 = Math.floor(Math.random() * 10) + 1;
+
+    try {
+      const resp = await fetch('/v1/tasks/roll/1d10+1d10');
+      if (resp.ok) {
+        const data = await resp.json();
+        if (data.Rolls && data.Rolls.length > 0 && Array.isArray(data.Rolls[0].Dice) && data.Rolls[0].Dice.length >= 2) {
+          d1 = data.Rolls[0].Dice[0];
+          d2 = data.Rolls[0].Dice[1];
+        }
+      }
+    } catch (fetchErr) {
+      console.warn('Backend roll failed, falling back to client-side roll:', fetchErr);
+    }
+
+    const title = '<i class="fa-solid fa-burst me-1"></i>Blast / Grenade Deviation (1d10+1d10)';
+    const totalStr = `Left/Right: ${d1} - Short/Long: ${d2}`;
+    const details = `[Dice: ${d1}, ${d2}]`;
+
+    showRollNotification(title, totalStr, details, false);
+  } catch (err) {
+    console.error('Error rolling grenade deviation:', err);
+    alert(`Failed to roll grenade deviation: ${err.message}`);
+  } finally {
+    if (iconEl) {
+      iconEl.classList.remove('fa-spin');
+    }
+  }
+}
+
 // Dynamic Row Adders
 function addWeaponRow() {
   const tbody = document.querySelector('#weaponsTable tbody');
@@ -1937,6 +2100,131 @@ function addCustomSkillRow() {
   scheduleAutoPagination(100);
 }
 
+function addFeatSkillRow(name = '', rank = '', keyAbility = '-', miscMod = '') {
+  const tbody = document.querySelector('#featSkillsTable tbody');
+  if (!tbody) {
+    return null;
+  }
+  const tr = document.createElement('tr');
+  tr.setAttribute('data-ability', keyAbility || '-');
+
+  tr.innerHTML = `
+    <td><input class="form-control form-control-sm" name="customFeatSkillName[]" placeholder="Skill Name" type="text"/></td>
+    <td class="text-center no-print">
+      <i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+      <button type="button" class="btn btn-sm btn-link text-danger p-0 border-0 ms-1" onclick="removeRow(this)" title="Remove Skill"><i class="fa-solid fa-trash"></i></button>
+    </td>
+    <td>
+      <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+        <input class="form-control form-control-sm skill-rank text-center" inputmode="numeric" name="skillRank_feat_custom[]" placeholder="0" maxlength="3" type="text"/>
+        <span class="fw-bold text-cyan">=</span>
+        <input class="form-control form-control-sm skill-die text-center" name="skillDie_feat_custom[]" type="text"/>
+      </div>
+    </td>
+    <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+    <td>
+      <div class="d-inline-flex align-items-center gap-1">
+        <select class="form-select form-select-sm skill-ab-select py-0 px-1" name="customFeatSkillAbility[]" onchange="updateCustomSkillAbility(this)" style="width: 54px; font-size: 0.75rem; font-weight: 700;">
+          <option value="-">-</option>
+          <option value="INT">INT</option>
+          <option value="WIS">WIS</option>
+          <option value="STR">STR</option>
+          <option value="DEX">DEX</option>
+          <option value="CON">CON</option>
+          <option value="CHA">CHA</option>
+        </select>
+        <input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-muted" readonly="" maxlength="3" type="text" value="0"/>
+      </div>
+    </td>
+    <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+    <td><input class="form-control form-control-sm skill-misc-mod text-center" inputmode="numeric" name="skillMisc_feat_custom[]" placeholder="0" maxlength="3" type="text"/></td>
+    <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+    <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+  `;
+  tbody.appendChild(tr);
+
+  const nameInput = tr.querySelector('input[name="customFeatSkillName[]"]');
+  if (nameInput && name) {
+    nameInput.value = name;
+  }
+  const rankInput = tr.querySelector('.skill-rank');
+  if (rankInput && rank !== '' && rank !== undefined && rank !== null) {
+    rankInput.value = rank;
+  }
+  const miscInput = tr.querySelector('.skill-misc-mod');
+  if (miscInput && miscMod !== '' && miscMod !== undefined && miscMod !== null) {
+    miscInput.value = miscMod;
+  }
+  const abSelect = tr.querySelector('.skill-ab-select');
+  if (abSelect && keyAbility) {
+    abSelect.value = keyAbility;
+    if (typeof updateCustomSkillAbility === 'function') {
+      updateCustomSkillAbility(abSelect);
+    }
+  }
+
+  if (typeof calculateStats === 'function') {
+    calculateStats();
+  }
+  triggerAutoSave();
+  scheduleAutoPagination(100);
+  return tr;
+}
+
+function addLangSkillRow(name = '', rank = '', miscMod = '') {
+  const tbody = document.querySelector('#langSkillsTable tbody');
+  if (!tbody) {
+    return null;
+  }
+  const tr = document.createElement('tr');
+  tr.setAttribute('data-ability', '-');
+
+  tr.innerHTML = `
+    <td><input class="form-control form-control-sm" name="customLangName[]" placeholder="Language / Dialect" type="text"/></td>
+    <td class="text-center no-print">
+      <i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+      <button type="button" class="btn btn-sm btn-link text-danger p-0 border-0 ms-1" onclick="removeRow(this)" title="Remove Skill"><i class="fa-solid fa-trash"></i></button>
+    </td>
+    <td>
+      <div class="d-inline-flex align-items-center gap-1 justify-content-center">
+        <input class="form-control form-control-sm skill-rank text-center" inputmode="numeric" name="skillRank_lang_custom[]" placeholder="0" maxlength="3" type="text"/>
+        <span class="fw-bold text-cyan">=</span>
+        <input class="form-control form-control-sm skill-die text-center" name="skillDie_lang_custom[]" type="text"/>
+      </div>
+    </td>
+    <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+    <td><input class="form-control form-control-sm skill-misc-mod text-center" inputmode="numeric" name="skillMisc_lang_custom[]" placeholder="0" maxlength="3" type="text"/></td>
+    <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+    <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+  `;
+  tbody.appendChild(tr);
+
+  const nameInput = tr.querySelector('input[name="customLangName[]"]');
+  if (nameInput && name) {
+    nameInput.value = name;
+  }
+  const rankInput = tr.querySelector('.skill-rank');
+  if (rankInput && rank !== '' && rank !== undefined && rank !== null) {
+    rankInput.value = rank;
+  }
+  const miscInput = tr.querySelector('.skill-misc-mod');
+  if (miscInput && miscMod !== '' && miscMod !== undefined && miscMod !== null) {
+    miscInput.value = miscMod;
+  }
+
+  if (typeof calculateStats === 'function') {
+    calculateStats();
+  }
+  triggerAutoSave();
+  scheduleAutoPagination(100);
+  return tr;
+}
+
+function addLanguageCustomSkillRow() {
+  addFeatSkillRow();
+  addLangSkillRow();
+}
+
 function addTechniqueLevelBlock(levelVal) {
   const container = document.getElementById('techniqueLevelsContainer');
   if (!container) {
@@ -1964,7 +2252,7 @@ function addTechniqueLevelBlock(levelVal) {
       <div class="col-12 col-sm-9 col-md-3">
         <div class="input-group input-group-sm">
           <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Profession:</span>
-          <input type="text" class="form-control form-control-sm fw-bold" name="techProfession[]" list="professionDatalist" placeholder="e.g. Cyberneticist">
+          <input type="text" class="form-control form-control-sm fw-bold" name="techProfession[]" data-list="professionDatalist" autocomplete="off" placeholder="e.g. Cyberneticist">
           <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
@@ -2183,7 +2471,7 @@ function addQuirkRow(name = '', desc = '') {
     <td>
       <div class="input-group input-group-sm">
         <label class="visually-hidden" for="quirksCard_quirkName_${idx}">Quirk Name</label>
-        <input class="form-control form-control-sm" id="quirksCard_quirkName_${idx}" list="quirksDatalist" name="quirkName[]" placeholder="Quirk or Flaw Name" type="text" onchange="onQuirkNameInput(this)"/>
+        <input class="form-control form-control-sm" id="quirksCard_quirkName_${idx}" data-list="quirksDatalist" autocomplete="off" name="quirkName[]" placeholder="Quirk or Flaw Name" type="text" onchange="onQuirkNameInput(this)"/>
         <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Quirk Suggestions" type="button">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -2260,7 +2548,7 @@ function addDetractorRow(name = '', desc = '') {
     <td>
       <div class="input-group input-group-sm">
         <label class="visually-hidden" for="detractorsCard_detractorName_${idx}">Detractor Name</label>
-        <input class="form-control form-control-sm" id="detractorsCard_detractorName_${idx}" list="detractorsDatalist" name="detractorName[]" placeholder="Detractor Name" type="text" onchange="onDetractorNameInput(this)"/>
+        <input class="form-control form-control-sm" id="detractorsCard_detractorName_${idx}" data-list="detractorsDatalist" autocomplete="off" name="detractorName[]" placeholder="Detractor Name" type="text" onchange="onDetractorNameInput(this)"/>
         <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Detractor Suggestions" type="button">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -2375,7 +2663,7 @@ function addMutationDrawbackRow(name = '', desc = '', mp = '') {
     <td>
       <div class="input-group input-group-sm">
         <label class="visually-hidden" for="mutationsCard_drawbackName_${idx}">Mutation Drawback Name</label>
-        <input class="form-control form-control-sm" id="mutationsCard_drawbackName_${idx}" list="mutationDrawbacksDatalist" name="mutationDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
+        <input class="form-control form-control-sm" id="mutationsCard_drawbackName_${idx}" data-list="mutationDrawbacksDatalist" autocomplete="off" name="mutationDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
         <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Drawback Suggestions" type="button">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -2426,7 +2714,7 @@ function addMutationEnhancementRow(name = '', desc = '', mp = '') {
     <td>
       <div class="input-group input-group-sm">
         <label class="visually-hidden" for="mutationsCard_enhancementName_${idx}">Mutation Enhancement Name</label>
-        <input class="form-control form-control-sm" id="mutationsCard_enhancementName_${idx}" list="mutationEnhancementsDatalist" name="mutationEnhancementName[]" onchange="onMutationEnhancementNameInput(this)" oninput="onMutationEnhancementNameInput(this)" placeholder="Enhancement Name" type="text"/>
+        <input class="form-control form-control-sm" id="mutationsCard_enhancementName_${idx}" data-list="mutationEnhancementsDatalist" autocomplete="off" name="mutationEnhancementName[]" onchange="onMutationEnhancementNameInput(this)" oninput="onMutationEnhancementNameInput(this)" placeholder="Enhancement Name" type="text"/>
         <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Enhancement Suggestions" type="button">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -2477,7 +2765,7 @@ function addPsionicDrawbackRow(name = '', desc = '', mp = '') {
     <td>
       <div class="input-group input-group-sm">
         <label class="visually-hidden" for="psionicsCard_drawbackName_${idx}">Psionic Drawback Name</label>
-        <input class="form-control form-control-sm" id="psionicsCard_drawbackName_${idx}" list="mutationDrawbacksDatalist" name="psionicDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
+        <input class="form-control form-control-sm" id="psionicsCard_drawbackName_${idx}" data-list="mutationDrawbacksDatalist" autocomplete="off" name="psionicDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
         <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Drawback Suggestions" type="button">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -2798,7 +3086,7 @@ function addProfessionBlock() {
       <div class="col-12 col-md-5">
         <div class="input-group input-group-sm">
           <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Title:</span>
-          <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]" list="professionDatalist" onchange="handleProfessionChange(this)" placeholder="e.g. Combat Medic">
+          <input type="text" class="form-control form-control-sm fw-bold" name="profTitle[]" data-list="professionDatalist" autocomplete="off" onchange="handleProfessionChange(this)" placeholder="e.g. Combat Medic">
           <button class="btn btn-cyber-outline btn-sm px-2 no-print" type="button" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
@@ -3715,16 +4003,16 @@ function getFormDataObj() {
     }
 
     if (cardId === 'languageCustomSkillsCard') {
-      const skillsList = [];
-      const rows = card.querySelectorAll('#featSkillsTable tbody tr, #langSkillsTable tbody tr');
+      const featSkillsList = [];
+      const featRows = card.querySelectorAll('#featSkillsTable tbody tr');
 
-      rows.forEach((row) => {
+      featRows.forEach((row) => {
         let name = '';
         const staticTd = row.querySelector('td.fw-semibold');
         if (staticTd) {
           name = staticTd.textContent.trim();
         } else {
-          const nameInput = row.querySelector('input[name^="customFeatSkillName"], input[name^="customLangName"]');
+          const nameInput = row.querySelector('input[name^="customFeatSkillName"]');
           if (nameInput) {
             name = nameInput.value.trim();
           }
@@ -3754,7 +4042,7 @@ function getFormDataObj() {
         const miscVal = (miscEl ? miscEl.value.trim() : undefined);
         const miscMod = ((miscVal !== undefined && miscVal !== '') ? (parseInt(miscVal, 10) || 0) : 0);
 
-        skillsList.push({
+        featSkillsList.push({
           "Name": name,
           "Rank": rank,
           "Key Ability": keyAbility,
@@ -3762,7 +4050,48 @@ function getFormDataObj() {
         });
       });
 
-      structured.languageCustomSkillsCard = skillsList;
+      const langSkillsList = [];
+      const langRows = card.querySelectorAll('#langSkillsTable tbody tr');
+
+      langRows.forEach((row) => {
+        let name = '';
+        const staticTd = row.querySelector('td.fw-semibold');
+        if (staticTd) {
+          name = staticTd.textContent.trim();
+        } else {
+          const nameInput = row.querySelector('input[name^="customLangName"]');
+          if (nameInput) {
+            name = nameInput.value.trim();
+          }
+        }
+
+        // Do not make objs for skills that do not have a name filled in
+        if (!name) {
+          return;
+        }
+
+        const rankEl = row.querySelector('.skill-rank');
+        const rankVal = (rankEl ? rankEl.value.trim() : undefined);
+        const rank = ((rankVal !== undefined && rankVal !== '') ? (parseInt(rankVal, 10) || 0) : 0);
+
+        const keyAbility = row.getAttribute('data-ability') || '-';
+
+        const miscEl = row.querySelector('.skill-misc-mod');
+        const miscVal = (miscEl ? miscEl.value.trim() : undefined);
+        const miscMod = ((miscVal !== undefined && miscVal !== '') ? (parseInt(miscVal, 10) || 0) : 0);
+
+        langSkillsList.push({
+          "Name": name,
+          "Rank": rank,
+          "Key Ability": keyAbility,
+          "MiscMod": miscMod
+        });
+      });
+
+      structured.languageCustomSkillsCard = {
+        "featSkillsList": featSkillsList,
+        "langSkillsList": langSkillsList
+      };
       return;
     }
 
@@ -3850,6 +4179,7 @@ function getFormDataObj() {
   const mutationsChk = document.getElementById('global_toggleMutationsVisibility');
   const psionicsChk = document.getElementById('global_togglePsionicsVisibility');
   const notesChk = document.getElementById('global_toggleBackstoryVisibility');
+  const extraNotesChk = document.getElementById('global_toggleExtraNotesVisibility');
   const condChk = document.getElementById('global_toggleConditionsVisibility');
 
   structured.UI_Layout = {
@@ -3864,6 +4194,7 @@ function getFormDataObj() {
     "mutationsVisible": (mutationsChk ? mutationsChk.checked : true),
     "psionicsVisible": (psionicsChk ? psionicsChk.checked : true),
     "notesVisible": (notesChk ? notesChk.checked : true),
+    "extraNotesVisible": (extraNotesChk ? extraNotesChk.checked : true),
     "conditionsVisible": (condChk ? condChk.checked : true)
   };
 
@@ -4156,12 +4487,158 @@ function populateForm(data) {
     });
   }
 
-  // Populate languageCustomSkillsCard if present as array of objects
-  if (Array.isArray(data.languageCustomSkillsCard)) {
-    const skillsList = data.languageCustomSkillsCard;
-    const rows = form.querySelectorAll('#languageCustomSkillsCard #featSkillsTable tbody tr, #languageCustomSkillsCard #langSkillsTable tbody tr');
+  // Populate languageCustomSkillsCard
+  const langCustomCardData = data.languageCustomSkillsCard;
+  if (langCustomCardData && typeof langCustomCardData === 'object' && !Array.isArray(langCustomCardData)) {
+    const featTbody = form.querySelector('#languageCustomSkillsCard #featSkillsTable tbody');
+    const langTbody = form.querySelector('#languageCustomSkillsCard #langSkillsTable tbody');
 
-    skillsList.forEach((skillObj) => {
+    // Remove any dynamic custom rows, leaving only base static rows
+    if (featTbody) {
+      featTbody.querySelectorAll('tr:not([data-skill="knowledge_tech_custom"]):not([data-skill="profession_custom"])').forEach((r) => r.remove());
+      const staticRows = featTbody.querySelectorAll('tr');
+      staticRows.forEach((r) => {
+        const rankInput = r.querySelector('.skill-rank');
+        if (rankInput) {
+          rankInput.value = '';
+        }
+        const miscInput = r.querySelector('.skill-misc-mod');
+        if (miscInput) {
+          miscInput.value = '';
+        }
+      });
+    }
+
+    if (langTbody) {
+      langTbody.querySelectorAll('tr:not([data-skill="lang_main"])').forEach((r) => r.remove());
+      const staticRows = langTbody.querySelectorAll('tr');
+      staticRows.forEach((r) => {
+        const rankInput = r.querySelector('.skill-rank');
+        if (rankInput) {
+          rankInput.value = '';
+        }
+        const miscInput = r.querySelector('.skill-misc-mod');
+        if (miscInput) {
+          miscInput.value = '';
+        }
+      });
+    }
+
+    const featSkillsList = langCustomCardData.featSkillsList || langCustomCardData.featsSkillsList || langCustomCardData.featSkillsTable || langCustomCardData.featsSkillsTable || [];
+    const langSkillsList = langCustomCardData.langSkillsList || langCustomCardData.languagesList || langCustomCardData.langSkillsTable || [];
+
+    if (Array.isArray(featSkillsList)) {
+      featSkillsList.forEach((skillObj) => {
+        if (!skillObj || typeof skillObj !== 'object') {
+          return;
+        }
+        const name = skillObj.Name || skillObj.name || '';
+        if (!name) {
+          return;
+        }
+        const rank = (skillObj.Rank !== undefined ? skillObj.Rank : (skillObj.rank || 0));
+        const keyAb = skillObj["Key Ability"] || skillObj.keyAbility || skillObj.KeyAbility || '-';
+        const misc = (skillObj.MiscMod !== undefined ? skillObj.MiscMod : (skillObj.miscMod || 0));
+
+        let matchedRow = null;
+        if (featTbody) {
+          const staticRows = featTbody.querySelectorAll('tr');
+          staticRows.forEach((r) => {
+            const staticTd = r.querySelector('td.fw-semibold');
+            if (staticTd && staticTd.textContent.trim().toLowerCase() === name.toLowerCase()) {
+              matchedRow = r;
+            }
+          });
+        }
+
+        if (matchedRow) {
+          const rankInput = matchedRow.querySelector('.skill-rank');
+          if (rankInput) {
+            rankInput.value = rank;
+          }
+          const miscInput = matchedRow.querySelector('.skill-misc-mod');
+          if (miscInput) {
+            miscInput.value = misc;
+          }
+        } else {
+          addFeatSkillRow(name, rank, keyAb, misc);
+        }
+      });
+    }
+
+    if (Array.isArray(langSkillsList)) {
+      langSkillsList.forEach((skillObj) => {
+        if (!skillObj || typeof skillObj !== 'object') {
+          return;
+        }
+        const name = skillObj.Name || skillObj.name || '';
+        if (!name) {
+          return;
+        }
+        const rank = (skillObj.Rank !== undefined ? skillObj.Rank : (skillObj.rank || 0));
+        const misc = (skillObj.MiscMod !== undefined ? skillObj.MiscMod : (skillObj.miscMod || 0));
+
+        let matchedRow = null;
+        if (langTbody) {
+          const staticRows = langTbody.querySelectorAll('tr');
+          staticRows.forEach((r) => {
+            const staticTd = r.querySelector('td.fw-semibold');
+            if (staticTd && staticTd.textContent.trim().toLowerCase() === name.toLowerCase()) {
+              matchedRow = r;
+            }
+          });
+        }
+
+        if (matchedRow) {
+          const rankInput = matchedRow.querySelector('.skill-rank');
+          if (rankInput) {
+            rankInput.value = rank;
+          }
+          const miscInput = matchedRow.querySelector('.skill-misc-mod');
+          if (miscInput) {
+            miscInput.value = misc;
+          }
+        } else {
+          addLangSkillRow(name, rank, misc);
+        }
+      });
+    }
+  } else if (Array.isArray(langCustomCardData)) {
+    // Backwards compatibility for legacy flat array of objects
+    const featTbody = form.querySelector('#languageCustomSkillsCard #featSkillsTable tbody');
+    const langTbody = form.querySelector('#languageCustomSkillsCard #langSkillsTable tbody');
+
+    if (featTbody) {
+      featTbody.querySelectorAll('tr:not([data-skill="knowledge_tech_custom"]):not([data-skill="profession_custom"])').forEach((r) => r.remove());
+      const staticRows = featTbody.querySelectorAll('tr');
+      staticRows.forEach((r) => {
+        const rankInput = r.querySelector('.skill-rank');
+        if (rankInput) {
+          rankInput.value = '';
+        }
+        const miscInput = r.querySelector('.skill-misc-mod');
+        if (miscInput) {
+          miscInput.value = '';
+        }
+      });
+    }
+
+    if (langTbody) {
+      langTbody.querySelectorAll('tr:not([data-skill="lang_main"])').forEach((r) => r.remove());
+      const staticRows = langTbody.querySelectorAll('tr');
+      staticRows.forEach((r) => {
+        const rankInput = r.querySelector('.skill-rank');
+        if (rankInput) {
+          rankInput.value = '';
+        }
+        const miscInput = r.querySelector('.skill-misc-mod');
+        if (miscInput) {
+          miscInput.value = '';
+        }
+      });
+    }
+
+    langCustomCardData.forEach((skillObj) => {
       if (!skillObj || typeof skillObj !== 'object') {
         return;
       }
@@ -4174,22 +4651,19 @@ function populateForm(data) {
       const misc = (skillObj.MiscMod !== undefined ? skillObj.MiscMod : (skillObj.miscMod || 0));
 
       let matchedRow = null;
-      rows.forEach((r) => {
-        const staticTd = r.querySelector('td.fw-semibold');
-        if (staticTd && staticTd.textContent.trim() === name) {
-          matchedRow = r;
-        }
-      });
-
-      if (!matchedRow) {
-        rows.forEach((r) => {
-          if (matchedRow) {
-            return;
-          }
-          const nameInput = r.querySelector('input[name^="customFeatSkillName"], input[name^="customLangName"]');
-          if (nameInput && (!nameInput.value || nameInput.value === name)) {
+      if (featTbody) {
+        featTbody.querySelectorAll('tr').forEach((r) => {
+          const staticTd = r.querySelector('td.fw-semibold');
+          if (staticTd && staticTd.textContent.trim().toLowerCase() === name.toLowerCase()) {
             matchedRow = r;
-            nameInput.value = name;
+          }
+        });
+      }
+      if (!matchedRow && langTbody) {
+        langTbody.querySelectorAll('tr').forEach((r) => {
+          const staticTd = r.querySelector('td.fw-semibold');
+          if (staticTd && staticTd.textContent.trim().toLowerCase() === name.toLowerCase()) {
+            matchedRow = r;
           }
         });
       }
@@ -4199,18 +4673,16 @@ function populateForm(data) {
         if (rankInput) {
           rankInput.value = rank;
         }
-
         const miscInput = matchedRow.querySelector('.skill-misc-mod');
         if (miscInput) {
           miscInput.value = misc;
         }
-
-        const abSelect = matchedRow.querySelector('.skill-ab-select');
-        if (abSelect) {
-          abSelect.value = keyAb;
-          if (typeof updateCustomSkillAbility === 'function') {
-            updateCustomSkillAbility(abSelect);
-          }
+      } else {
+        const isLang = (name.toLowerCase().includes('lang') || keyAb === '-');
+        if (isLang) {
+          addLangSkillRow(name, rank, misc);
+        } else {
+          addFeatSkillRow(name, rank, keyAb, misc);
         }
       }
     });
@@ -4238,6 +4710,22 @@ function populateForm(data) {
     if (tbody) {
       tbody.innerHTML = '';
       flatData['customSkillName[]'].forEach(() => addCustomSkillRow());
+    }
+  }
+
+  if (flatData['customFeatSkillName[]'] && Array.isArray(flatData['customFeatSkillName[]'])) {
+    const tbody = document.querySelector('#featSkillsTable tbody');
+    if (tbody) {
+      tbody.querySelectorAll('tr:not([data-skill="knowledge_tech_custom"]):not([data-skill="profession_custom"])').forEach((r) => r.remove());
+      flatData['customFeatSkillName[]'].forEach(() => addFeatSkillRow());
+    }
+  }
+
+  if (flatData['customLangName[]'] && Array.isArray(flatData['customLangName[]'])) {
+    const tbody = document.querySelector('#langSkillsTable tbody');
+    if (tbody) {
+      tbody.querySelectorAll('tr:not([data-skill="lang_main"])').forEach((r) => r.remove());
+      flatData['customLangName[]'].forEach(() => addLangSkillRow());
     }
   }
 
@@ -4869,6 +5357,14 @@ function populateForm(data) {
       toggleBackstoryCardVisibility(layout.notesVisible);
     }
 
+    if (layout.extraNotesVisible !== undefined && typeof toggleExtraNotesCardVisibility === 'function') {
+      const chk = document.getElementById('global_toggleExtraNotesVisibility');
+      if (chk) {
+        chk.checked = layout.extraNotesVisible;
+      }
+      toggleExtraNotesCardVisibility(layout.extraNotesVisible);
+    }
+
     if (layout.conditionsVisible !== undefined && typeof toggleConditionsCardVisibility === 'function') {
       const chk = document.getElementById('global_toggleConditionsVisibility');
       if (chk) {
@@ -4891,19 +5387,105 @@ function populateForm(data) {
   reexpandAllTextareas();
 }
 
-function exportCharacterJSON() {
+let pendingExportData = null;
+
+async function exportCharacterJSON() {
   const data = getFormDataObj();
   const identityData = data.identityCard || {};
   const charName = identityData.charName || identityData.characterName || 'Character';
-  const safeName = String(charName).replace(/[^a-zA-Z0-9_\-]/g, '_');
+  const safeName = String(charName).trim().replace(/[^a-zA-Z0-9_\-]/g, '_') || 'Character';
+  const defaultFileName = `d20FuturePath_${safeName}.json`;
   const jsonStr = JSON.stringify(data, null, 2);
+
+  // 1. Native File System Access API (Chrome, Edge, Opera, Brave)
+  // Opens the OS Save dialog to choose the folder and edit the filename.
+  if ('showSaveFilePicker' in window) {
+    try {
+      const handle = await window.showSaveFilePicker({
+        suggestedName: defaultFileName,
+        types: [{
+          description: 'JSON Character Sheet',
+          accept: { 'application/json': ['.json'] }
+        }]
+      });
+      const writable = await handle.createWritable();
+      await writable.write(jsonStr);
+      await writable.close();
+      return;
+    } catch (err) {
+      if (err.name === 'AbortError') {
+        // User cancelled the file dialog
+        return;
+      }
+      console.warn('showSaveFilePicker failed, falling back to modal export:', err);
+    }
+  }
+
+  // 2. Modal dialog fallback (Firefox, Safari, Mobile, etc.)
+  openExportModal(defaultFileName, jsonStr);
+}
+
+function openExportModal(defaultFileName, jsonStr) {
+  pendingExportData = jsonStr;
+  const modalEl = document.getElementById('exportModal');
+  const inputEl = document.getElementById('exportFileNameInput');
+  if (inputEl) {
+    let cleanName = defaultFileName;
+    if (cleanName.endsWith('.json')) {
+      cleanName = cleanName.slice(0, -5);
+    }
+    inputEl.value = cleanName;
+  }
+  if (modalEl && typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalEl);
+    modalInstance.show();
+    setTimeout(() => {
+      if (inputEl) {
+        inputEl.focus();
+        inputEl.select();
+      }
+    }, 250);
+  } else {
+    const chosenName = prompt('Enter file name to export:', defaultFileName);
+    if (chosenName) {
+      triggerBlobDownload(chosenName.endsWith('.json') ? chosenName : `${chosenName}.json`, jsonStr);
+    }
+  }
+}
+
+function confirmExportDownload() {
+  if (!pendingExportData) {
+    return;
+  }
+  const inputEl = document.getElementById('exportFileNameInput');
+  let fileName = (inputEl ? inputEl.value.trim() : 'd20FuturePath_Character');
+  if (!fileName) {
+    fileName = 'd20FuturePath_Character';
+  }
+  if (!fileName.endsWith('.json')) {
+    fileName += '.json';
+  }
+
+  triggerBlobDownload(fileName, pendingExportData);
+
+  const modalEl = document.getElementById('exportModal');
+  if (modalEl && typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+    if (modalInstance) {
+      modalInstance.hide();
+    }
+  }
+}
+
+function triggerBlobDownload(fileName, jsonStr) {
   const blob = new Blob([jsonStr], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
-
   const a = document.createElement('a');
   a.href = url;
-  a.download = `d20FuturePath_${safeName}.json`;
+  a.download = fileName;
+  document.body.appendChild(a);
   a.click();
+  document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
 
@@ -5218,10 +5800,10 @@ function getDefaultPage(cardEl) {
   }
 
   const map = {
-    'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'languageCustomSkillsCard': 1, 'wealthXpCard': 1,
+    'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'languageCustomSkillsCard': 1, 'wealthXpCard': 1, 'backstoryCard': 1,
     'speciesTraitsCard': 2, 'pathTalentsCard': 2, 'featsCard': 2, 'professionsCard': 2, 'equipmentCard': 2,
     'techniquesCard': 3, 'quirksCard': 3, 'detractorsCard': 3, 'cyberneticsCard': 3, 'mutationsCard': 3, 'psionicsCard': 3,
-    'powerArmorCard': 4, 'backstoryCard': 4, 'conditionsCard': 4
+    'powerArmorCard': 4, 'extraNotesCard': 4, 'conditionsCard': 4
   };
   return map[cardEl.id] || 1;
 }
@@ -5815,6 +6397,7 @@ function updateHeaderToggleSwitches() {
     { cardId: 'mutationsCard', containerId: 'toggleMutationsContainer' },
     { cardId: 'psionicsCard', containerId: 'togglePsionicsContainer' },
     { cardId: 'backstoryCard', containerId: 'toggleBackstoryContainer' },
+    { cardId: 'extraNotesCard', containerId: 'toggleExtraNotesContainer' },
     { cardId: 'conditionsCard', containerId: 'toggleConditionsContainer' }
   ];
 
@@ -5826,7 +6409,7 @@ function updateHeaderToggleSwitches() {
     }
 
     const parentPage = card.closest('[id^="page-"]');
-    if (parentPage && parentPage.id !== 'page-1') {
+    if (parentPage) {
       const togglesWrapper = parentPage.querySelector('[id$="-toggles"]');
       if (togglesWrapper) {
         togglesWrapper.appendChild(toggleContainer);
@@ -6252,6 +6835,32 @@ function restoreBackstoryVisibilityState() {
   }
 }
 
+function toggleExtraNotesCardVisibility(show) {
+  const card = document.getElementById('extraNotesCard');
+  if (card) {
+    if (show) {
+      card.classList.remove('card-hidden-all', 'd-none');
+    } else {
+      card.classList.add('card-hidden-all', 'd-none');
+    }
+  }
+  localStorage.setItem('d20FuturePathShowExtraNotesCard', show ? 'true' : 'false');
+  updateEmptyPages();
+  scheduleAutoPagination(50);
+}
+
+function restoreExtraNotesVisibilityState() {
+  const toggleInput = document.getElementById('global_toggleExtraNotesVisibility');
+  const savedState = localStorage.getItem('d20FuturePathShowExtraNotesCard');
+  if (savedState !== null) {
+    const isVisible = (savedState === 'true');
+    if (toggleInput) {
+      toggleInput.checked = isVisible;
+    }
+    toggleExtraNotesCardVisibility(isVisible);
+  }
+}
+
 function toggleConditionsCardVisibility(show) {
   const card = document.getElementById('conditionsCard');
   if (card) {
@@ -6350,6 +6959,7 @@ document.addEventListener('DOMContentLoaded', () => {
   restorePsionicsVisibilityState();
   restorePowerArmorVisibilityState();
   restoreBackstoryVisibilityState();
+  restoreExtraNotesVisibilityState();
   restoreConditionsVisibilityState();
 
   const hasLoadedLocalData = Boolean(localStorage.getItem('d20FuturePathCharData'));

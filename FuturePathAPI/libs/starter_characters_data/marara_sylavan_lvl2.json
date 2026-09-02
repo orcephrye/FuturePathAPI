@@ -307,32 +307,36 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 2,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 2,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Handle Animal",
-      "Rank": 4,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 0,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 2,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 2,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Handle Animal",
+        "Rank": 4,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 0,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Academic",
     "currentWealthScore": "17,600",
@@ -391,7 +395,7 @@
       "Talents": [
         {
           "Name": "Xenolore",
-          "Description": "At Xenophile 1st level, identifying the characteristics, special attacks, or vulnerabilities of a xenomorph is a Simple Action. Roll a Knowledge or Study check (DC 8 + xenomorph’s Hit Dice). Success allows you to unlock a fact. For every 4 points you exceed the DC, you learn another piece of information. Successfully identifying a creature's weakness grants you an Advantage Die on accuracy checks or saving throws against the target for a number of rounds equal to 1 + your Wisdom or Charisma modifier (whichever is higher)."
+          "Description": "At Xenophile 1st level, identifying the characteristics, special attacks, or vulnerabilities of a xenomorph is a Simple Action. Roll a Knowledge or Study check (DC 8 + xenomorph\u2019s Hit Dice). Success allows you to unlock a fact. For every 4 points you exceed the DC, you learn another piece of information. Successfully identifying a creature's weakness grants you an Advantage Die on accuracy checks or saving throws against the target for a number of rounds equal to 1 + your Wisdom or Charisma modifier (whichever is higher)."
         },
         {
           "Name": "Xeno Resistance",
@@ -519,7 +523,7 @@
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems—hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
+    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems\u2014hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
   },
   "techniquesCard": [
     {

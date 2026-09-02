@@ -307,26 +307,30 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 1,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 1,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 0,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 0,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Blue Collar",
     "currentWealthScore": "11,250",
@@ -512,7 +516,7 @@
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Young adult male engineer. Growing up on the arid homeworld of Cxazshngs, Cxaz was expected to follow family tradition and enter the prestigious cloning research guilds of Curvilinea Prime. However, he possessed a restless, hands-on mechanical curiosity that theoretical labs could never satisfy. Preferring grease, wire-splicing, and field improvisations over pristine academic suites, he boarded an outward-bound freighter to explore the wider galaxy. Inquisitive, quick-thinking, and eager to tinker with foreign alien technology, Cxaz is a gifted technician who views every broken starship system as an exciting puzzle. Standing just 3'2\" tall with a light frame, he has smooth grey skin, prominent dark eyes, and intricate, brightly colored geometric tattoos dyed into his scalp, neck, and arms—a traditional practice of his people that he wears with pride."
+    "backstoryNotes": "Young adult male engineer. Growing up on the arid homeworld of Cxazshngs, Cxaz was expected to follow family tradition and enter the prestigious cloning research guilds of Curvilinea Prime. However, he possessed a restless, hands-on mechanical curiosity that theoretical labs could never satisfy. Preferring grease, wire-splicing, and field improvisations over pristine academic suites, he boarded an outward-bound freighter to explore the wider galaxy. Inquisitive, quick-thinking, and eager to tinker with foreign alien technology, Cxaz is a gifted technician who views every broken starship system as an exciting puzzle. Standing just 3'2\" tall with a light frame, he has smooth grey skin, prominent dark eyes, and intricate, brightly colored geometric tattoos dyed into his scalp, neck, and arms\u2014a traditional practice of his people that he wears with pride."
   },
   "conditionsCard": {
     "cond_blinded": false,

@@ -307,26 +307,30 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 1,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 1,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 0,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 0,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Diplomat",
     "currentWealthScore": "25,000",
@@ -500,7 +504,7 @@
     "cond_paralyzed": false
   },
   "backstoryCard": {
-    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri’s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen—the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri\u2019s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen\u2014the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
   },
   "UI_Layout": {
     "theme": "khepri",

@@ -135,10 +135,19 @@
            ========================================== -->
 <div class="print-page-1" id="page-1">
 <!-- Page 1 Header -->
-<div class="page-header-bar no-print" id="page-1-header">
+<div class="page-header-bar no-print flex-wrap gap-2" id="page-1-header">
 <div class="d-flex align-items-center gap-2">
 <span class="page-header-badge"><span class="d-none d-sm-inline"><i class="fa-solid fa-file-lines me-1"></i>Page </span>1</span>
 <span class="page-header-title">Core Identity, Stats &amp; Combat</span>
+</div>
+<div class="d-flex align-items-center gap-2 flex-wrap ms-auto">
+<div class="d-flex align-items-center gap-2 flex-wrap" id="page-1-toggles">
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleBackstoryContainer" title="Toggle visibility of the Background, Campaign Notes &amp; Objectives card">
+<label class="visually-hidden" for="global_toggleBackstoryVisibility">global_toggleBackstoryVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleBackstoryVisibility" onchange="toggleBackstoryCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleBackstoryVisibility" style="font-size: 0.75rem; cursor: pointer;">
+                  Notes
+                </label>
+</div>
 </div>
 <div class="btn-group btn-group-sm">
 <button class="btn btn-cyber-outline py-0 px-2 small" onclick="expandPageCards(1)" title="Expand all cards on Page 1" type="button">
@@ -147,6 +156,7 @@
 <button class="btn btn-cyber-outline py-0 px-2 small" onclick="collapsePageCards(1)" title="Collapse all cards on Page 1" type="button">
 <i class="fa-solid fa-angles-up me-sm-1"></i><span class="d-none d-sm-inline">Collapse</span>
 </button>
+</div>
 </div>
 </div>
 <!-- Character Identity Header -->
@@ -162,10 +172,10 @@
 <div class="card-body">
 <div class="row g-3">
 <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-identity-name">
-<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_charName">Character Name</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_charName"><span class="d-print-none">Character Name</span><span class="d-none d-print-inline">Name</span></label>
 <input class="form-control" id="identityCard_charName" name="charName" placeholder="e.g. Commander Vane" type="text"/>
 </div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-identity-player">
+<div class="col-12 col-sm-6 col-md-3 col-lg-2 col-identity-player">
 <label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_playerName">Player Name</label>
 <input class="form-control" id="identityCard_playerName" name="playerName" type="text"/>
 </div>
@@ -177,7 +187,7 @@
 </button>
 </div>
 <div class="input-group">
-<label class="visually-hidden" for="identityCard_speciesInput">Species</label><input class="form-control" id="identityCard_speciesInput" list="speciesDatalist" name="species" onchange="syncSpeciesName()" placeholder="e.g. Human" type="text"/>
+<label class="visually-hidden" for="identityCard_speciesInput">Species</label><input autocomplete="off" class="form-control" data-list="speciesDatalist" id="identityCard_speciesInput" name="species" onchange="syncSpeciesName()" placeholder="e.g. Human" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="speciesDropdownBtn" onclick="toggleDatalist('identityCard_speciesInput')" title="Show Species Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -185,10 +195,14 @@
 <datalist id="speciesDatalist">
 </datalist>
 </div>
-<div class="col-12 col-sm-6 col-md-3 col-lg-3 col-identity-path">
+<div class="col-12 col-sm-6 col-md-3 col-lg-2 col-identity-homeworld">
+<label class="form-label small text-uppercase text-muted fw-bold" for="identityCard_homeworld">Homeworld</label>
+<input class="form-control" id="identityCard_homeworld" name="homeworld" placeholder="e.g. Terra Nova" type="text"/>
+</div>
+<div class="col-12 col-sm-6 col-md-3 col-lg-2 col-identity-path">
 <label class="form-label small text-uppercase text-muted fw-bold">Path<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Character_Path" rel="noopener noreferrer" target="_blank" title="View Character Path on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
-<label class="visually-hidden" for="identityCard_charPath">Charpath</label><input class="form-control" id="identityCard_charPath" list="charPathDatalist" name="charPath" onchange="handlePathChange(this.value)" placeholder="e.g. Path of Strength" type="text"/>
+<label class="visually-hidden" for="identityCard_charPath">Charpath</label><input autocomplete="off" class="form-control" data-list="charPathDatalist" id="identityCard_charPath" name="charPath" onchange="handlePathChange(this.value)" placeholder="e.g. Path of Strength" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="charPathDropdownBtn" onclick="toggleDatalist('identityCard_charPath')" title="Show Path Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -226,7 +240,7 @@
 <div class="col-6 col-sm-4 col-md-1 col-identity-size">
 <label class="form-label small text-uppercase text-muted fw-bold">Size<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Key_Terms#Size" rel="noopener noreferrer" target="_blank" title="View Size on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
-<label class="visually-hidden" for="identityCard_charSize">Charsize</label><input class="form-control" id="identityCard_charSize" list="sizesDatalist" name="charSize" placeholder="Medium" type="text"/>
+<label class="visually-hidden" for="identityCard_charSize">Charsize</label><input autocomplete="off" class="form-control" data-list="sizesDatalist" id="identityCard_charSize" name="charSize" placeholder="Medium" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="sizesDropdownBtn" onclick="toggleDatalist('identityCard_charSize')" title="Show Size Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -535,13 +549,13 @@
 <th class="text-center px-1" style="width: 25px;" title="Favored Skill">F</th>
 <th class="px-1">Skill Name</th>
 <th class="text-center px-1 no-print" style="width: 25px;"></th>
-<th class="text-center px-1" style="width: 110px;">Rank = Skill Die</th>
+<th class="text-center px-1" style="width: 125px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
 <th class="text-center px-1" style="width: 80px;">Key Ability</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
-<th class="text-center px-1" style="width: 50px;">Misc Mod</th>
+<th class="text-center px-1" style="width: 50px;">Misc</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">=</th>
-<th class="text-center px-1" style="width: 60px;">Total Bonus</th>
+<th class="text-center px-1" style="width: 45px;">Total</th>
 </tr>
 </thead>
 <tbody>
@@ -1532,9 +1546,14 @@
 </div>
 </div>
 </div>
-<button class="btn btn-sm btn-cyber btn-add-row no-collapse" onclick="addWeaponRow()" title="Add Weapon" type="button">
+<div class="d-flex align-items-center gap-2 no-collapse no-print ms-auto ms-sm-0">
+<button class="btn btn-sm btn-cyber-outline no-collapse no-print d-print-none py-0 px-2 roll-grenade-btn" onclick="rollGrenadeDeviation(event)" title="Roll Blast / Grenade Deviation (1d10 + 1d10)" type="button">
+<i class="fa-solid fa-burst text-warning"></i>
+</button>
+<button class="btn btn-sm btn-cyber btn-add-row no-collapse no-print d-print-none" onclick="addWeaponRow()" title="Add Weapon" type="button">
 <i class="fa-solid fa-plus me-xxl-1"></i><span class="d-none d-xxl-inline"> Weapon</span>
 </button>
+</div>
 </div>
 <div class="collapse show" id="collapseWeapons">
 <div class="card-body p-0">
@@ -1715,8 +1734,8 @@
 </div>
 <!-- Language & Custom Skills Card -->
 <div class="sheet-card" data-default-page="1" id="languageCustomSkillsCard">
-<div aria-controls="collapseLanguageCustom" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseLanguageCustom">
-<div class="row w-100 g-2 align-items-center me-0">
+<div aria-controls="collapseLanguageCustom" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseLanguageCustom">
+<div class="row flex-grow-1 g-2 align-items-center me-0">
 <div class="col-12 col-lg-6 d-flex align-items-center">
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
 <i class="fa-solid fa-bolt me-2 text-cyan"></i>
@@ -1726,6 +1745,15 @@
 <i class="fa-solid fa-comments me-2 text-cyan"></i>
 <span class="fw-bold">Language</span>
 </div>
+</div>
+<div class="d-flex align-items-center gap-2 no-collapse">
+<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+<button class="btn btn-sm btn-cyber btn-add-row" onclick="addLanguageCustomSkillRow()" title="Add Row to Both Tables" type="button">
+<i class="fa-solid fa-plus me-1"></i> Row
+</button>
 </div>
 </div>
 <div class="collapse show" id="collapseLanguageCustom">
@@ -1738,14 +1766,14 @@
 <thead>
 <tr>
 <th class="px-1">Skill Name</th>
-<th class="text-center px-1 no-print" style="width: 25px;"></th>
-<th class="text-center px-1" style="width: 110px;">Rank = Skill Die</th>
+<th class="text-center px-1 no-print" style="width: 45px;"></th>
+<th class="text-center px-1" style="width: 125px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
 <th class="text-center px-1" style="width: 80px;">Key Ability</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
-<th class="text-center px-1" style="width: 50px;">Misc Mod</th>
+<th class="text-center px-1" style="width: 50px;">Misc</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">=</th>
-<th class="text-center px-1" style="width: 60px;">Total Bonus</th>
+<th class="text-center px-1" style="width: 45px;">Total</th>
 </tr>
 </thead>
 <tbody>
@@ -1757,7 +1785,7 @@
 </td>
 <td>
 <div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_knowledge_tech_custom">Skillrank_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_knowledge_tech_custom" inputmode="numeric" name="skillRank_knowledge_tech_custom" placeholder="0" maxlength="3" type="text"/>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_knowledge_tech_custom">Skillrank_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_knowledge_tech_custom" inputmode="numeric" name="skillRank_knowledge_tech_custom" placeholder="0" maxlength="3" readonly style="background-color: rgba(255,255,255,0.05); cursor: default;" title="Rank is linked to Character Level" type="text"/>
 <span class="fw-bold text-cyan">=</span>
 <label class="visually-hidden" for="languageCustomSkillsCard_skillDie_knowledge_tech_custom">Skilldie_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_knowledge_tech_custom" name="skillDie_knowledge_tech_custom" type="text"/>
 </div>
@@ -1799,72 +1827,6 @@
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
-<!-- Custom Entry 1 -->
-<tr data-ability="-" data-skill="feat_custom_1">
-<td><label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillName1">Customfeatskillname1</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customFeatSkillName1" name="customFeatSkillName1" placeholder="Skill Name" type="text"/></td>
-<td class="text-center no-print">
-<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_1">Skillrank_Feat_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_1" inputmode="numeric" name="skillRank_feat_custom_1" placeholder="0" maxlength="3" type="text"/>
-<span class="fw-bold text-cyan">=</span>
-<label class="visually-hidden" for="languageCustomSkillsCard_skillDie_feat_custom_1">Skilldie_Feat_Custom_1</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_feat_custom_1" name="skillDie_feat_custom_1" type="text"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1">
-<label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillAbility1">Customfeatskillability1</label><select class="form-select form-select-sm skill-ab-select py-0 px-1" id="languageCustomSkillsCard_customFeatSkillAbility1" name="customFeatSkillAbility1" onchange="updateCustomSkillAbility(this)" style="width: 54px; font-size: 0.75rem; font-weight: 700;">
-<option selected="" value="-">-</option>
-<option value="INT">INT</option>
-<option value="WIS">WIS</option>
-<option value="STR">STR</option>
-<option value="DEX">DEX</option>
-<option value="CON">CON</option>
-<option value="CHA">CHA</option>
-</select>
-<label class="visually-hidden" for="languageCustomSkillsCard_input_2">skillsCard_input_2</label><input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-muted" id="languageCustomSkillsCard_input_2" readonly="" maxlength="3" type="text" value="0"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_feat_custom_1">Skillmisc_Feat_Custom_1</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_feat_custom_1" inputmode="numeric" name="skillMisc_feat_custom_1" placeholder="0" maxlength="3" type="text"/></td>
-<td class="text-center text-cyan fw-bold align-middle px-0">=</td>
-<td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
-</tr>
-<!-- Custom Entry 2 -->
-<tr data-ability="-" data-skill="feat_custom_2">
-<td><label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillName2">Customfeatskillname2</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customFeatSkillName2" name="customFeatSkillName2" placeholder="Skill Name" type="text"/></td>
-<td class="text-center no-print">
-<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_feat_custom_2">Skillrank_Feat_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_feat_custom_2" inputmode="numeric" name="skillRank_feat_custom_2" placeholder="0" maxlength="3" type="text"/>
-<span class="fw-bold text-cyan">=</span>
-<label class="visually-hidden" for="languageCustomSkillsCard_skillDie_feat_custom_2">Skilldie_Feat_Custom_2</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_feat_custom_2" name="skillDie_feat_custom_2" type="text"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1">
-<label class="visually-hidden" for="languageCustomSkillsCard_customFeatSkillAbility2">Customfeatskillability2</label><select class="form-select form-select-sm skill-ab-select py-0 px-1" id="languageCustomSkillsCard_customFeatSkillAbility2" name="customFeatSkillAbility2" onchange="updateCustomSkillAbility(this)" style="width: 54px; font-size: 0.75rem; font-weight: 700;">
-<option selected="" value="-">-</option>
-<option value="INT">INT</option>
-<option value="WIS">WIS</option>
-<option value="STR">STR</option>
-<option value="DEX">DEX</option>
-<option value="CON">CON</option>
-<option value="CHA">CHA</option>
-</select>
-<label class="visually-hidden" for="languageCustomSkillsCard_input_3">skillsCard_input_3</label><input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-muted" id="languageCustomSkillsCard_input_3" readonly="" maxlength="3" type="text" value="0"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_feat_custom_2">Skillmisc_Feat_Custom_2</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_feat_custom_2" inputmode="numeric" name="skillMisc_feat_custom_2" placeholder="0" maxlength="3" type="text"/></td>
-<td class="text-center text-cyan fw-bold align-middle px-0">=</td>
-<td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1876,12 +1838,12 @@
 <thead>
 <tr>
 <th class="px-1">Skill Name</th>
-<th class="text-center px-1 no-print" style="width: 25px;"></th>
-<th class="text-center px-1" style="width: 110px;">Rank = Skill Die</th>
+<th class="text-center px-1 no-print" style="width: 45px;"></th>
+<th class="text-center px-1" style="width: 125px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
-<th class="text-center px-1" style="width: 50px;">Misc Mod</th>
+<th class="text-center px-1" style="width: 50px;">Misc</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">=</th>
-<th class="text-center px-1" style="width: 60px;">Total Bonus</th>
+<th class="text-center px-1" style="width: 45px;">Total</th>
 </tr>
 </thead>
 <tbody>
@@ -1900,60 +1862,6 @@
 </td>
 <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
 <td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_main">Skillmisc_Lang_Main</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_lang_main" inputmode="numeric" name="skillMisc_lang_main" placeholder="0" maxlength="3" type="text"/></td>
-<td class="text-center text-cyan fw-bold align-middle px-0">=</td>
-<td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
-</tr>
-<!-- Custom Entry 1 -->
-<tr data-ability="-" data-skill="lang_custom_1">
-<td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName1">Customlangname1</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName1" name="customLangName1" placeholder="Language / Dialect" type="text"/></td>
-<td class="text-center no-print">
-<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_1">Skillrank_Lang_Custom_1</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_1" inputmode="numeric" name="skillRank_lang_custom_1" placeholder="0" maxlength="3" type="text"/>
-<span class="fw-bold text-cyan">=</span>
-<label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_1">Skilldie_Lang_Custom_1</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_1" name="skillDie_lang_custom_1" type="text"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_1">Skillmisc_Lang_Custom_1</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_lang_custom_1" inputmode="numeric" name="skillMisc_lang_custom_1" placeholder="0" maxlength="3" type="text"/></td>
-<td class="text-center text-cyan fw-bold align-middle px-0">=</td>
-<td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
-</tr>
-<!-- Custom Entry 2 -->
-<tr data-ability="-" data-skill="lang_custom_2">
-<td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName2">Customlangname2</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName2" name="customLangName2" placeholder="Language / Dialect" type="text"/></td>
-<td class="text-center no-print">
-<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_2">Skillrank_Lang_Custom_2</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_2" inputmode="numeric" name="skillRank_lang_custom_2" placeholder="0" maxlength="3" type="text"/>
-<span class="fw-bold text-cyan">=</span>
-<label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_2">Skilldie_Lang_Custom_2</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_2" name="skillDie_lang_custom_2" type="text"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_2">Skillmisc_Lang_Custom_2</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_lang_custom_2" inputmode="numeric" name="skillMisc_lang_custom_2" placeholder="0" maxlength="3" type="text"/></td>
-<td class="text-center text-cyan fw-bold align-middle px-0">=</td>
-<td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
-</tr>
-<!-- Custom Entry 3 -->
-<tr data-ability="-" data-skill="lang_custom_3">
-<td><label class="visually-hidden" for="languageCustomSkillsCard_customLangName3">Customlangname3</label><input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName3" name="customLangName3" placeholder="Language / Dialect" type="text"/></td>
-<td class="text-center no-print">
-<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-</td>
-<td>
-<div class="d-inline-flex align-items-center gap-1 justify-content-center">
-<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_3">Skillrank_Lang_Custom_3</label><input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_3" inputmode="numeric" name="skillRank_lang_custom_3" placeholder="0" maxlength="3" type="text"/>
-<span class="fw-bold text-cyan">=</span>
-<label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_3">Skilldie_Lang_Custom_3</label><input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_3" name="skillDie_lang_custom_3" type="text"/>
-</div>
-</td>
-<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
-<td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_3">Skillmisc_Lang_Custom_3</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_lang_custom_3" inputmode="numeric" name="skillMisc_lang_custom_3" placeholder="0" maxlength="3" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 </tr>
@@ -1987,7 +1895,7 @@
 <span class="d-none d-sm-inline">Occupation</span><span class="d-inline d-sm-none">Occ</span>
 </div>
 <div class="input-group input-group-sm">
-<label class="visually-hidden" for="wealthXpCard_occupationInput">Occupation</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_occupationInput" list="occupationDatalist" name="occupation" placeholder="e.g. Academic" type="text"/>
+<label class="visually-hidden" for="wealthXpCard_occupationInput">Occupation</label><input autocomplete="off" class="form-control form-control-sm text-center fw-bold text-cyan" data-list="occupationDatalist" id="wealthXpCard_occupationInput" name="occupation" placeholder="e.g. Academic" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" id="occupationDropdownBtn" onclick="toggleDatalist('wealthXpCard_occupationInput')" title="Show Occupation Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2035,6 +1943,24 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<!-- Background, Campaign Notes & Objectives Card -->
+<div class="sheet-card" data-default-page="1" id="backstoryCard">
+<div aria-controls="collapseBackstory" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseBackstory">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><i class="fa-solid fa-book-open me-2"></i>Background, Campaign Notes &amp; Objectives</span>
+</div>
+<div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+</div>
+<div class="collapse show" id="collapseBackstory">
+<div class="card-body">
+<label class="visually-hidden" for="backstoryCard_backstoryNotes">Backstorynotes</label><textarea class="form-control notebook-textarea" id="backstoryCard_backstoryNotes" name="backstoryNotes" oninput="autoExpandTextarea(this)" placeholder="Character backstory, campaign contacts, galactic sector notes..." rows="5"></textarea>
 </div>
 </div>
 </div>
@@ -2228,7 +2154,7 @@
 <div class="col-12 col-md-5">
 <div class="input-group input-group-sm">
 <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Title:</span>
-<label class="visually-hidden" for="professionsCard_profTitle_0">Proftitle</label><input class="form-control form-control-sm fw-bold" id="professionsCard_profTitle_0" list="professionDatalist" name="profTitle[]" onchange="handleProfessionChange(this)" placeholder="e.g. Combat Medic" type="text"/>
+<label class="visually-hidden" for="professionsCard_profTitle_0">Proftitle</label><input autocomplete="off" class="form-control form-control-sm fw-bold" data-list="professionDatalist" id="professionsCard_profTitle_0" name="profTitle[]" onchange="handleProfessionChange(this)" placeholder="e.g. Combat Medic" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2448,7 +2374,7 @@
 <div class="col-12 col-sm-9 col-md-3">
 <div class="input-group input-group-sm">
 <span class="input-group-text fw-bold text-muted" style="font-size: 0.75rem;">Profession:</span>
-<label class="visually-hidden" for="techniquesCard_techProfession_0">Techprofession</label><input class="form-control form-control-sm fw-bold" id="techniquesCard_techProfession_0" list="professionDatalist" name="techProfession[]" placeholder="e.g. Cyberneticist" type="text"/>
+<label class="visually-hidden" for="techniquesCard_techProfession_0">Techprofession</label><input autocomplete="off" class="form-control form-control-sm fw-bold" data-list="professionDatalist" id="techniquesCard_techProfession_0" name="techProfession[]" placeholder="e.g. Cyberneticist" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Profession Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2549,7 +2475,7 @@
 <td>
 <div class="input-group input-group-sm">
 <label class="visually-hidden" for="quirksCard_quirkName_0">Quirk Name</label>
-<input class="form-control form-control-sm" id="quirksCard_quirkName_0" list="quirksDatalist" name="quirkName[]" placeholder="Quirk or Flaw Name" type="text" onchange="onQuirkNameInput(this)"/>
+<input autocomplete="off" class="form-control form-control-sm" data-list="quirksDatalist" id="quirksCard_quirkName_0" name="quirkName[]" placeholder="Quirk or Flaw Name" type="text" onchange="onQuirkNameInput(this)"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Quirk Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2604,7 +2530,7 @@
 <td>
 <div class="input-group input-group-sm">
 <label class="visually-hidden" for="detractorsCard_detractorName_0">Detractor Name</label>
-<input class="form-control form-control-sm" id="detractorsCard_detractorName_0" list="detractorsDatalist" name="detractorName[]" placeholder="Detractor Name" type="text" onchange="onDetractorNameInput(this)"/>
+<input autocomplete="off" class="form-control form-control-sm" data-list="detractorsDatalist" id="detractorsCard_detractorName_0" name="detractorName[]" placeholder="Detractor Name" type="text" onchange="onDetractorNameInput(this)"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Detractor Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2795,7 +2721,7 @@
 <td>
 <div class="input-group input-group-sm">
 <label class="visually-hidden" for="mutationsCard_drawbackName_0">Mutation Drawback Name</label>
-<input class="form-control form-control-sm" id="mutationsCard_drawbackName_0" list="mutationDrawbacksDatalist" name="mutationDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
+<input autocomplete="off" class="form-control form-control-sm" data-list="mutationDrawbacksDatalist" id="mutationsCard_drawbackName_0" name="mutationDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Drawback Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2838,7 +2764,7 @@
 <td>
 <div class="input-group input-group-sm">
 <label class="visually-hidden" for="mutationsCard_enhancementName_0">Mutation Enhancement Name</label>
-<input class="form-control form-control-sm" id="mutationsCard_enhancementName_0" list="mutationEnhancementsDatalist" name="mutationEnhancementName[]" onchange="onMutationEnhancementNameInput(this)" oninput="onMutationEnhancementNameInput(this)" placeholder="Enhancement Name" type="text"/>
+<input autocomplete="off" class="form-control form-control-sm" data-list="mutationEnhancementsDatalist" id="mutationsCard_enhancementName_0" name="mutationEnhancementName[]" onchange="onMutationEnhancementNameInput(this)" oninput="onMutationEnhancementNameInput(this)" placeholder="Enhancement Name" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Enhancement Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -2905,7 +2831,7 @@
 <td>
 <div class="input-group input-group-sm">
 <label class="visually-hidden" for="psionicsCard_drawbackName_0">Psionic Drawback Name</label>
-<input class="form-control form-control-sm" id="psionicsCard_drawbackName_0" list="mutationDrawbacksDatalist" name="psionicDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
+<input autocomplete="off" class="form-control form-control-sm" data-list="mutationDrawbacksDatalist" id="psionicsCard_drawbackName_0" name="psionicDrawbackName[]" onchange="onMutationDrawbackNameInput(this)" oninput="onMutationDrawbackNameInput(this)" placeholder="Drawback Name" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Drawback Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -3033,10 +2959,10 @@
 <span class="d-none d-sm-inline">Power Armor</span><span class="d-inline d-sm-none">PA</span>
 </label>
 </div>
-<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleBackstoryContainer" title="Toggle visibility of the Background, Campaign Notes &amp; Objectives card">
-<label class="visually-hidden" for="global_toggleBackstoryVisibility">global_toggleBackstoryVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleBackstoryVisibility" onchange="toggleBackstoryCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleExtraNotesContainer" title="Toggle visibility of the Extra Notes card">
+<label class="visually-hidden" for="global_toggleExtraNotesVisibility">global_toggleExtraNotesVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleExtraNotesVisibility" onchange="toggleExtraNotesCardVisibility(this.checked)" role="switch" type="checkbox"/>
 <label class="form-check-label small text-nowrap fw-bold text-cyan" style="font-size: 0.75rem; cursor: pointer;">
-                  Notes
+                  Extra Notes
                 </label>
 </div>
 <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleConditionsContainer" title="Toggle visibility of the Standard Conditions &amp; Status Tracks card">
@@ -3141,21 +3067,21 @@
 </div>
 </div>
 </div>
-<!-- Background, Campaign Notes & Objectives Card -->
-<div class="sheet-card" data-default-page="4" id="backstoryCard">
-<div aria-controls="collapseBackstory" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseBackstory">
+<!-- Extra Notes Card -->
+<div class="sheet-card" data-default-page="4" id="extraNotesCard">
+<div aria-controls="collapseExtraNotes" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseExtraNotes">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-book-open me-2"></i>Background, Campaign Notes &amp; Objectives</span>
+<span><i class="fa-solid fa-note-sticky me-2"></i>Extra Notes</span>
 </div>
 <div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
 <button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
 <button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
 </div>
 </div>
-<div class="collapse show" id="collapseBackstory">
+<div class="collapse show" id="collapseExtraNotes">
 <div class="card-body">
-<label class="visually-hidden" for="backstoryCard_backstoryNotes">Backstorynotes</label><textarea class="form-control notebook-textarea" id="backstoryCard_backstoryNotes" name="backstoryNotes" oninput="autoExpandTextarea(this)" placeholder="Character backstory, campaign contacts, galactic sector notes..." rows="5"></textarea>
+<label class="visually-hidden" for="extraNotesCard_extraNotes">Extranotes</label><textarea class="form-control notebook-textarea" id="extraNotesCard_extraNotes" name="extraNotes" oninput="autoExpandTextarea(this)" placeholder="Additional campaign notes, equipment logs, mission logs, session recaps..." rows="5"></textarea>
 </div>
 </div>
 </div>
@@ -3567,6 +3493,35 @@
 <div class="modal-footer py-2 px-3 d-flex justify-content-between">
 <button class="btn btn-secondary btn-sm" data-bs-dismiss="modal" type="button">Cancel</button>
 <button class="btn btn-cyber btn-sm px-3" id="descEditModalSaveBtn" onclick="saveDescriptionModal()" type="button">Done</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Export Character Modal -->
+<div aria-hidden="true" aria-labelledby="exportModalLabel" class="modal fade no-print" id="exportModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content shadow-lg">
+<div class="modal-header d-flex align-items-center justify-content-between py-2 px-3">
+<h5 class="modal-title fs-6 mb-0 d-flex align-items-center" id="exportModalLabel">
+<i class="fa-solid fa-file-export text-cyan me-2"></i>Export Character (Save)
+</h5>
+<button aria-label="Close" class="btn-close ms-0" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body p-3">
+<label class="form-label small text-muted mb-1" for="exportFileNameInput">File Name</label>
+<div class="input-group input-group-sm mb-2">
+<input class="form-control" id="exportFileNameInput" onkeydown="if(event.key==='Enter'){event.preventDefault();confirmExportDownload();}" placeholder="d20FuturePath_Character" type="text"/>
+<span class="input-group-text text-muted">.json</span>
+</div>
+<small class="text-muted d-block" style="font-size: 0.78rem;">
+<i class="fa-solid fa-circle-info text-cyan me-1"></i>Choose a name for your character sheet file.
+</small>
+</div>
+<div class="modal-footer py-2 px-3 d-flex justify-content-between">
+<button class="btn btn-secondary btn-sm" data-bs-dismiss="modal" type="button">Cancel</button>
+<button class="btn btn-cyber btn-sm px-3" onclick="confirmExportDownload()" type="button">
+<i class="fa-solid fa-download me-1"></i>Save File
+</button>
 </div>
 </div>
 </div>

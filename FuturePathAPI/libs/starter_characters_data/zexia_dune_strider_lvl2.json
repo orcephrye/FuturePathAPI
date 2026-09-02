@@ -307,26 +307,30 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 2,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 2,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 0,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 2,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 2,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 0,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Military",
     "currentWealthScore": "10,750",

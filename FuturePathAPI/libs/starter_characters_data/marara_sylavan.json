@@ -307,32 +307,36 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 1,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 1,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Handle Animal",
-      "Rank": 2,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 0,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Handle Animal",
+        "Rank": 2,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 0,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Botanist / Field Researcher",
     "currentWealthScore": "14,000",
@@ -542,7 +546,7 @@
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems—hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
+    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems\u2014hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
   },
   "conditionsCard": {
     "cond_blinded": false,

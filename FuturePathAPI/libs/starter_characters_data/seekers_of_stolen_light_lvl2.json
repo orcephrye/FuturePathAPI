@@ -297,38 +297,42 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 2,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 1,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Demolitions",
-      "Rank": 4,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 1,
-      "Key Ability": "-",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Avisari",
-      "Rank": 2,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 2,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Demolitions",
+        "Rank": 4,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 1,
+        "Key Ability": "-",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Avisari",
+        "Rank": 2,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Technician",
     "currentWealthScore": "14,000",
@@ -491,7 +495,7 @@
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core—a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
+    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core\u2014a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
   },
   "techniquesCard": [
     {

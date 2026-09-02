@@ -29,6 +29,7 @@ class IdentityCard(BaseModel):
     charName: Optional[str] = None
     playerName: Optional[str] = None
     species: Optional[str] = None
+    homeworld: Optional[str] = None
     charPath: Optional[str] = None
     pathLevel: Optional[Union[int, str]] = None
     classList: Optional[str] = None
@@ -216,6 +217,12 @@ class PowerArmorCard(BaseModel):
     powerArmorList: List[PowerArmorBlock] = Field(default_factory=list)
 
 
+class LanguageCustomSkillsCard(BaseModel):
+    model_config = ConfigDict(extra="allow", populate_by_name=True)
+    featSkillsList: List[SkillItem] = Field(default_factory=list, alias="featSkillsList")
+    langSkillsList: List[SkillItem] = Field(default_factory=list, alias="langSkillsList")
+
+
 class UILayout(BaseModel):
     model_config = ConfigDict(extra="allow", populate_by_name=True)
     theme: Optional[str] = "cosmic-dark"
@@ -243,7 +250,9 @@ class CharacterSheetSchema(BaseModel):
     professionsCard: Optional[List[ProfessionBlock]] = Field(default_factory=list)
     techniquesCard: Optional[List[TechniqueBlock]] = Field(default_factory=list)
     powerArmorCard: Optional[PowerArmorCard] = Field(default_factory=PowerArmorCard)
-    languageCustomSkillsCard: Optional[List[SkillItem]] = Field(default_factory=list)
+    languageCustomSkillsCard: Optional[Union[LanguageCustomSkillsCard, List[SkillItem]]] = Field(
+        default_factory=LanguageCustomSkillsCard
+    )
     UI_Layout: Optional[UILayout] = Field(default_factory=UILayout)
 
 

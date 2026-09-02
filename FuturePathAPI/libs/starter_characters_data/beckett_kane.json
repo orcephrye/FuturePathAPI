@@ -322,26 +322,30 @@
       }
     ]
   },
-  "languageCustomSkillsCard": [
-    {
-      "Name": "Knowledge (Technology)",
-      "Rank": 1,
-      "Key Ability": "INT",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Profession",
-      "Rank": 1,
-      "Key Ability": "WIS",
-      "MiscMod": 0
-    },
-    {
-      "Name": "Language",
-      "Rank": 0,
-      "Key Ability": "-",
-      "MiscMod": 0
-    }
-  ],
+  "languageCustomSkillsCard": {
+    "featSkillsList": [
+      {
+        "Name": "Knowledge (Technology)",
+        "Rank": 1,
+        "Key Ability": "INT",
+        "MiscMod": 0
+      },
+      {
+        "Name": "Profession",
+        "Rank": 1,
+        "Key Ability": "WIS",
+        "MiscMod": 0
+      }
+    ],
+    "langSkillsList": [
+      {
+        "Name": "Language",
+        "Rank": 0,
+        "Key Ability": "-",
+        "MiscMod": 0
+      }
+    ]
+  },
   "wealthXpCard": {
     "occupation": "Military",
     "currentWealthScore": "10,759",
@@ -458,7 +462,7 @@
     ]
   },
   "backstoryCard": {
-    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm—silent reminders of a war nobody won."
+    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm\u2014silent reminders of a war nobody won."
   },
   "professionsCard": [],
   "techniquesCard": [

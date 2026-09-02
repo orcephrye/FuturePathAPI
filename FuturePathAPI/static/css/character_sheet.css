@@ -381,7 +381,7 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
 }
 
 .skill-die {
-  width: 54px;
+  width: 60px;
 }
 
 .skill-ability-label {
@@ -485,7 +485,7 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
 
   body:not(.is-print-mode) .skill-die,
   body:not(.is-print-mode) #skillsTable .skill-die {
-    width: 38px !important;
+    width: 48px !important;
     padding-left: 1px !important;
     padding-right: 1px !important;
   }
@@ -493,10 +493,10 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   body:not(.is-print-mode) .skill-ability-label {
     min-width: 24px !important;
   }
-  body:not(.is-print-mode) #skillsTable th:nth-child(4) { width: 75px !important; }
+  body:not(.is-print-mode) #skillsTable th:nth-child(4) { width: 85px !important; }
   body:not(.is-print-mode) #skillsTable th:nth-child(6) { width: 58px !important; }
   body:not(.is-print-mode) #skillsTable th:nth-child(8) { width: 32px !important; }
-  body:not(.is-print-mode) #skillsTable th:nth-child(10) { width: 45px !important; }
+  body:not(.is-print-mode) #skillsTable th:nth-child(10) { width: 35px !important; }
 }
 
 /* Mobile Skills Table: 2-line layout for sm or smaller breakpoints */
@@ -1676,7 +1676,7 @@ body.is-print-mode [class*="print-page-"].print-page-last {
 body.is-print-mode .print-page-empty,
 body.is-print-mode [id^="page-"].print-page-empty,
 body.is-print-mode [class*="print-page-"].print-page-empty,
-body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) {
+body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all, .d-none))) {
   display: none !important;
   break-after: auto !important;
   break-inside: auto !important;
@@ -1691,7 +1691,7 @@ body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(
 
 body.is-print-mode .print-page-empty .print-footer,
 body.is-print-mode [id^="page-"].print-page-empty .print-footer,
-body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) .print-footer {
+body.is-print-mode [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all, .d-none))) .print-footer {
   display: none !important;
 }
 
@@ -1883,7 +1883,8 @@ body.is-print-mode .trait-desc-textarea {
   box-sizing: border-box !important;
 }
 
-body.is-print-mode #backstoryCard .notebook-textarea {
+body.is-print-mode #backstoryCard .notebook-textarea,
+body.is-print-mode #extraNotesCard .notebook-textarea {
   min-height: 5.5rem !important;
   border: 1px solid #777 !important;
   border-radius: 3px !important;
@@ -1918,29 +1919,35 @@ body.is-print-mode #collapseIdentity [class*="col-"] {
   padding-bottom: 1px !important;
 }
 
-body.is-print-mode #collapseIdentity .col-identity-name,
-body.is-print-mode #collapseIdentity .col-identity-player {
-  flex: 0 0 24.5% !important;
-  max-width: 24.5% !important;
-  width: 24.5% !important;
+body.is-print-mode #collapseIdentity .col-identity-name {
+  flex: 0 0 22% !important;
+  max-width: 22% !important;
+  width: 22% !important;
 }
 
-body.is-print-mode #collapseIdentity .col-identity-species {
+body.is-print-mode #collapseIdentity .col-identity-player {
   flex: 0 0 16% !important;
   max-width: 16% !important;
   width: 16% !important;
 }
 
+body.is-print-mode #collapseIdentity .col-identity-species,
+body.is-print-mode #collapseIdentity .col-identity-homeworld {
+  flex: 0 0 15% !important;
+  max-width: 15% !important;
+  width: 15% !important;
+}
+
 body.is-print-mode #collapseIdentity .col-identity-path {
-  flex: 0 0 28% !important;
-  max-width: 28% !important;
-  width: 28% !important;
+  flex: 0 0 26% !important;
+  max-width: 26% !important;
+  width: 26% !important;
 }
 
 body.is-print-mode #collapseIdentity .col-identity-level {
-  flex: 0 0 7% !important;
-  max-width: 7% !important;
-  width: 7% !important;
+  flex: 0 0 6% !important;
+  max-width: 6% !important;
+  width: 6% !important;
 }
 
 body.is-print-mode #collapseIdentity #identityCard_pathLevel {
@@ -2698,6 +2705,7 @@ body.is-print-mode #mutationsCard .card-header-custom i:not(.collapse-icon) { co
 body.is-print-mode #psionicsCard .card-header-custom i:not(.collapse-icon) { color: #8b5cf6 !important; }
 body.is-print-mode #powerArmorCard .card-header-custom i:not(.collapse-icon) { color: #0284c7 !important; }
 body.is-print-mode #backstoryCard .card-header-custom i:not(.collapse-icon) { color: #4338ca !important; }
+body.is-print-mode #extraNotesCard .card-header-custom i:not(.collapse-icon) { color: #4338ca !important; }
 body.is-print-mode #conditionsCard .card-header-custom i:not(.collapse-icon) { color: #dc2626 !important; }
 
 /* Character Identity Header 'd20 FuturePath' text in print mode */
@@ -2771,7 +2779,7 @@ body.is-print-mode #skillsTable .skill-misc-mod {
 
 body.is-print-mode .skill-die,
 body.is-print-mode #skillsTable .skill-die {
-  width: 34px !important;
+  width: 44px !important;
   padding: 0 !important;
 }
 
@@ -2787,10 +2795,10 @@ body.is-print-mode .d-none.d-print-inline {
 body.is-print-mode .skill-ability-label {
   min-width: 20px !important;
 }
-body.is-print-mode #skillsTable th:nth-child(4) { width: 65px !important; }
+body.is-print-mode #skillsTable th:nth-child(4) { width: 75px !important; }
 body.is-print-mode #skillsTable th:nth-child(6) { width: 48px !important; }
 body.is-print-mode #skillsTable th:nth-child(8) { width: 28px !important; }
-body.is-print-mode #skillsTable th:nth-child(10) { width: 38px !important; }
+body.is-print-mode #skillsTable th:nth-child(10) { width: 28px !important; }
 
 /* Armor Table Print Column Widths */
 body.is-print-mode #armorTable {
@@ -3140,7 +3148,7 @@ body.is-print-mode .col-lg-6 {
   .print-page-empty,
   [id^="page-"].print-page-empty,
   [class*="print-page-"].print-page-empty,
-  [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) {
+  [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all, .d-none))) {
     display: none !important;
     break-after: auto !important;
     break-inside: auto !important;
@@ -3155,7 +3163,7 @@ body.is-print-mode .col-lg-6 {
 
   .print-page-empty .print-footer,
   [id^="page-"].print-page-empty .print-footer,
-  [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all):not(.d-none))) .print-footer {
+  [id^="page-"]:not(:has(.sheet-card:not(.card-hidden-all, .d-none))) .print-footer {
     display: none !important;
   }
 
@@ -3288,7 +3296,8 @@ body.is-print-mode .col-lg-6 {
     overflow: visible !important;
   }
 
-  #backstoryCard .notebook-textarea {
+  #backstoryCard .notebook-textarea,
+  #extraNotesCard .notebook-textarea {
     min-height: 5.5rem !important;
     border: 1px solid #777 !important;
     border-radius: 3px !important;

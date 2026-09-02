@@ -34,9 +34,14 @@ def register_model(arg=None):
     else:
         return decorator
 
-# Import model files to trigger registration
-from FuturePathAPI.models.Armor import Armor, ArmorDr
-from FuturePathAPI.models.CraftingModels import (
+# Import base classes first, then derived models to avoid circular import issues
+from FuturePathAPI.models.Armor import (  # noqa: E402
+    Armor,
+    ArmorCustomization,
+    ArmorDr,
+    SpecialAttributeConfig,
+)
+from FuturePathAPI.models.CraftingModels import (  # noqa: E402
     Action,
     ActionType,
     CraftingDbEntry,
@@ -44,6 +49,21 @@ from FuturePathAPI.models.CraftingModels import (
     CraftingType,
     Rule,
 )
+
+__all__ = [
+    "MODEL_REGISTRY",
+    "Action",
+    "ActionType",
+    "Armor",
+    "ArmorCustomization",
+    "ArmorDr",
+    "CraftingDbEntry",
+    "CraftingManager",
+    "CraftingType",
+    "Rule",
+    "SpecialAttributeConfig",
+    "register_model",
+]
 
 
 
