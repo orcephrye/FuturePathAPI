@@ -51,7 +51,7 @@
 </button>
 </li>
 <li>
-<button class="dropdown-item small d-flex align-items-center py-2" id="cardLayoutLockButton" onclick="toggleCardLayoutLock()" title="Lock / Unlock Card Layout Reordering" type="button">
+<button class="dropdown-item small d-flex align-items-center py-2 combat-hide" id="cardLayoutLockButton" onclick="toggleCardLayoutLock()" title="Lock / Unlock Card Layout Reordering" type="button">
 <i class="fa-solid fa-lock text-warning me-2" id="cardLayoutLockIcon" style="width: 18px; text-align: center;"></i>
 <span id="cardLayoutLockText">Layout Locked</span>
 </button>
@@ -79,16 +79,56 @@
 <!-- Populated dynamically by updateTableOfContents() -->
 </ul>
 </div>
-<button class="btn btn-cyber btn-sm" onclick="window.print()" title="Print / Save PDF" type="button">
+<!-- Combined Actions Dropdown (< 1400px / < xxl) -->
+<div class="dropdown d-inline-block d-xxl-none" id="actionBarDropdownContainer">
+<button aria-expanded="false" class="btn btn-cyber-outline btn-sm dropdown-toggle" data-bs-toggle="dropdown" id="actionBarDropdownButton" title="Actions &amp; Tools" type="button">
+<i class="fa-solid fa-toolbox"></i><span class="ms-1">Actions</span>
+</button>
+<ul aria-labelledby="actionBarDropdownButton" class="dropdown-menu dropdown-menu-dark shadow-lg py-2" id="actionBarDropdownMenu" style="min-width: 200px;">
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2" id="dropdownViewModeToggleBtn" onclick="toggleViewMode()" title="Open Combat View in a new tab" type="button">
+<i class="fa-solid fa-crosshairs text-cyan me-2" id="dropdownViewModeToggleIcon" style="width: 18px; text-align: center;"></i><span id="dropdownViewModeToggleText">Combat View</span>
+</button>
+</li>
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2" data-bs-target="#conditionsModal" data-bs-toggle="modal" id="dropdownConditionsModalBtn" title="Conditions &amp; Status Tracks Quick Access" type="button">
+<i class="fa-solid fa-notes-medical text-cyan me-2" style="width: 18px; text-align: center;"></i><span>Conditions</span>
+</button>
+</li>
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2 combat-hide" onclick="window.print()" title="Print / Save PDF" type="button">
+<i class="fa-solid fa-print text-cyan me-2" style="width: 18px; text-align: center;"></i><span>Print / Save PDF</span>
+</button>
+</li>
+<li>
+<button class="dropdown-item small d-flex align-items-center py-2 combat-hide" onclick="exportCharacterJSON()" title="Export JSON" type="button">
+<i class="fa-solid fa-download text-cyan me-2" style="width: 18px; text-align: center;"></i><span>Export (Save)</span>
+</button>
+</li>
+<li>
+<label class="dropdown-item small d-flex align-items-center py-2 combat-hide mb-0 cursor-pointer" for="global_importJsonInput" style="cursor: pointer;" title="Import JSON">
+<i class="fa-solid fa-upload text-cyan me-2" style="width: 18px; text-align: center;"></i><span>Import</span>
+</label>
+</li>
+</ul>
+</div>
+<!-- Standalone Action Buttons (>= 1400px / xxl / xxxl) -->
+<button class="btn btn-cyber-outline btn-sm d-none d-xxl-inline-block" id="viewModeToggleBtn" onclick="toggleViewMode()" title="Open Combat View in a new tab" type="button">
+<i class="fa-solid fa-crosshairs"></i><span class="d-none d-sm-inline ms-1" id="viewModeToggleText">Combat View</span>
+</button>
+<button class="btn btn-cyber-outline btn-sm d-none d-xxl-inline-block" data-bs-target="#conditionsModal" data-bs-toggle="modal" id="conditionsModalBtn" title="Conditions &amp; Status Tracks Quick Access" type="button">
+<i class="fa-solid fa-notes-medical"></i><span class="d-none d-sm-inline ms-1">Conditions</span>
+</button>
+<button class="btn btn-cyber btn-sm combat-hide d-none d-xxl-inline-block" onclick="window.print()" title="Print / Save PDF" type="button">
 <i class="fa-solid fa-print"></i><span class="d-none d-sm-inline ms-1">Print / Save PDF</span>
 </button>
-<button class="btn btn-cyber-outline btn-sm" onclick="exportCharacterJSON()" title="Export JSON" type="button">
+<button class="btn btn-cyber-outline btn-sm combat-hide d-none d-xxl-inline-block" onclick="exportCharacterJSON()" title="Export JSON" type="button">
 <i class="fa-solid fa-download"></i><span class="d-none d-sm-inline ms-1">Export (Save)</span>
 </button>
-<label class="btn btn-cyber-outline btn-sm mb-0" for="global_importJsonInput" title="Import JSON">
+<label class="btn btn-cyber-outline btn-sm mb-0 combat-hide d-none d-xxl-inline-block" for="global_importJsonInput" title="Import JSON">
 <i class="fa-solid fa-upload"></i><span class="d-none d-sm-inline ms-1">Import</span>
-<input accept=".json" id="global_importJsonInput" onchange="importCharacterJSON(event)" style="display:none;" type="file"/>
 </label>
+<input accept=".json" id="global_importJsonInput" onchange="importCharacterJSON(event)" style="display:none;" type="file"/>
 <div class="btn-group btn-group-sm ms-md-2">
 <button class="btn btn-cyber-outline btn-sm" onclick="expandAllCards()" title="Expand All Cards" type="button">
 <i class="fa-solid fa-angles-down"></i><span class="d-none d-sm-inline ms-1">Expand All</span>
@@ -269,7 +309,7 @@
 </div>
 </div>
 <!-- Ability Themes, Health & Advantage System -->
-<div class="row g-3">
+<div class="row g-3" id="combatRow1">
 <!-- Core Ability Themes -->
 <div class="col-12 col-lg-auto col-card-abilities">
 <div class="sheet-card h-100" id="abilityScoresCard">
@@ -520,7 +560,7 @@
 </div>
 </div>
 <!-- Main Two-Column Row Left: Skills / Right: Armor/Combat/Gear -->
-<div class="row g-3 mt-0 mb-1">
+<div class="row g-3 mt-0 mb-1" id="mainTwoColumnRow">
 <!-- LEFT COLUMN (45% Desktop / 100% Mobile): Skills Sheet Card -->
 <div class="col-12 col-lg-5 col-skills-side">
 <div class="sheet-card" id="coreSkills">
@@ -1474,7 +1514,7 @@
 <td class="pt-0 pb-2 border-bottom" colspan="7">
 <div class="input-group input-group-sm">
 <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Bonus Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-<label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_0">Armorbonusattributes</label><input class="form-control form-control-sm" id="armorDefensesCard_armorBonusAttributes_0" name="armorBonusAttributes[]" type="text"/>
+<label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_0">Armorbonusattributes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="armorDefensesCard_armorBonusAttributes_0" name="armorBonusAttributes[]" oninput="autoExpandTextarea(this)" rows="1"></textarea>
 </div>
 </td>
 </tr>
@@ -1491,7 +1531,7 @@
 <td class="pt-0 pb-2 border-bottom" colspan="7">
 <div class="input-group input-group-sm">
 <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Bonus Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-<label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_1">Armorbonusattributes</label><input class="form-control form-control-sm" id="armorDefensesCard_armorBonusAttributes_1" name="armorBonusAttributes[]" type="text"/>
+<label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_1">Armorbonusattributes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="armorDefensesCard_armorBonusAttributes_1" name="armorBonusAttributes[]" oninput="autoExpandTextarea(this)" rows="1"></textarea>
 </div>
 </td>
 </tr>
@@ -1619,8 +1659,8 @@
 <tr class="weapon-notes-row">
 <td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-<label class="visually-hidden" for="weaponsCard_wepNotes_0">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_0" name="wepNotes[]" type="text"/>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-xxxl-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-xxxl-none d-print-inline">Attrs:</span></span>
+<label class="visually-hidden" for="weaponsCard_wepNotes_0">Wepnotes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="weaponsCard_wepNotes_0" name="wepNotes[]" oninput="autoExpandTextarea(this)" rows="1"></textarea>
 </div>
 </td>
 </tr>
@@ -1669,8 +1709,8 @@
 <tr class="weapon-notes-row">
 <td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-<label class="visually-hidden" for="weaponsCard_wepNotes_1">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_1" name="wepNotes[]" type="text"/>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-xxxl-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-xxxl-none d-print-inline">Attrs:</span></span>
+<label class="visually-hidden" for="weaponsCard_wepNotes_1">Wepnotes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="weaponsCard_wepNotes_1" name="wepNotes[]" oninput="autoExpandTextarea(this)" rows="1"></textarea>
 </div>
 </td>
 </tr>
@@ -1719,8 +1759,8 @@
 <tr class="weapon-notes-row">
 <td class="pt-0 pb-2 border-bottom" colspan="10">
 <div class="input-group input-group-sm">
-<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-<label class="visually-hidden" for="weaponsCard_wepNotes_2">Wepnotes</label><input class="form-control form-control-sm" id="weaponsCard_wepNotes_2" name="wepNotes[]" type="text"/>
+<span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-xxxl-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-xxxl-none d-print-inline">Attrs:</span></span>
+<label class="visually-hidden" for="weaponsCard_wepNotes_2">Wepnotes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="weaponsCard_wepNotes_2" name="wepNotes[]" oninput="autoExpandTextarea(this)" rows="1"></textarea>
 </div>
 </td>
 </tr>
@@ -1766,7 +1806,7 @@
 <thead>
 <tr>
 <th class="px-1">Skill Name</th>
-<th class="text-center px-1 no-print" style="width: 45px;"></th>
+<th class="text-center px-1 no-print" style="width: 25px;"></th>
 <th class="text-center px-1" style="width: 125px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
 <th class="text-center px-1" style="width: 80px;">Key Ability</th>
@@ -1774,6 +1814,7 @@
 <th class="text-center px-1" style="width: 50px;">Misc</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">=</th>
 <th class="text-center px-1" style="width: 45px;">Total</th>
+<th class="no-print" style="width: 25px;"></th>
 </tr>
 </thead>
 <tbody>
@@ -1801,6 +1842,7 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_knowledge_tech_custom">Skillmisc_Knowledge_Tech_Custom</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_knowledge_tech_custom" inputmode="numeric" name="skillMisc_knowledge_tech_custom" placeholder="0" maxlength="3" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+<td class="no-print"></td>
 </tr>
 <!-- Profession -->
 <tr data-ability="WIS" data-skill="profession_custom">
@@ -1826,6 +1868,7 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_profession_custom">Skillmisc_Profession_Custom</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_profession_custom" inputmode="numeric" name="skillMisc_profession_custom" placeholder="0" maxlength="3" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+<td class="no-print"></td>
 </tr>
 </tbody>
 </table>
@@ -1838,12 +1881,13 @@
 <thead>
 <tr>
 <th class="px-1">Skill Name</th>
-<th class="text-center px-1 no-print" style="width: 45px;"></th>
+<th class="text-center px-1 no-print" style="width: 25px;"></th>
 <th class="text-center px-1" style="width: 125px;">Rank = Skill Die</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">+</th>
 <th class="text-center px-1" style="width: 50px;">Misc</th>
 <th class="text-center text-cyan px-0" style="width: 10px;">=</th>
 <th class="text-center px-1" style="width: 45px;">Total</th>
+<th class="no-print" style="width: 25px;"></th>
 </tr>
 </thead>
 <tbody>
@@ -1864,6 +1908,7 @@
 <td><label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_main">Skillmisc_Lang_Main</label><input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_lang_main" inputmode="numeric" name="skillMisc_lang_main" placeholder="0" maxlength="3" type="text"/></td>
 <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+<td class="no-print"></td>
 </tr>
 </tbody>
 </table>
@@ -3324,6 +3369,222 @@
 <div class="modal-body p-3">
 <div class="d-flex flex-column gap-2" id="diceHistoryList">
 <!-- Populated dynamically by renderDiceHistory() -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Conditions Quick Access Modal -->
+<div aria-hidden="true" aria-labelledby="conditionsModalLabel" class="modal fade no-print" id="conditionsModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+<div class="modal-content shadow-lg">
+<div class="modal-header d-flex align-items-center justify-content-between py-2 px-3">
+<h5 class="modal-title fs-6 mb-0 d-flex align-items-center" id="conditionsModalLabel">
+<a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Conditions" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Conditions on d20futurepath.com"><i class="fa-solid fa-notes-medical text-cyan"></i></a>
+<span class="fw-bold">Conditions &amp; Status Tracks</span>
+</h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body p-3">
+<div class="row g-3">
+<!-- Column 1: Non-Track Standard Conditions -->
+<div class="col-12 col-md-6">
+<h6 class="text-cyan fw-bold mb-3"><i class="fa-solid fa-list-check me-2"></i>Standard Conditions</h6>
+<!-- Blinded -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_blinded" id="modal_cond_blinded" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_blinded">Blinded</label>
+</div>
+<div class="small text-muted ps-4">
+Total concealment. Takes <strong>3Ad (Disadvantage)</strong> on melee attacks, DEX, and Perception checks. Cannot read or perform visual tasks.
+</div>
+</div>
+<!-- Deafened -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_deafened" id="modal_cond_deafened" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_deafened">Deafened</label>
+</div>
+<div class="small text-muted ps-4">
+Takes <strong>1Ad (Disadvantage)</strong> on Initiative and Perception checks. Passive Perception reduced by 1/2 WIS modifier (round down).
+</div>
+</div>
+<!-- Confused -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_confused" id="modal_cond_confused" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_confused">Confused</label>
+</div>
+<div class="small text-muted ps-4">
+Mentally befuddled; treats all targets as enemies. Takes <strong>1Ad (Disadvantage)</strong> on INT and WIS checks. If attacked, must attack last attacker. Otherwise, acts randomly.
+</div>
+</div>
+<!-- Entangled -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_entangled" id="modal_cond_entangled" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_entangled">Entangled</label>
+</div>
+<div class="small text-muted ps-4">
+Takes <strong>1Ad (Disadvantage)</strong> on Attack Rolls and DEX saves. Immobile if anchored; half speed and no running/charging if unanchored. Attackers gain <strong>1Ad (Advantage)</strong> against target.
+</div>
+</div>
+<!-- Flat-Footed -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_flat_footed" id="modal_cond_flat_footed" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_flat_footed">Flat-Footed</label>
+</div>
+<div class="small text-muted ps-4">
+Caught unaware or unable to react. Loses Dexterity bonus to AC.
+</div>
+</div>
+<!-- Helpless / Incapacitated / Unconscious -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_helpless" id="modal_cond_helpless" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_helpless">Helpless / Incapacitated / Unconscious</label>
+</div>
+<div class="small text-muted ps-4">
+Paralyzed, sleeping, or unconscious. Effective AC = 5 + size mod. Vulnerable to <em>Coup de Grace</em>. Passive Perception reduced to 1/4 (round down), no skill checks.
+</div>
+</div>
+<!-- Prone -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_prone" id="modal_cond_prone" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_prone">Prone</label>
+</div>
+<div class="small text-muted ps-4">
+Standing up is a Simple Action (prevents Bonus Action). Melee attacks take <strong>1Ad (Disadvantage)</strong>, no techniques. Gains <strong>1Ad (Advantage)</strong> on Ranged attacks against targets &gt; 10ft away.
+</div>
+</div>
+<!-- Unstable / Dying -->
+<div class="condition-item">
+<div class="form-check mb-1">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_unstable" id="modal_cond_unstable" type="checkbox"/>
+<label class="form-check-label fw-bold text-cyan" for="modal_cond_unstable">Unstable / Dying</label>
+</div>
+<div class="small text-muted ps-4">
+Triggered at 0 HP. Roll <strong>1d4 CON damage</strong> each turn in combat (every 20 mins out of combat). Move walk speed only. Stabilized by DC 20 Medical check.
+</div>
+</div>
+</div>
+<!-- Column 2: Status Tracks -->
+<div class="col-12 col-md-6">
+<h6 class="text-cyan fw-bold mb-3"><i class="fa-solid fa-bars-staggered me-2"></i>Status Tracks</h6>
+<!-- Fatigue Track -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-battery-quarter me-1"></i>Fatigue Track:</div>
+<div class="ps-2">
+<div class="form-check form-check-inline me-3">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_winded" id="modal_cond_winded" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_winded">Winded</label>
+</div>
+<div class="form-check form-check-inline me-3">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_fatigued" id="modal_cond_fatigued" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_fatigued">Fatigued</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_exhausted" id="modal_cond_exhausted" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_exhausted">Exhausted</label>
+</div>
+</div>
+<div class="small text-muted ps-2 mt-1">
+<div><strong>Winded:</strong> Fatigued penalty, removed by 1-min breather. Winded + Winded = Fatigued.</div>
+<div><strong>Fatigued:</strong> Half speed. <strong>1Ad (Disadvantage)</strong> on STR/DEX saves &amp; Combat Melee Tech. -1 Melee attacks, temp -2 DEX. Needs 8 hrs rest.</div>
+<div><strong>Exhausted:</strong> No Bonus Actions, Run, Sprint, or Melee Tech. <strong>1Ad (Disadvantage)</strong> on Melee, -2 Ranged. Temp -2 STR, -4 DEX. Needs 8 hrs rest.</div>
+</div>
+</div>
+<!-- Fear Track -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-ghost me-1"></i>Fear Track:</div>
+<div class="ps-2">
+<div class="form-check form-check-inline me-3">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_frightened" id="modal_cond_frightened" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_frightened">Frightened</label>
+</div>
+<div class="form-check form-check-inline me-3">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_cowering" id="modal_cond_cowering" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_cowering">Cowering</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_panicked" id="modal_cond_panicked" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_panicked">Panicked</label>
+</div>
+</div>
+<div class="small text-muted ps-2 mt-1">
+<div><strong>Frightened:</strong> <strong>1Ad (Disadvantage)</strong> on all actions.</div>
+<div><strong>Cowering:</strong> Frozen. Lose DEX to AC/saves/skills, <strong>2Ad (Disadvantage)</strong> on all actions. DC 13 WIS check each turn.</div>
+<div><strong>Panicked:</strong> Flees by most direct route. Can only defend, cannot attack.</div>
+</div>
+</div>
+<!-- Grapple Track -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-hand-fist me-1"></i>Grapple Track:</div>
+<div class="ps-2">
+<div class="form-check form-check-inline me-3">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_grappled" id="modal_cond_grappled" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_grappled">Grappled</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_pinned" id="modal_cond_pinned" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_pinned">Pinned</label>
+</div>
+</div>
+<div class="small text-muted ps-2 mt-1">
+<div><strong>Grappled:</strong> Attack only with bare hands, light weapon, or escape. Lose DEX to AC (except vs grappler).</div>
+<div><strong>Pinned:</strong> Immobile. Lose DEX to AC against all attackers.</div>
+</div>
+</div>
+<!-- Nausea Track -->
+<div class="condition-item mb-2 pb-2 border-bottom border-secondary border-opacity-25">
+<div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-face-dizzy me-1"></i>Nausea Track:</div>
+<div class="ps-2">
+<div class="form-check form-check-inline me-3">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_nauseated" id="modal_cond_nauseated" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_nauseated">Nauseated</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_sickened" id="modal_cond_sickened" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_sickened">Sickened</label>
+</div>
+</div>
+<div class="small text-muted ps-2 mt-1">
+<div><strong>Nauseated:</strong> Cannot gain Advantage. <strong>2Ad (Disadvantage)</strong> on attention-requiring actions.</div>
+<div><strong>Sickened:</strong> Treated as Nauseated. Lose <strong>1 CON per day</strong> (rolled) until cured via Medical check or death.</div>
+</div>
+</div>
+<!-- Shaken Track -->
+<div class="condition-item">
+<div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-skull me-1"></i>Shaken Track:</div>
+<div class="ps-2">
+<div class="form-check form-check-inline me-2">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_shaken" id="modal_cond_shaken" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_shaken">Shaken</label>
+</div>
+<div class="form-check form-check-inline me-2">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_dazed" id="modal_cond_dazed" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_dazed">Dazed</label>
+</div>
+<div class="form-check form-check-inline me-2">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_stunned" id="modal_cond_stunned" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_stunned">Stunned</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input modal-condition-check" data-cond-name="cond_paralyzed" id="modal_cond_paralyzed" type="checkbox"/>
+<label class="form-check-label fw-bold small" for="modal_cond_paralyzed">Paralyzed</label>
+</div>
+</div>
+<div class="small text-muted ps-2 mt-1">
+<div><strong>Shaken:</strong> <strong>1Ad (Disadvantage)</strong> on attacks, saves, and skill checks.</div>
+<div><strong>Dazed:</strong> Cannot gain Advantage, <strong>2Ad (Disadvantage)</strong> on all actions. Retains normal AC (1 rd).</div>
+<div><strong>Stunned:</strong> Lose DEX to AC, drop held items, cannot attack/move (1 rd).</div>
+<div><strong>Paralyzed:</strong> Cannot move or act. Considered Helpless.</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

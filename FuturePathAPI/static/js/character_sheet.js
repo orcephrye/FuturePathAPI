@@ -2018,8 +2018,8 @@ function addWeaponRow() {
   tr2.innerHTML = `
     <td colspan="10" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
-        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-        <label class="visually-hidden" for="weaponsCard_wepNotes_${idx}">Wepnotes</label><input type="text" class="form-control form-control-sm" id="weaponsCard_wepNotes_${idx}" name="wepNotes[]">
+        <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-xxxl-inline d-print-none">Notes &amp; Attributes:</span><span class="d-inline d-xxxl-none d-print-inline">Attrs:</span></span>
+        <label class="visually-hidden" for="weaponsCard_wepNotes_${idx}">Wepnotes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="weaponsCard_wepNotes_${idx}" name="wepNotes[]" rows="1" oninput="autoExpandTextarea(this)"></textarea>
       </div>
     </td>
   `;
@@ -2056,16 +2056,17 @@ function updateCustomSkillAbility(select) {
 
 function addArmorRow() {
   const tbody = document.querySelector('#armorTable tbody');
+  const idx = tbody.querySelectorAll('tr.armor-main-row').length;
   
   const tr1 = document.createElement('tr');
   tr1.classList.add('armor-main-row');
   tr1.innerHTML = `
-    <td><input type="text" class="form-control form-control-sm" name="armorName[]"></td>
-    <td><input type="text" class="form-control form-control-sm text-center" name="armorACBonus[]"></td>
-    <td><input type="text" class="form-control form-control-sm text-center" name="armorDR[]"></td>
-    <td><input type="text" class="form-control form-control-sm text-center" name="armorMaxDex[]"></td>
-    <td><input type="text" class="form-control form-control-sm text-center" name="armorWeight[]"></td>
-    <td><input type="text" class="form-control form-control-sm text-center" name="armorSpeedPenalty[]"></td>
+    <td><label class="visually-hidden" for="armorDefensesCard_armorName_${idx}">Armorname</label><input type="text" class="form-control form-control-sm" id="armorDefensesCard_armorName_${idx}" name="armorName[]"></td>
+    <td><label class="visually-hidden" for="armorDefensesCard_armorACBonus_${idx}">Armoracbonus</label><input type="text" class="form-control form-control-sm text-center" id="armorDefensesCard_armorACBonus_${idx}" name="armorACBonus[]"></td>
+    <td><label class="visually-hidden" for="armorDefensesCard_armorDR_${idx}">Armordr</label><input type="text" class="form-control form-control-sm text-center" id="armorDefensesCard_armorDR_${idx}" name="armorDR[]"></td>
+    <td><label class="visually-hidden" for="armorDefensesCard_armorMaxDex_${idx}">Armormaxdex</label><input type="text" class="form-control form-control-sm text-center" id="armorDefensesCard_armorMaxDex_${idx}" name="armorMaxDex[]"></td>
+    <td><label class="visually-hidden" for="armorDefensesCard_armorWeight_${idx}">Armorweight</label><input type="text" class="form-control form-control-sm text-center" id="armorDefensesCard_armorWeight_${idx}" name="armorWeight[]"></td>
+    <td><label class="visually-hidden" for="armorDefensesCard_armorSpeedPenalty_${idx}">Armorspeedpenalty</label><input type="text" class="form-control form-control-sm text-center" id="armorDefensesCard_armorSpeedPenalty_${idx}" name="armorSpeedPenalty[]"></td>
     <td class="no-print text-center"><button type="button" class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)"><i class="fa-solid fa-trash"></i></button></td>
   `;
   
@@ -2075,7 +2076,7 @@ function addArmorRow() {
     <td colspan="7" class="pt-0 pb-2 border-bottom">
       <div class="input-group input-group-sm">
         <span class="input-group-text bg-transparent text-muted small fw-bold" style="font-size: 0.75rem;"><span class="d-none d-md-inline d-print-none">Bonus Attributes:</span><span class="d-inline d-md-none d-print-inline">Attrs:</span></span>
-        <input type="text" class="form-control form-control-sm" name="armorBonusAttributes[]">
+        <label class="visually-hidden" for="armorDefensesCard_armorBonusAttributes_${idx}">Armorbonusattributes</label><textarea class="form-control form-control-sm trait-desc-textarea" id="armorDefensesCard_armorBonusAttributes_${idx}" name="armorBonusAttributes[]" rows="1" oninput="autoExpandTextarea(this)"></textarea>
       </div>
     </td>
   `;
@@ -2112,7 +2113,6 @@ function addFeatSkillRow(name = '', rank = '', keyAbility = '-', miscMod = '') {
     <td><input class="form-control form-control-sm" name="customFeatSkillName[]" placeholder="Skill Name" type="text"/></td>
     <td class="text-center no-print">
       <i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-      <button type="button" class="btn btn-sm btn-link text-danger p-0 border-0 ms-1" onclick="removeRow(this)" title="Remove Skill"><i class="fa-solid fa-trash"></i></button>
     </td>
     <td>
       <div class="d-inline-flex align-items-center gap-1 justify-content-center">
@@ -2140,6 +2140,7 @@ function addFeatSkillRow(name = '', rank = '', keyAbility = '-', miscMod = '') {
     <td><input class="form-control form-control-sm skill-misc-mod text-center" inputmode="numeric" name="skillMisc_feat_custom[]" placeholder="0" maxlength="3" type="text"/></td>
     <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
     <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+    <td class="no-print text-center"><button type="button" class="btn btn-sm btn-link text-danger p-0 border-0" onclick="removeRow(this)" title="Remove Skill"><i class="fa-solid fa-trash"></i></button></td>
   `;
   tbody.appendChild(tr);
 
@@ -2183,7 +2184,6 @@ function addLangSkillRow(name = '', rank = '', miscMod = '') {
     <td><input class="form-control form-control-sm" name="customLangName[]" placeholder="Language / Dialect" type="text"/></td>
     <td class="text-center no-print">
       <i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
-      <button type="button" class="btn btn-sm btn-link text-danger p-0 border-0 ms-1" onclick="removeRow(this)" title="Remove Skill"><i class="fa-solid fa-trash"></i></button>
     </td>
     <td>
       <div class="d-inline-flex align-items-center gap-1 justify-content-center">
@@ -2196,6 +2196,7 @@ function addLangSkillRow(name = '', rank = '', miscMod = '') {
     <td><input class="form-control form-control-sm skill-misc-mod text-center" inputmode="numeric" name="skillMisc_lang_custom[]" placeholder="0" maxlength="3" type="text"/></td>
     <td class="text-center text-cyan fw-bold align-middle px-0">=</td>
     <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+    <td class="no-print text-center"><button type="button" class="btn btn-sm btn-link text-danger p-0 border-0" onclick="removeRow(this)" title="Remove Skill"><i class="fa-solid fa-trash"></i></button></td>
   `;
   tbody.appendChild(tr);
 
@@ -3332,7 +3333,7 @@ function getFormDataObj() {
         const notesRow = mainRow.nextElementSibling;
         let bonusAttrs = '';
         if (notesRow && notesRow.classList.contains('armor-notes-row')) {
-          const bonusAttrsEl = notesRow.querySelector('input[name="armorBonusAttributes[]"]');
+          const bonusAttrsEl = notesRow.querySelector('[name="armorBonusAttributes[]"]');
           bonusAttrs = (bonusAttrsEl ? bonusAttrsEl.value.trim() : '');
         }
 
@@ -3395,7 +3396,7 @@ function getFormDataObj() {
         const notesRow = mainRow.nextElementSibling;
         let notes = '';
         if (notesRow && notesRow.classList.contains('weapon-notes-row')) {
-          const notesEl = notesRow.querySelector('input[name="wepNotes[]"]');
+          const notesEl = notesRow.querySelector('[name="wepNotes[]"]');
           notes = (notesEl ? notesEl.value.trim() : '');
         }
 
@@ -4333,7 +4334,7 @@ function populateForm(data) {
           }
         }
         if (lastNotes) {
-          const bonusIn = lastNotes.querySelector('input[name="armorBonusAttributes[]"]');
+          const bonusIn = lastNotes.querySelector('[name="armorBonusAttributes[]"]');
           if (bonusIn) {
             bonusIn.value = armorObj["Bonus Attributes"] || armorObj.bonusAttributes || '';
           }
@@ -4404,7 +4405,7 @@ function populateForm(data) {
           }
         }
         if (lastNotes) {
-          const notesIn = lastNotes.querySelector('input[name="wepNotes[]"]');
+          const notesIn = lastNotes.querySelector('[name="wepNotes[]"]');
           if (notesIn) {
             notesIn.value = wepObj.Notes || wepObj.notes || '';
           }
@@ -5378,6 +5379,13 @@ function populateForm(data) {
 
   calculateStats();
   updateProficiencyCounts();
+  syncConditionsModal();
+
+  if (isCombatView()) {
+    setupCombatViewLayout();
+    updateCombatPageHeader();
+    updateCombatSpecialCardVisibility();
+  }
 } catch (err) {
   console.error('Error populating character form:', err);
 } finally {
@@ -5580,6 +5588,269 @@ function randomizeSpecies(fillInput = false) {
   }
 }
 
+// ==========================================
+// Combat View Logic (?view=combat)
+// ==========================================
+
+function isCombatView() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return (urlParams.get('view') === 'combat');
+}
+
+function toggleViewMode() {
+  const url = new URL(window.location.href);
+  if (isCombatView()) {
+    url.searchParams.delete('view');
+    window.open(url.toString(), '_blank');
+  } else {
+    url.searchParams.set('view', 'combat');
+    window.open(url.toString(), '_blank');
+  }
+}
+
+function updateCombatPageHeader() {
+  if (!isCombatView()) {
+    return;
+  }
+  const nameEl = document.getElementById('identityCard_charName') || document.querySelector('input[name="charName"]');
+  const speciesEl = document.getElementById('identityCard_speciesInput') || document.querySelector('input[name="species"]');
+  const pathEl = document.getElementById('identityCard_charPath') || document.querySelector('input[name="charPath"]');
+  const levelEl = document.getElementById('identityCard_pathLevel') || document.querySelector('input[name="pathLevel"]');
+
+  const charName = (nameEl && nameEl.value && nameEl.value.trim()) ? nameEl.value.trim() : 'Character';
+  const species = (speciesEl && speciesEl.value && speciesEl.value.trim()) ? speciesEl.value.trim() : 'Species';
+  const path = (pathEl && pathEl.value && pathEl.value.trim()) ? pathEl.value.trim() : 'Path';
+  const rawLevel = (levelEl && levelEl.value && levelEl.value.trim()) ? levelEl.value.trim() : '1';
+  const levelVal = (rawLevel.toLowerCase().startsWith('level') ? rawLevel : `Level ${rawLevel}`);
+
+  const header = document.getElementById('page-1-header');
+  if (header) {
+    header.classList.remove('d-none');
+  }
+  const titleEl = document.querySelector('#page-1-header .page-header-title');
+  if (titleEl) {
+    titleEl.textContent = `${charName} - ${species} - ${path} - ${levelVal}`;
+  }
+}
+
+function hasCardData(cardId) {
+  const card = document.getElementById(cardId);
+  if (!card) {
+    return false;
+  }
+  if (cardId === 'cyberneticsCard') {
+    const inputs = card.querySelectorAll('input[name="cyberName[]"], input[name="cyberDrawbackName[]"]');
+    return Array.from(inputs).some((inp) => inp.value && inp.value.trim().length > 0);
+  }
+  if (cardId === 'mutationsCard') {
+    const inputs = card.querySelectorAll('input[name="mutationDrawbackName[]"], input[name="mutationEnhancementName[]"]');
+    return Array.from(inputs).some((inp) => inp.value && inp.value.trim().length > 0);
+  }
+  if (cardId === 'psionicsCard') {
+    const inputs = card.querySelectorAll('input[name="psionicDrawbackName[]"], input[name="psionicTechName[]"]');
+    return Array.from(inputs).some((inp) => inp.value && inp.value.trim().length > 0);
+  }
+  return false;
+}
+
+function updateCombatSpecialCardVisibility() {
+  if (!isCombatView()) {
+    return;
+  }
+  const cyberCard = document.getElementById('cyberneticsCard');
+  const mutCard = document.getElementById('mutationsCard');
+  const psionicCard = document.getElementById('psionicsCard');
+
+  const hasCyber = hasCardData('cyberneticsCard');
+  const hasMut = hasCardData('mutationsCard');
+  const hasPsionic = hasCardData('psionicsCard');
+
+  if (cyberCard) {
+    cyberCard.classList.toggle('d-none', !hasCyber);
+  }
+  if (mutCard) {
+    mutCard.classList.toggle('d-none', !hasMut);
+  }
+  if (psionicCard) {
+    psionicCard.classList.toggle('d-none', !hasPsionic);
+  }
+}
+
+function setupCombatViewLayout() {
+  if (!isCombatView()) {
+    return;
+  }
+
+  document.body.classList.add('view-combat');
+
+  // Update Action Bar toggle buttons
+  const toggleBtn = document.getElementById('viewModeToggleBtn');
+  if (toggleBtn) {
+    toggleBtn.innerHTML = '<i class="fa-solid fa-book-open"></i><span class="d-none d-sm-inline ms-1">Complete View</span>';
+    toggleBtn.title = 'Open Complete View in a new tab';
+  }
+  const dropdownToggleBtn = document.getElementById('dropdownViewModeToggleBtn');
+  if (dropdownToggleBtn) {
+    dropdownToggleBtn.innerHTML = '<i class="fa-solid fa-book-open text-cyan me-2" style="width: 18px; text-align: center;"></i><span>Complete View</span>';
+    dropdownToggleBtn.title = 'Open Complete View in a new tab';
+  }
+
+  // Disable lock layout button in combat view
+  const lockBtn = document.getElementById('cardLayoutLockButton');
+  if (lockBtn) {
+    lockBtn.disabled = true;
+    lockBtn.classList.add('disabled', 'd-none');
+  }
+
+  const page1 = document.getElementById('page-1');
+  if (!page1) {
+    return;
+  }
+
+  // Hide pages 2, 3, 4 and all other extra pages
+  document.querySelectorAll('[id^="page-"]').forEach((page) => {
+    if (page.id !== 'page-1' && !page.id.includes('-header') && !page.id.includes('-toggles')) {
+      page.classList.add('d-none');
+    }
+  });
+
+  // Hide non-combat cards
+  const nonCombatCardIds = [
+    'identityCard',
+    'coreSkills',
+    'languageCustomSkillsCard',
+    'wealthXpCard',
+    'backstoryCard',
+    'equipmentCard',
+    'quirksCard',
+    'detractorsCard',
+    'powerArmorCard',
+    'extraNotesCard'
+  ];
+  nonCombatCardIds.forEach((id) => {
+    const card = document.getElementById(id);
+    if (card) {
+      card.classList.add('d-none');
+    }
+  });
+
+  // Hide original two-column container
+  const twoColRow = document.getElementById('mainTwoColumnRow');
+  if (twoColRow) {
+    twoColRow.classList.add('d-none');
+  }
+
+  // Row 1: Ability Themes, Health & Injury, Attributes
+  const row1 = document.getElementById('combatRow1');
+  if (row1) {
+    row1.classList.add('mb-3');
+  }
+
+  // Row 2: Armor Stats, Damage Reduction (DR), Speed
+  let row2 = document.getElementById('combatRow2');
+  if (!row2) {
+    row2 = document.createElement('div');
+    row2.id = 'combatRow2';
+    row2.className = 'row g-2 mb-3';
+
+    const colArmor = document.createElement('div');
+    colArmor.className = 'col-12 col-card-armor';
+    const armorStatsCard = document.getElementById('ArmorStatsCard');
+    if (armorStatsCard) {
+      armorStatsCard.classList.remove('d-none');
+      colArmor.appendChild(armorStatsCard);
+    }
+
+    const colDR = document.createElement('div');
+    colDR.className = 'col-12 col-md-6 col-card-dr';
+    const drCard = document.getElementById('DamageReductionCard');
+    if (drCard) {
+      drCard.classList.remove('d-none');
+      colDR.appendChild(drCard);
+    }
+
+    const colSpeed = document.createElement('div');
+    colSpeed.className = 'col-12 col-md-6 col-card-speed';
+    const speedCard = document.getElementById('SpeedCard');
+    if (speedCard) {
+      speedCard.classList.remove('d-none');
+      colSpeed.appendChild(speedCard);
+    }
+
+    row2.appendChild(colArmor);
+    row2.appendChild(colDR);
+    row2.appendChild(colSpeed);
+  }
+
+  // Row 3: Armor, Weapons
+  let row3 = document.getElementById('combatRow3');
+  if (!row3) {
+    row3 = document.createElement('div');
+    row3.id = 'combatRow3';
+    row3.className = 'row g-3 mb-3';
+
+    const colArmorDef = document.createElement('div');
+    colArmorDef.className = 'col-12 col-lg-6';
+    const armorDefCard = document.getElementById('armorDefensesCard');
+    if (armorDefCard) {
+      armorDefCard.classList.remove('d-none');
+      colArmorDef.appendChild(armorDefCard);
+    }
+
+    const colWeapons = document.createElement('div');
+    colWeapons.className = 'col-12 col-lg-6';
+    const weaponsCard = document.getElementById('weaponsCard');
+    if (weaponsCard) {
+      weaponsCard.classList.remove('d-none');
+      colWeapons.appendChild(weaponsCard);
+    }
+
+    row3.appendChild(colArmorDef);
+    row3.appendChild(colWeapons);
+  }
+
+  if (row1) {
+    row1.after(row2);
+    row2.after(row3);
+  } else {
+    page1.appendChild(row2);
+    page1.appendChild(row3);
+  }
+
+  // Subsequent full-width cards in exact order:
+  // 1. Character Professions & Talents
+  // 2. Techniques
+  // 3. Feats
+  // 4. Path Talents
+  // 5. Species Traits
+  // 6. Cybernetics / Mutations / Psionics (0 or 1, whichever has data)
+  // 7. Conditions
+  const fullWidthCards = [
+    'professionsCard',
+    'techniquesCard',
+    'featsCard',
+    'pathTalentsCard',
+    'speciesTraitsCard',
+    'cyberneticsCard',
+    'mutationsCard',
+    'psionicsCard',
+    'conditionsCard'
+  ];
+
+  fullWidthCards.forEach((id) => {
+    const card = document.getElementById(id);
+    if (card) {
+      card.classList.remove('d-none', 'card-hidden-all');
+      card.classList.add('mb-3');
+      page1.appendChild(card);
+    }
+  });
+
+  updateCombatSpecialCardVisibility();
+  updateCombatPageHeader();
+  updateTableOfContents();
+}
+
 function initOriginalParentContainers() {
   document.querySelectorAll('.sheet-card').forEach((card) => {
     if (!card.originalParentContainer) {
@@ -5600,6 +5871,7 @@ function resetFormText(event) {
     calculateStats();
     updateProficiencyCounts();
     randomizeSpecies(false);
+    syncConditionsModal();
   }
 }
 
@@ -5735,7 +6007,7 @@ function getMaxPageHeight(pageNum = 1) {
 let autoPaginateTimeout = null;
 
 function scheduleAutoPagination(delay = 500) {
-  if (isPopulatingForm) {
+  if (isCombatView() || isPopulatingForm) {
     return;
   }
   if (autoPaginateTimeout) {
@@ -5880,6 +6152,9 @@ function getOrCreatePageContainer(pageNum) {
 const PULL_UP_SAFETY_BUFFER = 25; // 25px buffer to account for margins/padding when a card is inserted
 
 function autoPaginateCards() {
+  if (isCombatView()) {
+    return;
+  }
   console.log("autoPaginateCards called");
   pushedDownCards.clear();
   const wasPrintMode = document.body.classList.contains('is-print-mode');
@@ -6029,6 +6304,9 @@ function ensureFootersAreLastChild() {
 }
 
 function updateEmptyPages() {
+  if (isCombatView()) {
+    return;
+  }
   const pageEls = Array.from(document.querySelectorAll('[id^="page-"]'))
     .filter((page) => /^page-\d+$/.test(page.id));
 
@@ -6388,6 +6666,9 @@ function moveCardDown(btn) {
 }
 
 function updateHeaderToggleSwitches() {
+  if (isCombatView()) {
+    return;
+  }
   const items = [
     { cardId: 'powerArmorCard', containerId: 'togglePowerArmorContainer' },
     { cardId: 'techniquesCard', containerId: 'toggleTechniquesContainer' },
@@ -6419,6 +6700,9 @@ function updateHeaderToggleSwitches() {
 }
 
 function saveCardOrder() {
+  if (isCombatView()) {
+    return;
+  }
   const pageEls = document.querySelectorAll('[id^="page-"]');
   const orderData = {};
 
@@ -6437,6 +6721,9 @@ function saveCardOrder() {
 }
 
 function restoreCardOrder() {
+  if (isCombatView()) {
+    return;
+  }
   try {
     const saved = localStorage.getItem('d20FuturePathCardOrder');
     if (!saved) {
@@ -6526,6 +6813,9 @@ function setCardLayoutLocked(locked) {
 }
 
 function restoreCardLayoutLockState() {
+  if (isCombatView()) {
+    return;
+  }
   const saved = localStorage.getItem('d20FuturePathCardLayoutLocked');
   const isLocked = (saved === null || saved === 'true');
   setCardLayoutLocked(isLocked);
@@ -6546,6 +6836,9 @@ function toggleTechniquesCardVisibility(show) {
 }
 
 function restoreTechniquesVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleTechniquesVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowTechniquesCard');
   if (savedState !== null) {
@@ -6572,6 +6865,9 @@ function toggleQuirksCardVisibility(show) {
 }
 
 function restoreQuirksVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleQuirksVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowQuirksCard');
   if (savedState !== null) {
@@ -6598,6 +6894,9 @@ function toggleDetractorsCardVisibility(show) {
 }
 
 function restoreDetractorsVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleDetractorsVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowDetractorsCard');
   if (savedState !== null) {
@@ -6624,6 +6923,9 @@ function toggleCyberneticsCardVisibility(show) {
 }
 
 function restoreCyberneticsVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleCyberneticsVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowCyberneticsCard');
   if (savedState !== null) {
@@ -6650,6 +6952,9 @@ function toggleMutationsCardVisibility(show) {
 }
 
 function restoreMutationsVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleMutationsVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowMutationsCard');
   if (savedState !== null) {
@@ -6676,6 +6981,9 @@ function togglePsionicsCardVisibility(show) {
 }
 
 function restorePsionicsVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_togglePsionicsVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowPsionicsCard');
   if (savedState !== null) {
@@ -6798,6 +7106,9 @@ function togglePowerArmorCardVisibility(show) {
 }
 
 function restorePowerArmorVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_togglePowerArmorVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowPowerArmorCard');
   if (savedState !== null) {
@@ -6824,6 +7135,9 @@ function toggleBackstoryCardVisibility(show) {
 }
 
 function restoreBackstoryVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleBackstoryVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowBackstoryCard');
   if (savedState !== null) {
@@ -6850,6 +7164,9 @@ function toggleExtraNotesCardVisibility(show) {
 }
 
 function restoreExtraNotesVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleExtraNotesVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowExtraNotesCard');
   if (savedState !== null) {
@@ -6876,6 +7193,9 @@ function toggleConditionsCardVisibility(show) {
 }
 
 function restoreConditionsVisibilityState() {
+  if (isCombatView()) {
+    return;
+  }
   const toggleInput = document.getElementById('global_toggleConditionsVisibility');
   const savedState = localStorage.getItem('d20FuturePathShowConditionsCard');
   if (savedState !== null) {
@@ -6885,6 +7205,23 @@ function restoreConditionsVisibilityState() {
     }
     toggleConditionsCardVisibility(isVisible);
   }
+}
+
+function syncConditionsModal() {
+  const modal = document.getElementById('conditionsModal');
+  if (!modal) {
+    return;
+  }
+  const modalChecks = modal.querySelectorAll('.modal-condition-check');
+  modalChecks.forEach((modalChk) => {
+    const condName = modalChk.getAttribute('data-cond-name');
+    if (condName) {
+      const formChk = document.querySelector(`#characterForm [name="${condName}"]`);
+      if (formChk) {
+        modalChk.checked = formChk.checked;
+      }
+    }
+  });
 }
 
 function restoreCollapseStates() {
@@ -6948,19 +7285,25 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     restoreCollapseStates();
   }
-  restoreCardOrder();
-  updateHeaderToggleSwitches();
-  restoreCardLayoutLockState();
-  restoreTechniquesVisibilityState();
-  restoreQuirksVisibilityState();
-  restoreDetractorsVisibilityState();
-  restoreCyberneticsVisibilityState();
-  restoreMutationsVisibilityState();
-  restorePsionicsVisibilityState();
-  restorePowerArmorVisibilityState();
-  restoreBackstoryVisibilityState();
-  restoreExtraNotesVisibilityState();
-  restoreConditionsVisibilityState();
+  if (isCombatView()) {
+    setupCombatViewLayout();
+    updateCombatPageHeader();
+    updateCombatSpecialCardVisibility();
+  } else {
+    restoreCardOrder();
+    updateHeaderToggleSwitches();
+    restoreCardLayoutLockState();
+    restoreTechniquesVisibilityState();
+    restoreQuirksVisibilityState();
+    restoreDetractorsVisibilityState();
+    restoreCyberneticsVisibilityState();
+    restoreMutationsVisibilityState();
+    restorePsionicsVisibilityState();
+    restorePowerArmorVisibilityState();
+    restoreBackstoryVisibilityState();
+    restoreExtraNotesVisibilityState();
+    restoreConditionsVisibilityState();
+  }
 
   const hasLoadedLocalData = Boolean(localStorage.getItem('d20FuturePathCharData'));
   if (!hasLoadedLocalData && !apiCharId) {
@@ -7015,6 +7358,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('characterForm');
   if (form) {
     form.addEventListener('input', (e) => {
+      if (isCombatView()) {
+        updateCombatPageHeader();
+        updateCombatSpecialCardVisibility();
+      }
       if (isStatOrCalcInput(e.target)) {
         debouncedCalculateStats();
       } else {
@@ -7022,6 +7369,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     form.addEventListener('change', (e) => {
+      if (isCombatView()) {
+        updateCombatPageHeader();
+        updateCombatSpecialCardVisibility();
+      }
+      if (e.target && e.target.name && e.target.name.startsWith('cond_')) {
+        const modalChk = document.querySelector(`#conditionsModal [data-cond-name="${e.target.name}"]`);
+        if (modalChk) {
+          modalChk.checked = e.target.checked;
+        }
+      }
       if (e.target && (e.target.id === 'identityCard_charPath' || e.target.name === 'charPath')) {
         handlePathChange(e.target.value);
       } else if (e.target && e.target.name === 'profTitle[]') {
@@ -7031,6 +7388,27 @@ document.addEventListener('DOMContentLoaded', () => {
         debouncedCalculateStats();
       } else {
         triggerAutoSave();
+      }
+    });
+  }
+
+  const conditionsModalEl = document.getElementById('conditionsModal');
+  if (conditionsModalEl) {
+    conditionsModalEl.addEventListener('show.bs.modal', () => {
+      syncConditionsModal();
+    });
+
+    conditionsModalEl.addEventListener('change', (e) => {
+      const target = e.target;
+      if (target && target.classList.contains('modal-condition-check')) {
+        const condName = target.getAttribute('data-cond-name');
+        if (condName) {
+          const formChk = document.querySelector(`#characterForm [name="${condName}"]`);
+          if (formChk) {
+            formChk.checked = target.checked;
+            formChk.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+        }
       }
     });
   }
@@ -7059,7 +7437,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    if (target.matches('.trait-desc-textarea, textarea[name*="Desc"], textarea[name*="desc"], textarea[name*="Effect"], textarea[name*="Notes"], input[name="armorBonusAttributes[]"], textarea[name="backstoryNotes"]')) {
+    if (target.matches('.trait-desc-textarea, textarea[name*="Desc"], textarea[name*="desc"], textarea[name*="Effect"], textarea[name*="Notes"], textarea[name="armorBonusAttributes[]"], textarea[name="backstoryNotes"]')) {
       e.preventDefault();
       target.blur();
       openDescriptionModal(target);
@@ -7088,7 +7466,11 @@ function openDescriptionModal(target) {
   let itemName = '';
   const row = target.closest('tr');
   if (row) {
-    const nameInput = row.querySelector('input[type="text"]:not([readonly])');
+    let searchRow = row;
+    if (row.classList.contains('armor-notes-row') || row.classList.contains('weapon-notes-row')) {
+      searchRow = row.previousElementSibling || row;
+    }
+    const nameInput = searchRow.querySelector('input[type="text"]:not([readonly])');
     if (nameInput && nameInput.value.trim()) {
       itemName = nameInput.value.trim();
     }
