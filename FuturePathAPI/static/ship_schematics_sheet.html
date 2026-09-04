@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&amp;family=Inter:wght@300;400;500;600;700&amp;family=Orbitron:wght@600;800&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- External FuturePath Static Stylesheets -->
 <link href="/v1/static/css/themes.css" rel="stylesheet"/>
-<link href="/v1/static/css/ship_schematics_sheet.css" rel="stylesheet"/>
+<link href="/v1/static/css/ship_schematics_sheet.css?v=20260903-15" rel="stylesheet"/>
 </head>
 <body class="theme-cosmic-dark layout-locked">
 <!-- Top Header Banner -->
@@ -137,7 +137,7 @@
 <div class="d-flex align-items-center gap-2">
 <span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-id-card me-2 text-cyan"></i>Ship Owner and Core Stats</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Space_Ships#Summary" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Space Ships Summary on d20futurepath.com"><i class="fa-solid fa-id-card text-cyan"></i></a>Ship Owner and Core Stats</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-print card-reorder-btns">
 <button aria-label="Move Card Up" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardUp('cardOwnerStats', event)" title="Move Card Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
@@ -156,9 +156,9 @@
 <input class="form-control" id="shipOwnersInput" name="shipOwners" placeholder="e.g. Captain Vane &amp; Crew" type="text"/>
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold" for="hullSizeInput">Hull Size</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="hullSizeInput">Hull Size<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Space_Ships#Hull_Sizes" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Hull Sizes on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
-<input autocomplete="off" class="form-control" data-list="hullSizesDatalist" id="hullSizeInput" name="hullSize" onchange="onHullSizeChange(this.value)" placeholder="Medium" type="text" value="Medium"/>
+<input autocomplete="off" class="form-control" data-list="hullSizesDatalist" id="hullSizeInput" name="hullSize" onchange="onHullSizeChange(this.value)" oninput="updateHullDescription()" placeholder="Medium" type="text" value="Medium"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist('hullSizeInput')" title="Show Size Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -176,9 +176,9 @@
 </datalist>
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold" for="hullConfigInput">Hull Configuration</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="hullConfigInput">Hull Configuration<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Space_Ships#Hull_Configurations" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Hull Configurations on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
-<input autocomplete="off" class="form-control" data-list="hullConfigDatalist" id="hullConfigInput" name="hullConfig" onchange="onHullConfigChange(this.value)" placeholder="Generic" type="text" value="Generic"/>
+<input autocomplete="off" class="form-control" data-list="hullConfigDatalist" id="hullConfigInput" name="hullConfig" onchange="onHullConfigChange(this.value)" oninput="onHullConfigChange(this.value)" placeholder="Generic" type="text" value="Generic"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist('hullConfigInput')" title="Show Configuration Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
@@ -186,7 +186,7 @@
 <datalist id="hullConfigDatalist"></datalist>
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold" for="coreLevelSelect">Core Level</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="coreLevelSelect">Core Level<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Space_Ships#The_Ship_Core" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View The Ship Core on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <select class="form-select" id="coreLevelSelect" name="coreLevel" onchange="onCoreLevelChange(this.value)">
 <option value="1">Tech 1 (10 pts, Max Large)</option>
 <option selected value="2">Tech 2 (15 pts, Max Garg.)</option>
@@ -195,7 +195,7 @@
 </select>
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="ftlDriveInput">FTL Drive</label>
+<label class="form-label small text-uppercase text-muted fw-bold" for="ftlDriveInput">FTL Drive<a class="text-decoration-none header-icon-link ms-1 no-print d-print-none" href="https://d20futurepath.com/index.php?title=Space_Ships#Space_Ship_FTL_Drive" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Space Ship FTL Drive on d20futurepath.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></label>
 <div class="input-group">
 <input autocomplete="off" class="form-control" data-list="ftlDriveDatalist" id="ftlDriveInput" name="ftlDrive" placeholder="e.g. Warp Drive (The Hopper)" type="text"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist('ftlDriveInput')" title="Show FTL Suggestions" type="button">
@@ -212,12 +212,14 @@
 </button>
 </div>
 <div class="input-group">
-<input autocomplete="off" class="form-control" data-list="speciesMakeDatalist" id="speciesMakeInput" name="speciesMake" onchange="onSpeciesMakeChange(this.value)" placeholder="e.g. Human" type="text" value="Human"/>
+<input autocomplete="off" class="form-control" data-list="speciesMakeDatalist" id="speciesMakeInput" name="speciesMake" onchange="onSpeciesMakeChange(this.value)" oninput="onSpeciesMakeChange(this.value)" placeholder="e.g. Generic" type="text" value="Generic"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist('speciesMakeInput')" title="Show Species Suggestions" type="button">
 <i class="fa-solid fa-chevron-down"></i>
 </button>
 </div>
-<datalist id="speciesMakeDatalist"></datalist>
+<datalist id="speciesMakeDatalist">
+<option value="Generic"></option>
+</datalist>
 </div>
 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 <label class="form-label small text-uppercase text-muted fw-bold" for="shipClassTypeSelect">Classification / Purpose</label>
@@ -225,13 +227,6 @@
 <option selected value="Civilian">Civilian Craft</option>
 <option value="Military">Military Craft</option>
 </select>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="customizationPointsDisplay">Customization Points</label>
-<div class="d-flex align-items-center gap-2">
-<input class="form-control text-center fw-bold" id="customizationPointsDisplay" name="customizationPoints" readonly type="text" value="2"/>
-<small class="text-muted" id="corePointsHelper">(Core Pts: 15)</small>
-</div>
 </div>
 </div>
 </div>
@@ -244,7 +239,7 @@
 <div class="d-flex align-items-center gap-2">
 <span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-shield-halved me-2 text-cyan"></i>Ship Attributes</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Space_Ships#Secondary_Ship_Attributes" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Secondary Ship Attributes on d20futurepath.com"><i class="fa-solid fa-shield-halved text-cyan"></i></a>Ship Attributes</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-print card-reorder-btns">
 <button aria-label="Move Card Up" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardUp('cardShipAttributes', event)" title="Move Card Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
@@ -252,40 +247,72 @@
 </div>
 </div>
 <div class="collapse show" id="collapseShipAttributes">
-<div class="card-body">
-<div class="row g-3 align-items-end">
+<div class="card-body p-3">
+<div class="row g-3 align-items-stretch">
+
+<!-- Group 1: Battle Damage (Left Aligned, Full Height) -->
+<div class="col-12 col-md-4">
+<div class="ship-attr-group-box h-100 p-2 rounded d-flex flex-column justify-content-between">
+<div class="ship-attr-group-header d-flex align-items-center justify-content-between">
+<span class="fw-bold text-uppercase text-danger"><i class="fa-solid fa-burst me-1"></i>Battle Damage</span>
+<span class="badge bg-secondary">Defense &amp; Recv</span>
+</div>
+
 <!-- Battle Damage Defense (BD-DC) -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<span class="form-label small text-uppercase text-muted fw-bold d-block mb-1">
-Battle Damage Defense (BD-DC)
-<small class="d-block text-secondary fst-italic">Resistance / Reflectors</small>
-</span>
-<div class="input-group">
-<label class="visually-hidden" for="bdDefenseResistance">Battle Damage Defense Resistance</label>
-<input class="form-control text-center fw-bold" id="bdDefenseResistance" name="bdDefenseResistance" placeholder="4" title="Resistance: 4 + Structure Mod" type="number" value="4"/>
-<span class="input-group-text px-2">/</span>
-<label class="visually-hidden" for="bdDefenseReflectors">Battle Damage Defense Reflectors</label>
-<input class="form-control text-center fw-bold" id="bdDefenseReflectors" name="bdDefenseReflectors" placeholder="4" title="Reflectors: 4 + Shields Mod" type="number" value="4"/>
+<div class="mb-2">
+<div class="ship-attr-section-label text-center mb-1">BATTLE DAMAGE DEFENSE (BD-DC)</div>
+<div class="row g-2">
+<div class="col-6">
+<div class="ship-attr-subbox ship-attr-box-armor h-100">
+<label class="ship-attr-subbox-label" for="bdDefenseResistance" title="Resistance (Armor)">RESISTANCE (ARMOR)</label>
+<input class="form-control form-control-sm text-center fw-bold text-warning ship-attr-subbox-input" id="bdDefenseResistance" inputmode="numeric" name="bdDefenseResistance" placeholder="4" title="Resistance: 4 + Structure Mod" type="text" value="4"/>
 </div>
 </div>
-<!-- Battle Damage Capacity / Received -->
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<span class="form-label small text-uppercase text-muted fw-bold d-block mb-1">
-Battle Damage Capacity / Recv
-<small class="d-block text-secondary fst-italic">Max Capacity / Current Recv</small>
-</span>
-<div class="input-group">
-<label class="visually-hidden" for="battleDamageCapacity">Battle Damage Capacity</label>
-<input class="form-control text-center fw-bold" id="battleDamageCapacity" name="battleDamageCapacity" placeholder="3" title="Capacity from Hull Size" type="number" value="3"/>
-<span class="input-group-text px-2">/</span>
-<label class="visually-hidden" for="battleDamageReceived">Battle Damage Received</label>
-<input class="form-control text-center fw-bold text-danger" id="battleDamageReceived" name="battleDamageReceived" placeholder="" title="Received (empty by default)" type="number"/>
+<div class="col-6">
+<div class="ship-attr-subbox ship-attr-box-shields h-100">
+<label class="ship-attr-subbox-label" for="bdDefenseReflectors" title="Reflectors (Shields)">REFLECTORS (SHIELDS)</label>
+<input class="form-control form-control-sm text-center fw-bold text-info ship-attr-subbox-input" id="bdDefenseReflectors" inputmode="numeric" name="bdDefenseReflectors" placeholder="4" title="Reflectors: 4 + Shields Mod" type="text" value="4"/>
 </div>
 </div>
+</div>
+</div>
+
+<!-- Battle Damage Capacity / Recv -->
+<div>
+<div class="ship-attr-section-label text-center mb-1">BATTLE DAMAGE CAPACITY / RECV</div>
+<div class="row g-2">
+<div class="col-6">
+<div class="ship-attr-subbox ship-attr-box-cap h-100">
+<label class="ship-attr-subbox-label" for="battleDamageCapacity" title="Max Capacity">MAX CAPACITY</label>
+<input class="form-control form-control-sm text-center fw-bold text-success ship-attr-subbox-input" id="battleDamageCapacity" inputmode="numeric" name="battleDamageCapacity" placeholder="3" title="Capacity from Hull Size" type="text" value="3"/>
+</div>
+</div>
+<div class="col-6">
+<div class="ship-attr-subbox ship-attr-box-recv h-100">
+<label class="ship-attr-subbox-label" for="battleDamageReceived" title="Current Received">CURRENT RECV</label>
+<input class="form-control form-control-sm text-center fw-bold text-danger ship-attr-subbox-input" id="battleDamageReceived" inputmode="numeric" name="battleDamageReceived" placeholder="0" title="Received (empty by default)" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Group 2: Mobility -->
+<div class="col-12 col-md-4">
+<div class="ship-attr-group-box h-100 p-2 rounded d-flex flex-column">
+<div class="ship-attr-group-header d-flex align-items-center justify-content-between mb-2">
+<span class="fw-bold text-uppercase text-info"><i class="fa-solid fa-gauge-high me-1"></i>Mobility</span>
+<span class="badge bg-secondary">Maneuver &amp; Speed</span>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 gap-2">
 <!-- Initiative -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="initiativeDisplay">Initiative</label>
-<div class="input-group">
+<div class="ship-attr-item-row d-flex align-items-center justify-content-between p-2 rounded">
+<div class="min-w-0 pe-2">
+<label class="form-label small text-uppercase text-light fw-bold mb-0 d-block text-truncate" for="initiativeDisplay">Initiative</label>
+<small class="d-block text-secondary fst-italic ship-attr-formula">(Engines + Sensors) - Structure</small>
+</div>
+<div class="input-group input-group-sm flex-shrink-0" style="max-width: 95px;">
 <input class="form-control text-center fw-bold text-cyan" id="initiativeDisplay" name="initiative" readonly title="(Engines + Sensors) - Structure" type="text" value="+0"/>
 <button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="rollInitiative()" title="Roll Ship Initiative (2d10 + Mod)" type="button">
 <i class="fa-solid fa-dice"></i>
@@ -293,707 +320,96 @@ Battle Damage Capacity / Recv
 </div>
 </div>
 <!-- Tactical Mobility -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="tacticalMobilityDisplay">Tactical Mobility</label>
-<input class="form-control text-center fw-bold" id="tacticalMobilityDisplay" name="tacticalMobility" readonly title="Tactical Mobility = Engines Mod" type="text" value="+0"/>
+<div class="ship-attr-item-row d-flex align-items-center justify-content-between p-2 rounded">
+<div class="min-w-0 pe-2">
+<label class="form-label small text-uppercase text-light fw-bold mb-0 d-block text-truncate" for="tacticalMobilityDisplay">Tactical Mobility</label>
+<small class="d-block text-secondary fst-italic ship-attr-formula">Engines + Helm Dex + Misc</small>
+</div>
+<div class="flex-shrink-0" style="max-width: 72px;">
+<input class="form-control form-control-sm text-center fw-bold text-light" id="tacticalMobilityDisplay" name="tacticalMobility" readonly title="Tactical Mobility = Engines Mod + Helm Dex Mod + Helm Misc Mod" type="text" value="+0"/>
+</div>
 </div>
 <!-- Tracking DC -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="trackingDcDisplay">Tracking DC</label>
-<input class="form-control text-center fw-bold text-cyan" id="trackingDcDisplay" name="trackingDc" readonly title="10 + ((Tactical Mobility + Shields Mod) +/- Size Mod) - Structure Mod" type="text" value="10"/>
+<div class="ship-attr-item-row d-flex align-items-center justify-content-between p-2 rounded">
+<div class="min-w-0 pe-2">
+<label class="form-label small text-uppercase text-light fw-bold mb-0 d-block text-truncate" for="trackingDcDisplay">Tracking DC</label>
+<small class="d-block text-secondary fst-italic ship-attr-formula">10 + Tac Mob + Shields +/- Size - Str</small>
 </div>
-<!-- Detection DC -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="detectionDcDisplay">Detection DC</label>
-<input class="form-control text-center fw-bold" id="detectionDcDisplay" name="detectionDc" readonly title="Determined by Hull Size (minus shields active mod)" type="text" value="9"/>
-</div>
-<!-- Stealth DC -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="stealthDcDisplay">Stealth DC</label>
-<input class="form-control text-center fw-bold text-cyan" id="stealthDcDisplay" name="stealthDc" readonly title="Detection DC + Electronics Mod" type="text" value="9"/>
-</div>
-<!-- Passive Sensors -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="passiveSensorsDisplay">Passive Sensors</label>
-<input class="form-control text-center fw-bold" id="passiveSensorsDisplay" name="passiveSensors" readonly title="10 + Sensors Mod" type="text" value="10"/>
-</div>
-<!-- Repair DC Bonus -->
-<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold mb-1" for="repairDcBonusDisplay">
-Repair DC Bonus
-<small class="d-block text-secondary fst-italic">Weapons Mod + W.O. Dex/Wis Mod</small>
-</label>
-<div class="d-flex align-items-center gap-1">
-<input class="form-control text-center fw-bold" id="repairDcBonusDisplay" name="repairDcBonus" readonly title="Weapons Mod + Weapons Officer Dex/Wis" type="text" value="+0"/>
-<label class="visually-hidden" for="repairDcOfficerModType">Weapons Officer Modifier Type</label>
-<select class="form-select form-select-sm" id="repairDcOfficerModType" onchange="recalculateShipAttributes()" style="max-width: 110px;">
-<option value="dex">W.O. Dex</option>
-<option value="wis">W.O. Wis</option>
-</select>
-<label class="visually-hidden" for="repairDcOfficerModVal">Weapons Officer Mod Value</label>
-<input class="form-control form-control-sm text-center" id="repairDcOfficerModVal" oninput="recalculateShipAttributes()" placeholder="+0" style="max-width: 60px;" type="number" value="0"/>
-</div>
+<div class="flex-shrink-0" style="max-width: 72px;">
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="trackingDcDisplay" name="trackingDc" readonly title="10 + ((Tactical Mobility + Shields Mod) +/- Size Mod) - Structure Mod" type="text" value="10"/>
 </div>
 </div>
 </div>
 </div>
 </div>
 
-<!-- Card 3: Secondary Ship Attributes -->
-<div class="sheet-card mb-3" data-card-id="cardSecondaryAttributes" id="cardSecondaryAttributes">
-<div aria-controls="collapseSecondaryAttributes" aria-expanded="true" class="card-header-custom d-flex justify-content-between align-items-center" data-bs-target="#collapseSecondaryAttributes">
+<!-- Group 3: Detection/Visiblity -->
+<div class="col-12 col-md-4">
+<div class="ship-attr-group-box h-100 p-2 rounded d-flex flex-column">
+<div class="ship-attr-group-header d-flex align-items-center justify-content-between mb-2">
+<span class="fw-bold text-uppercase text-warning"><i class="fa-solid fa-satellite-dish me-1"></i>Detection/Visiblity</span>
+<span class="badge bg-secondary">Signature &amp; Recon</span>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 gap-2">
+<!-- Detection DC -->
+<div class="ship-attr-item-row d-flex align-items-center justify-content-between p-2 rounded">
+<div class="min-w-0 pe-2">
+<label class="form-label small text-uppercase text-light fw-bold mb-0 d-block text-truncate" for="detectionDcDisplay">Detection DC</label>
+<small class="d-block text-secondary fst-italic ship-attr-formula">Hull Size Base - Shields Active</small>
+</div>
+<div class="flex-shrink-0" style="max-width: 72px;">
+<input class="form-control form-control-sm text-center fw-bold text-light" id="detectionDcDisplay" name="detectionDc" readonly title="Determined by Hull Size (minus shields active mod)" type="text" value="9"/>
+</div>
+</div>
+<!-- Stealth DC -->
+<div class="ship-attr-item-row d-flex align-items-center justify-content-between p-2 rounded">
+<div class="min-w-0 pe-2">
+<label class="form-label small text-uppercase text-light fw-bold mb-0 d-block text-truncate" for="stealthDcDisplay">Stealth DC</label>
+<small class="d-block text-secondary fst-italic ship-attr-formula">Detection DC + Electronics Mod</small>
+</div>
+<div class="flex-shrink-0" style="max-width: 72px;">
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="stealthDcDisplay" name="stealthDc" readonly title="Detection DC + Electronics Mod" type="text" value="9"/>
+</div>
+</div>
+<!-- Passive Sensors -->
+<div class="ship-attr-item-row d-flex align-items-center justify-content-between p-2 rounded">
+<div class="min-w-0 pe-2">
+<label class="form-label small text-uppercase text-light fw-bold mb-0 d-block text-truncate" for="passiveSensorsDisplay">Passive Sensors</label>
+<small class="d-block text-secondary fst-italic ship-attr-formula">10 + Sensors Mod</small>
+</div>
+<div class="flex-shrink-0" style="max-width: 72px;">
+<input class="form-control form-control-sm text-center fw-bold text-light" id="passiveSensorsDisplay" name="passiveSensors" readonly title="10 + Sensors Mod" type="text" value="10"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- Positions and Core Attributes Card (Containing Cards 4 through 11) -->
+<div class="sheet-card mb-3" data-card-id="cardPositionsCoreAttributes" id="cardPositionsCoreAttributes">
+<div aria-controls="collapsePositionsCoreAttributes" aria-expanded="true" class="card-header-custom d-flex justify-content-between align-items-center" data-bs-target="#collapsePositionsCoreAttributes">
 <div class="d-flex align-items-center gap-2">
 <span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-sliders me-2 text-cyan"></i>Secondary Ship Attributes</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Space_Ships#Officer/Ship_Functions" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Officer and Ship Functions on d20futurepath.com"><i class="fa-solid fa-users-gear text-cyan"></i></a>Positions and Core Attributes</span>
+<span class="badge bg-secondary ms-2">8 Positions &amp; Cores</span>
 </div>
 <div class="d-flex align-items-center gap-2 no-print card-reorder-btns">
-<button aria-label="Move Card Up" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardUp('cardSecondaryAttributes', event)" title="Move Card Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
-<button aria-label="Move Card Down" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardDown('cardSecondaryAttributes', event)" title="Move Card Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+<button aria-label="Move Card Up" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardUp('cardPositionsCoreAttributes', event)" title="Move Card Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button aria-label="Move Card Down" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardDown('cardPositionsCoreAttributes', event)" title="Move Card Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
 </div>
 </div>
-<div class="collapse show" id="collapseSecondaryAttributes">
-<div class="card-body">
-<div class="row g-3">
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="secHullConfigInput">Hull Configuration</label>
-<input class="form-control" id="secHullConfigInput" name="secHullConfig" onchange="syncSecondaryConfig(this.value)" placeholder="e.g. Cruiser (Civilian)" type="text" value="Generic"/>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="hardPointsBaysSlotsInput">Hard Points / Bays / Cust. Slots</label>
-<input class="form-control" id="hardPointsBaysSlotsInput" name="hardPointsBaysSlots" placeholder="4 HP / 6 Bays / 1 Cust." title="From reference data" type="text" value="4 HP / 6 Bays / 1 Cust."/>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="movementSpeedInput">Movement Speed</label>
-<input class="form-control" id="movementSpeedInput" name="movementSpeed" placeholder="4 squares" title="Sub-light speed (leave blank or fill custom)" type="text"/>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-<label class="form-label small text-uppercase text-muted fw-bold" for="cargoCapacityInput">Cargo Capacity</label>
-<input class="form-control" id="cargoCapacityInput" name="cargoCapacity" placeholder="510 Units" title="Cargo Units (from reference data / custom)" type="text" value="510 Units"/>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-<label class="form-label small text-uppercase text-muted fw-bold" for="ftlEngineSpeedInput">FTL Engine / Speed</label>
-<input class="form-control" id="ftlEngineSpeedInput" name="ftlEngineSpeed" placeholder="e.g. Warp Drive (The Hopper) / Warp 1-4" type="text"/>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-<label class="form-label small text-uppercase text-muted fw-bold" for="dimensionsWeightInput">Dimensions / Weight</label>
-<input class="form-control" id="dimensionsWeightInput" name="dimensionsWeight" placeholder="~4,000+ ft / ~512 Tons" type="text" value="~4,000+ ft / ~512 Tons"/>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-4">
-<label class="form-label small text-uppercase text-muted fw-bold" for="passengerCapacityInput">Passenger Capacity</label>
-<input class="form-control" id="passengerCapacityInput" name="passengerCapacity" placeholder="16 Passengers" type="text" value="16 Passengers"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
+<div class="collapse show" id="collapsePositionsCoreAttributes">
+<div class="card-body p-3">
 <!-- 8 Cards Container: Positions and Core Attributes (4 per row, 2 rows) -->
-<div class="row g-3 mb-3 position-core-cards-row" id="positionCoreCardsContainer">
+<div class="row g-3 position-core-cards-row" id="positionCoreCardsContainer">
 
-<!-- Card 4: Helm Officer & Engines (Row 1, Col 1) -->
-<div class="col-12 col-md-6 col-xl-3">
-<div class="sheet-card h-100 position-core-card" data-card-id="cardEnginesHelm" id="cardEnginesHelm">
-<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
-<div class="d-flex align-items-center gap-1">
-<span class="badge badge-pos-core me-1">Position &amp; Core</span>
-<strong class="text-cyan">Engines / Helm</strong>
-</div>
-<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Engines')" title="Roll Engines (2d10)" type="button">
-<i class="fa-solid fa-dice me-1"></i>2d10
-</button>
-</div>
-<div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Core Attribute & Mod -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-muted">Core Attribute: Engines</span>
-<span class="small text-cyan fst-italic">Mobility &amp; Sub-light</span>
-</div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="score-input-wrap">
-<label class="visually-hidden" for="enginesScoreInput">Engines Score</label>
-<input class="form-control form-control-sm text-center fw-bold score-field" id="enginesScoreInput" name="enginesScore" oninput="onAttributeScoreChange('engines', this.value)" placeholder="10" type="number" value="10"/>
-</div>
-<div class="mod-display-wrap">
-<label class="visually-hidden" for="enginesModDisplay">Engines Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="enginesModDisplay" name="enginesMod" readonly type="text" value="+0"/>
-</div>
-<div class="flex-grow-1 small text-muted lh-1">
-Tracking DC: <span class="text-light" id="enginesTrackingBonusDisplay">+0</span>
-</div>
-</div>
-</div>
-<!-- Position & Officer -->
-<div class="officer-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center mb-1">
-<span class="small fw-bold text-uppercase text-warning">Position: Helm Officer</span>
-</div>
-<div class="row g-1">
-<div class="col-8">
-<label class="visually-hidden" for="helmOfficerName">Helm Officer Character Name</label>
-<input class="form-control form-control-sm" id="helmOfficerName" name="helmOfficerName" placeholder="Pilot Character Name" type="text"/>
-</div>
-<div class="col-4">
-<label class="visually-hidden" for="helmOfficerPilotMod">Helm Officer Pilot Modifier</label>
-<input class="form-control form-control-sm text-center" id="helmOfficerPilotMod" name="helmOfficerPilotMod" oninput="recalculateShipAttributes()" placeholder="Dex/Rank" title="Pilot Skill / Dex Mod" type="number" value="0"/>
-</div>
-</div>
-</div>
-<!-- Functions List -->
-<div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
-<span>Helm Functions</span>
-<span>Total</span>
-</div>
-<!-- Fly Offensively/Defensively -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Fly Offensively/Defensively', 'engines', 0)" title="Roll Fly Offensively/Defensively (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Fly Offensively/Defensively (Tactical Mobility / Pilot Rank)">Fly Off./Def.</span>
-</div>
-<label class="visually-hidden" for="funcTotal_flyOffDef">Fly Offensively / Defensively Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_flyOffDef" name="func_flyOffDef" readonly type="text" value="+0"/>
-</div>
-<!-- Close/Widen Distance -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Close/Widen Distance', 'engines', 0)" title="Roll Close/Widen Distance (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Close/Widen Distance (Engines / Pilot Rank)">Close/Widen Dist.</span>
-</div>
-<label class="visually-hidden" for="funcTotal_closeWiden">Close / Widen Distance Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_closeWiden" name="func_closeWiden" readonly type="text" value="+0"/>
-</div>
-<!-- Pursue/Intercept -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Pursue/Intercept', 'engines', 0)" title="Roll Pursue/Intercept (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Pursue/Intercept (Engines / Pilot Rank)">Pursue/Intercept</span>
-</div>
-<label class="visually-hidden" for="funcTotal_pursueIntercept">Pursue / Intercept Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_pursueIntercept" name="func_pursueIntercept" readonly type="text" value="+0"/>
-</div>
-<!-- Ram -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Ram', 'engines', 0)" title="Roll Ram (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Ram (Engines)">Ram</span>
-</div>
-<label class="visually-hidden" for="funcTotal_ram">Ram Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_ram" name="func_ram" readonly type="text" value="+0"/>
-</div>
-<!-- Emergency Evasive Thrusters -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Emergency Evasive Thrusters', 'engines', 0)" title="Roll Emergency Evasive Thrusters (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Emergency Evasive Thrusters (Engines)">Emerg. Thrusters</span>
-</div>
-<label class="visually-hidden" for="funcTotal_evasiveThrusters">Emergency Evasive Thrusters Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_evasiveThrusters" name="func_evasiveThrusters" readonly type="text" value="+0"/>
-</div>
-<!-- Feint -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Feint', 'engines', 0)" title="Roll Feint (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Feint (Engines)">Feint</span>
-</div>
-<label class="visually-hidden" for="funcTotal_feint">Feint Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_feint" name="func_feint" readonly type="text" value="+0"/>
-</div>
-<!-- Grapple -->
-<div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Grapple', 'engines', 0)" title="Roll Grapple (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Grapple (Engines)">Grapple</span>
-</div>
-<label class="visually-hidden" for="funcTotal_grappleEngines">Grapple Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_grappleEngines" name="func_grappleEngines" readonly type="text" value="+0"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Card 5: Weapons Officer & Weapons (Row 1, Col 2) -->
-<div class="col-12 col-md-6 col-xl-3">
-<div class="sheet-card h-100 position-core-card" data-card-id="cardWeapons" id="cardWeapons">
-<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
-<div class="d-flex align-items-center gap-1">
-<span class="badge badge-pos-core me-1">Position &amp; Core</span>
-<strong class="text-cyan">Weapons</strong>
-</div>
-<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Weapons')" title="Roll Weapons (2d10)" type="button">
-<i class="fa-solid fa-dice me-1"></i>2d10
-</button>
-</div>
-<div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Core Attribute & Mod -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-muted">Core Attribute: Weapons</span>
-<span class="small text-cyan fst-italic">Offense &amp; Targeting</span>
-</div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="score-input-wrap">
-<label class="visually-hidden" for="weaponsScoreInput">Weapons Score</label>
-<input class="form-control form-control-sm text-center fw-bold score-field" id="weaponsScoreInput" name="weaponsScore" oninput="onAttributeScoreChange('weapons', this.value)" placeholder="10" type="number" value="10"/>
-</div>
-<div class="mod-display-wrap">
-<label class="visually-hidden" for="weaponsModDisplay">Weapons Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="weaponsModDisplay" name="weaponsMod" readonly type="text" value="+0"/>
-</div>
-<div class="flex-grow-1 small text-muted lh-1">
-Reroll d10s: <span class="text-light" id="weaponsRerollBonusDisplay">+0</span>
-</div>
-</div>
-</div>
-<!-- Position & Officer -->
-<div class="officer-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center mb-1">
-<span class="small fw-bold text-uppercase text-warning">Position: Weapons Officer</span>
-</div>
-<div class="row g-1">
-<div class="col-8">
-<label class="visually-hidden" for="weaponsOfficerName">Weapons Officer Character Name</label>
-<input class="form-control form-control-sm" id="weaponsOfficerName" name="weaponsOfficerName" placeholder="Gunnery Name" type="text"/>
-</div>
-<div class="col-4">
-<label class="visually-hidden" for="weaponsOfficerMod">Weapons Officer Modifier</label>
-<input class="form-control form-control-sm text-center" id="weaponsOfficerMod" name="weaponsOfficerMod" oninput="recalculateShipAttributes()" placeholder="Dex/Wis" title="Dexterity or Wisdom Mod" type="number" value="0"/>
-</div>
-</div>
-</div>
-<!-- Functions List -->
-<div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
-<span>Weapons Functions</span>
-<span>Total</span>
-</div>
-<!-- Fire -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Fire', 'weapons', 0)" title="Roll Fire (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Fire (Weapons)">Fire</span>
-</div>
-<label class="visually-hidden" for="funcTotal_fire">Fire Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_fire" name="func_fire" readonly type="text" value="+0"/>
-</div>
-<!-- Bombard -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Bombard', 'weapons', 0)" title="Roll Bombard (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Bombard (Weapons)">Bombard</span>
-</div>
-<label class="visually-hidden" for="funcTotal_bombard">Bombard Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_bombard" name="func_bombard" readonly type="text" value="+0"/>
-</div>
-<!-- Concentrated Fire -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Concentrated Fire', 'weapons', 0)" title="Roll Concentrated Fire (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Concentrated Fire (Weapons)">Concentrated Fire</span>
-</div>
-<label class="visually-hidden" for="funcTotal_concentratedFire">Concentrated Fire Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_concentratedFire" name="func_concentratedFire" readonly type="text" value="+0"/>
-</div>
-<!-- Defensive Fire -->
-<div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Defensive Fire', 'weapons', 0)" title="Roll Defensive Fire (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Defensive Fire (Point Defense vs Missiles/Small Craft)">Defensive Fire</span>
-</div>
-<label class="visually-hidden" for="funcTotal_defensiveFire">Defensive Fire Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_defensiveFire" name="func_defensiveFire" readonly type="text" value="+0"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Card 6: Chief Engineer & Structure (Row 1, Col 3) -->
-<div class="col-12 col-md-6 col-xl-3">
-<div class="sheet-card h-100 position-core-card" data-card-id="cardStructure" id="cardStructure">
-<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
-<div class="d-flex align-items-center gap-1">
-<span class="badge badge-pos-core me-1">Position &amp; Core</span>
-<strong class="text-cyan">Structure / Eng.</strong>
-</div>
-<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Structure')" title="Roll Structure (2d10)" type="button">
-<i class="fa-solid fa-dice me-1"></i>2d10
-</button>
-</div>
-<div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Core Attribute & Mod -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-muted">Core Attribute: Structure</span>
-<span class="small text-cyan fst-italic">Hull Integrity</span>
-</div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="score-input-wrap">
-<label class="visually-hidden" for="structureScoreInput">Structure Score</label>
-<input class="form-control form-control-sm text-center fw-bold score-field" id="structureScoreInput" name="structureScore" oninput="onAttributeScoreChange('structure', this.value)" placeholder="10" type="number" value="10"/>
-</div>
-<div class="mod-display-wrap">
-<label class="visually-hidden" for="structureModDisplay">Structure Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="structureModDisplay" name="structureMod" readonly type="text" value="+0"/>
-</div>
-<div class="flex-grow-1 small text-muted lh-1">
-Damage Res.: <span class="text-light" id="structureArmorBonusDisplay">4</span>
-</div>
-</div>
-</div>
-<!-- Position & Officer -->
-<div class="officer-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center mb-1">
-<span class="small fw-bold text-uppercase text-warning">Position: Chief Engineer</span>
-</div>
-<div class="row g-1">
-<div class="col-8">
-<label class="visually-hidden" for="engineerOfficerName">Chief Engineer Character Name</label>
-<input class="form-control form-control-sm" id="engineerOfficerName" name="engineerOfficerName" placeholder="Engineer Name" type="text"/>
-</div>
-<div class="col-4">
-<label class="visually-hidden" for="engineerOfficerCraftMod">Chief Engineer Craft Modifier</label>
-<input class="form-control form-control-sm text-center" id="engineerOfficerCraftMod" name="engineerOfficerCraftMod" oninput="recalculateShipAttributes()" placeholder="Craft/Int" title="Craft Skill / Int Mod" type="number" value="0"/>
-</div>
-</div>
-</div>
-<!-- Functions List -->
-<div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
-<span>Engineer Functions</span>
-<span>Total</span>
-</div>
-<!-- Repair -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Repair', 'structure', 0)" title="Roll Repair (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Repair (Officer's Craft Rank / Bays)">Repair</span>
-</div>
-<label class="visually-hidden" for="funcTotal_repair">Repair Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_repair" name="func_repair" readonly type="text" value="+0"/>
-</div>
-<!-- Boost (Engines) -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Boost (Engines)', 'structure', 0)" title="Roll Boost (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Boost (Engines Only)">Boost (Engines)</span>
-</div>
-<label class="visually-hidden" for="funcTotal_boostEngines">Boost Engines Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_boostEngines" name="func_boostEngines" readonly type="text" value="+0"/>
-</div>
-<!-- Counter Hack -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Counter Hack', 'structure', 0)" title="Roll Counter Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Counter Hack (Electronics)">Counter Hack</span>
-</div>
-<label class="visually-hidden" for="funcTotal_counterHackEng">Counter Hack Engineer Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_counterHackEng" name="func_counterHackEng" readonly type="text" value="+0"/>
-</div>
-<!-- Overclock Core -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Overclock Core', 'structure', 0)" title="Roll Overclock Core (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Overclock Core (Structure/Core)">Overclock Core</span>
-</div>
-<label class="visually-hidden" for="funcTotal_overclockCore">Overclock Core Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_overclockCore" name="func_overclockCore" readonly type="text" value="+0"/>
-</div>
-<!-- Cloak -->
-<div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Cloak', 'structure', 0)" title="Roll Cloak (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Cloak (Electronics)">Cloak</span>
-</div>
-<label class="visually-hidden" for="funcTotal_cloakEng">Cloak Engineer Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cloakEng" name="func_cloakEng" readonly type="text" value="+0"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Card 7: Shields (Row 1, Col 4 - Core Attribute Only) -->
-<div class="col-12 col-md-6 col-xl-3">
-<div class="sheet-card h-100 position-core-card" data-card-id="cardShields" id="cardShields">
-<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
-<div class="d-flex align-items-center gap-1">
-<span class="badge badge-core-only me-1">Core Attribute</span>
-<strong class="text-cyan">Shields</strong>
-</div>
-<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Shields')" title="Roll Shields Check (2d10)" type="button">
-<i class="fa-solid fa-dice me-1"></i>2d10
-</button>
-</div>
-<div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Core Attribute & Mod -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-muted">Core Attribute: Shields</span>
-<span class="small text-cyan fst-italic">Deflection Array</span>
-</div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="score-input-wrap">
-<label class="visually-hidden" for="shieldsScoreInput">Shields Score</label>
-<input class="form-control form-control-sm text-center fw-bold score-field" id="shieldsScoreInput" name="shieldsScore" oninput="onAttributeScoreChange('shields', this.value)" placeholder="10" type="number" value="10"/>
-</div>
-<div class="mod-display-wrap">
-<label class="visually-hidden" for="shieldsModDisplay">Shields Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="shieldsModDisplay" name="shieldsMod" readonly type="text" value="+0"/>
-</div>
-<div class="flex-grow-1 small text-muted lh-1">
-Reflectors: <span class="text-light" id="shieldsReflectorDisplay">4</span>
-</div>
-</div>
-</div>
-<!-- No Position Notice -->
-<div class="officer-box p-2 rounded bg-opacity-25">
-<div class="d-flex justify-content-between align-items-center mb-1">
-<span class="small fw-bold text-uppercase text-secondary">[Automated Core Subsystem]</span>
-<span class="badge bg-dark border border-secondary text-cyan">No Crew Position</span>
-</div>
-<div class="d-flex align-items-center justify-content-between small text-muted">
-<span>Shield Status:</span>
-<div class="form-check form-switch mb-0">
-<input checked class="form-check-input" id="shieldsActiveSwitch" onchange="onShieldsActiveToggle(this.checked)" role="switch" type="checkbox"/>
-<label class="form-check-label small" for="shieldsActiveSwitch" id="shieldsActiveLabel">Active</label>
-</div>
-</div>
-</div>
-<!-- Functions / Specs List -->
-<div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
-<span>Shield Systems</span>
-<span>Spec / Status</span>
-</div>
-<!-- Reflector Value -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<span class="small" title="Base 4 + Shields Mod">Deflection Target (Reflectors)</span>
-<span class="badge bg-secondary" id="shieldDeflectTargetBadge">4</span>
-</div>
-<!-- Detection Penalty -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<span class="small" title="-1 Detection DC per +2 Shields Mod">-1 Detect DC / +2 Mod</span>
-<span class="badge bg-secondary" id="shieldDetectPenaltyBadge">-0</span>
-</div>
-<!-- Frequency Shift Roll -->
-<div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Shield Modulation / Rebalance', 'shields', 0)" title="Roll Shield Modulation (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Shield Modulation / Frequency Recalibration">Shield Modulation</span>
-</div>
-<label class="visually-hidden" for="funcTotal_shieldModulation">Shield Modulation Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_shieldModulation" name="func_shieldModulation" readonly type="text" value="+0"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Card 8: Communications Officer & Sensors (Row 2, Col 1) -->
-<div class="col-12 col-md-6 col-xl-3">
-<div class="sheet-card h-100 position-core-card" data-card-id="cardSensorsComms" id="cardSensorsComms">
-<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
-<div class="d-flex align-items-center gap-1">
-<span class="badge badge-pos-core me-1">Position &amp; Core</span>
-<strong class="text-cyan">Sensors / Comms</strong>
-</div>
-<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Sensors')" title="Roll Sensors (2d10)" type="button">
-<i class="fa-solid fa-dice me-1"></i>2d10
-</button>
-</div>
-<div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Core Attribute & Mod -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-muted">Core Attribute: Sensors</span>
-<span class="small text-cyan fst-italic">Perception &amp; Scans</span>
-</div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="score-input-wrap">
-<label class="visually-hidden" for="sensorsScoreInput">Sensors Score</label>
-<input class="form-control form-control-sm text-center fw-bold score-field" id="sensorsScoreInput" name="sensorsScore" oninput="onAttributeScoreChange('sensors', this.value)" placeholder="10" type="number" value="10"/>
-</div>
-<div class="mod-display-wrap">
-<label class="visually-hidden" for="sensorsModDisplay">Sensors Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="sensorsModDisplay" name="sensorsMod" readonly type="text" value="+0"/>
-</div>
-<div class="flex-grow-1 small text-muted lh-1">
-Passive Sens: <span class="text-light" id="sensorsPassiveDisplay">10</span>
-</div>
-</div>
-</div>
-<!-- Position & Officer -->
-<div class="officer-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center mb-1">
-<span class="small fw-bold text-uppercase text-warning">Position: Comms Officer</span>
-</div>
-<div class="row g-1">
-<div class="col-8">
-<label class="visually-hidden" for="commsOfficerName">Communications Officer Character Name</label>
-<input class="form-control form-control-sm" id="commsOfficerName" name="commsOfficerName" placeholder="Comms Officer Name" type="text"/>
-</div>
-<div class="col-4">
-<label class="visually-hidden" for="commsOfficerMod">Communications Officer Modifier</label>
-<input class="form-control form-control-sm text-center" id="commsOfficerMod" name="commsOfficerMod" oninput="recalculateShipAttributes()" placeholder="Wis/Int" title="Wisdom or Intelligence Mod" type="number" value="0"/>
-</div>
-</div>
-</div>
-<!-- Functions List -->
-<div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
-<span>Sensors / Comms Functions</span>
-<span>Total</span>
-</div>
-<!-- Scan -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Scan', 'sensors', 0)" title="Roll Scan (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Scan (Sensors)">Scan</span>
-</div>
-<label class="visually-hidden" for="funcTotal_scan">Scan Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_scan" name="func_scan" readonly type="text" value="+0"/>
-</div>
-<!-- Hack / Counter Hack -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Hack / Counter Hack (Sensors)', 'sensors', 0)" title="Roll Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Hack / Counter Hack (Electronics)">Hack / C-Hack</span>
-</div>
-<label class="visually-hidden" for="funcTotal_hackComms">Hack Comms Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_hackComms" name="func_hackComms" readonly type="text" value="+0"/>
-</div>
-<!-- Sensor Spoofing / Decoy Projection -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Sensor Spoofing / Decoy Projection', 'sensors', 0)" title="Roll Spoofing (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Sensor Spoofing / Decoy Projection">Sensor Spoofing</span>
-</div>
-<label class="visually-hidden" for="funcTotal_spoofing">Sensor Spoofing Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_spoofing" name="func_spoofing" readonly type="text" value="+0"/>
-</div>
-<!-- Crypto -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Crypto', 'sensors', 0)" title="Roll Crypto (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Crypto (Electronics)">Crypto</span>
-</div>
-<label class="visually-hidden" for="funcTotal_cryptoComms">Crypto Comms Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cryptoComms" name="func_cryptoComms" readonly type="text" value="+0"/>
-</div>
-<!-- Jam -->
-<div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Jam', 'sensors', 0)" title="Roll Jam (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Jam (Electronics)">Jam</span>
-</div>
-<label class="visually-hidden" for="funcTotal_jamComms">Jam Comms Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_jamComms" name="func_jamComms" readonly type="text" value="+0"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Card 9: Science Officer & Electronics (Row 2, Col 2) -->
-<div class="col-12 col-md-6 col-xl-3">
-<div class="sheet-card h-100 position-core-card" data-card-id="cardElectronicsScience" id="cardElectronicsScience">
-<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
-<div class="d-flex align-items-center gap-1">
-<span class="badge badge-pos-core me-1">Position &amp; Core</span>
-<strong class="text-cyan">Electronics / Science</strong>
-</div>
-<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Electronics')" title="Roll Electronics (2d10)" type="button">
-<i class="fa-solid fa-dice me-1"></i>2d10
-</button>
-</div>
-<div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Core Attribute & Mod -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-muted">Core Attribute: Electronics</span>
-<span class="small text-cyan fst-italic">Computer &amp; Cyber</span>
-</div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="score-input-wrap">
-<label class="visually-hidden" for="electronicsScoreInput">Electronics Score</label>
-<input class="form-control form-control-sm text-center fw-bold score-field" id="electronicsScoreInput" name="electronicsScore" oninput="onAttributeScoreChange('electronics', this.value)" placeholder="10" type="number" value="10"/>
-</div>
-<div class="mod-display-wrap">
-<label class="visually-hidden" for="electronicsModDisplay">Electronics Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="electronicsModDisplay" name="electronicsMod" readonly type="text" value="+0"/>
-</div>
-<div class="flex-grow-1 small text-muted lh-1">
-Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</span>
-</div>
-</div>
-</div>
-<!-- Position & Officer -->
-<div class="officer-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center mb-1">
-<span class="small fw-bold text-uppercase text-warning">Position: Science Officer</span>
-</div>
-<div class="row g-1">
-<div class="col-8">
-<label class="visually-hidden" for="scienceOfficerName">Science Officer Character Name</label>
-<input class="form-control form-control-sm" id="scienceOfficerName" name="scienceOfficerName" placeholder="Science Officer Name" type="text"/>
-</div>
-<div class="col-4">
-<label class="visually-hidden" for="scienceOfficerMod">Science Officer Modifier</label>
-<input class="form-control form-control-sm text-center" id="scienceOfficerMod" name="scienceOfficerMod" oninput="recalculateShipAttributes()" placeholder="Int Mod" title="Intelligence Mod" type="number" value="0"/>
-</div>
-</div>
-</div>
-<!-- Functions List -->
-<div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
-<span>Science Functions</span>
-<span>Total</span>
-</div>
-<!-- Boost -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Boost (Systems)', 'electronics', 0)" title="Roll Boost (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Boost (All except Structure)">Boost (Systems)</span>
-</div>
-<label class="visually-hidden" for="funcTotal_boostSci">Boost Science Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_boostSci" name="func_boostSci" readonly type="text" value="+0"/>
-</div>
-<!-- Hack / Counter Hack -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Hack / Counter Hack (Electronics)', 'electronics', 0)" title="Roll Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Hack / Counter Hack (Electronics)">Hack / C-Hack</span>
-</div>
-<label class="visually-hidden" for="funcTotal_hackSci">Hack Science Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_hackSci" name="func_hackSci" readonly type="text" value="+0"/>
-</div>
-<!-- Cloak -->
-<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Cloak', 'electronics', 0)" title="Roll Cloak (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Cloak (Electronics)">Cloak</span>
-</div>
-<label class="visually-hidden" for="funcTotal_cloakSci">Cloak Science Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cloakSci" name="func_cloakSci" readonly type="text" value="+0"/>
-</div>
-<!-- Crypto -->
-<div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Crypto', 'electronics', 0)" title="Roll Crypto (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Crypto (Electronics)">Crypto</span>
-</div>
-<label class="visually-hidden" for="funcTotal_cryptoSci">Crypto Science Function Total</label>
-<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cryptoSci" name="func_cryptoSci" readonly type="text" value="+0"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Card 10: Captain (Row 2, Col 3 - Position Only) -->
+<!-- Card 4: Captain (Row 1, Col 1 - Position Only) -->
 <div class="col-12 col-md-6 col-xl-3">
 <div class="sheet-card h-100 position-core-card" data-card-id="cardCaptain" id="cardCaptain">
 <div class="card-header-custom d-flex justify-content-between align-items-center py-2">
@@ -1007,61 +423,87 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </div>
 <div class="card-body p-2 d-flex flex-column gap-2">
 <!-- Top Position Details -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-warning">Ship Position: Captain</span>
-<span class="small text-secondary fst-italic">No Core Attribute</span>
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Captain</span>
 </div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="flex-grow-1">
+<div class="row g-1 align-items-center mb-1">
+<div class="col-7">
 <label class="visually-hidden" for="captainOfficerName">Captain Character Name</label>
-<input class="form-control form-control-sm" id="captainOfficerName" name="captainOfficerName" placeholder="Captain Character Name" type="text"/>
+<input class="form-control form-control-sm" id="captainOfficerName" name="captainOfficerName" placeholder="Captain's Name" type="text"/>
 </div>
-<div class="mod-display-wrap" style="width: 80px;">
+<div class="col-5 d-flex align-items-center justify-content-end gap-1">
+<span class="fw-bold skill-ability-label text-ability-cha" style="font-size: 0.85rem;">CHA</span>
 <label class="visually-hidden" for="captainCharismaMod">Captain Charisma Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold text-cyan" id="captainCharismaMod" name="captainCharismaMod" oninput="onCaptainModChange(this.value)" placeholder="Cha Mod" title="Officer's Charisma Mod" type="number" value="0"/>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-cha" id="captainCharismaMod" inputmode="numeric" maxlength="3" name="captainCharismaMod" oninput="onCaptainModChange(this.value)" placeholder="0" style="max-width: 46px;" title="Captain Charisma Modifier" type="text" value="0"/>
 </div>
 </div>
 </div>
 <!-- Functions List -->
 <div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
 <span>Captain Functions</span>
-<span>Total</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
 </div>
 <!-- Give Command -->
 <div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Give Command', 'captain', 0)" title="Roll Give Command (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Give Command (Officer's Charisma)">Give Command</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_giveCommand">Give Command (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_giveCommand" name="funcCheck_giveCommand" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Give Command (Captain Cha Mod + Misc)">Give Command</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Give Command', 'captain', 0, this)" title="Roll Give Command (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_giveCommand">Give Command Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_giveCommand" inputmode="numeric" maxlength="3" name="funcMisc_giveCommand" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_giveCommand">Give Command Function Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_giveCommand" name="func_giveCommand" readonly type="text" value="+0"/>
 </div>
+</div>
 <!-- Encourage Crew -->
 <div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Encourage Crew', 'captain', 0)" title="Roll Encourage Crew (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Encourage Crew (Officer's Charisma)">Encourage Crew</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_encourageCrew">Encourage Crew (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_encourageCrew" name="funcCheck_encourageCrew" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Encourage Crew (Captain Cha Mod + Misc)">Encourage Crew</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Encourage Crew', 'captain', 0, this)" title="Roll Encourage Crew (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_encourageCrew">Encourage Crew Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_encourageCrew" inputmode="numeric" maxlength="3" name="funcMisc_encourageCrew" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_encourageCrew">Encourage Crew Function Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_encourageCrew" name="func_encourageCrew" readonly type="text" value="+0"/>
 </div>
+</div>
 <!-- Commanding Presence -->
 <div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Commanding Presence', 'captain', 0)" title="Roll Commanding Presence (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Commanding Presence (Officer's Charisma)">Commanding Pres.</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_commandingPresence">Commanding Presence (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_commandingPresence" name="funcCheck_commandingPresence" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Commanding Presence (Captain Cha Mod + Misc)">Commanding Pres.</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Commanding Presence', 'captain', 0, this)" title="Roll Commanding Presence (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_commandingPresence">Commanding Presence Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_commandingPresence" inputmode="numeric" maxlength="3" name="funcMisc_commandingPresence" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_commandingPresence">Commanding Presence Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_commandingPresence" name="func_commandingPresence" readonly type="text" value="+0"/>
 </div>
+</div>
 <!-- Direct Assistance -->
 <div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Direct Assistance', 'captain', 0)" title="Roll Direct Assistance (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Direct Assistance (Officer's Charisma)">Direct Assistance</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_directAssistance">Direct Assistance (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_directAssistance" name="funcCheck_directAssistance" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Direct Assistance (Captain Cha Mod + Misc)">Direct Assistance</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Direct Assistance', 'captain', 0, this)" title="Roll Direct Assistance (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_directAssistance">Direct Assistance Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_directAssistance" inputmode="numeric" maxlength="3" name="funcMisc_directAssistance" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_directAssistance">Direct Assistance Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_directAssistance" name="func_directAssistance" readonly type="text" value="+0"/>
 </div>
@@ -1069,8 +511,9 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </div>
 </div>
 </div>
+</div>
 
-<!-- Card 11: Chief Medical Officer (Row 2, Col 4 - Position Only) -->
+<!-- Card 5: Chief Medical Officer (Row 1, Col 2 - Position Only) -->
 <div class="col-12 col-md-6 col-xl-3">
 <div class="sheet-card h-100 position-core-card" data-card-id="cardMedical" id="cardMedical">
 <div class="card-header-custom d-flex justify-content-between align-items-center py-2">
@@ -1083,53 +526,113 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </button>
 </div>
 <div class="card-body p-2 d-flex flex-column gap-2">
-<!-- Top Position Details -->
-<div class="attribute-score-box p-2 rounded">
-<div class="d-flex justify-content-between align-items-center">
-<span class="small fw-bold text-uppercase text-warning">Position: Chief Medical Officer</span>
-<span class="small text-secondary fst-italic">No Core Attribute</span>
+<!-- Position & Officer -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Chief Medical Officer</span>
 </div>
-<div class="d-flex align-items-center gap-2 mt-1">
-<div class="flex-grow-1">
-<label class="visually-hidden" for="medicalOfficerName">Medical Officer Character Name</label>
-<input class="form-control form-control-sm" id="medicalOfficerName" name="medicalOfficerName" placeholder="Doctor Character Name" type="text"/>
+<div class="row g-1 mb-1">
+<div class="col-12">
+<label class="visually-hidden" for="medicalOfficerName">Chief Medical Officer Name</label>
+<input class="form-control form-control-sm" id="medicalOfficerName" name="medicalOfficerName" placeholder="Medical Officer's Name" type="text"/>
 </div>
-<div class="mod-display-wrap" style="width: 80px;">
-<label class="visually-hidden" for="medicalOfficerMod">Medical Officer Wisdom/Med Modifier</label>
-<input class="form-control form-control-sm text-center fw-bold text-cyan" id="medicalOfficerMod" name="medicalOfficerMod" oninput="onMedicalModChange(this.value)" placeholder="Wis/Med" title="Officer's Medical Rank / Wis Mod" type="number" value="0"/>
 </div>
+<div class="table-responsive">
+<table class="table table-custom table-sm mb-0 align-middle" id="medicalSkillTable">
+<thead>
+<tr class="text-muted small" style="font-size: 0.72rem;">
+<th class="px-1" scope="col">Skill</th>
+<th class="text-center px-1 no-print" scope="col" style="width: 20px;"></th>
+<th class="text-center px-1" scope="col">Rank = Skill Die</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Key Ability</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Misc</th>
+</tr>
+</thead>
+<tbody>
+<tr data-ability="WIS" data-natural="false" data-skill="medical">
+<td class="fw-bold text-light px-1">Medical</td>
+<td class="text-center px-1 no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollMedicalSkillCheck(this)" style="cursor: pointer;" title="Roll Medical Skill Check (2d10)"></i>
+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="medicalOfficerSkillRank">Medical Skill Rank</label>
+<input class="form-control form-control-sm skill-rank text-center" id="medicalOfficerSkillRank" inputmode="numeric" maxlength="3" name="medicalOfficerSkillRank" oninput="onMedicalRankChange(this.value)" placeholder="0" type="text" value="0"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="medicalOfficerSkillDie">Medical Skill Die</label>
+<input class="form-control form-control-sm skill-die text-center" id="medicalOfficerSkillDie" name="medicalOfficerSkillDie" readonly type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1">
+<span class="fw-bold skill-ability-label text-ability-wis" style="min-width: 26px;">WIS</span>
+<label class="visually-hidden" for="medicalOfficerSkillWisMod">Medical Wisdom Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-wis" id="medicalOfficerSkillWisMod" inputmode="numeric" maxlength="3" name="medicalOfficerSkillWisMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<label class="visually-hidden" for="medicalOfficerSkillMiscMod">Medical Misc Modifier</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="medicalOfficerSkillMiscMod" inputmode="numeric" maxlength="3" name="medicalOfficerSkillMiscMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <!-- Functions List -->
 <div class="functions-list flex-grow-1">
-<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
 <span>Medical Functions</span>
-<span>Total</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
 </div>
 <!-- Medical -->
 <div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Medical', 'medical', 0)" title="Roll Medical (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name" title="Medical (Officer's Medical Rank, Medical Bay)">Medical</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_medical">Medical (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_medical" name="funcCheck_medical" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Medical (Medical Skill Check + Misc)">Medical</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Medical', 'medical', 0, this)" title="Roll Medical (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_medical">Medical Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_medical" inputmode="numeric" maxlength="3" name="funcMisc_medical" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_medical">Medical Function Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_medical" name="func_medical" readonly type="text" value="+0"/>
 </div>
+</div>
 <!-- Resuscitation / Life Support -->
 <div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Resuscitation / Life Support', 'medical', 0)" title="Roll Resuscitation (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Resuscitation / Life Support (Special Bay)">Resuscitation</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_resuscitation">Resuscitation (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_resuscitation" name="funcCheck_resuscitation" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Resuscitation / Life Support (Medical Skill Check + Misc)">Resuscitation</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Resuscitation / Life Support', 'medical', 0, this)" title="Roll Resuscitation (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_resuscitation">Resuscitation Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_resuscitation" inputmode="numeric" maxlength="3" name="funcMisc_resuscitation" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_resuscitation">Resuscitation Function Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_resuscitation" name="func_resuscitation" readonly type="text" value="+0"/>
 </div>
+</div>
 <!-- Long/Short Automated Care -->
 <div class="function-row d-flex align-items-center justify-content-between py-1">
-<div class="d-flex align-items-center gap-1">
-<button class="btn btn-link p-0 text-cyan roll-icon-btn" onclick="rollShipFunction('Automated Medical Care', 'medical', 0)" title="Roll Automated Medical Care (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
-<span class="small function-name text-info" title="Adv - Long/Short Automated Care (Medical Facility)">Automated Care</span>
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_automatedCare">Automated Care (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_automatedCare" name="funcCheck_automatedCare" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Automated Medical Care (Medical Skill Check + Misc)">Automated Care</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Automated Medical Care', 'medical', 0, this)" title="Roll Automated Medical Care (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_automatedCare">Automated Care Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_automatedCare" inputmode="numeric" maxlength="3" name="funcMisc_automatedCare" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
 <label class="visually-hidden" for="funcTotal_automatedCare">Automated Care Function Total</label>
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_automatedCare" name="func_automatedCare" readonly type="text" value="+0"/>
 </div>
@@ -1137,8 +640,1055 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </div>
 </div>
 </div>
+</div>
+
+<!-- Card 6: Weapons Officer & Weapons (Row 1, Col 3) -->
+<div class="col-12 col-md-6 col-xl-3">
+<div class="sheet-card h-100 position-core-card" data-card-id="cardWeapons" id="cardWeapons">
+<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
+<div class="d-flex align-items-center gap-1">
+<span class="badge badge-pos-core me-1">Position &amp; Core</span>
+<strong class="text-cyan">Weapons</strong>
+</div>
+<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollWeaponsDamage('Weapons Attack')" title="Roll Weapons Damage (d10 Damage Roll)" type="button">
+<i class="fa-solid fa-burst me-1"></i>Damage
+</button>
+</div>
+<div class="card-body p-2 d-flex flex-column gap-2">
+<!-- Top Core Attribute & Mod -->
+<div class="attribute-score-box p-2 rounded d-flex align-items-stretch gap-2">
+<div class="score-input-wrap">
+<label class="visually-hidden" for="weaponsScoreInput">Weapons Score</label>
+<input class="form-control score-field" id="weaponsScoreInput" inputmode="numeric" name="weaponsScore" oninput="onAttributeScoreChange('weapons', this.value)" placeholder="10" type="text" value="10"/>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 min-w-0">
+<div>
+<span class="small fw-bold text-uppercase text-muted">WEAPONS</span>
+</div>
+<div class="d-flex align-items-center gap-2">
+<div class="mod-display-wrap">
+<label class="visually-hidden" for="weaponsModDisplay">Weapons Modifier</label>
+<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="weaponsModDisplay" name="weaponsMod" readonly type="text" value="+0"/>
+</div>
+<div class="d-flex flex-column justify-content-center flex-grow-1 min-w-0 text-muted attribute-sub-stats">
+<div class="text-truncate">Reroll d10s: <span class="text-light" id="weaponsRerollBonusDisplay">+0</span></div>
+<div class="text-truncate">Repair DC Bonus: <span class="text-light" id="weaponsRepairDcDisplay">+0</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Position & Officer -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Weapons Officer</span>
+</div>
+<div class="row g-1 align-items-center">
+<div class="col-7">
+<label class="visually-hidden" for="weaponsOfficerName">Weapons Officer Character Name</label>
+<input class="form-control form-control-sm" id="weaponsOfficerName" name="weaponsOfficerName" placeholder="Gunnery Name" type="text"/>
+</div>
+<div class="col-5 d-flex align-items-center justify-content-end gap-1">
+<label class="visually-hidden" for="weaponsOfficerAbilitySelect">Weapons Officer Key Ability</label>
+<select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-dex" id="weaponsOfficerAbilitySelect" name="weaponsOfficerAbilitySelect" onchange="onWeaponsOfficerAbilityChange(this)" style="width: auto; font-size: 0.85rem; font-weight: 700;">
+<option selected value="DEX">DEX</option>
+<option value="WIS">WIS</option>
+</select>
+<label class="visually-hidden" for="weaponsOfficerMod">Weapons Officer Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-dex" id="weaponsOfficerMod" inputmode="numeric" maxlength="3" name="weaponsOfficerMod" oninput="recalculateShipAttributes()" placeholder="0" style="max-width: 46px;" type="text" value="0"/>
+</div>
+</div>
+</div>
+<!-- Functions List -->
+<div class="functions-list flex-grow-1">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
+<span>Weapons Functions</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
+</div>
+<!-- Fire -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_fire">Fire (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_fire" name="funcCheck_fire" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Fire (Damage Roll: d10s = Active Weapon Hard Points)">Fire</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Fire', 'weapons', 0, this)" title="Roll Fire Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_fire">Fire Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_fire" inputmode="numeric" maxlength="3" name="funcMisc_fire" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_fire">Fire Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_fire" name="func_fire" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Bombard -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_bombard">Bombard (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_bombard" name="funcCheck_bombard" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Bombard (Damage Roll: d10s = Active Weapon Hard Points)">Bombard</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Bombard', 'weapons', 0, this)" title="Roll Bombard Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_bombard">Bombard Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_bombard" inputmode="numeric" maxlength="3" name="funcMisc_bombard" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_bombard">Bombard Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_bombard" name="func_bombard" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Concentrated Fire -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_concentratedFire">Concentrated Fire (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_concentratedFire" name="funcCheck_concentratedFire" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Concentrated Fire (Damage Roll: d10s = Active Weapon Hard Points)">Concentrated Fire</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Concentrated Fire', 'weapons', 0, this)" title="Roll Concentrated Fire Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_concentratedFire">Concentrated Fire Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_concentratedFire" inputmode="numeric" maxlength="3" name="funcMisc_concentratedFire" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_concentratedFire">Concentrated Fire Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_concentratedFire" name="func_concentratedFire" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Defensive Fire -->
+<div class="function-row d-flex align-items-center justify-content-between py-1">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_defensiveFire">Defensive Fire (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_defensiveFire" name="funcCheck_defensiveFire" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Defensive Fire (Damage Roll: d10s = Active Weapon Hard Points)">Defensive Fire</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Defensive Fire', 'weapons', 0, this)" title="Roll Defensive Fire Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_defensiveFire">Defensive Fire Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_defensiveFire" inputmode="numeric" maxlength="3" name="funcMisc_defensiveFire" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_defensiveFire">Defensive Fire Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_defensiveFire" name="func_defensiveFire" readonly type="text" value="+0"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 7: Shields (Row 1, Col 4 - Core Attribute) -->
+<div class="col-12 col-md-6 col-xl-3">
+<div class="sheet-card h-100 position-core-card" data-card-id="cardShields" id="cardShields">
+<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
+<div class="d-flex align-items-center gap-1">
+<span class="badge badge-core-only me-1">Core Attribute</span>
+<strong class="text-cyan">Shields</strong>
+</div>
+<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Shields')" title="Roll Shields Check (2d10)" type="button">
+<i class="fa-solid fa-dice me-1"></i>2d10
+</button>
+</div>
+<div class="card-body p-2 d-flex flex-column gap-2">
+<!-- Top Core Attribute & Mod -->
+<div class="attribute-score-box p-2 rounded d-flex align-items-stretch gap-2">
+<div class="score-input-wrap">
+<label class="visually-hidden" for="shieldsScoreInput">Shields Score</label>
+<input class="form-control score-field" id="shieldsScoreInput" inputmode="numeric" name="shieldsScore" oninput="onAttributeScoreChange('shields', this.value)" placeholder="10" type="text" value="10"/>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 min-w-0">
+<div>
+<span class="small fw-bold text-uppercase text-muted">SHIELDS</span>
+</div>
+<div class="d-flex align-items-center gap-2">
+<div class="mod-display-wrap">
+<label class="visually-hidden" for="shieldsModDisplay">Shields Modifier</label>
+<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="shieldsModDisplay" name="shieldsMod" readonly type="text" value="+0"/>
+</div>
+<div class="d-flex flex-column justify-content-center flex-grow-1 min-w-0 text-muted attribute-sub-stats">
+<div class="text-truncate">Reflectors: <span class="text-light" id="shieldsReflectorDisplay">4</span></div>
+<div class="text-truncate">Detection Penalty: <span class="text-light" id="shieldsDetectPenaltyDisplay">-0</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Position & Crew Skills -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex align-items-center justify-content-between small text-muted mb-2">
+<span class="fw-bold text-uppercase text-cyan" style="font-size: 0.72rem;">Shield Status:</span>
+<div class="form-check form-switch mb-0">
+<input checked class="form-check-input" id="shieldsActiveSwitch" onchange="onShieldsActiveToggle(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small" for="shieldsActiveSwitch" id="shieldsActiveLabel">Active</label>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table table-custom table-sm mb-0 align-middle" id="shieldsSkillTable">
+<thead>
+<tr class="text-muted small" style="font-size: 0.72rem;">
+<th class="px-1" scope="col">Skill</th>
+<th class="text-center px-1 no-print" scope="col" style="width: 20px;"></th>
+<th class="text-center px-1" scope="col">Rank = Skill Die</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Key Ability</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Misc</th>
+</tr>
+</thead>
+<tbody>
+<!-- Knowledge Science -->
+<tr data-ability="INT" data-natural="false" data-skill="knowledge_science">
+<td class="fw-bold text-light px-1">Knowledge Science</td>
+<td class="text-center px-1 no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollShieldKnowledgeScienceSkillCheck(this)" style="cursor: pointer;" title="Roll Knowledge Science Skill Check (2d10)"></i>
+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="shieldsSkillKnowledgeScienceRank">Knowledge Science Skill Rank</label>
+<input class="form-control form-control-sm skill-rank text-center" id="shieldsSkillKnowledgeScienceRank" inputmode="numeric" maxlength="3" name="shieldsSkillKnowledgeScienceRank" oninput="onShieldsSkillRankChange('science', this.value)" placeholder="0" type="text" value="0"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="shieldsSkillKnowledgeScienceDie">Knowledge Science Skill Die</label>
+<input class="form-control form-control-sm skill-die text-center" id="shieldsSkillKnowledgeScienceDie" name="shieldsSkillKnowledgeScienceDie" readonly type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1">
+<span class="fw-bold skill-ability-label text-ability-int" style="min-width: 24px;">INT</span>
+<label class="visually-hidden" for="shieldsSkillKnowledgeScienceIntMod">Knowledge Science Int Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-int" id="shieldsSkillKnowledgeScienceIntMod" inputmode="numeric" maxlength="3" name="shieldsSkillKnowledgeScienceIntMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<label class="visually-hidden" for="shieldsSkillKnowledgeScienceMiscMod">Knowledge Science Misc Modifier</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="shieldsSkillKnowledgeScienceMiscMod" inputmode="numeric" maxlength="3" name="shieldsSkillKnowledgeScienceMiscMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</td>
+</tr>
+<!-- Acrobatics -->
+<tr data-ability="DEX" data-natural="false" data-skill="acrobatics">
+<td class="fw-bold text-light px-1">Acrobatics</td>
+<td class="text-center px-1 no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollShieldAcrobaticsSkillCheck(this)" style="cursor: pointer;" title="Roll Acrobatics Skill Check (2d10)"></i>
+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="shieldsSkillAcrobaticsRank">Acrobatics Skill Rank</label>
+<input class="form-control form-control-sm skill-rank text-center" id="shieldsSkillAcrobaticsRank" inputmode="numeric" maxlength="3" name="shieldsSkillAcrobaticsRank" oninput="onShieldsSkillRankChange('acrobatics', this.value)" placeholder="0" type="text" value="0"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="shieldsSkillAcrobaticsDie">Acrobatics Skill Die</label>
+<input class="form-control form-control-sm skill-die text-center" id="shieldsSkillAcrobaticsDie" name="shieldsSkillAcrobaticsDie" readonly type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1">
+<span class="fw-bold skill-ability-label text-ability-dex" style="min-width: 26px;">DEX</span>
+<label class="visually-hidden" for="shieldsSkillAcrobaticsDexMod">Acrobatics Dexterity Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-dex" id="shieldsSkillAcrobaticsDexMod" inputmode="numeric" maxlength="3" name="shieldsSkillAcrobaticsDexMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<label class="visually-hidden" for="shieldsSkillAcrobaticsMiscMod">Acrobatics Misc Modifier</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="shieldsSkillAcrobaticsMiscMod" inputmode="numeric" maxlength="3" name="shieldsSkillAcrobaticsMiscMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Functions List -->
+<div class="functions-list flex-grow-1">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
+<span>All Crew Functions</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
+</div>
+<!-- Change Position -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_changePosition">Change Position (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_changePosition" name="funcCheck_changePosition" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Change Position (Acrobatics Skill Check + Misc)">Change Position</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Change Position', 'shields', 0, this)" title="Roll Change Position (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_changePosition">Change Position Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_changePosition" inputmode="numeric" maxlength="3" name="funcMisc_changePosition" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_changePosition">Change Position Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_changePosition" name="func_changePosition" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Beam -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_beam">Beam (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_beam" name="funcCheck_beam" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Beam (Knowledge Science Skill Check + Misc)">Beam</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Beam', 'shields', 0, this)" title="Roll Beam (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_beam">Beam Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_beam" inputmode="numeric" maxlength="3" name="funcMisc_beam" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_beam">Beam Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_beam" name="func_beam" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Shield Modulation -->
+<div class="function-row d-flex align-items-center justify-content-between py-1">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_shieldModulation">Shield Modulation (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_shieldModulation" name="funcCheck_shieldModulation" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Shield Modulation (Knowledge Science Skill Check + Shields Mod + Misc)">Shield Modulation</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Shield Modulation / Rebalance', 'shields', 0, this)" title="Roll Shield Modulation (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_shieldModulation">Shield Modulation Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_shieldModulation" inputmode="numeric" maxlength="3" name="funcMisc_shieldModulation" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_shieldModulation">Shield Modulation Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_shieldModulation" name="func_shieldModulation" readonly type="text" value="+0"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 8: Helm Officer & Engines (Row 2, Col 1) -->
+<div class="col-12 col-md-6 col-xl-3">
+<div class="sheet-card h-100 position-core-card" data-card-id="cardEnginesHelm" id="cardEnginesHelm">
+<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
+<div class="d-flex align-items-center gap-1">
+<span class="badge badge-pos-core me-1">Position &amp; Core</span>
+<strong class="text-cyan">Engines / Helm</strong>
+</div>
+<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Engines')" title="Roll Engines (2d10)" type="button">
+<i class="fa-solid fa-dice me-1"></i>2d10
+</button>
+</div>
+<div class="card-body p-2 d-flex flex-column gap-2">
+<!-- Top Core Attribute & Mod -->
+<div class="attribute-score-box p-2 rounded d-flex align-items-stretch gap-2">
+<div class="score-input-wrap">
+<label class="visually-hidden" for="enginesScoreInput">Engines Score</label>
+<input class="form-control score-field" id="enginesScoreInput" inputmode="numeric" name="enginesScore" oninput="onAttributeScoreChange('engines', this.value)" placeholder="10" type="text" value="10"/>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 min-w-0">
+<div>
+<span class="small fw-bold text-uppercase text-muted">ENGINES</span>
+</div>
+<div class="d-flex align-items-center gap-2">
+<div class="mod-display-wrap">
+<label class="visually-hidden" for="enginesModDisplay">Engines Modifier</label>
+<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="enginesModDisplay" name="enginesMod" readonly type="text" value="+0"/>
+</div>
+<div class="d-flex flex-column justify-content-center flex-grow-1 min-w-0 text-muted attribute-sub-stats">
+<div class="text-truncate">Tactical Mobility: <span class="text-light" id="enginesTacMobDisplay">+0</span></div>
+<div class="text-truncate">Tracking DC Bonus: <span class="text-light" id="enginesTrackingBonusDisplay">+0</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Position & Officer -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Helm Officer</span>
+</div>
+<div class="row g-1 mb-1">
+<div class="col-12">
+<label class="visually-hidden" for="helmOfficerName">Helm Officers Name</label>
+<input class="form-control form-control-sm" id="helmOfficerName" name="helmOfficerName" placeholder="Pilot's Name" type="text"/>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table table-custom table-sm mb-0 align-middle" id="helmPilotTable">
+<thead>
+<tr class="text-muted small" style="font-size: 0.72rem;">
+<th class="px-1" scope="col">Skill</th>
+<th class="text-center px-1 no-print" scope="col" style="width: 20px;"></th>
+<th class="text-center px-1" scope="col">Rank = Skill Die</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Key Ability</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Misc</th>
+</tr>
+</thead>
+<tbody>
+<tr data-ability="DEX" data-natural="false" data-skill="pilot">
+<td class="fw-bold text-light px-1">Pilot</td>
+<td class="text-center px-1 no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollPilotSkillCheck(this)" style="cursor: pointer;" title="Roll Pilot Skill Check (2d10)"></i>
+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="helmOfficerPilotRank">Pilot Skill Rank</label>
+<input class="form-control form-control-sm skill-rank text-center" id="helmOfficerPilotRank" inputmode="numeric" maxlength="3" name="helmOfficerPilotRank" oninput="onPilotRankChange(this.value)" placeholder="0" type="text" value="0"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="helmOfficerPilotDie">Pilot Skill Die</label>
+<input class="form-control form-control-sm skill-die text-center" id="helmOfficerPilotDie" name="helmOfficerPilotDie" readonly type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1">
+<span class="fw-bold skill-ability-label text-ability-dex" style="min-width: 26px;">DEX</span>
+<label class="visually-hidden" for="helmOfficerPilotDexMod">Pilot Dexterity Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-dex" id="helmOfficerPilotDexMod" inputmode="numeric" maxlength="3" name="helmOfficerPilotDexMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<label class="visually-hidden" for="helmOfficerPilotMiscMod">Pilot Misc Modifier</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="helmOfficerPilotMiscMod" inputmode="numeric" maxlength="3" name="helmOfficerPilotMiscMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Functions List -->
+<div class="functions-list flex-grow-1">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
+<span>Helm Functions</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
+</div>
+<!-- Fly Offensively/Defensively -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_flyOffDef">Fly Off./Def. (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_flyOffDef" name="funcCheck_flyOffDef" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Fly Offensively/Defensively (Pilot Check + Engines Mod + Misc)">Fly Off./Def.</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Fly Offensively/Defensively', 'engines', 0, this)" title="Roll Fly Offensively/Defensively (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_flyOffDef">Fly Off./Def. Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_flyOffDef" inputmode="numeric" maxlength="3" name="funcMisc_flyOffDef" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_flyOffDef">Fly Offensively / Defensively Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_flyOffDef" name="func_flyOffDef" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Close/Widen Distance -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_closeWiden">Close / Widen Dist. (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_closeWiden" name="funcCheck_closeWiden" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Close/Widen Distance (Pilot Check + Engines Mod + Misc)">Close/Widen Dist.</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Close/Widen Distance', 'engines', 0, this)" title="Roll Close/Widen Distance (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_closeWiden">Close / Widen Dist. Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_closeWiden" inputmode="numeric" maxlength="3" name="funcMisc_closeWiden" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_closeWiden">Close / Widen Distance Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_closeWiden" name="func_closeWiden" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Pursue/Intercept -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_pursueIntercept">Pursue / Intercept (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_pursueIntercept" name="funcCheck_pursueIntercept" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Pursue/Intercept (Pilot Check + Engines Mod + Misc)">Pursue/Intercept</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Pursue/Intercept', 'engines', 0, this)" title="Roll Pursue/Intercept (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_pursueIntercept">Pursue / Intercept Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_pursueIntercept" inputmode="numeric" maxlength="3" name="funcMisc_pursueIntercept" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_pursueIntercept">Pursue / Intercept Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_pursueIntercept" name="func_pursueIntercept" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Ram -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_ram">Ram (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_ram" name="funcCheck_ram" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Ram (Pilot Check + Engines Mod + Misc)">Ram</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Ram', 'engines', 0, this)" title="Roll Ram (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_ram">Ram Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_ram" inputmode="numeric" maxlength="3" name="funcMisc_ram" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_ram">Ram Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_ram" name="func_ram" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Emergency Evasive Thrusters -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_evasiveThrusters">Emerg. Thrusters (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_evasiveThrusters" name="funcCheck_evasiveThrusters" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Emergency Evasive Thrusters (Pilot Check + Engines Mod + Misc)">Emerg. Thrusters</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Emergency Evasive Thrusters', 'engines', 0, this)" title="Roll Emergency Evasive Thrusters (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_evasiveThrusters">Emerg. Thrusters Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_evasiveThrusters" inputmode="numeric" maxlength="3" name="funcMisc_evasiveThrusters" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_evasiveThrusters">Emergency Evasive Thrusters Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_evasiveThrusters" name="func_evasiveThrusters" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Feint -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_feint">Feint (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_feint" name="funcCheck_feint" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Feint (Pilot Check + Engines Mod + Misc)">Feint</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Feint', 'engines', 0, this)" title="Roll Feint (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_feint">Feint Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_feint" inputmode="numeric" maxlength="3" name="funcMisc_feint" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_feint">Feint Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_feint" name="func_feint" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Grapple -->
+<div class="function-row d-flex align-items-center justify-content-between py-1">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_grappleEngines">Grapple (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_grappleEngines" name="funcCheck_grappleEngines" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Grapple (Pilot Check + Engines Mod + Misc)">Grapple</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Grapple', 'engines', 0, this)" title="Roll Grapple (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_grappleEngines">Grapple Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_grappleEngines" inputmode="numeric" maxlength="3" name="funcMisc_grappleEngines" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_grappleEngines">Grapple Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_grappleEngines" name="func_grappleEngines" readonly type="text" value="+0"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 9: Chief Engineer & Structure (Row 2, Col 2) -->
+<div class="col-12 col-md-6 col-xl-3">
+<div class="sheet-card h-100 position-core-card" data-card-id="cardStructure" id="cardStructure">
+<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
+<div class="d-flex align-items-center gap-1">
+<span class="badge badge-pos-core me-1">Position &amp; Core</span>
+<strong class="text-cyan">Structure / Eng.</strong>
+</div>
+<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Structure')" title="Roll Structure (2d10)" type="button">
+<i class="fa-solid fa-dice me-1"></i>2d10
+</button>
+</div>
+<div class="card-body p-2 d-flex flex-column gap-2">
+<!-- Top Core Attribute & Mod -->
+<div class="attribute-score-box p-2 rounded d-flex align-items-stretch gap-2">
+<div class="score-input-wrap">
+<label class="visually-hidden" for="structureScoreInput">Structure Score</label>
+<input class="form-control score-field" id="structureScoreInput" inputmode="numeric" name="structureScore" oninput="onAttributeScoreChange('structure', this.value)" placeholder="10" type="text" value="10"/>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 min-w-0">
+<div>
+<span class="small fw-bold text-uppercase text-muted">STRUCTURE</span>
+</div>
+<div class="d-flex align-items-center gap-2">
+<div class="mod-display-wrap">
+<label class="visually-hidden" for="structureModDisplay">Structure Modifier</label>
+<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="structureModDisplay" name="structureMod" readonly type="text" value="+0"/>
+</div>
+<div class="d-flex flex-column justify-content-center flex-grow-1 min-w-0 text-muted attribute-sub-stats">
+<div class="text-truncate">Damage Res.: <span class="text-light" id="structureArmorBonusDisplay">4</span></div>
+<div class="text-truncate">Initiative Penalty: <span class="text-light" id="structureInitPenaltyDisplay">-0</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Position & Officer -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Chief Engineer</span>
+</div>
+<div class="row g-1 align-items-center mb-1">
+<div class="col-7">
+<label class="visually-hidden" for="engineerOfficerName">Chief Engineer Character Name</label>
+<input class="form-control form-control-sm" id="engineerOfficerName" name="engineerOfficerName" placeholder="Engineer Name" type="text"/>
+</div>
+<div class="col-5 d-flex align-items-center justify-content-end gap-1">
+<span class="fw-bold skill-ability-label text-ability-int" style="font-size: 0.85rem;">INT</span>
+<label class="visually-hidden" for="engineerOfficerCraftMod">Chief Engineer Int Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-int" id="engineerOfficerCraftMod" inputmode="numeric" maxlength="3" name="engineerOfficerCraftMod" oninput="recalculateShipAttributes()" placeholder="0" style="max-width: 46px;" title="Chief Engineer Int Modifier" type="text" value="0"/>
+</div>
+</div>
+<div class="table-responsive">
+<table class="table table-custom table-sm mb-0 align-middle" id="engineerCraftTable">
+<thead>
+<tr class="text-muted small" style="font-size: 0.72rem;">
+<th class="px-1" scope="col">Skill</th>
+<th class="text-center px-1 no-print" scope="col" style="width: 20px;"></th>
+<th class="text-center px-1" scope="col">Rank = Skill Die</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Key Ability</th>
+<th class="text-center text-cyan px-0" scope="col" style="width: 8px;">+</th>
+<th class="text-center px-1" scope="col">Misc</th>
+</tr>
+</thead>
+<tbody>
+<!-- Row 1: Craft Structure -->
+<tr data-ability="INT" data-natural="false" data-skill="craft_structure">
+<td class="fw-bold text-light px-1 text-truncate" title="Craft Structure">Craft Struct.</td>
+<td class="text-center px-1 no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollEngineerStructureSkillCheck(this)" style="cursor: pointer;" title="Roll Craft Structure (2d10)"></i>
+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="engineerCraftStructureRank">Craft Structure Skill Rank</label>
+<input class="form-control form-control-sm skill-rank text-center" id="engineerCraftStructureRank" inputmode="numeric" maxlength="3" name="engineerCraftStructureRank" oninput="onEngineerRankChange('structure', this.value)" placeholder="0" type="text" value="0"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="engineerCraftStructureDie">Craft Structure Skill Die</label>
+<input class="form-control form-control-sm skill-die text-center" id="engineerCraftStructureDie" name="engineerCraftStructureDie" readonly type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1">
+<span class="fw-bold skill-ability-label text-ability-int" style="min-width: 24px;">INT</span>
+<label class="visually-hidden" for="engineerCraftStructureIntMod">Craft Structure Int Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-int" id="engineerCraftStructureIntMod" name="engineerCraftStructureIntMod" readonly type="text" value="0"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<label class="visually-hidden" for="engineerCraftStructureMiscMod">Craft Structure Misc Modifier</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="engineerCraftStructureMiscMod" inputmode="numeric" maxlength="3" name="engineerCraftStructureMiscMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</td>
+</tr>
+<!-- Row 2: Craft Electronic or Craft Mechanical -->
+<tr data-ability="INT" data-natural="false" data-skill="secondary_craft">
+<td class="px-1">
+<label class="visually-hidden" for="engineerSecondarySkillSelect">Secondary Craft Skill</label>
+<select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-light" id="engineerSecondarySkillSelect" name="engineerSecondarySkillSelect" onchange="onEngineerSecondarySkillChange(this)" style="width: auto; font-size: 0.76rem; font-weight: 700;">
+<option selected value="Craft Electronic">Craft Elect.</option>
+<option value="Craft Mechanical">Craft Mech.</option>
+</select>
+</td>
+<td class="text-center px-1 no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" id="engineerSecondarySkillRollBtn" onclick="rollEngineerSecondarySkillCheck(this)" style="cursor: pointer;" title="Roll Craft Electronic (2d10)"></i>
+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="engineerSecondarySkillRank">Secondary Craft Skill Rank</label>
+<input class="form-control form-control-sm skill-rank text-center" id="engineerSecondarySkillRank" inputmode="numeric" maxlength="3" name="engineerSecondarySkillRank" oninput="onEngineerRankChange('secondary', this.value)" placeholder="0" type="text" value="0"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="engineerSecondarySkillDie">Secondary Craft Skill Die</label>
+<input class="form-control form-control-sm skill-die text-center" id="engineerSecondarySkillDie" name="engineerSecondarySkillDie" readonly type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<div class="d-inline-flex align-items-center gap-1">
+<span class="fw-bold skill-ability-label text-ability-int" style="min-width: 24px;">INT</span>
+<label class="visually-hidden" for="engineerSecondarySkillIntMod">Secondary Craft Int Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-int" id="engineerSecondarySkillIntMod" name="engineerSecondarySkillIntMod" readonly type="text" value="0"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td class="px-1">
+<label class="visually-hidden" for="engineerSecondarySkillMiscMod">Secondary Craft Misc Modifier</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="engineerSecondarySkillMiscMod" inputmode="numeric" maxlength="3" name="engineerSecondarySkillMiscMod" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Functions List -->
+<div class="functions-list flex-grow-1">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
+<span>Engineer Functions</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
+</div>
+<!-- Repair -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_repair">Repair (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_repair" name="funcCheck_repair" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Repair (Craft Structure Skill Check + Structure Mod + Misc)">Repair</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Repair', 'structure', 0, this)" title="Roll Repair (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_repair">Repair Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_repair" inputmode="numeric" maxlength="3" name="funcMisc_repair" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_repair">Repair Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_repair" name="func_repair" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Boost (Engines) -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_boostEngines">Boost Engines (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_boostEngines" name="funcCheck_boostEngines" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Boost Engines (Chief Engineer Int Mod + Structure Mod + Misc)">Boost (Engines)</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Boost (Engines)', 'structure', 0, this)" title="Roll Boost (Engines) (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_boostEngines">Boost Engines Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_boostEngines" inputmode="numeric" maxlength="3" name="funcMisc_boostEngines" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_boostEngines">Boost Engines Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_boostEngines" name="func_boostEngines" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Counter Hack -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_counterHackEng">Counter Hack (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_counterHackEng" name="funcCheck_counterHackEng" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Counter Hack (Chief Engineer Int Mod + Electronics Mod + Misc)">Counter Hack</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Counter Hack', 'structure', 0, this)" title="Roll Counter Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_counterHackEng">Counter Hack Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_counterHackEng" inputmode="numeric" maxlength="3" name="funcMisc_counterHackEng" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_counterHackEng">Counter Hack Engineer Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_counterHackEng" name="func_counterHackEng" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Overclock Core -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_overclockCore">Overclock Core (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_overclockCore" name="funcCheck_overclockCore" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Overclock Core (Secondary Craft Skill Check + Structure Mod + Misc)">Overclock Core</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Overclock Core', 'structure', 0, this)" title="Roll Overclock Core (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_overclockCore">Overclock Core Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_overclockCore" inputmode="numeric" maxlength="3" name="funcMisc_overclockCore" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_overclockCore">Overclock Core Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_overclockCore" name="func_overclockCore" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Cloak -->
+<div class="function-row d-flex align-items-center justify-content-between py-1">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_cloakEng">Cloak (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_cloakEng" name="funcCheck_cloakEng" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Cloak (Chief Engineer Int Mod + Electronics Mod + Misc)">Cloak</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Cloak', 'structure', 0, this)" title="Roll Cloak (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_cloakEng">Cloak Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_cloakEng" inputmode="numeric" maxlength="3" name="funcMisc_cloakEng" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_cloakEng">Cloak Engineer Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cloakEng" name="func_cloakEng" readonly type="text" value="+0"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 10: Communications Officer & Sensors (Row 2, Col 3) -->
+<div class="col-12 col-md-6 col-xl-3">
+<div class="sheet-card h-100 position-core-card" data-card-id="cardSensorsComms" id="cardSensorsComms">
+<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
+<div class="d-flex align-items-center gap-1">
+<span class="badge badge-pos-core me-1">Position &amp; Core</span>
+<strong class="text-cyan">Sensors / Comms</strong>
+</div>
+<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Sensors')" title="Roll Sensors (2d10)" type="button">
+<i class="fa-solid fa-dice me-1"></i>2d10
+</button>
+</div>
+<div class="card-body p-2 d-flex flex-column gap-2">
+<!-- Top Core Attribute & Mod -->
+<div class="attribute-score-box p-2 rounded d-flex align-items-stretch gap-2">
+<div class="score-input-wrap">
+<label class="visually-hidden" for="sensorsScoreInput">Sensors Score</label>
+<input class="form-control score-field" id="sensorsScoreInput" inputmode="numeric" name="sensorsScore" oninput="onAttributeScoreChange('sensors', this.value)" placeholder="10" type="text" value="10"/>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 min-w-0">
+<div>
+<span class="small fw-bold text-uppercase text-muted">SENSORS</span>
+</div>
+<div class="d-flex align-items-center gap-2">
+<div class="mod-display-wrap">
+<label class="visually-hidden" for="sensorsModDisplay">Sensors Modifier</label>
+<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="sensorsModDisplay" name="sensorsMod" readonly type="text" value="+0"/>
+</div>
+<div class="d-flex flex-column justify-content-center flex-grow-1 min-w-0 text-muted attribute-sub-stats">
+<div class="text-truncate">Passive Sensors: <span class="text-light" id="sensorsPassiveDisplay">10</span></div>
+<div class="text-truncate">Initiative Bonus: <span class="text-light" id="sensorsInitBonusDisplay">+0</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Position & Officer -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Comms Officer</span>
+</div>
+<div class="row g-1 mb-1">
+<div class="col-12">
+<label class="visually-hidden" for="commsOfficerName">Communications Officer Character Name</label>
+<input class="form-control form-control-sm" id="commsOfficerName" name="commsOfficerName" placeholder="Comms Officer Name" type="text"/>
+</div>
+</div>
+<div class="d-flex align-items-center justify-content-center gap-2 py-1 bg-dark-subtle rounded border border-secondary border-opacity-25">
+<div class="d-flex flex-column align-items-center">
+<span class="fw-bold text-ability-int" style="font-size: 0.68rem; line-height: 1;">INT</span>
+<label class="visually-hidden" for="commsOfficerIntMod">Communications Officer Int Modifier</label>
+<input class="form-control form-control-sm text-center py-0 px-1 text-ability-int fw-bold" id="commsOfficerIntMod" inputmode="numeric" maxlength="3" name="commsOfficerIntMod" oninput="recalculateShipAttributes()" placeholder="0" style="max-width: 44px;" title="Comms Officer Intelligence Modifier" type="text" value="0"/>
+</div>
+<span class="text-muted fw-bold align-self-end mb-1 fs-6">/</span>
+<div class="d-flex flex-column align-items-center">
+<span class="fw-bold text-ability-wis" style="font-size: 0.68rem; line-height: 1;">WIS</span>
+<label class="visually-hidden" for="commsOfficerWisMod">Communications Officer Wis Modifier</label>
+<input class="form-control form-control-sm text-center py-0 px-1 text-ability-wis fw-bold" id="commsOfficerWisMod" inputmode="numeric" maxlength="3" name="commsOfficerWisMod" oninput="recalculateShipAttributes()" placeholder="0" style="max-width: 44px;" title="Comms Officer Wisdom Modifier" type="text" value="0"/>
+</div>
+<span class="text-muted fw-bold align-self-end mb-1 fs-6">/</span>
+<div class="d-flex flex-column align-items-center">
+<span class="fw-bold text-ability-cha" style="font-size: 0.68rem; line-height: 1;">CHA</span>
+<label class="visually-hidden" for="commsOfficerChaMod">Communications Officer Cha Modifier</label>
+<input class="form-control form-control-sm text-center py-0 px-1 text-ability-cha fw-bold" id="commsOfficerChaMod" inputmode="numeric" maxlength="3" name="commsOfficerChaMod" oninput="recalculateShipAttributes()" placeholder="0" style="max-width: 44px;" title="Comms Officer Charisma Modifier" type="text" value="0"/>
+</div>
+</div>
+</div>
+<!-- Functions List -->
+<div class="functions-list flex-grow-1">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
+<span>Sensors / Comms Functions</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
+</div>
+<!-- Scan -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_scan">Scan (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_scan" name="funcCheck_scan" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Scan (Sensors Mod + Misc + Wis/Cha Mod)">Scan</span>
+<label class="visually-hidden" for="funcAbility_scan">Scan Ability Choice</label>
+<select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-wis" id="funcAbility_scan" name="funcAbility_scan" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
+<option selected value="WIS">WIS</option>
+<option value="CHA">CHA</option>
+</select>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Scan', 'sensors', 0, this)" title="Roll Scan (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_scan">Scan Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_scan" inputmode="numeric" maxlength="3" name="funcMisc_scan" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_scan">Scan Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_scan" name="func_scan" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Hack / Counter Hack -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_hackComms">Hack / Counter Hack (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_hackComms" name="funcCheck_hackComms" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Hack / Counter Hack (Electronics Mod + Misc + Int Mod)">Hack / C-Hack</span>
+<span class="fw-bold text-ability-int px-1" style="font-size: 0.72rem;" title="Key Ability: INT">INT</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Hack / Counter Hack (Sensors)', 'sensors', 0, this)" title="Roll Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_hackComms">Hack Comms Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_hackComms" inputmode="numeric" maxlength="3" name="funcMisc_hackComms" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_hackComms">Hack Comms Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_hackComms" name="func_hackComms" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Sensor Spoofing / Decoy Projection -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_spoofing">Sensor Spoofing (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_spoofing" name="funcCheck_spoofing" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Sensor Spoofing (Sensors Mod + Electronics Mod + Misc + Int/Cha Mod)">Sensor Spoofing</span>
+<label class="visually-hidden" for="funcAbility_spoofing">Sensor Spoofing Ability Choice</label>
+<select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-int" id="funcAbility_spoofing" name="funcAbility_spoofing" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
+<option selected value="INT">INT</option>
+<option value="CHA">CHA</option>
+</select>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Sensor Spoofing / Decoy Projection', 'sensors', 0, this)" title="Roll Spoofing (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_spoofing">Sensor Spoofing Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_spoofing" inputmode="numeric" maxlength="3" name="funcMisc_spoofing" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_spoofing">Sensor Spoofing Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_spoofing" name="func_spoofing" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Crypto -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_cryptoComms">Crypto (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_cryptoComms" name="funcCheck_cryptoComms" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Crypto (Sensors Mod + Misc + Wis/Cha Mod)">Crypto</span>
+<label class="visually-hidden" for="funcAbility_cryptoComms">Crypto Ability Choice</label>
+<select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-wis" id="funcAbility_cryptoComms" name="funcAbility_cryptoComms" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
+<option selected value="WIS">WIS</option>
+<option value="CHA">CHA</option>
+</select>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Crypto', 'sensors', 0, this)" title="Roll Crypto (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_cryptoComms">Crypto Comms Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_cryptoComms" inputmode="numeric" maxlength="3" name="funcMisc_cryptoComms" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_cryptoComms">Crypto Comms Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cryptoComms" name="func_cryptoComms" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Jam -->
+<div class="function-row d-flex align-items-center justify-content-between py-1">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_jamComms">Jam (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_jamComms" name="funcCheck_jamComms" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Jam (Sensors Mod + Misc + Wis/Cha Mod)">Jam</span>
+<label class="visually-hidden" for="funcAbility_jamComms">Jam Ability Choice</label>
+<select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-wis" id="funcAbility_jamComms" name="funcAbility_jamComms" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
+<option selected value="WIS">WIS</option>
+<option value="CHA">CHA</option>
+</select>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Jam', 'sensors', 0, this)" title="Roll Jam (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_jamComms">Jam Comms Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_jamComms" inputmode="numeric" maxlength="3" name="funcMisc_jamComms" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_jamComms">Jam Comms Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_jamComms" name="func_jamComms" readonly type="text" value="+0"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 11: Science Officer & Electronics (Row 2, Col 4) -->
+<div class="col-12 col-md-6 col-xl-3">
+<div class="sheet-card h-100 position-core-card" data-card-id="cardElectronicsScience" id="cardElectronicsScience">
+<div class="card-header-custom d-flex justify-content-between align-items-center py-2">
+<div class="d-flex align-items-center gap-1">
+<span class="badge badge-pos-core me-1">Position &amp; Core</span>
+<strong class="text-cyan">Electronics / Science</strong>
+</div>
+<button class="btn btn-cyber-outline btn-sm p-0 px-2 roll-btn-mini" onclick="rollAttributeCheck('Electronics')" title="Roll Electronics (2d10)" type="button">
+<i class="fa-solid fa-dice me-1"></i>2d10
+</button>
+</div>
+<div class="card-body p-2 d-flex flex-column gap-2">
+<!-- Top Core Attribute & Mod -->
+<div class="attribute-score-box p-2 rounded d-flex align-items-stretch gap-2">
+<div class="score-input-wrap">
+<label class="visually-hidden" for="electronicsScoreInput">Electronics Score</label>
+<input class="form-control score-field" id="electronicsScoreInput" inputmode="numeric" name="electronicsScore" oninput="onAttributeScoreChange('electronics', this.value)" placeholder="10" type="text" value="10"/>
+</div>
+<div class="d-flex flex-column justify-content-between flex-grow-1 min-w-0">
+<div>
+<span class="small fw-bold text-uppercase text-muted">ELECTRONICS</span>
+</div>
+<div class="d-flex align-items-center gap-2">
+<div class="mod-display-wrap">
+<label class="visually-hidden" for="electronicsModDisplay">Electronics Modifier</label>
+<input class="form-control form-control-sm text-center fw-bold mod-field text-cyan" id="electronicsModDisplay" name="electronicsMod" readonly type="text" value="+0"/>
+</div>
+<div class="flex-grow-1 small text-muted lh-1 text-truncate">
+Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Position & Officer -->
+<div class="officer-box p-2 rounded">
+<div class="d-flex justify-content-between align-items-center mb-1">
+<span class="small fw-bold text-uppercase text-warning">Science Officer</span>
+</div>
+<div class="row g-1 align-items-center mb-1">
+<div class="col-7">
+<label class="visually-hidden" for="scienceOfficerName">Science Officer Character Name</label>
+<input class="form-control form-control-sm" id="scienceOfficerName" name="scienceOfficerName" placeholder="Science Officer Name" type="text"/>
+</div>
+<div class="col-5 d-flex align-items-center justify-content-end gap-1">
+<span class="fw-bold skill-ability-label text-ability-int" style="font-size: 0.85rem;">INT</span>
+<label class="visually-hidden" for="scienceOfficerMod">Science Officer Int Modifier</label>
+<input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-ability-int" id="scienceOfficerMod" inputmode="numeric" maxlength="3" name="scienceOfficerMod" oninput="recalculateShipAttributes()" placeholder="0" style="max-width: 46px;" title="Science Officer Int Modifier" type="text" value="0"/>
+</div>
+</div>
+</div>
+<!-- Functions List -->
+<div class="functions-list flex-grow-1">
+<div class="small fw-bold text-uppercase text-muted mb-1 d-flex justify-content-between align-items-center">
+<span>Science Functions</span>
+<div class="d-flex gap-1">
+<span class="text-center" style="width: 44px;">Misc</span>
+<span class="text-center" style="width: 48px;">Total</span>
+</div>
+</div>
+<!-- Boost -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_boostSci">Boost Systems (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_boostSci" name="funcCheck_boostSci" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Boost Systems (Science Officer Int Mod + Misc)">Boost (Systems)</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Boost (Systems)', 'electronics', 0, this)" title="Roll Boost (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_boostSci">Boost Systems Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_boostSci" inputmode="numeric" maxlength="3" name="funcMisc_boostSci" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_boostSci">Boost Science Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_boostSci" name="func_boostSci" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Hack / Counter Hack -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_hackSci">Hack / Counter Hack (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_hackSci" name="funcCheck_hackSci" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Hack / Counter Hack (Electronics Mod + Science Officer Int Mod + Misc)">Hack / C-Hack</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Hack / Counter Hack (Electronics)', 'electronics', 0, this)" title="Roll Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_hackSci">Hack / Counter Hack Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_hackSci" inputmode="numeric" maxlength="3" name="funcMisc_hackSci" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_hackSci">Hack Science Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_hackSci" name="func_hackSci" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Cloak -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_cloakSci">Cloak (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_cloakSci" name="funcCheck_cloakSci" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Cloak (Electronics Mod + Science Officer Int Mod + Misc)">Cloak</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Cloak', 'electronics', 0, this)" title="Roll Cloak (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_cloakSci">Cloak Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_cloakSci" inputmode="numeric" maxlength="3" name="funcMisc_cloakSci" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_cloakSci">Cloak Science Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cloakSci" name="func_cloakSci" readonly type="text" value="+0"/>
+</div>
+</div>
+<!-- Crypto -->
+<div class="function-row d-flex align-items-center justify-content-between py-1">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_cryptoSci">Crypto (Advanced Function)</label>
+<input class="form-check-input function-checkbox me-1" id="funcCheck_cryptoSci" name="funcCheck_cryptoSci" title="Advanced Function" type="checkbox"/>
+<span class="small function-name text-truncate text-info" title="Adv - Crypto (Electronics Mod + Science Officer Int Mod + Misc)">Crypto</span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Crypto', 'electronics', 0, this)" title="Roll Crypto (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_cryptoSci">Crypto Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_cryptoSci" inputmode="numeric" maxlength="3" name="funcMisc_cryptoSci" oninput="recalculateShipAttributes()" placeholder="0" type="text" value="0"/>
+<label class="visually-hidden" for="funcTotal_cryptoSci">Crypto Science Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_cryptoSci" name="func_cryptoSci" readonly type="text" value="+0"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 </div><!-- /positionCoreCardsContainer -->
+</div>
+</div>
+</div><!-- /cardPositionsCoreAttributes -->
 
 <!-- Card 12: Ship Hard Points -->
 <div class="sheet-card mb-3" data-card-id="cardHardPoints" id="cardHardPoints">
@@ -1146,7 +1696,7 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 <div class="d-flex align-items-center gap-2">
 <span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-crosshairs me-2 text-cyan"></i>Ship Hard Points</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Ship_Equipment#Ship_Weapons_.28Hard_Points.29" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Ship Weapons (Hard Points) on d20futurepath.com"><i class="fa-solid fa-crosshairs text-cyan"></i></a>Ship Hard Points</span>
 <span class="badge bg-secondary ms-2" id="hardPointsCountBadge">4 Total</span>
 </div>
 <div class="d-flex align-items-center gap-2">
@@ -1176,7 +1726,7 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 <div class="d-flex align-items-center gap-2">
 <span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-warehouse me-2 text-cyan"></i>Ship Bays &amp; Facilities</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Ship_Equipment#Ship_Bays" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Ship Bays on d20futurepath.com"><i class="fa-solid fa-warehouse text-cyan"></i></a>Ship Bays &amp; Facilities</span>
 <span class="badge bg-secondary ms-2" id="shipBaysCountBadge">6 Total</span>
 </div>
 <div class="d-flex align-items-center gap-2">
@@ -1200,13 +1750,66 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </div>
 </div>
 
+<!-- Secondary Ship Attributes -->
+<div class="sheet-card mb-3" data-card-id="cardSecondaryAttributes" id="cardSecondaryAttributes">
+<div aria-controls="collapseSecondaryAttributes" aria-expanded="true" class="card-header-custom d-flex justify-content-between align-items-center" data-bs-target="#collapseSecondaryAttributes">
+<div class="d-flex align-items-center gap-2">
+<span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
+<i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Space_Ships#Secondary_Ship_Attributes" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Secondary Ship Attributes on d20futurepath.com"><i class="fa-solid fa-sliders text-cyan"></i></a>Secondary Ship Attributes</span>
+</div>
+<div class="d-flex align-items-center gap-2 no-print card-reorder-btns">
+<button aria-label="Move Card Up" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardUp('cardSecondaryAttributes', event)" title="Move Card Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button aria-label="Move Card Down" class="btn btn-sm btn-reorder p-0 px-1" onclick="moveCardDown('cardSecondaryAttributes', event)" title="Move Card Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+</div>
+<div class="collapse show" id="collapseSecondaryAttributes">
+<div class="card-body">
+<div class="row g-3">
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="secHullDescInput">Hull Description</label>
+<input class="form-control" id="secHullDescInput" name="secHullDesc" readonly title="&lt;Hull Size&gt; &lt;Classification&gt; &lt;Hull Configuration&gt; (of &lt;Species&gt; Make)" type="text" value="Medium Civilian Generic (of Generic Make)"/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="hardPointsBaysSlotsInput">Hard Points / Bays / Cust. Slots</label>
+<input class="form-control" id="hardPointsBaysSlotsInput" name="hardPointsBaysSlots" placeholder="4 HP / 6 Bays / 1 Cust." title="From reference data" type="text" value="4 HP / 6 Bays / 1 Cust."/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="customizationPointsDisplay">Customization Points</label>
+<input class="form-control text-center fw-bold" id="customizationPointsDisplay" name="customizationPoints" readonly type="text" value="2"/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="movementSpeedInput">Movement Speed</label>
+<input class="form-control" id="movementSpeedInput" name="movementSpeed" placeholder="4 squares" title="Sub-light speed (leave blank or fill custom)" type="text"/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="cargoCapacityInput">Cargo Capacity</label>
+<input class="form-control" id="cargoCapacityInput" name="cargoCapacity" placeholder="510 Units" title="Cargo Units (from reference data / custom)" type="text" value="510 Units"/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="ftlEngineSpeedInput">FTL Engine / Speed</label>
+<input class="form-control" id="ftlEngineSpeedInput" name="ftlEngineSpeed" placeholder="e.g. Warp Drive (The Hopper) / Warp 1-4" type="text"/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="dimensionsWeightInput">Dimensions / Weight</label>
+<input class="form-control" id="dimensionsWeightInput" name="dimensionsWeight" placeholder="~4,000+ ft / ~512 Tons" type="text" value="~4,000+ ft / ~512 Tons"/>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+<label class="form-label small text-uppercase text-muted fw-bold" for="passengerCapacityInput">Passenger Capacity</label>
+<input class="form-control" id="passengerCapacityInput" name="passengerCapacity" placeholder="16 Passengers" type="text" value="16 Passengers"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <!-- Card 14: Ship Quirks -->
 <div class="sheet-card mb-3" data-card-id="cardShipQuirks" id="cardShipQuirks">
 <div aria-controls="collapseShipQuirks" aria-expanded="true" class="card-header-custom d-flex justify-content-between align-items-center" data-bs-target="#collapseShipQuirks">
 <div class="d-flex align-items-center gap-2">
 <span class="drag-handle no-print" title="Drag to reorder"><i class="fa-solid fa-grip-vertical"></i></span>
 <i class="fa-solid fa-chevron-down collapse-icon me-1"></i>
-<span><i class="fa-solid fa-burst me-2 text-cyan"></i>Ship Quirks</span>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Space_Ships#Ship_Quirks" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Ship Quirks on d20futurepath.com"><i class="fa-solid fa-masks-theater text-cyan"></i></a>Ship Quirks</span>
 </div>
 <div class="d-flex align-items-center gap-2">
 <button class="btn btn-cyber-outline btn-sm py-0 px-2 no-print" onclick="addQuirkRow(event)" title="Add another Quirk" type="button">
@@ -1220,6 +1823,7 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </div>
 <div class="collapse show" id="collapseShipQuirks">
 <div class="card-body p-3">
+<datalist id="quirksDatalist"></datalist>
 <div class="d-flex flex-column gap-3" id="quirksListContainer">
 <!-- Quirk rows populated dynamically or single default row -->
 </div>
@@ -1262,22 +1866,29 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 <div class="modal-dialog modal-dialog-centered">
 <div class="modal-content border-cyan shadow-lg">
 <div class="modal-header py-2">
-<h2 class="modal-title h5 text-cyan mb-0" id="diceRollerModalLabel"><i class="fa-solid fa-dice-d20 me-2"></i>2d10 Conflict Roll</h2>
+<h2 class="modal-title h5 text-cyan mb-0" id="diceRollerModalLabel"><i class="fa-solid fa-dice-d20 me-2" id="diceRollerModalIcon"></i><span id="diceRollerModalTitleText">2d10 Conflict Roll</span></h2>
 <button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
 </div>
 <div class="modal-body text-center py-4">
 <h3 class="h5 mb-1" id="rollActionTitle">System Action</h3>
-<p class="text-muted small mb-3" id="rollActionSubtext">Formula: 2d10 (Explodes on 10) + Modifier</p>
-<!-- Advantage / Disadvantage Stacks -->
+<div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+<span class="text-muted small" id="rollActionSubtext">Dice: 2d10</span>
+<button class="btn btn-link p-0 text-cyan roll-info-toggle-btn" id="rollActionInfoBtn" onclick="toggleRollExplanation()" title="View Formula Breakdown" type="button"><i class="fa-solid fa-circle-question"></i></button>
+</div>
+<div class="alert alert-warning border border-warning text-warning text-center small py-1 px-2 mb-2 d-none" id="rollActionWarningBox"></div>
+<div class="alert alert-dark border border-cyan text-start small mb-3 d-none" id="rollActionExplanationContainer">
+<div class="fw-bold text-cyan mb-1"><i class="fa-solid fa-circle-info me-1"></i>Formula Breakdown:</div>
+<div class="text-light" id="rollActionExplanationText"></div>
+</div>
 <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-<span class="small fw-bold text-muted">Advantage Pool:</span>
-<button class="btn btn-sm btn-cyber-outline px-2" onclick="adjustRollAdvantage(-1)" type="button"><i class="fa-solid fa-minus"></i></button>
+<span class="small fw-bold text-muted" id="rollPoolLabel">Advantage Pool:</span>
+<button class="btn btn-sm btn-cyber-outline px-2" onclick="adjustRollPool(-1)" type="button"><i class="fa-solid fa-minus"></i></button>
 <span class="badge bg-secondary px-3 py-2" id="rollAdvantageBadge">Normal (0)</span>
-<button class="btn btn-sm btn-cyber-outline px-2" onclick="adjustRollAdvantage(1)" type="button"><i class="fa-solid fa-plus"></i></button>
+<button class="btn btn-sm btn-cyber-outline px-2" onclick="adjustRollPool(1)" type="button"><i class="fa-solid fa-plus"></i></button>
 </div>
 <!-- Roll Dice Button -->
 <button class="btn btn-cyber px-4 py-2 mb-3" id="executeRollButton" onclick="executeCurrentRoll()" type="button">
-<i class="fa-solid fa-dice me-2"></i>Roll 2d10
+<i class="fa-solid fa-dice me-2"></i><span id="executeRollButtonText">Roll 2d10</span>
 </button>
 <!-- Result Container -->
 <div class="roll-result-box p-3 rounded d-none" id="rollResultContainer">
@@ -1316,28 +1927,154 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 </div>
 </div>
 
-<!-- Theme Modal -->
-<div aria-hidden="true" aria-labelledby="themeModalLabel" class="modal fade" id="themeModal" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered modal-lg">
-<div class="modal-content border-cyan shadow-lg">
-<div class="modal-header py-2">
-<h2 class="modal-title h5 text-cyan mb-0" id="themeModalLabel"><i class="fa-solid fa-palette me-2"></i>Select Color Theme</h2>
-<button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+<!-- Theme Selector Modal -->
+<div aria-hidden="true" aria-labelledby="themeModalLabel" class="modal fade no-print" id="themeModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header d-flex align-items-center justify-content-between">
+<h2 class="modal-title h5 mb-0" id="themeModalLabel"><i class="fa-solid fa-palette me-2"></i>Choose Display Theme</h2>
+<div class="d-flex align-items-center gap-3">
+<div class="form-check form-switch mb-0 d-flex align-items-center gap-2" title="Lock theme so auto-switching on Species change is disabled">
+<input class="form-check-input mt-0" id="lockThemeSwitch" onchange="toggleLockTheme(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small fw-bold text-nowrap user-select-none" for="lockThemeSwitch" id="lockThemeLabel" style="font-size: 0.75rem;">
+<i class="fa-solid fa-lock-open text-muted me-1" id="lockThemeIcon"></i>Auto Switch
+</label>
 </div>
-<div class="modal-body py-3" style="max-height: 65vh; overflow-y: auto;">
-<div class="d-flex justify-content-between align-items-center mb-3">
-<div class="form-check form-switch">
-<input class="form-check-input" id="themeLockSwitch" onchange="toggleThemeLock(this.checked)" type="checkbox"/>
-<label class="form-check-label small" for="themeLockSwitch">Lock Theme (prevent Species Make from auto-switching)</label>
+<button aria-label="Close" class="btn-close ms-0" data-bs-dismiss="modal" type="button"></button>
 </div>
 </div>
-<h3 class="small text-uppercase text-muted fw-bold mb-2">Cosmic Themes</h3>
-<div class="row g-2 mb-3" id="cosmicThemesGrid"></div>
-<h3 class="small text-uppercase text-muted fw-bold mb-2">Species Themes</h3>
-<div class="row g-2" id="speciesThemesGrid"></div>
+<div class="modal-body" style="max-height: 75vh; overflow-y: auto;">
+<h3 class="text-uppercase text-cyan fw-bold mb-2 small"><i class="fa-solid fa-sliders me-1"></i>Core Themes</h3>
+<div class="row g-3 mb-3">
+<div class="col-6">
+<div class="theme-card p-3 text-center active" id="theme-cosmic-dark" onclick="setTheme('cosmic-dark')">
+<div class="theme-preview cosmic-dark-preview mb-2"></div>
+<div class="fw-bold small">Cosmic Dark</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-cosmic-light" onclick="setTheme('cosmic-light')">
+<div class="theme-preview cosmic-light-preview mb-2"></div>
+<div class="fw-bold small">Cosmic Light</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-bootstrap-dark" onclick="setTheme('bootstrap-dark')">
+<div class="theme-preview bootstrap-dark-preview mb-2"></div>
+<div class="fw-bold small">Bootstrap Dark</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-bootstrap-light" onclick="setTheme('bootstrap-light')">
+<div class="theme-preview bootstrap-light-preview mb-2"></div>
+<div class="fw-bold small">Bootstrap Light</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-industrial" onclick="setTheme('industrial')">
+<div class="theme-preview industrial-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-industry me-1 text-warning"></i>Industrial</div>
+<div class="text-muted" style="font-size: 0.68rem;">Megacity &amp; Hazard Flare</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-aegis" onclick="setTheme('aegis')">
+<div class="theme-preview aegis-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-shield-halved me-1" style="color: #818cf8;"></i>Aegis</div>
+<div class="text-muted" style="font-size: 0.68rem;">Fleet Void &amp; Cobalt Command</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-tattoo" onclick="setTheme('tattoo')">
+<div class="theme-preview tattoo-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-compass-drafting me-1" style="color: #f43f5e;"></i>Tattoo</div>
+<div class="text-muted" style="font-size: 0.68rem;">Neon Rose &amp; Gold Ink</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-curvilinea" onclick="setTheme('curvilinea')">
+<div class="theme-preview curvilinea-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-globe me-1 text-danger"></i>Curvilinea</div>
+<div class="text-muted" style="font-size: 0.68rem;">Red Dwarf Sun &amp; Arid Terra</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-viper" onclick="setTheme('viper')">
+<div class="theme-preview viper-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-dragon me-1" style="color: #f59e0b;"></i>Viper</div>
+<div class="text-muted" style="font-size: 0.68rem;">Olive Scales &amp; Solar Amber</div>
+</div>
+</div>
+</div>
+<h3 class="text-uppercase text-cyan fw-bold mt-3 mb-2 small"><i class="fa-solid fa-dna me-1"></i>Species Themes</h3>
+<div class="row g-3">
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-volar" onclick="setTheme('volar')">
+<div class="theme-preview volar-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-leaf me-1 text-success"></i>Volar</div>
+<div class="text-muted" style="font-size: 0.68rem;">Emerald &amp; Solar Amber</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-human" onclick="setTheme('human')">
+<div class="theme-preview human-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-earth-americas me-1 text-primary"></i>Human</div>
+<div class="text-muted" style="font-size: 0.68rem;">Icy Ocean Slate &amp; Frost Cyan</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-grayling" onclick="setTheme('grayling')">
+<div class="theme-preview grayling-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-brain me-1" style="color: #c084fc;"></i>Grayling</div>
+<div class="text-muted" style="font-size: 0.68rem;">Sleek Slate &amp; Psionic Violet</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-lepidonain" onclick="setTheme('lepidonain')">
+<div class="theme-preview lepidonain-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-scroll me-1" style="color: #f97316;"></i>Lepidonain</div>
+<div class="text-muted" style="font-size: 0.68rem;">Regal Bronze &amp; Amber</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-cryous" onclick="setTheme('cryous')">
+<div class="theme-preview cryous-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-water me-1" style="color: #00f0ff;"></i>Cryous</div>
+<div class="text-muted" style="font-size: 0.68rem;">Deep Navy &amp; Bio-Cyan</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-aconian" onclick="setTheme('aconian')">
+<div class="theme-preview aconian-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-eye me-1" style="color: #e2e8f0;"></i>Aconian</div>
+<div class="text-muted" style="font-size: 0.68rem;">Plumage Silver &amp; Trade Gold</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-murid" onclick="setTheme('murid')">
+<div class="theme-preview murid-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-paw me-1" style="color: #ec4899;"></i>Murid</div>
+<div class="text-muted" style="font-size: 0.68rem;">Cobalt &amp; Magenta Dye</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-avisari" onclick="setTheme('avisari')">
+<div class="theme-preview avisari-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-feather-pointed me-1" style="color: #fbbf24;"></i>Avisari</div>
+<div class="text-muted" style="font-size: 0.68rem;">Nebula Violet &amp; Gold</div>
+</div>
+</div>
+<div class="col-6">
+<div class="theme-card p-3 text-center" id="theme-khepri" onclick="setTheme('khepri')">
+<div class="theme-preview khepri-preview mb-2"></div>
+<div class="fw-bold small"><i class="fa-solid fa-bug me-1" style="color: #a3e635;"></i>Khepri</div>
+<div class="text-muted" style="font-size: 0.68rem;">Dark Chitin &amp; Toxic Lime</div>
+</div>
+</div>
+</div>
 </div>
 <div class="modal-footer py-2">
-<button class="btn btn-secondary btn-sm" data-bs-dismiss="modal" type="button">Done</button>
+<button class="btn btn-secondary btn-sm" data-bs-dismiss="modal" type="button">Close</button>
 </div>
 </div>
 </div>
@@ -1346,6 +2083,6 @@ Stealth Mod: <span class="text-light" id="electronicsStealthBonusDisplay">+0</sp
 <!-- Bootstrap 5 JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Ship Schematics Sheet Application Script -->
-<script src="/v1/static/js/ship_schematics_sheet.js"></script>
+<script src="/v1/static/js/ship_schematics_sheet.js?v=20260903-16"></script>
 </body>
 </html>

@@ -39,8 +39,6 @@ except Exception as e:
 @app.route("/ship_schematics_sheet/print", methods=["GET"])
 @app.route("/tasks/ship_schematics_sheet", methods=["GET"])
 @app.route("/ship_schematics_sheet", methods=["GET"])
-@app.route("/tasks/shipschematicssheet", methods=["GET"])
-@app.route("/shipschematicssheet", methods=["GET"])
 def ship_schematics_sheet():
     """
     :OPTIONS: GET

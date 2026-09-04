@@ -47,7 +47,7 @@ These are calculated stats directly affected by the 6 CSAs and Hull Size.
 *   **Damage Resistance (Resistance):** Base 4 + Structure Mod. The number of successful d10s needed to deal Battle Damage.
 *   **Battle Damage Defense (BD-DC):** The combination of Resistance and Reflectors (Default 4,4).
 *   **Repair DC Bonus:** Equal to the Weapons Mod. Added to the DC when an enemy tries to repair damage dealt by this ship.
-*   '''Tactical Mobility:''' Equals the Engines Mod. Capped by the Helm Officer's Pilot Skill die level. Added to Pilot functions and Ship Tracking DC.
+*   **Tactical Mobility:** Equals the Engines Mod + Helm Officer's Dexterity Mod + Helm Officer's Misc Bonuses to Pilot check. Added to Pilot functions and Ship Tracking DC.
 *   **Initiative:** (Engines + Sensors) - Structure. Determines turn order.
 *   **Passive Sensors:** 10 + Sensor Mod. The baseline for detecting other ships.
 *   **Stealth DC:** Detection DC + Electronics Mod. Used during Silent Operations (Shields/Engines disabled).
