@@ -213,6 +213,12 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 0,
         "Disadvantages": "-2 to Engines, -1 to Weapons, -2 Hard Points, -1 Bay (occupied by extra Cargo Space)",
         "Advantages": "Cargo Space is one ship size modifier higher. Common bonus: -1 to Procure Diff and 50% less time/cost to repair.",
+        "Mods": [
+            {"Target": "Engines", "Mod": "-2"},
+            {"Target": "Weapons", "Mod": "-1"},
+            {"Target": "Hard_Points", "Mod": "-2"},
+            {"Target": "Bays", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Battle Cruisers",
@@ -222,6 +228,12 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 3,
         "Disadvantages": "Cargo Capacity is one size lower, Passenger Cap is 8, -5 Attribute Points, -1 Customization point (Minimum 1)",
         "Advantages": "+2 Electronics, +2 Engines, +1 Non-Weapon Hard Point, Can pick one Ship Function for free without taking Customization Points.",
+        "Mods": [
+            {"Target": "Electronics", "Mod": "+2"},
+            {"Target": "Engines", "Mod": "+2"},
+            {"Target": "Hard_Points", "Mod": "+1"},
+            {"Target": "Customization", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Battle Ships",
@@ -231,6 +243,13 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 4,
         "Disadvantages": "Cargo Capacity and Passenger Cap is one size smaller, -5 Attribute Points, -1 Customization Point (Minimum 1)",
         "Advantages": "+2 Weapons, +1 Structure, +1 Engines, Gains 'Bombard' function for free, Gains one more Ship Function of choice for free, +1 Hard Point (Weapon Only).",
+        "Mods": [
+            {"Target": "Weapons", "Mod": "+2"},
+            {"Target": "Structure", "Mod": "+1"},
+            {"Target": "Engines", "Mod": "+1"},
+            {"Target": "Hard_Points", "Mod": "+1"},
+            {"Target": "Customization", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Capital",
@@ -240,6 +259,14 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 5,
         "Disadvantages": "-5 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimum 1)",
         "Advantages": "+1 Bays, +2 Sensors, +2 Electronics, Passenger capacity: 864, Special Position: Supreme Commander (system-wide leadership bonus), Choose any one Ship Function installed at no cost.",
+        "Mods": [
+            {"Target": "Bays", "Mod": "+1"},
+            {"Target": "Sensors", "Mod": "+2"},
+            {"Target": "Electronics", "Mod": "+2"},
+            {"Target": "Engines", "Mod": "-2"},
+            {"Target": "Hard_Points", "Mod": "-2"},
+            {"Target": "Customization", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Carriers",
@@ -249,6 +276,14 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 4,
         "Disadvantages": "-5 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimum 1)",
         "Advantages": "+2 Sensors, +2 Electronics, Built-in Repair Facility for ships two sizes and smaller. Can hold 6 Large ships by default. Special Position: Field Commander.",
+        "Mods": [
+            {"Target": "Sensors", "Mod": "+2"},
+            {"Target": "Electronics", "Mod": "+2"},
+            {"Target": "Engines", "Mod": "-2"},
+            {"Target": "Hard_Points", "Mod": "-4"},
+            {"Target": "Bays", "Mod": "-1"},
+            {"Target": "Customization", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Cruisers (Military)",
@@ -258,6 +293,12 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 2,
         "Disadvantages": "-3 Attribute Points",
         "Advantages": "+1 Hard Point or +1 Bay, +2 Engines or +2 Electronics, Pick one free Ship Function.",
+        "Mods": [
+            {"Target": "Hard_Points", "Mod": "+1"},
+            {"Target": "Bays", "Mod": "+1"},
+            {"Target": "Engines", "Mod": "+2"},
+            {"Target": "Electronics", "Mod": "+2"},
+        ],
     },
     {
         "Name": "Cruisers (Civilian)",
@@ -267,6 +308,12 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 0,
         "Disadvantages": "-1 Structure, -1 Hard Point, -2 Attribute Points",
         "Advantages": "+2 Engines, +2 Sensors, Luxury passenger bay (accommodates up to 16 passengers).",
+        "Mods": [
+            {"Target": "Engines", "Mod": "+2"},
+            {"Target": "Sensors", "Mod": "+2"},
+            {"Target": "Structure", "Mod": "-1"},
+            {"Target": "Hard_Points", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Drones",
@@ -276,6 +323,14 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 0,
         "Disadvantages": "-1 across all Attributes",
         "Advantages": "Can be operated without a pilot. Swarm bonuses apply when 4+ are teamed. Requires a Drone Bay.",
+        "Mods": [
+            {"Target": "Weapons", "Mod": "-1"},
+            {"Target": "Shields", "Mod": "-1"},
+            {"Target": "Engines", "Mod": "-1"},
+            {"Target": "Structure", "Mod": "-1"},
+            {"Target": "Sensors", "Mod": "-1"},
+            {"Target": "Electronics", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Destroyers",
@@ -285,6 +340,10 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 3,
         "Disadvantages": "Illegal to own (Procure Diff +1), -3 Attribute Points, -1 Bay, Weapon Hard Points geared for 'Small' weapon size",
         "Advantages": "+2 Hard Points, All weapons considered Gimbaled (+1 Targeting), No penalties for targeting smaller craft.",
+        "Mods": [
+            {"Target": "Hard_Points", "Mod": "+2"},
+            {"Target": "Bays", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Dreadnoughts",
@@ -294,6 +353,11 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 5,
         "Disadvantages": "-2 Engines, -5 Ability Points, -4 Hard Points, -3 Bays, Cannot cloak",
         "Advantages": "Super gigantic hyper-focused energy cannon (100x Huge range, deals 24d10 * 10 damage; cooldown (1d4 + 2) - Electronics Mod rounds).",
+        "Mods": [
+            {"Target": "Engines", "Mod": "-2"},
+            {"Target": "Hard_Points", "Mod": "-4"},
+            {"Target": "Bays", "Mod": "-3"},
+        ],
     },
     {
         "Name": "Fighters",
@@ -303,6 +367,10 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 1,
         "Disadvantages": "-2 Structure, Passenger Cap is 1",
         "Advantages": "+2 Engines, Gains Feint Ship Function for free.",
+        "Mods": [
+            {"Target": "Engines", "Mod": "+2"},
+            {"Target": "Structure", "Mod": "-2"},
+        ],
     },
     {
         "Name": "Frigates",
@@ -312,6 +380,10 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 0,
         "Disadvantages": "-1 to Weapons",
         "Advantages": "+1 to Sensors, +1 Attribute Point, 50% less cost/time spent on repairs.",
+        "Mods": [
+            {"Target": "Sensors", "Mod": "+1"},
+            {"Target": "Weapons", "Mod": "-1"},
+        ],
     },
     {
         "Name": "Freighters",
@@ -321,6 +393,10 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 1,
         "Disadvantages": "-3 Engines, -2 Attribute Points",
         "Advantages": "Converted Cargo Bays provide double space. +2 Bays. Capacity 16,000 Units or one size higher. Tech 3 comes with Beam function. 50% repair discount.",
+        "Mods": [
+            {"Target": "Bays", "Mod": "+2"},
+            {"Target": "Engines", "Mod": "-3"},
+        ],
     },
     {
         "Name": "Industrial",
@@ -330,6 +406,10 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 0,
         "Disadvantages": "-2 Engines, -2 Attribute Points, -3 Bays",
         "Advantages": "Free Industrial Facility and Refinery Facility. Tech 3 comes with Beam function. Free Grapple function.",
+        "Mods": [
+            {"Target": "Engines", "Mod": "-2"},
+            {"Target": "Bays", "Mod": "-3"},
+        ],
     },
     {
         "Name": "Shuttles",
@@ -339,6 +419,13 @@ HULL_CONFIGURATIONS = [
         "ProcureDiff": 0,
         "Disadvantages": "-2 Structure, -2 Electronics, -1 Hard Points",
         "Advantages": "+4 Engines, +2 Sensors, Basic Auto Pilot (AI +1), +1 Passenger for Diminutive, +2 for Tiny, +3 for Small.",
+        "Mods": [
+            {"Target": "Engines", "Mod": "+4"},
+            {"Target": "Sensors", "Mod": "+2"},
+            {"Target": "Structure", "Mod": "-2"},
+            {"Target": "Electronics", "Mod": "-2"},
+            {"Target": "Hard_Points", "Mod": "-1"},
+        ],
     },
 ]
 
@@ -1013,6 +1100,13 @@ def init_spaceship_reference_tables(db_conn=None):
             existing = list(db_conn.find(collection=table_name))
             if not existing:
                 db_conn.insertMany(data, collection=table_name)
+            elif table_name == "spaceship_hull_configurations":
+                if any("Mods" not in doc for doc in existing if isinstance(doc, dict)):
+                    try:
+                        db_conn.drop(collection=table_name)
+                    except Exception:
+                        pass
+                    db_conn.insertMany(data, collection=table_name)
         except Exception as e:
             log.error(f"Error initializing spaceship table {table_name}: {e}")
 

@@ -5,156 +5,192 @@
 const FALLBACK_HULL_SIZES = [
     {
         battle_damage_capacity: 5,
-        bays: "4 / 12",
-        cargo_capacity_units: 32768,
-        cost_baseline: "50,000,000+ Credits",
-        customization_points: 0,
+        bays: "10 / 8",
+        cargo_capacity_units: 65000,
+        civ_bays: 10,
+        civ_hard_points: 8,
+        cost_baseline: "2.9 Billion Credits",
+        customization_points: 3,
         detect_dc: 6,
-        dimensions: "~100,000+ ft / ~1,000,000+ Tons",
-        hard_points: "12 / 24",
+        dimensions: "~512,000+ ft / ~65,536 Tons",
+        hard_points: "8 / 10",
+        mil_bays: 8,
+        mil_hard_points: 10,
         name: "Colossal",
-        passenger_capacity: "1,000+",
+        passenger_capacity: 2000,
         procure_diff: 55,
-        size_modifier: -8,
-        square_feet: "100,000+ sq ft",
-        tracking_dc_bonus: -8,
-        weapon_size_max: "Colossal"
-    },
-    {
-        battle_damage_capacity: 4,
-        bays: "2 / 6",
-        cargo_capacity_units: 16384,
-        cost_baseline: "15,000,000 Credits",
-        customization_points: 0,
-        detect_dc: 7,
-        dimensions: "~25,000-100,000 ft / ~500,000 Tons",
-        hard_points: "8 / 16",
-        name: "Gargantuan",
-        passenger_capacity: 256,
-        procure_diff: 45,
-        size_modifier: -4,
-        square_feet: "32,000 sq ft",
-        tracking_dc_bonus: -4,
-        weapon_size_max: "Gargantuan"
-    },
-    {
-        battle_damage_capacity: 4,
-        bays: "1 / 4",
-        cargo_capacity_units: 4096,
-        cost_baseline: "5,000,000 Credits",
-        customization_points: 0,
-        detect_dc: 8,
-        dimensions: "~10,000-25,000 ft / ~65,000 Tons",
-        hard_points: "6 / 12",
-        name: "Huge",
-        passenger_capacity: 128,
-        procure_diff: 38,
         size_modifier: -2,
-        square_feet: "16,000 sq ft",
-        tracking_dc_bonus: -2,
+        square_feet: "~512,000+ ft / ~1,024 sq",
+        tracking_dc_bonus: 8,
         weapon_size_max: "Huge"
     },
     {
-        battle_damage_capacity: 3,
-        bays: "1 / 3",
-        cargo_capacity_units: 1024,
-        cost_baseline: "1,500,000 Credits",
-        customization_points: 0,
-        detect_dc: 9,
-        dimensions: "~6,000-10,000 ft / ~8,000 Tons",
-        hard_points: "4 / 8",
-        name: "Large",
-        passenger_capacity: 64,
-        procure_diff: 32,
+        battle_damage_capacity: 4,
+        bays: "9 / 7",
+        cargo_capacity_units: 16000,
+        civ_bays: 9,
+        civ_hard_points: 7,
+        cost_baseline: "972 Million Credits",
+        customization_points: 2,
+        detect_dc: 7,
+        dimensions: "~128,000+ ft / ~16,384 Tons",
+        hard_points: "7 / 9",
+        mil_bays: 7,
+        mil_hard_points: 9,
+        name: "Gargantuan",
+        passenger_capacity: 500,
+        procure_diff: 45,
+        size_modifier: -2,
+        square_feet: "~128,000+ ft / ~256 sq",
+        tracking_dc_bonus: 8,
+        weapon_size_max: "Huge"
+    },
+    {
+        battle_damage_capacity: 4,
+        bays: "8 / 5",
+        cargo_capacity_units: 4000,
+        civ_bays: 8,
+        civ_hard_points: 6,
+        cost_baseline: "324 Million Credits",
+        customization_points: 2,
+        detect_dc: 8,
+        dimensions: "~32,000+ ft / ~4,096 Tons",
+        hard_points: "6 / 8",
+        mil_bays: 5,
+        mil_hard_points: 8,
+        name: "Huge",
+        passenger_capacity: 120,
+        procure_diff: 38,
         size_modifier: -1,
-        square_feet: "8,000 sq ft",
-        tracking_dc_bonus: -1,
+        square_feet: "~32,000+ ft / ~64 sq",
+        tracking_dc_bonus: 9,
         weapon_size_max: "Large"
     },
     {
         battle_damage_capacity: 3,
-        bays: "0 / 2",
+        bays: "7 / 4",
+        cargo_capacity_units: 1000,
+        civ_bays: 7,
+        civ_hard_points: 5,
+        cost_baseline: "108 Million Credits",
+        customization_points: 2,
+        detect_dc: 9,
+        dimensions: "~8,000+ ft / ~1,024 Tons",
+        hard_points: "5 / 7",
+        mil_bays: 4,
+        mil_hard_points: 7,
+        name: "Large",
+        passenger_capacity: 32,
+        procure_diff: 32,
+        size_modifier: -1,
+        square_feet: "~8,000+ ft / ~16 sq",
+        tracking_dc_bonus: 9,
+        weapon_size_max: "Large"
+    },
+    {
+        battle_damage_capacity: 3,
+        bays: "6 / 3",
         cargo_capacity_units: 510,
-        cost_baseline: "500,000 Credits",
+        civ_bays: 6,
+        civ_hard_points: 4,
+        cost_baseline: "36 Million Credits",
         customization_points: 1,
         detect_dc: 9,
         dimensions: "~4,000+ ft / ~512 Tons",
-        hard_points: "2 / 4",
+        hard_points: "4 / 6",
+        mil_bays: 3,
+        mil_hard_points: 6,
         name: "Medium",
         passenger_capacity: 16,
         procure_diff: 27,
         size_modifier: 0,
-        square_feet: "4,000 sq ft",
-        tracking_dc_bonus: 0,
+        square_feet: "~4,000+ ft / ~8 sq",
+        tracking_dc_bonus: 10,
         weapon_size_max: "Medium"
     },
     {
         battle_damage_capacity: 2,
-        bays: "0 / 1",
-        cargo_capacity_units: 128,
-        cost_baseline: "200,000 Credits",
-        customization_points: 2,
+        bays: "5 / 2",
+        cargo_capacity_units: 250,
+        civ_bays: 5,
+        civ_hard_points: 4,
+        cost_baseline: "12 Million Credits",
+        customization_points: 1,
         detect_dc: 9,
-        dimensions: "~2,000 ft / ~64 Tons",
-        hard_points: "1 / 2",
+        dimensions: "~2,000+ ft / ~256 Tons",
+        hard_points: "4 / 6",
+        mil_bays: 2,
+        mil_hard_points: 6,
         name: "Small",
-        passenger_capacity: 6,
+        passenger_capacity: 8,
         procure_diff: 23,
         size_modifier: 1,
-        square_feet: "2,000 sq ft",
-        tracking_dc_bonus: 1,
-        weapon_size_max: "Small"
+        square_feet: "~2,000+ ft / ~4 sq",
+        tracking_dc_bonus: 11,
+        weapon_size_max: "Medium"
     },
     {
         battle_damage_capacity: 2,
-        bays: "0 / 0",
-        cargo_capacity_units: 32,
-        cost_baseline: "75,000 Credits",
-        customization_points: 3,
+        bays: "4 / 1",
+        cargo_capacity_units: 64,
+        civ_bays: 4,
+        civ_hard_points: 3,
+        cost_baseline: "1.9 Million Credits",
+        customization_points: 1,
         detect_dc: 10,
-        dimensions: "~1,000 ft / ~8 Tons",
-        hard_points: "1 / 1",
+        dimensions: "~500+ ft / ~64 Tons",
+        hard_points: "3 / 5",
+        mil_bays: 1,
+        mil_hard_points: 5,
         name: "Tiny",
-        passenger_capacity: 2,
+        passenger_capacity: 4,
         procure_diff: 20,
-        size_modifier: 2,
-        square_feet: "1,000 sq ft",
-        tracking_dc_bonus: 2,
-        weapon_size_max: "Tiny"
+        size_modifier: 1,
+        square_feet: "~500+ ft / ~1 sq",
+        tracking_dc_bonus: 11,
+        weapon_size_max: "Small"
     },
     {
         battle_damage_capacity: 1,
-        bays: "0 / 0",
-        cargo_capacity_units: 8,
-        cost_baseline: "30,000 Credits",
-        customization_points: 4,
+        bays: "2 / 0",
+        cargo_capacity_units: 16,
+        civ_bays: 2,
+        civ_hard_points: 2,
+        cost_baseline: "480,000 Credits",
+        customization_points: 0,
         detect_dc: 11,
-        dimensions: "~500 ft / ~1 Ton",
-        hard_points: "0 / 1",
+        dimensions: "~125 ft / ~16 Tons",
+        hard_points: "2 / 3",
+        mil_bays: 0,
+        mil_hard_points: 3,
         name: "Diminutive",
-        passenger_capacity: 1,
+        passenger_capacity: 2,
         procure_diff: 17,
-        size_modifier: 4,
-        square_feet: "500 sq ft",
-        tracking_dc_bonus: 4,
-        weapon_size_max: "Diminutive"
+        size_modifier: 2,
+        square_feet: "~125 ft / 16 per sq",
+        tracking_dc_bonus: 12,
+        weapon_size_max: "Small"
     },
     {
         battle_damage_capacity: 0,
-        bays: "0 / 0",
-        cargo_capacity_units: 1,
-        cost_baseline: "10,000 Credits",
-        customization_points: 5,
+        bays: "1 / 0",
+        cargo_capacity_units: 4,
+        civ_bays: 1,
+        civ_hard_points: 1,
+        cost_baseline: "240,000 Credits",
+        customization_points: 0,
         detect_dc: 12,
-        dimensions: "~250 ft / ~250 lbs",
-        hard_points: "0 / 0",
+        dimensions: "<75 ft / ~4 Tons",
+        hard_points: "1 / 2",
+        mil_bays: 0,
+        mil_hard_points: 2,
         name: "Fine",
-        passenger_capacity: 0,
+        passenger_capacity: 1,
         procure_diff: 14,
-        size_modifier: 8,
-        square_feet: "250 sq ft",
-        tracking_dc_bonus: 8,
-        weapon_size_max: "Fine"
+        size_modifier: 2,
+        square_feet: "<75 ft / 256 per sq",
+        tracking_dc_bonus: 12,
+        weapon_size_max: "Small"
     }
 ];
 
@@ -354,19 +390,62 @@ function normalizeSize(s) {
         dimensions = s.AvgWeight;
     }
 
-    let hardPoints = "";
-    if (s.hard_points) {
-        hardPoints = s.hard_points;
+    let civHp = 0;
+    if (s.civ_hard_points !== undefined) {
+        civHp = s.civ_hard_points;
     } else if (s.CivilianHardPoints !== undefined) {
-        hardPoints = s.CivilianHardPoints + " / " + s.MilitaryHardPoints;
+        civHp = s.CivilianHardPoints;
     }
 
-    let bays = "";
-    if (s.bays) {
-        bays = s.bays;
-    } else if (s.CivilianBays !== undefined) {
-        bays = s.CivilianBays + " / " + s.MilitaryBays;
+    let milHp = 0;
+    if (s.mil_hard_points !== undefined) {
+        milHp = s.mil_hard_points;
+    } else if (s.MilitaryHardPoints !== undefined) {
+        milHp = s.MilitaryHardPoints;
     }
+
+    let civBays = 0;
+    if (s.civ_bays !== undefined) {
+        civBays = s.civ_bays;
+    } else if (s.CivilianBays !== undefined) {
+        civBays = s.CivilianBays;
+    }
+
+    let milBays = 0;
+    if (s.mil_bays !== undefined) {
+        milBays = s.mil_bays;
+    } else if (s.MilitaryBays !== undefined) {
+        milBays = s.MilitaryBays;
+    }
+
+    if (!civHp && !milHp && s.hard_points && typeof s.hard_points === "string") {
+        const hpParts = s.hard_points.split("/").map(function (p) {
+            return parseInt(p.trim(), 10) || 0;
+        });
+        if (hpParts.length >= 2) {
+            civHp = hpParts[0];
+            milHp = hpParts[1];
+        } else if (hpParts.length === 1) {
+            civHp = hpParts[0];
+            milHp = hpParts[0];
+        }
+    }
+
+    if (!civBays && !milBays && s.bays && typeof s.bays === "string") {
+        const bayParts = s.bays.split("/").map(function (p) {
+            return parseInt(p.trim(), 10) || 0;
+        });
+        if (bayParts.length >= 2) {
+            civBays = bayParts[0];
+            milBays = bayParts[1];
+        } else if (bayParts.length === 1) {
+            civBays = bayParts[0];
+            milBays = bayParts[0];
+        }
+    }
+
+    const hardPoints = civHp + " / " + milHp;
+    const bays = civBays + " / " + milBays;
 
     let weaponMax = "";
     if (s.weapon_size_max) {
@@ -376,24 +455,28 @@ function normalizeSize(s) {
     }
 
     return {
-        bays,
-        battle_damage_capacity: bdCap,
         BattleDamageCapacity: bdCap,
-        cargo_capacity_units: cargo,
         CargoCapacity: cargo,
+        DetectionDC: detectDc,
+        Name: name,
+        PassengerCapacity: passengers,
+        SizeMod: sizeMod,
+        TrackingDC: trackingDc,
+        battle_damage_capacity: bdCap,
+        bays,
+        cargo_capacity_units: cargo,
+        civ_bays: civBays,
+        civ_hard_points: civHp,
         customization_points: custBonus,
         detect_dc: detectDc,
-        DetectionDC: detectDc,
         dimensions,
         hard_points: hardPoints,
+        mil_bays: milBays,
+        mil_hard_points: milHp,
         name,
-        Name: name,
         passenger_capacity: passengers,
-        PassengerCapacity: passengers,
         size_modifier: sizeMod,
-        SizeMod: sizeMod,
         tracking_dc_bonus: trackingDc,
-        TrackingDC: trackingDc,
         weapon_size_max: weaponMax
     };
 }
@@ -562,6 +645,8 @@ document.addEventListener("DOMContentLoaded", function () {
     populateReferenceDatalists();
     fetchSpaceshipReferenceData();
     initializeDefaultRows();
+    updateCustomizationPoints();
+    updateHardPointsBaysDisplay();
     recalculateShipAttributes();
     updateTableOfContents();
     initDragAndDrop();
@@ -636,6 +721,8 @@ function fetchSpaceshipReferenceData() {
             }
             populateReferenceDatalists();
             buildThemeModals();
+            updateCustomizationPoints();
+            updateHardPointsBaysDisplay();
             recalculateShipAttributes();
         })
         .catch(function (err) {
@@ -660,6 +747,9 @@ function populateDatalist(elementId, items) {
         return;
     }
     el.innerHTML = "";
+    const emptyOpt = document.createElement("option");
+    emptyOpt.value = "";
+    el.appendChild(emptyOpt);
     items.forEach(function (item) {
         const opt = document.createElement("option");
         let val = "";
@@ -705,9 +795,29 @@ function isInputChecked(id, defaultVal) {
     return defaultVal;
 }
 
+function getInputNumberOrNull(id) {
+    const el = document.getElementById(id);
+    if (el && el.value !== undefined && el.value !== null) {
+        const valStr = String(el.value).trim();
+        if (valStr !== "") {
+            const parsed = parseInt(valStr, 10);
+            if (!Number.isNaN(parsed)) {
+                return parsed;
+            }
+        }
+    }
+    return null;
+}
+
 // Helper: Calculate Modifier from Score
 function getScoreModifier(score) {
-    const s = parseInt(score, 10) || 10;
+    if (score === null || score === undefined || score === "") {
+        return null;
+    }
+    const s = parseInt(score, 10);
+    if (Number.isNaN(s)) {
+        return null;
+    }
     return Math.floor((s - 10) / 2);
 }
 
@@ -723,20 +833,75 @@ function onAttributeScoreChange(attrName, scoreVal) {
     const mod = getScoreModifier(scoreVal);
     const modDisplay = document.getElementById(attrName + "ModDisplay");
     if (modDisplay) {
-        modDisplay.value = formatModifier(mod);
+        modDisplay.value = (mod !== null ? formatModifier(mod) : "");
     }
     recalculateShipAttributes();
 }
 
-// Handle Hull Size Selection Change
-function onHullSizeChange(sizeName) {
+function updateHardPointsBaysDisplay() {
+    const secHpEl = document.getElementById("hardPointsBaysSlotsInput");
+    if (!secHpEl) {
+        return;
+    }
+    const sizeInput = document.getElementById("hullSizeInput");
+    const classInput = document.getElementById("shipClassTypeSelect");
+
+    let sizeName = "";
+    if (sizeInput && sizeInput.value) {
+        sizeName = sizeInput.value.trim();
+    }
+    if (!sizeName) {
+        secHpEl.value = "";
+        return;
+    }
+
     const matched = shipData.hullSizes.find(function (s) {
         return s.name.toLowerCase() === sizeName.toLowerCase();
     });
+    if (!matched) {
+        secHpEl.value = "";
+        return;
+    }
+
+    let classVal = "";
+    if (classInput && classInput.value) {
+        classVal = classInput.value.trim().toLowerCase();
+    }
+    let cust = 0;
+    if (matched.customization_points !== undefined) {
+        cust = matched.customization_points;
+    }
+
+    let hpStr = "[" + matched.civ_hard_points + " / " + matched.mil_hard_points + "] HP";
+    let bayStr = "[" + matched.civ_bays + " / " + matched.mil_bays + "] Bays";
+
+    if (classVal === "civilian") {
+        hpStr = "[" + matched.civ_hard_points + "] HP";
+        bayStr = "[" + matched.civ_bays + "] Bays";
+    } else if (classVal === "military") {
+        hpStr = "[" + matched.mil_hard_points + "] HP";
+        bayStr = "[" + matched.mil_bays + "] Bays";
+    }
+
+    secHpEl.value = hpStr + " / " + bayStr + " / " + cust + " Cust.";
+}
+
+// Handle Hull Size Selection Change
+function onHullSizeChange(sizeName) {
+    let matched = null;
+    if (sizeName && typeof sizeName === "string" && sizeName.trim()) {
+        matched = shipData.hullSizes.find(function (s) {
+            return s.name.toLowerCase() === sizeName.trim().toLowerCase();
+        });
+    }
+
+    const capEl = document.getElementById("battleDamageCapacity");
+    const cargoEl = document.getElementById("cargoCapacityInput");
+    const dimEl = document.getElementById("dimensionsWeightInput");
+    const passEl = document.getElementById("passengerCapacityInput");
 
     if (matched) {
         // Battle Damage Capacity
-        const capEl = document.getElementById("battleDamageCapacity");
         if (capEl) {
             capEl.value = matched.battle_damage_capacity;
         }
@@ -745,27 +910,37 @@ function onHullSizeChange(sizeName) {
         updateCustomizationPoints();
 
         // Secondary specs
-        const secHpEl = document.getElementById("hardPointsBaysSlotsInput");
-        if (secHpEl) {
-            secHpEl.value = matched.hard_points + " HP / " + matched.bays + " Bays / " + matched.customization_points + " Cust.";
-        }
+        updateHardPointsBaysDisplay();
 
-        const cargoEl = document.getElementById("cargoCapacityInput");
         if (cargoEl) {
             cargoEl.value = matched.cargo_capacity_units + " Units";
         }
 
-        const dimEl = document.getElementById("dimensionsWeightInput");
         if (dimEl) {
             dimEl.value = matched.dimensions;
         }
 
-        const passEl = document.getElementById("passengerCapacityInput");
         if (passEl) {
             passEl.value = matched.passenger_capacity + " Passengers";
         }
+    } else {
+        if (capEl) {
+            capEl.value = "";
+        }
+        updateHardPointsBaysDisplay();
+        if (cargoEl) {
+            cargoEl.value = "";
+        }
+        if (dimEl) {
+            dimEl.value = "";
+        }
+        if (passEl) {
+            passEl.value = "";
+        }
+        updateCustomizationPoints();
     }
 
+    updateHullDescription();
     recalculateShipAttributes();
 }
 
@@ -775,6 +950,8 @@ function onCoreLevelChange() {
 }
 
 function onShipClassTypeChange() {
+    updateHardPointsBaysDisplay();
+    updateHullDescription();
     recalculateShipAttributes();
 }
 
@@ -854,41 +1031,47 @@ function syncSecondaryConfig(val) {
 // Update Customization Points
 function updateCustomizationPoints() {
     const coreSelect = document.getElementById("coreLevelSelect");
-    let coreLevel = 2;
-    if (coreSelect) {
+    let coreLevel = NaN;
+    if (coreSelect && coreSelect.value) {
         coreLevel = parseInt(coreSelect.value, 10);
     }
 
     const sizeInput = document.getElementById("hullSizeInput");
-    let sizeName = "Medium";
-    if (sizeInput) {
-        sizeName = sizeInput.value;
+    let sizeName = "";
+    if (sizeInput && sizeInput.value) {
+        sizeName = sizeInput.value.trim();
     }
 
-    const matched = shipData.hullSizes.find(function (s) {
-        return s.name.toLowerCase() === sizeName.toLowerCase();
-    });
-
-    let sizeCust = 1;
-    if (matched) {
-        sizeCust = matched.customization_points;
+    let matched = null;
+    if (sizeName) {
+        matched = shipData.hullSizes.find(function (s) {
+            return s.name.toLowerCase() === sizeName.toLowerCase();
+        });
     }
-    const totalCust = sizeCust + (coreLevel - 1);
 
     const custDisplay = document.getElementById("customizationPointsDisplay");
-    if (custDisplay) {
-        custDisplay.value = totalCust;
+    if (!custDisplay) {
+        return;
     }
+
+    if (!matched && Number.isNaN(coreLevel)) {
+        custDisplay.value = "";
+        return;
+    }
+
+    const sizeCust = (matched ? matched.customization_points : 0);
+    const coreCust = (!Number.isNaN(coreLevel) ? (coreLevel - 1) : 0);
+    custDisplay.value = sizeCust + coreCust;
 }
 
 // Recalculate All Primary & Secondary Attributes
 function recalculateShipAttributes() {
-    const enginesScore = getInputNumber("enginesScoreInput", 10);
-    const weaponsScore = getInputNumber("weaponsScoreInput", 10);
-    const structureScore = getInputNumber("structureScoreInput", 10);
-    const shieldsScore = getInputNumber("shieldsScoreInput", 10);
-    const sensorsScore = getInputNumber("sensorsScoreInput", 10);
-    const electronicsScore = getInputNumber("electronicsScoreInput", 10);
+    const enginesScore = getInputNumberOrNull("enginesScoreInput");
+    const weaponsScore = getInputNumberOrNull("weaponsScoreInput");
+    const structureScore = getInputNumberOrNull("structureScoreInput");
+    const shieldsScore = getInputNumberOrNull("shieldsScoreInput");
+    const sensorsScore = getInputNumberOrNull("sensorsScoreInput");
+    const electronicsScore = getInputNumberOrNull("electronicsScoreInput");
 
     const enginesMod = getScoreModifier(enginesScore);
     const weaponsMod = getScoreModifier(weaponsScore);
@@ -898,81 +1081,122 @@ function recalculateShipAttributes() {
     const electronicsMod = getScoreModifier(electronicsScore);
 
     // Update Mod Displays
-    setElementValue("enginesModDisplay", formatModifier(enginesMod));
-    setElementValue("weaponsModDisplay", formatModifier(weaponsMod));
-    setElementValue("structureModDisplay", formatModifier(structureMod));
-    setElementValue("shieldsModDisplay", formatModifier(shieldsMod));
-    setElementValue("sensorsModDisplay", formatModifier(sensorsMod));
-    setElementValue("electronicsModDisplay", formatModifier(electronicsMod));
+    setElementValue("enginesModDisplay", (enginesMod !== null ? formatModifier(enginesMod) : ""));
+    setElementValue("weaponsModDisplay", (weaponsMod !== null ? formatModifier(weaponsMod) : ""));
+    setElementValue("structureModDisplay", (structureMod !== null ? formatModifier(structureMod) : ""));
+    setElementValue("shieldsModDisplay", (shieldsMod !== null ? formatModifier(shieldsMod) : ""));
+    setElementValue("sensorsModDisplay", (sensorsMod !== null ? formatModifier(sensorsMod) : ""));
+    setElementValue("electronicsModDisplay", (electronicsMod !== null ? formatModifier(electronicsMod) : ""));
 
     // Size lookup
-    const sizeName = getInputValue("hullSizeInput", "Medium");
-    const matchedSize = shipData.hullSizes.find(function (s) {
-        return s.name.toLowerCase() === sizeName.toLowerCase();
-    }) || shipData.hullSizes[4]; // Default medium
-
-    const sizeMod = matchedSize.size_modifier;
-    const baseDetectDc = matchedSize.detect_dc;
+    const sizeName = getInputValue("hullSizeInput", "");
+    let sizeMod = 0;
+    let baseDetectDc = null;
+    let hasMatchedSize = false;
+    if (sizeName && typeof sizeName === "string" && sizeName.trim()) {
+        const matchedSize = shipData.hullSizes.find(function (s) {
+            return s.name.toLowerCase() === sizeName.trim().toLowerCase();
+        });
+        if (matchedSize) {
+            sizeMod = matchedSize.size_modifier;
+            baseDetectDc = matchedSize.detect_dc;
+            hasMatchedSize = true;
+        }
+    }
 
     // 1. BD-DC
-    setElementValue("bdDefenseResistance", 4 + structureMod);
-    setElementValue("bdDefenseReflectors", 4 + shieldsMod);
+    setElementValue("bdDefenseResistance", (structureMod !== null ? (4 + structureMod) : ""));
+    setElementValue("bdDefenseReflectors", (shieldsMod !== null ? (4 + shieldsMod) : ""));
 
     // 2. Initiative: (Engines + Sensors) - Structure
-    const initiativeVal = (enginesMod + sensorsMod) - structureMod;
-    setElementValue("initiativeDisplay", formatModifier(initiativeVal));
+    if (enginesMod === null && sensorsMod === null && structureMod === null) {
+        setElementValue("initiativeDisplay", "");
+    } else {
+        const initiativeVal = ((enginesMod || 0) + (sensorsMod || 0)) - (structureMod || 0);
+        setElementValue("initiativeDisplay", formatModifier(initiativeVal));
+    }
 
     // 3. Tactical Mobility: Engines Modifier + Helm Officer Dex Mod + Helm Officer Misc Mod
-    const helmPilotDex = getInputNumber("helmOfficerPilotDexMod", 0);
-    const helmPilotMisc = getInputNumber("helmOfficerPilotMiscMod", 0);
-    const tacticalMobility = enginesMod + helmPilotDex + helmPilotMisc;
-    setElementValue("tacticalMobilityDisplay", formatModifier(tacticalMobility));
+    const helmPilotDex = getInputNumberOrNull("helmOfficerPilotDexMod");
+    const helmPilotMisc = getInputNumberOrNull("helmOfficerPilotMiscMod");
+    let tacticalMobility = null;
+    if (enginesMod !== null || helmPilotDex !== null || helmPilotMisc !== null) {
+        tacticalMobility = (enginesMod || 0) + (helmPilotDex || 0) + (helmPilotMisc || 0);
+        setElementValue("tacticalMobilityDisplay", formatModifier(tacticalMobility));
+    } else {
+        setElementValue("tacticalMobilityDisplay", "");
+    }
 
     // 4. Tracking DC: 10 + ((Tactical Mobility + Shields Mod) +/- Size Mod) - Structure Mod
-    const trackingDc = 10 + (tacticalMobility + shieldsMod + sizeMod) - structureMod;
-    setElementValue("trackingDcDisplay", trackingDc);
+    if (tacticalMobility === null && shieldsMod === null && !hasMatchedSize && structureMod === null) {
+        setElementValue("trackingDcDisplay", "");
+    } else {
+        const trackingDc = 10 + ((tacticalMobility || 0) + (shieldsMod || 0) + sizeMod) - (structureMod || 0);
+        setElementValue("trackingDcDisplay", trackingDc);
+    }
 
     // 5. Detection DC: Base size - (Shields Mod / 2 if active)
     const shieldsActive = isInputChecked("shieldsActiveSwitch", true);
     let shieldPenalty = 0;
-    if (shieldsActive) {
+    if (shieldsActive && shieldsMod !== null) {
         shieldPenalty = Math.floor(shieldsMod / 2);
     }
-    const finalDetectDc = Math.max(1, baseDetectDc - shieldPenalty);
-    setElementValue("detectionDcDisplay", finalDetectDc);
+    let finalDetectDc = null;
+    if (hasMatchedSize && baseDetectDc !== null) {
+        finalDetectDc = Math.max(1, baseDetectDc - shieldPenalty);
+        setElementValue("detectionDcDisplay", finalDetectDc);
+    } else {
+        setElementValue("detectionDcDisplay", "");
+    }
 
     // 6. Stealth DC: Detection DC + Electronics Mod
-    const stealthDc = finalDetectDc + electronicsMod;
-    setElementValue("stealthDcDisplay", stealthDc);
+    if (finalDetectDc === null && electronicsMod === null) {
+        setElementValue("stealthDcDisplay", "");
+    } else {
+        const stealthDc = (finalDetectDc !== null ? finalDetectDc : 10) + (electronicsMod || 0);
+        setElementValue("stealthDcDisplay", stealthDc);
+    }
 
     // 7. Passive Sensors: 10 + Sensors Mod
-    const passiveSensors = 10 + sensorsMod;
-    setElementValue("passiveSensorsDisplay", passiveSensors);
+    if (sensorsMod !== null) {
+        setElementValue("passiveSensorsDisplay", 10 + sensorsMod);
+    } else {
+        setElementValue("passiveSensorsDisplay", "");
+    }
 
     // 8. Repair DC Bonus: Weapons Mod + Weapons Officer Dex/Wis Mod
-    const woMod = getInputNumber("weaponsOfficerMod", 0);
-    const repairDcBonus = weaponsMod + woMod;
-    setElementValue("repairDcBonusDisplay", formatModifier(repairDcBonus));
+    const woMod = getInputNumberOrNull("weaponsOfficerMod");
+    let repairDcBonus = null;
+    if (weaponsMod !== null || woMod !== null) {
+        repairDcBonus = (weaponsMod || 0) + (woMod || 0);
+        setElementValue("repairDcBonusDisplay", formatModifier(repairDcBonus));
+    } else {
+        setElementValue("repairDcBonusDisplay", "");
+    }
     syncWeaponsOfficerAbilityTheme();
 
     // Sub-badges in cards
-    setElementText("enginesTacMobDisplay", formatModifier(tacticalMobility));
-    setElementText("enginesTrackingBonusDisplay", formatModifier(tacticalMobility));
-    setElementText("weaponsRerollBonusDisplay", formatModifier(weaponsMod));
-    setElementText("weaponsRepairDcDisplay", formatModifier(repairDcBonus));
-    setElementText("structureArmorBonusDisplay", 4 + structureMod);
-    let initPenaltyTxt = "-0";
-    if (structureMod > 0) {
-        initPenaltyTxt = "-" + structureMod;
-    } else if (structureMod < 0) {
-        initPenaltyTxt = "+" + Math.abs(structureMod);
+    setElementText("enginesTacMobDisplay", (tacticalMobility !== null ? formatModifier(tacticalMobility) : ""));
+    setElementText("enginesTrackingBonusDisplay", (tacticalMobility !== null ? formatModifier(tacticalMobility) : ""));
+    setElementText("weaponsRerollBonusDisplay", (weaponsMod !== null ? formatModifier(weaponsMod) : ""));
+    setElementText("weaponsRepairDcDisplay", (repairDcBonus !== null ? formatModifier(repairDcBonus) : ""));
+    setElementText("structureArmorBonusDisplay", (structureMod !== null ? (4 + structureMod) : ""));
+    let initPenaltyTxt = "";
+    if (structureMod !== null) {
+        if (structureMod > 0) {
+            initPenaltyTxt = "-" + structureMod;
+        } else if (structureMod < 0) {
+            initPenaltyTxt = "+" + Math.abs(structureMod);
+        } else {
+            initPenaltyTxt = "-0";
+        }
     }
     setElementText("structureInitPenaltyDisplay", initPenaltyTxt);
-    setElementText("shieldsReflectorDisplay", 4 + shieldsMod);
-    setElementText("shieldsDetectPenaltyDisplay", "-" + shieldPenalty);
-    setElementText("sensorsPassiveDisplay", passiveSensors);
-    setElementText("sensorsInitBonusDisplay", formatModifier(sensorsMod));
-    setElementText("electronicsStealthBonusDisplay", formatModifier(electronicsMod));
+    setElementText("shieldsReflectorDisplay", (shieldsMod !== null ? (4 + shieldsMod) : ""));
+    setElementText("shieldsDetectPenaltyDisplay", (shieldsMod !== null ? ("-" + shieldPenalty) : ""));
+    setElementText("sensorsPassiveDisplay", (sensorsMod !== null ? (10 + sensorsMod) : ""));
+    setElementText("sensorsInitBonusDisplay", (sensorsMod !== null ? formatModifier(sensorsMod) : ""));
+    setElementText("electronicsStealthBonusDisplay", (electronicsMod !== null ? formatModifier(electronicsMod) : ""));
 
     // Recalculate Ship Functions
     recalculateFunctions(enginesMod, weaponsMod, structureMod, shieldsMod, sensorsMod, electronicsMod);
@@ -995,82 +1219,80 @@ function setElementText(id, txt) {
     }
 }
 
+function syncSkillDie(rankId, dieId) {
+    const rankNum = getInputNumberOrNull(rankId);
+    const dieEl = document.getElementById(dieId);
+    if (dieEl) {
+        if (rankNum !== null && rankNum >= 1) {
+            const idx = Math.min(rankNum - 1, skillDieLevels.length - 1);
+            dieEl.value = skillDieLevels[idx];
+        } else {
+            dieEl.value = "";
+        }
+    }
+}
+
+function updateFunctionTotal(totalId, values) {
+    const nonNulls = values.filter(function (v) {
+        return v !== null && v !== undefined;
+    });
+    if (nonNulls.length === 0) {
+        setElementValue(totalId, "");
+        return;
+    }
+    const sum = nonNulls.reduce(function (acc, v) {
+        return acc + v;
+    }, 0);
+    setElementValue(totalId, formatModifier(sum));
+}
+
 // Recalculate Function Totals
 function recalculateFunctions(engMod, wpnMod, strMod, shdMod, snsMod, elcMod) {
-    const pilotRank = getInputNumber("helmOfficerPilotRank", 0);
-    const dieEl = document.getElementById("helmOfficerPilotDie");
-    if (dieEl && !dieEl.value && pilotRank >= 1) {
-        const idx = Math.min(pilotRank - 1, skillDieLevels.length - 1);
-        dieEl.value = skillDieLevels[idx];
-    }
-    const engStrRank = getInputNumber("engineerCraftStructureRank", 0);
-    const engStrDieEl = document.getElementById("engineerCraftStructureDie");
-    if (engStrDieEl && !engStrDieEl.value && engStrRank >= 1) {
-        const idx = Math.min(engStrRank - 1, skillDieLevels.length - 1);
-        engStrDieEl.value = skillDieLevels[idx];
-    }
-    const engSecRank = getInputNumber("engineerSecondarySkillRank", 0);
-    const engSecDieEl = document.getElementById("engineerSecondarySkillDie");
-    if (engSecDieEl && !engSecDieEl.value && engSecRank >= 1) {
-        const idx = Math.min(engSecRank - 1, skillDieLevels.length - 1);
-        engSecDieEl.value = skillDieLevels[idx];
-    }
-    const medRank = getInputNumber("medicalOfficerSkillRank", 0);
-    const medDieEl = document.getElementById("medicalOfficerSkillDie");
-    if (medDieEl && !medDieEl.value && medRank >= 1) {
-        const idx = Math.min(medRank - 1, skillDieLevels.length - 1);
-        medDieEl.value = skillDieLevels[idx];
-    }
-    const ksRank = getInputNumber("shieldsSkillKnowledgeScienceRank", 0);
-    const ksDieEl = document.getElementById("shieldsSkillKnowledgeScienceDie");
-    if (ksDieEl && !ksDieEl.value && ksRank >= 1) {
-        const idx = Math.min(ksRank - 1, skillDieLevels.length - 1);
-        ksDieEl.value = skillDieLevels[idx];
-    }
-    const acroRank = getInputNumber("shieldsSkillAcrobaticsRank", 0);
-    const acroDieEl = document.getElementById("shieldsSkillAcrobaticsDie");
-    if (acroDieEl && !acroDieEl.value && acroRank >= 1) {
-        const idx = Math.min(acroRank - 1, skillDieLevels.length - 1);
-        acroDieEl.value = skillDieLevels[idx];
-    }
-    const wpnOffMod = getInputNumber("weaponsOfficerMod", 0);
-    const engCraftMod = getInputNumber("engineerOfficerCraftMod", 0);
-    const commsIntMod = getInputNumber("commsOfficerIntMod", 0);
-    const commsWisMod = getInputNumber("commsOfficerWisMod", 0);
-    const commsChaMod = getInputNumber("commsOfficerChaMod", 0);
-    const sciMod = getInputNumber("scienceOfficerMod", 0);
-    const capMod = getInputNumber("captainCharismaMod", 0);
+    syncSkillDie("helmOfficerPilotRank", "helmOfficerPilotDie");
+    syncSkillDie("engineerCraftStructureRank", "engineerCraftStructureDie");
+    syncSkillDie("engineerSecondarySkillRank", "engineerSecondarySkillDie");
+    syncSkillDie("medicalOfficerSkillRank", "medicalOfficerSkillDie");
+    syncSkillDie("shieldsSkillKnowledgeScienceRank", "shieldsSkillKnowledgeScienceDie");
+    syncSkillDie("shieldsSkillAcrobaticsRank", "shieldsSkillAcrobaticsDie");
+
+    const wpnOffMod = getInputNumberOrNull("weaponsOfficerMod");
+    const engCraftMod = getInputNumberOrNull("engineerOfficerCraftMod");
+    const commsIntMod = getInputNumberOrNull("commsOfficerIntMod");
+    const commsWisMod = getInputNumberOrNull("commsOfficerWisMod");
+    const commsChaMod = getInputNumberOrNull("commsOfficerChaMod");
+    const sciMod = getInputNumberOrNull("scienceOfficerMod");
+    const capMod = getInputNumberOrNull("captainCharismaMod");
 
     // Helm Functions: Combination of Engines Modifier and Function Misc
-    setElementValue("funcTotal_flyOffDef", formatModifier(engMod + getInputNumber("funcMisc_flyOffDef", 0)));
-    setElementValue("funcTotal_closeWiden", formatModifier(engMod + getInputNumber("funcMisc_closeWiden", 0)));
-    setElementValue("funcTotal_pursueIntercept", formatModifier(engMod + getInputNumber("funcMisc_pursueIntercept", 0)));
-    setElementValue("funcTotal_ram", formatModifier(engMod + getInputNumber("funcMisc_ram", 0)));
-    setElementValue("funcTotal_evasiveThrusters", formatModifier(engMod + getInputNumber("funcMisc_evasiveThrusters", 0)));
-    setElementValue("funcTotal_feint", formatModifier(engMod + getInputNumber("funcMisc_feint", 0)));
-    setElementValue("funcTotal_grappleEngines", formatModifier(engMod + getInputNumber("funcMisc_grappleEngines", 0)));
+    updateFunctionTotal("funcTotal_flyOffDef", [engMod, getInputNumberOrNull("funcMisc_flyOffDef")]);
+    updateFunctionTotal("funcTotal_closeWiden", [engMod, getInputNumberOrNull("funcMisc_closeWiden")]);
+    updateFunctionTotal("funcTotal_pursueIntercept", [engMod, getInputNumberOrNull("funcMisc_pursueIntercept")]);
+    updateFunctionTotal("funcTotal_ram", [engMod, getInputNumberOrNull("funcMisc_ram")]);
+    updateFunctionTotal("funcTotal_evasiveThrusters", [engMod, getInputNumberOrNull("funcMisc_evasiveThrusters")]);
+    updateFunctionTotal("funcTotal_feint", [engMod, getInputNumberOrNull("funcMisc_feint")]);
+    updateFunctionTotal("funcTotal_grappleEngines", [engMod, getInputNumberOrNull("funcMisc_grappleEngines")]);
 
     // Weapons Functions
-    setElementValue("funcTotal_fire", formatModifier(wpnMod + wpnOffMod + getInputNumber("funcMisc_fire", 0)));
-    setElementValue("funcTotal_bombard", formatModifier(wpnMod + wpnOffMod + getInputNumber("funcMisc_bombard", 0)));
-    setElementValue("funcTotal_concentratedFire", formatModifier(wpnMod + wpnOffMod + getInputNumber("funcMisc_concentratedFire", 0)));
-    setElementValue("funcTotal_defensiveFire", formatModifier(wpnMod + wpnOffMod + getInputNumber("funcMisc_defensiveFire", 0)));
+    updateFunctionTotal("funcTotal_fire", [wpnMod, wpnOffMod, getInputNumberOrNull("funcMisc_fire")]);
+    updateFunctionTotal("funcTotal_bombard", [wpnMod, wpnOffMod, getInputNumberOrNull("funcMisc_bombard")]);
+    updateFunctionTotal("funcTotal_concentratedFire", [wpnMod, wpnOffMod, getInputNumberOrNull("funcMisc_concentratedFire")]);
+    updateFunctionTotal("funcTotal_defensiveFire", [wpnMod, wpnOffMod, getInputNumberOrNull("funcMisc_defensiveFire")]);
 
     // Engineer Functions
-    setElementValue("funcTotal_repair", formatModifier(strMod + getInputNumber("funcMisc_repair", 0)));
-    setElementValue("funcTotal_boostEngines", formatModifier(strMod + getInputNumber("funcMisc_boostEngines", 0)));
-    setElementValue("funcTotal_counterHackEng", formatModifier(elcMod + getInputNumber("funcMisc_counterHackEng", 0)));
-    setElementValue("funcTotal_overclockCore", formatModifier(strMod + getInputNumber("funcMisc_overclockCore", 0)));
-    setElementValue("funcTotal_cloakEng", formatModifier(elcMod + getInputNumber("funcMisc_cloakEng", 0)));
+    updateFunctionTotal("funcTotal_repair", [strMod, getInputNumberOrNull("funcMisc_repair")]);
+    updateFunctionTotal("funcTotal_boostEngines", [strMod, getInputNumberOrNull("funcMisc_boostEngines")]);
+    updateFunctionTotal("funcTotal_counterHackEng", [elcMod, getInputNumberOrNull("funcMisc_counterHackEng")]);
+    updateFunctionTotal("funcTotal_overclockCore", [strMod, getInputNumberOrNull("funcMisc_overclockCore")]);
+    updateFunctionTotal("funcTotal_cloakEng", [elcMod, getInputNumberOrNull("funcMisc_cloakEng")]);
 
     // Sync Chief Engineer Int Mod into Craft skills table
-    setElementValue("engineerCraftStructureIntMod", engCraftMod);
-    setElementValue("engineerSecondarySkillIntMod", engCraftMod);
+    setElementValue("engineerCraftStructureIntMod", (engCraftMod !== null ? formatModifier(engCraftMod) : ""));
+    setElementValue("engineerSecondarySkillIntMod", (engCraftMod !== null ? formatModifier(engCraftMod) : ""));
 
     // All Crew Functions (under Shields card)
-    setElementValue("funcTotal_changePosition", formatModifier(getInputNumber("funcMisc_changePosition", 0)));
-    setElementValue("funcTotal_beam", formatModifier(getInputNumber("funcMisc_beam", 0)));
-    setElementValue("funcTotal_shieldModulation", formatModifier(shdMod + getInputNumber("funcMisc_shieldModulation", 0)));
+    updateFunctionTotal("funcTotal_changePosition", [getInputNumberOrNull("funcMisc_changePosition")]);
+    updateFunctionTotal("funcTotal_beam", [getInputNumberOrNull("funcMisc_beam")]);
+    updateFunctionTotal("funcTotal_shieldModulation", [shdMod, getInputNumberOrNull("funcMisc_shieldModulation")]);
 
     // Sensors / Comms Functions
     function getCommsChoiceMod(selectId, defaultAbility) {
@@ -1094,32 +1316,32 @@ function recalculateFunctions(engMod, wpnMod, strMod, shdMod, snsMod, elcMod) {
     const jamOfficerMod = getCommsChoiceMod("funcAbility_jamComms", "WIS");
 
     // Scan: Ship's Sensors Mod + Misc + Officer's Wis/Cha
-    setElementValue("funcTotal_scan", formatModifier(snsMod + scanOfficerMod + getInputNumber("funcMisc_scan", 0)));
+    updateFunctionTotal("funcTotal_scan", [snsMod, scanOfficerMod, getInputNumberOrNull("funcMisc_scan")]);
     // Hack: Duplicate check using Ship's Electronics Mod + Misc + Officer's Int Mod
-    setElementValue("funcTotal_hackComms", formatModifier(elcMod + commsIntMod + getInputNumber("funcMisc_hackComms", 0)));
+    updateFunctionTotal("funcTotal_hackComms", [elcMod, commsIntMod, getInputNumberOrNull("funcMisc_hackComms")]);
     // Spoof: Utilizes BOTH Ship's Sensors AND Electronics Mods + Misc + Officer's Int/Cha
-    setElementValue("funcTotal_spoofing", formatModifier(snsMod + elcMod + spoofOfficerMod + getInputNumber("funcMisc_spoofing", 0)));
+    updateFunctionTotal("funcTotal_spoofing", [snsMod, elcMod, spoofOfficerMod, getInputNumberOrNull("funcMisc_spoofing")]);
     // Crypto: Ship's Sensors Mod + Misc + Officer's Wis/Cha
-    setElementValue("funcTotal_cryptoComms", formatModifier(snsMod + cryptoOfficerMod + getInputNumber("funcMisc_cryptoComms", 0)));
+    updateFunctionTotal("funcTotal_cryptoComms", [snsMod, cryptoOfficerMod, getInputNumberOrNull("funcMisc_cryptoComms")]);
     // Jam: Ship's Sensors Mod + Misc + Officer's Wis/Cha
-    setElementValue("funcTotal_jamComms", formatModifier(snsMod + jamOfficerMod + getInputNumber("funcMisc_jamComms", 0)));
+    updateFunctionTotal("funcTotal_jamComms", [snsMod, jamOfficerMod, getInputNumberOrNull("funcMisc_jamComms")]);
 
     // Science Functions
-    setElementValue("funcTotal_boostSci", formatModifier(sciMod + getInputNumber("funcMisc_boostSci", 0)));
-    setElementValue("funcTotal_hackSci", formatModifier(elcMod + sciMod + getInputNumber("funcMisc_hackSci", 0)));
-    setElementValue("funcTotal_cloakSci", formatModifier(elcMod + sciMod + getInputNumber("funcMisc_cloakSci", 0)));
-    setElementValue("funcTotal_cryptoSci", formatModifier(elcMod + sciMod + getInputNumber("funcMisc_cryptoSci", 0)));
+    updateFunctionTotal("funcTotal_boostSci", [sciMod, getInputNumberOrNull("funcMisc_boostSci")]);
+    updateFunctionTotal("funcTotal_hackSci", [elcMod, sciMod, getInputNumberOrNull("funcMisc_hackSci")]);
+    updateFunctionTotal("funcTotal_cloakSci", [elcMod, sciMod, getInputNumberOrNull("funcMisc_cloakSci")]);
+    updateFunctionTotal("funcTotal_cryptoSci", [elcMod, sciMod, getInputNumberOrNull("funcMisc_cryptoSci")]);
 
     // Captain Functions
-    setElementValue("funcTotal_giveCommand", formatModifier(capMod + getInputNumber("funcMisc_giveCommand", 0)));
-    setElementValue("funcTotal_encourageCrew", formatModifier(capMod + getInputNumber("funcMisc_encourageCrew", 0)));
-    setElementValue("funcTotal_commandingPresence", formatModifier(capMod + getInputNumber("funcMisc_commandingPresence", 0)));
-    setElementValue("funcTotal_directAssistance", formatModifier(capMod + getInputNumber("funcMisc_directAssistance", 0)));
+    updateFunctionTotal("funcTotal_giveCommand", [capMod, getInputNumberOrNull("funcMisc_giveCommand")]);
+    updateFunctionTotal("funcTotal_encourageCrew", [capMod, getInputNumberOrNull("funcMisc_encourageCrew")]);
+    updateFunctionTotal("funcTotal_commandingPresence", [capMod, getInputNumberOrNull("funcMisc_commandingPresence")]);
+    updateFunctionTotal("funcTotal_directAssistance", [capMod, getInputNumberOrNull("funcMisc_directAssistance")]);
 
     // Medical Functions
-    setElementValue("funcTotal_medical", formatModifier(getInputNumber("funcMisc_medical", 0)));
-    setElementValue("funcTotal_resuscitation", formatModifier(getInputNumber("funcMisc_resuscitation", 0)));
-    setElementValue("funcTotal_automatedCare", formatModifier(getInputNumber("funcMisc_automatedCare", 0)));
+    updateFunctionTotal("funcTotal_medical", [getInputNumberOrNull("funcMisc_medical")]);
+    updateFunctionTotal("funcTotal_resuscitation", [getInputNumberOrNull("funcMisc_resuscitation")]);
+    updateFunctionTotal("funcTotal_automatedCare", [getInputNumberOrNull("funcMisc_automatedCare")]);
 }
 
 function onCaptainModChange() {
@@ -1182,9 +1404,16 @@ function getAvailableHardPoints() {
     }
     const hpInput = document.getElementById("hardPointsBaysSlotsInput");
     if (hpInput && hpInput.value) {
-        const match = hpInput.value.match(/(\d+)\s*HP/i);
+        const match = hpInput.value.match(/\[?\s*(\d+)(?:\s*\/\s*(\d+))?\s*\]?\s*HP/i);
         if (match) {
-            const parsed = parseInt(match[1], 10);
+            const civHp = parseInt(match[1], 10);
+            const milHp = parseInt(match[2], 10);
+            const classSelect = document.getElementById("shipClassTypeSelect");
+            const isMil = (classSelect && classSelect.value === "Military");
+            let parsed = civHp;
+            if (isMil && !Number.isNaN(milHp)) {
+                parsed = milHp;
+            }
             if (!Number.isNaN(parsed) && parsed > 0) {
                 return parsed;
             }
@@ -1894,7 +2123,10 @@ function rollShipFunction(funcName, attrKey, explicitBonus, btnEl) {
     openRollModal(funcName, bonus, attrKey, skillDie, explanationHtml, warningText);
 }
 
-function rollInitiative() {
+function rollInitiative(event) {
+    if (event) {
+        event.stopPropagation();
+    }
     const initVal = getInputNumber("initiativeDisplay", 0);
     const snsMod = getScoreModifier(getInputNumber("sensorsScoreInput", 10));
     const strMod = getScoreModifier(getInputNumber("structureScoreInput", 10));
@@ -3002,12 +3234,16 @@ function expandAllCards() {
         h.classList.remove("collapsed");
         h.setAttribute("aria-expanded", "true");
     });
-    saveCollapseStates();
+    localStorage.setItem("ship_collapsed_cards", JSON.stringify([]));
 }
 
 function collapseAllCards() {
+    const collapsedIds = [];
     const collapses = document.querySelectorAll(".sheet-card .collapse");
     collapses.forEach(function (col) {
+        if (col.id) {
+            collapsedIds.push(col.id);
+        }
         if (window.bootstrap !== undefined && window.bootstrap.Collapse) {
             const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(col, { toggle: false });
             bsCollapse.hide();
@@ -3019,14 +3255,30 @@ function collapseAllCards() {
         h.classList.add("collapsed");
         h.setAttribute("aria-expanded", "false");
     });
-    saveCollapseStates();
+    localStorage.setItem("ship_collapsed_cards", JSON.stringify(collapsedIds));
 }
 
 // Card Collapse Interaction & Persistence
+let isRestoringCollapse = false;
+
+function isCardCollapsed(el) {
+    if (!el || !el.id) {
+        return false;
+    }
+    const header = document.querySelector("[data-bs-target='#" + el.id + "']");
+    if (header) {
+        return header.classList.contains("collapsed") || header.getAttribute("aria-expanded") === "false";
+    }
+    return !el.classList.contains("show");
+}
+
 function saveCollapseStates() {
+    if (isRestoringCollapse) {
+        return;
+    }
     const collapsedIds = [];
     document.querySelectorAll(".sheet-card .collapse").forEach(function (el) {
-        if (!el.classList.contains("show") && el.id) {
+        if (el.id && isCardCollapsed(el)) {
             collapsedIds.push(el.id);
         }
     });
@@ -3039,6 +3291,7 @@ function restoreCollapseStates() {
         if (saved) {
             const collapsedIds = JSON.parse(saved);
             if (Array.isArray(collapsedIds)) {
+                isRestoringCollapse = true;
                 collapsedIds.forEach(function (id) {
                     const el = document.getElementById(id);
                     if (el && el.classList.contains("show")) {
@@ -3055,9 +3308,11 @@ function restoreCollapseStates() {
                         }
                     }
                 });
+                isRestoringCollapse = false;
             }
         }
     } catch (err) {
+        isRestoringCollapse = false;
         console.error("Error restoring collapse states:", err);
     }
 }
@@ -3080,7 +3335,17 @@ function setupCollapseInteractions() {
             header.setAttribute("aria-expanded", "true");
             saveCollapseStates();
         });
+        targetEl.addEventListener("shown.bs.collapse", function () {
+            header.classList.remove("collapsed");
+            header.setAttribute("aria-expanded", "true");
+            saveCollapseStates();
+        });
         targetEl.addEventListener("hide.bs.collapse", function () {
+            header.classList.add("collapsed");
+            header.setAttribute("aria-expanded", "false");
+            saveCollapseStates();
+        });
+        targetEl.addEventListener("hidden.bs.collapse", function () {
             header.classList.add("collapsed");
             header.setAttribute("aria-expanded", "false");
             saveCollapseStates();
@@ -3370,6 +3635,19 @@ function toggleDatalist(inputIdOrEl, forceOpen) {
         return opt !== undefined && opt !== null && String(opt).trim() !== "";
     });
 
+    const targetId = input.id || "";
+    const allowsBlank = (
+        targetId === "hullSizeInput" ||
+        targetId === "hullConfigInput" ||
+        targetId === "speciesMakeInput" ||
+        listId === "hullSizesDatalist" ||
+        listId === "hullConfigDatalist" ||
+        listId === "speciesMakeDatalist"
+    );
+    if (allowsBlank) {
+        options.unshift("");
+    }
+
     if (!options || options.length === 0) {
         return;
     }
@@ -3426,7 +3704,6 @@ function toggleDatalist(inputIdOrEl, forceOpen) {
         input.dispatchEvent(new Event("input", { bubbles: true }));
         input.dispatchEvent(new Event("change", { bubbles: true }));
 
-        const targetId = input.id || "";
         if (targetId === "hullSizeInput") {
             onHullSizeChange(opt);
         } else if (targetId === "hullConfigInput") {
@@ -3474,7 +3751,12 @@ function toggleDatalist(inputIdOrEl, forceOpen) {
         currentFiltered.forEach(function (opt, idx) {
             const item = document.createElement("div");
             item.className = "dropdown-item-custom p-2 rounded text-truncate";
-            item.textContent = opt;
+            if (!opt) {
+                item.innerHTML = "&nbsp;";
+                item.title = "Empty / Blank";
+            } else {
+                item.textContent = opt;
+            }
 
             item.addEventListener("mouseenter", function () {
                 activeIndex = idx;
@@ -3728,6 +4010,8 @@ window.removeEntry = removeEntry;
 window.renderDiceHistory = renderDiceHistory;
 window.resetCardLayoutOrder = resetCardLayoutOrder;
 window.resetShipSheet = resetShipSheet;
+window.restoreCollapseStates = restoreCollapseStates;
+window.saveCollapseStates = saveCollapseStates;
 window.rollAttributeCheck = rollAttributeCheck;
 window.rollInitiative = rollInitiative;
 window.rollPilotSkillCheck = rollPilotSkillCheck;
@@ -3760,3 +4044,17 @@ window.onShieldsSkillRankChange = onShieldsSkillRankChange;
 window.rollShieldKnowledgeScienceSkillCheck = rollShieldKnowledgeScienceSkillCheck;
 window.rollShieldAcrobaticsSkillCheck = rollShieldAcrobaticsSkillCheck;
 window.updateHullDescription = updateHullDescription;
+
+window.addEventListener("beforeprint", function () {
+    document.body.classList.add("is-print-mode");
+    const textareas = document.querySelectorAll("textarea");
+    textareas.forEach(function (ta) {
+        if (typeof autoExpandTextarea === "function") {
+            autoExpandTextarea(ta);
+        }
+    });
+});
+
+window.addEventListener("afterprint", function () {
+    document.body.classList.remove("is-print-mode");
+});

@@ -158,6 +158,32 @@ h4,
   box-shadow: 0 6px 20px rgb(0 240 255 / 15%);
 }
 
+/* Sheet Cards Reorderable Flow Container */
+.cards-flow-container {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.cards-flow-container > .sheet-card {
+  flex: 0 0 100%;
+  margin-bottom: 0 !important;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (width >= 1200px) {
+  #cardShipAttributes,
+  #cardSecondaryAttributes {
+    flex: 1 1 calc(50% - 0.5rem);
+    max-width: 100%;
+    min-width: 45%;
+    width: auto;
+  }
+}
+
 .card-header-custom {
   background: linear-gradient(90deg, rgb(0 240 255 / 12%) 0%, transparent 100%);
   border-bottom: 1px solid var(--card-border, #1f2d4d);
@@ -232,6 +258,11 @@ h4,
   flex-wrap: wrap;
 }
 
+.position-core-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .position-core-card {
   border-left: 3px solid var(--accent-cyan, #00f0ff);
 }
@@ -271,6 +302,9 @@ h4,
 }
 
 .score-input-wrap {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
   width: 58px;
 }
@@ -280,6 +314,7 @@ h4,
   background: var(--input-bg, #1a243b);
   border: 1px solid var(--card-border, #1f2d4d);
   color: var(--input-text, #fff);
+  flex-grow: 1;
   font-size: 1.5rem;
   font-weight: 700;
   height: 100% !important;
@@ -333,16 +368,22 @@ input[inputmode="numeric"] {
   border: 1px solid rgb(255 255 255 / 5%);
 }
 
+.text-ability-str,
+select.text-ability-str,
+.form-select.text-ability-str {
+  color: #f43f5e !important;
+}
+
 .text-ability-dex,
 select.text-ability-dex,
 .form-select.text-ability-dex {
   color: #84cc16 !important;
 }
 
-.text-ability-wis,
-select.text-ability-wis,
-.form-select.text-ability-wis {
-  color: #8b5cf6 !important;
+.text-ability-con,
+select.text-ability-con,
+.form-select.text-ability-con {
+  color: #d97706 !important;
 }
 
 .text-ability-int,
@@ -351,10 +392,86 @@ select.text-ability-int,
   color: #3b82f6 !important;
 }
 
+.text-ability-wis,
+select.text-ability-wis,
+.form-select.text-ability-wis {
+  color: #8b5cf6 !important;
+}
+
 .text-ability-cha,
 select.text-ability-cha,
 .form-select.text-ability-cha {
   color: #ec4899 !important;
+}
+
+.core-theme-str .score-field,
+.core-theme-str .mod-field {
+  border-color: rgb(244 63 94 / 45%);
+}
+
+.core-theme-dex .score-field,
+.core-theme-dex .mod-field {
+  border-color: rgb(132 204 22 / 45%);
+}
+
+.core-theme-con .score-field,
+.core-theme-con .mod-field {
+  border-color: rgb(217 119 6 / 45%);
+}
+
+.core-theme-int .score-field,
+.core-theme-int .mod-field {
+  border-color: rgb(59 130 246 / 45%);
+}
+
+.core-theme-wis .score-field,
+.core-theme-wis .mod-field {
+  border-color: rgb(139 92 246 / 45%);
+}
+
+.core-theme-cha .score-field,
+.core-theme-cha .mod-field {
+  border-color: rgb(236 72 153 / 45%);
+}
+
+.core-theme-str .score-field:focus,
+.core-theme-str .mod-field:focus {
+  border-color: #f43f5e;
+  box-shadow: 0 0 8px rgb(244 63 94 / 40%);
+}
+
+.core-theme-dex .score-field:focus,
+.core-theme-dex .mod-field:focus {
+  border-color: #84cc16;
+  box-shadow: 0 0 8px rgb(132 204 22 / 40%);
+}
+
+.core-theme-con .score-field:focus,
+.core-theme-con .mod-field:focus {
+  border-color: #d97706;
+  box-shadow: 0 0 8px rgb(217 119 6 / 40%);
+}
+
+.core-theme-int .score-field:focus,
+.core-theme-int .mod-field:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgb(59 130 246 / 40%);
+}
+
+.core-theme-wis .score-field:focus,
+.core-theme-wis .mod-field:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 8px rgb(139 92 246 / 40%);
+}
+
+.core-theme-cha .score-field:focus,
+.core-theme-cha .mod-field:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 8px rgb(236 72 153 / 40%);
+}
+
+.print-shield-status-wrap {
+  display: none;
 }
 
 select.skill-ab-select-no-arrow {
@@ -515,6 +632,17 @@ select.skill-ab-select option[value="CHA"] {
   line-height: 1.2;
 }
 
+.ship-attr-input-wrap {
+  flex-shrink: 0;
+  max-width: 48px;
+  width: 48px;
+}
+
+.ship-attr-input-wrap .form-control {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+}
+
 .table-custom {
   --bs-table-bg: transparent;
   --bs-table-color: var(--text-color, #e2e8f0);
@@ -540,6 +668,13 @@ select.skill-ab-select option[value="CHA"] {
   padding: 0.05rem 0.15rem !important;
 }
 
+#engineerSecondarySkillSelect,
+.table-custom select,
+.table-custom .form-select {
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
 .skill-rank {
   width: 36px;
 }
@@ -560,8 +695,8 @@ select.skill-ab-select option[value="CHA"] {
 
 .skill-ability-label {
   display: inline-block;
-  font-size: 0.78rem;
-  min-width: 26px;
+  font-size: 0.72rem;
+  min-width: 24px;
 }
 
 .roll-skill-btn {
@@ -1034,94 +1169,849 @@ textarea.quirk-textarea {
 }
 
 
+/* Ruled Notebook / Writing Paper Textarea Styling */
+.notebook-textarea {
+  background-attachment: local;
+  background-image: linear-gradient(to bottom, transparent calc(1.5rem - 1px), rgb(0 240 255 / 20%) 1px);
+  background-size: 100% 1.5rem;
+  line-height: 1.5rem;
+  overflow-y: hidden;
+  padding-bottom: 0.15rem;
+  padding-top: 0.15rem;
+  resize: vertical;
+}
+
 /* ==========================================================================
-   PRINT STYLES - SINGLE PAGE FIT & NO CHOPPED CARDS
+   PRINT STYLES - SINGLE PAGE COMPACT FIT
    ========================================================================== */
 @media print {
   @page {
-    margin: 8mm 6mm;
-    size: landscape;
+    margin: 0; /* Suppresses browser native headers (URL, title) and footers (page number, date) */
+    size: letter portrait;
   }
 
   body {
     background: #fff !important;
     color: #000 !important;
-    font-size: 8.5pt !important;
-    padding-bottom: 0 !important;
+    font-size: 6.8pt !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    min-height: auto !important;
+    padding: 3mm 4mm !important;
   }
 
+  /* Interactive UI controls hidden in print view */
+  button,
+  .btn,
   .no-print,
+  .d-print-none,
   .action-bar,
   .app-header,
   .modal,
+  .modal-backdrop,
   .drag-handle,
   .card-reorder-btns,
   .btn-reorder,
-  .btn {
+  .collapse-icon,
+  .header-icon-link,
+  a.header-icon-link,
+  .custom-datalist-dropdown,
+  .roll-btn-mini,
+  .roll-button,
+  .roll-icon-btn,
+  .roll-skill-btn,
+  .fa-chevron-down,
+  .fa-chevron-up,
+  .fa-chevron-right,
+  .fa-chevron-left,
+  .fa-dice,
+  .dropdown-menu,
+  .print-hidden,
+  .empty-quirks,
+  .card-hidden-all {
     display: none !important;
+  }
+
+  #shipSheetMainContainer {
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .cards-flow-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0 !important;
+    justify-content: space-between !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
 
   .sheet-card {
     background: #fff !important;
-    border: 1px solid #666 !important;
+    border: 1px solid #777 !important;
+    border-radius: 2px !important;
     box-shadow: none !important;
-    margin-bottom: 0.4rem !important;
     break-inside: avoid !important;
+    margin-bottom: 2px !important;
+    margin-top: 0 !important;
+  }
+
+  .sheet-card.h-100 {
+    height: auto !important;
+  }
+
+  #cardPositionsCoreAttributes {
+    break-inside: auto !important;
+    margin-bottom: 2px !important;
+  }
+
+  .collapse {
+    display: block !important;
+    height: auto !important;
+    visibility: visible !important;
   }
 
   .card-header-custom {
     background: #e2e8f0 !important;
-    border-bottom: 1px solid #888 !important;
+    border-bottom: 1px solid #777 !important;
+    border-radius: 0 !important;
     color: #000 !important;
-    padding: 0.25rem 0.5rem !important;
+    font-size: 6.8pt !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+    min-height: auto !important;
+    padding: 1px 4px !important;
+  }
+
+  .card-header-custom strong,
+  .card-header-custom span {
+    font-size: 6.8pt !important;
+    line-height: 1.15 !important;
   }
 
   .card-body {
-    padding: 0.35rem 0.5rem !important;
+    padding: 2px 4px !important;
+  }
+
+  /* Card Widths in Print Flow */
+  #cardOwnerStats,
+  #cardPositionsCoreAttributes {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #cardShipAttributes,
+  #cardSecondaryAttributes {
+    flex: 1 1 49.6% !important;
+    max-width: 100% !important;
+    min-width: 48% !important;
+    width: auto !important;
+  }
+
+  #cardShipAttributes .ship-attr-main-row > .col-12,
+  #cardShipAttributes .ship-attr-col {
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    width: 33.333% !important;
+  }
+
+  #cardShipAttributes .ship-attr-subbox-row > .col-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    width: 50% !important;
+  }
+
+  #cardSecondaryAttributes .row > [class*="col-"] {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  #cardHardPoints,
+  #cardShipBays {
+    flex: 0 0 49.6% !important;
+    max-width: 49.6% !important;
+    width: 49.6% !important;
+  }
+
+  #cardShipQuirks,
+  #cardShipNotes {
+    flex: 0 0 49.6% !important;
+    max-width: 49.6% !important;
+    width: 49.6% !important;
+  }
+
+  body:has(#cardShipNotes.print-hidden) #cardShipQuirks,
+  body:has(#cardShipQuirks.empty-quirks) #cardShipNotes {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Grid Row Gutters */
+  .row {
+    --bs-gutter-x: 0.25rem !important;
+    --bs-gutter-y: 0.08rem !important;
+
+    margin: 0 !important;
+  }
+
+  .row > * {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+
+  /* Base Labels & Form Controls */
+  .form-label,
+  label {
+    color: #334155 !important;
+    font-size: 5.2pt !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0 !important;
   }
 
   .form-control,
   .form-select,
-  .input-group-text {
+  select,
+  input[type="text"],
+  input[type="number"] {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    font-size: 6pt !important;
+    height: 13px !important;
+    line-height: 13px !important;
+    min-height: 13px !important;
+    padding: 0 1px !important;
+  }
+
+  select,
+  .form-select,
+  .skill-ab-select {
+    appearance: none !important;
+    background-image: none !important;
+  }
+
+  textarea,
+  textarea.form-control,
+  .quirk-textarea {
     background: #fff !important;
     border: 1px solid #888 !important;
+    border-radius: 2px !important;
     color: #000 !important;
-    font-size: 8pt !important;
-    padding: 0.1rem 0.3rem !important;
+    font-size: 5.6pt !important;
+    height: auto !important;
+    line-height: 1.1 !important;
+    min-height: 13px !important;
+    overflow: hidden !important;
+    overflow-wrap: anywhere !important;
+    padding: 1px 2px !important;
+    resize: none !important;
+    white-space: pre-wrap !important;
+    word-break: normal !important;
   }
 
-  .attribute-score-box,
-  .officer-box,
-  .functions-list,
-  .quirk-entry,
-  .hardpoint-entry,
-  .bay-entry,
-  .ship-attr-group-box,
-  .ship-attr-subbox,
-  .ship-attr-item-row {
-    background: #f8fafc !important;
-    border-color: #cbd5e1 !important;
+  .input-group > .form-control,
+  .input-group > input,
+  .input-group > select {
+    border-radius: 0 !important;
+  }
+
+  /* Suppress placeholder text in print view */
+  input::placeholder,
+  textarea::placeholder,
+  .form-control::placeholder {
+    color: transparent !important;
+    opacity: 0 !important;
+  }
+
+  input[type="checkbox"],
+  .form-check-input {
+    accent-color: #000 !important;
+    appearance: auto !important;
+    cursor: default !important;
+    display: inline-block !important;
+    height: 9px !important;
+    margin: 0 2px 0 0 !important;
+    min-width: 9px !important;
+    opacity: 1 !important;
+    vertical-align: middle !important;
+    width: 9px !important;
+  }
+
+  table,
+  .table-custom {
+    background-color: transparent !important;
+    border-collapse: collapse !important;
     color: #000 !important;
+    margin-bottom: 1px !important;
+    width: 100% !important;
   }
 
-  .text-cyan {
-    color: #0284c7 !important;
+  table th,
+  table td,
+  .table-custom th,
+  .table-custom td {
+    background-color: transparent !important;
+    border: none !important;
+    color: #000 !important;
+    font-size: 5.2pt !important;
+    line-height: 1.05 !important;
+    padding: 0 0.5px !important;
   }
 
-  .badge-pos-core,
-  .badge-core-only,
-  .badge-pos-only {
+  .table-custom input.form-control,
+  .table-custom input {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 5.2pt !important;
+    height: 12px !important;
+    min-height: 12px !important;
+    padding: 0 1px !important;
+    text-align: center !important;
+  }
+
+  #engineerSecondarySkillSelect,
+  .table-custom select,
+  .table-custom .form-select {
+    appearance: none !important;
+    background: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 5.2pt !important;
+    font-weight: 700 !important;
+    height: 12px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+  }
+
+  .table-custom .skill-rank,
+  .table-custom .skill-ab-mod,
+  .table-custom .skill-misc-mod {
+    width: 14px !important;
+  }
+
+  .table-custom .skill-die {
+    width: 20px !important;
+  }
+
+  .table-responsive {
+    overflow: visible !important;
+  }
+
+  .badge {
     background: #e2e8f0 !important;
-    border-color: #64748b !important;
+    border: 1px solid #64748b !important;
+    border-radius: 2px !important;
     color: #000 !important;
+    font-size: 5pt !important;
+    font-weight: 700 !important;
+    padding: 0.5px 2px !important;
   }
 
-  .print-hidden,
-  .empty-quirks {
+  /* Card 15 & 16: Quirks & Notes */
+  .quirk-entry {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    margin-bottom: 1px !important;
+    padding: 1px 2px !important;
+  }
+
+  .quirk-entry .row.g-2:first-of-type > .col-12.col-md-4 {
+    flex: 0 0 35% !important;
+    max-width: 35% !important;
+    width: 35% !important;
+  }
+
+  .quirk-entry .row.g-2:first-of-type > .col-12.col-md-8 {
+    flex: 0 0 65% !important;
+    max-width: 65% !important;
+    width: 65% !important;
+  }
+
+  .quirk-entry .row.g-2:last-of-type > .col-12.col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+
+  #shipNotesTextarea,
+  .notebook-textarea {
+    background-attachment: local !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(to bottom, transparent calc(13px - 1px), #93c5fd 1px) !important;
+    background-size: 100% 13px !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    color: #000 !important;
+    font-size: 5.8pt !important;
+    height: auto !important;
+    line-height: 13px !important;
+    min-height: 39px !important;
+    overflow: hidden !important;
+    padding: 0 4px !important;
+    print-color-adjust: exact !important;
+    resize: none !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  /* Card 1: Owner Stats (4 cols per row) */
+  #collapseOwnerStats .col-12.col-sm-6.col-md-4.col-lg-3 {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    padding: 1px 2px !important;
+    width: 25% !important;
+  }
+
+  /* Card 2: Ship Attributes (3 equal columns) */
+  #collapseShipAttributes .row > .col-12.col-md-4 {
+    flex: 0 0 33.3333% !important;
+    max-width: 33.3333% !important;
+    padding: 1px 2px !important;
+    width: 33.3333% !important;
+  }
+
+  .ship-attr-group-box {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    color: #000 !important;
+    margin: 0 !important;
+    padding: 1px 2px !important;
+  }
+
+  .ship-attr-group-header {
+    font-size: 5.8pt !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1px !important;
+  }
+
+  .ship-attr-section-label {
+    color: #334155 !important;
+    font-size: 5pt !important;
+    line-height: 1 !important;
+    margin-bottom: 1px !important;
+  }
+
+  .ship-attr-subbox {
+    background: #f1f5f9 !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    padding: 1px 2px !important;
+  }
+
+  .ship-attr-subbox-label {
+    color: #334155 !important;
+    font-size: 4.8pt !important;
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .ship-attr-subbox-input {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 6.2pt !important;
+    height: 13px !important;
+    margin: 0 !important;
+    min-height: 13px !important;
+    padding: 0 1px !important;
+  }
+
+  .ship-attr-item-row {
+    background: #f1f5f9 !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    margin-bottom: 1px !important;
+    padding: 1px 2px !important;
+  }
+
+  .ship-attr-formula {
+    color: #64748b !important;
+    font-size: 4.6pt !important;
+    line-height: 1 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .ship-attr-input-wrap {
+    flex-shrink: 0 !important;
+    max-width: 22px !important;
+    width: 22px !important;
+  }
+
+  .ship-attr-input-wrap .form-control {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 6pt !important;
+    height: 13px !important;
+    min-height: 13px !important;
+    padding: 0 1px !important;
+  }
+
+  /* Card 3: Positions & Core Attributes (4 columns) */
+  .position-core-cards-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    margin-bottom: 1px !important;
+  }
+
+  .position-core-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+  }
+
+  .position-core-cards-row > .position-core-column,
+  .position-core-cards-row > div {
+    flex: 0 0 24.6% !important;
+    max-width: 24.6% !important;
+    padding: 0 1px !important;
+    width: 24.6% !important;
+  }
+
+  .position-core-card {
+    border: 1px solid #777 !important;
+    border-radius: 2px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .position-core-card .card-header-custom {
+    font-size: 6.2pt !important;
+    padding: 1px 3px !important;
+  }
+
+  .badge-pos-only,
+  .badge-pos-core,
+  .badge-core-only {
+    font-size: 5pt !important;
+    line-height: 1.1 !important;
+    padding: 0 2px !important;
+  }
+
+  .officer-box,
+  .attribute-score-box,
+  .functions-list {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    margin-bottom: 1px !important;
+    padding: 1px 2px !important;
+  }
+
+  .score-input-wrap {
+    align-self: stretch !important;
+    display: flex !important;
+    flex: 0 0 25% !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    max-width: 25% !important;
+    width: 25% !important;
+  }
+
+  input.score-field {
+    align-self: stretch !important;
+    appearance: none !important;
+    background: #fff !important;
+    border-radius: 2px !important;
+    box-sizing: border-box !important;
+    color: #000 !important;
+    display: block !important;
+    flex: 1 1 100% !important;
+    flex-grow: 1 !important;
+    font-size: 11.5pt !important;
+    font-weight: 700 !important;
+    height: 100% !important;
+    line-height: normal !important;
+    margin: 0 !important;
+    min-height: 26px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .mod-display-wrap {
+    align-self: stretch !important;
+    display: flex !important;
+    flex: 0 0 27% !important;
+    height: 100% !important;
+    max-width: 27% !important;
+    width: 27% !important;
+  }
+
+  input.mod-field {
+    align-self: stretch !important;
+    appearance: none !important;
+    background: #fff !important;
+    border-radius: 2px !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    flex-grow: 1 !important;
+    font-size: 7.2pt !important;
+    font-weight: 700 !important;
+    height: 100% !important;
+    line-height: normal !important;
+    margin: 0 !important;
+    min-height: 13px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .attribute-sub-stats,
+  .attribute-sub-stats div {
+    color: #475569 !important;
+    font-size: 4.8pt !important;
+    line-height: 1.15 !important;
+  }
+
+  .core-theme-str input.score-field,
+  .core-theme-str input.mod-field {
+    border: 1px solid #f43f5e !important;
+  }
+
+  .core-theme-str input.mod-field {
+    color: #b91c1c !important;
+  }
+
+  .core-theme-dex input.score-field,
+  .core-theme-dex input.mod-field {
+    border: 1px solid #84cc16 !important;
+  }
+
+  .core-theme-dex input.mod-field {
+    color: #4d7c0f !important;
+  }
+
+  .core-theme-con input.score-field,
+  .core-theme-con input.mod-field {
+    border: 1px solid #d97706 !important;
+  }
+
+  .core-theme-con input.mod-field {
+    color: #b45309 !important;
+  }
+
+  .core-theme-int input.score-field,
+  .core-theme-int input.mod-field {
+    border: 1px solid #3b82f6 !important;
+  }
+
+  .core-theme-int input.mod-field {
+    color: #1d4ed8 !important;
+  }
+
+  .core-theme-wis input.score-field,
+  .core-theme-wis input.mod-field {
+    border: 1px solid #8b5cf6 !important;
+  }
+
+  .core-theme-wis input.mod-field {
+    color: #6d28d9 !important;
+  }
+
+  .core-theme-cha input.score-field,
+  .core-theme-cha input.mod-field {
+    border: 1px solid #ec4899 !important;
+  }
+
+  .core-theme-cha input.mod-field {
+    color: #be185d !important;
+  }
+
+  .print-shield-status-wrap {
+    display: block !important;
+  }
+
+  .print-shield-status-input {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 6pt !important;
+    height: 13px !important;
+    line-height: 13px !important;
+    min-height: 13px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 44px !important;
+  }
+
+  .functions-list .small.fw-bold {
+    font-size: 5pt !important;
+    line-height: 1 !important;
+    margin-bottom: 1px !important;
+  }
+
+  .function-row {
+    border-bottom: 1px solid #e2e8f0 !important;
+    min-height: 13px !important;
+    padding: 0.5px 0 !important;
+  }
+
+  .function-name {
+    font-size: 5.5pt !important;
+    line-height: 1.1 !important;
+  }
+
+  .function-misc-field {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 5.5pt !important;
+    height: 13px !important;
+    min-height: 13px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 20px !important;
+  }
+
+  .function-total-field {
+    appearance: none !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #555 !important;
+    border-radius: 0 !important;
+    font-size: 5.8pt !important;
+    font-weight: 700 !important;
+    height: 13px !important;
+    min-height: 13px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 22px !important;
+  }
+
+  .skill-ability-label,
+  .skill-ab-select,
+  span[class*="text-ability-"],
+  select[class*="text-ability-"] {
+    font-size: 5.2pt !important;
+    line-height: 1 !important;
+  }
+
+  /* Cards 12 & 13: Hard Points & Bays */
+  #hardPointsCountBadge,
+  #shipBaysCountBadge {
     display: none !important;
   }
 
-  .position-core-cards-row {
-    margin-bottom: 0.3rem !important;
+  #hardPointsTwoColumnContainer,
+  #baysTwoColumnContainer {
+    --bs-gutter-x: 0.2rem !important;
+    --bs-gutter-y: 0.1rem !important;
+  }
+
+  #hardPointsTwoColumnContainer > div,
+  #baysTwoColumnContainer > div {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding: 1px 2px !important;
+    width: 50% !important;
+  }
+
+  .hardpoint-entry,
+  .bay-entry {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 2px !important;
+    margin-bottom: 1px !important;
+    padding: 1px 2px !important;
+  }
+
+  .hardpoint-entry label,
+  .bay-entry label {
+    font-size: 5.2pt !important;
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Card 14: Secondary Attributes (4 cols per row) */
+  #collapseSecondaryAttributes .col-12.col-sm-6.col-md-4.col-lg-3 {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    padding: 1px 2px !important;
+    width: 25% !important;
+  }
+
+  /* High Contrast Print Colors */
+  .text-cyan,
+  .text-info {
+    color: #0284c7 !important;
+  }
+
+  .text-warning {
+    color: #b45309 !important;
+  }
+
+  .text-danger {
+    color: #b91c1c !important;
+  }
+
+  .text-success {
+    color: #15803d !important;
+  }
+
+  .text-light,
+  .text-white {
+    color: #000 !important;
+  }
+
+  .text-muted,
+  .text-secondary {
+    color: #334155 !important;
+  }
+
+  .text-ability-str {
+    color: #b91c1c !important;
+  }
+
+  .text-ability-dex {
+    color: #4d7c0f !important;
+  }
+
+  .text-ability-con {
+    color: #b45309 !important;
+  }
+
+  .text-ability-int {
+    color: #1d4ed8 !important;
+  }
+
+  .text-ability-wis {
+    color: #6d28d9 !important;
+  }
+
+  .text-ability-cha {
+    color: #be185d !important;
   }
 }
+
