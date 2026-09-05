@@ -200,6 +200,231 @@ const FALLBACK_HULL_CONFIGS = [
     "Dreadnoughts", "Fighters", "Frigates", "Freighters", "Industrial", "Shuttles"
 ];
 
+const FALLBACK_HULL_CONFIG_OBJS = [
+    {
+        Advantages: "Cargo Space is one ship size modifier higher. Common bonus: -1 to Procure Diff and 50% less time/cost to repair.",
+        AverageCost: "$12 Million",
+        AverageSize: "Medium (Small - Large)",
+        Description: "The 'pack mule' of the galaxy. Common cargo transport vessel found everywhere.",
+        Disadvantages: "-2 to Engines, -1 to Weapons, -2 Hard Points, -1 Bay (occupied by extra Cargo Space)",
+        Mods: [
+            { Mod: "-2", Target: "Engines" },
+            { Mod: "-1", Target: "Weapons" },
+            { Mod: "-2", Target: "Hard_Points" },
+            { Mod: "-1", Target: "Bays" }
+        ],
+        Name: "Barges",
+        ProcureDiff: 0
+    },
+    {
+        Advantages: "+2 Electronics, +2 Engines, +1 Non-Weapon Hard Point, Can pick one Ship Function for free without taking Customization Points.",
+        AverageCost: "$120 Million",
+        AverageSize: "Large",
+        Description: "Flexible, heavy-hitting machines of war used as a counter for smaller ships and bandits.",
+        Disadvantages: "Cargo Capacity is one size lower, Passenger Cap is 8, -5 Attribute Points, -1 Customization point (Minimum 1)",
+        Mods: [
+            { Mod: "+2", Target: "Electronics" },
+            { Mod: "+2", Target: "Engines" },
+            { Mod: "+1", Target: "Hard_Points" },
+            { Mod: "-1", Target: "Customization" }
+        ],
+        Name: "Battle Cruisers",
+        ProcureDiff: 3
+    },
+    {
+        Advantages: "+2 Weapons, +1 Structure, +1 Engines, Gains 'Bombard' function for free, Gains one more Ship Function of choice for free, +1 Hard Point (Weapon Only).",
+        AverageCost: "$384 Million",
+        AverageSize: "Huge (or Gargantuan)",
+        Description: "Massive war machines and the backbone of militaries, built for large-scale conflict.",
+        Disadvantages: "Cargo Capacity and Passenger Cap is one size smaller, -5 Attribute Points, -1 Customization Point (Minimum 1)",
+        Mods: [
+            { Mod: "+2", Target: "Weapons" },
+            { Mod: "+1", Target: "Structure" },
+            { Mod: "+1", Target: "Engines" },
+            { Mod: "+1", Target: "Hard_Points" },
+            { Mod: "-1", Target: "Customization" }
+        ],
+        Name: "Battle Ships",
+        ProcureDiff: 4
+    },
+    {
+        Advantages: "+1 Bays, +2 Sensors, +2 Electronics, Passenger capacity: 864, Special Position: Supreme Commander (system-wide leadership bonus), Choose any one Ship Function installed at no cost.",
+        AverageCost: "$3.2 Billion",
+        AverageSize: "Colossal",
+        Description: "Massive command ships and super carriers acting as an entire base of operations.",
+        Disadvantages: "-5 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimum 1)",
+        Mods: [
+            { Mod: "+1", Target: "Bays" },
+            { Mod: "+2", Target: "Sensors" },
+            { Mod: "+2", Target: "Electronics" },
+            { Mod: "-2", Target: "Engines" },
+            { Mod: "-2", Target: "Hard_Points" },
+            { Mod: "-1", Target: "Customization" }
+        ],
+        Name: "Capital",
+        ProcureDiff: 5
+    },
+    {
+        Advantages: "+2 Sensors, +2 Electronics, Built-in Repair Facility for ships two sizes and smaller. Can hold 6 Large ships by default. Special Position: Field Commander.",
+        AverageCost: "$1.2 Billion",
+        AverageSize: "Gargantuan (Huge - Colossal)",
+        Description: "Ships that provide fleet mobility, designed to carry, deploy, and maintain smaller ships and drones.",
+        Disadvantages: "-5 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimum 1)",
+        Mods: [
+            { Mod: "+2", Target: "Sensors" },
+            { Mod: "+2", Target: "Electronics" },
+            { Mod: "-2", Target: "Engines" },
+            { Mod: "-4", Target: "Hard_Points" },
+            { Mod: "-1", Target: "Bays" },
+            { Mod: "-1", Target: "Customization" }
+        ],
+        Name: "Carriers",
+        ProcureDiff: 4
+    },
+    {
+        Advantages: "+1 Hard Point or +1 Bay, +2 Engines or +2 Electronics, Pick one free Ship Function.",
+        AverageCost: "$40 Million",
+        AverageSize: "Medium",
+        Description: "Flexible combat vessels used as police craft or military portal/recon.",
+        Disadvantages: "-3 Attribute Points",
+        Mods: [
+            { Mod: "+1", Target: "Hard_Points" },
+            { Mod: "+1", Target: "Bays" },
+            { Mod: "+2", Target: "Engines" },
+            { Mod: "+2", Target: "Electronics" }
+        ],
+        Name: "Cruisers (Military)",
+        ProcureDiff: 2
+    },
+    {
+        Advantages: "+2 Engines, +2 Sensors, Luxury passenger bay (accommodates up to 16 passengers).",
+        AverageCost: "$10 Million",
+        AverageSize: "Medium",
+        Description: "Demilitarized or VIP luxury cruiser hulls with upgraded accommodations.",
+        Disadvantages: "-1 Structure, -1 Hard Point, -2 Attribute Points",
+        Mods: [
+            { Mod: "+2", Target: "Engines" },
+            { Mod: "+2", Target: "Sensors" },
+            { Mod: "-1", Target: "Structure" },
+            { Mod: "-1", Target: "Hard_Points" }
+        ],
+        Name: "Cruisers (Civilian)",
+        ProcureDiff: 0
+    },
+    {
+        Advantages: "Can be operated without a pilot. Swarm bonuses apply when 4+ are teamed. Requires a Drone Bay.",
+        AverageCost: "$100,000",
+        AverageSize: "Fine (Fine - Small)",
+        Description: "AI-controlled machines ranging from military swarms to personal defense units.",
+        Disadvantages: "-1 across all Attributes",
+        Mods: [
+            { Mod: "-1", Target: "Weapons" },
+            { Mod: "-1", Target: "Shields" },
+            { Mod: "-1", Target: "Engines" },
+            { Mod: "-1", Target: "Structure" },
+            { Mod: "-1", Target: "Sensors" },
+            { Mod: "-1", Target: "Electronics" }
+        ],
+        Name: "Drones",
+        ProcureDiff: 0
+    },
+    {
+        Advantages: "+2 Hard Points, All weapons considered Gimbaled (+1 Targeting), No penalties for targeting smaller craft.",
+        AverageCost: "$38 Million",
+        AverageSize: "Medium",
+        Description: "Heavily armed medium combat craft designed specifically to counter smaller swarms.",
+        Disadvantages: "Illegal to own (Procure Diff +1), -3 Attribute Points, -1 Bay, Weapon Hard Points geared for 'Small' weapon size",
+        Mods: [
+            { Mod: "+2", Target: "Hard_Points" },
+            { Mod: "-1", Target: "Bays" }
+        ],
+        Name: "Destroyers",
+        ProcureDiff: 3
+    },
+    {
+        Advantages: "Super gigantic hyper-focused energy cannon (100x Huge range, deals 24d10 * 10 damage; cooldown (1d4 + 2) - Electronics Mod rounds).",
+        AverageCost: "$3 Billion",
+        AverageSize: "Gargantuan (Huge - Colossal)",
+        Description: "Gargantuan station busters fitted with hyper-focused energy cannons.",
+        Disadvantages: "-2 Engines, -5 Ability Points, -4 Hard Points, -3 Bays, Cannot cloak",
+        Mods: [
+            { Mod: "-2", Target: "Engines" },
+            { Mod: "-4", Target: "Hard_Points" },
+            { Mod: "-3", Target: "Bays" }
+        ],
+        Name: "Dreadnoughts",
+        ProcureDiff: 5
+    },
+    {
+        Advantages: "+2 Engines, Gains Feint Ship Function for free.",
+        AverageCost: "$480,000",
+        AverageSize: "Fine - Diminutive",
+        Description: "Agile single-pilot (or small crew) combat craft.",
+        Disadvantages: "-2 Structure, Passenger Cap is 1",
+        Mods: [
+            { Mod: "+2", Target: "Engines" },
+            { Mod: "-2", Target: "Structure" }
+        ],
+        Name: "Fighters",
+        ProcureDiff: 1
+    },
+    {
+        Advantages: "+1 to Sensors, +1 Attribute Point, 50% less cost/time spent on repairs.",
+        AverageCost: "$4 - $36 Million",
+        AverageSize: "Small (Small - Medium)",
+        Description: "Common police craft or VIP transport throughout the Ring.",
+        Disadvantages: "-1 to Weapons",
+        Mods: [
+            { Mod: "+1", Target: "Sensors" },
+            { Mod: "-1", Target: "Weapons" }
+        ],
+        Name: "Frigates",
+        ProcureDiff: 0
+    },
+    {
+        Advantages: "Converted Cargo Bays provide double space. +2 Bays. Capacity 16,000 Units or one size higher. Tech 3 comes with Beam function. 50% repair discount.",
+        AverageCost: "$100 Million",
+        AverageSize: "Huge",
+        Description: "Industrial-scale cargo transportation ships.",
+        Disadvantages: "-3 Engines, -2 Attribute Points",
+        Mods: [
+            { Mod: "+2", Target: "Bays" },
+            { Mod: "-3", Target: "Engines" }
+        ],
+        Name: "Freighters",
+        ProcureDiff: 1
+    },
+    {
+        Advantages: "Free Industrial Facility and Refinery Facility. Tech 3 comes with Beam function. Free Grapple function.",
+        AverageCost: "$12 - $108 Million",
+        AverageSize: "Large (Medium - Huge)",
+        Description: "Mining and refining factory ships for asteroid mining and colony development.",
+        Disadvantages: "-2 Engines, -2 Attribute Points, -3 Bays",
+        Mods: [
+            { Mod: "-2", Target: "Engines" },
+            { Mod: "-3", Target: "Bays" }
+        ],
+        Name: "Industrial",
+        ProcureDiff: 0
+    },
+    {
+        Advantages: "+4 Engines, +2 Sensors, Basic Auto Pilot (AI +1), +1 Passenger for Diminutive, +2 for Tiny, +3 for Small.",
+        AverageCost: "$2 Million",
+        AverageSize: "Tiny (Diminutive - Small)",
+        Description: "Personal transport vehicles suited for station transfers or atmospheric entry.",
+        Disadvantages: "-2 Structure, -2 Electronics, -1 Hard Points",
+        Mods: [
+            { Mod: "+4", Target: "Engines" },
+            { Mod: "+2", Target: "Sensors" },
+            { Mod: "-2", Target: "Structure" },
+            { Mod: "-2", Target: "Electronics" },
+            { Mod: "-1", Target: "Hard_Points" }
+        ],
+        Name: "Shuttles",
+        ProcureDiff: 0
+    }
+];
+
 const FALLBACK_SPECIES = [
     "Generic", "Human", "Volar", "Grayling", "Lepidonain", "Cryous", "Ovex",
     "Aconian", "Murid", "Avisari", "Khepri", "Sayor", "Kurgian",
@@ -484,6 +709,7 @@ function normalizeSize(s) {
 // State Variables
 let shipData = {
     configurations: FALLBACK_HULL_CONFIGS,
+    configurationsRaw: FALLBACK_HULL_CONFIG_OBJS,
     ftlDrives: FALLBACK_FTL_DRIVES,
     hullSizes: FALLBACK_HULL_SIZES.map(normalizeSize),
     quirks: FALLBACK_QUIRKS,
@@ -492,7 +718,10 @@ let shipData = {
 
 let hardPointRowsCount = 0;
 let bayRowsCount = 0;
+let customizationRowsCount = 0;
 let quirkRowsCount = 0;
+let previousHullConfigDesc = "";
+let isApplyingHullConfigProgrammatically = false;
 let diceRollHistory = [];
 let currentRollAction = "Check";
 let currentRollBonus = 0;
@@ -650,6 +879,12 @@ document.addEventListener("DOMContentLoaded", function () {
     recalculateShipAttributes();
     updateTableOfContents();
     initDragAndDrop();
+    if (window.bootstrap !== undefined && window.bootstrap.Tooltip) {
+        const tooltipElements = document.querySelectorAll("[data-bs-toggle=\"tooltip\"]");
+        tooltipElements.forEach(function (tooltipTriggerEl) {
+            return new window.bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    }
 });
 
 // Fetch Reference Data from Backend
@@ -671,6 +906,7 @@ function fetchSpaceshipReferenceData() {
                 shipData.hullSizes = data.hull_sizes.map(normalizeSize);
             }
             if (data.hull_configurations && Array.isArray(data.hull_configurations)) {
+                shipData.configurationsRaw = data.hull_configurations;
                 shipData.configurations = data.hull_configurations.map(function (c) {
                     if (typeof c === "string") {
                         return c;
@@ -724,11 +960,21 @@ function fetchSpaceshipReferenceData() {
             updateCustomizationPoints();
             updateHardPointsBaysDisplay();
             recalculateShipAttributes();
+            const cfgVal = getInputValue("hullConfigInput", "");
+            if (cfgVal) {
+                const cfgObj = getHullConfigObject(cfgVal);
+                updateHullConfigTooltip(cfgObj);
+            }
         })
         .catch(function (err) {
             console.warn("Could not fetch remote reference data, using fallbacks:", err);
             populateReferenceDatalists();
             buildThemeModals();
+            const cfgVal = getInputValue("hullConfigInput", "");
+            if (cfgVal) {
+                const cfgObj = getHullConfigObject(cfgVal);
+                updateHullConfigTooltip(cfgObj);
+            }
         });
 }
 
@@ -828,8 +1074,204 @@ function formatModifier(mod) {
     return String(mod);
 }
 
+const CORE_ATTRIBUTES = ["weapons", "shields", "engines", "structure", "sensors", "electronics"];
+
+function getHullConfigObject(configName) {
+    if (!configName) {
+        return null;
+    }
+    const cleanName = configName.trim().toLowerCase();
+    let list = shipData.configurationsRaw;
+    if (!list || !Array.isArray(list) || list.length === 0) {
+        list = FALLBACK_HULL_CONFIG_OBJS;
+    }
+    return list.find(function (c) {
+        const n = c.Name || c.name || "";
+        return n.toLowerCase() === cleanName;
+    }) || null;
+}
+
+function getAllHullConfigObjects() {
+    let list = shipData.configurationsRaw;
+    if (!list || !Array.isArray(list) || list.length === 0) {
+        list = FALLBACK_HULL_CONFIG_OBJS;
+    }
+    return list;
+}
+
+function getHullConfigTargetMod(configObj, targetName) {
+    if (!configObj || !configObj.Mods || !Array.isArray(configObj.Mods)) {
+        return 0;
+    }
+    const targetClean = targetName.toLowerCase();
+    const modItem = configObj.Mods.find(function (m) {
+        const targetStr = m.Target || m.target || "";
+        return targetStr.toLowerCase() === targetClean;
+    });
+    if (!modItem) {
+        return 0;
+    }
+    const val = parseInt(modItem.Mod || modItem.mod, 10);
+    if (Number.isNaN(val)) {
+        return 0;
+    }
+    return val;
+}
+
+function getHullConfigCoreMod(attrName) {
+    const configInput = document.getElementById("hullConfigInput");
+    if (!configInput || !configInput.value) {
+        return 0;
+    }
+    const configObj = getHullConfigObject(configInput.value);
+    return getHullConfigTargetMod(configObj, attrName);
+}
+
+function updateHullConfigTooltip(configObj) {
+    const icon = document.getElementById("hullConfigTooltipIcon");
+    if (!icon) {
+        return;
+    }
+    let tipContent = "<em>No configuration selected</em>";
+    if (configObj) {
+        const adv = configObj.Advantages || configObj.advantages || "None";
+        const disadv = configObj.Disadvantages || configObj.disadvantages || "None";
+        const cfgName = configObj.Name || configObj.name || "";
+        tipContent = "<div style='text-align: left;'><div class='mb-1'><strong class='text-info'>" + cfgName + "</strong></div><div><strong style='color: #4ade80;'>Advantages:</strong> " + adv + "</div><div class='mt-1'><strong style='color: #f87171;'>Disadvantages:</strong> " + disadv + "</div></div>";
+    }
+    icon.setAttribute("data-bs-original-title", tipContent);
+    icon.setAttribute("title", tipContent);
+    if (window.bootstrap !== undefined && window.bootstrap.Tooltip) {
+        const inst = window.bootstrap.Tooltip.getInstance(icon);
+        if (inst) {
+            inst.dispose();
+        }
+        new window.bootstrap.Tooltip(icon, { html: true });
+    }
+}
+
+function updateHullConfigNotes(newConfigObj) {
+    const textarea = document.getElementById("shipNotesTextarea");
+    if (!textarea) {
+        return;
+    }
+    let newDesc = "";
+    if (newConfigObj) {
+        newDesc = newConfigObj.Description || newConfigObj.description || "";
+    }
+    let newDescBlock = "";
+    if (newDesc) {
+        newDescBlock = "Description: " + newDesc;
+    }
+
+    let text = textarea.value;
+
+    if (previousHullConfigDesc && text.includes("Description: " + previousHullConfigDesc)) {
+        text = text.replace("Description: " + previousHullConfigDesc, newDescBlock);
+    } else {
+        let replaced = false;
+        const allConfigs = getAllHullConfigObjects();
+        for (let i = 0; i < allConfigs.length; i += 1) {
+            const knownDesc = allConfigs[i].Description || allConfigs[i].description || "";
+            if (knownDesc && text.includes("Description: " + knownDesc)) {
+                text = text.replace("Description: " + knownDesc, newDescBlock);
+                replaced = true;
+                break;
+            }
+        }
+        if (!replaced && newDescBlock) {
+            if (text.trim() === "") {
+                text = newDescBlock;
+            } else {
+                text = newDescBlock + "\n\n" + text;
+            }
+        }
+    }
+
+    text = text.replace(/^\n+/, "").replace(/\n{3,}/g, "\n\n");
+    textarea.value = text;
+    previousHullConfigDesc = newDesc;
+    if (typeof autoExpandTextarea === "function") {
+        autoExpandTextarea(textarea);
+    }
+}
+
+function updateCoreAttributeScoresWithHullConfig(applyMods) {
+    const switchEl = document.getElementById("applyHullConfigModsSwitch");
+    let apply = false;
+    if (applyMods !== undefined) {
+        apply = applyMods;
+    } else if (switchEl) {
+        apply = switchEl.checked;
+    }
+
+    isApplyingHullConfigProgrammatically = true;
+    CORE_ATTRIBUTES.forEach(function (attr) {
+        const input = document.getElementById(attr + "ScoreInput");
+        if (!input) {
+            return;
+        }
+
+        if (input.dataset.baseScore === undefined) {
+            input.dataset.baseScore = input.value.trim();
+        }
+
+        const baseStr = input.dataset.baseScore;
+        if (baseStr === "") {
+            input.value = "";
+            onAttributeScoreChange(attr, "");
+            return;
+        }
+
+        const baseNum = parseInt(baseStr, 10);
+        if (Number.isNaN(baseNum)) {
+            return;
+        }
+
+        if (apply) {
+            const mod = getHullConfigCoreMod(attr);
+            const newScore = baseNum + mod;
+            input.value = String(newScore);
+            onAttributeScoreChange(attr, String(newScore));
+        } else {
+            input.value = String(baseNum);
+            onAttributeScoreChange(attr, String(baseNum));
+        }
+    });
+    isApplyingHullConfigProgrammatically = false;
+}
+
+function onToggleApplyHullConfigMods(isChecked) {
+    updateCoreAttributeScoresWithHullConfig(isChecked);
+}
+
 // Attribute Score Changes Handler
 function onAttributeScoreChange(attrName, scoreVal) {
+    const input = document.getElementById(attrName + "ScoreInput");
+    if (input && !isApplyingHullConfigProgrammatically) {
+        let trimmed = "";
+        if (scoreVal !== undefined && scoreVal !== null) {
+            trimmed = String(scoreVal).trim();
+        }
+        if (trimmed === "") {
+            input.dataset.baseScore = "";
+        } else {
+            const switchEl = document.getElementById("applyHullConfigModsSwitch");
+            const apply = Boolean(switchEl && switchEl.checked);
+            const parsed = parseInt(trimmed, 10);
+            if (!Number.isNaN(parsed)) {
+                if (apply) {
+                    const mod = getHullConfigCoreMod(attrName);
+                    input.dataset.baseScore = String(parsed - mod);
+                } else {
+                    input.dataset.baseScore = String(parsed);
+                }
+            } else {
+                input.dataset.baseScore = trimmed;
+            }
+        }
+    }
+
     const mod = getScoreModifier(scoreVal);
     const modDisplay = document.getElementById(attrName + "ModDisplay");
     if (modDisplay) {
@@ -845,6 +1287,8 @@ function updateHardPointsBaysDisplay() {
     }
     const sizeInput = document.getElementById("hullSizeInput");
     const classInput = document.getElementById("shipClassTypeSelect");
+    const configInput = document.getElementById("hullConfigInput");
+    const coreSelect = document.getElementById("coreLevelSelect");
 
     let sizeName = "";
     if (sizeInput && sizeInput.value) {
@@ -867,23 +1311,203 @@ function updateHardPointsBaysDisplay() {
     if (classInput && classInput.value) {
         classVal = classInput.value.trim().toLowerCase();
     }
-    let cust = 0;
-    if (matched.customization_points !== undefined) {
-        cust = matched.customization_points;
+
+    let configVal = "";
+    if (configInput && configInput.value) {
+        configVal = configInput.value.trim();
+    }
+    const configObj = getHullConfigObject(configVal);
+    const hpMod = getHullConfigTargetMod(configObj, "Hard_Points");
+    const bayMod = getHullConfigTargetMod(configObj, "Bays");
+    const custMod = getHullConfigTargetMod(configObj, "Customization");
+
+    let coreLevel = NaN;
+    if (coreSelect && coreSelect.value) {
+        coreLevel = parseInt(coreSelect.value, 10);
+    }
+    let coreCust = 0;
+    if (!Number.isNaN(coreLevel) && coreLevel >= 1) {
+        coreCust = coreLevel - 1;
     }
 
-    let hpStr = "[" + matched.civ_hard_points + " / " + matched.mil_hard_points + "] HP";
-    let bayStr = "[" + matched.civ_bays + " / " + matched.mil_bays + "] Bays";
+    const baseCivHp = (matched.civ_hard_points !== undefined ? matched.civ_hard_points : 0);
+    const baseMilHp = (matched.mil_hard_points !== undefined ? matched.mil_hard_points : 0);
+    const baseCivBays = (matched.civ_bays !== undefined ? matched.civ_bays : 0);
+    const baseMilBays = (matched.mil_bays !== undefined ? matched.mil_bays : 0);
+    const baseCust = (matched.customization_points !== undefined ? matched.customization_points : 0);
+
+    const effCivHp = Math.max(0, baseCivHp + hpMod);
+    const effMilHp = Math.max(0, baseMilHp + hpMod);
+    const effCivBays = Math.max(0, baseCivBays + bayMod);
+    const effMilBays = Math.max(0, baseMilBays + bayMod);
+    const effCust = Math.max(0, baseCust + coreCust + custMod);
+
+    let hpStr = "[" + effCivHp + " / " + effMilHp + "] HP";
+    let bayStr = "[" + effCivBays + " / " + effMilBays + "] Bays";
 
     if (classVal === "civilian") {
-        hpStr = "[" + matched.civ_hard_points + "] HP";
-        bayStr = "[" + matched.civ_bays + "] Bays";
+        hpStr = "[" + effCivHp + "] HP";
+        bayStr = "[" + effCivBays + "] Bays";
     } else if (classVal === "military") {
-        hpStr = "[" + matched.mil_hard_points + "] HP";
-        bayStr = "[" + matched.mil_bays + "] Bays";
+        hpStr = "[" + effMilHp + "] HP";
+        bayStr = "[" + effMilBays + "] Bays";
     }
 
-    secHpEl.value = hpStr + " / " + bayStr + " / " + cust + " Cust.";
+    secHpEl.value = hpStr + " / " + bayStr + " / " + effCust + " Cust.";
+}
+
+function isEntryEmpty(entry) {
+    if (!entry) {
+        return true;
+    }
+    const fields = entry.querySelectorAll("input[type='text'], textarea");
+    for (let i = 0; i < fields.length; i += 1) {
+        if (fields[i].value && fields[i].value.trim() !== "") {
+            return false;
+        }
+    }
+    return true;
+}
+
+function rebalanceTwoColumnEntries(leftColId, rightColId, entryClass, labelPrefix, badgeId) {
+    const leftCol = document.getElementById(leftColId);
+    const rightCol = document.getElementById(rightColId);
+    if (!leftCol || !rightCol) {
+        return;
+    }
+    const allEntries = Array.from(document.querySelectorAll("." + entryClass));
+    leftCol.innerHTML = "";
+    rightCol.innerHTML = "";
+
+    allEntries.forEach(function (entry, index) {
+        const num = index + 1;
+        const label = entry.querySelector("label");
+        if (label && label.textContent && label.textContent.startsWith(labelPrefix)) {
+            label.textContent = labelPrefix + " #" + num;
+        }
+        if (index % 2 === 0) {
+            leftCol.appendChild(entry);
+        } else {
+            rightCol.appendChild(entry);
+        }
+    });
+
+    if (badgeId) {
+        setElementText(badgeId, allEntries.length + " Total");
+    }
+}
+
+function syncCardEntriesCount(type, targetCount) {
+    let entryClass = "";
+    let leftColId = "";
+    let rightColId = "";
+    let labelPrefix = "";
+    let badgeId = "";
+    let addRowFn = null;
+
+    if (type === "hardPoints") {
+        entryClass = "hardpoint-entry";
+        leftColId = "hardPointsColLeft";
+        rightColId = "hardPointsColRight";
+        labelPrefix = "Hard Point";
+        badgeId = "hardPointsCountBadge";
+        addRowFn = addHardPointRow;
+    } else if (type === "bays") {
+        entryClass = "bay-entry";
+        leftColId = "baysColLeft";
+        rightColId = "baysColRight";
+        labelPrefix = "Bay";
+        badgeId = "shipBaysCountBadge";
+        addRowFn = addBayRow;
+    } else if (type === "customization") {
+        entryClass = "customization-entry";
+        leftColId = "customizationColLeft";
+        rightColId = "customizationColRight";
+        labelPrefix = "Customization Slot";
+        badgeId = "customizationCountBadge";
+        addRowFn = addCustomizationRow;
+    } else {
+        return;
+    }
+
+    const currentEntries = Array.from(document.querySelectorAll("." + entryClass));
+    let currentCount = currentEntries.length;
+
+    if (currentCount < targetCount && addRowFn) {
+        const toAdd = targetCount - currentCount;
+        for (let i = 0; i < toAdd; i += 1) {
+            addRowFn();
+        }
+    } else if (currentCount > targetCount) {
+        for (let j = currentEntries.length - 1; j >= 0; j -= 1) {
+            if (currentCount <= targetCount) {
+                break;
+            }
+            const entry = currentEntries[j];
+            if (isEntryEmpty(entry)) {
+                entry.remove();
+                currentCount -= 1;
+            }
+        }
+    }
+
+    rebalanceTwoColumnEntries(leftColId, rightColId, entryClass, labelPrefix, badgeId);
+    if (type === "customization") {
+        updateCustomizationPrintVisibility();
+    }
+}
+
+function syncAllCardEntriesFromSpecs() {
+    const sizeVal = getInputValue("hullSizeInput", "").trim();
+    const configVal = getInputValue("hullConfigInput", "").trim();
+    const classVal = getInputValue("shipClassTypeSelect", "").trim().toLowerCase();
+
+    if (!sizeVal || !configVal || !classVal) {
+        return;
+    }
+
+    const matchedSize = shipData.hullSizes.find(function (s) {
+        return s.name.toLowerCase() === sizeVal.toLowerCase();
+    });
+    if (!matchedSize) {
+        return;
+    }
+
+    const configObj = getHullConfigObject(configVal);
+    const hpMod = getHullConfigTargetMod(configObj, "Hard_Points");
+    const bayMod = getHullConfigTargetMod(configObj, "Bays");
+    const custMod = getHullConfigTargetMod(configObj, "Customization");
+
+    const isMil = (classVal === "military");
+    let baseHp = matchedSize.civ_hard_points;
+    if (isMil) {
+        baseHp = matchedSize.mil_hard_points;
+    }
+    let baseBays = matchedSize.civ_bays;
+    if (isMil) {
+        baseBays = matchedSize.mil_bays;
+    }
+    let baseCust = 0;
+    if (matchedSize.customization_points !== undefined) {
+        baseCust = matchedSize.customization_points;
+    }
+
+    const coreSelect = document.getElementById("coreLevelSelect");
+    let coreBonus = 0;
+    if (coreSelect && coreSelect.value) {
+        const coreNum = parseInt(coreSelect.value, 10);
+        if (!Number.isNaN(coreNum) && coreNum >= 1) {
+            coreBonus = coreNum - 1;
+        }
+    }
+
+    const targetHp = Math.max(0, (baseHp !== undefined ? baseHp : 4) + hpMod);
+    const targetBays = Math.max(0, (baseBays !== undefined ? baseBays : 6) + bayMod);
+    const targetCust = Math.max(0, baseCust + coreBonus + custMod);
+
+    syncCardEntriesCount("hardPoints", targetHp);
+    syncCardEntriesCount("bays", targetBays);
+    syncCardEntriesCount("customization", targetCust);
 }
 
 // Handle Hull Size Selection Change
@@ -898,31 +1522,23 @@ function onHullSizeChange(sizeName) {
     const capEl = document.getElementById("battleDamageCapacity");
     const cargoEl = document.getElementById("cargoCapacityInput");
     const dimEl = document.getElementById("dimensionsWeightInput");
-    const passEl = document.getElementById("passengerCapacityInput");
+    const passEl = document.getElementById("passengersCapInput");
 
     if (matched) {
-        // Battle Damage Capacity
         if (capEl) {
             capEl.value = matched.battle_damage_capacity;
         }
-
-        // Customization Points based on Core Level & Size
-        updateCustomizationPoints();
-
-        // Secondary specs
         updateHardPointsBaysDisplay();
-
         if (cargoEl) {
             cargoEl.value = matched.cargo_capacity_units + " Units";
         }
-
         if (dimEl) {
             dimEl.value = matched.dimensions;
         }
-
         if (passEl) {
-            passEl.value = matched.passenger_capacity + " Passengers";
+            passEl.value = matched.passenger_capacity;
         }
+        updateCustomizationPoints();
     } else {
         if (capEl) {
             capEl.value = "";
@@ -941,17 +1557,21 @@ function onHullSizeChange(sizeName) {
     }
 
     updateHullDescription();
+    syncAllCardEntriesFromSpecs();
     recalculateShipAttributes();
 }
 
 // Handle Core Level Change
 function onCoreLevelChange() {
     updateCustomizationPoints();
+    updateHardPointsBaysDisplay();
+    syncAllCardEntriesFromSpecs();
 }
 
 function onShipClassTypeChange() {
     updateHardPointsBaysDisplay();
     updateHullDescription();
+    syncAllCardEntriesFromSpecs();
     recalculateShipAttributes();
 }
 
@@ -1017,7 +1637,22 @@ function onHullConfigChange(val) {
             configInput.value = val;
         }
     }
+    const configVal = getInputValue("hullConfigInput", "").trim();
+    const configObj = getHullConfigObject(configVal);
+
+    updateHullConfigTooltip(configObj);
+    updateHullConfigNotes(configObj);
+
+    const switchEl = document.getElementById("applyHullConfigModsSwitch");
+    if (switchEl && switchEl.checked) {
+        updateCoreAttributeScoresWithHullConfig(true);
+    }
+
+    updateCustomizationPoints();
+    updateHardPointsBaysDisplay();
     updateHullDescription();
+    syncAllCardEntriesFromSpecs();
+    recalculateShipAttributes();
 }
 
 function syncSecondaryConfig(val) {
@@ -1025,7 +1660,7 @@ function syncSecondaryConfig(val) {
     if (mainConfig && val) {
         mainConfig.value = val;
     }
-    updateHullDescription();
+    onHullConfigChange(val);
 }
 
 // Update Customization Points
@@ -1041,6 +1676,14 @@ function updateCustomizationPoints() {
     if (sizeInput && sizeInput.value) {
         sizeName = sizeInput.value.trim();
     }
+
+    const configInput = document.getElementById("hullConfigInput");
+    let configVal = "";
+    if (configInput && configInput.value) {
+        configVal = configInput.value.trim();
+    }
+    const configObj = getHullConfigObject(configVal);
+    const custMod = getHullConfigTargetMod(configObj, "Customization");
 
     let matched = null;
     if (sizeName) {
@@ -1060,8 +1703,11 @@ function updateCustomizationPoints() {
     }
 
     const sizeCust = (matched ? matched.customization_points : 0);
-    const coreCust = (!Number.isNaN(coreLevel) ? (coreLevel - 1) : 0);
-    custDisplay.value = sizeCust + coreCust;
+    let coreCust = 0;
+    if (!Number.isNaN(coreLevel) && coreLevel >= 1) {
+        coreCust = coreLevel - 1;
+    }
+    custDisplay.value = Math.max(0, sizeCust + coreCust + custMod);
 }
 
 // Recalculate All Primary & Secondary Attributes
@@ -2869,6 +3515,63 @@ function updateBaysCount() {
     setElementText("shipBaysCountBadge", total + " Total");
 }
 
+// Customization Slots Management
+function addCustomizationRow(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    customizationRowsCount += 1;
+    let colId = "customizationColRight";
+    if (customizationRowsCount % 2 === 1) {
+        colId = "customizationColLeft";
+    }
+    const col = document.getElementById(colId);
+    if (!col) {
+        return;
+    }
+
+    const rowDiv = document.createElement("div");
+    rowDiv.className = "customization-entry mb-2";
+    rowDiv.id = "custEntry_" + customizationRowsCount;
+    rowDiv.innerHTML = "<div class='d-flex justify-content-between align-items-center mb-1'>" +
+        "<label class='small fw-bold text-cyan mb-0' for='custName_" + customizationRowsCount + "'>Customization Slot #" + customizationRowsCount + "</label>" +
+        "<button type='button' class='btn btn-link btn-sm text-danger p-0 no-print' onclick='removeEntry(\"" + rowDiv.id + "\", \"customization\")'>" +
+        "<i class='fa-solid fa-xmark'></i></button></div>" +
+        "<input type='text' id='custName_" + customizationRowsCount + "' class='form-control form-control-sm mb-1' placeholder='Custom Upgrade / Slot Name' oninput='updateCustomizationPrintVisibility()'>" +
+        "<label class='visually-hidden' for='custDesc_" + customizationRowsCount + "'>Description</label>" +
+        "<textarea id='custDesc_" + customizationRowsCount + "' class='form-control form-control-sm' placeholder='System effects, bonuses, power draw...' rows='2' oninput='autoExpandTextarea(this); updateCustomizationPrintVisibility();'></textarea>";
+
+    col.appendChild(rowDiv);
+    updateCustomizationCount();
+    updateCustomizationPrintVisibility();
+}
+
+function updateCustomizationCount() {
+    const total = document.querySelectorAll(".customization-entry").length;
+    setElementText("customizationCountBadge", total + " Total");
+}
+
+function updateCustomizationPrintVisibility() {
+    const custCard = document.getElementById("cardCustomizationSlots");
+    if (!custCard) {
+        return;
+    }
+    const entries = document.querySelectorAll(".customization-entry");
+    let hasContent = false;
+    entries.forEach(function (entry) {
+        if (!isEntryEmpty(entry)) {
+            hasContent = true;
+        }
+    });
+
+    if (!hasContent) {
+        custCard.classList.add("empty-customization");
+    } else {
+        custCard.classList.remove("empty-customization");
+    }
+}
+
 // Quirks Management
 function addQuirkRow(event) {
     if (event) {
@@ -2976,8 +3679,14 @@ function removeEntry(id, type) {
     }
     if (type === "hardPoints") {
         updateHardPointsCount();
+        rebalanceTwoColumnEntries("hardPointsColLeft", "hardPointsColRight", "hardpoint-entry", "Hard Point", "hardPointsCountBadge");
     } else if (type === "bays") {
         updateBaysCount();
+        rebalanceTwoColumnEntries("baysColLeft", "baysColRight", "bay-entry", "Bay", "shipBaysCountBadge");
+    } else if (type === "customization") {
+        updateCustomizationCount();
+        rebalanceTwoColumnEntries("customizationColLeft", "customizationColRight", "customization-entry", "Customization Slot", "customizationCountBadge");
+        updateCustomizationPrintVisibility();
     } else if (type === "quirks") {
         updateQuirksPrintVisibility();
     }
@@ -3005,13 +3714,17 @@ function updateQuirksPrintVisibility() {
 }
 
 function initializeDefaultRows() {
-    // 4 Hard points default
-    for (let i = 0; i < 4; i += 1) {
+    // 10 Hard points default
+    for (let i = 0; i < 10; i += 1) {
         addHardPointRow();
     }
-    // 6 Bays default
-    for (let j = 0; j < 6; j += 1) {
+    // 10 Bays default
+    for (let j = 0; j < 10; j += 1) {
         addBayRow();
+    }
+    // 2 Customization slots default
+    for (let k = 0; k < 2; k += 1) {
+        addCustomizationRow();
     }
     // 1 Quirk default
     addQuirkRow();
@@ -3904,6 +4617,25 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
+function clearDynamicContainers() {
+    const containers = [
+        "hardPointsColLeft", "hardPointsColRight",
+        "baysColLeft", "baysColRight",
+        "customizationColLeft", "customizationColRight",
+        "quirksListContainer"
+    ];
+    containers.forEach(function (cid) {
+        const el = document.getElementById(cid);
+        if (el) {
+            el.innerHTML = "";
+        }
+    });
+    hardPointRowsCount = 0;
+    bayRowsCount = 0;
+    customizationRowsCount = 0;
+    quirkRowsCount = 0;
+}
+
 // Reset Ship Sheet
 function resetShipSheet() {
     if (window.confirm("Are you sure you want to reset all fields on the Ship Schematics Sheet?")) {
@@ -3911,37 +4643,721 @@ function resetShipSheet() {
         if (form) {
             form.reset();
         }
+        previousHullConfigDesc = "";
+        const switchEl = document.getElementById("applyHullConfigModsSwitch");
+        if (switchEl) {
+            switchEl.checked = false;
+        }
+        clearDynamicContainers();
+        initializeDefaultRows();
+        CORE_ATTRIBUTES.forEach(function (attr) {
+            const input = document.getElementById(attr + "ScoreInput");
+            if (input) {
+                input.dataset.baseScore = "";
+            }
+        });
+        updateHullConfigTooltip(null);
+        updateCustomizationPrintVisibility();
         recalculateShipAttributes();
     }
 }
 
-// Export Ship Schematics as JSON
-function exportShipJSON() {
-    const dataObj = {};
-    const inputs = document.querySelectorAll("#shipSheetForm input, #shipSheetForm select, #shipSheetForm textarea");
-    inputs.forEach(function (inp) {
-        if (inp.name || inp.id) {
-            const key = inp.name || inp.id;
-            let fieldVal = inp.value;
-            if (inp.type === "checkbox") {
-                fieldVal = inp.checked;
-            }
-            dataObj[key] = fieldVal;
-        }
-    });
+// Generate structured Form Data Object for Export and Persistence
+function getShipFormDataObj() {
+    const form = document.getElementById("shipSheetForm");
+    if (!form) {
+        return {};
+    }
 
-    const rawName = getInputValue("shipNameInput", "Spaceship");
-    const shipName = rawName.replace(/[^a-zA-Z0-9_]/g, "_");
-    const jsonStr = JSON.stringify(dataObj, null, 2);
+    const structured = {};
+
+    // 1. cardOwnerStats
+    const ownerCard = document.getElementById("cardOwnerStats");
+    const ownerData = {};
+    if (ownerCard) {
+        const inputs = ownerCard.querySelectorAll("input, select, textarea");
+        inputs.forEach(function (el) {
+            if (!el.id && !el.name) {
+                return;
+            }
+            if (el.type === "button" || el.type === "submit" || el.type === "reset") {
+                return;
+            }
+            const key = el.name || el.id;
+            let val = el.value;
+            if (el.type === "checkbox") {
+                val = el.checked;
+            }
+            ownerData[key] = val;
+        });
+        const switchEl = document.getElementById("applyHullConfigModsSwitch");
+        if (switchEl) {
+            ownerData.applyHullConfigMods = switchEl.checked;
+        }
+    }
+    structured.cardOwnerStats = ownerData;
+
+    // 2. cardShipAttributes
+    const attrCard = document.getElementById("cardShipAttributes");
+    const attrData = {};
+    if (attrCard) {
+        const inputs = attrCard.querySelectorAll("input, select, textarea");
+        inputs.forEach(function (el) {
+            if (!el.id && !el.name) {
+                return;
+            }
+            if (el.type === "button" || el.type === "submit" || el.type === "reset") {
+                return;
+            }
+            const key = el.name || el.id;
+            let val = el.value;
+            if (el.type === "checkbox") {
+                val = el.checked;
+            }
+            attrData[key] = val;
+        });
+    }
+    structured.cardShipAttributes = attrData;
+
+    // 3. cardSecondaryAttributes
+    const secCard = document.getElementById("cardSecondaryAttributes");
+    const secData = {};
+    if (secCard) {
+        const inputs = secCard.querySelectorAll("input, select, textarea");
+        inputs.forEach(function (el) {
+            if (!el.id && !el.name) {
+                return;
+            }
+            if (el.type === "button" || el.type === "submit" || el.type === "reset") {
+                return;
+            }
+            const key = el.name || el.id;
+            let val = el.value;
+            if (el.type === "checkbox") {
+                val = el.checked;
+            }
+            secData[key] = val;
+        });
+    }
+    structured.cardSecondaryAttributes = secData;
+
+    // 4. cardPositionsCoreAttributes (with 8 sub-cards)
+    const posCoreCard = document.getElementById("cardPositionsCoreAttributes");
+    const posCoreData = {};
+    if (posCoreCard) {
+        const subCardIds = [
+            "cardCaptain",
+            "cardEnginesHelm",
+            "cardMedical",
+            "cardStructure",
+            "cardWeapons",
+            "cardSensorsComms",
+            "cardShields",
+            "cardElectronicsScience"
+        ];
+        subCardIds.forEach(function (subId) {
+            const subCard = document.getElementById(subId);
+            if (!subCard) {
+                return;
+            }
+            const subData = {};
+            const inputs = subCard.querySelectorAll("input, select, textarea");
+            inputs.forEach(function (el) {
+                if (!el.id && !el.name) {
+                    return;
+                }
+                if (el.type === "button" || el.type === "submit" || el.type === "reset") {
+                    return;
+                }
+                const key = el.name || el.id;
+                let val = el.value;
+                if (el.type === "checkbox") {
+                    val = el.checked;
+                }
+                subData[key] = val;
+            });
+            posCoreData[subId] = subData;
+        });
+    }
+    structured.cardPositionsCoreAttributes = posCoreData;
+
+    // 5. cardHardPoints
+    const hardPointsList = [];
+    const hpEntries = document.querySelectorAll(".hardpoint-entry");
+    hpEntries.forEach(function (entry, index) {
+        const nameEl = entry.querySelector("input[id^='hpName_']");
+        const descEl = entry.querySelector("textarea[id^='hpDesc_']");
+        let name = "";
+        if (nameEl) {
+            name = nameEl.value.trim();
+        }
+        let desc = "";
+        if (descEl) {
+            desc = descEl.value.trim();
+        }
+        if (!name && !desc) {
+            return;
+        }
+        hardPointsList.push({
+            id: index + 1,
+            name,
+            description: desc
+        });
+    });
+    structured.cardHardPoints = {
+        hardPointsList
+    };
+
+    // 6. cardShipBays
+    const baysList = [];
+    const bayEntries = document.querySelectorAll(".bay-entry");
+    bayEntries.forEach(function (entry, index) {
+        const nameEl = entry.querySelector("input[id^='bayName_']");
+        const descEl = entry.querySelector("textarea[id^='bayDesc_']");
+        let name = "";
+        if (nameEl) {
+            name = nameEl.value.trim();
+        }
+        let desc = "";
+        if (descEl) {
+            desc = descEl.value.trim();
+        }
+        if (!name && !desc) {
+            return;
+        }
+        baysList.push({
+            id: index + 1,
+            name,
+            description: desc
+        });
+    });
+    structured.cardShipBays = {
+        baysList
+    };
+
+    // 7. cardCustomizationSlots
+    const customizationList = [];
+    const custEntries = document.querySelectorAll(".customization-entry");
+    custEntries.forEach(function (entry, index) {
+        const nameEl = entry.querySelector("input[id^='custName_']");
+        const descEl = entry.querySelector("textarea[id^='custDesc_']");
+        let name = "";
+        if (nameEl) {
+            name = nameEl.value.trim();
+        }
+        let desc = "";
+        if (descEl) {
+            desc = descEl.value.trim();
+        }
+        if (!name && !desc) {
+            return;
+        }
+        customizationList.push({
+            id: index + 1,
+            name,
+            description: desc
+        });
+    });
+    structured.cardCustomizationSlots = {
+        customizationList
+    };
+
+    // 8. cardShipQuirks
+    const quirksList = [];
+    const quirkEntries = document.querySelectorAll(".quirk-entry");
+    quirkEntries.forEach(function (entry, index) {
+        const nameEl = entry.querySelector("input[id^='quirkName_']");
+        const descEl = entry.querySelector("textarea[id^='quirkDesc_']");
+        const posEl = entry.querySelector("textarea[id^='quirkPos_']");
+        const negEl = entry.querySelector("textarea[id^='quirkNeg_']");
+        let name = "";
+        if (nameEl) {
+            name = nameEl.value.trim();
+        }
+        let desc = "";
+        if (descEl) {
+            desc = descEl.value.trim();
+        }
+        let pos = "";
+        if (posEl) {
+            pos = posEl.value.trim();
+        }
+        let neg = "";
+        if (negEl) {
+            neg = negEl.value.trim();
+        }
+        if (!name && !desc && !pos && !neg) {
+            return;
+        }
+        quirksList.push({
+            id: index + 1,
+            name,
+            description: desc,
+            positive: pos,
+            negative: neg
+        });
+    });
+    structured.cardShipQuirks = {
+        quirksList
+    };
+
+    // 9. cardShipNotes
+    const notesCard = document.getElementById("cardShipNotes");
+    const notesTextEl = document.getElementById("shipNotesTextarea");
+    let isPrintHidden = false;
+    if (notesCard && notesCard.classList.contains("print-hidden")) {
+        isPrintHidden = true;
+    }
+    let notesText = "";
+    if (notesTextEl) {
+        notesText = notesTextEl.value;
+    }
+    structured.cardShipNotes = {
+        shipNotes: notesText,
+        printHidden: isPrintHidden
+    };
+
+    // 10. UI_Layout
+    let currentTheme = localStorage.getItem("theme");
+    if (!currentTheme) {
+        currentTheme = "cosmic-dark";
+    }
+    const themeMatch = document.body.className.match(/theme-([a-z0-9\-]+)/);
+    if (themeMatch) {
+        currentTheme = themeMatch[1];
+    }
+    let collapsedCards = [];
+    try {
+        const savedCollapsed = localStorage.getItem("ship_collapsed_cards");
+        if (savedCollapsed) {
+            collapsedCards = JSON.parse(savedCollapsed);
+        }
+    } catch (e) {
+        console.warn("Could not parse saved collapsed cards:", e);
+        collapsedCards = [];
+    }
+    let cardOrder = [];
+    try {
+        const savedOrder = localStorage.getItem("ship_card_order");
+        if (savedOrder) {
+            cardOrder = JSON.parse(savedOrder);
+        }
+    } catch (e) {
+        console.warn("Could not parse saved card order:", e);
+        cardOrder = [];
+    }
+    structured.UI_Layout = {
+        theme: currentTheme,
+        themeLocked: (localStorage.getItem("themeLocked") === "true"),
+        layoutLocked: document.body.classList.contains("layout-locked"),
+        collapsedCards,
+        cardOrder
+    };
+
+    // 11. metadata
+    structured.metadata = {
+        version: "1.0",
+        sheetType: "SpaceShipSchematics",
+        exportedAt: new Date().toISOString()
+    };
+
+    return structured;
+}
+
+function triggerBlobDownload(fileName, jsonStr) {
     const blob = new Blob([jsonStr], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = shipName + "_schematics.json";
+    a.download = fileName;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+}
+
+// Export Ship Schematics as JSON
+async function exportShipJSON() {
+    const dataObj = getShipFormDataObj();
+    let shipName = "Spaceship";
+    if (dataObj.cardOwnerStats && dataObj.cardOwnerStats.shipName) {
+        shipName = dataObj.cardOwnerStats.shipName;
+    } else {
+        shipName = getInputValue("shipNameInput", "Spaceship");
+    }
+    let safeName = String(shipName).trim().replace(/[^a-zA-Z0-9_\-]/g, "_");
+    if (!safeName) {
+        safeName = "Spaceship";
+    }
+    const defaultFileName = safeName + "_schematics.json";
+    const jsonStr = JSON.stringify(dataObj, null, 2);
+
+    if (window.showSaveFilePicker !== undefined) {
+        try {
+            const handle = await window.showSaveFilePicker({
+                suggestedName: defaultFileName,
+                types: [{
+                    description: "JSON Ship Schematics Sheet",
+                    accept: { "application/json": [".json"] }
+                }]
+            });
+            const writable = await handle.createWritable();
+            await writable.write(jsonStr);
+            await writable.close();
+            return;
+        } catch (err) {
+            if (err.name === "AbortError") {
+                return;
+            }
+            console.warn("showSaveFilePicker failed, falling back to direct download:", err);
+        }
+    }
+
+    triggerBlobDownload(defaultFileName, jsonStr);
+}
+
+function flattenObjectValues(obj, target) {
+    if (!obj || typeof obj !== "object") {
+        return;
+    }
+    Object.keys(obj).forEach(function (k) {
+        if (k === "UI_Layout" || k === "metadata" || k === "hardPointsList" || k === "baysList" || k === "customizationList" || k === "quirksList") {
+            return;
+        }
+        const val = obj[k];
+        if (val && typeof val === "object" && !Array.isArray(val)) {
+            flattenObjectValues(val, target);
+        } else {
+            target[k] = val;
+        }
+    });
+}
+
+function populateShipFormStructured(imported) {
+    clearDynamicContainers();
+
+    // 1. Hard Points
+    let hpList = [];
+    if (imported.cardHardPoints && Array.isArray(imported.cardHardPoints.hardPointsList)) {
+        hpList = imported.cardHardPoints.hardPointsList;
+    } else if (Array.isArray(imported.hardPointsList)) {
+        hpList = imported.hardPointsList;
+    }
+    const hpCount = Math.max(hpList.length, 10);
+    for (let i = 0; i < hpCount; i += 1) {
+        addHardPointRow();
+        if (i < hpList.length) {
+            const item = hpList[i];
+            const rowIndex = i + 1;
+            const nameEl = document.getElementById("hpName_" + rowIndex);
+            const descEl = document.getElementById("hpDesc_" + rowIndex);
+            if (nameEl) {
+                nameEl.value = item.name || item.Name || "";
+            }
+            if (descEl) {
+                descEl.value = item.description || item.Description || "";
+                autoExpandTextarea(descEl);
+            }
+        }
+    }
+
+    // 2. Bays
+    let baysList = [];
+    if (imported.cardShipBays && Array.isArray(imported.cardShipBays.baysList)) {
+        baysList = imported.cardShipBays.baysList;
+    } else if (Array.isArray(imported.baysList)) {
+        baysList = imported.baysList;
+    }
+    const bayCount = Math.max(baysList.length, 10);
+    for (let j = 0; j < bayCount; j += 1) {
+        addBayRow();
+        if (j < baysList.length) {
+            const item = baysList[j];
+            const rowIndex = j + 1;
+            const nameEl = document.getElementById("bayName_" + rowIndex);
+            const descEl = document.getElementById("bayDesc_" + rowIndex);
+            if (nameEl) {
+                nameEl.value = item.name || item.Name || "";
+            }
+            if (descEl) {
+                descEl.value = item.description || item.Description || "";
+                autoExpandTextarea(descEl);
+            }
+        }
+    }
+
+    // 3. Customization Slots
+    let custList = [];
+    if (imported.cardCustomizationSlots && Array.isArray(imported.cardCustomizationSlots.customizationList)) {
+        custList = imported.cardCustomizationSlots.customizationList;
+    } else if (Array.isArray(imported.customizationList)) {
+        custList = imported.customizationList;
+    }
+    const custCount = Math.max(custList.length, 2);
+    for (let k = 0; k < custCount; k += 1) {
+        addCustomizationRow();
+        if (k < custList.length) {
+            const item = custList[k];
+            const rowIndex = k + 1;
+            const nameEl = document.getElementById("custName_" + rowIndex);
+            const descEl = document.getElementById("custDesc_" + rowIndex);
+            if (nameEl) {
+                nameEl.value = item.name || item.Name || "";
+            }
+            if (descEl) {
+                descEl.value = item.description || item.Description || "";
+                autoExpandTextarea(descEl);
+            }
+        }
+    }
+
+    // 4. Quirks
+    let quirksList = [];
+    if (imported.cardShipQuirks && Array.isArray(imported.cardShipQuirks.quirksList)) {
+        quirksList = imported.cardShipQuirks.quirksList;
+    } else if (Array.isArray(imported.quirksList)) {
+        quirksList = imported.quirksList;
+    }
+    const quirkCount = Math.max(quirksList.length, 1);
+    for (let q = 0; q < quirkCount; q += 1) {
+        addQuirkRow();
+        if (q < quirksList.length) {
+            const item = quirksList[q];
+            const rowIndex = q + 1;
+            const nameEl = document.getElementById("quirkName_" + rowIndex);
+            const descEl = document.getElementById("quirkDesc_" + rowIndex);
+            const posEl = document.getElementById("quirkPos_" + rowIndex);
+            const negEl = document.getElementById("quirkNeg_" + rowIndex);
+            if (nameEl) {
+                nameEl.value = item.name || item.Name || "";
+            }
+            if (descEl) {
+                descEl.value = item.description || item.Description || "";
+                autoExpandTextarea(descEl);
+            }
+            if (posEl) {
+                posEl.value = item.positive || item.Positive || item.positive_effect || "";
+                autoExpandTextarea(posEl);
+            }
+            if (negEl) {
+                negEl.value = item.negative || item.Negative || item.negative_effect || "";
+                autoExpandTextarea(negEl);
+            }
+        }
+    }
+
+    // 5. Populate standard fields
+    const flatData = {};
+    flattenObjectValues(imported, flatData);
+
+    Object.keys(flatData).forEach(function (key) {
+        const val = flatData[key];
+        const el = document.querySelector("[name='" + key + "'], #" + key);
+        if (el) {
+            if (el.type === "checkbox") {
+                if (el.disabled) {
+                    el.checked = true;
+                } else {
+                    el.checked = Boolean(val);
+                }
+            } else {
+                let itemVal = "";
+                if (val !== null && val !== undefined) {
+                    itemVal = String(val);
+                }
+                el.value = itemVal;
+            }
+        }
+    });
+
+    if (flatData.applyHullConfigMods !== undefined) {
+        const switchEl = document.getElementById("applyHullConfigModsSwitch");
+        if (switchEl) {
+            switchEl.checked = Boolean(flatData.applyHullConfigMods);
+        }
+    }
+    if (flatData.shieldsActive !== undefined) {
+        const switchEl = document.getElementById("shieldsActiveSwitch");
+        if (switchEl) {
+            switchEl.checked = Boolean(flatData.shieldsActive);
+        }
+    }
+
+    // 6. Notes & printHidden
+    const notesCard = document.getElementById("cardShipNotes");
+    const notesTextEl = document.getElementById("shipNotesTextarea");
+    const notesPrintText = document.getElementById("notesPrintVisibilityText");
+    if (notesCard) {
+        let hideNotes = false;
+        if (imported.cardShipNotes && imported.cardShipNotes.printHidden !== undefined) {
+            hideNotes = Boolean(imported.cardShipNotes.printHidden);
+        } else if (flatData.printHidden !== undefined) {
+            hideNotes = Boolean(flatData.printHidden);
+        }
+        if (hideNotes) {
+            notesCard.classList.add("print-hidden");
+            if (notesPrintText) {
+                notesPrintText.textContent = "Print: Hidden";
+            }
+            localStorage.setItem("ship_notes_print_hidden", "true");
+        } else {
+            notesCard.classList.remove("print-hidden");
+            if (notesPrintText) {
+                notesPrintText.textContent = "Print: Visible";
+            }
+            localStorage.setItem("ship_notes_print_hidden", "false");
+        }
+    }
+    if (notesTextEl && imported.cardShipNotes && imported.cardShipNotes.shipNotes !== undefined) {
+        notesTextEl.value = imported.cardShipNotes.shipNotes;
+        autoExpandTextarea(notesTextEl);
+    }
+
+    // 7. UI_Layout
+    if (imported.UI_Layout) {
+        if (imported.UI_Layout.theme) {
+            applyTheme(imported.UI_Layout.theme);
+        }
+        if (imported.UI_Layout.themeLocked !== undefined) {
+            const isThemeLocked = Boolean(imported.UI_Layout.themeLocked);
+            let lockVal = "false";
+            if (isThemeLocked) {
+                lockVal = "true";
+            }
+            localStorage.setItem("themeLocked", lockVal);
+            updateLockThemeUI(isThemeLocked);
+        }
+        if (imported.UI_Layout.layoutLocked !== undefined) {
+            const isLayoutLocked = Boolean(imported.UI_Layout.layoutLocked);
+            document.body.classList.toggle("layout-locked", isLayoutLocked);
+            let layoutVal = "false";
+            if (isLayoutLocked) {
+                layoutVal = "true";
+            }
+            localStorage.setItem("ship_layout_locked", layoutVal);
+            const lockIcon = document.getElementById("cardLayoutLockIcon");
+            const lockText = document.getElementById("cardLayoutLockText");
+            if (lockIcon) {
+                if (isLayoutLocked) {
+                    lockIcon.className = "fa-solid fa-lock text-warning me-2";
+                } else {
+                    lockIcon.className = "fa-solid fa-lock-open text-success me-2";
+                }
+            }
+            if (lockText) {
+                if (isLayoutLocked) {
+                    lockText.textContent = "Layout Locked";
+                } else {
+                    lockText.textContent = "Layout Unlocked";
+                }
+            }
+        }
+        if (Array.isArray(imported.UI_Layout.collapsedCards)) {
+            localStorage.setItem("ship_collapsed_cards", JSON.stringify(imported.UI_Layout.collapsedCards));
+            restoreCollapseStates();
+        }
+        if (Array.isArray(imported.UI_Layout.cardOrder)) {
+            localStorage.setItem("ship_card_order", JSON.stringify(imported.UI_Layout.cardOrder));
+            loadSavedCardOrder();
+            updateTableOfContents();
+        }
+    }
+}
+
+function populateShipFormLegacy(imported) {
+    let maxHp = 0;
+    let maxBay = 0;
+    let maxCust = 0;
+    let maxQuirk = 0;
+    Object.keys(imported).forEach(function (key) {
+        let m = key.match(/^hpName_(\d+)$/);
+        if (m) {
+            maxHp = Math.max(maxHp, parseInt(m[1], 10));
+        }
+        m = key.match(/^bayName_(\d+)$/);
+        if (m) {
+            maxBay = Math.max(maxBay, parseInt(m[1], 10));
+        }
+        m = key.match(/^custName_(\d+)$/);
+        if (m) {
+            maxCust = Math.max(maxCust, parseInt(m[1], 10));
+        }
+        m = key.match(/^quirkName_(\d+)$/);
+        if (m) {
+            maxQuirk = Math.max(maxQuirk, parseInt(m[1], 10));
+        }
+    });
+
+    while (hardPointRowsCount < maxHp) {
+        addHardPointRow();
+    }
+    while (bayRowsCount < maxBay) {
+        addBayRow();
+    }
+    while (customizationRowsCount < maxCust) {
+        addCustomizationRow();
+    }
+    while (quirkRowsCount < maxQuirk) {
+        addQuirkRow();
+    }
+
+    Object.keys(imported).forEach(function (key) {
+        const el = document.querySelector("[name='" + key + "'], #" + key);
+        if (el) {
+            if (el.type === "checkbox") {
+                if (el.disabled) {
+                    el.checked = true;
+                } else {
+                    el.checked = Boolean(imported[key]);
+                }
+            } else {
+                let itemVal = "";
+                if (imported[key] !== null && imported[key] !== undefined) {
+                    itemVal = String(imported[key]);
+                }
+                el.value = itemVal;
+            }
+        }
+    });
+}
+
+function postImportRefresh() {
+    CORE_ATTRIBUTES.forEach(function (attr) {
+        const input = document.getElementById(attr + "ScoreInput");
+        if (input) {
+            const val = input.value.trim();
+            const parsed = parseInt(val, 10);
+            if (!Number.isNaN(parsed)) {
+                const switchEl = document.getElementById("applyHullConfigModsSwitch");
+                if (switchEl && switchEl.checked) {
+                    const mod = getHullConfigCoreMod(attr);
+                    input.dataset.baseScore = String(parsed - mod);
+                } else {
+                    input.dataset.baseScore = String(parsed);
+                }
+            } else {
+                input.dataset.baseScore = val;
+            }
+        }
+    });
+
+    const cfgVal = getInputValue("hullConfigInput", "");
+    if (cfgVal) {
+        const cfgObj = getHullConfigObject(cfgVal);
+        updateHullConfigTooltip(cfgObj);
+    } else {
+        updateHullConfigTooltip(null);
+    }
+
+    updateHullDescription();
+    updateHardPointsCount();
+    updateBaysCount();
+    updateCustomizationCount();
+    updateCustomizationPrintVisibility();
+    updateQuirksPrintVisibility();
+    updateCustomizationPoints();
+    updateHardPointsBaysDisplay();
+    recalculateShipAttributes();
 }
 
 // Import Ship Schematics from JSON
@@ -3954,21 +5370,30 @@ function importShipJSON(event) {
     reader.onload = function (e) {
         try {
             const imported = JSON.parse(e.target.result);
-            Object.keys(imported).forEach(function (key) {
-                const el = document.querySelector("[name='" + key + "'], #" + key);
-                if (el) {
-                    if (el.type === "checkbox") {
-                        if (el.disabled) {
-                            el.checked = true;
-                        } else {
-                            el.checked = imported[key];
-                        }
-                    } else {
-                        el.value = imported[key];
-                    }
-                }
-            });
-            recalculateShipAttributes();
+            if (!imported || typeof imported !== "object") {
+                alert("Failed to parse JSON file: Invalid JSON data format.");
+                return;
+            }
+
+            const isStructured = Boolean(
+                imported.cardOwnerStats ||
+                imported.cardShipAttributes ||
+                imported.cardSecondaryAttributes ||
+                imported.cardPositionsCoreAttributes ||
+                imported.cardHardPoints ||
+                imported.cardShipBays ||
+                imported.cardCustomizationSlots ||
+                imported.cardShipQuirks ||
+                imported.cardShipNotes
+            );
+
+            if (isStructured) {
+                populateShipFormStructured(imported);
+            } else {
+                populateShipFormLegacy(imported);
+            }
+
+            postImportRefresh();
             alert("Ship schematics imported successfully!");
         } catch (err) {
             alert("Failed to parse JSON file: " + err.message);
@@ -3979,6 +5404,7 @@ function importShipJSON(event) {
 
 // Global Window Bindings for HTML Handlers
 window.addBayRow = addBayRow;
+window.addCustomizationRow = addCustomizationRow;
 window.addHardPointRow = addHardPointRow;
 window.addQuirkRow = addQuirkRow;
 window.adjustRollAdvantage = adjustRollAdvantage;
@@ -3989,6 +5415,7 @@ window.collapseAllCards = collapseAllCards;
 window.executeCurrentRoll = executeCurrentRoll;
 window.expandAllCards = expandAllCards;
 window.exportShipJSON = exportShipJSON;
+window.getShipFormDataObj = getShipFormDataObj;
 window.importShipJSON = importShipJSON;
 window.moveCardDown = moveCardDown;
 window.moveCardUp = moveCardUp;
@@ -4004,6 +5431,7 @@ window.onQuirkSelect = onQuirkSelect;
 window.onShieldsActiveToggle = onShieldsActiveToggle;
 window.onShipClassTypeChange = onShipClassTypeChange;
 window.onSpeciesMakeChange = onSpeciesMakeChange;
+window.onToggleApplyHullConfigMods = onToggleApplyHullConfigMods;
 window.randomizeSpeciesTheme = randomizeSpeciesTheme;
 window.recalculateShipAttributes = recalculateShipAttributes;
 window.removeEntry = removeEntry;
@@ -4037,6 +5465,8 @@ window.rollEngineerSecondarySkillCheck = rollEngineerSecondarySkillCheck;
 window.onCommsFunctionAbilityChange = onCommsFunctionAbilityChange;
 window.toggleRollExplanation = toggleRollExplanation;
 window.formatCompactDiceExpression = formatCompactDiceExpression;
+window.updateCustomizationCount = updateCustomizationCount;
+window.updateCustomizationPrintVisibility = updateCustomizationPrintVisibility;
 window.updateLockThemeUI = updateLockThemeUI;
 window.onMedicalRankChange = onMedicalRankChange;
 window.rollMedicalSkillCheck = rollMedicalSkillCheck;
