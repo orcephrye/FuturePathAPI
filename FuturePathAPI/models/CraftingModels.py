@@ -66,47 +66,60 @@ class CraftingType(BaseModel):
 
     def to_db_entry(self) -> 'CraftingDbEntry':
         """Converts the CraftingType instance into a CraftingDbEntry database model."""
-        import base64
-        pickled_bytes = self.pickle_object()
-        pickled_str = base64.b64encode(pickled_bytes).decode("utf-8")
         return CraftingDbEntry(
             id=self.id,
             item_id=self.id,
             crafting_type=self.item_type,
             data=self.model_dump(),
-            pickled_data=pickled_str
+            pickled_data=None,
         )
 
-    def _has_target_attr(self, obj: BaseModel, target: str) -> bool:
+    def _has_target_attr(self, obj_or_target: Any, target: Optional[str] = None) -> bool:
+        if target is None:
+            target = str(obj_or_target)
+            obj = self
+        else:
+            obj = obj_or_target
+
         if hasattr(obj, target):
-            return hasattr(obj, target)
+            return True
         elif '.' in target:
-            new_target = target[target.find(".")+1:]
-            new_name = target[:target.find(".")]
+            new_name, new_target = target.split(".", 1)
             if hasattr(obj, new_name):
                 return self._has_target_attr(getattr(obj, new_name), new_target)
         return False
 
-    def _get_target_attr(self, obj: BaseModel, target: str) -> Any:
+    def _get_target_attr(self, obj_or_target: Any, target: Optional[str] = None) -> Any:
+        if target is None:
+            target = str(obj_or_target)
+            obj = self
+        else:
+            obj = obj_or_target
+
         if hasattr(obj, target):
             return getattr(obj, target)
         elif '.' in target:
-            new_target = target[target.find(".") + 1:]
-            new_name = target[:target.find(".")]
+            new_name, new_target = target.split(".", 1)
             if hasattr(obj, new_name):
                 return self._get_target_attr(getattr(obj, new_name), new_target)
         raise ValueError(f"Target '{target}' is not a valid attribute")
 
-    def _set_target_attr(self, obj: BaseModel, target: str, value: Any):
-        print(f"obj: {obj}, target: {target}")
-        print(f"Object has target ({target}) attr? {hasattr(obj, target)}")
+    def _set_target_attr(self, obj_or_target: Any, target_or_value: Any = None, value: Any = None):
+        if value is None and target_or_value is not None and isinstance(obj_or_target, str):
+            target = obj_or_target
+            val = target_or_value
+            obj = self
+        else:
+            obj = obj_or_target
+            target = str(target_or_value)
+            val = value
+
         if hasattr(obj, target):
-            return setattr(obj, target, value)
+            return setattr(obj, target, val)
         elif '.' in target:
-            new_target = target[target.find(".") + 1:]
-            new_name = target[:target.find(".")]
+            new_name, new_target = target.split(".", 1)
             if hasattr(obj, new_name):
-                return self._set_target_attr(getattr(obj, new_name), new_target, value)
+                return self._set_target_attr(getattr(obj, new_name), new_target, val)
         raise ValueError(f"Target '{target}' is not a valid attribute")
 
     def _get_target_schema(self, target: str, schemadict: dict) -> dict:
@@ -181,8 +194,8 @@ class CraftingType(BaseModel):
         if action_type == ActionType.ADD:
             if isinstance(current_val, list):
                 if isinstance(val, list):
-                    return current_val + val
-                return current_val + [val]
+                    return [*current_val, *val]
+                return [*current_val, val]
             elif isinstance(current_val, dict) and isinstance(val, dict):
                 merged = current_val.copy()
                 merged.update(val)
