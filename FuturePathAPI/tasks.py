@@ -72,6 +72,29 @@ tasks = [
             "species": f"{END_POINT}/tasks/ship_schematics_sheet/species",
         },
     },
+    {
+        "id": 4,
+        "name": "armor",
+        "description": "Armor crafting, customization, and reference system for d20 FuturePath.",
+        "uri": f"{END_POINT}/tasks/armor",
+        "sub_endpoints": {
+            "create": f"{END_POINT}/tasks/armor/create",
+            "craft": f"{END_POINT}/tasks/armor/craft",
+            "trade_dr": f"{END_POINT}/tasks/armor/trade_dr",
+            "spend_dr": f"{END_POINT}/tasks/armor/spend_dr",
+            "masterwork": f"{END_POINT}/tasks/armor/masterwork",
+            "diminish": f"{END_POINT}/tasks/armor/diminish",
+            "improve": f"{END_POINT}/tasks/armor/improve",
+            "craft_roll": f"{END_POINT}/tasks/armor/craft_roll",
+            "baseline": f"{END_POINT}/tasks/armor/baseline",
+            "tech_levels": f"{END_POINT}/tasks/armor/tech_levels",
+            "special_attributes": f"{END_POINT}/tasks/armor/special_attributes",
+            "customization_attributes": f"{END_POINT}/tasks/armor/customization_attributes",
+            "crafting_rules": f"{END_POINT}/tasks/armor/crafting_rules",
+            "examples": f"{END_POINT}/tasks/armor/examples",
+            "all": f"{END_POINT}/tasks/armor/all",
+        },
+    },
 ]
 
 

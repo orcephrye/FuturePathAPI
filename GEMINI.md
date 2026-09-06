@@ -35,8 +35,5 @@ Also there is the README.md file:
 @./GEMINI_FUTUREPATH_TTRPG.md
 
 # Active Tasks
-- Finish the second One Shot. (A Royal Pain)
-- Convert Start Characters for the new AD and Skill Die rules as well as onto the new Digital Character Sheets
-- Add Level 2 options to the Starter Characters.
 - Add a die roller builtin for rolling stats for a new Character sheet onto the Character Creation and Advantage page.
 - Review the Glossary/Key Terms page.

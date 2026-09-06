@@ -7,37 +7,18 @@
 # Description: Armor Crafting, Creation, and Serialization models
 
 import logging
-from typing import Any, Dict, List, Literal, Optional
+from typing import List, Literal, Optional
 
 from pydantic import BaseModel, Field, model_validator
 
+from FuturePathAPI.libs.ArmorReferenceData import (
+    ARMOR_BASELINE_TABLE,
+    TECH_LEVEL_TABLE,
+)
 from FuturePathAPI.models import register_model
 from FuturePathAPI.models.CraftingModels import CraftingType
 
 log = logging.getLogger("CraftingModels")
-
-# Baseline armor attributes by Armor Level (AL 0 to 9) at Tech Level 2 Baseline
-ARMOR_BASELINE_TABLE: Dict[int, Dict[str, Any]] = {
-    0: {"ac_bonus": 0, "max_dex_bonus": 9, "speed_diff": "Normal", "weight_lbs": 0.25, "base_cost": 10.0, "procure_diff": 0},
-    1: {"ac_bonus": 1, "max_dex_bonus": 8, "speed_diff": "Normal", "weight_lbs": 5.0, "base_cost": 150.0, "procure_diff": 0},
-    2: {"ac_bonus": 2, "max_dex_bonus": 7, "speed_diff": "Normal", "weight_lbs": 10.0, "base_cost": 350.0, "procure_diff": 0},
-    3: {"ac_bonus": 3, "max_dex_bonus": 6, "speed_diff": "Normal", "weight_lbs": 15.0, "base_cost": 1000.0, "procure_diff": 0},
-    4: {"ac_bonus": 4, "max_dex_bonus": 5, "speed_diff": "-5ft", "weight_lbs": 20.0, "base_cost": 2200.0, "procure_diff": 0},
-    5: {"ac_bonus": 5, "max_dex_bonus": 4, "speed_diff": "-5ft", "weight_lbs": 25.0, "base_cost": 4500.0, "procure_diff": 0},
-    6: {"ac_bonus": 6, "max_dex_bonus": 3, "speed_diff": "-10ft", "weight_lbs": 30.0, "base_cost": 9000.0, "procure_diff": 1},
-    7: {"ac_bonus": 7, "max_dex_bonus": 2, "speed_diff": "-10ft", "weight_lbs": 35.0, "base_cost": 18000.0, "procure_diff": 1},
-    8: {"ac_bonus": 8, "max_dex_bonus": 1, "speed_diff": "Halved", "weight_lbs": 40.0, "base_cost": 30000.0, "procure_diff": 2},
-    9: {"ac_bonus": 9, "max_dex_bonus": 0, "speed_diff": "Halved", "weight_lbs": 45.0, "base_cost": 55000.0, "procure_diff": 2},
-}
-
-# Tech Level baseline rules (TL 0 to 4)
-TECH_LEVEL_TABLE: Dict[int, Dict[str, Any]] = {
-    0: {"max_ac_or_dr": 5, "customization_slots": 1, "free_points": 0, "extra_base_cost": 0.0, "extra_procure_diff": 1, "is_archaic": True},
-    1: {"max_ac_or_dr": 6, "customization_slots": 2, "free_points": 0, "extra_base_cost": 0.0, "extra_procure_diff": 0, "is_archaic": False},
-    2: {"max_ac_or_dr": 7, "customization_slots": 3, "free_points": 1, "extra_base_cost": 250.0, "extra_procure_diff": 0, "is_archaic": False},
-    3: {"max_ac_or_dr": 8, "customization_slots": 4, "free_points": 2, "extra_base_cost": 1000.0, "extra_procure_diff": 1, "is_archaic": False},
-    4: {"max_ac_or_dr": 9, "customization_slots": 5, "free_points": 3, "extra_base_cost": 3000.0, "extra_procure_diff": 1, "is_archaic": False},
-}
 
 
 class ArmorCustomization(BaseModel):
@@ -50,6 +31,18 @@ class ArmorCustomization(BaseModel):
     points_spent: int = Field(0, ge=0, description="Total customization points spent.")
     number_of_improvements: int = Field(0, ge=0, description="Number of improvements.")
     negative_points_earned: int = Field(0, ge=0, description="Negative points earned.")
+    diminished_attributes: List[str] = Field(
+        default_factory=list,
+        description="List of attributes that have been diminished"
+    )
+    improved_attributes: List[str] = Field(
+        default_factory=list,
+        description="List of attributes that have been improved"
+    )
+    customization_log: List[dict] = Field(
+        default_factory=list,
+        description="Audit log of customizations and adjustments applied"
+    )
 
     @model_validator(mode="after")
     def validate_masterwork_choices_count(self) -> 'ArmorCustomization':
@@ -220,8 +213,8 @@ class ArmorDr(BaseModel):
 class Armor(CraftingType):
     item_type: Literal["Armor"] = "Armor"
     level: int = Field(..., ge=0, le=9, description="Armor Level (AL) 0 to 9")
-    ac_bonus: int = Field(0, ge=0, le=9, description="Base Armor Class AC bonus")
-    max_dex_bonus: int = Field(9, ge=0, le=9, description="Base Maximum Dexterity Bonus allowed")
+    ac_bonus: int = Field(0, ge=0, le=20, description="Base Armor Class AC bonus")
+    max_dex_bonus: int = Field(9, ge=0, le=20, description="Base Maximum Dexterity Bonus allowed")
     speed_diff: Literal["Normal", "-5ft", "-10ft", "Halved"] = Field("Normal", description="Base speed penalty")
     weight_lbs: float = Field(0.25, ge=0.0, description="Base weight of the armor at Tech Level 2 (lbs)")
     base_cost: float = Field(10.0, ge=0.0, description="Base cost in ISK")
@@ -258,6 +251,22 @@ class Armor(CraftingType):
             specials=SpecialAttributeConfig(is_archaic=tl_data.get("is_archaic", False)),
             customization=ArmorCustomization(tech_level=tech_level)
         )
+
+    @property
+    def dr_summary(self) -> str:
+        """Returns the DR summary string."""
+        return self.dr.dr_summary
+
+    @property
+    def effective_dr(self) -> dict:
+        """Returns the breakdown of effective DR against various damage types."""
+        return {
+            "all": self.dr.dr_all,
+            "kinetic": self.dr.get_effective_dr("kinetic"),
+            "chemical": self.dr.get_effective_dr("chemical"),
+            "electrical": self.dr.get_effective_dr("electrical"),
+            "thermal": self.dr.get_effective_dr("thermal"),
+        }
 
     @property
     def effective_ac(self) -> int:

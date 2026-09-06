@@ -10,6 +10,7 @@
 from flask import jsonify
 
 from FuturePathAPI import (
+    Armor,  # noqa: F401
     CharacterSheet,  # noqa: F401
     Rolling,  # noqa: F401
     ShipSchematicsSheet,  # noqa: F401
@@ -68,6 +69,12 @@ options = [
         "name": "ship_schematics_sheet",
         "description": "Form-fillable ship schematics sheet for d20 FuturePath.",
         "uri": f"{END_POINT}/tasks/ship_schematics_sheet",
+    },
+    {
+        "id": 8,
+        "name": "armor",
+        "description": "Armor crafting and reference system for d20 FuturePath.",
+        "uri": f"{END_POINT}/tasks/armor",
     },
 ]
 

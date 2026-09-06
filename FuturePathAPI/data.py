@@ -11,6 +11,15 @@ import logging
 from flask import jsonify, request
 
 from FuturePathAPI.initApp import END_POINT, app
+from FuturePathAPI.libs.ArmorReferenceData import (
+    ARMOR_BASELINE_LIST,
+    ARMOR_CRAFTING_RULES,
+    ARMOR_CUSTOMIZATION_ATTRIBUTES,
+    ARMOR_EXAMPLES,
+    ARMOR_SPECIAL_ATTRIBUTES,
+    TECH_LEVEL_LIST,
+    init_armor_reference_tables,
+)
 from FuturePathAPI.libs.ReferenceData import (
     ADVANTAGE_DIE_LEVELS,
     CHARACTER_PATHS,
@@ -46,6 +55,7 @@ log = logging.getLogger("data")
 try:
     init_reference_tables()
     init_spaceship_reference_tables()
+    init_armor_reference_tables()
 except Exception as e:
     log.error(f"Error initializing reference tables in data module: {e}")
 
@@ -63,6 +73,18 @@ data_endpoints = {
     "sizes": f"{END_POINT}/data/sizes",
     "spaceship": f"{END_POINT}/data/spaceship",
     "all_spaceship_reference_data": f"{END_POINT}/data/all_spaceship_reference_data",
+    "armor": f"{END_POINT}/data/armor",
+    "all_armor_reference_data": f"{END_POINT}/data/all_armor_reference_data",
+}
+
+armor_data_endpoints = {
+    "baseline": f"{END_POINT}/data/armor/baseline",
+    "tech_levels": f"{END_POINT}/data/armor/tech_levels",
+    "special_attributes": f"{END_POINT}/data/armor/special_attributes",
+    "customization_attributes": f"{END_POINT}/data/armor/customization_attributes",
+    "crafting_rules": f"{END_POINT}/data/armor/crafting_rules",
+    "examples": f"{END_POINT}/data/armor/examples",
+    "all": f"{END_POINT}/data/all_armor_reference_data",
 }
 
 spaceship_data_endpoints = {
@@ -356,6 +378,23 @@ def get_data_sizes():
     """
     return jsonify(_get_table_data("sizes", key_field="name", fallback_list=SIZES))
 
+def _get_armor_data(table_name, fallback_data):
+    db_conn = get_reference_db()
+    if db_conn is not None:
+        try:
+            docs = list(db_conn.find(collection=table_name))
+            if docs:
+                for doc in docs:
+                    if isinstance(doc, dict):
+                        doc.pop("_id", None)
+                if isinstance(fallback_data, dict) and len(docs) == 1:
+                    return docs[0]
+                return docs
+        except Exception as e:
+            log.error(f"Error fetching armor table '{table_name}': {e}")
+    return fallback_data
+
+
 @app.route("/data/all", methods=["GET"])
 def get_all_reference_data():
     """
@@ -378,6 +417,12 @@ def get_all_reference_data():
         "detractors": _get_detractors_data(),
         "mutation_drawbacks": _get_mutation_drawbacks_data(),
         "mutation_enhancements": _shorten_mutation_enhancements(_get_mutation_enhancements_data()),
+        "armor_baseline": _get_armor_data("armor_baseline", ARMOR_BASELINE_LIST),
+        "armor_tech_levels": _get_armor_data("armor_tech_levels", TECH_LEVEL_LIST),
+        "armor_special_attributes": _get_armor_data("armor_special_attributes", ARMOR_SPECIAL_ATTRIBUTES),
+        "armor_customization_attributes": _get_armor_data("armor_customization_attributes", ARMOR_CUSTOMIZATION_ATTRIBUTES),
+        "armor_crafting_rules": _get_armor_data("armor_crafting_rules", ARMOR_CRAFTING_RULES),
+        "armor_examples": _get_armor_data("armor_examples", ARMOR_EXAMPLES),
     })
 
 
@@ -549,4 +594,106 @@ def get_all_spaceship_reference_data():
         "attribute_upgrades": _get_spaceship_data("spaceship_attribute_upgrades", SHIP_ATTRIBUTE_UPGRADES),
         "accessories": _get_spaceship_data("spaceship_accessories", SHIP_ACCESSORIES),
     })
+
+
+@app.route("/data/armor", methods=["GET"])
+def get_armor_data_index():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor
+    :DESC: Returns a JSON blob showing all available raw armor reference data endpoints.
+    :Content-Type: application/json
+    """
+    return jsonify({"armor_data": armor_data_endpoints})
+
+
+@app.route("/data/armor/baseline", methods=["GET"])
+@app.route("/data/armor/baseline_table", methods=["GET"])
+def get_data_armor_baseline():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/baseline, /data/armor/baseline_table
+    :DESC: Returns baseline armor stats by Armor Level (AL 0-9) at Tech Level 2.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_armor_data("armor_baseline", ARMOR_BASELINE_LIST))
+
+
+@app.route("/data/armor/tech_levels", methods=["GET"])
+@app.route("/data/armor/techlevels", methods=["GET"])
+def get_data_armor_tech_levels():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/tech_levels, /data/armor/techlevels
+    :DESC: Returns Tech Level rules (TL 0-4) for Armor.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_armor_data("armor_tech_levels", TECH_LEVEL_LIST))
+
+
+@app.route("/data/armor/special_attributes", methods=["GET"])
+@app.route("/data/armor/specials", methods=["GET"])
+def get_data_armor_special_attributes():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/special_attributes, /data/armor/specials
+    :DESC: Returns special attributes that can be applied to Armor.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_armor_data("armor_special_attributes", ARMOR_SPECIAL_ATTRIBUTES))
+
+
+@app.route("/data/armor/customization_attributes", methods=["GET"])
+@app.route("/data/armor/attributes", methods=["GET"])
+def get_data_armor_customization_attributes():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/customization_attributes, /data/armor/attributes
+    :DESC: Returns details about customization attributes for Armor.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_armor_data("armor_customization_attributes", ARMOR_CUSTOMIZATION_ATTRIBUTES))
+
+
+@app.route("/data/armor/crafting_rules", methods=["GET"])
+@app.route("/data/armor/crafting", methods=["GET"])
+def get_data_armor_crafting_rules():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/crafting_rules, /data/armor/crafting
+    :DESC: Returns crafting, masterworking, and re-crafting rules for Armor.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_armor_data("armor_crafting_rules", ARMOR_CRAFTING_RULES))
+
+
+@app.route("/data/armor/examples", methods=["GET"])
+def get_data_armor_examples():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/examples
+    :DESC: Returns official example armors from the rules.
+    :Content-Type: application/json
+    """
+    return jsonify(_get_armor_data("armor_examples", ARMOR_EXAMPLES))
+
+
+@app.route("/data/armor/all", methods=["GET"])
+@app.route("/data/all_armor_reference_data", methods=["GET"])
+def get_all_armor_reference_data():
+    """
+    :OPTIONS: GET
+    :PATH: /data/armor/all, /data/all_armor_reference_data
+    :DESC: Returns a JSON object of all armor reference data endpoints.
+    :Content-Type: application/json
+    """
+    return jsonify({
+        "baseline": _get_armor_data("armor_baseline", ARMOR_BASELINE_LIST),
+        "tech_levels": _get_armor_data("armor_tech_levels", TECH_LEVEL_LIST),
+        "special_attributes": _get_armor_data("armor_special_attributes", ARMOR_SPECIAL_ATTRIBUTES),
+        "customization_attributes": _get_armor_data("armor_customization_attributes", ARMOR_CUSTOMIZATION_ATTRIBUTES),
+        "crafting_rules": _get_armor_data("armor_crafting_rules", ARMOR_CRAFTING_RULES),
+        "examples": _get_armor_data("armor_examples", ARMOR_EXAMPLES),
+    })
+
 
