@@ -35,5 +35,5 @@ Also there is the README.md file:
 @./GEMINI_FUTUREPATH_TTRPG.md
 
 # Active Tasks
-- Add a die roller builtin for rolling stats for a new Character sheet onto the Character Creation and Advantage page.
+- [x] Add a die roller builtin for rolling stats for a new Character sheet onto the Character Creation and Advantage page. (Completed with ability_score_calc_wiki_ui.js supporting Standard Spread, Dice Roller, and Point Buy)
 - Review the Glossary/Key Terms page.

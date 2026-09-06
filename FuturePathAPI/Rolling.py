@@ -62,30 +62,33 @@ def rollCharacter(level):
 
     accept = request.headers.get("Accept", "application/json").lower().strip()
     level = level.lower().strip()
-    if level == "normal":
-        return jsonify(Rolling.NormalCharacterStats())
+    if level in ("normal", "standard"):
+        res = jsonify(Rolling.NormalCharacterStats())
     elif level == "high":
-        return jsonify(Rolling.HighFantasyCharacterStats())
+        res = jsonify(Rolling.HighFantasyCharacterStats())
     elif level == "low":
-        return jsonify(Rolling.LowFantasyCharacterStats())
+        res = jsonify(Rolling.LowFantasyCharacterStats())
     elif level == "epic":
-        return jsonify(Rolling.EpicFantasyCharacterStats())
+        res = jsonify(Rolling.EpicFantasyCharacterStats())
     else:
         if accept == "application/json":
-            response = jsonify(
+            res = jsonify(
                 {
                     "Error code": 404,
                     "message": f"You entered  [{level}] as a Fantasy level to generate "
-                    f"a character's stats. Valid options are 'normal', 'high'"
-                    f", or 'low'.",
+                    f"a character's stats. Valid options are 'normal', 'standard', 'high'"
+                    f", 'low', or 'epic'.",
                 }
             )
         else:
-            response = Response(
+            res = Response(
                 render_template("WrongCharacterLevel.html", level=level)
             )
-        response.status_code = 404
-        return response
+        res.status_code = 404
+        return res
+
+    res.headers["Access-Control-Allow-Origin"] = "*"
+    return res
 
 
 def covertToDigit(tmpStr):
