@@ -1780,7 +1780,7 @@ async function rollWeaponCheck(btn) {
   const weaponName = ((nameIn && nameIn.value.trim()) ? nameIn.value.trim() : 'Weapon');
 
   const lvlSel = tr.querySelector('select[name="wepLvl[]"]');
-  const wepLvl = (lvlSel ? parseInt(lvlSel.value || '1', 10) : 1);
+  const wepLvl = (lvlSel && lvlSel.value !== '' ? parseInt(lvlSel.value, 10) : NaN);
 
   const isMeleeChk = tr.querySelector('input[name="wepIsMelee[]"]');
   const isMelee = (isMeleeChk ? isMeleeChk.checked : false);
@@ -1811,7 +1811,7 @@ async function rollWeaponCheck(btn) {
     accuracyFormula += `${totalStaticBonus}`;
   }
 
-  const baseAdCount = (wepLvl <= profCount && advDieVal ? 1 : 0);
+  const baseAdCount = (!Number.isNaN(wepLvl) && wepLvl <= profCount && advDieVal ? 1 : 0);
   const totalAdCount = baseAdCount + adModCount;
   const advDieType = (advDieVal ? (advDieVal.startsWith('d') ? advDieVal : advDieVal.replace(/^\d+/, '')) : 'd4');
 
@@ -1974,6 +1974,7 @@ function addWeaponRow() {
     <td class="text-center">
       <label class="visually-hidden" for="weaponsCard_wepLvl_${idx}">Weapon Level</label>
       <select class="form-select form-select-sm text-start ps-2 pe-1 fw-bold mx-auto" id="weaponsCard_wepLvl_${idx}" name="wepLvl[]" style="max-width: 58px;">
+        <option value=""></option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -3123,7 +3124,7 @@ function addProfessionBlock() {
         <table class="table table-custom mb-0 align-middle prof-talents-table">
           <thead>
             <tr>
-              <th style="width: 200px;">Name</th>
+              <th style="width: 125px;">Name</th>
               <th>Description</th>
               <th style="width: 100px;" class="no-print text-center">
                 <button type="button" class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addProfTalentRow(this)" style="font-size: 0.72rem;">
@@ -3374,7 +3375,7 @@ function getFormDataObj() {
           return;
         }
         const lvlEl = mainRow.querySelector('select[name="wepLvl[]"]');
-        const lvl = (lvlEl ? lvlEl.value : '1');
+        const lvl = (lvlEl ? lvlEl.value : '');
         const dmgEl = mainRow.querySelector('input[name="wepDmg[]"]');
         const atkEl = mainRow.querySelector('input[name="wepAtk[]"]');
         const apEl = mainRow.querySelector('input[name="wepAP[]"]');

@@ -25,7 +25,6 @@ from FuturePathAPI.libs.ArmorReferenceData import (
 )
 from FuturePathAPI.libs.ReferenceData import get_reference_db
 from FuturePathAPI.models.Armor import Armor
-from FuturePathAPI.models.CraftingModels import CraftingManager
 
 log = logging.getLogger("Armor")
 

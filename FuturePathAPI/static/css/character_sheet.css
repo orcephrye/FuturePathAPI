@@ -2384,6 +2384,18 @@ body.is-print-mode #gearTable {
   width: 100% !important;
 }
 
+body.is-print-mode #speciesTraitsTable th:first-child,
+body.is-print-mode #speciesTraitsTable td:first-child,
+body.is-print-mode #pathTalentsTable th:first-child,
+body.is-print-mode #pathTalentsTable td:first-child,
+body.is-print-mode #featsTable th:first-child,
+body.is-print-mode #featsTable td:first-child,
+body.is-print-mode .prof-talents-table th:first-child,
+body.is-print-mode .prof-talents-table td:first-child,
+body.is-print-mode #quirksTable th:first-child,
+body.is-print-mode #quirksTable td:first-child,
+body.is-print-mode #detractorsTable th:first-child,
+body.is-print-mode #detractorsTable td:first-child,
 body.is-print-mode #gearTable th:first-child,
 body.is-print-mode #gearTable td:first-child,
 body.is-print-mode .techniques-sub-table th:first-child,
@@ -3783,6 +3795,18 @@ body.is-print-mode .col-lg-6 {
     width: 100% !important;
   }
 
+  #speciesTraitsTable th:first-child,
+  #speciesTraitsTable td:first-child,
+  #pathTalentsTable th:first-child,
+  #pathTalentsTable td:first-child,
+  #featsTable th:first-child,
+  #featsTable td:first-child,
+  .prof-talents-table th:first-child,
+  .prof-talents-table td:first-child,
+  #quirksTable th:first-child,
+  #quirksTable td:first-child,
+  #detractorsTable th:first-child,
+  #detractorsTable td:first-child,
   #gearTable th:first-child,
   #gearTable td:first-child,
   .techniques-sub-table th:first-child,

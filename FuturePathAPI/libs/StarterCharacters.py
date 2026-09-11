@@ -137,7 +137,7 @@ class ArmorDefensesCard(BaseModel):
 class WeaponItem(BaseModel):
     model_config = ConfigDict(extra="allow", populate_by_name=True)
     Name: str
-    Lvl: Optional[Union[int, str]] = "1"
+    Lvl: Optional[Union[int, str]] = ""
     Damage: Optional[str] = ""
     Accuracy: Optional[str] = ""
     AP: Optional[str] = ""
