@@ -293,6 +293,9 @@ The next step is the foundation of your Hero; the [[Ability Themes|Ability Theme
 
 The Player can also roll for their Character's Ability Theme Scores or use the Point Buy system to 'buy' the scores. Learn more under the [[Character_Creation_and_Advancement#Alternate_Ability_Score_Rules|Alternate Ability Score Rules]]
 
+<div id="ability-score-calc-widget"></div>
+<div style="clear: both"></div>
+
 <pre style="white-space: pre-wrap; 
 white-space: -moz-pre-wrap; 
 white-space: -pre-wrap; 

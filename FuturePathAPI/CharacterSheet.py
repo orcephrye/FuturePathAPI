@@ -9,6 +9,7 @@
 from flask import jsonify, send_from_directory
 
 from FuturePathAPI.initApp import app
+from FuturePathAPI.libs.CharacterReferenceData import init_character_reference_tables
 from FuturePathAPI.libs.ReferenceData import get_reference_db, init_reference_tables
 from FuturePathAPI.libs.StarterCharacters import (
     get_all_starter_characters,
@@ -19,6 +20,7 @@ from FuturePathAPI.libs.StarterCharacters import (
 # Initialize reference and starter character tables on module load
 try:
     init_reference_tables()
+    init_character_reference_tables()
     init_starter_characters_table()
 except Exception:
     pass

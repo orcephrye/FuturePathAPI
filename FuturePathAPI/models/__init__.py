@@ -44,10 +44,15 @@ from FuturePathAPI.models.Armor import (  # noqa: E402
 from FuturePathAPI.models.CraftingModels import (  # noqa: E402
     Action,
     ActionType,
+    Condition,
+    ConditionOperator,
     CraftingDbEntry,
     CraftingManager,
     CraftingType,
+    OperatorType,
     Rule,
+    RuleTiming,
+    Target,
 )
 
 __all__ = [
@@ -57,11 +62,16 @@ __all__ = [
     "Armor",
     "ArmorCustomization",
     "ArmorDr",
+    "Condition",
+    "ConditionOperator",
     "CraftingDbEntry",
     "CraftingManager",
     "CraftingType",
+    "OperatorType",
     "Rule",
+    "RuleTiming",
     "SpecialAttributeConfig",
+    "Target",
     "register_model",
 ]
 

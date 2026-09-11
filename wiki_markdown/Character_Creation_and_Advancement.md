@@ -389,6 +389,9 @@ use the Point Buy system to \'buy\' the scores. Learn more under the
 [Alternate Ability Score
 Rules](Character_Creation_and_Advancement#Alternate_Ability_Score_Rules "Alternate Ability Score Rules"){.wikilink}
 
+<div id="ability-score-calc-widget"></div>
+<div style="clear: both"></div>
+
     Editing Character Sheet (Ability Scores): Read the sections below for the different choices and details on setting up your ability scores. The Ability Scores section of the Character Sheet is on the first page, near the top, just below the "Future Path" title. It is a vertical column that starts with STR and ends with CHA. Each Ability has a SCORE/Modifier/TEMP SCORE/TEMP Modifier. We will only need to fill out the SCORE for now. 
 
 Once you select, roll, or buy up your ability scores (see alternate

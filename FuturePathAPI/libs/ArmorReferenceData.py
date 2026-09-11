@@ -9,7 +9,7 @@
 import logging
 from typing import Any, Dict, List
 
-from FuturePathAPI.libs.ReferenceData import get_reference_db
+from FuturePathAPI.libs.ReferenceData import init_reference_tables
 
 log = logging.getLogger("ArmorReferenceData")
 
@@ -499,15 +499,10 @@ ARMOR_EXAMPLES: List[Dict[str, Any]] = [
 ]
 
 
-def init_armor_reference_tables(db_conn=None):
+def init_armor_reference_tables(db_conn=None, force_reload: bool = False):
     """
     Initializes armor reference tables in the database if they do not exist.
     """
-    if db_conn is None:
-        db_conn = get_reference_db()
-    if db_conn is None:
-        return None
-
     tables_data = {
         "armor_baseline": ARMOR_BASELINE_LIST,
         "armor_tech_levels": TECH_LEVEL_LIST,
@@ -516,13 +511,6 @@ def init_armor_reference_tables(db_conn=None):
         "armor_crafting_rules": [ARMOR_CRAFTING_RULES],
         "armor_examples": ARMOR_EXAMPLES,
     }
-
-    for table_name, data in tables_data.items():
-        try:
-            existing = list(db_conn.find(collection=table_name))
-            if not existing:
-                db_conn.insertMany(data, collection=table_name)
-        except Exception as e:
-            log.error(f"Error initializing armor table {table_name}: {e}")
-
-    return db_conn
+    return init_reference_tables(
+        tables_data=tables_data, db_conn=db_conn, force_reload=force_reload
+    )

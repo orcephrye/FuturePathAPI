@@ -8,7 +8,7 @@
 
 import logging
 
-from FuturePathAPI.libs.ReferenceData import get_reference_db
+from FuturePathAPI.libs.ReferenceData import init_reference_tables
 
 log = logging.getLogger("SpaceShipReferenceData")
 
@@ -1076,12 +1076,7 @@ SHIP_ACCESSORIES = [
 ]
 
 
-def init_spaceship_reference_tables(db_conn=None):
-    if db_conn is None:
-        db_conn = get_reference_db()
-    if db_conn is None:
-        return None
-
+def init_spaceship_reference_tables(db_conn=None, force_reload: bool = False):
     tables_data = {
         "spaceship_hull_sizes": HULL_SIZES,
         "spaceship_hull_configurations": HULL_CONFIGURATIONS,
@@ -1094,20 +1089,7 @@ def init_spaceship_reference_tables(db_conn=None):
         "spaceship_attribute_upgrades": [SHIP_ATTRIBUTE_UPGRADES],
         "spaceship_accessories": SHIP_ACCESSORIES,
     }
+    return init_reference_tables(
+        tables_data=tables_data, db_conn=db_conn, force_reload=force_reload
+    )
 
-    for table_name, data in tables_data.items():
-        try:
-            existing = list(db_conn.find(collection=table_name))
-            if not existing:
-                db_conn.insertMany(data, collection=table_name)
-            elif table_name == "spaceship_hull_configurations":
-                if any("Mods" not in doc for doc in existing if isinstance(doc, dict)):
-                    try:
-                        db_conn.drop(collection=table_name)
-                    except Exception:
-                        pass
-                    db_conn.insertMany(data, collection=table_name)
-        except Exception as e:
-            log.error(f"Error initializing spaceship table {table_name}: {e}")
-
-    return db_conn

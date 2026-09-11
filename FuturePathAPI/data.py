@@ -20,7 +20,7 @@ from FuturePathAPI.libs.ArmorReferenceData import (
     TECH_LEVEL_LIST,
     init_armor_reference_tables,
 )
-from FuturePathAPI.libs.ReferenceData import (
+from FuturePathAPI.libs.CharacterReferenceData import (
     ADVANTAGE_DIE_LEVELS,
     CHARACTER_PATHS,
     DETRACTORS,
@@ -29,8 +29,11 @@ from FuturePathAPI.libs.ReferenceData import (
     OCCUPATIONS,
     PROFESSIONS,
     QUIRKS,
-    SIZES,
     SKILL_DIE_LEVELS,
+    init_character_reference_tables,
+)
+from FuturePathAPI.libs.ReferenceData import (
+    SIZES,
     SPECIES,
     get_reference_db,
     init_reference_tables,
@@ -54,6 +57,7 @@ log = logging.getLogger("data")
 # Initialize reference tables on module load
 try:
     init_reference_tables()
+    init_character_reference_tables()
     init_spaceship_reference_tables()
     init_armor_reference_tables()
 except Exception as e:

@@ -133,19 +133,6 @@ def _extract_armor_from_request() -> Tuple[Optional[Armor], Optional[str]]:
         except Exception as e:
             return None, f"Invalid Armor JSON payload: {e}"
 
-    # Fallback: check item_id in HTTP parameters
-    item_id = _get_http_param(["item_id", "itemId", "id"])
-    if item_id and isinstance(item_id, str):
-        try:
-            mgr = CraftingManager()
-            loaded = mgr.get_item(item_id)
-            if isinstance(loaded, Armor):
-                return loaded, None
-            elif loaded is not None:
-                return None, f"Item '{item_id}' found, but is of type {type(loaded).__name__}, not Armor."
-        except Exception as e:
-            log.warning(f"Error loading item {item_id} from database: {e}")
-
     return None, "No Armor data found in request. The POST request body must be the Armor JSON object."
 
 
@@ -153,28 +140,16 @@ def _format_armor_response(
     armor: Armor,
     message: str,
     extra: Optional[Dict[str, Any]] = None,
-    save: bool = False,
     status_code: int = 200,
 ):
     """
     Builds a complete, consistent JSON response for an Armor instance.
     All data is pure JSON serialized via Pydantic model_dump.
     """
-    res = armor.model_dump()
-    res["armor"] = armor.model_dump()
-    res["message"] = message
+    res = {"armor": armor.model_dump(), "message": message}
 
     if extra:
         res.update(extra)
-
-    if save:
-        try:
-            mgr = CraftingManager()
-            saved = mgr.save_item(armor)
-            res["saved_to_db"] = bool(saved)
-        except Exception as e:
-            log.warning(f"Could not persist armor item {armor.id}: {e}")
-            res["saved_to_db"] = False
 
     return jsonify(res), status_code
 
@@ -223,35 +198,17 @@ def _handle_create_base_armor(level=None, tech_level=None):
             "error": f"Tech Level {tl} is out of bounds. Must be between 0 and 4."
         }), 400
 
-    item_id = _get_http_param(["item_id", "itemId", "id", "ID"])
-    if not item_id:
-        item_id = f"armor_al{al}_tl{tl}_{uuid.uuid4().hex[:8]}"
-
-    name = _get_http_param(["name", "Name", "item_name", "itemName"])
-    if not name:
-        name = f"Base Armor (AL {al}, TL {tl})"
-
-    description = _get_http_param(
-        ["description", "Description"],
-        default=f"Base level {al} armor at Tech Level {tl}.",
-    )
-
     base_armor = Armor.create_base(
-        item_id=str(item_id),
-        name=str(name),
+        item_id=f"armor_al{al}_tl{tl}_{uuid.uuid4().hex[:8]}",
+        name=_get_http_param(["name", "Name", "item_name", "itemName"], default=f"Base Armor (AL {al}, TL {tl})"),
         level=al,
         tech_level=tl,
-        description=str(description),
+        description=_get_http_param(["description", "Description"], default=f"Base level {al} armor at Tech Level {tl}.")
     )
-
-    save_param = _get_http_param(["save", "Save", "persist", "Persist"], default=False)
-    if isinstance(save_param, str):
-        save_param = save_param.lower() in ("true", "1", "yes")
 
     return _format_armor_response(
         base_armor,
         message=f"Base Armor level {al} (Tech Level {tl}) created successfully.",
-        save=bool(save_param),
     )
 
 
@@ -300,7 +257,7 @@ def armor_trade_dr():
     if isinstance(save_param, str):
         save_param = save_param.lower() in ("true", "1", "yes")
 
-    return _format_armor_response(armor, message=msg, save=bool(save_param))
+    return _format_armor_response(armor, message=msg)
 
 
 # -------------------------------------------------------------------------
@@ -371,7 +328,7 @@ def armor_spend_dr():
     if isinstance(save_param, str):
         save_param = save_param.lower() in ("true", "1", "yes")
 
-    return _format_armor_response(armor, message=msg, save=bool(save_param))
+    return _format_armor_response(armor, message=msg)
 
 
 # -------------------------------------------------------------------------
@@ -426,7 +383,7 @@ def armor_masterwork():
     if isinstance(save_param, str):
         save_param = save_param.lower() in ("true", "1", "yes")
 
-    return _format_armor_response(armor, message=msg, save=bool(save_param))
+    return _format_armor_response(armor, message=msg)
 
 
 # -------------------------------------------------------------------------
@@ -473,7 +430,7 @@ def armor_diminish():
     if isinstance(save_param, str):
         save_param = save_param.lower() in ("true", "1", "yes")
 
-    return _format_armor_response(armor, message=msg, save=bool(save_param))
+    return _format_armor_response(armor, message=msg)
 
 
 # -------------------------------------------------------------------------
@@ -532,7 +489,7 @@ def armor_improve():
     if isinstance(save_param, str):
         save_param = save_param.lower() in ("true", "1", "yes")
 
-    return _format_armor_response(armor, message=msg, save=bool(save_param))
+    return _format_armor_response(armor, message=msg)
 
 
 # -------------------------------------------------------------------------
@@ -647,26 +604,6 @@ def create_base_armor_path_endpoint(level, tech_level=None):
     :Content-Type: application/json
     """
     return _handle_create_base_armor(level=level, tech_level=tech_level)
-
-
-
-@app.route("/tasks/armor/item/<item_id>", methods=["GET"])
-def get_armor_item_by_id(item_id):
-    """
-    :OPTIONS: GET
-    :PATH: /tasks/armor/item/<item_id>
-    :DESC: Retrieves a previously saved Armor model by its ID.
-    :Content-Type: application/json
-    """
-    try:
-        manager = CraftingManager()
-        item = manager.get_item(item_id)
-        if not item:
-            return jsonify({"error": f"Armor item with ID '{item_id}' not found."}), 404
-        return _format_armor_response(item, message=f"Armor '{item_id}' retrieved successfully.")
-    except Exception as e:
-        log.error(f"Error fetching item {item_id}: {e}")
-        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/tasks/armor/baseline", methods=["GET"])
