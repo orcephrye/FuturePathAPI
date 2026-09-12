@@ -15,6 +15,13 @@ let skillDieLevels = [
   "d12+d10+5", "2d12+5", "2d12+6", "2d6+d12+7", "4d6+8"
 ];
 let isPopulatingForm = false;
+let combatFilterState = null;
+let masterFilteredData = {
+  professionsCard: [],
+  featsCard: [],
+  pathTalentsCard: [],
+  speciesTraitsCard: []
+};
 
 const FALLBACK_CHARACTER_PATHS = [
   { Name: "Path of Strength (Strong Hero)", Affinity: "Strength" },
@@ -943,9 +950,15 @@ async function loadAllReferanceData() {
     if (occupationDatalist && Array.isArray(allData.occupations)) {
       occupationDatalist.innerHTML = allData.occupations.map((occ) => `<option value="${occ}">`).join('');
     }
-    if (wealthDatalist && Array.isArray(allData.occupations) && allData.occupations.length > 0) {
+    if (Array.isArray(allData.occupations) && allData.occupations.length > 0) {
       const randomOcc = allData.occupations[Math.floor(Math.random() * allData.occupations.length)];
-      wealthDatalist.placeholder = `e.g. ${randomOcc}`;
+      if (wealthDatalist) {
+        wealthDatalist.placeholder = `e.g. ${randomOcc}`;
+      }
+      const profOccInput = document.getElementById('professionSkill_occupationInput');
+      if (profOccInput) {
+        profOccInput.placeholder = `e.g. ${randomOcc}`;
+      }
     }
     const rawProf = allData.professions || allData.character_professions;
     if (rawProf && Array.isArray(rawProf) && rawProf.length > 0) {
@@ -1176,6 +1189,108 @@ async function rollAbilityCheck(abilityKey, event) {
   }
 }
 
+function syncOccupation(val, source) {
+  const occ1 = document.getElementById('wealthXpCard_occupationInput');
+  const occ2 = document.getElementById('professionSkill_occupationInput');
+  if (occ1 && occ1 !== source && occ1.value !== val) {
+    occ1.value = val;
+  }
+  if (occ2 && occ2 !== source && occ2.value !== val) {
+    occ2.value = val;
+  }
+  updateProfessionSkillDisplay(val);
+}
+
+function updateProfessionSkillDisplay(val) {
+  const cell = document.getElementById('professionSkillCell');
+  if (!cell) {
+    return;
+  }
+  const hasVal = Boolean(val && String(val).trim());
+  if (hasVal) {
+    cell.classList.add('has-occupation');
+    cell.classList.remove('no-occupation');
+  } else {
+    cell.classList.add('no-occupation');
+    cell.classList.remove('has-occupation');
+  }
+  const occ2 = document.getElementById('professionSkill_occupationInput');
+  if (occ2) {
+    occ2.size = Math.max(1, (val ? String(val).trim().length : 0));
+  }
+}
+
+function syncCurrentWealth(val, source) {
+  const el1 = document.getElementById('wealthXpCard_currentWealthScore');
+  const el2 = document.getElementById('equipmentCard_currentWealthScore');
+  if (el1 && el1 !== source && el1.value !== val) {
+    el1.value = val;
+  }
+  if (el2 && el2 !== source && el2.value !== val) {
+    el2.value = val;
+  }
+}
+
+function syncLiquidCredits(val, source) {
+  const el1 = document.getElementById('wealthXpCard_liquidCredits');
+  const el2 = document.getElementById('equipmentCard_liquidCredits');
+  if (el1 && el1 !== source && el1.value !== val) {
+    el1.value = val;
+  }
+  if (el2 && el2 !== source && el2.value !== val) {
+    el2.value = val;
+  }
+}
+
+function syncXpCurrent(val, source) {
+  const el1 = document.getElementById('wealthXpCard_xpCurrent');
+  const el2 = document.getElementById('identityCard_xpCurrent');
+  if (el1 && el1 !== source && el1.value !== val) {
+    el1.value = val;
+  }
+  if (el2 && el2 !== source && el2.value !== val) {
+    el2.value = val;
+  }
+}
+
+function syncXpNextLevel(val, source) {
+  const el1 = document.getElementById('wealthXpCard_xpNextLevel');
+  const el2 = document.getElementById('identityCard_xpNextLevel');
+  if (el1 && el1 !== source && el1.value !== val) {
+    el1.value = val;
+  }
+  if (el2 && el2 !== source && el2.value !== val) {
+    el2.value = val;
+  }
+}
+
+function syncAllDuplicatedWealthFields() {
+  const occ1 = document.getElementById('wealthXpCard_occupationInput');
+  const occ2 = document.getElementById('professionSkill_occupationInput');
+  const occVal = (occ2 && occ2.value) ? occ2.value : (occ1 ? occ1.value : '');
+  syncOccupation(occVal, null);
+
+  const w1 = document.getElementById('wealthXpCard_currentWealthScore');
+  const w2 = document.getElementById('equipmentCard_currentWealthScore');
+  const wVal = (w2 && w2.value) ? w2.value : (w1 ? w1.value : '');
+  syncCurrentWealth(wVal, null);
+
+  const c1 = document.getElementById('wealthXpCard_liquidCredits');
+  const c2 = document.getElementById('equipmentCard_liquidCredits');
+  const cVal = (c2 && c2.value) ? c2.value : (c1 ? c1.value : '');
+  syncLiquidCredits(cVal, null);
+
+  const xpc1 = document.getElementById('wealthXpCard_xpCurrent');
+  const xpc2 = document.getElementById('identityCard_xpCurrent');
+  const xpcVal = (xpc2 && xpc2.value) ? xpc2.value : (xpc1 ? xpc1.value : '');
+  syncXpCurrent(xpcVal, null);
+
+  const xpn1 = document.getElementById('wealthXpCard_xpNextLevel');
+  const xpn2 = document.getElementById('identityCard_xpNextLevel');
+  const xpnVal = (xpn2 && xpn2.value) ? xpn2.value : (xpn1 ? xpn1.value : '');
+  syncXpNextLevel(xpnVal, null);
+}
+
 async function rollSkillCheck(btnOrIcon) {
   const row = btnOrIcon.closest('tr');
   if (!row) {
@@ -1183,22 +1298,28 @@ async function rollSkillCheck(btnOrIcon) {
   }
 
   let skillName = 'Skill';
-  for (let i = 0; i < row.cells.length; i += 1) {
-    const cell = row.cells[i];
-    if (!cell.classList.contains('no-print') && !cell.querySelector('.roll-skill-btn') && !cell.querySelector('.form-check-input')) {
-      const inputName = cell.querySelector('input[type="text"]:not(.skill-rank):not(.skill-die):not(.skill-misc-mod):not(.skill-ab-mod)');
-      if (inputName && inputName.value.trim()) {
-        skillName = inputName.value.trim();
-        break;
-      }
-      const clone = cell.cloneNode(true);
-      clone.querySelectorAll('.badge, .no-print, input, select').forEach((el) => {
-        el.remove();
-      });
-      const text = clone.textContent.trim();
-      if (text) {
-        skillName = text;
-        break;
+  if (row.dataset.skill === 'profession_custom') {
+    const occInput = row.querySelector('.profession-occupation-input') || document.getElementById('professionSkill_occupationInput') || document.getElementById('wealthXpCard_occupationInput');
+    const occVal = (occInput ? occInput.value.trim() : '');
+    skillName = occVal ? `Profession (${occVal})` : 'Profession';
+  } else {
+    for (let i = 0; i < row.cells.length; i += 1) {
+      const cell = row.cells[i];
+      if (!cell.classList.contains('no-print') && !cell.querySelector('.roll-skill-btn') && !cell.querySelector('.form-check-input')) {
+        const inputName = cell.querySelector('input[type="text"]:not(.skill-rank):not(.skill-die):not(.skill-misc-mod):not(.skill-ab-mod)');
+        if (inputName && inputName.value.trim()) {
+          skillName = inputName.value.trim();
+          break;
+        }
+        const clone = cell.cloneNode(true);
+        clone.querySelectorAll('.badge, .no-print, input, select').forEach((el) => {
+          el.remove();
+        });
+        const text = clone.textContent.trim();
+        if (text) {
+          skillName = text;
+          break;
+        }
       }
     }
   }
@@ -3124,7 +3245,7 @@ function addProfessionBlock() {
         <table class="table table-custom mb-0 align-middle prof-talents-table">
           <thead>
             <tr>
-              <th style="width: 125px;">Name</th>
+              <th style="width: 250px;">Name</th>
               <th>Description</th>
               <th style="width: 100px;" class="no-print text-center">
                 <button type="button" class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addProfTalentRow(this)" style="font-size: 0.72rem;">
@@ -3272,6 +3393,83 @@ function handleItemCraftProficiencyChange(num, isChecked) {
 function removeRow(btn) {
   const tr = btn.closest('tr');
   if (tr) {
+    if (isCombatView()) {
+      const card = tr.closest('.sheet-card');
+      const cardId = card ? card.id : null;
+      if (cardId === 'speciesTraitsCard') {
+        const nameInput = tr.querySelector('input[name="speciesTraitName[]"]');
+        const name = (nameInput ? nameInput.value.trim() : '');
+        const descEl = tr.querySelector('textarea[name="speciesTraitDesc[]"]');
+        const desc = (descEl ? descEl.value.trim() : '');
+        if (name) {
+          addNameToCombatFilter('speciesTraitsCard', name);
+          if (!masterFilteredData.speciesTraitsCard.some((t) => (t.Name || t.name || '').trim().toLowerCase() === name.toLowerCase())) {
+            masterFilteredData.speciesTraitsCard.push({ Name: name, Description: desc });
+          }
+        }
+      } else if (cardId === 'pathTalentsCard') {
+        const nameInput = tr.querySelector('input[name="pathTalentName[]"]');
+        const name = (nameInput ? nameInput.value.trim() : '');
+        const descEl = tr.querySelector('textarea[name="pathTalentDesc[]"]');
+        const desc = (descEl ? descEl.value.trim() : '');
+        if (name) {
+          addNameToCombatFilter('pathTalentsCard', name);
+          if (!masterFilteredData.pathTalentsCard.some((t) => (t.Name || t.name || '').trim().toLowerCase() === name.toLowerCase())) {
+            masterFilteredData.pathTalentsCard.push({ Name: name, Description: desc });
+          }
+        }
+      } else if (cardId === 'featsCard') {
+        const nameInput = tr.querySelector('input[name="featName[]"]');
+        const name = (nameInput ? nameInput.value.trim() : '');
+        const descEl = tr.querySelector('textarea[name="featDesc[]"]');
+        const desc = (descEl ? descEl.value.trim() : '');
+        if (name) {
+          addNameToCombatFilter('featsCard', name);
+          if (!masterFilteredData.featsCard.some((t) => (t.Name || t.name || '').trim().toLowerCase() === name.toLowerCase())) {
+            masterFilteredData.featsCard.push({ Name: name, Description: desc });
+          }
+        }
+      } else if (cardId === 'professionsCard') {
+        const nameInput = tr.querySelector('input[name="profTalentName[]"]');
+        const name = (nameInput ? nameInput.value.trim() : '');
+        const descEl = tr.querySelector('textarea[name="profTalentDesc[]"]');
+        const desc = (descEl ? descEl.value.trim() : '');
+        const block = tr.closest('.profession-block');
+        const profTitle = block ? (block.querySelector('input[name="profTitle[]"]')?.value.trim() || '') : '';
+        if (name) {
+          addNameToCombatFilter('professionsCard', name);
+          if (!masterFilteredData.professionsCard.some((item) => {
+            const tName = (item.talent ? (item.talent.Name || item.talent.name) : (item.Name || item.name)) || '';
+            return tName.trim().toLowerCase() === name.toLowerCase();
+          })) {
+            masterFilteredData.professionsCard.push({
+              profTitle: profTitle,
+              talent: { Name: name, Description: desc }
+            });
+          }
+        }
+      }
+    } else if (combatFilterState) {
+      const card = tr.closest('.sheet-card');
+      const cardId = card ? card.id : null;
+      if (cardId && ['speciesTraitsCard', 'pathTalentsCard', 'featsCard', 'professionsCard'].includes(cardId)) {
+        let nameInput = null;
+        if (cardId === 'speciesTraitsCard') {
+          nameInput = tr.querySelector('input[name="speciesTraitName[]"]');
+        } else if (cardId === 'pathTalentsCard') {
+          nameInput = tr.querySelector('input[name="pathTalentName[]"]');
+        } else if (cardId === 'featsCard') {
+          nameInput = tr.querySelector('input[name="featName[]"]');
+        } else if (cardId === 'professionsCard') {
+          nameInput = tr.querySelector('input[name="profTalentName[]"]');
+        }
+        const name = (nameInput ? nameInput.value.trim() : '');
+        if (name) {
+          removeNameFromCombatFilter(cardId, name);
+        }
+      }
+    }
+
     if (tr.nextElementSibling && (tr.nextElementSibling.classList.contains('weapon-notes-row') || tr.nextElementSibling.classList.contains('armor-notes-row'))) {
       tr.nextElementSibling.remove();
     }
@@ -3517,6 +3715,18 @@ function getFormDataObj() {
         });
       });
 
+      if (isCombatView() && masterFilteredData.speciesTraitsCard && masterFilteredData.speciesTraitsCard.length > 0) {
+        masterFilteredData.speciesTraitsCard.forEach((fTrait) => {
+          const fName = (fTrait.Name || fTrait.name || '').trim();
+          if (fName && !speciesTraitsList.some((item) => item.Name.toLowerCase() === fName.toLowerCase())) {
+            speciesTraitsList.push({
+              "Name": fTrait.Name || fTrait.name || fName,
+              "Description": fTrait.Description || fTrait.description || ''
+            });
+          }
+        });
+      }
+
       structured.speciesTraitsCard = {
         "speciesTraitsList": speciesTraitsList
       };
@@ -3739,6 +3949,18 @@ function getFormDataObj() {
         });
       });
 
+      if (isCombatView() && masterFilteredData.pathTalentsCard && masterFilteredData.pathTalentsCard.length > 0) {
+        masterFilteredData.pathTalentsCard.forEach((fTalent) => {
+          const fName = (fTalent.Name || fTalent.name || '').trim();
+          if (fName && !pathTalentsList.some((item) => item.Name.toLowerCase() === fName.toLowerCase())) {
+            pathTalentsList.push({
+              "Name": fTalent.Name || fTalent.name || fName,
+              "Description": fTalent.Description || fTalent.description || ''
+            });
+          }
+        });
+      }
+
       structured.pathTalentsCard = {
         "pathTalentsList": pathTalentsList
       };
@@ -3766,6 +3988,18 @@ function getFormDataObj() {
           "Description": desc
         });
       });
+
+      if (isCombatView() && masterFilteredData.featsCard && masterFilteredData.featsCard.length > 0) {
+        masterFilteredData.featsCard.forEach((fFeat) => {
+          const fName = (fFeat.Name || fFeat.name || '').trim();
+          if (fName && !featsList.some((item) => item.Name.toLowerCase() === fName.toLowerCase())) {
+            featsList.push({
+              "Name": fFeat.Name || fFeat.name || fName,
+              "Description": fFeat.Description || fFeat.description || ''
+            });
+          }
+        });
+      }
 
       structured.featsCard = {
         "featsList": featsList
@@ -3816,9 +4050,16 @@ function getFormDataObj() {
       const totalWeightEl = card.querySelector('input[name="totalGearWeight"]');
       const totalWeight = (totalWeightEl ? totalWeightEl.value.trim() : '0');
 
+      const currentWealthEl = card.querySelector('input[name="equipmentCurrentWealthScore"]') || document.getElementById('equipmentCard_currentWealthScore');
+      const currentWealth = (currentWealthEl ? currentWealthEl.value.trim() : '');
+      const liquidCreditsEl = card.querySelector('input[name="equipmentLiquidCredits"]') || document.getElementById('equipmentCard_liquidCredits');
+      const liquidCredits = (liquidCreditsEl ? liquidCreditsEl.value.trim() : '');
+
       structured.equipmentCard = {
         "itemCraftProfCount": itemCraftProfCount,
         "totalGearWeight": totalWeight,
+        "currentWealthScore": currentWealth,
+        "liquidCredits": liquidCredits,
         "equipmentList": equipmentList
       };
       return;
@@ -3869,6 +4110,22 @@ function getFormDataObj() {
           });
         });
 
+        if (isCombatView() && masterFilteredData.professionsCard && masterFilteredData.professionsCard.length > 0) {
+          masterFilteredData.professionsCard.forEach((item) => {
+            const pTitle = (item.profTitle || '').trim().toLowerCase();
+            const talent = item.talent || item;
+            const tName = (talent.Name || talent.name || '').trim();
+            if (tName && (pTitle === title.toLowerCase() || (!pTitle && blocks.length === 1))) {
+              if (!talents.some((t) => t.Name.toLowerCase() === tName.toLowerCase())) {
+                talents.push({
+                  "Name": talent.Name || talent.name || tName,
+                  "Description": talent.Description || talent.description || ''
+                });
+              }
+            }
+          });
+        }
+
         profList.push({
           "Title": title,
           "Level": level,
@@ -3876,6 +4133,23 @@ function getFormDataObj() {
           "Talents": talents
         });
       });
+
+      if (isCombatView() && masterFilteredData.professionsCard && masterFilteredData.professionsCard.length > 0 && profList.length > 0) {
+        masterFilteredData.professionsCard.forEach((item) => {
+          const talent = item.talent || item;
+          const tName = (talent.Name || talent.name || '').trim();
+          if (!tName) {
+            return;
+          }
+          const alreadyIncluded = profList.some((p) => p.Talents && p.Talents.some((t) => t.Name.toLowerCase() === tName.toLowerCase()));
+          if (!alreadyIncluded) {
+            profList[0].Talents.push({
+              "Name": talent.Name || talent.name || tName,
+              "Description": talent.Description || talent.description || ''
+            });
+          }
+        });
+      }
 
       structured.professionsCard = profList;
       return;
@@ -4010,13 +4284,19 @@ function getFormDataObj() {
 
       featRows.forEach((row) => {
         let name = '';
-        const staticTd = row.querySelector('td.fw-semibold');
-        if (staticTd) {
-          name = staticTd.textContent.trim();
+        if (row.dataset.skill === 'profession_custom') {
+          const occInput = document.getElementById('professionSkill_occupationInput') || document.getElementById('wealthXpCard_occupationInput');
+          const occVal = (occInput ? occInput.value.trim() : '');
+          name = occVal ? `Profession (${occVal})` : 'Profession';
         } else {
-          const nameInput = row.querySelector('input[name^="customFeatSkillName"]');
-          if (nameInput) {
-            name = nameInput.value.trim();
+          const staticTd = row.querySelector('td.fw-semibold');
+          if (staticTd) {
+            name = staticTd.textContent.trim();
+          } else {
+            const nameInput = row.querySelector('input[name^="customFeatSkillName"]');
+            if (nameInput) {
+              name = nameInput.value.trim();
+            }
           }
         }
 
@@ -4200,6 +4480,25 @@ function getFormDataObj() {
     "conditionsVisible": (condChk ? condChk.checked : true)
   };
 
+  // Provide backwards-compatible wealthXpCard structure for external parsers and older exports
+  const occInput = document.getElementById('professionSkill_occupationInput');
+  const curWealthInput = document.getElementById('equipmentCard_currentWealthScore');
+  const liquidCredInput = document.getElementById('equipmentCard_liquidCredits');
+  const xpCurInput = document.getElementById('identityCard_xpCurrent');
+  const xpNextInput = document.getElementById('identityCard_xpNextLevel');
+  structured.wealthXpCard = {
+    "occupation": occInput ? occInput.value : '',
+    "currentWealthScore": curWealthInput ? curWealthInput.value : '',
+    "liquidCredits": liquidCredInput ? liquidCredInput.value : '',
+    "xpCurrent": xpCurInput ? xpCurInput.value : '',
+    "xpNextLevel": xpNextInput ? xpNextInput.value : ''
+  };
+
+  const combatFilter = getCombatFilter();
+  if (combatFilter) {
+    structured.Combat_Filter = combatFilter;
+  }
+
   return structured;
 }
 
@@ -4233,16 +4532,30 @@ function populateForm(data) {
 
   isPopulatingForm = true;
   try {
+    if (data.Combat_Filter) {
+      combatFilterState = normalizeCombatFilter(data.Combat_Filter);
+    } else if (isCombatView()) {
+      combatFilterState = createEmptyCombatFilter();
+    } else {
+      combatFilterState = null;
+    }
+    masterFilteredData = {
+      professionsCard: [],
+      featsCard: [],
+      pathTalentsCard: [],
+      speciesTraitsCard: []
+    };
+
     // Check if data is structured by sheet cards or flat legacy format
     let flatData = {};
-  const isStructured = Object.values(data).some((v) => Boolean(v && typeof v === 'object' && !Array.isArray(v)));
+    const isStructured = Object.values(data).some((v) => Boolean(v && typeof v === 'object' && !Array.isArray(v)));
 
-  if (isStructured) {
-    Object.keys(data).forEach((cardKey) => {
-      if (cardKey === 'languageCustomSkillsCard' || cardKey === 'coreSkills' || cardKey === 'coreSkillsCard' || cardKey === 'armorDefensesCard' || cardKey === 'weaponsCard' || cardKey === 'speciesTraitsCard' || cardKey === 'quirksCard' || cardKey === 'detractorsCard' || cardKey === 'cyberneticsCard' || cardKey === 'mutationsCard' || cardKey === 'psionicsCard' || cardKey === 'pathTalentsCard' || cardKey === 'featsCard' || cardKey === 'equipmentCard' || cardKey === 'gearCard' || cardKey === 'professionsCard' || cardKey === 'techniquesCard' || cardKey === 'powerArmorCard' || cardKey === 'UI_Layout') {
-        return;
-      }
-      const cardObj = data[cardKey];
+    if (isStructured) {
+      Object.keys(data).forEach((cardKey) => {
+        if (cardKey === 'languageCustomSkillsCard' || cardKey === 'coreSkills' || cardKey === 'coreSkillsCard' || cardKey === 'armorDefensesCard' || cardKey === 'weaponsCard' || cardKey === 'speciesTraitsCard' || cardKey === 'quirksCard' || cardKey === 'detractorsCard' || cardKey === 'cyberneticsCard' || cardKey === 'mutationsCard' || cardKey === 'psionicsCard' || cardKey === 'pathTalentsCard' || cardKey === 'featsCard' || cardKey === 'equipmentCard' || cardKey === 'gearCard' || cardKey === 'professionsCard' || cardKey === 'techniquesCard' || cardKey === 'powerArmorCard' || cardKey === 'UI_Layout' || cardKey === 'Combat_Filter') {
+          return;
+        }
+        const cardObj = data[cardKey];
       if (cardObj && typeof cardObj === 'object' && !Array.isArray(cardObj)) {
         Object.keys(cardObj).forEach((fieldName) => {
           flatData[fieldName] = cardObj[fieldName];
@@ -4288,6 +4601,33 @@ function populateForm(data) {
       }
     }
   });
+
+  // Backwards compatibility for wealthXpCard and legacy wealth/credits/xp/occupation fields
+  const legacyWealthCard = (data && data.wealthXpCard && typeof data.wealthXpCard === 'object') ? data.wealthXpCard : {};
+  const occVal = (legacyWealthCard.occupation !== undefined) ? legacyWealthCard.occupation : (flatData.occupation !== undefined ? flatData.occupation : flatData.professionOccupation);
+  if (occVal !== undefined) {
+    syncOccupation(occVal, null);
+  }
+
+  const wealthVal = (legacyWealthCard.currentWealthScore !== undefined) ? legacyWealthCard.currentWealthScore : (flatData.currentWealthScore !== undefined ? flatData.currentWealthScore : (data.equipmentCard && data.equipmentCard.currentWealthScore !== undefined ? data.equipmentCard.currentWealthScore : flatData.equipmentCurrentWealthScore));
+  if (wealthVal !== undefined) {
+    syncCurrentWealth(wealthVal, null);
+  }
+
+  const credVal = (legacyWealthCard.liquidCredits !== undefined) ? legacyWealthCard.liquidCredits : (flatData.liquidCredits !== undefined ? flatData.liquidCredits : (data.equipmentCard && data.equipmentCard.liquidCredits !== undefined ? data.equipmentCard.liquidCredits : flatData.equipmentLiquidCredits));
+  if (credVal !== undefined) {
+    syncLiquidCredits(credVal, null);
+  }
+
+  const xpCurVal = (legacyWealthCard.xpCurrent !== undefined) ? legacyWealthCard.xpCurrent : (flatData.xpCurrent !== undefined ? flatData.xpCurrent : (data.identityCard && data.identityCard.identityXpCurrent !== undefined ? data.identityCard.identityXpCurrent : (data.identityCard && data.identityCard.xpCurrent !== undefined ? data.identityCard.xpCurrent : flatData.identityXpCurrent)));
+  if (xpCurVal !== undefined) {
+    syncXpCurrent(xpCurVal, null);
+  }
+
+  const xpNextVal = (legacyWealthCard.xpNextLevel !== undefined) ? legacyWealthCard.xpNextLevel : (flatData.xpNextLevel !== undefined ? flatData.xpNextLevel : (data.identityCard && data.identityCard.identityXpNextLevel !== undefined ? data.identityCard.identityXpNextLevel : (data.identityCard && data.identityCard.xpNextLevel !== undefined ? data.identityCard.xpNextLevel : flatData.identityXpNextLevel)));
+  if (xpNextVal !== undefined) {
+    syncXpNextLevel(xpNextVal, null);
+  }
 
   const advDieVal = flatData.advantageDie || data.advantageDie || (data.attributesCard ? data.attributesCard.advantageDie : (data.abilityScoresCard ? data.abilityScoresCard.advantageDie : undefined));
   const advDieSelect = document.getElementById('global_advantageDie');
@@ -4549,6 +4889,12 @@ function populateForm(data) {
             const staticTd = r.querySelector('td.fw-semibold');
             if (staticTd && staticTd.textContent.trim().toLowerCase() === name.toLowerCase()) {
               matchedRow = r;
+            } else if (r.dataset.skill === 'profession_custom' && (name.toLowerCase().startsWith('profession') || name.toLowerCase().startsWith('occupation'))) {
+              matchedRow = r;
+              const occMatch = name.match(/(?:profession|occupation)\s*[\(:–-]\s*([^)]+)[\)]?/i);
+              if (occMatch && occMatch[1]) {
+                syncOccupation(occMatch[1].trim(), null);
+              }
             }
           });
         }
@@ -4604,6 +4950,9 @@ function populateForm(data) {
           addLangSkillRow(name, rank, misc);
         }
       });
+    }
+    if (langTbody && langTbody.querySelectorAll('tr').length < 2) {
+      addLangSkillRow();
     }
   } else if (Array.isArray(langCustomCardData)) {
     // Backwards compatibility for legacy flat array of objects
@@ -4688,6 +5037,9 @@ function populateForm(data) {
         }
       }
     });
+    if (langTbody && langTbody.querySelectorAll('tr').length < 2) {
+      addLangSkillRow();
+    }
   }
 
   // Rebuild dynamic table rows if saved
@@ -4728,6 +5080,9 @@ function populateForm(data) {
     if (tbody) {
       tbody.querySelectorAll('tr:not([data-skill="lang_main"])').forEach((r) => r.remove());
       flatData['customLangName[]'].forEach(() => addLangSkillRow());
+      if (tbody.querySelectorAll('tr').length < 2) {
+        addLangSkillRow();
+      }
     }
   }
 
@@ -4744,6 +5099,11 @@ function populateForm(data) {
     if (tbody) {
       tbody.innerHTML = '';
       traitsData.forEach((traitObj) => {
+        const tName = (typeof traitObj === 'object' ? (traitObj.Name || traitObj.name || '') : (typeof traitObj === 'string' ? traitObj : '')).trim();
+        if (isCombatView() && tName && isNameInCombatFilter('speciesTraitsCard', tName)) {
+          masterFilteredData.speciesTraitsCard.push(typeof traitObj === 'object' ? traitObj : { Name: tName });
+          return;
+        }
         addSpeciesTraitRow();
         const rows = tbody.querySelectorAll('tr');
         const lastRow = rows[rows.length - 1];
@@ -4912,6 +5272,11 @@ function populateForm(data) {
     if (tbody) {
       tbody.innerHTML = '';
       talentsData.forEach((talentObj) => {
+        const tName = (typeof talentObj === 'object' ? (talentObj.Name || talentObj.name || '') : (typeof talentObj === 'string' ? talentObj : '')).trim();
+        if (isCombatView() && tName && isNameInCombatFilter('pathTalentsCard', tName)) {
+          masterFilteredData.pathTalentsCard.push(typeof talentObj === 'object' ? talentObj : { Name: tName });
+          return;
+        }
         addPathTalentRow();
         const rows = tbody.querySelectorAll('tr');
         const lastRow = rows[rows.length - 1];
@@ -4936,6 +5301,11 @@ function populateForm(data) {
     if (tbody) {
       tbody.innerHTML = '';
       featsData.forEach((featObj) => {
+        const fName = (typeof featObj === 'object' ? (featObj.Name || featObj.name || '') : (typeof featObj === 'string' ? featObj : '')).trim();
+        if (isCombatView() && fName && isNameInCombatFilter('featsCard', fName)) {
+          masterFilteredData.featsCard.push(typeof featObj === 'object' ? featObj : { Name: fName });
+          return;
+        }
         addFeatRow();
         const rows = tbody.querySelectorAll('tr');
         const lastRow = rows[rows.length - 1];
@@ -5038,6 +5408,15 @@ function populateForm(data) {
             if (tbody) {
               tbody.innerHTML = '';
               talentsList.forEach((tObj) => {
+                const tName = (typeof tObj === 'object' ? (tObj.Name || tObj.name || '') : (typeof tObj === 'string' ? tObj : '')).trim();
+                if (isCombatView() && tName && isNameInCombatFilter('professionsCard', tName)) {
+                  masterFilteredData.professionsCard.push({
+                    profTitle: profObj.Title || profObj.title || '',
+                    talent: typeof tObj === 'object' ? tObj : { Name: tName }
+                  });
+                  return;
+                }
+
                 const addBtn = lastBlock.querySelector('.prof-talents-table button.btn-add-row') || tbody;
                 addProfTalentRow(addBtn);
                 const rows = tbody.querySelectorAll('tr');
@@ -5054,7 +5433,7 @@ function populateForm(data) {
                   }
                 }
               });
-              if (tbody.querySelectorAll('tr').length === 0) {
+              if (!isCombatView() && tbody.querySelectorAll('tr').length === 0) {
                 const addBtn = lastBlock.querySelector('.prof-talents-table button.btn-add-row') || tbody;
                 addProfTalentRow(addBtn);
               }
@@ -5381,6 +5760,7 @@ function populateForm(data) {
   calculateStats();
   updateProficiencyCounts();
   syncConditionsModal();
+  syncAllDuplicatedWealthFields();
 
   if (isCombatView()) {
     setupCombatViewLayout();
@@ -5677,10 +6057,226 @@ function updateCombatSpecialCardVisibility() {
   }
 }
 
+// ==========================================
+// Combat Filter Logic
+// ==========================================
+
+function createEmptyCombatFilter() {
+  return {
+    professionsCard: [],
+    featsCard: [],
+    pathTalentsCard: [],
+    speciesTraitsCard: []
+  };
+}
+
+function extractNamesFromFilterList(list) {
+  if (!list) {
+    return [];
+  }
+  const names = [];
+  if (Array.isArray(list)) {
+    list.forEach((item) => {
+      if (typeof item === 'string') {
+        const trimmed = item.trim();
+        if (trimmed && !names.includes(trimmed)) {
+          names.push(trimmed);
+        }
+      } else if (item && typeof item === 'object') {
+        if (item.Name || item.name) {
+          const n = String(item.Name || item.name).trim();
+          if (n && !names.includes(n)) {
+            names.push(n);
+          }
+        }
+        if (Array.isArray(item.Talents || item.talents)) {
+          (item.Talents || item.talents).forEach((t) => {
+            if (t && (t.Name || t.name)) {
+              const tn = String(t.Name || t.name).trim();
+              if (tn && !names.includes(tn)) {
+                names.push(tn);
+              }
+            }
+          });
+        }
+        if (Array.isArray(item.featsList || item.pathTalentsList || item.speciesTraitsList)) {
+          const subList = item.featsList || item.pathTalentsList || item.speciesTraitsList;
+          subList.forEach((s) => {
+            if (s && (s.Name || s.name)) {
+              const sn = String(s.Name || s.name).trim();
+              if (sn && !names.includes(sn)) {
+                names.push(sn);
+              }
+            }
+          });
+        }
+      }
+    });
+  } else if (typeof list === 'object') {
+    const sub = list.featsList || list.pathTalentsList || list.speciesTraitsList || list.talents || list.Talents;
+    if (Array.isArray(sub)) {
+      return extractNamesFromFilterList(sub);
+    }
+  }
+  return names;
+}
+
+function normalizeCombatFilter(raw) {
+  const result = createEmptyCombatFilter();
+  if (!raw || typeof raw !== 'object') {
+    return result;
+  }
+  const targetKeys = ['professionsCard', 'featsCard', 'pathTalentsCard', 'speciesTraitsCard'];
+  targetKeys.forEach((key) => {
+    const names = extractNamesFromFilterList(raw[key]);
+    result[key] = names.map((name) => ({ "Name": name }));
+  });
+  return result;
+}
+
+function getCombatFilter() {
+  if (!combatFilterState && isCombatView()) {
+    combatFilterState = createEmptyCombatFilter();
+  }
+  return combatFilterState;
+}
+
+function setCombatFilter(filterObj) {
+  combatFilterState = normalizeCombatFilter(filterObj);
+}
+
+function isNameInCombatFilter(cardId, name) {
+  if (!combatFilterState || !name) {
+    return false;
+  }
+  const list = combatFilterState[cardId];
+  if (!Array.isArray(list)) {
+    return false;
+  }
+  const cleanName = String(name).trim().toLowerCase();
+  if (!cleanName) {
+    return false;
+  }
+  return list.some((item) => {
+    const n = (typeof item === 'string' ? item : (item.Name || item.name || ''));
+    return String(n).trim().toLowerCase() === cleanName;
+  });
+}
+
+function addNameToCombatFilter(cardId, name) {
+  if (!name) {
+    return;
+  }
+  const cleanName = String(name).trim();
+  if (!cleanName) {
+    return;
+  }
+  if (!combatFilterState) {
+    combatFilterState = createEmptyCombatFilter();
+  }
+  if (!Array.isArray(combatFilterState[cardId])) {
+    combatFilterState[cardId] = [];
+  }
+  if (!isNameInCombatFilter(cardId, cleanName)) {
+    combatFilterState[cardId].push({ "Name": cleanName });
+  }
+}
+
+function removeNameFromCombatFilter(cardId, name) {
+  if (!combatFilterState || !name || !Array.isArray(combatFilterState[cardId])) {
+    return;
+  }
+  const cleanName = String(name).trim().toLowerCase();
+  combatFilterState[cardId] = combatFilterState[cardId].filter((item) => {
+    const n = (typeof item === 'string' ? item : (item.Name || item.name || ''));
+    return String(n).trim().toLowerCase() !== cleanName;
+  });
+}
+
+function applyCombatFilter() {
+  if (!isCombatView() || !combatFilterState) {
+    return;
+  }
+  // 1. speciesTraitsCard
+  const stRows = document.querySelectorAll('#speciesTraitsTable tbody tr');
+  stRows.forEach((row) => {
+    const nameInput = row.querySelector('input[name="speciesTraitName[]"]');
+    const name = (nameInput ? nameInput.value.trim() : '');
+    if (name && isNameInCombatFilter('speciesTraitsCard', name)) {
+      const descEl = row.querySelector('textarea[name="speciesTraitDesc[]"]');
+      const desc = (descEl ? descEl.value.trim() : '');
+      if (!masterFilteredData.speciesTraitsCard.some((t) => (t.Name || t.name || '').trim().toLowerCase() === name.toLowerCase())) {
+        masterFilteredData.speciesTraitsCard.push({ Name: name, Description: desc });
+      }
+      row.remove();
+    }
+  });
+
+  // 2. pathTalentsCard
+  const ptRows = document.querySelectorAll('#pathTalentsTable tbody tr');
+  ptRows.forEach((row) => {
+    const nameInput = row.querySelector('input[name="pathTalentName[]"]');
+    const name = (nameInput ? nameInput.value.trim() : '');
+    if (name && isNameInCombatFilter('pathTalentsCard', name)) {
+      const descEl = row.querySelector('textarea[name="pathTalentDesc[]"]');
+      const desc = (descEl ? descEl.value.trim() : '');
+      if (!masterFilteredData.pathTalentsCard.some((t) => (t.Name || t.name || '').trim().toLowerCase() === name.toLowerCase())) {
+        masterFilteredData.pathTalentsCard.push({ Name: name, Description: desc });
+      }
+      row.remove();
+    }
+  });
+
+  // 3. featsCard
+  const fRows = document.querySelectorAll('#featsTable tbody tr');
+  fRows.forEach((row) => {
+    const nameInput = row.querySelector('input[name="featName[]"]');
+    const name = (nameInput ? nameInput.value.trim() : '');
+    if (name && isNameInCombatFilter('featsCard', name)) {
+      const descEl = row.querySelector('textarea[name="featDesc[]"]');
+      const desc = (descEl ? descEl.value.trim() : '');
+      if (!masterFilteredData.featsCard.some((t) => (t.Name || t.name || '').trim().toLowerCase() === name.toLowerCase())) {
+        masterFilteredData.featsCard.push({ Name: name, Description: desc });
+      }
+      row.remove();
+    }
+  });
+
+  // 4. professionsCard
+  const profBlocks = document.querySelectorAll('#professionsContainer .profession-block');
+  profBlocks.forEach((block) => {
+    const titleEl = block.querySelector('input[name="profTitle[]"]');
+    const profTitle = (titleEl ? titleEl.value.trim() : '');
+    const tRows = block.querySelectorAll('.prof-talents-table tbody tr');
+    tRows.forEach((row) => {
+      const nameInput = row.querySelector('input[name="profTalentName[]"]');
+      const name = (nameInput ? nameInput.value.trim() : '');
+      if (name && isNameInCombatFilter('professionsCard', name)) {
+        const descEl = row.querySelector('textarea[name="profTalentDesc[]"]');
+        const desc = (descEl ? descEl.value.trim() : '');
+        if (!masterFilteredData.professionsCard.some((item) => {
+          const tName = (item.talent ? (item.talent.Name || item.talent.name) : (item.Name || item.name)) || '';
+          return tName.trim().toLowerCase() === name.toLowerCase();
+        })) {
+          masterFilteredData.professionsCard.push({
+            profTitle: profTitle,
+            talent: { Name: name, Description: desc }
+          });
+        }
+        row.remove();
+      }
+    });
+  });
+}
+
 function setupCombatViewLayout() {
   if (!isCombatView()) {
     return;
   }
+
+  initIgnorePrintSpacing();
+  getCombatFilter();
+  applyCombatFilter();
 
   document.body.classList.add('view-combat');
 
@@ -5720,7 +6316,6 @@ function setupCombatViewLayout() {
     'identityCard',
     'coreSkills',
     'languageCustomSkillsCard',
-    'wealthXpCard',
     'backstoryCard',
     'equipmentCard',
     'quirksCard',
@@ -5868,6 +6463,13 @@ function resetFormText(event) {
   if (confirm('Are you sure you want to clear all text and input fields on this sheet? All unsaved inputs will be lost.')) {
     document.getElementById('characterForm').reset();
     localStorage.removeItem('d20FuturePathCharData');
+    combatFilterState = isCombatView() ? createEmptyCombatFilter() : null;
+    masterFilteredData = {
+      professionsCard: [],
+      featsCard: [],
+      pathTalentsCard: [],
+      speciesTraitsCard: []
+    };
     resetAdvantageMod();
     calculateStats();
     updateProficiencyCounts();
@@ -5998,6 +6600,79 @@ function saveCollapseStates() {
   localStorage.setItem('d20FuturePathCollapsedCards', JSON.stringify(collapsedIds));
 }
 
+function isMobileOrTabletBreakpoint() {
+  return window.innerWidth < 992;
+}
+
+function getStoredIgnorePrintSpacing() {
+  if (isCombatView()) {
+    return true;
+  }
+  const saved = localStorage.getItem('d20FuturePathIgnorePrintSpacing');
+  if (saved !== null) {
+    return (saved === 'true');
+  }
+  return isMobileOrTabletBreakpoint();
+}
+
+let _ignorePrintSpacing = null;
+
+function isIgnorePrintSpacingEnabled() {
+  if (_ignorePrintSpacing === null) {
+    _ignorePrintSpacing = getStoredIgnorePrintSpacing();
+  }
+  return _ignorePrintSpacing;
+}
+
+function setIgnorePrintSpacing(enabled, shouldSave = true) {
+  _ignorePrintSpacing = Boolean(enabled);
+  if (shouldSave && !isCombatView()) {
+    localStorage.setItem('d20FuturePathIgnorePrintSpacing', _ignorePrintSpacing ? 'true' : 'false');
+  }
+  const toggleInput = document.getElementById('global_toggleIgnorePrintSpacing');
+  if (toggleInput && toggleInput.checked !== _ignorePrintSpacing) {
+    toggleInput.checked = _ignorePrintSpacing;
+  }
+  const icon = document.getElementById('ignorePrintSpacingIcon');
+  if (icon) {
+    if (_ignorePrintSpacing) {
+      icon.classList.remove('text-cyan');
+      icon.classList.add('text-warning');
+    } else {
+      icon.classList.remove('text-warning');
+      icon.classList.add('text-cyan');
+    }
+  }
+
+  if (_ignorePrintSpacing) {
+    if (autoPaginateTimeout) {
+      clearTimeout(autoPaginateTimeout);
+      autoPaginateTimeout = null;
+    }
+  } else {
+    scheduleAutoPagination(100);
+  }
+
+  updateMoveButtonVisibilities();
+}
+
+function toggleIgnorePrintSpacing() {
+  setIgnorePrintSpacing(!isIgnorePrintSpacingEnabled());
+}
+
+function initIgnorePrintSpacing() {
+  const enabled = getStoredIgnorePrintSpacing();
+  setIgnorePrintSpacing(enabled, false);
+}
+
+function isCardInsideMainTwoColumnRow(card) {
+  if (!card) {
+    return false;
+  }
+  const twoColRow = document.getElementById('mainTwoColumnRow');
+  return Boolean(twoColRow && twoColRow.contains(card));
+}
+
 function getMaxPageHeight(pageNum = 1) {
   if (!document.body.classList.contains('is-print-mode')) {
     return 1880;
@@ -6008,7 +6683,7 @@ function getMaxPageHeight(pageNum = 1) {
 let autoPaginateTimeout = null;
 
 function scheduleAutoPagination(delay = 500) {
-  if (isCombatView() || isPopulatingForm) {
+  if (isCombatView() || isPopulatingForm || isIgnorePrintSpacingEnabled()) {
     return;
   }
   if (autoPaginateTimeout) {
@@ -6073,9 +6748,9 @@ function getDefaultPage(cardEl) {
   }
 
   const map = {
-    'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'languageCustomSkillsCard': 1, 'wealthXpCard': 1, 'backstoryCard': 1,
+    'identityCard': 1, 'armorDefensesCard': 1, 'weaponsCard': 1, 'languageCustomSkillsCard': 1, 'quirksCard': 1, 'backstoryCard': 1,
     'speciesTraitsCard': 2, 'pathTalentsCard': 2, 'featsCard': 2, 'professionsCard': 2, 'equipmentCard': 2,
-    'techniquesCard': 3, 'quirksCard': 3, 'detractorsCard': 3, 'cyberneticsCard': 3, 'mutationsCard': 3, 'psionicsCard': 3,
+    'techniquesCard': 3, 'detractorsCard': 3, 'cyberneticsCard': 3, 'mutationsCard': 3, 'psionicsCard': 3,
     'powerArmorCard': 4, 'extraNotesCard': 4, 'conditionsCard': 4
   };
   return map[cardEl.id] || 1;
@@ -6153,7 +6828,7 @@ function getOrCreatePageContainer(pageNum) {
 const PULL_UP_SAFETY_BUFFER = 25; // 25px buffer to account for margins/padding when a card is inserted
 
 function autoPaginateCards() {
-  if (isCombatView()) {
+  if (isCombatView() || isIgnorePrintSpacingEnabled()) {
     return;
   }
   console.log("autoPaginateCards called");
@@ -6352,58 +7027,108 @@ function updateEmptyPages() {
 
 function getReorderableCards() {
   const pageEls = Array.from(document.querySelectorAll('[id^="page-"]'))
-    .filter((el) => !el.id.includes('-header') && !el.id.includes('-toggles'));
+    .filter((el) => /^page-\d+$/.test(el.id));
   
   const allCards = [];
   pageEls.forEach((page) => {
-    const cards = getMovableCardsInPage(page);
+    const cards = Array.from(page.querySelectorAll('.sheet-card')).filter((el) =>
+      el.closest('[id^="page-"]') === page &&
+      el.id !== 'identityCard' &&
+      !isCardInsideMainTwoColumnRow(el) &&
+      !el.classList.contains('card-hidden-all') &&
+      !el.classList.contains('d-none') &&
+      window.getComputedStyle(el).display !== 'none'
+    );
     allCards.push(...cards);
   });
   return { pages: pageEls, cards: allCards };
 }
 
 function canMoveCardUp(card, allCards = null) {
-  if (!card) {
+  if (!card || isCardInsideMainTwoColumnRow(card) || card.id === 'identityCard') {
     return false;
   }
   const cards = (allCards || getReorderableCards().cards);
   const idx = cards.indexOf(card);
-  if (idx <= 0) {
+  if (idx === -1) {
     return false;
   }
 
-  const prevCard = cards[idx - 1];
-  const cardDefaultPage = getDefaultPage(card);
   const cardPage = card.closest('[id^="page-"]');
-  const prevCardPage = prevCard.closest('[id^="page-"]');
-  if (!cardPage || !prevCardPage) {
+  if (!cardPage) {
     return false;
   }
+  const cardPageNum = parseInt(cardPage.id.replace('page-', ''), 10) || 1;
 
-  const prevPageNum = parseInt(prevCardPage.id.replace('page-', ''), 10) || 1;
+  // Condition: On Page 1, a card cannot move up above mainTwoColumnRow.
+  // If this card is the very first movable card on Page 1, it cannot move up!
+  if (cardPageNum === 1) {
+    const page1Cards = cards.filter((c) => c.closest('[id^="page-"]') === cardPage);
+    if (page1Cards.length > 0 && page1Cards[0] === card) {
+      return false;
+    }
+  }
 
-  if (cardPage === prevCardPage) {
+  if (idx > 0) {
+    const prevCard = cards[idx - 1];
+    const prevCardPage = prevCard.closest('[id^="page-"]');
+    if (!prevCardPage) {
+      return false;
+    }
+    const prevPageNum = parseInt(prevCardPage.id.replace('page-', ''), 10) || 1;
+
+    if (cardPage === prevCardPage) {
+      return true;
+    }
+
+    if (!isIgnorePrintSpacingEnabled()) {
+      const cardDefaultPage = getDefaultPage(card);
+      // Condition 1: A card cannot Move Up to Page 1 unless it started on Page 1.
+      if (prevPageNum === 1 && cardDefaultPage > 1) {
+        return false;
+      }
+
+      // Condition 2: A card cannot Move Up to a Page that cannot fit it.
+      const targetHeight = getElementContentHeight(prevCardPage);
+      const cardHeight = getElementContentHeight(card) || 150;
+      const maxH = getMaxPageHeight(prevPageNum);
+
+      if (targetHeight + cardHeight > maxH) {
+        return false;
+      }
+    }
+
+    return true;
+  } else if (cardPageNum > 1) {
+    // idx === 0, but card is on Page > 1 (previous page has no movable cards)
+    const targetPageNum = cardPageNum - 1;
+    const targetPage = document.getElementById(`page-${targetPageNum}`);
+    if (!targetPage) {
+      return false;
+    }
+
+    if (!isIgnorePrintSpacingEnabled()) {
+      const cardDefaultPage = getDefaultPage(card);
+      if (targetPageNum === 1 && cardDefaultPage > 1) {
+        return false;
+      }
+      const targetHeight = getElementContentHeight(targetPage);
+      const cardHeight = getElementContentHeight(card) || 150;
+      const maxH = getMaxPageHeight(targetPageNum);
+
+      if (targetHeight + cardHeight > maxH) {
+        return false;
+      }
+    }
+
     return true;
   }
-  // Condition 1: A card cannot Move Up to Page 1 unless it started on Page 1.
-  if (prevPageNum === 1 && cardDefaultPage > 1) {
-    return false;
-  }
 
-  // Condition 2: A card cannot Move Up to a Page that cannot fit it.
-  const targetHeight = getElementContentHeight(prevCardPage);
-  const cardHeight = getElementContentHeight(card) || 150;
-  const maxH = getMaxPageHeight(prevPageNum);
-
-  if (targetHeight + cardHeight > maxH) {
-    return false;
-  }
-
-  return true;
+  return false;
 }
 
 function canMoveCardDown(card, allCards = null) {
-  if (!card) {
+  if (!card || isCardInsideMainTwoColumnRow(card) || card.id === 'identityCard') {
     return false;
   }
   const cards = (allCards || getReorderableCards().cards);
@@ -6429,26 +7154,32 @@ function canMoveCardDown(card, allCards = null) {
     if (cardPage === nextCardPage) {
       return true;
     }
-    // Condition 3: A card cannot Move Down to a Page that cannot fit it.
-    const targetHeight = getElementContentHeight(nextCardPage);
+
+    if (!isIgnorePrintSpacingEnabled()) {
+      // Condition 3: A card cannot Move Down to a Page that cannot fit it.
+      const targetHeight = getElementContentHeight(nextCardPage);
+      const cardHeight = getElementContentHeight(card) || 150;
+      const maxH = getMaxPageHeight(nextPageNum);
+
+      if (targetHeight + cardHeight > maxH) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  // Last card overall: moving down targets nextPageNum = cardPageNum + 1
+  const nextPageNum = cardPageNum + 1;
+  const nextPage = document.getElementById(`page-${nextPageNum}`);
+  if (!isIgnorePrintSpacingEnabled()) {
+    const targetHeight = (nextPage ? getElementContentHeight(nextPage) : 80);
     const cardHeight = getElementContentHeight(card) || 150;
     const maxH = getMaxPageHeight(nextPageNum);
 
     if (targetHeight + cardHeight > maxH) {
       return false;
     }
-
-    return true;
-  }
-  // Last card overall: moving down targets nextPageNum = cardPageNum + 1
-  const nextPageNum = cardPageNum + 1;
-  const nextPage = document.getElementById(`page-${nextPageNum}`);
-  const targetHeight = (nextPage ? getElementContentHeight(nextPage) : 80);
-  const cardHeight = getElementContentHeight(card) || 150;
-  const maxH = getMaxPageHeight(nextPageNum);
-
-  if (targetHeight + cardHeight > maxH) {
-    return false;
   }
 
   return true;
@@ -6597,28 +7328,47 @@ function moveCardUp(btn) {
   const reorderable = getReorderableCards();
   const cards = reorderable.cards;
   const idx = cards.indexOf(card);
-  if (idx <= 0) {
+  if (idx === -1) {
     return;
   }
 
-  const prevCard = cards[idx - 1];
   const cardPage = card.closest('[id^="page-"]');
-  const prevCardPage = prevCard.closest('[id^="page-"]');
+  const cardPageNum = (cardPage ? (parseInt(cardPage.id.replace('page-', ''), 10) || 1) : 1);
 
-  if (cardPage === prevCardPage) {
-    prevCard.parentNode.insertBefore(card, prevCard);
-  } else {
-    const prevFooter = prevCardPage.querySelector('.print-footer');
-    if (prevFooter) {
-      prevCardPage.insertBefore(card, prevFooter);
+  if (idx > 0) {
+    const prevCard = cards[idx - 1];
+    const prevCardPage = prevCard.closest('[id^="page-"]');
+
+    if (cardPage === prevCardPage) {
+      // Safety guard: On Page 1, never insert before mainTwoColumnRow or identityCard
+      if (cardPageNum === 1 && (isCardInsideMainTwoColumnRow(prevCard) || prevCard.id === 'identityCard')) {
+        return;
+      }
+      prevCard.parentNode.insertBefore(card, prevCard);
     } else {
-      prevCardPage.appendChild(card);
+      const prevFooter = prevCardPage.querySelector('.print-footer');
+      if (prevFooter) {
+        prevCardPage.insertBefore(card, prevFooter);
+      } else {
+        prevCardPage.appendChild(card);
+      }
+    }
+  } else if (cardPageNum > 1) {
+    const prevPage = document.getElementById(`page-${cardPageNum - 1}`);
+    if (prevPage) {
+      const prevFooter = prevPage.querySelector('.print-footer');
+      if (prevFooter) {
+        prevPage.insertBefore(card, prevFooter);
+      } else {
+        prevPage.appendChild(card);
+      }
     }
   }
 
   updateHeaderToggleSwitches();
   saveCardOrder();
   updateMoveButtonVisibilities();
+  updateEmptyPages();
   card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   triggerAutoSave();
 }
@@ -6662,6 +7412,7 @@ function moveCardDown(btn) {
   updateHeaderToggleSwitches();
   saveCardOrder();
   updateMoveButtonVisibilities();
+  updateEmptyPages();
   card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   triggerAutoSave();
 }
@@ -6690,10 +7441,33 @@ function updateHeaderToggleSwitches() {
       return;
     }
 
-    const parentPage = card.closest('[id^="page-"]');
-    if (parentPage) {
-      const togglesWrapper = parentPage.querySelector('[id$="-toggles"]');
-      if (togglesWrapper) {
+    const page = card.closest('[id^="page-"]');
+    if (!page) {
+      return;
+    }
+
+    const m = page.id.match(/^page-(\d+)$/);
+    if (!m) {
+      return;
+    }
+    const pageNum = parseInt(m[1], 10);
+
+    const targetHeader = document.getElementById(`page-${pageNum}-header`);
+    if (targetHeader) {
+      let togglesWrapper = document.getElementById(`page-${pageNum}-toggles`);
+      if (!togglesWrapper) {
+        togglesWrapper = document.createElement('div');
+        togglesWrapper.id = `page-${pageNum}-toggles`;
+        togglesWrapper.className = 'd-flex align-items-center gap-2 flex-wrap ms-auto';
+        const btnGroup = targetHeader.querySelector('.btn-group');
+        if (btnGroup) {
+          targetHeader.insertBefore(togglesWrapper, btnGroup);
+        } else {
+          targetHeader.appendChild(togglesWrapper);
+        }
+      }
+
+      if (toggleContainer.parentElement !== togglesWrapper) {
         togglesWrapper.appendChild(toggleContainer);
       }
     }
@@ -6704,15 +7478,13 @@ function saveCardOrder() {
   if (isCombatView()) {
     return;
   }
-  const pageEls = document.querySelectorAll('[id^="page-"]');
+  const pageEls = Array.from(document.querySelectorAll('[id^="page-"]'))
+    .filter((el) => /^page-\d+$/.test(el.id));
   const orderData = {};
 
   pageEls.forEach((page) => {
-    if (page.id === 'page-1' || page.id.includes('-header') || page.id.includes('-toggles')) {
-      return;
-    }
     const cardIds = Array.from(page.children)
-      .filter((el) => el.classList && el.classList.contains('sheet-card'))
+      .filter((el) => el.classList && el.classList.contains('sheet-card') && el.id !== 'identityCard' && !isCardInsideMainTwoColumnRow(el))
       .map((c) => c.id)
       .filter(Boolean);
     orderData[page.id] = cardIds;
@@ -6752,7 +7524,7 @@ function restoreCardOrder() {
 
       cardIds.forEach((id) => {
         const card = document.getElementById(id);
-        if (card) {
+        if (card && card.id !== 'identityCard' && !isCardInsideMainTwoColumnRow(card)) {
           if (footer) {
             page.insertBefore(card, footer);
           } else {
@@ -7264,6 +8036,67 @@ function setupCollapseInteractions() {
   });
 }
 
+function showPrintWarningBanner(callback) {
+  let banner = document.getElementById('printSpacingWarningBanner');
+  if (!banner) {
+    banner = document.createElement('div');
+    banner.id = 'printSpacingWarningBanner';
+    banner.className = 'no-print';
+    banner.style.position = 'fixed';
+    banner.style.top = '24px';
+    banner.style.left = '50%';
+    banner.style.transform = 'translateX(-50%)';
+    banner.style.zIndex = '1095';
+    banner.style.minWidth = '320px';
+    banner.style.maxWidth = '90vw';
+    banner.style.pointerEvents = 'none';
+    banner.innerHTML = `
+      <div class="alert alert-warning border-warning shadow-lg d-flex align-items-center gap-3 py-3 px-4 mb-0 print-warning-flash" style="background: linear-gradient(135deg, rgba(28, 25, 5, 0.96) 0%, rgba(13, 17, 23, 0.98) 100%); border: 2px solid #ffc107; box-shadow: 0 0 25px rgba(255, 193, 7, 0.5), 0 0 50px rgba(255, 193, 7, 0.25); border-radius: 8px;">
+        <i class="fa-solid fa-triangle-exclamation text-warning fs-2"></i>
+        <div>
+          <div class="fw-bold text-warning fs-6 text-uppercase" style="letter-spacing: 0.05em;">Print Warning</div>
+          <div class="small text-light">"Ignore Print Spacing" is being switched to <strong>OFF</strong> and cards are being auto-sorted into page boundaries before printing...</div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(banner);
+  }
+
+  banner.style.display = 'block';
+  banner.style.opacity = '1';
+
+  setTimeout(() => {
+    if (callback) {
+      callback();
+    }
+    setTimeout(() => {
+      banner.style.transition = 'opacity 0.4s ease';
+      banner.style.opacity = '0';
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 400);
+    }, 600);
+  }, 1000);
+}
+
+function handlePrintClick(e) {
+  if (e && e.preventDefault) {
+    e.preventDefault();
+  }
+
+  if (isIgnorePrintSpacingEnabled()) {
+    showPrintWarningBanner(() => {
+      setIgnorePrintSpacing(false, false);
+      autoPaginateCards();
+      setTimeout(() => {
+        window.print();
+      }, 250);
+    });
+  } else {
+    window.print();
+  }
+}
+
 // Attach event listeners for change/input & theme setup
 document.addEventListener('DOMContentLoaded', () => {
   initOriginalParentContainers();
@@ -7294,6 +8127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     restoreCardOrder();
     updateHeaderToggleSwitches();
     restoreCardLayoutLockState();
+    initIgnorePrintSpacing();
     restoreTechniquesVisibilityState();
     restoreQuirksVisibilityState();
     restoreDetractorsVisibilityState();
@@ -7311,6 +8145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     calculateStats();
     updateProficiencyCounts();
   }
+  syncAllDuplicatedWealthFields();
 
   document.addEventListener('hidden.bs.collapse', () => {
     saveCollapseStates();
@@ -7320,7 +8155,24 @@ document.addEventListener('DOMContentLoaded', () => {
     saveCollapseStates();
     scheduleAutoPagination(150);
   });
-  window.addEventListener('resize', () => scheduleAutoPagination(250));
+  window.addEventListener('resize', () => {
+    if (!isCombatView() && localStorage.getItem('d20FuturePathIgnorePrintSpacing') === null) {
+      const shouldEnable = isMobileOrTabletBreakpoint();
+      if (shouldEnable !== isIgnorePrintSpacingEnabled()) {
+        setIgnorePrintSpacing(shouldEnable, false);
+      }
+    }
+    scheduleAutoPagination(250);
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
+      if (isIgnorePrintSpacingEnabled()) {
+        e.preventDefault();
+        handlePrintClick();
+      }
+    }
+  });
 
   const diceHistoryModalEl = document.getElementById('diceHistoryModal');
   if (diceHistoryModalEl) {
@@ -7338,6 +8190,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('beforeprint', () => {
+    if (isIgnorePrintSpacingEnabled()) {
+      setIgnorePrintSpacing(false, false);
+    }
     document.body.classList.add('is-print-mode');
     expandAllCards();
     autoPaginateCards();
@@ -7352,6 +8207,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.remove('is-print-mode');
       restoreCollapseStates();
       reexpandAllTextareas();
+      initIgnorePrintSpacing();
       scheduleAutoPagination(50);
     }
   });

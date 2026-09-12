@@ -389,6 +389,123 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
   min-width: 32px;
 }
 
+/* Character Identity Header XP Controls */
+.identity-header-xp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.identity-header-xp .identity-xp-group {
+  width: 120px;
+}
+
+.identity-header-xp .identity-next-xp-group {
+  width: 105px;
+}
+
+.identity-header-xp .input-group-text {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.identity-header-xp .form-control {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+}
+
+/* Character Identity: on screen smaller than sm (< 576px), put XP and Next Level on a new line */
+@media (width < 576px) {
+  body:not(.is-print-mode) .identity-header-xp {
+    width: 100% !important;
+    justify-content: flex-end;
+    margin-top: 0.35rem;
+    padding-left: 1.5rem;
+  }
+}
+
+/* Equipment Card Header Wealth & Credits Controls */
+.equipment-wealth-group {
+  width: 95px;
+}
+
+.equipment-credits-group {
+  width: 125px;
+}
+
+.equipment-wealth-group .input-group-text,
+.equipment-credits-group .input-group-text {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.equipment-wealth-group .form-control,
+.equipment-credits-group .form-control {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+}
+
+/* Feat Based & Skill Like Abilities: Profession Skill */
+.profession-skill-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: nowrap;
+}
+
+.profession-dropdown-group {
+  width: 100%;
+  max-width: 240px;
+  min-width: 135px;
+}
+
+.profession-occupation-input {
+  font-size: 0.875rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.profession-occupation-prefix {
+  display: none;
+}
+
+.profession-skill-cell.has-occupation .profession-skill-prefix {
+  display: none;
+}
+
+.profession-skill-cell.no-occupation .profession-skill-prefix {
+  display: inline;
+  font-size: 0.875rem;
+}
+
+.profession-skill-cell.no-occupation .profession-occupation-prefix {
+  display: none;
+}
+
+/* Language & Custom Skills Card Header responsive labels */
+.lang-custom-header-divider {
+  display: none;
+}
+
+.lang-custom-feat-abbr {
+  display: none;
+}
+
+.lang-custom-feat-full {
+  display: inline;
+}
+
+@media (width >= 1800px) {
+  body:not(.is-print-mode) .profession-skill-cell.has-occupation .profession-skill-prefix {
+    display: none !important;
+  }
+
+  body:not(.is-print-mode) .profession-skill-cell.has-occupation .profession-occupation-prefix {
+    display: inline !important;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+}
+
 select.skill-ab-select-no-arrow {
   appearance: none;
   background-image: none !important;
@@ -497,6 +614,41 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   body:not(.is-print-mode) #skillsTable th:nth-child(6) { width: 58px !important; }
   body:not(.is-print-mode) #skillsTable th:nth-child(8) { width: 32px !important; }
   body:not(.is-print-mode) #skillsTable th:nth-child(10) { width: 35px !important; }
+
+  /* Language & Custom Skills Card Header: single line divided by '/' below Large */
+  body:not(.is-print-mode) .lang-custom-header-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    width: auto !important;
+    margin: 0 !important;
+    gap: 0 !important;
+  }
+
+  body:not(.is-print-mode) .lang-custom-header-col-feat {
+    width: auto !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  body:not(.is-print-mode) .lang-custom-header-col-lang {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  body:not(.is-print-mode) .lang-custom-header-divider {
+    display: inline !important;
+    margin: 0 0.35rem !important;
+  }
+
+  body:not(.is-print-mode) .lang-custom-icon-lang {
+    display: none !important;
+  }
 }
 
 /* Mobile Skills Table: 2-line layout for sm or smaller breakpoints */
@@ -662,6 +814,262 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
     padding: 0 4px !important;
     border: none !important;
     font-size: 0.95rem !important;
+  }
+
+  /* Mobile Feat & Language Skills Tables: 2-line layout for sm or smaller breakpoints */
+  body:not(.is-print-mode) #featSkillsTable thead,
+  body:not(.is-print-mode) #langSkillsTable thead {
+    display: none !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable,
+  body:not(.is-print-mode) #featSkillsTable tbody,
+  body:not(.is-print-mode) #langSkillsTable,
+  body:not(.is-print-mode) #langSkillsTable tbody {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr,
+  body:not(.is-print-mode) #langSkillsTable tbody tr {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 5px 4px 4px !important;
+    border-bottom: 1px solid var(--card-border, #444) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Line 1: Skill Name, Roll Button, Delete Button */
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(1),
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(1) {
+    order: 1 !important;
+    flex: 1 1 calc(100% - 60px) !important;
+    max-width: calc(100% - 60px) !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    padding: 0 4px !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(1) input[name="customFeatSkillName[]"],
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(1) input[name="customLangName[]"] {
+    width: 100% !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(1) .profession-skill-wrap {
+    width: 100% !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(1) .profession-dropdown-group {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(2),
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(2) {
+    order: 2 !important;
+    flex: 0 0 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(10),
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(8) {
+    order: 3 !important;
+    flex: 0 0 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* Line 2: Common Columns (Rank = Die, +) */
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(3),
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(3) {
+    order: 4 !important;
+    flex: 0 0 auto !important;
+    margin-left: 4px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(3) .skill-rank,
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(3) .skill-rank {
+    width: 32px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(3) .skill-die,
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(3) .skill-die {
+    width: 44px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(4),
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(4) {
+    order: 5 !important;
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  /* Line 2: Feat Skills Table Columns */
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(5) {
+    order: 6 !important;
+    flex: 0 0 auto !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(5) .skill-ability-label {
+    min-width: 28px !important;
+    font-size: 0.8rem !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(5) .skill-ab-select {
+    width: 48px !important;
+    height: 27px !important;
+    font-size: 0.75rem !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(5) .skill-ab-mod {
+    width: 32px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(6) {
+    order: 7 !important;
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(7) {
+    order: 8 !important;
+    flex: 0 0 auto !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(7) .skill-misc-mod {
+    width: 34px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(8) {
+    order: 9 !important;
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  body:not(.is-print-mode) #featSkillsTable tbody tr > td:nth-child(9) {
+    order: 10 !important;
+    flex: 0 0 auto !important;
+    min-width: 32px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 4px !important;
+    border: none !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Line 2: Language Skills Table Columns */
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(5) {
+    order: 6 !important;
+    flex: 0 0 auto !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(5) .skill-misc-mod {
+    width: 34px !important;
+    height: 27px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+  }
+
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(6) {
+    order: 7 !important;
+    flex: 0 0 14px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+
+  body:not(.is-print-mode) #langSkillsTable tbody tr > td:nth-child(7) {
+    order: 8 !important;
+    flex: 0 0 auto !important;
+    min-width: 32px !important;
+    margin-top: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 4px !important;
+    border: none !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Abbreviate Feat Based & Skill Like Abilities below Medium */
+  body:not(.is-print-mode) .lang-custom-feat-full {
+    display: none !important;
+  }
+
+  body:not(.is-print-mode) .lang-custom-feat-abbr {
+    display: inline !important;
   }
 }
 
@@ -834,8 +1242,10 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
     border: none !important;
     box-sizing: border-box !important;
   }
+}
 
-  /* Mobile Trait / Talent / Feat / Item Description Tables & Textareas (Line 1: Names/Attributes + Action, Line 2: Description) */
+/* Mobile Trait / Talent / Feat / Item Description Tables & Textareas below xxl (1400px) (Line 1: Names/Attributes + Action, Line 2: Description) */
+@media (width <= 1399.98px) {
   body:not(.is-print-mode) #speciesTraitsTable thead tr,
   body:not(.is-print-mode) #pathTalentsTable thead tr,
   body:not(.is-print-mode) #featsTable thead tr,
@@ -2225,95 +2635,6 @@ body.is-print-mode .prof-talents-table td {
   font-size: 6.5pt !important;
 }
 
-/* Wealth / Credits & Experience card print styles */
-body.is-print-mode #collapseWealthXP .card-body {
-  padding: 2px 6px !important;
-}
-
-body.is-print-mode #collapseWealthXP .row {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  align-items: stretch !important;
-
-  --bs-gutter-x: 0.3rem !important;
-  --bs-gutter-y: 0 !important;
-
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(1) {
-  flex: 0 0 28% !important;
-  max-width: 28% !important;
-  width: 28% !important;
-}
-
-body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(2) {
-  flex: 0 0 18% !important;
-  max-width: 18% !important;
-  width: 18% !important;
-}
-
-body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(3) {
-  flex: 0 0 18% !important;
-  max-width: 18% !important;
-  width: 18% !important;
-}
-
-body.is-print-mode #collapseWealthXP [class*="col-"]:nth-child(4) {
-  flex: 0 0 36% !important;
-  max-width: 36% !important;
-  width: 36% !important;
-}
-
-body.is-print-mode #collapseWealthXP .stat-box {
-  padding: 2px 4px !important;
-  background-color: #f9fafb !important;
-  border: 1px solid #888 !important;
-  border-radius: 3px !important;
-}
-
-body.is-print-mode #collapseWealthXP .stat-label {
-  font-size: 5.8pt !important;
-  margin-bottom: 1px !important;
-  line-height: 1 !important;
-  color: #000 !important;
-  font-weight: 700 !important;
-}
-
-body.is-print-mode #collapseWealthXP .input-group {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  width: 100% !important;
-  margin: 0 !important;
-}
-
-body.is-print-mode #collapseWealthXP .form-control {
-  height: 15px !important;
-  font-size: 7.2pt !important;
-  padding: 0 2px !important;
-  margin: 0 !important;
-  border: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-  text-align: center !important;
-  flex: 1 1 auto !important;
-  width: auto !important;
-  max-width: 100% !important;
-}
-
-body.is-print-mode #collapseWealthXP .input-group-text {
-  height: 15px !important;
-  font-size: 6.5pt !important;
-  padding: 0 2px !important;
-  background-color: transparent !important;
-  border: none !important;
-  border-bottom: none !important;
-  color: #000 !important;
-  line-height: 15px !important;
-}
 
 /* Techniques card print styles */
 body.is-print-mode #collapseTechniques .card-body {
@@ -2611,8 +2932,8 @@ body.is-print-mode .ac-comp-input {
 
 body.is-print-mode #healthInjuryCard input,
 body.is-print-mode #healthInjuryCard .form-control,
-body.is-print-mode .stat-box:not(#collapseWealthXP .stat-box) .form-control:not(.input-group *),
-body.is-print-mode .stat-box:not(#collapseWealthXP .stat-box) input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
+body.is-print-mode .stat-box .form-control:not(.input-group *),
+body.is-print-mode .stat-box input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
 body.is-print-mode .stat-box select,
 body.is-print-mode .hp-stat-input {
   width: 100% !important;
@@ -2707,7 +3028,6 @@ body.is-print-mode #speciesTraitsCard .card-header-custom i:not(.collapse-icon) 
 body.is-print-mode #pathTalentsCard .card-header-custom i:not(.collapse-icon) { color: #9333ea !important; }
 body.is-print-mode #featsCard .card-header-custom i:not(.collapse-icon) { color: #ca8a04 !important; }
 body.is-print-mode #professionsCard .card-header-custom i:not(.collapse-icon) { color: #475569 !important; }
-body.is-print-mode #wealthXpCard .card-header-custom i:not(.collapse-icon) { color: #d97706 !important; }
 body.is-print-mode #equipmentCard .card-header-custom i:not(.collapse-icon) { color: #b45309 !important; }
 body.is-print-mode #techniquesCard .card-header-custom i:not(.collapse-icon) { color: #0284c7 !important; }
 body.is-print-mode #quirksCard .card-header-custom i:not(.collapse-icon) { color: #c026d3 !important; }
@@ -2811,6 +3131,118 @@ body.is-print-mode #skillsTable th:nth-child(4) { width: 75px !important; }
 body.is-print-mode #skillsTable th:nth-child(6) { width: 48px !important; }
 body.is-print-mode #skillsTable th:nth-child(8) { width: 28px !important; }
 body.is-print-mode #skillsTable th:nth-child(10) { width: 28px !important; }
+
+body.is-print-mode .profession-skill-wrap {
+  gap: 3px !important;
+}
+
+body.is-print-mode .profession-skill-cell.has-occupation .profession-skill-prefix {
+  display: none !important;
+}
+
+body.is-print-mode .profession-skill-cell.has-occupation .profession-occupation-prefix {
+  display: inline !important;
+  font-size: 7.2pt !important;
+  font-weight: 600 !important;
+  color: #000 !important;
+  white-space: nowrap !important;
+}
+
+body.is-print-mode .profession-skill-cell.no-occupation .profession-skill-prefix {
+  display: inline !important;
+}
+
+body.is-print-mode .profession-skill-cell.no-occupation .profession-occupation-prefix {
+  display: none !important;
+}
+
+body.is-print-mode .profession-skill-cell.no-occupation .profession-dropdown-group {
+  display: none !important;
+}
+
+body.is-print-mode .profession-skill-cell.has-occupation .profession-dropdown-group {
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+body.is-print-mode .profession-skill-cell.has-occupation .profession-occupation-input {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  font-size: 7.2pt !important;
+  height: auto !important;
+  min-height: 0 !important;
+  line-height: 1.2 !important;
+  width: auto !important;
+  max-width: none !important;
+  field-sizing: content;
+}
+
+body.is-print-mode .lang-custom-header-divider {
+  display: none !important;
+}
+
+body.is-print-mode .lang-custom-feat-abbr {
+  display: none !important;
+}
+
+body.is-print-mode .lang-custom-feat-full {
+  display: inline !important;
+}
+
+body.is-print-mode .lang-custom-icon-lang {
+  display: inline !important;
+}
+
+body.is-print-mode .identity-header-xp {
+  width: auto !important;
+  margin-left: auto !important;
+  margin-top: 0 !important;
+  gap: 0.25rem !important;
+}
+
+body.is-print-mode .identity-header-xp .identity-xp-group {
+  width: 75px !important;
+}
+
+body.is-print-mode .identity-header-xp .identity-next-xp-group {
+  width: 65px !important;
+}
+
+body.is-print-mode .equipment-wealth-group {
+  width: 65px !important;
+}
+
+body.is-print-mode .equipment-credits-group {
+  width: 75px !important;
+}
+
+body.is-print-mode .card-header-custom .input-group {
+  background-color: transparent !important;
+}
+
+body.is-print-mode .card-header-custom .input-group .form-control {
+  background-color: transparent !important;
+  border-bottom: 1px solid #777 !important;
+  color: #000 !important;
+  font-size: 7.2pt !important;
+  padding: 0 2px !important;
+  height: 16px !important;
+  min-height: 16px !important;
+}
+
+body.is-print-mode .card-header-custom .input-group-text {
+  background-color: transparent !important;
+  border: none !important;
+  color: #000 !important;
+  font-size: 6.8pt !important;
+  padding: 0 2px !important;
+}
 
 /* Armor Table Print Column Widths */
 body.is-print-mode #armorTable {
@@ -3267,8 +3699,8 @@ body.is-print-mode .col-lg-6 {
 
   #healthInjuryCard input,
   #healthInjuryCard .form-control,
-  .stat-box:not(#collapseWealthXP .stat-box) .form-control:not(.input-group *),
-  .stat-box:not(#collapseWealthXP .stat-box) input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
+  .stat-box .form-control:not(.input-group *),
+  .stat-box input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
   .stat-box select,
   .hp-stat-input {
     width: 100% !important;
@@ -3541,95 +3973,6 @@ body.is-print-mode .col-lg-6 {
     background-color: #be185d !important;
     color: #fff !important;
     border: 1px solid #9f1239 !important;
-  }
-
-  #collapseWealthXP .card-body {
-    padding: 2px 6px !important;
-  }
-
-  #collapseWealthXP .row {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: stretch !important;
-
-    --bs-gutter-x: 0.3rem !important;
-    --bs-gutter-y: 0 !important;
-
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  #collapseWealthXP [class*="col-"]:nth-child(1) {
-    flex: 0 0 28% !important;
-    max-width: 28% !important;
-    width: 28% !important;
-  }
-
-  #collapseWealthXP [class*="col-"]:nth-child(2) {
-    flex: 0 0 18% !important;
-    max-width: 18% !important;
-    width: 18% !important;
-  }
-
-  #collapseWealthXP [class*="col-"]:nth-child(3) {
-    flex: 0 0 18% !important;
-    max-width: 18% !important;
-    width: 18% !important;
-  }
-
-  #collapseWealthXP [class*="col-"]:nth-child(4) {
-    flex: 0 0 36% !important;
-    max-width: 36% !important;
-    width: 36% !important;
-  }
-
-  #collapseWealthXP .stat-box {
-    padding: 2px 4px !important;
-    background-color: #f9fafb !important;
-    border: 1px solid #888 !important;
-    border-radius: 3px !important;
-  }
-
-  #collapseWealthXP .stat-label {
-    font-size: 5.8pt !important;
-    margin-bottom: 1px !important;
-    line-height: 1 !important;
-    color: #000 !important;
-    font-weight: 700 !important;
-  }
-
-  #collapseWealthXP .input-group {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    align-items: center !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
-  #collapseWealthXP .form-control {
-    height: 15px !important;
-    font-size: 7.2pt !important;
-    padding: 0 2px !important;
-    margin: 0 !important;
-    border: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    text-align: center !important;
-    flex: 1 1 auto !important;
-    width: auto !important;
-    max-width: 100% !important;
-  }
-
-  #collapseWealthXP .input-group-text {
-    height: 15px !important;
-    font-size: 6.5pt !important;
-    padding: 0 2px !important;
-    background-color: transparent !important;
-    border: none !important;
-    border-bottom: none !important;
-    color: #000 !important;
-    line-height: 15px !important;
   }
 
   /* Ability Scores Print Alignment & Fonts */
@@ -3915,6 +4258,118 @@ body.is-print-mode .col-lg-6 {
     font-size: 6.5pt !important;
   }
 
+  .profession-skill-wrap {
+    gap: 3px !important;
+  }
+
+  .profession-skill-cell.has-occupation .profession-skill-prefix {
+    display: none !important;
+  }
+
+  .profession-skill-cell.has-occupation .profession-occupation-prefix {
+    display: inline !important;
+    font-size: 7.2pt !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    white-space: nowrap !important;
+  }
+
+  .profession-skill-cell.no-occupation .profession-skill-prefix {
+    display: inline !important;
+  }
+
+  .profession-skill-cell.no-occupation .profession-occupation-prefix {
+    display: none !important;
+  }
+
+  .profession-skill-cell.no-occupation .profession-dropdown-group {
+    display: none !important;
+  }
+
+  .profession-skill-cell.has-occupation .profession-dropdown-group {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+  }
+
+  .profession-skill-cell.has-occupation .profession-occupation-input {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+    font-size: 7.2pt !important;
+    height: auto !important;
+    min-height: 0 !important;
+    line-height: 1.2 !important;
+    width: auto !important;
+    max-width: none !important;
+    field-sizing: content;
+  }
+
+  .lang-custom-header-divider {
+    display: none !important;
+  }
+
+  .lang-custom-feat-abbr {
+    display: none !important;
+  }
+
+  .lang-custom-feat-full {
+    display: inline !important;
+  }
+
+  .lang-custom-icon-lang {
+    display: inline !important;
+  }
+
+  .identity-header-xp {
+    width: auto !important;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+    gap: 0.25rem !important;
+  }
+
+  .identity-header-xp .identity-xp-group {
+    width: 75px !important;
+  }
+
+  .identity-header-xp .identity-next-xp-group {
+    width: 65px !important;
+  }
+
+  .equipment-wealth-group {
+    width: 65px !important;
+  }
+
+  .equipment-credits-group {
+    width: 75px !important;
+  }
+
+  .card-header-custom .input-group {
+    background-color: transparent !important;
+  }
+
+  .card-header-custom .input-group .form-control {
+    background-color: transparent !important;
+    border-bottom: 1px solid #777 !important;
+    color: #000 !important;
+    font-size: 7.2pt !important;
+    padding: 0 2px !important;
+    height: 16px !important;
+    min-height: 16px !important;
+  }
+
+  .card-header-custom .input-group-text {
+    background-color: transparent !important;
+    border: none !important;
+    color: #000 !important;
+    font-size: 6.8pt !important;
+    padding: 0 2px !important;
+  }
+
   .print-footer {
     display: block !important;
     text-align: center;
@@ -3936,7 +4391,7 @@ body.view-combat #page-1-toggles,
 body.view-combat #page-2,
 body.view-combat #page-3,
 body.view-combat #page-4,
-body.view-combat [id^="page-"]:not(#page-1):not(#page-1-header):not(#page-1-toggles),
+body.view-combat [id^="page-"]:not(#page-1, #page-1-header, #page-1-toggles),
 body.view-combat [class*="print-page-"]:not(.print-page-1),
 body.view-combat .print-footer {
   display: none !important;
@@ -4474,4 +4929,23 @@ body.view-combat #combatRow3 {
   }
 }
 
+@keyframes print-warning-pulse {
+  0% {
+    transform: scale(0.98);
+    box-shadow: 0 0 15px rgb(255 193 7 / 40%);
+  }
 
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgb(255 193 7 / 80%), 0 0 50px rgb(255 193 7 / 40%);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 25px rgb(255 193 7 / 50%);
+  }
+}
+
+.print-warning-flash {
+  animation: print-warning-pulse 0.5s ease-in-out infinite alternate;
+}

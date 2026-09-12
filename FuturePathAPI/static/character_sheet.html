@@ -43,7 +43,7 @@
 <button aria-expanded="false" aria-label="Header Menu" class="btn btn-cyber-outline btn-sm" data-bs-toggle="dropdown" id="headerMenuButton" title="Menu" type="button">
 <i class="fa-solid fa-bars"></i>
 </button>
-<ul aria-labelledby="headerMenuButton" class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-lg py-1" style="min-width: 180px;">
+<ul aria-labelledby="headerMenuButton" class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow-lg py-1" style="min-width: 220px;">
 <li>
 <button class="dropdown-item small d-flex align-items-center py-2" data-bs-target="#themeModal" data-bs-toggle="modal" type="button">
 <i class="fa-solid fa-palette text-cyan me-2" style="width: 18px; text-align: center;"></i>
@@ -55,6 +55,18 @@
 <i class="fa-solid fa-lock text-warning me-2" id="cardLayoutLockIcon" style="width: 18px; text-align: center;"></i>
 <span id="cardLayoutLockText">Layout Locked</span>
 </button>
+</li>
+<li>
+<div class="dropdown-item small d-flex align-items-center justify-content-between py-2 combat-hide" onclick="toggleIgnorePrintSpacing()" style="cursor: pointer;" title="Ignore Print Spacing and allow cards to move freely without auto-pagination">
+<span class="d-flex align-items-center">
+<i class="fa-solid fa-ruler-combined text-cyan me-2" id="ignorePrintSpacingIcon" style="width: 18px; text-align: center;"></i>
+<span>Ignore Print Spacing</span>
+</span>
+<div class="form-check form-switch mb-0 ms-2">
+<label class="visually-hidden" for="global_toggleIgnorePrintSpacing">Ignore Print Spacing</label>
+<input class="form-check-input my-0" id="global_toggleIgnorePrintSpacing" onclick="event.stopPropagation();" onchange="setIgnorePrintSpacing(this.checked)" role="switch" style="cursor: pointer;" type="checkbox"/>
+</div>
+</div>
 </li>
 <li>
 <button class="dropdown-item small d-flex align-items-center py-2" data-bs-target="#diceHistoryModal" data-bs-toggle="modal" onclick="renderDiceHistory()" type="button">
@@ -96,7 +108,7 @@
 </button>
 </li>
 <li>
-<button class="dropdown-item small d-flex align-items-center py-2 combat-hide" onclick="window.print()" title="Print / Save PDF" type="button">
+<button class="dropdown-item small d-flex align-items-center py-2 combat-hide" onclick="handlePrintClick()" title="Print / Save PDF" type="button">
 <i class="fa-solid fa-print text-cyan me-2" style="width: 18px; text-align: center;"></i><span>Print / Save PDF</span>
 </button>
 </li>
@@ -119,7 +131,7 @@
 <button class="btn btn-cyber-outline btn-sm d-none d-xxl-inline-block" data-bs-target="#conditionsModal" data-bs-toggle="modal" id="conditionsModalBtn" title="Conditions &amp; Status Tracks Quick Access" type="button">
 <i class="fa-solid fa-notes-medical"></i><span class="d-none d-sm-inline ms-1">Conditions</span>
 </button>
-<button class="btn btn-cyber btn-sm combat-hide d-none d-xxl-inline-block" onclick="window.print()" title="Print / Save PDF" type="button">
+<button class="btn btn-cyber btn-sm combat-hide d-none d-xxl-inline-block" onclick="handlePrintClick()" title="Print / Save PDF" type="button">
 <i class="fa-solid fa-print"></i><span class="d-none d-sm-inline ms-1">Print / Save PDF</span>
 </button>
 <button class="btn btn-cyber-outline btn-sm combat-hide d-none d-xxl-inline-block" onclick="exportCharacterJSON()" title="Export JSON" type="button">
@@ -182,6 +194,12 @@
 </div>
 <div class="d-flex align-items-center gap-2 flex-wrap ms-auto">
 <div class="d-flex align-items-center gap-2 flex-wrap" id="page-1-toggles">
+<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleQuirksContainer" title="Toggle visibility of the Quirks card">
+<label class="visually-hidden" for="global_toggleQuirksVisibility">global_toggleQuirksVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleQuirksVisibility" onchange="toggleQuirksCardVisibility(this.checked)" role="switch" type="checkbox"/>
+<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleQuirksVisibility" style="font-size: 0.75rem; cursor: pointer;">
+<span class="d-none d-sm-inline">Quirks</span><span class="d-inline d-sm-none">Quirks</span>
+</label>
+</div>
 <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-2" id="toggleBackstoryContainer" title="Toggle visibility of the Background, Campaign Notes &amp; Objectives card">
 <label class="visually-hidden" for="global_toggleBackstoryVisibility">global_toggleBackstoryVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleBackstoryVisibility" onchange="toggleBackstoryCardVisibility(this.checked)" role="switch" type="checkbox"/>
 <label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleBackstoryVisibility" style="font-size: 0.75rem; cursor: pointer;">
@@ -201,12 +219,23 @@
 </div>
 <!-- Character Identity Header -->
 <div class="sheet-card" data-default-page="1" id="identityCard">
-<div aria-controls="collapseIdentity" aria-expanded="true" class="card-header-custom" data-bs-target="#collapseIdentity">
+<div aria-controls="collapseIdentity" aria-expanded="true" class="card-header-custom d-flex flex-wrap align-items-center justify-content-between gap-2" data-bs-target="#collapseIdentity">
 <div>
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><i class="fa-solid fa-id-card me-2"></i>Character Identity</span>
+<span><i class="fa-solid fa-id-card me-2"></i><span class="text-muted fw-normal me-1">[d20 FuturePath]</span>Character Identity</span>
 </div>
-<small class="text-muted">d20 FuturePath</small>
+<div class="d-flex align-items-center gap-2 no-collapse ms-sm-auto identity-header-xp" onclick="event.stopPropagation();">
+<div class="input-group input-group-sm identity-xp-group" title="Current Experience Points">
+<span class="input-group-text small text-cyan fw-bold">XP</span>
+<label class="visually-hidden" for="identityCard_xpCurrent">Current XP</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="identityCard_xpCurrent" name="identityXpCurrent" onchange="syncXpCurrent(this.value, this)" oninput="syncXpCurrent(this.value, this)" placeholder="0 XP" type="text"/>
+</div>
+<div class="input-group input-group-sm identity-next-xp-group" title="XP Required for Next Level">
+<span class="input-group-text small text-cyan" title="XP required for Next Level"><i class="fa-solid fa-angles-up"></i></span>
+<label class="visually-hidden" for="identityCard_xpNextLevel">Next Level XP</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="identityCard_xpNextLevel" name="identityXpNextLevel" onchange="syncXpNextLevel(this.value, this)" oninput="syncXpNextLevel(this.value, this)" placeholder="2000" type="text"/>
+</div>
+</div>
 </div>
 <div class="collapse show" id="collapseIdentity">
 <div class="card-body">
@@ -1778,14 +1807,16 @@
 <!-- Language & Custom Skills Card -->
 <div class="sheet-card" data-default-page="1" id="languageCustomSkillsCard">
 <div aria-controls="collapseLanguageCustom" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseLanguageCustom">
-<div class="row flex-grow-1 g-2 align-items-center me-0">
-<div class="col-12 col-lg-6 d-flex align-items-center">
+<div class="row flex-grow-1 g-2 align-items-center me-0 lang-custom-header-row">
+<div class="col-12 col-lg-6 d-flex align-items-center lang-custom-header-col-feat">
 <i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
 <i class="fa-solid fa-bolt me-2 text-cyan"></i>
-<span class="fw-bold">Feat Based &amp; Skill Like Abilities</span>
+<span class="fw-bold lang-custom-feat-full">Technology / Occupation &amp; Feat Based Skill Like Abilities</span>
+<span class="fw-bold lang-custom-feat-abbr">Tech / Occu. &amp; Feat Based Ablts</span>
 </div>
-<div class="col-12 col-lg-6 d-flex align-items-center ps-lg-3">
-<i class="fa-solid fa-comments me-2 text-cyan"></i>
+<div class="col-12 col-lg-6 d-flex align-items-center ps-lg-3 lang-custom-header-col-lang">
+<span class="lang-custom-header-divider text-muted fw-bold me-2 no-print">/</span>
+<i class="fa-solid fa-comments me-2 text-cyan lang-custom-icon-lang"></i>
 <span class="fw-bold">Language</span>
 </div>
 </div>
@@ -1849,7 +1880,19 @@
 </tr>
 <!-- Profession -->
 <tr data-ability="WIS" data-skill="profession_custom">
-<td class="fw-semibold">Profession</td>
+<td class="fw-semibold profession-skill-cell no-occupation" id="professionSkillCell">
+<div class="d-flex align-items-center gap-1 profession-skill-wrap">
+<span class="profession-skill-prefix" id="professionSkillPrefix">Profession</span>
+<span class="profession-occupation-prefix" id="professionOccupationPrefix">Occupation:</span>
+<div class="input-group input-group-sm profession-dropdown-group" id="professionDropdownGroup">
+<label class="visually-hidden" for="professionSkill_occupationInput">Occupation</label>
+<input autocomplete="off" class="form-control form-control-sm fw-bold text-cyan profession-occupation-input" data-list="occupationDatalist" id="professionSkill_occupationInput" name="professionOccupation" onchange="syncOccupation(this.value, this)" oninput="syncOccupation(this.value, this)" placeholder="Occupation" type="text"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist('professionSkill_occupationInput')" title="Show Occupation Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+</div>
+</div>
+</td>
 <td class="text-center no-print">
 <i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
 </td>
@@ -1913,83 +1956,94 @@
 <td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
 <td class="no-print"></td>
 </tr>
+<!-- Custom Language 1 -->
+<tr data-ability="-">
+<td>
+<label class="visually-hidden" for="languageCustomSkillsCard_customLangName_0">Language / Dialect</label>
+<input class="form-control form-control-sm" id="languageCustomSkillsCard_customLangName_0" name="customLangName[]" placeholder="Language / Dialect" type="text"/>
+</td>
+<td class="text-center no-print">
+<i class="fa-solid fa-dice text-cyan roll-skill-btn" onclick="rollSkillCheck(this)" style="cursor: pointer;" title="Roll Skill Check"></i>
+</td>
+<td>
+<div class="d-inline-flex align-items-center gap-1 justify-content-center">
+<label class="visually-hidden" for="languageCustomSkillsCard_skillRank_lang_custom_0">Skillrank_Lang_Custom_0</label>
+<input class="form-control form-control-sm skill-rank text-center" id="languageCustomSkillsCard_skillRank_lang_custom_0" inputmode="numeric" name="skillRank_lang_custom[]" placeholder="0" maxlength="3" type="text"/>
+<span class="fw-bold text-cyan">=</span>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillDie_lang_custom_0">Skilldie_Lang_Custom_0</label>
+<input class="form-control form-control-sm skill-die text-center" id="languageCustomSkillsCard_skillDie_lang_custom_0" name="skillDie_lang_custom[]" type="text"/>
+</div>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">+</td>
+<td>
+<label class="visually-hidden" for="languageCustomSkillsCard_skillMisc_lang_custom_0">Skillmisc_Lang_Custom_0</label>
+<input class="form-control form-control-sm skill-misc-mod text-center" id="languageCustomSkillsCard_skillMisc_lang_custom_0" inputmode="numeric" name="skillMisc_lang_custom[]" placeholder="0" maxlength="3" type="text"/>
+</td>
+<td class="text-center text-cyan fw-bold align-middle px-0">=</td>
+<td class="text-center"><span class="fw-bold text-cyan skill-total"></span></td>
+<td class="no-print text-center"><button class="btn btn-sm btn-link text-danger p-0 border-0" onclick="removeRow(this)" title="Remove Skill" type="button"><i class="fa-solid fa-trash"></i></button></td>
+</tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Wealth / Credits and Experience Card -->
-<div class="sheet-card" data-default-page="1" id="wealthXpCard">
-<div aria-controls="collapseWealthXP" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseWealthXP">
-<div>
-<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Occupations" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Occupations on d20futurepath.com"><i class="fa-solid fa-coins"></i></a>Wealth / Credits &amp; Experience</span>
-</div>
-<div class="btn-group btn-group-sm card-reorder-controls no-collapse no-print" title="Reorder / move card between pages">
-<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
-<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
-</div>
-</div>
-<div class="collapse show" id="collapseWealthXP">
-<div class="card-body">
-<div class="row g-2 align-items-center">
-<!-- Box 1: Occupation (Far Left) -->
-<div class="col-12 col-sm-6 col-md-3 col-xl-3">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1" for="occupationInput">
-<span class="d-none d-sm-inline">Occupation</span><span class="d-inline d-sm-none">Occ</span>
-</div>
-<div class="input-group input-group-sm">
-<label class="visually-hidden" for="wealthXpCard_occupationInput">Occupation</label><input autocomplete="off" class="form-control form-control-sm text-center fw-bold text-cyan" data-list="occupationDatalist" id="wealthXpCard_occupationInput" name="occupation" placeholder="e.g. Academic" type="text"/>
-<button class="btn btn-cyber-outline btn-sm px-2 no-print" id="occupationDropdownBtn" onclick="toggleDatalist('wealthXpCard_occupationInput')" title="Show Occupation Suggestions" type="button">
-<i class="fa-solid fa-chevron-down"></i>
-</button>
 </div>
 <datalist id="occupationDatalist">
 </datalist>
 </div>
 </div>
-<!-- Box 2: Current Wealth Score -->
-<div class="col-6 col-sm-6 col-md-3 col-xl-2">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1" title="Current available Wealth bonus for financial checks">
-<span class="d-none d-sm-inline">Current Wealth</span><span class="d-inline d-sm-none">Wealth</span>
 </div>
+</div>
+</div>
+<!-- Quirks & Flaws Card -->
+<div class="sheet-card" data-default-page="1" id="quirksCard">
+<div aria-controls="collapseQuirks" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseQuirks">
+<div>
+<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
+<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Quirks" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Quirks &amp; Flaws on d20futurepath.com"><i class="fa-solid fa-masks-theater"></i></a>Quirks &amp; Flaws</span>
+</div>
+<div class="d-flex align-items-center gap-2 no-collapse">
+<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
+<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+<button class="btn btn-sm btn-cyber btn-add-row" onclick="addQuirkRow()" type="button">
+<i class="fa-solid fa-plus me-1"></i> Quirk
+</button>
+</div>
+</div>
+<div class="collapse show" id="collapseQuirks">
+<div class="card-body p-0">
+<div class="table-responsive">
+<table class="table table-custom mb-0 align-middle" id="quirksTable">
+<thead>
+<tr>
+<th style="width: 250px;">Name</th>
+<th>Description</th>
+<th class="no-print" style="width: 50px;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
 <div class="input-group input-group-sm">
-<span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;"><i class="fa-solid fa-dollar-sign"></i></span>
-<label class="visually-hidden" for="wealthXpCard_currentWealthScore">Currentwealthscore</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_currentWealthScore" name="currentWealthScore" placeholder="+0" type="text"/>
+<label class="visually-hidden" for="quirksCard_quirkName_0">Quirk Name</label>
+<input autocomplete="off" class="form-control form-control-sm" data-list="quirksDatalist" id="quirksCard_quirkName_0" name="quirkName[]" placeholder="Quirk or Flaw Name" type="text" onchange="onQuirkNameInput(this)"/>
+<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Quirk Suggestions" type="button">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
 </div>
-</div>
-</div>
-<!-- Box 3: Credits -->
-<div class="col-6 col-sm-6 col-md-3 col-xl-3">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1" title="Physical or digital liquid credits on hand">
-<span class="d-none d-sm-inline">Credits</span><span class="d-inline d-sm-none">Cred</span>
-</div>
-<div class="input-group input-group-sm">
-<span class="input-group-text fw-bold text-cyan" style="font-size: 0.75rem;">₡</span>
-<label class="visually-hidden" for="wealthXpCard_liquidCredits">Liquidcredits</label><input class="form-control form-control-sm text-center fw-bold text-cyan" id="wealthXpCard_liquidCredits" name="liquidCredits" placeholder="0" type="text"/>
-</div>
-</div>
-</div>
-<!-- Box 4: Total XP & Next Level (Far Right) -->
-<div class="col-12 col-sm-6 col-md-3 col-xl-4">
-<div class="stat-box h-100 d-flex flex-column justify-content-center p-2">
-<div class="stat-label mb-1">
-<span class="d-none d-sm-inline">Total XP / Next Level</span><span class="d-inline d-sm-none">XP / Next</span>
-</div>
-<div class="input-group input-group-sm">
-<span class="input-group-text px-1 py-0 small text-cyan fw-bold" style="font-size: 0.7rem;">XP</span>
-<label class="visually-hidden" for="wealthXpCard_xpCurrent">Xpcurrent</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1 me-1" id="wealthXpCard_xpCurrent" name="xpCurrent" placeholder="0 XP" title="Current Experience Points" type="text"/>
-<span class="input-group-text px-1 py-0 small text-cyan ms-1" style="font-size: 0.7rem;" title="XP required for Next Level"><i class="fa-solid fa-angles-up me-1"></i><span class="d-none d-sm-inline">Next</span></span>
-<label class="visually-hidden" for="wealthXpCard_xpNextLevel">Xpnextlevel</label><input class="form-control form-control-sm text-center fw-bold text-cyan px-1" id="wealthXpCard_xpNextLevel" name="xpNextLevel" placeholder="2000" title="XP Required for Next Level" type="text"/>
-</div>
-</div>
-</div>
+</td>
+<td>
+<label class="visually-hidden" for="quirksCard_quirkDesc_0">Quirk Description</label>
+<textarea class="form-control form-control-sm trait-desc-textarea" id="quirksCard_quirkDesc_0" name="quirkDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
+</td>
+<td class="no-print text-center">
+<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
+</td>
+</tr>
+</tbody>
+</table>
+<datalist id="quirksDatalist">
+</datalist>
 </div>
 </div>
 </div>
@@ -2061,7 +2115,7 @@
 <table class="table table-custom mb-0 align-middle" id="speciesTraitsTable">
 <thead>
 <tr>
-<th style="width: 125px;">Name</th>
+<th style="width: 250px;">Name</th>
 <th>Description</th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
@@ -2101,7 +2155,7 @@
 <table class="table table-custom mb-0 align-middle" id="pathTalentsTable">
 <thead>
 <tr>
-<th style="width: 125px;">Name</th>
+<th style="width: 250px;">Name</th>
 <th>Description</th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
@@ -2141,7 +2195,7 @@
 <table class="table table-custom mb-0 align-middle" id="featsTable">
 <thead>
 <tr>
-<th style="width: 125px;">Name</th>
+<th style="width: 250px;">Name</th>
 <th>Description</th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
@@ -2238,7 +2292,7 @@
 <table class="table table-custom mb-0 align-middle prof-talents-table">
 <thead>
 <tr>
-<th style="width: 125px;">Name</th>
+<th style="width: 250px;">Name</th>
 <th>Description</th>
 <th class="no-print text-center" style="width: 100px;">
 <button class="btn btn-sm btn-cyber btn-add-row py-0 px-2" onclick="addProfTalentRow(this)" style="font-size: 0.72rem;" type="button">
@@ -2284,6 +2338,20 @@
 <div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
 <button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
 <button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
+</div>
+<div class="d-inline-flex align-items-center gap-1" onclick="event.stopPropagation();" title="Current Wealth bonus for financial checks">
+<div class="input-group input-group-sm equipment-wealth-group">
+<span class="input-group-text fw-bold text-cyan"><i class="fa-solid fa-dollar-sign"></i></span>
+<label class="visually-hidden" for="equipmentCard_currentWealthScore">Current Wealth Score</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="equipmentCard_currentWealthScore" name="equipmentCurrentWealthScore" onchange="syncCurrentWealth(this.value, this)" oninput="syncCurrentWealth(this.value, this)" placeholder="+0" type="text"/>
+</div>
+</div>
+<div class="d-inline-flex align-items-center gap-1" onclick="event.stopPropagation();" title="Liquid Credits on hand">
+<div class="input-group input-group-sm equipment-credits-group">
+<span class="input-group-text fw-bold text-cyan"><i class="fa-solid fa-coins"></i></span>
+<label class="visually-hidden" for="equipmentCard_liquidCredits">Liquid Credits</label>
+<input class="form-control form-control-sm text-center fw-bold text-cyan" id="equipmentCard_liquidCredits" name="equipmentLiquidCredits" onchange="syncLiquidCredits(this.value, this)" oninput="syncLiquidCredits(this.value, this)" placeholder="0" type="text"/>
+</div>
 </div>
 <div class="d-inline-flex align-items-center gap-1" onclick="event.stopPropagation();">
 <span class="small text-muted fw-bold me-1" style="font-size: 0.75rem;">Total Weight:</span>
@@ -2346,12 +2414,6 @@
 <label class="visually-hidden" for="global_toggleTechniquesVisibility">global_toggleTechniquesVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleTechniquesVisibility" onchange="toggleTechniquesCardVisibility(this.checked)" role="switch" type="checkbox"/>
 <label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleTechniquesVisibility" style="font-size: 0.75rem; cursor: pointer;">
 <span class="d-none d-sm-inline">Techniques</span><span class="d-inline d-sm-none">Tech</span>
-</label>
-</div>
-<div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleQuirksContainer" title="Toggle visibility of the Quirks card">
-<label class="visually-hidden" for="global_toggleQuirksVisibility">global_toggleQuirksVisibility</label><input checked="" class="form-check-input my-0" id="global_toggleQuirksVisibility" onchange="toggleQuirksCardVisibility(this.checked)" role="switch" type="checkbox"/>
-<label class="form-check-label small text-nowrap fw-bold text-cyan" for="global_toggleQuirksVisibility" style="font-size: 0.75rem; cursor: pointer;">
-<span class="d-none d-sm-inline">Quirks</span><span class="d-inline d-sm-none">Quirks</span>
 </label>
 </div>
 <div class="form-check form-switch d-flex align-items-center gap-1 mb-0 me-1" id="toggleDetractorsContainer" title="Toggle visibility of the Detractors card">
@@ -2490,61 +2552,6 @@
 </div>
 </div>
 </div>
-<!-- Quirks & Flaws Card -->
-<div class="sheet-card" data-default-page="3" id="quirksCard">
-<div aria-controls="collapseQuirks" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseQuirks">
-<div>
-<i class="fa-solid fa-chevron-down collapse-icon me-2"></i>
-<span><a class="text-decoration-none header-icon-link me-2" href="https://d20futurepath.com/index.php?title=Quirks" onclick="event.stopPropagation()" rel="noopener noreferrer" target="_blank" title="View Quirks &amp; Flaws on d20futurepath.com"><i class="fa-solid fa-masks-theater"></i></a>Quirks &amp; Flaws</span>
-</div>
-<div class="d-flex align-items-center gap-2 no-collapse">
-<div class="btn-group btn-group-sm card-reorder-controls no-print" title="Reorder / move card between pages">
-<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardUp(this)" title="Move Up" type="button"><i class="fa-solid fa-arrow-up"></i></button>
-<button class="btn btn-cyber-outline py-0 px-2" onclick="moveCardDown(this)" title="Move Down" type="button"><i class="fa-solid fa-arrow-down"></i></button>
-</div>
-<button class="btn btn-sm btn-cyber btn-add-row" onclick="addQuirkRow()" type="button">
-<i class="fa-solid fa-plus me-1"></i> Quirk
-</button>
-</div>
-</div>
-<div class="collapse show" id="collapseQuirks">
-<div class="card-body p-0">
-<div class="table-responsive">
-<table class="table table-custom mb-0 align-middle" id="quirksTable">
-<thead>
-<tr>
-<th style="width: 125px;">Name</th>
-<th>Description</th>
-<th class="no-print" style="width: 50px;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<div class="input-group input-group-sm">
-<label class="visually-hidden" for="quirksCard_quirkName_0">Quirk Name</label>
-<input autocomplete="off" class="form-control form-control-sm" data-list="quirksDatalist" id="quirksCard_quirkName_0" name="quirkName[]" placeholder="Quirk or Flaw Name" type="text" onchange="onQuirkNameInput(this)"/>
-<button class="btn btn-cyber-outline btn-sm px-2 no-print" onclick="toggleDatalist(this.previousElementSibling)" title="Show Quirk Suggestions" type="button">
-<i class="fa-solid fa-chevron-down"></i>
-</button>
-</div>
-</td>
-<td>
-<label class="visually-hidden" for="quirksCard_quirkDesc_0">Quirk Description</label>
-<textarea class="form-control form-control-sm trait-desc-textarea" id="quirksCard_quirkDesc_0" name="quirkDesc[]" oninput="autoExpandTextarea(this)" placeholder="Description" rows="1"></textarea>
-</td>
-<td class="no-print text-center">
-<button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeRow(this)" type="button"><i class="fa-solid fa-trash"></i></button>
-</td>
-</tr>
-</tbody>
-</table>
-<datalist id="quirksDatalist">
-</datalist>
-</div>
-</div>
-</div>
-</div>
 <!-- Detractors Card -->
 <div class="sheet-card" data-default-page="3" id="detractorsCard">
 <div aria-controls="collapseDetractors" aria-expanded="true" class="card-header-custom d-flex align-items-center justify-content-between gap-2" data-bs-target="#collapseDetractors">
@@ -2568,7 +2575,7 @@
 <table class="table table-custom mb-0 align-middle" id="detractorsTable">
 <thead>
 <tr>
-<th style="width: 125px;">Name</th>
+<th style="width: 250px;">Name</th>
 <th>Description</th>
 <th class="no-print" style="width: 50px;"></th>
 </tr>
