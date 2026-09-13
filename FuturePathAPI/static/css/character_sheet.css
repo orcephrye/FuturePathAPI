@@ -3134,6 +3134,7 @@ body.is-print-mode #skillsTable th:nth-child(10) { width: 28px !important; }
 
 body.is-print-mode .profession-skill-wrap {
   gap: 3px !important;
+  width: 100% !important;
 }
 
 body.is-print-mode .profession-skill-cell.has-occupation .profession-skill-prefix {
@@ -3149,11 +3150,7 @@ body.is-print-mode .profession-skill-cell.has-occupation .profession-occupation-
 }
 
 body.is-print-mode .profession-skill-cell.no-occupation .profession-skill-prefix {
-  display: inline !important;
-  font-size: 6.8pt !important;
-  font-weight: 600 !important;
-  color: #000 !important;
-  white-space: nowrap !important;
+  display: none !important;
 }
 
 body.is-print-mode .profession-skill-cell.no-occupation .profession-occupation-prefix {
@@ -3161,7 +3158,30 @@ body.is-print-mode .profession-skill-cell.no-occupation .profession-occupation-p
 }
 
 body.is-print-mode .profession-skill-cell.no-occupation .profession-dropdown-group {
-  display: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+body.is-print-mode .profession-skill-cell.no-occupation .profession-occupation-input {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none !important;
+  border-bottom: 1px solid #444 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  padding: 0 2px !important;
+  font-weight: 600 !important;
+  font-size: 7.2pt !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  line-height: 16px !important;
+  color: #000 !important;
+}
+
+body.is-print-mode .profession-skill-cell.no-occupation .profession-occupation-input::placeholder {
+  color: transparent !important;
 }
 
 body.is-print-mode .profession-skill-cell.has-occupation .profession-dropdown-group {
@@ -4281,6 +4301,7 @@ body.is-print-mode .col-lg-6 {
 
   .profession-skill-wrap {
     gap: 3px !important;
+    width: 100% !important;
   }
 
   .profession-skill-cell.has-occupation .profession-skill-prefix {
@@ -4296,11 +4317,7 @@ body.is-print-mode .col-lg-6 {
   }
 
   .profession-skill-cell.no-occupation .profession-skill-prefix {
-    display: inline !important;
-    font-size: 6.8pt !important;
-    font-weight: 600 !important;
-    color: #000 !important;
-    white-space: nowrap !important;
+    display: none !important;
   }
 
   .profession-skill-cell.no-occupation .profession-occupation-prefix {
@@ -4308,7 +4325,30 @@ body.is-print-mode .col-lg-6 {
   }
 
   .profession-skill-cell.no-occupation .profession-dropdown-group {
-    display: none !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .profession-skill-cell.no-occupation .profession-occupation-input {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    border-bottom: 1px solid #444 !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    padding: 0 2px !important;
+    font-weight: 600 !important;
+    font-size: 7.2pt !important;
+    height: 16px !important;
+    min-height: 16px !important;
+    line-height: 16px !important;
+    color: #000 !important;
+  }
+
+  .profession-skill-cell.no-occupation .profession-occupation-input::placeholder {
+    color: transparent !important;
   }
 
   .profession-skill-cell.has-occupation .profession-dropdown-group {
