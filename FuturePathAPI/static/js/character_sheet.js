@@ -533,7 +533,31 @@ function performCalculateStats() {
     const scoreEl = document.getElementById(`abilityScoresCard_score${abilityKey}`) || document.getElementById(`global_score${abilityKey}`);
     const scoreStr = (scoreEl ? scoreEl.value : '');
 
-    if (!scoreStr && !rankStr && !miscStr) {
+    const isFeatTable = Boolean(row.closest('#featSkillsTable'));
+    const abSelect = row.querySelector('.skill-ab-select');
+    const currentAbility = (abSelect ? abSelect.value : abilityKey);
+    const hasAssignedAbility = Boolean(currentAbility && currentAbility !== '-');
+    const hasAbilityScore = Boolean(scoreStr && scoreStr.trim() !== '');
+    const isRankEmpty = (!rankStr || rankStr.trim() === '' || rankStr.trim() === '0');
+    const isKeyAbilityEmpty = (!hasAssignedAbility || !hasAbilityScore);
+    const miscNum = parseInt(miscStr || 0, 10);
+    const hasMisc = Boolean(miscStr && miscStr.trim() !== '' && miscNum !== 0);
+
+    if (isFeatTable && (isRankEmpty && isKeyAbilityEmpty)) {
+      if (abModInput) {
+        abModInput.value = '';
+      }
+      if (totalSpan) {
+        totalSpan.innerText = '';
+      }
+    } else if (isFeatTable && !hasAssignedAbility) {
+      if (abModInput) {
+        abModInput.value = '';
+      }
+      if (totalSpan) {
+        totalSpan.innerText = '';
+      }
+    } else if (!scoreStr && !rankStr && !hasMisc) {
       if (abModInput) {
         abModInput.value = '';
       }
@@ -543,9 +567,10 @@ function performCalculateStats() {
     } else {
       const misc = parseInt(miscStr || 0, 10);
 
-      const abMod = (scoreStr ? (mods[abilityKey] || 0) : 0);
+      const effectiveAbility = (hasAssignedAbility ? currentAbility : abilityKey);
+      const abMod = (scoreStr && effectiveAbility && effectiveAbility !== '-' ? (mods[effectiveAbility] || 0) : 0);
       if (abModInput) {
-        abModInput.value = (scoreStr ? formatModStr(abMod) : '');
+        abModInput.value = (scoreStr && effectiveAbility && effectiveAbility !== '-' ? formatModStr(abMod) : '');
       }
 
       const totalBonus = abMod + misc;
@@ -2172,6 +2197,7 @@ function updateCustomSkillAbility(select) {
   } else {
     if (modInput) {
       modInput.classList.add('text-muted');
+      modInput.value = '';
     }
   }
 }
@@ -2255,7 +2281,7 @@ function addFeatSkillRow(name = '', rank = '', keyAbility = '-', miscMod = '') {
           <option value="CON">CON</option>
           <option value="CHA">CHA</option>
         </select>
-        <input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-muted" readonly="" maxlength="3" type="text" value="0"/>
+        <input class="form-control form-control-sm skill-ab-mod text-center py-0 px-1 text-muted" readonly="" maxlength="3" type="text"/>
       </div>
     </td>
     <td class="text-center text-cyan fw-bold align-middle px-0">+</td>
