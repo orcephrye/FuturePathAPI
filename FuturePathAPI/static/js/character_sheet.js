@@ -603,7 +603,7 @@ function performCalculateStats() {
   const percMiscVal = parseInt((percMiscEl ? percMiscEl.value : 0), 10) || 0;
 
   if (passivePercEl) {
-    if (!hasWisScore && (!percMiscEl || percMiscEl.value.trim() === '')) {
+    if (!hasWisScore || !hasDexScore) {
       passivePercEl.value = '';
     } else {
       const wisMod = mods.WIS || 0;
