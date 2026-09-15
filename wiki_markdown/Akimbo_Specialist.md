@@ -6,7 +6,7 @@ page.
 **Benefit**: The Character can ignore the no advantage penalty for using
 their Off-Handed weapon. They do not simply get an advantage because the
 weapon is in their off-hand. Also, this only counts for valid off-hand
-weapons. IE: Any weapon that is not considered \'heavy\', \'clunky\',
+weapons. IE: Any weapon that is considered \'heavy\', \'clunky\',
 \'two-handed\' cannot qualify. **Also**, they can target a different
 opponent if they wish.
 

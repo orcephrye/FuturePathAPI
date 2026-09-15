@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Seekers of Stolen Light",
     "playerName": "",
     "species": "Chronodes",
+    "homeworld": "",
     "charPath": "Path of Intelligence (Smart Hero)",
     "pathLevel": "2",
     "classList": "Electro-Mancer (1)",
@@ -35,9 +38,9 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "10",
+    "maxHP": "14",
     "tempHP": "",
-    "currentHP": "10",
+    "currentHP": "14",
     "nonlethalHP": ""
   },
   "attributesCard": {
@@ -111,7 +114,7 @@
       {
         "Name": "Craft (Structural)",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -145,8 +148,8 @@
       },
       {
         "Name": "Knowledge (Culture)",
-        "Favored": true,
-        "Rank": 2,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -160,14 +163,14 @@
       {
         "Name": "Knowledge (History)",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 1
       },
       {
         "Name": "Knowledge (Science)",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 1
       },
@@ -267,11 +270,11 @@
   },
   "weaponsCard": {
     "meleeProfCount": 4,
-    "rangedProfCount": 1,
+    "rangedProfCount": 0,
     "weaponsList": [
       {
         "Name": "Natural Swarm Attack",
-        "Lvl": "2",
+        "Lvl": "4",
         "Damage": "1d10+4",
         "Accuracy": "+4",
         "AP": "",
@@ -306,7 +309,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Technician)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -333,18 +336,14 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Technician",
-    "currentWealthScore": "14,000",
-    "liquidCredits": "10",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
         "Name": "Swarm",
-        "Description": "This is a swarm of linked minds of birds. Cannot benefit from armor, or use weapons. All Area of Effect attacks hit the Swarm as if it was a 'Touch' attack."
+        "Description": "A swarm of linked minds. Cannot benefit from armor, or use weapons. All Area of Effect attacks hit the Swarm as if it was a 'Touch' attack."
       },
       {
         "Name": "Natural Swarm Attack",
@@ -355,6 +354,9 @@
         "Description": "The Chronodes are immune to mind affects and Confused condition."
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core—a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -380,33 +382,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Electro-Mancer (Electric Savent)",
-      "Level": "1",
-      "Affinities": [
-        "DEX",
-        "INT"
-      ],
-      "Talents": [
-        {
-          "Name": "Electromancy Path Choice",
-          "Description": "Electro Transmutant (Melee/Fast/Dexterous)"
-        },
-        {
-          "Name": "Electric Attack",
-          "Description": "Starting at 1st level, you gain a natural attack manifested from your implants. This attack deals Electric damage and scales as you level up. This is a Standard Attack Action (Melee Finesse). Dexterity Modifier for accuracy and damage. Damage: 1d4+4"
-        },
-        {
-          "Name": "Sixth Sense",
-          "Description": "You are uniquely attuned to electromagnetic fields. You gain an Advantage Die on detection checks for electronic traps, hidden sensors, or data ports. Additionally, you can instantly tell if an electronic device within 30ft + 5ft per Int Mod is \"On\" or \"Off\" without a check."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "45",
+    "currentWealthScore": "14,000",
+    "liquidCredits": "10",
     "equipmentList": [
       {
         "Name": "Tiny Range Pack",
@@ -494,9 +474,44 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core\u2014a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Electro-Mancer (Electric Savent)",
+      "Level": "1",
+      "Affinities": [
+        "DEX",
+        "INT"
+      ],
+      "Talents": [
+        {
+          "Name": "Electromancy Path Choice",
+          "Description": "Electro Transmutant (Melee/Fast/Dexterous)"
+        },
+        {
+          "Name": "Electric Attack",
+          "Description": "Starting at 1st level, you gain a natural attack manifested from your implants. This attack deals Electric damage and scales as you level up. This is a Standard Attack Action (Melee Finesse). Dexterity Modifier for accuracy and damage. Damage: 1d4+4"
+        },
+        {
+          "Name": "Sixth Sense",
+          "Description": "You are uniquely attuned to electromagnetic fields. You gain an Advantage Die on detection checks for electronic traps, hidden sensors, or data ports. Additionally, you can instantly tell if an electronic device within 30ft + 5ft per Int Mod is \"On\" or \"Off\" without a check."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -534,12 +549,6 @@
       ]
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
   "cyberneticsCard": {
     "cyborgLevel": "1",
     "frameworkTechLevel": "3",
@@ -561,26 +570,6 @@
       }
     ],
     "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -606,6 +595,18 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -622,6 +623,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Technician",
+    "currentWealthScore": "14,000",
+    "liquidCredits": "10",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Viperis Abyssen",
     "playerName": "",
     "species": "Cryous",
+    "homeworld": "",
     "charPath": "Path of Constitution (Tough Hero)",
     "pathLevel": "1",
     "classList": "",
@@ -35,9 +38,9 @@
   },
   "healthInjuryCard": {
     "hitDie": "d10",
-    "maxHP": "13",
+    "maxHP": "18",
     "tempHP": "",
-    "currentHP": "13",
+    "currentHP": "18",
     "nonlethalHP": ""
   },
   "attributesCard": {
@@ -197,7 +200,7 @@
         "Favored": false,
         "Rank": 1,
         "Key Ability": "DEX",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Sense Motive",
@@ -229,10 +232,10 @@
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
-        "MiscMod": 0
+        "MiscMod": 1
       }
     ]
   },
@@ -277,7 +280,7 @@
   },
   "weaponsCard": {
     "meleeProfCount": 3,
-    "rangedProfCount": 2,
+    "rangedProfCount": 0,
     "weaponsList": [
       {
         "Name": "Natural Electric Attack",
@@ -304,19 +307,6 @@
         "isMelee": true,
         "Ammo": "-",
         "Notes": ""
-      },
-      {
-        "Name": "Pistol",
-        "Lvl": "2",
-        "Damage": "d6",
-        "Accuracy": "",
-        "AP": "",
-        "Critical": "x2/20",
-        "Type": "(K) R",
-        "Range": "100ft",
-        "isMelee": false,
-        "Ammo": "7",
-        "Notes": ""
       }
     ]
   },
@@ -329,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Adventurer)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -344,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Adventurer",
-    "currentWealthScore": "5,000",
-    "liquidCredits": "4",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -358,6 +344,9 @@
         "Description": "Can Breathe Underwater, Immune to the Trip, Advantage to reverse grapples."
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult female Cryous. She has worked hard, but has gained nothing. Her family is a military family. She joined for that reason, and found it lacking. She tried for different jobs, but most felt unfulfilling, and her parents saw her as directionless and, in her mind, a disappointment. To avoid them and to seek some meaning, she has left her homeworld. She has dark blue skin, with black eyes and short fins coming from her back."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -370,8 +359,8 @@
   "featsCard": {
     "featsList": [
       {
-        "Name": "Endurance",
-        "Description": "Gain advantage to most Con saving throws."
+        "Name": "Guide",
+        "Description": "Misc +1 bonus to both the Pilot and Survival skills."
       },
       {
         "Name": "Training Expert",
@@ -379,10 +368,11 @@
       }
     ]
   },
-  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "45",
+    "currentWealthScore": "5,000",
+    "liquidCredits": "4",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -491,38 +481,6 @@
       }
     ]
   },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -536,10 +494,6 @@
         "techniquesList": []
       }
     ]
-  },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -565,8 +519,42 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult female Cryous. She has worked hard, but has gained nothing. Her family is a military family. She joined for that reason, and found it lacking. She tried for different jobs, but most felt unfulfilling, and her parents saw her as directionless and, in her mind, a disappointment. To avoid them and to seek some meaning, she has left her homeworld. She has dark blue skin, with black eyes and short fins coming from her back."
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "professionsCard": [],
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
   },
   "UI_Layout": {
     "theme": "cryous",
@@ -580,6 +568,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": false,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Adventurer",
+    "currentWealthScore": "5,000",
+    "liquidCredits": "4",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

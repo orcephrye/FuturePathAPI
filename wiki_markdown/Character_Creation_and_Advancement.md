@@ -24,10 +24,22 @@ put it on paper! A few things you will need first:
 1.  Dice! You need to get a d20 dice set. Here is a URL to help get you
     started [Google Search for \"d20 Dice
     Set\"](https://www.google.com/search?btnG=1&pws=0&q=d20+Dice+Set&gws_rd=ssl)
-2.  A Character Sheet. Download
-    [here](https://drive.google.com/uc?export=download&id=1cZ3PPchkXAgTSWTHKsONEIWNrg8PhN2P)!
+2.  A Character Sheet:
 
-:\* **Note**: The Character sheet is form-fillable when you download it.
+:\* PDF Download [3 Page
+Sheet](https://drive.google.com/uc?export=download&id=1NT_s-6wckf5VT9EI7HMFdcDgkEe1QoGh)
+/
+[Techniques/PowerArmor/Detractors](https://drive.google.com/uc?export=download&id=1ZGVm_QgCBmF_AZNZqoqA5b8WMijbg4Bn)
+/
+[Cybernetics](https://drive.google.com/uc?export=download&id=1CXP4uWyVbtVlRXI3PR3yNbv3PYcoD8Mg)
+/
+[Mutations](https://drive.google.com/uc?export=download&id=1DSIu11feDSVoJ-Ok7gN9PqkPrZWn_JAp)
+/
+[Psionics](https://drive.google.com/uc?export=download&id=1cfPwT1Bf1iasfwfzEh8ex5PNoCtvl7p6)
+
+:\* Digital [here](https://api.d20futurepath.com/v1/character_sheet)!
+(With the digital version, you can customize your own layout for a
+printed sheet!)
 
 ## Summary
 
@@ -102,7 +114,7 @@ your Character\'s name?\" causes you to pause and linger too long,
 unable to come up with an answer, then simply move on to another detail
 and revisit it later.
 
-    Editing Character Sheet (Alignment/Name/Sex): At the top of the Character sheet, to the right of the "Future Path" title, is a series of blanks with the titles directly below each blank. Fill in the first few blanks now. "Character Name," "Alignment," and "Player Name" (That's your name in case you lose your sheet at a group event or something). There are also fields for you to enter "Sex", "Weight", and "Height". 
+    Editing Character Sheet (Alignment/Name/Sex): At the top of the Character sheet, in the "Character Identity section. Fill in the first few blanks now. "Character Name," "Alignment," and "Player Name" (That's your name in case you lose your sheet at a group event or something). There are also fields for you to enter "Gender", "Weight", and "Height".
 
 If you feel stuck here, that is okay. If you already know what Class you
 want to play as, go ahead with the rest of the steps and come back to
@@ -131,7 +143,7 @@ other characteristics. Species Traits can directly affect the
 Character\'s stats or provide special abilities only available to that
 Species.
 
-    Editing Character Sheet: You can write your Species choice on your character sheet below the 'Character Class and Levels' section, which is directly below the 'Character Name' at the top right corner of the first page.
+    Editing Character Sheet: You can write your Species choice on your character sheet in the "Character Identity" section at the top of page one. Also on page two, there is a section for "Species Traits" that can be used to record down the special things this Character gains from being that particular species. 
 
 ### Size and Speed {#size_and_speed}
 
@@ -147,7 +159,7 @@ increments, and when halving speed, always round up. So 1/2 of 15ft is
 \'Combat\' Speed refers to \'Run\' Speed while wearing Armor. Some Armor
 can change this Speed.
 
-    Editing Character Sheet: Size is found at the top of the first page, right after the 'Species' box and before the 'Gender' box. Further below that section, past the 'DR' boxes, is the section dedicated to Speed. There, you can record your tactical movement speeds. 
+    Editing Character Sheet: Size is found in the "Character Identity" section at the top of page one. While Speed is its own section to the right-hand side of page one, directly below the "AC" section.
 
 ### Tech Proficiency Level {#tech_proficiency_level}
 
@@ -156,7 +168,7 @@ starting Tech Level is 2 if nothing is provided. Unless it is obvious,
 the species isn\'t advanced. To learn about how Tech Level affects a
 Character and how to utilize it, go [here](Tech "here"){.wikilink}.
 
-    Editing Character Sheet: 'Tech Proficiency Level' can be found at the top of the first page under the large box titled 'Character Description and Background'. All Proficiencies are denoted with boxes that are checked off to indicate what Tech Level the Character understands.
+    Editing Character Sheet: 'Tech Proficiency Level' can be found at the top of the first page in the "Attributes" section as part of the Attributes Header.
 
 More on Proficiency levels in the next
 [section](Character_Creation_and_Advancement#Proficiency_Levels "section"){.wikilink}.
@@ -168,7 +180,7 @@ The species can inform these attributes and help a Player determine the
 Character\'s appearance. Please note the Species \'Visual Description\'
 and \'Physical Traits\' to get an idea of how the Character may appear.
 
-    Editing Character Sheet:  Homeworld is located at the top of the first page, to the right of the 'Character Path/Level and Professions' section, or directly below the 'Player' section. While Gender, Height, Weight, Hair Color, and Eyes are found at the top of the first page. Are all on the same row, one after another, in order after the Species and Size boxes. Below these boxes is a large box for 'Character Description and Background.' This is a good place to provide a short extra explanation of appearance. 
+    Editing Character Sheet: Gender, Height, Weight, Hair Color, and Eyes are found at the top of the first page.
 
 ## Proficiency Levels {#proficiency_levels}
 
@@ -179,18 +191,8 @@ Tech Proficiency
 : You should have already filled out this information as part of the
   [previous
   section](Character_Creation_and_Advancement#Tech_Proficiency_Level "previous section"){.wikilink}.
-
-<!-- -->
-
-    Editing Character Sheet: This is located on the first page near the top, just below the 'SPEED' section and 'Character Description and Background' box. There are 4 square boxes that are underlined. Fill in all the boxes under and before the Character's Tech Level provided by the Species. All other Proficiency levels are located further down the page, in different sections near what they're associated with.
-
-Melee and Ranged Proficiency Levels
-: By now, you probably know if you want your character to be better at
-  Range or Melee weapons. You can choose not to focus on any one and
-  gain 2 Levels in both Ranged and Melee. Or you can choose 3 levels in
-  Ranged and 1 Level in Melee, or 3 levels in Melee and 1 Level in
-  Ranged as your starting weapon Proficiency levels. Feel free to change
-  this as you plan your character.
+  But this is based on your Character\'s
+  [Species](Species "Species"){.wikilink}.
 
 <!-- -->
 
@@ -202,6 +204,40 @@ Armor Proficiency Levels
 
 <!-- -->
 
+    Editing Character Sheet: This is in the header of the "Armor" section, to the right of the Character Sheet on page one. 
+
+Melee and Ranged Proficiency Levels
+: By now, you probably know if you want your character to be better at
+  Ranged or Melee weapons. You gain 3 Proficiency Training points to
+  spend between Ranged and Melee branches. 1st and 2nd Proficiency
+  Levels cost 1 each. But going from level 2 to level 3 in a Weapon
+  Proficiency costs 2 points unless you gain the correct feat. [Medium
+  Contact Weapons
+  Training](Medium_Contact_Weapons_Training "Medium Contact Weapons Training"){.wikilink}
+  for Melee Weapon Branch or [Medium Firearms
+  Training](Medium_Firearms_Training "Medium Firearms Training"){.wikilink}
+  for Ranged Weapon Branch. Without one of these feats, the Player must
+  choose either 1 Point in Melee and 2 Points in Ranged, or vice versa.
+  Or they can spend only 2 points in one or the other and hold onto the
+  unspent Training point to use later.
+
+<!-- -->
+
+Note
+: At level 1, the Character gains access to one Tactical Feat, which
+  includes the [Medium Contact Weapons
+  Training](Medium_Contact_Weapons_Training "Medium Contact Weapons Training"){.wikilink}
+  and [Medium Firearms
+  Training](Medium_Firearms_Training "Medium Firearms Training"){.wikilink}
+  feats. If you wish, you can spend your Level 1 Feat on one of these so
+  that, at level 1, your character has all 3 points spent on a single
+  Proficiency Weapon Branch. One should only do this if they want their
+  character to focus extremely heavily on one type of Weapon.
+
+<!-- -->
+
+    Editing Character Sheet: This is in the header of the "Weapons" section, to the right of the Character Sheet on page one. There are two rows of checkboxes, one for Melee and the other for Ranged.
+
 Power Armor Levels
 : This will always start at 0. Power armor requires a Feat called [Power
   Armor Expert](Power_Armor_Expert "Power Armor Expert"){.wikilink} to
@@ -209,8 +245,17 @@ Power Armor Levels
 
 <!-- -->
 
-Item Use Proficiency Levels
-: This always starts out at zero.
+    Editing Character Sheet: This is in the header of the "Power Armor" section, on Page 3 or 4. It may be toggled off, making it invisible in the Digital Character Sheet and not showing up on prints. The toggle is usually located in the page header for Page 3 or Page 4.
+
+Item Crafting Proficiency Levels
+: This always starts out at zero. It is not recommended to spend points
+  here, as this is a focus on advanced weapon crafting and
+  Masterworking, which is usually not something a level 1 Character can
+  do.
+
+<!-- -->
+
+    Editing Character Sheet: This is in the header of the "General Equipment" section, to the right of the Character Sheet on page two. You can sometimes move this down to page three.
 
 ## Choose A Path {#choose_a_path}
 
@@ -261,7 +306,7 @@ The choices, in summary, are as follows:
 
 <!-- -->
 
-    Editing Character Sheet: At the top right of the Character Sheet are a couple of different sections for writing down things such as Character and Player Name. There is also a section titled: "Character Paths/Level and Professions". Here, you will enter the Path you take and your level in it. For example: "Path of Strength - Lvl1" 
+    Editing Character Sheet: At the top of page one, in the "Character Identity" section. In the digital version, it is a drop-down menu with the option to write a custom Path. Next to the Character Path section is a Level box. This is the Character/Path Level.
 
 Even though the Character Path does provide the Hit Die(HD), the Hit
 Points cannot be calculated until the Ability scores are written down.
@@ -282,7 +327,7 @@ success. It represents an increased aptitude for certain
 [equipment](General_Equipment "equipment"){.wikilink} as the Character
 levels up.
 
-    Editing Character Sheet: A Character's Advantage Die is provided in the Character Path Table. It can be recorded on the Character Sheet in the box next to 'Advantage Die' located near the top left side of the first page. Next to the Ability scores under the 'INITIATIVE' and 'HP' boxes.
+    Editing Character Sheet: A Character's Advantage Die is provided in the Character Path Table. This can be recorded in the "Attributes" section, which is to the right side of the Character Sheet near the top of page one. Directly below the "Character Identity" section.
 
 ### Ability Affinity {#ability_affinity}
 
@@ -291,7 +336,7 @@ single Ability Theme that the Character has an \'Affinity\' with. More
 about filling out your Character\'s Ability Theme scores in the [next
 section](Character_Creation_and_Advancement#Ability_Themes "next section"){.wikilink}.
 
-    Editing Character Sheet: Most Characters also have an affinity with a single Ability at level one. This is provided by their Path. On the Character sheet, the 6 Abilities are at the top left of the first page. Each has a small checkbox in the top-left corner of their ability square. That box is used to record which abilities you have an affinity with. As you gain new Character Professions, more checkboxes can be filled in as different Professions provide additional Ability Affinities.
+    Editing Character Sheet: Most Characters also have an affinity with a single Ability at level one. This is provided by their Path. On the Character sheet, the 6 Abilities are at the top left of the first page. Each has a small checkbox left of the Ability Theme Name. That box is used to record which abilities you have an affinity with. As you gain new Character Professions, more checkboxes can be filled in as different Professions provide additional Ability Affinities.
 
 ### Hit Die {#hit_die}
 
@@ -301,13 +346,16 @@ is gained per level. Once Ability Themes are determined, the \'Total Hit
 Points\' can be filled out, but for now, the \'Hit Die\' box can be
 filled in.
 
-    Editing Character Sheet: At the top of the first page, under the 'Future Path' title, is the 'HP' section, which has the 'Hit Die' and 'Total Hit Points' followed by the 'DR' boxes. For now, just fill in the 'Hit Die' box with the die provided by the chosen Path.
+    Editing Character Sheet: At the top of the first page, in the "Health & Injury". In here there are several boxes to record things like Hit Die, Max HP, Current HP, Temp HP and so on.
 
 ### Other Path Features {#other_path_features}
 
-A Character\'s Path provides \'Favored Skills\', \'Skill Points per
-Level\', \'Starting Feat\', and the option of a \'Talent\' at level one.
-Each of these will be addressed in the sections below.
+A Character\'s Path provides \'Favored Skills\', \'Special Path Related
+Skill Point or Hit Point\', \'Skill Points per Level\', \'Starting
+Feat\', and the option of a \'Talent\' at level one. Each of these will
+be addressed in the sections below.
+
+    Editing Character Sheet: On page two, there is a section titled "Path Talents." This is where one could record specific features they gain from their Path.
 
 ### A Note about Character Professions {#a_note_about_character_professions}
 
@@ -389,10 +437,7 @@ use the Point Buy system to \'buy\' the scores. Learn more under the
 [Alternate Ability Score
 Rules](Character_Creation_and_Advancement#Alternate_Ability_Score_Rules "Alternate Ability Score Rules"){.wikilink}
 
-<div id="ability-score-calc-widget"></div>
-<div style="clear: both"></div>
-
-    Editing Character Sheet (Ability Scores): Read the sections below for the different choices and details on setting up your ability scores. The Ability Scores section of the Character Sheet is on the first page, near the top, just below the "Future Path" title. It is a vertical column that starts with STR and ends with CHA. Each Ability has a SCORE/Modifier/TEMP SCORE/TEMP Modifier. We will only need to fill out the SCORE for now. 
+    Editing Character Sheet (Ability Scores): Read the sections below for the different choices and details on setting up your ability scores. The "Ability Theme" section of the Character Sheet is on the first page, near the top, just below the "Character Identity" section. Each Ability has a Score and a Modifier.
 
 Once you select, roll, or buy up your ability scores (see alternate
 rules), you will want to record them on your Character Sheet. Your
@@ -402,7 +447,16 @@ figure out what your total score is, you may want to record what your
 modifier is. To the right is a table with the modifiers per ability
 score.
 
-    Editing Character Sheet (Ability Modifier): To the right is a table titled "Ability Score Modifiers". The math for this is also: "(Ability Score / 2) - 5 [round result down]". Normally, we wait to fill this out until you have picked your species, which is the next step. The reason for this is to avoid having to erase and rewrite the score.
+### Ability Theme Web Tool {#ability_theme_web_tool}
+
++--------------------------------------+
+| Ability Theme Web Tool               |
++======================================+
+| <div id="ability-score-calc-widget"> |
+| </div>                               |
+| <div style="clear: both">            |
+| </div>                               |
++--------------------------------------+
 
 ### Alternate Ability Score Rules {#alternate_ability_score_rules}
 
@@ -488,21 +542,25 @@ sheets for fun, then, by all means, read ahead.
 ## Calculating Health {#calculating_health}
 
 Now that you have rolled up and recorded your Ability scores, you can
-record your Character\'s Hit Points or HP. More a review on how Health
-is interpreted in Future Path, go to the [Health and
+record your Character\'s Hit Points or HP. For more on how Health is
+interpreted in Future Path, go to the [Health and
 Injury](Health_and_Injury "Health and Injury"){.wikilink} page.
 
 The Character Path informs the character of its \"Hit Die\". This
 defines how much HP a character gets per level. A Hit Die of d8 means
-you roll a d8 to determine your HP. At level 1 you take your maximum
-which is your highest possible number on the die. A character gets to
-add their Constitution modifier for every level to their total HP.
+you roll a d8 to determine your HP. At level 1, the character gains 4
+HP + the maximum value on the Path Hit Die. A character gets to add
+their Constitution modifier for every level to their total HP. You can
+also choose to ignore a Skill Point in favor of adding a single Hit
+Point to your total HP. This is part of your Character\'s choose Path\'s
+**Special Path Related Skill Point or Hit Point**.
 
 As they level up, a player can choose between taking the average for the
 Hit Die + Con Mod or rolling for it using the Hit Die and then adding
-the Con Mod.
+the Con Mod. They also can choose to gain a +1 HP instead of a special
+Skill Point provided by that path.
 
-    Editing Character Sheet (HP): The Hit Points section is located on the first page, near the top left of the character sheet, just below the 'Future Path' title letters. A player can record both their Hit Die and their current HP (Hit Points). The large empty box just below the Hit Points section, labeled 'Wounds/Current HP', is where to record damage received during combat.
+    Editing Character Sheet (HP): The Hit Points section is located on the first page, near the top in the "Health & Injury" section. A player can record both their Hit Die and their current HP (Hit Points).
 
 ## Passive Perception {#passive_perception}
 
@@ -514,47 +572,52 @@ Character\'s alertness while doing their daily routine. Passive
 Perception is 8 + 1/2 Ranks in Perception skill (round up) + Wisdom
 Modifier
 
-    Editing Character Sheet: Passive Perception is recorded in the 'PASS. PERCEPTION' box just above the 'SKILLS' section and below the Ability Scores.
+    Editing Character Sheet: Passive Perception is recorded in the "PASS. PERC." field within the "Attributes" section on page one near the top right.
 
 ## Initiative
 
 Your initiative shows your Character\'s quickness, awareness, and
 willingness to react. Using a bit of luck with a d20 check, a person
 with a high initiative is more likely to go before another Player or
-opponents in a standoff situation. You can read up more about how the
+opponents in a standoff situation. You can read up more about how
 initiative is involved in gameplay on the
 [Combat](Combat "Combat"){.wikilink} page. Initiative equals a
 Character\'s Wisdom Modifier + Dexterity Modifier.
 
-    Editing Character Sheet (Initiative): Your Initiative is located below the "HP" and "Wounds/Current HP" sections just above 'Advantage Die'. Your Initiative is normally your Dexterity and Wisdom Modifier.
+    Editing Character Sheet (Initiative): The Initiative box is located in the "Attributes" section on page one, near the top right. In the digital view and on printed paper, it is abbreviated to "INIT".
 
 ## Skills
 
 You will notice that on each Character Path, there are the \'Favored
-Skills\' and \'Skill Points at Each Additional Level\' sections. To
-learn more about skills and how to use them, you can go to the [Skills
+Skills\', \'Skill Points at Each Additional Level\' and \'Special Path
+Related Skill Point or Hit Point\' sections. To learn more about skills
+and how to use them, you can go to the [Skills
 Basics](SkillsBasics "Skills Basics"){.wikilink} page. Each Class also
 provides Favored Skills. Each Favored Skill automatically gains a Skill
 Rank. If the Character already has that Favored Skill and earned it
 again through a Feat/Class etc\... gain a Skill Point that must be spent
 on that Class when possible.
 
-    Editing Character Sheet (Favored Skill Box): To the left of the first page, below the Ability Score section of the Character Sheet, there is the Skills list. Notably, the largest section of the sheet. The Skills list has multiple columns: two checkboxes, Skill Name, Ranks, Ability Mod, Skill Die, and Misc Mod. At this point, we care only for the first square checkbox. You can check these off as your favored skills. 
+    Editing Character Sheet (Favored Skill Box): The Skills section is a large part of page one. It can be found directly below the "Ability Themes" section to the left. The Skills list has multiple columns: one checkbox to denote Favored, Skill Name, Skill Type tag (Natural/Unatural/Rank Dependent), Ranks, Rank Die, Key Ability Mod, and Misc Mod. Special Skills like Language and Feat-based skills are in another section below that titled: "Feat Based & Skill Like Abilities"
 
 The amount of starting skill points your character gets is based on what
-your Character Path is. There is a section labeled \'Skill Points per
-Level\' that shows how many skill points you get per level. You may also
-earn 1 Skill Point instead of choosing between two Feats from the
-\'Starting Feat\' section. If you are starting out as a level 10 hero,
-then you add up the skill points for all 10 levels and spend them at
-once. Once you have identified what your Favored Skills are, you can
-spend your skill points. To add a Rank in a Favored Skill, you spend 1
-point. To add a Rank to any other skill, you spend 2 points. The number
-of Ranks you can have in a skill is limited by 1/2 your Character Level,
-rounded up. The Language skill is special in that all Characters have it
-as a Favored skill and doesn\'t have a level limitation.
+your Character Path is.
 
-    Editing Character Sheet: Once a skill Rank is earned, you can record the Skill Rank under the 'Ranks' column of the 'SKILLS' section next to the name of the skill you ranked up. The sum of Skill Rank + Ability Modifier provides the Skill Die level. The Skill Die represents a die or dice that can be rolled with a d20 to perform the skill in the game. On the character sheet at the bottom below the 'SKILLS' section, there is an explanation of which die is used at what Rank. For example, Skill Die level of 1 is a 1d2. You can record the die under the 'Skill Die' column, which is just right of the 'Ranks' column. 
+1.  There is a section labeled \'Skill Points per Level\' that shows how
+    many skill points you get per level.
+2.  You **may** also earn 1 Skill Point specific to the Path that must
+    be spent on a Skill whose Ability is associated with that path\'s
+    Ability Theme. This is not possible if you have chosen to take the
+    [+1 HP instead](#Calculating_Health "+1 HP instead"){.wikilink}.
+3.  You **may** also earn 1 Skill Point instead of choosing between
+    Feats from the \'Starting Feat\' section.
+
+If you are starting out as a level 10 hero, then you add up the skill
+points for all 10 levels and spend them at once. Once you have
+identified what your Favored Skills are, you can spend your skill
+points. To add a Rank in a Favored Skill, you spend 1 point. To add a
+Rank to any other skill, you spend 2 points. The number of Ranks you can
+have in a skill is limited by your Character Level.
 
 ### Filling in Skill Die Column {#filling_in_skill_die_column}
 
@@ -582,7 +645,7 @@ which is based on the class level. And pick one from the available
 Talent Professions. You will see them listed below the Character Path
 and Character Class tables.
 
-    Editing Character Sheet (Talents): Located on the bottom half of the second page of the Character Sheet, underneath the panel for "Techniques". Here, you can record both Talents and Feats that your character gains over time. 
+    Editing Character Sheet (Talents): Talents that come from your Character's Profession can be recorded in the "Character Professions & Talents" section usually found on page two.
 
 ### Feats
 
@@ -599,7 +662,7 @@ that can only come from a particular Category which are **Tatical** or
 **Utility** or Sub-Categories, such as **Ranged Combat** or **Misc
 Feats**.
 
-    Editing Character Sheet (Feats): Located on the bottom half of the second page of the Character Sheet, underneath the section for "Techniques" and slightly to the right is the "Feats and Talents" section. Here, you can record both Talents and Feats that your character gains over time.
+    Editing Character Sheet (Feats): Feats have a section for themselves titled "Feats" and usually can be found on page two.
 
 ## Picking an Occupation {#picking_an_occupation}
 
@@ -629,7 +692,7 @@ a Credit Score of 4 + Wisdom Mod (ignore negatives)
 More about using and spending wealth on the
 [Wealth](Wealth_and_Money "Wealth"){.wikilink} page.
 
-    Editing Character Sheet (Wealth): On the second page, at the bottom left-hand corner, is the "Wealth" panel. In this box are "WEALTH in $ISK" and "CREDIT SCORE".
+    Editing Character Sheet (Wealth): The Occupation choice can be selected in the 'Technology / Occupation & Feat Based Skill Like Abilities' card. After the 'Knowledge (Technology)' skill, below it is the 'Profession' skill row, and it includes a drop-down selection to specify the Character's chosen Occupation. For keeping track of current wealth and credit score, these fields can be found in the header for the 'General Equipment' card, usually found on the 3rd page of the Character Sheet.
 
 ### Getting Equipment {#getting_equipment}
 
@@ -671,7 +734,7 @@ Character\'s AC without Armor bonuses.
 Note: Armor can also reduce a wearer\'s Run, Sprint, Dash, Swim, and
 Climb speed.
 
-    Editing Character Sheet (Armor Speed): On the first page, at the top, there is a 'SPEED' section. There is a box directly under the Swim and Climb boxes and to the right of the 'Base / Run' speed boxes. This is for recording the Armored Run Speed/-# of squares penalty.
+    Editing Character Sheet (Armor Speed): On the first page, in the "Speed" section to the right-hand side below the "AC" or "Armor Stats" section, there are two text fields for "Combat Speed". Combat Speed refers to the speed of the Character while they are wearing Armor. The first is the Feat, while the second is the number of squares. It is 1 square for every 5ft.
 
 ## Advancement
 

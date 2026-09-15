@@ -7,7 +7,7 @@ section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
 
 The Chief Engineer intentionally overclocks the ship\'s reactor to
 temporarily boost the ship\'s performance. The Engineer makes a Craft
-Structure or Mechanical check (DC 14 + Core Tech Level). If successful,
+Eletronics or Mechanical check (DC 14 + Core Tech Level). If successful,
 the ship gains 2 points, plus 1 point for every 3 points the Engineer
 beats the DC by. These points can be distributed as the Engineer sees
 fit to either Engines/Weapons/Shields/Sensors/Electronics

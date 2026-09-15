@@ -1,11 +1,14 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Wadj-Khepri of Sekhmet Spire",
     "playerName": "",
     "species": "Khepri",
+    "homeworld": "",
     "charPath": "Path of Charisma (The Freelancer)",
     "pathLevel": "1",
-    "classList": "Freelancer (1)",
+    "classList": "",
     "alignment": "Lawful Neutral",
     "charSize": "Medium",
     "gender": "Male",
@@ -29,20 +32,20 @@
     "primaryAbility_WIS": false,
     "scoreWIS": "14",
     "modWIS": "+2",
-    "primaryAbility_CHA": true,
+    "primaryAbility_CHA": false,
     "scoreCHA": "16",
     "modCHA": "+3"
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "8",
+    "maxHP": "13",
     "tempHP": "",
-    "currentHP": "8",
+    "currentHP": "13",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+2",
     "passivePerception": "10",
     "inertia": "",
@@ -71,7 +74,7 @@
         "Favored": false,
         "Rank": 0,
         "Key Ability": "CHA",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Computer Use",
@@ -120,7 +123,7 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "CHA",
-        "MiscMod": 3
+        "MiscMod": 2
       },
       {
         "Name": "Disable Device",
@@ -276,29 +279,16 @@
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 1,
+    "meleeProfCount": 0,
     "rangedProfCount": 3,
     "weaponsList": [
-      {
-        "Name": "Combat Knife x2",
-        "Lvl": "1",
-        "Damage": "d4",
-        "Accuracy": "",
-        "AP": "",
-        "Critical": "x2/20",
-        "Type": "(K) M",
-        "Range": "-",
-        "isMelee": true,
-        "Ammo": "-",
-        "Notes": ""
-      },
       {
         "Name": "Acid Spitter",
         "Lvl": "3",
         "Damage": "1d8",
         "Accuracy": "1",
         "AP": "",
-        "Critical": "x2/19-20",
+        "Critical": "x2/19",
         "Type": "(C) R",
         "Range": "50ft",
         "isMelee": false,
@@ -316,7 +306,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Diplomat)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -331,12 +321,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Diplomat",
-    "currentWealthScore": "25,000",
-    "liquidCredits": "14",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -350,6 +336,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri’s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen—the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+  },
   "pathTalentsCard": {
     "pathTalentsList": []
   },
@@ -360,8 +349,8 @@
         "Description": "advantage when assisting others in actions."
       },
       {
-        "Name": "Confident",
-        "Description": "Misc +1 bonus to the Diplomacy and Bluff skill."
+        "Name": "Medium Firearms Training",
+        "Description": "Allows one to gain Proficiency Levels 3 through 5 for only 1 Training Point instead of 2 in the Ranged Weapon Branch."
       },
       {
         "Name": "Persuasive",
@@ -373,10 +362,11 @@
       }
     ]
   },
-  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "18",
+    "currentWealthScore": "25,000",
+    "liquidCredits": "14",
     "equipmentList": [
       {
         "Name": "Briefcase",
@@ -429,38 +419,6 @@
       }
     ]
   },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -475,10 +433,17 @@
       }
     ]
   },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
-  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -503,8 +468,31 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "backstoryCard": {
-    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri\u2019s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen\u2014the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "professionsCard": [],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
   },
   "UI_Layout": {
     "theme": "khepri",
@@ -518,6 +506,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Diplomat",
+    "currentWealthScore": "25,000",
+    "liquidCredits": "14",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisites**: Advantage Die 1d6
+**Prerequisites**: Advantage Die 1d2+2
 
 **Benefit**: When using a semiautomatic firearm, the character may fire
 twice as a single attack against a single target. Using this feat fires

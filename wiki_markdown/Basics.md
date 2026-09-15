@@ -14,7 +14,7 @@ Character](Character_Creation_and_Advancement "make a new Character"){.wikilink}
 or pick a [Starter
 Character](Starter_Characters "Starter Character"){.wikilink}. We
 provide a Character Sheet
-[here](https://drive.google.com/uc?export=download&id=1cZ3PPchkXAgTSWTHKsONEIWNrg8PhN2P)!
+[here](https://drive.google.com/uc?export=download&id=1XIHL_SI5Pztp2e0mPfxnk-RnD5fiCfqv)!
 
 After making a Character, you may want to review concepts like
 [Combat](Combat "Combat"){.wikilink} and

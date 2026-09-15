@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisites**: Affinity Die 1d10
+**Prerequisites**: Advantage Die 1d6+5
 
 **Benefits**: This allows a single talent from a Class to be affected
 not by the Class level but instead by the Character level. Any attribute

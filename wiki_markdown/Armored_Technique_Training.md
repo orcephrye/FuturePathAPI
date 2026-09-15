@@ -1,0 +1,16 @@
+For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
+page.
+
+**Prerequisite**:
+
+**Benefit**: Reduces the penalty for using Technique while wearing armor
+with a Speed penalty. The Technique use penalty is now as if the
+Armor\'s Speed Diff were one lower. Ie; Halved to -10ft or -10ft to
+-5ft.
+
+**Normal**: Normally, a Character takes a penalty on Technique use when
+wearing Armor with a Speed Diff. As noted
+[here](Armor#Armor_and_Attributes "here"){.wikilink} under the Speed
+Diff attribute.
+
+**Special**: -

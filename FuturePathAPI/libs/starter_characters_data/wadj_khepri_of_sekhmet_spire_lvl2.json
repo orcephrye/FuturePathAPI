@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Wadj-Khepri of Sekhmet Spire",
     "playerName": "",
     "species": "Khepri",
+    "homeworld": "",
     "charPath": "Path of Charisma (The Freelancer)",
     "pathLevel": "2",
     "classList": "Envoy (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "13",
+    "maxHP": "17",
     "tempHP": "",
-    "currentHP": "13",
+    "currentHP": "17",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+2",
     "passivePerception": "10",
     "inertia": "",
@@ -69,9 +72,9 @@
       {
         "Name": "Bluff",
         "Favored": true,
-        "Rank": 2,
+        "Rank": 1,
         "Key Ability": "CHA",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Computer Use",
@@ -120,7 +123,7 @@
         "Favored": true,
         "Rank": 2,
         "Key Ability": "CHA",
-        "MiscMod": 3
+        "MiscMod": 2
       },
       {
         "Name": "Disable Device",
@@ -131,8 +134,8 @@
       },
       {
         "Name": "Disguise",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
@@ -180,15 +183,15 @@
       },
       {
         "Name": "Medical",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -276,29 +279,16 @@
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 1,
+    "meleeProfCount": 0,
     "rangedProfCount": 4,
     "weaponsList": [
-      {
-        "Name": "Combat Knife x2",
-        "Lvl": "1",
-        "Damage": "d4",
-        "Accuracy": "",
-        "AP": "",
-        "Critical": "x2/20",
-        "Type": "Kenetic",
-        "Range": "-",
-        "isMelee": true,
-        "Ammo": "-",
-        "Notes": ""
-      },
       {
         "Name": "Acid Spitter",
         "Lvl": "3",
         "Damage": "1d8",
         "Accuracy": "1",
         "AP": "",
-        "Critical": "x2/19-20",
+        "Critical": "x2/19",
         "Type": "Chemical",
         "Range": "50",
         "isMelee": false,
@@ -311,7 +301,7 @@
         "Damage": "1d12",
         "Accuracy": "1",
         "AP": "",
-        "Critical": "x2/19-20",
+        "Critical": "x2/19",
         "Type": "Chemical",
         "Range": "25/300",
         "isMelee": false,
@@ -329,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Diplomat)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -344,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Diplomat",
-    "currentWealthScore": "35,000",
-    "liquidCredits": "16",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -363,6 +349,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri’s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen—the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+  },
   "pathTalentsCard": {
     "pathTalentsList": []
   },
@@ -373,8 +362,8 @@
         "Description": "Advantage when assisting others in actions."
       },
       {
-        "Name": "Confident",
-        "Description": "Misc +1 bonus to the Diplomacy and Bluff skill."
+        "Name": "Medium Firearms Training",
+        "Description": "Allows one to gain Proficiency Levels 3 through 5 for only 1 Training Point instead of 2 in the Ranged Weapon Branch."
       },
       {
         "Name": "Persuasive",
@@ -386,33 +375,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Envoy",
-      "Level": "1",
-      "Affinities": [
-        "WIS",
-        "CHA"
-      ],
-      "Talents": [
-        {
-          "Name": "Diplomatic Path",
-          "Description": "Emissary (Levels 3, 7, 10)"
-        },
-        {
-          "Name": "Plenipotentiary Privileges",
-          "Description": "At 1st level, if you are arrested for a crime, you can make a Diplomacy check to invoke your diplomatic credentials and bypass standard punishment. The standard DC for simple infractions is DC10. A crime like murder may be a DC25 check unless it is of an important person, then perhaps 35 or higher. If one of the Envoy's consuls (see the select consul Profession feature, below) is arrested for a crime and unable to secure her own release, the Envoy may intercede on the consul\u2019s behalf. \nThe Emissary: Gain an Advantage Die on the check if the crime is bureaucratic, political, or a public misunderstanding.\nAn Envoy who routinely invokes the privilege of diplomatic immunity\u2014either on her own behalf or to protect her selected consuls\u2014is likely to be recalled or terminated by those she has sworn to represent."
-        },
-        {
-          "Name": "Stipend",
-          "Description": "At 1st, 4th, 7th, and 10th level, you gain a Profession rank increase of +1 and a bonus of $2,000 ISC per Envoy level."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "18",
+    "currentWealthScore": "35,000",
+    "liquidCredits": "16",
     "equipmentList": [
       {
         "Name": "Briefcase",
@@ -465,9 +432,44 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Male Khepri Administrator. Freshly emerged from the maturation chambers of Sekhmet Spire, Wadj-Khepri was biologically cultivated for a single purpose: to serve as a polished, high-level trade negotiator and bio-architecture envoy. However, before he could gain any real field experience or adjust to life outside the hive, Wadj-Khepri\u2019s Queen-Mother abruptly thrust the newly minted Administrator out into the wider galaxy on his very first assignment. To find a terraformable planet that also has people in need of help terraforming it that are willing to pay that for some reason haven't already gone to the galactic marketplace. In other words, find an easy project and negotiate it on their terms. Completely unaccustomed to the chaotic, un-hivemind behavior of non-Khepri species, Wadj-Khepri must now navigate the Great Ring alone, relying on his formal diplomatic training and sheer determination. Belonging to the Administrator caste, Wadj-Khepri is a tall, graceful 6'6\" bipedal insectoid with a pristine, polished carapace of deep obsidian and emerald chitin. Intricate, natural gold-patterned markings adorn Wadj-Khepri's abdomen\u2014the distinct mark of the Sekhmet Spire lineage. Broad, multi-faceted dark eyes rest above refined mandibles, complemented by expressive sensory frills along the head and neck. Two primary limbs feature fine, polished tarsal claws suited for delicate diplomatic work, accompanied by a smaller pair of upper pedipalps used for gesturing and operating high-tech datapads."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Envoy",
+      "Level": "1",
+      "Affinities": [
+        "WIS",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Diplomatic Path",
+          "Description": "Emissary (Levels 3, 7, 10)"
+        },
+        {
+          "Name": "Plenipotentiary Privileges",
+          "Description": "At 1st level, if you are arrested for a crime, you can make a Diplomacy check to invoke your diplomatic credentials and bypass standard punishment. The standard DC for simple infractions is DC10. A crime like murder may be a DC25 check unless it is of an important person, then perhaps 35 or higher. If one of the Envoy's consuls (see the select consul Profession feature, below) is arrested for a crime and unable to secure her own release, the Envoy may intercede on the consul’s behalf. \nThe Emissary: Gain an Advantage Die on the check if the crime is bureaucratic, political, or a public misunderstanding.\nAn Envoy who routinely invokes the privilege of diplomatic immunity—either on her own behalf or to protect her selected consuls—is likely to be recalled or terminated by those she has sworn to represent."
+        },
+        {
+          "Name": "Stipend",
+          "Description": "At 1st, 4th, 7th, and 10th level, you gain a Profession rank increase of +1 and a bonus of $2,000 ISC per Envoy level."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -485,46 +487,11 @@
         {
           "Name": "Guidance",
           "Range": "Hearing",
-          "Effect": "Provide expert supervision to ensure an ally's success. Instead of making a skill check to aid another, you may provide guidance. This grants a competence bonus on the ally\u2019s skill check equal to your Charisma or Wisdom Modifier. The ally must be within sight and hearing distance and able to understand you."
+          "Effect": "Provide expert supervision to ensure an ally's success. Instead of making a skill check to aid another, you may provide guidance. This grants a competence bonus on the ally’s skill check equal to your Charisma or Wisdom Modifier. The ally must be within sight and hearing distance and able to understand you."
         }
       ]
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -549,6 +516,27 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -565,6 +553,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Diplomat",
+    "currentWealthScore": "35,000",
+    "liquidCredits": "16",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

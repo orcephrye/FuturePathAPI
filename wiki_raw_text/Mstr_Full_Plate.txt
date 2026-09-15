@@ -11,7 +11,7 @@
 
 '''Maximum Dexterity''': +4
 
-'''Proficiency Requirement''': 7
+'''Proficiency Requirement''': 6
 
 '''Default Attributes''': Archaic
 

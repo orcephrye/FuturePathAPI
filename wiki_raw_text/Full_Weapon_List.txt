@@ -142,9 +142,11 @@ This is a page dedicated to all known weapon examples. This is '''not''' an exha
 |-
 | [[Advanced_Knife#Superior_Steal_Knife|Superior Steal Knife]] || Melee Weapon || d6 || 0 || Kinetic || x2 || 18-20 || +0 || +0 || N/A || 0ft || N/A || - || - || $850 / 0
 |-
+| [[Advanced_Sword#Short_Powered_Sword|Short Powered Sword]]|| Melee Weapon, Energy || d6 || 0 || Kinetic & Electric || x3 || 20 || +0 || +1 || N/A || 0ft || N/A || - || - || $1,200 / 0
+|-
 | [[Advanced Sword]]|| Melee Weapon || d8 || 0 || Kinetic || x2 || 20 || +0 || +0 || N/A || 0ft || N/A || - || - || $800 / 0
 |-
-| [[Advanced_Sword#Powered_Sword|Powered Sword]]|| Melee Weapon, Energy || d8 || 0 || Kinetic & Electric || x3 || 20 || +0 || +1 || N/A || 0ft || N/A || - || - || $1,200 / 0
+| [[Advanced_Sword#Powered_Sword|Powered Sword]]|| Melee Weapon, Energy || d8 || 0 || Kinetic & Electric || x3 || 20 || +0 || +1 || N/A || 0ft || N/A || - || - || $600 / 0
 |-
 | [[Advanced_Sword#Frequency_Sword|Frequency Sword]]|| Melee Weapon || d8 || 0 || Kinetic & Electric || x3 || 19-20 || +0 || +0 || N/A || 0ft || N/A || - || - || $1,200 / 0
 |-
@@ -159,6 +161,8 @@ This is a page dedicated to all known weapon examples. This is '''not''' an exha
 | [[Shock_Whip|Shock Whip]] || Flexible/Chain Melee, Energy || d6 || 0 || Electrical || x2 || 20 || +1 || +1 || N/A || 10ft Reach || N/A || - || Reach, Disarming || $800 / 0
 |-
 ! colspan="15" | Ranged Weapons
+|-
+| [[Laser_Pistol#Small_Laser_Pistol|Small Laser Pistol]] || Personal Firearm, Laser || d6 || 0 || Thermal || x2 || 20 || +1 || +0 || 6 || 100ft || Standard || - || Versatile || $880 / 0  
 |-
 | [[Throwing_Knife/Star#Assassins_Star| Assassins Star]] || Throwing Weapon || d8 || 0 || Kinetic || x3 || 20 || +0 || +0 || N/A || 30ft+ || N/A || Throw-able || Expendable || $600 / 1
 |-

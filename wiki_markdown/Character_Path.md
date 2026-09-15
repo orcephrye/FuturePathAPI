@@ -45,14 +45,16 @@ Hit Die
   his or her character gains a new level. The character's Constitution
   modifier is applied to the roll. Add the result to the character's hit
   point total. Even if the result is 0 or lower, the character always
-  gains at least 1 hit point. The Character Path is what determines Hit
-  Die by default.
+  gains at least 1 hit point. The Character Path determines the Hit Die
+  by default.
 
 <!-- -->
 
 : `<u>`{=html}First Level`</u>`{=html}: A 1st-level character gets the
   maximum hit points rather than rolling (The Constitution modifier is
-  still applied).
+  still applied). Also, all Paths gain a +4 HP at level 1. First-level
+  total hit points should be equal to 4 + Max Hit Die Value +
+  Constitution Modifier.
 
 <!-- -->
 
@@ -85,6 +87,34 @@ Character has as Favored.
   Skill
   Points](Character_Creation_and_Advancement#Allocate_Skill_Ranks " Allocate Skill Points"){.wikilink}
   on the Character Creation and Advancement page.
+
+</div>
+</div>
+<div class="toccolours mw-collapsible mw-collapsed">
+
+Special Path Related Skill Point or Hit Point
+
+<div class="mw-collapsible-content">
+
+This section describes the option for the Player to either receive a
+Skill Point that is required to be used on certain skills or 1
+additional Hit Point. This option appears at level one and at every
+subsequent level.
+
+- At level one and every level afterward, the Player can either choose
+  to receive an extra Skill Point that must be spent on a Skill
+  associated with their Path\'s Favored Ability Theme or gain 1
+  additional Hit Point (HP) worth of health.
+- If the Path is [The Path of Constitution (Tough
+  Hero)](Character_Path#Path_of_Constitution_(Tough_Hero) "The Path of Constitution (Tough Hero)"){.wikilink},
+  automatically gain a +1 to HP.
+- If the Path is [Path of No Path (The
+  Freelancer)](Character_Path#Path_of_No_Path_(The_Freelancer) "Path of No Path (The Freelancer)"){.wikilink}
+  then at level 1 automatically gain a +1 to HP. However, once the
+  Character has an Affinity with 1 or more Ability Themes, then the
+  Player can choose between a Skill Point that goes towards a Skill
+  whose key ability is one of the Ability Themes the Character has an
+  Affinity with or to continue to pick +1 to HP.
 
 </div>
 </div>
@@ -133,9 +163,9 @@ Starting Feat
 
 <div class="mw-collapsible-content">
 
-: This is a section to choose 1 of the two provided Feats that help
-  better define your Character. You may choose neither Feat and earn 1
-  Skill Point instead. To learn more about Feats, review the Feats page
+: This is a section to choose a starting Feat from the Sub-Category:
+  Skill Enhancements. You may choose either a Feat or earn 1 Skill Point
+  instead. To learn more about Feats, review the Feats page
   [here](Feats "here"){.wikilink}.
 
 </div>
@@ -254,16 +284,15 @@ Path Table (Located to the right of the Character Path Section)
 : Table: The Strong Hero
 
 They are Heroes that favor strength and action over sitting and
-thinking. It\'s not necessary that they do not appreciate or value
-intelligence; it\'s just that they find using their strength a more
-natural and dependable way to solve problems. Most of these people are
-martial artists, some types of soldiers, athletes, and people who rely
-on their physical power.
+thinking. They don\'t necessarily dislike or undervalue intelligence;
+they just find using their strength a more natural and dependable way to
+solve problems. Most of these people are martial artists, some soldiers,
+athletes, and others who rely on physical power.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Strength
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 8, Level Up Average:
-5)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 4 + 8, Level Up
+Average: 5)
 
 `<u>`{=html}Favored Skills provided by Path`</u>`{=html}: The Strong
 hero's Favored [Skills](Skills "Skills"){.wikilink} (and the key ability
@@ -272,8 +301,10 @@ Choose Two: \[ [Intimidate](Intimidate "Intimidate"){.wikilink}(Cha),
 [Sense Motive](Sense_Motive "Sense Motive"){.wikilink}(Wis),
 [Survival](Survival "Survival"){.wikilink}(Wis)\]
 
-Also, the starting occupation selected can provide additional Favored
-skills to choose from.
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Choose between +1 Skill Point that must be spent on
+[Athletics](Athletics "Athletics"){.wikilink} (Str) or +1 Hit Point at
+level 1 and every following level.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 1 + Int modifier.
 
@@ -282,10 +313,9 @@ Knight](Character_Professions#Dimension_Knight "Dimension Knight"){.wikilink},
 [Helix
 Warrior](Character_Professions#Helix_Warrior "Helix Warrior"){.wikilink}
 
-`<u>`{=html}Starting Feat`</u>`{=html}:
-[Athletic](Athletic "Athletic"){.wikilink} or
-[Confident](Confident "Confident"){.wikilink} or (Pick no Feat but gain
-1 extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html}: Space Ship
 Operations, Leadership & Companions, Difficulties, Specialty Skills,
@@ -405,8 +435,8 @@ situation quickly.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Dexterity
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 8, Level Up Average:
-5)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 4 + 8, Level Up
+Average: 5)
 
 `<u>`{=html}Favored Skills provided by Path`</u>`{=html}: The Fast
 hero's Favored [Skills](Skills "Skills"){.wikilink} (and the key ability
@@ -416,8 +446,13 @@ for each skill) are:
 Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink}(Dex),
 [Stealth](Stealth "Stealth"){.wikilink}(Dex)\]
 
-Also, the starting occupation the character selects can provide
-additional skills to choose from.
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Choose between +1 Skill Point that must be spent on either \[
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex) /
+[Pilot](Pilot "Pilot"){.wikilink} (Dex) / [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) \] or +1 Hit Point at
+level 1 and every following level.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 1 + Int modifier.
 
@@ -426,10 +461,9 @@ additional skills to choose from.
 [Space
 Marine](Character_Professions#Space_Marine "Space Marine"){.wikilink}
 
-`<u>`{=html}Starting Feat`</u>`{=html}:
-[Athletic](Athletic "Athletic"){.wikilink} or
-[Acrobatic](Acrobatic "Acrobatic"){.wikilink} or (Pick no Feat but gain
-1 extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html}: Space Ship
 Operations, Leadership & Companions, Difficulties, Specialty Skills,
@@ -544,7 +578,7 @@ defenders and support units.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Constitution
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d10 (First Level: 10, Level Up
+`<u>`{=html}Hit Die`</u>`{=html}: 1d10 (First Level: 4 + 10, Level Up
 Average: 6)
 
 `<u>`{=html}Favored Skills`</u>`{=html} The Constitution hero's Favored
@@ -555,8 +589,9 @@ Two: \[ [Acrobatics](Acrobatics "Acrobatics"){.wikilink}(Dex),
 [Survival](Survival "Survival"){.wikilink}(Wis),
 [Perception](Perception "Perception"){.wikilink}(Wis)\]
 
-Also, the starting occupation the character selects can provide
-additional skills to choose from.
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+There are no Constitution related Skills. Therefore, always gain +1 Hit
+Point at level 1 and every following level.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 1 + Int modifier.
 
@@ -565,10 +600,9 @@ additional skills to choose from.
 [Shield
 Splicer](Character_Professions#Shield_Splicer "Shield Splicer"){.wikilink}
 
-`<u>`{=html}Starting Feat`</u>`{=html}:
-[Endurance](Endurance "Endurance"){.wikilink} or
-[Confident](Confident "Confident"){.wikilink} or (Pick no Feat but gain
-1 extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html}: Space Ship
 Operations, Leadership & Companions, Difficulties, Specialty Skills,
@@ -724,8 +758,8 @@ to help make a unit more flexible.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 6, Level Up Average:
-4)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 4 + 6, Level Up
+Average: 4)
 
 `<u>`{=html}Favored Skills provided by Path`</u>`{=html}: The Smart
 hero's Favored [Skills](Skills "Skills"){.wikilink} (and the key ability
@@ -735,8 +769,10 @@ Use](Computer_Use "Computer Use"){.wikilink}(Int),
 [Knowledge](Knowledge "Knowledge"){.wikilink} Skill)(Int), (Any One
 [Craft](Craft "Craft"){.wikilink} Skill)(Int)\]
 
-Also, the hero\'s starting occupation can provide additional skills to
-choose from.
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Choose between +1 Skill Point that must be spent on any 1
+Intelligence-related Skill, or +1 Hit Point at level 1 and every
+following level.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 2 + Int modifier.
 
@@ -745,10 +781,9 @@ choose from.
 [Electro-Mancer](Character_Professions#Electro-Mancer "Electro-Mancer"){.wikilink},
 [Technosavant](Character_Professions#Technosavant "Technosavant"){.wikilink}
 
-`<u>`{=html}Starting Feat`</u>`{=html}:
-[Educated](Educated "Educated"){.wikilink} or
-[Studious](Studious "Studious"){.wikilink} or (Pick no Feat but gain 1
-extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html}: Space Ship
 Operations, Specialty Skills, Difficulties, Misc Feats, Proficiency
@@ -867,8 +902,8 @@ universe.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Wisdom
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 6, Level Up Average:
-4)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 4 + 6, Level Up
+Average: 4)
 
 `<u>`{=html}Favored Skills provided by Path`</u>`{=html}: The Dedicated
 hero's Favored [Skills](Skills "Skills"){.wikilink} (and the key ability
@@ -881,8 +916,9 @@ Motive](Sense_Motive "Sense Motive"){.wikilink}(Wis), Choose Two: \[
 [Study](Study "Study"){.wikilink}(Int)\], Any One
 [Knowledge](Knowledge "Knowledge"){.wikilink}(Int)
 
-Also, the hero\'s starting occupation can provide additional skills to
-choose from.
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Choose between +1 Skill Point that must be spent on any one Wisdom-based
+Skill or +1 Hit Point at level 1 and every following level.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 2 + Int modifier.
 
@@ -891,10 +927,9 @@ choose from.
 [Tracer](Character_Professions#Tracer "Tracer"){.wikilink}, [Combat
 Medic](Character_Professions#Combat_Medic "Combat Medic"){.wikilink}
 
-`<u>`{=html}Starting Feat`</u>`{=html}:
-[Persuasive](Persuasive "Persuasive"){.wikilink} or
-[Attentive](Attentive "Attentive"){.wikilink} or (Pick no Feat but gain
-1 extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html}: Space Ship
 Operations, Leadership & Companions, Difficulties, Specialty Skills,
@@ -1027,28 +1062,30 @@ Aware Talent Tree
 
 The Charismatic Hero is never shy and always willing to take advantage
 of either their looks or words to influence others or get their own way.
-They can be seductive and interesting people, possessing a personal
-magnetism that makes them natural leaders. Many companies and
-governments use such people as envoys or ambassadors. Military officers,
-as well as crooks, try to swindle your money away.
+They can be seductive and interesting, with a personal magnetism that
+makes them natural leaders. Many companies and governments use such
+people as envoys or ambassadors. Military officers, as well as crooks,
+try to swindle your money away.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Charisma
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 6, Level Up Average:
-4)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 4 + 6, Level Up
+Average: 4)
 
 `<u>`{=html}Favored Skills provided by Path`</u>`{=html}: The
 Charismatic hero's Favored [Skills](Skills "Skills"){.wikilink} (and the
 key ability for each skill) are:
 [Diplomacy](Diplomacy "Diplomacy"){.wikilink}(Cha), Choose Two: \[
-[Profession](Profession "Profession"){.wikilink}(Wis),
+[Perception](Perception "Perception"){.wikilink}(Wis),
 [Bluff](Bluff "Bluff"){.wikilink}(Cha),
 [Disguise](Disguise "Disguise"){.wikilink}(Cha), [Sense
 Motive](Sense_Motive "Sense Motive"){.wikilink}(Wis)\], Any One
 [Knowledge](Knowledge "Knowledge"){.wikilink}(Int)
 
-Also, the hero\'s starting occupation can provide additional skills to
-choose from.
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Choose between +1 Skill Point that must be spent on any one
+Charisma-based Skill or +1 Hit Point at level 1 and every following
+level.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 2 + Int modifier.
 
@@ -1057,10 +1094,9 @@ choose from.
 Officer](Character_Professions#Field_Officer "Field Officer"){.wikilink},
 [Swindler](Character_Professions#Swindler "Swindler"){.wikilink}
 
-`<u>`{=html}Starting Feat`</u>`{=html}:
-[Deceptive](Deceptive "Deceptive"){.wikilink} or
-[Trustworthy](Trustworthy "Trustworthy"){.wikilink} or (Pick no Feat but
-gain 1 extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html}: Space Ship
 Operations, Leadership & Companions, Difficulties, Specialty Skills,
@@ -1210,11 +1246,17 @@ need to be, adapting their training to fit the situation at hand.
 `<u>`{=html}Ability Affinity`</u>`{=html}: None (The Freelancer does not
 gain an Advantage Die bonus to any Saving Throws from their core path).
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 8, Level Up Average:
-5)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 4 + 8, Level Up
+Average: 5)
 
 `<u>`{=html}Favored Skills provided by Path`</u>`{=html}: Choose 1
 Knowledge, 1 Craft, and 2 of any other type
+
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+At level one, automatically gain +1 Hit Point. Every subsequent level,
+**if** the Character has Affinity with any Ability Theme, the Player can
+choose to earn 1 Skill Point that must be spent on one Skill that the
+Character has an Affinity with or simply take another +1 HP.
 
 `<u>`{=html}Skill Points per Level`</u>`{=html}: 2 + Int modifier.
 
@@ -1223,9 +1265,9 @@ Freelancer is a blank slate designed to qualify for any Character
 Professions. Professions can use Ability scores as a qualifier instead
 of Path.
 
-`<u>`{=html}Starting Feat`</u>`{=html}: Any one Feat from the Skill
-Enhancements sub-category for which the character meets the
-prerequisites, or (Pick no Feat but gain 1 extra Skill Point)
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Path Feat Sub-Categories`</u>`{=html} Space Ship Operations,
 Leadership & Companions, Difficulties, Specialty Skills, Difficulties,

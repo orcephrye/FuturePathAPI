@@ -11,7 +11,6 @@ You're a group of contract scavengers. You take 'Station Stripping' jobs. While 
 [[Scavenger One Shot|GM's Guide: Scavenger One Shot]]
 
 === Special Encounters, Ground Combat [Level 2-3] ===
-<span style="color:#ff0000"> * Incomplete </span> 
 
 Your station is under threat! The [[Species#Aconians|Aconians]] have raised a small navy to come to your small sector of space and enforce martial law. Why? They claim that a person of the old dynasty's royal bloodline has gone missing while visiting your station. They blame your people for this! You are just a small independent mining colony. A station can barely hold 10,000 citizens, and its main source of income comes from gas mining comets or 'hard' mining asteroids. Most of the system's population, over 30k if you exclude the station, live in the inner or outer belt and come to the station to refine and sell. As well as a little R&R, of course! You have no idea what an imperial royal from a great and ancient empire would even be doing here! Your government's response is to just keel over. But you know this isn't gonna end well for you and yours unless, by the time that fleet arrives, a missing royal can be produced. Time to take matters into your own hands!
 
@@ -20,8 +19,8 @@ Your station is under threat! The [[Species#Aconians|Aconians]] have raised a sm
 === Space Ship Combat [Level 1-4] ===
 <span style="color:#ff0000"> * Incomplete </span> 
 
-The galaxy is a big place. And often the little systems on the edge are forgotten about. Over 100 years ago, colonists came to a system rich with resources, especially on one lifeless planet. They built homes for themselves in orbit around the planet and mined it for its wealth, with the simple goal of striking it rich and living the dream out on the frontier. But eventually all good things must come to an end. Pirates showed up to take their 'share' of the bounty provided by the hard-working denizens of the system. Their requests became demands, and failure to comply was followed by violence. 
+The galaxy is a big place. Often, the little systems on the edge are forgotten. Over 100 years ago, colonists arrived in a system rich with resources, deep in the outer reaches of known space. They built homes for themselves in orbit around a lifeless planet and mined it for its wealth, with the simple goal of striking it rich and living the dream out on the frontier. But eventually all good things must come to an end. Pirates showed up to take their 'share' of the bounty provided by the hard-working denizens of the system. Their requests became demands, and failure to comply was followed by violence. 
 
-Will heroes of the citizenry rise up? Or will a plea be heard by some willing mercenary group brave enough to deal with these bandits? It is up to you!
+Will the citizenry's heroes rise up? Or will a plea be heard by some willing mercenary group brave enough to deal with these bandits? It is up to you!
 
 [[Trouble in the Dark|GM's Guide: Trouble in the Dark One Shot]]

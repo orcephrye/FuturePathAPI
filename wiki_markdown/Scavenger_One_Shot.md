@@ -1,8 +1,5 @@
 **`<span style="color:#ff0000">`{=html} SPOILER WARNINGS THIS IS FOR
 GAME MASTERS ONLY `</span>`{=html}**
-**`<span style="color:#ff0000">`{=html} All Artwork is temparory AI
-Generated Art using Gemini. This will be replaced by paid-for human
-artwork. `</span>`{=html}**
 
 ![](Scavenger_One_Shot_StationView.jpg "Scavenger_One_Shot_StationView.jpg"){width="1408"
 height="768"}
@@ -675,9 +672,6 @@ slow that the target can attempt to dodge with a Dex Save of DC 14.
 </div>
 
 #### Corrupted Grayling Scientist {#corrupted_grayling_scientist}
-
-![](Scavenger_One_Shot_Graylings.jpg "Scavenger_One_Shot_Graylings.jpg"){width="939"
-height="512"}
 
 - **Appearance**: Short with grey skin, and large dark eyes. Their white
   lab coats hide more colorful tattoos. However, their skin and tattoos

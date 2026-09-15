@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisites**: Martial Arts Focus, Advantage Die 1d6.
+**Prerequisites**: Martial Arts Focus, Advantage Die 1d4+4.
 
 **Benefit**: The character's critical range on an unarmed strike
 im­proves to 19--20.

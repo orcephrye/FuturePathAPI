@@ -26,6 +26,36 @@
 
 : **Advanced Sword**
 
+## Short Powered Sword {#short_powered_sword}
+
++--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+
+| **Main Attributes**:                                                     |   | **Secondary Attributes**:                                                |   | **Accessories and Description**:                                         |
+|                                                                          |   |                                                                          |   |                                                                          |
+| ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------ |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Name**: Powered Sword                                                  |   | **Accuracy Bonus**: 0                                                    |   | Weapon Accessories                                                       |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Power / Speed** (Total Level/Dice): Medium / Manual = Level 2 / d6     |   | **Bonus Damage**: +1                                                     |   | :                                                                        |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Proficiency Requirement**: 2 Levels in Melee Branch                    |   | **AP Damage**: 0                                                         |   | Description                                                              |
+|                                                                          |   |                                                                          |   | : This is a special sword that uses electrical power to change the way   |
+| **Weapon Style & Arch Type**: Melee Weapon, Energy                       |   | **Critical Damage**: x3                                                  |   |   the sword deals damage.                                                |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Range**: 0ft                                                           |   | **Critical Range**: 20                                                   |   | Explanations                                                             |
+|                                                                          |   |                                                                          |   | : This weapon earns two points because it is a Tech Level 2 weapon,      |
+| **Default Attributes**:                                                  |   | **Damage Type**: Kinetic and Electric                                    |   |   which are spent on making the Damage Type count for both Kinetic and   |
+|                                                                          |   |                                                                          |   |   Electric.                                                              |
+| **Masterwork**: No                                                       |   | **Ammunition**: N/A                                                      |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Cost/Procure Diff**: \$1,200 / 0                                       |   | **Reload Speed**: N/A                                                    |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+|                                                                          |   | **Weight**: Roughly \~5 pounds                                           |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+|                                                                          |   | **Bonus Abilities**: N/A                                                 |   |                                                                          |
++--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+
+
+: **Powered Sword**
+
 ## Powered Sword {#powered_sword}
 
 +--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+

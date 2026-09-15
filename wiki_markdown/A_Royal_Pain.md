@@ -1,13 +1,7 @@
-**`<span style="color:#ff0000">`{=html} STILL UNDER CONSTRUCTION - NOT
-YET FINISHED - OUTLINE ONLY `</span>`{=html}**
-
 **`<span style="color:#ff0000">`{=html} SPOILER WARNINGS THIS IS FOR
 GAME MASTERS ONLY `</span>`{=html}**
-**`<span style="color:#ff0000">`{=html} All Artwork is temparory AI
-Generated Art using Gemini. This will be replaced by paid-for human
-artwork. `</span>`{=html}**
 
-## Scavenger One-Shot: A Royal Pain {#scavenger_one_shot_a_royal_pain}
+## One-Shot: A Royal Pain {#one_shot_a_royal_pain}
 
 This is a mystery and social encounter focused one-shot adventure for a
 crew of Level 2 or 3 characters. It is designed to showcase social
@@ -67,9 +61,9 @@ the day and the right to annex the system.
 
 `   Arrival[Customs & Arrival Port] --> Casino[Gilded Comet Casino];`\
 `   Arrival --> Den[Smuggler's Den];`\
-`   Arrival -.-> Silo["Silo 12 (Red Herring)"];`\
+`   Arrival -.-> Silo["Silo 13 (Red Herring)"];`\
 `   `\
-`   Casino --> Slums[Beltway Refhab 42];`\
+`   Casino --> Slums[Beltway Hab 42];`\
 `   Casino --> Clinic[Medical Clinic];`\
 `   Casino -.-> Consulate["Consulate Office (Red Herring)"];`\
 `   `\
@@ -80,7 +74,7 @@ the day and the right to annex the system.
 `   Clinic --> Slums;`\
 `   Clinic --> Refinery;`\
 `   `\
-`   Slums --> Cargo[Sector 9 Cargo Docks Climax];`\
+`   Slums --> Cargo[Cargo Bay 9 Climax];`\
 `   Refinery --> Cargo;`
 
 `   style Silo fill:#f77,stroke:#333,stroke-width:2px;`\
@@ -113,25 +107,42 @@ This is a **Point of Interest** style dungeon crawl. Instead of fixed
 rooms and corridors, the players choose to walk from one location (Point
 of Interest) to another **PoI**/location. Each PoI will have 1 or more
 encounters that will help inform the Players or possibly mislead the
-players to the final PoI, which in this adventure One Shot is the
-[Sector 9 Cargo
-Docks](#The_Climax:_Sector_9_Cargo_Docks "Sector 9 Cargo Docks"){.wikilink}.
-The Players start out at the [Heng\'s Cometary
+players to the final PoI, which in this adventure one-shot is the [Cargo
+Bay 9](#Cargo_Bay_9_(Climax) "Cargo Bay 9"){.wikilink}. The Players
+start out at the [Heng\'s Cometary
 Noodles](#Heng's_Cometary_Noodles_(Flavor) "Heng's Cometary Noodles"){.wikilink}
 and the GM should read more on how to start the adventure
 [below](#Starting_the_Adventure "below"){.wikilink}.
 
+The GM should keep track of time. The Players should know they have \[6
+(Hard) / 8 (Easier)\] hours. Each travel + encounter takes 1 hour.
+Additional time-wasting can occur while at a location. The GM should
+inform the Players of the remaining time. A d6 or d8 can be a useful
+tool for tracking time. Make sure the Players can see the timer.
+
 ## Starting the Adventure {#starting_the_adventure}
+
+Backstory:
+
+> You have woken up today with news feeds from the station on every comm
+> and channel, all proclaiming the same doom. An Aconian fleet is
+> coming. Your mind seems unable to handle this weird news at first. As
+> the haze of sleep and the previous day\'s activities lifts, it is
+> replaced by a new panic. The Aconians are claiming a missing royal was
+> last seen on your little station. Your station borders the Aconians,
+> and they have tried to annex your people before. Now it seems they are
+> going to take your home by force. You get ready. You call your friends
+> or just people you can trust to gather at Heng\'s Noodles. When the
+> going gets tough, that\'s when belters are at their best.
 
 The Location
 : The Adventures/Heroes start out together at [Heng\'s Cometary
   Noodles](#Heng's_Cometary_Noodles_(Flavor) "Heng's Cometary Noodles"){.wikilink}.
-  The locals call it \'Hangs\' The GM should ask the Players if they
-  have a reason to know each other or have gathered at DDs. They should
-  all already know the game\'s starting premise and their characters,
-  and the whole station should already know of the coming armada. If the
-  Players cannot think of a reason or simply do not want to. Provide
-  them with the following:
+  The locals call it \'Hengs\'. The GM should ask the Players if they
+  have a reason to know each other. They should all already know the
+  game\'s starting premise and their characters, and the whole station
+  should already know of the coming armada. If the Players cannot think
+  of a reason or simply do not want to. Provide them with the following:
 
 > The usual liveliness of Hangs seems gone, like someone opened an
 > airlock all of a sudden. People talk in muted, hushed voices. You have
@@ -169,177 +180,1690 @@ Read the following:
 
 ### Customs & Arrival Port (The Docking Bay) {#customs_arrival_port_the_docking_bay}
 
-:\* **The Situation:** The entry point where Kaelen and Valen first
-boarded the station under forged credentials.
+> The cavernous docking bay is a storm of noise, steam, and sheer
+> desperation. Klaxons pulse amber overhead as departure flight boards
+> flicker with canceled routes and exorbitant off-station charter fares.
+> A massive, frantic crowd of belter miners, roughnecks, and entire
+> families lugging whatever they can carry presses hard against a
+> flimsy, lightweight crowd-control barrier that is practically bowing
+> under their weight.
+>
+> The handful of port employees working the desk look wildly unprepared
+> and completely out of their depth, sweating through their uniforms as
+> they shout into crackling megaphones to hold the mob back from the
+> departure airlocks.
+>
+> Meanwhile, the arrivals gate sits eerily abandoned. Stationed behind a
+> cluttered desk near the disused arrival gates is a lone male Murid in
+> a loose-fitting station vest, his goggles pushed up onto his twitching
+> ears, trying to ignore the chaotic roar around him.
 
-:\* **Investigation:**
+- **The Situation:** Docking Bay 7 is the primary civilian and light
+  freight hub on Comet\'s Home. Valen arrived ahead of time to wait for
+  Lady Kaelen, who was secretly ferried onto the station aboard an
+  illicit gas-hauler. When she arrived, Valen paid off the on-duty
+  inspector---a Murid named Roban---to leave her off the passenger
+  manifest.
+- **Surroundings:** The infrastructure is buckling under panic. The
+  customs barriers are thin modular stanchions meant for orderly queues,
+  not a mass evacuation. Shouting matches and minor scuffles are
+  breaking out across the concourse as desperate citizens try to buy
+  passage off-station before the Aconian fleet locks down the sector.
 
-::\* A DC 14 [Computer Use](Computer_Use "Computer Use"){.wikilink}
-check to access the docking logs reveals they arrived via an
-unregistered smuggler shuttle (leads to the **Smuggler\'s Den**).
+<!-- -->
 
-::\* A DC 13 [Perception](Perception "Perception"){.wikilink} or
-[Diplomacy](Diplomacy "Diplomacy"){.wikilink} check with a harbor
-official reveals they used high-end, luxury-grade forged transponders
-(leads to the **Gilded Comet Casino**).
+- **Key NPCs:**
 
-::\* A DC 12 sensors sweep detects a strange residue of volatile gas-ore
-on the landing pads (leads to the red herring **Silo 12**).
+:\* **Roban (Murid Dock Inspector):** Stressed, twitchy, and visibly
+overwhelmed. Being a Murid, he naturally respects Aconians, but he is
+terrified of being implicated in a royal scandal or facing imperial
+wrath. Valen handed him high-stakes casino chips to keep Kaelen\'s
+arrival off the official records. Roban pocketed the bribe, but to
+\"cover his ass\" (CYA) if imperial inquisitors ever search the logs, he
+secretly jotted down encrypted notes about the covert drop-off on his
+personal terminal log.
+
+:\* **Tessa Morrow (Human Volunteer Worker):** An energetic but visibly
+flustered human Belter wearing an oversized, bright-orange emergency
+contractor vest with a stylus tucked into her messy hair. She took an
+emergency contract from the station\'s Head Office to help organize
+evacuation queues. She may be an old friend, former neighbor, or
+familiar face to one of the player characters.
+
+**Player Options & Investigations:**
+
+------------------------------------------------------------------------
+
+**1. Entering the Port --- Spotting a Familiar Face (Perception):**
+
+- When the party enters the concourse, the GM should ask everyone to
+  roll a [Perception](Perception "Perception"){.wikilink} check.
+- **DC 14 [Perception](Perception "Perception"){.wikilink}:** The
+  highest-rolling player spots Tessa Morrow struggling to hold back an
+  angry line of Belters near Gate 3. The player recognizes her as a
+  familiar acquaintance from around the station.
+- **Interacting with Tessa:**
+
+:\* Tessa is relieved to see friendly faces. She explains that the
+station\'s Head Office is paying top credit to anyone willing to stay
+behind and help stabilize the station: \"They\'re handing out all sorts
+of emergency hazard tasks. I drew port crowd duty\... and as you can
+see, I\'m getting eaten alive here!\"
+
+:\* **The Volunteer Job Offer (Time vs. Reward):** Tessa asks if the
+crew can spare a few hours to help her secure the barriers, sort
+luggage, and calm the crowd. The head office is willing to pay up front
+a **100 ISC per hour** for each person who helps. Taking the job burns
+**2 hours** of the party\'s in-game investigation time before the
+Aconian fleet arrives. Each participating character earns **300 ISC** in
+cash.
+
+:\* **Roban\'s Goodwill:** Roban watches the party roll up their sleeves
+and sweat alongside the dock crew to restore order. This earns his
+respect and gratitude, granting the party a **+4 morale bonus** on all
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+[Bluff](Bluff "Bluff"){.wikilink} checks made against Roban.
+
+:\* **Asking Tessa About the Crisis:** If asked if she knows anything
+about the missing royal, she shakes her head: \"I\'ve just been dealing
+with this stampede. But Roban would be the man\... rrr, Murid to talk
+to. Although station security already interviewed him earlier.\" **2.
+Reading the Crowd & The Overwhelmed Port (Study / Knowledge):**
+
+- A DC 12 [Study](Study "Study"){.wikilink} or DC 11 [Knowledge (Current
+  Events)](Knowledge#Current_Events "Knowledge (Current Events)"){.wikilink}
+  check reveals that departure ticket prices have surged tenfold,
+  commercial traffic will be indefinitely halted within hours, and the
+  station\'s makeshift barricades won\'t hold if another panic wave
+  hits.
+
+**3. Interrogating Roban the Murid (Social Encounter --- Leads to
+Casino):**
+
+- Roban is stationed behind the arrival customs desk, twitching at every
+  loud crash from the mob and clutching his personal datapad close.
+- A DC 13 [Sense
+  Motive](Sense_Motive "Sense Motive"){.wikilink}/[Perception](Perception "Perception"){.wikilink}/[Study](Study "Study"){.wikilink}
+  check reveals Roban is sweating profusely and fidgeting with something
+  heavy in his pocket. He clearly knows something dangerous and is
+  terrified of getting caught.
+- **Social Checks (DC 14 [Diplomacy](Diplomacy "Diplomacy"){.wikilink},
+  DC 15 [Bluff](Bluff "Bluff"){.wikilink}, or DC 16
+  [Intimidate](Intimidate "Intimidate"){.wikilink}):** (Note: Characters
+  gain a +4 morale bonus on Diplomacy and Bluff checks if they helped
+  Tessa. Also a +2 bonus if they can use Squeak Speak as a language)
+
+:\* Calming Roban, gets him to confess: That he witnessed a nervous
+young Aconian man (Valen) was waiting near arrivals when a hooded
+Aconian woman (Lady Kaelen) slipped off an unscheduled transport; the
+Aconian man handed Roban heavy, expensive chips from the **Gilded Comet
+Casino** to look the other way. Roban saw the pair head straight toward
+the upper promenade (which leads to the **Gilded Comet Casino**). He
+notes that the ship the Lady Kaelen stayed on for a night and then
+hurriedly left just a few hours ago off Pad 4. He points to it. **4.
+Hacking the Terminal & Roban\'s CYA Notes (Computer Use / Sleight of
+Hand --- Leads to Smugglers):**
+
+- While the official passenger manifest contains no record of Lady
+  Kaelen, Roban\'s private encrypted dockhand terminal holds his
+  personal CYA notes.
+- The terminal is open and easily accessible as long as someone can
+  distract the easily distracted Roban. If the Players already know
+  about Pad 4 from the Murid, they can see the ship in the arrival and
+  departure schedules. See that it left from Pad 4 just a few hours ago.
+  IT is called \"The Ispan\". They also notice that the Roban has
+  personal, encrypted notes that were recently updated. They cannot read
+  these notes without some trickery.
+- A DC 15 [Computer Use](Computer_Use "Computer Use"){.wikilink} check
+  (or DC 14 [Sleight of
+  Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} to swipe his admin
+  keycard) allows access to Roban\'s hidden sub-log. It reveals that an
+  unregistered, battered light freighter named **The Ispan** made an
+  emergency touchdown on **Landing Pad 4** under a falsified
+  gas-refinery delivery permit. Its transponder broadcast a rhythmic
+  scrambled beacon code---a known underworld black-market signature. He
+  notes both an unregistered female aconian departing and being paid
+  with casion chips. He also notes that the ship is a well-known
+  smuggler\'s ship and that its crew stayed overnight at the
+  **Smuggler\'s Den** after quickly offloading its chemical cargo,
+  probably to an illicit location. A DC15 Knowledge [Current
+  Events](Knowledge#Current_Events "Current Events"){.wikilink} or
+  [Culture](Knowledge#Culture "Culture"){.wikilink} will bring to mind
+  rumors regarding a **Silo 13**.
+
+**5. Forensics on Landing Pad 4 (Perception / Study --- Red Herring Lead
+to Silo 13):**
+
+- Once players identify Landing Pad 4 (via the terminal or scouting the
+  disused berths), they can physically inspect the landing slip where
+  the mystery freighter touched down.
+- A DC 15 [Perception](Perception "Perception"){.wikilink} or DC 14
+  [Study](Study "Study"){.wikilink} check reveals the pad is covered in
+  thick, iridescent soot and smells pungently of raw, highly volatile
+  unrefined comet gas. A hastily discarded, stained cargo strap next to
+  the mooring clamp is labeled \"Refinery Batch 88-Delta / Transfer to
+  Silo 13\" (leads to the red herring **Silo 13**). A DC10 Knowledge
+  [Current Events](Knowledge#Current_Events "Current Events"){.wikilink}
+  or [Culture](Knowledge#Culture "Culture"){.wikilink} will cause the
+  Players to know that there is no Silo 12, but a DC15 will bring to
+  mind rumors of a secret black market Silo that is part of a partially
+  abandoned part of the station next to the Silos. If the subject is
+  brought up with Roban, only a DC18 [Bluff](Bluff "Bluff"){.wikilink}
+  or [Intimidate](Intimidate "Intimidate"){.wikilink} check will succeed
+  in revealing the same information.
 
 ### Gilded Comet Casino (Upper Promenade) {#gilded_comet_casino_upper_promenade}
 
-:\* **The Situation:** A high-end casino where Kaelen was seen in public
-under a disguise.
+> Stepping through the pneumatic gold-trimmed doors of the Gilded Comet
+> is a blinding shock to the senses. After navigating the dim,
+> grease-stained corridors and metallic dread of the lower decks, the
+> casino erupts in a dazzle of brilliant violet neon, amber
+> holo-chandeliers, and the kinetic chime of hundreds of spinning
+> roulette tables.
+>
+> The air smells richly of expensive synth-tobacco, spiced wine, and
+> ionized air filtration. But beneath the clinking crystal glasses and
+> the roar of the high-stakes tables, the atmosphere is electric with an
+> almost manic tension. The crowd here is split in two: wealthy mining
+> executives and station elites laughing in VIP lounges, eagerly
+> anticipating the imperial order an Aconian annexation might
+> bring---and desperate, glassy-eyed Belters reckless with terror,
+> pouring their life savings onto the green felt in a wild bid to forget
+> the armada closing in on their home.
 
-:\* **Investigation:**
+- **The Situation:** Valen brought Lady Kaelen here straight from the
+  docking bay, believing a loud, bustling luxury venue full of wealthy
+  off-worlders was the ideal place to blend in and plan their next move.
+  However, Kaelen\'s aristocratic constitution was never built for
+  Belter fringe space; she suffered acute respiratory distress from
+  breathing in toxic chemical fumes that leaked from the failing
+  containment seals aboard the smuggler\'s gas-freighter.
+- **Surroundings:** Located along the station\'s Upper Promenade
+  overlooking the glittering dust tail of the comet through reinforced
+  panoramic viewing ports. Armed private casino enforcers in tailored
+  black suits keep watch from elevated walkways, ensuring the dock panic
+  never spills onto the gambling floor.
 
-::\* A DC 14
-[Sleight_of_Hand](Sleight_of_Hand "Sleight_of_Hand"){.wikilink} or
-[Diplomacy](Diplomacy "Diplomacy"){.wikilink} check with the card dealer
-reveals Valen paid with rare Aconian military bullion, which only
-high-ranking nobles like Archon Vandar possess.
+<!-- -->
 
-::\* A DC 13 [Computer Use](Computer_Use "Computer Use"){.wikilink}
-check to hack the security room shows a suspicious figure trailing the
-couple toward the habitation deck (leads to **Beltway Refhab 42**).
+- **Key NPCs:**
 
-::\* A DC 12 [Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink}
-check on a cocktail waitress reveals she saw the couple buying
-specialized mid-deck medication (leads to the **Medical Clinic**).
+:\* **Sariela (Young Aconian Cocktail Waitress):** A young Aconian woman
+working on Comet\'s Home carrying glowing drink trays between the
+high-roller booths. Being an Aconian herself, she immediately noticed
+Lady Kaelen\'s refined high-court dialect and delicate posture despite
+the heavy Belter coat she wore. She attended to the secluded VIP booth
+where Valen and Kaelen sat, witnessed Kaelen\'s violent chemical
+coughing fit, and heard Valen frantically asking where to find a
+discreet doctor.
 
-::\* If players ask about Aconian nobles in general, a concierge
-mentions the royal consulate suite has been occupied (leads to the red
-herring **Consulate Office**).
+:\* **Corvus (Lepidonain Pit Boss):** An imposing Lepidonain with
+shimmering, iridescent scales, dressed in formal tailored vestments. He
+oversees the high-stakes tables with a sharp, predatory gaze, watching
+for card-counters, cheaters, and suspicious foreign currency.
+
+:\* **Alux (Grayling Concierge / Floor Host):** A fastidious,
+sharp-tongued Grayling in formal silks with a whirring cybernetic
+monocle that logs VIP reservations in real-time. He openly looks down on
+\"crude Belter miners\" and fawns over aristocratic off-worlders, eager
+to boast about high-society connections.
+
+**Player Options & Investigations:**
+
+------------------------------------------------------------------------
+
+**1. Reading the Room & The Divided Crowd (Study / Knowledge /
+Perception):**
+
+- A DC 12 [Perception](Perception "Perception"){.wikilink} check notices
+  the jarring emotional split across the floor: one half of the patrons
+  are toasting glasses to \"inevitable imperial stability,\" while the
+  other half are drinking furiously and frantically doubling down on
+  bets in sheer fatalistic panic.
+- A DC 13 [Perception](Perception "Perception"){.wikilink} check spots
+  the Computer systems behind the desk, which is currently occupied by
+  Alux the Floor Host and owner. He looks busy, and you have just seen
+  him arrive after dealing with a customer on the casino floor.
+- A DC 20 [Perception](Perception "Perception"){.wikilink} check spots a
+  fine silk handkerchief left crumpled under the booth cushion, stained
+  with flecks of caustic chemical phlegm and smelling sharply of
+  industrial gas additives. This is in Booth 14.
+- A DC 13 [Study](Study "Study"){.wikilink} or DC 13 [Knowledge
+  (Culture)](Knowledge#Culture "Knowledge (Culture)"){.wikilink} /
+  [Knowledge (Current
+  Events)](Knowledge#Current_Events "Knowledge (Current Events)"){.wikilink}
+  check reveals that several station oligarchs stand to make fortunes if
+  the Aconian Empire takes over and crushes independent miner unions.
+
+**2. The Ailing Noble & The Aconian Waitress at Booth 14 (Social
+Encounter --- Leads to Medical Clinic):**
+
+- Sariela is circulating near Booth 14, scrubbing a spilled drink from
+  the table where the couple was recently seated. She notes your
+  arrival, and if the Players spot the handkerchief (DC 14 Perception)
+  then she sees it too.
+- A DC 14 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check (or
+  tipping 50+ ISC) gets Sariela talking: **NOTE**: If the Players try in
+  any way to intimidate her, the bouncer Corvus quickly comes over. If
+  the Players fail a DC14 [Bluff](Bluff "Bluff"){.wikilink} check, they
+  cannot use Bluff or Diplomacy again, and Sariela will try to excuse
+  herself and inform Corvus. Of the Players\' off behavior.
+
+:\* She confirms that a young Aconian man and a heavily cloaked woman
+occupied Booth 14. Being Aconian, Sariela instantly recognized the
+woman\'s refined, high-court inflection. The woman was violently
+coughing, wheezing, and clutching her chest from chemical fume
+poisoning. The young man was frantic, asking where they could find a
+private doctor. Sariela pointed them toward the mid-deck clinic (leads
+to the **Medical Clinic**). She notes that while she doesn\'t know who
+the poor woman was, she knows the man is named Valen and that she saw
+him once before, years ago, with his father. She never forgets a face.
+All she knows is that his father is a merchant who deals with refined
+ore and chemicals. **3. Hacking Surveillance / Security Bouncer (Stealth
+/ Computer Use / Sleight of Hand / Intimidate --- Leads to Beltway Hab
+42):**
+
+- The casino\'s security hub is tucked behind a keycard-locked door near
+  the cashier cage, monitoring high-definition feeds of all exits and
+  service corridors. But the Casinos checkin computer and reception desk
+  is manned only by Alux and may also more easily provide the
+  information needed. However, getting to the computer console would
+  instantly cause suspicion. This must be done with stealth, and at
+  least Alux must be distracted.
+- A DC15 [Stealth](Stealth "Stealth"){.wikilink} check is necessary.
+  Gain advantage for each key character the Players can distract.
+- A DC 14 [Computer Use](Computer_Use "Computer Use"){.wikilink} check
+  (or DC 15 [Sleight of
+  Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} to lift a security
+  keycard) accesses the surveillance archives and recent customer
+  records. It shows Valen supporting a coughing Kaelen. It shows that
+  the Aconian man with Lady Kaelen is named Valen. And that his
+  registered living quarters are located in Beltway Hab 42. The players
+  need a security keycard from either Corvus or Alux.
+
+:\* *The Mercenary Shadow:* The footage also reveals a cloaked, armored
+figure in stealth webbing discreetly stepping into the following the two
+when they left.
+
+:\* A DC15 [Computer Use](Computer_Use "Computer Use"){.wikilink} or, if
+they have a security card and the player chooses to try to look for more
+information, note that two high-society Aconians are staying at the
+casino hotel, and one of them just checked in yesterday morning, just
+hours before Lady Kalean arrived. This person, **Archon Vandar**, was
+seen coming in with a large escort of security guards. One of which was
+the \'Mercenary Shadow\'. **4. Interacting with Corvus, the security
+guard**
+
+- This may be necessary to distract Corvus so the Players have an easier
+  time accessing the computer terminals
+- A DC 15 [Intimidate](Intimidate "Intimidate"){.wikilink} check on the
+  service-door bouncer forces him to admit he let the young couple and
+  their shadowy pursuer into the maintenance lifts heading toward the
+  medical bay. But that he heard the man say that they were gonna go
+  straight to his home in the Beltway Habs afterward. A Diplomacy or
+  Bluff will not work on the bouncer. He finds the attempts amusing, and
+  if the Player rolls too low (Below 10), he even mocks the player\'s
+  sorry attempts.
+
+**5. Questioning Concierge Alux (Diplomacy / Bluff / Knowledge
+\[Culture\] --- Red Herring Lead to Consulate Office):**
+
+- Speaking with Alux about high-born Aconian nobles on Comet\'s Home.
+  This may be necessary to distract the Alux from his reception desk.
+- A DC 14 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or DC 13
+  [Bluff](Bluff "Bluff"){.wikilink} check flatters Alux\'s high-class
+  sensibilities or poses as an imperial diplomatic delegation:
+
+:\* Alux proudly boasts that the station is currently honored by the
+presence of a true imperial luminary residing in the grand luxury suite
+of the **Consulate Office** across the promenade, assuming that must be
+who the party is seeking (leads to the red herring **Consulate
+Office**). He mentions that he arrived just yesterday and believes that
+it must have to do with the missing Woman. **6. Optional: High-Stakes
+Gambling (Gamble / Sleight of Hand / Intelligence):**
+
+- Players who want to blend in or win fast credits can wager ISC at the
+  \"Comet Roulette\" table or test their wits against Pit Boss Corvus at
+  high-stakes cards:
+
+:\* A player can wager 50 to 500 ISC and make a DC 20
+[Gamble/Charisma](Wealth_and_Money#Gambling "Gamble/Charisma"){.wikilink}
+check for cards. A DC 20 [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} check for the
+roulette table. Each time a Player wins, the DC goes up by +2.
+
+:\* *Success:* Double their wager and gain a +2 circumstance bonus on
+social checks with casino staff for looking like high-rollers.
+
+:\* *Failure:* Lose their wager.
 
 ### The Smuggler\'s Den (The Underbelly) {#the_smugglers_den_the_underbelly}
 
-:\* **The Situation:** A crowded, smoky dive bar frequented by asteroid
-miners and smugglers.
+> Tucked deep inside a decommissioned water-reclamation vault on
+> Sub-Level 8, the Smuggler's Den---known locally as \"The Siphon\"---is
+> a haze of noxious smoke, cheap fermented algae-liquor, and heavy
+> industrial music that rattles the rusty deck plates. Tables fashioned
+> from dented fuel drums are crowded with scarred asteroid scavengers,
+> black-market brokers, and off-duty freight crews.
+>
+> In a large corner booth, two rowdy, red-faced pirates are loudly
+> slamming tin mugs against the table, slurring profanities and
+> screaming at the ceiling about their coward captain who marooned them
+> here when the armada news broke. Yet, for all the clinking glasses,
+> shouting, and thumping music, the loud ruckus does nothing to hide the
+> suffocating, paranoid tension hanging over the room---everyone is
+> watching the shadows, clutching their sidearms, and waiting for the
+> other shoe to drop.
 
-:\* **Investigation:**
+- **The Situation:** *The Ispan* arrived the previous morning, secretly
+  dropped off Lady Kaelen and its volatile gas canisters at Pad 4, and
+  blasted out of the station in extreme panic the moment the Aconian
+  fleet broadcasted its ultimatum. In his frantic rush to escape, the
+  captain literally marooned two of his own crew members on the station.
+  The stranded crew are furious, roaring drunk, and loudly venting about
+  their captain. Their loud mouths have attracted the attention of
+  Archon Vandar's undercover hitmen, who are circling the bar to
+  silence.
+- **Surroundings:** An illicit, chaotic underworld den. The patrons are
+  used to rough brawls, but the underlying threat of imperial invasion
+  has put everyone on a hair-trigger.
 
-::\* A DC 13 [Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink} or
-[Intimidate](Intimidate "Intimidate"){.wikilink} check locates the pilot
-who smuggled them in. Terrified of royal reprisal, he admits he dropped
-them off near the slums (leads to **Beltway Refhab 42**).
+<!-- -->
 
-::\* A DC 14 [Perception](Perception "Perception"){.wikilink} check to
-eavesdrop on off-duty guards reveals that Archon Vandar\'s mercenaries
-were recently looking for camera feeds at the refinery controls (leads
-to the **Refinery Control Room**).
+- **Key NPCs:**
 
-::\* A smuggler brags about a royal vessel docked nearby (leads to the
-red herring **Hangar B**).
+:\* **Brant & Torg (Stranded Crew of *The Ispan*):** Brant is a loud,
+burly Human deckhand; Torge is a disgruntled, one-eyed female Avisari
+rigger. Drunk, furious, and armed with heavy laser pistols, they are
+swearing bloody vengeance on their captain for ditching them.
+
+:\* **Vandar's Strike Mercenaries (Equal to the Number of Player
+Characters):** Tight-lipped, professional hitmen in civilian stealth
+dusters with concealed kinetic pistols and shock-knives. (*GM Note:
+Spawn 1 mercenary per player character to scale the combat encounter*).
+Their mission is to eliminate anyone who can link *The Ispan* or Archon
+Vandar to Lady Kaelen's arrival.
+
+:\* **Danor (Old Aconian Bartender):** A grizzled, cynical old Aconian
+expatriate who has lived on Comet\'s Home for decades. He has seen too
+many galactic wars to care about imperial politics, calmly wiping down
+the rusted counter while keeping a charged riot stun-baton within arm\'s
+reach.
+
+**Player Options & Investigations:**
+
+------------------------------------------------------------------------
+
+**1. Entering the bar. Spotting the Ambush & Reading the Room
+(Perception / Study):**
+
+- When entering the bar, the GM should ask the players for a
+  [Perception](Perception "Perception"){.wikilink} check.
+- **DC 13 [Perception](Perception "Perception"){.wikilink}:** Characters
+  spot the hitmen: figures in dark tactical dusters casually lingering
+  near the pillars and exits, wearing concealed subdermal comms and
+  slowly boxing in the drunken pirates\' booth with hands hovering over
+  their weapons.
+- A DC 14 [Perception](Perception "Perception"){.wikilink} or DC 12
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check with other patrons
+  overhears a boastful Belter ship-mechanic laughing off the entire
+  missing royal panic, loudly telling anyone who will listen that an
+  immaculate, gold-crested Aconian royal transport is currently parked
+  under heavy guard in private **Hangar B**, convinced the royal has
+  been sitting on her own ship the whole time (leads to the red herring
+  [Hangar
+  B](#Hangar_B_(Herald's_Vessel_-_Red_Herring) "Hangar B"){.wikilink}).
+- A DC 13 [Study](Study "Study"){.wikilink} or DC 13 [Knowledge (Current
+  Events)](Knowledge#Current_Events "Knowledge (Current Events)"){.wikilink}
+  check reveals the mercenary gear matches high-end off-world private
+  security contracts---far too professional to be local station
+  roughnecks.
+
+**2. The Confrontation & The Inevitable Bar Fight:**
+
+- Whether the players attempt to warn the pirates, question them
+  directly, or stay back and watch, the confrontation quickly boils over
+  into a chaotic bar fight as the mercenaries draw their weapons!
+- **Social Intervention (DC 14
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+  [Intimidate](Intimidate "Intimidate"){.wikilink}):** A quick-thinking
+  player can alert the pirates or cause a distraction, granting the
+  party and the pirates a Tactical Opportunity Advantage.
+- **The Brawl:** Tables are flipped, glasses shatter, and patrons
+  scramble for the doors. Brant and Torg throw heavy mugs and brawl
+  wildly, while the mercenaries fight with lethal, cold precision.
+
+**3. Interrogating Brant & Torg (Social / Sense Motive --- Leads to
+Beltway Hab 42):**
+
+- Once the mercenaries are dealt with and Brant and Torg are calmed down
+  (or pulled out of the brawl):
+- A DC 13 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} or DC 14
+  [Intimidate](Intimidate "Intimidate"){.wikilink} check gets Brant or
+  Torg, nursing wounds and grateful (or terrified), to spill what he
+  knows:
+
+:\* Brant confesses that when *The Ispan* docked at Pad 4, their captain
+met a nervous young man (Valen) who escorted the hooded royal woman off
+the ship. Brant overheard Valen saying he secured a lower-deck hideout
+at **Beltway Hab 42** (leads to [Beltway Hab
+42](#Beltway_Hab_42_(Lower_Habitation) "Beltway Hab 42"){.wikilink}). If
+the Mercenaries were dealt with and the conversation with Brant or Torg
+is happening within the bar, another patron overhearing what they say
+chimed in: \"If you crazy bastards are looking for that missing lass,
+you need to go to the **Hangar B**. She is there, I swear it. There is a
+fancy Aconian ship. It is heavily guarded. All these people are crazy;
+they don\'t know nuthin\'. Crazy I say\... crazy\... she is right
+there\... no mystery\". He continues to mumble. **4. Searching the
+Mercenaries & Tactical Comms (Search --- Leads to Refinery or Guilded
+Comet Casino):**
+
+- Searching the downed hitmen after the brawl:
+- A DC 13 [Perception](Perception "Perception"){.wikilink} check will
+  reveal that a few casino chips are from the Guilded Comet Casino and
+  Hotel. One also had a fancy-looking keycard that is obviously for a
+  hotel room door at the Casino
+- A DC 14 [Computer Use](Computer_Use "Computer Use"){.wikilink} check
+  (the players can try again by taking 20 to automatically succeed),
+  cracks the encrypted military datapad found in the mercenary lead's
+  pocket. It reveals intercepted station security feeds and a real-time
+  comm-link routing back to a mercenary squad coordinator operating out
+  of the **Refinery Control Room** (leads to [Refinery Control
+  Room](#Refinery_Control_Room_(Industrial_Level) "Refinery Control Room"){.wikilink}).
+
+#### Mercenaries in Smugglars Den {#mercenaries_in_smugglars_den}
+
+- **Appearance**: Under dirtied clocks is tactical gear tightly fitted
+  over strong Acconian frames. On one side is a side arm and on the
+  other is a tactical knife. They are armed for discreet close-quarters
+  combat.
+- **Size**: Medium
+- **AC**: 14
+- **DR**: 1
+- **Hit Die/HP**: d8 / 15
+- **Stats**: Str 14/Dex 14/Con 12/Wis 10/Int 8/Cha 8
+- **Initiative**: 2
+- **Locomotion**: Bipedal
+- **Feats**: [Point Blank
+  Shot](Point_Blank_Shot "Point Blank Shot"){.wikilink}, [Advanced
+  Combat
+  Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}
+  (Throw/Tackle)
+- **Skills**: Acrobatics 2d2, Athletics 2d2, Perception 2d2, Stealth
+  2d2, Disable Deveice 2d2, Knolwedge Culture 2d2, Intimidation 2d2
+- **Items**: Casino Chips from the Guilded Comet Casino, and a
+  fancy-looking keycard to one of the hotel rooms
+- **Attacks**:
+
+:\* **Melee**: [Superior Steal
+Knife](Advanced_Knife#Superior_Steal_Knife "Superior Steal Knife"){.wikilink}:
+Accuracy: 1d20 + d2 + 3, Damage: d6 + 2 (K) x2/18-20
+
+:\* **Ranged**: [Tactical Laser
+Pistol](Laser_Pistol#Tactical_Laser_Pistol "Tactical Laser Pistol"){.wikilink}:
+Accuracy: 1d20 + d2 + 4, Damage: d8 + AP1 (E)
 
 ### Medical Clinic (Mid-Deck) {#medical_clinic_mid_deck}
 
-:\* **The Situation:** A crowded clinic where Kaelen was treated for
-mild radiation sickness.
+> The pressure doors of the Mid-Deck Medical Ward hiss open to a wave of
+> cold, sterile air smelling of disinfectant, aerosolized antiseptic,
+> and ozone. Overhead lighting strips flicker across mostly empty seats
+> in a ward where injured asteroid miners with plasma burns and
+> terrified Belters suffering panic attacks sit in a waiting.
+>
+> Gliding smoothly across a recently cleaned and sterile-looking floor
+> in a serpentine fashion is the pale-blue body of Dr. Merrill. With his
+> upper pair of long, webbed arms, he expertly applies a dermal
+> regenerator to a groaning miner, while his smaller secondary lower
+> arms calmly calibrate a floating medical datapad and prepare a tray of
+> hypo-syringes without missing a beat. A nurse, a human woman, comes
+> out just as you enter the room. She looks and smiles in your direction
+> before approaching a panicked-looking belter and handing a bottle of
+> medicine off.
 
-:\* **Investigation:**
+- **The Situation:** Valen rushed Lady Kaelen here immediately after her
+  collapse at the casino. She was treated for acute chemical
+  overexposure caused by breathing toxic vapor from *The Ispan\'s* leaky
+  containment seals. Valen paid in hard cash under a forged maintenance
+  badge and quickly moved her out. Shortly after they left, a pair of
+  Archon Vandar's armed hitmen stormed into the clinic, aggressively
+  demanding to see patient manifests. Dr. Merrill refused to break
+  medical confidentiality, but the encounter left the entire staff on
+  edge.
+- **Surroundings:** Located in Mid-Deck Sector 4, wedged between the
+  residential corridors and life-support ducting. Medical alarms beep
+  constantly, and exhausted triage droids roll between curtained
+  cubicles.
 
-::\* **Branch A (Hacking):** A DC 14 [Computer
-Use](Computer_Use "Computer Use"){.wikilink} check on the patient
-registry database reveals Valen used an employee badge registered to a
-technician living in **Beltway Refhab 42**.
+<!-- -->
 
-::\* **Branch B (Social):** A DC 13
-[Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
-[Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink} check with the
-resident doctor reveals that Aconian agents were asking about the
-couple. He heard them mention hacking the security grid from the
-**Refinery Control Room**.
+- **Key NPCs:**
+
+:\* **Dr. Merrill (Cryous Chief Medical Officer):** A pale-blue skinned
+Cryous physician whose four arms allow him to conduct triage and
+administrative logging simultaneously. Tenacious, pragmatic, and
+fiercely committed to his Hippocratic oath. His species\' innate
+sensitivity to the electromagnetic spectrum makes him acutely observant
+of concealed technology and bio-signs.
+
+:\* **Nurse Dax (Human Orderly):** An exhausted, jumpy human triage
+nurse helping hand out medicine and do quick triage. She is working
+overtime because the other nurses have abandoned their work to try to
+leave the station.
+
+**Player Options & Investigations:**
+
+------------------------------------------------------------------------
+
+**1. Social Encounter with Dr. Merrill (Social Encounter --- Leads to
+Beltway Hab 42):**
+
+- Dr. Merrill is initially defensive and cautious, fearing the party
+  might be more mercenaries.
+- A DC 15 [Diplomacy](Diplomacy "Diplomacy"){.wikilink}, or offering to
+  help with a DC 20 [Treat
+  Injury](Treat_Injury "Treat Injury"){.wikilink} check (or taking 20)
+  calms Dr. Merrill down or earns his trust:
+
+:\* **The Safehouse Clue:** He confirms he treated a young, delicate
+Aconian woman suffering from severe chemical overexposure. Her partner
+(Valen) was terrified, paid upfront, and registered under a borrowed
+maintenance work permit assigned to **Beltway Hab 42** (leads to
+[Beltway Hab
+42](#Beltway_Hab_42_(Lower_Habitation) "Beltway Hab 42"){.wikilink}).
+
+- A DC 20 [Intimidate](Intimidate "Intimidate"){.wikilink} check gets
+  him to disclose the safehouse location, though his neck-gills flare
+  with defensive bio-static and he demands the party leave immediately.
+- Dr Merrill has a +4 against any Bluff attempts as he is extra
+  suspicious after the previous encounter with mercenaries.
+
+**2. Social Encounter with the Nurse Dax:**
+
+- The nurse is busy and exhausted as well as on edge and defensive with
+  anybody who is asking questions. She defers to the players. The
+  Players can choose to help her by helping a new group of people who
+  were trapped at the docks. A DC20 [Treat
+  Injury](Treat_Injury "Treat Injury"){.wikilink} check or taking 20
+  will automatically gain both her trust and that of Dr. Merrill.
+
+**3. Snooping / Sneaking Around:**
+
+- This can be done with advantage if other players are distracting the
+  Dr and the Nurse. They can do this by helping triage or simply trying
+  to discuss things.
+- A Stealth check will be necessary DC 15
+  [Stealth](Stealth "Stealth"){.wikilink}. This allows 1 or more
+  Characters to slip into the different rooms. There are 4 rooms. Each
+  room takes 2 minutes to search with a
+  [Perception](Perception "Perception"){.wikilink} check. The room in
+  question is Room 3, or the GM can have the Players roll a high/low to
+  see if they get the right one. Once in the right one, a DC 13
+  [Perception](Perception "Perception"){.wikilink} check is necessary to
+  find the biohazard disposal bin that reveals a freshly discarded
+  aerosol canister of \"Aero-Tox Pulmo-Mist\"---a specialized
+  counter-agent for treating industrial chemical overexposure,
+  consistent with **The Ispan\'s** toxic leak.
+- Armed with this knowledge, the Players can either find or interrogate
+  the Dr or Nurse with this information. This grants Advantage on
+  [Intimidate](Intimidate "Intimidate"){.wikilink} checks but increases
+  the DC for Diplomacy by +4. Otherwise, they can use this information
+  to cross-reference it on a Medical Clinic computer to find out more
+  about who was treated and where they are.
+
+**3. Hacking the Triage Terminal (Computer Use --- Alternate Lead to Hab
+42):**
+
+- If the party avoids speaking to Dr. Merrill or wishes to verify the
+  records:
+- A DC 15 [Computer Use](Computer_Use "Computer Use"){.wikilink} check
+  hacks into the clinic\'s local prescription logs, pulling up the
+  recent intake record for the chemical overexposure treatment and
+  confirming the patient\'s billing was tied to **Beltway Hab 42**
+  (leads to [Beltway Hab
+  42](#Beltway_Hab_42_(Lower_Habitation) "Beltway Hab 42"){.wikilink}).
+
+**4. Tracking the Mercenaries (Perception / Diplomacy --- Leads to
+Refinery):**
+
+- Inquiring about the suspicious armed men who visited earlier:
+- A DC 13 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check prompts
+  Dr. Merrill to mention that two heavily armed off-worlders in tactical
+  stealth gear barged in roughly thirty minutes ago. Thanks to his
+  Cryous electromagnetic sensitivity, Merrill detected their
+  high-frequency encrypted radio chatter and overheard them confirming
+  they were heading to hijack the station\'s main surveillance grid from
+  the **Refinery Control Room** (leads to [Refinery Control
+  Room](#Refinery_Control_Room_(Industrial_Level) "Refinery Control Room"){.wikilink}).
+
+**5. Clinic Services & Restocking (Utility):**
+
+- **Purchasing Supplies:** Players can buy a
+  [Medpack](General_Equipment#Medical_Kits "Medpack"){.wikilink} from
+  Nurse Dax for **2,500 ISC**. If the players successfully used
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink} with Dr. Merrill, they
+  earn a **20% discount**, reducing the cost to **2,000 ISC**.
+- **Medical Treatment:** Any character injured from previous encounters
+  can have Dr. Merrill tend their wounds, restoring 1d8+2 Hit Points.
+  Each treatment costs **500 ISC** and burns **1 hour of in-game time**
+  per treated player.
 
 ### Refinery Control Room (Industrial Level) {#refinery_control_room_industrial_level}
 
-:\* **The Situation:** The central station grid where Vandar\'s agents
-are actively hacking security to track Kaelen.
+> The deafening roar of industrial ore centrifuges and hissing gas
+> distillation towers fills the humid, hot air of the Refinery Station
+> Module. Narrow metal catwalks with low safety railings span dizzying
+> vertical drops over bubbling vats of superheated silicate slurry and
+> glowing plasma conduits.
+>
+> Perched high above the machinery is a reinforced glass control booth.
+> Inside, the lights have been dimmed to soft red. Two armored Aconian
+> mercenaries in heavy tactical gear and gas masks slung around their
+> necks stand guard with QCB blasters drawn. Through the glass, you can
+> barely make out shadows cast by the red glow, as it appears multiple
+> people are moving around inside the booth.
 
-:\* **Investigation:**
+- **The Situation:** Archon Vandar's tech squad stormed the refinery
+  control booth, taking the station\'s engineering staff hostage to
+  seize control of the local sensor network. Using military decryption
+  algorithms, they triangulated Lady Kaelen's emergency royal signet
+  beacon to her safehouse in the slums. A capture team was already
+  dispatched to snatch her, while the remaining tech crew maintains the
+  station-wide camera blackout and scrubs the data logs.
+- **Surroundings:** Located on Industrial Sub-Level 3. The ambient noise
+  of massive mining machinery provides ample acoustic cover, but the
+  narrow catwalks and superheated steam valves make any confrontation
+  perilous.
 
-::\* A DC 14 [Computer Use](Computer_Use "Computer Use"){.wikilink} or
-[Disable Device](Disable_Device "Disable Device"){.wikilink} check to
-intercept the terminal reveals the agents have traced Kaelen\'s royal
-signet ring beacon and are moving her to the cargo bay (leads to
-**Sector 9 Cargo Docks**).
+<!-- -->
 
-### Beltway Refhab 42 (Lower Habitation) {#beltway_refhab_42_lower_habitation}
+- **Key NPCs:**
 
-:\* **The Situation:** The safe house where Kaelen was hiding, now
-trashed.
+:\* **Operative Kael:** A ruthless Aconian combat tech specialist
+equipped with a portable military slicing deck and an energized
+shock-pistol. Focused entirely on purging evidence and coordinating
+comms.
 
-:\* **Investigation:**
+:\* **Vandar Strike Guards (Equal to Party Size - 1):** Professional
+mercenaries in hardened tactical armor armed with heavy blasters and
+fragmentation flashbangs.
 
-::\* A DC 13 [Survival](Survival "Survival"){.wikilink} or
-[Perception](Perception "Perception"){.wikilink} check to investigate
-the room reveals signs of a struggle and a dropped Aconian tracer signal
-pointing directly to **Sector 9 Cargo Docks**.
+:\* **Chief Engineer Garr (Aconain Station Engineer):** The bruised,
+bound chief refinery operator, desperate to save his facility from
+sabotage.
 
-### The Climax: Sector 9 Cargo Docks {#the_climax_sector_9_cargo_docks}
+Once inside the booth:
 
-- **The Situation:** Vandar\'s mercenaries have captured Kaelen and
-  pinned down Valen. They plan to execute Valen and frame the station
-  for Kaelen\'s \"murder\" to justify the immediate Aconian invasion.
-- **The Encounter:** A tense standoff. Players can use stealth, hacking,
-  or social pressure to resolve the situation, with combat as a
-  high-stakes backup.
-- **The Resolution:**
+> On the ground lay several people in work uniforms, sitting on the
+> floor, gagged and tied up. Among them is an Aconain with a uniform
+> that shows he is likely the chief engineer.
+>
+> In the center of this control room, several chairs and tables, along
+> with miscellaneous containers and equipment, have been used to create
+> a half-haphazard defensive barrier. Some sort of technology is active
+> behind this makeshift barrier; it sits on the floor and is obscured.
+> Only a slight bluish glow shows that something is there and active.
 
-:\* **Option A: Yield to the Empire.** Turn Kaelen over to the
-approaching fleet. The station is saved from martial law, but Kaelen is
-forced to marry Prince Jarek, and Valen is executed for treason.
+- **Player Options & Investigations:**
 
-:\* **Option B: Expose the Archon.** Use the station\'s main broadcast
-tower to stream Valen\'s testimony and Vandar\'s transaction records to
-the incoming fleet. Prince Jarek halts the invasion to arrest Vandar,
-but Kaelen and Valen must flee into exile.
+------------------------------------------------------------------------
 
-:\* **Option C: Cover Up and Run.** Help the lovers escape using the
-smuggler shuttle. The station faces temporary Aconian occupation, but
-the lovers escape to the outer rim.
+**1. Combat Options: (Stealth vs Direct Approach)**
+
+- **NOTE** any character with a Profession of Engineer gains advantage
+  on Perception, Study, and Disable Device checks while in this
+  encounter.
+- A DC 11 [Perception](Perception "Perception"){.wikilink} check reveals
+  overhead ductwork and cable/pipe gantry. This leads directly onto the
+  central control room. (If a Player is an Engineer, then the GM can
+  inform them without a Check).
+- A DC 14 [Perception](Perception "Perception"){.wikilink} check reveals
+  that there are 3 people moving around inside of the control room. So a
+  total of 5 possible combatants.
+- A DC 16 [Perception](Perception "Perception"){.wikilink} check reveals
+  a pressure manifold that is out of sight of the guards that, if pushed
+  \'wrongly \', will cause superheated gas to vent in the direction of
+  the guards.
+- A DC 15 [Study](Study "Study"){.wikilink} check or taking 20 will
+  reveal that the guards are taking shifts. And that as long as they are
+  not suspicious of the Players yet, they are relaxed, and when
+  switching out with two guards from within the control room. When they
+  switch places, there is a minute when nobody is standing guard. The
+  players can simply wait till the next change-up.
+- A DC 13 [Athletics](Athletics "Athletics"){.wikilink} check as well as
+  an Opposing Stealth check is necessary to climb onto the overhead
+  maintenance gantry.
+- If the Players attempt to walk up to the guards pretending to be
+  engineers, the guards will flash their guns and attempt to tell the
+  Players off. The Players can use [Bluff](Bluff "Bluff"){.wikilink},
+  but Diplomacy and Intimidation will not work. If Intimidation is
+  attempted, no matter the roll, the guards will simply start combat.
+  Diplomacy is ignored, and the players are told to leave immediately;
+  if they do not comply, then combat starts.
+
+:\* [Bluff](Bluff "Bluff"){.wikilink} can be used to distract the
+guards, resulting in the Stealth roles being against the guards\'
+passive perception. The guards cannot be tricked into leaving, but they
+may be convinced to let one of the 2 guards enter to bring their
+superior out to deal with the Players.
+
+- A DC 14 [Disable Device](Disable_Device "Disable Device"){.wikilink}
+  or DC 14 [Craft
+  Mechanical](-_Mechanical "Craft Mechanical"){.wikilink} check
+  overrides a nearby steam manifold, venting superheated vapor onto the
+  guards\'. The guards must roll a Dex saving throw on DC 14 or take 1d4
+  Thermal Damage. The Players gain **Advantage (+1Ad)** on
+  [Bluff](Bluff "Bluff"){.wikilink} if they are pretending to be coming
+  to repair the valve or on accuracy checks during the first round of
+  combat.
+
+**2. Combat Enemy Tactics**
+
+- Firstly, combat is inevitable in this situation. The enemy will not
+  betray their Archon Lord Vandar. They are ordered to kill anyone who
+  gets in their way, and they do not feel worried about these deep-space
+  belters.
+- If the Players approach or directly confront the two guards, then the
+  guards\' first action is to fire defensively (not directly aiming at
+  the players) and run into the protection of the Control Room.
+- If the Players are able to approach while the guards are switching
+  posts (Requires a DC 15 Study check), then the Players can sneak a
+  peek inside the Control Booth. Read the flavor text for \'Once inside
+  the booth\'. Also, if the Players can sneak up top, they can peer
+  inside through a top hatch. Read the same text. A Player can roll a
+  Knowledge [Science](Knowledge#Science "Science"){.wikilink} or
+  [Technology](Tech "Technology"){.wikilink} DC 15 check to identify
+  this technology as a small shield emitter.
+- Combat starts the moment the Players enter the room if it hasn\'t
+  started already. The enemy combatants will all attempt to enter the
+  barrier. If Operative Kael is not directly taking damage, he will drag
+  the Chief Engineer with him as a possible hostage.
+- Kael is an Electro-Mancer and will try to use the Techniques from
+  within the protection of the barrier. While the other mercenaries will
+  fight to the death, if he is the last one standing, he will try to
+  surrender by using the Chief Engineer as a hostage.
+- All the Mercenaries will focus on ranged weapons, but they will also
+  launch poison gas grenades that obscure vision while they wear gas
+  masks.
+
+**3. Information / Interrogation:**
+
+- The hired mercenary guards will not give up any information if they
+  are kept alive. They resist all intimidation. However, not so for
+  Kael. If he is alive, he will attempt to trade information for his
+  life. He will tell the Players that Archon Vandar somehow knows about
+  Lady Kaelen\'s kidnapping. That they have retrieved her from the slums
+  and she is being escorted to a waiting ship at **Cargo Bay 9** (leads
+  directly to [Cargo Bay
+  9](#Cargo_Bay_9_(Climax) "Cargo Bay 9"){.wikilink}).
+- The prisoners are also extra happy to be freed and while they do not
+  know all the details, they do know \'they\' as in the mercenaries
+  found what they where looking for, prosumably the missing royal and
+  have taking the \'target\' to **Cargo Bay 9** (leads directly to
+  [Cargo Bay 9](#Cargo_Bay_9_(Climax) "Cargo Bay 9"){.wikilink}).
+- If somehow everyone is dead, including the captives, then the Players
+  can check the computer systems with a DC 14 [Computer
+  Use](Computer_Use "Computer Use"){.wikilink} or with a
+  [Perception](Perception "Perception"){.wikilink} check DC 12 to find
+  Kael\'s key card to unlock the computer system and find the same
+  information.
+- Kael\'s computer logs also reveal more information. A direct order,
+  coded personally by Archon Vandar: \"Lady Kaelen is secured. Move her
+  to Cargo Bay 9. Execute the merchant boy Valen and broadcast the
+  station distress beacon the moment Prince Jarek\'s vanguard drops out
+  of warp. Kill anyone who may know what has transpired. The imperial
+  annexation must proceed without loose ends.\"
+
+**4. Freeing Chief Engineer Garr (Social / Utility):**
+
+- Untying Garr and restoring control of the refinery earns the crew his
+  immense gratitude.
+- He promises to send his trusted crew to personally tell the Station\'s
+  governmental body. He patches into your personal comms and gives you
+  access to the quickest way to Bay 9 with his personal **Industrial
+  Master Bypass Fob**. He will radio in when he gets access to the
+  camera feed.
+
+#### Mercenaries in Refinery Control Room {#mercenaries_in_refinery_control_room}
+
+- **Appearance**: These Aconians are not trying to hide their military
+  appearance. They are in full-body tactical gear and armor, brandishing
+  weapons that are unholstered and ready to be aimed and fired. They
+  wear gas masks slung under their necks and a bandolier holding ammo
+  and grenades of some fashion.
+- **Size**: Medium
+- **AC**: 14
+- **DR**: 1
+- **Hit Die/HP**: d8 / 15
+- **Stats**: Str 14/Dex 14/Con 12/Wis 10/Int 8/Cha 8
+- **Initiative**: 2
+- **Locomotion**: Bipedal
+- **Feats**: [Bazooka Arm](Bazooka_Arm "Bazooka Arm"){.wikilink},
+  [Advanced Combat
+  Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}
+  (Throw/Tackle)
+- **Skills**: Acrobatics 2d2, Athletics 2d2, Perception 2d2, Stealth
+  2d2, Disable Deveice 2d2, Knolwedge Culture 2d2, Intimidation 2d2
+- **Items**: Grenades 1x [Choke-Gase
+  Grenade](Descriptions_of_Explosives#Choke-Gas_Grenade "Choke-Gase Grenade"){.wikilink}
+  and 1x [Cloud
+  Grenade](Descriptions_of_Explosives#Rad-Cloud_Grenade "Cloud Grenade"){.wikilink},
+  1 Health Concation Syringe 2d8,
+- **Attacks**:
+
+:\* **Melee**: [Superior Steal
+Knife](Advanced_Knife#Superior_Steal_Knife "Superior Steal Knife"){.wikilink}:
+Accuracy: 1d20 + d2 + 3, Damage: d6 + 2 (K) x2/18-20
+
+:\* **Ranged**: [Tactical Laser
+Pistol](Laser_Pistol#Tactical_Laser_Pistol "Tactical Laser Pistol"){.wikilink}:
+Accuracy: 1d20 + d2 + 4, Damage: d8 + AP1 (T)
+
+:\* **Ranged**: [Laser QCB](Laser_QCB "Laser QCB"){.wikilink}: Accuracy:
+1d20 + d2 + 3, Damage: 1d12 (T) x3/20 (Fully Unload Ability)
+
+#### Kael Merc Lutieniuet {#kael_merc_lutieniuet}
+
+- **Appearance**: This person, while dressed in a similar fashion to the
+  other Mercenaries, also appears to have some electronics embedded into
+  his body, and sometimes his movement appears faster, and a light blue
+  flow comes from under parts of his skin.
+- **Size**: Medium
+- **AC**: 14
+- **DR**: 1E
+- **Hit Die/HP**: d8 / 15
+- **Stats**: Str 14/Dex 16/Con 12/Wis 10/Int 12/Cha 8
+- **Initiative**: 3
+- **Locomotion**: Bipedal
+- **Feats/Talents**: [Technique,
+  Novice](TechniqueNovice "Technique, Novice"){.wikilink}, [Advanced
+  Combat
+  Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}
+  (Throw/Tackle), [Electrified
+  Movement](Character_Professions#Path_of_the_Electro_Transmutan "Electrified Movement"){.wikilink}
+- **Skills**: Acrobatics 2d2, Athletics 2d2, Perception 2d2, Stealth
+  2d2, Disable Deveice 2d2, Knolwedge Culture 2d2, Intimidation 2d2
+- **Items**: 1 Health Concation Syringe 2d8,
+- **Attacks**:
+
+:\* **Melee**: [Superior Steal
+Knife](Advanced_Knife#Superior_Steal_Knife "Superior Steal Knife"){.wikilink}:
+Accuracy: 1d20 + d2 + 3, Damage: d6 + 2 (K) x2/18-20
+
+:\* **Ranged**: [Tactical Laser
+Pistol](Laser_Pistol#Tactical_Laser_Pistol "Tactical Laser Pistol"){.wikilink}:
+Accuracy: 1d20 + d2 + 4, Damage: d8 + AP1 (T)
+
+:\* **Ranged**: [Laser
+Shotgun](Laser_Shotgun "Laser Shotgun"){.wikilink}: Accuracy: 1d20 +
+d2 + 3, Damage: Pellet 30ft (Area of Effect 30ft) Slug 900ft - 1d12 (T)
+
+- **Techniques**:
+
+:\* **Adsorb Power**: Draw energy from a massive power source to
+replenish yourself.
+
+:\* **Electrified Trap**: Imbue a conductive object with a high-voltage
+charge.
+
+:\* **Electric Nade**: Form and hurl a ball of condensed lightning.
+Deals 1d8 Electric damage (5ft Radius)
+
+### Beltway Hab 42 (Lower Habitation) {#beltway_hab_42_lower_habitation}
+
+This encounter varies depending on how much the Players have already
+done. The first section of flavor text and then one of the following
+sections based on conditions.
+
+> The lower residential tier of Beltway Habitation, or Hab for short, is
+> a dim, claustrophobic labyrinth of corrugated metal bulkheads,
+> flickering lights, and exposed pipes with faded warning labels
+> explaining extreme heat or cold. The narrow corridor is deathly
+> quiet---save for the low hum of life-support ventilators.
+>
+> Outside Hab 42, you immediately see the magnetic door has been
+> violently blown off its track and lies crumpled against the far wall.
+
+- If the Players have finished either **Smuggler\'s Den** and/or
+  **Medical Clinic** then read the following.
+
+> As you step near the entryway, the sharp stench of scorched wiring and
+> fresh plasma discharge hits your nose. Inside, the cramped living
+> space has been torn apart: furniture is smashed, detritus litters the
+> floor. It is a two-bedroom apartment. The living space and kitchenette
+> are part of the main room you enter first. The door to the bedroom is
+> left ajar, and a soft glow of lamplight comes through the crack in the
+> doorway.
+
+- If the Players have only completed **Customs & Arrival Port** and
+  **Gilded Comet Casino**. (exclude non-primary PoIs)
+
+> As you approach the entryway, you hear movement inside. Hushed voices
+> are talking.
+
+- **The Situation:** Valen rented Hab 42 in the Belthway under a forged
+  maintenance permit as a temporary safehouse while he and Lady Kaelen
+  attempted to arrange an off-station escape transport. If the Players
+  come directly from the Guilded Comet without completing other primary
+  PoIs, then while Lady Kaelen has already been moved, there are a few
+  mercenaries left. They are the \'cleanup crew\' and they are scrubbing
+  the room of any possible links to Archon Vandar as well as setting
+  traps. If the Players have already encountered other primary POIs such
+  as the Medical Clinic or Smuggler\'s Den, the place has been
+  abandoned, and the traps have been set; Vandar is bleeding out and
+  moments from death, stuffed in a locker.
+
+<!-- -->
+
+- **Key NPCs:**
+
+:\* **Valen (Merchant's Son & Key Plot Witness):** A young, handsome
+Aconian merchant\'s son, currently unconscious, concussed, and actively
+bleeding out from severe wounds. Once stabilized, he reveals the central
+plot twist: Archon Vandar orchestrated the fake runaway and betrayal to
+justify annexation.
+
+:\* **Nervous Neighbor (Hab 43):** A frightened elderly couple who are
+retired belt miners peeking through the reinforced viewport of the
+neighboring unit.
+
+**Player Options & Investigations:**
+
+------------------------------------------------------------------------
+
+**1. Entering before the \'Cleaning Crew\' are finished (Combat):**
+
+- The moment the two mercenaries doing \'clean up\' see you, they open
+  fire. There is no negotiation.
+- If the Players choose to sneak up on the mercenaries with opposing
+  [Stealth](Stealth "Stealth"){.wikilink} checks and succeed, the Mercs
+  talk about hurrying up because the \'target\' has been sent to **the
+  Cargo Docks** (leads to [Cargo Bay
+  9](#Cargo_Bay_9_(Climax) "Cargo Bay 9"){.wikilink}) and that once
+  **the boss** knows the target is secure he is gonna signal the fleet
+  to hurry up. And they do not want to be left behind. They also debate
+  whether Valen is already dead.
+- Mercenary combatants have the same stats as the [Mercenaries in
+  Refinery Control
+  Room](#Mercenaries_in_Refinery_Control_Room "Mercenaries in Refinery Control Room"){.wikilink}.
+
+**2. Entering after the \'Cleaning Crew\' have left (Traps):**
+
+- DC 9 [Perception](Perception "Perception"){.wikilink} check. A fight
+  with deadly weapons happened here and not that long ago. It looks like
+  at least 4 people entered forcefully and surrounded someone or
+  someones.
+- DC 10 [Perception](Perception "Perception"){.wikilink} check. You
+  notice someone peeking through their window on the other side of the
+  walkway in Hab 43. They see you enter and try to quickly hide by
+  closing the shutters again.
+- DC 13 [Perception](Perception "Perception"){.wikilink} check shows a
+  few fresh droplets of blood on the ground heading towards a locked
+  cabinet.
+- DC 15 [Perception](Perception "Perception"){.wikilink} check for all
+  the damage; it appears that this place has been scrubbed clean. You
+  can tell something happened here, but there is nothing left behind to
+  find. Nothing that could point to anybody. You get the feeling this
+  place was cleaned of evidence. You bet that not even a hair from
+  whoever did this could be found here.
+- DC 20 [Perception](Perception "Perception"){.wikilink} check: you
+  notice the trap set in the doorway into the bedroom area.
+- DC 17 [Perception](Perception "Perception"){.wikilink} or
+  [Study](Study "Study"){.wikilink} check on the locker itself can be
+  done to determine if the Locker room door is trapped.
+- DC 17 [Perception](Perception "Perception"){.wikilink} or
+  [Study](Study "Study"){.wikilink} check on the doorway into the
+  bedroom itself to determine if it is trapped.
+- DC 16 [Disable Device](Disable_Device "Disable Device"){.wikilink} or
+  [Demolitions](Demolitions "Demolitions"){.wikilink} to disable the
+  device and open the Locker door.
+
+**3. Saving Valen\'s Life (Treat Injury AND Diplomacy):**
+
+- Players must perform **both** a medical stabilization check and a
+  Diplomacy check to help Valen:
+- **Step 1: Stabilizing the Wounds (DC 20 [Treat
+  Injury](Treat_Injury "Treat Injury"){.wikilink}):** Valen is in
+  critical condition, unconscious, and dying. A player must succeed on a
+  DC 20 [Treat Injury](Treat_Injury "Treat Injury"){.wikilink} check to
+  stop the hemorrhage and revive him.
+
+:\* *Taking 20 (Time Trade-Off):* A player may choose to **Take 20** on
+this check to guarantee success, but doing so takes **20 minutes of
+in-game time**---a critical cost with the Aconian fleet rapidly
+approaching orbital strike range.
+
+- **Step 2: Calming & Interrogating (DC 13
+  [Diplomacy](Diplomacy "Diplomacy"){.wikilink}** Once conscious, Valen
+  wakes up in a state of wild panic and grief, screaming for Kaelen and
+  trying to reach for nonexistent weapons. Calming him down gets him to
+  reveal the entire conspiracy:
+
+:\* Valen tells his story:
+
+> It was Archon Vandar\... he secretly contacted me weeks ago, offering
+> money, forged credentials, and information to help Kaelen escape her
+> arranged marriage to Prince Jarek! He has dealings with my father and
+> knows that Kaelen and I have eyes for each other. She stayed at
+> Vandar\'s estate for several summer seasons. Those were wonderful
+> summers\... But Vandar is a crooked liar! It was all a setup, one he
+> knew I would stupidly fall for! His strike team stormed in here\...
+> they shot me and dragged Kaelen to the Cargo Docks. They were gonna
+> leave me to die, rig the place to blow to ensure no evidence remained.
+> It was all staged to make it look like a heroic \'rescue\' of Kaelen,
+> and blame people on the station for her kidnapping to give Prince
+> Jarek justification to annex Comet\'s Home! For Acanian, under Archon
+> Vandar\'s rule, no doubt!
+
+:\* *The Crucial Evidence:* Valen tells the party he hid a backup of his
+**Personal Encrypted Datapad**, containing the direct message logs, bank
+transfers, and safehouse blueprints provided to him by Archon
+Vandar---irrefutable proof of Vandar\'s treason. It is well hidden but
+would probably have been destroyed in the blast. **4. Interviewing the
+Neighbor (Social):**
+
+- Knocking on Hab 42 or questioning the irate elderly couple:
+- A DC 14 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check with the
+  neighbor gets them to open the latch slightly and angrily admit seeing
+  four heavily armed mercenaries in gray tactical armor dragging a
+  hooded woman into a Freight Elevator roughly twenty minutes ago. The
+  elderly couple argues about what they could have done. They note that
+  the Freight Elevator\'s computer terminal is easily accessible and
+  that someone with \"half a brain\" could retrieve today\'s logs.
+  Nobody used the Elevator in hours because everyone who would have had
+  to rush to the Customs departure port. In the hopes of \"Getting off
+  this can\".
+- A DC 12 [Computer Use](Computer_Use "Computer Use"){.wikilink} check
+  can be used to get the logs of the Freight Elevator and inform the
+  Players that roughly 20 minutes ago it picked up \'Freight\' here and
+  dropped it off at [Cargo Bay
+  9](#Cargo_Bay_9_(Climax) "Cargo Bay 9"){.wikilink}.
+
+### Cargo Bay 9 (Climax) {#cargo_bay_9_climax}
+
+> Bay 9 is a colossal, vaulted freight bay surrounded by towering stacks
+> of magnetized shipping containers, suspended gantry cranes, and the
+> deep, sub-audible hum of atmospheric force-field emitters holding back
+> the cold vacuum of space. Through the massive transparent bay doors, a
+> jagged comet tail stretches into the stars---where Prince Jarek's
+> incoming fleet will soon be arriving.
+>
+> Parked on the central landing pad is an unmarked, black-armored
+> stealth transport with its sub-light engines whining during warm-up.
+> Tied up next to a heavy cargo crate near the boarding ramp is Lady
+> Kaelen, her eyes staring daggers at the mercenary commander barking
+> orders. Beside her, a deep space comms terminal, ready to transmit a
+> signal that will seal the station's doom.
+>
+> Archon himself is nowhere to be seen. Only the Mercenary commander and
+> 2 guards around Lady Kaelen, as well as one guard in a different
+> uniform at the entryway to the ship.
+
+- **The Situation:** Archon Vandar's team is preparing to extract Lady
+  Kaelen. Their plan is to board their stealth shuttle and transmit a
+  false emergency beacon to Prince Jarek's fleet claiming Belter
+  extremists executed Valen and kidnapped Kaelen---giving the Prince the
+  casus belli to open fire and occupy Comet\'s Home.
+
+<!-- -->
+
+- **Key NPCs:**
+
+:\* **Lady Kaelen (Aconian Royal):** A fierce, proud noblewoman. Bound
+in energy restraints, but furious at Vandar\'s betrayal and ready to
+fight the moment she is freed.
+
+:\* **Mercenary Commander Drake (Vandar's Elite Enforcer):** A heavily
+cyberized mercenary commander in powered combat armor equipped with a
+heavy plasma carbine, personal kinetic shielding, and a wrist-mounted
+shock blade.
+
+:\* **Mercenaries (Equal to Party Size):** Hardened mercenaries
+providing covering fire behind reinforced freight crates.
+
+:\* **Archon Vandar\'s Personal Guard:** A hard-looking Arconian male
+who appears to possess some military guard cybernetic augmentations.
+
+**Dynamic Entry Points & Tactical Paths:**
+
+------------------------------------------------------------------------
+
+- **Path A: Ground Assault / Infiltration (Arriving from Beltway Hab
+  42):**
+
+:\* The party emerges from **Freight Elevator 9** directly onto the
+lower deck among rows of magnetized cargo containers and automated
+forklift drones.
+
+:\* *Tactical Advantage (The Evidence of Betrayal):* If the party
+stabilized Valen and carries his **Personal Encrypted Datapad**, they
+have direct proof of Vandar\'s conspiracy. If a stabilized Valen
+accompanies the party, Lady Kaelen spots him immediately. Her morale
+surges, and she distracts the guards by actively kicking her guard
+during Round 1, granting the party **Advantage (+1Ad)** on stealth for a
+surprise round.
+
+- **Path B: High-Ground Infiltration (Arriving from Refinery Control
+  Room):**
+
+:\* The party emerges from the **Overhead Maintenance Gantries** 30 feet
+above the cargo floor, overlooking the entire bay.
+
+:\* *Tactical Advantage (Environmental Overrides):* With **Chief
+Engineer Garr\'s Industrial Master Bypass Fob**, a character is aware of
+an Engineer Terminal for this Cargo Bay located in the Maintenance
+Gantries. Access and use the console (DC 10 [Computer
+Use](Computer_Use "Computer Use"){.wikilink}):
+
+::\* **Crane Drop:** Drop a 5-ton cargo container directly between the
+mercenaries and the shuttle, instantly crushing one mercenary.
+
+::\* **Atmospheric Lockdown / Blackout:** Kill the bay lights to plunge
+the dock into darkness (granting total concealment to stealthy
+characters), granting the party **Advantage (+1Ad)** on stealth for a
+surprise round.
+
+::\* **Shuttle Magnetic Landing Clamps**: override the shuttle's
+magnetic landing clamps to prevent it from taking off.
+
+**Combat Resolution:**
+
+------------------------------------------------------------------------
+
+- Once combat starts, the Commander will order one of his men to grab
+  Lady Kealen and take her, kicking and screaming, into the ship. He
+  orders the other guard, if still alive, to finish the transmission.
+  The Archon\'s Personal guard is a Shield Splicer who will use his
+  abilities to buff the mercenaries while ensuring no one gets onto the
+  ship.
+- After the first full round (not surprise round), more mercenaries come
+  out of the ship. The total number of mercenaries in combat should be
+  equal to the number of Players -1. This would include the merc that
+  got crushed if the Players use the crane.
+- Once the mercenary is done stowing away the Lady or is otherwise
+  unable to complete that order, they return to the fight.
+- If nobody was able to start the transmission after round 1, then
+  during round two Commander Drake will order one of the new mercenaries
+  from the ship to complete the task if the transmitter hasn\'t been
+  destroyed.
+- If the battle seems to be going badly, as in more than 1/2 the
+  Mercenaries are dead, or Drake is killed, Archon Vandar will order the
+  shuttle to be launched regardless of whether the transmitter has been
+  set. The players will notice the engines warm up, sounding more
+  aggressive. They have 2 rounds to board the ship at that point.
+- The transmitter is set to Prince Jarek\'s personal comms in the fleet.
+  If a Player gets a chance to inspect the transmitter, a DC 12
+  [Perception](Perception "Perception"){.wikilink} check will tell them
+  that they could use this to directly contact the Prince. Note: Players
+  should know that the only other way to contact the Prince directly is
+  via the Herald Malakor if they meet him.
+
+**The Three Story Resolutions:**
+
+------------------------------------------------------------------------
+
+- **Option A: Expose the Archon (but hide Lady Kaelen and Valen:**
+
+:\* Using the transmitter from the Cargo Bay (or Herald Malakor\'s ship
+channel), the party streams Valen\'s datapad logs and/or Vandar\'s
+recorded orders directly to Prince Jarek's flagship as the fleet
+surrounds the station.
+
+:\* *Result:* Prince Jarek halts the orbital bombardment, publicly
+arrests Archon Vandar for high treason, and withdraws the armada. The
+party commandeers the stealth transport, loading Kaelen and Valen aboard
+and launching into the outer rim before the blockade closes. The lovers
+escape together into deep space. The station faces temporary imperial
+occupation and heavy fines.
+
+- **Option B: Yield to the Empire (expose Archon and hand over Lady
+  Kaelen, and optionally Valen):**
+
+:\* The party defeats the mercenaries and hands Lady Kaelen over to
+Prince Jarek either when the imperial landing craft touches down or via
+Herald Malakor
+
+:\* *Result:* Prince Jarek publicly arrests Archon Vandar for high
+treason. The station is spared military destruction and granted generous
+trade concessions, but Kaelen is forced to marry Prince Jarek, and Valen
+is arrested for treason unless the party uses their influence to help
+him flee.
+
+#### Mercenaries in Cargo Bay 9 {#mercenaries_in_cargo_bay_9}
+
+- These are the same as [Mercenaries in Refinery Control
+  Room](#Mercenaries_in_Refinery_Control_Room "Mercenaries in Refinery Control Room"){.wikilink}.
+
+#### Mercenary Commander Drake {#mercenary_commander_drake}
+
+- **Appearance**: He wears a small but noticeable badge indicating him
+  as the leader of this troop and mission commander. Other than that, he
+  looks just like the rest of the merc crew.
+- **Size**: Medium
+- **AC**: 14
+- **DR**: 1
+- **Hit Die/HP**: d10 / 18
+- **Stats**: Str 12/Dex 14/Con 12/Wis 14/Int 8/Cha 8
+- **Initiative**: 4
+- **Locomotion**: Bipedal
+- **Feats/Talents**: [Advanced Combat
+  Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}
+  (Throw/Tackle), [Tactical
+  Shift](Character_Professions#Field_Officer's_Profession_Talents "Tactical Shift"){.wikilink},
+  [Leader of the
+  Troops](Character_Professions#Field_Officer's_Profession_Talents "Leader of the Troops"){.wikilink}
+- **Skills**: Acrobatics 2d2, Athletics 2d2, Perception 2d2, Stealth
+  2d2, Disable Deveice 2d2, Knolwedge Culture 2d2, Intimidation 2d2
+- **Items**: 4x Health Concation Syringe 2d8,
+- **Attacks**:
+
+:\* **Melee**: [Superior Steal
+Knife](Advanced_Knife#Superior_Steal_Knife "Superior Steal Knife"){.wikilink}:
+Accuracy: 1d20 + d2 + 2, Damage: d6 + 1 (K) x2/18-20
+
+:\* **Ranged**: [Tactical Laser
+Pistol](Laser_Pistol#Tactical_Laser_Pistol "Tactical Laser Pistol"){.wikilink}:
+Accuracy: 1d20 + d2 + 4, Damage: d8 + AP1 (T)
+
+:\* **Ranged**: [Laser QCB](Laser_QCB "Laser QCB"){.wikilink}: Accuracy:
+1d20 + d2 + 3, Damage: 1d12 (T) x3/20 (Fully Unload Ability)
+
+- **Techniques**:
+
+:\* **Steadfast**: Help allies maintain their focus and composure.
+
+:\* **Spotter**: Track an enemy\'s movement to guide an ally\'s aim. You
+spend your action to focus on a specific target. One designated ally
+ignores all range penalties and concealment against that target for 1
+round.
+
+#### Archon\'s Personal Guard {#archons_personal_guard}
+
+- **Appearance**: This hard-looking male Acconain sets himself apart by
+  wearing distinct clothing that appears to be some sort of uniform. The
+  sigil of Vandar\'s House is on the armor, and a short green cape flows
+  off the shoulders with the family symbol on the back as well. However,
+  where skin is exposed, there is a sign of augmentation.
+- **Size**: Medium
+- **AC**: 14
+- **DR**: 1
+- **Hit Die/HP**: d10 / 23
+- **Stats**: Str 12/Dex 12/Con 16/Wis 14/Int 8/Cha 8
+- **Initiative**: 3
+- **Locomotion**: Bipedal
+- **Feats/Talents**: [Akimbo
+  Specialist](Akimbo_Specialist "Akimbo Specialist"){.wikilink}, [Self
+  Shielded](Character_Professions#Shield_Splicer "Self Shielded"){.wikilink}
+  (7 Tmp HP), [Sense
+  Shield](Character_Professions#Shield_Splicer "Sense Shield"){.wikilink},
+  [Selfless
+  Shield](Character_Professions#Shield_Splicer "Selfless Shield"){.wikilink}
+  (7 Tmp HP),
+- **Skills**: Athletics 2d2, Perception 2d2, Sense Motive 2d2, Knolwedge
+  Culture 2d2, Intimidation 2d2, Medical 2d2
+- **Items**: 1x Health Concation Syringe 2d8, Medical Kit +1
+- **Attacks**:
+
+:\* **Melee**: [Frequency
+Sword](Advanced_Sword#Frequency_Sword "Frequency Sword"){.wikilink}:
+Accuracy: 1d20 + d2 + 2, Damage: d8 + 1 (K) x3/19-20
+
+:\* **Melee**: [Monofilament
+Dagger](Monofilament_Dagger "Monofilament Dagger"){.wikilink}: Accuracy:
+1d20 + d2 + 2, Damage: d2 + 2 + AP1 (K)
+
+:\* **Range**: [Throwing
+Stars](Throwing_Knife/Star#Assassins_Star "Throwing Stars"){.wikilink}:
+Accuracy: 1d20 + d2 + 2, Range 40ft, Damage: d6 + 1 (K) x3/20
+
+- **Techniques**:
+
+:\* **Shield Bullet**: Shoot a small concentration of force at a target.
+Range (35ft) Touch Attack Accuracy 1d20 + d2 + 1, Damage: 1d2+4
+
+:\* **Friction Field**: Increase local gravity to hinder movement. You
+target a single 5ft square within 60ft. That square is considered
+Difficult Terrain for 1 minute.
+
+:\* **Imbue Weapon**: Coat a weapon in a high-frequency vibrating field.
+The weapon deals an additional 1d6 (K) for 4 rounds
 
 ## Red Herring Locations {#red_herring_locations}
 
-### Silo 12 (Gas Silos - Red Herring) {#silo_12_gas_silos___red_herring}
+### Silo 13 (Gas Silos - Red Herring) {#silo_13_gas_silos___red_herring}
 
-:\* **The Lead:** Unregistered refinery shuttle residue at the docks.
+> The catwalks of the abandoned Fuel Storage Module rattle underfoot as
+> massive cryogenic pumps thrum deep within the station\'s structural
+> ribs. Giant, frost-covered spherical silos loom out of the shadows,
+> wrapped in a labyrinth of hissing high-pressure pipes and flickering
+> yellow hazard beacons.
+>
+> The air here is freezing cold and stinks of volatile fuel. Through the
+> chemical fog, sparks shower down from an exposed manifold where
+> several shadowy figures in pressurized welding masks are frantically
+> wrenching open an emergency siphon valve. At the sound of your
+> footsteps on the metal grate, the figures freeze---and slug-pistols
+> snap directly toward you.
 
-:\* **The Reality:** An illegal gas-ore smuggling ring run by desperate
-local miners. Players must negotiate a stand-off (DC 14
-[Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
-[Intimidate](Intimidate "Intimidate"){.wikilink}).
+- **The Situation:** Players followed the chemical soot and the
+  discarded \"Refinery Batch 88-Delta / Transfer to Silo 13\" tag from
+  Landing Pad 4, or were tracking the illicit fuel containers offloaded
+  from *The Ispan*, suspecting Kaelen was stashed in the fuel silos.
+- **The Reality:** There are no royals or fugitives here. Silo 13 is the
+  site of a frantic, illicit fuel-siphoning operation run by desperate
+  Belter wildcat miners stealing station gas to power their own escape
+  craft before the Aconian blockade hits.
+- **The Time Cost (Time-Wasters):** Navigating the freezing labyrinth of
+  industrial conduits, defusing the armed standoff, and inspecting the
+  fuel tanks burns **1.5 to 2 hours** of precious in-game investigation
+  time before the fleet arrives.
 
-:\* **The Payoff:** The miners bribe the players with 2,000 ISC to look
-the other way and mention their buyer operates out of the **Smuggler\'s
-Den**.
+<!-- -->
 
-### Consulate Office (Upper Promenade - Red Herring) {#consulate_office_upper_promenade___red_herring}
+- **Key NPCs:**
 
-:\* **The Lead:** The official royal suite where an Aconian VIP might
-reside.
+:\* **Farek (Cryous Wildcat Miner):** A hulking, four-armed female
+Cryous Belter covered in frost-resistant work overalls, wielding a heavy
+industrial spanner and a primed rivet gun. Stressed, defensive, and
+desperate to secure enough fuel for his crew and family to flee the
+system.
 
-:\* **The Reality:** The suite is empty of royals, occupied only by a
-panicked diplomat who lost his exotic pet star-ferret.
+**Player Options & Investigations:**
 
-:\* **The Payoff:** Capturing the ferret (DC 12
-[Acrobatics](Acrobatics "Acrobatics"){.wikilink} or
-[Survival](Survival "Survival"){.wikilink}) earns the diplomat\'s
-gratitude. He rewards the players with a Tech Level 2 item and mentions
-seeing Valen at the **Gilded Comet Casino**.
+------------------------------------------------------------------------
+
+**1. De-escalating the Armed Standoff (Social Encounter):**
+
+- Farek\'s crew is on hair-trigger alert, assuming the players are
+  station security or corporate enforcers sent to seize their stolen
+  fuel.
+- A DC 14 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} check calms
+  Farek down and convinces him that the party doesn\'t care about stolen
+  fuel and is only tracking a missing person.
+- A DC 14 [Intimidate](Intimidate "Intimidate"){.wikilink} check
+  out-muscles Farek with an aggressive show of force, causing the
+  wildcatters to lower their weapons and back away from the valve.
+- A DC 13 [Bluff](Bluff "Bluff"){.wikilink} check convinces the miners
+  that the party is off-duty inspectors willing to turn a blind eye.
+
+**2. Questioning Farek & The Reality (No Clues / Dead End):**
+
+- If the players ask about *The Ispan*, the Pad 4 cargo, or missing
+  Aconian nobles:
+
+:\* Farek spits onto the frosted grate and laughs bitterly: \"Royals?
+Down in the freezing muck of Silo 13? You\'re out of your minds. **The
+Ispan** brought in three leaky, half-sealed containers of raw volatile
+gas to Pad 4 earlier. Our crew bought the lot off a black-market broker
+on the spot---everyone down here is frantic for whatever fuel they can
+get before the armada seals the sector. I was right here when we hauled
+the tanks in. It was just dirty, leaking gas cylinders and coughing
+dockhands. Nobody saw any fancy royals.\"
+
+:\* A DC 13 [Perception](Perception "Perception"){.wikilink} or DC 13
+[Study](Study "Study"){.wikilink} check confirms the open silo contains
+only half-filled tanks of volatile liquid gas and siphoning hoses---zero
+signs of any passengers, disguises, or royal presence. **2. Optional
+Combat:**
+
+- If combat happens, the smugglers will try to run if 1/2 or more fall.
+
+**3. The Payoff:**
+
+- If combat doesn\'t happen, Farek offers the party old gas masks they
+  have spare.
+- If combat does happen, the Players find weapons, gas masks, and 400ISK
+  on the bodies.
+
+#### Smuggulars
+
+- **Appearance**: Ragged and dirted clothes cover a variety of shaped
+  bodies. A ragtag team of different peoples working together for
+  survival or just for money. They have plasma cutters or containers in
+  their hands. Pistols on their sides, and gas masks hanging from their
+  necks.
+- **Size**: Medium
+- **AC**: 14
+- **DR**: 0
+- **Hit Die/HP**: d8 / 15
+- **Stats**: Str 12/Dex 14/Con 12/Wis 10/Int 8/Cha 8
+- **Initiative**: 2
+- **Locomotion**: Bipedal
+- **Feats**: [Point Blank
+  Shot](Point_Blank_Shot "Point Blank Shot"){.wikilink}
+- **Skills**: Perception 2d2, Computer Use 1d2, Stealth 2d2, Disable
+  Deveice 2d2, Knolwedge Culture 2d2, Intimidation 2d2
+- **Items**: Gase Mask, Plasma Torch
+- **Attacks**:
+
+:\* **Melee**: [Advanced
+Knife](Advanced_Knife "Advanced Knife"){.wikilink}: Accuracy: 1d20 +
+d2 + 2, Damage: d6 + 1 (K)
+
+:\* **Ranged**: [Energy
+Blaster](Energy_Blaster "Energy Blaster"){.wikilink}: Accuracy: 1d20 +
+d2 + 4, Damage: d8 + 2 (E)
+
+- **Farek** is a Smuggler but has a few changes to his Character.
+- **AC**: 15
+- **Initiative**: 3
+- **Locomotion**: Serpentine
+- **Attacks**:
+
+:\* **Ranged**: [Corrosive
+Shotgun](Corrosive_Shotgun "Corrosive Shotgun"){.wikilink}: Accuracy
+1d20 + 4, Damage: 1d12 + 1 x2/19-20 (C) (It deals Chemical damage and
+gains \'Linger\' - 1d4 for 1d3 rounds)
+
+### Consulate Office (VIP Suites, Gilded Comet - Red Herring) {#consulate_office_vip_suites_gilded_comet___red_herring}
+
+> The top floor of the Gilded Comet Casino is a secluded enclave of
+> silent, deep-pile crimson carpeting, soft ambient brass lighting, and
+> polished synth-mahogany doors inlaid with gilded Aconian sunburst
+> crests. Brass memorial plaques along the wood-paneled hallway proudly
+> commemorate the \"Consulate\'s Quarters\"---a lingering title from
+> centuries past.
+>
+> Unlike the chaotic, smoke-filled gambling halls below, this corridor
+> is deathly quiet. But as you step toward the high-end suites, the
+> silence is broken by a muffled crash and frantic shrieking coming from
+> one set of double doors, while the neighboring grand suite stands
+> chillingly ajar in total darkness.
+
+- **The Backstory:** Centuries ago, when Comet\'s Home was first
+  constructed, an Aconian imperial ambassador arrived to negotiate trade
+  treaties. The station lacked formal diplomatic housing, so the
+  ambassador was put up in the casino\'s penthouse. He loved the games,
+  drinks, and luxury so much that he flatly refused to leave even after
+  a proper embassy was built. Ever since, the casino\'s ultra-luxury VIP
+  wing has been traditionally known as the **\"Consulate Office\"**.
+- **The Reality:** There are several private suites on this floor, but
+  the party only has time and access to investigate two specific suites:
+
+1.  **Suite 101 (The Grand Imperial Suite):** Checked out to **Archon
+    Vandar**, a high-ranking Aconian dignitary who covertly arrived with
+    a heavily armed squad officially registered as his \"private
+    security\" ahead of Prince Jarek's armada.
+2.  **Suite 104 (The Diplomatic Suite):** Occupied by **Envoy Cassian**,
+    a pompous, low-ranking trade delegate dealing with a domestic
+    crisis.
+
+- **The Time Cost (Time-Wasters):** Thoroughly clearing, tossing, and
+  investigating both suites burns 1 hour of time.
+
+<!-- -->
+
+- **Key NPCs:**
+
+:\* **Envoy Cassian (Aconian Trade Delegate):** A vain, cowardly
+bureaucrat in ruffled silks and a powdered wig-crest who is on the
+station merely to audit silicate tariffs. Completely self-absorbed and
+oblivious to the broader political crisis, assuming any visitors are
+emergency hotel staff sent to rescue his room.
+
+:\* **\"Nibbles\" (Exotic Void-Ferret):** Cassian\'s hyperactive,
+six-legged indigo alien pet, currently terrorizing Suite 104.
+
+**Player Options & Investigations:**
+
+------------------------------------------------------------------------
+
+**1. Suite 101: Archon Vandar's Abandoned Staging Room (Perception /
+Study):**
+
+- Stepping into the grand suite reveals a luxurious penthouse that was
+  recently used as an operational staging post and abandoned in extreme
+  haste.
+- A DC 13 [Perception](Perception "Perception"){.wikilink} check finds
+  heavy boot scuffs. And what appears to be weapon crates, empty
+  tactical ration packs, and other containers commonly used to hold ammo
+  and tactical gear.
+- A DC 15 [Perception](Perception "Perception"){.wikilink} or
+  [Study](Study "Study"){.wikilink} see check baggage tags with names on
+  it.
+
+:\* *The Discovery:* The suite was registered to **Archon Vandar**,
+accompanied by an elite squad logged on paper as his \"private security
+detail.\" The registration stamps reveal they arrived on the station
+just prior to the emergency broadcast---a remarkably suspicious arrival
+time that predates the official fleet mobilization. A Knowledge
+[Culture](Knowledge#Culture "Culture"){.wikilink}, [Current
+Events](Knowledge#Current_Events "Current Events"){.wikilink}, or
+[History](Knowledge#History "History"){.wikilink} check DC15 will reveal
+too the Players that Archon Vandar is an Anconian Archon (a form of Lord
+or Nobleman) of a neighboring series of systems that is the edge of the
+Anconian-controlled space. He and his father before him tried to annex
+this system in the past, when the Anconians were an Empire. Now he does
+lots of trade and brings wealth to the system. **2. Suite 104: Envoy
+Cassian & The Void-Ferret Chase (Skill Encounter):**
+
+- Entering the neighboring suite reveals Envoy Cassian standing atop a
+  velvet sofa with his robes hitched up, screaming in terror as his
+  exotic six-legged void-ferret darts across ceiling chandeliers,
+  knocking over antique vases and shredding silk tapestries.
+- Cassian refuses to speak until his pet is caught:
+
+:\* A DC 14 [Acrobatics](Acrobatics "Acrobatics"){.wikilink} or
+[Athletics](Athletics "Athletics"){.wikilink} check leaps across
+furniture to cut off the ferret as it darts along high curtain rods.
+
+:\* A DC 15 [Survival](Survival "Survival"){.wikilink} or [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} check corners the
+agile beast behind an overturned credenza or lures it into an emergency
+carrier with luxury sweetmeats.
+
+- **Questioning Cassian (No Clues / Dead End):**
+
+:\* Once calmed with a glass of synth-wine, Cassian scoffs at any
+mention of Lady Kaelen: \"Lady Kaelen? On this dreary mining rock?
+Absolute nonsense! If a royal of the Old Dynasty were here, the Imperial
+Protocol Directorate would have requisitioned this entire floor weeks
+ago. I am merely auditing silicate tariffs! I know nothing of runaways
+or conspirators.\"
+
+:\* A [Sense Motive](Sense_Motive "Sense Motive"){.wikilink} check
+confirms he is an utterly clueless bureaucrat. **3. The Payoff
+(Reward):**
+
+- Relieved and grateful for the rescue of his prized pet, Cassian
+  rewards the party with an **Ornate Aconian Silk Sash** (a luxury
+  accessory worth **400 ISC** that grants **Advantage +1AD** on social
+  checks with high-society Aconians) and **1000 ISC**.
 
 ### Hangar B (Herald\'s Vessel - Red Herring) {#hangar_b_heralds_vessel___red_herring}
 
-:\* **The Lead:** An official Aconian vessel parked in the private
-docks.
+> Beyond the heavy magnetic airlock of Private Hangar B, the grime of
+> the mining station gives way to a spotless, white-enameled executive
+> berth. Resting atop magnetic landing struts is a sleek, chrome-hulled
+> Aconian courier yacht. Its polished hull gleams under brilliant white
+> spotlights, embossed with the gold-leaf crest of Prince Jarek's royal
+> house.
+>
+> Two armored imperial sentries in ceremonial crimson cuirasses stand at
+> attention at the bottom of the boarding ramp, their kinetic halberds
+> gleaming and visor optics scanning the gantry. Through the yacht's
+> illuminated cockpit viewport, a rigid figure in high-collared
+> diplomatic robes can be seen pacing back and forth, dictating into a
+> holographic recording terminal.
 
-:\* **The Reality:** The ship of Prince Jarek's personal Herald, who is
-here to deliver the formal martial law declaration.
+- **The Situation:** Players followed rumors from the Smuggler\'s Den
+  that an ornate Aconian royal transport is docked in Hangar B,
+  suspecting Lady Kaelen might be hiding aboard her own vessel.
+- **The Reality:** The vessel does not belong to Kaelen. It is the
+  personal courier ship of **Herald Malakor**, the formal envoy
+  dispatched by Prince Jarek to deliver the official martial law
+  declaration and demand the station\'s unconditional surrender once the
+  fleet arrives.
+- **The Time Cost (Time-Wasters):** Infiltrating the private hangar,
+  bypassing or deceiving the elite guards, and searching the ship\'s
+  comms logs burns **1.5 to 2 hours** of precious in-game time without
+  providing any clues to Lady Kaelen\'s current hideout.
 
-:\* **The Payoff:** Hacking the ship\'s comms logs (DC 13 [Computer
-Use](Computer_Use "Computer Use"){.wikilink}) reveals the fleet\'s
-arrival schedule (granting the players 1 extra hour of in-game
-investigation time) and links the Herald\'s guards to the **Refinery
-Control Room**.
+<!-- -->
+
+- **Key NPCs:**
+
+:\* **Herald Malakor (Prince Jarek's Royal Envoy):** A stern, haughty
+Aconian herald with rigid posture, wearing gold-embroidered formal
+heraldic robes. Completely loyal to Prince Jarek. He genuinely believes
+Lady Kaelen was violently abducted by Belter terrorists and views
+everyone on the station as mutinous conspirators.
+
+:\* **Imperial Honor Guards (2 Sentries):** Disciplined, stoic Aconian
+palace guards in heavy armor equipped with stun-halberds and sidearms.
+
+- **Player Options & Investigations:**
+- DC 13 [Perception](Perception "Perception"){.wikilink} check informs
+  the Players that these guards are extremely well armed and armored.
+  While fancy and ceremonial-looking, they are also practical.
+- DC 16 [Perception](Perception "Perception"){.wikilink} check: the Ship
+  is also equally deadly. While at a glance it appears to be a civilian
+  yacht, it is extremely well-armed and armored, much like the fancy
+  garments worn by the Knights guarding it.
+
+------------------------------------------------------------------------
+
+**1. Gaining Access to the Hangar (Stealth / Social):**
+
+- The boarding ramp is secured by the two honor guards and a biometric
+  gangway seal. Will require confronting the Herald to draw the guards\'
+  attention. This confrontation doesn\'t need to be violent.
+- A DC 20 [Stealth](Stealth "Stealth"){.wikilink} check allows the party
+  to slip across the overhead gantry walkways and bypass the executive
+  slip\'s motion sensors to reach the ship\'s auxiliary airlock.
+- Once in, the Players find the command/flight deck to currently be
+  unoccupied. The only other persons onboard are crew. Most of whom are
+  sleeping. The big arrival isnt\' for some hours. The Players can hack
+  the terminals to look for anything else.
+- DC 18 [Computer Use](Computer_Use "Computer Use"){.wikilink} gets
+  access to the encrypted imperial military channel, revealing Prince
+  Jarek's fleet approach vectors and real-time jump countdown. But this
+  only confirms what everyone already knows. This also tells the Players
+  that this ship is in direct contact with the fleet and Prince Jarek.
+
+**1. Confronting Herald Malakor (No Clues / Dead End):**
+
+- The Herald is waiting for your government to send an official to
+  discuss terms and prepare the people for annexation. He immediately
+  judges you and looks down at you when you approach. \"So the
+  government\'s best is just more trash. How predictable. Although it
+  isn\'t your fault, I suppose. You are a small, pitiful system. Skill I
+  expected more.\"
+- If the party speaks with Malakor or demands to know if Lady Kaelen is
+  aboard. Malakor is utterly indignant and sneers at the party: \"You
+  dare accuse the Prince\'s own herald of harboring the abducted Lady?
+  She was kidnapped by you station vermin! Prince Jarek's wrath is
+  already upon you. I am here solely to record the formal terms of
+  unconditional surrender. When the armada arrives, this entire rock
+  will be placed under imperial martial governance! I am in direct comms
+  with the Prince. If you wish to be on his good side, I would start
+  with being on mine! If your people can present the Lady unharmed, then
+  that would go a long way to avoiding anything unpleasant.\"
+
+:\* A [Sense Motive](Sense_Motive "Sense Motive"){.wikilink} check
+confirms Malakor is completely truthful---he is fiercely loyal to Prince
+Jarek, knows nothing of Valen or Archon Vandar's plot, and has zero
+knowledge of where Kaelen actually is.
 
 ## Utility & Flavor Locations {#utility_flavor_locations}
 
@@ -413,7 +1937,7 @@ headache.
 [Sleight_of_Hand](Sleight_of_Hand "Sleight_of_Hand"){.wikilink}):**
 Accessing Jax\'s unlocked terminal while he is distracted allows players
 to pull the recent sales log, confirming the hazard suits were billed
-under a stolen employee ID registered to **Beltway Refhab 42**.
+under a stolen employee ID registered to **Beltway Hab 42**.
 
 :\* **4. Specialized Scavenger Tools:**
 
@@ -558,8 +2082,8 @@ and reveals station rumors about Aconian agents lurking near the docks.
 
 > Stepping through the airlock into the Bio-Dome is like leaving the
 > mining station behind entirely. The ever-present mechanical grinding
-> and the harsh smell of ozone vanish, replaced by the rich aroma of
-> damp loamy soil, crushed pine needles, and sweet natural oxygen.
+> and harsh industrial smells vanish, replaced by the rich aroma of
+> damp, loamy soil, crushed pine needles, and sweet, natural oxygen.
 >
 > Underneath a reinforced geodesic dome looking out onto the silent,
 > star-filled void and jagged asteroid belts, winding stone pathways
@@ -601,7 +2125,7 @@ offers them cups of freshly brewed \"Deep Bloom Tea\" (10 ISC or offered
 free to friendly guests).
 
 ::\* Drinking the herbal tea grants **Advantage (+1Ad)** on saving
-throws against poison, sickness, or fatigue for the next 4 hours.
+throws against poison, sickness, or fatigue for the next 8 hours.
 
 :\* **3. Private Planning & Anti-Surveillance:**
 

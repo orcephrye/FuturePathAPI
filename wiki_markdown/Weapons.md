@@ -1139,7 +1139,8 @@ explosion.
 
 Crafting
 : All Charge crafting uses the [Craft
-  Chemical](-_Chemical "Craft Chemical"){.wikilink} skill.
+  Chemical](-_Chemical "Craft Chemical"){.wikilink} or
+  [Demolitions](Demolitions "Demolitions"){.wikilink} skill.
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
 | Table: Charges Listed by Tech Level                                                                                                          |
@@ -1268,7 +1269,8 @@ attributes for weapon use, such as \'Sticky\'.
 Crafting
 : All Casing uses either
   [Structural](-_Structural "Structural"){.wikilink} or
-  [Mechanical](-_Mechanical "Mechanical"){.wikilink}. The Character can
+  [Mechanical](-_Mechanical "Mechanical"){.wikilink} or
+  [Demolitions](Demolitions "Demolitions"){.wikilink}. The Character can
   choose which crafting skill to use.
 
 +--------------------------------------------------------------------------------------------------------------------------------------+
@@ -1363,7 +1365,8 @@ skill checks, making it harder to disable.
 Crafting
 : All Casing uses either
   [Electronic](-_Electronic "Electronic"){.wikilink} or
-  [Mechanical](-_Mechanical "Mechanical"){.wikilink}. The Character can
+  [Mechanical](-_Mechanical "Mechanical"){.wikilink} or
+  [Demolitions](Demolitions "Demolitions"){.wikilink}. The Character can
   choose which crafting skill to use.
 
 +------------------------------------------------------------------------------------------------------------------+

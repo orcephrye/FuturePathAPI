@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Kessa Steeltooth",
     "playerName": "",
     "species": "Murids",
+    "homeworld": "",
     "charPath": "Path of No Path (The Freelancer)",
     "pathLevel": "1",
     "classList": "Freelancer (1)",
@@ -35,9 +38,9 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "9",
+    "maxHP": "14",
     "tempHP": "",
-    "currentHP": "9",
+    "currentHP": "14",
     "nonlethalHP": ""
   },
   "attributesCard": {
@@ -277,12 +280,12 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Laser Pistol",
-        "Lvl": "1",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -303,7 +306,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Jobless)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -318,12 +321,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Jobless",
-    "currentWealthScore": "250",
-    "liquidCredits": "0",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -345,6 +344,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears."
+  },
   "pathTalentsCard": {
     "pathTalentsList": []
   },
@@ -356,10 +358,11 @@
       }
     ]
   },
-  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "23",
+    "currentWealthScore": "250",
+    "liquidCredits": "0",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -412,38 +415,6 @@
       }
     ]
   },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -457,9 +428,6 @@
         "techniquesList": []
       }
     ]
-  },
-  "backstoryCard": {
-    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears."
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -485,6 +453,39 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "professionsCard": [],
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -501,6 +502,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Jobless",
+    "currentWealthScore": "250",
+    "liquidCredits": "0",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

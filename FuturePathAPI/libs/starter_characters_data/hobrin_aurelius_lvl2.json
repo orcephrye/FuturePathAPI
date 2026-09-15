@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Hobrin Aurelius",
     "playerName": "",
     "species": "Aconian",
+    "homeworld": "",
     "charPath": "Path of Charisma (Charismatic Hero)",
     "pathLevel": "2",
     "classList": "Swindler (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "14",
+    "maxHP": "18",
     "tempHP": "",
-    "currentHP": "14",
+    "currentHP": "18",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+0",
     "passivePerception": "7",
     "inertia": "",
@@ -132,7 +135,7 @@
       {
         "Name": "Disguise",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "CHA",
         "MiscMod": 1
       },
@@ -188,7 +191,7 @@
       {
         "Name": "Perception",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -277,12 +280,12 @@
   },
   "weaponsCard": {
     "meleeProfCount": 2,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
         "Name": "Shock Whip",
         "Lvl": "2",
-        "Damage": "d6 + 1",
+        "Damage": "d6+1",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -293,17 +296,17 @@
         "Notes": "Flexible Chain of Energy (10ft Reach)"
       },
       {
-        "Name": "Energy Blaster",
-        "Lvl": "3",
-        "Damage": "d8+2",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "Electric",
+        "Type": "T",
         "Range": "300",
         "isMelee": false,
         "Ammo": "6",
-        "Notes": "Side Arm/Laser/Versatile"
+        "Notes": "Laser/Versatile"
       }
     ]
   },
@@ -316,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Academic)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -337,12 +340,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "14,000",
-    "liquidCredits": "8",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -351,6 +350,9 @@
         "Description": "Planetary Adaption: Dark World - You gain darkvision out to a range of 60 feet. No color"
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -372,29 +374,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Swindler",
-      "Level": "",
-      "Affinities": [
-        "DEX",
-        "CHA"
-      ],
-      "Talents": [
-        {
-          "Name": "Cheat Fate",
-          "Description": "At Swindler 1st level, fortune favors the bold. Once per day, you may re-roll one roll you have just made before the result is announced. You must take the result of the re-roll. At 8th level, this can be used twice per day."
-        },
-        {
-          "Name": "Sneak Attack",
-          "Description": "At 1st level, you deal extra 1d4 points of damage on successful melee or light ranged weapon attacks against an unaware or flanked opponent. This can only be done once per round. This extra damage increases to +2d4 at 4th level, +3d4 at 7th level, and +4d4 at 10th level."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "35",
+    "currentWealthScore": "14,000",
+    "liquidCredits": "8",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -503,9 +487,40 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Young (for that species 45) male. Hobrin is a student in his final year of academia. His family's surname is rich and ancient. His family is made up of dignitaries and politicians, a coveted profession that Hobrin has majored in. His second major, and the one he is preparing to graduate from, is Aconians' second-favorite pastime: History. He cares more deeply for this than his parents would prefer. And after having his final thesis rejected, he feels he must venture forth into the galaxy to help prove his ideas of the origins of life in this galaxy. He has dark red hair, a long beard, and bright White eyes."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Swindler",
+      "Level": "",
+      "Affinities": [
+        "DEX",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Cheat Fate",
+          "Description": "At Swindler 1st level, fortune favors the bold. Once per day, you may re-roll one roll you have just made before the result is announced. You must take the result of the re-roll. At 8th level, this can be used twice per day."
+        },
+        {
+          "Name": "Sneak Attack",
+          "Description": "At 1st level, you deal extra 1d4 points of damage on successful melee or light ranged weapon attacks against an unaware or flanked opponent. This can only be done once per round. This extra damage increases to +2d4 at 4th level, +3d4 at 7th level, and +4d4 at 10th level."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -517,9 +532,6 @@
       "Techniques": []
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
   "detractorsCard": {
     "detractorsList": []
   },
@@ -537,24 +549,6 @@
     "mpSpent": "0",
     "drawbacksList": [],
     "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -580,6 +574,13 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
     "theme": "aconian",
     "autoSwitchTheme": true,
@@ -592,6 +593,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Academic",
+    "currentWealthScore": "14,000",
+    "liquidCredits": "8",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

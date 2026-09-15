@@ -604,7 +604,7 @@ Below is a graph of commonly used explosives. Below that is the 'Making your Own
 
 This shows what the damage die will be. For example: Xd6 or Xd10. It doesn't say how many of those dice. This also indicates the damage type. i.e., Thermal, Chemical, etc. This also informs the user of the damage range. There can also be Charge Attributes that can affect the explosion.
 
-;Crafting: All Charge crafting uses the [[-_Chemical|Craft Chemical]] skill.
+;Crafting: All Charge crafting uses the [[-_Chemical|Craft Chemical]] or [[Demolitions]] skill.
 
 {| class="mw-collapsible mw-collapsed wikitable"
 ! colspan="6" | Table: Charges Listed by Tech Level
@@ -717,7 +717,7 @@ This shows what the damage die will be. For example: Xd6 or Xd10. It doesn't say
 
 This tells the user the maximum amount of charge that can be used. IE: The number of damage die like 2d6 or 4d10. This also informs the user if the device is throw-able, place-able, or both. If the device is placeable, the Casing also provides the default DC for a Perception skill check to notice it. This also informs the user of the area of effect, whether circular or cone-shaped. It can also provide additional attributes for weapon use, such as 'Sticky'.
 
-;Crafting: All Casing uses either [[-_Structural|Structural]] or [[-_Mechanical|Mechanical]]. The Character can choose which crafting skill to use.
+;Crafting: All Casing uses either [[-_Structural|Structural]] or [[-_Mechanical|Mechanical]] or [[Demolitions]]. The Character can choose which crafting skill to use.
 
 {| class="mw-collapsible mw-collapsed wikitable"
 ! colspan="6" | Table: Casings (Sorted by Tech Level)
@@ -808,7 +808,7 @@ This tells the user the maximum amount of charge that can be used. IE: The numbe
 
 This controls when and how the device is activated. For throw-able devices, this can include attributes such as 'On Contact' or 'Chasing'. For Place-able devices, this can include attributes such as 'Laser trip wire', 'Motion Sensitive', or 'Remote Controlled'. This can also provide a bonus to the DC check against Disable Device skill checks, making it harder to disable.
 
-;Crafting: All Casing uses either [[-_Electronic|Electronic]] or [[-_Mechanical|Mechanical]]. The Character can choose which crafting skill to use.
+;Crafting: All Casing uses either [[-_Electronic|Electronic]] or [[-_Mechanical|Mechanical]] or [[Demolitions]]. The Character can choose which crafting skill to use.
 
 {| class="mw-collapsible mw-collapsed wikitable"
 ! colspan="4" | Table: Detonators (Sorted by Tech Level)

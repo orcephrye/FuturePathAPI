@@ -1,5 +1,4 @@
 ''' <span style="color:#ff0000"> SPOILER WARNINGS THIS IS FOR GAME MASTERS ONLY </span>  '''
-''' <span style="color:#ff0000"> All Artwork is temparory AI Generated Art using Gemini. This will be replaced by paid-for human artwork. </span>  '''
 
 [[File:Scavenger_One_Shot_StationView.jpg|1408x768px]]
 
@@ -240,7 +239,6 @@ Suddenly, a scratching of metal can be heard over the sounds of the battle. A ru
 <div style="clear: both"></div>
 
 ==== Corrupted Grayling Scientist ====
-[[File:Scavenger_One_Shot_Graylings.jpg|border|right|939x512px]]
 * '''Appearance''': Short with grey skin, and large dark eyes. Their white lab coats hide more colorful tattoos. However, their skin and tattoos are hard to see through the weird, glittering substance covering most of their body. These Graylings have a sickly and crazed look about them.
 * '''Size''': Medium
 * '''AC''': 11

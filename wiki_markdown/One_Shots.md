@@ -29,8 +29,6 @@ Shot](Scavenger_One_Shot "GM's Guide: Scavenger One Shot"){.wikilink}
 
 ### Special Encounters, Ground Combat \[Level 2-3\] {#special_encounters_ground_combat_level_2_3}
 
-`<span style="color:#ff0000">`{=html} \* Incomplete `</span>`{=html}
-
 Your station is under threat! The
 [Aconians](Species#Aconians "Aconians"){.wikilink} have raised a small
 navy to come to your small sector of space and enforce martial law. Why?
@@ -54,17 +52,17 @@ Pain](A_Royal_Pain "GM's Guide: A Royal Pain"){.wikilink}
 
 `<span style="color:#ff0000">`{=html} \* Incomplete `</span>`{=html}
 
-The galaxy is a big place. And often the little systems on the edge are
-forgotten about. Over 100 years ago, colonists came to a system rich
-with resources, especially on one lifeless planet. They built homes for
-themselves in orbit around the planet and mined it for its wealth, with
-the simple goal of striking it rich and living the dream out on the
-frontier. But eventually all good things must come to an end. Pirates
-showed up to take their \'share\' of the bounty provided by the
+The galaxy is a big place. Often, the little systems on the edge are
+forgotten. Over 100 years ago, colonists arrived in a system rich with
+resources, deep in the outer reaches of known space. They built homes
+for themselves in orbit around a lifeless planet and mined it for its
+wealth, with the simple goal of striking it rich and living the dream
+out on the frontier. But eventually all good things must come to an end.
+Pirates showed up to take their \'share\' of the bounty provided by the
 hard-working denizens of the system. Their requests became demands, and
 failure to comply was followed by violence.
 
-Will heroes of the citizenry rise up? Or will a plea be heard by some
+Will the citizenry\'s heroes rise up? Or will a plea be heard by some
 willing mercenary group brave enough to deal with these bandits? It is
 up to you!
 

@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Ada (Ovex name: OVX-9482)",
     "playerName": "",
     "species": "Ovex",
+    "homeworld": "",
     "charPath": "Ovex Path (Assistance Module)",
     "pathLevel": "2",
     "classList": "Combat Medic (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "11",
+    "maxHP": "15",
     "tempHP": "",
-    "currentHP": "11",
+    "currentHP": "15",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+3",
     "passivePerception": "10",
     "inertia": "",
@@ -76,7 +79,7 @@
       {
         "Name": "Computer Use",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -118,7 +121,7 @@
       {
         "Name": "Diplomacy",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "CHA",
         "MiscMod": 0
       },
@@ -201,7 +204,7 @@
       },
       {
         "Name": "Sense Motive",
-        "Favored": false,
+        "Favored": true,
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -285,21 +288,21 @@
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 2,
+    "meleeProfCount": 1,
     "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Monofilament Dagger(s) x2",
-        "Lvl": "2",
-        "Damage": "d2",
-        "Accuracy": "1",
-        "AP": "1",
+        "Name": "Improved Knife(s) x2",
+        "Lvl": "1",
+        "Damage": "d4",
+        "Accuracy": "",
+        "AP": "",
         "Critical": "x2/20",
         "Type": "K",
-        "Range": "M",
+        "Range": "",
         "isMelee": true,
         "Ammo": "-",
-        "Notes": "Finesse Weapon, (+1 to Init when holding)"
+        "Notes": ""
       },
       {
         "Name": "Personal Pistol",
@@ -325,15 +328,9 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Student)",
         "Rank": 2,
         "Key Ability": "WIS",
-        "MiscMod": 0
-      },
-      {
-        "Name": "Knowledge (Tech)",
-        "Rank": 0,
-        "Key Ability": "-",
         "MiscMod": 0
       }
     ],
@@ -346,12 +343,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Student",
-    "currentWealthScore": "3,500",
-    "liquidCredits": "2",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -360,6 +353,9 @@
         "Description": "Immune to Psionic Mind affects, Starvation. Full rest takes 4 hours. Do not need to breath."
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "On a personal journey to, in the eyes of the Ovex Nexus, reach maturity. Ada, or, as the Nexus knows it, OVX-9482-Sub-1850, is exploring the known universe, posing as a common sentient biological lifeform. This Ovex chose the appearance of an Acconian female. She is well-rounded at the waist, short, with long, bright, multi colored hair."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -381,29 +377,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Combat Medic",
-      "Level": "1",
-      "Affinities": [
-        "DEX",
-        "WIS"
-      ],
-      "Talents": [
-        {
-          "Name": "Medic!",
-          "Description": "At Combat Medic 1st level, the Combat Medic can more quickly help people in need of aid. Medical skill checks can now be done as a Bonus Action that is granted after performing a Standard Action (Move). The Medic does not need to move any distance to gain this Bonus Action (e.g., preparing tools while standing next to an ally). This only counts for restoring HP, not for stabilizing a dying character.\nNote: While using skills or items in combat normally requires a Standard Action, this feature allows the Medical skill to be performed specifically as a Bonus Action following a move.\n\nWhen a natural 20 is rolled for a Medical skill check, an Inertia point is earned, and the Health restored is the maximum possible."
-        },
-        {
-          "Name": "Quick Chemistry",
-          "Description": "At 1st level, the Combat Medic can craft general chemicals and pharmaceuticals more quickly. When using the Craft (Chemical) or Craft (Pharmaceutical) skill to cook General Equipment items, the Combat Medic reduces the cooking/brewing time by 1/2.\nAt 5th level, the Combat Medic reduces the cooking/brewing time of masterworked chemical concoctions by half."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "37",
+    "currentWealthScore": "3,500",
+    "liquidCredits": "2",
     "equipmentList": [
       {
         "Name": "Backpack (Medium)",
@@ -456,41 +434,6 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "On a personal journey to, in the eyes of the Ovex Nexus, reach maturity. Ada, or, as the Nexus knows it, OVX-9482-Sub-1850, is exploring the known universe, posing as a common sentient biological lifeform. This Ovex chose the appearance of an Acconian female. She is well-rounded at the waist, short, with long, bright, multi colored hair."
-  },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -505,10 +448,26 @@
       }
     ]
   },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
-  },
+  "professionsCard": [
+    {
+      "Title": "Combat Medic",
+      "Level": "1",
+      "Affinities": [
+        "DEX",
+        "WIS"
+      ],
+      "Talents": [
+        {
+          "Name": "Medic!",
+          "Description": "At Combat Medic 1st level, the Combat Medic can more quickly help people in need of aid. Medical skill checks can now be done as a Bonus Action that is granted after performing a Standard Action (Move). The Medic does not need to move any distance to gain this Bonus Action (e.g., preparing tools while standing next to an ally). This only counts for restoring HP, not for stabilizing a dying character.\nNote: While using skills or items in combat normally requires a Standard Action, this feature allows the Medical skill to be performed specifically as a Bonus Action following a move.\n\nWhen a natural 20 is rolled for a Medical skill check, an Inertia point is earned, and the Health restored is the maximum possible."
+        },
+        {
+          "Name": "Quick Chemistry",
+          "Description": "At 1st level, the Combat Medic can craft general chemicals and pharmaceuticals more quickly. When using the Craft (Chemical) or Craft (Pharmaceutical) skill to cook General Equipment items, the Combat Medic reduces the cooking/brewing time by 1/2.\nAt 5th level, the Combat Medic reduces the cooking/brewing time of masterworked chemical concoctions by half."
+        }
+      ]
+    }
+  ],
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -533,6 +492,42 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
     "theme": "cosmic-dark",
     "autoSwitchTheme": true,
@@ -545,6 +540,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": false,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Student",
+    "currentWealthScore": "3,500",
+    "liquidCredits": "2",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

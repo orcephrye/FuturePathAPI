@@ -1,7 +1,7 @@
 You can incapacitate foes with a vice-like pinch. For a full list of
 Feats, go to the [Feats](Feats "Feats"){.wikilink} page.
 
-**Prerequisites**: Combat Martial Arts, Advantage Die 1d8
+**Prerequisites**: Combat Martial Arts, Advantage Die 1d4+4
 
 **Benefit**: You make an unarmed attack against a living creature. If
 the attack succeeds, the target takes no damage but must succeed on a

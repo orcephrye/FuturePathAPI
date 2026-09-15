@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisite**: Melee Weapon Focus, Advantage Die 1d8.
+**Prerequisite**: Melee Weapon Focus, Advantage Die 1d4+4
 
 **Benefit**: If the Character gets off a successful attack, the target
 has to perform a saving throw or be tripped. The DC is 12 + Masterworked

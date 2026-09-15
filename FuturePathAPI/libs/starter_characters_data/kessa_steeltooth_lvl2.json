@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Kessa Steeltooth",
     "playerName": "",
     "species": "Murids",
+    "homeworld": "",
     "charPath": "Path of No Path (The Freelancer)",
     "pathLevel": "2",
     "classList": "Electro-Mancer (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "15",
+    "maxHP": "20",
     "tempHP": "",
-    "currentHP": "15",
+    "currentHP": "20",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+1",
     "passivePerception": "7",
     "inertia": "",
@@ -277,31 +280,18 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 4,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Laser Pistol",
-        "Lvl": "3",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
         "Type": "Thermal",
         "Range": "100ft",
         "isMelee": false,
-        "Ammo": "6",
-        "Notes": ""
-      },
-      {
-        "Name": "Laser Shotgun",
-        "Lvl": "4",
-        "Damage": "d12",
-        "Accuracy": "1",
-        "AP": "",
-        "Critical": "x2/20",
-        "Type": "Thermal",
-        "Range": "30/900",
-        "isMelee": true,
         "Ammo": "6",
         "Notes": ""
       }
@@ -316,7 +306,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Jobless)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -331,12 +321,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Jobless",
-    "currentWealthScore": "250",
-    "liquidCredits": "1",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -358,6 +344,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears.\nNote: Stashed on Proficiency Training Point at level 2 for later use."
+  },
   "pathTalentsCard": {
     "pathTalentsList": []
   },
@@ -369,33 +358,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Electro-Mancer",
-      "Level": "",
-      "Affinities": [
-        "DEX",
-        "INT"
-      ],
-      "Talents": [
-        {
-          "Name": "Electric Savant",
-          "Description": "Electro-Mancer (Electric Savant Path) A focus on Ranged and Smarts"
-        },
-        {
-          "Name": "Electric Attack",
-          "Description": "This is a Standard Attack Action Ranged 130ft. Accuracy: d20+AD+3, Damage 1d4+3"
-        },
-        {
-          "Name": "Sixth Sense",
-          "Description": "At 1st level, you are uniquely attuned to electromagnetic fields. You gain an Advantage Die on detection checks for electronic traps, hidden sensors, or data ports. Additionally, you can instantly tell if an electronic device within 30ft + 5ft per Int Mod is \"On\" or \"Off\" without a check."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "23",
+    "currentWealthScore": "250",
+    "liquidCredits": "1",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -448,9 +415,44 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Female Murid. Kessa, at a young age, knew the stars called her name! She is more than excited to step out. After getting just too bored with college, she ditched her final years of schooling and hopped on the nearest ship to anywhere. That was years ago. Her only regret is missing her loving family; other than that, she continues to explore the cosmos simply for its own sake. Her ears are large and round like a mouse, with brown fur around her whole body and black beady eyes. She has tattoos along her tail and on the inside of her semi-transparent ears."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Electro-Mancer",
+      "Level": "",
+      "Affinities": [
+        "DEX",
+        "INT"
+      ],
+      "Talents": [
+        {
+          "Name": "Electric Savant",
+          "Description": "Electro-Mancer (Electric Savant Path) A focus on Ranged and Smarts"
+        },
+        {
+          "Name": "Electric Attack",
+          "Description": "This is a Standard Attack Action Ranged 130ft. Accuracy: d20+AD+3, Damage 1d4+3"
+        },
+        {
+          "Name": "Sixth Sense",
+          "Description": "At 1st level, you are uniquely attuned to electromagnetic fields. You gain an Advantage Die on detection checks for electronic traps, hidden sensors, or data ports. Additionally, you can instantly tell if an electronic device within 30ft + 5ft per Int Mod is \"On\" or \"Off\" without a check."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -468,7 +470,7 @@
         {
           "Name": "Adsorb Power",
           "Range": "Touch",
-          "Effect": "Once Per Day: You tap into a Large or bigger generator. Roll an Intelligence check (DC 15). On success, you regain a use of 1 or more of a technique slot (Level 1\u20135 based on the result). Failure deals 1d6 Electric damage to you for every 5 points below the DC. If you beat the DC by 4 or less then regain a Zero level slot. For every 5 you beat the DC gain the ability to either gain a use of a 1 higher level slot or gain another use of the current level slot. For example: a roll of 25 would imply the Electro-Mancer could regain the use of 3 level zero techniques, or 1 level two, or 2 level ones."
+          "Effect": "Once Per Day: You tap into a Large or bigger generator. Roll an Intelligence check (DC 15). On success, you regain a use of 1 or more of a technique slot (Level 1–5 based on the result). Failure deals 1d6 Electric damage to you for every 5 points below the DC. If you beat the DC by 4 or less then regain a Zero level slot. For every 5 you beat the DC gain the ability to either gain a use of a 1 higher level slot or gain another use of the current level slot. For example: a roll of 25 would imply the Electro-Mancer could regain the use of 3 level zero techniques, or 1 level two, or 2 level ones."
         }
       ]
     },
@@ -488,41 +490,6 @@
       ]
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -547,6 +514,27 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -563,6 +551,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Jobless",
+    "currentWealthScore": "250",
+    "liquidCredits": "1",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

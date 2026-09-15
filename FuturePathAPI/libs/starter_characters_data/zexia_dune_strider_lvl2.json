@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Zexia Dune-Strider",
     "playerName": "",
     "species": "Lepidonain",
+    "homeworld": "",
     "charPath": "Path of Dexterity (Fast Hero)",
     "pathLevel": "2",
     "classList": "SpaceMarine (1)",
@@ -35,7 +38,7 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "18",
+    "maxHP": "13",
     "tempHP": "",
     "currentHP": "18",
     "nonlethalHP": ""
@@ -124,8 +127,8 @@
       },
       {
         "Name": "Disable Device",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -140,7 +143,7 @@
         "Name": "Intimidate",
         "Favored": true,
         "Rank": 2,
-        "Key Ability": "CHA",
+        "Key Ability": "STR",
         "MiscMod": 0
       },
       {
@@ -237,10 +240,10 @@
     ]
   },
   "ArmorStatsCard": {
-    "acTotal": "15",
+    "acTotal": "14",
     "acTouch": "12",
-    "acFlat": "13",
-    "acArmorBonus": "3",
+    "acFlat": "12",
+    "acArmorBonus": "2",
     "acDexMod": "2",
     "acSizeMod": "+0",
     "acNaturalArmor": "0",
@@ -251,7 +254,7 @@
     "drElectric": "",
     "drThermal": "",
     "drChemical": "",
-    "drAll": "2"
+    "drAll": ""
   },
   "SpeedCard": {
     "baseSpeed": "20",
@@ -262,14 +265,14 @@
     "combatSpeedSq": "8"
   },
   "armorDefensesCard": {
-    "armorProfCount": 3,
+    "armorProfCount": 2,
     "armorsList": [
       {
-        "Name": "Improved Ballistic Vest",
-        "AC Bonus": "3",
-        "DR": "2 (A)",
+        "Name": "Improved Light Armor",
+        "AC Bonus": "2",
+        "DR": "",
         "Max Dex": "6",
-        "Weight": "15",
+        "Weight": "10",
         "Speed Penalty": "-",
         "Bonus Attributes": ""
       }
@@ -277,7 +280,7 @@
   },
   "weaponsCard": {
     "meleeProfCount": 3,
-    "rangedProfCount": 1,
+    "rangedProfCount": 0,
     "weaponsList": [
       {
         "Name": "Natural Attack Claws (x2)",
@@ -316,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Military)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -331,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Military",
-    "currentWealthScore": "10,750",
-    "liquidCredits": "9",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -350,6 +349,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Adult female Lepidonain. A middle-aged woman from Lepidonain's homeworld of Lepidon Prime. Her family name, the Dune-Striders, is an ancient one. Her family, however, has fallen out of favor as the Lepidonain Empire struggles in the modern era. She aims to fix both these issues and believes the solution must come from somewhere out in the cosmos. She looks like a typical female Lepidonain but with vivid green eyes that show deep thinking and a vicious fighter."
+  },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
@@ -361,8 +363,8 @@
   "featsCard": {
     "featsList": [
       {
-        "Name": "Athletic",
-        "Description": "Misc +2 bonus to the Athletic skill."
+        "Name": "Acrobatic",
+        "Description": "Misc +2 bonus to the Acrobatic skill."
       },
       {
         "Name": "Akimbo Specialist",
@@ -378,29 +380,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Space Marine",
-      "Level": "",
-      "Affinities": [
-        "STR",
-        "DEX"
-      ],
-      "Talents": [
-        {
-          "Name": "Military School",
-          "Description": "At 1st, 4th, and 8th level, the Space Marine can pick a Bonus Feat from the whole Tactical category."
-        },
-        {
-          "Name": "Iron Gut",
-          "Description": "At 1st level, the Space Marine gets the Zero-G Training feat for free."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
-    "totalGearWeight": "50",
+    "totalGearWeight": "45",
+    "currentWealthScore": "10,750",
+    "liquidCredits": "9",
     "equipmentList": [
       {
         "Name": "Fatigues",
@@ -495,9 +479,40 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult female Lepidonain. A middle-aged woman from Lepidonain's homeworld of Lepidon Prime. Her family name, the Dune-Striders, is an ancient one. Her family, however, has fallen out of favor as the Lepidonain Empire struggles in the modern era. She aims to fix both these issues and believes the solution must come from somewhere out in the cosmos. She looks like a typical female Lepidonain but with vivid green eyes that show deep thinking and a vicious fighter."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Space Marine",
+      "Level": "",
+      "Affinities": [
+        "STR",
+        "DEX"
+      ],
+      "Talents": [
+        {
+          "Name": "Military School",
+          "Description": "At 1st, 4th, and 8th level, the Space Marine can pick a Bonus Feat from the whole Tactical category."
+        },
+        {
+          "Name": "Iron Gut",
+          "Description": "At 1st level, the Space Marine gets the Zero-G Training feat for free."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -509,9 +524,6 @@
       "Techniques": []
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
   "detractorsCard": {
     "detractorsList": []
   },
@@ -530,23 +542,8 @@
     "drawbacksList": [],
     "enhancementsList": []
   },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
+  "extraNotesCard": {
+    "extraNotes": ""
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -572,6 +569,10 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
     "theme": "lepidonain",
     "autoSwitchTheme": true,
@@ -584,6 +585,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Military",
+    "currentWealthScore": "10,750",
+    "liquidCredits": "9",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

@@ -399,7 +399,7 @@ To learn about the different Crew positions, go [[Space_Ships#Ship_Positions|her
 ----
 The Support Phase involves the Commander/Captain issuing an order and applying leadership skills/feats to help the other crew members. And the Science Officer, who can provide buffs to ship systems.
 
-* ''(1)'' [[Captain_Position|Captain]] can provide a boost to the rest of the crew by giving orders and using special leadership skills. Usually, this provides an advantage to a particular Crew member, who, in this round above all, needs to be successful. For example, the ship may be attempting to flee combat, so the Captain may assist the Pilot.
+* ''(1)'' [[Captain_Position|Captain]] can provide a boost to the rest of the crew by giving orders and using special leadership skills. For example, the ship may be attempting to flee combat, so the Captain may assist the Pilot.
 * ''(2)'' [[Science_Officer|Science Officer]] is similar to the Captain except instead of providing a bonus to a Crew member, the Science Officer can provide a bonus to ship abilities by [[Boost|boosting]]. The Science Officer performs hacking actions and operates Clocking or Crypto functions.
 
 ==== (2) The Action Phase ====

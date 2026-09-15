@@ -421,18 +421,25 @@ NOTE
 : You can only make one investment a month. Although you may have a
   talent/feat that can increase that amount.
 
-`<u>`{=html}**Gambling**`</u>`{=html}: Gambling has the risk of causing
-debt and thus can subtract from the Character\'s Credit Score. The
-Gambling has a DC 25 and a check of 1d20 + Charisma. If you fail the
-check with a 1, you get 1 subtracted from your credit score. If the
-Player simply fails, the Character gets no money back. Beat it by less
-than 5, and the Character gets their bet back. If the Player beats it by
-more than 5, you get what you gambled back +10%. The Character gets +10%
-for every 5 points the DC is beaten. If you get a natural 20, you get a
-+100%.
+#### Gambling
 
-If the Character is gambling against other Characters, then this is an
-opposing Charisma check.
+`<u>`{=html}**Gambling**`</u>`{=html}: A player can use their own ISK or
+their Credit Score to gamble. There can be games where the house can
+win. In that case, there is a minimum value of DC20 + Character Level;
+if that value is not met, then the house wins, and everybody else loses.
+Games like cards/poker etc\... require Charisma checks. Unless specified
+otherwise, use opposing checks with the highest player winning. Games
+that involve dice should be based on [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} with opposing
+checks. There are also slot machines and other reaction-based games.
+These can require both [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} and a
+[Study](Study "Study"){.wikilink} check to beat.
+
+The GM can invite a game and designate an Ability Score or Skill as the
+core rolling stat.
+
+#### Customized Income {#customized_income}
 
 `<u>`{=html}**Customized Income**`</u>`{=html}: Any source of steady
 wealth that is legal can be translated as an increase to your credit

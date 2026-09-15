@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Rovak of High-Crest",
     "playerName": "",
     "species": "Avisari",
+    "homeworld": "",
     "charPath": "Path of Charisma (Charismatic Hero)",
     "pathLevel": "2",
     "classList": "Field Officer (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "12",
+    "maxHP": "16",
     "tempHP": "",
-    "currentHP": "12",
+    "currentHP": "16",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+3",
     "passivePerception": "9",
     "inertia": "",
@@ -159,8 +162,8 @@
       },
       {
         "Name": "Knowledge (History)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -181,7 +184,7 @@
       {
         "Name": "Medical",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -201,8 +204,8 @@
       },
       {
         "Name": "Sense Motive",
-        "Favored": true,
-        "Rank": 2,
+        "Favored": false,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -215,8 +218,8 @@
       },
       {
         "Name": "Stealth",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -229,8 +232,8 @@
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
@@ -277,12 +280,12 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Laser Pistol",
-        "Lvl": "1",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -293,13 +296,13 @@
         "Notes": "Character has two twin pistols"
       },
       {
-        "Name": "Laser Pistol",
-        "Lvl": "1",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
-        "Type": "",
+        "Type": "T",
         "Range": "100",
         "isMelee": false,
         "Ammo": "6",
@@ -316,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Blue Collar)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -331,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Blue Collar",
-    "currentWealthScore": "11,500",
-    "liquidCredits": "8",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -362,6 +361,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
+  },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
@@ -378,33 +380,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Field Officer",
-      "Level": "1",
-      "Affinities": [
-        "WIS",
-        "CHA"
-      ],
-      "Talents": [
-        {
-          "Name": "Command Style",
-          "Description": "Inspire"
-        },
-        {
-          "Name": "Tactical Shift",
-          "Description": "At 1st level, you become a master of positioning. At the start of the turn as a Simple Action, you may change the Group you are in. This happens at the start of the turn, not the start of the group, and the Simple Action is considered spent when you start your turn in your Group."
-        },
-        {
-          "Name": "Leader of the Troops",
-          "Description": "At 1st level,\nVanguard: When you successfully land an attack or complete a skill check, all allies currently in the Rearguard gain a +1 Morale bonus to Accuracy and Damage until the end of the round.\nRearguard: When you successfully perform a supportive action or technique that benefits your allies (things like Medical), all allies in the next round's Vanguard gain a +1 Morale bonus to AC and Saving Throws.\nThis bonus increases to +2 at 5th level and +3 at 9th level."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "37",
+    "currentWealthScore": "11,500",
+    "liquidCredits": "8",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -492,9 +472,44 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Field Officer",
+      "Level": "1",
+      "Affinities": [
+        "WIS",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Command Style",
+          "Description": "Inspire"
+        },
+        {
+          "Name": "Tactical Shift",
+          "Description": "At 1st level, you become a master of positioning. At the start of the turn as a Simple Action, you may change the Group you are in. This happens at the start of the turn, not the start of the group, and the Simple Action is considered spent when you start your turn in your Group."
+        },
+        {
+          "Name": "Leader of the Troops",
+          "Description": "At 1st level,\nVanguard: When you successfully land an attack or complete a skill check, all allies currently in the Rearguard gain a +1 Morale bonus to Accuracy and Damage until the end of the round.\nRearguard: When you successfully perform a supportive action or technique that benefits your allies (things like Medical), all allies in the next round's Vanguard gain a +1 Morale bonus to AC and Saving Throws.\nThis bonus increases to +2 at 5th level and +3 at 9th level."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -512,41 +527,6 @@
       ]
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -571,6 +551,27 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -587,6 +588,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Blue Collar",
+    "currentWealthScore": "11,500",
+    "liquidCredits": "8",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

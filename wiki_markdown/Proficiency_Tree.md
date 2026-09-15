@@ -60,45 +60,69 @@ utilize it, go [here](Tech "here"){.wikilink}.
 
 ## Melee & Ranged Combat Branches {#melee_ranged_combat_branches}
 
-Both the Melee and Ranged Combat Branches have 9 levels. The default
-starting levels for a Character are based on the Player\'s choice
-between a focus on Melee or on Ranged. They either start with
-Proficiency Level 2 for both Melee and Ranged or Proficiency Level 1 for
-Melee and 3 levels for Ranged or Proficiency Level 1 for Ranged and 3
-levels for Melee.
+Both the Melee and Ranged Combat Branches have 9 levels. By default, a
+Character starts with 3 points to spend between the 2 branches. Each
+level costs 1 Training Point until level 3. Level 3 and above require
+two points. You can improve these with [Feats](Feats "Feats"){.wikilink}
+found in the Proficiency Tree sub-category. This means that at level 1,
+unless a Character has the [Medium Contact Weapons
+Training](Medium_Contact_Weapons_Training "Medium Contact Weapons Training"){.wikilink}
+or [Medium Firearms
+Training](Medium_Firearms_Training "Medium Firearms Training"){.wikilink},
+they cannot spend all 3 points on one; however, the Player can simply
+hang onto unspent Points or spend 2 points in one branch and 1 in the
+other. Ie; 1 Proficiency Level in Ranged Weapons and 2 in Melee, or vice
+versa.
 
 - Melee and Ranged Branches both have the same rules for level
-  progression. Each level unlocks the use of that Level of Weapon.
-  [Weapons](Weapons "Weapons"){.wikilink} have \'Weapon Levels\' as
-  exampled in the [Weapon
-  Levels](Weapons#Weapon_Levels "Weapon Levels"){.wikilink} section. The
-  max level for a weapon is 8; however, there are 9 levels to the
-  Proficiency Tree. This is because if a Weapon has one or more of the
-  following attributes, \'Exotic\', \'Clunky\', \'Masterworked\' it
-  requires a level higher to wield. So a [Laser
+  progression. Each level unlocks the use of
+  [Weapons](Weapons "Weapons"){.wikilink} that have that Proficiency
+  requirement. Usually a Weapon\'s Level is also its Proficiency
+  requirement level.
+
+<!-- -->
+
+- Weapon attributes \'Exotic\', \'Clunky\', and \'Masterworked\' require
+  a higher level to wield. So a [Laser
   Rifle](Laser_Rifle "Laser Rifle"){.wikilink} (Level 5 Weapon) requires
   5 levels in the Ranged Combat Proficiency Tree. A [Laser Sniper
   Rifle](Laser_Sniper_Rifle "Laser Sniper Rifle"){.wikilink} (Level 5
   Weapon), on the other hand, requires 6 levels because it has the
-  Clunky attribute.
+  Clunky attribute. These Attributes do not stack. So if a Weapon has
+  all 3, it still requires only 1 additional Proficiency level to use.
+
+<!-- -->
+
+- If a Weapon is of a higher Technology level than the Character, it
+  also requires an additional Proficiency level for every Tech Level
+  above the Character\'s Tech Proficiency level.
 
 <!-- -->
 
 - A Character can wield a weapon of a higher level than they have points
-  in their Proficiency Tree, but they take penalties. The Character can
-  take no advantages for a weapon they are not proficient in and takes
-  one disadvantage for every level higher the weapon is. A Character
-  cannot fire a weapon if they have more than 3 disadvantages,
-  regardless of where those disadvantages come from.
+  in their Proficiency Tree, but they take penalties. The Character
+  cannot benefit from advantages for a weapon they are not proficient
+  in. They also take one disadvantage for each level below the level
+  requirement. A Character cannot fire a weapon if they have more than 3
+  disadvantages, regardless of where those disadvantages come from.
 
 <!-- -->
 
-- Level 6 and above is considered \'Heavy Weapons.\' Each Proficiency
+- Level 3 through 5 is considered a \'Medium Weapon\'. Each Proficiency
+  Level for Medium Weapons costs 2 Training Points instead of 1 unless
+  you have [Medium Contact Weapons
+  Training](Medium_Contact_Weapons_Training "Medium Contact Weapons Training"){.wikilink}
+  or [Medium Firearms
+  Training](Medium_Firearms_Training "Medium Firearms Training"){.wikilink}.
+
+<!-- -->
+
+- Level 6 and above are considered \'Heavy Weapons\'. Each Proficiency
   Level, starting at 6, costs 2 Training Points instead of 1 unless you
-  have the [Heavy Melee Weapon
-  Training](Heavy_Melee_Weapon_Training "Heavy Melee Weapon Training"){.wikilink}
-  or [Heavy Ranged Weapon
-  Training](Heavy_Ranged_Weapon_Training "Heavy Ranged Weapon Training"){.wikilink}
+  have the [Heavy Contact Weapons
+  Training](Heavy_Contact_Weapons_Training "Heavy Contact Weapons Training"){.wikilink}
+  or [Heavy Firearms
+  Training](Heavy_Firearms_Training "Heavy Firearms Training"){.wikilink}
   feats.
 
 ## Armor Branch {#armor_branch}
@@ -118,7 +142,7 @@ Character is 2.
 
 - Characters can wear the armor of one level higher, but they get their
   movement reduced by half and have to take disadvantage on all checks.
-  A Character cannot wear Armor more than 1 Proficiency higher.
+  A Character cannot wear Armor more than 1 Proficiency level higher.
 
 <!-- -->
 

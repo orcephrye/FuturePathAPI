@@ -54,7 +54,7 @@ The fastest path to the Combat Medic is through the [[Future_Hero_Base_Class#Pat
 
 <u>Ability Affinity</u>: Wisdom and Dexterity 
 
-<u>Favored Skills</u>: [[Acrobatics]] (Dex), Craft [ [[-_Chemical|Chemical]], [[-_Pharmaceutical|Pharmaceutical]] ], Pick Any One [[Knowledge]](Int), [[Profession]] (Wis), [[Survival]] (Wis), [[Medical]] (Wis)
+<u>Favored Skills</u>: [[Acrobatics]] (Dex), Craft [ [[-_Chemical|Chemical]], [[-_Pharmaceutical|Pharmaceutical]] ], Pick Any Three [ [[Knowledge]](Int), [[Survival]] (Wis), [[Medical]] (Wis), [[Perception]] (Wis) or [[Sense Motive]] (Wis) ].
 
 === Combat Medic's Profession Talents ===
 ----
@@ -189,7 +189,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Strength and Wisdom
 
-<u>Favored Skills</u>: [[Athletics]] (Str), [[Intimidate]] (Cha/Str), Choose Any One [[Knowledge]] (Int), [[Study]] (Int), [[Sense_Motive|Sense Motive]] (Wis), and [[Survival]] (Wis).
+<u>Favored Skills</u>: [[Athletics]] (Str), [[Intimidate]] (Cha/Str), Choose Any One [[Knowledge]] (Int), [[Study]] (Int), and [[Survival]] (Wis), Pick Two [ [[Perception]] (Wis) / [[Acrobatics]] (Dex) / [[Sense_Motive|Sense Motive]] (Wis) ]
 
 <u>[[Techniques|Technique]] Ability Affinity</u>: The Dimension Knight gains Technique like abilities called [[Techniques#Dimensional_Tricks|Tricks]]. 
 
@@ -343,7 +343,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Dexterity and Constitution
 
-<u>Favored Skills</u>: The Dreadnought’s Profession skills are as follows. [[Acrobatics]] (Dex), [[Athletics]] (Str), [[Intimidate]] (Cha/Str), [[Profession]] (Wis)
+<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), [[Intimidate]] (Cha/Str), Pick One Knowledge (Int), Pick Two [ [[Medical]] (Wis) / [[Perception]] (Wis) / [[Stealth]] (Dex) / [[Study]] (Int) / [[Survival]] (Wis) ]
 
 <u>Extra Info</u>: At the first level, the Dreadnought has to choose what ideology to follow.
 
@@ -499,7 +499,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Intelligence and Constitution 
 
-<u>Favored Skills</u>: The Engineer’s Favored skills are as follows. [[Computer_Use|Computer Use]] (Int), Craft [ [[-_Electronic|Electronic]], [[-_Mechanical|Mechanical]], [[-_Structural|Structural]] ](Int), [[Disable Device]] (Int), Choose Any Three [[Knowledge]](Int), [[Study]](Int)
+<u>Favored Skills</u>: [[Computer_Use|Computer Use]] (Int), Craft [ [[-_Electronic|Electronic]], [[-_Mechanical|Mechanical]], [[-_Structural|Structural]] ](Int), [[Disable Device]] (Int), Choose Any Three [[Knowledge]](Int), Pick Two [ [[Disable Device]](Int) / [[Perception]](Wis) / [[Sleight of Hand]](Dex) / [[Study]](Int) ]
 
 === Engineer's Profession Talents ===
 ----
@@ -556,9 +556,9 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 | 36+ || 6d6 + Engineer Level
 |}
 ;Quick Construction
-: At Engineer '''1st''' level, an engineer learns how to craft general equipment such as scratch-built electronic, mechanical, and structural objects more quickly than normal. When using the Craft (electronic), Craft (mechanical), or Craft (structural) skill to build a General Equipment item, the Engineer reduces the building time by 1/2. 
+: At Engineer '''1st''' level, an engineer learns how to craft general equipment such as scratch-built electronic, mechanical, and structural objects more quickly than normal. When using the Craft (electronic), Craft (mechanical), or Craft (structural) skill to build a General Equipment item, the Engineer reduces the building time by 1/4. 
 
-: At '''5th''' level, the Engineer reduces the building time of ordinary objects to 1/4 and masterworked objects by half.
+: At '''5th''' level, the Engineer reduces the building time of ordinary objects to 1/8 and masterworked objects by half.
 
 ;Professional Repair
 : At '''1st''' level, an Engineer has improved ways of repairing robots, vehicles, power armor, etc... An Engineer with the correct [[General_Equipment#Profession_Kits|Professional Kit]] or appropriate facility (ie: workshop, or hanger) can gain bonuses to repair damage to a robot, vehicles, power armor, spaceships and so on. The DC and Time are no longer based on the [[Craft#Repairing_Checks|Repair]] rules. This takes 1 hour of work. This can also be done in combat but requires an additional +5 to the DC check and a Standard Action. Review the table to the right for more info. 
@@ -695,7 +695,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Charisma and Wisdom 
 
-<u>Favored Skills</u>: [[Bluff]] (Cha/Int), [[Diplomacy]] (Cha/Wis), [[Profession]] (Wis), [[Sense_Motive|Sense Motive]] (Wis). Choose Any Two [[Knowledge]] Skills(Int), [[Study]] (Int).
+<u>Favored Skills</u>: [[Bluff]] (Cha/Int), [[Diplomacy]] (Cha/Wis), [[Disguise]] (Cha), [[Sense_Motive|Sense Motive]] (Wis). Choose Any Two [[Knowledge]] Skills(Int), Pick Three [ [[Intimidate]] (Cha/Str) / [[Medical]] (Wis) / [[Perception]] (Wis) / [[Stealth]] (Dex) / [[Study]] (Int) ].
 
 <u>[[Techniques|Technique]] Ability Affinity</u>: The Envoy uses Charisma or Wisdom for their [[Techniques#Field_Officer_&_Envoy_Techniques|Techniques]]. (shared with the Field Officer).
 
@@ -874,7 +874,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Intelligence and Dexterity 
 
-<u>Favored Skills</u>: [[Computer_Use|Computer Use]] (Int), Craft [ [[-_Electronic|Electronic]], [[-_Mechanical|Mechanical]] ] (Int), [[Disable Device]] (Int), [[Perception]] (Wis), [[Study]] (Int). Choose any two [[Knowledge]] (Int).
+<u>Favored Skills</u>: [[Computer_Use|Computer Use]] (Int), Craft [ [[-_Electronic|Electronic]], [[-_Mechanical|Mechanical]] ] (Int), [[Perception]] (Wis), Choose any two [[Knowledge]] (Int). Pick Three [ [[Acrobatics]] (Dex) / [[Disable Device]] (Int) / [[Pilot]] (Dex) / [[Sleight of Hand]] (Dex) / [[Study]] (Int) ]
 
 <u>[[Techniques|Technique]] Ability Affinity</u>: The Electro-Mancer uses their '''Intelligence''' ability to perform [[Techniques#Electro-Mancer_Techniques|Techniques]].
 
@@ -1012,7 +1012,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Charisma and Wisdom
 
-<u>Favored Skills</u>: [[Diplomacy]] (Cha/Wis), [[Intimidate]] (Cha/Str), Choose Any One [[Knowledge]] (Int), [[Sense_Motive|Sense Motive]] (Wis), [[Medical]](Wis)
+<u>Favored Skills</u>: [[Diplomacy]] (Cha/Wis), [[Intimidate]] (Cha/Str), Choose Any One [[Knowledge]] (Int), [[Sense_Motive|Sense Motive]] (Wis), [[Medical]](Wis), Pick Three [ [[Bluff]] (Cha/Int) / [[Disguise]] (Cha) / [[Perception]] (Wis) / [[Pilot]] (Wis) / [[Stealth]] (Dex) / [[Survival]] (Wis) ].
 
 <u>Feat Bonuses</u>: [[Leadership]]
 
@@ -1150,7 +1150,7 @@ The fastest path into this Profession is through the [[Core_Class#Path_of_Streng
 
 <u>Ability Affinity</u>: Strength and Wisdom
 
-<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), [[Stealth]] (Dex), [[Survival]] (Wis), [[Perception]] (Wis)
+<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), [[Intimidate]] (Cha/Str), [[Perception]] (Wis), [[Stealth]] (Dex), [[Survival]] (Wis), Pick One [ [[Pilot]] (Dex) / [[Sense Motive]] (Wis) / [[Medical]] (Wis) ].
 
 === Helix Warrior's Profession Talents ===
 ----
@@ -1289,7 +1289,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Constitution and Wisdom
 
-<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), Craft [ [[-_Mechanical|Mechanical]], [[-_Structural|Structural]] ] (Int), Choose Any One [[Knowledge]] (Int), [[Survival]] (Wis), [[Medical]] (Wis).
+<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), Craft [ [[-_Mechanical|Mechanical]], [[-_Structural|Structural]] ] (Int), Choose Any One [[Knowledge]] (Int), [[Survival]] (Wis), [[Medical]] (Wis), Pick One [ [[Intimidate]] (Cha/Str) / [[Perception]] (Wis) / [[Sense Motive]] (Wis) ].
 
 <u>[[Techniques|Technique]] Ability Affinity</u>: The Shield Splicer uses their '''Constitution''' ability to perform [[Techniques#Shield_Splicer_Techniques|Techniques]].
 
@@ -1412,8 +1412,10 @@ The fastest path to the Space Marine is through the [[Core_Class#Path_of_Dexteri
 # None.
 
 '''<u>Profession Information</u>''':
+
 <u>Ability Affinity</u>: Dexterity and Strength 
-<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), [[Intimidate]] (Cha/Str), [[Pilot]] (Dex), [[Perception]] (Wis), [[Stealth]] (Dex), [[Survival]] (Wis).
+
+<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Athletics]] (Str), [[Intimidate]] (Cha/Str), [[Pilot]] (Dex), [[Perception]] (Wis), Pick Three [ [[Disable Device]] (Int) / [[Medical]] (Wis) / [[Sense Motive]] (Wis) / [[Stealth]] (Dex) / [[Survival]] (Wis) ].
 
 === Space Marine's Profession Talents ===
 ----
@@ -1517,9 +1519,10 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # None.
 
 '''<u>Profession Information</u>''':
+
 <u>Ability Affinity</u>: Dexterity and Charisma
 
-<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Bluff]] (Cha/Int), [[Pilot]] (Dex), [[Perception]] (Wis), [[Survival]] (Wis). 
+<u>Favored Skills</u>: [[Acrobatics]] (Dex), [[Bluff]] (Cha/Int), [[Pilot]] (Dex), [[Perception]] (Wis), [[Survival]] (Wis),  Pick Two [ [[Diplomacy]] (Cha/Wis) / [[Disguise]] (Cha) / [[Intimidate]] (Cha/Str) / [[Sleight of Hand]] (Dex) / [[Stealth]] (Dex) ].
 
 === Starfighter's Profession Talents ===
 ----
@@ -1643,9 +1646,11 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # Profession: A Swindler cannot also be a Tracer.
 
 '''<u>Profession Information</u>''':
+
 <u>Ability Affinity</u>: Charisma and Dexterity 
 
-<u>Favored Skills</u>: [[Bluff]] (Cha/Int), [[Diplomacy]] (Cha/Wis), [[Disguise]] (Cha), Choose One [[Knowledge]] (Int), [[Perception]] (Wis), [[Stealth]] (Dex), [[Sleight of Hand]] (Dex).
+<u>Favored Skills</u>: [[Bluff]] (Cha/Int), [[Diplomacy]] (Cha/Wis), [[Disguise]] (Cha), Choose One [[Knowledge]] (Int), [[Perception]] (Wis), [[Stealth]] (Dex), [[Sleight of Hand]] (Dex), Pick One [ [[Acrobatics]] (Dex) / [[Intimidate]] (Cha/Str) / [[Knowledge|Two Knowledges]] (Int) / [[Craft|Any One Craft]] (Int) ].
+
 <u>Feat Bonuses</u>: [[Deceptive]]
 
 === Swindler's Profession Talents ===
@@ -1791,7 +1796,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Intelligence and Wisdom
 
-<u>Favored Skills</u>: The Technosavant’s favored skills are as follows: [[Computer_Use|Computer Use]] (Int), Craft both [ [[-_Electronic|Electronic]], [[-_Mechanical|Mechanical]] ](Int), [[Disable Device]] (Int), Choose Any Two [[Knowledge]] (Int), [[Study]] (Int).
+<u>Favored Skills</u>: [[Computer_Use|Computer Use]] (Int), Craft both [ [[-_Electronic|Electronic]], [[-_Mechanical|Mechanical]] ](Int), [[Disable Device]] (Int), Choose Any Two [[Knowledge]] (Int), [[Study]] (Int), Pick Two [ [[Craft|Another Craft]] (Int) / [[Diplomacy]] (Cha/Wis) / [[Perception]] (Wis) / [[Sleight of Hand]] (Dex) ].
 
 <u>Feat Bonuses</u>: [[Computer Wiz]] or [[Jerry Rigging]]. (Player chooses at level 1 Technosavant)
 
@@ -1907,9 +1912,11 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 # Profession: This person cannot also be a Swindler.
 
 '''<u>Profession Information</u>''':
+
 <u>Ability Affinity</u>: Wisdom and Intelligence 
 
-<u>Favored Skills</u>: [[Intimidate]] (Cha/Str), [[Computer_Use|Computer Use]] (Int), Choose Any Two [[Knowledge]]s (Int), [[Pilot]] (Dex), [[Stealth]] (Dex), [[Sense_Motive|Sense Motive]] (Wis), [[Study]] (Int), [[Survival]] (Wis), [[Perception]] (Wis).
+<u>Favored Skills</u>: [[Computer_Use|Computer Use]] (Int), [[Intimidate]] (Cha/Str), Choose Any Two [[Knowledge]]s (Int), [[Stealth]] (Dex), [[Sense_Motive|Sense Motive]] (Wis), [[Survival]] (Wis), Pick Two [ [[Bluff]] (Cha/Int) / [[Perception]] (Wis) / [[Pilot]] (Dex) / [[Study]] (Int) / [[Craft|Any One Craft]] (Int) ].
+
 <u>Feat Bonuses</u>: [[Track]]
 
 === Tracer's Profession Talents ===
@@ -2047,7 +2054,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 
 <u>Ability Affinity</u>: Wisdom and Charisma
 
-<u>Favored Skills</u>: The Xenophile’s Profession skills are as follows: Craft [ [[-_Chemical|Chemical]], [[-_Pharmaceutical|Pharmaceutical]] ] (Int), [[Diplomacy]] (Cha/Wis), Choose Any Two [[Knowledge]] (Int), [[Study]] (Int), [[Survival]] (Wis), [[Medical]] (Wis).
+<u>Favored Skills</u>: Craft [ [[-_Chemical|Chemical]], [[-_Pharmaceutical|Pharmaceutical]] ] (Int), [[Diplomacy]] (Cha/Wis), Choose Any Two [[Knowledge]] (Int), [[Medical]] (Wis), [[Study]] (Int), [[Survival]] (Wis), Pick One [ [[Bluff]] (Cha/Int) / [[Disguise]] (Cha) / [[Perception]] (Wis) ].
 
 <u>Feat Bonuses</u>: [[Xenomedic]]
 

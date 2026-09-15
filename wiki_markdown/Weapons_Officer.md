@@ -27,6 +27,8 @@ Officer\'s Wisdom or Dexterity Mod. (Whichever they prefer)
 : **Associated Ship Attributes**: Weapons
 : **Associated Secondary Attributes**: Repair DC Bonus (Battle Damage
   Bonus)
+: **Bonus Impact**: Allows for the re-rolling of d10s equal to the
+  Weapon\'s Modifier.
 : **Officer Functions**:
   1.  `<u>`{=html}[Fire](Fire "Fire"){.wikilink}`</u>`{=html}: This is
       the basic action the Weapons Officer can use to attack an enemy

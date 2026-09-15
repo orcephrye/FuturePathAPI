@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Rovak of High-Crest",
     "playerName": "",
     "species": "Avisari",
+    "homeworld": "",
     "charPath": "Path of Charisma (Charismatic Hero)",
     "pathLevel": "1",
     "classList": "",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "7",
+    "maxHP": "12",
     "tempHP": "",
-    "currentHP": "7",
+    "currentHP": "12",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+3",
     "passivePerception": "9",
     "inertia": "",
@@ -262,7 +265,7 @@
     "combatSpeedSq": "4"
   },
   "armorDefensesCard": {
-    "armorProfCount": 1,
+    "armorProfCount": 2,
     "armorsList": [
       {
         "Name": "Advanced Light Armor",
@@ -277,12 +280,12 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Laser Pistol",
-        "Lvl": "1",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -293,9 +296,9 @@
         "Notes": "Character has two twin pistols"
       },
       {
-        "Name": "Laser Pistol",
-        "Lvl": "1",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -316,15 +319,9 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Blue Collar)",
         "Rank": 1,
         "Key Ability": "WIS",
-        "MiscMod": 0
-      },
-      {
-        "Name": "Demolitions",
-        "Rank": 2,
-        "Key Ability": "INT",
         "MiscMod": 0
       }
     ],
@@ -337,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Blue Collar",
-    "currentWealthScore": "8,750",
-    "liquidCredits": "7",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -368,6 +361,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
+  },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
@@ -384,10 +380,11 @@
       }
     ]
   },
-  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "37",
+    "currentWealthScore": "8,750",
+    "liquidCredits": "7",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -475,38 +472,6 @@
       }
     ]
   },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -521,9 +486,17 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Male Avisari. Rovak, Hailing from the elite High-Crest lineage aboard the orbital shipyards of Skydock Alpha, Rovak was trained from a young age as a star-cartographer and FTL route analyst. While most of his flock preferred observing distant sector phenomena through long-range sensors, Rovak harbored a rare itch to experience outer space firsthand. Rovak left the safety of the High-Crest observatories. Now operating as a freelance long-range pilot and navigator. He hopes to one day be a captain of his own. He is a lean, light-built frame, with sleek plumage of broad lapis blue and silver accents along his wing-blades. A prominent ridge runs down his sharp beak, framing a pair of keen amber eyes. Running along his crown and neck is a crown of vibrant, iridescent gold and cobalt crest feathers."
-  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
   "conditionsCard": {
     "cond_blinded": false,
     "cond_deafened": false,
@@ -548,6 +521,28 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "professionsCard": [],
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -564,6 +559,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Blue Collar",
+    "currentWealthScore": "8,750",
+    "liquidCredits": "7",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2000",
+    "identityXpNextLevel": "5000",
     "charName": "Viperis Abyssen",
     "playerName": "",
     "species": "Cryous",
+    "homeworld": "",
     "charPath": "Path of Constitution (Tough Hero)",
     "pathLevel": "2",
     "classList": "Dreadnought (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d10",
-    "maxHP": "20",
+    "maxHP": "26",
     "tempHP": "",
-    "currentHP": "20",
+    "currentHP": "26",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+0",
     "passivePerception": "7",
     "inertia": "",
@@ -50,7 +53,7 @@
   },
   "coreSkills": {
     "skillsPerLevel": "1",
-    "unusedSkillPoints": "1",
+    "unusedSkillPoints": "",
     "skillsList": [
       {
         "Name": "Acrobatics",
@@ -187,8 +190,8 @@
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -197,7 +200,7 @@
         "Favored": false,
         "Rank": 1,
         "Key Ability": "DEX",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Sense Motive",
@@ -215,8 +218,8 @@
       },
       {
         "Name": "Stealth",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 2,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -229,10 +232,10 @@
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
-        "MiscMod": 0
+        "MiscMod": 1
       }
     ]
   },
@@ -277,7 +280,7 @@
   },
   "weaponsCard": {
     "meleeProfCount": 3,
-    "rangedProfCount": 2,
+    "rangedProfCount": 0,
     "weaponsList": [
       {
         "Name": "Natural Electric Attack",
@@ -304,19 +307,6 @@
         "isMelee": true,
         "Ammo": "-",
         "Notes": ""
-      },
-      {
-        "Name": "Pistol",
-        "Lvl": "2",
-        "Damage": "d6",
-        "Accuracy": "",
-        "AP": "",
-        "Critical": "x2/20",
-        "Type": "(K) R",
-        "Range": "100ft",
-        "isMelee": false,
-        "Ammo": "7",
-        "Notes": ""
       }
     ]
   },
@@ -329,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Adventurer)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -344,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Adventurer",
-    "currentWealthScore": "6,500",
-    "liquidCredits": "5",
-    "xpCurrent": "2000",
-    "xpNextLevel": "5000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -358,6 +344,9 @@
         "Description": "Can Breathe Underwater, Immune to the Trip, Advantage to reverse grapples."
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult female Cryous. She has worked hard, but has gained nothing. Her family is a military family. She joined for that reason, and found it lacking. She tried for different jobs, but most felt unfulfilling, and her parents saw her as directionless and, in her mind, a disappointment. To avoid them and to seek some meaning, she has left her homeworld. She has dark blue skin, with black eyes and short fins coming from her back."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -370,8 +359,8 @@
   "featsCard": {
     "featsList": [
       {
-        "Name": "Endurance",
-        "Description": "Gain advantage to most Con saving throws."
+        "Name": "Guide",
+        "Description": "Misc +1 bonus to both the Pilot and Survival skills."
       },
       {
         "Name": "Training Expert",
@@ -379,33 +368,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Dreadnought",
-      "Level": "",
-      "Affinities": [
-        "DEX",
-        "CON"
-      ],
-      "Talents": [
-        {
-          "Name": "Ability Surge",
-          "Description": "Starting at Dreadnought 1st level, the Dreadnought's uses her training and advanced physiology to push her self to the limits. When doing this they focus on a particular goal above all else and with raw force of git they attempt to achieve that goal at all cost. Doing this takes a Simple action and provides a +4 to Strength Score and +2 Dexterity Score. They also gain advantage on Constitution saving throws but disadvantage on Wisdom saves. The also gain temporary hit points explained below. This lasts for 1 + Constitution Mod number of rounds. Once no longer surging a Dreadnought is Fatigued. If already Fatigued then they are Exhausted. If already Exhausted then they become Unconscious.\n\n    When this happens the Dreadnought gains temporary health equal to 2 * Dreadnought level. So A level 4 Dreadnought that surges would gain 8 additional temporary health. This health goes away once they calm down. If that would bring them down to zero or below it instead bring them down too 1."
-        },
-        {
-          "Name": "Ideology",
-          "Description": "Vigilante"
-        },
-        {
-          "Name": "Justifying Reasoning",
-          "Description": "You gain Knowledge Current Events as a Favored Skill (+1 Rank). You gain an Advantage on Intimidate and Stealth checks when dealing with corrupt officials or known criminals."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "50",
+    "currentWealthScore": "6,500",
+    "liquidCredits": "5",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -514,9 +481,44 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult female Cryous. She has worked hard, but has gained nothing. Her family is a military family. She joined for that reason, and found it lacking. She tried for different jobs, but most felt unfulfilling, and her parents saw her as directionless and, in her mind, a disappointment. To avoid them and to seek some meaning, she has left her homeworld. She has dark blue skin, with black eyes and short fins coming from her back."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Dreadnought",
+      "Level": "",
+      "Affinities": [
+        "DEX",
+        "CON"
+      ],
+      "Talents": [
+        {
+          "Name": "Ability Surge",
+          "Description": "Starting at Dreadnought 1st level, the Dreadnought's uses her training and advanced physiology to push her self to the limits. When doing this they focus on a particular goal above all else and with raw force of git they attempt to achieve that goal at all cost. Doing this takes a Simple action and provides a +4 to Strength Score and +2 Dexterity Score. They also gain advantage on Constitution saving throws but disadvantage on Wisdom saves. The also gain temporary hit points explained below. This lasts for 1 + Constitution Mod number of rounds. Once no longer surging a Dreadnought is Fatigued. If already Fatigued then they are Exhausted. If already Exhausted then they become Unconscious.\n\n    When this happens the Dreadnought gains temporary health equal to 2 * Dreadnought level. So A level 4 Dreadnought that surges would gain 8 additional temporary health. This health goes away once they calm down. If that would bring them down to zero or below it instead bring them down too 1."
+        },
+        {
+          "Name": "Ideology",
+          "Description": "Vigilante"
+        },
+        {
+          "Name": "Justifying Reasoning",
+          "Description": "You gain Knowledge Current Events as a Favored Skill (+1 Rank). You gain an Advantage on Intimidate and Stealth checks when dealing with corrupt officials or known criminals."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -528,9 +530,6 @@
       "Techniques": []
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
   "detractorsCard": {
     "detractorsList": []
   },
@@ -549,23 +548,8 @@
     "drawbacksList": [],
     "enhancementsList": []
   },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
+  "extraNotesCard": {
+    "extraNotes": ""
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -591,6 +575,10 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
+  },
   "UI_Layout": {
     "theme": "cryous",
     "autoSwitchTheme": true,
@@ -603,6 +591,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Adventurer",
+    "currentWealthScore": "6,500",
+    "liquidCredits": "5",
+    "xpCurrent": "2000",
+    "xpNextLevel": "5000"
   }
 }

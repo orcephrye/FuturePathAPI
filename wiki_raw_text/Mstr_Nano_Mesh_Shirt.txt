@@ -11,7 +11,7 @@
 
 '''Maximum Dexterity''': +8
 
-'''Proficiency Requirement''': 2
+'''Proficiency Requirement''': 1
 
 '''Default Attributes''': N/A
 

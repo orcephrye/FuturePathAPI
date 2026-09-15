@@ -17,6 +17,8 @@ Engineer fixes these things to make sure the ship doesn\'t go out
 without a fight.
 
 : **Associated Ship Attribute**: Structure
+: **Secondary Ship Attribute**: This is used as a penalty on the
+  Initiative Attribute for the Ship.
 : **Officer Functions**:
   1.  `<u>`{=html}[Repair](Repair "Repair"){.wikilink}`</u>`{=html}:
       Review the [Repairing

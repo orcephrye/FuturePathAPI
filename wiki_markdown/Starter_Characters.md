@@ -39,7 +39,11 @@ All Starter Character Sheet PDFs can be found
 ![](Beckett_Kane_Human.jpg "Beckett_Kane_Human.jpg"){width="703"}
 
 Beckett Kane (Human/Strong Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=beckett_kane)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=beckett_kane_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1FJoyEZd_yyXfK4AwItLeT9n__AsIy0zg/view?usp=drive_link).
   [Human](Species#Humans "Human"){.wikilink}, adult male of asian
   decent, ex-military, late thirties. A veteran of corporate border
@@ -62,7 +66,11 @@ Beckett Kane (Human/Strong Hero)
 ![](Marara_Sylavan_Volar.jpg "Marara_Sylavan_Volar.jpg"){width="703"}
 
 Marara Sylavan (Volar/Dedicated Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=marara_sylavan)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=marara_sylavan_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1jU_Ek0eCR_gJpgDWhpICn-QEoZHCpgvE/view?usp=sharing).
   [Volar](Species#Volar "Volar"){.wikilink}, adult xenobiologist. Born
   on the Mother Planet Volar, Marara completed its studies at the
@@ -86,7 +94,11 @@ Marara Sylavan (Volar/Dedicated Hero)
 ![](Cxaz_Grayling.jpg "Cxaz_Grayling.jpg"){width="703"}
 
 Cxaz (Grayling/Smart Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=cxaz)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=cxaz_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1bHWcU6QdfPksOXwrSgJjOaolLYkfu6Um/view?usp=drive_link).
   [Grayling](Species#Graelycxazshngs_(aka_Graylings) "Grayling"){.wikilink},
   young adult male engineer. Growing up on the arid homeworld of
@@ -111,7 +123,11 @@ Cxaz (Grayling/Smart Hero)
 ![](Zexia_Dune-Strider_Lepidonain.jpg "Zexia_Dune-Strider_Lepidonain.jpg"){width="703"}
 
 Zexia Dune-Strider (Lepidonain/Fast Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=zexia_dune_strider)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=zexia_dune_strider_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1ekicOeuBXLYrV_Ys5P-KAOPz1fGrV3Pf/view?usp=drive_link)
   [Lepidonain](Species#Lepidonains "Lepidonain"){.wikilink}, adult
   female. A middle-aged woman from Lepidonain\'s homeworld of Lepidon
@@ -130,7 +146,11 @@ Zexia Dune-Strider (Lepidonain/Fast Hero)
 ![](Viperis_Adyssen_Cryous.jpg "Viperis_Adyssen_Cryous.jpg"){width="703"}
 
 Viperis Abyssen (Cryous/Tough Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=viperis_abyssen)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=viperis_abyssen_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1FkyvOlOrEp9y-TnNljVN9Yp0HWcR-nWq/view?usp=drive_link)
   [Cryous](Species#Cryous "Cryous"){.wikilink}, adult female. She has
   worked hard, but has gained nothing. Her family is a military family.
@@ -148,7 +168,11 @@ Viperis Abyssen (Cryous/Tough Hero)
 ![](Ada_Ovex_Looks_Aconain.jpg "Ada_Ovex_Looks_Aconain.jpg"){width="703"}
 
 Ada (Ovex Name OVX-9482-Sub-1850) (Assistant Model)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=ada)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=ada_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1bv63tFDcRliviznbAoKu3vTize8lz0M3/view?usp=drive_link)
   [Ovex](Species#Ovex "Ovex"){.wikilink}, Ovex Assistance Model. On a
   personal journey to, in the eyes of the Ovex Nexus, reach maturity.
@@ -165,7 +189,11 @@ Ada (Ovex Name OVX-9482-Sub-1850) (Assistant Model)
 ![](Hobrin_Aurelius_Acconain.jpg "Hobrin_Aurelius_Acconain.jpg"){width="703"}
 
 Hobrin Aurelius (Aconians/Charismatic Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=hobrin_aurelius)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=hobrin_aurelius_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1KLTjhcWj8Y6mqb3LaF2Iq9As22Z2_lVk/view?usp=drive_link)
   [Aconians](Species#Aconians "Aconians"){.wikilink} Young (for that
   species 45) male. Hobrin is a student in his final year of academia.
@@ -186,7 +214,11 @@ Hobrin Aurelius (Aconians/Charismatic Hero)
 ![](Kessa_Steeltooth_Murids.jpg "Kessa_Steeltooth_Murids.jpg"){width="703"}
 
 Kessa Steeltooth (Murids/The Freelancer)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=kessa_steeltooth)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=kessa_steeltooth_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1dSL9Ts-D08uqymj81WeJHRT2ACJ7huOO/view?usp=drive_link)
   [Murids](Species#Murids "Murids"){.wikilink} Female. Kessa, at a young
   age, knew the stars called her name! She is more than excited to step
@@ -206,7 +238,11 @@ Kessa Steeltooth (Murids/The Freelancer)
 ![](Rovak_of_High-Crest_Avisari.jpg "Rovak_of_High-Crest_Avisari.jpg"){width="703"}
 
 Rovak of High-Crest (Avisari/Charismatic Hero)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=rovak_of_high_crest)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=rovak_of_high_crest_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1jZXvRkVsFDZW9Kf5S9UuKkmd_9Vo2wzN/view?usp=drive_link)
   [Avisari](Species#Avisari "Avisari"){.wikilink} Male, Rovak, Hailing
   from the elite High-Crest lineage aboard the orbital shipyards of
@@ -230,7 +266,11 @@ Rovak of High-Crest (Avisari/Charismatic Hero)
 ![](Wadj-Khepri_of_Sekhmet_Spire_Khepri.jpg "Wadj-Khepri_of_Sekhmet_Spire_Khepri.jpg"){width="703"}
 
 Wadj-Khepri of Sekhmet Spire (Khepri/The Freelancer)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=wadj_khepri_of_sekhmet_spire)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=wadj_khepri_of_sekhmet_spire_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1wMlyJvpgfY9IKAzVnNORBcfPDejgEaHY/view?usp=drive_link)
   [Khepri](Species#Khepri "Khepri"){.wikilink} Male. Wadj-Khepri,
   Freshly emerged from the maturation chambers of Sekhmet Spire,
@@ -265,7 +305,11 @@ Wadj-Khepri of Sekhmet Spire (Khepri/The Freelancer)
 ![](Seekers_of_Stolen_Light_Chronodes.jpg "Seekers_of_Stolen_Light_Chronodes.jpg"){width="703"}
 
 Seekers of Stolen Light (Chronodes)
-: [PDF Character
+: [Digital Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=seekers_of_stolen_light)/[Level
+  2 Character
+  Sheet](https://api.d20futurepath.com/v1/character_sheet?id=seekers_of_stolen_light_lvl2),
+  [PDF Character
   Sheet](https://drive.google.com/file/d/1nOir51u8vpeVivwiTHErmm4A-Ew1Jyfj/view?usp=drive_link)
   [Chronodes](Chronodes "Chronodes"){.wikilink} The five members of
   Seekers of Stolen Light forged their collective bond while exploring a

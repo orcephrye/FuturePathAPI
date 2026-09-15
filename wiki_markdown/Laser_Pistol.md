@@ -26,6 +26,36 @@
 
 : **Laser Pistol**
 
+## Small Laser Pistol {#small_laser_pistol}
+
++--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+
+| **Main Attributes**:                                                     |   | **Secondary Attributes**:                                                |   | **Accessories and Description**:                                         |
+|                                                                          |   |                                                                          |   |                                                                          |
+| ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------ |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Name**: Small Laser Pistol                                             |   | **Accuracy Bonus**: +1                                                   |   | Weapon Accessories                                                       |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Power / Speed** (Total Level/Dice): Small / Semi-Auto = Level 2 / d6   |   | **Bonus Damage**: 0                                                      |   | :                                                                        |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Proficiency Requirement**: 2 Levels in Ranged                          |   | **AP Damage**: 0                                                         |   | Description                                                              |
+|                                                                          |   |                                                                          |   | : This is a similar personal laser firearm.                              |
+| **Weapon Style & Arch Type**: Personal Firearm, Laser                    |   | **Critical Damage**: x2                                                  |   |                                                                          |
+|                                                                          |   |                                                                          |   | Explanations                                                             |
+| **Range**: 100ft                                                         |   | **Critical Range**: 20                                                   |   | : The Arch-Type is Personal Firearm but this weapon also has the Default |
+|                                                                          |   |                                                                          |   |   Attribute of \'Laser Based\' which changes a few things as well.       |
+| **Default Attributes**:                                                  |   | **Damage Type**: Thermal                                                 |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Masterwork**: No                                                       |   | **Ammunition**: 6                                                        |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+| **Cost/Procure Diff**: \$880 / 0                                         |   | **Reload Speed**: Standard                                               |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+|                                                                          |   | **Weight**: Roughly \~5 pounds                                           |   |                                                                          |
+|                                                                          |   |                                                                          |   |                                                                          |
+|                                                                          |   | **Bonus Abilities**: Versatile                                           |   |                                                                          |
++--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+
+
+: **Laser Pistol**
+
 ## Tactical Laser Pistol {#tactical_laser_pistol}
 
 +--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+---+--------------------------------------------------------------------------+

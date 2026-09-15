@@ -8,12 +8,17 @@ section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
 
 The Communications and Sensor Officer uses the ship\'s sensor and
 transmission arrays to project false signatures or deploy physical chaff
-decoys, making the ship harder to track and target.
+decoys, making the ship harder to track and target. They can benefit
+from **both** the Ship\'s Sensors **and** the Ship\'s Electronics. They
+can also choose to benefit from either their Intelligence or Charisma
+Modifier.
 
-The Officer makes an Electronics check (DC 10 + Target Sensors Mod). On
-a success, the ship projects phantom signatures or deploys decoys. This
-forces all scanning and targeting checks against your ship to take a
-disadvantage for 1 round. Alternatively, if targeted by guided missiles,
-the decoys can be active, providing a 50% chance (a 1-5 on a d10) that
-any incoming guided missile attacks are drawn away and miss the hull
-entirely.
+The Officer makes a Sensors/Electronics check, rolling (2d10 + Sensors
+Mod + Electronics Mod + Misc Mod + Officer\'s choice of either
+Intelligence or Charisma) against a DC equal to 10 + Target Sensors Mod.
+On a success, the ship projects phantom signatures or deploys decoys.
+This forces all scanning and targeting checks against your ship to take
+a disadvantage for 1 round. Alternatively, if targeted by guided
+missiles, the decoys can be active, providing a 50% chance (a 1-5 on a
+d10) that any incoming guided missile attacks are drawn away and miss
+the hull entirely.

@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisites**: Martial Arts Master, Advantage Die 1d12
+**Prerequisites**: Martial Arts Master, Advantage Die 1d8+8
 
 **Benefit**: When the character scores a critical hit on an opponent
 with an unarmed strike, the character deals triple damage.

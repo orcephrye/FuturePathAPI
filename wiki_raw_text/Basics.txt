@@ -2,7 +2,7 @@ This page is a starting place for all the rules of the game. If you are new to P
 
 Are you an experienced player? The [[Whats Different]] page is a good place to learn about what makes this system '''D20+''' so different from normal D20, as well as other things that stand out about this ruleset/game.
 
-If you are a '''Player''' (Meaning you do not intend to run the game or be the storyteller), then it is recommended that you either [[Character_Creation_and_Advancement|make a new Character]] or pick a [[Starter_Characters|Starter Character]]. We provide a Character Sheet [https://drive.google.com/uc?export=download&id=1cZ3PPchkXAgTSWTHKsONEIWNrg8PhN2P here]! 
+If you are a '''Player''' (Meaning you do not intend to run the game or be the storyteller), then it is recommended that you either [[Character_Creation_and_Advancement|make a new Character]] or pick a [[Starter_Characters|Starter Character]]. We provide a Character Sheet [https://drive.google.com/uc?export=download&id=1XIHL_SI5Pztp2e0mPfxnk-RnD5fiCfqv here]! 
 
 After making a Character, you may want to review concepts like [[Combat]] and [[SkillsBasics|Skills]].
 

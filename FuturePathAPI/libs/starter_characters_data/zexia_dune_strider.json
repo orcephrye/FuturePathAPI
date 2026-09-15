@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Zexia Dune-Strider",
     "playerName": "",
     "species": "Lepidonain",
+    "homeworld": "",
     "charPath": "Path of Dexterity (Fast Hero)",
     "pathLevel": "1",
     "classList": "",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "10",
+    "maxHP": "15",
     "tempHP": "",
-    "currentHP": "10",
+    "currentHP": "15",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+2",
     "passivePerception": "8",
     "inertia": "",
@@ -57,14 +60,14 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "DEX",
-        "MiscMod": 0
+        "MiscMod": 2
       },
       {
         "Name": "Athletics",
         "Favored": false,
         "Rank": 1,
         "Key Ability": "STR",
-        "MiscMod": 2
+        "MiscMod": 0
       },
       {
         "Name": "Bluff",
@@ -140,7 +143,7 @@
         "Name": "Intimidate",
         "Favored": false,
         "Rank": 1,
-        "Key Ability": "CHA",
+        "Key Ability": "STR",
         "MiscMod": 0
       },
       {
@@ -276,7 +279,7 @@
     ]
   },
   "weaponsCard": {
-    "meleeProfCount": 3,
+    "meleeProfCount": 2,
     "rangedProfCount": 0,
     "weaponsList": [
       {
@@ -293,9 +296,9 @@
         "Notes": "Natural Attack (x2)"
       },
       {
-        "Name": "Powered Sword",
-        "Lvl": "3",
-        "Damage": "d8 + 1",
+        "Name": "Short Powered Sword",
+        "Lvl": "2",
+        "Damage": "d6 + 1",
         "Accuracy": "",
         "AP": "",
         "Critical": "x3/20",
@@ -316,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Military)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -331,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Military",
-    "currentWealthScore": "24,000",
-    "liquidCredits": "20",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -350,6 +349,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Adult female Lepidonain. A middle-aged woman from Lepidonain's homeworld of Lepidon Prime. Her family name, the Dune-Striders, is an ancient one. Her family, however, has fallen out of favor as the Lepidonain Empire struggles in the modern era. She aims to fix both these issues and believes the solution must come from somewhere out in the cosmos. She looks like a typical female Lepidonain but with vivid green eyes that show deep thinking and a vicious fighter."
+  },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
@@ -361,8 +363,8 @@
   "featsCard": {
     "featsList": [
       {
-        "Name": "Athletic",
-        "Description": "Misc +2 bonus to the Athletic skill."
+        "Name": "Acrobatic",
+        "Description": "Misc +2 bonus to the Acrobatic skill."
       },
       {
         "Name": "Akimbo Specialist",
@@ -370,10 +372,11 @@
       }
     ]
   },
-  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "45",
+    "currentWealthScore": "24,000",
+    "liquidCredits": "20",
     "equipmentList": [
       {
         "Name": "Fatigues",
@@ -468,38 +471,6 @@
       }
     ]
   },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -513,10 +484,6 @@
         "techniquesList": []
       }
     ]
-  },
-  "powerArmorCard": {
-    "powerArmorProfCount": 0,
-    "powerArmorList": []
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -542,8 +509,42 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult female Lepidonain. A middle-aged woman from Lepidonain's homeworld of Lepidon Prime. Her family name, the Dune-Striders, is an ancient one. Her family, however, has fallen out of favor as the Lepidonain Empire struggles in the modern era. She aims to fix both these issues and believes the solution must come from somewhere out in the cosmos. She looks like a typical female Lepidonain but with vivid green eyes that show deep thinking and a vicious fighter."
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "professionsCard": [],
+  "powerArmorCard": {
+    "powerArmorProfCount": 0,
+    "powerArmorList": []
   },
   "UI_Layout": {
     "theme": "lepidonain",
@@ -557,6 +558,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Military",
+    "currentWealthScore": "24,000",
+    "liquidCredits": "20",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

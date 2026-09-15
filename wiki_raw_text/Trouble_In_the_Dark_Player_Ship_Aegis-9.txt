@@ -1,0 +1,79 @@
+{|
+| valign="top" |
+'''Ship Name''': Aegis-9
+|width="30px"|&nbsp;
+| valign="top" |
+'''Ship Core''': Tech Level 2
+|width="30px"|&nbsp;
+| valign="top" |
+'''Hull Size''': Small
+|width="30px"|&nbsp;
+| valign="top" |
+'''Hull Configuration''': Patrol Cutter
+|width="30px"|&nbsp;
+| valign="top" |
+'''Attribute Points''': 15
+|}
+----
+{|
+| valign="top" |
+''' - 6 Core System Attributes''':
+----
+'''Engines''': 12 (Modifier: +1)
+
+'''Weapons''': 12 (Modifier: +1)
+
+'''Structure''': 12 (Modifier: +1)
+
+'''Shields''': 14 (Modifier: +2)
+
+'''Electronics''': 12 (Modifier: +1)
+
+'''Sensors''': 12 (Modifier: +1)
+
+''' - Ship Statistics''':
+----
+'''Tracking DC''': 13 (10 + 1 Mobility + 2 Shields - 1 Structure + 1 Size)
+
+'''Detection DC''': 9
+
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
+
+'''Battle Damage Capacity''': 3
+
+'''Initiative''': +1 (Engines 1 + Sensors 1 - Structure 1)
+
+'''Movement Speed''': 5 Squares
+|width="30px"|&nbsp;
+| valign="top" |
+''' - Secondary Statistics''':
+----
+'''Reflectors (Shields)''': 6 (Base 4 + 2 Shields Mod)
+
+'''Damage Resistance''': 5 successes (Base 4 + 1 Structure Mod)
+
+'''BD-DC''': 5 / 6 (5 successes required of 6 or higher)
+
+'''Repair DC Bonus''': +1 (Weapons Mod)
+
+'''Tactical Mobility''': +1 (Engines Mod)
+
+'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
+
+'''Cargo Capacity''': 250 Units
+
+'''Passenger Capacity''': 8 Crew
+|width="30px"|&nbsp;
+| valign="top" |
+''' - Hard Points (4 Total / 4 Used)''':
+----
+* '''HP 1:''' [[Space_Ships#Assisted_Advanced_Jump_Drive|Assisted Advanced Jump Drive]]
+* '''HP 2:''' Medium Laser Cannon (Focus: Medium Laser Crystal)
+* '''HP 3:''' Medium Kinetic Mass-Driver (Ammo: 2 Magazines)
+* '''HP 4:''' Medium Guided Missile Launcher (Ammo: 6 Missiles)
+
+''' - Special Equipment''':
+----
+* Reinforced Shield Capacitor
+* Military Sensor Array (+1 on [[Scan]] actions)
+|}

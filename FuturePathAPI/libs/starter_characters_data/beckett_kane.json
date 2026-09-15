@@ -1,10 +1,11 @@
 {
-  "id": "beckett_kane",
-  "character_id": "beckett_kane",
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Beckett Kane",
     "playerName": "",
     "species": "Human",
+    "homeworld": "",
     "charPath": "Path of Strength (Strong Hero)",
     "pathLevel": "1",
     "classList": "",
@@ -37,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "10",
+    "maxHP": "15",
     "tempHP": "",
-    "currentHP": "10",
+    "currentHP": "15",
     "nonlethalHP": ""
   },
   "attributesCard": {
-    "advantageDie": "1d2",
-    "extraDamage": "0",
+    "advantageDie": "d2",
+    "extraDamage": "",
     "initiative": "+2",
     "passivePerception": "9",
     "inertia": "",
@@ -73,7 +74,7 @@
         "Favored": false,
         "Rank": 0,
         "Key Ability": "CHA",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Computer Use",
@@ -142,8 +143,8 @@
         "Name": "Intimidate",
         "Favored": true,
         "Rank": 1,
-        "Key Ability": "CHA",
-        "MiscMod": 0
+        "Key Ability": "STR",
+        "MiscMod": 1
       },
       {
         "Name": "Knowledge (Culture)",
@@ -224,15 +225,15 @@
       },
       {
         "Name": "Study",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
       {
         "Name": "Survival",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       }
@@ -279,30 +280,17 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Assault Weapon",
-        "Lvl": "3",
-        "Damage": "1d10",
-        "Accuracy": "1",
-        "AP": "",
-        "Critical": "x2",
-        "Type": "K",
-        "Range": "300",
-        "isMelee": false,
-        "Ammo": "6",
-        "Notes": "Enhanced Combat Options (Overrun)"
-      },
-      {
         "Name": "Side Arm",
-        "Lvl": "3",
-        "Damage": "1d8+1",
+        "Lvl": "2",
+        "Damage": "1d6",
         "Accuracy": "",
         "AP": "",
-        "Critical": "x2/19-20",
+        "Critical": "x2/20",
         "Type": "K",
-        "Range": "300",
+        "Range": "100",
         "isMelee": false,
         "Ammo": "7",
         "Notes": ""
@@ -331,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Military)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -346,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Military",
-    "currentWealthScore": "10,759",
-    "liquidCredits": "10",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -360,6 +344,9 @@
         "Description": "Relocate any one Ability Point and declare any one Skill a Favored Skill/Gain an additional Bonus Feat (Misc Only)/Gain a Bonus Skill Point"
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm—silent reminders of a war nobody won."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -376,18 +363,20 @@
         "Description": "Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft."
       },
       {
-        "Name": "Confident",
-        "Description": "Misc +1 Bonus to the Diplomacy and Bluff skill"
-      },
-      {
         "Name": "Track",
         "Description": "Add Advantage Die too Survival checks when tracking"
+      },
+      {
+        "Name": "Athletic Prowess",
+        "Description": "Allows the Athletic skill rank (1/2) to boost your Intimidate Skill."
       }
     ]
   },
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "50",
+    "currentWealthScore": "10,759",
+    "liquidCredits": "10",
     "equipmentList": [
       {
         "Name": "Fatigues",
@@ -461,35 +450,19 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm\u2014silent reminders of a war nobody won."
-  },
-  "professionsCard": [],
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "",
-      "DC": "",
-      "Learned": "",
-      "Uses": "",
-      "Used": "",
-      "Techniques": []
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -515,26 +488,39 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "",
+      "DC": "",
+      "Learned": "",
+      "Uses": "",
+      "Used": "",
+      "Techniques": []
+    }
+  ],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
   "mutationsCard": {
     "mpEarned": "0",
     "mpSpent": "0",
     "drawbacksList": [],
     "enhancementsList": []
   },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
+  "professionsCard": [],
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
@@ -551,6 +537,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "extraNotesVisible": true,
+    "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Military",
+    "currentWealthScore": "10,759",
+    "liquidCredits": "10",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

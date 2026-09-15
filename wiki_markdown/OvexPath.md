@@ -69,12 +69,19 @@ learn more about Ovex and other species you can visit the
 
 `<u>`{=html}Hit Die`</u>`{=html}: Module Dependent
 
-`<u>`{=html}Class Skills`</u>`{=html}: The Robot hero's class skills
+`<u>`{=html}Favored Skills`</u>`{=html}: The Robot hero's Favored skills
 (and the key ability for each skill) are dependent on which Module is
 picked. However, they all get Computer Use(Int)
 
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Module Dependent
+
 `<u>`{=html}Skill Points at Each Additional Level`</u>`{=html}: Module
 Dependent
+
+`<u>`{=html}Starting Feat`</u>`{=html}: Select a
+[Feats](Feats "Feats"){.wikilink} from the Skill Enhancements
+Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 `<u>`{=html}Recommended Character Professions`</u>`{=html}: Module
 Dependent
@@ -107,11 +114,21 @@ malfunctioning.
 
 \-\-- `<u>`{=html}Ability Affinity`</u>`{=html}: Strength or Dexterity
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 8, Level Up Average:
-5)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 4 + 8, Level Up
+Average: 5)
 
-`<u>`{=html}Class Skills`</u>`{=html}: Athletics(Str), Acrobatics(Dex),
-Choose One: \[Intimidate(Cha), Sense Motive(Wis), Survival(Wis)\]
+`<u>`{=html}Favored Skills`</u>`{=html}: Athletics(Str),
+Acrobatics(Dex), Choose One: \[Intimidate(Cha), Sense Motive(Wis),
+Survival(Wis)\]
+
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Gain 1 Skill Point that must be spent on \[
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex) /
+[Athletics](Athletics "Athletics"){.wikilink} (Str)
+[Pilot](Pilot "Pilot"){.wikilink} (Dex) / [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) \] or +1 Hit Point at
+level 1 and every following level.
 
 `<u>`{=html}Skill Points at Each Additional Level`</u>`{=html}: 1 + Int
 modifier.
@@ -122,9 +139,9 @@ modifier.
   activate this. The Ovex chooses a Damage Type and gains DR 1 + (1/4th
   Character Level) for 1d6 + 1 turns for that type.
 - Auto Aim Assistance: The Character gains an advantage bonus to the
-  accuracy check of a bonus attack. However, this action can only be
-  performed once per combat.
-- Combat Technique Sub-routine: The Character gains one Advance Combat
+  accuracy check of a bonus attack. However, you can use this action
+  only once per combat.
+- Combat Technique Sub-routine: The Character gains one Advanced Combat
   Technique as if they had taken the Feat [Advanced Combat
   Techniques](Advanced_Combat_Techniques "Advanced Combat Techniques"){.wikilink}.
 
@@ -132,11 +149,16 @@ modifier.
 
 \-\-- `<u>`{=html}Ability Affinity`</u>`{=html}: Charisma or Wisdom
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 8, Level Up Average:
-5)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 4 + 8, Level Up
+Average: 5)
 
-`<u>`{=html}Class Skills`</u>`{=html}: Diplomacy(Cha), Bluff(Cha), Sense
-Motive(Wis), Knowledge \[any one\].
+`<u>`{=html}Favored Skills`</u>`{=html}: Diplomacy(Cha), Bluff(Cha),
+Sense Motive(Wis), Knowledge \[any one\].
+
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Gain 1 Skill Point that must be spent on any one Wisdom-based or
+Charisma-based Skill, or +1 Hit Point at level 1 and every following
+level.
 
 `<u>`{=html}Skill Points at Each Additional Level`</u>`{=html}: 1 + Int
 modifier.
@@ -144,8 +166,8 @@ modifier.
 - Assistance Sub-routine: Once per combat or per 20-minute time frame,
   the Ovex can assist another player with bonuses. In combat, the assist
   is a Free action, while in normal play, they gain Advantage.
-- Rally Function: With Charisma or Wisdom save (Which one you have an
-  affinity with or which is higher) DC15 + Number of affected allies.
+- Rally Function: With a Charisma or Wisdom save (Whichever you have an
+  affinity with or which is higher), DC 15 + Number of affected allies.
   Any ally characters within earshot of the Character have any negative
   mind-affecting conditions removed. A character can only do this 1/4
   character level times per day.
@@ -159,36 +181,45 @@ modifier.
 
 \-\-- `<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 6, Level Up Average:
-4)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d6 (First Level: 4 + 6, Level Up
+Average: 4)
 
-`<u>`{=html}Class Skills`</u>`{=html}: Craft: \[Electronic, Mechanical,
-Structural\], Study(Int), Knowledge \[any two\], Disable Device(Int)
+`<u>`{=html}Favored Skills`</u>`{=html}: Craft: \[Electronic,
+Mechanical, Structural\], Study(Int), Knowledge \[any two\], Disable
+Device(Int)
+
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Gain 1 Skill Point that must be spent on any one Intelligence-based
+skill, or +1 Hit Point at level 1 and every following level.
 
 `<u>`{=html}Skill Points at Each Additional Level`</u>`{=html}: 2 + Int
 modifier.
 
 - Passive Learning: Character gains a +1 Misc Mod to the Study Skill.
-- Auto Repair Sub-routine: When activated the character gains an
+- Auto Repair Sub-routine: When activated, the character gains an
   advantage bonus to repair checks. This can be used 1/4th of the
   character level times per day.
-- Skill Enhancement Upgrade: Pick one skill from the \'Class Skills\'
+- Skill Enhancement Upgrade: Pick one skill from the \'Favored Skills\'
   under the Specialist Module to add a +1 Misc Mod to.
 - Search Engine Upgrade: When activated, this talent allows a Character
   to use any Knowledge skill even if it is locked and has zero points in
   it. Or it gains an advantage bonus to a Knowledge skill that they do
-  have ranks in. This can be used only once per day.
+  have ranks in. You can use this only once per day.
 
 \- **Assistance Module** (Counts as the Path of Wisdom when considering requirements for [Character Professions](Character_Professions "Character Professions"){.wikilink})
 
 \-\-- `<u>`{=html}Ability Affinity`</u>`{=html}: Wisdom
 
-`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 8, Level Up Average:
-5)
+`<u>`{=html}Hit Die`</u>`{=html}: 1d8 (First Level: 4 + 8, Level Up
+Average: 5)
 
-`<u>`{=html}Class Skills`</u>`{=html}: Medical(Wis), Perception(Wis),
+`<u>`{=html}Favored Skills`</u>`{=html}: Medical(Wis), Perception(Wis),
 Craft: \[Chemical, Pharmaceutical\], Survival(Wis), Knowledge \[any
 one\].
+
+`<u>`{=html}Special Path Related Skill Point or Hit Point`</u>`{=html}:
+Gain 1 Skill Point that must be spent on any one Wisdom-based skill, or
++1 Hit Point at level 1 and every following level.
 
 `<u>`{=html}Skill Points at Each Additional Level`</u>`{=html}: 2 + Int
 modifier.

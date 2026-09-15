@@ -70,10 +70,11 @@ though other paths are possible.
 [Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex), Craft \[
 [Chemical](-_Chemical "Chemical"){.wikilink},
 [Pharmaceutical](-_Pharmaceutical "Pharmaceutical"){.wikilink} \], Pick
-Any One [Knowledge](Knowledge "Knowledge"){.wikilink}(Int),
-[Profession](Profession "Profession"){.wikilink} (Wis),
+Any Three \[ [Knowledge](Knowledge "Knowledge"){.wikilink}(Int),
 [Survival](Survival "Survival"){.wikilink} (Wis),
-[Medical](Medical "Medical"){.wikilink} (Wis)
+[Medical](Medical "Medical"){.wikilink} (Wis),
+[Perception](Perception "Perception"){.wikilink} (Wis) or [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis) \].
 
 ### Combat Medic\'s Profession Talents {#combat_medics_profession_talents}
 
@@ -459,9 +460,11 @@ Dimension Knight, a character must fulfill the following criteria.
 [Athletics](Athletics "Athletics"){.wikilink} (Str),
 [Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), Choose Any
 One [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
-[Study](Study "Study"){.wikilink} (Int), [Sense
-Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis), and
-[Survival](Survival "Survival"){.wikilink} (Wis).
+[Study](Study "Study"){.wikilink} (Int), and
+[Survival](Survival "Survival"){.wikilink} (Wis), Pick Two \[
+[Perception](Perception "Perception"){.wikilink} (Wis) /
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex) / [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis) \]
 
 `<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
 Affinity`</u>`{=html}: The Dimension Knight gains Technique like
@@ -845,11 +848,15 @@ Dreadnought, a character must fulfill the following criteria.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Dexterity and Constitution
 
-`<u>`{=html}Favored Skills`</u>`{=html}: The Dreadnought's Profession
-skills are as follows. [Acrobatics](Acrobatics "Acrobatics"){.wikilink}
-(Dex), [Athletics](Athletics "Athletics"){.wikilink} (Str),
-[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str),
-[Profession](Profession "Profession"){.wikilink} (Wis)
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
+[Athletics](Athletics "Athletics"){.wikilink} (Str),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), Pick One
+Knowledge (Int), Pick Two \[ [Medical](Medical "Medical"){.wikilink}
+(Wis) / [Perception](Perception "Perception"){.wikilink} (Wis) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) /
+[Study](Study "Study"){.wikilink} (Int) /
+[Survival](Survival "Survival"){.wikilink} (Wis) \]
 
 `<u>`{=html}Extra Info`</u>`{=html}: At the first level, the Dreadnought
 has to choose what ideology to follow.
@@ -1280,14 +1287,17 @@ Engineer, a character must fulfill the following criteria.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence and Constitution
 
-`<u>`{=html}Favored Skills`</u>`{=html}: The Engineer's Favored skills
-are as follows. [Computer Use](Computer_Use "Computer Use"){.wikilink}
-(Int), Craft \[ [Electronic](-_Electronic "Electronic"){.wikilink},
+`<u>`{=html}Favored Skills`</u>`{=html}: [Computer
+Use](Computer_Use "Computer Use"){.wikilink} (Int), Craft \[
+[Electronic](-_Electronic "Electronic"){.wikilink},
 [Mechanical](-_Mechanical "Mechanical"){.wikilink},
 [Structural](-_Structural "Structural"){.wikilink} \](Int), [Disable
 Device](Disable_Device "Disable Device"){.wikilink} (Int), Choose Any
-Three [Knowledge](Knowledge "Knowledge"){.wikilink}(Int),
-[Study](Study "Study"){.wikilink}(Int)
+Three [Knowledge](Knowledge "Knowledge"){.wikilink}(Int), Pick Two \[
+[Disable Device](Disable_Device "Disable Device"){.wikilink}(Int) /
+[Perception](Perception "Perception"){.wikilink}(Wis) / [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink}(Dex) /
+[Study](Study "Study"){.wikilink}(Int) \]
 
 ### Engineer\'s Profession Talents {#engineers_profession_talents}
 
@@ -1358,12 +1368,12 @@ Quick Construction
   equipment such as scratch-built electronic, mechanical, and structural
   objects more quickly than normal. When using the Craft (electronic),
   Craft (mechanical), or Craft (structural) skill to build a General
-  Equipment item, the Engineer reduces the building time by 1/2.
+  Equipment item, the Engineer reduces the building time by 1/4.
 
 <!-- -->
 
 : At **5th** level, the Engineer reduces the building time of ordinary
-  objects to 1/4 and masterworked objects by half.
+  objects to 1/8 and masterworked objects by half.
 
 <!-- -->
 
@@ -1682,10 +1692,14 @@ chance of failure, Halve Speed causes a 40% chance of failure.
 `<u>`{=html}Favored Skills`</u>`{=html}:
 [Bluff](Bluff "Bluff"){.wikilink} (Cha/Int),
 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis),
-[Profession](Profession "Profession"){.wikilink} (Wis), [Sense
+[Disguise](Disguise "Disguise"){.wikilink} (Cha), [Sense
 Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis). Choose Any Two
-[Knowledge](Knowledge "Knowledge"){.wikilink} Skills(Int),
-[Study](Study "Study"){.wikilink} (Int).
+[Knowledge](Knowledge "Knowledge"){.wikilink} Skills(Int), Pick Three \[
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str) /
+[Medical](Medical "Medical"){.wikilink} (Wis) /
+[Perception](Perception "Perception"){.wikilink} (Wis) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) /
+[Study](Study "Study"){.wikilink} (Int) \].
 
 `<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
 Affinity`</u>`{=html}: The Envoy uses Charisma or Wisdom for their
@@ -2139,11 +2153,14 @@ chance of failure, Halve Speed causes a 40% chance of failure.
 `<u>`{=html}Favored Skills`</u>`{=html}: [Computer
 Use](Computer_Use "Computer Use"){.wikilink} (Int), Craft \[
 [Electronic](-_Electronic "Electronic"){.wikilink},
-[Mechanical](-_Mechanical "Mechanical"){.wikilink} \] (Int), [Disable
-Device](Disable_Device "Disable Device"){.wikilink} (Int),
-[Perception](Perception "Perception"){.wikilink} (Wis),
-[Study](Study "Study"){.wikilink} (Int). Choose any two
-[Knowledge](Knowledge "Knowledge"){.wikilink} (Int).
+[Mechanical](-_Mechanical "Mechanical"){.wikilink} \] (Int),
+[Perception](Perception "Perception"){.wikilink} (Wis), Choose any two
+[Knowledge](Knowledge "Knowledge"){.wikilink} (Int). Pick Three \[
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex) / [Disable
+Device](Disable_Device "Disable Device"){.wikilink} (Int) /
+[Pilot](Pilot "Pilot"){.wikilink} (Dex) / [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex) /
+[Study](Study "Study"){.wikilink} (Int) \]
 
 `<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
 Affinity`</u>`{=html}: The Electro-Mancer uses their **Intelligence**
@@ -2460,7 +2477,13 @@ chance of failure, Halve Speed causes a 40% chance of failure.
 [Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), Choose Any
 One [Knowledge](Knowledge "Knowledge"){.wikilink} (Int), [Sense
 Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis),
-[Medical](Medical "Medical"){.wikilink}(Wis)
+[Medical](Medical "Medical"){.wikilink}(Wis), Pick Three \[
+[Bluff](Bluff "Bluff"){.wikilink} (Cha/Int) /
+[Disguise](Disguise "Disguise"){.wikilink} (Cha) /
+[Perception](Perception "Perception"){.wikilink} (Wis) /
+[Pilot](Pilot "Pilot"){.wikilink} (Wis) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) /
+[Survival](Survival "Survival"){.wikilink} (Wis) \].
 
 `<u>`{=html}Feat Bonuses`</u>`{=html}:
 [Leadership](Leadership "Leadership"){.wikilink}
@@ -2772,9 +2795,13 @@ chance of failure, Halve Speed causes a 40% chance of failure.
 `<u>`{=html}Favored Skills`</u>`{=html}:
 [Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
 [Athletics](Athletics "Athletics"){.wikilink} (Str),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str),
+[Perception](Perception "Perception"){.wikilink} (Wis),
 [Stealth](Stealth "Stealth"){.wikilink} (Dex),
-[Survival](Survival "Survival"){.wikilink} (Wis),
-[Perception](Perception "Perception"){.wikilink} (Wis)
+[Survival](Survival "Survival"){.wikilink} (Wis), Pick One \[
+[Pilot](Pilot "Pilot"){.wikilink} (Dex) / [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis) /
+[Medical](Medical "Medical"){.wikilink} (Wis) \].
 
 ### Helix Warrior\'s Profession Talents {#helix_warriors_profession_talents}
 
@@ -3070,7 +3097,10 @@ chance of failure, Halve Speed causes a 40% chance of failure.
 [Structural](-_Structural "Structural"){.wikilink} \] (Int), Choose Any
 One [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
 [Survival](Survival "Survival"){.wikilink} (Wis),
-[Medical](Medical "Medical"){.wikilink} (Wis).
+[Medical](Medical "Medical"){.wikilink} (Wis), Pick One \[
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str) /
+[Perception](Perception "Perception"){.wikilink} (Wis) / [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis) \].
 
 `<u>`{=html}[Technique](Techniques "Technique"){.wikilink} Ability
 Affinity`</u>`{=html}: The Shield Splicer uses their **Constitution**
@@ -3318,15 +3348,21 @@ Marine, a character must fulfill the following criteria.
 
 1.  None.
 
-**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
-Affinity`</u>`{=html}: Dexterity and Strength `<u>`{=html}Favored
-Skills`</u>`{=html}: [Acrobatics](Acrobatics "Acrobatics"){.wikilink}
-(Dex), [Athletics](Athletics "Athletics"){.wikilink} (Str),
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Dexterity and Strength
+
+`<u>`{=html}Favored Skills`</u>`{=html}:
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
+[Athletics](Athletics "Athletics"){.wikilink} (Str),
 [Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str),
 [Pilot](Pilot "Pilot"){.wikilink} (Dex),
-[Perception](Perception "Perception"){.wikilink} (Wis),
-[Stealth](Stealth "Stealth"){.wikilink} (Dex),
-[Survival](Survival "Survival"){.wikilink} (Wis).
+[Perception](Perception "Perception"){.wikilink} (Wis), Pick Three \[
+[Disable Device](Disable_Device "Disable Device"){.wikilink} (Int) /
+[Medical](Medical "Medical"){.wikilink} (Wis) / [Sense
+Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) /
+[Survival](Survival "Survival"){.wikilink} (Wis) \].
 
 ### Space Marine\'s Profession Talents {#space_marines_profession_talents}
 
@@ -3489,15 +3525,21 @@ Starfighter, a character must fulfill the following criteria.
 
 1.  None.
 
-**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
-Affinity`</u>`{=html}: Dexterity and Charisma
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Dexterity and Charisma
 
 `<u>`{=html}Favored Skills`</u>`{=html}:
 [Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex),
 [Bluff](Bluff "Bluff"){.wikilink} (Cha/Int),
 [Pilot](Pilot "Pilot"){.wikilink} (Dex),
 [Perception](Perception "Perception"){.wikilink} (Wis),
-[Survival](Survival "Survival"){.wikilink} (Wis).
+[Survival](Survival "Survival"){.wikilink} (Wis), Pick Two \[
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis) /
+[Disguise](Disguise "Disguise"){.wikilink} (Cha) /
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str) / [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex) /
+[Stealth](Stealth "Stealth"){.wikilink} (Dex) \].
 
 ### Starfighter\'s Profession Talents {#starfighters_profession_talents}
 
@@ -3803,8 +3845,9 @@ though other paths are possible.
     Knight.
 2.  Profession: A Swindler cannot also be a Tracer.
 
-**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
-Affinity`</u>`{=html}: Charisma and Dexterity
+**`<u>`{=html}Profession Information`</u>`{=html}**:
+
+`<u>`{=html}Ability Affinity`</u>`{=html}: Charisma and Dexterity
 
 `<u>`{=html}Favored Skills`</u>`{=html}:
 [Bluff](Bluff "Bluff"){.wikilink} (Cha/Int),
@@ -3813,7 +3856,12 @@ Affinity`</u>`{=html}: Charisma and Dexterity
 [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
 [Perception](Perception "Perception"){.wikilink} (Wis),
 [Stealth](Stealth "Stealth"){.wikilink} (Dex), [Sleight of
-Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex).
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex), Pick One \[
+[Acrobatics](Acrobatics "Acrobatics"){.wikilink} (Dex) /
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str) / [Two
+Knowledges](Knowledge "Two Knowledges"){.wikilink} (Int) / [Any One
+Craft](Craft "Any One Craft"){.wikilink} (Int) \].
+
 `<u>`{=html}Feat Bonuses`</u>`{=html}:
 [Deceptive](Deceptive "Deceptive"){.wikilink}
 
@@ -4197,14 +4245,17 @@ Technosavant, a character must fulfill the following criteria.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Intelligence and Wisdom
 
-`<u>`{=html}Favored Skills`</u>`{=html}: The Technosavant's favored
-skills are as follows: [Computer
+`<u>`{=html}Favored Skills`</u>`{=html}: [Computer
 Use](Computer_Use "Computer Use"){.wikilink} (Int), Craft both \[
 [Electronic](-_Electronic "Electronic"){.wikilink},
 [Mechanical](-_Mechanical "Mechanical"){.wikilink} \](Int), [Disable
 Device](Disable_Device "Disable Device"){.wikilink} (Int), Choose Any
 Two [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
-[Study](Study "Study"){.wikilink} (Int).
+[Study](Study "Study"){.wikilink} (Int), Pick Two \[ [Another
+Craft](Craft "Another Craft"){.wikilink} (Int) /
+[Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis) /
+[Perception](Perception "Perception"){.wikilink} (Wis) / [Sleight of
+Hand](Sleight_of_Hand "Sleight of Hand"){.wikilink} (Dex) \].
 
 `<u>`{=html}Feat Bonuses`</u>`{=html}: [Computer
 Wiz](Computer_Wiz "Computer Wiz"){.wikilink} or [Jerry
@@ -4503,20 +4554,24 @@ though other paths are possible.
 
 1.  Profession: This person cannot also be a Swindler.
 
-**`<u>`{=html}Profession Information`</u>`{=html}**: `<u>`{=html}Ability
-Affinity`</u>`{=html}: Wisdom and Intelligence
+**`<u>`{=html}Profession Information`</u>`{=html}**:
 
-`<u>`{=html}Favored Skills`</u>`{=html}:
-[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), [Computer
-Use](Computer_Use "Computer Use"){.wikilink} (Int), Choose Any Two
-[Knowledges](Knowledge "Knowledge"){.wikilink} (Int),
-[Pilot](Pilot "Pilot"){.wikilink} (Dex),
+`<u>`{=html}Ability Affinity`</u>`{=html}: Wisdom and Intelligence
+
+`<u>`{=html}Favored Skills`</u>`{=html}: [Computer
+Use](Computer_Use "Computer Use"){.wikilink} (Int),
+[Intimidate](Intimidate "Intimidate"){.wikilink} (Cha/Str), Choose Any
+Two [Knowledges](Knowledge "Knowledge"){.wikilink} (Int),
 [Stealth](Stealth "Stealth"){.wikilink} (Dex), [Sense
 Motive](Sense_Motive "Sense Motive"){.wikilink} (Wis),
-[Study](Study "Study"){.wikilink} (Int),
-[Survival](Survival "Survival"){.wikilink} (Wis),
-[Perception](Perception "Perception"){.wikilink} (Wis). `<u>`{=html}Feat
-Bonuses`</u>`{=html}: [Track](Track "Track"){.wikilink}
+[Survival](Survival "Survival"){.wikilink} (Wis), Pick Two \[
+[Bluff](Bluff "Bluff"){.wikilink} (Cha/Int) /
+[Perception](Perception "Perception"){.wikilink} (Wis) /
+[Pilot](Pilot "Pilot"){.wikilink} (Dex) /
+[Study](Study "Study"){.wikilink} (Int) / [Any One
+Craft](Craft "Any One Craft"){.wikilink} (Int) \].
+
+`<u>`{=html}Feat Bonuses`</u>`{=html}: [Track](Track "Track"){.wikilink}
 
 ### Tracer\'s Profession Talents {#tracers_profession_talents}
 
@@ -4881,15 +4936,17 @@ Xenophile, a character must fulfill the following criteria.
 
 `<u>`{=html}Ability Affinity`</u>`{=html}: Wisdom and Charisma
 
-`<u>`{=html}Favored Skills`</u>`{=html}: The Xenophile's Profession
-skills are as follows: Craft \[
+`<u>`{=html}Favored Skills`</u>`{=html}: Craft \[
 [Chemical](-_Chemical "Chemical"){.wikilink},
 [Pharmaceutical](-_Pharmaceutical "Pharmaceutical"){.wikilink} \] (Int),
 [Diplomacy](Diplomacy "Diplomacy"){.wikilink} (Cha/Wis), Choose Any Two
 [Knowledge](Knowledge "Knowledge"){.wikilink} (Int),
+[Medical](Medical "Medical"){.wikilink} (Wis),
 [Study](Study "Study"){.wikilink} (Int),
-[Survival](Survival "Survival"){.wikilink} (Wis),
-[Medical](Medical "Medical"){.wikilink} (Wis).
+[Survival](Survival "Survival"){.wikilink} (Wis), Pick One \[
+[Bluff](Bluff "Bluff"){.wikilink} (Cha/Int) /
+[Disguise](Disguise "Disguise"){.wikilink} (Cha) /
+[Perception](Perception "Perception"){.wikilink} (Wis) \].
 
 `<u>`{=html}Feat Bonuses`</u>`{=html}:
 [Xenomedic](Xenomedic "Xenomedic"){.wikilink}

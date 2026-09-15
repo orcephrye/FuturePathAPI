@@ -1,0 +1,9 @@
+For a full list of Feats, go to the [[Feats|Feats]] page.
+
+'''Prerequisite''': -
+
+'''Benefit''': When using a Light Ranged or Melee weapon, ignore the Proficiency penalty requirement for 'Exotic', 'Clunky', 'Masterworked' or weapons with a higher technology level. This doesn't count for Tech 0 or Archaic weapons. If the light weapon has other negative side effects caused by 'Exotic' or 'Clunky' attributes, ignore those effects.
+
+'''Normal''': Normally, when using an 'Exotic', 'Clunky', 'Masterworked' or weapon with a higher tech level, the Proficiency level requirement for that Weapon is increased by +1.
+
+'''Special''': -

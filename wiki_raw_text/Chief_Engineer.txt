@@ -7,6 +7,7 @@ This is considered a secondary ship position.
 The Chief Engineer is responsible for keeping the ship intact and operational. While in combat, the massive damage dealt by epic-sized guns can ripple through the structure of a ship and mess with all of its internal systems. There is always a chance that damage to a specific system will cause the ship to lose performance. Engines could be damaged, causing a loss of power and tactical speed, for example. An Engineer fixes these things to make sure the ship doesn't go out without a fight. 
 
 : '''Associated Ship Attribute''': Structure
+: '''Secondary Ship Attribute''': This is used as a penalty on the Initiative Attribute for the Ship.
 : '''Officer Functions''': 
 :# <u>[[Repair]]</u>: Review the [[Giving_and_Receiving_Damage_in_Space_Ships#Repairing_Damage|Repairing Damage]] rules on the [[Giving_and_Receiving_Damage_in_Space_Ships|Giving and Recieving Damage in Space Ships]] page.
 :# <u>[[Boost]]</u>: (''Engines Only'', affects next round’s action phase): This acts just like Boosting except the Engineer can only do it for Engines. This effect lasts until the next Response phase. This also means that Science Officers cannot boost if the Boost the Engineer takes away all available points.

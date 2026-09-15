@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2,000",
+    "identityXpNextLevel": "5,000",
     "charName": "Beckett Kane",
     "playerName": "",
     "species": "Human",
+    "homeworld": "",
     "charPath": "Path of Strength (Strong Hero)",
     "pathLevel": "2",
     "classList": "Space Marine (1)",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d8",
-    "maxHP": "17",
+    "maxHP": "22",
     "tempHP": "",
-    "currentHP": "17",
+    "currentHP": "22",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2+1",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+2",
     "passivePerception": "9",
     "inertia": "",
@@ -141,7 +144,7 @@
         "Favored": true,
         "Rank": 2,
         "Key Ability": "STR",
-        "MiscMod": 0
+        "MiscMod": 1
       },
       {
         "Name": "Knowledge (Culture)",
@@ -180,8 +183,8 @@
       },
       {
         "Name": "Medical",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -222,8 +225,8 @@
       },
       {
         "Name": "Study",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -277,30 +280,17 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
-      {
-        "Name": "Assault Weapon",
-        "Lvl": "3",
-        "Damage": "1d10",
-        "Accuracy": "1",
-        "AP": "",
-        "Critical": "x2",
-        "Type": "K",
-        "Range": "300",
-        "isMelee": false,
-        "Ammo": "6",
-        "Notes": "Enhanced Combat Options (Overrun)"
-      },
       {
         "Name": "Side Arm",
         "Lvl": "3",
-        "Damage": "1d8+1",
+        "Damage": "1d6",
         "Accuracy": "",
         "AP": "",
-        "Critical": "x2/19-20",
+        "Critical": "x2",
         "Type": "K",
-        "Range": "300",
+        "Range": "100",
         "isMelee": false,
         "Ammo": "7",
         "Notes": ""
@@ -329,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Military)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -344,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Military",
-    "currentWealthScore": "8,000",
-    "liquidCredits": "11",
-    "xpCurrent": "2,000",
-    "xpNextLevel": "5,000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -358,6 +344,9 @@
         "Description": "Relocate any one Ability Point and declare any one Skill a Favored Skill/Gain an additional Bonus Feat (Misc Only)/Gain a Bonus Skill Point"
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm—silent reminders of a war nobody won."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -374,10 +363,6 @@
         "Description": "Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft."
       },
       {
-        "Name": "Confident",
-        "Description": "Misc +1 Bonus to the Diplomacy and Bluff skill"
-      },
-      {
         "Name": "Track",
         "Description": "Add Advantage Die too Survival checks when tracking"
       },
@@ -388,32 +373,18 @@
       {
         "Name": "Bazooka Arm",
         "Description": "Gain a +15ft range to throwing objects, including grenades. Also, a successful grenade-throwing accuracy check now falls within the range of 2 to 9. Meaning that 1 is 5ft to the left or low, while 10 is 5ft to the right or high, and so on for 1 and 10."
+      },
+      {
+        "Name": "Athletic Prowess",
+        "Description": "Allows the Athletic skill rank to boost your Intimidate Skill."
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Space Marine",
-      "Level": "",
-      "Affinities": [
-        "STR",
-        "DEX"
-      ],
-      "Talents": [
-        {
-          "Name": "Military School",
-          "Description": "At 1st, 4th, and 8th level, the Space Marine can pick a Bonus Feat from the whole Tactical category."
-        },
-        {
-          "Name": "Iron Gut",
-          "Description": "At 1st level, the Space Marine gets the Zero-G Training feat for free."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "50",
+    "currentWealthScore": "8,000",
+    "liquidCredits": "11",
     "equipmentList": [
       {
         "Name": "Fatigues",
@@ -487,9 +458,40 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult male of asian decent, ex-military, late thirties. A veteran of corporate border skirmishes in the Sol System, Beckett served as a heavy infantry contractor during the corporate wars of Mars. After his PMC unit was quietly decommissioned, he found himself stranded in fringe space with a warfighting resume that few civilian employers want to touch. Pragmatic, quiet, and weary, he drifts from space station to space station, taking whatever security, escort, or heavy muscle work comes his way, hoping to earn enough credits to keep his gear maintained and find a reliable crew. He has a broad, battle-hardened build, short brown hair, hazel eyes, and jagged scars along his jaw and forearm\u2014silent reminders of a war nobody won."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Space Marine",
+      "Level": "",
+      "Affinities": [
+        "STR",
+        "DEX"
+      ],
+      "Talents": [
+        {
+          "Name": "Military School",
+          "Description": "At 1st, 4th, and 8th level, the Space Marine can pick a Bonus Feat from the whole Tactical category."
+        },
+        {
+          "Name": "Iron Gut",
+          "Description": "At 1st level, the Space Marine gets the Zero-G Training feat for free."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -501,9 +503,6 @@
       "Techniques": []
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
   "detractorsCard": {
     "detractorsList": []
   },
@@ -522,19 +521,8 @@
     "drawbacksList": [],
     "enhancementsList": []
   },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
+  "extraNotesCard": {
+    "extraNotes": ""
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -576,6 +564,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
-    "conditionsVisible": false
+    "extraNotesVisible": true,
+    "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Military",
+    "currentWealthScore": "8,000",
+    "liquidCredits": "11",
+    "xpCurrent": "2,000",
+    "xpNextLevel": "5,000"
   }
 }

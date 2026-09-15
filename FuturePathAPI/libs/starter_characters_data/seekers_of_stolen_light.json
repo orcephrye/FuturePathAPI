@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "0",
+    "identityXpNextLevel": "2000",
     "charName": "Seekers of Stolen Light",
     "playerName": "",
     "species": "Chronodes",
+    "homeworld": "",
     "charPath": "Path of Intelligence (Smart Hero)",
     "pathLevel": "1",
     "classList": "",
@@ -35,14 +38,14 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "6",
+    "maxHP": "10",
     "tempHP": "",
-    "currentHP": "6",
+    "currentHP": "10",
     "nonlethalHP": ""
   },
   "attributesCard": {
     "advantageDie": "d2",
-    "extraDamage": "0",
+    "extraDamage": "",
     "initiative": "+5",
     "passivePerception": "9",
     "inertia": "",
@@ -96,7 +99,7 @@
       },
       {
         "Name": "Craft (Mechanical)",
-        "Favored": true,
+        "Favored": false,
         "Rank": 1,
         "Key Ability": "INT",
         "MiscMod": 0
@@ -111,7 +114,7 @@
       {
         "Name": "Craft (Structural)",
         "Favored": false,
-        "Rank": 1,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -159,8 +162,8 @@
       },
       {
         "Name": "Knowledge (History)",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "INT",
         "MiscMod": 1
       },
@@ -194,8 +197,8 @@
       },
       {
         "Name": "Pilot",
-        "Favored": true,
-        "Rank": 1,
+        "Favored": false,
+        "Rank": 0,
         "Key Ability": "DEX",
         "MiscMod": 0
       },
@@ -262,12 +265,12 @@
     "combatSpeedSq": "8"
   },
   "armorDefensesCard": {
-    "armorProfCount": 1,
+    "armorProfCount": 0,
     "armorsList": []
   },
   "weaponsCard": {
     "meleeProfCount": 2,
-    "rangedProfCount": 2,
+    "rangedProfCount": 0,
     "weaponsList": [
       {
         "Name": "Natural Swarm Attack",
@@ -293,7 +296,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Technician)",
         "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -314,18 +317,14 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Technician",
-    "currentWealthScore": "11,500",
-    "liquidCredits": "9",
-    "xpCurrent": "0",
-    "xpNextLevel": "2000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
       {
         "Name": "Swarm",
-        "Description": "This is a swarm of linked minds of birds. Cannot benefit from armor, or use weapons. All Area of Effect attacks hit the Swarm as if it was a 'Touch' attack."
+        "Description": "A swarm of linked minds. Cannot benefit from armor, or use weapons. All Area of Effect attacks hit the Swarm as if it was a 'Touch' attack."
       },
       {
         "Name": "Natural Swarm Attack",
@@ -336,6 +335,9 @@
         "Description": "The Chronodes are immune to mind affects and Confused condition."
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core—a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster.\nNote: Stashed a Proficiency Training Point for later use"
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -361,10 +363,11 @@
       }
     ]
   },
-  "professionsCard": [],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "45",
+    "currentWealthScore": "11,500",
+    "liquidCredits": "9",
     "equipmentList": [
       {
         "Name": "Tiny Range Pack",
@@ -452,6 +455,20 @@
       }
     ]
   },
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
+  },
   "techniquesCard": [
     {
       "Level": "0",
@@ -463,12 +480,6 @@
       "Techniques": []
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
   "cyberneticsCard": {
     "cyborgLevel": "1",
     "frameworkTechLevel": "3",
@@ -490,29 +501,6 @@
       }
     ],
     "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
-  },
-  "backstoryCard": {
-    "backstoryNotes": "The five members of Seekers of Stolen Light forged their collective bond while exploring a ruined, dark-matter research station adrift near the outer rim. Deep within the wreck, the flock uncovered the glowing remnant of a shattered ancient star-core\u2014a strange, encapsulated anomaly emitting light from a long-dead era. Fascinated by the discovery and driven by an intense corvid instinct to hoard lost wonders and shiny relics, the five minds unified under a single shared purpose: tracking down fragments of lost light-based tech and stellar artifacts hidden across the Great Ring. Seekers of Stolen Light is a unified flock unit of five crow-like avian bipeds, each standing around 1'4\" with glossy, pitch-black plumage that shimmers with an oily violet and silver sheen under starlight. They move with eerie, fluid synchronicity, often perching in formation on high ledges or walking in a tight, coordinated cluster."
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -538,10 +526,23 @@
     "cond_stunned": false,
     "cond_paralyzed": false
   },
+  "extraNotesCard": {
+    "extraNotes": ""
+  },
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
   "powerArmorCard": {
     "powerArmorProfCount": 0,
     "powerArmorList": []
   },
+  "professionsCard": [],
   "UI_Layout": {
     "theme": "cosmic-dark",
     "autoSwitchTheme": true,
@@ -554,6 +555,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Technician",
+    "currentWealthScore": "11,500",
+    "liquidCredits": "9",
+    "xpCurrent": "0",
+    "xpNextLevel": "2000"
   }
 }

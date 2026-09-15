@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2,000",
+    "identityXpNextLevel": "5,000",
     "charName": "Cxaz",
     "playerName": "",
     "species": "Graylings",
+    "homeworld": "",
     "charPath": "Path of Intelligence (Smart Hero)",
     "pathLevel": "2",
     "classList": "Engineer (1)",
@@ -35,9 +38,9 @@
   },
   "healthInjuryCard": {
     "hitDie": "d6",
-    "maxHP": "10",
+    "maxHP": "15",
     "tempHP": "",
-    "currentHP": "10",
+    "currentHP": "15",
     "nonlethalHP": ""
   },
   "attributesCard": {
@@ -153,7 +156,7 @@
       {
         "Name": "Knowledge (Current Events)",
         "Favored": true,
-        "Rank": 1,
+        "Rank": 2,
         "Key Ability": "INT",
         "MiscMod": 0
       },
@@ -277,12 +280,12 @@
   },
   "weaponsCard": {
     "meleeProfCount": 1,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
         "Name": "Laser Pistol",
-        "Lvl": "1",
-        "Damage": "d8",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -316,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Blue Collar)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -331,12 +334,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Blue Collar",
-    "currentWealthScore": "1,400",
-    "liquidCredits": "9",
-    "xpCurrent": "2,000",
-    "xpNextLevel": "5,000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -345,6 +344,9 @@
         "Description": "Graylings possess a direct mental affinity for technology and communications."
       }
     ]
+  },
+  "backstoryCard": {
+    "backstoryNotes": "Young adult male engineer. Growing up on the arid homeworld of Cxazshngs, Cxaz was expected to follow family tradition and enter the prestigious cloning research guilds of Curvilinea Prime. However, he possessed a restless, hands-on mechanical curiosity that theoretical labs could never satisfy. Preferring grease, wire-splicing, and field improvisations over pristine academic suites, he boarded an outward-bound freighter to explore the wider galaxy. Inquisitive, quick-thinking, and eager to tinker with foreign alien technology, Cxaz is a gifted technician who views every broken starship system as an exciting puzzle. Standing just 3'2\" tall with a light frame, he has smooth grey skin, prominent dark eyes, and intricate, brightly colored geometric tattoos dyed into his scalp, neck, and arms—a traditional practice of his people that he wears with pride."
   },
   "pathTalentsCard": {
     "pathTalentsList": [
@@ -366,33 +368,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Engineer",
-      "Level": "",
-      "Affinities": [
-        "CON",
-        "INT"
-      ],
-      "Talents": [
-        {
-          "Name": "Extra-Curricular Training",
-          "Description": "The Master Architect: (Novice) \"Industrial Efficiency\" - You gain the Jerry Rigging feat for free. You reduce the material cost of crafting General Equipment by an additional 25%."
-        },
-        {
-          "Name": "Quick Construction",
-          "Description": "At Engineer 1st level, an engineer learns how to craft general equipment such as scratch-built electronic, mechanical, and structural objects more quickly than normal. When using the Craft (electronic), Craft (mechanical), or Craft (structural) skill to build a General Equipment item, the Engineer reduces the building time by 1/4.\n- At 5th level, the Engineer reduces the building time of ordinary objects to 1/8 and masterworked objects by half."
-        },
-        {
-          "Name": "Professional Repair",
-          "Description": "At 1st level, an Engineer has improved ways of repairing robots, vehicles, power armor, etc... An Engineer with the correct Professional Kit or appropriate facility (ie: workshop, or hanger) can gain bonuses to repair damage to a robot, vehicles, power armor, spaceships and so on. The DC and Time are no longer based on the Repair rules. This takes 1 hour of work. This can also be done in combat but requires an additional +5 to the DC check and a Standard Action. Review the table to the right for more info.\n- For Space Ships, this provides an Advantage to Repair checks to remove Battle Damage."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "54",
+    "currentWealthScore": "1,400",
+    "liquidCredits": "9",
     "equipmentList": [
       {
         "Name": "Contractor's Field Bag",
@@ -487,47 +467,6 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Young adult male engineer. Growing up on the arid homeworld of Cxazshngs, Cxaz was expected to follow family tradition and enter the prestigious cloning research guilds of Curvilinea Prime. However, he possessed a restless, hands-on mechanical curiosity that theoretical labs could never satisfy. Preferring grease, wire-splicing, and field improvisations over pristine academic suites, he boarded an outward-bound freighter to explore the wider galaxy. Inquisitive, quick-thinking, and eager to tinker with foreign alien technology, Cxaz is a gifted technician who views every broken starship system as an exciting puzzle. Standing just 3'2\" tall with a light frame, he has smooth grey skin, prominent dark eyes, and intricate, brightly colored geometric tattoos dyed into his scalp, neck, and arms\u2014a traditional practice of his people that he wears with pride."
-  },
-  "techniquesCard": [
-    {
-      "Level": "0",
-      "Profession": "Telepath Grayling",
-      "DC": "13",
-      "Learned": "1",
-      "Uses": "-",
-      "Used": "0",
-      "Techniques": [
-        {
-          "Name": "Missive (Telepath)",
-          "Range": "Close",
-          "Effect": "Send a short one-way telepathic message to a single subject"
-        }
-      ]
-    }
-  ],
-  "quirksCard": {
-    "quirksList": []
-  },
-  "detractorsCard": {
-    "detractorsList": []
-  },
-  "cyberneticsCard": {
-    "cyborgLevel": "",
-    "frameworkTechLevel": "",
-    "frameworkMasterworked": "",
-    "power": "",
-    "slots": "",
-    "implantsList": [],
-    "drawbacksList": []
-  },
-  "mutationsCard": {
-    "mpEarned": "0",
-    "mpSpent": "0",
-    "drawbacksList": [],
-    "enhancementsList": []
-  },
   "psionicsCard": {
     "drawbacksList": [],
     "levelsList": [
@@ -547,6 +486,68 @@
         ]
       }
     ]
+  },
+  "professionsCard": [
+    {
+      "Title": "Engineer",
+      "Level": "",
+      "Affinities": [
+        "CON",
+        "INT"
+      ],
+      "Talents": [
+        {
+          "Name": "Extra-Curricular Training",
+          "Description": "The Master Architect: (Novice) \"Industrial Efficiency\" - You gain the Jerry Rigging feat for free. You reduce the material cost of crafting General Equipment by an additional 25%."
+        },
+        {
+          "Name": "Quick Construction",
+          "Description": "At Engineer 1st level, an engineer learns how to craft general equipment such as scratch-built electronic, mechanical, and structural objects more quickly than normal. When using the Craft (electronic), Craft (mechanical), or Craft (structural) skill to build a General Equipment item, the Engineer reduces the building time by 1/4.\n- At 5th level, the Engineer reduces the building time of ordinary objects to 1/8 and masterworked objects by half."
+        },
+        {
+          "Name": "Professional Repair",
+          "Description": "At 1st level, an Engineer has improved ways of repairing robots, vehicles, power armor, etc... An Engineer with the correct Professional Kit or appropriate facility (ie: workshop, or hanger) can gain bonuses to repair damage to a robot, vehicles, power armor, spaceships and so on. The DC and Time are no longer based on the Repair rules. This takes 1 hour of work. This can also be done in combat but requires an additional +5 to the DC check and a Standard Action. Review the table to the right for more info.\n- For Space Ships, this provides an Advantage to Repair checks to remove Battle Damage."
+        }
+      ]
+    }
+  ],
+  "techniquesCard": [
+    {
+      "Level": "0",
+      "Profession": "Telepath Grayling",
+      "DC": "13",
+      "Learned": "1",
+      "Uses": "-",
+      "Used": "0",
+      "Techniques": [
+        {
+          "Name": "Missive (Telepath)",
+          "Range": "Close",
+          "Effect": "Send a short one-way telepathic message to a single subject"
+        }
+      ]
+    }
+  ],
+  "detractorsCard": {
+    "detractorsList": []
+  },
+  "cyberneticsCard": {
+    "cyborgLevel": "",
+    "frameworkTechLevel": "",
+    "frameworkMasterworked": "",
+    "power": "",
+    "slots": "",
+    "implantsList": [],
+    "drawbacksList": []
+  },
+  "mutationsCard": {
+    "mpEarned": "0",
+    "mpSpent": "0",
+    "drawbacksList": [],
+    "enhancementsList": []
+  },
+  "extraNotesCard": {
+    "extraNotes": ""
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -588,6 +589,14 @@
     "mutationsVisible": false,
     "psionicsVisible": true,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Blue Collar",
+    "currentWealthScore": "1,400",
+    "liquidCredits": "9",
+    "xpCurrent": "2,000",
+    "xpNextLevel": "5,000"
   }
 }

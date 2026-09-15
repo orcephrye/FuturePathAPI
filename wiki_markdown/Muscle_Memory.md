@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisites**: Defensive Martial Arts, Affinity Die 1d10.
+**Prerequisites**: Defensive Martial Arts, Affinity Die 1d6+5
 
 **Benefit**: In melee combat, if an opponent attacks and misses the
 character, the character gains a Reaction Action of

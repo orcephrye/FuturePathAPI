@@ -6,3 +6,333 @@ GAME MASTERS ONLY `</span>`{=html}**
 **`<span style="color:#ff0000">`{=html} All Artwork is temparory AI
 Generated Art using Gemini. This will be replaced by paid-for human
 artwork. `</span>`{=html}**
+
+## Space Ship One-Shot: Trouble in the Dark {#space_ship_one_shot_trouble_in_the_dark}
+
+This is a tactical spaceship combat and fleet operations one-shot
+adventure for a crew of Level 2 or 3 characters. It is designed to
+introduce players and Game Masters to the [FuturePath Spaceship Combat
+system](Combat#Space_Combat "FuturePath Spaceship Combat system"){.wikilink},
+showcasing bridge crew coordination, the three-phase combat round, ship
+functions, electronic warfare, and environmental navigation in planetary
+shadows and debris rings.
+
+### Adventure Premise {#adventure_premise}
+
+On the freezing outer rim of the system, orbital ore platforms float
+above the dead mineral planet **Tartarus-IV**. For over a century,
+independent prospecting clans have extracted rare hyper-conductive
+crystals and heavy ores from the planet\'s scarred crust, refining them
+aboard the aging orbital depot **Hesperus Station**.
+
+Recently, outbound ore freighters have been disappearing without a
+trace. A ruthless pirate outfit calling themselves the **Obsidian
+Corsairs**, commanded by a disgraced ex-militia captain named **Kray
+\"The Shadow\" Darek**, has set up an interdiction base in the permanent
+planetary shadow on the dark side of Tartarus-IV. Operating in the
+sensor-dead darkness, the Corsairs use signal jammers and drifting slag
+debris to ambush unarmed cargo vessels, demanding extortionate
+protection fees or blasting them to slag.
+
+With station life support systems running low on refined catalysts and
+corporate relief fleets months away, Hesperus Station\'s Overseer offers
+an emergency contract to the player characters: take command of the
+station\'s last armed patrol cutter, the **Aegis-9**, escort the vital
+ore convoy **Caelum-7** through the dark meridian, and break the Corsair
+blockade once and for all.
+
+### Key Characters {#key_characters}
+
+1.  **Overseer Talia Thorne (Hesperus Station Administrator):** Tough,
+    exhausted, and fiercely protective of her mining colony. She equips
+    the party with the *Aegis-9*, offering 80,000 ISC plus full salvage
+    rights for eliminating the pirate threat.
+2.  **Captain Kray \"The Shadow\" Darek (Corsair Commander):** Cold,
+    calculating pirate warlord piloting the heavy gunship *The Black
+    Eclipse*. A master of ambushes who exploits sensor blind spots and
+    electronic countermeasures.
+3.  **Chief Pilot Jaxom Miller (Convoy Commander):** Veteran pilot of
+    the lumbering ore barge *Caelum-7*. A nervous civilian captain
+    depending completely on the players to keep his fragile ship intact.
+
+### Adventure Map & Encounter Flow {#adventure_map_encounter_flow}
+
+{{#mermaid:graph TD
+
+`   Briefing[Scene 1: Mission Briefing & Ship Outfitting] --> Patrol[Scene 2: Ambush at the Dark Meridian];`\
+`   Patrol --> Convoy[Scene 3: Defending the Caelum-7 Convoy];`\
+`   Convoy --> Belt[Scene 4: Climax - Duel in the Obsidian Belt];`
+
+`   style Briefing fill:#2a3d66,stroke:#4a76a8,stroke-width:2px;`\
+`   style Patrol fill:#442a5a,stroke:#84529a,stroke-width:2px;`\
+`   style Convoy fill:#5a3825,stroke:#b86c3b,stroke-width:2px;`\
+`   style Belt fill:#662222,stroke:#bb4444,stroke-width:2px;`
+
+\|
+
+`config.theme = dark`
+
+}}
+
+## The Player\'s Vessel: The Aegis-9 {#the_players_vessel_the_aegis_9}
+
+The characters command the
+**[Aegis-9](Trouble_In_the_Dark_Player_Ship_Aegis-9 "Aegis-9"){.wikilink}**,
+a retrofitted patrol cutter built on a modified [Common Civ Small
+Hull](Common_Civ_Small_Hull "Common Civ Small Hull"){.wikilink}. Each
+player should be assigned a dedicated bridge station:
+
+## Running the Adventure {#running_the_adventure}
+
+### Scene 1: Mission Briefing & Launch {#scene_1_mission_briefing_launch}
+
+------------------------------------------------------------------------
+
+*Read the following aloud to the players to start the session:*
+
+> \"The air in the command hub of Hesperus Station smells of stale ozone
+> and recycled carbon. Beyond the viewport, the barren, craggy sphere of
+> Tartarus-IV fills the black void. Half the planet glows dull bronze in
+> the distant sunlight, but the other half---a vast hemisphere of
+> absolute shadow---swallows the light whole.
+>
+> Administrator Talia Thorne slaps a data-slate onto the holotable. A
+> holographic display of the orbital shipping corridor flickers to life,
+> bisected by red skulls marking the location of three destroyed ore
+> haulers.
+>
+> \'Three convoys lost in two weeks,\' Thorne says, her jaw clenched.
+> \'The Obsidian Corsairs are hiding behind the dark meridian where our
+> stationary beacons can\'t burn through the mineral interference. Our
+> people are starving for medical supplies, and our atmospheric
+> scrubbers need crystal catalysts from the surface to keep this station
+> breathing.
+>
+> The last functional convoy, the Caelum-7, is loaded and ready to break
+> orbit. But they\'ll never make the Jump Gate alone. I've refitted our
+> last defense cutter, the Aegis-9. Check your seals, man your stations,
+> and escort that freighter through the dark. Bring back proof that
+> Captain Kray and his wolves are dead, and eighty thousand credits plus
+> salvage rights are yours.\'\"
+
+GM Notes
+
+: 
+
+- Allow the players to familiarize themselves with the ship\'s consoles,
+  assign bridge roles, and make preparation checks.
+- A DC 13 [Knowledge
+  (Technology)](Knowledge#Technology "Knowledge (Technology)"){.wikilink}
+  or [Computer Use](Computer_Use "Computer Use"){.wikilink} check while
+  calibrating the sensors reveals that Tartarus-IV\'s iron-rich crust
+  creates severe electromagnetic scatter on the nightside: Passive
+  Sensors have their range halved in the shadow, making active scanning
+  by the Sensor Officer vital.
+- Players may requisition up to two extra packs of Ship Repair Parts (+2
+  on one Engineer Repair check) or an additional magazine of Kinetic
+  Ammo from the station armory.
+
+### Scene 2: Ambush at the Dark Meridian {#scene_2_ambush_at_the_dark_meridian}
+
+------------------------------------------------------------------------
+
+*Read the following aloud when the Aegis-9 crosses into the dark side of
+Tartarus-IV:*
+
+> \"The sun dips behind the jagged horizon of Tartarus-IV. In an
+> instant, warmth and starlight vanish, plunging your cockpit into
+> suffocating blackness. The starfield is blotted out by drifting dust
+> clouds and jagged chunks of orbital debris.
+>
+> Suddenly, your tactical displays flicker with static. Red proximity
+> warnings chime: two high-speed contacts have detached from the shadow
+> of a hollowed-out asteroid and are burning hard toward your vector,
+> weapons hot!\"
+
+Encounter Overview
+
+: 
+
+- **Enemies:** 2x **Corsair Skiffs** (Fast, lightweight interceptors
+  attempting to cripple the *Aegis-9* before the convoy arrives).
+- **Tactical Environment:** Sensor Shadow (Disadvantage on long-range
+  attacks until the Sensors Officer succeeds on a DC 12
+  [Scan](Scan "Scan"){.wikilink} check).
+- **Objective:** Destroy or force the surrender of the pirate scout
+  wing.
+
+#### Corsair Skiff (2 Vessels) {#corsair_skiff_2_vessels}
+
+  ------------------------------ --- ---------------------- --- ------------------------ --- --------------------------
+  **Ship Name**: Corsair Skiff       **Hull Size**: Small       **Core**: Tech Level 1       **Attribute Points**: 10
+  ------------------------------ --- ---------------------- --- ------------------------ --- --------------------------
+
+------------------------------------------------------------------------
+
++--------------------+---+--------------------+---+--------------------+
+| **Attributes**:    |   | **Defense &        |   | **Hard Points**:   |
+|                    |   | Combat**:          |   |                    |
+| - Engines: 14 (+2) |   |                    |   | - 1x Rapid Kinetic |
+| - Weapons: 10 (+0) |   | - **Tracking DC**: |   |   Autocannon       |
+| - Structure: 10    |   |   13 (10 + 2       |   |   (Fires 2 d10s)   |
+|   (+0)             |   |   Engines + 0      |   | - 1x Light Rocket  |
+| - Shields: 10 (+0) |   |   Shields - 0      |   |   Pod (Fires 2     |
+| - Electronics: 10  |   |   Structure + 1    |   |   d10s, limited    |
+|   (+0)             |   |   Size)            |   |   ammo)            |
+| - Sensors: 10 (+0) |   | - **BD-DC**: 4 / 4 |   |                    |
+|                    |   |   (4 successes of  |   |                    |
+|                    |   |   4 or higher)     |   |                    |
+|                    |   | - **Battle Damage  |   |                    |
+|                    |   |   Capacity**: 2    |   |                    |
+|                    |   | - **Movement       |   |                    |
+|                    |   |   Speed**: 6       |   |                    |
+|                    |   |   Squares          |   |                    |
+|                    |   | - **Initiative**:  |   |                    |
+|                    |   |   +2               |   |                    |
++--------------------+---+--------------------+---+--------------------+
+
+Tactics
+
+: 
+
+- The skiffs attempt to use their superior speed (6 squares) to bracket
+  the *Aegis-9*, firing autocannons and rockets in the Action Phase.
+- If one skiff is reduced to 1 Battle Damage, its pilot panics and
+  attempts to break off and flee deeper into the belt.
+
+### Scene 3: Defending the Caelum-7 Convoy {#scene_3_defending_the_caelum_7_convoy}
+
+------------------------------------------------------------------------
+
+*Read the following aloud as the party completes the first skirmish:*
+
+> \"The comms crackle with frantic static, followed by the strained,
+> trembling voice of Chief Pilot Jaxom Miller.
+>
+> \'Aegis-9! Mayday, mayday! We cleared the low orbital transit tube,
+> but two more pirate craft intercepted us at Waypoint Omega! They\'ve
+> disabled our secondary thrusters and launched boarding leeches onto
+> our outer hull! We cannot jump! If they crack the pressure doors, our
+> cargo and crew are forfeit!\'\"
+
+Encounter Overview
+
+: 
+
+- **Objective:** Protect the civilian ore freighter *Caelum-7* while
+  under assault by a Corsair Gunship and an escort Skiff.
+- **The Caelum-7\'s Status:** The freighter is immobilized at the center
+  of the tactical grid. It has a BD-DC of 4 / 4 and can sustain 2 more
+  Battle Damage before suffering catastrophic hull collapse.
+- **Enemies:** 1x **Corsair Skiff** and 1x **Corsair Boarding Gunship**.
+
+Special Tactical Mechanics
+
+: 
+
+- **Escort Defense:** The *Aegis-9* Helm Officer can maneuver the ship
+  between the pirates and the *Caelum-7*, intercepting incoming missile
+  volleys by passing a DC 13 Pilot check.
+- **Electronic Counter-Measures:** The Sensors Officer can roll a DC 14
+  [Computer_Use](Computer_Use "Computer_Use"){.wikilink} check to
+  scramble the boarding clamps remotely, buying the freighter another
+  round of structural integrity.
+
+### Scene 4: Climax - Duel in the Obsidian Belt {#scene_4_climax___duel_in_the_obsidian_belt}
+
+------------------------------------------------------------------------
+
+*Read the following aloud as the party tracks the pirate signals to
+their staging lair:*
+
+> \"Deep within the densest band of the Obsidian Ring, nestled inside
+> the hollow interior of a shattered iron planetoid, lurks the corsair
+> flagship: The Black Eclipse.
+>
+> A menacing, jagged warship painted in light-absorbing matte black, its
+> hull bristles with heavy missile pods and high-output pulse lasers. A
+> beam of high-frequency static washes over your communications array,
+> and a harsh, sneering voice echoes across the bridge:
+>
+> \'Well fought, Hesperus watchdogs. But out here in the dark, there are
+> no laws, no stations, and no rescue. Your ship will make a fine
+> addition to my fleet---or scrap for the refinery.\'
+>
+> The Black Eclipse fires its main thrusters, erupting from the asteroid
+> hollow with weapons locked onto your cockpit!\"
+
+Encounter Overview
+
+: 
+
+- **Boss Enemy:** **The Black Eclipse** (Captain Kray\'s heavily
+  customized Corsair Gunship).
+- **Environmental Hazard - Debris Shrapnel:** Ships moving more than 4
+  squares in a turn must make a DC 12 Helm (Pilot) check or take kinetic
+  damage from dense tumbling ore rocks.
+- **Environmental Hazard - Dark Meridian Blackout:** Targeting rolls
+  without an active [Scan](Scan "Scan"){.wikilink} lock suffer
+  **Disadvantage (-1Ad)**.
+
+#### The Black Eclipse (Pirate Flagship) {#the_black_eclipse_pirate_flagship}
+
+  ---------------------------------- --- ----------------------- --- ------------------------ --- --------------------------
+  **Ship Name**: The Black Eclipse       **Hull Size**: Medium       **Core**: Tech Level 2       **Attribute Points**: 16
+  ---------------------------------- --- ----------------------- --- ------------------------ --- --------------------------
+
+------------------------------------------------------------------------
+
++--------------------+---+--------------------+---+--------------------+
+| **Attributes**:    |   | **Defense &        |   | **Hard Points (4   |
+|                    |   | Combat**:          |   | Total)**:          |
+| - Engines: 12 (+1) |   |                    |   |                    |
+| - Weapons: 14 (+2) |   | - **Tracking DC**: |   | - 2x Heavy Laser   |
+| - Structure: 14    |   |   10 (10 + 1       |   |   Batteries (Fires |
+|   (+2)             |   |   Mobility + 1     |   |   4 d10s)          |
+| - Shields: 12 (+1) |   |   Shields - 2      |   | - 1x Heavy Missile |
+| - Electronics: 14  |   |   Structure + 0    |   |   Tube (Fires 3    |
+|   (+2)             |   |   Size)            |   |   d10s, high       |
+| - Sensors: 12 (+1) |   | - **BD-DC**: 6 / 5 |   |   explosive)       |
+|                    |   |   (6 successes     |   | - 1x Tactical      |
+|                    |   |   required of 5 or |   |   Electronic       |
+|                    |   |   higher)          |   |   Jammer (Imposes  |
+|                    |   | - **Battle Damage  |   |   -2 on enemy      |
+|                    |   |   Capacity**: 3    |   |   weapon d10 rolls |
+|                    |   | - **Movement       |   |   until            |
+|                    |   |   Speed**: 5       |   |   counter-scanned) |
+|                    |   |   Squares          |   |                    |
+|                    |   | - **Initiative**:  |   |                    |
+|                    |   |   0 (Engines 1 +   |   |                    |
+|                    |   |   Sensors 1 -      |   |                    |
+|                    |   |   Structure 2)     |   |                    |
++--------------------+---+--------------------+---+--------------------+
+
+Boss Tactics
+
+: 
+
+- **Phase 1 (Support):** Captain Kray activates the Electronic Jammer to
+  suppress the players\' lock-on arrays.
+- **Phase 2 (Action):** The \*Black Eclipse\* fires a dual volley of
+  heavy lasers and tracking missiles, targeting the \*Aegis-9\*\'s
+  engines to strand them in the dark.
+- **Phase 3 (Response):** When reduced to 2 Battle Damage, Captain Kray
+  attempts an emergency jump to escape. The player Helm or Science
+  Officer can perform an interdiction or ram maneuver to prevent the
+  jump.
+
+## Conclusion & Rewards {#conclusion_rewards}
+
+- **Victory:** With \*The Black Eclipse\* destroyed or disabled, the
+  remaining Corsair forces scatter from Tartarus-IV. The \*Caelum-7\*
+  successfully reaches the Jump Gate, restoring vital supply shipments
+  to Hesperus Station.
+- **Bounty & Salvage:**
+  - 80,000 ISC paid by Administrator Thorne.
+  - Salvage rights to the disabled pirate vessels: players can recover
+    up to 2 Tech Level 2 Medium Hard Point weapons and 4 units of Ship
+    Repair Parts.
+  - Full repairs and complimentary re-arming for the \*Aegis-9\* at
+    Hesperus Station drydock.
+- **Experience:** 1,500 XP per player (sufficient to advance Level 2
+  characters toward Level 3).

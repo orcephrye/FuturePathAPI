@@ -1,8 +1,11 @@
 {
   "identityCard": {
+    "identityXpCurrent": "2,000",
+    "identityXpNextLevel": "5,000",
     "charName": "Marara Sylavan",
     "playerName": "",
     "species": "Volar",
+    "homeworld": "",
     "charPath": "Path of Wisdom (Dedicated Hero)",
     "pathLevel": "2",
     "classList": "Xenophile (Xenologist) (1)",
@@ -120,7 +123,7 @@
         "Favored": true,
         "Rank": 2,
         "Key Ability": "WIS",
-        "MiscMod": 0
+        "MiscMod": 2
       },
       {
         "Name": "Disable Device",
@@ -187,8 +190,8 @@
       },
       {
         "Name": "Perception",
-        "Favored": false,
-        "Rank": 0,
+        "Favored": true,
+        "Rank": 1,
         "Key Ability": "WIS",
         "MiscMod": 0
       },
@@ -204,7 +207,7 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "WIS",
-        "MiscMod": 2
+        "MiscMod": 1
       },
       {
         "Name": "Sleight of Hand",
@@ -225,7 +228,7 @@
         "Favored": true,
         "Rank": 1,
         "Key Ability": "INT",
-        "MiscMod": 1
+        "MiscMod": 0
       },
       {
         "Name": "Survival",
@@ -277,12 +280,12 @@
   },
   "weaponsCard": {
     "meleeProfCount": 2,
-    "rangedProfCount": 3,
+    "rangedProfCount": 2,
     "weaponsList": [
       {
-        "Name": "Laser Pistol",
-        "Lvl": "3",
-        "Damage": "d8",
+        "Name": "Small Laser Pistol",
+        "Lvl": "2",
+        "Damage": "d6",
         "Accuracy": "1",
         "AP": "",
         "Critical": "x2/20",
@@ -316,7 +319,7 @@
         "MiscMod": 0
       },
       {
-        "Name": "Profession",
+        "Name": "Profession (Academic)",
         "Rank": 2,
         "Key Ability": "WIS",
         "MiscMod": 0
@@ -337,12 +340,8 @@
       }
     ]
   },
-  "wealthXpCard": {
-    "occupation": "Academic",
-    "currentWealthScore": "17,600",
-    "liquidCredits": "9",
-    "xpCurrent": "2,000",
-    "xpNextLevel": "5,000"
+  "quirksCard": {
+    "quirksList": []
   },
   "speciesTraitsCard": {
     "speciesTraitsList": [
@@ -360,6 +359,9 @@
       }
     ]
   },
+  "backstoryCard": {
+    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems—hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
+  },
   "pathTalentsCard": {
     "pathTalentsList": [
       {
@@ -375,8 +377,8 @@
   "featsCard": {
     "featsList": [
       {
-        "Name": "Attentive",
-        "Description": "The character gets a Misc +1 bonus to Study and Sense Motive skills."
+        "Name": "Trustworthy",
+        "Description": "Misc +2 bonus on the Diplomacy skill."
       },
       {
         "Name": "Handle Animal",
@@ -384,29 +386,11 @@
       }
     ]
   },
-  "professionsCard": [
-    {
-      "Title": "Xenophile",
-      "Level": "",
-      "Affinities": [
-        "WIS",
-        "CHA"
-      ],
-      "Talents": [
-        {
-          "Name": "Xenolore",
-          "Description": "At Xenophile 1st level, identifying the characteristics, special attacks, or vulnerabilities of a xenomorph is a Simple Action. Roll a Knowledge or Study check (DC 8 + xenomorph\u2019s Hit Dice). Success allows you to unlock a fact. For every 4 points you exceed the DC, you learn another piece of information. Successfully identifying a creature's weakness grants you an Advantage Die on accuracy checks or saving throws against the target for a number of rounds equal to 1 + your Wisdom or Charisma modifier (whichever is higher)."
-        },
-        {
-          "Name": "Xeno Resistance",
-          "Description": "You gain a +1 bonus on saving throws to resist the Techniques, Talents, or special attacks from alien monsters. This increases to +2 at 5th level and +3 at 10th level."
-        }
-      ]
-    }
-  ],
   "equipmentCard": {
     "itemCraftProfCount": 0,
     "totalGearWeight": "50",
+    "currentWealthScore": "17,600",
+    "liquidCredits": "9",
     "equipmentList": [
       {
         "Name": "Large Range Pack",
@@ -522,9 +506,40 @@
       }
     ]
   },
-  "backstoryCard": {
-    "backstoryNotes": "Adult xenobiologist. Born on the Mother Planet Volar, Marara completed its studies at the Botanical Institute of Victar before setting out into the Great Ring. Driven by a deep spiritual and scientific curiosity, she travels the galaxy as a field researcher studying rare plant fungal, and exotic bio-ecosystems\u2014hoping one day to document living legends like the sentient planet Tygerion or the fungal hive-mind of the Xrototaxian. It is fiercely protective of natural planetary environments against corporate exploitation. It has pale green skin speckled with dark red age-spots, deep sea-blue eyes, and lush, leaf-like foliage crowning her head and shoulders, concealing a small dormant bud at her crown."
+  "psionicsCard": {
+    "drawbacksList": [],
+    "levelsList": [
+      {
+        "level": "0",
+        "type": "",
+        "dc": "",
+        "learned": "",
+        "uses": "",
+        "used": "",
+        "techniquesList": []
+      }
+    ]
   },
+  "professionsCard": [
+    {
+      "Title": "Xenophile",
+      "Level": "",
+      "Affinities": [
+        "WIS",
+        "CHA"
+      ],
+      "Talents": [
+        {
+          "Name": "Xenolore",
+          "Description": "At Xenophile 1st level, identifying the characteristics, special attacks, or vulnerabilities of a xenomorph is a Simple Action. Roll a Knowledge or Study check (DC 8 + xenomorph’s Hit Dice). Success allows you to unlock a fact. For every 4 points you exceed the DC, you learn another piece of information. Successfully identifying a creature's weakness grants you an Advantage Die on accuracy checks or saving throws against the target for a number of rounds equal to 1 + your Wisdom or Charisma modifier (whichever is higher)."
+        },
+        {
+          "Name": "Xeno Resistance",
+          "Description": "You gain a +1 bonus on saving throws to resist the Techniques, Talents, or special attacks from alien monsters. This increases to +2 at 5th level and +3 at 10th level."
+        }
+      ]
+    }
+  ],
   "techniquesCard": [
     {
       "Level": "0",
@@ -536,9 +551,6 @@
       "Techniques": []
     }
   ],
-  "quirksCard": {
-    "quirksList": []
-  },
   "detractorsCard": {
     "detractorsList": []
   },
@@ -557,19 +569,8 @@
     "drawbacksList": [],
     "enhancementsList": []
   },
-  "psionicsCard": {
-    "drawbacksList": [],
-    "levelsList": [
-      {
-        "level": "0",
-        "type": "",
-        "dc": "",
-        "learned": "",
-        "uses": "",
-        "used": "",
-        "techniquesList": []
-      }
-    ]
+  "extraNotesCard": {
+    "extraNotes": ""
   },
   "conditionsCard": {
     "cond_blinded": false,
@@ -611,6 +612,14 @@
     "mutationsVisible": false,
     "psionicsVisible": false,
     "notesVisible": true,
+    "extraNotesVisible": true,
     "conditionsVisible": true
+  },
+  "wealthXpCard": {
+    "occupation": "Academic",
+    "currentWealthScore": "17,600",
+    "liquidCredits": "9",
+    "xpCurrent": "2,000",
+    "xpNextLevel": "5,000"
   }
 }

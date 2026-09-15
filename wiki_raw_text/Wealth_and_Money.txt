@@ -331,10 +331,12 @@ How much profit goes to your Bonus Income from a Short Term Investment? How much
 
 ;NOTE: You can only make one investment a month. Although you may have a talent/feat that can increase that amount. 
 
-<u>'''Gambling'''</u>: Gambling has the risk of causing debt and thus can subtract from the Character's Credit Score. The Gambling has a DC 25 and a check of 1d20 + Charisma. If you fail the check with a 1, you get 1 subtracted from your credit score. If the Player simply fails, the Character gets no money back. Beat it by less than 5, and the Character gets their bet back. If the Player beats it by more than 5, you get what you gambled back +10%. The Character gets +10% for every 5 points the DC is beaten. If you get a natural 20, you get a +100%. 
+==== Gambling ====
+<u>'''Gambling'''</u>: A player can use their own ISK or their Credit Score to gamble. There can be games where the house can win. In that case, there is a minimum value of DC20 + Character Level; if that value is not met, then the house wins, and everybody else loses. Games like cards/poker etc... require Charisma checks. Unless specified otherwise, use opposing checks with the highest player winning.  Games that involve dice should be based on [[Sleight_of_Hand|Sleight of Hand]] with opposing checks. There are also slot machines and other reaction-based games. These can require both [[Sleight of Hand]] and a [[Study]] check to beat.
 
-If the Character is gambling against other Characters, then this is an opposing Charisma check.
+The GM can invite a game and designate an Ability Score or Skill as the core rolling stat. 
 
+==== Customized Income ====
 <u>'''Customized Income'''</u>: Any source of steady wealth that is legal can be translated as an increase to your credit score. The Player may have an anonymous supporter of her work, who provides donations monthly, as an example. The bonus to credit is calculated by determining how much it takes to reach the next Credit level, subtracting that amount from the extra income, and adding a level to your credit. Keep doing this until you can no longer increase your credit. For example, if a Player has a credit level of 9 and is receiving $1000 a month from an anonymous supporter. To calculate the player's new credit score, you take the amount required to reach level 10, which is $250, and subtract it from $1000, resulting in $750. You now have $750 a month and a credit level of 10. You can repeat this again, but you will now need to subtract $500 from the remaining $750 to go from level 10 to level 11. Now the Player has a credit score of 11 and $250 extra income or Bonus income. She cannot go up any more levels because $250 is not enough to go from level 11 to level 12. 
 
 Why is that important if all that means is your Budget is higher, which it technically is anyway. Loaning power. The Player went from the 6 - 10 range to 11 - 15 range and is now able to qualify for a larger purchase.

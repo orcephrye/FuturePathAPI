@@ -22,11 +22,9 @@ Character can repair and craft any item of the same or lower tech level.
 
 This is considered to be a [Knowledge](Knowledge "Knowledge"){.wikilink}
 skill **Knowledge (Technology)**. A Character should consider their
-Knowledge Technology Skill Rank to be equal to Character Level divided
-by 2, rounded up. (Character Level / 2, rounded up). At Character level
-19, their Knowledge Technology Skill Rank is 19. However, identifying
-Technology higher than their Tech Level takes a +4 bonus to the DC per
-Tech Level higher than their own.
+Knowledge Technology Skill Rank to be equal to Character Level. However,
+identifying Technology higher than their Tech Level grants a +4 bonus to
+the DC per Tech Level above their own.
 
 ### Identify Technology {#identify_technology}
 

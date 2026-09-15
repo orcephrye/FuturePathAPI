@@ -15,9 +15,12 @@ targeting.
 
 : **Requirement**: Must have at least 1 rank in the Pilot Skill.
 : **Associated Ship Attribute**: Engines
-: **Associated Secondary Attribute**: Tactical Mobility - The max
-  tactical mobility is the Helm\'s Pilot Skill die level unless the
-  Engine\'s Mod is lower.
+: **Associated Secondary Attribute**: Tactical Mobility - This is equal
+  to the Ship\'s Engines Modifier + The Helm\'s Officer\'s Dexterity
+  Modifier + The Helm\'s Officer\'s Misc Bonuses to Pilot check.
+: **Associated Tertiary Attribute**: Tracking DC - This is based on Hull
+  size as well as Tactical Mobility. It is 10 + (Tactical Mobility +
+  Shield Mod) - Structure Mod +/- Size Mod
 : **Officer Functions**:
   1.  [`<u>`{=html}Pilot Offensively or
       Defensively`</u>`{=html}](Fly_Offensively/Defensively "Pilot Offensively or Defensively"){.wikilink}:
@@ -47,8 +50,8 @@ targeting.
       This is used for Chase mechanics. A Pilot who makes this check
       against an enemy ship allows the enemy ship to know that you are
       attempting to catch up to them and/or set up for a Ram. If the
-      opposing check is higher than the enemy ship can choose to avoid
-      the Interception.
+      opposing check is higher, the enemy ship can choose to avoid the
+      Interception.
   4.  `<u>`{=html}[Ram](Ram "Ram"){.wikilink}`</u>`{=html}: If in Short
       range and a successful
       [Pursue/Intercept](Pursue/Intercept "Pursue/Intercept"){.wikilink}

@@ -852,10 +852,8 @@ Science Officer, who can provide buffs to ship systems.
 
 - *(1)* [Captain](Captain_Position "Captain"){.wikilink} can provide a
   boost to the rest of the crew by giving orders and using special
-  leadership skills. Usually, this provides an advantage to a particular
-  Crew member, who, in this round above all, needs to be successful. For
-  example, the ship may be attempting to flee combat, so the Captain may
-  assist the Pilot.
+  leadership skills. For example, the ship may be attempting to flee
+  combat, so the Captain may assist the Pilot.
 - *(2)* [Science Officer](Science_Officer "Science Officer"){.wikilink}
   is similar to the Captain except instead of providing a bonus to a
   Crew member, the Science Officer can provide a bonus to ship abilities

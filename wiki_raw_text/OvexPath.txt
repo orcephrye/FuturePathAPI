@@ -56,9 +56,13 @@ Below is the [[Species#Ovex|Ovex]] special Path. To learn more about Ovex and ot
 
 <u>Hit Die</u>: Module Dependent
 
-<u>Class Skills</u>: The Robot hero’s class skills (and the key ability for each skill) are dependent on which Module is picked. However, they all get Computer Use(Int)
+<u>Favored Skills</u>: The Robot hero’s Favored skills (and the key ability for each skill) are dependent on which Module is picked. However, they all get Computer Use(Int)
+
+<u>Special Path Related Skill Point or Hit Point</u>: Module Dependent
 
 <u>Skill Points at Each Additional Level</u>: Module Dependent
+
+<u>Starting Feat</u>: Select a [[Feats]] from the Skill Enhancements Sub-Category, or pick no Feat but gain 1 extra Skill Point.
 
 <u>Recommended Character Professions</u>: Module Dependent
 
@@ -73,30 +77,34 @@ Below is the [[Species#Ovex|Ovex]] special Path. To learn more about Ovex and ot
 ---
 <u>Ability Affinity</u>: Strength or Dexterity
 
-<u>Hit Die</u>: 1d8 (First Level: 8, Level Up Average: 5)
+<u>Hit Die</u>: 1d8 (First Level: 4 + 8, Level Up Average: 5)
 
-<u>Class Skills</u>: Athletics(Str), Acrobatics(Dex), Choose One: [Intimidate(Cha), Sense Motive(Wis), Survival(Wis)]
+<u>Favored Skills</u>: Athletics(Str), Acrobatics(Dex), Choose One: [Intimidate(Cha), Sense Motive(Wis), Survival(Wis)]
+
+<u>Special Path Related Skill Point or Hit Point</u>: Gain 1 Skill Point that must be spent on [ [[Acrobatics]] (Dex) / [[Athletics]] (Str) [[Pilot]] (Dex) / [[Sleight of Hand]] (Dex) / [[Stealth]] (Dex) ] or +1 Hit Point at level 1 and every following level.
 
 <u>Skill Points at Each Additional Level</u>: 1 + Int modifier. 
 
 * Push Through: Once per combat, the Ovex gets advantage on Overrun Combat Technique. 
 * Active Resistance: The Character takes a standard technique action to activate this. The Ovex chooses a Damage Type and gains DR 1 + (1/4th Character Level) for 1d6 + 1 turns for that type.
-* Auto Aim Assistance: The Character gains an advantage bonus to the accuracy check of a bonus attack. However, this action can only be performed once per combat.
-* Combat Technique Sub-routine: The Character gains one Advance Combat Technique as if they had taken the Feat [[Advanced_Combat_Techniques|Advanced Combat Techniques]].
+* Auto Aim Assistance: The Character gains an advantage bonus to the accuracy check of a bonus attack. However, you can use this action only once per combat.
+* Combat Technique Sub-routine: The Character gains one Advanced Combat Technique as if they had taken the Feat [[Advanced_Combat_Techniques|Advanced Combat Techniques]].
 
 
 ; - '''Leadership Module''' (Counts as either the Path of Charisma or Path of Wisdom when considering requirements for [[Character Professions]])
 ---
 <u>Ability Affinity</u>: Charisma or Wisdom
 
-<u>Hit Die</u>: 1d8 (First Level: 8, Level Up Average: 5)
+<u>Hit Die</u>: 1d8 (First Level: 4 + 8, Level Up Average: 5)
 
-<u>Class Skills</u>: Diplomacy(Cha), Bluff(Cha), Sense Motive(Wis), Knowledge [any one].
+<u>Favored Skills</u>: Diplomacy(Cha), Bluff(Cha), Sense Motive(Wis), Knowledge [any one].
+
+<u>Special Path Related Skill Point or Hit Point</u>: Gain 1 Skill Point that must be spent on any one Wisdom-based or Charisma-based Skill, or +1 Hit Point at level 1 and every following level.
 
 <u>Skill Points at Each Additional Level</u>: 1 + Int modifier. 
 
 * Assistance Sub-routine: Once per combat or per 20-minute time frame, the Ovex can assist another player with bonuses. In combat, the assist is a Free action, while in normal play, they gain Advantage.
-* Rally Function: With Charisma or Wisdom save (Which one you have an affinity with or which is higher) DC15 + Number of affected allies. Any ally characters within earshot of the Character have any negative mind-affecting conditions removed. A character can only do this 1/4 character level times per day.
+* Rally Function: With a Charisma or Wisdom save (Whichever you have an affinity with or which is higher), DC 15 + Number of affected allies. Any ally characters within earshot of the Character have any negative mind-affecting conditions removed. A character can only do this 1/4 character level times per day.
 * Task Scheduler Upgrade: This counts as the Leadership feat. If you already have that feat, then pick another Feat that requires Leadership.
 * Intimidation Upgrade: The Character gains a +1 Misc to Intimidate skill checks. 
 
@@ -105,25 +113,29 @@ Below is the [[Species#Ovex|Ovex]] special Path. To learn more about Ovex and ot
 ---
 <u>Ability Affinity</u>: Intelligence
 
-<u>Hit Die</u>: 1d6 (First Level: 6, Level Up Average: 4)
+<u>Hit Die</u>: 1d6 (First Level: 4 + 6, Level Up Average: 4)
 
-<u>Class Skills</u>: Craft: [Electronic, Mechanical, Structural], Study(Int), Knowledge [any two], Disable Device(Int)
+<u>Favored Skills</u>: Craft: [Electronic, Mechanical, Structural], Study(Int), Knowledge [any two], Disable Device(Int)
+
+<u>Special Path Related Skill Point or Hit Point</u>: Gain 1 Skill Point that must be spent on any one Intelligence-based skill, or +1 Hit Point at level 1 and every following level.
 
 <u>Skill Points at Each Additional Level</u>: 2 + Int modifier. 
 
 * Passive Learning: Character gains a +1 Misc Mod to the Study Skill.
-* Auto Repair Sub-routine: When activated the character gains an advantage bonus to repair checks. This can be used 1/4th of the character level times per day. 
-* Skill Enhancement Upgrade: Pick one skill from the 'Class Skills' under the Specialist Module to add a +1 Misc Mod to.
-* Search Engine Upgrade: When activated, this talent allows a Character to use any Knowledge skill even if it is locked and has zero points in it. Or it gains an advantage bonus to a Knowledge skill that they do have ranks in. This can be used only once per day.
+* Auto Repair Sub-routine: When activated, the character gains an advantage bonus to repair checks. This can be used 1/4th of the character level times per day. 
+* Skill Enhancement Upgrade: Pick one skill from the 'Favored Skills' under the Specialist Module to add a +1 Misc Mod to.
+* Search Engine Upgrade: When activated, this talent allows a Character to use any Knowledge skill even if it is locked and has zero points in it. Or it gains an advantage bonus to a Knowledge skill that they do have ranks in. You can use this only once per day.
 
 
 ; - '''Assistance Module''' (Counts as the Path of Wisdom when considering requirements for [[Character Professions]])
 ---
 <u>Ability Affinity</u>: Wisdom
 
-<u>Hit Die</u>: 1d8 (First Level: 8, Level Up Average: 5)
+<u>Hit Die</u>: 1d8 (First Level: 4 + 8, Level Up Average: 5)
 
-<u>Class Skills</u>: Medical(Wis), Perception(Wis), Craft: [Chemical, Pharmaceutical], Survival(Wis), Knowledge [any one].
+<u>Favored Skills</u>: Medical(Wis), Perception(Wis), Craft: [Chemical, Pharmaceutical], Survival(Wis), Knowledge [any one].
+
+<u>Special Path Related Skill Point or Hit Point</u>: Gain 1 Skill Point that must be spent on any one Wisdom-based skill, or +1 Hit Point at level 1 and every following level.
 
 <u>Skill Points at Each Additional Level</u>: 2 + Int modifier. 
 

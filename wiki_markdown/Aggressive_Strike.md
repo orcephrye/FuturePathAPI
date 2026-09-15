@@ -1,7 +1,7 @@
 For a full list of Feats, go to the [Feats](Feats "Feats"){.wikilink}
 page.
 
-**Prerequisite**: Melee Weapon Focus, Affinity Die 1d6.
+**Prerequisite**: Melee Weapon Focus, Affinity Die 1d4+4
 
 **Benefit**: Increase the damage die level by 1, double the damage that
 comes from the Str or Dex modifier the Character uses for damage. Gain a
@@ -15,7 +15,7 @@ Thus, by default, it doesn\'t grant the Character a Bonus Attack. If the
 attack fails, the target also gains a Tactical Opportunity against the
 Character.
 
-**Normal**: Normally, an attack has no effect on AC, only heals or
-conditions.
+**Normal**: Normally, an attack has no effect on AC; it only heals or
+applies conditions.
 
 **Special**: -

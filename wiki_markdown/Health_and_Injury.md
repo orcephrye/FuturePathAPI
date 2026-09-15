@@ -41,7 +41,7 @@ damage in combat (See the
 [Injury](Health_and_Injury#Injury "Injury"){.wikilink} section below)
 and are used to measure how hard a character is to kill.
 
-    Editing Character Sheet: The Player can record the Character Hit Points on the Future Path Character Sheet. It is located just under the "Future Path" to the right of the Ability Scores. Also, above the "SPEED" section, you will notice that there are "DR" boxes. DR will be explained further later. Below the Total and DR section, there are "Wound/Current HP" and, below that, "Non-Lethal Damage" boxes. These boxes are there to make it easier to record combat damage.
+    Editing Character Sheet: The Player can record the Character Hit Points as well as Temporary Hit Points on the Future Path Character Sheet. It is located in the "Health and Injury" section near the top of page one, directly below the "Character Identity" section.
 
 #### Temporary Hit Points {#temporary_hit_points}
 
@@ -49,9 +49,9 @@ Certain effects can give a character temporary hit points. When a
 character gains temporary hit points, make a note of his or her current
 hit points before adding the temporary hit points. When the temporary
 hit points go away, the character's hit points drop to that score. If
-losing the temporary Hit Points causes the Character to go to 0 or a
-negative number, then the character \'passes out\' and has 0 hit points
-and is now in a \'Dying\' state.
+losing the temporary Hit Points reduces the Character to 0 or a negative
+number, the Character \'passes out\' with 0 Hit Points and enters a
+\'Dying\' state.
 
 #### Constitution Bonus Hit Points {#constitution_bonus_hit_points}
 
@@ -101,7 +101,7 @@ Hit Points the Character currently has. To learn more about attacking
 rules, go
 [here](Complete_Combat_Actions#Attack_Rules "here"){.wikilink}.
 
-    Editing Character Sheet: As mentioned above, there is a box just below the "Total" box, and a "Wound/Current HP" box to record damage sustained during combat. 
+    Editing Character Sheet: This can be recorded in the "Health And Injury" section near the top of page one directly below the "Character Identity" section. There are boxes for "Current HP" and "NonLethal Dmg". If damage is given, then subtract that from the "Current HP". The "Max HP" should be left alone. If there is a value in the "TMP HP" section, then first subtract from that box before editing the "Current HP" box.
 
 #### DR and Extra Damage {#dr_and_extra_damage}
 

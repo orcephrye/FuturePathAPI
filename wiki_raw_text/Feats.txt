@@ -6,7 +6,6 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 
 ;Utility Feats: Themed around utility and functionality, these feats focus on enhancing existing abilities like skill checks and saving throws. They can also provide new options or actions a Character can do in or out of combat. 
 
-
 ==Feats==
 {| class="wikitable sortable" style="10px;"
 |+ Table: Feats
@@ -22,17 +21,17 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 |-
 |[[Martial Art Focus|Martial Arts Focus]]|| Strength or Dexterity Score of 15 or higher|| The Damage die for unarmed strikes goes up a level.
 |-
-|[[Martial Arts Master| - Martial Arts Master]]|| Martial Arts Focus, Advantage Die 1d8.|| The character’s threat range on an unarmed strike im­proves to 19–20.
+|[[Martial Arts Master| - Martial Arts Master]]|| Martial Arts Focus, Advantage Die 1d4+4|| The character’s threat range on an unarmed strike im­proves to 19–20.
 |-
-|[[Dan Martial Artist| - Dan Martial Artiest]]|| Martial Arts Master, Advantage Die 1d12.|| When the character scores a critical hit with an unarmed strike, its triple damage die.
+|[[Dan Martial Artist| - Dan Martial Artist]]|| Martial Arts Master, Advantage Die 1d8+8|| When the character scores a critical hit with an unarmed strike, it triples the damage die.
 |-
-|[[Nerve Pinch| - Nerve Pinch]]|| Martial Arts Focus, Advantage Die 1d8.|| Perform a melee attack that can paralyze the target.
+|[[Nerve Pinch| - Nerve Pinch]]|| Martial Arts Focus, Advantage Die 1d4+4|| Perform a melee attack that can paralyze the target.
 |-
 |[[Defensive Martial Arts]]|| - ||+1 AC bonus against only melee attacks.
 |-
 |[[Elusive Target| - Elusive Target]]|| Dexterity 14, Defensive Martial Arts.|| Opponents that target you with a melee attack take disadvantage.
 |-
-|[[Muscle Memory| - Muscle Memory]]|| Advantage Die 1d10, Defensive Martial Arts, || In melee, if an enemy attacks and misses, the character may immediately make a trip against the opponent.
+|[[Muscle Memory| - Muscle Memory]]|| Advantage Die 1d6+5, Defensive Martial Arts, || In melee, if an enemy attacks and misses, the character may immediately make a trip against the opponent.
 |-
 |[[Improved Feint| - Improved Feint]]|| Intelligence 13, Defensive Martial Arts. || Advantage bonus on Bluff checks made to feint in melee combat.
 |-
@@ -44,13 +43,13 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 |-
 | [[Improved Melee Weapon Focus| - Improved Melee Weapon Focus]]|| Melee Weapon Focus || Melee weapons now due 1 damage die level higher of damage.
 |-
-| [[Sweeping Blow| - Sweeping Blow]]|| Melee Weapon Focus, Advantage Die 1d8 || Causes the target to perform a saving throw or be tripped
+| [[Sweeping Blow| - Sweeping Blow]]|| Melee Weapon Focus, Advantage Die 1d4+4 || Causes the target to perform a saving throw or be tripped
 |-
 | [[Throw Off Guard| - Throw Off Guard]]|| Melee Weapon Focus || Causes the target to have a temporarily lower AC when defending against other enemy attacks.
 |-
 | [[Defensive Strike| - Defensive Strike]]|| Melee Weapon Focus || Deal less damage but increase your own AC against the target's attacks.
 |-
-| [[Aggressive Strike| - Aggressive Strike]]|| Melee Weapon Focus, Affinity Die 1d6 || Deal more damage but decrease your own AC against the target's attacks.
+| [[Aggressive Strike| - Aggressive Strike]]|| Melee Weapon Focus, Affinity Die 1d4+4 || Deal more damage but decrease your own AC against the target's attacks.
 |-
 ! colspan="3" | Sub-Category: Ranged Combat
 |-
@@ -58,7 +57,7 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 |-
 |[[Point Blank Shot]]|| - ||Removes penalties for targets within 10ft and gains a +1 to all damage dice if the target is within 10ft.
 |-
-|[[Double Tap| Double Tap]]|| Advantage Die d6 || Disadvantage on this attack, but deals +1 die of damage with a successful hit.
+|[[Double Tap| Double Tap]]|| Advantage Die 1d2+2 || Disadvantage on this attack, but deals +1 die of damage with a successful hit.
 |-
 |[[Precise Shot]]|| - || Take a full-round action to line up a shot for a bonus.
 |-
@@ -76,6 +75,8 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 |-
 |[[Advanced Combat Techniques|Advance Combat Techniques]]|| - || Allows a Character to learn a single Advance Combat Technique.
 |-
+| [[Armored Technique Training]] || - || Reduce the negative effects associated with wearing Armor and using Techniques.
+|-
 | [[TechniqueFocus|Technique Focus]]|| - || Pick a Technique that can be used once per day without counting against total usage.
 |-
 | [[TechniqueNovice|Technique, Novice]]|| - || A Character can use Level 0 Techniques infinitely.
@@ -92,21 +93,29 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 |-
 | [[Akimbo Specialist]]|| - ||The character can now gain an advantage when using off-hand weapons.
 |-
-| [[Niten Ichi| - Niten Ichi]]|| Akimbo Specialist, Advantage Die d10 || The character takes no penalties for using two melee weapons.
+| [[Niten Ichi| - Niten Ichi]]|| Akimbo Specialist, Advantage Die 1d6+5 || The character takes no penalties for using two melee weapons.
 |-
-| [[Gun-Fu| - Gun-Fu]]|| Akimbo Specialist, Advantage Die d10 || The character takes no penalties for using two ranged weapons.
+| [[Gun-Fu| - Gun-Fu]]|| Akimbo Specialist, Advantage Die 1d6+5 || The character takes no penalties for using two ranged weapons.
 |-
 ! colspan="3" | Sub-Category: Proficiency Tree
+|-
+| [[Armored Technique Training]] || - || Reduce the negative effects associated with wearing Armor and using Techniques.
 |-
 | [[Training Expert]]|| - || Immediately gain and spend another Proficiency Tree point
 |-
 | [[Power Armor Expert]]|| 5 levels in Armor Proficiency || Gain a point in Power Armor Proficiency Tree as well as the ability to train in that tree.
 |-
-| [[Heavy Melee Weapon Training]]|| No Other Weapon/Armor Proficiency Training || Allows one to gain more than 6 points in the Melee Weapon Proficiency Tree more cheaply.
+| [[Light Arms & Firearms Training]] || - || Ignores certain penalties while using light classification weapons.
 |-
-| [[Heavy Ranged Weapon Training]]|| No Other Weapon/Armor Proficiency Training || Allows one to gain more than 6 points in the Ranged Weapon Proficiency Tree more cheaply.
+| [[Medium Contact Weapons Training]] || - || Allows one to more easily train Melee Weapon Proficiency beyond 2 ranks.
 |-
-| [[ Heavy Armor Training]]|| No Weapon Proficiency Training || Allows one to gain more than 7 points in the Armor Proficiency Tree more cheaply.
+| [[Heavy Contact Weapons Training]]|| [[Medium Contact Weapons Training]], No Other Heavy Weapon Training || Allows one to more easily train Melee Weapon Proficiency beyond 5 ranks.
+|-
+| [[Medium Firearms Training]] || - || Allows one to more easily train Ranged Weapon Proficiency beyond 2 ranks.
+|-
+| [[Heavy Firearms Training]]|| [[Medium Firearms Training]], No Other Heavy Weapon Training || Allows one to more easily train Ranged Weapon Proficiency beyond 5 ranks.
+|-
+| [[ Heavy Armor Training]]|| No Heavy Weapon Training || Allows one to more easily train Armor Proficiency Tree beyond 6 ranks.
 |-
 ! colspan="3" | Sub-Category: Difficulties
 |-
@@ -234,25 +243,25 @@ Feats are normally acquired when leveling up. The default levels of gaining feat
 |-
 |[[Endurance]]|| - || Advantage bonus on the following checks and saves, see list in the description.
 |-
-|[[Great Fortitude]]|| Advantage Die 1d8 ||Advantage bonus on all Constitution sav­ing throws.
+|[[Great Fortitude]]|| Advantage Die 1d4+4 ||Advantage bonus on all Constitution sav­ing throws.
 |-
 |[[Jerry Rigging]]|| - || You can repair items without material costs just once. You can repair structures in 1/10th the time.
 |-
-|[[Iron Will]]|| Advantage Die 1d8 ||Advantage on all Wisdom saving throws.
+|[[Iron Will]]|| Advantage Die 1d4+4 ||Advantage on all Wisdom saving throws.
 |-
-|[[Lightning Reflexes]]|| Advantage Die 1d8||Advantage bonus on all Dexterity saving throws.
+|[[Lightning Reflexes]]|| Advantage Die 1d4+4||Advantage bonus on all Dexterity saving throws.
 |-
 |[[Mastercrafter]]|| - || Reduces the DC check for crafting masterworked items by 2.
 |-
 | [[Multitasker]]|| - || Allows a Character to do multiple skills or actions at a time.
 |-
-|[[Planetary Adaption]]|| - ||You gain one of the benefits listed in the description, depending on your planet of origin.
+|[[Planetary Adaptation]]|| - ||You gain one of the benefits listed in the description, depending on your planet of origin.
 |-
-|[[Salvage]]|| - || Salvaging a destroyed vehicle, starship, robot, or cybernetic attachment takes less time and is more likely to wield valuables
+|[[Salvage]]|| - || Salvaging a destroyed vehicle, starship, robot, or cybernetic attachment takes less time and is more likely to yield valuables
 |-
-|[[Talented]]|| Advantage Die 1d10 || The Character can choose a talent to be affected by Character level instead of Class
+|[[Talented]]|| Advantage Die 1d6+5 || The Character can choose a talent to be affected by Character level instead of Class
 |-
-|[[Track]]|| - ||A character can add there Advantage Die too survival check when tracking
+|[[Track]]|| - ||A character can add their Advantage Die to a survival check when tracking
 |-
 |[[Wild Talent]]|| - ||Select one 0-level psionic power. 
 |-
