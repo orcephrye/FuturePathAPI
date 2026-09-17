@@ -6,10 +6,13 @@ any side effects the ship may incur.
 
 The DC is determined by both the 2d6 roll and the enemy's Ship\'s
 Weapons Mod + Weapon's Officer's Wisdom or Dexterity score (whichever
-they prefer). For example, a Battle Damage roll of 8 would be \'Blown
-Cpacitor\' which has a base DC of 10. So it would be 10 + Ship's Weapons
-Mod + Weapon's Officer's Wis or Dex. Repairing the effect of Battle
-Damage is always a DC of 15.
+they prefer). For example, a Battle Damage roll of 4 would be \'Life
+support damaged\' which has a base DC of 18. So it would be 10 + Ship's
+Weapons Mod + Weapon's Officer's Wis or Dex.
+
+All **Effects** happen after the Response Phase of Space Ship Combat.
+The repair DC for the **Effect** only (not the Battle Damage itself) is
+the unmodified DC from the chart below.
 
 To learn more about spaceship combat, go
 [here](Combat#Space_Combat "here"){.wikilink}. To learn more about
@@ -28,11 +31,11 @@ spaceships, in general, go [here](Space_Ships "here"){.wikilink}.
   - `<u>`{=html}Effect:`</u>`{=html} Roll a d6. 1=Captions Console,
     2=Science Console, 3=Pilot Console, 4=Sensor Console, 5=Weapon
     Console, 6=Engineer Console. This console explodes, dealing X Hit
-    Die worth of Electric Damage on the target. Causing the Shaken
+    Die worth of Electric Damage to the target. Causing the Shaken
     condition for one round. X = 1 + 1/4 Character level, rounded down.
 - **5:** DC 14
   - `<u>`{=html}Description:`</u>`{=html} Rocked ship
-  - `<u>`{=html}Effect:`</u>`{=html} The crew must do a Dexterity Saving
+  - `<u>`{=html}Effect:`</u>`{=html} The crew must do a Dexterity saving
     throw DC15 + (number of total d10s beyond the successful damage
     threshold) or be shaken for one round. A Critical failure causes the
     crew member to be thrown from their console, take 1d6 damage, and

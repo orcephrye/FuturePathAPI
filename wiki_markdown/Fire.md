@@ -1,90 +1,115 @@
-Fire is a Function of crew members. To learn about other functions go
-the [Space Ship
+Fire is a Function of crew members. To learn about other functions, go
+to the [Space Ship
 Functions](Space_Ships#Officer.2FShip_Functions "Space Ship Functions"){.wikilink}
 section of the [Space Ships](Space_Ships "Space Ships"){.wikilink} page.
 
 ## Description
 
-Firing on the target requires rolling d10s. The number of d10s is
-determined by how many active weapon hard points are being used. The
-roll must beat the targets Battle Damage Defense. By default this is 4,
-4 or 4 d10s that meet or beat a 4. The target\'s Battle Damage Defense
-can change based on its defensive capabilities. If the
-Sensor/Communications Officer has used Scan successfully on the target
-this round then the Weapon\'s officer can add the ship\'s Sensor
-Modifier to each d10. The Weapon\'s officer may re-roll successful d10s
-up to the Ship Weapon\'s Modifier number of times. If a d10 is re-rolled
-and it shows as a failure it cannot be re-rolled again regardless of how
-many re-rolls are left. Only successful d10s can be re-rolled.
+Firing on an enemy ship requires rolling a Battle Damage Difficulty
+Check (BD-DC), and it is against a target ship\'s Battle Damage Defense.
+This requires rolling d10s. The default Battle Damage Defense is 4,4, or
+4d10s that meet or beat a 4. Below are the rules for making a BD-DC
+check and it\'s results.
 
-A target vessel normally can take only 1 Battle Damage per round. The
-exception to this is critical hits. Critical hits are possible when the
-Sensor Officer has a critical success. In this instance, a successful
-d10 now counts twice. Critical also allows the Weapon's officer to
-re-roll 1s and 2s. If the Weapon's officer already can re-roll this just
-adds to the range of numbers that can be re-rolled. If the Weapon's
-officer rolls enough successful d10s to count for twice the BD-DC +1
-then the ship automatically gets another Battle Damage. The second
-battle damage is automatically considered a die roll of 7 for the Battle
-Damage die. In a swarm situation where you are one of multiple ships the
-critical still counts and is added with the die from other ships.
+**Battle Damage Defense Check (BD-DC)**:
+
+- The total number of d10s the Player of the Weapon\'s Officer Character
+  can roll is equal to the total number of active attacking Hard Points
+  on the ship. This is called a **Battle Pool** and consists of only
+  d10s.
+- The Weapon\'s Officer can attack multiple targets per turn, but they
+  have to divide up the Hard Points between ships.
+- Before d10s in a Battle Pool are re-rolled, the Weapon\'s Officer can
+  choose one d10 that has failed and boost it with their chosen Ability
+  Modifier (either Dex or Wis, and if they have the [Spaceship Weapons
+  Officer](Spaceship_Weapons_Officer "Spaceship Weapons Officer"){.wikilink}
+  [Feat](Feats "Feat"){.wikilink} they can even pick their Int score) to
+  bring the d10 to a success. However, a d10 that has been boosted this
+  way cannot be chosen for a re-roll.
+- A Weapon\'s Officer can re-roll successful d10s. IE; if the d10 lands
+  on a 4 or higher by default, this is a success. The total number of
+  re-rolls per turn is equal to the Ship\'s Weapon\'s Attribute
+  Modifier.
+- A d10 that lands on a success can keep being re-rolled as long as it
+  keeps being successful and the Player hasn\'t run out of re-rolls for
+  that round.
+- The Weapon\'s Officer may get to add a bonus to each of their d10s
+  gained by another Player doing the [Scan](Scan "Scan"){.wikilink}
+  Function successfully or some other attribute. The Scan applies to
+  only 1 target ship.
+- A Weapon\'s Officer can only target a Ship that the Ship can see on
+  Sensors. If it cannot be detected, the Comms/Sesnor Officer must have
+  a successful Scan on a target for the Weapon\'s Officer to be able to
+  fire on.
+- If more than one ship is targeting an Enemy vessel, then they create a
+  Battle Pool of d10s and share their re-rolls. Success is determined by
+  the total of the combined Battle Pool.
+
+**Ship\'s Battle Damage Defense**:
+
+- Battle Damage Defense can increase from the default 4,4 based on the
+  target\'s defensive Attributes. Structure increases the total number
+  of d10s that must be rolled successfully, while Shields increase the
+  number of the Die that counts as a success. A Ship is a Structure of
+  12 (+1) and Shields of 14 (+2) would have a Battle Damage Defense of
+  5,6.
+
+**Critical Success on a BD-DC**:
+
+- By default, a target vessel can only receive 1 Battle Damage per round
+  from Weapon fire. With the exception of a Critical Success. A Critical
+  on a BD-DC happens when the following two things occur:
+
+:# When the Sensor Officer has a Critical Success on a Scan of a target.
+
+:# When the Weapon Officer\'s Battle Pool has a number of successful
+d10s that exceeds two times the total required number for a successful
+hit.
+
+- When a Sensor Officer has a Critical Success, this allows the Weapon
+  Officer a few special features. They may re-roll any d10 in their
+  Battle Pool that are 1s, and all Successful d10s count twice.
+
+**Battle Damage on a successful BD-DC**:
+
+- A target vessel can only receive one Battle Damage per turn from
+  direct Weapon fire. Unless in the case of **Critical Success**.
+- The Weapon\'s Officer rolls for the type of Damage received on the
+  target ship using 2d6 and following the [Battle Damage
+  Chart](Battle_Damage_Chart "Battle Damage Chart"){.wikilink}.
+
+Learn more about Giving and Receiving Damage by visiting the [Giving and
+Receiving Damage in Space
+Ships](Giving_and_Receiving_Damage_in_Space_Ships "Giving and Receiving Damage in Space Ships"){.wikilink}
+page.
 
 ### Things to note: {#things_to_note}
 
-- A Weapon\'s officer may divide up there Weapon Hard points between
-  different targets so to attempt to deal damage to multiple targets in
-  one round. However, the Sensor Officer can only scan one ship at a
-  time and thus the Sensor bonus only applies to one ship a turn.
 - The Weapon\'s officer can choose to target a specific ship system
-  instead of the ship as a whole. When targeting specific ship functions
-  the ship Structure doesn\'t count but Shields still do. Large size
-  disadvantages also don't count when doing specific targeting. Sensors
-  are also automatic. An accuracy/sensor check can still be attempted to
-  see if a Critical happens but it isn't necessary for Sensors to be
-  applied. Every successful d10 roll counts as one damage against the
-  specific target. The maximum total damage anyone ship system can take
-  per turn is 5 unless it is a critical hit in which case the max is 9.
-  A Critical also provides an instant 1 point of damage and allows
-  rerolls like a normal Crit.
+  instead of the ship as a whole. Learn more about that
+  [here](Giving_and_Receiving_Damage_in_Space_Ships#Specified_Targeting "here"){.wikilink}.
 - A ship that is larger or smaller has an effect on the Battle Damage
-  Defense. For every ship size in-between the ship sizes of the firing
-  and target ship there is a + or - modification to the number of
+  Defense. For every ship size in between the ship sizes of the firing
+  and target ship, there is a + or - modification to the number of
   successful d10s that are necessary to do battle damage. If your ship
-  is targeting a ship smaller then it requires less d10s and if the
-  target ship is larger it requires more d10s.
-- They can choose to target a ship that other ally ships are targeting
-  this doesn\'t cause more battle damage. This is considered **Swarm**
-  tactics and in Swarm tactics a Battle Pool is used as the finial say
-  if the ship receives battle damage this turn. Ships within a swarm
-  have to follow the size modification rules differently. Ships that are
-  smaller have to subtract 1 successful d10 for every successful d10 the
-  ship adds to the pool until there size penalty is spent. A Ship of
-  bigger size gets to add 1 failed d10 for each successful d10 until
-  there run out of size bonus.
-  - Example: A Gargantuan ship is targeting a Medium ship in a swarm.
-    The Gargantuan ship rolls 5 successful d10s and 4 failures. It has a
-    size bonus of +2. It was able to add 2 of the 4 failure die in with
-    the 5 successful d10s to the Battle pool. If it only had 1 failure
-    then it could only add 1 die despite having a bonus of +2. If it
-    only had 1 successful d10 it again could only add its size bonus
-    once.
-  - Example: A Diminutive ship is targeting a Medium ship in a swarm.
-    The Diminutive ship has a size penalty of -2. It rolls 3 successes
-    and zero failures. The ship only adds 1 die to the pool. For each
-    die added one must be subtracted to pay for the size penalty. 1 die
-    is added from the 3 leaving only 2 left. 1 is then paid too the size
-    penalty leaving only 1 left. It cannot be added to the pool because
-    there is no other successful d10s to pay the penalty.
-- Normally a Weapon\'s officer can fire on a ship regardless if the
-  Sensor\'s succeed. However, if the enemy ship\'s detection DC is
-  higher then the Passive Sensors of the Ship then the Weapon\'s officer
-  can only fire if the Scan is successful at detecting the enemy ship.
+  targets a smaller ship, it requires fewer d10s; if it targets a larger
+  ship, it requires more d10s.
+- When multiple ships have the same target, this is called **Swarm**
+  tactics. Learn more about that
+  [here](Giving_and_Receiving_Damage_in_Space_Ships#Swarm_Combat "here"){.wikilink}.
+- By default, a Weapon\'s Officer can fire on any enemy ship that their
+  ship can see passively. However, if an enemy Ship\'s Detection DC is
+  higher than the Ship\'s Passive Sensors, then a Scan becomes a
+  requirement. In this case, treat a Sensor Scan as an Accuracy Check.
+  If successful, the Weapon\'s Officer can target the Ship **and** apply
+  the Sensor bonus.
 - There are 4 primary types of Weapons: Kinetic, Laser, Rocket, Plasma.
-  They each have different ranges and special aspects. Kinetic by
-  default provides no bonuses but has unlimited range. Lasers have a max
-  range of Long and provide a +1 to the d10 that is associated with it.
-  Rockets are highly customizable but are expensive and extremely large
-  so a ship can only carry a few. A hard point isn't also a cargo bay so
-  those big rockets have to go somewhere. Plasma provides the ability to
-  re-roll 1s. (Master crafted Plasma weapons do not enhance this
-  ability.) Plasma though is short range.
+  Each has different ranges and special aspects. Kinetic by default
+  provides no bonuses but has unlimited range. Lasers have a max range
+  of Long and provide a +1 to the associated d10. Rockets are highly
+  customizable but are expensive and extremely large so a ship can only
+  carry a few. A hard point isn't also a cargo bay, so those big rockets
+  have to go somewhere. Plasma provides the ability to re-roll 1s.
+  (Master crafted Plasma weapons do not enhance this ability.) Plasma,
+  though, is short-range. To learn more, visit the [Ship
+  Equipment](Ship_Equipment "Ship Equipment"){.wikilink} page.

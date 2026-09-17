@@ -1,0 +1,27 @@
+This is part of [[Combat#Space_Combat|Space Ship Combat]] rules specifically with [[Giving_and_Receiving_Damage_in_Space_Ships#Giving_and_Taking_Damage|Giving and Taking Spaceship Damage]].
+
+== Deteriorating ==
+
+When a Ship is '''Deteriorating''', it receives Deteriorating Damage at the start of every round. Enemy activity can also deal 1 Deteriorating Damage per round. This only happens once a ship is in the '''Crippled''' state, which implies the ship is actively suffering from the maximum amount of Battle Damage at the start of the turn. If a Ship is considered '''Crippled''' and then receives more damage, that damage is considered Deteriorating Damage and will cause the ship to be in the '''Deteriorating''' state.
+
+== Stabilizing == 
+
+During the '''Response Phase''' of Spaceship combat, the Engineer can attempt to remove a single Deterioration from the Ship with a '''Stabilizing''' action. This does not remove the effect the '''Deterioration Damage''' caused; it simply removes the '''Deterioration Damage''' itself and temporarily leaves the ship in a '''Stabilizing''' status at the start of the next turn. 
+
+The DC to '''Stabilize''' the ship and remove a Deterioration is 12 + Battle Damage Capacity - Deterioration Damage on the Ship. This means that if the ship is Medium, has 3 Battle Damage Capacity, and has received 1 Deterioration Damage, the Engineer's repair check would be 14. The DC goes down as deterioration increases, making it easier to stave off the ship's total destruction.
+
+== Deteriorating Effects ==
+
+Each time a Deterioration happens, immediately roll a d6 to determine its effect. This happens immediately and cannot be repaired until after combat. While the Engineer can temporarily '''Stabilize''' the ship, which removes a single Deterioration and stops the Deteriorating status for the start of the next round, this does not remove the effect of that Deterioration Damage. The effect can only be removed when not in combat.
+
+'''d6 Deteriorating Effects Roll:'''
+# Disabled All Hard Points (Weapons Attribute is now 0)
+# Disable All Bays and Life support stops functioning (Electronics is now 0)
+# Disable Shields (Shields are now 0)
+# Disable Sensors (Sensors are now 0)
+# Disable Engines (Engines are now 0)
+# Disable FTL Faster.Then.Light Drive. This cannot happen before the first Action Phase while in Deteriorating; if you roll a 6, re-roll. Once at least one round while in combat has happened, and at least one Deteriorating Effect is already present on the ship, then allow for FTL Drive to fail.
+
+If a roll lands on a Ship system that has already failed, then pick the value directly above it to fail instead. If the FTL is already disabled, then go from 6 back to 1 and so on. 
+
+'''Note:''' Once all Effects have happened, the Ship automatically enters '''Wrecked''' status and gains all the associated penalties. This means that within 6 rounds, no matter what, the Ship is Wrecked.

@@ -299,52 +299,52 @@ or [Ship Equipment](Ship_Equipment "Ship Equipment"){.wikilink}, but
 their foundation starts with the Hull Size. Hull Size also determines
 the **Average Base Price** of the craft.
 
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+-----------------------+-----------------------+
-| Size       | Tracking | Detection\ | Battle\ | Sq ft /\   | Pass.\  | Avg.\    | Cargo\   | Cust. | Military Ship         | Civilian Ship         |
-|            | DC\      | DC         | Damage  | Num of     | Cap.    | Weight   | Capacity | /\    |                       |                       |
-|            | (Size    |            |         | Squares    |         |          |          | Bonus |                       |                       |
-|            | Mod)     |            |         |            |         |          |          |       |                       |                       |
-+============+==========+============+=========+============+=========+==========+==========+=======+=========+======+======+=========+======+======+
-| Cost /\    | Hard\    | Number\    | Cost /\ | Hard\      | Number\ |          |          |       |         |      |      |         |      |      |
-| Procure    | Points   | of Bays    | Procure | Points     | of Bays |          |          |       |         |      |      |         |      |      |
-| Diff       |          |            | Diff    |            |         |          |          |       |         |      |      |         |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Colossal   | 8 (-2)   | 6          | 5       | \~512,000+ | 2000    | \~65,536 | 65,000   | +3    | 2.9     | 10   | 8    | 972     | 8    | 10   |
-|            |          |            |         | ft /       |         | Tons     | Units    |       | Billion |      |      | Million |      |      |
-|            |          |            |         | \~1,024 sq |         |          |          |       | / 4     |      |      | / 4     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Gargantuan | 8 (-2)   | 7          | 4       | \~128,000+ | 500     | \~16,384 | 16,000   | +2    | 972     | 9    | 7    | 324     | 7    | 9    |
-|            |          |            |         | ft / \~256 |         | Tons     | Units    |       | Million |      |      | Million |      |      |
-|            |          |            |         | sq         |         |          |          |       | / 3     |      |      | / 3     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Huge       | 9 (-1)   | 8          | 4       | \~32,000+  | 120     | \~4096   | 4,000    | +2    | 324     | 8    | 5    | 108     | 6    | 8    |
-|            |          |            |         | ft / \~64  |         | Tons     | Units    |       | Million |      |      | Million |      |      |
-|            |          |            |         | sq         |         |          |          |       | / 3     |      |      | / 2     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Large      | 9 (-1)   | 9          | 3       | \~8,000+   | 32      | \~1,024  | 1,000    | +2    | 108     | 7    | 4    | 36      | 5    | 7    |
-|            |          |            |         | ft / \~16  |         | Tons     | Units    |       | Million |      |      | Million |      |      |
-|            |          |            |         | sq         |         |          |          |       | / 2     |      |      | / 1     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Medium     | 10 (0)   | 9          | 3       | \~4,000+   | 16      | \~512    | 510      | +1    | 36      | 6    | 3    | 12      | 4    | 6    |
-|            |          |            |         | ft / \~8   |         | Tons     | Units    |       | Million |      |      | Million |      |      |
-|            |          |            |         | sq         |         |          |          |       | / 2     |      |      | / 0     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Small      | 11 (+1)  | 9          | 2       | \~2,000+   | 8       | \~256    | 250      | +1    | 12      | 6    | 2    | 4       | 4    | 5    |
-|            |          |            |         | ft / \~4   |         | Tons     | Units    |       | Million |      |      | Million |      |      |
-|            |          |            |         | sq         |         |          |          |       | / 1     |      |      | / 0     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Tiny       | 11 (+1)  | 10         | 2       | \~500+ ft  | 4       | \~64     | 64 Units | +1    | 1.9     | 5    | 1    | 640,000 | 3    | 4    |
-|            |          |            |         | / \~1 sq   |         | Tons     |          |       | Million |      |      | / 0     |      |      |
-|            |          |            |         |            |         |          |          |       | / 1     |      |      |         |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Diminutive | 12 (+2)  | 11         | 1       | \~125 ft / | 2       | \~16     | 16 Unit  | +0    | 480,000 | 3    | 0    | 160,000 | 2    | 2    |
-|            |          |            |         | 16 per sq  |         | Tons     |          |       | / 1     |      |      | / 0     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-| Fine       | 12 (+2)  | 12         | 0       | \<75 ft /  | 1       | \~4 Tons | 4 Units  | +0    | 240,000 | 2    | 0    | 80,000  | 1    | 1    |
-|            |          |            |         | 256 per sq |         |          |          |       | / 0     |      |      | / 0     |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
-|            |          |            |         |            |         |          |          |       |         |      |      |         |      |      |
-+------------+----------+------------+---------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
++------------+----------+------------+----------+------------+---------+----------+----------+-------+-----------------------+-----------------------+
+| Size       | Tracking | Detection\ | Battle\  | Sq ft /\   | Pass.\  | Avg.\    | Cargo\   | Cust. | Military Ship         | Civilian Ship         |
+|            | DC\      | DC         | Damage\  | Num of     | Cap.    | Weight   | Capacity | /\    |                       |                       |
+|            | (Size    |            | Capacity | Squares    |         |          |          | Bonus |                       |                       |
+|            | Mod)     |            |          |            |         |          |          |       |                       |                       |
++============+==========+============+==========+============+=========+==========+==========+=======+=========+======+======+=========+======+======+
+| Cost /\    | Hard\    | Number\    | Cost /\  | Hard\      | Number\ |          |          |       |         |      |      |         |      |      |
+| Procure    | Points   | of Bays    | Procure  | Points     | of Bays |          |          |       |         |      |      |         |      |      |
+| Diff       |          |            | Diff     |            |         |          |          |       |         |      |      |         |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Colossal   | 8 (-2)   | 6          | 5        | \~512,000+ | 2000    | \~65,536 | 65,000   | +3    | 2.9     | 10   | 8    | 972     | 8    | 10   |
+|            |          |            |          | ft /       |         | Tons     | Units    |       | Billion |      |      | Million |      |      |
+|            |          |            |          | \~1,024 sq |         |          |          |       | / 4     |      |      | / 4     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Gargantuan | 8 (-2)   | 7          | 4        | \~128,000+ | 500     | \~16,384 | 16,000   | +2    | 972     | 9    | 7    | 324     | 7    | 9    |
+|            |          |            |          | ft / \~256 |         | Tons     | Units    |       | Million |      |      | Million |      |      |
+|            |          |            |          | sq         |         |          |          |       | / 3     |      |      | / 3     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Huge       | 9 (-1)   | 8          | 4        | \~32,000+  | 120     | \~4096   | 4,000    | +2    | 324     | 8    | 5    | 108     | 6    | 8    |
+|            |          |            |          | ft / \~64  |         | Tons     | Units    |       | Million |      |      | Million |      |      |
+|            |          |            |          | sq         |         |          |          |       | / 3     |      |      | / 2     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Large      | 9 (-1)   | 9          | 3        | \~8,000+   | 32      | \~1,024  | 1,000    | +2    | 108     | 7    | 4    | 36      | 5    | 7    |
+|            |          |            |          | ft / \~16  |         | Tons     | Units    |       | Million |      |      | Million |      |      |
+|            |          |            |          | sq         |         |          |          |       | / 2     |      |      | / 1     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Medium     | 10 (0)   | 9          | 3        | \~4,000+   | 16      | \~512    | 510      | +1    | 36      | 6    | 3    | 12      | 4    | 6    |
+|            |          |            |          | ft / \~8   |         | Tons     | Units    |       | Million |      |      | Million |      |      |
+|            |          |            |          | sq         |         |          |          |       | / 2     |      |      | / 0     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Small      | 11 (+1)  | 9          | 2        | \~2,000+   | 8       | \~256    | 250      | +1    | 12      | 6    | 2    | 4       | 4    | 5    |
+|            |          |            |          | ft / \~4   |         | Tons     | Units    |       | Million |      |      | Million |      |      |
+|            |          |            |          | sq         |         |          |          |       | / 1     |      |      | / 0     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Tiny       | 11 (+1)  | 10         | 2        | \~500+ ft  | 4       | \~64     | 64 Units | +1    | 1.9     | 5    | 1    | 640,000 | 3    | 4    |
+|            |          |            |          | / \~1 sq   |         | Tons     |          |       | Million |      |      | / 0     |      |      |
+|            |          |            |          |            |         |          |          |       | / 1     |      |      |         |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Diminutive | 12 (+2)  | 11         | 1        | \~125 ft / | 2       | \~16     | 16 Unit  | +0    | 480,000 | 3    | 0    | 160,000 | 2    | 2    |
+|            |          |            |          | 16 per sq  |         | Tons     |          |       | / 1     |      |      | / 0     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+| Fine       | 12 (+2)  | 12         | 0        | \<75 ft /  | 1       | \~4 Tons | 4 Units  | +0    | 240,000 | 2    | 0    | 80,000  | 1    | 1    |
+|            |          |            |          | 256 per sq |         |          |          |       | / 0     |      |      | / 0     |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
+|            |          |            |          |            |         |          |          |       |         |      |      |         |      |      |
++------------+----------+------------+----------+------------+---------+----------+----------+-------+---------+------+------+---------+------+------+
 
 : Space Craft Sizes
 
@@ -365,7 +365,7 @@ the **Average Base Price** of the craft.
 |   another ship\'s Passive Sensor Score, then the ship is visible to their sensors and its location and   |
 |   basic information are known.                                                                           |
 +----------------------------------------------------------------------------------------------------------+
-| Battle Damage                                                                                            |
+| Battle Damage Capacity                                                                                   |
 | : This is how much damage a ship can take before it becomes disabled. A ship can only receive one Battle |
 |   Damage a round unless a critical happens. Also, with two rounds of successful Repair checks done by an |
 |   Engineer, the Battle Damage can be repaired. The Repair DC is determined by the Battle Damage Die.     |
@@ -1546,11 +1546,11 @@ of them before gaming.
 ## Officer/Ship Functions {#officership_functions}
 
 Ship Functions are special abilities much like Skills for a Character.
-Some are meant for combat while others for day to day use. Some
-functions are standard on all ships. While others require a Ship Upgrade
+Some are meant for combat while others for day-to-day use. Some
+functions are standard on all ships. Others require a Ship Upgrade
 and/or a Feat from a Character. Functions are listed by the primary
 position they are associated with. Some Functions can be used by
-different Crew members although not always to its fullest.
+different Crew members, although not always to their fullest.
 
 +-----------------------------------------------------------------------------------------------------+---+------------------------------------------------------------------------------------------------------+
 | Standard Functions                                                                                  |   | Advanced Functions                                                                                   |
@@ -1559,55 +1559,55 @@ different Crew members although not always to its fullest.
 |                                                                                                     |   |                                                                                                      |
 | - Standard Functions All Crew Can Do:                                                               |   | - Advanced Functions All Crew Can Do:                                                                |
 |   - [Change Position](Change_Position "Change Position"){.wikilink}: (N/A) This allows a crew       |   |   - [Beam](Beam "Beam"){.wikilink}: (Electronics) A semi-instant form of transportation where matter |
-|     member to change there current Officer role or ship position.                                   |   |     is transformed into energy and sent to a new location where it is converted back to matter.      |
-| - [**Captain**](Captain_Position "Captain"){.wikilink}:                                             |   | - [**Captain**](Captain_Position "Captain"){.wikilink}:                                              |
-|   - [Give Command](Give_Command "Give Command"){.wikilink}: (Officer\'s Charisma) The Captain gives |   |   - [Commanding Presence](Commanding_Presence "Commanding Presence"){.wikilink}: (Officer\'s         |
-|     a directive and attempts to assist a crew member in following that directive.                   |   |     Charisma) This is granted by a Feat and allows the Commander to provide a passive bonus equal to |
-|   - [Encourage Crew](Encourage_Crew "Encourage Crew"){.wikilink}: (Officer\'s Charisma) The Captain |   |     ½ their Charisma score, rounded up to the player\'s rolls.                                       |
-|     gives a rousing but quick speech to encourage and focus the crew.                               |   |   - [Direct Assistance](Direct_Assistance "Direct Assistance"){.wikilink}: (Officer\'s Charisma) The |
-| - [**Science Officer**](Science_Officer "Science Officer"){.wikilink}:                              |   |     Captain takes a more direct administrative approach to leadership.                               |
-|   - [Boost](Boost "Boost"){.wikilink}: (All except Structure) An action that increases the output   |   | - [**Science Officer**](Science_Officer "Science Officer"){.wikilink}:                               |
-|     of that certain Attribute for the rest of the round or the following one.                       |   |   - [Cloak](Cloak "Cloak"){.wikilink}: (Electronics) Cloaking implies some form of stealth           |
-|   - [Hack](Hack "Hack"){.wikilink} / Counter Hack: (Electronics) Used to attack and disable one of  |   |     technology designed to fool Sensor Scans.                                                        |
-|     the 6 Core Systems of a target ship.                                                            |   |   - [Crypto](Crypto "Crypto"){.wikilink}: (Electronics) : A way to send or receive protected         |
+|     member to change their current Officer role or ship position.                                   |   |     is transformed into energy and sent to a new location where it is converted back to matter.      |
+|   - [Shield Manipulation](Shield_Manipulation "Shield Manipulation"){.wikilink}: (Knowledge         |   | - [**Captain**](Captain_Position "Captain"){.wikilink}:                                              |
+|     Science) Adjusts the Shields frequency in such a way as to counter the effects of enemy sensors |   |   - [Commanding Presence](Commanding_Presence "Commanding Presence"){.wikilink}: (Officer\'s         |
+|     and weapons.                                                                                    |   |     Charisma) This is granted by a Feat and allows the Commander to provide a passive bonus equal to |
+|   - [Weapons Assist](Weapons_Assist "Weapons Assist"){.wikilink}: (Dexterity\*) Allows any Officer  |   |     ½ their Charisma score, rounded up to the player\'s rolls.                                       |
+|     (Except the head Weapons Officer) to manually control one of the Hard Points to improve its     |   |   - [Direct Assistance](Direct_Assistance "Direct Assistance"){.wikilink}: (Officer\'s Charisma) The |
+|     performance.                                                                                    |   |     Captain takes a more direct administrative approach to leadership.                               |
+| - [**Captain**](Captain_Position "Captain"){.wikilink}:                                             |   | - [**Science Officer**](Science_Officer "Science Officer"){.wikilink}:                               |
+|   - [Give Command](Give_Command "Give Command"){.wikilink}: (Officer\'s Charisma) The Captain gives |   |   - [Cloak](Cloak "Cloak"){.wikilink}: (Electronics) Cloaking implies some form of stealth           |
+|     a directive and attempts to assist a crew member in following that directive.                   |   |     technology designed to fool Sensor Scans.                                                        |
+|   - [Encourage Crew](Encourage_Crew "Encourage Crew"){.wikilink}: (Officer\'s Charisma) The Captain |   |   - [Crypto](Crypto "Crypto"){.wikilink}: (Electronics) : A way to send or receive protected         |
+|     gives a rousing but quick speech to encourage and focus the crew.                               |   |     communications. Similar to Decipher Script.                                                      |
+| - [**Science Officer**](Science_Officer "Science Officer"){.wikilink}:                              |   | - [**Communications/Sensor Officer**](Comms_Officer "Communications/Sensor Officer"){.wikilink}:     |
+|   - [Boost](Boost "Boost"){.wikilink}: (All except Structure) An action that increases the output   |   |   - [Sensor Spoofing / Decoy                                                                         |
+|     of that certain Attribute for the rest of the round or the following one.                       |   |     Projection](Sensor_Spoofing_/_Decoy_Projection "Sensor Spoofing / Decoy Projection"){.wikilink}: |
+|   - [Hack](Hack "Hack"){.wikilink} / Counter Hack: (Electronics) Used to attack and disable one of  |   |     (Electronics/Sensors) The Comms Officer projects false signatures or chaff decoys.               |
+|     the 6 Core Systems of a target ship.                                                            |   |   - [Crypto](Crypto "Crypto"){.wikilink}: (Electronics) A way to send or receive protected           |
 | - [**Communications/Sensor Officer**](Comms_Officer "Communications/Sensor Officer"){.wikilink}:    |   |     communications. Similar to Decipher Script.                                                      |
-|   - [Scan](Scan "Scan"){.wikilink}: (Sensors) The ability to search for or study an object or       |   | - [**Communications/Sensor Officer**](Comms_Officer "Communications/Sensor Officer"){.wikilink}:     |
-|     objects in space.                                                                               |   |   - [Sensor Spoofing / Decoy                                                                         |
-|   - [Hack](Hack "Hack"){.wikilink} / Counter Hack: (Electronics) Used to attack and disable one of  |   |     Projection](Sensor_Spoofing_/_Decoy_Projection "Sensor Spoofing / Decoy Projection"){.wikilink}: |
-|     the 6 Core Systems of a target ship.                                                            |   |     (Electronics/Sensors) The Comms Officer projects false signatures or chaff decoys.               |
-| - [**Helm**](Helm_Officer "Helm"){.wikilink}:                                                       |   |   - [Crypto](Crypto "Crypto"){.wikilink}: (Electronics) A way to send or receive protected           |
-|   - [Fly                                                                                            |   |     communications. Similar to Decipher Script.                                                      |
-|     Offensively/Defensively](Fly_Offensively/Defensively "Fly Offensively/Defensively"){.wikilink}: |   |   - [Jam](Jam "Jam"){.wikilink}: (Electronics) Designed to target a specific component of an         |
-|     (Tactical Mobility/Officer\'s Pilot Rank) Perform a ship maneuver designed to help the ship\'s  |   |     opponent\'s Sensor Array. Either targeting scanners or other devices and keeping them from       |
-|     defense or offense.                                                                             |   |     functioning.                                                                                     |
-|   - [Close/Widen Distance](Close/Widen_Distance "Close/Widen Distance"){.wikilink}:                 |   | - [**Helm**](Helm_Officer "Helm"){.wikilink}:                                                        |
-|     (Engines/Officer\'s Pilot Rank) Perform a ship maneuver that attempts to gain distance between  |   |   - [Emergency Evasive                                                                               |
-|     a ship or close the gap.                                                                        |   |     Thrusters](Emergency_Evasive_Thrusters "Emergency Evasive Thrusters"){.wikilink}: (Engines)      |
-|   - [Pursue/Intercept](Pursue/Intercept "Pursue/Intercept"){.wikilink}: (Engines/Officer\'s Pilot   |   |     Executing sudden, violent evasive maneuvers to avoid threats.                                    |
-|     Rank) A ship maneuver that attempts to cut off a ship or race it to a particular point in       |   |   - [Feint](Feint "Feint"){.wikilink} (Engines, Advanced Flying Defensively) A maneuver meant to     |
-|     space.                                                                                          |   |     fool enemy sensors and pilots.                                                                   |
-|   - [Ram](Ram "Ram"){.wikilink}: (Engines) The ability to drive a ship directly into another in     |   |   - [Grapple](Grapple "Grapple"){.wikilink} (Engines) Different kinds of ways to \'grab\' a ship and |
-|     such a way as to cause the most damage to the opponent ship and the least to itself.            |   |     hold or even move its position.                                                                  |
-| - [**Weapons Officer**](Weapons_Officer "Weapons Officer"){.wikilink}:                              |   | - [**Weapons Officer**](Weapons_Officer "Weapons Officer"){.wikilink}:                               |
-|   - [Fire](Fire "Fire"){.wikilink}: (Weapons) The basic attack action. This uses the offense hard   |   |   - [Concentrated Fire](Concentrated_Fire "Concentrated Fire"){.wikilink}: (Weapons) This is a bonus |
-|     points of a ship to do battle damage to 1 or more targets.                                      |   |     to Targeting Specific ship systems.                                                              |
-|   - [Bombard](Bombard "Bombard"){.wikilink}: (Weapons) A tactical maneuver where the weapons are    |   |   - [Defensive Fire](Defensive_Fire "Defensive Fire"){.wikilink}: (Weapons) This allows the Weapon's |
-|     concentrated on a target.                                                                       |   |     Officer to turn an active weapon system into a point defense system against Missiles and ships 4 |
-| - [**Chief Engineer**](Chief_Engineer "Chief Engineer"){.wikilink}:                                 |   |     sizes smaller or smaller.                                                                        |
-|   - [Repair](Repair "Repair"){.wikilink}: (Officer\'s Craft Rank, Ship Bays) This is a repair check |   | - [**Chief Engineer**](Chief_Engineer "Chief Engineer"){.wikilink}:                                  |
-|     against Battle Damage dealt to the ship in an attempt to remove the damage.                     |   |   - [Overclock Core](Overclock_Core "Overclock Core"){.wikilink}: (Structure/Core) The Chief         |
-|   - [Boast](Boast "Boast"){.wikilink} (Engines Only): An action that increases the output of        |   |     Engineer intentionally overclocks the reactor to temporarily boost ship systems.                 |
-|     Engines for the rest of the round or the following one.                                         |   |   - [Cloak](Cloak "Cloak"){.wikilink}: (Electronics) Cloaking implies some form of stealth           |
-|   - Counter [Hack](Hack "Hack"){.wikilink}: (Electronics) An Engineer can attempt to stop a hacker  |   |     technology designed to fool Sensor Scans.                                                        |
-|     from gaining access to the ship systems, but in there, the current position cannot do hacking.  |   |   - [Grapple](Grapple "Grapple"){.wikilink}: (Engines) Different kinds of ways to \'grab\' a ship    |
-| - [**Medical Officer**](Medical_Officer "Medical Officer"){.wikilink}:                              |   |     and hold or even move its position.                                                              |
-|   - Medical: (Officer\'s Medical Rank, Medical Bay) This is the use of Medical skill.               |   | - [**Medical Officer**](Medical_Officer "Medical Officer"){.wikilink}:                               |
-|                                                                                                     |   |   - [Resuscitation/Life                                                                              |
-|                                                                                                     |   |     Support](Resuscitation/Life_Support "Resuscitation/Life Support"){.wikilink}: (Special Bay)      |
-|                                                                                                     |   |     Bring someone back from recent death. (Less than 10 minutes)                                     |
-|                                                                                                     |   |   - [Long/Short Automated Care](Long/Short_Automated_Care "Long/Short Automated Care"){.wikilink}:   |
-|                                                                                                     |   |     (Officer\'s Medical Rank, Medical Facility) Similar to long-term care from Medical Skill, but    |
-|                                                                                                     |   |     done automatically.                                                                              |
+|   - [Scan](Scan "Scan"){.wikilink}: (Sensors) The ability to search for or study an object or       |   |   - [Jam](Jam "Jam"){.wikilink}: (Electronics) Designed to target a specific component of an         |
+|     objects in space.                                                                               |   |     opponent\'s Sensor Array. Either targeting scanners or other devices and keeping them from       |
+|   - [Hack](Hack "Hack"){.wikilink} / Counter Hack: (Electronics) Used to attack and disable one of  |   |     functioning.                                                                                     |
+|     the 6 Core Systems of a target ship.                                                            |   | - [**Helm**](Helm_Officer "Helm"){.wikilink}:                                                        |
+| - [**Helm**](Helm_Officer "Helm"){.wikilink}:                                                       |   |   - [Emergency Evasive                                                                               |
+|   - [Fly                                                                                            |   |     Thrusters](Emergency_Evasive_Thrusters "Emergency Evasive Thrusters"){.wikilink}: (Engines)      |
+|     Offensively/Defensively](Fly_Offensively/Defensively "Fly Offensively/Defensively"){.wikilink}: |   |     Executing sudden, violent evasive maneuvers to avoid threats.                                    |
+|     (Tactical Mobility/Officer\'s Pilot Rank) Perform a ship maneuver designed to help the ship\'s  |   |   - [Feint](Feint "Feint"){.wikilink} (Engines, Advanced Flying Defensively) A maneuver meant to     |
+|     defense or offense.                                                                             |   |     fool enemy sensors and pilots.                                                                   |
+|   - [Close/Widen Distance](Close/Widen_Distance "Close/Widen Distance"){.wikilink}:                 |   |   - [Grapple](Grapple "Grapple"){.wikilink} (Engines) Different kinds of ways to \'grab\' a ship and |
+|     (Engines/Officer\'s Pilot Rank) Perform a ship maneuver that attempts to gain distance between  |   |     hold or even move its position.                                                                  |
+|     a ship or close the gap.                                                                        |   | - [**Weapons Officer**](Weapons_Officer "Weapons Officer"){.wikilink}:                               |
+|   - [Pursue/Intercept](Pursue/Intercept "Pursue/Intercept"){.wikilink}: (Engines/Officer\'s Pilot   |   |   - [Concentrated Fire](Concentrated_Fire "Concentrated Fire"){.wikilink}: (Weapons) This is a bonus |
+|     Rank) A ship maneuver that attempts to cut off a ship or race it to a particular point in       |   |     to Targeting Specific ship systems.                                                              |
+|     space.                                                                                          |   |   - [Defensive Fire](Defensive_Fire "Defensive Fire"){.wikilink}: (Weapons) This allows the Weapon's |
+|   - [Ram](Ram "Ram"){.wikilink}: (Engines) The ability to drive a ship directly into another in     |   |     Officer to turn an active weapon system into a point defense system against Missiles and ships 4 |
+|     such a way as to cause the most damage to the opponent ship and the least to itself.            |   |     sizes smaller or smaller.                                                                        |
+| - [**Weapons Officer**](Weapons_Officer "Weapons Officer"){.wikilink}:                              |   | - [**Chief Engineer**](Chief_Engineer "Chief Engineer"){.wikilink}:                                  |
+|   - [Fire](Fire "Fire"){.wikilink}: (Weapons) The basic attack action. This uses the offense hard   |   |   - [Overclock Core](Overclock_Core "Overclock Core"){.wikilink}: (Structure/Core) The Chief         |
+|     points of a ship to do battle damage to 1 or more targets.                                      |   |     Engineer intentionally overclocks the reactor to temporarily boost ship systems.                 |
+|   - [Bombard](Bombard "Bombard"){.wikilink}: (Weapons) A tactical maneuver where the weapons are    |   |   - [Cloak](Cloak "Cloak"){.wikilink}: (Electronics) Cloaking implies some form of stealth           |
+|     concentrated on a target.                                                                       |   |     technology designed to fool Sensor Scans.                                                        |
+| - [**Chief Engineer**](Chief_Engineer "Chief Engineer"){.wikilink}:                                 |   |   - [Grapple](Grapple "Grapple"){.wikilink}: (Engines) Different kinds of ways to \'grab\' a ship    |
+|   - [Repair](Repair "Repair"){.wikilink}: (Officer\'s Craft Rank, Ship Bays) This is a repair check |   |     and hold or even move its position.                                                              |
+|     against Battle Damage dealt to the ship in an attempt to remove the damage.                     |   | - [**Medical Officer**](Medical_Officer "Medical Officer"){.wikilink}:                               |
+|   - [Boast](Boast "Boast"){.wikilink} (Engines Only): An action that increases the output of        |   |   - [Resuscitation/Life                                                                              |
+|     Engines for the rest of the round or the following one.                                         |   |     Support](Resuscitation/Life_Support "Resuscitation/Life Support"){.wikilink}: (Special Bay)      |
+|   - Counter [Hack](Hack "Hack"){.wikilink}: (Electronics) An Engineer can attempt to stop a hacker  |   |     Bring someone back from recent death. (Less than 10 minutes)                                     |
+|     from gaining access to the ship systems, but in there, the current position cannot do hacking.  |   |   - [Long/Short Automated Care](Long/Short_Automated_Care "Long/Short Automated Care"){.wikilink}:   |
+| - [**Medical Officer**](Medical_Officer "Medical Officer"){.wikilink}:                              |   |     (Officer\'s Medical Rank, Medical Facility) Similar to long-term care from Medical Skill, but    |
+|   - Medical: (Officer\'s Medical Rank, Medical Bay) This is the use of Medical skill.               |   |     done automatically.                                                                              |
 +-----------------------------------------------------------------------------------------------------+---+------------------------------------------------------------------------------------------------------+
 
 : **Ship and Officer Functions**

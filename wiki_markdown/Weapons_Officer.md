@@ -1,38 +1,34 @@
 The Weapons Officer is a [Ship
-Position](Space_Ships#Ship_Positions "Ship Position"){.wikilink}. There
-are other ship positions that can be review and can affect this
-position.
+Position](Space_Ships#Ship_Positions "Ship Position"){.wikilink}. Other
+ship positions can be reviewed and may affect this position.
 
 The Weapons Officer is a main ship position and is required in all ships
-except Hull Size Tiny or smaller. This position can be combined in Tiny
-Size or smaller ships with Hemls and Communications.
+except Hull Size Tiny or smaller. This position can be combined with
+Helms and Communications in Tiny Size or smaller ships.
 
 ## Description
 
 The Weapons Officer is responsible for firing on enemy vessels as well
-as operating other Hard Points. They can target as many different
-targets per turn as they have active weapon hard points. Weapon\'s
-Officers use d10s. The number of d10s is equal to the number of active
-weapon hardpoints used against the target. If the ship sensors have
-found a weakness in the target\'s defenses, then the Weapons officer can
-add the ship\'s Sensor Mod to each d10 rolled. The Weapon\'s officer can
-re-roll successful d10s up to the Weapon\'s Mod number of times. If the
-Weapon\'s Officer beats the battle damage DC, default 4, 4 (4 successful
-d10s that meet or beat a 4), then they can roll the Battle Damage die,
-which determines the effect the battle damage will have on the target
-ship. The battle damage will have a repair DC. That DC is equal to the
-result of the Battle Damage die + Ship\'s Weapons Mod + Weapon\'s
-Officer\'s Wisdom or Dexterity Mod. (Whichever they prefer)
+as operating other Hard Points. Learn more about how Damage is given by
+reviewing the [Fire](Fire "Fire"){.wikilink} Function or the [Giving and
+Receiving Damage in Space
+Ships](Giving_and_Receiving_Damage_in_Space_Ships "Giving and Receiving Damage in Space Ships"){.wikilink}.
 
 : **Associated Ship Attributes**: Weapons
 : **Associated Secondary Attributes**: Repair DC Bonus (Battle Damage
   Bonus)
 : **Bonus Impact**: Allows for the re-rolling of d10s equal to the
   Weapon\'s Modifier.
+: **Tertiary Bonus Impact**: The Weapons office can choose a single d10
+  to boost using there choosen Ability Modifier.
 : **Officer Functions**:
   1.  `<u>`{=html}[Fire](Fire "Fire"){.wikilink}`</u>`{=html}: This is
       the basic action the Weapons Officer can use to attack an enemy
-      ship. The rules of which are explained in detail above.
+      ship. The rules are explained in detail on the
+      [Fire](Fire "Fire"){.wikilink} page and the [Giving and Receiving
+      Damage in Space
+      Ships](Giving_and_Receiving_Damage_in_Space_Ships "Giving and Receiving Damage in Space Ships"){.wikilink}
+      page.
   2.  `<u>`{=html}[Bombard](Bombard "Bombard"){.wikilink}`</u>`{=html}:
       This action forces the Weapons Officer to attack a single target
       with all the Weapons. The Weapon's Officer gets to use an extra

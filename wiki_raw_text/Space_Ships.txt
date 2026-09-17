@@ -179,7 +179,7 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 ! rowspan="2" | Size
 ! rowspan="2" | Tracking DC<br />(Size Mod)
 ! rowspan="2" | Detection <br />DC
-! rowspan="2" | Battle <br /> Damage
+! rowspan="2" | Battle<br />Damage<br />Capacity
 ! rowspan="2" | Sq ft /<br />Num of Squares
 ! rowspan="2" | Pass.<br />Cap.
 ! rowspan="2" | Avg.<br /> Weight
@@ -228,7 +228,7 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 ;Detection DC: This determines how hard it is for other ships to '''see''' the ship. If the Detection DC is at or below another ship's Passive Sensor Score, then the ship is visible to their sensors and its location and basic information are known.
 |-
 |
-;Battle Damage: This is how much damage a ship can take before it becomes disabled. A ship can only receive one Battle Damage a round unless a critical happens. Also, with two rounds of successful Repair checks done by an Engineer, the Battle Damage can be repaired. The Repair DC is determined by the Battle Damage Die. More on that in the combat rules.
+;Battle Damage Capacity: This is how much damage a ship can take before it becomes disabled. A ship can only receive one Battle Damage a round unless a critical happens. Also, with two rounds of successful Repair checks done by an Engineer, the Battle Damage can be repaired. The Repair DC is determined by the Battle Damage Die. More on that in the combat rules.
 |-
 |
 ;Sq ft: Anything more than ~1,024,000 Square Feet in size is considered Super Colossal and can only be a ship with exceptions from the GM. It would be considered a station. Even if the station has the ability to move around in the universe, no craft of that magnitude could perform Faster Than Light travel without help from external sources. Also, attacking a ship or structure of that size would be considered as attacking a station, and thus different modifiers apply.
@@ -714,7 +714,7 @@ More positions can be made up by the GM for the purpose of storytelling and game
 
 == Officer/Ship Functions ==
 
-Ship Functions are special abilities much like Skills for a Character. Some are meant for combat while others for day to day use. Some functions are standard on all ships. While others require a Ship Upgrade and/or a Feat from a Character. Functions are listed by the primary position they are associated with. Some Functions can be used by different Crew members although not always to its fullest. 
+Ship Functions are special abilities much like Skills for a Character. Some are meant for combat while others for day-to-day use. Some functions are standard on all ships. Others require a Ship Upgrade and/or a Feat from a Character. Functions are listed by the primary position they are associated with. Some Functions can be used by different Crew members, although not always to their fullest. 
 
 {|
 |+ '''Ship and Officer Functions'''
@@ -722,7 +722,9 @@ Ship Functions are special abilities much like Skills for a Character. Some are 
 ; Standard Functions
 ----
 * Standard Functions All Crew Can Do:
-** [[Change Position]]: (N/A) This allows a crew member to change there current Officer role or ship position.
+** [[Change Position]]: (N/A) This allows a crew member to change their current Officer role or ship position.
+** [[Shield Manipulation]]: (Knowledge Science) Adjusts the Shields frequency in such a way as to counter the effects of enemy sensors and weapons.
+** [[Weapons Assist]]: (Dexterity*) Allows any Officer (Except the head Weapons Officer) to manually control one of the Hard Points to improve its performance.
 * [[Captain Position|'''Captain''']]:
 ** [[Give Command]]: (Officer's Charisma) The Captain gives a directive and attempts to assist a crew member in following that directive.
 ** [[Encourage Crew]]: (Officer's Charisma) The Captain gives a rousing but quick speech to encourage and focus the crew.

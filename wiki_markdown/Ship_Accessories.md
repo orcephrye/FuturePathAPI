@@ -36,8 +36,11 @@ a Jump Drive.
 Description
 : This allows the ship to give some of this shield over to another
   target ship. Whatever is provided to the target ship is taken away
-  from the assisting ship. This can only happen if the ship systems are
-  compatible. The amount is optional.
+  from the assisting ship. The amount provided is variable and can be
+  adjusted by the user. The Shields on the extending ship cannot go
+  below 8. This does not impact Detection/Stealth/Tracking. If a smaller
+  ship is extending is shields to a larger ship then there is a Shield
+  penalty of 1 per size larger.
 
 **Requirements**: Requires at least small size ship.
 
@@ -48,9 +51,8 @@ Description
 ### Shield Enhancer {#shield_enhancer}
 
 Description
-: This passively provides a bonus to the ship shields. Either in the
-  form of DR or in the form of Hit Points depending on ship shield
-  configuration.
+: This passively provides a bonus to the ship shields. Increases the
+  Ships Shield Score by +2
 
 **Requirements**: The minimal size of the ship is small.
 

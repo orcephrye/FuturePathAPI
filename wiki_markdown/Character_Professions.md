@@ -3765,8 +3765,8 @@ Shake, Rattle, And Roll
 
 Vector Thrust
 : At **9th** level, you master the art of tactical repositioning. You
-  can switch between the Vanguard and Rearguard phases as a \*\*Free
-  Action\*\* at the start of any round. Additionally, your movement no
+  can switch between the Vanguard and Rearguard phases as a **Free
+  Action** at the start of any round. Additionally, your movement no
   longer triggers Tactical Opportunities from enemies you have attacked
   this turn.
 

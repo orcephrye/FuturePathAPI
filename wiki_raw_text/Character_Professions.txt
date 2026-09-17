@@ -1593,7 +1593,7 @@ The fastest path into this Profession is through the [[Future_Hero_Base_Class#Pa
 :At '''8th''' level, a Starfighter learns how to rock an enemy spaceship with weapons fire. The Starfighter must declare that he is using this ability before making the attack roll (thus, a failed attack roll ruins the attempt). If the Starfighter is not also in control of the Weapons, the Weapons officer will need to make a successful hit for this to work. A spaceship damaged by the Starfighter’s attack is shaken for 1 round; all passengers and crewmembers (pilots and weapons officers included) aboard the shaken ship take a disadvantage penalty on attack rolls, saving throws, and skill checks for 1 round. A Starfighter may use this ability once per combat.
 
 ;Vector Thrust
-: At '''9th''' level, you master the art of tactical repositioning. You can switch between the Vanguard and Rearguard phases as a **Free Action** at the start of any round. Additionally, your movement no longer triggers Tactical Opportunities from enemies you have attacked this turn.
+: At '''9th''' level, you master the art of tactical repositioning. You can switch between the Vanguard and Rearguard phases as a '''Free Action''' at the start of any round. Additionally, your movement no longer triggers Tactical Opportunities from enemies you have attacked this turn.
 
 ;Master of the Skies (Level 10)
 : At '''10th''' level, your training is complete:
