@@ -12,14 +12,14 @@
 '''Hull Configuration''': Carrier
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 15 (due to -5 Carrier configuration penalty)
+'''Number of Attribute Points''': 17 (due to -3 Carrier configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 12 (Modifier: +1)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -27,24 +27,24 @@
 
 '''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 11 + 2 = 13 (Modifier: +1)
+'''Electronics''': 13 (Modifier: +1)
 
-'''Sensors''': 10 + 2 = 12 (Modifier: +1)
+'''Sensors''': 13 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 10 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod) + 2 (Carrier Tech 3 free Field Commander or scanning upgrades? Wait, 10 + 0 + 2 - 2 - 2 = 8? Tracking DC is 8! Let's write 8!))
+'''Tracking DC''': 9 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
 
-'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
+'''Detection DC''': 6 (Detection 7 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 9 (Detection 8 + 1 Electronics)
+'''Stealth DC''': 8 (Detection 7 + 1 Electronics)
 
 '''Battle Damage''': 4
 
-'''Initiative''': -1 (Engines 0 + Sensors 1 - Structure 2)
+'''Initiative''': 0 (Engines 1 + Sensors 1 - Structure 2)
 
-'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -57,7 +57,7 @@
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +0 (equal to Engines Mod)
+'''Tactical Mobility''': +1 (equal to Engines Mod)
 
 '''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot, -1 penalty from Carrier configuration applied)
 ;Description: A massive military Gargantuan fleet carrier designed with a Tech Level 3 core. Serves as a mobile base of operations, carrying automated hangar space for wings of smaller vessels.
-;Explanations: Prioritizes shielding and structural plating over sub-light speed, leveraging point pairs to establish balanced modifiers. Pre-installed with a Hangar Repair Facility.
+;Explanations: Prioritizes shielding and structural plating for a 6/6 BD-DC profile, maintaining balanced sub-light mobility and long-range flight command.
 |}
 
 {|

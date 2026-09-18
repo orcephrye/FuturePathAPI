@@ -19,22 +19,22 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 13 + 2 = 15 (Modifier: +2)
+'''Engines''': 14 (Modifier: +2)
 
 '''Weapons''': 13 (Modifier: +1)
 
-'''Structure''': 10 - 2 = 8 (Modifier: -2)
+'''Structure''': 10 (Modifier: +0)
 
-'''Shields''': 10 (Modifier: +0)
+'''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 11 (Modifier: +0)
+'''Electronics''': 10 (Modifier: +0)
 
-'''Sensors''': 13 (Modifier: +1)
+'''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 15 (Base 15 = 10 + 2 (Tactical Mobility) - 0 (Shields Mod) - (-2) (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 14 (Base 10 = 10 + 2 (Tactical Mobility) + 1 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
 
 '''Detection DC''': 10
 
@@ -42,24 +42,24 @@
 
 '''Battle Damage''': 2
 
-'''Initiative''': 5 (Engines 2 + Sensors 1 - Structure -2)
+'''Initiative''': +2 (Engines 2 + Sensors 0 - Structure 0)
 
 '''Movement Speed''': 6 Squares (Tactical Speed: 6 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
 ----
-'''Reflectors (Shields)''': 4 (Base 4 + 0 Shields Mod)
+'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
 
-'''Damage Resistance (Resistance)''': 2 successes (Base 4 - 2 Structure Mod)
+'''Damage Resistance (Resistance)''': 4 successes (Base 4 + 0 Structure Mod)
 
-'''Battle Damage Defense (BD-DC)''': 2 / 4 (2 successes / 4 Reflector)
+'''Battle Damage Defense (BD-DC)''': 4 / 5 (4 successes / 5 Reflector)
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +2 (equal to Engines Mod)
 
-'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
 
 '''Cargo Capacity''': 96 Units (64 Base + 32 from Cargo Bay)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A lightweight, agile interceptor designed for dogfighting, system defense, and escort operations. Possesses high speed but thin armor.
-;Explanations: Employs its 1 Customization Slot for [[Ship_Accessories#Engine_Boosters|Engine Boosters]] to maximize sub-light mobility, and mounts a full array of projectile, laser, and missile hardpoint weapons.
+;Explanations: Employs fighter engine perks to achieve high agility (+2 Engines) and steady weapons while overcoming initial structural penalties.
 |}
 
 {|

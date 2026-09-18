@@ -34,9 +34,9 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 12 (Base 12 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
+'''Detection DC''': 7 (Detection 8 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 9 (Detection 8 + 1 Electronics)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A massive military-grade dreadnought hull built with a Tech Level 3 core to power ultimate shielding, armor, and high-energy firing modifiers.
-;Explanations: Designed for fleet-level engagements. Concentrates all attributes in pairs to establish heavy active modifiers.
+;Explanations: Delivers a robust military profile with 6/6 BD-DC defenses and +2 Weapons to command large fleet sectors.
 |}
 
 {|

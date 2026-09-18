@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A military patrol capital and battleship escort built on a large hull, carrying devastating structural plating, shields, and heavy firepower.
-;Explanations: Highly effective assault vessel. Spends points in pairs to secure +2 modifiers on Weapons and Structure, and fits a sub-light Fire-Control Matrix to enhance targeting accuracy.
+;Explanations: Prioritizes high offensive firepower (+2 Weapons) and thick structural armor (+2) for large combat escorts.
 |}
 
 {|

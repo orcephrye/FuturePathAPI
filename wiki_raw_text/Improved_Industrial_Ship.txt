@@ -12,14 +12,14 @@
 '''Hull Configuration''': Industrial
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 18 (due to -2 Industrial configuration penalty)
+'''Number of Attribute Points''': 19 (due to -1 Industrial configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 10 (Modifier: +0)
 
@@ -29,20 +29,20 @@
 
 '''Electronics''': 14 (Modifier: +2)
 
-'''Sensors''': 11 (Modifier: +0)
+'''Sensors''': 12 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 9
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 11 (Detection 9 + 2 Electronics)
 
 '''Battle Damage''': 3
 
-'''Initiative''': -2 (Engines 0 + Sensors 0 - Structure 2)
+'''Initiative''': -1 (Engines 0 + Sensors 1 - Structure 2)
 
 '''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -59,7 +59,7 @@
 
 '''Tactical Mobility''': +0 (equal to Engines Mod)
 
-'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
 '''Cargo Capacity''': 2,000 Units (1,000 Base + 1,000 from 2 Cargo Bays)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot), [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A massive industrial mining and refinery vessel fitted with a Tech Level 3 core. Built with thick structural plating and heavy shields to operate in dense asteroid fields.
-;Explanations: Sacrifices engines and weapon capability to establish a highly resilient defense and support layout. Pre-installed with free Industrial and Refinery Facilities.
+;Explanations: Maximizes defensive durability (6/6 BD-DC) and electronic controls (+2 Electronics) to coordinate onboard automated refining pipelines.
 |}
 
 {|

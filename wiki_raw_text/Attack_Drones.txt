@@ -19,45 +19,45 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 1 = 11 (Modifier: +0)
+'''Engines''': 12 (Modifier: +1)
 
-'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+'''Weapons''': 12 (Modifier: +1)
 
-'''Structure''': 10 - 1 = 9 (Modifier: -1)
+'''Structure''': 10 (Modifier: +0)
 
-'''Shields''': 10 - 1 = 9 (Modifier: -1)
+'''Shields''': 9 (Modifier: -1)
 
-'''Electronics''': 12 - 1 = 11 (Modifier: +0)
+'''Electronics''': 9 (Modifier: -1)
 
-'''Sensors''': 13 - 1 = 12 (Modifier: +1)
+'''Sensors''': 12 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 12 (Base 12 = 10 + 0 (Tactical Mobility) - 1 (Shields Mod) - (-1) (Structure Mod) + 2 (Size Mod))
+'''Tracking DC''': 12 (Base 10 = 10 + 1 (Tactical Mobility) + -1 (Shields Mod) - 0 (Structure Mod) + 2 (Size Mod))
 
-'''Detection DC''': 11
+'''Detection DC''': 12
 
 '''Stealth DC''': 11 (Detection 11 + 0 Electronics)
 
 '''Battle Damage''': 1
 
-'''Initiative''': 2 (Engines 0 + Sensors 1 - Structure -1)
+'''Initiative''': +2 (Engines 1 + Sensors 1 - Structure 0)
 
-'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
 ----
-'''Reflectors (Shields)''': 3 (Base 4 - 1 Shields Mod)
+'''Reflectors (Shields)''': 3 (Base 4 + -1 Shields Mod)
 
-'''Damage Resistance (Resistance)''': 3 successes (Base 4 - 1 Structure Mod)
+'''Damage Resistance (Resistance)''': 4 successes (Base 4 + 0 Structure Mod)
 
-'''Battle Damage Defense (BD-DC)''': 3 / 3 (3 successes / 3 Reflector)
+'''Battle Damage Defense (BD-DC)''': 4 / 3 (4 successes / 3 Reflector)
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +0 (equal to Engines Mod)
+'''Tactical Mobility''': +1 (equal to Engines Mod)
 
 '''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: An automated, swarm-capable military strike drone designed to overwhelm larger enemy vessels in coordinated groups. Lacks any life support or crew cabins, controlled remotely or by a self-defense AI module.
-;Explanations: This drone utilizes its 1 Customization Slot for a [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] targeting computer, and mounts a mix of laser and projectile weaponry to maximize offensive power in its Diminutive frame.
+;Explanations: Prioritizes sub-light agility, weapon accuracy, and targeting sensors (+1 modifiers) to swarm and strike hostile targets efficiently.
 |}
 
 {|

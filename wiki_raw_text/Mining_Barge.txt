@@ -19,45 +19,45 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 12 (Modifier: +1)
 
-'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+'''Weapons''': 12 (Modifier: +1)
 
 '''Structure''': 16 (Modifier: +3)
 
-'''Shields''': 16 (Modifier: +3)
+'''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 10 (Modifier: +0)
+'''Electronics''': 13 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 10 (Base 10 = 10 + 0 (Tactical Mobility) + 3 (Shields Mod) - 3 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 3 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 8 (Detection 8 + 0 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
-'''Initiative''': -3 (Engines 0 + Sensors 0 - Structure 3)
+'''Initiative''': -2 (Engines 1 + Sensors 0 - Structure 3)
 
-'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
 ----
-'''Reflectors (Shields)''': 7 (Base 4 + 3 Shields Mod)
+'''Reflectors (Shields)''': 6 (Base 4 + 2 Shields Mod)
 
 '''Damage Resistance (Resistance)''': 7 successes (Base 4 + 3 Structure Mod)
 
-'''Battle Damage Defense (BD-DC)''': 7 / 7 (7 successes / 7 Reflector)
+'''Battle Damage Defense (BD-DC)''': 7 / 6 (7 successes / 6 Reflector)
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +0 (equal to Engines Mod)
+'''Tactical Mobility''': +1 (equal to Engines Mod)
 
 '''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot), [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A heavy industrial mining barge fitted with a Tech Level 4 core and a powerful Expert Warp Drive, prioritizing maximum armor and shielding to absorb asteroid impacts.
-;Explanations: Focuses all attribute points on structural and shield attributes, establishing an outstanding 7/7 BD-DC rating to handle industrial sector hazards.
+;Explanations: Maximizes structural reinforcement to an outstanding +3 modifier, yielding a 7/6 BD-DC profile to endure prolonged heavy asteroid mining operations.
 |}
 
 {|

@@ -12,20 +12,20 @@
 '''Hull Configuration''': Destroyer
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 12 (due to -3 Destroyer config penalty)
+'''Number of Attribute Points''': 13 (due to -2 Destroyer configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 (Modifier: +1)
+'''Engines''': 11 (Modifier: +0)
 
 '''Weapons''': 14 (Modifier: +2)
 
 '''Structure''': 14 (Modifier: +2)
 
-'''Shields''': 10 (Modifier: +0)
+'''Shields''': 12 (Modifier: +1)
 
 '''Electronics''': 10 (Modifier: +0)
 
@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 1 (Tactical Mobility) + 0 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -42,22 +42,22 @@
 
 '''Battle Damage''': 3
 
-'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
+'''Initiative''': -2 (Engines 0 + Sensors 0 - Structure 2)
 
-'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
 ----
-'''Reflectors (Shields)''': 4 (Base 4 + 0 Shields Mod)
+'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
 
 '''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
 
-'''Battle Damage Defense (BD-DC)''': 6 / 4 (6 successes / 4 Reflector)
+'''Battle Damage Defense (BD-DC)''': 6 / 5 (6 successes / 5 Reflector)
 
 '''Repair DC Bonus''': +2 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +1 (equal to Engines Mod)
+'''Tactical Mobility''': +0 (equal to Engines Mod)
 
 '''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A military patrol destroyer used by law enforcement agencies to secure sector trade borders and hunt down pirate frigates.
-;Explanations: Designed for overwhelming close-range firepower. Spends points in pairs to secure +2 modifiers on Weapons and Structure, uses its Customization Slot for a Fire-Control Matrix targeting computer, and fits a stealthy Slip Stream Drive for FTL jumps.
+;Explanations: Prioritizes heavy weaponry (+2) and structural armor (+2) to overwhelm pirate vessels at close range while maintaining strong reflector shielding.
 |}
 
 {|

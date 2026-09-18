@@ -19,32 +19,32 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 12 (Modifier: +1)
 
-'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+'''Weapons''': 12 (Modifier: +1)
 
-'''Structure''': 15 (Modifier: +2)
+'''Structure''': 14 (Modifier: +2)
 
-'''Shields''': 15 (Modifier: +2)
+'''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 11 (Modifier: +0)
+'''Electronics''': 13 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 10 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 8 (Detection 8 + 0 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
-'''Initiative''': -2 (Engines 0 + Sensors 0 - Structure 2)
+'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
 
-'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -57,7 +57,7 @@
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +0 (equal to Engines Mod)
+'''Tactical Mobility''': +1 (equal to Engines Mod)
 
 '''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot), [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A military cargo and troop transporter barge. Strongly armored and shielded to run blockades and deliver supplies in war zones.
-;Explanations: Sacrifices tactical speed and maneuverability to maximize defense capabilities, combining three projectile weapons with targeting matrix aids.
+;Explanations: Fortifies structural armor and deflector screens to lock in 6/6 BD-DC defenses, ensuring safe delivery of troops and munitions through combat zones.
 |}
 
 {|

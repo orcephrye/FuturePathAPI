@@ -19,22 +19,22 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 15 + 2 = 17 (Modifier: +3)
+'''Engines''': 16 (Modifier: +3)
 
-'''Weapons''': 15 (Modifier: +2)
+'''Weapons''': 14 (Modifier: +2)
 
-'''Structure''': 12 - 2 = 10 (Modifier: +0)
+'''Structure''': 10 (Modifier: +0)
 
 '''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 12 (Modifier: +1)
+'''Electronics''': 13 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 15 (Base 15 = 10 + 3 (Tactical Mobility) + 1 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 15 (Base 10 = 10 + 3 (Tactical Mobility) + 1 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
 
 '''Detection DC''': 10
 
@@ -42,9 +42,9 @@
 
 '''Battle Damage''': 2
 
-'''Initiative''': 3 (Engines 3 + Sensors 0 - Structure 0)
+'''Initiative''': +3 (Engines 3 + Sensors 0 - Structure 0)
 
-'''Movement Speed''': 9 Squares (Tactical Speed: 9 Squares)
+'''Movement Speed''': 7 Squares (Tactical Speed: 7 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A cutting-edge military interceptor combining Tech Level 3 power distribution with specialized thrusters for ultimate high-speed dogfighting.
-;Explanations: Maximizes Engines and Weapons using the 20-point attribute budget, integrating Electronics upgrades to counter jamming.
+;Explanations: Maximizes Engines (+3) and Weapons (+2) for supreme dogfighting lethality, adding electronic protection against hostile jamming.
 |}
 
 {|

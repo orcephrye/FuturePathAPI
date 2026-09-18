@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 11 (Base 11 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A military-grade medium defense ship equipped with fire-control enhancements and balanced weapon systems for patrol duties.
-;Explanations: Designed for security, it fits a Fire-Control Matrix for enhanced weapon targeting, and carries a robust loadout of projectile, laser, and missile systems.
+;Explanations: Medium military defense craft with balanced +1 modifiers across all primary combat systems.
 |}
 
 {|

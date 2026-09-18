@@ -19,22 +19,22 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 14 (Modifier: +2)
 
 '''Structure''': 14 (Modifier: +2)
 
-'''Shields''': 13 (Modifier: +1)
+'''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 10 (Modifier: +0)
+'''Electronics''': 11 (Modifier: +0)
 
 '''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod) + 2 (Dreadnought Tech 3 free Station Buster? Wait, 10 + 0 + 1 - 2 - 2 = 7? Wait, let's write 9 because structure structures are balanced, let's check Tracking DC: Tracking DC is 9!))
+'''Tracking DC''': 7 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
 
 '''Detection DC''': 7
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot, -1 penalty from Dreadnought configuration applied)
 ;Description: A massive military Gargantuan dreadnought designed as a hyper-focused fleet siege asset, carrying the terrifying Station Buster Cannon.
-;Explanations: Focuses all attribute points in pairs to establish heavy modifiers for structure and weapons.
+;Explanations: Focuses attribute points in pairs to establish heavy modifiers (+2) for structure and weapons to withstand heavy station fire and maximize siege accuracy.
 |}
 
 {|

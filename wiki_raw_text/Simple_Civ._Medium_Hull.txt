@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 11 (Base 11 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -42,7 +42,7 @@
 
 '''Battle Damage''': 3
 
-'''Initiative''': 1 (Engines 1 + Sensors 1 - Structure 1)
+'''Initiative''': +1 (Engines 1 + Sensors 1 - Structure 1)
 
 '''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A standard civilian medium transporter that utilizes high life-support efficiency and balanced core systems to transport goods safely.
-;Explanations: Extremely solid cargo and passenger vessel that uses an Advanced Recycler Grid to enhance life-support systems while maintaining perfect attribute distributions.
+;Explanations: Distributes starter points evenly to achieve balanced +1 modifiers across all core systems except weapons.
 |}
 
 {|

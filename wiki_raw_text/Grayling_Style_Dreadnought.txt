@@ -19,7 +19,7 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 14 (Modifier: +2)
 
@@ -34,9 +34,9 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 8 (Base 8 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
+'''Tracking DC''': 8 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
 
-'''Detection DC''': 7
+'''Detection DC''': 6 (Detection 7 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 8 (Detection 7 + 1 Electronics)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot, -1 penalty from Dreadnought configuration applied)
 ;Description: A Gargantuan military dreadnought designed by the Graylings. Incorporates a Tech Level 4 core, an Expert Warp Drive, and the catastrophic Station Buster Cannon.
-;Explanations: Prioritizes shielding and structure to achieve a robust 6/6 BD-DC defensive profile to survive massive combat zones.
+;Explanations: Prioritizes shielding and structure to achieve a robust 6/6 BD-DC defensive profile to survive massive combat zones while unleashing the Station Buster Cannon.
 |}
 
 {|

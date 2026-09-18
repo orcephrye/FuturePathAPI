@@ -12,18 +12,18 @@
 '''Hull Configuration''': Battleship
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 15 (due to -5 Battleship configuration penalty)
+'''Number of Attribute Points''': 17 (due to -3 Battleship configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 + 1 = 13 (Modifier: +1)
+'''Engines''': 12 (Modifier: +1)
 
-'''Weapons''': 12 + 2 = 14 (Modifier: +2)
+'''Weapons''': 16 (Modifier: +3)
 
-'''Structure''': 14 + 1 = 15 (Modifier: +2)
+'''Structure''': 14 (Modifier: +2)
 
 '''Shields''': 14 (Modifier: +2)
 
@@ -36,7 +36,7 @@
 ----
 '''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
+'''Detection DC''': 7 (Detection 8 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 8 (Detection 8 + 0 Electronics)
 
@@ -55,7 +55,7 @@
 
 '''Battle Damage Defense (BD-DC)''': 6 / 6 (6 successes / 6 Reflector)
 
-'''Repair DC Bonus''': +2 (equal to Weapons Mod)
+'''Repair DC Bonus''': +3 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +1 (equal to Engines Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot, -1 penalty from Battleship configuration applied)
 ;Description: A massive, military Cryous battleship built with a Tech Level 3 core to dominate deep-space fleet warfare. Strongly shielded and armored with heavy projectile, laser, plasma, and missile arrays.
-;Explanations: Focuses all attribute points in pairs to secure +2 modifiers on weaponry, structure, and shields.
+;Explanations: Focuses point budget on weaponry, structure, and shields to achieve a +3 Weapons modifier and a durable 6/6 BD-DC defensive profile.
 |}
 
 {|

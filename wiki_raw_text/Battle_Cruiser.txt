@@ -12,14 +12,14 @@
 '''Hull Configuration''': Battle Cruiser
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 12 (due to -3 Cruiser config penalty)
+'''Number of Attribute Points''': 12 (due to -3 Battle Cruiser configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 10 + 2 = 12 (Modifier: +1)
+'''Engines''': 12 (Modifier: +1)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -27,7 +27,7 @@
 
 '''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 10 (Modifier: +0)
+'''Electronics''': 13 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
@@ -36,9 +36,9 @@
 ----
 '''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 9
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 9 (Detection 9 + 0 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A heavily armored and armed Large capital combatant, optimized for sector dominance, orbital bombardment escort, and fleet spearhead attacks.
-;Explanations: Highly effective heavy combatant that features 6/6 BD-DC defenses and mounts multiple Large projectile, laser, plasma, and missile systems. Utilizes its Customization Slot for a Fire-Control Matrix.
+;Explanations: Prioritizes heavy shields and structural integrity to lock in 6/6 BD-DC defenses alongside versatile weapons and sub-light mobility.
 |}
 
 {|

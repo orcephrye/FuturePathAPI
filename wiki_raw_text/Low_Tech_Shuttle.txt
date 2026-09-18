@@ -19,22 +19,22 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 + 4 = 16 (Modifier: +3)
+'''Engines''': 16 (Modifier: +3)
 
 '''Weapons''': 12 (Modifier: +1)
 
-'''Structure''': 11 - 2 = 9 (Modifier: -1)
+'''Structure''': 9 (Modifier: -1)
 
 '''Shields''': 10 (Modifier: +0)
 
-'''Electronics''': 12 - 2 = 10 (Modifier: +0)
+'''Electronics''': 10 (Modifier: +0)
 
-'''Sensors''': 13 + 2 = 15 (Modifier: +2)
+'''Sensors''': 12 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 15 (Base 15 = 10 + 3 (Tactical Mobility) - 0 (Shields Mod) - (-1) (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 15 (Base 10 = 10 + 3 (Tactical Mobility) + 0 (Shields Mod) - -1 (Structure Mod) + 1 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -42,7 +42,7 @@
 
 '''Battle Damage''': 2
 
-'''Initiative''': 6 (Engines 3 + Sensors 2 - Structure -1)
+'''Initiative''': +5 (Engines 3 + Sensors 1 - Structure -1)
 
 '''Movement Speed''': 7 Squares (Tactical Speed: 7 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -51,7 +51,7 @@
 ----
 '''Reflectors (Shields)''': 4 (Base 4 + 0 Shields Mod)
 
-'''Damage Resistance (Resistance)''': 3 successes (Base 4 - 1 Structure Mod)
+'''Damage Resistance (Resistance)''': 3 successes (Base 4 + -1 Structure Mod)
 
 '''Battle Damage Defense (BD-DC)''': 3 / 4 (3 successes / 4 Reflector)
 
@@ -59,7 +59,7 @@
 
 '''Tactical Mobility''': +3 (equal to Engines Mod)
 
-'''Passive Sensors''': 12 (Base 10 + 2 Sensors Mod)
+'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
 '''Cargo Capacity''': 375 Units (250 Base + 125 from Cargo Bay)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A short-range transport vessel optimized for transporting passengers and light cargo between planetary bodies, stations, and larger ships. Highly mobile but poorly armored.
-;Explanations: Utilizes its 1 Customization Slot for [[Ship_Accessories#Engine_Boosters|Engine Boosters]] to enhance speed, and mounts medium projectile, laser, and missile systems.
+;Explanations: Capitalizes on shuttle engine advantages to reach +3 Engines and Tactical Mobility +3, granting high sub-light speed and evasion.
 |}
 
 {|

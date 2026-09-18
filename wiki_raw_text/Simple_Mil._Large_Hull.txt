@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A large-scale military patrol ship featuring an extensive weapons array, a fire-control system, and strong hull defenses.
-;Explanations: Built for major planetary defense or sector patrols, utilizing a Fire-Control Matrix to improve gunnery and mounting heavy projectile and plasma ordnance.
+;Explanations: A large starter military platform combining +1 Weapons and 5/5 BD-DC defenses for patrol duty.
 |}
 
 {|

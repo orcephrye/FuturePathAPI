@@ -12,29 +12,29 @@
 '''Hull Configuration''': Carrier
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 10 (due to -5 Carrier config penalty)
+'''Number of Attribute Points''': 12 (due to -3 Carrier configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 10 (Modifier: +0)
 
-'''Structure''': 12 (Modifier: +1)
+'''Structure''': 14 (Modifier: +2)
 
 '''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 12 + 2 = 14 (Modifier: +2)
+'''Electronics''': 14 (Modifier: +2)
 
-'''Sensors''': 12 + 2 = 14 (Modifier: +2)
+'''Sensors''': 14 (Modifier: +2)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 8 (Base 8 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 2 (Size Mod))
+'''Tracking DC''': 7 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
 
 '''Detection DC''': 7
 
@@ -42,7 +42,7 @@
 
 '''Battle Damage''': 4
 
-'''Initiative''': 1 (Engines 0 + Sensors 2 - Structure 1)
+'''Initiative''': 0 (Engines 0 + Sensors 2 - Structure 2)
 
 '''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -51,9 +51,9 @@
 ----
 '''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
 
-'''Damage Resistance (Resistance)''': 5 successes (Base 4 + 1 Structure Mod)
+'''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
 
-'''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
+'''Battle Damage Defense (BD-DC)''': 6 / 5 (6 successes / 5 Reflector)
 
 '''Repair DC Bonus''': +0 (equal to Weapons Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A massive Volar military carrier and mobile command base, serving to carry, maintain, and launch swarms of interceptors.
-;Explanations: Prioritizes extreme electronics, scanning, and structural security. Features a built-in fleet Repair Facility and Docking Bays (Fighter Hangar), and fits Gargantuan sub-light Engine Boosters.
+;Explanations: Prioritizes extreme electronics, scanning, and structural security (+2 modifiers) to direct fighter wings from afar with its Field Commander suite.
 |}
 
 {|

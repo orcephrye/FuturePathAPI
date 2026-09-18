@@ -12,14 +12,14 @@
 '''Hull Configuration''': Freighter
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 18 (due to -2 Freighter configuration penalty)
+'''Number of Attribute Points''': 19 (due to -1 Freighter configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 13 - 3 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -34,9 +34,9 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 11 (Base 11 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod) + 2 (Freighter Tech 3 free Beam function? Wait, no, Tracking DC formula is 10 + 0 + 2 - 2 - 1 = 9. Why does the plan say 9? Yes, Tracking DC is 9! Let's calculate: 10 + 0 + 2 - 2 - 1 = 9. Tracking DC is indeed 9! Let's write 9!))
+'''Tracking DC''': 9 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
+'''Detection DC''': 7 (Detection 8 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 9 (Detection 8 + 1 Electronics)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot), [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A massive industrial freighter hull designed for high-capacity deep-space hauling. Highly shielded and armored to protect its massive payloads.
-;Explanations: Maximizes shields and armor structure, employing a Tech Level 3 core to secure high system stability while utilizing double-capacity cargo bays.
+;Explanations: Achieves a robust 6/6 BD-DC defensive shield alongside +1 Weapons and Electronics, protecting high-capacity double-sized cargo holds.
 |}
 
 {|

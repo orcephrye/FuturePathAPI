@@ -12,14 +12,14 @@
 '''Hull Configuration''': Cruiser
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 10 (7 spent due to -3 Cruiser penalty)
+'''Number of Attribute Points''': 8 (due to -2 Cruiser configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 10 + 2 = 12 (Modifier: +1)
+'''Engines''': 12 (Modifier: +1)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -27,18 +27,18 @@
 
 '''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 11 (Modifier: +0)
+'''Electronics''': 12 (Modifier: +1)
 
-'''Sensors''': 10 (Modifier: +0)
+'''Sensors''': 11 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 11 (Base 11 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 9
 
-'''Stealth DC''': 9 (Detection 9 + 0 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A military patrol vessel and policing cruiser used to secure trade lanes and combat local pirate fleets. Possesses a balanced layout.
-;Explanations: Utilizes its 1 Customization Slot for [[Ship_Accessories#Engine_Boosters|Engine Boosters]] to enhance engines, and mounts a formidable loadout of Medium weaponry.
+;Explanations: Spreads core points to secure +1 modifiers across Engines, Weapons, Structure, Shields, and Electronics for dependable local system patrols.
 |}
 
 {|

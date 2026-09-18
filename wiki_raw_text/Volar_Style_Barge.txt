@@ -19,9 +19,9 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
-'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+'''Weapons''': 12 (Modifier: +1)
 
 '''Structure''': 14 (Modifier: +2)
 
@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A robust, mass-produced Volar civilian cargo hauler, designed for interplanetary transit of freight and crew members.
-;Explanations: Extremely easy to repair and highly customizable, this barge focuses its point allocation on high Structure and Weapons to handle hull stress and pirate deterrence.
+;Explanations: Prioritizes thick structural plating (+2 Structure) to absorb space debris and asteroid impacts while keeping balanced shields and self-defense lasers.
 |}
 
 {|

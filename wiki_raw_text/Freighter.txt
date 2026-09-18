@@ -12,14 +12,14 @@
 '''Hull Configuration''': Freighter
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 13 (due to -2 Freighter config penalty)
+'''Number of Attribute Points''': 14 (due to -1 Freighter configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 13 - 3 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 8 (Base 8 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 8 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
 '''Detection DC''': 8
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A massive industrial freighter hull designed for bulk cargo hauling across planetary systems and jump-gate corridors.
-;Explanations: Prioritizes extreme structural plating and energy shielding. Uses its Customization Slot for an Advanced Recycler Grid for life support and mounts Huge projectiles, lasers, and missiles.
+;Explanations: Invests points to overcome engine penalties and secure +2 Structure for a 6/5 BD-DC profile to safeguard bulk cargo bays.
 |}
 
 {|

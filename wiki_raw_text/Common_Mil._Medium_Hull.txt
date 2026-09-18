@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A military patrol vessel built on a medium hull, carrying heavy structural integrity, shielding, and firepower.
-;Explanations: Highly formidable combatant. Spends points in pairs to secure +2 modifiers on Weapons and Structure, and fits sub-light Engine Boosters to maximize tactical pilot bonuses.
+;Explanations: Balances heavy weapons (+2) with robust structural armor (+2) and reflector shields for reliable patrol duties.
 |}
 
 {|

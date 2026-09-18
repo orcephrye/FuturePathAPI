@@ -12,18 +12,18 @@
 '''Hull Configuration''': Industrial
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 10 (8 spent due to -2 Industrial penalty)
+'''Number of Attribute Points''': 9 (due to -1 Industrial configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 10 (Modifier: +0)
 
-'''Structure''': 12 (Modifier: +1)
+'''Structure''': 13 (Modifier: +1)
 
 '''Shields''': 12 (Modifier: +1)
 
@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 1 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A large factory ship designed for asteroid mining, mineral refining, and colonial heavy industry. Slow but robust.
-;Explanations: Has free pre-installed Industrial and Refinery Facilities in its frame, uses its 1 Customization Slot for an [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]], and mounts large mining plasma/lasers and defense missiles.
+;Explanations: Overcomes industrial engine penalties to establish +1 modifiers on Structure, Shields, and Sensors to assist mineral scanning and processing.
 |}
 
 {|

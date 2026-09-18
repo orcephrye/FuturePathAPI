@@ -12,22 +12,22 @@
 '''Hull Configuration''': Battle Cruiser
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 5 (due to -5 Battle Cruiser config penalty)
+'''Number of Attribute Points''': 7 (due to -3 Battle Cruiser configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 10 + 2 = 12 (Modifier: +1)
+'''Engines''': 12 (Modifier: +1)
 
-'''Weapons''': 11 (Modifier: +0)
+'''Weapons''': 13 (Modifier: +1)
 
 '''Structure''': 12 (Modifier: +1)
 
 '''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 10 + 2 = 12 (Modifier: +1)
+'''Electronics''': 13 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
@@ -55,7 +55,7 @@
 
 '''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
 
-'''Repair DC Bonus''': +0 (equal to Weapons Mod)
+'''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +1 (equal to Engines Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A starter Battle Cruiser variant optimized for fleet skirmishing and defensive actions, combining maneuverability and extensive firepower.
-;Explanations: Highly effective heavy combatant that features 5/5 BD-DC defenses and mounts multiple Large projectile, laser, plasma, and missile systems. Utilizes its single Customization Slot for a Fire-Control Matrix.
+;Explanations: Spreads points evenly across priority combat attributes, establishing +1 modifiers across Engines, Weapons, Structure, Shields, and Electronics.
 |}
 
 {|

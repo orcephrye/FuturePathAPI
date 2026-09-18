@@ -19,11 +19,11 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 16 + 2 = 18 (Modifier: +4)
+'''Engines''': 18 (Modifier: +4)
 
-'''Weapons''': 16 (Modifier: +3)
+'''Weapons''': 14 (Modifier: +2)
 
-'''Structure''': 12 - 2 = 10 (Modifier: +0)
+'''Structure''': 10 (Modifier: +0)
 
 '''Shields''': 12 (Modifier: +1)
 
@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 16 (Base 16 = 10 + 4 (Tactical Mobility) + 1 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 16 (Base 10 = 10 + 4 (Tactical Mobility) + 1 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
 
 '''Detection DC''': 10
 
@@ -42,9 +42,9 @@
 
 '''Battle Damage''': 2
 
-'''Initiative''': 4 (Engines 4 + Sensors 0 - Structure 0)
+'''Initiative''': +4 (Engines 4 + Sensors 0 - Structure 0)
 
-'''Movement Speed''': 10 Squares (Tactical Speed: 10 Squares)
+'''Movement Speed''': 8 Squares (Tactical Speed: 8 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -55,7 +55,7 @@
 
 '''Battle Damage Defense (BD-DC)''': 4 / 5 (4 successes / 5 Reflector)
 
-'''Repair DC Bonus''': +3 (equal to Weapons Mod)
+'''Repair DC Bonus''': +2 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +4 (equal to Engines Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot)
 ;Description: A highly sophisticated Ovex fighter craft utilizing Tech Level 4 core point distribution to run ultimate engines and weapons routines.
-;Explanations: Maximizes active modifiers on engines and weaponry using point pairs, making it highly lethal in sub-light dogfights.
+;Explanations: Pushes engine systems to the limit to achieve a staggering +4 Engines modifier, delivering unparalleled evasion and intercept velocity.
 |}
 
 {|

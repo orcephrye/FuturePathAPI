@@ -12,14 +12,14 @@
 '''Hull Configuration''': Cruiser
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 22 (due to -3 Cruiser configuration penalty)
+'''Number of Attribute Points''': 23 (due to -2 Cruiser configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 10 + 2 = 12 (Modifier: +1)
+'''Engines''': 13 (Modifier: +1)
 
 '''Weapons''': 14 (Modifier: +2)
 
@@ -29,20 +29,20 @@
 
 '''Electronics''': 14 (Modifier: +2)
 
-'''Sensors''': 10 (Modifier: +0)
+'''Sensors''': 13 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 11 (Base 11 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 10 (Detection 8 + 2 Electronics)
+'''Stealth DC''': 11 (Detection 9 + 2 Electronics)
 
 '''Battle Damage''': 3
 
-'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
+'''Initiative''': 0 (Engines 1 + Sensors 1 - Structure 2)
 
 '''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -59,7 +59,7 @@
 
 '''Tactical Mobility''': +1 (equal to Engines Mod)
 
-'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
+'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
 '''Cargo Capacity''': 765 Units (510 Base + 255 from Cargo Bay)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A military-grade luxury cruiser built with a Tech Level 4 core. Extremely resilient and packed with high-end systems and weaponry, alongside a swift Expert Warp Drive.
-;Explanations: Prioritizes shielding, structure, and electronics to achieve a robust 6/6 BD-DC defensive profile for high-status personnel.
+;Explanations: Invests Tech Level 4 points to establish 6/6 BD-DC defenses, +2 Electronics, and +2 Weapons, ensuring VIPs travel in supreme security and comfort.
 |}
 
 {|

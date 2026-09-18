@@ -34,9 +34,9 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 12 (Base 12 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 12 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 1 (Size Mod))
 
-'''Detection DC''': 9
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A common civilian general transport vessel that prioritizes structural shielding and electronic stability over firepower.
-;Explanations: Highly resilient defense vessel that maximizes Shield and Structure modifiers to weather asteroid storms or pirate attacks while transporting passengers or cargo.
+;Explanations: Fortifies structural integrity and energy shielding to lock in 6/6 BD-DC safety on a small transport frame.
 |}
 
 {|

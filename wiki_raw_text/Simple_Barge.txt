@@ -19,15 +19,15 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
-'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+'''Weapons''': 11 (Modifier: +0)
 
 '''Structure''': 12 (Modifier: +1)
 
 '''Shields''': 12 (Modifier: +1)
 
-'''Electronics''': 11 (Modifier: +0)
+'''Electronics''': 12 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
@@ -38,7 +38,7 @@
 
 '''Detection DC''': 9
 
-'''Stealth DC''': 9 (Detection 9 + 0 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
@@ -55,7 +55,7 @@
 
 '''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
 
-'''Repair DC Bonus''': +1 (equal to Weapons Mod)
+'''Repair DC Bonus''': +0 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +0 (equal to Engines Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A reliable, mass-produced transport vessel designed for long-range cargo hauling and transit throughout civilization. Easy to repair and highly customizable.
-;Explanations: Utilizes its 1 Customization Slot for an [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] for life-support efficiency, and installs an Assisted Jump Drive for interplanetary travel.
+;Explanations: Spreads its point budget to overcome barge base penalties and establish +1 modifiers across Structure, Shields, and Electronics for dependable freight hauling.
 |}
 
 {|

@@ -12,33 +12,33 @@
 '''Hull Configuration''': Industrial
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 23 (due to -2 Industrial configuration penalty)
+'''Number of Attribute Points''': 24 (due to -1 Industrial configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
-'''Weapons''': 10 (Modifier: +0)
+'''Weapons''': 12 (Modifier: +1)
 
-'''Structure''': 15 (Modifier: +2)
+'''Structure''': 14 (Modifier: +2)
 
-'''Shields''': 15 (Modifier: +2)
+'''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 15 (Modifier: +2)
+'''Electronics''': 16 (Modifier: +3)
 
 '''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 9 (Base 9 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 9
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 11 (Detection 9 + 2 Electronics)
+'''Stealth DC''': 12 (Detection 9 + 3 Electronics)
 
 '''Battle Damage''': 3
 
@@ -55,7 +55,7 @@
 
 '''Battle Damage Defense (BD-DC)''': 6 / 6 (6 successes / 6 Reflector)
 
-'''Repair DC Bonus''': +0 (equal to Weapons Mod)
+'''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +0 (equal to Engines Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot), [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A high-tech Ovex large industrial mining ship utilizing a Tech Level 4 core. Extremely durable and pre-installed with free Industrial and Refinery Facilities.
-;Explanations: Sacrifices tactical speed and firepower to maximize structural plating, shielding, and electronics.
+;Explanations: Drives electronic processing to +3 while maintaining 6/6 BD-DC protection and defense lasers for automated high-volume asteroid operations.
 |}
 
 {|

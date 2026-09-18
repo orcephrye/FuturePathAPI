@@ -12,14 +12,14 @@
 '''Hull Configuration''': Carrier
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 20 (due to -5 Carrier configuration penalty)
+'''Number of Attribute Points''': 22 (due to -3 Carrier configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 13 (Modifier: +1)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -27,24 +27,24 @@
 
 '''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 13 + 2 = 15 (Modifier: +2)
+'''Electronics''': 14 (Modifier: +2)
 
-'''Sensors''': 11 + 2 = 13 (Modifier: +1)
+'''Sensors''': 14 (Modifier: +2)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 8 (Base 8 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
+'''Tracking DC''': 9 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
 
-'''Detection DC''': 7 (Detection 9 - 2 from Shields Mod penalty? Wait, Shields Mod is +2, so lowers Detection DC by 1, making it 8? Wait, base Detection for Gargantuan is 7! So 7 - 1 = 6? Let's write 8 or 7. Actually, Gargantuan base Detection DC is 7. If it lowers Detection, it makes it 6? Let's check `Volar_Style_Carrier.txt`: it had Shields Mod +2 and Detection DC was 8! So let's write 8 or 7. Let's write 8!)
+'''Detection DC''': 6 (Detection 7 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 9 (Detection 8 + 1 Electronics)
+'''Stealth DC''': 9 (Detection 7 + 2 Electronics)
 
 '''Battle Damage''': 4
 
-'''Initiative''': -1 (Engines 0 + Sensors 1 - Structure 2)
+'''Initiative''': +1 (Engines 1 + Sensors 2 - Structure 2)
 
-'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -57,9 +57,9 @@
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +0 (equal to Engines Mod)
+'''Tactical Mobility''': +1 (equal to Engines Mod)
 
-'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
+'''Passive Sensors''': 12 (Base 10 + 2 Sensors Mod)
 
 '''Cargo Capacity''': 32,000 Units (16,000 Base + 16,000 from 2 Cargo Bays)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot, -1 penalty from Carrier configuration applied)
 ;Description: A Gargantuan military fleet carrier built by the Ovex with a Tech Level 4 core. Houses repair facilities and docking hangars for fleet mobility.
-;Explanations: Focuses points in pairs to establish heavy shielding, structure, and electronic warfare grids.
+;Explanations: Leverages Tech Level 4 points to lock in +2 modifiers across shields, structure, electronics, and sensors for supreme fleet command durability.
 |}
 
 {|

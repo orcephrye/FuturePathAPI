@@ -12,54 +12,54 @@
 '''Hull Configuration''': Battleship
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 10 (due to -5 Battleship config penalty)
+'''Number of Attribute Points''': 12 (due to -3 Battleship configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 + 1 = 13 (Modifier: +1)
+'''Engines''': 13 (Modifier: +1)
 
-'''Weapons''': 12 + 2 = 14 (Modifier: +2)
+'''Weapons''': 14 (Modifier: +2)
 
-'''Structure''': 12 + 1 = 13 (Modifier: +1)
+'''Structure''': 14 (Modifier: +2)
 
-'''Shields''': 12 (Modifier: +1)
+'''Shields''': 14 (Modifier: +2)
 
 '''Electronics''': 10 (Modifier: +0)
 
-'''Sensors''': 12 (Modifier: +1)
+'''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 8
+'''Detection DC''': 7 (Detection 8 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 8 (Detection 8 + 0 Electronics)
 
 '''Battle Damage''': 4
 
-'''Initiative''': 1 (Engines 1 + Sensors 1 - Structure 1)
+'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
 
 '''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
 ----
-'''Reflectors (Shields)''': 5 (Base 4 + 1 Shields Mod)
+'''Reflectors (Shields)''': 6 (Base 4 + 2 Shields Mod)
 
-'''Damage Resistance (Resistance)''': 5 successes (Base 4 + 1 Structure Mod)
+'''Damage Resistance (Resistance)''': 6 successes (Base 4 + 2 Structure Mod)
 
-'''Battle Damage Defense (BD-DC)''': 5 / 5 (5 successes / 5 Reflector)
+'''Battle Damage Defense (BD-DC)''': 6 / 6 (6 successes / 6 Reflector)
 
 '''Repair DC Bonus''': +2 (equal to Weapons Mod)
 
 '''Tactical Mobility''': +1 (equal to Engines Mod)
 
-'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
 
 '''Cargo Capacity''': 3,000 Units (1,000 Base Battleship size-down + 2,000 from Cargo Bay)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A massive military war machine and command battleship, serving as the heavy combat backbone of interstellar defense fleets.
-;Explanations: Built for extreme combat. Spends points in pairs to secure +1 modifiers across Engines, Structure, Shields, and Sensors, and a +2 modifier on Weapons. Has a free pre-installed Bombard and Target function and fits a Fire-Control Matrix.
+;Explanations: Focuses point budget on weapons, shields, and structure to establish a rock-solid 6/6 BD-DC defense and heavy offensive bombardment capabilities.
 |}
 
 {|

@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 12 (Base 12 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 12 (Base 10 = 10 + 1 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) + 1 (Size Mod))
 
 '''Detection DC''': 9
 
@@ -42,7 +42,7 @@
 
 '''Battle Damage''': 2
 
-'''Initiative''': 1 (Engines 1 + Sensors 1 - Structure 1)
+'''Initiative''': +1 (Engines 1 + Sensors 1 - Structure 1)
 
 '''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A starter civilian small hull built to provide balanced operational safety, equipped with a reactor capacitor and solid core defenses.
-;Explanations: Highly reliable starting ship that maximizes attributes using even point distributions, and features an auxiliary reactor capacitor for added power safety.
+;Explanations: Starter small civilian hull with well-rounded +1 modifiers across operational and defensive systems.
 |}
 
 {|

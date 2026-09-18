@@ -12,7 +12,7 @@
 '''Hull Configuration''': Frigate
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 16 (includes +1 Frigate config bonus)
+'''Number of Attribute Points''': 16 (includes +1 Frigate configuration bonus)
 |}
 ----
 {|
@@ -21,7 +21,7 @@
 ----
 '''Engines''': 12 (Modifier: +1)
 
-'''Weapons''': 13 - 1 = 12 (Modifier: +1)
+'''Weapons''': 12 (Modifier: +1)
 
 '''Structure''': 14 (Modifier: +2)
 
@@ -29,7 +29,7 @@
 
 '''Electronics''': 13 (Modifier: +1)
 
-'''Sensors''': 10 + 1 = 11 (Modifier: +0)
+'''Sensors''': 11 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: The standard military escort and patrol frigate of major galactic coalitions. Reliable, well-balanced, and lethal.
-;Explanations: Designed for fleet support and trade lane protection. Features balanced stats with high Structure and a Fire-Control Matrix targeting computer to boost weapon rolls in combat.
+;Explanations: Focuses point budget on structural plating for a 6/5 BD-DC profile while keeping balanced combat mobility, weaponry, and electronic capabilities.
 |}
 
 {|

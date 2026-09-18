@@ -34,11 +34,11 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 13 (Base 13 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
 
-'''Detection DC''': 9
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 11 (Detection 9 + 1 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot), [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A military-grade general-purpose cruiser optimized with Tech Level 3 core points to maximize armor, shielding, and electronic systems.
-;Explanations: Designed as a front-line patrol vessel, it utilizes points in pairs to establish a balanced and robust combat profile.
+;Explanations: Optimizes point distribution to reach 6/6 BD-DC defenses and a +2 Weapons modifier for general military task forces.
 |}
 
 {|

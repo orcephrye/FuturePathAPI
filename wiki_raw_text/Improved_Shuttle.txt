@@ -19,30 +19,30 @@
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 + 4 = 16 (Modifier: +3)
+'''Engines''': 16 (Modifier: +3)
 
 '''Weapons''': 12 (Modifier: +1)
 
-'''Structure''': 12 - 2 = 10 (Modifier: +0)
+'''Structure''': 10 (Modifier: +0)
 
-'''Shields''': 15 (Modifier: +2)
+'''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 14 - 2 = 12 (Modifier: +1)
+'''Electronics''': 12 (Modifier: +1)
 
-'''Sensors''': 12 + 2 = 14 (Modifier: +2)
+'''Sensors''': 13 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 16 (Base 16 = 10 + 3 (Tactical Mobility) + 2 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 16 (Base 10 = 10 + 3 (Tactical Mobility) + 2 (Shields Mod) - 0 (Structure Mod) + 1 (Size Mod))
 
 '''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 9 (Detection 8 + 1 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 2
 
-'''Initiative''': 5 (Engines 3 + Sensors 2 - Structure 0)
+'''Initiative''': +4 (Engines 3 + Sensors 1 - Structure 0)
 
 '''Movement Speed''': 7 Squares (Tactical Speed: 7 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
@@ -59,7 +59,7 @@
 
 '''Tactical Mobility''': +3 (equal to Engines Mod)
 
-'''Passive Sensors''': 12 (Base 10 + 2 Sensors Mod)
+'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
 '''Cargo Capacity''': 375 Units (250 Base + 125 from Cargo Bay)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Engine_Boosters|Engine Boosters]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: A high-performance, fast-moving shuttle optimized for passenger transport and scouting in hostile space.
-;Explanations: Utilizes shuttle modifiers to boost Engines and Sensors to maximum, while incorporating Shields and tactical boosters for defensive maneuvers.
+;Explanations: Locks in +3 Engines and +2 Shields to achieve exceptional sub-light maneuverability and a 4/6 BD-DC defensive shield.
 |}
 
 {|

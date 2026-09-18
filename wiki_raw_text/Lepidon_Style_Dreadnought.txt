@@ -12,14 +12,14 @@
 '''Hull Configuration''': Dreadnought
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 10 (due to -5 Dreadnought config penalty)
+'''Number of Attribute Points''': 10 (due to -5 Dreadnought configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 10 (Modifier: +0)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -34,7 +34,7 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 8 (Base 8 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 2 (Size Mod))
+'''Tracking DC''': 8 (Base 10 = 10 + 0 (Tactical Mobility) + 1 (Shields Mod) - 1 (Structure Mod) - 2 (Size Mod))
 
 '''Detection DC''': 7
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot)
 ;Description: A super-heavy military station buster dreadnought designed by Lepidon engineers, designed to carry a devastating hyper-focused energy cannon.
-;Explanations: Highly formidable siege ship. Spends point pairs to secure +1 modifiers across Weapons, Structure, Shields, and Electronics. Equipped with a Fire-Control Matrix.
+;Explanations: Spends point pairs to secure +1 modifiers across Weapons, Structure, Shields, and Electronics to support its massive Station Buster Cannon.
 |}
 
 {|

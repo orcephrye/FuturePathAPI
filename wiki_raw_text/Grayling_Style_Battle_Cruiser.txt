@@ -12,14 +12,14 @@
 '''Hull Configuration''': Battle Cruiser
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 20 (due to -5 Battle Cruiser configuration penalty)
+'''Number of Attribute Points''': 22 (due to -3 Battle Cruiser configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 10 + 2 = 12 (Modifier: +1)
+'''Engines''': 14 (Modifier: +2)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -27,24 +27,24 @@
 
 '''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 15 + 2 = 17 (Modifier: +3)
+'''Electronics''': 16 (Modifier: +3)
 
-'''Sensors''': 11 (Modifier: +0)
+'''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 11 (Base 10 = 10 + 2 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
 '''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 11 (Detection 8 + 3 Electronics)
+'''Stealth DC''': 12 (Detection 9 + 3 Electronics)
 
 '''Battle Damage''': 3
 
-'''Initiative''': -1 (Engines 1 + Sensors 0 - Structure 2)
+'''Initiative''': 0 (Engines 2 + Sensors 0 - Structure 2)
 
-'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
+'''Movement Speed''': 6 Squares (Tactical Speed: 6 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -57,9 +57,9 @@
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +1 (equal to Engines Mod)
+'''Tactical Mobility''': +2 (equal to Engines Mod)
 
-'''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod? Wait, Sensors Mod is 0. Base is 10 + 0 = 10! Let's write 10!)
+'''Passive Sensors''': 10 (Base 10 + 0 Sensors Mod)
 
 '''Cargo Capacity''': 1,500 Units (1,000 Base + 500 from Cargo Bay)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot, -1 penalty from Battle Cruiser configuration applied)
 ;Description: A military large Battle Cruiser constructed by the Graylings. Features a Tech Level 4 core running advanced engines, shielding, and extreme electronic capabilities.
-;Explanations: Employs point pairings to lock in active modifiers, establishing an incredibly high Electronics score to secure communications.
+;Explanations: Employs its Tech Level 4 core to reach an exceptional +3 Electronics modifier for fleet communications and spoofing, while maintaining 6/6 BD-DC defenses.
 |}
 
 {|

@@ -12,14 +12,14 @@
 '''Hull Configuration''': Capital
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 15 (due to -5 Capital configuration penalty)
+'''Number of Attribute Points''': 17 (due to -3 Capital configuration penalty)
 |}
 ----
 {|
 | valign="top" |
 ''' - 6 Core System Attributes''':
 ----
-'''Engines''': 12 - 2 = 10 (Modifier: +0)
+'''Engines''': 12 (Modifier: +1)
 
 '''Weapons''': 12 (Modifier: +1)
 
@@ -27,14 +27,14 @@
 
 '''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 11 + 2 = 13 (Modifier: +1)
+'''Electronics''': 13 (Modifier: +1)
 
-'''Sensors''': 10 + 2 = 12 (Modifier: +1)
+'''Sensors''': 13 (Modifier: +1)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 10 (Base 10 = 10 + 0 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod) + 2 (Capital Tech 3 free Supreme Commander function? Wait, 10 + 0 + 2 - 2 - 2 = 8? Tracking DC is 8! Let's write 8!))
+'''Tracking DC''': 9 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 2 (Size Mod))
 
 '''Detection DC**: 6
 
@@ -42,9 +42,9 @@
 
 '''Battle Damage''': 5
 
-'''Initiative''': -1 (Engines 0 + Sensors 1 - Structure 2)
+'''Initiative''': 0 (Engines 1 + Sensors 1 - Structure 2)
 
-'''Movement Speed''': 4 Squares (Tactical Speed: 4 Squares)
+'''Movement Speed''': 5 Squares (Tactical Speed: 5 Squares)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Secondary Ship Statistics''':
@@ -57,7 +57,7 @@
 
 '''Repair DC Bonus''': +1 (equal to Weapons Mod)
 
-'''Tactical Mobility''': +0 (equal to Engines Mod)
+'''Tactical Mobility''': +1 (equal to Engines Mod)
 
 '''Passive Sensors''': 11 (Base 10 + 1 Sensors Mod)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot, -1 penalty from Capital configuration applied)
 ;Description: A massive Aconian military command capital ship. Serves as a fleet flagship, housing massive cargo holds, barracks, and an Engineering Facility.
-;Explanations: Prioritizes shielding and structure to weather heavy bombardment, using its command functions to direct battles.
+;Explanations: Prioritizes shielding and structure to weather heavy bombardment with 6/6 BD-DC, backing robust command, sensor, and electronic warfare grids.
 |}
 
 {|

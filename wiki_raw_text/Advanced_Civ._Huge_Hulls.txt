@@ -34,9 +34,9 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 12 (Base 12 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
+'''Tracking DC''': 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) - 1 (Size Mod))
 
-'''Detection DC''': 8
+'''Detection DC''': 7 (Detection 8 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 10 (Detection 8 + 2 Electronics)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot), [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot)
 ;Description: A massive, civilian passenger and transport vessel constructed with a Tech Level 3 core to establish superior energy shields and hull stabilizers.
-;Explanations: Highly survivable deep-space liner that pairs all attributes to maximize active defensive ratings.
+;Explanations: Balances shielding, structure, and electronics to achieve a 6/6 BD-DC profile and supreme passenger/cargo transport reliability.
 |}
 
 {|

@@ -34,9 +34,9 @@
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 13 (Base 13 = 10 + 2 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 1 (Size Mod))
+'''Tracking DC''': 13 (Base 10 = 10 + 2 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 1 (Size Mod))
 
-'''Detection DC''': 9
+'''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
 '''Stealth DC''': 11 (Detection 9 + 2 Electronics)
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Reactor_Auxiliary_Capacitor|Reactor Auxiliary Capacitor]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: An exceptionally durable small civilian transport vessel featuring structural reinforcement and advanced survival systems.
-;Explanations: Designed for long-range transport through hazardous sectors. Incorporates high shielding and structure to absorb damage, alongside life support upgrades.
+;Explanations: Locks in +2 modifiers on Engines, Structure, Shields, and Electronics, providing high maneuverability and rugged survival capability.
 |}
 
 {|

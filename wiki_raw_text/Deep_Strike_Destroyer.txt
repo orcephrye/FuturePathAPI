@@ -12,7 +12,7 @@
 '''Hull Configuration''': Destroyer
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
-'''Number of Attribute Points''': 22 (due to -3 Destroyer configuration penalty)
+'''Number of Attribute Points''': 23 (due to -2 Destroyer configuration penalty)
 |}
 ----
 {|
@@ -27,18 +27,18 @@
 
 '''Shields''': 14 (Modifier: +2)
 
-'''Electronics''': 12 (Modifier: +1)
+'''Electronics''': 13 (Modifier: +1)
 
 '''Sensors''': 10 (Modifier: +0)
 
 
 ''' - Ship Statistics''':
 ----
-'''Tracking DC''': 12 (Base 12 = 10 + 2 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
+'''Tracking DC''': 12 (Base 10 = 10 + 2 (Tactical Mobility) + 2 (Shields Mod) - 2 (Structure Mod) + 0 (Size Mod))
 
 '''Detection DC''': 8 (Detection 9 - 1 from Shields Mod penalty)
 
-'''Stealth DC''': 9 (Detection 8 + 1 Electronics)
+'''Stealth DC''': 10 (Detection 9 + 1 Electronics)
 
 '''Battle Damage''': 3
 
@@ -103,7 +103,7 @@
 ----
 ;Ship Accessories: [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] (1 Customization Slot), [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] (1 Customization Slot)
 ;Description: An illicit military destroyer built with a Tech Level 4 core. Extremely lethal and stealthy, it features high structural plating and a state-of-the-art Advanced Slip Stream Drive.
-;Explanations: Designed for surprise strikes, utilizing point pairs to establish heavy active modifiers for structural defense and weapon accuracy.
+;Explanations: Maximizes active combat performance with +2 modifiers across Weapons, Shields, Engines, and Structure, backed by upgraded electronic warfare grids.
 |}
 
 {|
