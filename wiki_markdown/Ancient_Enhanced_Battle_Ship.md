@@ -29,10 +29,10 @@
 | Mod) - 2 (Structure Mod) - 1 (Size Mod))                                 |   | Passenger Bay)                                                           |   |                                                                          |   |   alongside an Expert Warp Drive.                                                |
 |                                                                          |   |                                                                          |   | **Target**: 1 (Battleship configuration free choice function: Target)    |   |                                                                                  |
 | **Detection DC**: 7 (Detection 8 - 1 from Shields Mod penalty)           |   | **FTL Engine/Speed**: [Expert Warp                                       |   |                                                                          |   | Explanations                                                                     |
-|                                                                          |   | Drive](Ship_Equipment#FTL_Drives "Expert Warp Drive"){.wikilink}         |   |                                                                          |   | : Leverages the Tech Level 4 core to maximize shields (+3) and weapons (+3),     |
-| **Stealth DC**: 8 (Detection 8 + 0 Electronics)                          |   |                                                                          |   |                                                                          |   |   creating an impenetrable 6/7 BD-DC profile and devastating firepower.          |
-|                                                                          |   | **Cost and Procure Diff**: \$390,009,800 / 3 (Procure Diff: 3)           |   |                                                                          |   |                                                                                  |
-| **Battle Damage**: 4                                                     |   |                                                                          |   |                                                                          |   |                                                                                  |
+|                                                                          |   | Drive](Space_Ships#Expert_Warp_Drive "Expert Warp Drive"){.wikilink}     |   |                                                                          |   | : Leverages the Tech Level 4 core to maximize shields (+3) and weapons (+3),     |
+| **Stealth DC**: 8 (Detection 8 + 0 Electronics)                          |   | (Warp 1-9)                                                               |   |                                                                          |   |   creating an impenetrable 6/7 BD-DC profile and devastating firepower.          |
+|                                                                          |   |                                                                          |   |                                                                          |   |                                                                                  |
+| **Battle Damage**: 4                                                     |   | **Cost and Procure Diff**: \$396,614,850 / 3 (Procure Diff: 3)           |   |                                                                          |   |                                                                                  |
 |                                                                          |   |                                                                          |   |                                                                          |   |                                                                                  |
 | **Initiative**: -1 (Engines 1 + Sensors 0 - Structure 2)                 |   |                                                                          |   |                                                                          |   |                                                                                  |
 |                                                                          |   |                                                                          |   |                                                                          |   |                                                                                  |
@@ -44,44 +44,42 @@
 |                                                                           |   |                                                                          |
 | ------------------------------------------------------------------------  |   | ------------------------------------------------------------------------ |
 |                                                                           |   |                                                                          |
-| Hard Point 1: [Expert Warp                                                |   | Bay 1: [Expert Warp Drive                                                |
-| Drive](Ship_Equipment#FTL_Drives "Expert Warp Drive"){.wikilink} (Takes   |   | (FTL)](Ship_Equipment#FTL_Drives "Expert Warp Drive (FTL)"){.wikilink}   |
-| up 1 HP & 1 Bay; restricted to Huge size slot) Hard Point 2: [Huge        |   | Bay 2: [Cargo Bay                                                        |
-| Projectile                                                                |   | (Huge)](Ship_Equipment#Cargo_Bay "Cargo Bay (Huge)"){.wikilink} Bay 3:   |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | [Passenger Bay                                                           |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | (Huge)](Ship_Equipment#Passenger_Bay "Passenger Bay (Huge)"){.wikilink}  |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | Bay 4: [Engineering                                                      |
-| Point 3: [Huge Projectile                                                 |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 5: |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | [Industrial                                                              |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay](Ship_Equipment#Industrial_Bay "Industrial Bay"){.wikilink}          |
+| Hard Point 1: [Huge                                                       |   | Bay 1: [Medical                                                          |
+| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   | Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink} Bay 2: [Cargo  |
+| [Huge Laser                                                               |   | Bay (Huge)](Ship_Equipment#Cargo_Bay "Cargo Bay (Huge)"){.wikilink} Bay  |
+| Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   | 3: [Passenger Bay                                                        |
+| Hard Point 2: [Huge Projectile                                            |   | (Huge)](Ship_Equipment#Passenger_Bay "Passenger Bay (Huge)"){.wikilink}  |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay 4: [Engineering                                                      |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 5: |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | [Industrial                                                              |
+| Point 3: [Huge Projectile                                                 |   | Bay](Ship_Equipment#Industrial_Bay "Industrial Bay"){.wikilink}          |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   |                                                                          |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | : **Cost of Bay items**: \$390,000                                       |
 | Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   |                                                                          |
-| Point 4: [Huge                                                            |   | : **Cost of Bay items**: \$365,000 (\$160,000 Cargo Bay + \$160,000      |
-| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |   Passenger Bay + \$30,000 Engineering Bay + \$15,000 Industrial Bay)    |
+| Point 4: [Huge                                                            |   |                                                                          |
+| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Huge Laser                                                               |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                          |
 | Hard Point 5: [Huge                                                       |   |                                                                          |
 | Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Huge Laser                                                               |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                          |
-| Hard Point 6: [Huge                                                       |   |                                                                          |
-| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
-| [Huge Laser                                                               |   |                                                                          |
-| Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                          |
-| Hard Point 7: [Huge Plasma                                                |   |                                                                          |
+| Hard Point 6: [Huge Plasma                                                |   |                                                                          |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Plasma Weapon"){.wikilink}      |   |                                                                          |
 | (Ammo: 1 mag of [Huge Plasma                                              |   |                                                                          |
-| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 8: |   |                                                                          |
+| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 7: |   |                                                                          |
 | [Huge Plasma                                                              |   |                                                                          |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Plasma Weapon"){.wikilink}      |   |                                                                          |
 | (Ammo: 1 mag of [Huge Plasma                                              |   |                                                                          |
-| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 9: |   |                                                                          |
+| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 8: |   |                                                                          |
 | [Huge Missile                                                             |   |                                                                          |
+| Launcher](Ship_Equipment#Huge_Weapons "Huge Missile Launcher"){.wikilink} |   |                                                                          |
+| (Ammo: 1 mag of [Huge Missile                                             |   |                                                                          |
+| Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink}) Hard Point |   |                                                                          |
+| 9: [Huge Missile                                                          |   |                                                                          |
 | Launcher](Ship_Equipment#Huge_Weapons "Huge Missile Launcher"){.wikilink} |   |                                                                          |
 | (Ammo: 1 mag of [Huge Missile                                             |   |                                                                          |
 | Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink})            |   |                                                                          |
 |                                                                           |   |                                                                          |
-| : **Cost of Hard Point items**: \$65,344,800 (\$15,000,000 FTL Drive +    |   |                                                                          |
-|   \$5,120,000 Projectiles + \$204,800 Ammo + \$15,000,000 Lasers +        |   |                                                                          |
-|   \$10,000,000 Crystals + \$13,000,000 Plasmas + \$520,000 Ammo +         |   |                                                                          |
-|   \$6,250,000 Missile + \$250,000 Ammo)                                   |   |                                                                          |
+| : **Cost of Hard Point items**: \$56,924,850                              |   |                                                                          |
 +---------------------------------------------------------------------------+---+--------------------------------------------------------------------------+

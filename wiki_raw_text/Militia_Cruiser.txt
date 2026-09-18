@@ -65,9 +65,9 @@
 
 '''Passenger Capacity''': 32 (16 Base + 16 from Passenger Bay)
 
-'''FTL Engine/Speed''': [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Warp 1-7)
+'''FTL Engine/Speed''': [[Space_Ships#Warp_Drive_.28The_Skimmer.29|Warp Drive (The Skimmer)]] (Warp 1-7)
 
-'''Cost and Procure Diff''': $40,240,800 / 2 (Procure Diff: 2)
+'''Cost and Procure Diff''': $40,582,600 / 2 (Procure Diff: 2)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Ship Functions''':
@@ -95,9 +95,9 @@
 | valign="top" |
 ''' - Hard Points and Bays''':
 ----
-'''Hard Points (Total/Used/Free)''': 7 / 7 / 0 (Cruiser configuration grants +1 HP)
+'''Hard Points (Total/Used/Free)''': 7 / 7 / 0 (Medium military base 6 + 1 HP from Cruiser config)
 
-'''Bays (Total/Used/Free)''': 3 / 3 / 0
+'''Bays (Total/Used/Free)''': 3 / 3 / 0 (Medium military base 3)
 
 ''' - Accessories and Description''':
 ----
@@ -110,22 +110,22 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
-Hard Point 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]] (Takes up 1 HP & 1 Bay)
+Hard Point 1: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
 Hard Point 2: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
 Hard Point 3: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
 Hard Point 4: [[Ship_Equipment#Medium_Weapons|Medium Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Medium Laser Crystal]])
 Hard Point 5: [[Ship_Equipment#Medium_Weapons|Medium Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Medium Laser Crystal]])
-Hard Point 6: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 2 mags of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
-Hard Point 7: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 2 mags of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
+Hard Point 6: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
+Hard Point 7: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
 
-: '''Cost of Hard Point items''': $3,860,800 ($300,000 FTL Drive + $640,000 Projectiles + $25,600 Ammo + $1,250,000 Lasers + $416,700 Crystals + $1,181,250 Missiles + $47,250 Ammo)
+: '''Cost of Hard Point items''': $3,877,600
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 '''Bay Items''':
 ----
-Bay 1: [[Space_Ships#Warp_Drive_The_Skimmer|Warp Drive (The Skimmer)]]
+Bay 1: [[Ship_Equipment#Medical_Bay|Medical Bay]]
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
 Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Medium)]]
 
-: '''Cost of Bay items''': $80,000 ($40,000 Cargo Bay + $40,000 Passenger Bay)
+: '''Cost of Bay items''': $105,000
 |}

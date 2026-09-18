@@ -65,9 +65,9 @@
 
 '''Passenger Capacity''': 40 (8 Base + 32 from Passenger Bay)
 
-'''FTL Engine/Speed''': [[Space_Ships#Jump_Assistance_Drive|Assisted Jump Drive]] (Warp 1)
+'''FTL Engine/Speed''': [[Space_Ships#Assisted_Jump_Drive|Assisted Jump Drive]] (Warp 10+, Gate Assisted)
 
-'''Cost and Procure Diff''': $122,719,100 / 2 (Procure Diff: 2)
+'''Cost and Procure Diff''': $123,131,600 / 2 (Procure Diff: 2)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Ship Functions''':
@@ -95,9 +95,9 @@
 | valign="top" |
 ''' - Hard Points and Bays''':
 ----
-'''Hard Points (Total/Used/Free)''': 8 / 8 / 0 (Battle Cruiser configuration grants +1 HP)
+'''Hard Points (Total/Used/Free)''': 8 / 8 / 0 (Large military base 7 + 1 non-weapon HP from Battle Cruiser config)
 
-'''Bays (Total/Used/Free)''': 4 / 4 / 0
+'''Bays (Total/Used/Free)''': 4 / 4 / 0 (Large military base 4)
 
 ''' - Accessories and Description''':
 ----
@@ -110,7 +110,7 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
-Hard Point 1: [[Space_Ships#Jump_Assistance_Drive|Assisted Jump Drive]] (Takes up 1 HP & 1 Bay)
+Hard Point 1: [[Ship_Accessories#Phase_Discriminator|Phase Discriminator]] (Non-Weapon Hard Point)
 Hard Point 2: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
 Hard Point 3: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
 Hard Point 4: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
@@ -119,15 +119,15 @@ Hard Point 6: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags
 Hard Point 7: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Plasma|Large Plasma Ammo]])
 Hard Point 8: [[Ship_Equipment#Large_Weapons|Large Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Large Missile Ammo]])
 
-: '''Cost of Hard Point items''': $14,229,100 ($100,000 FTL Drive + $2,560,000 Projectiles + $102,400 Ammo + $2,500,000 Lasers + $1,666,700 Crystals + $3,750,000 Plasmas + $300,000 Ammo + $3,125,000 Missile + $125,000 Ammo)
+: '''Cost of Hard Point items''': $14,566,600
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 '''Bay Items''':
 ----
-Bay 1: [[Space_Ships#Jump_Assistance_Drive|Assisted Jump Drive (FTL)]]
+Bay 1: [[Ship_Equipment#Medical_Bay|Medical Bay]]
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Large)]]
 Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Large)]]
-Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay (Level 1)]]
+Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
 
-: '''Cost of Bay items''': $190,000 ($80,000 Cargo Bay + $80,000 Passenger Bay + $30,000 Engineering Bay)
+: '''Cost of Bay items''': $215,000
 |}

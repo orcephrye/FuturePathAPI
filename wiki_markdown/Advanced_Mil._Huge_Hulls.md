@@ -27,10 +27,10 @@
 |                                                                          |   | **Passenger Capacity**: 240 (120 Base + 120 from Passenger Bay)          |   |                                                                          |   |                                                                                      |
 | **Tracking DC**: 10 (Base 10 = 10 + 1 (Tactical Mobility) + 2 (Shields   |   |                                                                          |   | **Scan**: 0                                                              |   | Description                                                                          |
 | Mod) - 2 (Structure Mod) - 1 (Size Mod))                                 |   | **FTL Engine/Speed**: [Phase Shift                                       |   |                                                                          |   | : A massive military-grade dreadnought hull built with a Tech Level 3 core to power  |
-|                                                                          |   | Drive](Ship_Equipment#FTL_Drives "Phase Shift Drive"){.wikilink}         |   | **Target**: 0                                                            |   |   ultimate shielding, armor, and high-energy firing modifiers.                       |
-| **Detection DC**: 7 (Detection 8 - 1 from Shields Mod penalty)           |   |                                                                          |   |                                                                          |   |                                                                                      |
-|                                                                          |   | **Cost and Procure Diff**: \$371,716,500 / 3 (Procure Diff: 3)           |   |                                                                          |   | Explanations                                                                         |
-| **Stealth DC**: 9 (Detection 8 + 1 Electronics)                          |   |                                                                          |   |                                                                          |   | : Delivers a robust military profile with 6/6 BD-DC defenses and +2 Weapons to       |
+|                                                                          |   | Drive](Space_Ships#Phase_Shift_Drive "Phase Shift Drive"){.wikilink}     |   | **Target**: 0                                                            |   |   ultimate shielding, armor, and high-energy firing modifiers.                       |
+| **Detection DC**: 7 (Detection 8 - 1 from Shields Mod penalty)           |   | (Warp 1-9)                                                               |   |                                                                          |   |                                                                                      |
+|                                                                          |   |                                                                          |   |                                                                          |   | Explanations                                                                         |
+| **Stealth DC**: 9 (Detection 8 + 1 Electronics)                          |   | **Cost and Procure Diff**: \$378,446,500 / 3 (Procure Diff: 3)           |   |                                                                          |   | : Delivers a robust military profile with 6/6 BD-DC defenses and +2 Weapons to       |
 |                                                                          |   |                                                                          |   |                                                                          |   |   command large fleet sectors.                                                       |
 | **Battle Damage**: 4                                                     |   |                                                                          |   |                                                                          |   |                                                                                      |
 |                                                                          |   |                                                                          |   |                                                                          |   |                                                                                      |
@@ -44,18 +44,20 @@
 |                                                                           |   |                                                                          |
 | ------------------------------------------------------------------------  |   | ------------------------------------------------------------------------ |
 |                                                                           |   |                                                                          |
-| Hard Point 1: [Phase Shift                                                |   | Bay 1: [Phase Shift Drive                                                |
-| Drive](Ship_Equipment#FTL_Drives "Phase Shift Drive"){.wikilink} (Takes   |   | (FTL)](Ship_Equipment#FTL_Drives "Phase Shift Drive (FTL)"){.wikilink}   |
-| up 1 HP & 1 Bay) Hard Point 2: [Huge Projectile                           |   | Bay 2: [Cargo Bay                                                        |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | (Huge)](Ship_Equipment#Cargo_Bay "Cargo Bay (Huge)"){.wikilink} Bay 3:   |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | [Passenger Bay                                                           |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | (Huge)](Ship_Equipment#Passenger_Bay "Passenger Bay (Huge)"){.wikilink}  |
-| Point 3: [Huge Projectile                                                 |   | Bay 4: [Engineering                                                      |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 5: |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}       |
+| Hard Point 1: [Huge Missile                                               |   | Bay 1: [Armory (Huge)](Ship_Equipment#Armory "Armory (Huge)"){.wikilink} |
+| Launcher](Ship_Equipment#Huge_Weapons "Huge Missile Launcher"){.wikilink} |   | Bay 2: [Cargo Bay                                                        |
+| (Ammo: 1 mag of [Huge Missile                                             |   | (Huge)](Ship_Equipment#Cargo_Bay "Cargo Bay (Huge)"){.wikilink} Bay 3:   |
+| Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink}) Hard Point |   | [Passenger Bay                                                           |
+| 2: [Huge Projectile                                                       |   | (Huge)](Ship_Equipment#Passenger_Bay "Passenger Bay (Huge)"){.wikilink}  |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay 4: [Engineering                                                      |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 5: |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}       |
+| Point 3: [Huge Projectile                                                 |   |                                                                          |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | : **Cost of Bay items**: \$575,000                                       |
+| (Ammo: 1 mag of [Huge Projectile                                          |   |                                                                          |
 | Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   |                                                                          |
-| Point 4: [Huge                                                            |   | : **Cost of Bay items**: \$375,000 (\$160,000 Cargo Bay + \$160,000      |
-| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |   Passenger Bay + \$30,000 Engineering Bay + \$25,000 Medical Bay)       |
+| Point 4: [Huge                                                            |   |                                                                          |
+| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Huge Laser                                                               |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                          |
 | Hard Point 5: [Huge                                                       |   |                                                                          |
@@ -75,8 +77,5 @@
 | (Ammo: 1 mag of [Huge Missile                                             |   |                                                                          |
 | Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink})            |   |                                                                          |
 |                                                                           |   |                                                                          |
-| : **Cost of Hard Point items**: \$46,961,500 (\$5,000,000 FTL Drive +     |   |                                                                          |
-|   \$5,120,000 Projectiles + \$204,800 Ammo + \$10,000,000 Lasers +        |   |                                                                          |
-|   \$6,666,700 Crystals + \$13,000,000 Plasmas + \$520,000 Ammo +          |   |                                                                          |
-|   \$6,250,000 Missile + \$250,000 Ammo)                                   |   |                                                                          |
+| : **Cost of Hard Point items**: \$48,591,500                              |   |                                                                          |
 +---------------------------------------------------------------------------+---+--------------------------------------------------------------------------+

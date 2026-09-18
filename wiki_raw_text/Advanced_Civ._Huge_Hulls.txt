@@ -65,9 +65,9 @@
 
 '''Passenger Capacity''': 360 (120 Base + 240 from 2 Passenger Bays)
 
-'''FTL Engine/Speed''': [[Ship_Equipment#FTL_Drives|High Pulse Drive]]
+'''FTL Engine/Speed''': [[Space_Ships#Warp_Drive_.28The_High_Pulse_Drive.29|Warp Drive (The High Pulse Drive)]] (Warp 1-8)
 
-'''Cost and Procure Diff''': $143,435,750 / 2 (Procure Diff: 2)
+'''Cost and Procure Diff''': $146,228,150 / 2 (Procure Diff: 2)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Ship Functions''':
@@ -97,7 +97,7 @@
 ----
 '''Hard Points (Total/Used/Free)''': 6 / 6 / 0 (Huge Hard Points carrying Huge scale weapons)
 
-'''Bays (Total/Used/Free)''': 8 / 8 / 0
+'''Bays (Total/Used/Free)''': 8 / 8 / 0 
 
 ''' - Accessories and Description''':
 ----
@@ -110,27 +110,26 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
-Hard Point 1: [[Ship_Equipment#FTL_Drives|High Pulse Drive]] (Takes up 1 HP & 1 Bay)
+Hard Point 1: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
 Hard Point 2: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
 Hard Point 3: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
 Hard Point 4: [[Ship_Equipment#Huge_Weapons|Huge Plasma Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Plasma|Huge Plasma Ammo]])
 Hard Point 5: [[Ship_Equipment#Huge_Weapons|Huge Plasma Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Plasma|Huge Plasma Ammo]])
 Hard Point 6: [[Ship_Equipment#Huge_Weapons|Huge Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Huge Missile Ammo]])
 
-: '''Cost of Hard Point items''': $34,465,750 ($3,500,000 FTL Drive + $2,560,000 Projectile + $102,400 Ammo + $5,000,000 Laser + $3,333,350 Crystal + $13,000,000 Plasmas + $520,000 Ammo + $6,250,000 Missile + $250,000 Ammo)
+: '''Cost of Hard Point items''': $33,758,150
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 '''Bay Items''':
 ----
-Bay 1: [[Ship_Equipment#FTL_Drives|High Pulse Drive (FTL)]]
+Bay 1: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Huge)]]
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Huge)]]
-Bay 3: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Huge)]]
+Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Huge)]]
 Bay 4: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Huge)]]
-Bay 5: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Huge)]]
-Bay 6: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
-Bay 7: [[Ship_Equipment#Science_Bay|Science Bay]]
-Bay 8: [[Ship_Equipment#Medical_Bay|Medical Bay]]
-Bay 9: [[Ship_Equipment#Recreation_Bay|Recreation Bay]] (Merged Recreation facilities)
+Bay 5: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
+Bay 6: [[Ship_Equipment#Science_Bay|Science Bay]]
+Bay 7: [[Ship_Equipment#Medical_Bay|Medical Bay]]
+Bay 8: [[Ship_Equipment#Recreation_Bay|Recreation Bay]]
 
-: '''Cost of Bay items''': $740,000 ($320,000 Cargo Bays + $320,000 Passenger Bays + $30,000 Engineering Bay + $15,000 Science Bay + $25,000 Medical Bay + $30,000 Recreation Bay)
+: '''Cost of Bay items''': $740,000
 |}

@@ -65,9 +65,9 @@
 
 '''Passenger Capacity''': 16
 
-'''FTL Engine/Speed''': [[Space_Ships#Slip_Stream_Drive|Slip Stream Drive]] (Warp 1-6)
+'''FTL Engine/Speed''': [[Space_Ships#Slip_Stream_Drive|Slip Stream Drive]] (Warp 1-7)
 
-'''Cost and Procure Diff''': $37,823,550 / 3 (Procure Diff: 3, includes +1 illegal Destroyer penalty)
+'''Cost and Procure Diff''': $38,237,800 / 3 (Procure Diff: 3)
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 ''' - Ship Functions''':
@@ -95,9 +95,9 @@
 | valign="top" |
 ''' - Hard Points and Bays''':
 ----
-'''Hard Points (Total/Used/Free)''': 8 / 8 / 0 (Destroyer configuration grants +2 HP, restricted to Small size weapons)
+'''Hard Points (Total/Used/Free)''': 8 / 8 / 0 (Medium military base 6 + 2 from Destroyer config; geared for Small weapon size)
 
-'''Bays (Total/Used/Free)''': 2 / 2 / 0 (Reduced by 1 from Destroyer config)
+'''Bays (Total/Used/Free)''': 2 / 2 / 0 (Medium military base 3, reduced by 1 from Destroyer config)
 
 ''' - Accessories and Description''':
 ----
@@ -110,22 +110,22 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
-Hard Point 1: [[Space_Ships#Slip_Stream_Drive|Slip Stream Drive]] (Takes up 1 HP & 1 Bay; restricted to Small size)
+Hard Point 1: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
 Hard Point 2: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
 Hard Point 3: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
 Hard Point 4: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
 Hard Point 5: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
 Hard Point 6: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
-Hard Point 7: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
+Hard Point 7: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Small Missile Ammo]])
 Hard Point 8: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Small Missile Ammo]])
 
-: '''Cost of Hard Point items''': $1,523,550 ($450,000 FTL Drive + $468,750 Lasers + $156,000 Crystals + $240,000 Projectiles + $9,600 Ammo + $195,300 Missile + $3,900 Ammo)
+: '''Cost of Hard Point items''': $1,397,800
 |width="30px"|&nbsp;<!--spacer-column-->
 | valign="top" |
 '''Bay Items''':
 ----
-Bay 1: [[Space_Ships#Slip_Stream_Drive|Slip Stream Drive (FTL)]]
-Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]] (Blank, pre-installed)
+Bay 1: [[Ship_Equipment#Armory|Armory (Medium)]]
+Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
 
-: '''Cost of Bay items''': $0 (Cargo Bay is pre-installed)
+: '''Cost of Bay items''': $90,000
 |}
