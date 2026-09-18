@@ -217,11 +217,11 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         ProcureDiff: 0
     },
     {
-        Advantages: "+2 Electronics, +2 Engines, +1 Non-Weapon Hard Point, Can pick one Ship Function for free without taking Customization Points.",
+        Advantages: "+2 Electronics, +2 Engines, Pick either: [+1 Engines or +1 Electronics], +1 Non-Weapon Hard Point, Can pick one Ship Function for free without taking Customization Points.",
         AverageCost: "$120 Million",
         AverageSize: "Large",
         Description: "Flexible, heavy-hitting machines of war used as a counter for smaller ships and bandits.",
-        Disadvantages: "Cargo Capacity is one size lower, Passenger Cap is 8, -5 Attribute Points, -1 Customization point (Minimum 1)",
+        Disadvantages: "Cargo Capacity is one size lower, Passenger Cap is 8, -3 Attribute Points, -1 Customization point (Minimum 1)",
         Mods: [
             { Mod: "+2", Target: "Electronics" },
             { Mod: "+2", Target: "Engines" },
@@ -232,15 +232,15 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         ProcureDiff: 3
     },
     {
-        Advantages: "+2 Weapons, +1 Structure, +1 Engines, Gains 'Bombard' function for free, Gains one more Ship Function of choice for free, +1 Hard Point (Weapon Only).",
+        Advantages: "+2 Weapons, +2 Shields, +1 Structure, Pick either: [+1 Engines or +1 Electronics], Gains one more Ship Function of choice for free, +1 Hard Point (Weapon Only).",
         AverageCost: "$384 Million",
         AverageSize: "Huge (or Gargantuan)",
         Description: "Massive war machines and the backbone of militaries, built for large-scale conflict.",
-        Disadvantages: "Cargo Capacity and Passenger Cap is one size smaller, -5 Attribute Points, -1 Customization Point (Minimum 1)",
+        Disadvantages: "Cargo Capacity and Passenger Cap is one size smaller, -3 Attribute Points, -1 Customization Point (Minimum 1)",
         Mods: [
             { Mod: "+2", Target: "Weapons" },
+            { Mod: "+2", Target: "Shields" },
             { Mod: "+1", Target: "Structure" },
-            { Mod: "+1", Target: "Engines" },
             { Mod: "+1", Target: "Hard_Points" },
             { Mod: "-1", Target: "Customization" }
         ],
@@ -248,11 +248,11 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         ProcureDiff: 4
     },
     {
-        Advantages: "+1 Bays, +2 Sensors, +2 Electronics, Passenger capacity: 864, Special Position: Supreme Commander (system-wide leadership bonus), Choose any one Ship Function installed at no cost.",
+        Advantages: "+1 Bays, +2 Sensors, +2 Electronics, Pick either: [+1 Shields or +1 Structure], Passenger capacity: 864, Special Position: Supreme Commander (system-wide leadership bonus), Choose any one Ship Function installed at no cost.",
         AverageCost: "$3.2 Billion",
         AverageSize: "Colossal",
         Description: "Massive command ships and super carriers acting as an entire base of operations.",
-        Disadvantages: "-5 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimum 1)",
+        Disadvantages: "-3 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimum 1)",
         Mods: [
             { Mod: "+1", Target: "Bays" },
             { Mod: "+2", Target: "Sensors" },
@@ -265,11 +265,11 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         ProcureDiff: 5
     },
     {
-        Advantages: "+2 Sensors, +2 Electronics, Built-in Repair Facility for ships two sizes and smaller. Can hold 6 Large ships by default. Special Position: Field Commander.",
+        Advantages: "+2 Sensors, +2 Electronics, Pick either: [+1 Engine or +1 Structure], Built-in Repair Facility for ships two sizes and smaller. Can hold 6 Large ships by default. Special Position: Field Commander.",
         AverageCost: "$1.2 Billion",
         AverageSize: "Gargantuan (Huge - Colossal)",
         Description: "Ships that provide fleet mobility, designed to carry, deploy, and maintain smaller ships and drones.",
-        Disadvantages: "-5 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimum 1)",
+        Disadvantages: "-3 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimum 1)",
         Mods: [
             { Mod: "+2", Target: "Sensors" },
             { Mod: "+2", Target: "Electronics" },
@@ -282,12 +282,13 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         ProcureDiff: 4
     },
     {
-        Advantages: "+1 Hard Point or +1 Bay, +2 Engines or +2 Electronics, Pick one free Ship Function.",
+        Advantages: "+1 Hard Point or +1 Bay (Pick one), +1 Sensors, [+2 Engines or +2 Electronics] (Pick one), Pick a Ship Function for this ship to have by default for free.",
         AverageCost: "$40 Million",
         AverageSize: "Medium",
         Description: "Flexible combat vessels used as police craft or military portal/recon.",
-        Disadvantages: "-3 Attribute Points",
+        Disadvantages: "-2 Attribute Points",
         Mods: [
+            { Mod: "+1", Target: "Sensors" },
             { Mod: "+1", Target: "Hard_Points" },
             { Mod: "+1", Target: "Bays" },
             { Mod: "+2", Target: "Engines" },
@@ -333,7 +334,7 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         AverageCost: "$38 Million",
         AverageSize: "Medium",
         Description: "Heavily armed medium combat craft designed specifically to counter smaller swarms.",
-        Disadvantages: "Illegal to own (Procure Diff +1), -3 Attribute Points, -1 Bay, Weapon Hard Points geared for 'Small' weapon size",
+        Disadvantages: "Illegal to own (Procure Diff +1), -2 Attribute Points, -1 Bay, Weapon Hard Points geared for 'Small' weapon size",
         Mods: [
             { Mod: "+2", Target: "Hard_Points" },
             { Mod: "-1", Target: "Bays" }
@@ -386,7 +387,7 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         AverageCost: "$100 Million",
         AverageSize: "Huge",
         Description: "Industrial-scale cargo transportation ships.",
-        Disadvantages: "-3 Engines, -2 Attribute Points",
+        Disadvantages: "-3 Engines, -1 Attribute Points",
         Mods: [
             { Mod: "+2", Target: "Bays" },
             { Mod: "-3", Target: "Engines" }
@@ -399,7 +400,7 @@ const FALLBACK_HULL_CONFIG_OBJS = [
         AverageCost: "$12 - $108 Million",
         AverageSize: "Large (Medium - Huge)",
         Description: "Mining and refining factory ships for asteroid mining and colony development.",
-        Disadvantages: "-2 Engines, -2 Attribute Points, -3 Bays",
+        Disadvantages: "-2 Engines, -1 Attribute Points, -3 Bays",
         Mods: [
             { Mod: "-2", Target: "Engines" },
             { Mod: "-3", Target: "Bays" }

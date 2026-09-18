@@ -2,246 +2,356 @@
 
 Spaceships in Future Path are designed similarly to Characters, possessing core attributes, secondary stats, and unique quirks that define their capabilities in the galaxy.
 
+---
+
 ## Ship Conflict Resolution
 
-When using and interacting with Spaceships, players use a **2d10 system** instead of a d20, which also replaces the standard Advantage Die.
+When using and interacting with Spaceships, players roll **2d10** instead of a d20. This system also replaces the standard Advantage Die.
 
 ### Core 2d10 Rules
 1. **Base Roll:** Roll 2d10 instead of 1d20.
-2. **Exploding Dice:** If a d10 lands on 10, keep that value and roll it again, adding the new result. A die can only explode once.
+2. **Exploding Dice:** If a d10 lands on 10, keep that value, roll that die again, and add the new result. A die can only explode once.
 3. **Critical Failure:** Occurs only when all rolled dice land on 1.
-4. **Critical Success:** Occurs when at least 1 die explodes and the final result is greater than 20. (e.g., Roll a 10 and 5, reroll the 10 and get a 6. Total = 10 + 5 + 6 = 21).
+4. **Critical Success:** Occurs when at least 1 die explodes and the final result is greater than 20 (e.g., Roll a 10 and 5; reroll the 10 and get a 6. Total = 10 + 5 + 6 = 21). Determine critical success *before* adding static bonuses.
 5. **Advantage & Disadvantage:** 
-   * Functions normally (canceling each other out, max stack of 3), but each Advantage grants an extra **1d10** and a static **+2** instead of an Advantage Die.
-   * When rolling with Advantage, roll the total d10 pool (e.g., 1 Advantage = 3d10) and keep the **top two d10s**.
-   * Determine critical success *before* adding the static +2 bonus per advantage.
+   * Disadvantages cancel out advantages, and vice versa; max total is 3.
+   * Instead of an Advantage Die, each Advantage grants an extra **1d10** and a static **+2**.
+   * When rolling with Advantage, roll the total d10 pool (e.g., 1 Advantage = 3d10) and keep the **top two d10s**, then add +2 per advantage.
 6. **Modifiers:** All modifiers are based on the Spaceship's static systems or attributes. No additional dice are rolled.
+7. **Skill Usage:** When using a Skill, if the Skill is at all trained, gain **+1** to the total, plus an additional **+1** for each Competency level above novice.
 
 ### When to Use
-The 2d10 system is used whenever a target DC or opposing check is modified by a Spaceship's Core System Attributes or Secondary Attributes. This includes using Ship Functions or when targeting/affecting a Spaceship.
+The 2d10 system is used whenever a target DC or opposing check is modified by a Spaceship's Core System Attributes or Secondary Attributes. This includes activating Ship Functions or targeting/affecting a Spaceship.
 
-***Note on Damage:** Dealing damage uses the separate **Battle Damage** system (which also uses d10s but against a Battle Damage Difficulty Check or BD-DC).*
+> [!NOTE]
+> **Dealing Damage:** Dealing damage uses the separate **Battle Damage** system (which also uses d10s rolled against a Battle Damage Difficulty Check or BD-DC).
+
+---
 
 ## The Ship Core
-The foundation of a spaceship. The Core acts as the power generator (Reactor) and distribution sub-system.
-*   **Tech Level:** Dictates the maximum size of the ship, the type of FTL drive it can use, and the total points available to spend on Core System Attributes (CSA).
-    *   **Tech 1:** 10 Points | Max Size: Large
-    *   **Tech 2:** 15 Points | Max Size: Gargantuan
-    *   **Tech 3:** 20 Points | Max Size: Colossal
-    *   **Tech 4:** 25 Points | Max Size: Colossal
+
+The foundation of a spaceship is its Core, acting as the power generator (Reactor), power distribution network, and master sub-system.
+* **Tech Level:** Dictates the maximum hull size, the type of FTL drive compatible with the ship, the base Customization Points, and the total point budget for the 6 Core System Attributes (CSA).
+
+| Tech Level | CSA Point Budget | Max Hull Size | Base Cust. Points |
+| :---: | :---: | :---: | :---: |
+| **1** | 10 Points | Large | 1 |
+| **2** | 15 Points | Gargantuan | 1 |
+| **3** | 20 Points | Colossal | 2 |
+| **4** | 25 Points | Colossal | 3 |
+
+---
 
 ## The 6 Core System Attributes (CSA)
-The modern galactic standard for shipbuilding. Points provided by the Ship Core are spent to balance these systems so as not to overload the reactor.
 
-1.  '''Engines:''' The heart of sub-light mobility. Provides a bonus to Ship Tracking DC equal to the Engine's Modifier.
-2.  '''Weapons:''' Offensive power. Allows the Weapons Officer to re-roll successful d10s up to the modifier value. Also adds to the repair DC for battle damage dealt to enemies.
-3.  '''Structure:''' Physical hull integrity. Adds to the total number of successful d10s an enemy needs to deal Battle Damage. '''Penalty:''' Lowers Ship Tracking DC by the modifier value.
-4.  **Shields:** Energy reflection. Increases the target number a d10 must hit to be successful. **Penalty:** Every +2 Modifier lowers the ship's Detection DC by 1.
-5.  **Electronics:** Computer technology and cyberwarfare. Provides bonuses to Ship Functions like Hacking and sets the defense DC against enemy hackers.
-6.  **Sensors:** Perception and comms. Used to scan for objects, detect stealthed ships, and find shield weaknesses (adding the Sensor Mod to Weapon d10 rolls).
+Modern galactic standard for shipbuilding balances power through 6 primary attributes to avoid overloading the Core reactor:
+
+1. **Engines:** Heart of sub-light mobility. Provides a bonus to Ship Tracking DC equal to the Engine Modifier. Essential for pilot maneuvers.
+2. **Weapons:** Offensive firepower. Allows the Weapons Officer to reroll successful d10s up to the modifier value. Also adds to the repair DC for battle damage dealt to enemy ships.
+3. **Structure:** Physical hull integrity and internal bulkheads. Adds to the total number of successful d10s an attacker must roll to deal Battle Damage. **Penalty:** Lowers Ship Tracking DC by the modifier value.
+4. **Shields:** Energy reflection fields. Increases the target number a d10 must hit to be successful and inflict damage. **Penalty:** Every +2 Modifier lowers the ship's Detection DC by 1 (unless shields are powered down).
+5. **Electronics:** Mainframe computer networks and cyberwarfare. Provides bonuses to Ship Functions like Hacking and sets the defense DC against enemy hackers.
+6. **Sensors:** Perception, radar, and long-range communications. Scans for objects, detects stealthed ships, and identifies shield weaknesses (adding the Sensor Mod to Weapon attack d10 rolls on a successful Weakness Scan).
+
+---
 
 ## Secondary Ship Attributes
-These are calculated stats directly affected by the 6 CSAs and Hull Size.
 
-*   **Reflectors (Shields):** Base 4 + Shield Mod. The number an attacking d10 must meet/beat.
-*   **Damage Resistance (Resistance):** Base 4 + Structure Mod. The number of successful d10s needed to deal Battle Damage.
-*   **Battle Damage Defense (BD-DC):** The combination of Resistance and Reflectors (Default 4,4).
-*   **Repair DC Bonus:** Equal to the Weapons Mod. Added to the DC when an enemy tries to repair damage dealt by this ship.
-*   **Tactical Mobility:** Equals the Engines Mod + Helm Officer's Dexterity Mod + Helm Officer's Misc Bonuses to Pilot check. Added to Pilot functions and Ship Tracking DC.
-*   **Initiative:** (Engines + Sensors) - Structure. Determines turn order.
-*   **Passive Sensors:** 10 + Sensor Mod. The baseline for detecting other ships.
-*   **Stealth DC:** Detection DC + Electronics Mod. Used during Silent Operations (Shields/Engines disabled).
+Calculated stats directly derived from the 6 CSAs, Hull Size, and crew performance:
+
+* **Reflectors (Shields):** Base 4 + Shield Mod. The minimum number an incoming attack d10 must meet or beat to count as a success.
+* **Damage Resistance (Structure):** Base 4 + Structure Mod. The total number of successful d10s an attacker must roll to inflict 1 Battle Damage.
+* **Battle Damage Defense (BD-DC):** Expressed as (Resistance, Reflectors). Default baseline is (4, 4).
+* **Repair DC Bonus:** Equal to the Weapon Mod. Added to the Battle Damage Repair DC dealt to enemy ships.
+* **Tactical Mobility:** Engines Mod + Helm Officer's Dexterity Mod + Helm Officer's Misc Bonuses to Pilot checks. Added to Pilot checks and Tracking DC.
+* **Ship Tracking DC:** The primary target DC for targeting and locking onto the ship:
+  $$\text{Tracking DC} = 10 + (\text{Tactical Mobility} + \text{Shield Mod}) - \text{Structure Mod} \pm \text{Size Mod}$$
+* **Initiative:** $(\text{Engines} + \text{Sensors}) - \text{Structure}$. Determines turn order and phase precedence.
+* **Passive Sensors:** $10 + \text{Sensor Mod}$. Baseline detection score. Ships with a Detection DC at or below this value are detected automatically.
+* **Stealth DC:** $\text{Detection DC} + \text{Electronics Mod}$ (if positive). Used during Silent Operations (Shields and Engines disabled; no active transmissions).
+
+---
 
 ## Sub Ship Attributes
-Default stats provided by Hull Size and Configuration, modifiable by upgrades.
 
-*   **Movement Speed:** Sub-light speed. Usually 4 squares of its size + 1 square per Engine Mod.
-*   **FTL Engine/Speed:** Faster-Than-Light capability, limited by Core Tech Level.
-*   **Passenger Capacity:** Base living capacity before taxing life support.
-*   **Cargo Capacity:** Measured in Units (100lbs / 1 sq ft). Exceeding this cuts combat speed in half.
-*   **Hard Points/Bays/Customization Slots:** Dictates how many weapons, facilities, and upgrades the ship can hold.
+Default physical parameters determined by Hull Size and Configuration, modifiable by upgrades:
+
+* **Movement Speed:** Sub-light combat speed. Typically 4 squares of its size + 1 square per Engine Mod.
+* **FTL Engine/Speed:** Faster-Than-Light drive capability, limited by Core Tech Level.
+* **Passenger Capacity:** Default living support capacity before taxing life support systems.
+* **Cargo Capacity:** Measured in Units (1 Unit = 100 lbs and/or 1 cu ft). Exceeding this overburden's the vessel and cuts combat speed in half (absolute max is $2\times$ capacity with all corridors packed).
+* **Hard Points / Bays / Customization Slots:** Defines physical equipment mounts, internal compartments, and modular upgrades.
+
+---
 
 ## Hull Sizes
-Size predetermines base stats, Tracking DC modifiers, Battle Damage thresholds, passenger/cargo capacities, and available hard points/bays for military vs. civilian variants.
 
-| Size | Tracking DC (Size Mod) | Detect DC | Battle Damage | Sq ft / Num of Squares | Pass. Cap. | Avg. Weight | Cargo Capacity | Cust. Bonus | Military Cost / Procure | Mil. HP | Mil. Bays | Civilian Cost / Procure | Civ. HP | Civ. Bays |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| '''Colossal''' | 8 (-2) | 6 | 5 | ~512,000+ ft / ~1,024 sq | 2000 | ~65,536 Tons | 65,000 Units | +3 | 2.9 Billion / 4 | 10 | 8 | 972 Million / 4 | 8 | 10 |
-| '''Gargantuan''' | 8 (-2) | 7 | 4 | ~128,000+ ft / ~256 sq | 500 | ~16,384 Tons | 16,000 Units | +2 | 972 Million / 3 | 9 | 7 | 324 Million / 3 | 7 | 9 |
-| '''Huge''' | 9 (-1) | 8 | 4 | ~32,000+ ft / ~64 sq | 120 | ~4096 Tons | 4,000 Units | +2 | 324 Million / 3 | 8 | 5 | 108 Million / 2 | 6 | 8 |
-| '''Large''' | 9 (-1) | 9 | 3 | ~8,000+ ft / ~16 sq | 32 | ~1,024 Tons | 1,000 Units | +2 | 108 Million / 2 | 7 | 4 | 36 Million / 1 | 5 | 7 |
-| '''Medium''' | 10 (0) | 9 | 3 | ~4,000+ ft / ~8 sq | 16 | ~512 Tons | 510 Units | +1 | 36 Million / 2 | 6 | 3 | 12 Million / 0 | 4 | 6 |
-| '''Small''' | 11 (+1) | 9 | 2 | ~2,000+ ft / ~4 sq | 8 | ~256 Tons | 250 Units | +1 | 12 Million / 1 | 6 | 2 | 4 Million / 0 | 4 | 5 |
-| '''Tiny''' | 11 (+1) | 10 | 2 | ~500+ ft / ~1 sq | 4 | ~64 Tons | 64 Units | +1 | 1.9 Million / 1 | 5 | 1 | 640,000 / 0 | 3 | 4 |
-| '''Diminutive''' | 12 (+2) | 11 | 1 | ~125 ft / 16 per sq | 2 | ~16 Tons | 16 Units | +0 | 480,000 / 1 | 3 | 0 | 160,000 / 0 | 2 | 2 |
-| '''Fine''' | 12 (+2) | 12 | 0 | <75 ft / 256 per sq | 1 | ~4 Tons | 4 Units | +0 | 240,000 / 0 | 2 | 0 | 80,000 / 0 | 1 | 1 |
+Hull Size establishes baseline attributes, tracking modifiers, battle damage capacities, living/cargo volumes, and hard point / bay allocations:
+
+| Size | Tracking DC (Size Mod) | Detect DC | Battle Damage | Sq Ft / Num of Squares | Pass. Cap. | Avg. Weight | Cargo Capacity | Cust. Bonus | Weapon/Bay Size | Military Cost / Procure | Mil. HP | Mil. Bays | Civilian Cost / Procure | Civ. HP | Civ. Bays |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Colossal** | 8 (-2) | 6 | 5 | ~512,000+ ft / ~1,024 sq | 2,000 | ~65,536 Tons | 65,000 Units | +3 | Huge | $2.9 Billion / 4 | 10 | 8 | $972 Million / 4 | 8 | 10 |
+| **Gargantuan** | 8 (-2) | 7 | 4 | ~128,000+ ft / ~256 sq | 500 | ~16,384 Tons | 16,000 Units | +2 | Huge | $972 Million / 3 | 9 | 7 | $324 Million / 3 | 7 | 9 |
+| **Huge** | 9 (-1) | 8 | 4 | ~32,000+ ft / ~64 sq | 120 | ~4,096 Tons | 4,000 Units | +2 | Large | $324 Million / 3 | 8 | 5 | $108 Million / 2 | 6 | 8 |
+| **Large** | 9 (-1) | 9 | 3 | ~8,000+ ft / ~16 sq | 32 | ~1,024 Tons | 1,000 Units | +2 | Large | $108 Million / 2 | 7 | 4 | $36 Million / 1 | 5 | 7 |
+| **Medium** | 10 (0) | 9 | 3 | ~4,000+ ft / ~8 sq | 16 | ~512 Tons | 510 Units | +1 | Medium | $36 Million / 2 | 6 | 3 | $12 Million / 0 | 4 | 6 |
+| **Small** | 11 (+1) | 9 | 2 | ~2,000+ ft / ~4 sq | 8 | ~256 Tons | 250 Units | +1 | Medium | $12 Million / 1 | 6 | 2 | $4 Million / 0 | 4 | 5 |
+| **Tiny** | 11 (+1) | 10 | 2 | ~500+ ft / ~1 sq | 4 | ~64 Tons | 64 Units | +1 | Small | $1.9 Million / 1 | 5 | 1 | $640,000 / 0 | 3 | 4 |
+| **Diminutive** | 12 (+2) | 11 | 1 | ~125 ft / 16 per sq | 2 | ~16 Tons | 16 Units | +0 | Small | $480,000 / 1 | 3 | 0 | $160,000 / 0 | 2 | 2 |
+| **Fine** | 12 (+2) | 12 | 0 | <75 ft / 256 per sq | 1 | ~4 Tons | 4 Units | +0 | Small | $240,000 / 0 | 2 | 0 | $80,000 / 0 | 1 | 1 |
 
 ### Hull Size Column Key
-*   '''Size Mod:''' Acts like creature size modifiers; added to or taken from total Tracking DC.
-*   **Detection DC:** How hard it is for other ships to "see" this ship passively.
-*   **Battle Damage:** How much damage a ship can take before being disabled.
-*   **Sq ft:** Anything more than ~1,024,000 sq ft is considered Super Colossal (a Space Station).
-*   **Passenger Capacity:** Default living support before taxing systems (can be raised with bays).
-*   **Cargo Capacity:** Max units before the ship becomes overburdened (cuts combat speed in half).
-*   **Cust. Bonus:** Additional Customization Points provided by the hull size.
-*   **Military vs Civilian:** Military ships are more expensive and have more Hard Points (HP). Civilian ships have more Bays.
+* **Size Mod:** Added to or subtracted from total Tracking DC.
+* **Detection DC:** How difficult it is for other ships to passively detect this vessel.
+* **Battle Damage Capacity:** Number of Battle Damage points the ship can sustain before being disabled.
+* **Sq Ft:** Constructs larger than ~1,024,000 sq ft are classified as Space Stations (Super Colossal).
+* **Cust. Bonus:** Additional Customization Points granted by hull size.
+* **Military vs. Civilian:** Military ships cost more and prioritize Hard Points (HP). Civilian craft are cheaper and prioritize interior Bays.
+
+---
 
 ## Hull Configurations
-Specialized archetypes that give a space craft a more specialized purpose, modifying secondary attributes. It is not required; a ship can be a generic build.
+
+Specialized design archetypes tailoring a vessel for specific roles. A ship can also be built as a generic hull without an archetype.
+
+> [!IMPORTANT]
+> **Order of Operations:** All Disadvantages and Advantages that impact Attribute Points and Core System Attributes are applied **before** point buying happens. For example, if a ship configuration gains +2 to Shields, the ship starts with 10 in all attributes except Shields, which starts at 12. Then the player spends their Tech Level Point Buy budget to further customize the ship. Customization Points are spent **after** Point Buy in the order of ship creation.
 
 ### Barges
-The 'pack mule' of the galaxy.
-*   **Average Size:** Medium (Small - Large)
-*   **Average Cost / Procure Diff:** 12 Million / 0
-*   **Disadvantages:** -2 to Engines, -1 To Weapons, -2 Hard Points, -1 Bay (Taken up by extra Cargo Space)
-*   **Advantages:** Cargo Space is one ship size modifier higher. Super common Bonus -1 to Procure Diff and 50% less time/cost to repair.
+The pack mules of the galaxy; ubiquitous, cheap, and modular.
+* **Average Size:** Medium (Small to Large)
+* **Cost / Procure Diff:** $12 Million / 0
+* **Disadvantages:** -2 Engines, -1 Weapons, -2 Hard Points, -1 Bay (absorbed by cargo)
+* **Advantages:** Cargo Space is one ship size modifier higher. Super common (-1 Procure Diff, 50% less repair time/cost).
 
 ### Battle Cruisers
-Flexible, heavy-hitting machines of war used as a counter for smaller ships.
-*   **Average Size:** Large
-*   **Average Cost / Procure Diff:** 120 Million / 3
-*   **Disadvantages:** Cargo Capacity is one size lower, Passenger Cap is 8, -5 Attribute Points, -1 Customization point (Minimum 1)
-*   **Advantages:** +2 Electronics, +2 Engines, +1 Non-Weapon Hard Point, Can pick one Ship Function to have by default without taking up Customization Points.
+Fast, heavy-hitting warships designed to counter smaller craft and escort battle fleets.
+* **Average Size:** Large
+* **Cost / Procure Diff:** $120 Million / 3
+* **Disadvantages:** Cargo Capacity one size lower, Passenger Cap is 8, -3 Attribute Points, -1 Customization Point (Min 1)
+* **Advantages:** +2 Electronics, +2 Engines, Pick either: [+1 Engines or +1 Electronics], +1 Non-Weapon Hard Point, Can pick 1 Ship Function to have by default without taking up Customization Points.
 
 ### Battle Ships
-Massive war machines and the backbone of militaries.
-*   **Average Size:** Huge (or Gargantuan)
-*   **Average Cost / Procure Diff:** 384 Million / 4
-*   **Disadvantages:** Cargo Capacity and Passenger Cap is one size smaller, -5 Attribute Points, -1 Customization Point (Minimum 1)
-*   **Advantages:** +2 Weapons, +1 Structure, +1 Engines, Gains the 'Bombard' function for free. Gains one more Ship Function of your choice for free. +1 Hard Point (Weapon Only).
+Massive warships serving as military backbones.
+* **Average Size:** Huge (or Gargantuan)
+* **Cost / Procure Diff:** $384 Million / 4
+* **Disadvantages:** Cargo and Passenger capacities one size lower, -3 Attribute Points, -1 Customization Point (Min 1)
+* **Advantages:** +2 Weapons, +2 Shields, +1 Structure, Pick either: [+1 Engines or +1 Electronics], Gains one more Ship Function of your choice for free, +1 Hard Point (Weapon Only).
 
-### Capital
-Massive command ships and super carriers, acting as a base of operations.
-*   **Average Size:** Colossal
-*   **Average Cost / Procure Diff:** 3.2 Billion / 5
-*   **Disadvantages:** -5 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimum 1)
-*   **Advantages:** +1 Bays, +2 Sensors, +2 Electronics. Passenger capacity is: 864. Special Position: **Supreme Commander** (leadership bonus to all ships in solar system). Choose any one Ship Function to be installed without cost.
+### Capital Ships
+Command leviathans and super-carriers acting as mobile naval headquarters.
+* **Average Size:** Colossal
+* **Cost / Procure Diff:** $3.2 Billion / 5
+* **Disadvantages:** -3 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Min 1)
+* **Advantages:** +1 Bay, +2 Sensors, +2 Electronics, Pick either: [+1 Shields or +1 Structure], Passenger capacity 864. Grants **Supreme Commander** bridge position (leadership bonus across the solar system). Choose 1 Ship Function to install at no cost.
 
 ### Carriers
-Ships that make large fleets mobile, designed to hold and maintain smaller ships.
-*   **Average Size:** Gargantuan (Huge - Colossal)
-*   **Average Cost / Procure Diff:** 1.2 Billion / 4
-*   **Disadvantages:** -5 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimum 1)
-*   **Advantages:** +2 Sensors, +2 Electronics, Built in Repair Facility for ships two sizes and smaller. 
-*   **Misc:** Can hold 6 large ships by default. Special Position: **Field Commander** (leadership bonus to all ships under its care).
+Fleet-support vessels carrying and deploying wings of smaller craft.
+* **Average Size:** Gargantuan (Huge to Colossal)
+* **Cost / Procure Diff:** $1.2 Billion / 4
+* **Disadvantages:** -3 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Min 1)
+* **Advantages:** +2 Sensors, +2 Electronics, Pick either: [+1 Engine or +1 Structure], built-in Repair Facility for ships $\le 2$ sizes smaller. Holds 6 Large ships by default (or 12 Medium, 24 Small, 96 Tiny, 384 Diminutive, 1,536 Fine). Additional Hangar/Drone Bays add capacity. Special bridge position: **Field Commander**.
 
 ### Cruisers
-Flexible combat vessels, used as police craft or military portal/recon.
-*   **Average Size:** Medium
-*   **Average Cost / Procure Diff:** 40 Million / 2 (Military) | 10 Million / 0 (Civilian)
-*   **Disadvantages:** -3 Attribute Points (Military) | -1 Structure, -1 Hard Point, -2 Attribute Points (Civilian)
-*   **Advantages:** (Military) +1 Hard Point or +1 Bay, +2 Engines or +2 Electronics. Pick a free Ship Function. | (Civilian) +2 Engines, +2 Sensors. Luxury passenger bay (max 16).
-
-### Drones
-AI-controlled machines, ranging from military swarms to personal defense.
-*   **Average Size:** Fine (Fine - Small)
-*   **Average Cost / Procure Diff:** 100,000 / 0
-*   **Disadvantages:** -1 across all Attributes.
-*   **Advantages:** Can be used without a pilot. Programmed to defend/attack.
-*   **Misc:** Swarm bonuses apply when 4+ are teamed. Requires a Drone Bay to deploy/control.
+Flexible combat vessels used in naval recon or law enforcement, with civilian VIP luxury conversions.
+* **Average Size:** Medium
+* **Cost / Procure Diff:** $40 Million / 2 (Military) | $10 Million / 0 (Civilian)
+* **Disadvantages:** -2 Attribute Points (Military) | -1 Structure, -1 Hard Point, -2 Attribute Points (Civilian)
+* **Advantages:** 
+  * *Military:* +1 Hard Point or +1 Bay (Pick one), +1 Sensors, [+2 Engines or +2 Electronics] (Pick one), 1 free Ship Function.
+  * *Civilian:* +2 Engines, +2 Sensors, Luxury Passenger Bay (accommodates 16).
 
 ### Destroyers
-Heavily armed medium ships designed to counter smaller swarms.
-*   **Average Size:** Medium
-*   **Average Cost / Procure Diff:** 38 Million / 3
-*   **Disadvantages:** Illegal to own (Procure Diff +1), -3 Attribute Points, -1 Bay, Weapon Hard Points geared for 'Small' weapon size.
-*   **Advantages:** +2 Hard Points, All weapons considered 'Gimbaled' (+1 Targeting). No penalties for targeting smaller craft.
+Heavily armed anti-swarm screening combatants with minimalist crews.
+* **Average Size:** Medium
+* **Cost / Procure Diff:** $38 Million / 3 (Illegal to own without military license; +1 Procure Diff)
+* **Disadvantages:** -2 Attribute Points, -1 Bay, Weapon Hard Points locked to 'Small' size.
+* **Advantages:** +2 Hard Points, all weapons considered 'Gimbaled' (+1 Targeting for free), no penalties when targeting smaller craft.
 
 ### Dreadnoughts
-Gargantuan "Station busters" with hyper-focused energy cannons.
-*   **Average Size:** Gargantuan (Huge - Colossal)
-*   **Average Cost / Procure Diff:** 3 Billion / 5
-*   **Disadvantages:** -2 Engines, -5 Ability Points, -4 Hard Points, -3 Bays. Cannot cloak.
-*   **Advantages:** Super gigantic hyper-focused energy cannon. Targets from 100x Huge Weapon distance. Deals 24d10 * 10 damage. Cooldown: (1d4 + 2) - Electric Mod rounds.
+Devastating planetary and station siege craft armed with massive focused energy weaponry.
+* **Average Size:** Gargantuan (Huge to Colossal)
+* **Cost / Procure Diff:** $3.0 Billion / 5
+* **Disadvantages:** -2 Engines, -5 Ability Points, -4 Hard Points, -3 Bays. Cannot cloak or stealth; cannot warp while cooling down.
+* **Advantages:** Gigantic focused energy cannon. Targets from $100\times$ Huge weapon distance; deals $24\text{d}10 \times 10$ damage. Cooldown: $(1\text{d}4 + 2) - \text{Electronics Mod}$ rounds (min 2).
+
+### Drones
+Autonomous or remotely piloted AI craft.
+* **Average Size:** Fine (Fine to Small)
+* **Cost / Procure Diff:** $100,000 / 0
+* **Disadvantages:** -1 across all Attributes.
+* **Advantages:** Unmanned; programmable attack/defense. Swarms of 4+ gain Tracking DC advantages vs. projectile attacks. Requires a host Drone Bay.
 
 ### Fighters
-Single-pilot (or small crew) agile combat craft.
-*   **Average Size:** Fine - Diminutive
-*   **Average Cost / Procure Diff:** 480,000 / 1
-*   **Disadvantages:** -2 Structure, Passenger Cap is 1
-*   **Advantages:** +2 Engines. Gains the 'Feint' Ship Function for free.
+Agile single-seat interceptors and strike craft.
+* **Average Size:** Fine to Diminutive
+* **Cost / Procure Diff:** $480,000 / 1
+* **Disadvantages:** -2 Structure, Passenger capacity is 1.
+* **Advantages:** +2 Engines, gains 'Feint' Ship Function for free.
 
 ### Frigates
-Common police craft or VIP transport.
-*   **Average Size:** Small (Small - Medium)
-*   **Average Cost / Procure Diff:** 4-36 Million / 0-2
-*   **Disadvantages:** -1 to Weapons
-*   **Advantages:** +1 to Sensors, +1 Attribute Point. 50% less cost/time spent on repairs.
+Versatile patrol, escort, and security craft.
+* **Average Size:** Small (Small to Medium)
+* **Cost / Procure Diff:** $4–36 Million / 0–2
+* **Disadvantages:** -1 Weapons.
+* **Advantages:** +1 Sensors, +1 Attribute Point, 50% less repair time/cost.
 
 ### Freighters
-Industrial-scale cargo transportation ships.
-*   **Average Size:** Huge
-*   **Average Cost / Procure Diff:** 100 Million / 1
-*   **Disadvantages:** -3 Engines, -2 Attribute Points
-*   **Advantages:** Converted Cargo Bays provide double space. +2 Bays. Capacity 16,000 Units or one size higher. Tech 3 comes with 'Beam' function. 50% less cost/repair time.
+Large-scale commercial cargo haulers.
+* **Average Size:** Huge
+* **Cost / Procure Diff:** $100 Million / 1
+* **Disadvantages:** -3 Engines, -1 Attribute Points.
+* **Advantages:** Converted Cargo Bays give double space. +2 Bays. Capacity 16,000 Units (or 1 size higher). Tech 3 includes free 'Beam' function. 50% reduction in base hull and repair costs.
 
 ### Industrial
-Mining and refining factory ships.
-*   **Average Size:** Large (Medium - Huge)
-*   **Average Cost / Procure Diff:** 12 - 108 Million / 0 - 1
-*   **Disadvantages:** -2 Engines, -2 Attribute Points, -3 Bays
-*   **Advantages:** Free Industrial and Refinery Facilities. Tech 3 comes with 'Beam' function. Free 'Grapple' function.
+Mining, salvage, and refinery factory ships.
+* **Average Size:** Large (Medium to Huge)
+* **Cost / Procure Diff:** $12–108 Million / 0–1
+* **Disadvantages:** -2 Engines, -1 Attribute Points, -3 Bays.
+* **Advantages:** Free Industrial Facility and Refinery Facility. Tech 3 includes free 'Beam' function. Free 'Grapple' function.
 
 ### Shuttles
-Personal transport vehicles.
-*   **Average Size:** Tiny (Diminutive - Small)
-*   **Average Cost / Procure Diff:** 2 Million / 0
-*   **Disadvantages:** -2 Structure, -2 Electronics, -1 Hard Points
-*   **Advantages:** +4 Engines, +2 Sensors, Basic Auto Pilot (AI +1), +1 Passenger for Diminutive, +2 for Tiny, +3 for Small.
+Short-range personnel runabouts and utility transports.
+* **Average Size:** Tiny (Diminutive to Small)
+* **Cost / Procure Diff:** $2 Million / 0
+* **Disadvantages:** -2 Structure, -2 Electronics, -1 Hard Point.
+* **Advantages:** +4 Engines, +2 Sensors, Basic Autopilot AI (+1), bonus passenger slots (+1 Diminutive, +2 Tiny, +3 Small).
+
+---
+
+## FTL Drives
+
+FTL drives enable interstellar travel. A ship can mount drives up to its Core Tech Level and comes standard with an Assisted Jump Drive. Mounting a secondary FTL consumes **1 Bay and 1 Hard Point** (cannot use Customization Points).
+
+| Tech | Drive Name | Range Rating | Warp Factor | Price / Diff | Durability | Key Properties |
+| :---: | :--- | :---: | :---: | :---: | :---: | :--- |
+| **1** | Assisted Jump Drive | Medium | 10+ | $50,000 / 0 | 0 | Requires Jump Gate station. |
+| **1** | Warp Drive (The Hopper) | Medium | 1–4 | $150,000 / 0 | +2 | Pulsed space-time contraction; common. |
+| **2** | Assisted Adv. Jump Drive | Large | 10+ | $100,000 / 0 | 0 | Extended range with Jump Gate station. |
+| **2** | Warp Drive (The Skimmer) | Large | 1–7 | $300,000 / 0 | +1 | Skims contracted space at high pulse frequency. |
+| **2** | Slip Stream Drive | Large | 1–7 | $450,000 / 1 | +3 | Subspace tears; 30s prep, +4 to enemy tracking. |
+| **3** | Personal Jump Drive | Medium (Large assist) | 10+ | $1,000,000 / 0 | 0 | Independent Warp 10 jump without gate; 1 jump/tank. |
+| **3** | Warp Drive (High Pulse) | Large | 1–8 | $3,500,000 / 1 | +2 | Lossless energy conduits, smooth rapid transition. |
+| **3** | Phase Shift Drive | Large | 1–7 | $5,000,000 / 2 | +6 | Massless acceleration; 6s (2 turns) tear creation. |
+| **4** | Adv. Personal Jump Drive | Large (Extreme assist)| 10+ | $10,000,000 / 1 | 0 | Long-range independent Warp 10 jumps. |
+| **4** | Expert Warp Drive | Extreme | 1–9 | $15,000,000 / 2 | +3 | Elite personal warp device. |
+| **4** | Adv. Slip Stream Drive | Extreme | 1–8 | $25,000,000 / 3 | +8 | Internal phase tears (1 turn); silent exit stealth. |
+
+---
+
+## Ship Positions & Functions
+
+Crew members take up stations on the bridge to unlock active Ship Functions:
+
+### Key Bridge Positions
+* **Helm Officer (Engines):** Governs sub-light maneuvering and Tactical Mobility.
+* **Weapons Officer (Weapons):** Controls offensive hard points and damage mitigation.
+* **Captain (Charisma):** Directs crew, grants leadership bonuses and tactical coordination.
+* **Communications / Sensor Officer (Sensors):** Controls scanner arrays, ECM/ECCM, and comms.
+* **Chief Engineer (Structure):** Oversees reactor stability, field repairs, and overclocking.
+* **Science Officer (Electronics):** Cyberwarfare, system boosting, and shield harmonics.
+* **Medical Officer (Medical):** Health maintenance, trauma surgery, and bridge stabilization.
+
+### Function Categories
+* **Standard Functions (Universal or Position-Based):** Change Position, Shield Manipulation, Weapons Assist, Give Command, Encourage Crew, Boost Attribute, Hack / Counter-Hack, Scan, Fly Offensively/Defensively, Close/Widen Distance, Pursue/Intercept, Ram, Fire, Bombard, Repair.
+* **Advanced Functions (Require Ship Upgrades / Facilities):** Beam (Transporter Bay), Cloak (Cloaking Device), Crypto (Crypto Computer), Jam (Jammer), Sensor Spoofing (Decoy Launcher), Emergency Evasive Thrusters (Engine Boosters), Feint, Grapple (Grappler), Concentrated Fire, Defensive Fire (Fire-Control Matrix), Overclock Core, Resuscitation, Automated Care.
+
+---
 
 ## Space Stations
-Artificial constructs without FTL drives. Anything over 1,024,000 Sq Ft is a station. They gain +1 Bay compared to a ship of similar size and can mount mixed weapon sizes on Huge hard points.
+
+Artificial space installations lacking FTL capability:
+* **Scale:** Constructs $>1,024,000$ sq ft are classified as Space Stations. They are divided into structural segments, each possessing the minimum hit points of a Colossal vessel.
+* **Bays & Hard Points:** Standard hard point allotment for size, but receives **+1 additional Bay**.
+* **Mixed Weapon Hard Points:** Huge hard points can hold mixed smaller mounts:
+  * 1 Huge Mount = 2 Large Weapons = 3 Medium Weapons = 4 Small Weapons.
+* **Firing Arcs:** Stations $>1,024,000$ sq ft can only direct up to 50% of their total weapons at any single craft at a time.
+* **Life Support:** Station personnel capacity equals the corresponding ship size multiplied by 10 ($10\times$).
+
+---
 
 ## Ship Quirks
-Unique traits or defects that ships can gain over time or possess from construction, adding personality and specialized mechanics. Players can often remove them with the right skills, though some are permanent.
+
+Quirks add distinctive personality, history, and mechanical trade-offs:
 
 ### Out Dated
-Old and antiquated; more likely to gain other quirks.
-*   **Negative:** Costs 25% less to buy; 50% less to sell. Permanent.
-*   **Positive:** Choose another quirk and ignore its negative effect.
+Antiquated systems more prone to odd behavior.
+* **Negative:** 25% lower purchase price; 50% reduction in resale value. Permanent.
+* **Positive:** Pick another quirk and ignore its negative effect.
 
 ### Cranky
-Internal components require physical encouragement to function.
-*   **Negative:** If the ship receives 2 Battle Damage in one round, roll for the second damage and add its effect (Base DC 7).
-*   **Positive:** None.
+Internal conduits require physical coaxing to cycle.
+* **Negative:** If the ship takes 2 Battle Damage in one round, roll for the second damage and apply its side effect (Base DC 7).
+* **Positive:** None.
 
 ### Falling Apart
-A "pile of junk" with constant maintenance needs.
-*   **Negative:** 25% reduction in resale value. 20% daily chance of something breaking (1-10% Superficial, 11-80% Minor system/bay problem, 91-100% Major problem).
-*   **Positive:** Crew gains **Advanced Jerry Rigging** feat for repairs to this ship only.
+A weathered jalopy with chronic maintenance issues.
+* **Negative:** 25% resale reduction. 20% daily chance of system failure (d100 roll):
+  * *1–10%:* Superficial rattles.
+  * *11–20%:* Minor Engine failure (-1 Engines).
+  * *21–30%:* Minor Weapon glitch (-1 Weapons).
+  * *31–40%:* Minor Structural crack (-1 Hit Die).
+  * *41–50%:* Minor Shield fluctuation (-1 Shields).
+  * *51–60%:* Minor Electrical fault (-1 Electronics; flickering lights).
+  * *61–70%:* Minor Sensor ghosting (-1 Sensors).
+  * *71–80%:* Random bay disabled.
+  * *91–100%:* Major problem (requires replacement materials).
+* **Positive:** Crew gains **Advanced Jerry Rigging** feat for repairs to this ship only.
 
 ### Infested
-Smelly, annoying space pests living off the ship systems.
-*   **Negative:** Daily CON save (DC 12) for all on board or become **Nauseated** (or **Sickened**). Engineers take -1 to repair checks.
-*   **Positive:** -10 Stealth for stowaways. Advantage to Comms when dealing with pirates/smugglers (who avoid the infestation).
+Persistent space pests living inside bulkheads and wiring conduits.
+* **Negative:** Daily CON save (DC 12) for all on board or become **Nauseated** (or **Sickened** if already nauseated) for 1d4 days (cured by 1 day rest off-ship or Treat Disease DC 15). Engineers suffer -1 to repair checks.
+* **Positive:** Stowaways suffer -10 Stealth. Advantage on Comms checks with pirates and smugglers.
 
 ### Bad Past
-The ship is "wanted" in multiple systems due to previous owners.
-*   **Negative:** Disadvantage to Comms in specific situations. People may attack without provocation.
-*   **Positive:** 50/50 chance a person recognizing the ship will be a friend or foe.
+Previous owners left an infamous criminal or political record.
+* **Negative:** Disadvantage on Comms in sensitive situations; hostiles may attack unprovoked.
+* **Positive:** 50% chance any recognizing contact is friendly or allied.
 
 ### Artificial Intelligence
-Fully aware AI computer linked to all systems (Highly Illegal).
-*   **Negative:** Illegal to sell through official markets. Harsh penalties from authorities.
-*   **Positive:** +1 to Sensors, Engines, and Electronics. The ship can drive itself.
-*   **Misc:** AI possesses a personality (Optimist, Bully, Shy, etc.).
+Unregistered, sentient AI wired into primary systems (Highly Illegal).
+* **Negative:** Severely illegal to sell or operate in civilized space. Harsh criminal penalties. Cannot be negated by 'Out Dated'.
+* **Positive:** +1 to Sensors, Engines, and Electronics. The ship can pilot and defend itself.
+* **Personalities:** Optimist, Bully, Physio, Shy/Unsure, Overachiever, Whimsical.
 
 ### Noisy
-Constant humming, whizzing, and jittering.
-*   **Negative:** -2 for all **Boost** function rolls.
-*   **Positive:** None.
+Pervasive bulk-head rattling, humming, and jittering.
+* **Negative:** -2 penalty on all Boost function checks.
+* **Positive:** None.
 
 ### Battle Scars
-A hull that "speaks a thousand words" of past adventures.
-*   **Negative:** -1 to Detection DC and +1 to Repair DC for Battle Damage.
-*   **Positive:** Advantage to Comms when using **Intimidate**.
+A hull hardened and pockmarked by historical combat engagements.
+* **Negative:** -1 Detection DC; +1 to Repair DC for Battle Damage.
+* **Positive:** Advantage on Comms checks when using **Intimidate**.
 
 ### Lucky
-The ship survives scraps it shouldn't.
-*   **Negative:** None.
-*   **Positive:** Once per day, a player can reroll a check that uses one of the ship's Attribute modifiers.
+The vessel miraculously slips through lethal fire.
+* **Negative:** None.
+* **Positive:** Once per day, a player can reroll any check that uses one of the ship's attribute modifiers.
 
 ### Cursed
-Things just seem to suck when you're on this ship.
-*   **Negative:** Once per day, negate the first Critical Success rolled for a ship-based attribute check.
-*   **Positive:** None.
+Maddening jinxes plague everyday operations.
+* **Negative:** Once per day, negates the first Critical Success rolled for a ship-based check.
+* **Positive:** None.
+
+### Experimental
+Brand new prototype with manufacturer bugs.
+* **Negative:** Once per day, roll 1d6 (1: Engines, 2: Weapons, 3: Structure, 4: Shields, 5: Electronics, 6: Sensors); that attribute drops to 10 until repaired (DC $12 + \text{Tech Level} + \text{Hull Size}$; Engineer can take 20).
+* **Positive:** If the Engineer scores a Critical Success on the repair check, add their Intelligence Modifier as a bonus to that attribute score.
+
+---
+
+## Designing a Custom SpaceShip (Builder Checklist)
+
+1. **Determine Core Tech Level:** Establishes starting CSA points, max hull size, base customization points, and FTL drive tier.
+2. **Select Hull Configuration:** Choose an archetype (or remain generic) and apply attribute, slot, and function adjustments.
+3. **Select Hull Size:** Determines base hull cost, civilian/military Hard Points and Bays, cargo/passenger capacities, and tracking/detection DCs.
+4. **Allocate CSA Points:** Spend Tech Level points across the 6 CSAs using the point-buy table.
+5. **Determine Masterworking:** Crafters with Rank 5 in shipbuilding skills can add up to +3 CSA points (+25% base cost per point).
+6. **Select FTL Drive:** Mount a compatible FTL system.
+7. **Equip Hard Points & Bays:**
+   * Purchase weapons and ammunition (2% base weapon price per magazine).
+   * Install facilities into available Bays.
+   * Spend Customization Points on CSA Upgrades (Class 1–5) or specialized accessories.
+8. **Calculate Secondary Attributes:** Compute Reflectors, Damage Resistance, BD-DC, Tactical Mobility, Tracking DC, and Initiative.
+9. **Assign Ship Quirks (Optional):** Add thematic perks and defects.

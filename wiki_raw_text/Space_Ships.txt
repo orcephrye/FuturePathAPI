@@ -249,7 +249,9 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 
 == Hull Configurations ==
 
-'''Hull Configurations''' are an attempt at giving a spacecraft a more specialized purpose. However, it is not a requirement for shipbuilding. A ship can have no specific Configuration and thus be a generic build. Below is a table with different Hull Configurations and their descriptions.
+'''Hull Configurations''' are an attempt to give a spacecraft a more specialized purpose. However, they are not required for shipbuilding. A ship can have no specific Configuration and thus be a generic build. Below is a table with different Hull Configurations and their descriptions.
+
+;NOTE: All Disadvantages and Advantages that impact Attribute Points and Core System Attributes are applied before point buying happens. I.e., if the ship gains +2 to Shields, then the ship will have 10 points in all its Attributes except for Shields, which starts at 12. Then start using the Point Buy system to further customize the ship. Also Customization Points are spent after Point Buy in the order of creating a Ship.
 
 {| class="wikitable" style=" margin-left: 10px; width: 95%;"
 |+ Table: Hull Configurations
@@ -257,7 +259,7 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Barges:
 <div class="mw-collapsible-content">
-: The 'pack mule' of the galaxy. The barge is the most common cargo transport vessel. Many different corporations create different configurations for hauling everyday goods, people, or extremely volatile substances. Many young adventurers found themselves starting out aboard a barge. Not the most heroic place to start out with, but there is sort of a romantic underdog appeal to the barge. This is probably helped by the fact that they can be found in every corner of the galaxy, making them a dime a dozen, and the Hull is pretty customizable. This attracts all sorts of different types of people. Many a raider or pirate uses a heavily modified Barge Hull as a weapon against other ships of its kind in lawless space.
+: The 'pack mule' of the galaxy. Barges are the most common cargo transport vessels. Many different corporations create different configurations for hauling everyday goods, people, or extremely volatile substances. Many young adventurers found themselves starting out aboard a barge. Not the most heroic place to start out with, but there is sort of a romantic underdog appeal to the barge. This is probably helped by the fact that they can be found in every corner of the galaxy, making them a dime a dozen, and the Hull is pretty customizable. This attracts all sorts of people. Many a raider or pirate uses a heavily modified Barge Hull as a weapon against other ships of its kind in lawless space.
 :*Average Size: Medium (Small - Large)
 :*Average Cost / Procure Diff: 12 Million / 0 
 :*Dis-Advantages: -2 to Engines, -1 To Weapons, -2 Hard Points, -1 Bay (Taken up by an extra Cargo Space)
@@ -271,8 +273,8 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 : A standard in most military fleets, these larger, heavier counterparts to the Cruiser are powerful, heavy-hitting machines of war. While BattleShips dominate the heavens with an impressive presence of power. The Battle Cruiser is what gives a military its flexibility. Smaller and generally faster, these ships are used by most militaries as a counter to smaller ships and as a less expensive way to deal with small-scale pirates and bandits.  
 :*Average Size: Large
 :*Average Cost / Procure Diff: 120 Million / 3 
-:*Dis-Advantages: Cargo Capacity is one size lower, Passenger Cap is 8, -5 Attribute Points, -1 Customization point (Minimum 1)
-:*Advantages: +2 Electronics, +2 Engines, +1 Non-Weapon Hard Point, Can pick one Ship Function to have by default without taking up Customization Points.
+:*Dis-Advantages: Cargo Capacity is one size lower, Passenger Cap is 8, -3 Attribute Points, -1 Customization point (Minimum 1)
+:*Advantages: +2 Electronics, +2 Engines, Pick either: [+1 Engines or +1 Electronics], +1 Non-Weapon Hard Point, Can pick one Ship Function to have by default without taking up Customization Points.
 </div>
 </div>
 |-
@@ -282,55 +284,55 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 : These terrifying ships are massive war machines and are usually the backbone of militaries. These machines can be used to fight other Battle Ships and to group up to take on larger objects. Considered necessary for any large-scale conflict in space, these expensive, massive machines are a must-have.
 :*Average Size: Huge (or in some cases Gargantuan)
 :*Average Cost / Procure Diff: 384 Million / 4 
-:*Dis-Advantages: Cargo Capacity and Passenger Cap is one size smaller, -5 Attribute Points, -1 Customization Point (Minimal 1)
-:*Advantages: +2 Weapons, +1 Structure, +1 Engines, Gains one more Ship Function of your choice for free. +1 Hard Point (Weapon Only)
+:*Dis-Advantages: Cargo Capacity and Passenger Cap is one size smaller, -3 Attribute Points, -1 Customization Point (Minimum 1)
+:*Advantages: +2 Weapons, +2 Shields, +1 Structure, Pick either: [+1 Engines or +1 Electronics], Gains one more Ship Function of your choice for free. +1 Hard Point (Weapon Only)
 </div>
 </div>
 |-
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Capital:
 <div class="mw-collapsible-content">
-: So massive they are sometimes mistaken for stations, these epic craft seem to defy logic as they effortlessly float in the heavens. Any military or civilization attempting to prove itself to others may build these behemoths. Usually Capital ships are not used to fight directly in combat but as a base of operations and control. Thus, some consider them nothing more than propaganda and expensive fear machines. Most Capital ships are used as Command ships or Super Carries, not for ships but for soldiers. They are an excellent solution to the mass logistic problems of larger militaries. 
+: So massive they are, they are sometimes mistaken for stations; these epic craft seem to defy logic as they effortlessly float in the heavens. Any military or civilization attempting to prove itself to others may build these behemoths. Usually, Capital ships are not used to fight directly in combat but as a base of operations and control. Thus, some consider them nothing more than propaganda and expensive fear machines. Most Capital ships are used as Command ships or Super Carries, not for ships but for soldiers. They are an excellent solution to the mass logistics problems of larger militaries. 
 :*Average Size: Colossal
 :*Average Cost / Procure Diff: 3.2 Billion / 5 
-:*Dis-Advantages: -5 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimal 1)
-:*Advantage: +1 Bays, +2 Sensors, +2 Electronics. Passenger capacity is: 864. These ships have a special Position called '''Supreme Commander'''. A command can utilize its leadership bonus for all ships under its control in that solar system. This cannot double as the ship captain. Choose any one Ship Function to be installed at no cost.
+:*Dis-Advantages: -3 Attribute Points, -2 Engines, -2 Hard Points, -1 Customization Point (Minimum 1)
+:*Advantage: +1 Bays, +2 Sensors, +2 Electronics, Pick either: [+1 Shields or +1 Structure]. Passenger capacity is: 864. These ships have a special Position called '''Supreme Commander'''. A command can utilize its leadership bonus for all ships under its control in that solar system. This cannot double as the ship captain. Choose one Ship Function to install at no cost.
 </div>
 </div>
 |-
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Carriers:
 <div class="mw-collapsible-content">
-: Carriers are the ships that make a large fleet mobile. It can also provide flexibility in combat by deploying an array of ship and drone types. Most Carriers are designed to hold and maintain smaller ships. But some are designed for troop deployment to stations and planets. There are also Super Carriers, which are Capital-class Carriers that can hold larger numbers of ships or people and also double as Command Ships.
+: Carriers are the ships that make a large fleet mobile. They can also provide flexibility in combat by deploying an array of ship and drone types. Most Carriers are designed to hold and maintain smaller ships. But some are designed for troop deployment to stations and planets. Super Carriers are Capital-class Carriers that can hold larger numbers of ships or people and also double as Command Ships.
 :*Average Size: Gargantuan (Huge - Colossal)
 :*Average Cost / Procure Diff: 1.2 Billion / 4
-:*Dis-Advantages: -5 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimal 1)
-:*Advantages: +2 Sensors, +2 Electronics, Built-in Repair Facility for ships of two sizes and smaller. 
-:*Misc: Can carry, deploy, and repair ships two sizes or smaller. If avg. The size of Gargantuan is such that it can hold up to two 6 large ships by default without any additional hangar bays. (12 Medium, 24 Small, 96 Tiny, 384 Diminutive, 1,536 Fine). Additional Hanger Bays or Drone Bays grant a +1 ship count. If more bays are added, the ship can start to hold a single ship of only 1 size smaller. This ship has a special '''Field Commander'''. A Field Commander can provide his or her leadership bonus to all ships under his or her care. (Command bonuses do not stack; take which one is larger)
+:*Dis-Advantages: -3 Attribute Points, -2 Engines, -4 Hard Points, -1 Bay, -1 Customization Point (Minimum 1)
+:*Advantages: +2 Sensors, +2 Electronics, Pick either: [+1 Engine or +1 Structure]. Built-in Repair Facility for ships of two sizes or smaller. 
+:*Misc: Can carry, deploy, and repair ships two sizes or smaller. If avg. The size of Gargantuan is such that it can hold up to two 6 large ships by default without any additional hangar bays. (12 Medium, 24 Small, 96 Tiny, 384 Diminutive, 1,536 Fine). Additional Hangar Bays or Drone Bays grant a +1 ship count. If you add more bays, the ship can start holding a single ship that is only 1 size smaller. This ship has a special '''Field Commander'''. A Field Commander can provide his or her leadership bonus to all ships under his or her care. (Command bonuses do not stack; take which one is larger)
 </div>
 </div>
 |-
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Cruisers:
 <div class="mw-collapsible-content">
-: A smaller, lightweight version of the Battle Cruiser. However, the purpose is the same. They are flexible combat vessels. Common in both Military and police forces, and is usually seen as the first response to aggressive outlaws. Considered by police forces as their solution to deal with the more deadly pirates, gangs, and other criminal organizations. The military, however, sees these as inexpensive portal/recon/scientific/experimental craft. 
+: A smaller, lightweight version of the Battle Cruiser. However, the purpose is the same. They are flexible combat vessels. Common in both Military and police forces, they are usually seen as the first response to aggressive outlaws. Considered by police forces as their solution to deal with the more deadly pirates, gangs, and other criminal organizations. The military, however, sees these as inexpensive portal/recon/scientific/experimental craft. 
 :*Average Size: Medium
 :*Average Cost / Procure Diff:  40 Million / 2 
-:*Dis-Advantages: -3 Attribute Points
-:*Advantages: +1 Hard Point or +1 Bay (Pick one), +2 Engines or +2 Electronics (Pick one). Pick a Ship Function for this ship to have by default for free.
+:*Dis-Advantages: -2 Attribute Points
+:*Advantages: +1 Hard Point or +1 Bay (Pick one), +1 Sensors, [+2 Engines or +2 Electronics] (Pick one). Pick a Ship Function for this ship to have by default for free.
 
-: There are also non-military applications for hulls similar to cruisers. Everything from a VIP's personal transportation to a luxury liner. The rich would much rather distance themselves from a fancy customized barge for their travels. After all, anybody can afford one of those. Demilitarized older-model cruisers are often sold by militaries to other governments or individuals for a variety of reasons. And sometimes you may find that they are not so de-fanged as they are meant to be. 
+: There are also non-military applications for hulls similar to cruisers. Everything from a VIP's personal transportation to a luxury liner. The rich would much rather distance themselves from a fancy customized barge for their travels. After all, anybody can afford one of those. Demilitarized older-model cruisers are often sold by militaries to other governments or individuals for a variety of reasons. Sometimes you may find they aren't as defanged as they are meant to be. 
 :*Average Size: Medium
 :*Average Cost / Procure Diff: 10 Million / 0 
 :*Dis-Advantages: -1 Structure, -1 Hard Point, -2 Attribute Points
-:*Advantages: +2 Engines, +2 Sensors. Passenger Bay is in a luxurious style and can accommodate up to 16 passengers. 
+:*Advantages: +2 Engines, +2 Sensors. The passenger bay is luxurious and can accommodate up to 16 passengers. 
 </div>
 </div>
 |-
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Drones:
 <div class="mw-collapsible-content">
-: Drones come in all shapes, sizes, and uses. From military to personal hobbyists, these machines all have one thing in common. Some sort of A.I. and a connection to a central controller or computer system. The military has a wide range of uses, from complementing a ship's systems to serving as part of a Carrier fleet that can deploy swarms of drones to strike an enemy in coordinated attacks. However, many people have drones for personal use. It also helps that drones with self-defense A.I. are usually not illegal in most of the Ring, and thus many people use them to help deter outlaws.
+: Drones come in all shapes, sizes, and uses. From military to personal hobbyists, these machines all have one thing in common. Some sort of A.I. and a connection to a central controller or computer system. The military uses them in a wide range of ways, from complementing a ship's systems to serving as part of a Carrier fleet that can deploy swarms of drones to strike an enemy in coordinated attacks. However, many people have drones for personal use. It also helps that drones with self-defense A.I. are usually legal in most of the Ring, so many people use them to deter outlaws.
 :*Average Size: Fine (Fine - Small)
 :*Average Cost / Procure Diff: 100,000 / 0*
 :*Advantage: Can be used without a pilot. Can be programmed to defend or attack a selected target.
@@ -345,7 +347,7 @@ The Hull Size is what lays out the '''Secondary Attributes''' for a spaceship. T
 These ships were meant to ask the question: "How much firepower can one medium ship truly have?" They are geared for a single task. A way to help counter smaller swarms of ships. While similar in size and speed to a cruiser, these ships are rarely seen in use by anyone except the military. They are designed to back a massive bunch for their size. Made on the cheap, considering their firepower, and have a minimalist crew. Squads of these craft are usually used to complement attack fleets that target smaller craft. The idea being that the Destroyer will be specifically fitted for smaller craft while still having the armor of a medium-sized craft.
 :*Average Size: Medium
 :*Average Cost / Procure Diff: 38 Million / 3 
-:*Dis-Advantages: Illegal to own even though it is a Medium-sized craft. Procure Diff +1, -3 Attribute Points, -1 Bay, Weapon Hard Points are geared for 'Small' weapon size. 
+:*Dis-Advantages: Illegal to own even though it is a Medium-sized craft. Procure Diff +1, -2 Attribute Points, -1 Bay, Weapon Hard Points are geared for 'Small' weapon size. 
 :*Advantages: +2 Hard Points, All weapons are considered 'Gimbaled' +1 to Targeting for free. These ships do not take penalties for targeting smaller craft. 
 </div>
 </div>
@@ -387,10 +389,10 @@ These ships were meant to ask the question: "How much firepower can one medium s
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Freighters:
 <div class="mw-collapsible-content">
-: When a Barge cannot do the trick Freighters take over. These are the industrial-scale cargo transportation ships. Although some have been converted into other things, such as massive traveling carnivals. Like barges, these can be converted to transport just about anything. 
+: When a Barge cannot do the trick, Freighters take over. These are the industrial-scale cargo transportation ships. Some have been converted into other things, such as massive traveling carnivals. Like barges, these can be converted to transport just about anything. 
 :*Average Size: Huge
 :*Average Cost / Procure Diff: 100 Million / 1
-:*Dis-Advantages: -3 Engines, -2 Attribute Points
+:*Dis-Advantages: -3 Engines, -1 Attribute Points
 :*Advantages: All converted Cargo Bays provide double the space. +2 Bays. 16,000 Units or one size higher. If the ship is a Tech 3 ship, then it comes with the Beam Ship Function by default. This ship is a common work vessel found throughout the universe. It has a 50% reduction in cost and repair costs because it is mass-produced.
 </div>
 </div>
@@ -398,10 +400,10 @@ These ships were meant to ask the question: "How much firepower can one medium s
 | <div class="toccolours mw-collapsible mw-collapsed">
 ;Industrial:
 <div class="mw-collapsible-content">
-: Factory in a can. These ships of various sizes are the backbone of the non-planetary or moon-based industry. This usually means mining and refining of asteroids but it is not always limited to that. These are must-haves for new settlers in a solar system who hope to use their home's resources to start a colony or terraform a planet. 
+: Factory in a can. These ships, in various sizes, are the backbone of non-planetary or moon-based industry. This usually means mining and refining of asteroids but it is not always limited to that. These are must-haves for new settlers in a solar system who hope to use their home's resources to start a colony or terraform a planet. 
 :*Average Size: Large (Medium - Huge)
 :*Average Cost / Procure Diff: 12 - 108 Million / 0 - 1
-:*Dis-Advantages: -2 Engines, -2 Attribute Points, -3 Bays
+:*Dis-Advantages: -2 Engines, -1 Attribute Points, -3 Bays
 :*Advantages: The Ship has a free Industrial Facility and Refinery Facility. If this ship has a Tech 3 Core, then it also comes with Beam Ship Function for free. The ship also comes with the Grapple Function for free. 
 </div>
 </div>
