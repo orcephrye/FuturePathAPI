@@ -728,6 +728,20 @@ select.skill-ab-select option[value="CHA"] {
   color: var(--text-color, #e2e8f0);
 }
 
+.function-tooltip-icon {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.72rem;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.15s ease-in-out;
+  vertical-align: middle;
+}
+
+.function-tooltip-icon:hover {
+  opacity: 1;
+}
+
 .function-checkbox {
   cursor: pointer;
   height: 0.9rem;
@@ -816,6 +830,11 @@ select.skill-ab-select option[value="CHA"] {
 #hullConfigTooltipIcon:hover {
   color: #fff !important;
   transform: scale(1.1);
+}
+
+body.hide-tooltips .function-tooltip-icon,
+body.hide-tooltips #hullConfigTooltipIcon {
+  display: none !important;
 }
 
 textarea.form-control {
@@ -1217,6 +1236,8 @@ textarea.quirk-textarea {
   .btn,
   .no-print,
   .d-print-none,
+  .function-tooltip-icon,
+  #hullConfigTooltipIcon,
   .action-bar,
   .app-header,
   .modal,

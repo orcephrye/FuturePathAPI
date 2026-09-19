@@ -215,6 +215,11 @@ body[data-bs-theme="dark"] .dr-box-all .dr-box-label, body[data-bs-theme="dark"]
   font-weight: 700 !important;
 }
 
+.ability-score-input {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+}
+
 /* Synthwave Core Ability Theme Color Classes */
 .text-ability-str, select.text-ability-str, .form-select.text-ability-str { color: #f43f5e !important; }
 .text-ability-dex, select.text-ability-dex, .form-select.text-ability-dex { color: #84cc16 !important; }
@@ -1554,13 +1559,20 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   padding: 0.5rem;
 }
 
-.advantage-die-box {
+.advantage-die-box,
+#attributesCard .stat-box {
   text-align: center;
   background: rgb(0 0 0 / 15%);
   border: 1px solid var(--card-border);
   border-radius: 8px;
-  padding: 0.25rem 0.35rem;
+  padding: 0.35rem 0.25rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#attributesCard .stat-label {
+  font-size: 0.72rem;
+  line-height: 1.15;
+  margin-bottom: 0.2rem;
 }
 
 .advantage-die-box label {
@@ -1568,14 +1580,16 @@ select.skill-ab-select option[value="CHA"] { color: #ec4899; }
   margin-bottom: 0.2rem;
 }
 
-.advantage-die-box .form-select {
+.advantage-die-box .form-select,
+#attributesCard .form-select {
   padding-left: 4px;
   padding-right: 14px;
   background-position: right 3px center;
   background-size: 9px 7px;
 }
 
-.advantage-die-box:hover {
+.advantage-die-box:hover,
+#attributesCard .stat-box:hover {
   border-color: var(--neon-cyan, #00f0ff);
   box-shadow: 0 0 8px rgb(0 240 255 / 25%);
 }
@@ -2845,33 +2859,25 @@ body.is-print-mode .stat-box {
   padding: 0.1rem !important;
 }
 
-body.is-print-mode .advantage-die-box {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 0.25rem !important;
+body.is-print-mode #collapseAttributes .stat-box {
+  background-color: #f9fafb !important;
+  border: 1px solid #888 !important;
+  padding: 0.1rem !important;
 }
 
-body.is-print-mode .advantage-die-box label {
-  display: inline !important;
-  margin-bottom: 0 !important;
-  white-space: nowrap !important;
+body.is-print-mode #collapseAttributes .stat-label {
+  color: #000 !important;
+  display: block !important;
+  font-size: 5.8pt !important;
+  font-weight: bold !important;
+  line-height: 1.1 !important;
+  margin-bottom: 1px !important;
+  text-align: center !important;
 }
 
-body.is-print-mode .advantage-die-box > div {
-  display: inline-flex !important;
-}
-
-body.is-print-mode .advantage-die-box select {
-  width: auto !important;
-  min-width: 55px !important;
-  max-width: 75px !important;
+body.is-print-mode #attributesCard select {
+  appearance: none !important;
+  background-image: none !important;
 }
 
 body.is-print-mode .stat-label {
@@ -2932,30 +2938,26 @@ body.is-print-mode .ac-comp-input {
 
 body.is-print-mode #healthInjuryCard input,
 body.is-print-mode #healthInjuryCard .form-control,
+body.is-print-mode #attributesCard input,
+body.is-print-mode #attributesCard select,
+body.is-print-mode #attributesCard .form-control,
 body.is-print-mode .stat-box .form-control:not(.input-group *),
 body.is-print-mode .stat-box input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
 body.is-print-mode .stat-box select,
 body.is-print-mode .hp-stat-input {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  height: 15px !important;
-  font-size: 7.2pt !important;
-  padding: 0 1px !important;
-  margin: 1px auto !important;
+  background-color: transparent !important;
   border: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  background-color: transparent !important;
+  box-sizing: border-box !important;
+  font-size: 7.2pt !important;
+  height: 15px !important;
+  margin: 1px auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 1px !important;
   text-align: center !important;
-}
-
-body.is-print-mode #global_extraDamage {
-  width: auto !important;
-  min-width: 32px !important;
-  max-width: 48px !important;
-  padding: 0 !important;
-  background-image: none !important;
+  width: 100% !important;
 }
 
 body.is-print-mode .dr-square-box {
@@ -3499,6 +3501,14 @@ body.is-print-mode #collapseAbilities .ability-stat-input {
   text-align: center !important;
 }
 
+body.is-print-mode #collapseAbilities .ability-score-input {
+  font-size: 9pt !important;
+  font-weight: 700 !important;
+  height: 16px !important;
+  line-height: 16px !important;
+  padding: 0 !important;
+}
+
 body.is-print-mode #collapseAbilities label.text-ability-str { color: #e11d48 !important; }
 body.is-print-mode #collapseAbilities label.text-ability-dex { color: #4d7c0f !important; }
 body.is-print-mode #collapseAbilities label.text-ability-con { color: #d97706 !important; }
@@ -3670,40 +3680,24 @@ body.is-print-mode .col-lg-6 {
     height: auto !important;
   }
 
-  .advantage-die-box {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 0.25rem !important;
+  #collapseAttributes .stat-box {
+    background-color: #f9fafb !important;
+    border: 1px solid #888 !important;
+    padding: 0.1rem !important;
   }
 
-  .advantage-die-box label {
-    display: inline !important;
-    margin-bottom: 0 !important;
-    white-space: nowrap !important;
+  #collapseAttributes .stat-label {
+    color: #000 !important;
+    display: block !important;
+    font-size: 5.8pt !important;
+    font-weight: bold !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1px !important;
+    text-align: center !important;
   }
 
-  .advantage-die-box > div {
-    display: inline-flex !important;
-  }
-
-  .advantage-die-box select {
-    width: auto !important;
-    min-width: 55px !important;
-    max-width: 75px !important;
-  }
-
-  #global_extraDamage {
-    width: auto !important;
-    min-width: 32px !important;
-    max-width: 48px !important;
-    padding: 0 !important;
+  #attributesCard select {
+    appearance: none !important;
     background-image: none !important;
   }
 
@@ -3740,14 +3734,18 @@ body.is-print-mode .col-lg-6 {
 
   #healthInjuryCard input,
   #healthInjuryCard .form-control,
+  #attributesCard input,
+  #attributesCard select,
+  #attributesCard .form-control,
   .stat-box .form-control:not(.input-group *),
   .stat-box input:not([type="checkbox"], [type="radio"], .input-group *, .ability-stat-input),
   .stat-box select,
   .hp-stat-input {
-    width: 100% !important;
-    max-width: 100% !important;
     box-sizing: border-box !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
     text-align: center !important;
+    width: 100% !important;
   }
 
   .table-custom tr,
@@ -4054,6 +4052,14 @@ body.is-print-mode .col-lg-6 {
     margin: 1px auto !important;
     height: 15px !important;
     text-align: center !important;
+  }
+
+  #collapseAbilities .ability-score-input {
+    font-size: 9pt !important;
+    font-weight: 700 !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    padding: 0 !important;
   }
 
   #collapseAbilities label.text-ability-str { color: #e11d48 !important; }

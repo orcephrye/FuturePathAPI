@@ -56,6 +56,12 @@
 </button>
 </li>
 <li>
+<button class="dropdown-item small d-flex align-items-center py-2" id="toggleTooltipsButton" onclick="toggleTooltipsVisibility()" title="Toggle Tooltips Visibility" type="button">
+<i class="fa-solid fa-circle-info text-cyan me-2" id="toggleTooltipsIcon" style="width: 18px; text-align: center;"></i>
+<span id="toggleTooltipsText">Tooltips Visible</span>
+</button>
+</li>
+<li>
 <button class="dropdown-item small d-flex align-items-center py-2" data-bs-target="#diceHistoryModal" data-bs-toggle="modal" onclick="renderDiceHistory()" type="button">
 <i class="fa-solid fa-dice text-cyan me-2" style="width: 18px; text-align: center;"></i>
 <span>History</span>
@@ -518,6 +524,7 @@
 <label class="visually-hidden" for="funcCheck_giveCommand">Give Command (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_giveCommand" name="funcCheck_giveCommand" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Give Command (Captain Cha Mod + Misc)">Give Command</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Give Command</strong> (Standard): Leadership/Charisma check (DC 10). Grants +1 (+1 per 4 DC beaten) to a crew member's check, or grants bonus attack pool points / rerolls to the Weapons Officer."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Give Command', 'captain', 0, this)" title="Roll Give Command (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -533,6 +540,7 @@
 <label class="visually-hidden" for="funcCheck_encourageCrew">Encourage Crew (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_encourageCrew" name="funcCheck_encourageCrew" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Encourage Crew (Captain Cha Mod + Misc)">Encourage Crew</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Encourage Crew</strong> (Standard): Rousing speech (DC 12 + active officers + round; 1/combat). Grants Give Command bonuses to all bridge crew simultaneously (except Weapons)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Encourage Crew', 'captain', 0, this)" title="Roll Encourage Crew (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -548,6 +556,7 @@
 <label class="visually-hidden" for="funcCheck_commandingPresence">Commanding Presence (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_commandingPresence" name="funcCheck_commandingPresence" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Commanding Presence (Captain Cha Mod + Misc)">Commanding Pres.</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Commanding Presence</strong> (Advanced - Feat): Passive command aura granting all non-command crew members a bonus equal to half Charisma (rounded up) on rolls for 1 + Cha mod rounds per day."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Commanding Presence', 'captain', 0, this)" title="Roll Commanding Presence (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -563,6 +572,7 @@
 <label class="visually-hidden" for="funcCheck_directAssistance">Direct Assistance (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_directAssistance" name="funcCheck_directAssistance" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Direct Assistance (Captain Cha Mod + Misc)">Direct Assistance</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Direct Assistance</strong> (Advanced): Captain personally assists a single bridge officer, granting them continuous Advantage on all actions and automatic Give Command checks each round."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Direct Assistance', 'captain', 0, this)" title="Roll Direct Assistance (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -681,6 +691,7 @@
 <label class="visually-hidden" for="funcCheck_flyOffDef">Fly Off./Def. (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_flyOffDef" name="funcCheck_flyOffDef" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Fly Offensively/Defensively (Pilot Check + Engines Mod + Misc)">Fly Off./Def.</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Fly Offensively/Defensively</strong> (Standard): Opposed Pilot check against a target vessel. Offensive flight reduces required d10 successes for friendly Battle Damage by 1; Defensive flight forces enemy to need 1 additional success."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Fly Offensively/Defensively', 'engines', 0, this)" title="Roll Fly Offensively/Defensively (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -696,6 +707,7 @@
 <label class="visually-hidden" for="funcCheck_closeWiden">Close / Widen Dist. (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_closeWiden" name="funcCheck_closeWiden" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Close/Widen Distance (Pilot Check + Engines Mod + Misc)">Close/Widen Dist.</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Close/Widen Distance</strong> (Standard): Opposed Pilot check to change distance bands between ships (Short, Medium, Long, Huge, Vast, Astronomic)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Close/Widen Distance', 'engines', 0, this)" title="Roll Close/Widen Distance (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -711,6 +723,7 @@
 <label class="visually-hidden" for="funcCheck_pursueIntercept">Pursue / Intercept (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_pursueIntercept" name="funcCheck_pursueIntercept" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Pursue/Intercept (Pilot Check + Engines Mod + Misc)">Pursue/Intercept</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Pursue/Intercept</strong> (Standard): Opposed Pilot check to chase down an evasive vessel, cut off its vector, or set up a Ramming maneuver."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Pursue/Intercept', 'engines', 0, this)" title="Roll Pursue/Intercept (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -726,6 +739,7 @@
 <label class="visually-hidden" for="funcCheck_ram">Ram (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_ram" name="funcCheck_ram" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Ram (Pilot Check + Engines Mod + Misc)">Ram</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Ram</strong> (Standard): Collision attack at Short range following a successful Pursue/Intercept. Roll d%: &gt;50% both ships take Battle Damage; &le;50% only target takes Battle Damage (friendly repair DC 7)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Ram', 'engines', 0, this)" title="Roll Ram (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -741,6 +755,7 @@
 <label class="visually-hidden" for="funcCheck_evasiveThrusters">Emerg. Thrusters (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_evasiveThrusters" name="funcCheck_evasiveThrusters" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Emergency Evasive Thrusters (Pilot Check + Engines Mod + Misc)">Emerg. Thrusters</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Emergency Evasive Thrusters</strong> (Advanced): Violent evasion burst (opposed Pilot check by 4+). Forces attacker to need 3 additional success d10s and increases Tracking DC; requires 3 turns of engine cooldown."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Emergency Evasive Thrusters', 'engines', 0, this)" title="Roll Emergency Evasive Thrusters (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -756,6 +771,7 @@
 <label class="visually-hidden" for="funcCheck_feint">Feint (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_feint" name="funcCheck_feint" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Feint (Pilot Check + Engines Mod + Misc)">Feint</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Feint</strong> (Advanced): Complex evasive trickery providing +4 Tracking DC and forcing attacker to need 2 additional success d10s (cumulative Disadvantage on subsequent feints in the same combat)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Feint', 'engines', 0, this)" title="Roll Feint (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -771,6 +787,7 @@
 <label class="visually-hidden" for="funcCheck_grappleEngines">Grapple (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_grappleEngines" name="funcCheck_grappleEngines" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Grapple (Pilot Check + Engines Mod + Misc)">Grapple</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Grapple</strong> (Advanced - Mount/Bay): Deploys robotic arms, magnetic harpoons, clamps, or tractor beams to tether a ship, denying its Engines modifier to Tracking DC and enabling automatic Ramming."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Grapple', 'engines', 0, this)" title="Roll Grapple (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -871,6 +888,7 @@
 <label class="visually-hidden" for="funcCheck_medical">Medical (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_medical" name="funcCheck_medical" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Medical (Medical Skill Check + Misc)">Medical</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Medical</strong> (Standard): Uses Medical skill to restore crew HP, revive dazed/stunned/unconscious crew, stabilize dying crew members, perform emergency surgery, or treat diseases and poisons."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Medical', 'medical', 0, this)" title="Roll Medical (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -886,6 +904,7 @@
 <label class="visually-hidden" for="funcCheck_resuscitation">Resuscitation (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_resuscitation" name="funcCheck_resuscitation" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Resuscitation / Life Support (Medical Skill Check + Misc)">Resuscitation</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Resuscitation / Life Support</strong> (Advanced - Med Bay 3+): Places fallen crew in cryogenic stasis or revives recently deceased crew (dead &lt;12 hours, body &ge;90% intact) back to 1 HP and 1 Con."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Resuscitation / Life Support', 'medical', 0, this)" title="Roll Resuscitation (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -901,6 +920,7 @@
 <label class="visually-hidden" for="funcCheck_automatedCare">Automated Care (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_automatedCare" name="funcCheck_automatedCare" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Automated Medical Care (Medical Skill Check + Misc)">Automated Care</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Automated Medical Care</strong> (Advanced - Med Bay): Automates intensive therapy, continuously providing maximum natural healing and ability score recovery without requiring manual daily care checks."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Automated Medical Care', 'medical', 0, this)" title="Roll Automated Medical Care (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1060,6 +1080,7 @@
 <label class="visually-hidden" for="funcCheck_repair">Repair (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_repair" name="funcCheck_repair" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Repair (Craft Structure Skill Check + Structure Mod + Misc)">Repair</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Repair</strong> (Standard): Emergency field repairs rolling Craft against the Battle Damage repair DC to remove damage and restore disabled ship systems."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Repair', 'structure', 0, this)" title="Roll Repair (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1075,6 +1096,7 @@
 <label class="visually-hidden" for="funcCheck_boostEngines">Boost Engines (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_boostEngines" name="funcCheck_boostEngines" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Boost Engines (Chief Engineer Int Mod + Structure Mod + Misc)">Boost (Engines)</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Boost (Engines)</strong> (Standard): Routes auxiliary reactor power (DC 10) to temporarily increase Engine modifier output for 1-2 rounds (1 turn cooldown)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Boost (Engines)', 'structure', 0, this)" title="Roll Boost (Engines) (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1090,6 +1112,7 @@
 <label class="visually-hidden" for="funcCheck_counterHackEng">Counter Hack (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_counterHackEng" name="funcCheck_counterHackEng" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Counter Hack (Chief Engineer Int Mod + Electronics Mod + Misc)">Counter Hack</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Counter Hack</strong> (Standard): Defensive cyber check opposing an active intruder's roll to detect, trace, and expel enemy hackers from ship networks."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Counter Hack', 'structure', 0, this)" title="Roll Counter Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1105,6 +1128,7 @@
 <label class="visually-hidden" for="funcCheck_overclockCore">Overclock Core (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_overclockCore" name="funcCheck_overclockCore" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Overclock Core (Secondary Craft Skill Check + Structure Mod + Misc)">Overclock Core</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Overclock Core</strong> (Advanced): Overclocks reactor output (Craft DC 14 + Tech Level) to gain 2+ floating attribute bonus points to distribute freely; failure risks blown capacitors."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Overclock Core', 'structure', 0, this)" title="Roll Overclock Core (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1120,6 +1144,7 @@
 <label class="visually-hidden" for="funcCheck_cloakEng">Cloak (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_cloakEng" name="funcCheck_cloakEng" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Cloak (Chief Engineer Int Mod + Electronics Mod + Misc)">Cloak</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Cloak</strong> (Advanced - Cloak Device): Regulates power conduits and harmonic emitters to engage stealth fields and increase the ship's Detection DC against enemy sensors."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Cloak', 'structure', 0, this)" title="Roll Cloak (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1206,6 +1231,7 @@
 <label class="visually-hidden" for="funcCheck_fire">Fire (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_fire" name="funcCheck_fire" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Fire (Damage Roll: d10s = Active Weapon Hard Points)">Fire</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Fire</strong> (Standard): Standard attack action rolling the Battle Pool (1d10 per active hard point) against enemy BD-DC. Allows rerolls equal to Weapons Mod and determines damage via the 2d6 Battle Damage Chart."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Fire', 'weapons', 0, this)" title="Roll Fire Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1221,6 +1247,7 @@
 <label class="visually-hidden" for="funcCheck_bombard">Bombard (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_bombard" name="funcCheck_bombard" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Bombard (Damage Roll: d10s = Active Weapon Hard Points)">Bombard</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Bombard</strong> (Standard): Concentrates all firepower on a single target, granting an extra special attack d10 (success on 4+) and rerolling 7s on the Battle Damage chart (weapons suffer 2 turns cooldown strain)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Bombard', 'weapons', 0, this)" title="Roll Bombard Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1236,6 +1263,7 @@
 <label class="visually-hidden" for="funcCheck_concentratedFire">Concentrated Fire (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_concentratedFire" name="funcCheck_concentratedFire" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Concentrated Fire (Damage Roll: d10s = Active Weapon Hard Points)">Concentrated Fire</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Concentrated Fire</strong> (Advanced): Precision targeting on specific enemy subsystems; attack d10s rolling 9-10 count double, and raises maximum subsystem damage from 5 to 7."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Concentrated Fire', 'weapons', 0, this)" title="Roll Concentrated Fire Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1251,6 +1279,7 @@
 <label class="visually-hidden" for="funcCheck_defensiveFire">Defensive Fire (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_defensiveFire" name="funcCheck_defensiveFire" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Defensive Fire (Damage Roll: d10s = Active Weapon Hard Points)">Defensive Fire</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Defensive Fire</strong> (Advanced): Assigns active weapon hard points to point defense, rolling 1d10 per dedicated mount to intercept and destroy incoming missiles or small strike craft."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Defensive Fire', 'weapons', 0, this)" title="Roll Defensive Fire Damage (d10 Damage Roll)" type="button"><i class="fa-solid fa-burst"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1343,6 +1372,7 @@
 <label class="visually-hidden" for="funcCheck_scan">Scan (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_scan" name="funcCheck_scan" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Scan (Sensors Mod + Misc + Wis/Cha Mod)">Scan</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Scan</strong> (Standard): Conducts passive sweeps or active scans. In combat: identifies weaknesses to add +(1 + Sensors Mod) to weapon attack d10s, fulfills targeting accuracy checks, and gathers intelligence."><i class="fa-solid fa-circle-info"></i></span>
 <label class="visually-hidden" for="funcAbility_scan">Scan Ability Choice</label>
 <select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-wis" id="funcAbility_scan" name="funcAbility_scan" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
 <option selected value="WIS">WIS</option>
@@ -1363,6 +1393,7 @@
 <label class="visually-hidden" for="funcCheck_hackComms">Hack / Counter Hack (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_hackComms" name="funcCheck_hackComms" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Hack / Counter Hack (Electronics Mod + Misc + Int Mod)">Hack / C-Hack</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Hack / Counter Hack</strong> (Standard): Cyberwarfare offensive to infiltrate enemy networks across 3 stages (Access, Disruption, Harm) to disable attributes, lock weapons, or cut bay power."><i class="fa-solid fa-circle-info"></i></span>
 <span class="fw-bold text-ability-int px-1" style="font-size: 0.72rem;" title="Key Ability: INT">INT</span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Hack / Counter Hack (Sensors)', 'sensors', 0, this)" title="Roll Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
@@ -1379,6 +1410,7 @@
 <label class="visually-hidden" for="funcCheck_spoofing">Sensor Spoofing (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_spoofing" name="funcCheck_spoofing" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Sensor Spoofing (Sensors Mod + Electronics Mod + Misc + Int/Cha Mod)">Sensor Spoofing</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Sensor Spoofing / Decoy Projection</strong> (Advanced - Decoy Launcher): Projects phantom signatures or deploys chaff decoys, imposing Disadvantage on enemy targeting/scans or granting a 50% chance to divert incoming guided missiles."><i class="fa-solid fa-circle-info"></i></span>
 <label class="visually-hidden" for="funcAbility_spoofing">Sensor Spoofing Ability Choice</label>
 <select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-int" id="funcAbility_spoofing" name="funcAbility_spoofing" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
 <option selected value="INT">INT</option>
@@ -1399,6 +1431,7 @@
 <label class="visually-hidden" for="funcCheck_cryptoComms">Crypto (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_cryptoComms" name="funcCheck_cryptoComms" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Crypto (Sensors Mod + Misc + Wis/Cha Mod)">Crypto</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Crypto</strong> (Advanced - Crypto Bay/Slot): Quantum cryptographic array that encrypts friendly comms, deciphers intercepted enemy transmissions, and insulates internal networks from hackers."><i class="fa-solid fa-circle-info"></i></span>
 <label class="visually-hidden" for="funcAbility_cryptoComms">Crypto Ability Choice</label>
 <select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-wis" id="funcAbility_cryptoComms" name="funcAbility_cryptoComms" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
 <option selected value="WIS">WIS</option>
@@ -1419,6 +1452,7 @@
 <label class="visually-hidden" for="funcCheck_jamComms">Jam (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_jamComms" name="funcCheck_jamComms" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Jam (Sensors Mod + Misc + Wis/Cha Mod)">Jam</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Jam</strong> (Advanced - Jammer HP): Emits electronic countermeasures to blind enemy sensors, scramble communications, shut down hostile drones, abort enemy transporter beams, or de-sync active hackers."><i class="fa-solid fa-circle-info"></i></span>
 <label class="visually-hidden" for="funcAbility_jamComms">Jam Ability Choice</label>
 <select class="form-select form-select-sm skill-ab-select skill-ab-select-no-arrow py-0 px-1 border-0 bg-transparent fw-bold text-ability-wis" id="funcAbility_jamComms" name="funcAbility_jamComms" onchange="onCommsFunctionAbilityChange(this)" style="width: auto; font-size: 0.72rem;">
 <option selected value="WIS">WIS</option>
@@ -1578,6 +1612,7 @@
 <label class="visually-hidden" for="funcCheck_changePosition">Change Position (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_changePosition" name="funcCheck_changePosition" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Change Position (Acrobatics Skill Check + Misc)">Change Position</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Change Position</strong> (Standard): Move to a new bridge station/officer role; takes 1 round (or rushed with an Acrobatics check DC 10 + conditions). The Captain can instantly take over any station in emergencies."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Change Position', 'shields', 0, this)" title="Roll Change Position (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1587,12 +1622,29 @@
 <input class="form-control form-control-sm text-center function-total-field" id="funcTotal_changePosition" name="func_changePosition" placeholder="+0" readonly type="text" value=""/>
 </div>
 </div>
+<!-- Weapons Assist -->
+<div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
+<div class="d-flex align-items-center gap-1 min-w-0">
+<label class="visually-hidden" for="funcCheck_weaponsAssist">Weapons Assist (Standard Function)</label>
+<input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_weaponsAssist" name="funcCheck_weaponsAssist" title="Standard Function (Always Active)" type="checkbox"/>
+<span class="small function-name text-truncate" title="Weapons Assist (Dexterity Modifier + Misc)">Weapons Assist</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Weapons Assist</strong> (Standard): Any non-Weapons officer rolls an accuracy check against target Tracking DC to convert a failed friendly attack d10 into a success or grant a reroll before weapon rerolls occur."><i class="fa-solid fa-circle-info"></i></span>
+<button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Weapons Assist', 'shields', 0, this)" title="Roll Weapons Assist (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
+</div>
+<div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
+<label class="visually-hidden" for="funcMisc_weaponsAssist">Weapons Assist Misc Bonus</label>
+<input class="form-control form-control-sm text-center function-misc-field" id="funcMisc_weaponsAssist" inputmode="numeric" maxlength="3" name="funcMisc_weaponsAssist" oninput="recalculateShipAttributes()" placeholder="0" type="text" value=""/>
+<label class="visually-hidden" for="funcTotal_weaponsAssist">Weapons Assist Function Total</label>
+<input class="form-control form-control-sm text-center function-total-field" id="funcTotal_weaponsAssist" name="func_weaponsAssist" placeholder="+0" readonly type="text" value=""/>
+</div>
+</div>
 <!-- Beam -->
 <div class="function-row d-flex align-items-center justify-content-between py-1 border-bottom border-dark">
 <div class="d-flex align-items-center gap-1 min-w-0">
 <label class="visually-hidden" for="funcCheck_beam">Beam (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_beam" name="funcCheck_beam" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Beam (Knowledge Science Skill Check + Misc)">Beam</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Beam</strong> (Advanced - Transporter Bay): Dematerializes matter into energy and beams it to/from target coordinates or another vessel (DC 20+ in adverse conditions; pad size scales from Medium to Colossal)."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Beam', 'shields', 0, this)" title="Roll Beam (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1608,6 +1660,7 @@
 <label class="visually-hidden" for="funcCheck_shieldModulation">Shield Modulation (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_shieldModulation" name="funcCheck_shieldModulation" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Shield Modulation (Knowledge Science Skill Check + Shields Mod + Misc)">Shield Modulation</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Shield Modulation / Rebalance</strong> (Advanced - Shield Bay): Alter shield frequencies to counter enemy sensors/weapons, oppose scans, increase hacker disconnect DC, reduce enemy Scan Weakness attack bonuses, or cancel enemy attack d10s."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Shield Modulation / Rebalance', 'shields', 0, this)" title="Roll Shield Modulation (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1685,6 +1738,7 @@
 <label class="visually-hidden" for="funcCheck_boostSci">Boost Systems (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_boostSci" name="funcCheck_boostSci" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Boost Systems (Science Officer Int Mod + Misc)">Boost (Systems)</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Boost (Systems)</strong> (Standard): Diverts Electronics modifier points (DC 10) into Engines, Weapons, Shields, or Sensors for 1-2 rounds (1-turn cooldown per attribute); can also assist another officer's Electronics check without cooldown."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Boost (Systems)', 'electronics', 0, this)" title="Roll Boost (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1700,6 +1754,7 @@
 <label class="visually-hidden" for="funcCheck_hackSci">Hack / Counter Hack (Standard Function)</label>
 <input checked class="form-check-input function-checkbox function-checkbox-locked me-1" disabled id="funcCheck_hackSci" name="funcCheck_hackSci" title="Standard Function (Always Active)" type="checkbox"/>
 <span class="small function-name text-truncate" title="Hack / Counter Hack (Electronics Mod + Science Officer Int Mod + Misc)">Hack / C-Hack</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Hack / Counter Hack</strong> (Standard): Cyberwarfare offensive infiltrating enemy ship networks across 3 progressive phases (Gain Access, Information Gathering/Disruption, System Harm) to disrupt systems."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Hack / Counter Hack (Electronics)', 'electronics', 0, this)" title="Roll Hack (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1715,6 +1770,7 @@
 <label class="visually-hidden" for="funcCheck_cloakSci">Cloak (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_cloakSci" name="funcCheck_cloakSci" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Cloak (Electronics Mod + Science Officer Int Mod + Misc)">Cloak</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Cloak</strong> (Advanced - Cloaking Device): Activates stealth fields (Frequency Absorbent, Wave Disrupting, or Hybrid Full Spectrum) to drastically raise the ship's Detection DC against sensors."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Cloak', 'electronics', 0, this)" title="Roll Cloak (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">
@@ -1730,6 +1786,7 @@
 <label class="visually-hidden" for="funcCheck_cryptoSci">Crypto (Advanced Function)</label>
 <input class="form-check-input function-checkbox me-1" id="funcCheck_cryptoSci" name="funcCheck_cryptoSci" title="Advanced Function" type="checkbox"/>
 <span class="small function-name text-truncate text-info" title="Adv - Crypto (Electronics Mod + Science Officer Int Mod + Misc)">Crypto</span>
+<span class="text-cyan cursor-pointer function-tooltip-icon no-print d-print-none ms-1" data-bs-html="true" data-bs-placement="top" data-bs-toggle="tooltip" title="<strong>Crypto</strong> (Advanced - Crypto Bay/Slot): Quantum computer array to encrypt communications, crack enemy ciphers, and defend internal ship networks against cyber intrusions."><i class="fa-solid fa-circle-info"></i></span>
 <button class="btn btn-link p-0 text-cyan roll-icon-btn ms-1" onclick="rollShipFunction('Crypto', 'electronics', 0, this)" title="Roll Crypto (2d10)" type="button"><i class="fa-solid fa-dice"></i></button>
 </div>
 <div class="d-flex align-items-center gap-1 ms-auto flex-shrink-0">

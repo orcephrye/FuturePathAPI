@@ -253,8 +253,69 @@ Crew members take up stations on the bridge to unlock active Ship Functions:
 * **Medical Officer (Medical):** Health maintenance, trauma surgery, and bridge stabilization.
 
 ### Function Categories
-* **Standard Functions (Universal or Position-Based):** Change Position, Shield Manipulation, Weapons Assist, Give Command, Encourage Crew, Boost Attribute, Hack / Counter-Hack, Scan, Fly Offensively/Defensively, Close/Widen Distance, Pursue/Intercept, Ram, Fire, Bombard, Repair.
-* **Advanced Functions (Require Ship Upgrades / Facilities):** Beam (Transporter Bay), Cloak (Cloaking Device), Crypto (Crypto Computer), Jam (Jammer), Sensor Spoofing (Decoy Launcher), Emergency Evasive Thrusters (Engine Boosters), Feint, Grapple (Grappler), Concentrated Fire, Defensive Fire (Fire-Control Matrix), Overclock Core, Resuscitation, Automated Care.
+
+Ship Functions are specialized actions and abilities—similar to Character Skills—performed during combat or operational phases. Standard Functions are available baseline to ships and crew based on their assigned Bridge Position. Advanced Functions require specialized hardware upgrades (consuming a Bay, Hard Point, or Customization Slot) or specific Character Feats.
+
+#### Standard Functions
+Available by default to all ships; activated by crew members occupying the appropriate bridge position (or universal to any console).
+
+* **Universal (All Crew):**
+  * **Change Position (N/A):** Move to a new bridge station/officer role. Takes 1 round (can be rushed with an Acrobatics check DC 10 + conditions). The Captain can instantly take over any station in emergencies.
+  * **Shield Manipulation (Knowledge: Science):** Alter shield frequencies to counter enemy sensors and weapons. Opposes enemy scans to block *Gather Information*, increases the disconnect DC for active hackers, reduces enemy *Scan Weakness* attack bonuses, or cancels enemy attack d10s if the enemy hasn't scanned.
+  * **Weapons Assist (Dexterity, or Int/Wis with Feats):** Any non-Weapons officer rolls an accuracy check against target Tracking DC to convert a failed friendly attack d10 into a success or grant a reroll before weapon rerolls are made.
+* **Captain (Charisma):**
+  * **Give Command (Charisma / Leadership):** Directs and assists an officer (DC 10). Grants +1 (+1 per 4 DC beaten) to that officer's roll, or grants bonus attack pool points / rerolls to the Weapons Officer.
+  * **Encourage Crew (Charisma / Leadership):** Delivers a rallying speech (DC 12 + active officers + round number; 1/combat) granting *Give Command* bonuses to all bridge crew simultaneously (except Weapons).
+* **Science Officer (Electronics):**
+  * **Boost (Electronics):** Diverts Electronics modifier points (DC 10) into Engines, Weapons, Shields, or Sensors for 1–2 rounds (1-turn cooldown per boosted attribute); can also assist another officer's Electronics check without cooldown.
+  * **Hack / Counter-Hack (Electronics & Sensors):** Infiltrates enemy systems across 3 progressive phases (Gain Access, Information Gathering / Disruption, System Harm / Battle Damage) to disable attributes, lock weapon hard points, power down bays, or inflict direct system damage.
+* **Communications / Sensor Officer (Sensors):**
+  * **Scan (Sensors & Wisdom):** Conducts passive sweeps or active scans. In combat: identifies ship weaknesses to add +(1 + Sensors Mod) to weapon attack d10s, fulfills targeting accuracy checks against stealthed vessels, and gathers system intelligence.
+  * **Hack / Counter-Hack (Electronics & Sensors):** Shares cyberwarfare offensive capabilities with the Science Officer (or assists in joint hacking).
+* **Helm Officer (Engines / Pilot):**
+  * **Fly Offensively / Defensively (Tactical Mobility / Pilot):** Opposed Pilot check against a target vessel. Flying Offensively reduces the required d10 successes for friendly Battle Damage by 1 (min 1); Flying Defensively forces the enemy to score 1 additional success to deal Battle Damage.
+  * **Close / Widen Distance (Engines / Pilot):** Opposed Pilot check to shift the combat distance band (Short, Medium, Long, Huge, Vast, Astronomic).
+  * **Pursue / Intercept (Engines / Pilot):** Chase maneuver to close down an evasive craft, cut off its vector, or set up a Ramming attack.
+  * **Ram (Engines):** High-impact collision executed at Short range after a successful intercept. Roll d%: >50% causes Battle Damage to both ships; ≤50% inflicts Battle Damage only on the target vessel (friendly repair DC is fixed at 7).
+* **Weapons Officer (Weapons):**
+  * **Fire (Weapons):** Standard attack action rolling the ship's Battle Pool (1d10 per active hard point) against enemy Battle Damage Defense (BD-DC). Allows rerolls up to the Weapons Modifier and determines damage using the 2d6 Battle Damage Chart.
+  * **Bombard (Weapons):** Concentrates all firepower on a single target, granting a bonus special attack d10 (success on 4+) and rerolling 7s on the Battle Damage chart (weapons suffer 2 turns of cooldown strain).
+* **Chief Engineer (Structure / Craft):**
+  * **Repair (Craft: Structure / Mechanics, Ship Bays):** Emergency field repairs rolling against the Battle Damage repair DC to remove damage and restore disabled ship systems.
+  * **Boost (Engines Only):** Routes auxiliary reactor power (DC 10) to temporarily increase Engine modifier output for 1–2 rounds.
+  * **Counter-Hack (Electronics):** Defensive cyber check opposing an active intruder's roll to detect, trace, and expel enemy hackers from ship networks.
+* **Medical Officer (Medical):**
+  * **Medical (Medical Skill, Medical Bay):** Employs medical equipment to heal crew Hit Points, revive dazed/stunned/unconscious crew, stabilize dying crew members, perform emergency trauma surgery, or treat diseases and toxins.
+
+#### Advanced Functions
+Require dedicated hardware installations (Bays, Hard Points, or Customization Slots) or specialized Character Feats.
+
+* **Universal (All Crew):**
+  * **Beam (Electronics | Transporter Bay):** Dematerializes matter into energy and beams it to/from target coordinates or another vessel (DC 20+ in adverse conditions; transporter pad size scales from Medium to Colossal).
+* **Captain (Charisma):**
+  * **Commanding Presence (Charisma | Character Feat):** Passive command aura granting all non-command crew members a bonus equal to $\lceil\frac{1}{2}\text{Charisma}\rceil$ on rolls for $1 + \text{CHA mod}$ rounds per day.
+  * **Direct Assistance (Charisma):** Captain personally oversees a single bridge station, granting that officer continuous Advantage on all actions and automatic *Give Command* checks each turn.
+* **Science Officer (Electronics):**
+  * **Cloak (Electronics | Cloaking Bay / Hard Point):** Activates stealth fields (Frequency Absorbent, Wave Disrupting, or Hybrid Full Spectrum) to drastically raise the ship's Detection DC against sensors.
+  * **Crypto (Electronics | Crypto Bay / Customization Slot):** Quantum cryptographic array that encrypts friendly comms, deciphers intercepted enemy transmissions, and prevents hackers from eavesdropping on internal channels.
+* **Communications / Sensor Officer (Sensors & Electronics):**
+  * **Sensor Spoofing / Decoy Projection (Sensors / Electronics | Decoy Launcher):** Projects phantom signatures or launches physical chaff decoys, forcing enemy scans/targeting to roll with Disadvantage or granting a 50% chance to divert incoming guided missiles.
+  * **Crypto (Electronics | Crypto Bay / Customization Slot):** Secures fleet communications and cracks hostile ciphers.
+  * **Jam (Electronics | Jammer Hard Point):** Emits electronic countermeasures to blind enemy sensors, scramble comms, shut down hostile drones, abort enemy transporter beams, spoof missile locks, or de-sync active hackers.
+* **Helm Officer (Engines):**
+  * **Emergency Evasive Thrusters (Engines | Aux Thruster Upgrade):** Violent evasive burst (opposed Pilot check by 4+); forces attacker to need 3 additional success d10s and increases Tracking DC, but requires 3 turns of engine cooldown.
+  * **Feint (Engines | Advanced Defensive Flying):** Complex evasive maneuvers granting +4 Tracking DC and forcing attackers to roll 2 additional success d10s (imposes cumulative Disadvantage on subsequent feints in the same battle).
+  * **Grapple (Engines | Grappler Mount / Bay):** Deploys robotic arms, magnetic harpoons, clamps, or tractor beams to latch onto an enemy vessel, denying its Engine bonus to Tracking DC and enabling automatic Ramming.
+* **Weapons Officer (Weapons):**
+  * **Concentrated Fire (Weapons):** Focused targeting on specific enemy subsystems; attack d10s rolling 9–10 count double, and raises maximum subsystem damage from 5 to 7.
+  * **Defensive Fire (Weapons | Point Defense):** Assigns active projectile, laser, or plasma hard points to point defense, rolling 1d10 per dedicated mount to intercept and destroy incoming missiles or small strike craft.
+* **Chief Engineer (Structure / Core):**
+  * **Overclock Core (Structure / Core | Reactor):** Overclocks reactor output (Craft DC $14 + \text{Tech Level}$) to gain 2+ floating attribute bonus points to distribute freely; failure strains the core or blows capacitors.
+  * **Cloak (Electronics | Cloaking Bay / Hard Point):** Regulates core harmonics and power distribution for active cloaking fields.
+  * **Grapple (Engines | Grappler Mount / Bay):** Operates physical winches, magnetic tethers, or tractor beam emitters to capture or position enemy craft.
+* **Medical Officer (Medical):**
+  * **Resuscitation / Life Support (Medical Bay / Facility Class 3+):** Places fallen crew in cryogenic stasis or resuscitates recently deceased personnel (dead $<12$ hours, body $\ge 90\%$ intact) back to life at 1 HP and 1 CON.
+  * **Long / Short Automated Care (Medical Bay / Facility):** Medical bay systems automate intensive therapy, granting continuous natural healing and ability score recovery without requiring manual daily care checks.
 
 ---
 

@@ -868,6 +868,7 @@ function rollDiceExpression(expr) {
 document.addEventListener("DOMContentLoaded", function () {
     loadSavedCardOrder();
     loadLayoutLockState();
+    loadTooltipsVisibilityState();
     loadNotesPrintState();
     applyTheme();
     setupCollapseInteractions();
@@ -1938,6 +1939,7 @@ function recalculateFunctions(engMod, wpnMod, strMod, shdMod, snsMod, elcMod) {
 
     // All Crew Functions (under Shields card)
     updateFunctionTotal("funcTotal_changePosition", [getInputNumberOrNull("funcMisc_changePosition")]);
+    updateFunctionTotal("funcTotal_weaponsAssist", [getInputNumberOrNull("shieldsSkillAcrobaticsDexMod"), getInputNumberOrNull("funcMisc_weaponsAssist")]);
     updateFunctionTotal("funcTotal_beam", [getInputNumberOrNull("funcMisc_beam")]);
     updateFunctionTotal("funcTotal_shieldModulation", [shdMod, getInputNumberOrNull("funcMisc_shieldModulation")]);
 
@@ -2205,7 +2207,8 @@ const shieldsFunctionIdMap = {
     "Beam": "funcTotal_beam",
     "Change Position": "funcTotal_changePosition",
     "Shield Modulation": "funcTotal_shieldModulation",
-    "Shield Modulation / Rebalance": "funcTotal_shieldModulation"
+    "Shield Modulation / Rebalance": "funcTotal_shieldModulation",
+    "Weapons Assist": "funcTotal_weaponsAssist"
 };
 
 let currentRollHelmBreakdown = null;
@@ -2685,6 +2688,24 @@ function rollShipFunction(funcName, attrKey, explicitBonus, btnEl) {
                 skillDie,
                 skillMisc: acroMisc,
                 skillName: "Acrobatics"
+            };
+        } else if (funcName === "Weapons Assist") {
+            const acroDex = getInputNumber("shieldsSkillAcrobaticsDexMod", 0);
+            const miscMod = getInputNumber("funcMisc_weaponsAssist", 0);
+            bonus = acroDex + miscMod;
+
+            explanationHtml = "<div>&bull; <strong>Base Roll:</strong> 2d10 (Explodes on natural 10)</div>" +
+                "<div>&bull; <strong>Key Ability (Dex):</strong> " + formatModifier(acroDex) + "</div>" +
+                "<div>&bull; <strong>Function Misc:</strong> " + formatModifier(miscMod) + "</div>" +
+                "<div>&bull; <strong>Combined Flat Modifier:</strong> " + formatModifier(bonus) + "</div>";
+
+            currentRollShieldsBreakdown = {
+                abilityMod: acroDex,
+                abilityName: "Dex",
+                funcTotal,
+                skillDie: "",
+                skillMisc: 0,
+                skillName: "Weapons Assist"
             };
         } else if (funcName === "Beam") {
             const dieEl = document.getElementById("shieldsSkillKnowledgeScienceDie");
@@ -4128,6 +4149,55 @@ function loadLayoutLockState() {
     }
 }
 
+function toggleTooltipsVisibility() {
+    const isHidden = document.body.classList.toggle("hide-tooltips");
+    const icon = document.getElementById("toggleTooltipsIcon");
+    const text = document.getElementById("toggleTooltipsText");
+    if (icon) {
+        if (isHidden) {
+            icon.className = "fa-regular fa-circle text-muted me-2";
+        } else {
+            icon.className = "fa-solid fa-circle-info text-cyan me-2";
+        }
+    }
+    if (text) {
+        if (isHidden) {
+            text.textContent = "Tooltips Hidden";
+        } else {
+            text.textContent = "Tooltips Visible";
+        }
+    }
+    let state = "true";
+    if (isHidden) {
+        state = "false";
+    }
+    try {
+        localStorage.setItem("ship_tooltips_visible", state);
+    } catch (ignore) {
+        // ignore localStorage error
+    }
+}
+
+function loadTooltipsVisibilityState() {
+    let saved = "true";
+    try {
+        saved = localStorage.getItem("ship_tooltips_visible");
+    } catch (ignore) {
+        saved = "true";
+    }
+    if (saved === "false") {
+        document.body.classList.add("hide-tooltips");
+        const icon = document.getElementById("toggleTooltipsIcon");
+        const text = document.getElementById("toggleTooltipsText");
+        if (icon) {
+            icon.className = "fa-regular fa-circle text-muted me-2";
+        }
+        if (text) {
+            text.textContent = "Tooltips Hidden";
+        }
+    }
+}
+
 function moveCardUp(cardId, event) {
     if (event) {
         event.stopPropagation();
@@ -5451,6 +5521,7 @@ window.setTheme = setTheme;
 window.setupCollapseInteractions = setupCollapseInteractions;
 window.syncSecondaryConfig = syncSecondaryConfig;
 window.toggleCardLayoutLock = toggleCardLayoutLock;
+window.toggleTooltipsVisibility = toggleTooltipsVisibility;
 window.toggleDatalist = toggleDatalist;
 window.toggleLockTheme = toggleLockTheme;
 window.toggleNotesPrintVisibility = toggleNotesPrintVisibility;
