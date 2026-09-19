@@ -110,9 +110,13 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
+
 Hard Point 1: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
+
 Hard Point 2: [[Ship_Equipment#Medium_Weapons|Medium Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Medium Projectile Ammo]])
+
 Hard Point 3: [[Ship_Equipment#Medium_Weapons|Medium Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Medium Laser Crystal]])
+
 Hard Point 4: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Medium Missile Ammo]])
 
 : '''Cost of Hard Point items''': $2,092,400
@@ -120,10 +124,15 @@ Hard Point 4: [[Ship_Equipment#Medium_Weapons|Medium Missile Launcher]] (Ammo: 1
 | valign="top" |
 '''Bay Items''':
 ----
+
 Bay 1: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
+
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Small)]]
+
 Bay 3: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Small)]]
+
 Bay 4: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Small)]]
+
 Bay 5: [[Ship_Equipment#Medical_Bay|Medical Bay]]
 
 : '''Cost of Bay items''': $115,000

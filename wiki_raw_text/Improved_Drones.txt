@@ -110,8 +110,11 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
+
 Hard Point 1: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
+
 Hard Point 2: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
+
 Hard Point 3: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Small Missile Ammo]])
 
 : '''Cost of Hard Point items''': $494,550 ($80,000 Projectile + $3,200 Ammo + $156,250 Laser + $52,000 Crystal + $195,300 Missile + $7,800 Ammo)

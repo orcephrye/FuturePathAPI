@@ -45,25 +45,30 @@
 | ------------------------------------------------------------------------      |   | ------------------------------------------------------------------------    |
 |                                                                               |   |                                                                             |
 | Hard Point 1: [Medium Projectile                                              |   | Bay 1: [Armory                                                              |
-| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   | (Medium)](Ship_Equipment#Armory "Armory (Medium)"){.wikilink} Bay 2: [Cargo |
-| (Ammo: 2 mags of [Medium Projectile                                           |   | Bay (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard   |   | 3: [Passenger Bay                                                           |
-| Point 2: [Medium Projectile                                                   |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink} |
-| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   |                                                                             |
-| (Ammo: 2 mags of [Medium Projectile                                           |   | : **Cost of Bay items**: \$130,000                                          |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard   |   |                                                                             |
-| Point 3: [Medium Projectile                                                   |   |                                                                             |
+| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   | (Medium)](Ship_Equipment#Armory "Armory (Medium)"){.wikilink}               |
+| (Ammo: 2 mags of [Medium Projectile                                           |   |                                                                             |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})        |   | Bay 2: [Cargo Bay                                                           |
+|                                                                               |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}         |
+| Hard Point 2: [Medium Projectile                                              |   |                                                                             |
+| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   | Bay 3: [Passenger Bay                                                       |
+| (Ammo: 2 mags of [Medium Projectile                                           |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink} |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})        |   |                                                                             |
+|                                                                               |   | : **Cost of Bay items**: \$130,000                                          |
+| Hard Point 3: [Medium Projectile                                              |   |                                                                             |
 | Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   |                                                                             |
 | (Ammo: 2 mags of [Medium Projectile                                           |   |                                                                             |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard   |   |                                                                             |
-| Point 4: [Medium                                                              |   |                                                                             |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})        |   |                                                                             |
+|                                                                               |   |                                                                             |
+| Hard Point 4: [Medium                                                         |   |                                                                             |
 | Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   |                                                                             |
 | [Medium Laser                                                                 |   |                                                                             |
 | Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   |                                                                             |
+|                                                                               |   |                                                                             |
 | Hard Point 5: [Medium                                                         |   |                                                                             |
 | Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   |                                                                             |
 | [Medium Laser                                                                 |   |                                                                             |
 | Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   |                                                                             |
+|                                                                               |   |                                                                             |
 | Hard Point 6: [Medium Missile                                                 |   |                                                                             |
 | Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   |                                                                             |
 | (Ammo: 2 mags of [Medium Missile                                              |   |                                                                             |

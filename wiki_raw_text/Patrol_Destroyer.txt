@@ -110,13 +110,21 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
+
 Hard Point 1: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
+
 Hard Point 2: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
+
 Hard Point 3: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
+
 Hard Point 4: [[Ship_Equipment#Small_Weapons|Small Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Small Laser Crystal]])
+
 Hard Point 5: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
+
 Hard Point 6: [[Ship_Equipment#Small_Weapons|Small Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Small Projectile Ammo]])
+
 Hard Point 7: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Small Missile Ammo]])
+
 Hard Point 8: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Small Missile Ammo]])
 
 : '''Cost of Hard Point items''': $1,397,800
@@ -124,7 +132,9 @@ Hard Point 8: [[Ship_Equipment#Small_Weapons|Small Missile Launcher]] (Ammo: 1 m
 | valign="top" |
 '''Bay Items''':
 ----
+
 Bay 1: [[Ship_Equipment#Armory|Armory (Medium)]]
+
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Medium)]]
 
 : '''Cost of Bay items''': $90,000

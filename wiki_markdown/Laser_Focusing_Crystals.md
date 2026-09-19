@@ -15,9 +15,9 @@ amount of space as a missile of the same Weapon size.
 ### Burst Fire Crystals {#burst_fire_crystals}
 
 This reduces laser focus and removes some accuracy, creating a -1 on the
-d10 for any range greater than Small. However, with a Small range, this
-gains a +1. When used as Point Defense/Flak, the Laser takes no penalty
-and can explode on 9-10s.
+d10 for any range greater than Small. However, at Small range, this
+grants a +1. When used as Point Defense/Flak/Swarm fire, the Laser gains
+exploded on 9-10s.
 
 Cost
 : \$50k for Small, \$150k for Medium, \$450k for Large, \$1350k for Huge
@@ -26,8 +26,8 @@ Cost
 ### Shield Piecing Crystals {#shield_piecing_crystals}
 
 This grants a +1 for every 2 Shield Mod the target ship has. However,
-this doesn\'t stack with the Sensor bonus. This helps whenever a Sensor
-[Scan](Scan "Scan"){.wikilink} failed.
+this doesn\'t stack with the Sensor bonus. This doesn\'t stack with the
+Sensor [Scan](Scan "Scan"){.wikilink} bonus.
 
 Cost
 : \$50k for Small, \$150k for Medium, \$450k for Large, \$1350k for Huge

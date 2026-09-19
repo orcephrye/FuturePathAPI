@@ -48,11 +48,13 @@
 | Laser](Ship_Equipment#Small_Weapons "Small Laser"){.wikilink} (Focuses: 1  |   |                                                                          |
 | [Small Laser                                                               |   | : **Cost of Bay items**: \$0                                             |
 | Crystal](Ship_Equipment#Laser_Crystals "Small Laser Crystal"){.wikilink})  |   |                                                                          |
+|                                                                            |   |                                                                          |
 | Hard Point 2: [Small Projectile                                            |   |                                                                          |
 | Weapon](Ship_Equipment#Small_Weapons "Small Projectile Weapon"){.wikilink} |   |                                                                          |
 | (Ammo: 2 mags of [Small Projectile                                         |   |                                                                          |
-| Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink}) Hard |   |                                                                          |
-| Point 3: [Small Projectile                                                 |   |                                                                          |
+| Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink})      |   |                                                                          |
+|                                                                            |   |                                                                          |
+| Hard Point 3: [Small Projectile                                            |   |                                                                          |
 | Weapon](Ship_Equipment#Small_Weapons "Small Projectile Weapon"){.wikilink} |   |                                                                          |
 | (Ammo: 2 mags of [Small Projectile                                         |   |                                                                          |
 | Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink})      |   |                                                                          |

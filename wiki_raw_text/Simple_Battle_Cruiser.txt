@@ -110,13 +110,21 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
+
 Hard Point 1: [[Ship_Accessories#Phase_Discriminator|Phase Discriminator]] (Non-Weapon Hard Point)
+
 Hard Point 2: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
+
 Hard Point 3: [[Ship_Equipment#Large_Weapons|Large Projectile Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Projectiles|Large Projectile Ammo]])
+
 Hard Point 4: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
+
 Hard Point 5: [[Ship_Equipment#Large_Weapons|Large Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Large Laser Crystal]])
+
 Hard Point 6: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Plasma|Large Plasma Ammo]])
+
 Hard Point 7: [[Ship_Equipment#Large_Weapons|Large Plasma Weapon]] (Ammo: 2 mags of [[Ship_Equipment#Plasma|Large Plasma Ammo]])
+
 Hard Point 8: [[Ship_Equipment#Large_Weapons|Large Missile Launcher]] (Ammo: 1 mag of [[Ship_Equipment#Missiles|Large Missile Ammo]])
 
 : '''Cost of Hard Point items''': $14,566,600
@@ -124,9 +132,13 @@ Hard Point 8: [[Ship_Equipment#Large_Weapons|Large Missile Launcher]] (Ammo: 1 m
 | valign="top" |
 '''Bay Items''':
 ----
+
 Bay 1: [[Ship_Equipment#Medical_Bay|Medical Bay]]
+
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Large)]]
+
 Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Large)]]
+
 Bay 4: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
 
 : '''Cost of Bay items''': $215,000

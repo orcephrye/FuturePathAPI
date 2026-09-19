@@ -45,34 +45,41 @@
 | ------------------------------------------------------------------------  |   | ------------------------------------------------------------------------        |
 |                                                                           |   |                                                                                 |
 | Hard Point 1: [Huge                                                       |   | Bay 1: [Medical                                                                 |
-| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   | Facility](Ship_Equipment#Medical_Bay "Medical Facility"){.wikilink} Bay 2:      |
-| [Huge Laser                                                               |   | [Cargo Bay                                                                      |
-| Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   | (Colossal)](Ship_Equipment#Cargo_Bay "Cargo Bay (Colossal)"){.wikilink} Bay 3:  |
-| Hard Point 2: [Huge Projectile                                            |   | [Cargo Bay                                                                      |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | (Colossal)](Ship_Equipment#Cargo_Bay "Cargo Bay (Colossal)"){.wikilink} Bay 4:  |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | [Cargo Bay                                                                      |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | (Colossal)](Ship_Equipment#Cargo_Bay "Cargo Bay (Colossal)"){.wikilink} Bay 5:  |
-| Point 3: [Huge Projectile                                                 |   | [Passenger Bay                                                                  |
+| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   | Facility](Ship_Equipment#Medical_Bay "Medical Facility"){.wikilink}             |
+| [Huge Laser                                                               |   |                                                                                 |
+| Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   | Bay 2: [Cargo Bay                                                               |
+|                                                                           |   | (Colossal)](Ship_Equipment#Cargo_Bay "Cargo Bay (Colossal)"){.wikilink}         |
+| Hard Point 2: [Huge Projectile                                            |   |                                                                                 |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay 3: [Cargo Bay                                                               |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | (Colossal)](Ship_Equipment#Cargo_Bay "Cargo Bay (Colossal)"){.wikilink}         |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})      |   |                                                                                 |
+|                                                                           |   | Bay 4: [Cargo Bay                                                               |
+| Hard Point 3: [Huge Projectile                                            |   | (Colossal)](Ship_Equipment#Cargo_Bay "Cargo Bay (Colossal)"){.wikilink}         |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   |                                                                                 |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay 5: [Passenger Bay                                                           |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})      |   | (Colossal)](Ship_Equipment#Passenger_Bay "Passenger Bay (Colossal)"){.wikilink} |
+|                                                                           |   |                                                                                 |
+| Hard Point 4: [Huge Projectile                                            |   | Bay 6: [Passenger Bay                                                           |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | (Colossal)](Ship_Equipment#Passenger_Bay "Passenger Bay (Colossal)"){.wikilink} |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay 6: [Passenger Bay                                                           |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | (Colossal)](Ship_Equipment#Passenger_Bay "Passenger Bay (Colossal)"){.wikilink} |
-| Point 4: [Huge Projectile                                                 |   | Bay 7: [Docking Bay                                                             |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | (Colossal)](Ship_Equipment#Docking_Bay "Docking Bay (Colossal)"){.wikilink} Bay |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | 8: [Engineering                                                                 |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | Facility](Ship_Equipment#Engineering_Bay "Engineering Facility"){.wikilink} Bay |
-| Point 5: [Huge                                                            |   | 9: [Armory (Colossal)](Ship_Equipment#Armory "Armory (Colossal)"){.wikilink}    |
+| (Ammo: 1 mag of [Huge Projectile                                          |   |                                                                                 |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})      |   | Bay 7: [Docking Bay                                                             |
+|                                                                           |   | (Colossal)](Ship_Equipment#Docking_Bay "Docking Bay (Colossal)"){.wikilink}     |
+| Hard Point 5: [Huge                                                       |   |                                                                                 |
+| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   | Bay 8: [Engineering                                                             |
+| [Huge Laser                                                               |   | Facility](Ship_Equipment#Engineering_Bay "Engineering Facility"){.wikilink}     |
+| Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                                 |
+|                                                                           |   | Bay 9: [Armory                                                                  |
+| Hard Point 6: [Huge                                                       |   | (Colossal)](Ship_Equipment#Armory "Armory (Colossal)"){.wikilink}               |
 | Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                                 |
 | [Huge Laser                                                               |   | : **Cost of Bay items**: \$5,320,000                                            |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                                 |
-| Hard Point 6: [Huge                                                       |   |                                                                                 |
-| Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                                 |
-| [Huge Laser                                                               |   |                                                                                 |
-| Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                                 |
+|                                                                           |   |                                                                                 |
 | Hard Point 7: [Huge Plasma                                                |   |                                                                                 |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Plasma Weapon"){.wikilink}      |   |                                                                                 |
 | (Ammo: 1 mag of [Huge Plasma                                              |   |                                                                                 |
-| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 8: |   |                                                                                 |
-| [Huge Missile                                                             |   |                                                                                 |
+| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink})               |   |                                                                                 |
+|                                                                           |   |                                                                                 |
+| Hard Point 8: [Huge Missile                                               |   |                                                                                 |
 | Launcher](Ship_Equipment#Huge_Weapons "Huge Missile Launcher"){.wikilink} |   |                                                                                 |
 | (Ammo: 1 mag of [Huge Missile                                             |   |                                                                                 |
 | Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink})            |   |                                                                                 |

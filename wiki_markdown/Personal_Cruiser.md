@@ -44,18 +44,22 @@
 |                                                                               |   |                                                                               |
 | ------------------------------------------------------------------------      |   | ------------------------------------------------------------------------      |
 |                                                                               |   |                                                                               |
-| Hard Point 1: [Medium Projectile                                              |   | Bay 1: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink} Bay |
-| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   | 2: [Cargo Bay                                                                 |
-| (Ammo: 2 mags of [Medium Projectile                                           |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay 3:    |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard   |   | [Passenger Bay                                                                |
-| Point 2: [Medium                                                              |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink}   |
-| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   | Bay 4: [Passenger Bay                                                         |
-| [Medium Laser                                                                 |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink}   |
-| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   | Bay 5: [Recreation Bay                                                        |
-| Hard Point 3: [Medium Missile                                                 |   | (Medium)](Ship_Equipment#Recreation_Bay "Recreation Bay (Medium)"){.wikilink} |
-| Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   | Bay 6: [Engineering                                                           |
-| (Ammo: 1 mag of [Medium Missile                                               |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}             |
+| Hard Point 1: [Medium Projectile                                              |   | Bay 1: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}     |
+| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   |                                                                               |
+| (Ammo: 2 mags of [Medium Projectile                                           |   | Bay 2: [Cargo Bay                                                             |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})        |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}           |
+|                                                                               |   |                                                                               |
+| Hard Point 2: [Medium                                                         |   | Bay 3: [Passenger Bay                                                         |
+| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink}   |
+| [Medium Laser                                                                 |   |                                                                               |
+| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   | Bay 4: [Passenger Bay                                                         |
+|                                                                               |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink}   |
+| Hard Point 3: [Medium Missile                                                 |   |                                                                               |
+| Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   | Bay 5: [Recreation Bay                                                        |
+| (Ammo: 1 mag of [Medium Missile                                               |   | (Medium)](Ship_Equipment#Recreation_Bay "Recreation Bay (Medium)"){.wikilink} |
 | Ammo](Ship_Equipment#Missiles "Medium Missile Ammo"){.wikilink})              |   |                                                                               |
+|                                                                               |   | Bay 6: [Engineering                                                           |
+| : **Cost of Hard Point items**: \$1,772,400                                   |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}             |
+|                                                                               |   |                                                                               |
 |                                                                               |   | : **Cost of Bay items**: \$205,000                                            |
-| : **Cost of Hard Point items**: \$1,772,400                                   |   |                                                                               |
 +-------------------------------------------------------------------------------+---+-------------------------------------------------------------------------------+

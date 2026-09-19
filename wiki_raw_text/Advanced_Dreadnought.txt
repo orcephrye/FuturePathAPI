@@ -110,10 +110,15 @@
 | valign="top" |
 '''Hard Point Items''':
 ----
+
 Hard Point 1: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+
 Hard Point 2: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+
 Hard Point 3: [[Ship_Equipment#Huge_Weapons|Huge Projectile Weapon]] (Ammo: 1 mag of [[Ship_Equipment#Projectiles|Huge Projectile Ammo]])
+
 Hard Point 4: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
+
 Hard Point 5: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equipment#Laser_Crystals|Huge Laser Crystal]])
 
 : '''Cost of Hard Point items''': $24,653,900
@@ -121,9 +126,13 @@ Hard Point 5: [[Ship_Equipment#Huge_Weapons|Huge Laser]] (Focuses: 1 [[Ship_Equi
 | valign="top" |
 '''Bay Items''':
 ----
+
 Bay 1: [[Ship_Equipment#Engineering_Bay|Engineering Bay]]
+
 Bay 2: [[Ship_Equipment#Cargo_Bay|Cargo Bay (Gargantuan)]]
+
 Bay 3: [[Ship_Equipment#Passenger_Bay|Passenger Bay (Gargantuan)]]
+
 Bay 4: [[Ship_Equipment#Medical_Bay|Medical Bay]]
 
 : '''Cost of Bay items''': $695,000

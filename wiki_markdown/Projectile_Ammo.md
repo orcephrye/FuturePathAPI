@@ -5,11 +5,7 @@ Ships themselves go [here](Space_Ships "here"){.wikilink}.
 
 ### Explosive Rounds {#explosive_rounds}
 
-This grants the **Explode** attribute to the Projectile weapon. This
-means any d10 that lands on a natural 10 can automatically and
-immediately be re-rolled to determine if it counts as two successful
-hits instead of one. This happens before re-rolls associated with the
-Weapon\'s mod.
+This grants the **Explode** attribute to the Projectile weapon 10s.
 
 Cost
 : This doubles the cost.

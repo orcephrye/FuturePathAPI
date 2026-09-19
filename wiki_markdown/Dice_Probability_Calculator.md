@@ -3,6 +3,11 @@
 <div id="dc-calc-widget">
 </div>
 
+## Space Ship Combat Battle Damage DC Calculator {#space_ship_combat_battle_damage_dc_calculator}
+
+<div id="spaceship-damage-calc-widget">
+</div>
+
 ## Classic D20 vs Advantage Die Probability {#classic_d20_vs_advantage_die_probability}
 
 This uses classic level progression in d20, which provides a +1 for

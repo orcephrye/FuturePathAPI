@@ -45,20 +45,23 @@
 | ------------------------------------------------------------------------     |   | ------------------------------------------------------------------------    |
 |                                                                              |   |                                                                             |
 | Hard Point 1: [Medium                                                        |   | Bay 1: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}   |
-| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1  |   | Bay 2: [Cargo Bay                                                           |
-| [Medium Laser                                                                |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay 3:  |
-| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})   |   | [Cargo Bay                                                                  |
-| Hard Point 2: [Medium Projectile                                             |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay 4:  |
-| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink} |   | [Passenger Bay                                                              |
-| (Ammo: 2 mags of [Medium Projectile                                          |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink} |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard  |   | Bay 5: [Engineering Bay (Level                                              |
-| Point 3: [Medium Projectile                                                  |   | 1)](Ship_Equipment#Engineering_Bay "Engineering Bay (Level 1)"){.wikilink}  |
-| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink} |   | Bay 6: [Science Bay (Level                                                  |
-| (Ammo: 2 mags of [Medium Projectile                                          |   | 1)](Ship_Equipment#Science_Bay "Science Bay (Level 1)"){.wikilink}          |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard  |   |                                                                             |
-| Point 4: [Medium                                                             |   | : **Cost of Bay items**: \$190,000                                          |
 | Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1  |   |                                                                             |
-| [Medium Laser                                                                |   |                                                                             |
+| [Medium Laser                                                                |   | Bay 2: [Cargo Bay                                                           |
+| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})   |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}         |
+|                                                                              |   |                                                                             |
+| Hard Point 2: [Medium Projectile                                             |   | Bay 3: [Cargo Bay                                                           |
+| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink} |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}         |
+| (Ammo: 2 mags of [Medium Projectile                                          |   |                                                                             |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})       |   | Bay 4: [Passenger Bay                                                       |
+|                                                                              |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink} |
+| Hard Point 3: [Medium Projectile                                             |   |                                                                             |
+| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink} |   | Bay 5: [Engineering Bay (Level                                              |
+| (Ammo: 2 mags of [Medium Projectile                                          |   | 1)](Ship_Equipment#Engineering_Bay "Engineering Bay (Level 1)"){.wikilink}  |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})       |   |                                                                             |
+|                                                                              |   | Bay 6: [Science Bay (Level                                                  |
+| Hard Point 4: [Medium                                                        |   | 1)](Ship_Equipment#Science_Bay "Science Bay (Level 1)"){.wikilink}          |
+| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1  |   |                                                                             |
+| [Medium Laser                                                                |   | : **Cost of Bay items**: \$190,000                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})   |   |                                                                             |
 |                                                                              |   |                                                                             |
 | : **Cost of Hard Point items**: \$2,332,300                                  |   |                                                                             |

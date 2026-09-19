@@ -91,6 +91,15 @@ Check against the Target\'s Detection DC and a Scan for Weakness is
 against the target\'s Tracking DC. If the Accuracy check fails, then the
 Weapon\'s Officer cannot attempt an attack against that target.
 
+### Exploding
+
+Exploding in d10s is different than normal character-based combat. If a
+weapon grants the Exploding attribute to its d10, then if that d10 lands
+on a natural 10, or the exploding range specified, the Player can add a
+fresh d10 to the Battle Pool before re-rolls are applied. This new die
+cannot explode, as exploding normally doesn\'t re-explode unless
+specified otherwise.
+
 ### Criticals
 
 A Sensor Scan can have a critical success. This is determined using the

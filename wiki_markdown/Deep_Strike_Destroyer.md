@@ -45,34 +45,41 @@
 | ------------------------------------------------------------------------    |   | ------------------------------------------------------------------------ |
 |                                                                             |   |                                                                          |
 | Hard Point 1: [Small                                                        |   | Bay 1: [Armory                                                           |
-| Laser](Ship_Equipment#Small_Weapons "Small Laser"){.wikilink} (Focuses: 1   |   | (Medium)](Ship_Equipment#Armory "Armory (Medium)"){.wikilink} Bay 2:     |
-| [Small Laser                                                                |   | [Cargo Bay                                                               |
-| Crystal](Ship_Equipment#Laser_Crystals "Small Laser Crystal"){.wikilink})   |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}      |
+| Laser](Ship_Equipment#Small_Weapons "Small Laser"){.wikilink} (Focuses: 1   |   | (Medium)](Ship_Equipment#Armory "Armory (Medium)"){.wikilink}            |
+| [Small Laser                                                                |   |                                                                          |
+| Crystal](Ship_Equipment#Laser_Crystals "Small Laser Crystal"){.wikilink})   |   | Bay 2: [Cargo Bay                                                        |
+|                                                                             |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}      |
 | Hard Point 2: [Small                                                        |   |                                                                          |
 | Laser](Ship_Equipment#Small_Weapons "Small Laser"){.wikilink} (Focuses: 1   |   | : **Cost of Bay items**: \$90,000                                        |
 | [Small Laser                                                                |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Small Laser Crystal"){.wikilink})   |   |                                                                          |
+|                                                                             |   |                                                                          |
 | Hard Point 3: [Small                                                        |   |                                                                          |
 | Laser](Ship_Equipment#Small_Weapons "Small Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Small Laser                                                                |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Small Laser Crystal"){.wikilink})   |   |                                                                          |
+|                                                                             |   |                                                                          |
 | Hard Point 4: [Small                                                        |   |                                                                          |
 | Laser](Ship_Equipment#Small_Weapons "Small Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Small Laser                                                                |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Small Laser Crystal"){.wikilink})   |   |                                                                          |
+|                                                                             |   |                                                                          |
 | Hard Point 5: [Small Projectile                                             |   |                                                                          |
 | Weapon](Ship_Equipment#Small_Weapons "Small Projectile Weapon"){.wikilink}  |   |                                                                          |
 | (Ammo: 2 mags of [Small Projectile                                          |   |                                                                          |
-| Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink}) Hard  |   |                                                                          |
-| Point 6: [Small Projectile                                                  |   |                                                                          |
+| Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink})       |   |                                                                          |
+|                                                                             |   |                                                                          |
+| Hard Point 6: [Small Projectile                                             |   |                                                                          |
 | Weapon](Ship_Equipment#Small_Weapons "Small Projectile Weapon"){.wikilink}  |   |                                                                          |
 | (Ammo: 2 mags of [Small Projectile                                          |   |                                                                          |
-| Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink}) Hard  |   |                                                                          |
-| Point 7: [Small Missile                                                     |   |                                                                          |
+| Ammo](Ship_Equipment#Projectiles "Small Projectile Ammo"){.wikilink})       |   |                                                                          |
+|                                                                             |   |                                                                          |
+| Hard Point 7: [Small Missile                                                |   |                                                                          |
 | Launcher](Ship_Equipment#Small_Weapons "Small Missile Launcher"){.wikilink} |   |                                                                          |
 | (Ammo: 1 mag of [Small Missile                                              |   |                                                                          |
-| Ammo](Ship_Equipment#Missiles "Small Missile Ammo"){.wikilink}) Hard Point  |   |                                                                          |
-| 8: [Small Missile                                                           |   |                                                                          |
+| Ammo](Ship_Equipment#Missiles "Small Missile Ammo"){.wikilink})             |   |                                                                          |
+|                                                                             |   |                                                                          |
+| Hard Point 8: [Small Missile                                                |   |                                                                          |
 | Launcher](Ship_Equipment#Small_Weapons "Small Missile Launcher"){.wikilink} |   |                                                                          |
 | (Ammo: 1 mag of [Small Missile                                              |   |                                                                          |
 | Ammo](Ship_Equipment#Missiles "Small Missile Ammo"){.wikilink})             |   |                                                                          |

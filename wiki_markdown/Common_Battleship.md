@@ -45,38 +45,46 @@
 | ------------------------------------------------------------------------  |   | ------------------------------------------------------------------------ |
 |                                                                           |   |                                                                          |
 | Hard Point 1: [Huge Projectile                                            |   | Bay 1: [Medical                                                          |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink} Bay 2: [Cargo  |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay (Huge)](Ship_Equipment#Cargo_Bay "Cargo Bay (Huge)"){.wikilink} Bay  |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | 3: [Passenger Bay                                                        |
-| Point 2: [Huge Projectile                                                 |   | (Huge)](Ship_Equipment#Passenger_Bay "Passenger Bay (Huge)"){.wikilink}  |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay 4: [Engineering                                                      |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 5: |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   | [Industrial                                                              |
-| Point 3: [Huge Projectile                                                 |   | Bay](Ship_Equipment#Industrial_Bay "Industrial Bay"){.wikilink}          |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}                |
+| (Ammo: 1 mag of [Huge Projectile                                          |   |                                                                          |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})      |   | Bay 2: [Cargo Bay                                                        |
+|                                                                           |   | (Huge)](Ship_Equipment#Cargo_Bay "Cargo Bay (Huge)"){.wikilink}          |
+| Hard Point 2: [Huge Projectile                                            |   |                                                                          |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   | Bay 3: [Passenger Bay                                                    |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | (Huge)](Ship_Equipment#Passenger_Bay "Passenger Bay (Huge)"){.wikilink}  |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})      |   |                                                                          |
+|                                                                           |   | Bay 4: [Engineering                                                      |
+| Hard Point 3: [Huge Projectile                                            |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}        |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink}  |   |                                                                          |
-| (Ammo: 1 mag of [Huge Projectile                                          |   | : **Cost of Bay items**: \$390,000                                       |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink}) Hard |   |                                                                          |
-| Point 4: [Huge                                                            |   |                                                                          |
+| (Ammo: 1 mag of [Huge Projectile                                          |   | Bay 5: [Industrial                                                       |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})      |   | Bay](Ship_Equipment#Industrial_Bay "Industrial Bay"){.wikilink}          |
+|                                                                           |   |                                                                          |
+| Hard Point 4: [Huge                                                       |   | : **Cost of Bay items**: \$390,000                                       |
 | Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Huge Laser                                                               |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                          |
+|                                                                           |   |                                                                          |
 | Hard Point 5: [Huge                                                       |   |                                                                          |
 | Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
 | [Huge Laser                                                               |   |                                                                          |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink})  |   |                                                                          |
+|                                                                           |   |                                                                          |
 | Hard Point 6: [Huge Plasma                                                |   |                                                                          |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Plasma Weapon"){.wikilink}      |   |                                                                          |
 | (Ammo: 1 mag of [Huge Plasma                                              |   |                                                                          |
-| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 7: |   |                                                                          |
-| [Huge Plasma                                                              |   |                                                                          |
+| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink})               |   |                                                                          |
+|                                                                           |   |                                                                          |
+| Hard Point 7: [Huge Plasma                                                |   |                                                                          |
 | Weapon](Ship_Equipment#Huge_Weapons "Huge Plasma Weapon"){.wikilink}      |   |                                                                          |
 | (Ammo: 1 mag of [Huge Plasma                                              |   |                                                                          |
-| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink}) Hard Point 8: |   |                                                                          |
-| [Huge Missile                                                             |   |                                                                          |
+| Ammo](Ship_Equipment#Plasma "Huge Plasma Ammo"){.wikilink})               |   |                                                                          |
+|                                                                           |   |                                                                          |
+| Hard Point 8: [Huge Missile                                               |   |                                                                          |
 | Launcher](Ship_Equipment#Huge_Weapons "Huge Missile Launcher"){.wikilink} |   |                                                                          |
 | (Ammo: 1 mag of [Huge Missile                                             |   |                                                                          |
-| Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink}) Hard Point |   |                                                                          |
-| 9: [Huge Missile                                                          |   |                                                                          |
+| Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink})            |   |                                                                          |
+|                                                                           |   |                                                                          |
+| Hard Point 9: [Huge Missile                                               |   |                                                                          |
 | Launcher](Ship_Equipment#Huge_Weapons "Huge Missile Launcher"){.wikilink} |   |                                                                          |
 | (Ammo: 1 mag of [Huge Missile                                             |   |                                                                          |
 | Ammo](Ship_Equipment#Missiles "Huge Missile Ammo"){.wikilink})            |   |                                                                          |

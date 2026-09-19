@@ -8,7 +8,7 @@ and much more. For now it is limited to dice rolling. And is utilized by an HTML
 ## Tech Stack
 * Python with Flask
 * gunicorn is used for hosting the API entrypoint.
-* This project has a pyproject.toml fille and a requirements.txt files.
+* This project has a pyproject.toml file and a requirements.txt files.
 
 ## Project Structure
 * The API/Flask code is located in the directory 'FuturePathAPI'

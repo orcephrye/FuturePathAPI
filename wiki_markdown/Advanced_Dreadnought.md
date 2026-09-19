@@ -45,21 +45,25 @@
 | ------------------------------------------------------------------------ |   | ------------------------------------------------------------------------            |
 |                                                                          |   |                                                                                     |
 | Hard Point 1: [Huge Projectile                                           |   | Bay 1: [Engineering                                                                 |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink} |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 2: [Cargo Bay |
-| (Ammo: 1 mag of [Huge Projectile                                         |   | (Gargantuan)](Ship_Equipment#Cargo_Bay "Cargo Bay (Gargantuan)"){.wikilink} Bay 3:  |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})     |   | [Passenger Bay                                                                      |
-| Hard Point 2: [Huge Projectile                                           |   | (Gargantuan)](Ship_Equipment#Passenger_Bay "Passenger Bay (Gargantuan)"){.wikilink} |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink} |   | Bay 4: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}           |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink} |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}                   |
 | (Ammo: 1 mag of [Huge Projectile                                         |   |                                                                                     |
-| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})     |   | : **Cost of Bay items**: \$695,000                                                  |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})     |   | Bay 2: [Cargo Bay                                                                   |
+|                                                                          |   | (Gargantuan)](Ship_Equipment#Cargo_Bay "Cargo Bay (Gargantuan)"){.wikilink}         |
+| Hard Point 2: [Huge Projectile                                           |   |                                                                                     |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink} |   | Bay 3: [Passenger Bay                                                               |
+| (Ammo: 1 mag of [Huge Projectile                                         |   | (Gargantuan)](Ship_Equipment#Passenger_Bay "Passenger Bay (Gargantuan)"){.wikilink} |
+| Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})     |   |                                                                                     |
+|                                                                          |   | Bay 4: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}           |
 | Hard Point 3: [Huge Projectile                                           |   |                                                                                     |
-| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink} |   |                                                                                     |
+| Weapon](Ship_Equipment#Huge_Weapons "Huge Projectile Weapon"){.wikilink} |   | : **Cost of Bay items**: \$695,000                                                  |
 | (Ammo: 1 mag of [Huge Projectile                                         |   |                                                                                     |
 | Ammo](Ship_Equipment#Projectiles "Huge Projectile Ammo"){.wikilink})     |   |                                                                                     |
+|                                                                          |   |                                                                                     |
 | Hard Point 4: [Huge                                                      |   |                                                                                     |
 | Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1  |   |                                                                                     |
 | [Huge Laser                                                              |   |                                                                                     |
 | Crystal](Ship_Equipment#Laser_Crystals "Huge Laser Crystal"){.wikilink}) |   |                                                                                     |
+|                                                                          |   |                                                                                     |
 | Hard Point 5: [Huge                                                      |   |                                                                                     |
 | Laser](Ship_Equipment#Huge_Weapons "Huge Laser"){.wikilink} (Focuses: 1  |   |                                                                                     |
 | [Huge Laser                                                              |   |                                                                                     |

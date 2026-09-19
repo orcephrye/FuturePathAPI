@@ -82,15 +82,24 @@ Ship Weapons fit onto a Ship's Hard Points. There are 4 different types of Weapo
 ::* Class 4 exploding effect on both 9,10 rolls.
 ::* Class 5 re-roll both 1s and 2s.
 
-; Missile: Considered to be the most flexible and desirable weapon system of all civilizations. Missiles Racks/Turrets can be reloaded to fire different styles of missiles depending on the needs of the battlefield. They are not as powerful as Plasma weapons or as far-reaching as a Projectile, but their flexibility is most coveted on the field. Their stats are largely dependent on the type of missile loaded into the Rack/Turret.
+; Missile: Considered to be the most flexible and desirable weapon system of all civilizations. Missile Racks/Turrets can be reloaded to fire different styles of missiles depending on the needs of the battlefield. You can have multiple types of Missiles loaded at the same time in the same missile turret. They are not as powerful as Plasma weapons or as far-reaching as a Projectile, but their flexibility is most coveted on the field. Their stats are largely dependent on the type of missile loaded into the Rack/Turret.
 :: '''Range''': Ammo Dependent
 :: '''Standard Ammo Capacity''': 3
-:: '''Bonus''':Ammo Dependent
+:: '''Bonus''': Ammo Dependent
 :: '''Class Bonus''':
 ::* Every even Classification gain +1 to Ammo Capacity (per launcher rack).
 ::* Class 1 gain +1 to d10s against ships two sizes smaller.
 ::* Class 3 gain +1 to d10s against Swarms.
 ::* Class 5 gain Burst Fire Function.
+
+; Point Defense: A type of Hard Point that defends against different types of attacks. It can also act as an offensive weapon against targets larger than 2 sizes, smaller than 2 sizes, or against a Swarm. The d10s from a Point Defense system form their own Battle Pool separate from other weapons.
+:: '''Range''': Small <with the exception of Projectile type>
+:: '''Standard Ammo Capacity''': 3
+:: '''Bonus''': Ammo-dependent specific rules and the Ability to remove d10s from the oppotents Battle Pool
+:: '''Class Bonuses''': Ammo Dependent rules.
+::* '''Ammo Missle Based''': This is the most popular point defense system. These use the [[Missile_Ammo#Defense_Missiles|Defensive Missiles]], which take up 1/3rd of storage space. So a Classification I Missile Point Defense system can hold 9 missiles and can fire up to 3 at a time. The range is Short and can only be used to counter an enemies Missiles. It can also be used to hit Swarms. If used to target a Swarm, the missiles gain the '''Exploding''' attribute. Class 2 adds 1 more Ammo Capacity, which allows for 3 more defensive missiles. Class 3 lets the Missile Point defense fire 4 missiles instead. Class 4 grants '''Exploding''' attribute to all valid targets not just Swarms. Class 5 grants 1 more Ammo Capacity.
+::* '''Ammo Projectile Base''': This ammo takes up 1/2 the space, so a Classification I Projectile Point Defense system can hold 6 rounds and can fire 1 at a time. Its range is infinite, and it can try to counter Missiles fired at any range, including astronomical. It gets two tries. Once, when the Missile is fired from a Huge or larger distance, it gets a -2 to the d10, and another attempt when the range is Small to Large without modifying the d10s. Projectiles are also the only Point Defense System that can counter other Projectiles if they are fired from a Huge or larger distance. If used against ships 2 sizes or smaller, or firing into a Swarm, gain a -1 to the d10s. Class 2 adds 1 more Ammo Capacity. Class 3 lets the point defense fire 2 rounds instead of 1. Class 4 reduces the - penalty to d10s by 1. Class 5 adds 1 more Ammo Capacity.
+::* '''Ammo Laser Based''': This is the most relable point defense system. The Laser is considered Small and can fire only once per round, and only at targets within Small Range. The Laser rolls 2d10 and takes the highest. Each Classification improves the laser. Class 2 gains +1 to the top die. Class 3 lets the Player roll 3d10 and take the highest. Class 4 lets the Player re-roll 1s, and Class 5 adds +2 to the top die.
 
 === Ammo ===
 {| class="wikitable" style="float:right; margin-right: 10px;"

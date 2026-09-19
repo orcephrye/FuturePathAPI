@@ -45,22 +45,26 @@
 | ------------------------------------------------------------------------    |   | ------------------------------------------------------------------------   |
 |                                                                             |   |                                                                            |
 | Hard Point 1: [Large Projectile                                             |   | Bay 1: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}  |
-| Weapon](Ship_Equipment#Large_Weapons "Large Projectile Weapon"){.wikilink}  |   | Bay 2: [Cargo Bay                                                          |
-| (Ammo: 1 mag of [Large Projectile                                           |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink} Bay 3:   |
-| Ammo](Ship_Equipment#Projectiles "Large Projectile Ammo"){.wikilink}) Hard  |   | [Cargo Bay                                                                 |
-| Point 2: [Large Projectile                                                  |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink} Bay 4:   |
-| Weapon](Ship_Equipment#Large_Weapons "Large Projectile Weapon"){.wikilink}  |   | [Passenger Bay                                                             |
-| (Ammo: 1 mag of [Large Projectile                                           |   | (Large)](Ship_Equipment#Passenger_Bay "Passenger Bay (Large)"){.wikilink}  |
-| Ammo](Ship_Equipment#Projectiles "Large Projectile Ammo"){.wikilink}) Hard  |   | Bay 5: [Passenger Bay                                                      |
-| Point 3: [Large                                                             |   | (Large)](Ship_Equipment#Passenger_Bay "Passenger Bay (Large)"){.wikilink}  |
-| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   | Bay 6: [Engineering Bay (Level                                             |
-| [Large Laser                                                                |   | 1)](Ship_Equipment#Engineering_Bay "Engineering Bay (Level 1)"){.wikilink} |
-| Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   | Bay 7: [Science Bay (Level                                                 |
-| Hard Point 4: [Large Plasma                                                 |   | 1)](Ship_Equipment#Science_Bay "Science Bay (Level 1)"){.wikilink}         |
+| Weapon](Ship_Equipment#Large_Weapons "Large Projectile Weapon"){.wikilink}  |   |                                                                            |
+| (Ammo: 1 mag of [Large Projectile                                           |   | Bay 2: [Cargo Bay                                                          |
+| Ammo](Ship_Equipment#Projectiles "Large Projectile Ammo"){.wikilink})       |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink}          |
+|                                                                             |   |                                                                            |
+| Hard Point 2: [Large Projectile                                             |   | Bay 3: [Cargo Bay                                                          |
+| Weapon](Ship_Equipment#Large_Weapons "Large Projectile Weapon"){.wikilink}  |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink}          |
+| (Ammo: 1 mag of [Large Projectile                                           |   |                                                                            |
+| Ammo](Ship_Equipment#Projectiles "Large Projectile Ammo"){.wikilink})       |   | Bay 4: [Passenger Bay                                                      |
+|                                                                             |   | (Large)](Ship_Equipment#Passenger_Bay "Passenger Bay (Large)"){.wikilink}  |
+| Hard Point 3: [Large                                                        |   |                                                                            |
+| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   | Bay 5: [Passenger Bay                                                      |
+| [Large Laser                                                                |   | (Large)](Ship_Equipment#Passenger_Bay "Passenger Bay (Large)"){.wikilink}  |
+| Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   |                                                                            |
+|                                                                             |   | Bay 6: [Engineering Bay (Level                                             |
+| Hard Point 4: [Large Plasma                                                 |   | 1)](Ship_Equipment#Engineering_Bay "Engineering Bay (Level 1)"){.wikilink} |
 | Weapon](Ship_Equipment#Large_Weapons "Large Plasma Weapon"){.wikilink}      |   |                                                                            |
-| (Ammo: 1 mag of [Large Plasma                                               |   | : **Cost of Bay items**: \$390,000                                         |
-| Ammo](Ship_Equipment#Plasma "Large Plasma Ammo"){.wikilink}) Hard Point 5:  |   |                                                                            |
-| [Large Missile                                                              |   |                                                                            |
+| (Ammo: 1 mag of [Large Plasma                                               |   | Bay 7: [Science Bay (Level                                                 |
+| Ammo](Ship_Equipment#Plasma "Large Plasma Ammo"){.wikilink})                |   | 1)](Ship_Equipment#Science_Bay "Science Bay (Level 1)"){.wikilink}         |
+|                                                                             |   |                                                                            |
+| Hard Point 5: [Large Missile                                                |   | : **Cost of Bay items**: \$390,000                                         |
 | Launcher](Ship_Equipment#Large_Weapons "Large Missile Launcher"){.wikilink} |   |                                                                            |
 | (Ammo: 1 mag of [Large Missile                                              |   |                                                                            |
 | Ammo](Ship_Equipment#Missiles "Large Missile Ammo"){.wikilink})             |   |                                                                            |

@@ -45,15 +45,19 @@
 | ------------------------------------------------------------------------     |   | ------------------------------------------------------------------------    |
 |                                                                              |   |                                                                             |
 | Hard Point 1: [Medium Projectile                                             |   | Bay 1: [Cargo Bay                                                           |
-| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink} |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay 2:  |
-| (Ammo: 2 mags of [Medium Projectile                                          |   | [Cargo Bay                                                                  |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard  |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay 3:  |
-| Point 2: [Medium                                                             |   | [Cargo Bay                                                                  |
-| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1  |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink} Bay 4:  |
-| [Medium Laser                                                                |   | [Passenger Bay                                                              |
-| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})   |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink} |
+| Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink} |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}         |
+| (Ammo: 2 mags of [Medium Projectile                                          |   |                                                                             |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})       |   | Bay 2: [Cargo Bay                                                           |
+|                                                                              |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}         |
+| Hard Point 2: [Medium                                                        |   |                                                                             |
+| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1  |   | Bay 3: [Cargo Bay                                                           |
+| [Medium Laser                                                                |   | (Medium)](Ship_Equipment#Cargo_Bay "Cargo Bay (Medium)"){.wikilink}         |
+| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})   |   |                                                                             |
+|                                                                              |   | Bay 4: [Passenger Bay                                                       |
+| : **Cost of Hard Point items**: \$1,166,150                                  |   | (Medium)](Ship_Equipment#Passenger_Bay "Passenger Bay (Medium)"){.wikilink} |
+|                                                                              |   |                                                                             |
 |                                                                              |   | Bay 5: [Engineering                                                         |
-| : **Cost of Hard Point items**: \$1,166,150                                  |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}           |
+|                                                                              |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}           |
 |                                                                              |   |                                                                             |
 |                                                                              |   | : **Cost of Bay items**: \$190,000                                          |
 +------------------------------------------------------------------------------+---+-----------------------------------------------------------------------------+

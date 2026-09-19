@@ -46,16 +46,19 @@
 |                                                                               |   |                                                                           |
 | Hard Point 1: [Medium Projectile                                              |   | Bay 1: [Passenger Bay                                                     |
 | Weapon](Ship_Equipment#Medium_Weapons "Medium Projectile Weapon"){.wikilink}  |   | (Small)](Ship_Equipment#Passenger_Bay "Passenger Bay (Small)"){.wikilink} |
-| (Ammo: 2 mags of [Medium Projectile                                           |   | Bay 2: [Cargo Bay                                                         |
-| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink}) Hard   |   | (Small)](Ship_Equipment#Cargo_Bay "Cargo Bay (Small)"){.wikilink} Bay 3:  |
-| Point 2: [Medium Missile                                                      |   | [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink} Bay 4: |
-| Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   | [Astrometrics                                                             |
-| (Ammo: 2 mags of [Medium Missile                                              |   | Bay](Ship_Equipment#Astrometrics_Bay "Astrometrics Bay"){.wikilink} Bay   |
-| Ammo](Ship_Equipment#Missiles "Medium Missile Ammo"){.wikilink}) Hard Point   |   | 5: [Science Bay](Ship_Equipment#Science_Bay "Science Bay"){.wikilink}     |
-| 3: [Medium Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink}    |   |                                                                           |
-| (Focuses: 1 [Medium Laser                                                     |   | : **Cost of Bay items**: \$105,000 (\$20,000 Pass. Bay + \$20,000 Cargo   |
-| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   |   Bay + \$25,000 Med. Bay + \$25,000 Astro Bay + \$15,000 Science Bay)    |
-|                                                                               |   |                                                                           |
+| (Ammo: 2 mags of [Medium Projectile                                           |   |                                                                           |
+| Ammo](Ship_Equipment#Projectiles "Medium Projectile Ammo"){.wikilink})        |   | Bay 2: [Cargo Bay                                                         |
+|                                                                               |   | (Small)](Ship_Equipment#Cargo_Bay "Cargo Bay (Small)"){.wikilink}         |
+| Hard Point 2: [Medium Missile                                                 |   |                                                                           |
+| Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   | Bay 3: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink} |
+| (Ammo: 2 mags of [Medium Missile                                              |   |                                                                           |
+| Ammo](Ship_Equipment#Missiles "Medium Missile Ammo"){.wikilink})              |   | Bay 4: [Astrometrics                                                      |
+|                                                                               |   | Bay](Ship_Equipment#Astrometrics_Bay "Astrometrics Bay"){.wikilink}       |
+| Hard Point 3: [Medium                                                         |   |                                                                           |
+| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   | Bay 5: [Science Bay](Ship_Equipment#Science_Bay "Science Bay"){.wikilink} |
+| [Medium Laser                                                                 |   |                                                                           |
+| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   | : **Cost of Bay items**: \$105,000 (\$20,000 Pass. Bay + \$20,000 Cargo   |
+|                                                                               |   |   Bay + \$25,000 Med. Bay + \$25,000 Astro Bay + \$15,000 Science Bay)    |
 | : **Cost of Hard Point items**: \$1,788,025 (\$320,000 Projectile + \$12,800  |   |                                                                           |
 |   Ammo + \$590,625 Missile + \$31,250 Ammo + \$625,000 Laser + \$208,350      |   |                                                                           |
 |   Crystal)                                                                    |   |                                                                           |

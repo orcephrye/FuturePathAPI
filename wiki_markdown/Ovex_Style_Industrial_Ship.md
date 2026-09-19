@@ -45,22 +45,26 @@
 | ------------------------------------------------------------------------    |   | ------------------------------------------------------------------------ |
 |                                                                             |   |                                                                          |
 | Hard Point 1: [Large                                                        |   | Bay 1: [Cargo Bay                                                        |
-| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink} Bay 2: |
-| [Large Laser                                                                |   | [Cargo Bay                                                               |
-| Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink} Bay 3: |
-| Hard Point 2: [Large                                                        |   | [Engineering                                                             |
-| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink} Bay 4: |
-| [Large Laser                                                                |   | [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}       |
-| Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   |                                                                          |
-| Hard Point 3: [Large                                                        |   | : **Cost of Bay items**: \$215,000                                       |
-| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
+| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink}        |
 | [Large Laser                                                                |   |                                                                          |
+| Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   | Bay 2: [Cargo Bay                                                        |
+|                                                                             |   | (Large)](Ship_Equipment#Cargo_Bay "Cargo Bay (Large)"){.wikilink}        |
+| Hard Point 2: [Large                                                        |   |                                                                          |
+| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   | Bay 3: [Engineering                                                      |
+| [Large Laser                                                                |   | Bay](Ship_Equipment#Engineering_Bay "Engineering Bay"){.wikilink}        |
 | Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   |                                                                          |
+|                                                                             |   | Bay 4: [Medical                                                          |
+| Hard Point 3: [Large                                                        |   | Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}                |
+| Laser](Ship_Equipment#Large_Weapons "Large Laser"){.wikilink} (Focuses: 1   |   |                                                                          |
+| [Large Laser                                                                |   | : **Cost of Bay items**: \$215,000                                       |
+| Crystal](Ship_Equipment#Laser_Crystals "Large Laser Crystal"){.wikilink})   |   |                                                                          |
+|                                                                             |   |                                                                          |
 | Hard Point 4: [Large Plasma                                                 |   |                                                                          |
 | Weapon](Ship_Equipment#Large_Weapons "Large Plasma Weapon"){.wikilink}      |   |                                                                          |
 | (Ammo: 1 mag of [Large Plasma                                               |   |                                                                          |
-| Ammo](Ship_Equipment#Plasma "Large Plasma Ammo"){.wikilink}) Hard Point 5:  |   |                                                                          |
-| [Large Missile                                                              |   |                                                                          |
+| Ammo](Ship_Equipment#Plasma "Large Plasma Ammo"){.wikilink})                |   |                                                                          |
+|                                                                             |   |                                                                          |
+| Hard Point 5: [Large Missile                                                |   |                                                                          |
 | Launcher](Ship_Equipment#Large_Weapons "Large Missile Launcher"){.wikilink} |   |                                                                          |
 | (Ammo: 1 mag of [Large Missile                                              |   |                                                                          |
 | Ammo](Ship_Equipment#Missiles "Large Missile Ammo"){.wikilink})             |   |                                                                          |

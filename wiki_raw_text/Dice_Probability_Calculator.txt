@@ -1,6 +1,9 @@
 == DC Probability Calculator ==
 <div id="dc-calc-widget"></div>
 
+== Space Ship Combat Battle Damage DC Calculator == 
+<div id="spaceship-damage-calc-widget"></div>
+
 == Classic D20 vs Advantage Die Probability ==
 This uses classic level progression in d20, which provides a +1 for every Character Level to the d20 roll to improve its highest roll value. It then compares that to the Character's Advantage Die level progression based on Character Level. This is notably different compared to plain Advantage Die Level progression because not every time a Character Levels up do they improve their Advantage Die.
 ----

@@ -23,6 +23,10 @@ Likewise, a ship also has improvements to attack. A ship's '''Sensors''' and '''
 
 If the enemy ship is cloaked or in stealth and thus cannot be easily detected, then the Sensor Officer's Scan also becomes an accuracy check. So a [[Scan]] acts as both an Accuracy Check against the Target's Detection DC and a Scan for Weakness is against the target's Tracking DC. If the Accuracy check fails, then the Weapon's Officer cannot attempt an attack against that target.
 
+=== Exploding ===
+
+Exploding in d10s is different than normal character-based combat. If a weapon grants the Exploding attribute to its d10, then if that d10 lands on a natural 10, or the exploding range specified, the Player can add a fresh d10 to the Battle Pool before re-rolls are applied. This new die cannot explode, as exploding normally doesn't re-explode unless specified otherwise.
+
 === Criticals ===
 A Sensor Scan can have a critical success. This is determined using the Critical Success rules for 2d10s found [[Space_Ships#Ship_Conflict_Resolution|here]]. In short: Critical success happens when at least 1 die explodes, and the final result is greater than 20. Example: The player rolls 2d10 and gets a 10 and a 5. The d10 with a 10 gets rerolled. It lands on a 6. Then it is 10 + 5 + 6 = 21, and thus is a critical success. The Weapon's Officer gains the following benefits when performing a BD-DC on the target of the Critical Success [[Scan]].
 # A successful d10 now counts twice.

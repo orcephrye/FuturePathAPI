@@ -46,14 +46,16 @@
 |                                                                               |   |                                                                           |
 | Hard Point 1: [Medium                                                         |   | Bay 1: [Passenger Bay                                                     |
 | Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   | (Small)](Ship_Equipment#Passenger_Bay "Passenger Bay (Small)"){.wikilink} |
-| [Medium Laser                                                                 |   | Bay 2: [Passenger Bay                                                     |
-| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   | (Small)](Ship_Equipment#Passenger_Bay "Passenger Bay (Small)"){.wikilink} |
-| Hard Point 2: [Medium                                                         |   | Bay 3: [Cargo Bay                                                         |
-| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   | (Small)](Ship_Equipment#Cargo_Bay "Cargo Bay (Small)"){.wikilink} Bay 4:  |
-| [Medium Laser                                                                 |   | [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink}        |
+| [Medium Laser                                                                 |   |                                                                           |
+| Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   | Bay 2: [Passenger Bay                                                     |
+|                                                                               |   | (Small)](Ship_Equipment#Passenger_Bay "Passenger Bay (Small)"){.wikilink} |
+| Hard Point 2: [Medium                                                         |   |                                                                           |
+| Laser](Ship_Equipment#Medium_Weapons "Medium Laser"){.wikilink} (Focuses: 1   |   | Bay 3: [Cargo Bay                                                         |
+| [Medium Laser                                                                 |   | (Small)](Ship_Equipment#Cargo_Bay "Cargo Bay (Small)"){.wikilink}         |
 | Crystal](Ship_Equipment#Laser_Crystals "Medium Laser Crystal"){.wikilink})    |   |                                                                           |
-| Hard Point 3: [Medium Missile                                                 |   | : **Cost of Bay items**: \$85,000                                         |
-| Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   |                                                                           |
+|                                                                               |   | Bay 4: [Medical Bay](Ship_Equipment#Medical_Bay "Medical Bay"){.wikilink} |
+| Hard Point 3: [Medium Missile                                                 |   |                                                                           |
+| Launcher](Ship_Equipment#Medium_Weapons "Medium Missile Launcher"){.wikilink} |   | : **Cost of Bay items**: \$85,000                                         |
 | (Ammo: 1 mag of [Medium Missile                                               |   |                                                                           |
 | Ammo](Ship_Equipment#Missiles "Medium Missile Ammo"){.wikilink})              |   |                                                                           |
 |                                                                               |   |                                                                           |
