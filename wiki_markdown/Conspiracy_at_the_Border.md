@@ -1,0 +1,996 @@
+**`<span style="color:#ff0000">`{=html} SPOILER WARNINGS: THIS CAMPAIGN
+GUIDE IS FOR GAME MASTERS ONLY `</span>`{=html}**
+
+This is a [Campaign](Campaigns "Campaign"){.wikilink}.
+
+## FuturePath GM Notes {#futurepath_gm_notes}
+
+Please review these starting notes for this campaign. [Conspiracy at the
+Border GM Starting
+Notes](Conspiracy_at_the_Border_GM_Starting_Notes "Conspiracy at the Border GM Starting Notes"){.wikilink}
+
+# Mission 1: Escort the Judge {#mission_1_escort_the_judge}
+
+- **Recommended Level:** 5
+- **Setting:** Federation Flagship *FSS Vanguard*, Sawn Prime (Sayor
+  Capital), Orbital Transit Corridor to Kurgian Prime
+- **Mission Synopsis:** The newly commissioned Tech 3 Federation
+  flagship is dispatched on its maiden operational assignment: travel to
+  **Sawn Prime** to extract the disgraced **Judge Carthic** from the
+  fortified Citadel Prison amidst widespread civilian riots. Carthic\'s
+  bribery and corruption were recently blown wide open by evidence leaked
+  during the chaotic rampage of a rogue mercenary outfit (\"The Claws\")
+  across Acbar before they vanished. On the ground, the away team meets
+  desperate prison officials and interrogates a captured human insurgent
+  named **Markus Cole**, who reveals that Carthic was funneling Federation
+  labor and technology to a ruthless new Lepidonian proxy syndicate---**The
+  Iron Mandible**---on **Tarienth**, where Markus\'s lover **Susan** is
+  leading an imperiled resistance. After securing Carthic aboard ship,
+  the crew breaks orbit for the temporary Federation capital on
+  **Kurgian Prime**, only to be ambushed by a stealthed Iron Mandible strike
+  battle cruiser armed with **[Shield
+  Piercers](Missile_Ammo#shield_piercers "Shield Piercers"){.wikilink}**.
+  The mercenaries are on a high-risk extraction (\"rescue\") mission to
+  snatch Carthic alive for Lepidonian interrogation---and will only attempt
+  to assassinate him or blow the ship if they realize they cannot get him
+  off!
+
+### Mission Encounter Flow {#mission_encounter_flow}
+
+{{#mermaid:graph TD
+
+`   Briefing[Scene 1: Situation Room Debriefing`\
+`Admiral Tavik & The High Stakes] --> Transit[Scene 2: Unaccosted Transit to Sawn Prime`\
+`Flagship Shakedown & Crew Roleplay];`\
+`   Transit --> SawnCitadel[Scene 3: The Sawn Prime Citadel`\
+`The Rioting Crowd & Prison Officials];`\
+`   SawnCitadel --> MarkusTale[Scene 3B: Markus's Revelation`\
+`Susan, Tarienth Sabotage, & Carthic's Guilt];`\
+`   MarkusTale --> Extraction[Scene 3C: Securing Carthic`\
+`Crowd Control & Shuttle Lift-Off];`\
+`   Extraction --> Ambush[Scene 4: Deep Orbit Ambush`\
+`Stealth Battle Cruiser Strike & Shield Piercers];`\
+`   Ambush --> StarshipCombat[Scene 4B: Tactical Starship Defense`\
+`3-Phase Round & Point-Defense vs Breaching Pods];`\
+`   StarshipCombat --> BoardingCQB[Scene 5: Climax - Defending the Brig`\
+`Deck 4 CQB vs Commander Kraven Vael & Breachers];`\
+`   BoardingCQB --> Interrogation[Scene 6: Aftermath & Revelations`\
+`Carthic's Cipher, Level 6 Milestone, & Branching Paths];`
+
+`   style Briefing fill:#2a3d66,stroke:#4a76a8,stroke-width:2px;`\
+`   style Transit fill:#1e3d59,stroke:#17b978,stroke-width:2px;`\
+`   style SawnCitadel fill:#5a3825,stroke:#b86c3b,stroke-width:2px;`\
+`   style MarkusTale fill:#5a3825,stroke:#b86c3b,stroke-width:2px;`\
+`   style Ambush fill:#662222,stroke:#bb4444,stroke-width:2px;`\
+`   style BoardingCQB fill:#662222,stroke:#bb4444,stroke-width:2px;`\
+`   style Interrogation fill:#2e5a44,stroke:#38ef7d,stroke-width:2px;`
+
+\|
+
+`config.theme = dark`
+
+}}
+
+### Scene 1: Mission Debriefing in the Situation Room {#scene_1_mission_debriefing_in_the_situation_room}
+
+*Read the following aloud to the players to open the campaign:*
+
+> \"Officers, take your seats. I will not sugarcoat our predicament: the
+> Federation is standing upon a powder keg, and someone has just lit the
+> fuse.
+>
+> Three days ago, intelligence agents on Sawn Prime arrested the
+> \'Honorable\' Judge Carthic. For twenty years, Carthic has presided
+> over our highest civil maritime courts. But in the wake of the
+> catastrophic violence that tore through the trade world of Acbar,
+> encrypted files were leaked to the civic nets proving beyond doubt
+> that he has been in secret collusion with Lepidonian corporate
+> cartels. When the news leaked, Sawn Prime erupted.
+>
+> Human refugees---thousands of whom sought refuge in our cities after
+> the devastation of Earth---feel betrayed. Our own Sayor citizens feel
+> our sovereignty has been bartered away. Riots have engulfed the
+> capital city of Swan. The central detention citadel where Carthic is
+> housed is under siege by civilian mobs demanding his head.
+>
+> If Carthic is lynched by a mob, the truth dies with him. Worse, the
+> Graylings have dispatched an Envoy to audit our border compliance. If
+> that Envoy arrives to find our founding capital burning and our
+> judiciary murdering one another, the Graylings will revoke our
+> diplomatic sanctuary, and Lepidonian battlecruisers will be in our
+> skies by week\'s end.
+>
+> Your orders are absolute: take this ship to Sawn Prime. Land an away
+> team at the Citadel. Relieve the local warden of Judge Carthic, bring
+> him aboard, and transport him to Kurgian Prime. The temporary
+> Federation Capital has convened a closed military tribunal where he
+> will face legitimate justice. Maintain absolute restraint---under no
+> circumstances is the Federation Navy to shed civilian blood on Sawn
+> Prime. Make ready to get underway.\"
+
+Key Information & Dialogue with Admiral Tavik
+
+: 
+
+- **Why Kurgian Prime instead of trying him on Sawn Prime?**
+
+: *Admiral Tavik:* \"Sawn Prime\'s courts are hopelessly compromised and
+  currently encircled by burning barricades. Kurgian Prime maintains the
+  strongest orbital planetary defense network in the Federation. It is
+  neutral ground between Sayor anger and Lepidonian pressure.\"
+
+- **What exactly did Carthic do?**
+
+: *Admiral Tavik:* \"Officially? Bribery, treasonous communication, and
+  signing illegal extraterritorial transport permits. Unofficially? We
+  suspect he was grease in the wheels of a much larger syndicate
+  operation. We need him interrogated by Naval Intelligence on Kurgian
+  Prime.\"
+
+- **What about the ship\'s readiness?**
+
+: *Admiral Tavik:* \"The *Vanguard* is fresh off the slipway at the
+  orbital yards. Tech Level 3 specs, cutting-edge sub-systems. You
+  haven\'t finished the full shakedown protocol, but this crisis does
+  not afford us the luxury of waiting. Run your diagnostics on the route
+  to Sawn.\"
+
+<!-- -->
+
+Skill Checks During the Briefing
+
+: 
+
+- **[Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink} (DC 15):**
+  The Admiral is deeply shaken. Beneath his stern posture, his voice has
+  an edge of quiet dread---he suspects that Carthic is merely the
+  visible tip of a conspiracy that reaches deep into the Federation
+  Senate.
+- **[Knowledge (Civics &
+  Politics)](Knowledge#Civics "Knowledge (Civics & Politics)"){.wikilink}
+  (DC 14):** Relocating the trial to Kurgian Prime is legally sound but
+  politically flammable; Sayor civic nationalists may view the Kurgians
+  as meddling in Sayor judicial sovereignty.
+- **[Knowledge (Galaxy
+  Lore)](Knowledge#Galaxy "Knowledge (Galaxy Lore)"){.wikilink} (DC
+  16):** The Grayling Envoy possesses arbitrary legal authority under
+  the Hundred-Year Treaty. If they deem the Federation incapable of
+  governing its territories, treaty protections dissolve automatically.
+
+### Scene 2: Transit to Sayor Space -- The Shakedown Interlude {#scene_2_transit_to_sayor_space_the_shakedown_interlude}
+
+The flagship breaks moorings and accelerates toward the sector jump
+point. The voyage across the core transit corridor to Sawn Prime is
+smooth and **unaccosted** by enemy patrols. This stretch provides the GM
+and players an ideal opportunity to test their bridge stations and
+introduce their characters.
+
+Bridge Station Diagnostics (Level 5 Shakedown Checks)
+
+: 
+
+1.  **Ranking Helmsman ([Piloting](Pilot "Piloting"){.wikilink} DC
+    14):**
+
+:\* *Action:* Fine-tune sub-light thruster balance and inertial
+dampeners.
+
+:\* *Success:* Grants **+1 to Tactical Mobility** for the first round of
+the upcoming starship combat.
+
+1.  **Sensors & Comms Operator ([Computer
+    Use](Computer_Use "Computer Use"){.wikilink} or Electronics DC
+    15):**
+
+:\* *Action:* Calibrate long-range sensor arrays and filter local
+emergency bands.
+
+:\* *Success:* Intercepts planetary law enforcement audio from Sawn
+Prime early, gaining advance layout data on the Citadel landing pad (+2
+on Initiative during Scene 3).
+
+1.  **Chief Engineer ([Repair](Repair "Repair"){.wikilink} or
+    Engineering DC 15):**
+
+:\* *Action:* Optimize the Tech 3 Core reactor\'s power grid.
+
+:\* *Success:* Grants 1 temporary **Overcharge Point** (can be expended
+during spaceship combat to grant a +2 bonus to any single CSA for 1
+round).
+
+1.  **Chief Tactical / Weapons Officer (Weapons / Tactical DC 14):**
+
+:\* *Action:* Run bore-sight diagnostics on point-defense turrets and
+missile racks.
+
+:\* *Success:* The first Point-Defense reaction roll in starship combat
+rolls with **Advantage**.
+
+1.  **Chief Medical / Science Officer
+    ([Medicine](Treat_Injury "Medicine"){.wikilink} or Science DC 14):**
+
+:\* *Action:* Prepare medical trauma stations and review physiological
+files on Sayor neuro-biology.
+
+:\* *Success:* Prepares tailored tranquilizer and anti-shock kits; any
+healing done during the boarding encounter restores +3 additional HP.
+
+1.  **Marine Squad Commanders (Alpha & Beta) (Tactics / Leadership DC
+    14):**
+
+:\* *Action:* Drill the squads in non-lethal crowd containment and CQB
+corridor defense.
+
+:\* *Success:* Marines gain +2 on saving throws against fear and
+disorienting conditions during the mission.
+
+Character Trait Roleplay Prompts
+
+: 
+
+- **Trait 1 (Captain\'s Confidant):** A quiet discussion in the
+  Captain\'s ready room over synthetic tea regarding the political
+  fallout if the flagship fails.
+- **Trait 4 (Traumatized by Lepidonians):** The character notices subtle
+  Lepidonian cyphers in the encrypted comm chatter coming from Sawn
+  Prime, triggering flashbacks of the occupation.
+- **Trait 6 (Ties in the DMZ):** The character receives a fragmented
+  personal transmission from an orbital relay near Tarienth, mentioning
+  escalating strikes and missing workers before the signal abruptly
+  clips out.
+
+Arrival in Sawn Prime Orbit
+
+: 
+
+Dropping out of FTL, the sapphire-blue jewel of Sawn Prime fills the
+primary viewport. However, high-orbit views immediately reveal the
+crisis: black smoke spirals upward from several civic sectors of
+**Swan**, the planetary capital. The planetary traffic beacon transmits
+on repeat:
+
+> \"Attention all arriving commercial vessels: Swan Metropolitan
+> Spaceport is operating under Code Red emergency restrictions.
+> Planetary curfew is in effect. Avoid Sectors 4 through 9.\"
+
+### Scene 3: The Sawn Prime Citadel & The Rebel\'s Plea {#scene_3_the_sawn_prime_citadel_the_rebels_plea}
+
+Planetary Insertion & The Restless Crowd
+
+: 
+
+The away team, accompanied by a detachment from Marine Squad Alpha
+(\"Hell\'s Hammer\"), boards an armored atmospheric shuttle and descends
+through the smog and low clouds to the **Central Detention Citadel of
+Swan**.
+
+The Citadel is an ominous, brutalist structure of reinforced
+ferro-concrete and blast-resistant durasteel rising above the city\'s
+lower industrial district. The dropship lands with a hydraulic hiss on
+the elevated exterior landing platform, sixty feet above street level.
+
+*Read the following aloud as the ramp opens:*
+
+> \"As the shuttle\'s boarding ramp lowers, the smell of burnt rubber,
+> tear gas, and ozone hits your nostrils. Below the security catwalks,
+> an ocean of protesters has surrounded the base of the Citadel.
+>
+> Thousands of voices merge into a deafening roar: \'Hang the traitor
+> Carthic! No secret courts! Sayor will not be sold!\'
+>
+> Banners painted in Sayor glyphs and human English flap in the wind.
+> Handheld searchlights sweep the barricades. Suddenly, a volley of
+> improvised projectiles---cracked paving stones, glass bottles filled
+> with burning fuel, and smoke canisters---slams against the magnetic
+> riot barrier along the platform\'s edge. Local planetary riot police
+> in scuffed blue carapace shields struggle to hold the perimeter
+> stairwells.\"
+
+Skill Challenge
+: Navigating the Platform:
+
+- **[Diplomacy](Diplomacy "Diplomacy"){.wikilink} or
+  [Intimidate](Intimidate "Intimidate"){.wikilink} (DC 16):** Project
+  Federation authority and broadcast a calming loudspeaker message
+  explaining that Carthic is being remanded for trial, not exonerated.
+  *Success:* The crowd pauses; missile fire drops significantly.
+- **[Perception](Perception "Perception"){.wikilink} or
+  [Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink} (DC 15):** Spot
+  masked agitators in the rear ranks equipped with military-grade smoke
+  grenades intentionally egging on the crowd to provoke the guards into
+  opening fire.
+- **Athletics or Defense (DC 14):** Intercept a thrown incendiary bomb
+  with a riot shield or kick it harmlessly off the platform edge before
+  it ignites fuel lines.
+- *Lethal Force Warning:* If the PCs use lethal weapons on the crowd,
+  the riot escalates into an all-out assault; local security morale
+  shatters, and Admiral Tavik issues an immediate reprimand.
+
+Meeting the Officials
+
+: 
+
+At the reinforced blast doors of the Citadel, two figures hurry forward
+surrounded by four exhausted prison guards:
+
+1.  **Warden Kren (Sayor Male):** Sweaty, dark circles under his grey
+    eyes, wearing scuffed tactical armor. He has not slept in 48 hours.
+
+    : *\"Thank the stars you\'re here! Our automated turrets are down to
+      ten percent power, and half my guards abandoned their posts when
+      the crowds broke the outer plaza gates! If Carthic stays here
+      another night, they\'ll pull this citadel down with their bare
+      hands!\"*
+2.  **Magistrate Solas (Sayor Male):** A high-ranking civic official in
+    rumpled diplomatic robes, trembling with anxious energy.
+
+    : *\"Captain, here are the extradition codicils signed by the
+      Ministry of Justice. Take him. Take him off our world before this
+      city burns to the ground!\"*
+
+The Rebel\'s Tale
+: Interrogating Markus Cole:
+
+Before the Warden leads the team to Carthic, two prison guards drag
+forward a battered, bruised human man in magnetic restraint cuffs:
+
+> \"Warden Kren spits on the deck: \'We caught this one thirty minutes
+> ago in the coolant tunnels beneath the secure cells. He was trying to
+> bypass the secondary generator. Another lunatic here to slit
+> Carthic\'s throat!\'
+>
+> The human man lifts his head. His lip is split, and his knuckles are
+> bloody, but his eyes burn with desperate conviction.
+>
+> \'I wasn\'t trying to kill him!\' the man shouts, his voice hoarse.
+> \'Listen to me! If you take Carthic out without understanding what he
+> did, everyone on Tarienth is dead! My name is Markus Cole! I\'m from
+> the DMZ colony!\'\"
+
+Markus\'s Revelations
+
+: 
+
+- **His Lover, Susan:** Markus explains that his partner and lover is
+  **Susan Ward**, a brilliant human environmental engineer and leader of
+  the independent reclamation workers on **Tarienth**.
+- **The Truth About Tarienth:** The official narrative claims the
+  Federation failed its terraforming obligations due to neglect. Markus
+  swears that **The Iron Mandible**---a ruthless proxy mercenary syndicate
+  hired by the Lepidonians after the mercenary group \"The Claws\" went rogue
+  and vanished---deliberately sabotaged the main atmospheric scrubbers in
+  the southern hemisphere. They created an artificial environmental
+  collapse to force the Federation into default.
+- **Slave Labor & Secret Shipments:** The Iron Mandible has seized the
+  southern geothermal installations on Tarienth, forcing abducted human
+  refugees and indentured Sayor miners to strip-mine raw hyper-conductive
+  crystals to fund their fleet operations.
+- **Carthic\'s Real Crime:** Judge Carthic didn\'t just accept bribes.
+  He used his judicial authority to sign **falsified quarantine seizure
+  orders and off-book convict transfers**. Carthic legally
+  \"disappeared\" hundreds of dissidents, refugees, and engineers from
+  Sawn Prime and secretly shipped them directly into The Iron Mandible\'s
+  forced-labor compounds on Tarienth!
+- **Susan\'s Mission:** Susan discovered the paper trail on Tarienth and
+  organized an underground resistance cell called the *Vanguard Free
+  Union*. She sent Markus with a cracked data-crystal to Sawn Prime to
+  deliver the evidence to Federation authorities, but when he arrived,
+  Carthic had already been detained and martial law declared.
+- **The Plea:**
+
+> \"Susan is still down there in the dust storms, fighting The Iron Mandible
+> with mining lasers and scrap wrenches! Carthic has the master
+> decryption key to the manifest databases on his private terminal. If
+> you let those mercenary monsters silence him, or if the Grayling Envoy
+> rules against us, Susan and everyone on Tarienth will be butchered! You
+> have to save her!\"
+
+- **Evidence Provided:** Markus hands over a battered data-chip. A quick
+  check (**[Computer Use](Computer_Use "Computer Use"){.wikilink} DC
+  14**) verifies that the files contain encrypted cargo manifests signed
+  with Carthic\'s personal judicial hash, routing heavy industrial
+  atmospheric converters to an uncharted grid in the Tarienth DMZ.
+
+Securing Judge Carthic
+
+: 
+
+Warden Kren orders the inner holding cell opened. **Judge Carthic** is
+escorted out by two heavily armed guards.
+
+- **Description:** An elder Sayor with slicked-back white hair, sharp
+  aquiline features, and expensive silver-embroidered robes now stained
+  with sweat. He wears class-4 neural dampener cuffs.
+- **Demeanor:** Inwardly terrified but attempting to maintain an aura of
+  aristocratic disdain.
+
+: *\"Federation lapdogs. You think you understand the complexities of
+  interstellar diplomacy? You strut around in your polished armor while
+  the Lepidonians amass dreadnoughts on our borders. Everything I did
+  was to preserve the peace! Sawn Prime would have been turned to glass
+  if not for my arrangements!\"*
+
+- **Reaction to Markus & Susan:** When Markus steps forward and mentions
+  **Susan Ward** and the encrypted manifests, Carthic\'s face drains of
+  color.
+
+:\* **[Sense_Motive](Sense_Motive "Sense_Motive"){.wikilink} (DC 14):**
+Carthic is not just contemptuous; he is petrified. He knows the mercenaries
+and knows exactly who hired them. He glances nervously at the sky through
+the high reinforced skylights.
+
+:\* *Carthic\'s Warning:* *\"You fools\... you think the Lepidonians will
+let you put me on a witness stand? They\'ve already hired The Iron Mandible
+to find me. They\'ll come to extract me for their inquisitors---and if Kraven
+realizes he can\'t get me off alive, he\'ll butcher me where I stand! You
+have just signed all of our death warrants. We will never reach Kurgian
+Prime alive.\"*
+
+Extraction Under Pressure
+
+: 
+
+With Carthic secured in suppression clamps and Markus taken along as a
+vital material witness under protective custody, the team retreats to
+the dropship. The crowd surges forward, attempting to breach the catwalk
+gates. Through well-timed flash-bangs, non-lethal repulsor fields, and
+smart piloting (**[Piloting](Pilot "Piloting"){.wikilink} DC 14**), the
+shuttle roars into the sky, leaving the rioting streets of Swan behind.
+
+### Scene 4: Deep Orbit Ambush -- The Iron Mandible Strikes {#scene_4_deep_orbit_ambush_the_iron_mandible_strikes}
+
+Arrival Aboard the Flagship
+
+: 
+
+The dropship lands in the flagship\'s secondary shuttle bay.
+
+- **Judge Carthic** is marched under heavy guard by Marine Squad Alpha
+  down to **Deck 4: Cell Block B (The Brig)**, where he is placed in a
+  reinforced magnetic stasis cell.
+- **Markus Cole** is escorted to the auxiliary medical bay for treatment
+  and debriefing.
+- The ship clears planetary orbit, raises shields, and charts a course
+  for the primary jump gate toward **Kurgian Prime**.
+
+The Ambush
+: Out of the Dark:
+
+Halfway between Sawn Prime\'s upper orbital perimeter and the
+hyper-spatial jump buoy, the flagship\'s bridge goes on red alert!
+
+> \"The bridge klaxon blares with a sharp, dual-tone screech. Tactical
+> displays flash crimson across all main consoles.
+>
+> \'Sensors picking up severe gravimetric distortion three hundred
+> meters off our starboard quarter!\' the comms officer shouts. \'No
+> engine wash, no transponder---it dropped out of active stealth at
+> point-blank range!\'
+>
+> Through the forward viewport, the stars distort. A sleek, predatory
+> warship---black as obsidian, shaped like a barbed dagger with angular
+> sensor baffles---phases into reality. Its hull bears the crimson
+> insignia of The Iron Mandible mercenary syndicate.
+>
+> \'Hostile targeting lock!\' Tactical shouts. \'Multiple missile
+> launches detected! Fast movers---they aren\'t standard ordnance!\'\"
+
+The enemy vessel is the ***[[Obsidian_Fang|Obsidian Fang]]***, an elite Iron Mandible
+Infiltration Battle Cruiser ([see full Obsidian Fang schematics](Obsidian_Fang)). It does **not** intend to destroy the
+flagship---doing so would kill Judge Carthic. Instead, it is on a
+high-risk extraction (\"rescue\") mission on behalf of its Lepidonian
+masters, who desperately want Carthic alive for interrogation!
+
+The Weapon
+: Shield Piercers!:
+
+The *Obsidian Fang* fires a volley of specialized **[Shield Piercer
+Rockets](Missile_Ammo#shield_piercers "Shield Piercer Rockets"){.wikilink}**
+directly into the flagship\'s forward shield arc.
+
+- **Mechanics of the Attack:** Under FuturePath rules, Shield Piercers
+  roll a single d10 to breach the shield frequency without needing to
+  overcome standard hull damage resistance.
+- The *Obsidian Fang**s Weapons Officer rolls**d10 + 3*\' vs the
+  Flagship\'s Shield DC.
+- **Hit Effect:** Instead of inflicting Battle Damage, each successful
+  hit **strips 2 points of Shields (Reflectors)** from the ship\'s
+  defense grid for the duration of the engagement!
+- **The Beaming Hazard:** Stripping the shields creates an open energy
+  window through the hull. Under FuturePath technology, **tactical transporter
+  beaming is only possible while shields are down!** If shields remain
+  offline, the boarding team can beam Carthic directly off the ship!
+- *Narrative Result:* The flagship shudders violently as emerald
+  electrical discharges ripple across the hull. The primary shields
+  flicker and collapse across the midship quadrant, dropping Reflectors
+  and opening a vulnerability window for boarding and transport locks!
+
+### Scene 5: Tactical Starship Defense & Boarding Action {#scene_5_tactical_starship_defense_boarding_action}
+
+Phase 1
+: Bridge Crew Tactical Round (1-2 Rounds):
+
+The GM runs 1 or 2 quick rounds of Starship Combat using the standard
+[3-Phase Crew
+Sequence](Combat#Space_Combat "3-Phase Crew Sequence"){.wikilink} while
+the enemy closes distance to launch boarding craft:
+
+1.  **Support Phase:**
+
+:\* **Captain:** Uses *Give Command* or *Encourage* to provide bonus
+d10s to the Tactical Officer or Helmsman.
+
+:\* **Science Officer:** Attempts an immediate *Electronic Counter-Hack*
+or *Boost Shields / Harmonic Reset* (Science DC 15) to restore 1 stripped
+reflector or trace the enemy\'s cloaking frequency. (*Crucial:* Restoring
+shields to full prevents the enemy from beaming off with Carthic!).
+
+1.  **Action Phase:**
+
+:\* **Helmsman:** Performs *Defensive Maneuvering* (Pilot DC 15) to deny
+the battle cruiser an optimal docking vector (+2 Tracking DC).
+
+:\* **Comms Operator:** Activates *Sensor Jamming* (Electronics DC 15)
+to disrupt the enemy\'s boarding pod guidance telemetry.
+
+:\* **Weapons Officer:** Fires ship batteries at the *Obsidian Fang*
+(Targeting BD-DC 5, 6) and coordinates **Point-Defense**.
+
+1.  **Response Phase:**
+
+:\* **Chief Engineer:** Reroutes emergency power to bulkheads and
+shields (Repair DC 15; can restore 1 stripped Reflector).
+
+:\* **Medical Officer:** Prepares trauma teams on Deck 4 for incoming
+boarding casualties.
+
+The Point-Defense Interception
+
+: 
+
+The *Obsidian Fang* fires **2 Heavy Breaching Leeches (Boarding Pods)**
+aimed at the secondary maintenance airlocks on Deck 4.
+
+- The Weapons Officer rolls **Point-Defense** (Opposed d10 vs d10,
+  highest wins; roll with Advantage if calibrated during Scene 2).
+- **If Successful:** Point-defense lasers blow 1 Breaching Pod into
+  molten slag! Only 1 pod penetrates the hull, cutting the number of
+  enemy shock breachers in half!
+- **If Failed:** Both Breaching Pods slam into the hull with
+  bone-jarring force, penetrating the maintenance airlock and deploying
+  the full strike team!
+
+### Scene 6: Climax -- Defending the Brig (CQB Encounter) {#scene_6_climax_defending_the_brig_cqb_encounter}
+
+Setting the Battlefield
+: Deck 4 Corridor & Cell Block B:
+
+Sirens wail, and amber hazard strobes illuminate Deck 4. The enemy
+breaching clamps have cut through the hull plating of Maintenance
+Airlock 4-B, only forty yards down the corridor from **Cell Block B**
+where Judge Carthic is locked inside!
+
+Deck 4 Tactical Layout
+
+: 
+
+- **Breach Point (Airlock 4-B):** Where the enemy breaching leeches
+  latched on. Smoke and pressurized frost pour into the corridor.
+- **Bulkhead Blastdoors:** Positioned halfway down the hall. Can be
+  sealed via a wall terminal (**[Computer
+  Use](Computer_Use "Computer Use"){.wikilink} DC 15**) to block line of
+  sight or divide enemy forces.
+- **Auxiliary Shield Routing Terminal:** A wall panel halfway down the hall
+  (**[Repair](Repair "Repair"){.wikilink} or [Computer
+  Use](Computer_Use "Computer Use"){.wikilink} DC 15**, standard action)
+  allowing an away-team officer to reboot Deck 4\'s localized shield harmonics
+  if bridge operations have not yet restored them.
+- **Service Corridor:** 10 feet wide, lined with high-cover cargo
+  containers and conduits.
+- **Hazardous Conduits:** Stray weapon fire near the exposed plasma
+  conduits can rupture power feeds (Reflex DC 14 or take 2d6 electrical
+  damage, 10-ft burst).
+- **Cell Block B Foyer:** Directly outside Carthic\'s cell. This is
+  where the Sapper Drone deploys its thermal cutting beam.
+
+The Enemy Forces
+
+: 
+
+1.  **Commander Kraven Vael (Level 6 Cyborg Infiltrator):** Armed with a
+    Masterwork Heavy Pulse Carbine, active optical camo, and a
+    vibro-shock baton. He coordinates the assault and covers the sapper
+    drone.
+2.  **Iron Mandible Shock Breachers (3 to 6 Troopers; 3 if 1 pod was
+    destroyed, 6 if both landed):** Heavy assault mercenaries wearing
+    pressurized kinetic weave armor, wielding Arc-Scatterguns and
+    thermal breaching charges.
+3.  **1 Heavy Sapper Drone:** A hovering, tracked cutting unit deployed
+    at the entrance to Cell Block B to slice open Carthic\'s magnetic
+    blast door.
+
+Encounter Objectives & Mechanics
+
+: 
+
+- **Primary Objective:** Prevent the abduction or assassination of Judge
+  Carthic.
+- **The Extraction Directive:** The Iron Mandible\'s primary mission is
+  **extraction alive**. The Lepidonians need Carthic for interrogation.
+- **The 3-Round Sapper Timer:** The Sapper Drone requires **3 full
+  rounds** of uninterrupted cutting to breach Carthic\'s cell door.
+
+:\* A character can destroy the drone (HP 22, AC 15) or disable its
+cutting laser via an Electronics / [Computer
+Use](Computer_Use "Computer Use"){.wikilink} check (**DC 16**).
+
+- **The Beaming Extraction Mechanic:**
+
+:\* Once Carthic\'s cell door is breached, Kraven\'s team drags the Judge
+out of the cell.
+
+:\* **Check Ship Shield Status:**
+    - **If Shields Are Still Down:** Kraven activates portable pattern
+      enhancers and calls for emergency transport. If unhindered for 1 full
+      round, Kraven, his surviving mercenaries, and Carthic **beam off the
+      ship** back to the *Obsidian Fang*! (The party loses their key witness).
+    - **If Shields Have Been Restored:** The transport lock fails with a
+      harsh static alarm (\"Shield harmonics active---transporter lock
+      blocked!\").
+
+- **The Contingency Liquidation (Scorched Earth):**
+
+:\* If Kraven realizes extraction is impossible---because shields have been
+restored, the Sapper Drone is destroyed, or their escape is cut off---he
+shifts instantly to his scorched-earth fallback order: **execute Judge
+Carthic on the spot** to permanently silence him, then fight a retreat to
+the airlock!
+
+Carthic\'s Panic During Combat
+
+: 
+
+Inside the cell, Carthic watches through the reinforced viewport in
+absolute hysteria:
+
+> \"Shoot them! Kill that cyborg! That\'s Kraven Vael---The Iron Mandible!
+> They didn\'t come to save me, they came to drag me to a Lepidonian torture
+> cell! And if they can\'t beam me out, they\'re under orders to blow my
+> head off! Don\'t let them breach this door!\"
+
+Tactical Enemy AI
+
+: 
+
+- The Shock Breachers deploy smoke canisters and hunker behind corridor
+  cargo containers, providing covering fire with Arc-Scatterguns.
+- Commander Kraven activates his active optical camo (+4 Stealth) to
+  slip through flanking maintenance vents, attempting to ambush the
+  player Captain or Security Officer from behind.
+- If Kraven is reduced to below 15 HP, or if extraction is rendered
+  impossible and Carthic is targeted/defended, he orders a fighting retreat
+  back toward the airlock leeches.
+
+### Scene 7: Aftermath, Revelations, and Strategic Crossroads {#scene_7_aftermath_revelations_and_strategic_crossroads}
+
+Breaking the Ambush
+
+: 
+
+Once the boarding team in Deck 4 is neutralized, the *Obsidian Fang* in
+orbit realizes the mission has failed. Battered by the flagship\'s main
+turrets and with its boarding party eliminated, the battle cruiser engages
+high-output thrusters and warps into hyperspace, retreating into the
+border expanse.
+
+Interrogating the Survivors & Recovering Intel
+
+: 
+
+Players can interrogate captured mercenaries or hack Commander Kraven\'s
+cybernetic data-slate (**[Computer
+Use](Computer_Use "Computer Use"){.wikilink} DC 16**):
+
+1.  **Direct Orders from Tarienth:** The data-slate contains signed
+    transmission logs from **\"Overlord Xul\"**, The Iron Mandible\'s regional
+    commander stationed in the badlands of **Tarienth**.
+2.  **The Dual Directive:** The orders state clearly:
+    *\"Extract Carthic alive for interrogation by Imperial handlers. If
+    extraction is compromised or blocked by shield reactivation, liquidate him
+    immediately. The Grayling Envoy must find no living links between our
+    contracts and the Sayor Judiciary.\"*
+3.  **The Acbar Connection:** Encrypted sub-routines reveal that after the
+    rogue mercenary outfit \"The Claws\" wrecked facilities on Acbar, The
+    Iron Mandible was contracted to deploy orbital comm-scramblers around
+    **Acbar**. The planet was intentionally forced into silence to prevent
+    the Grayling authorities from testifying to the Envoy!
+
+Carthic\'s Complete Breakdown & Confession
+
+: 
+
+Seeing Kraven\'s corpses in the corridor and knowing his former
+\"allies\" sent a hit-squad to abduct or execute him breaks what little
+arrogance Carthic had left:
+
+> \"Judge Carthic slumps against the wall of his cell, trembling
+> violently.
+>
+> \'They were going to drag me to a Lepidonian interrogation pit\... and
+> when they couldn\'t get me out, Kraven was going to blow my brains across
+> the bulkhead!\'
+>
+> He looks up at the players, tears welling in his grey eyes.
+>
+> \'Markus was telling the truth! It was The Iron Mandible! The Lepidonians
+> hired them to replace The Claws after those lunatic mercenaries went
+> rogue on Acbar! They blackmailed me three years ago---they held my
+> daughter on an orbital transport! I signed the transfer orders. Over six
+> hundred political prisoners and engineers were shipped to Tarienth under
+> false treason warrants. They built a subterranean refining facility
+> beneath the Great Geothermal Rift!
+>
+> Here---take my private biokey! It unlocks my hidden server in the
+> judicial archives. It contains every coordinates manifest, every
+> invoice, and every frequency The Iron Mandible uses in the DMZ. Just
+> please\... keep me alive. Hand me over to the Kurgian tribunal. At
+> least in a Kurgian prison, I\'ll live to see tomorrow!\'\"
+
+Arrival at Kurgian Prime
+
+: 
+
+The flagship completes its journey to **Kurgian Prime**, dropping out of
+warp before the gleaming emerald orbital spires of the Kurgian defense
+fleet.
+
+- Judge Carthic is formally handed over to Federation Military Police
+  and Naval Intelligence under heavy guard.
+- Markus Cole is placed under official protective status as a primary
+  whistleblower witness.
+- **Admiral Tavik** greets the crew via priority hologram:
+
+> \"You did the impossible. You extracted Carthic without igniting a
+> civil war on Sawn Prime, preserved our ship, and secured the smoking
+> gun that exposes The Iron Mandible and their Lepidonian masters. The
+> Federation owes you a profound debt.
+>
+> However, our time is short. The Grayling Envoy has already entered the
+> sector. We have two urgent crises, and I am granting you the authority
+> to choose your next deployment.\"
+
+Mission Rewards & Level Milestone
+
+: 
+
+- **Milestone Advancement:** All Player Characters advance to **Level
+  6**! (Gain Class Talents, HP, and Skill points according to the
+  progression table).
+- **Ship Upgrades & Requisition:** The crew receives **25,000 ISK** in
+  requisition credits for ship modifications, masterwork gear, or Marine
+  squad equipment.
+- **Commendation:** The Captain and senior officers receive the
+  **Federation Star of Valor**, granting +1 on all social interaction
+  checks with Federation military personnel.
+
+### The Strategic Crossroads: Next Missions {#the_strategic_crossroads_next_missions}
+
+{{#mermaid:graph TD
+
+`   M1[Mission 1: Escort the Judge COMPLETED`\
+`Carthic Secured & Iron Mandible Repelled] --> Choice{Strategic Choice`\
+`Where does the Flagship deploy next?};`
+
+`   Choice -->|Priority Alpha: The Resistance & DMZ| M2[Mission 2: Control of Tarienth`\
+`- Race to the DMZ before the Grayling Envoy arrives`\
+`- Rendezvous with Susan's Resistance Fighters`\
+`- Liberate Iron Mandible Slave Compounds`\
+`- Prove Federation Innocence in Terraforming Sabotage];`
+
+`   Choice -->|Priority Beta: The Silent Trade Hub| M3[Mission 3: Acbar in the Dark`\
+`- Breach the Planetary Quarantine`\
+`- Investigate fallout of 'The Claws' rampage & scrambler grid`\
+`- Rescue the trapped Grayling Ambassador`\
+`- Secure diplomatic leverage before the Envoy rules];`
+
+`   style M1 fill:#2a3d66,stroke:#4a76a8,stroke-width:2px;`\
+`   style Choice fill:#f39c12,stroke:#d35400,stroke-width:3px;`\
+`   style M2 fill:#5a3825,stroke:#b86c3b,stroke-width:2px;`\
+`   style M3 fill:#442a5a,stroke:#84529a,stroke-width:2px;`
+
+\|
+
+`config.theme = dark`
+
+}}
+
+1.  **Option A: Control of Tarienth:** Speed toward Tarienth to link up
+    with Susan Ward\'s resistance, expose The Iron Mandible\'s subterranean
+    slave-labor camps, and restore the atmospheric scrubbers before the
+    Grayling Envoy and Jovian escort arrive to rule the treaty breached.
+2.  **Option B: Acbar in the Dark:** Travel to the silent trade
+    metropolis of Acbar to investigate the electronic blackout, disable
+    the syndicate scrambler relays left in the wake of The Claws\' rampage,
+    and rescue the trapped Grayling Ambassador whose testimony can prevent
+    full-scale war.
+
+------------------------------------------------------------------------
+
+# Appendix: Stat Blocks & Technical Specifications {#appendix_stat_blocks_technical_specifications}
+
+## 1. Non-Player Characters (NPCs) {#non_player_characters_npcs}
+
+### Fleet Admiral Valen Tavik (Federation Flag Officer) {#fleet_admiral_valen_tavik_federation_flag_officer}
+
+*Medium Sayor, Level 10 Aristocrat / Naval Commander, Lawful Neutral*
+
+- **Initiative:** +4 (+1 Dex, +3 Wis) \| **Perception:** +17
+- **HP:** 68 \| **AC:** 16 (+5 Dress Carapace, +1 Dex)
+- **Attacks:** Masterwork Sidearm Laser +9 ranged (1d8+2 energy, crit
+  19-20)
+- **Key Skills:** Diplomacy +16, Knowledge (Civics) +15, Knowledge
+  (Tactics) +14, Leadership +16, Sense Motive +15
+- **Special Ability -- Fleet Command:** Allies within voice range gain
+  +2 on saving throws vs fear and +1 on attack rolls.
+
+### Markus Cole (Human Resistance Courier) {#markus_cole_human_resistance_courier}
+
+*Medium Human, Level 4 Scoundrel / Tech Specialist, Chaotic Good*
+
+- **Initiative:** +6 (+3 Dex, +3 Wis) \| **Perception:** +10
+- **HP:** 26 \| **AC:** 14 (+1 Padded Liner, +3 Dex)
+- **Attacks:** Unarmed +3 melee (1d3 non-lethal) or Improvised Shiv +3
+  melee (1d4)
+- **Key Skills:** Acrobatics +8, Computer Use +9, Demolitions +8,
+  Stealth +10, Survival +7
+- **Possessions:** Cracked data-crystal with Carthic\'s shipping
+  manifests, worn locket containing a holovid of Susan Ward.
+
+### Judge Carthic (Disgraced Sayor Magistrate) {#judge_carthic_disgraced_sayor_magistrate}
+
+*Medium Sayor, Level 6 Bureaucrat / Jurist, Lawful Evil*
+
+- **Initiative:** +1 (+0 Dex, +1 Wis) \| **Perception:** +9
+- **HP:** 28 \| **AC:** 10
+- **Attacks:** None while restrained (Neural suppression cuffs impose
+  Disadvantage on mental checks).
+- **Key Skills:** Bluff +13, Diplomacy +14, Intimidate +10, Knowledge
+  (Law & Treaties) +16
+- **Possessions:** Hidden biometric cypher-chip (implanted beneath
+  collarbone).
+
+## 2. Combat Encounter: Boarding Party {#combat_encounter_boarding_party}
+
+### Commander Kraven Vael (Iron Mandible Infiltration Leader) {#commander_kraven_vael_iron_mandible_infiltration_leader}
+
+*Medium Cyborg Human, Level 6 Soldier / Operative, Neutral Evil*
+
+- **Initiative:** +5 (+2 Dex, +3 Wis) \| **Perception:** +11
+- **HP:** 52 \| **Personal Shield Belt:** 12 Temp HP (Recharges 5 per
+  minute)
+- **AC:** 18 (+6 Heavy Tactical Ceramic Armor, +2 Dex) \| **Touch:** 12
+  \| **Flat-Footed:** 16
+- **Speed:** 30 ft
+- **Attacks:**
+
+:\* *Masterwork Heavy Pulse Carbine:* +9 ranged (2d8+3 energy, crit
+19-20/x2, range 60 ft)
+
+:\* *Vibro-Shock Baton:* +8 melee (1d6+2 slashing + 1d6 electrical, DC
+15 Fort save or Shaken for 1 round)
+
+- **Abilities:** STR 14 (+2), DEX 15 (+2), CON 14 (+2), INT 13 (+1), WIS
+  16 (+3), CHA 10 (+0)
+- **Skills:** Athletics +8, Computer Use +7, Demolitions +8, Perception
+  +11, Stealth +11
+- **Gear:** Active Optical Camouflage Cloak (+4 Stealth when moving at
+  half speed), 2x Flashbang Grenades (DC 15 Reflex or Blinded/Deafened
+  for 1 round), Breaching Datapad.
+
+### Iron Mandible Shock Breachers (3 to 6 Troopers) {#iron_mandible_shock_breachers_3_to_6_troopers}
+
+*Medium Human / Lepidonian Mercenaries, Level 4 Soldier, Neutral Evil*
+
+- **Initiative:** +2 (+1 Dex, +1 Wis) \| **Perception:** +7
+- **HP:** 34 each \| **AC:** 16 (+5 Reinforced Kinetic Weave, +1 Dex)
+- **Speed:** 30 ft
+- **Attacks:**
+
+:\* *Arc-Scattergun:* +6 ranged (2d6 energy, 15-ft cone or 30-ft single
+target)
+
+:\* *Tactical Combat Knife:* +5 melee (1d4+2 piercing, crit 19-20)
+
+- **Gear:** 1x Frag Grenade (3d6 explosive, 15-ft burst, DC 14 Reflex
+  half), Breaching Shield (+2 AC against directional fire).
+
+### Sapper Drone {#sapper_drone}
+
+*Small Automated Breaching Construct, Construct Traits*
+
+- **Initiative:** +3 (+3 Dex) \| **Perception:** +5 (Darkvision 60 ft)
+- **HP:** 22 \| **AC:** 15 (+1 Size, +3 Dex, +1 Hardened Shell)
+- **Speed:** Fly 30 ft (hover)
+- **Attacks:** *Internal Arc Arc-Taser:* +5 ranged (1d8 electrical,
+  range 20 ft)
+- **Special Action -- Thermal Door Cutter:** Spends a full-round action
+  cutting a sealed bulkhead or cell door. After 3 successful rounds, the
+  door is breached.
+
+## 3. Spaceship Stat Blocks & Mechanics {#spaceship_stat_blocks_mechanics}
+
+### Enemy Vessel: The *Obsidian Fang* (Iron Mandible Infiltration Battle Cruiser) {#enemy_vessel_the_obsidian_fang_iron_mandible_infiltration_battle_cruiser}
+
+*Tech Level 3 Battle Cruiser Hull, Size: Large (Max Battle Damage: 3) --- [View Full Ship Sheet](Obsidian_Fang)*
+
+- **Core System Attributes (CSA Budget: 17 Points after Battle Cruiser -3 config penalty):**
+
+:\* **Engines:** 14 (+2) [Base 10 + 2 Config + 2 Point Buy (Cost: 3)]
+
+:\* **Weapons:** 14 (+2) [Base 10 + 4 Point Buy (Cost: 5)]
+
+:\* **Structure:** 10 (+0) [Base 10]
+
+:\* **Shields:** 12 (+1) [Base 10 + 2 Point Buy (Cost: 2)]
+
+:\* **Electronics:** 16 (+3) [Base 10 + 3 Config + 3 Point Buy (Cost: 7)]
+
+:\* **Sensors:** 10 (+0) [Base 10]
+
+- **Secondary Attributes:**
+
+:\* **Battle Damage Defense (BD-DC):** (5, 6) [5 successes required to deal 1 BD (Base 4 + 0 Structure + 1 Shield Enhancer) / 6 Reflector to hit (Base 4 + 1 Shields + 1 Shield Enhancer)]
+
+:\* **Tracking DC:** 12 \[10 + (2 Tactical Mobility + 1 Shields Mod) - 0 Structure Mod - 1 Size Mod\]
+
+:\* **Detection DC:** 9 (Large hull baseline)
+
+:\* **Stealth DC:** 17 (Detection 9 + 3 Electronics Mod + 5 Class 1 Cloaking Device; Shields and Engines offline while cloaked)
+
+:\* **Tactical Mobility:** +2 (Engines Mod; +2 to active Pilot checks from Engine Boosters)
+
+:\* **Initiative:** +2 (Engines 2 + Sensors 0 - Structure 0)
+
+:\* **Tactical Speed:** 6 Squares (4 Base + 2 Engines Mod)
+
+- **Slots & Capacity:**
+
+:\* **Hard Points (8 Total):** 1x Military Countermeasure Jammer (Non-Weapon HP), 2x Large Twin Pulse Lasers, 1x **Shield Piercer Missile Battery** (Ammo: 2 mags / 6 missiles), 1x Large Plasma Cannon, 1x Large Heavy Kinetic Railgun, 1x Cloaking Device Hard Point Emitter, 1x Shield Enhancer (+1 Reflector, +1 Shield DR)
+
+:\* **Bays (4 Total):** Bay 1: [Transporter Bay (Class 1)](Ship_Equipment#Transporter_Bay "Transporter Bay (Class 1)"){.wikilink} (Site-to-bay beaming at Long range, DC 12 + Target Shield Mod), Bay 2: Cloaking Device Bay Generator, Bay 3: Armory & Boarding Staging Bay, Bay 4: Engineering Bay
+
+:\* **Customization Slots (3 Total):** Fire-Control Matrix (+1 to attack d10s), Engine Boosters (+2 Pilot checks), Reactor Auxiliary Capacitor (+2 Overclock Core)
+
+:\* **Boarding Craft:** 2x **Heavy Breaching Leeches** (Magnetic boarding pods)
+
+:\* **FTL Drive:** Warp Drive (High Pulse) [Tech 3, Warp Factor 1–8]
+
+### Player Vessel Baseline: The *FSS Vanguard* (Federation Tech 3 Flagship) {#player_vessel_baseline_the_fss_vanguard_federation_tech_3_flagship}
+
+*Tech Level 3 Cruiser Hull, Size: Gargantuan/Colossal (Max Battle
+Damage: 4-5)*
+
+- **Core System Attributes (CSA Budget: 20 Points):**
+
+:\* **Engines:** +3
+
+:\* **Weapons:** +4
+
+:\* **Structure:** +4 (Resistance: 8 successes needed to deal 1 BD)
+
+:\* **Shields:** +4 (Reflectors: 8 minimum roll to hit)
+
+:\* **Electronics:** +3
+
+:\* **Sensors:** +2
+
+- **Secondary Attributes:**
+
+:\* **Battle Damage Defense (BD-DC):** (8, 8)
+
+:\* **Tracking DC:** 13 + Helm Pilot Mods
+
+- **Shield Piercer Interaction:** When hit by the *Obsidian Fang**s
+  Shield Piercers, the flagship\'s Reflectors temporarily drop from**8
+  down to 6*\', opening a vulnerability window for the Breaching
+  Leeches and transporter beaming!
