@@ -34,6 +34,10 @@ Also there is the README.md file:
 ## Knowledge of the FuturePath TTRPG 
 @./GEMINI_FUTUREPATH_TTRPG.md
 
+
+## Alpha 3 Campaign Notes:
+@./GEMINI_CAMPAIGN_ALPHA3.md
+
+
 # Active Tasks
-- Work on the FuturePath Character Sheet and SpaceShip Schematics Sheet. Updating the view/layout and rolling
-- Review the Glossary/Key Terms page.
+- Work on Futurepath Alpha 3 Campaign. This campaign should be for level 5 through level 10 characters.
