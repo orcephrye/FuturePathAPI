@@ -870,6 +870,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadLayoutLockState();
     loadTooltipsVisibilityState();
     loadNotesPrintState();
+    loadQuirksPrintState();
     applyTheme();
     setupCollapseInteractions();
     restoreCollapseStates();
@@ -3609,11 +3610,7 @@ function addQuirkRow(event) {
     const rowDiv = document.createElement("div");
     rowDiv.className = "quirk-entry";
     rowDiv.id = "quirkEntry_" + quirkRowsCount;
-    rowDiv.innerHTML = "<div class='d-flex justify-content-between align-items-center mb-2'>" +
-        "<label class='small fw-bold text-warning mb-0' for='quirkName_" + quirkRowsCount + "'>Ship Quirk #" + quirkRowsCount + "</label>" +
-        "<button type='button' class='btn btn-link btn-sm text-danger p-0 no-print' onclick='removeEntry(\"" + rowDiv.id + "\", \"quirks\")'>" +
-        "<i class='fa-solid fa-xmark'></i></button></div>" +
-        "<div class='row g-2 mb-2'>" +
+    rowDiv.innerHTML = "<div class='row g-2 mb-2'>" +
         "<div class='col-12 col-md-4'>" +
         "<label class='form-label small text-uppercase text-muted fw-bold mb-1' for='quirkName_" + quirkRowsCount + "'>Quirk Name</label>" +
         "<div class='input-group input-group-sm'>" +
@@ -3621,7 +3618,10 @@ function addQuirkRow(event) {
         "<button type='button' class='btn btn-cyber-outline btn-sm px-2 no-print' onclick='toggleDatalist(\"quirkName_" + quirkRowsCount + "\")'><i class='fa-solid fa-chevron-down'></i></button>" +
         "</div></div>" +
         "<div class='col-12 col-md-8'>" +
-        "<label class='form-label small text-uppercase text-muted fw-bold mb-1' for='quirkDesc_" + quirkRowsCount + "'>Description</label>" +
+        "<div class='d-flex justify-content-between align-items-center mb-1'>" +
+        "<label class='form-label small text-uppercase text-muted fw-bold mb-0' for='quirkDesc_" + quirkRowsCount + "'>Description</label>" +
+        "<button type='button' class='btn btn-link btn-sm text-danger p-0 no-print' title='Remove Quirk' onclick='removeEntry(\"" + rowDiv.id + "\", \"quirks\")'>" +
+        "<i class='fa-solid fa-xmark'></i></button></div>" +
         "<textarea id='quirkDesc_" + quirkRowsCount + "' name='quirkDesc_" + quirkRowsCount + "' class='form-control form-control-sm quirk-textarea' placeholder='Quirk description...' rows='1' oninput='autoExpandTextarea(this)'></textarea>" +
         "</div></div>" +
         "<div class='row g-2'>" +
@@ -3715,23 +3715,44 @@ function removeEntry(id, type) {
 }
 
 function updateQuirksPrintVisibility() {
-    const quirkCard = document.getElementById("cardShipQuirks");
-    if (!quirkCard) {
+    // Visibility is now controlled via the Print toggle button.
+}
+
+// Quirks Card Print Visibility Toggle
+function toggleQuirksPrintVisibility(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    const quirksCard = document.getElementById("cardShipQuirks");
+    const textEl = document.getElementById("quirksPrintVisibilityText");
+    if (!quirksCard || !textEl) {
         return;
     }
-    const entries = document.querySelectorAll(".quirk-entry");
-    let hasContent = false;
-    entries.forEach(function (entry) {
-        const nameInput = entry.querySelector("input[id^='quirkName_']");
-        if (nameInput && nameInput.value.trim() !== "") {
-            hasContent = true;
-        }
-    });
+    const isHidden = quirksCard.classList.toggle("print-hidden");
+    let statusText = "Print: Visible";
+    if (isHidden) {
+        statusText = "Print: Hidden";
+    }
+    textEl.textContent = statusText;
+    let hiddenVal = "false";
+    if (isHidden) {
+        hiddenVal = "true";
+    }
+    localStorage.setItem("ship_quirks_print_hidden", hiddenVal);
+}
 
-    if (!hasContent) {
-        quirkCard.classList.add("empty-quirks");
-    } else {
-        quirkCard.classList.remove("empty-quirks");
+function loadQuirksPrintState() {
+    const saved = localStorage.getItem("ship_quirks_print_hidden");
+    if (saved === "true") {
+        const quirksCard = document.getElementById("cardShipQuirks");
+        const textEl = document.getElementById("quirksPrintVisibilityText");
+        if (quirksCard) {
+            quirksCard.classList.add("print-hidden");
+        }
+        if (textEl) {
+            textEl.textContent = "Print: Hidden";
+        }
     }
 }
 
@@ -4729,6 +4750,25 @@ function resetShipSheet() {
         });
         updateHullConfigTooltip(null);
         updateCustomizationPrintVisibility();
+        const quirksCard = document.getElementById("cardShipQuirks");
+        const quirksPrintText = document.getElementById("quirksPrintVisibilityText");
+        if (quirksCard) {
+            quirksCard.classList.remove("print-hidden");
+        }
+        if (quirksPrintText) {
+            quirksPrintText.textContent = "Print: Visible";
+        }
+        localStorage.setItem("ship_quirks_print_hidden", "false");
+
+        const notesCard = document.getElementById("cardShipNotes");
+        const notesPrintText = document.getElementById("notesPrintVisibilityText");
+        if (notesCard) {
+            notesCard.classList.remove("print-hidden");
+        }
+        if (notesPrintText) {
+            notesPrintText.textContent = "Print: Visible";
+        }
+        localStorage.setItem("ship_notes_print_hidden", "false");
         recalculateShipAttributes();
     }
 }
@@ -4968,8 +5008,14 @@ function getShipFormDataObj() {
             negative: neg
         });
     });
+    const quirksCard = document.getElementById("cardShipQuirks");
+    let isQuirksPrintHidden = false;
+    if (quirksCard && quirksCard.classList.contains("print-hidden")) {
+        isQuirksPrintHidden = true;
+    }
     structured.cardShipQuirks = {
-        quirksList
+        quirksList,
+        printHidden: isQuirksPrintHidden
     };
 
     // 9. cardShipNotes
@@ -5254,7 +5300,30 @@ function populateShipFormStructured(imported) {
         }
     }
 
-    // 6. Notes & printHidden
+    // 6. Quirks printHidden
+    const quirksCard = document.getElementById("cardShipQuirks");
+    const quirksPrintText = document.getElementById("quirksPrintVisibilityText");
+    if (quirksCard) {
+        let hideQuirks = false;
+        if (imported.cardShipQuirks && imported.cardShipQuirks.printHidden !== undefined) {
+            hideQuirks = Boolean(imported.cardShipQuirks.printHidden);
+        }
+        if (hideQuirks) {
+            quirksCard.classList.add("print-hidden");
+            if (quirksPrintText) {
+                quirksPrintText.textContent = "Print: Hidden";
+            }
+            localStorage.setItem("ship_quirks_print_hidden", "true");
+        } else {
+            quirksCard.classList.remove("print-hidden");
+            if (quirksPrintText) {
+                quirksPrintText.textContent = "Print: Visible";
+            }
+            localStorage.setItem("ship_quirks_print_hidden", "false");
+        }
+    }
+
+    // 7. Notes & printHidden
     const notesCard = document.getElementById("cardShipNotes");
     const notesTextEl = document.getElementById("shipNotesTextarea");
     const notesPrintText = document.getElementById("notesPrintVisibilityText");
@@ -5525,6 +5594,7 @@ window.toggleTooltipsVisibility = toggleTooltipsVisibility;
 window.toggleDatalist = toggleDatalist;
 window.toggleLockTheme = toggleLockTheme;
 window.toggleNotesPrintVisibility = toggleNotesPrintVisibility;
+window.toggleQuirksPrintVisibility = toggleQuirksPrintVisibility;
 window.toggleThemeLock = toggleLockTheme;
 window.adjustRollPool = adjustRollPool;
 window.onWeaponsOfficerAbilityChange = onWeaponsOfficerAbilityChange;
@@ -5546,6 +5616,43 @@ window.onShieldsSkillRankChange = onShieldsSkillRankChange;
 window.rollShieldKnowledgeScienceSkillCheck = rollShieldKnowledgeScienceSkillCheck;
 window.rollShieldAcrobaticsSkillCheck = rollShieldAcrobaticsSkillCheck;
 window.updateHullDescription = updateHullDescription;
+window.prepareNotesForPrint = prepareNotesForPrint;
+
+function prepareNotesForPrint() {
+    const ta = document.getElementById("shipNotesTextarea");
+    if (!ta) {
+        return;
+    }
+    const text = ta.value || "";
+    const rawLines = text.split("\n").length;
+
+    const measurer = document.createElement("div");
+    measurer.style.position = "absolute";
+    measurer.style.visibility = "hidden";
+    measurer.style.fontSize = "5.8pt";
+    measurer.style.lineHeight = "13px";
+    measurer.style.fontFamily = "inherit";
+    measurer.style.whiteSpace = "pre-wrap";
+    measurer.style.wordBreak = "break-word";
+    measurer.style.padding = "0 4px";
+    measurer.style.boxSizing = "border-box";
+    const width = ta.clientWidth || (ta.parentElement ? ta.parentElement.clientWidth : 350);
+    measurer.style.width = width + "px";
+
+    let measureText = text;
+    if (measureText.endsWith("\n")) {
+        measureText += " ";
+    }
+    measurer.textContent = measureText;
+    document.body.appendChild(measurer);
+    const measuredLines = Math.ceil(measurer.clientHeight / 13);
+    document.body.removeChild(measurer);
+
+    const totalLines = Math.max(3, rawLines, measuredLines);
+    ta.rows = totalLines;
+    ta.style.height = (totalLines * 13) + "px";
+    ta.style.minHeight = (totalLines * 13) + "px";
+}
 
 window.addEventListener("beforeprint", function () {
     document.body.classList.add("is-print-mode");
@@ -5555,8 +5662,16 @@ window.addEventListener("beforeprint", function () {
             autoExpandTextarea(ta);
         }
     });
+    prepareNotesForPrint();
 });
 
 window.addEventListener("afterprint", function () {
     document.body.classList.remove("is-print-mode");
+    const ta = document.getElementById("shipNotesTextarea");
+    if (ta) {
+        ta.rows = 3;
+        ta.style.height = "";
+        ta.style.minHeight = "";
+        autoExpandTextarea(ta);
+    }
 });
