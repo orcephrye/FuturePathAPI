@@ -1,0 +1,21 @@
+''' <span style="color:#ff0000"> SPOILER WARNINGS: THIS CAMPAIGN GUIDE IS FOR GAME MASTERS ONLY </span> '''
+
+This is a [[Campaigns|Campaign]] for level 5 Characters/Heroes. It is meant to take Player Characters from level 5 to level 10. This follows the events of the [[The Claws]] campaign; however, it expects different characters and doesn't require the Players to know about the previous campaign.
+
+
+
+== FuturePath GM Notes ==
+
+Please review these starting notes for this campaign. [[Trouble in our own Backyard GM Starting Notes]]
+Also review the Players guide: [[Trouble in our own Backyard Players Guide]]
+
+* '''Recommended Character/Hero Level:''' 5
+* '''Setting:''' In Sayor and Kurgian-ruled space, also known as the Federation of Free Peoples. Onboard the Federation Star Ship (FSS) <named by the players or the GM>. This is roughly 100 years after Humanity learns about alien life.
+
+= Session Zero =
+
+= Starting the Campaign =
+
+= Mission 1: Escort the Judge =
+
+The complete guide for Mission 1 is located at [[Trouble in our own Backyard: Escorting the Judge]]

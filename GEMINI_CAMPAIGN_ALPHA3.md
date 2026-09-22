@@ -11,7 +11,7 @@ Seventy years after Humanity's catastrophic System War 1 (WW3)—and a century a
 Desperate to prevent total destabilization, the Federation has rushed its cutting-edge Tech 3 flagship, the *FSS Vanguard* (or player-chosen name), to the front lines before completing its scheduled shakedown cruise. As the Federation's elite naval crew, your mission is to restore order to a volatile border on the brink of war and uncover the shadowy plots threatening the peace.
 
 ## Campaign Continuity: The Legacy of 'The Claws' (Prequel Context)
-*Conspiracy at the Border* is the direct narrative continuation of the Level 1–5 campaign, *The Claws*, but experienced from an entirely different perspective. While the previous adventure followed chaotic rogues and mercenaries fighting through the underworld, this campaign is a Star Trek-inspired, naval command sci-fi campaign.
+*Trouble in our own Backyard* is the direct narrative continuation of the Level 1–5 campaign, *The Claws*, but experienced from an entirely different perspective. While the previous adventure followed chaotic rogues and mercenaries fighting through the underworld, this campaign is a Star Trek-inspired, naval command sci-fi campaign.
 
 ### What Happened in 'The Claws' (Level 1–5 Prequel Summary)
 - **The Setup & Amnesia:** The players began as members of an infamous mercenary band known as **The Claws**. They awoke inside a high-security penal facility with their memories wiped, knowing only that a prominent magistrate named **Judge Carthic** had sentenced them without a public trial.
