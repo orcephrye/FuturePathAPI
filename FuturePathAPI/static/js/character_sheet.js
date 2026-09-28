@@ -3384,6 +3384,11 @@ function updateProficiencyCounts() {
     const el = document.getElementById(countId) || document.querySelector(`#${countId}`);
     if (el) {
       el.innerText = count;
+      el.setAttribute('data-count', count);
+      const printInput = document.getElementById(`${countId}_input`);
+      if (printInput) {
+        printInput.value = (count > 0 ? count : '');
+      }
     }
   });
 }
@@ -8221,6 +8226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.body.classList.add('is-print-mode');
     expandAllCards();
+    updateProficiencyCounts();
     autoPaginateCards();
     updateEmptyPages();
     reexpandAllTextareas();

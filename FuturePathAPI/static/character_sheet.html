@@ -496,9 +496,12 @@
 <span><i class="fa-solid fa-sliders me-2"></i>Attributes</span>
 <div class="d-inline-flex align-items-center flex-wrap gap-1 border-start ps-2 ms-md-1 no-collapse" onclick="event.stopPropagation();">
 <span class="small text-muted fw-bold me-1" style="font-size: 0.72rem;">
-<span class="d-none d-lg-inline">Tech Prof:</span>
+<span class="d-none d-xxl-inline">Tech Proficiency:</span>
+<span class="d-none d-lg-inline d-xxl-none">Tech Prof:</span>
 <span class="d-inline d-lg-none">Tech P:</span>
-<span class="text-cyan fw-bold ms-1" id="techProfCount">0</span>
+<span class="text-cyan fw-bold ms-1 prof-count-text" data-count="0" id="techProfCount">0</span>
+<label class="visually-hidden" for="techProfCount_input">Tech Proficiency Count</label>
+<input class="prof-count-print-input" id="techProfCount_input" maxlength="1" type="text"/>
 </span>
 <label class="prof-check-item" for="global_techProf1"><input class="form-check-input" id="global_techProf1" name="techProf1" onchange="handleWeaponProficiencyChange('techProf', 1, 4, this.checked)" type="checkbox"/></label>
 <label class="prof-check-item" for="global_techProf2"><input class="form-check-input" id="global_techProf2" name="techProf2" onchange="handleWeaponProficiencyChange('techProf', 2, 4, this.checked)" type="checkbox"/></label>
@@ -1507,7 +1510,9 @@
 <span class="d-none d-xxl-inline">Armor Proficiency:</span>
 <span class="d-none d-lg-inline d-xxl-none">Armor Prof:</span>
 <span class="d-inline d-lg-none">Armor P:</span>
-<span class="text-cyan fw-bold ms-1" id="armorProfCount">0</span>
+<span class="text-cyan fw-bold ms-1 prof-count-text" data-count="0" id="armorProfCount">0</span>
+<label class="visually-hidden" for="armorProfCount_input">Armor Proficiency Count</label>
+<input class="prof-count-print-input" id="armorProfCount_input" maxlength="1" type="text"/>
 </span>
 <label class="prof-check-item" for="armorDefensesCard_armorProf1"><input class="form-check-input" id="armorDefensesCard_armorProf1" name="armorProf1" onchange="handleArmorProficiencyChange(1, this.checked)" type="checkbox"/></label>
 <label class="prof-check-item" for="armorDefensesCard_armorProf2"><input class="form-check-input" id="armorDefensesCard_armorProf2" name="armorProf2" onchange="handleArmorProficiencyChange(2, this.checked)" type="checkbox"/></label>
@@ -1594,7 +1599,9 @@
 <span class="d-none d-xxl-inline">Melee Proficiency:</span>
 <span class="d-none d-lg-inline d-xxl-none">Melee Prof:</span>
 <span class="d-inline d-lg-none">Melee P:</span>
-<span class="text-cyan fw-bold ms-1" id="meleeProfCount">0</span>
+<span class="text-cyan fw-bold ms-1 prof-count-text" data-count="0" id="meleeProfCount">0</span>
+<label class="visually-hidden" for="meleeProfCount_input">Melee Proficiency Count</label>
+<input class="prof-count-print-input" id="meleeProfCount_input" maxlength="1" type="text"/>
 </span>
 <label class="prof-check-item" for="weaponsCard_meleeProf1"><input class="form-check-input" id="weaponsCard_meleeProf1" name="meleeProf1" onchange="handleWeaponProficiencyChange('meleeProf', 1, 9, this.checked)" type="checkbox"/></label>
 <label class="prof-check-item" for="weaponsCard_meleeProf2"><input class="form-check-input" id="weaponsCard_meleeProf2" name="meleeProf2" onchange="handleWeaponProficiencyChange('meleeProf', 2, 9, this.checked)" type="checkbox"/></label>
@@ -1612,7 +1619,9 @@
 <span class="d-none d-xxl-inline">Ranged Proficiency:</span>
 <span class="d-none d-lg-inline d-xxl-none">Ranged Prof:</span>
 <span class="d-inline d-lg-none">Ranged P:</span>
-<span class="text-cyan fw-bold ms-1" id="rangedProfCount">0</span>
+<span class="text-cyan fw-bold ms-1 prof-count-text" data-count="0" id="rangedProfCount">0</span>
+<label class="visually-hidden" for="rangedProfCount_input">Ranged Proficiency Count</label>
+<input class="prof-count-print-input" id="rangedProfCount_input" maxlength="1" type="text"/>
 </span>
 <label class="prof-check-item" for="weaponsCard_rangedProf1"><input class="form-check-input" id="weaponsCard_rangedProf1" name="rangedProf1" onchange="handleWeaponProficiencyChange('rangedProf', 1, 9, this.checked)" type="checkbox"/></label>
 <label class="prof-check-item" for="weaponsCard_rangedProf2"><input class="form-check-input" id="weaponsCard_rangedProf2" name="rangedProf2" onchange="handleWeaponProficiencyChange('rangedProf', 2, 9, this.checked)" type="checkbox"/></label>
@@ -2339,7 +2348,9 @@
 <span class="d-none d-xxl-inline">Item Crafting Proficiency:</span>
 <span class="d-none d-lg-inline d-xxl-none">Item Craft:</span>
 <span class="d-inline d-lg-none">Item Craft P:</span>
-<span class="text-cyan fw-bold ms-1" id="itemCraftProfCount">0</span>
+<span class="text-cyan fw-bold ms-1 prof-count-text" data-count="0" id="itemCraftProfCount">0</span>
+<label class="visually-hidden" for="itemCraftProfCount_input">Item Crafting Proficiency Count</label>
+<input class="prof-count-print-input" id="itemCraftProfCount_input" maxlength="1" type="text"/>
 </span>
 <label class="prof-check-item" for="equipmentCard_itemCraftProf1"><input class="form-check-input" id="equipmentCard_itemCraftProf1" name="itemCraftProf1" onchange="handleItemCraftProficiencyChange(1, this.checked)" type="checkbox"/></label>
 <label class="prof-check-item" for="equipmentCard_itemCraftProf2"><input class="form-check-input" id="equipmentCard_itemCraftProf2" name="itemCraftProf2" onchange="handleItemCraftProficiencyChange(2, this.checked)" type="checkbox"/></label>
@@ -3059,7 +3070,9 @@
 <span class="d-none d-xxl-inline">Power Armor Proficiency:</span>
 <span class="d-none d-lg-inline d-xxl-none">Power Armor Prof:</span>
 <span class="d-inline d-lg-none">Power Armor P:</span>
-<span class="text-cyan fw-bold ms-1" id="powerArmorProfCount">0</span>
+<span class="text-cyan fw-bold ms-1 prof-count-text" data-count="0" id="powerArmorProfCount">0</span>
+<label class="visually-hidden" for="powerArmorProfCount_input">Power Armor Proficiency Count</label>
+<input class="prof-count-print-input" id="powerArmorProfCount_input" maxlength="1" type="text"/>
 </span>
 <label class="prof-check-item" for="powerArmorCard_powerArmorProf1"><input class="form-check-input" id="powerArmorCard_powerArmorProf1" name="powerArmorProf1" onchange="handlePowerArmorProficiencyChange(1, this.checked)" type="checkbox"/></label>
 <label class="prof-check-item" for="powerArmorCard_powerArmorProf2"><input class="form-check-input" id="powerArmorCard_powerArmorProf2" name="powerArmorProf2" onchange="handlePowerArmorProficiencyChange(2, this.checked)" type="checkbox"/></label>
