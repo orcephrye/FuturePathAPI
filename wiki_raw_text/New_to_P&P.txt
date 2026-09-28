@@ -1,17 +1,17 @@
 <div class="toclimit-1"><div style="float:right; margin-left: 20px">__TOC__</div></div>
-Are you new to Pen and Paper Role-Playing Games? Below is a rough overview of what is needed to play a Future Path game as well as some basic rules and vocabulary that is part of the nomenclature of this System. Players will find that these rules and ideas are largely standard across most Pen & Paper games.
+Are you new to Pen and Paper Role-Playing Games? Below is a rough overview of what is needed to play a Future Path game, as well as some basic rules and vocabulary that are part of the nomenclature of this System. Players will find these rules and ideas largely standard across most pen-and-paper games.
 
 == What you'll need ==
-You will need a [https://www.google.com/search?q=d20+Dice+set&source=lnms&tbm=shop&sa=X&ved=0ahUKEwiXzMHxh5_MAhWFOSYKHQBvAbEQ_AUIBygB&biw=1905&bih=945 d20 dice set], a [https://drive.google.com/file/d/1LzuKrZx6mevtOLY-8M7jnzREWABrjcvk/view?usp=drive_link character sheet], (more on this later) and a place to meet up with friends. One person will have to be the '''Game Master''' (GM for short) while the others are '''Players'''. 
+You will need a [https://www.google.com/search?q=d20+Dice+set&source=lnms&tbm=shop&sa=X&ved=0ahUKEwiXzMHxh5_MAhWFOSYKHQBvAbEQ_AUIBygB&biw=1905&bih=945 d20 dice set], a [https://drive.google.com/uc?export=download&id=1NT_s-6wckf5VT9EI7HMFdcDgkEe1QoGh Character Sheet], (more on this later) and a place to meet up with friends. One person will be the '''Game Master''' (GM for short), while the others are '''Players'''. 
 
 Well, how do I start? If you have never played a Pen and Paper game before, then you should finish the rest of this page before moving on, as it helps to explain a few things.
 
-# '''All these rules?''' You will need to learn at least some of the rules. But not only is it not necessary to know every single rule, but it is also not practical. The important part is to be familiar with this site and where you can find a rule when it comes up in gameplay.
+# '''All these rules?''' You will need to learn at least some of the rules. But not only is it not necessary to know every single rule, but it is also not practical. The important part is to be familiar with the site and know where to find a rule when it comes up in gameplay.
 ## If you are a Player going directly to the [[Character_Creation_and_Advancement|Character Creation and Advancement]] page is a nice start. It will help you make a character that will, in turn, bounce you around different pages on this wiki. You do not need to make a Character to start playing as there are some [[Starter_Characters|Starter/Premade Characters]] as well.
 ## If you are a GM, then start with all the pages under the "Rules" category, including the Combat section, "Characters" category, and "Campaign Setting" category. 
 # '''Number of people?''' The minimum number of players is 3 (1 GM and 2 Players), but for best results, most games have 4 players and 1 GM.
 # '''Game Master?''' You will need to pick a player who will be the GM. Usually, someone who wishes to tell a story, premade or their own. More on that in the next section.
-# '''How long does it take?''' Game sessions usually last 3 to 5 hours; however, they can go on much longer. It really is up to everyone if they want to keep going or stop. There are also helpful online resources that enable remote gameplay for those who cannot meet in person.
+# '''How long does it take?''' Game sessions usually last 3 to 5 hours; however, they can go on much longer. It's up to everyone whether they want to keep going or stop. Helpful online resources also enable remote gameplay for those who cannot meet in person.
 
 == Game Master? ==
 

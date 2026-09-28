@@ -40,4 +40,5 @@ Also there is the README.md file:
 
 
 # Active Tasks
-- Work on Futurepath Alpha 3 Campaign. This campaign should be for level 5 through level 10 characters.
+- Work on Futurepath Alpha 3 Campaign. This campaign should be for level 5 through level 10 characters. 
+- Reworking small bugs found on the Character and Ship Sheets as well as the Wiki text.

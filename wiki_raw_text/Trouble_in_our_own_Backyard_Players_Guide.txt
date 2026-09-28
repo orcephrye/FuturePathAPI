@@ -1,20 +1,20 @@
 There is a Google Docs version located [https://docs.google.com/document/d/1m6qGsXG7mjrLooGGxudoPSswm8TW5EZw8EVL3Ty68Gc/edit?usp=sharing here].
 
-'''A century of peace is burning. And the match was struck in our own backyard.'''
+<blockquote>
+It takes hard work to build peace. A century of hard work has brought peace between the Federation and Lepidonan. But now in the dark a hand holds onto a match. It is poised to strike it. But whose hand is on that match? If lit, will peace burn or withstand the flame?
 
 One hundred years ago, the Sayor and Kurgian peoples bled together, broke their chains, and forged the Federation of Free Peoples under a fragile, arbitrated truce with the Lepidonian Empire. For decades, the border held.
 
-Then came humanity. A reckless, promising new species that touched the stars—only to tear their own world apart in nuclear fire. The robotic Jove locked down their 250-light-year graveyard, leaving empires hungrily eyeing the border and wondering who truly lit the spark.
+Then came humanity. A reckless, promising new species that touched the stars—only to tear their own world apart in nuclear fire. The robotic Jove locked down humanity's borders until it could be trusted, leaving a 250-light-year-circumference tomb. And empires hungrily eyed the border and people, wondering if humanity was truly to blame.
 
-Now, the shadows are moving.
+Now, something moves in the shadows.
 
-On '''Sawn Prime''', riots engulf the capital as our own high judge is exposed as a Lepidonian puppet. On '''Tarienth''', joint terraforming colonies erupt into blood-soaked rebellion. In deep space, the neutral trade hub of '''Acbar''' has gone completely silent behind an unexplained planetary blackout. Behind it all lurks '''Dark Claw'''—a ruthless paramilitary syndicate doing the empire's dirtiest work.
+On '''Sawn Prime''', riots engulf the capital as a high judge of the Federation is exposed as a Lepidonian puppet. On '''Tarienth''', terraforming workers erupt into a massive system-wide strike. And at the border, the neutral trade hub of '''Acbar''' has gone completely silent behind an unexplained planetary blackout.
 
-The Lepidonians claim the Federation broke the treaty. The enigmatic Grayling observers are on their way to judge our guilt—and if the peace is revoked, Lepidonian warfleets will drown our worlds in fire.
+The Lepidonians claim the Federation broke the treaty. That the Federation is behind the riots and the blackout. They have called on the peace treaty's arbitrators, the enigmatic Graylings, to come bear witness to the violations. The Grayling observers are on their way to determine Federation guilt—and if the treaty is nullified, the DMZ will be revoked, and undoubtedly Lepidonian warfleets will come next.
 
-You are the handpicked elite assigned to the Federation's brand-new Tech 3 flagship, rushed out of drydock before her paint is dry and her shakedown cruise complete. Your orders: uncover the conspiracy, hold the border, and save the Federation before the galaxy plunges into total war.
-
-''Step onto the bridge. Stations, everyone.''
+You are the Federation Navy's elite assigned to a brand-new Tech 3 Battleship. Rushed into service before her shakedown cruise is complete. Your orders: uncover the conspiracy, hold the border, and save the Federation before this sector is plunged into war.
+</blockquote>
 
 == Campaign Background ==
 Located in the Orion-Cygnus arm, Earth sat inside the '''A.P.E.Z.''' (Jovian Advancing People's Exclusion Zone)—a protected buffer zone established by the robotic '''Jove''' between the rival Cryous and Lepidonan empires. Blocked by the zone, the two empires clashed directly, sparking a rebellion that saw two subjugated species (the [[Sayor|Peoples of Sayor]] and the [[Kurgian|Kurgian Republic]]) break away to form an independent Federation, later legitimized by a peace treaty arbitrated by the neutral [[Species#Graelycxazshngs_.28aka_Graylings.29|Graylings]].
@@ -54,6 +54,7 @@ To validate these claims, the Lepidonians have summoned a Grayling Envoy to insp
 :# '''Sensors and Comms Operator'''
 :# '''Lt. Commander of Space Marine Squad Alpha''' ''(Default: "Hell's Hammer")''
 :# '''Lt. Commander of Space Marine Squad Beta''' ''(Default: "Void-Walkers")''
+:# '''Political Attaché''' An important ranking politician from the Federation Governing Council.  
 :*(Unassigned positions are handled by competent NPCs whom players may temporarily direct or control in encounters).*
 
 * '''Optional Character Traits:'''
@@ -63,3 +64,5 @@ To validate these claims, the Lepidonians have summoned a Grayling Envoy to insp
 :# ''Lepidonian Scarred:'' Survivor scarred by past trauma or atrocities involving the Lepidonian Empire.
 :# ''Diplomatic Conscience:'' Sworn pacifist assigned to the crew for sensitive political or diplomatic oversight.
 :# ''Ties in the DMZ:'' Romantically involved with or closely related to someone recently reported missing in the Demilitarized Zone (near Tarienth or Acbar).
+
+This campaign also has [[Premade_Characters:_Trouble_in_our_own_Backyard|Trouble in our own Backyard Premade Characters]] for the Players to choose pre-made level 5 Characters.

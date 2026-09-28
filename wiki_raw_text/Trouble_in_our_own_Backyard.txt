@@ -2,20 +2,42 @@
 
 This is a [[Campaigns|Campaign]] for level 5 Characters/Heroes. It is meant to take Player Characters from level 5 to level 10. This follows the events of the [[The Claws]] campaign; however, it expects different characters and doesn't require the Players to know about the previous campaign.
 
+== FuturePath GM Resources ==
 
-
-== FuturePath GM Notes ==
-
-Please review these starting notes for this campaign. [[Trouble in our own Backyard GM Starting Notes]]
-Also review the Players guide: [[Trouble in our own Backyard Players Guide]]
-
-* '''Recommended Character/Hero Level:''' 5
-* '''Setting:''' In Sayor and Kurgian-ruled space, also known as the Federation of Free Peoples. Onboard the Federation Star Ship (FSS) <named by the players or the GM>. This is roughly 100 years after Humanity learns about alien life.
+* Please review these starting notes for this campaign. [[Trouble in our own Backyard GM Starting Notes]]
+* There are also descriptions for the [[Non-Playable Characters: Trouble in our own Backyard|Non-Playable Characters]].
+* Background information is also available for [[Places of Interest: Trouble in our own Backyard|Places of Interest]].
+* Also review the Player's Guide: [[Trouble_in_our_own_Backyard_Players_Guide#Campaign_Rules_&_Player_Options|Players Guide]].
+* There are premade Playable characters to help with prep for both the GM and the Players [[Premade Characters: Trouble in our own Backyard|here]].
+* '''Recommended Character/Hero Level:''' '''5''' It is assumed that all starting Characters are at level 5 and that the campaign will bring Characters through level 9 and end possibly at level 10.
+* '''Setting:''' In Sayor- and Kurgian-ruled space, also known as the Federation of Free Peoples. Onboard the Federation Star Ship (FSS) <named by the players or the GM>. This is roughly 100 years after Humanity learns about alien life. The Federation sits in between [[Species#Cryous|Cryous]] and [[Species#Lepidonains|Lepidonian]] space. These two great but still young empires have waged wars in the past and are now separated by each other's former subjugated species. The Federation also borders Humanities, a 250-light-year-wide exclusion zone protected by the Jove. That protection could end if Humanity chooses to ally with a different people. This puts the Federation in a precarious position: two hungry Empires want to expand either by befriending Humanity, reconquering the Federation, or both.
 
 = Session Zero =
 
+A session zero day helps players get acquainted with the FuturePath universe, rules, and possibly each other. Make sure that the Players read the [[Trouble in our own Backyard Players Guide|Players Guide]] while the GM should have already read the [[Trouble in our own Backyard GM Starting Notes|GM Starting Notes]]. This is also the time to help make characters. The GM can ask players to make their Characters at home before game day, but especially if there are new Players to d20FuturePath, they should try to meet to go over Character Creation together. The GM should also prep some Characters they can role-play as Officers on the ship and fill in missing gaps if necessary. This campaign has pre-made Characters for the different Officer positions found [[Premade Characters: Trouble in our own Backyard|here]]. This helps players choose a character, get inspiration, or lets the GM use one instead of building their own, which cuts down on prep time. 
+
+In this game, all the Players are Officers or Political attachés serving aboard a Starship owned by a multi-species Federation of peoples. The [[Trouble in our own Backyard Players Guide|Players Guide]] has a list of possible roles, and the Players should try to stay within those bounds and discuss amongst themselves and the GM to make sure that nobody picks the same role twice and that the GM is aware of what roles they will need to fill in. It is also suggested that players pick multiple Characters to play during these missions so they can switch characters depending on the situation the ship encounters.
+
+Make sure that Characters and the GM have the dice or know how to navigate the [http://api.d20futurepath.com/files/mRoller.html Dice App] and/or the [https://api.d20futurepath.com/v1/character_sheet Digital Character Sheet] and [https://drive.google.com/uc?export=download&id=1J2JI954u_J8mrxsJ6S43SvpT97fKH7IJ SpaceShip Sheet]. It is recommended to have at least 10d10s for Spaceship combat. Also, using different-colored d10s for different types of Hard Points is extremely useful.
+
+The GM should inform the Players of the Encounter rules being used. For example, whether Interia will be applied in combat situations, and any other customization rules, including house rules. The Players should be open about their gameplay expectations. They should note the style, theme, and tone of the story they hope to experience during the campaign. Players should try to align their expectations with what they have read in the Player's Guide. They should also note any gameplay taboos they may have.
+
+As the GM, you should be ready to start Mission 1. Mission One is the shortest and includes more story setup, social encounters, and introductions of characters, plot points, and story hooks. It ends with Combat. Some session zeros bleed into the start of the campaign and session 1. At least be ready for the first couple of '''Scenes''' in [[Trouble in our own Backyard: Escorting the Judge]].
+
 = Starting the Campaign =
+
+The GM should be ready ahead of time and have read the [[Trouble_in_our_own_Backyard_GM_Starting_Notes#Mission_Summaries|GM Starting Notes]] and [[Trouble_in_our_own_Backyard:_Escorting_the_Judge|Escorting the Judge]] Mission page. All players should have at least 1 Character ready. They should name the Spaceship, or the GM should. Otherwise, simply call it the FSS Vanguard. The Players should give time to the GM to review their character sheets, and inform the GM if they picked an '''Optional Character Trait''' from the [[Trouble_in_our_own_Backyard_Players_Guide#Campaign_Rules_&_Player_Options|Players Guide]].
+
+Once the GM has recorded important details about the Characters and which Officer positions the player is playing vs. themselves, they can start.
+
+The campaign starts with '''Mission 1: Escorting the Judge'''. The GM should start by reading the [[Trouble_in_our_own_Backyard:_Escorting_the_Judge# Scene_1:_Mission_Debriefing_in_the_Situation_Room|Mission Debriefing flavor text]].
 
 = Mission 1: Escort the Judge =
 
+The whole campaign starts with Mission 1. It should begin with the flavor text in Scene 1 of Mission 1.
+
 The complete guide for Mission 1 is located at [[Trouble in our own Backyard: Escorting the Judge]]
+
+Once complete, before the adventures move on to the next mission, they have a rendezvous by the Logistics Fleet. This fleet's flagship is the support carrier FSS Huaki. She is accompanied by several Battle Cruisers and Destroyers as well as support craft of a variety of different configurations. The fleet is headed up by Fleet Admiral Thunnus. This fleet travels the full length of the Federation-owned territories, supporting the deployed fleets and outposts. They have been sent to rendezvous with your Ship before heading to Sayor's capital.
+
+This support ship can administer in-space repairs to the ship. It can also provide R&R for the crew and let the Players shop at the Navy Exchange Store, Commissary, and Depot on the FSS Huaki. Here, Tech 2 Goodes, Services and Weapons, Armor, and Ammo are purchasable with a Procure Difficulty no greater than 2.

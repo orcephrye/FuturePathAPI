@@ -34,7 +34,7 @@ done
 
 # Create both directories
 mkdir -p "$TXT_OUTPUT_DIR"
-mkdir -p "$MD_OUTPUT_DIR"
+# mkdir -p "$MD_OUTPUT_DIR"
 TEMP_TITLES_FILE=$(mktemp)
 
 # ==========================================
@@ -109,8 +109,8 @@ while IFS= read -r TITLE; do
         echo "$WIKITEXT" > "$TXT_PATH"
         
         # 2. Convert to Markdown and save in the separate directory
-        MD_PATH="${MD_OUTPUT_DIR}/${MD_FILENAME}"
-        pandoc -f mediawiki -t markdown "$TXT_PATH" -o "$MD_PATH"
+        #MD_PATH="${MD_OUTPUT_DIR}/${MD_FILENAME}"
+        #pandoc -f mediawiki -t markdown "$TXT_PATH" -o "$MD_PATH"
 
         echo "[$CURRENT/$TOTAL_PAGES] Processed: $TITLE"
     else

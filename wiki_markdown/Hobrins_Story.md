@@ -1,2 +1,0 @@
-The story of Hobrin\'s journey from a student of history to revealing a
-hidden truth about how the Milky Way\'s life came to be.

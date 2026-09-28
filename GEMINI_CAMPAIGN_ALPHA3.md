@@ -82,9 +82,9 @@ To validate these claims, the Lepidonians have summoned a Grayling Envoy to insp
 
 ## GM Campaign Notes: The Triple Crisis
 
-1. **Trouble in Our Own Backyard**:
+1. **Riots**:
    The planet **Sawn Prime**, capital of the Sayor peoples and founding member of the Federation, is in open chaos. The ‘Honorable’ Judge Carthic stands accused of treason and treasonous collusion with Lepidonian syndicates after evidence uncovered on Acbar exposed his corruption. Disillusioned human refugees and enraged Sayor citizens are rioting in the capital city of Swan.
-2. **The Shadow of The Iron Mandible**:
-   A ruthless proxy mercenary outfit known as **The Iron Mandible**, operating on Lepidonian coin, has seized installations across the DMZ surrounding **Tarienth**. Tarienth is in open revolt, and the Lepidonians accuse the Federation of sabotaging joint terraforming obligations.
+2 **Strikes**:
+   The terraform planet of Tarienth has its workers on strike at the moment. The Lepidonians blame the federation for this and clam that they are purposely causes the riots which is in violation of the treaty.
 3. **The Silence of Acbar**:
    The neutral trade world **Acbar** has gone dark. Following the devastating rampage of the rogue mercenary outfit "The Claws", Grayling authorities declared a total planetary quarantine and ordered all outbound shipping impounded, yet they have revealed no explanation. The Federation needs the Grayling Ambassador on Acbar rescued or contacted before the inspection Envoy rules against the Federation.

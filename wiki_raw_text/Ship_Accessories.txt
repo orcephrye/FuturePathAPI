@@ -92,7 +92,7 @@ This is a list of miscellaneous ship accessories that provide different function
 '''Price''': $120,000 (Additional $120,000 for every size above Tiny)
 
 === Fire-Control Matrix ===
-;Description: An advanced targeting computer that tracks multi-target trajectories and compensates for stellar noise. Grants a +1 bonus to all Weapons Officer attack rolls (d10s) and allows the Weapons Officer to ignore the -2 penalty when using Defensive Fire.
+;Description: An advanced targeting computer that tracks multi-target trajectories and compensates for stellar noise. Grants a +2 bonus to a selected d10 used by the Weapons Officer and allows the Weapons Officer to ignore the -2 penalty when using Defensive Fire.
 
 '''Requirements''': 
 

@@ -2,7 +2,7 @@ For a full list of Feats, go to the [[Feats|Feats]] page.
 
 '''Prerequisites''': -
 
-'''Benefits''':  You can add your affinity die to Charisma-based rolls while at the Communication/Sensor position. You can also use [[Space_Ships#Officer.2FShip_Functions|Advanced Officer Functions]] for that position.
+'''Benefits''':  You can add your affinity die to Charisma-based rolls while at the Communication/Sensor position. You can also use [[Space_Ships#Officer.2FShip_Functions|Advanced Officer Functions]] for that position. If successful at a Scan for Weakness check, you may now choose to add either your 'Dex/Int/Wis' modifier to a single d10 in the Battle Pool before re-rolls. If the die is supported in this way, it cannot be re-rolled.
 
 '''Normal''':  Normally, a Character cannot add their affinity die to Charisma-based rolls while at the Communication/Sensor position. You can only use [[Space_Ships#Officer.2FShip_Functions|Standard Officer Functions]] for that position.
 

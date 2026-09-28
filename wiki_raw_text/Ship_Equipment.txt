@@ -367,10 +367,10 @@ Below is a list of additional ship items that characters can craft or buy and in
 |-
 | [[Ship_Accessories#Holographic_Decoy_Launcher|Holographic Decoy Launcher]] || 1 HP || Required for decoy projection. Grants +2 on Electronics checks and guided missiles have a 75% miss chance. || $120,000
 |-
-| [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] || 1 HP or 1 Customization Slot || Targeting computer. Grants +1 to attack d10s and ignores the -2 penalty when using Defensive Fire. || $300,000
+| [[Ship_Accessories#Fire-Control_Matrix|Fire-Control Matrix]] || 1 HP or 1 Customization Slot || Targeting computer. Grants +2 to a single d10 in the Battle Pool and ignores the -2 penalty when using Defensive Fire. || $300,000
 |-
 | [[Ship_Accessories#Advanced_Recycler_Grid|Advanced Recycler Grid]] || 1 Customization Slot || Air/water filtration. Increases default passenger capacity by 25% and grants +2 to saves against infestations/toxins. || $80,000
 |-
 |}
 
-Crafting accessories takes Rank 3 in Mechanics and Rank 3 in Electronics. Each Classification upgrade requires an additional rank in both crafting skills. Other than that, the same rules for crafting apply.
+Crafting accessories takes Rank 3 in Mechanics and Rank 3 in Electronics. Each Classification upgrade requires an additional rank in both crafting skills. Otherwise, the same crafting rules apply.

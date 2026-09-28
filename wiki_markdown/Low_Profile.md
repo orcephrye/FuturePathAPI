@@ -1,1 +1,0 @@
-**Benefit**: Reduce the character's Reputation bonus by 3 points.

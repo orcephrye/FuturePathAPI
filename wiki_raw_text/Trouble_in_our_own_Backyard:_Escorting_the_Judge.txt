@@ -1,18 +1,18 @@
-* '''Recommended Level:''' 5
-* '''Setting:''' Federation Flagship ''FSS Vanguard'', Sawn Prime (Sayor Capital), Orbital Transit Corridor to Kurgian Prime
-* '''Mission Synopsis:''' The newly commissioned Tech 3 Federation flagship is dispatched on its maiden operational assignment: travel to '''Sawn Prime''' to extract the disgraced '''Judge Carthic''' from the fortified Citadel Prison amidst widespread civilian riots. On the ground, the away team meets desperate prison officials and interrogates a captured human insurgent named '''Markus Cole''', who reveals that Carthic was funneling Federation labor and technology to '''Dark Claw''' on '''Tarienth''', where Markus's lover '''Susan''' is leading an imperiled resistance. After securing Carthic aboard ship, the crew breaks orbit for the temporary Federation capital on '''Kurgian Prime''', only to be ambushed by a stealthed Dark Claw strike corvette armed with '''[[Missile_Ammo#shield_piercers|Shield Piercers]]''' attempting a high-risk boarding assault to seize the Judge!
+= Mission Synopsis=
 
-=== Mission Encounter Flow ===
+The newly commissioned Tech 3 Federation flagship is dispatched on its maiden operational assignment: travel to '''Sawn Prime''' to extract the disgraced '''Judge Carthic''' from the fortified Citadel Prison amidst widespread civilian riots. On the ground, the away team meets desperate prison officials and interrogates a captured human insurgent named '''Markus Cole''', who reveals that Carthic was funneling Federation labor and technology to '''Dark Claw''' on '''Tarienth''', where Markus's lover '''Susan''' is leading an imperiled resistance. After securing Carthic aboard ship, the crew breaks orbit for the temporary Federation capital on '''Kurgian Prime''', only to be ambushed by a stealth Dark Claw strike corvette armed with '''[[Missile_Ammo#shield_piercers|Shield Piercers]]''' attempting a high-risk boarding assault to seize the Judge!
+
+== Mission Encounter Flow ==
 
 {{#mermaid:graph TD
-    Briefing[Scene 1: Situation Room Debriefing<br/>Admiral Tavik & The High Stakes] --> Transit[Scene 2: Unaccosted Transit to Sawn Prime<br/>Flagship Shakedown & Crew Roleplay];
-    Transit --> SawnCitadel[Scene 3: The Sawn Prime Citadel<br/>The Rioting Crowd & Prison Officials];
-    SawnCitadel --> MarkusTale[Scene 3B: Markus's Revelation<br/>Susan, Tarienth Sabotage, & Carthic's Guilt];
-    MarkusTale --> Extraction[Scene 3C: Securing Carthic<br/>Crowd Control & Shuttle Lift-Off];
-    Extraction --> Ambush[Scene 4: Deep Orbit Ambush<br/>Stealth Corvette Strike & Shield Piercers];
-    Ambush --> StarshipCombat[Scene 4B: Tactical Starship Defense<br/>3-Phase Round & Point-Defense vs Breaching Pods];
-    StarshipCombat --> BoardingCQB[Scene 5: Climax - Defending the Brig<br/>Deck 4 CQB vs Commander Kraven Vael & Breachers];
-    BoardingCQB --> Interrogation[Scene 6: Aftermath & Revelations<br/>Carthic's Cipher, Level 6 Milestone, & Branching Paths];
+    Briefing[Scene 1: Situation Room Debriefing] --> Transit[Scene 2: Unaccosted Transit to Sawn Prime];
+    Transit --> SawnCitadel[Scene 3: The Sawn Prime Hall of Justice];
+    SawnCitadel --> MarkusTale[Scene 3B: Markus's Revelation];
+    MarkusTale --> Extraction[Scene 3C: Securing Carthic];
+    Extraction --> Ambush[Scene 4: Deep Orbit Ambush];
+    Ambush --> StarshipCombat[Scene 4B: Tactical Starship Defens];
+    StarshipCombat --> BoardingCQB[Scene 5: Climax - Defending the Brig];
+    BoardingCQB --> Interrogation[Scene 6: Aftermath & Revelations];
 
     style Briefing fill:#2a3d66,stroke:#4a76a8,stroke-width:2px;
     style Transit fill:#1e3d59,stroke:#17b978,stroke-width:2px;
@@ -25,37 +25,57 @@
  config.theme = dark
 }}
 
-=== Scene 1: Mission Debriefing in the Situation Room ===
+= Scene 1: Mission Debriefing in the Situation Room =
 
 ''Read the following aloud to the players to open the campaign:''
 <blockquote>
-"Officers, take your seats. I will not sugarcoat our predicament: the Federation is standing upon a powder keg, and someone has just lit the fuse.
+You all find your seats in the ready room. The air still smells of fresh chemicals and recently fabricated deck plates. The ship has yet to shed its newness. Once everyone is seated, the lights dim and the main screen lights up, showing Admiral Tavik at her desk. She is a proud and stern-looking Kurgian. She pauses, a piercing gaze felt even through the video feed. Then she speaks.
 
-Three days ago, intelligence agents on Sawn Prime arrested the 'Honorable' Judge Carthic. For twenty years, Carthic has presided over our highest civil maritime courts. We now have undeniable proof that he has been in secret collusion with Lepidonian corporate cartels. When the news leaked to the civic nets, Sawn Prime erupted.
+"The Federation stands on the precipice, at a turning point in our great but short history. I cannot help but feel that the recent events at our border, and now on Sawn Prime, point to a greater challenge ahead. One that we must face with bravery and resolve, or else it may ruin us. 
 
-Human refugees—thousands of whom sought refuge in our cities after the devastation of Earth—feel betrayed. Our own Sayor citizens feel our sovereignty has been bartered away. Riots have engulfed the capital city of Swan. The central detention citadel where Carthic is housed is under siege by civilian mobs demanding his head.
+Your mission is to go to Sawn Prime, retrieve the dishonorable Judge Carthic, and bring him back to Kurgian Prime to be questioned by the Federation Council. 
 
-If Carthic is lynched by a mob, the truth dies with him. Worse, the Graylings have dispatched an Envoy to audit our border compliance. If that Envoy arrives to find our founding capital burning and our judiciary murdering one another, the Graylings will revoke our diplomatic sanctuary, and Lepidonian battlecruisers will be in our skies by week's end.
+The citizens there at Sawn Prime are, as you are already aware, in riot. The Hall of Justice is practically besieged. People want blood; they demand justice. And they think their judiciary is corrupt. And I do not blame them for what Carthic is accused of doing. Hopefully some good will come out of this. As he may know some of what the Lepidonians are up to. If he dies, the truth goes with him. That is information we desperately need.
 
-Your orders are absolute: take this ship to Sawn Prime. Land an away team at the Citadel. Relieve the local warden of Judge Carthic, bring him aboard, and transport him to Kurgian Prime. The temporary Federation Capital has convened a closed military tribunal where he will face legitimate justice. Maintain absolute restraint—under no circumstances is the Federation Navy to shed civilian blood on Sawn Prime. Make ready to get underway."
+Sending the elite new flagship of our navy on this task will hopefully send a strong signal to the citizens of Sawn Prime that their government takes this seriously, and to the Lepidonians that we mean business. However, the Federation Navy is worried that won't be enough to calm the people. We are redirecting our Following Fleet, with Admiral Orin Pike at the head, to rendezvous with you in orbit above Swan Prime. They will stay behind and, if necessary, enact martial law for the first time in all Federation history."
+
+She pauses again. With a sigh, she continues. "The council fears the same: that sending the flagship to pick up Judge Carthic won't be enough. So, in their infinite wisdom, they have required a Mission Specialist to come with you, a politician taking on a political advisory role. When you land at the Hall of Justice, it will be his job to give a speech and, hopefully, calm the citizenry. His name is Counselor Vael Aquila, and he is running for re-election; keep an eye on that one.
+
+You may have noted I said 'land' at the Hall of Justice. No beaming! We want cameras on the disgraced judge in chains as he is carried away. Just having a beam take up won't do. I want all you officers there too! I want you wearing your best formal dress uniforms! I want those uniforms to look so sharp and clean it will take an electron microscope to find a mistake. I want your badges and medals so polished that when a report takes a picture, people will have to cover their eyes! You will be a shining but stern reminder of the honor, duty, and strength of the Federation Navy... which also happens to have a winged Carrier in orbit."
+
+She pauses again to make sure that all sinks in. Then she speaks again: "When you leave, you will be winged." She raises a hand in anticipation of any retort. "This isn't an insult. We know you do not need support on this mission. The FSS Abyssal Hunter, a tried and true Battleship that your design will be replacing, will accompany you. She will also be winged with the Battlecruiser FSS Thresher. I actually served on the Thresher; never have there been two finer fish to swim the void sea than these. The Sayorian capital, Swan Prime, is on the way to the Lepidenian border. Swan Prime isn't their target; instead, they're on a different mission."
+
+She pauses again. "Any questions?" <The GM should open the floor to interactions, but this should be kept brief>
+
+She pauses once more to collect herself. "Counselor Vael Aquila should be arriving any minute. You have my permission to disembark. May the wind be at your back and the waves follow; may the void be gentle to your souls. You leave immediately." 
 </blockquote>
 
 ;Key Information & Dialogue with Admiral Tavik:
 * '''Why Kurgian Prime instead of trying him on Sawn Prime?'''
-: ''Admiral Tavik:'' "Sawn Prime's courts are hopelessly compromised and currently encircled by burning barricades. Kurgian Prime maintains the strongest orbital planetary defense network in the Federation. It is neutral ground between Sayor anger and Lepidonian pressure."
+: "That was the original idea. However, Sawn Prime's courts are compromised and currently encircled by burning barricades. This has become a larger issue now that Lepidonian is building up at the border. And as you know, the Federation council moves every 5 cycles from Kurgian Prime to Swarn Prime and back again. So the council is currently on Kurgian, and it wants to interview Carthic to see what he knows about the current Lepidonian activity. 
 * '''What exactly did Carthic do?'''
-: ''Admiral Tavik:'' "Officially? Bribery, treasonous communication, and signing illegal extraterritorial transport permits. Unofficially? We suspect he was grease in the wheels of a much larger syndicate operation. We need him interrogated by Naval Intelligence on Kurgian Prime."
+: "Officially? Bribery, treasonous communication, and signing illegal extraterritorial transport permits. Unofficially? We suspect he has ties to the Dark Claw, a paramilitary Lepidonian terrorist group that has been growing in strength and size recently. We need him interrogated by Naval Intelligence on Kurgian Prime."
 * '''What about the ship's readiness?'''
-: ''Admiral Tavik:'' "The ''Vanguard'' is fresh off the slipway at the orbital yards. Tech Level 3 specs, cutting-edge sub-systems. You haven't finished the full shakedown protocol, but this crisis does not afford us the luxury of waiting. Run your diagnostics on the route to Sawn."
+: "We are telling the public that the '''FSS Vanguard''' final shake-down cruise is to escort the Judge back to Kugrian Prime. But we understand the ship is not 100% ready."
 
 ;Skill Checks During the Briefing:
-* '''[[Sense_Motive]] (DC 15):''' The Admiral is deeply shaken. Beneath his stern posture, his voice has an edge of quiet dread—he suspects that Carthic is merely the visible tip of a conspiracy that reaches deep into the Federation Senate.
-* '''[[Knowledge#Civics|Knowledge (Civics & Politics)]] (DC 14):''' Relocating the trial to Kurgian Prime is legally sound but politically flammable; Sayor civic nationalists may view the Kurgians as meddling in Sayor judicial sovereignty.
-* '''[[Knowledge#Galaxy|Knowledge (Galaxy Lore)]] (DC 16):''' The Grayling Envoy possesses arbitrary legal authority under the Hundred-Year Treaty. If they deem the Federation incapable of governing its territories, treaty protections dissolve automatically.
+* '''[[Sense Motive]] (DC 15):''' The Admiral is deeply shaken. Beneath her stern posture, her voice has an edge of quiet dread—she suspects that Carthic is merely the visible tip of a conspiracy that reaches deep into the Federation Senate.
+* '''[[Knowledge#Culture|Knowledge (Culture)]] (DC 14):''' Relocating the trial to Kurgian Prime is legally sound but politically flammable; Sayor civic nationalists may view the Kurgians as meddling in Sayor judicial sovereignty.
+* '''[[Knowledge#History|Knowledge (History)]] (DC 16):''' The Grayling Envoy possesses arbitrary legal authority under the Treaty. If they deem the Federation incapable of governing its territories, treaty protections dissolve automatically.
 
-=== Scene 2: Transit to Sayor Space – The Shakedown Interlude ===
+= Scene 2: Transit to Sayor Space – The Shakedown Interlude =
 
-The flagship breaks moorings and accelerates toward the sector jump point. The voyage across the core transit corridor to Sawn Prime is smooth and '''unaccosted''' by enemy patrols. This stretch provides the GM and players an ideal opportunity to test their bridge stations and introduce their characters.
+<blockquote>
+The ship appears to disembark with little fanfare. Usually, a ship like this launched on its first mission would draw a crowd, with traditions observed, politicians giving speeches, and cheers from the public. Instead, just a few rushed reporters hurriedly set up camera equipment on the observation deck of the Spacedock.
+
+The ship leaves the station gracefully in silence and turns to face the void of space. 
+</blockquote>
+
+The voyage across the core transit corridor to Sawn Prime is smooth and '''unaccosted''' by enemy patrols. This stretch provides the GM and players an ideal opportunity to test their bridge stations and introduce their characters.
+
+The ship is given the [[Space_Ships#Ship_Quirks|Quirk]]: Experimental. Once the ship is on its way, the GM should roll a d6 to find out which ship system is failing. Inform whatever Officer position is most related to the ship system. If in doubt, just inform the person playing the Chief Engineer. If no one is, then perhaps the Chief Science Officer, or simply role-play the correct Officer informing the Players of the problem. Below is a list of 'checks' different positions may do to find the issue to resolve.
+
+The Captain should order, or be suggested to order, by an NPC to do ship-wide diagnostics on this new ship. The positions and checks are noted below. One of these systems should be failing due to the Experimental Quirk.
 
 ;Bridge Station Diagnostics (Level 5 Shakedown Checks):
 # '''Ranking Helmsman ([[Pilot|Piloting]] DC 14):'''
@@ -88,7 +108,7 @@ Dropping out of FTL, the sapphire-blue jewel of Sawn Prime fills the primary vie
 "Attention all arriving commercial vessels: Swan Metropolitan Spaceport is operating under Code Red emergency restrictions. Planetary curfew is in effect. Avoid Sectors 4 through 9."
 </blockquote>
 
-=== Scene 3: The Sawn Prime Citadel & The Rebel's Plea ===
+= Scene 3: The Sawn Prime Citadel & The Rebel's Plea =
 
 ;Planetary Insertion & The Restless Crowd:
 The away team, accompanied by a detachment from Marine Squad Alpha ("Hell's Hammer"), boards an armored atmospheric shuttle and descends through the smog and low clouds to the '''Central Detention Citadel of Swan'''.
@@ -153,7 +173,7 @@ Warden Kren orders the inner holding cell opened. '''Judge Carthic''' is escorte
 With Carthic secured in suppression clamps and Markus taken along as a vital material witness under protective custody, the team retreats to the dropship. The crowd surges forward, attempting to breach the catwalk gates.
 Through well-timed flash-bangs, non-lethal repulsor fields, and smart piloting ('''[[Pilot|Piloting]] DC 14'''), the shuttle roars into the sky, leaving the rioting streets of Swan behind.
 
-=== Scene 4: Deep Orbit Ambush – The Shadow Claw Strikes ===
+= Scene 4: Deep Orbit Ambush – The Shadow Claw Strikes =
 
 ;Arrival Aboard the Flagship:
 The dropship lands in the flagship's secondary shuttle bay.
@@ -182,7 +202,7 @@ The ''Obsidian Fang'' fires a volley of specialized '''[[Missile_Ammo#shield_pie
 * '''Hit Effect:''' Instead of inflicting Battle Damage, each successful hit '''strips 2 points of Shields (Reflectors)''' from the ship's defense grid for the duration of the engagement!
 * ''Narrative Result:'' The flagship shudders violently as emerald electrical discharges ripple across the hull. The primary shields flicker and collapse across the midship quadrant, creating a blind spot in the ship's defensive perimeter!
 
-=== Scene 5: Tactical Starship Defense & Boarding Action ===
+= Scene 5: Tactical Starship Defense & Boarding Action =
 
 ;Phase 1: Bridge Crew Tactical Round (1-2 Rounds):
 The GM runs 1 or 2 quick rounds of Starship Combat using the standard [[Combat#Space_Combat|3-Phase Crew Sequence]] while the enemy closes distance to launch boarding craft:
@@ -203,7 +223,7 @@ The ''Obsidian Fang'' fires '''2 Heavy Breaching Leeches (Boarding Pods)''' aime
 * '''If Successful:''' Point-defense lasers blow 1 Breaching Pod into molten slag! Only 1 pod penetrates the hull, cutting the number of enemy shock breachers in half!
 * '''If Failed:''' Both Breaching Pods slam into the hull with bone-jarring force, penetrating the maintenance airlock and deploying the full strike team!
 
-=== Scene 6: Climax – Defending the Brig (CQB Encounter) ===
+= Scene 6: Climax – Defending the Brig (CQB Encounter) =
 
 ;Setting the Battlefield: Deck 4 Corridor & Cell Block B:
 Sirens wail, and amber hazard strobes illuminate Deck 4. The enemy breaching clamps have cut through the hull plating of Maintenance Airlock 4-B, only forty yards down the corridor from '''Cell Block B''' where Judge Carthic is locked inside!
@@ -238,7 +258,7 @@ Inside the cell, Carthic watches through the reinforced viewport in absolute hys
 * Commander Kraven activates his active optical camo (+4 Stealth) to slip through flanking maintenance vents, attempting to ambush the player Captain or Security Officer from behind.
 * If Kraven is reduced to below 15 HP, or if the Sapper Drone is destroyed and half his breachers fall, he orders a fighting retreat back toward the airlock leeches.
 
-=== Scene 7: Aftermath, Revelations, and Strategic Crossroads ===
+= Scene 7: Aftermath, Revelations, and Strategic Crossroads =
 
 ;Breaking the Ambush:
 Once the boarding team in Deck 4 is neutralized, the ''Obsidian Fang'' in orbit realizes the mission has failed. Battered by the flagship's main turrets and with its boarding party eliminated, the corvette engages high-output thrusters and warps into hyperspace, retreating into the border expanse.

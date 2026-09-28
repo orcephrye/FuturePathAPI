@@ -1,7 +1,8 @@
 <div class="toclimit-1"><div style="float:right; margin-left: 20px">__TOC__</div></div>
 This page is for rules on buying, building, repairing, upgrading, and selling of Space Ships within the Future Path universe. For rules on combat in a space ship go [[Combat#Space_Combat|here]]. For rules on traveling and exploration with space ships go [[Transportation|here]]. For space ship weapons and other equipment, go [[Ship_Equipment|here]]
 
-For the Character Sheet PDF file, go [https://drive.google.com/file/d/1946b8G1GyLHkqxxtlHCQjD3H0RdOR54a/view?usp=sharing here!]
+* For the Ship Schematics Sheet PDF file, go [https://drive.google.com/uc?export=download&id=1J2JI954u_J8mrxsJ6S43SvpT97fKH7IJ here!]
+* For the Digital version, go [https://api.d20futurepath.com/v1/ship_schematics_sheet d20FuturePath Digital Spaceship Schematics Sheet]
 
 == Summary == 
 
@@ -542,7 +543,7 @@ If the problem is minor, it requires no materials and 1 day of work with no FTL 
 </div>
 |-
 | <div class="toccolours mw-collapsible mw-collapsed">
-''' Expirmental ''':
+''' Experimental ''':
 <div class="mw-collapsible-content">
 * Description: The ship is brand new. Almost too new! The manufacturer apparently hasn't worked out all the kinks yet! Luckily, they don't care! And they see you as the sacrificial... rrr I customer they are looking for. This could be a government's attempt at a new technologically advanced ship or simply a corporation's latest product. Either case it you are the beta tester.
 * Negative: Once per day, roll a d6. 1: Engines, 2: Weapons, 3: Structure, 4: Shields, 5: Electronics, 6: Sensors. Whatever it lands on for that day, the Attribute Value is a 10. An Engineer must repair it in order for this to go away. The Engineer can take 20 to automatically succeed. Otherwise, the DC is 12 + Tech Level + Hull Size. 

@@ -2,8 +2,8 @@ For a full list of Feats, go to the [[Feats|Feats]] page.
 
 '''Prerequisites''': -
 
-'''Benefits''':  You can use [[Space_Ships#Officer.2FShip_Functions|Advanced Officer Functions]] for that position.
+'''Benefits''':  You can use [[Space_Ships#Officer.2FShip_Functions|Advanced Officer Functions]] for that position. You may now choose to add either your 'Dex/Int/Wis' modifier to a single d10 in the Battle Pool before re-rolls. If the die is supported in this way, it cannot be re-rolled. 
 
-'''Normal''':  Normally a Character can only use [[Space_Ships#Officer.2FShip_Functions|Standard Officer Functions]] for that position.
+'''Normal''':  Normally a Character can only use [[Space_Ships#Officer.2FShip_Functions|Standard Officer Functions]] for that position. Before, you could only add your 'Dex' modifier and did not have the choice between Dex,Int,Wis.
 
 '''Special''': -

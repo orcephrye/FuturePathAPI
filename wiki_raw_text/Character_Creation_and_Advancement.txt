@@ -16,7 +16,7 @@ Great! You made it. Time to take the character from your imagination and put it 
 
 # Dice! You need to get a d20 dice set. Here is a URL to help get you started [https://www.google.com/search?btnG=1&pws=0&q=d20+Dice+Set&gws_rd=ssl Google Search for "d20 Dice Set"]
 # A Character Sheet:
-:* PDF Download [https://drive.google.com/uc?export=download&id=1NT_s-6wckf5VT9EI7HMFdcDgkEe1QoGh 3 Page Sheet] / [https://drive.google.com/uc?export=download&id=1ZGVm_QgCBmF_AZNZqoqA5b8WMijbg4Bn Techniques/PowerArmor/Detractors] / [https://drive.google.com/uc?export=download&id=1CXP4uWyVbtVlRXI3PR3yNbv3PYcoD8Mg Cybernetics] / [https://drive.google.com/uc?export=download&id=1DSIu11feDSVoJ-Ok7gN9PqkPrZWn_JAp Mutations] / [https://drive.google.com/uc?export=download&id=1cfPwT1Bf1iasfwfzEh8ex5PNoCtvl7p6 Psionics]
+:* PDF Download [https://drive.google.com/uc?export=download&id=1NT_s-6wckf5VT9EI7HMFdcDgkEe1QoGh 3 Page Sheet] / [https://drive.google.com/uc?export=download&id=15hiEwITAg0JMWIW5c9RJhYDBKoZ7LA-Q Techniques/PowerArmor/Detractors] / [https://drive.google.com/uc?export=download&id=1CXP4uWyVbtVlRXI3PR3yNbv3PYcoD8Mg Cybernetics] / [https://drive.google.com/uc?export=download&id=1DSIu11feDSVoJ-Ok7gN9PqkPrZWn_JAp Mutations] / [https://drive.google.com/uc?export=download&id=1cfPwT1Bf1iasfwfzEh8ex5PNoCtvl7p6 Psionics]
 :* Digital [https://api.d20futurepath.com/v1/character_sheet here]! (With the digital version, you can customize your own layout for a printed sheet!)
 
 == Summary ==
