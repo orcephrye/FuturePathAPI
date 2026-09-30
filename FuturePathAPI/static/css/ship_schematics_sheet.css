@@ -1393,14 +1393,6 @@ textarea.quirk-textarea {
     width: 49.6% !important;
   }
 
-  body:has(#cardShipNotes.print-hidden) #cardShipQuirks,
-  body:has(#cardShipQuirks.print-hidden) #cardShipNotes,
-  body:has(#cardShipQuirks.empty-quirks) #cardShipNotes {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
   /* Grid Row Gutters */
   .row {
     --bs-gutter-x: 0.25rem !important;
@@ -1640,8 +1632,10 @@ textarea.quirk-textarea {
     width: 50% !important;
   }
 
-  #shipNotesTextarea,
-  .notebook-textarea {
+  .notebook-textarea,
+  textarea.notebook-textarea,
+  #extraNotesTextarea,
+  #shipNotesTextarea {
     background-attachment: local !important;
     background-color: transparent !important;
     background-image: linear-gradient(to bottom, transparent calc(13px - 1px), #93c5fd 1px) !important;
@@ -2103,6 +2097,130 @@ textarea.quirk-textarea {
 
   .text-ability-cha {
     color: #be185d !important;
+  }
+
+  /* Print Columns Container for Post-Positions Tetris Packing */
+  .print-columns-container {
+    clear: both !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .print-columns-container::after {
+    clear: both !important;
+    content: "" !important;
+    display: table !important;
+  }
+
+  .print-column {
+    box-sizing: border-box !important;
+    display: block !important;
+    float: left !important;
+    margin: 0 !important;
+    max-width: 49.6% !important;
+    padding: 0 !important;
+    width: 49.6% !important;
+  }
+
+  .print-col-right {
+    float: right !important;
+  }
+
+  .print-column .sheet-card {
+    display: block !important;
+    margin-bottom: 2px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .print-column #cardHardPoints,
+  .print-column #cardShipBays,
+  .print-column #cardCustomizationSlots,
+  .print-column #cardShipQuirks,
+  .print-column #cardShipNotes {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Card: Extra Notes Print */
+  #cardExtraNotesPrint {
+    display: none !important;
+  }
+
+  .print-bottom-notes {
+    clear: both !important;
+    display: block !important;
+    margin-top: 2px !important;
+    width: 100% !important;
+  }
+
+  .print-bottom-notes .sheet-card,
+  .print-bottom-notes #cardExtraNotesPrint,
+  .print-bottom-notes #cardShipNotes {
+    break-inside: auto !important;
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* 2-Page Print Layout Mode */
+  body.print-two-pages #cardExtraNotesPrint {
+    display: flex !important;
+    flex: 0 0 100% !important;
+    flex-direction: column !important;
+    margin-bottom: 0 !important;
+    margin-top: 2px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  body.print-two-pages #cardExtraNotesPrint .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+  }
+
+  body.print-two-pages #cardExtraNotesPrint #extraNotesTextarea {
+    flex-grow: 1 !important;
+    min-height: 80px !important;
+    width: 100% !important;
+  }
+
+  body.print-two-pages #printColumnsContainer {
+    break-before: page !important;
+  }
+
+  body.print-two-pages #cardShipNotes:not(.print-hidden) {
+    display: flex !important;
+    flex: 0 0 100% !important;
+    flex-direction: column !important;
+    margin-bottom: 0 !important;
+    margin-top: 2px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  body.print-two-pages #cardShipNotes:not(.print-hidden) .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+  }
+
+  body.print-two-pages #cardShipNotes:not(.print-hidden) #shipNotesTextarea {
+    flex-grow: 1 !important;
+    min-height: 80px !important;
+    width: 100% !important;
+  }
+
+  body:has(#cardShipNotes.print-hidden) #cardShipQuirks,
+  body:has(#cardShipQuirks.print-hidden) #cardShipNotes,
+  body:has(#cardShipQuirks.empty-quirks) #cardShipNotes {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
 }
 

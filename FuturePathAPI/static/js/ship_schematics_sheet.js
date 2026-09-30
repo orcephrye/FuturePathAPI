@@ -3891,6 +3891,28 @@ function toggleNotesPrintVisibility(event) {
     localStorage.setItem("ship_notes_print_hidden", hiddenVal);
 }
 
+function isDescriptionAndNotesPrintVisible() {
+    const notesCard = document.getElementById("cardShipNotes");
+    if (!notesCard) {
+        return false;
+    }
+    if (notesCard.classList.contains("print-hidden") || notesCard.classList.contains("card-hidden-all")) {
+        return false;
+    }
+    const textEl = document.getElementById("notesPrintVisibilityText");
+    if (textEl && textEl.textContent) {
+        const txt = textEl.textContent.trim().toLowerCase();
+        if (txt.includes("hidden") || (!txt.includes("visible") && !txt.includes("visable"))) {
+            return false;
+        }
+    }
+    const saved = localStorage.getItem("ship_notes_print_hidden");
+    if (saved === "true") {
+        return false;
+    }
+    return true;
+}
+
 function loadNotesPrintState() {
     const saved = localStorage.getItem("ship_notes_print_hidden");
     if (saved === "true") {
@@ -5903,9 +5925,15 @@ window.onShieldsSkillRankChange = onShieldsSkillRankChange;
 window.rollShieldKnowledgeScienceSkillCheck = rollShieldKnowledgeScienceSkillCheck;
 window.rollShieldAcrobaticsSkillCheck = rollShieldAcrobaticsSkillCheck;
 window.updateHullDescription = updateHullDescription;
+window.isDescriptionAndNotesPrintVisible = isDescriptionAndNotesPrintVisible;
 window.prepareNotesForPrint = prepareNotesForPrint;
+window.preparePrintLayout = preparePrintLayout;
+window.cleanupPrintLayout = cleanupPrintLayout;
 
 function prepareNotesForPrint() {
+    if (!isDescriptionAndNotesPrintVisible()) {
+        return;
+    }
     const ta = document.getElementById("shipNotesTextarea");
     if (!ta) {
         return;
@@ -5941,24 +5969,268 @@ function prepareNotesForPrint() {
     ta.style.minHeight = (totalLines * 13) + "px";
 }
 
-window.addEventListener("beforeprint", function () {
+let savedPrintOrder = null;
+
+function estimateCardPrintHeight(cardId) {
+    const card = document.getElementById(cardId);
+    if (!card || card.classList.contains("card-hidden-all")) {
+        return 0;
+    }
+    if (cardId === "cardCustomizationSlots") {
+        if (card.classList.contains("empty-customization")) {
+            return 0;
+        }
+        const entries = card.querySelectorAll(".customization-entry");
+        if (entries.length === 0) {
+            return 0;
+        }
+        const leftRows = Math.ceil(entries.length / 2);
+        return 22 + (leftRows * 54);
+    }
+    if (cardId === "cardShipQuirks") {
+        if (card.classList.contains("empty-quirks") || card.classList.contains("print-hidden")) {
+            return 0;
+        }
+        const entries = card.querySelectorAll(".quirk-entry");
+        return 22 + (entries.length * 64);
+    }
+    if (cardId === "cardShipNotes") {
+        if (!isDescriptionAndNotesPrintVisible()) {
+            return 0;
+        }
+        const ta = document.getElementById("shipNotesTextarea");
+        let lines = 3;
+        if (ta && ta.value) {
+            lines = Math.max(3, ta.value.split("\n").length);
+        }
+        return 24 + (lines * 13);
+    }
+    if (cardId === "cardHardPoints") {
+        const entries = card.querySelectorAll(".hardpoint-entry");
+        const leftRows = Math.ceil(entries.length / 2);
+        return 22 + (leftRows * 54);
+    }
+    if (cardId === "cardShipBays") {
+        const entries = card.querySelectorAll(".bay-entry");
+        const leftRows = Math.ceil(entries.length / 2);
+        return 22 + (leftRows * 54);
+    }
+    return 50;
+}
+
+function cleanupPrintLayout() {
+    document.body.classList.remove("is-print-mode");
+    document.body.classList.remove("print-two-pages");
+
+    const extraNotesCard = document.getElementById("cardExtraNotesPrint");
+    if (extraNotesCard) {
+        extraNotesCard.classList.add("d-none");
+        extraNotesCard.style.minHeight = "";
+        const extraTa = document.getElementById("extraNotesTextarea");
+        if (extraTa) {
+            extraTa.style.height = "";
+            extraTa.style.minHeight = "";
+        }
+    }
+
+    const printColsContainer = document.getElementById("printColumnsContainer");
+    if (printColsContainer) {
+        printColsContainer.classList.add("d-none");
+    }
+
+    if (savedPrintOrder && savedPrintOrder.length > 0) {
+        const container = document.getElementById("cardsFlowContainer");
+        if (container) {
+            savedPrintOrder.forEach(function (child) {
+                container.appendChild(child);
+            });
+        }
+        savedPrintOrder = null;
+    }
+
+    const ta = document.getElementById("shipNotesTextarea");
+    if (ta) {
+        ta.rows = 3;
+        ta.style.height = "";
+        ta.style.minHeight = "";
+        const notesCard = document.getElementById("cardShipNotes");
+        if (notesCard) {
+            notesCard.style.minHeight = "";
+        }
+        if (typeof autoExpandTextarea === "function") {
+            autoExpandTextarea(ta);
+        }
+    }
+}
+
+function preparePrintLayout() {
+    cleanupPrintLayout();
     document.body.classList.add("is-print-mode");
+
     const textareas = document.querySelectorAll("textarea");
     textareas.forEach(function (ta) {
         if (typeof autoExpandTextarea === "function") {
             autoExpandTextarea(ta);
         }
     });
-    prepareNotesForPrint();
-});
-
-window.addEventListener("afterprint", function () {
-    document.body.classList.remove("is-print-mode");
-    const ta = document.getElementById("shipNotesTextarea");
-    if (ta) {
-        ta.rows = 3;
-        ta.style.height = "";
-        ta.style.minHeight = "";
-        autoExpandTextarea(ta);
+    if (typeof prepareNotesForPrint === "function") {
+        prepareNotesForPrint();
     }
-});
+
+    const container = document.getElementById("cardsFlowContainer");
+    const printColsContainer = document.getElementById("printColumnsContainer");
+    const printColLeft = document.getElementById("printColLeft");
+    const printColRight = document.getElementById("printColRight");
+    const printBottomNotes = document.getElementById("printBottomNotes");
+
+    if (!container || !printColsContainer || !printColLeft || !printColRight || !printBottomNotes) {
+        return;
+    }
+
+    savedPrintOrder = Array.from(container.children);
+
+    const hpCard = document.getElementById("cardHardPoints");
+    const baysCard = document.getElementById("cardShipBays");
+    const custCard = document.getElementById("cardCustomizationSlots");
+    const quirksCard = document.getElementById("cardShipQuirks");
+    const notesCard = document.getElementById("cardShipNotes");
+
+    printColsContainer.classList.remove("d-none");
+    printColLeft.innerHTML = "";
+    printColRight.innerHTML = "";
+    printBottomNotes.innerHTML = "";
+
+    const hpH = estimateCardPrintHeight("cardHardPoints");
+    const baysH = estimateCardPrintHeight("cardShipBays");
+    const custH = estimateCardPrintHeight("cardCustomizationSlots");
+    const quirksH = estimateCardPrintHeight("cardShipQuirks");
+    const notesVisible = isDescriptionAndNotesPrintVisible();
+    let notesH = 0;
+    if (notesVisible) {
+        notesH = estimateCardPrintHeight("cardShipNotes");
+    }
+
+    let leftH = hpH;
+    let rightH = baysH;
+
+    if (hpCard) {
+        printColLeft.appendChild(hpCard);
+    }
+    if (baysCard) {
+        printColRight.appendChild(baysCard);
+    }
+
+    // Tetris reshuffle: Customization Slots goes under the shorter column
+    if (custH > 0 && custCard) {
+        if (leftH <= rightH) {
+            printColLeft.appendChild(custCard);
+            leftH += custH + 2;
+        } else {
+            printColRight.appendChild(custCard);
+            rightH += custH + 2;
+        }
+    }
+
+    // Quirks goes under shorter column
+    if (quirksH > 0 && quirksCard) {
+        if (leftH <= rightH) {
+            printColLeft.appendChild(quirksCard);
+            leftH += quirksH + 2;
+        } else {
+            printColRight.appendChild(quirksCard);
+            rightH += quirksH + 2;
+        }
+    }
+
+    // Notes goes under shorter column
+    if (notesVisible && notesH > 0 && notesCard) {
+        if (leftH <= rightH) {
+            printColLeft.appendChild(notesCard);
+            leftH += notesH + 2;
+        } else {
+            printColRight.appendChild(notesCard);
+            rightH += notesH + 2;
+        }
+    }
+
+    const TOP_SECTION_PRINT_HEIGHT = 620;
+    const SINGLE_PAGE_PRINT_BUDGET = 1010;
+
+    const packedPostPositionsH = Math.max(leftH, rightH);
+    const totalPrintH = TOP_SECTION_PRINT_HEIGHT + packedPostPositionsH;
+
+    if (totalPrintH <= SINGLE_PAGE_PRINT_BUDGET) {
+        document.body.classList.remove("print-two-pages");
+        const extraNotesCard = document.getElementById("cardExtraNotesPrint");
+        if (extraNotesCard) {
+            extraNotesCard.classList.add("d-none");
+        }
+    } else {
+        document.body.classList.add("print-two-pages");
+
+        // Keep the original 'Description and Notes' card on Page 1
+        if (notesVisible && notesCard) {
+            container.insertBefore(notesCard, printColsContainer);
+
+            const remainingP1 = Math.max(120, SINGLE_PAGE_PRINT_BUDGET - TOP_SECTION_PRINT_HEIGHT - 15);
+            notesCard.style.minHeight = remainingP1 + "px";
+
+            const shipNotesTa = document.getElementById("shipNotesTextarea");
+            if (shipNotesTa) {
+                const headerH = 26;
+                const taTargetH = remainingP1 - headerH;
+                const noteVal = shipNotesTa.value || "";
+                const existingLines = noteVal.split("\n").length;
+                const lines = Math.max(existingLines, 4, Math.floor(taTargetH / 13));
+                shipNotesTa.rows = lines;
+                shipNotesTa.style.height = (lines * 13) + "px";
+                shipNotesTa.style.minHeight = (lines * 13) + "px";
+            }
+        }
+
+        // On Page 2:
+        // Place the added 'Extra Notes' card into printBottomNotes below the columns inside printColumnsContainer
+        const extraNotesCard = document.getElementById("cardExtraNotesPrint");
+        if (extraNotesCard) {
+            printBottomNotes.appendChild(extraNotesCard);
+            extraNotesCard.classList.remove("d-none");
+
+            // Equipment height in the two columns
+            let p2LeftH = hpH;
+            let p2RightH = baysH;
+            if (custH > 0 && custCard) {
+                if (p2LeftH <= p2RightH) {
+                    p2LeftH += custH + 2;
+                } else {
+                    p2RightH += custH + 2;
+                }
+            }
+            if (quirksH > 0 && quirksCard) {
+                if (p2LeftH <= p2RightH) {
+                    p2LeftH += quirksH + 2;
+                } else {
+                    p2RightH += quirksH + 2;
+                }
+            }
+            const equipH = Math.max(p2LeftH, p2RightH);
+
+            const targetP2NotesHeight = Math.max(100, SINGLE_PAGE_PRINT_BUDGET - equipH - 30);
+            extraNotesCard.style.minHeight = targetP2NotesHeight + "px";
+
+            const extraTa = document.getElementById("extraNotesTextarea");
+            if (extraTa) {
+                const headerH = 26;
+                const taTargetH = targetP2NotesHeight - headerH;
+                const noteVal = extraTa.value || "";
+                const existingLines = noteVal.split("\n").length;
+                const lines = Math.max(existingLines, 4, Math.floor(taTargetH / 13));
+                extraTa.rows = lines;
+                extraTa.style.height = (lines * 13) + "px";
+                extraTa.style.minHeight = (lines * 13) + "px";
+            }
+        }
+    }
+}
+
+window.addEventListener("beforeprint", preparePrintLayout);
+window.addEventListener("afterprint", cleanupPrintLayout);
