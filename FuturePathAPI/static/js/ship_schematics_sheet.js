@@ -1359,6 +1359,41 @@ function updateHardPointsBaysDisplay() {
     secHpEl.value = hpStr + " / " + bayStr + " / " + effCust + " Cust.";
 }
 
+function getEntryNumber(entry) {
+    if (!entry) {
+        return 0;
+    }
+    const label = entry.querySelector("label:not(.visually-hidden)");
+    if (label && label.textContent) {
+        const m = label.textContent.match(/#(\d+)/);
+        if (m) {
+            return parseInt(m[1], 10);
+        }
+    }
+    const input = entry.querySelector("input[id^='hpName_'], input[id^='bayName_'], input[id^='custName_'], textarea[id^='hpDesc_'], textarea[id^='bayDesc_'], textarea[id^='custDesc_']");
+    if (input && input.id) {
+        const m = input.id.match(/_(\d+)$/);
+        if (m) {
+            return parseInt(m[1], 10);
+        }
+    }
+    if (entry.id) {
+        const m = entry.id.match(/_(\d+)$/);
+        if (m) {
+            return parseInt(m[1], 10);
+        }
+    }
+    return 0;
+}
+
+function getTwoColumnEntriesSorted(entryClass) {
+    const entries = Array.from(document.querySelectorAll("." + entryClass));
+    entries.sort(function (a, b) {
+        return getEntryNumber(a) - getEntryNumber(b);
+    });
+    return entries;
+}
+
 function isEntryEmpty(entry) {
     if (!entry) {
         return true;
@@ -1378,22 +1413,81 @@ function rebalanceTwoColumnEntries(leftColId, rightColId, entryClass, labelPrefi
     if (!leftCol || !rightCol) {
         return;
     }
-    const allEntries = Array.from(document.querySelectorAll("." + entryClass));
+    const allEntries = getTwoColumnEntriesSorted(entryClass);
     leftCol.innerHTML = "";
     rightCol.innerHTML = "";
 
+    let type = "";
+    let idPrefix = "";
+    let namePrefix = "";
+    let descPrefix = "";
+    if (entryClass === "hardpoint-entry") {
+        type = "hardPoints";
+        idPrefix = "hardPointEntry_";
+        namePrefix = "hpName_";
+        descPrefix = "hpDesc_";
+    } else if (entryClass === "bay-entry") {
+        type = "bays";
+        idPrefix = "bayEntry_";
+        namePrefix = "bayName_";
+        descPrefix = "bayDesc_";
+    } else if (entryClass === "customization-entry") {
+        type = "customization";
+        idPrefix = "custEntry_";
+        namePrefix = "custName_";
+        descPrefix = "custDesc_";
+    }
+
     allEntries.forEach(function (entry, index) {
         const num = index + 1;
-        const label = entry.querySelector("label");
-        if (label && label.textContent && label.textContent.startsWith(labelPrefix)) {
+        const label = entry.querySelector("label:not(.visually-hidden)");
+        if (label) {
             label.textContent = labelPrefix + " #" + num;
         }
+
+        if (idPrefix) {
+            entry.id = idPrefix + num;
+            if (label) {
+                label.setAttribute("for", namePrefix + num);
+            }
+            const nameInput = entry.querySelector("input[id^='" + namePrefix + "']");
+            if (nameInput) {
+                nameInput.id = namePrefix + num;
+                if (nameInput.name) {
+                    nameInput.name = namePrefix + num;
+                }
+            }
+            const hiddenLabel = entry.querySelector("label.visually-hidden");
+            if (hiddenLabel) {
+                hiddenLabel.setAttribute("for", descPrefix + num);
+            }
+            const descTextarea = entry.querySelector("textarea[id^='" + descPrefix + "']");
+            if (descTextarea) {
+                descTextarea.id = descPrefix + num;
+                if (descTextarea.name) {
+                    descTextarea.name = descPrefix + num;
+                }
+            }
+            const removeBtn = entry.querySelector("button[onclick*='removeEntry']");
+            if (removeBtn) {
+                removeBtn.setAttribute("onclick", "removeEntry('" + entry.id + "', '" + type + "')");
+            }
+        }
+
         if (index % 2 === 0) {
             leftCol.appendChild(entry);
         } else {
             rightCol.appendChild(entry);
         }
     });
+
+    if (entryClass === "hardpoint-entry") {
+        hardPointRowsCount = allEntries.length;
+    } else if (entryClass === "bay-entry") {
+        bayRowsCount = allEntries.length;
+    } else if (entryClass === "customization-entry") {
+        customizationRowsCount = allEntries.length;
+    }
 
     if (badgeId) {
         setElementText(badgeId, allEntries.length + " Total");
@@ -1433,7 +1527,7 @@ function syncCardEntriesCount(type, targetCount) {
         return;
     }
 
-    const currentEntries = Array.from(document.querySelectorAll("." + entryClass));
+    const currentEntries = getTwoColumnEntriesSorted(entryClass);
     let currentCount = currentEntries.length;
 
     if (currentCount < targetCount && addRowFn) {
@@ -4894,8 +4988,9 @@ function getShipFormDataObj() {
 
     // 5. cardHardPoints
     const hardPointsList = [];
-    const hpEntries = document.querySelectorAll(".hardpoint-entry");
-    hpEntries.forEach(function (entry, index) {
+    const hpEntries = getTwoColumnEntriesSorted("hardpoint-entry");
+    hpEntries.forEach(function (entry) {
+        const entryNum = getEntryNumber(entry);
         const nameEl = entry.querySelector("input[id^='hpName_']");
         const descEl = entry.querySelector("textarea[id^='hpDesc_']");
         let name = "";
@@ -4910,19 +5005,21 @@ function getShipFormDataObj() {
             return;
         }
         hardPointsList.push({
-            id: index + 1,
+            id: entryNum,
             name,
             description: desc
         });
     });
     structured.cardHardPoints = {
+        total: hpEntries.length,
         hardPointsList
     };
 
     // 6. cardShipBays
     const baysList = [];
-    const bayEntries = document.querySelectorAll(".bay-entry");
-    bayEntries.forEach(function (entry, index) {
+    const bayEntries = getTwoColumnEntriesSorted("bay-entry");
+    bayEntries.forEach(function (entry) {
+        const entryNum = getEntryNumber(entry);
         const nameEl = entry.querySelector("input[id^='bayName_']");
         const descEl = entry.querySelector("textarea[id^='bayDesc_']");
         let name = "";
@@ -4937,19 +5034,21 @@ function getShipFormDataObj() {
             return;
         }
         baysList.push({
-            id: index + 1,
+            id: entryNum,
             name,
             description: desc
         });
     });
     structured.cardShipBays = {
+        total: bayEntries.length,
         baysList
     };
 
     // 7. cardCustomizationSlots
     const customizationList = [];
-    const custEntries = document.querySelectorAll(".customization-entry");
-    custEntries.forEach(function (entry, index) {
+    const custEntries = getTwoColumnEntriesSorted("customization-entry");
+    custEntries.forEach(function (entry) {
+        const entryNum = getEntryNumber(entry);
         const nameEl = entry.querySelector("input[id^='custName_']");
         const descEl = entry.querySelector("textarea[id^='custDesc_']");
         let name = "";
@@ -4964,12 +5063,13 @@ function getShipFormDataObj() {
             return;
         }
         customizationList.push({
-            id: index + 1,
+            id: entryNum,
             name,
             description: desc
         });
     });
     structured.cardCustomizationSlots = {
+        total: custEntries.length,
         customizationList
     };
 
@@ -5138,7 +5238,7 @@ function flattenObjectValues(obj, target) {
         return;
     }
     Object.keys(obj).forEach(function (k) {
-        if (k === "UI_Layout" || k === "metadata" || k === "hardPointsList" || k === "baysList" || k === "customizationList" || k === "quirksList") {
+        if (k === "UI_Layout" || k === "metadata" || k === "hardPointsList" || k === "baysList" || k === "customizationList" || k === "quirksList" || k === "cardHardPoints" || k === "cardShipBays" || k === "cardCustomizationSlots" || k === "cardShipQuirks") {
             return;
         }
         const val = obj[k];
@@ -5150,8 +5250,55 @@ function flattenObjectValues(obj, target) {
     });
 }
 
+function parseSpecSlotCount(str, type, isMil) {
+    if (!str || typeof str !== "string") {
+        return -1;
+    }
+    let regex = null;
+    if (type === "hardPoints") {
+        regex = /\[?\s*(\d+)(?:\s*\/\s*(\d+))?\s*\]?\s*HP/i;
+    } else if (type === "bays") {
+        regex = /\[?\s*(\d+)(?:\s*\/\s*(\d+))?\s*\]?\s*Bays/i;
+    } else if (type === "customization") {
+        regex = /(\d+)\s*Cust/i;
+    }
+    if (!regex) {
+        return -1;
+    }
+    const match = str.match(regex);
+    if (!match) {
+        return -1;
+    }
+    if (type === "customization") {
+        const val = parseInt(match[1], 10);
+        return (!Number.isNaN(val) ? val : -1);
+    }
+    const civVal = parseInt(match[1], 10);
+    const milVal = parseInt(match[2], 10);
+    if (isMil && !Number.isNaN(milVal)) {
+        return milVal;
+    }
+    if (!Number.isNaN(civVal)) {
+        return civVal;
+    }
+    return -1;
+}
+
 function populateShipFormStructured(imported) {
     clearDynamicContainers();
+
+    let specSlotsStr = "";
+    if (imported.cardSecondaryAttributes && imported.cardSecondaryAttributes.hardPointsBaysSlots) {
+        specSlotsStr = String(imported.cardSecondaryAttributes.hardPointsBaysSlots);
+    } else if (imported.hardPointsBaysSlots) {
+        specSlotsStr = String(imported.hardPointsBaysSlots);
+    }
+    let isMil = false;
+    if (imported.cardOwnerStats && imported.cardOwnerStats.shipClassTypeSelect) {
+        isMil = (String(imported.cardOwnerStats.shipClassTypeSelect).toLowerCase() === "military");
+    } else if (imported.shipClassTypeSelect) {
+        isMil = (String(imported.shipClassTypeSelect).toLowerCase() === "military");
+    }
 
     // 1. Hard Points
     let hpList = [];
@@ -5160,23 +5307,67 @@ function populateShipFormStructured(imported) {
     } else if (Array.isArray(imported.hardPointsList)) {
         hpList = imported.hardPointsList;
     }
-    const hpCount = Math.max(hpList.length, 10);
-    for (let i = 0; i < hpCount; i += 1) {
-        addHardPointRow();
-        if (i < hpList.length) {
-            const item = hpList[i];
-            const rowIndex = i + 1;
-            const nameEl = document.getElementById("hpName_" + rowIndex);
-            const descEl = document.getElementById("hpDesc_" + rowIndex);
-            if (nameEl) {
-                nameEl.value = item.name || item.Name || "";
-            }
-            if (descEl) {
-                descEl.value = item.description || item.Description || "";
-                autoExpandTextarea(descEl);
-            }
+    let maxHpId = 0;
+    hpList.forEach(function (item) {
+        const idNum = parseInt(item.id || item.Id, 10);
+        if (!Number.isNaN(idNum) && idNum > maxHpId) {
+            maxHpId = idNum;
+        }
+    });
+
+    let recordedHpTotal = -1;
+    if (imported.cardHardPoints && typeof imported.cardHardPoints === "object") {
+        if (imported.cardHardPoints.total !== undefined && !Number.isNaN(parseInt(imported.cardHardPoints.total, 10))) {
+            recordedHpTotal = parseInt(imported.cardHardPoints.total, 10);
+        } else if (imported.cardHardPoints.totalCount !== undefined && !Number.isNaN(parseInt(imported.cardHardPoints.totalCount, 10))) {
+            recordedHpTotal = parseInt(imported.cardHardPoints.totalCount, 10);
+        } else if (imported.cardHardPoints.count !== undefined && !Number.isNaN(parseInt(imported.cardHardPoints.count, 10))) {
+            recordedHpTotal = parseInt(imported.cardHardPoints.count, 10);
         }
     }
+    if (recordedHpTotal < 0 && imported.hardPointsTotal !== undefined && !Number.isNaN(parseInt(imported.hardPointsTotal, 10))) {
+        recordedHpTotal = parseInt(imported.hardPointsTotal, 10);
+    }
+    if (recordedHpTotal < 0 && imported.hardPointsCount !== undefined && !Number.isNaN(parseInt(imported.hardPointsCount, 10))) {
+        recordedHpTotal = parseInt(imported.hardPointsCount, 10);
+    }
+
+    let hpCount = Math.max(hpList.length, maxHpId);
+    if (recordedHpTotal >= 0) {
+        hpCount = Math.max(recordedHpTotal, hpCount);
+    } else if (hpCount === 0) {
+        const specHp = parseSpecSlotCount(specSlotsStr, "hardPoints", isMil);
+        if (specHp >= 0) {
+            hpCount = specHp;
+        }
+    }
+
+    for (let i = 0; i < hpCount; i += 1) {
+        addHardPointRow();
+    }
+    const usedHpSlots = {};
+    hpList.forEach(function (item, index) {
+        let slotId = parseInt(item.id || item.Id, 10);
+        if (Number.isNaN(slotId) || slotId < 1 || usedHpSlots[slotId]) {
+            slotId = index + 1;
+            while (usedHpSlots[slotId]) {
+                slotId += 1;
+            }
+        }
+        usedHpSlots[slotId] = true;
+        while (hardPointRowsCount < slotId) {
+            addHardPointRow();
+        }
+        const nameEl = document.getElementById("hpName_" + slotId);
+        const descEl = document.getElementById("hpDesc_" + slotId);
+        if (nameEl) {
+            nameEl.value = item.name || item.Name || "";
+        }
+        if (descEl) {
+            descEl.value = item.description || item.Description || "";
+            autoExpandTextarea(descEl);
+        }
+    });
 
     // 2. Bays
     let baysList = [];
@@ -5185,23 +5376,67 @@ function populateShipFormStructured(imported) {
     } else if (Array.isArray(imported.baysList)) {
         baysList = imported.baysList;
     }
-    const bayCount = Math.max(baysList.length, 10);
-    for (let j = 0; j < bayCount; j += 1) {
-        addBayRow();
-        if (j < baysList.length) {
-            const item = baysList[j];
-            const rowIndex = j + 1;
-            const nameEl = document.getElementById("bayName_" + rowIndex);
-            const descEl = document.getElementById("bayDesc_" + rowIndex);
-            if (nameEl) {
-                nameEl.value = item.name || item.Name || "";
-            }
-            if (descEl) {
-                descEl.value = item.description || item.Description || "";
-                autoExpandTextarea(descEl);
-            }
+    let maxBayId = 0;
+    baysList.forEach(function (item) {
+        const idNum = parseInt(item.id || item.Id, 10);
+        if (!Number.isNaN(idNum) && idNum > maxBayId) {
+            maxBayId = idNum;
+        }
+    });
+
+    let recordedBayTotal = -1;
+    if (imported.cardShipBays && typeof imported.cardShipBays === "object") {
+        if (imported.cardShipBays.total !== undefined && !Number.isNaN(parseInt(imported.cardShipBays.total, 10))) {
+            recordedBayTotal = parseInt(imported.cardShipBays.total, 10);
+        } else if (imported.cardShipBays.totalCount !== undefined && !Number.isNaN(parseInt(imported.cardShipBays.totalCount, 10))) {
+            recordedBayTotal = parseInt(imported.cardShipBays.totalCount, 10);
+        } else if (imported.cardShipBays.count !== undefined && !Number.isNaN(parseInt(imported.cardShipBays.count, 10))) {
+            recordedBayTotal = parseInt(imported.cardShipBays.count, 10);
         }
     }
+    if (recordedBayTotal < 0 && imported.baysTotal !== undefined && !Number.isNaN(parseInt(imported.baysTotal, 10))) {
+        recordedBayTotal = parseInt(imported.baysTotal, 10);
+    }
+    if (recordedBayTotal < 0 && imported.baysCount !== undefined && !Number.isNaN(parseInt(imported.baysCount, 10))) {
+        recordedBayTotal = parseInt(imported.baysCount, 10);
+    }
+
+    let bayCount = Math.max(baysList.length, maxBayId);
+    if (recordedBayTotal >= 0) {
+        bayCount = Math.max(recordedBayTotal, bayCount);
+    } else if (bayCount === 0) {
+        const specBays = parseSpecSlotCount(specSlotsStr, "bays", isMil);
+        if (specBays >= 0) {
+            bayCount = specBays;
+        }
+    }
+
+    for (let j = 0; j < bayCount; j += 1) {
+        addBayRow();
+    }
+    const usedBaySlots = {};
+    baysList.forEach(function (item, index) {
+        let slotId = parseInt(item.id || item.Id, 10);
+        if (Number.isNaN(slotId) || slotId < 1 || usedBaySlots[slotId]) {
+            slotId = index + 1;
+            while (usedBaySlots[slotId]) {
+                slotId += 1;
+            }
+        }
+        usedBaySlots[slotId] = true;
+        while (bayRowsCount < slotId) {
+            addBayRow();
+        }
+        const nameEl = document.getElementById("bayName_" + slotId);
+        const descEl = document.getElementById("bayDesc_" + slotId);
+        if (nameEl) {
+            nameEl.value = item.name || item.Name || "";
+        }
+        if (descEl) {
+            descEl.value = item.description || item.Description || "";
+            autoExpandTextarea(descEl);
+        }
+    });
 
     // 3. Customization Slots
     let custList = [];
@@ -5210,23 +5445,75 @@ function populateShipFormStructured(imported) {
     } else if (Array.isArray(imported.customizationList)) {
         custList = imported.customizationList;
     }
-    const custCount = Math.max(custList.length, 2);
-    for (let k = 0; k < custCount; k += 1) {
-        addCustomizationRow();
-        if (k < custList.length) {
-            const item = custList[k];
-            const rowIndex = k + 1;
-            const nameEl = document.getElementById("custName_" + rowIndex);
-            const descEl = document.getElementById("custDesc_" + rowIndex);
-            if (nameEl) {
-                nameEl.value = item.name || item.Name || "";
-            }
-            if (descEl) {
-                descEl.value = item.description || item.Description || "";
-                autoExpandTextarea(descEl);
-            }
+    let maxCustId = 0;
+    custList.forEach(function (item) {
+        const idNum = parseInt(item.id || item.Id, 10);
+        if (!Number.isNaN(idNum) && idNum > maxCustId) {
+            maxCustId = idNum;
+        }
+    });
+
+    let recordedCustTotal = -1;
+    if (imported.cardCustomizationSlots && typeof imported.cardCustomizationSlots === "object") {
+        if (imported.cardCustomizationSlots.total !== undefined && !Number.isNaN(parseInt(imported.cardCustomizationSlots.total, 10))) {
+            recordedCustTotal = parseInt(imported.cardCustomizationSlots.total, 10);
+        } else if (imported.cardCustomizationSlots.totalCount !== undefined && !Number.isNaN(parseInt(imported.cardCustomizationSlots.totalCount, 10))) {
+            recordedCustTotal = parseInt(imported.cardCustomizationSlots.totalCount, 10);
+        } else if (imported.cardCustomizationSlots.count !== undefined && !Number.isNaN(parseInt(imported.cardCustomizationSlots.count, 10))) {
+            recordedCustTotal = parseInt(imported.cardCustomizationSlots.count, 10);
+        } else if (imported.cardCustomizationSlots.customizationPoints !== undefined && !Number.isNaN(parseInt(imported.cardCustomizationSlots.customizationPoints, 10))) {
+            recordedCustTotal = parseInt(imported.cardCustomizationSlots.customizationPoints, 10);
         }
     }
+    if (recordedCustTotal < 0 && imported.customizationPoints !== undefined && !Number.isNaN(parseInt(imported.customizationPoints, 10))) {
+        recordedCustTotal = parseInt(imported.customizationPoints, 10);
+    }
+    if (recordedCustTotal < 0 && imported.customizationTotal !== undefined && !Number.isNaN(parseInt(imported.customizationTotal, 10))) {
+        recordedCustTotal = parseInt(imported.customizationTotal, 10);
+    }
+    if (recordedCustTotal < 0 && imported.customizationCount !== undefined && !Number.isNaN(parseInt(imported.customizationCount, 10))) {
+        recordedCustTotal = parseInt(imported.customizationCount, 10);
+    }
+    if (recordedCustTotal < 0 && imported.cardSecondaryAttributes && imported.cardSecondaryAttributes.customizationPointsDisplay !== undefined && !Number.isNaN(parseInt(imported.cardSecondaryAttributes.customizationPointsDisplay, 10))) {
+        recordedCustTotal = parseInt(imported.cardSecondaryAttributes.customizationPointsDisplay, 10);
+    }
+
+    let custCount = Math.max(custList.length, maxCustId);
+    if (recordedCustTotal >= 0) {
+        custCount = Math.max(recordedCustTotal, custCount);
+    } else if (custCount === 0) {
+        const specCust = parseSpecSlotCount(specSlotsStr, "customization", isMil);
+        if (specCust >= 0) {
+            custCount = specCust;
+        }
+    }
+
+    for (let k = 0; k < custCount; k += 1) {
+        addCustomizationRow();
+    }
+    const usedCustSlots = {};
+    custList.forEach(function (item, index) {
+        let slotId = parseInt(item.id || item.Id, 10);
+        if (Number.isNaN(slotId) || slotId < 1 || usedCustSlots[slotId]) {
+            slotId = index + 1;
+            while (usedCustSlots[slotId]) {
+                slotId += 1;
+            }
+        }
+        usedCustSlots[slotId] = true;
+        while (customizationRowsCount < slotId) {
+            addCustomizationRow();
+        }
+        const nameEl = document.getElementById("custName_" + slotId);
+        const descEl = document.getElementById("custDesc_" + slotId);
+        if (nameEl) {
+            nameEl.value = item.name || item.Name || "";
+        }
+        if (descEl) {
+            descEl.value = item.description || item.Description || "";
+            autoExpandTextarea(descEl);
+        }
+    });
 
     // 4. Quirks
     let quirksList = [];
